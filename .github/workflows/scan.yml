@@ -21,10 +21,13 @@ jobs:
       - name: Run scanner
         run: python scripts/scan.py
 
+      - name: Check open trades against latest prices
+        run: python scripts/track_trades.py
+
       - name: Commit results
         run: |
           git config user.name "radar-bot"
           git config user.email "radar-bot@users.noreply.github.com"
-          git add data/market-scan.json data/radar-flags.json
+          git add data/market-scan.json data/radar-flags.json config/trades.json
           git diff --quiet --cached || git commit -m "radar: update $(date -u +%Y-%m-%dT%H:%M:%SZ)"
           git push
