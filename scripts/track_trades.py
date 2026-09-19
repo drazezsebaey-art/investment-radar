@@ -1,6 +1,13 @@
 """
 Investment Radar - Trade Tracker (v4)
 ---------------------------------------
+v4 additions: Profit Factor (gross profit / gross loss, using summed % return
+per trade as a proxy for dollar P&L since position sizing isn't tracked) and
+Recovery Factor (net profit / max drawdown, both computed from a compounded
+equity curve built by sorting closed trades chronologically) - standard
+metrics from live-trading-performance literature, added alongside win rate
+for a more complete picture of risk-adjusted performance.
+
 CRITICAL FIX from v3: pending-order fills were checked against the coin's
 rolling 24h low (low_24h_usd from market-scan.json), which looks backward
 24 hours from THE MOMENT OF THE CHECK - not from when the order was placed.
@@ -147,27 +154,74 @@ def pct_return(trade: dict) -> float:
 CLOSED_STATUSES = ("closed_targets_complete", "stopped", "stopped_after_partial_targets", "target_hit")
 
 
+def build_equity_curve(subset: list) -> list:
+    """Sort by close date and compound returns into an equity curve starting
+    at 100, for max-drawdown and recovery-factor calculation. Uses % return
+    per trade (no position-sizing data available), so this is a proxy for a
+    real equity curve, not a dollar-accurate one."""
+    dated = [t for t in subset if t.get("date_closed") and pct_return(t) is not None]
+    dated.sort(key=lambda t: t["date_closed"])
+    equity = 100.0
+    curve = [equity]
+    for t in dated:
+        equity *= (1 + pct_return(t) / 100)
+        curve.append(equity)
+    return curve
+
+
+def compute_max_drawdown_pct(curve: list) -> float:
+    if len(curve) < 2:
+        return None
+    peak = curve[0]
+    max_dd = 0.0
+    for v in curve[1:]:
+        peak = max(peak, v)
+        dd = (peak - v) / peak * 100 if peak > 0 else 0
+        max_dd = max(max_dd, dd)
+    return round(max_dd, 2)
+
+
+def stats_for(subset: list) -> dict:
+    n = len(subset)
+    wins = [t for t in subset if t.get("status") in ("closed_targets_complete", "target_hit")]
+    partial = [t for t in subset if t.get("status") == "stopped_after_partial_targets"]
+    losses = [t for t in subset if t.get("status") == "stopped"]
+    returns = [pct_return(t) for t in subset if pct_return(t) is not None]
+    win_returns = [pct_return(t) for t in wins if pct_return(t) is not None]
+    loss_returns = [pct_return(t) for t in (losses + partial) if pct_return(t) is not None]
+
+    # Profit Factor = gross profit / gross loss, using summed % returns per
+    # trade as a proxy for dollar P&L (no position-sizing data tracked)
+    gross_profit = sum(r for r in returns if r > 0)
+    gross_loss = abs(sum(r for r in returns if r < 0))
+    profit_factor = round(gross_profit / gross_loss, 2) if gross_loss > 0 else None
+
+    # Recovery Factor = net profit / max drawdown, both from a compounded
+    # equity curve built by sorting closed trades chronologically
+    curve = build_equity_curve(subset)
+    max_dd = compute_max_drawdown_pct(curve)
+    net_profit_pct = round(curve[-1] - 100, 2) if curve else None
+    recovery_factor = round(net_profit_pct / max_dd, 2) if (max_dd and max_dd > 0) else None
+
+    return {
+        "n_closed": n,
+        "wins": len(wins),
+        "losses": len(losses),
+        "stopped_after_partial_targets": len(partial),
+        "win_rate_pct": round(len(wins) / n * 100, 1) if n else None,
+        "avg_return_pct": round(sum(returns) / len(returns), 2) if returns else None,
+        "avg_win_pct": round(sum(win_returns) / len(win_returns), 2) if win_returns else None,
+        "avg_loss_pct": round(sum(loss_returns) / len(loss_returns), 2) if loss_returns else None,
+        "profit_factor": profit_factor,
+        "net_profit_pct_compounded": net_profit_pct,
+        "max_drawdown_pct": max_dd,
+        "recovery_factor": recovery_factor,
+    }
+
+
 def summarize(trades: list) -> dict:
     closed = [t for t in trades if t.get("status") in CLOSED_STATUSES]
 
-    def stats_for(subset: list) -> dict:
-        n = len(subset)
-        wins = [t for t in subset if t.get("status") in ("closed_targets_complete", "target_hit")]
-        partial = [t for t in subset if t.get("status") == "stopped_after_partial_targets"]
-        losses = [t for t in subset if t.get("status") == "stopped"]
-        returns = [pct_return(t) for t in subset if pct_return(t) is not None]
-        win_returns = [pct_return(t) for t in wins if pct_return(t) is not None]
-        loss_returns = [pct_return(t) for t in (losses + partial) if pct_return(t) is not None]
-        return {
-            "n_closed": n,
-            "wins": len(wins),
-            "losses": len(losses),
-            "stopped_after_partial_targets": len(partial),
-            "win_rate_pct": round(len(wins) / n * 100, 1) if n else None,
-            "avg_return_pct": round(sum(returns) / len(returns), 2) if returns else None,
-            "avg_win_pct": round(sum(win_returns) / len(win_returns), 2) if win_returns else None,
-            "avg_loss_pct": round(sum(loss_returns) / len(loss_returns), 2) if loss_returns else None,
-        }
 
     return {
         "updated_at": datetime.now(timezone.utc).isoformat(),
