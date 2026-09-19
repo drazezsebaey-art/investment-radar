@@ -23,7 +23,8 @@ jobs:
 
       - name: Check Binance liquidity for candidates
         run: python scripts/check_liquidity.py
-      - name: Check resistance breakouts (Binance-listed only)
+
+      - name: Check resistance breakouts (Binance-listed only, rotating)
         run: python scripts/breakout_check.py
 
       - name: Check open trades against latest prices + update performance summary
@@ -33,6 +34,6 @@ jobs:
         run: |
           git config user.name "radar-bot"
           git config user.email "radar-bot@users.noreply.github.com"
-          git add data/market-scan.json data/radar-flags.json data/price-history.json data/indicators.json data/categories.json data/performance-summary.json config/trades.json
+          git add data/market-scan.json data/radar-flags.json data/price-history.json data/indicators.json data/categories.json data/performance-summary.json data/breakout-rotation-state.json config/trades.json
           git diff --quiet --cached || git commit -m "radar: update $(date -u +%Y-%m-%dT%H:%M:%SZ)"
           git push
