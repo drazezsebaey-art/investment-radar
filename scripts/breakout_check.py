@@ -98,6 +98,36 @@ STOCH_OVERSOLD_LEVEL = 20.0
 # --- signal log ---------------------------------------------------------
 SIGNAL_LOG_MAX_ENTRIES = 2000
 
+# --- v6: cluster / beta-driven filter --------------------------------------
+# Rationale (from the 2026-09-19 OP/STRK/NEAR/JUP/PENDLE review): a fired
+# breakout_signal on its own doesn't distinguish an idiosyncratic move from
+# "everything is pumping together because the whole market/sector is
+# risk-on right now" - the latter is lower-quality because it's really one
+# correlated bet, not five independent ones, and it reverses in lockstep
+# too. Two independent checks for this, both cheap:
+#   1. within-run cluster count: if >= CLUSTER_SIGNAL_THRESHOLD candidates
+#      in the SAME run fire a signal, they're flagged cluster_wide_signal.
+#   2. BTC correlation: if a candidate's own last ~7 days of 4h closes
+#      correlate highly with BTC's, its move is mostly beta, not alpha.
+# Either one downgrades signal_quality from "idiosyncratic" to
+# "beta_driven_or_cluster" - the signal still fires (data isn't hidden),
+# it's just labeled so a human (or Agent Room) doesn't treat 5 correlated
+# pumps as 5 independent opportunities.
+BTC_COIN_ID = "bitcoin"
+CORRELATION_LOOKBACK_CANDLES = 42       # ~7 days at 4h candles
+CORRELATION_MIN_OVERLAP = 20            # need at least this many paired points to trust the number
+HIGH_CORRELATION_THRESHOLD = 0.75
+CLUSTER_SIGNAL_THRESHOLD = 3            # >= this many fired signals in one run = treat as cluster/beta-driven
+
+# --- v6: lightweight fundamental red flags ---------------------------------
+# Deliberately NOT a full fundamental engine (that stays a human/Claude
+# Agent Room job) - just two cheap, objective, automatable checks that
+# would have correctly down-weighted OP on 2026-09-19 (deep multi-year
+# drawdown + large scheduled unlocks) without needing news judgment.
+DEEP_DRAWDOWN_ATH_PCT = -90.0            # ath_change_percentage_usd below this = flagged
+UNLOCK_WARNING_DAYS = 14                 # flag if a KNOWN upcoming unlock lands within this window
+KNOWN_UNLOCKS_PATH = Path(__file__).resolve().parent.parent / "config" / "known-unlocks.json"
+
 REQUEST_TIMEOUT = 20
 POLITE_DELAY = 7
 MAX_RETRIES = 3
@@ -156,6 +186,85 @@ def fetch_hourly_volumes(coin_id: str):
     url = f"{COINGECKO_BASE}/coins/{coin_id}/market_chart?{urllib.parse.urlencode({'vs_currency': 'usd', 'days': VOLUME_DAYS})}"
     data = fetch_json(url)
     return data.get("total_volumes", [])
+
+
+def fetch_coin_market_data(coin_id: str):
+    """v6: one extra call for ath_change_percentage - the cheapest available
+    proxy for 'is this a structurally beaten-down asset', regardless of how
+    clean the short-term chart looks."""
+    params = {
+        "localization": "false", "tickers": "false", "market_data": "true",
+        "community_data": "false", "developer_data": "false", "sparkline": "false",
+    }
+    url = f"{COINGECKO_BASE}/coins/{coin_id}?{urllib.parse.urlencode(params)}"
+    data = fetch_json(url)
+    md = data.get("market_data", {}) or {}
+    ath_change = (md.get("ath_change_percentage") or {}).get("usd")
+    return ath_change
+
+
+# ---------- v6: BTC correlation (cluster/beta filter) ----------
+
+def compute_pearson_correlation(a: list, b: list):
+    n = min(len(a), len(b))
+    if n < CORRELATION_MIN_OVERLAP:
+        return None
+    a, b = a[-n:], b[-n:]
+    mean_a, mean_b = mean(a), mean(b)
+    cov = sum((x - mean_a) * (y - mean_b) for x, y in zip(a, b))
+    var_a = sum((x - mean_a) ** 2 for x in a)
+    var_b = sum((y - mean_b) ** 2 for y in b)
+    denom = (var_a * var_b) ** 0.5
+    if denom == 0:
+        return None
+    return cov / denom
+
+
+def fetch_btc_closes():
+    """Fetched ONCE per run (not per candidate) and reused - keeps the
+    extra API cost flat regardless of how many candidates are checked."""
+    try:
+        candles = fetch_ohlc(BTC_COIN_ID)
+        time.sleep(POLITE_DELAY)
+        return [c[4] for c in candles]
+    except Exception as exc:  # noqa: BLE001
+        print(f"  Warning: could not fetch BTC closes for correlation check: {exc}")
+        return None
+
+
+# ---------- v6: known-unlocks config (manually maintained) ----------
+
+def load_known_unlocks() -> dict:
+    """Free CoinGecko tiers don't expose reliable vesting/unlock-schedule
+    data, so this is a small manually-maintained config instead of an API
+    call. Format: {"coin_id": [{"date": "YYYY-MM-DD", "pct_of_supply": 1.2,
+    "note": "..."}]}. Missing file or missing coin_id = no flag, not an
+    error - this is meant to be filled in gradually as you research
+    specific watchlist coins, not a complete database."""
+    if not KNOWN_UNLOCKS_PATH.exists():
+        return {}
+    try:
+        return json.loads(KNOWN_UNLOCKS_PATH.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return {}
+
+
+def check_unlock_risk(coin_id: str, unlocks_config: dict, now: datetime):
+    events = unlocks_config.get(coin_id, [])
+    upcoming = []
+    for ev in events:
+        try:
+            ev_date = datetime.fromisoformat(ev["date"]).replace(tzinfo=timezone.utc)
+        except (KeyError, ValueError):
+            continue
+        days_until = (ev_date - now).total_seconds() / 86400
+        if 0 <= days_until <= UNLOCK_WARNING_DAYS:
+            upcoming.append((days_until, ev))
+    if not upcoming:
+        return False, None, None
+    upcoming.sort(key=lambda t: t[0])
+    _, nearest = upcoming[0]
+    return True, nearest["date"], nearest.get("pct_of_supply")
 
 
 def daily_volumes_from_hourly(hourly: list):
@@ -408,21 +517,40 @@ def update_retest_entries_for_coin(watchlist: dict, coin_id: str, candles: list)
             entry["status"] = "touched_awaiting_bounce"
 
 
-def append_signal_log(coin: dict, record: dict) -> None:
+def queue_signal_log(pending: list, coin: dict, record: dict) -> None:
+    """v6: builds the log entry in memory instead of writing immediately.
+    cluster_wide_signal/signal_quality are only knowable after ALL
+    candidates in this run have been checked (need the full-run signal
+    count), so the actual file write is deferred to flush_signal_log()
+    after that's computed - this also cuts signal-log.json from N reads+
+    writes per run down to one."""
+    pending.append({
+        "timestamp": datetime.now(timezone.utc).isoformat(),
+        "coin_id": coin["id"],
+        "symbol": coin["symbol"],
+        "price_at_check": coin.get("price_usd"),
+        **record,
+        "btc_correlation_7d": coin.get("btc_correlation_7d"),
+        "ath_change_pct": coin.get("ath_change_pct"),
+        "deep_drawdown_flag": coin.get("deep_drawdown_flag"),
+        "unlock_risk_flag": coin.get("unlock_risk_flag"),
+        "_coin_ref": coin,  # temporary - resolved to cluster_wide_signal/signal_quality in flush_signal_log
+        "evaluated": False,
+    })
+
+
+def flush_signal_log(pending: list) -> None:
     log = []
     if SIGNAL_LOG_PATH.exists():
         try:
             log = json.loads(SIGNAL_LOG_PATH.read_text(encoding="utf-8"))
         except json.JSONDecodeError:
             log = []
-    log.append({
-        "timestamp": datetime.now(timezone.utc).isoformat(),
-        "coin_id": coin["id"],
-        "symbol": coin["symbol"],
-        "price_at_check": coin.get("price_usd"),
-        **record,
-        "evaluated": False,
-    })
+    for entry in pending:
+        coin_ref = entry.pop("_coin_ref")
+        entry["cluster_wide_signal"] = coin_ref.get("cluster_wide_signal")
+        entry["signal_quality"] = coin_ref.get("signal_quality")
+        log.append(entry)
     if len(log) > SIGNAL_LOG_MAX_ENTRIES:
         log = log[-SIGNAL_LOG_MAX_ENTRIES:]
     SIGNAL_LOG_PATH.write_text(json.dumps(log, ensure_ascii=False, indent=2), encoding="utf-8")
@@ -444,6 +572,12 @@ def main():
 
     retest_watchlist = load_retest_watchlist()
 
+    # v6: fetched/loaded once per run, reused for every candidate below
+    btc_closes = fetch_btc_closes()
+    unlocks_config = load_known_unlocks()
+    now = datetime.now(timezone.utc)
+    pending_log_entries = []
+
     for coin in candidates:
         coin_id = coin["id"]
         try:
@@ -459,13 +593,39 @@ def main():
         if candles:
             update_retest_entries_for_coin(retest_watchlist, coin_id, candles)
 
+        # v6: BTC correlation (skip for BTC itself - correlating BTC with BTC is meaningless)
+        if candles and btc_closes and coin_id != BTC_COIN_ID:
+            candidate_closes = [c[4] for c in candles][-CORRELATION_LOOKBACK_CANDLES:]
+            btc_tail = btc_closes[-CORRELATION_LOOKBACK_CANDLES:]
+            coin["btc_correlation_7d"] = round(compute_pearson_correlation(candidate_closes, btc_tail) or 0, 3) \
+                if compute_pearson_correlation(candidate_closes, btc_tail) is not None else None
+        else:
+            coin["btc_correlation_7d"] = None
+
+        # v6: ATH drawdown (lightweight fundamental red flag #1)
+        try:
+            ath_change = fetch_coin_market_data(coin_id)
+            time.sleep(POLITE_DELAY)
+            coin["ath_change_pct"] = round(ath_change, 2) if ath_change is not None else None
+            coin["deep_drawdown_flag"] = bool(ath_change is not None and ath_change <= DEEP_DRAWDOWN_ATH_PCT)
+        except Exception as exc:  # noqa: BLE001
+            print(f"  Warning: ATH fetch failed for {coin_id}: {exc}")
+            coin["ath_change_pct"] = None
+            coin["deep_drawdown_flag"] = None
+
+        # v6: known-unlock proximity (lightweight fundamental red flag #2)
+        unlock_flag, unlock_date, unlock_pct = check_unlock_risk(coin_id, unlocks_config, now)
+        coin["unlock_risk_flag"] = unlock_flag
+        coin["next_known_unlock_date"] = unlock_date
+        coin["next_known_unlock_pct_supply"] = unlock_pct
+
         if candles and len(candles) < EXPECTED_CANDLES * MIN_CANDLE_COVERAGE_RATIO:
             coin["insufficient_history"] = True
             coin["breakout_signal"] = False
             coin["extension_continuation_signal"] = False
             coin["pullback_entry_signal"] = False
             coin.pop("breakout_error", None)
-            append_signal_log(coin, {
+            queue_signal_log(pending_log_entries, coin, {
                 "breakout_signal": False, "extension_continuation_signal": False,
                 "pullback_entry_signal": False, "reason": "insufficient_history", "n_candles": len(candles),
             })
@@ -490,7 +650,7 @@ def main():
             coin["breakout_signal"] = False
             coin["extension_continuation_signal"] = False
             coin.pop("breakout_error", None)
-            append_signal_log(coin, {
+            queue_signal_log(pending_log_entries, coin, {
                 "breakout_signal": False, "extension_continuation_signal": False,
                 "pullback_entry_signal": coin["pullback_entry_signal"], "reason": "no_resistance_zone_found",
             })
@@ -522,7 +682,7 @@ def main():
         if coin.get("extension_continuation_signal"):
             add_to_retest_watchlist(retest_watchlist, coin, ext_result["fib_extension_1272"], "extension")
 
-        append_signal_log(coin, {
+        queue_signal_log(pending_log_entries, coin, {
             "breakout_signal": coin["breakout_signal"],
             "breakout_signal_high_confidence": coin["breakout_signal_high_confidence"],
             "extension_continuation_signal": coin.get("extension_continuation_signal", False),
@@ -533,14 +693,27 @@ def main():
             "above_vwap": above_vwap,
         })
 
+    # v6: cluster-wide detection - only knowable after every candidate in this
+    # run has been checked. A coin only gets a signal_quality label if it
+    # actually fired something (no point labeling non-signals).
+    fired = [c for c in candidates if c.get("breakout_signal") or c.get("extension_continuation_signal")]
+    is_cluster_run = len(fired) >= CLUSTER_SIGNAL_THRESHOLD
+    for coin in fired:
+        coin["cluster_wide_signal"] = is_cluster_run
+        high_corr = (coin.get("btc_correlation_7d") or 0) >= HIGH_CORRELATION_THRESHOLD
+        coin["signal_quality"] = "beta_driven_or_cluster" if (is_cluster_run or high_corr) else "idiosyncratic"
+
+    flush_signal_log(pending_log_entries)
     save_retest_watchlist(retest_watchlist)
 
     RADAR_FLAGS_PATH.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
     signals = sum(1 for c in candidates if c.get("breakout_signal"))
     ext_signals = sum(1 for c in candidates if c.get("extension_continuation_signal"))
     pullback_signals = sum(1 for c in candidates if c.get("pullback_entry_signal"))
+    idiosyncratic = sum(1 for c in fired if c.get("signal_quality") == "idiosyncratic")
     print(f"Checked {len(candidates)} candidates: {signals} breakouts, {ext_signals} extensions, "
-          f"{pullback_signals} pullback entries.")
+          f"{pullback_signals} pullback entries ({idiosyncratic}/{len(fired)} fired signals rated "
+          f"idiosyncratic vs beta_driven_or_cluster).")
 
 
 if __name__ == "__main__":
