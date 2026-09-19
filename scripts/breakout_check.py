@@ -68,13 +68,36 @@ VOLUME_DAYS = 30                # history window for the volume average
 VOLUME_CONFIRM_MULTIPLIER = 1.3  # latest day's volume must be at least this many times the recent average
 
 REQUEST_TIMEOUT = 20
-POLITE_DELAY = 1.5              # seconds between CoinGecko calls
+POLITE_DELAY = 7                # seconds between CoinGecko calls - GitHub Actions runners share IPs
+                                 # with many other users hitting CoinGecko at the same time, so the
+                                 # documented 10-30 calls/min limit is not reliably available to us;
+                                 # this is deliberately conservative
+
+MAX_RETRIES = 3                 # retries on HTTP 429 before giving up on that call
+RETRY_BACKOFF_BASE = 15         # seconds - first retry waits this long, then doubles each attempt
+
+MAX_CANDIDATES_PER_RUN = 10     # cap total coins checked per run (2 calls each = up to 20 calls,
+                                 # well inside a 15-minute cron window even at 7s spacing); prioritized
+                                 # by market_cap_rank so the most liquid/relevant names go first
 
 
 def fetch_json(url: str):
+    """Fetch JSON with retry-with-backoff on HTTP 429 (rate limit)."""
     req = urllib.request.Request(url, headers={"User-Agent": "investment-radar/1.0"})
-    with urllib.request.urlopen(req, timeout=REQUEST_TIMEOUT) as resp:
-        return json.loads(resp.read().decode())
+    last_exc = None
+    for attempt in range(MAX_RETRIES + 1):
+        try:
+            with urllib.request.urlopen(req, timeout=REQUEST_TIMEOUT) as resp:
+                return json.loads(resp.read().decode())
+        except urllib.error.HTTPError as e:
+            last_exc = e
+            if e.code == 429 and attempt < MAX_RETRIES:
+                wait = RETRY_BACKOFF_BASE * (2 ** attempt)
+                print(f"  429 rate-limited, retrying in {wait}s (attempt {attempt + 1}/{MAX_RETRIES})")
+                time.sleep(wait)
+                continue
+            raise
+    raise last_exc
 
 
 def fetch_ohlc(coin_id: str):
@@ -169,9 +192,16 @@ def main():
     data = json.loads(RADAR_FLAGS_PATH.read_text(encoding="utf-8"))
     coins = data.get("coins", [])
 
-    candidates = [c for c in coins if c.get("binance_listed") is True]
-    print(f"Running breakout check on {len(candidates)} Binance-listed candidates "
-          f"(skipping {len(coins) - len(candidates)} not listed/unchecked).")
+    all_listed = [c for c in coins if c.get("binance_listed") is True]
+    # prioritize by market_cap_rank (lower = more relevant/liquid); unranked coins go last
+    all_listed.sort(key=lambda c: c.get("market_cap_rank") or 10**9)
+    candidates = all_listed[:MAX_CANDIDATES_PER_RUN]
+    skipped_for_cap = len(all_listed) - len(candidates)
+
+    print(f"Running breakout check on {len(candidates)} of {len(all_listed)} Binance-listed candidates "
+          f"(skipping {len(coins) - len(all_listed)} not listed/unchecked"
+          + (f", {skipped_for_cap} deferred to next run due to the per-run cap" if skipped_for_cap else "")
+          + ").")
 
     for coin in candidates:
         coin_id = coin["id"]
