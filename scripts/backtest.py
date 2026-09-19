@@ -52,7 +52,13 @@ OUTPUT_PATH = DATA_DIR / "backtest-results.json"
 COINGECKO_BASE = "https://api.coingecko.com/api/v3"
 
 # mirrors breakout_check.py's resistance/breakout constants - keep in sync manually
-OHLC_DAYS = 90                  # max days that still returns 4h candles on CoinGecko's OHLC endpoint
+OHLC_DAYS = 30                  # CoinGecko's OHLC granularity: 1-2 days=30min, 3-30 days=4h,
+                                  # 31+ days=4-DAY candles. A prior value of 90 fell into the
+                                  # 4-day bucket, giving only ~22 candles total - far below the
+                                  # 82 minimum this script needs (MIN_LOOKBACK_CANDLES +
+                                  # FORWARD_WINDOW_CANDLES + 10), so every single coin was
+                                  # silently skipped as "not enough history" with no error at
+                                  # all. 30 days keeps 4h candles (~180 total), comfortably enough.
 PEAK_NEIGHBORS = 2
 TOUCH_TOLERANCE_PCT = 1.0
 MIN_TOUCHES = 2
