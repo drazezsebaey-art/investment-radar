@@ -23,6 +23,8 @@ jobs:
 
       - name: Check Binance liquidity for candidates
         run: python scripts/check_liquidity.py
+      - name: Check resistance breakouts (Binance-listed only)
+        run: python scripts/breakout_check.py
 
       - name: Check open trades against latest prices + update performance summary
         run: python scripts/track_trades.py
