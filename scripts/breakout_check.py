@@ -56,7 +56,11 @@ SIGNAL_LOG_PATH = DATA_DIR / "signal-log.json"
 COINGECKO_BASE = "https://api.coingecko.com/api/v3"
 
 # --- resistance / breakout thresholds -----------------------------------
-OHLC_DAYS = 45                  # raised from 30 (v4) to give EMA100 enough candles to seed
+OHLC_DAYS = 30                  # CoinGecko's /ohlc endpoint only accepts specific values
+                                  # (1, 7, 14, 30, 90, 180, 365) - NOT an arbitrary number like 45.
+                                  # 30 days already gives ~180 4h-candles, comfortably enough to
+                                  # seed EMA100; a prior v5 change to 45 was invalid and caused a
+                                  # uniform HTTP 400 on every single coin - reverted here.
 PEAK_NEIGHBORS = 2
 TOUCH_TOLERANCE_PCT = 1.0
 MIN_TOUCHES = 2
@@ -64,7 +68,7 @@ EXCLUDE_RECENT_CANDLES = 3
 BREAKOUT_BUFFER_PCT = 0.3
 CONFIRM_CANDLES = 2
 
-VOLUME_DAYS = 45                # match OHLC_DAYS so VWAP bucketing and volume confirmation use the same window
+VOLUME_DAYS = 30                # market_chart accepts any integer, but keep matched to OHLC_DAYS for consistency
 VOLUME_CONFIRM_MULTIPLIER = 1.3
 
 # --- trend filter -----------------------------------------------------
