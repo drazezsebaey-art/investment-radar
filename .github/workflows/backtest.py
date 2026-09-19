@@ -1,0 +1,28 @@
+name: Historical Backtest
+
+on:
+  workflow_dispatch: {}   # manual trigger only - too API-heavy for the 15-min cron
+
+permissions:
+  contents: write
+
+jobs:
+  backtest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run historical backtest
+        run: python scripts/backtest.py
+
+      - name: Commit results
+        run: |
+          git config user.name "radar-bot"
+          git config user.email "radar-bot@users.noreply.github.com"
+          git add data/backtest-results.json
+          git diff --quiet --cached || git commit -m "backtest: update $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          git push
