@@ -1,47 +1,42 @@
 """
-Investment Radar - Resistance Breakout Check (v4)
+Investment Radar - Resistance Breakout Check (v5)
 ------------------------------------------------------------
 Runs after check_liquidity.py, only against coins already confirmed
 binance_listed == True in data/radar-flags.json.
 
-v4 additions (professional-trader improvements, no paid data sources):
-  - FIBONACCI EXTENSION CONTINUATION SIGNAL: for a coin that already broke
-    its resistance a while ago (like INJ - up 25%+ but breakout_confirmed
-    is correctly False because the break itself is old news), this computes
-    a Fibonacci extension (1.272x, 1.618x) from the swing low that led into
-    the resistance zone, and checks whether price has pushed through and
-    HELD above the 1.272 extension with volume support. This is a second,
-    independent signal type (extension_continuation_signal) for catching
-    an already-broken coin's next leg, separate from the fresh-break signal.
-    Anchor choice: swing low = lowest low in the same lookback window used
-    to find the resistance zone (a defensible, if simple, choice - not a
-    substitute for judgment on which leg actually matters).
-  - TREND FILTER: computes an EMA50 on the same 4h OHLC series already
-    fetched (an approximation of "the medium-term trend", not a true daily
-    EMA50 - documented honestly) and requires price to be above it for
-    either signal type to count. A breakout against the medium-term trend
-    is statistically weaker than one with it.
-  - INSUFFICIENT-HISTORY FLAG: if the OHLC series returned far fewer candles
-    than the requested window implies, the coin likely doesn't have enough
-    trading history for a reliable resistance read (e.g. a very recent
-    listing) - flagged and excluded from both signal types rather than
-    given a falsely confident answer.
-  - BREAK-AND-RETEST TRACKING: when a breakout or extension signal fires,
-    the coin is added to data/breakout-retest-watchlist.json. On later runs
-    (when that coin comes up again in the rotation), its watchlist entry is
-    checked against fresh OHLC for a retest-and-bounce pattern (price came
-    back within RETEST_TOLERANCE_PCT of the level and closed back above it)
-    - professionally, a confirmed retest is a stronger entry than the raw
-    break itself. retest_confirmed appears on the coin's watchlist entry.
-  - SIGNAL LOGGING: every check (fired or not) is appended to
-    data/signal-log.json, capped at SIGNAL_LOG_MAX_ENTRIES. This is raw
-    material for scripts/evaluate_signals.py to later measure whether these
-    signals actually outperform doing nothing - calibration from real
-    outcomes instead of assumptions about what threshold "should" work.
+v5 additions (from reviewing an academic scalping-bot paper and a general
+scalping guide):
+  - VWAP CONFIRMATION (independent evidence layer): Volume Weighted Average
+    Price answers a different question than EMA - not "which direction is
+    price drifting" but "where has most of the actual traded volume
+    happened." Computed by bucketing the hourly volume series (already
+    fetched for volume confirmation) into the same 4h windows as the OHLC
+    candles, then vwap = sum(typical_price * bucket_volume) / sum(bucket_volume)
+    over the lookback window. above_vwap is reported alongside breakout
+    checks as ADDITIONAL confluence - it does NOT gate breakout_signal
+    (changing that definition now would break comparability with existing
+    logged signals), but a new composite field
+    breakout_signal_high_confidence = breakout_signal AND above_vwap is
+    added for anyone who wants the stricter read.
+  - PULLBACK ENTRY SIGNAL (a second, independent signal type): catches a
+    different situation than a resistance break - a coin already in a
+    confirmed uptrend (price above both EMA50 and EMA100 on the same 4h
+    series) pulling back and then resuming, confirmed by a Stochastic
+    Oscillator(14) %K crossing back above 20 from oversold. This doesn't
+    require or use the resistance-zone logic at all, so it can fire on
+    coins where no clean resistance zone was found. Adapted from a
+    reviewed EMA+Stochastic scalping strategy (using EMA50/EMA100 instead
+    of the original's EMA50/EMA200, since our OHLC_DAYS window can't
+    reliably seed an EMA200 on 4h candles).
+  - OHLC_DAYS raised from 30 to 45 to give the EMA100 calculation enough
+    candles to seed properly (CoinGecko still returns 4h candles up to 90
+    days, so this doesn't change candle granularity, just history depth).
 
-v2/v3 fixes (still present): CoinGecko-based Binance-listing rotation
-(round-robin, not the same top-N every run), daily-aggregated volume
-confirmation (not raw hourly points), retry-with-backoff on HTTP 429.
+v2-v4 fixes/features preserved: CoinGecko-based Binance-listing rotation,
+daily-aggregated volume confirmation, retry-with-backoff on HTTP 429,
+resistance-zone clustering + breakout confirmation, fibonacci extension
+continuation signal, EMA50-on-4h trend filter, insufficient-history flag,
+break-and-retest tracking, signal logging for scripts/evaluate_signals.py.
 """
 import json
 import time
@@ -61,7 +56,7 @@ SIGNAL_LOG_PATH = DATA_DIR / "signal-log.json"
 COINGECKO_BASE = "https://api.coingecko.com/api/v3"
 
 # --- resistance / breakout thresholds -----------------------------------
-OHLC_DAYS = 30
+OHLC_DAYS = 45                  # raised from 30 (v4) to give EMA100 enough candles to seed
 PEAK_NEIGHBORS = 2
 TOUCH_TOLERANCE_PCT = 1.0
 MIN_TOUCHES = 2
@@ -69,30 +64,34 @@ EXCLUDE_RECENT_CANDLES = 3
 BREAKOUT_BUFFER_PCT = 0.3
 CONFIRM_CANDLES = 2
 
-VOLUME_DAYS = 30
+VOLUME_DAYS = 45                # match OHLC_DAYS so VWAP bucketing and volume confirmation use the same window
 VOLUME_CONFIRM_MULTIPLIER = 1.3
 
-# --- v4: trend filter -----------------------------------------------------
-TREND_EMA_PERIOD = 50   # on the 4h candle series already fetched (~8-9 days) -
-                          # an approximation of medium-term trend, NOT a true
-                          # daily EMA50; documented as such wherever it's used
+# --- trend filter -----------------------------------------------------
+TREND_EMA_PERIOD = 50
+TREND_EMA_LONG_PERIOD = 100     # v5: for pullback-signal trend confirmation
 
-# --- v4: fibonacci extension continuation ---------------------------------
-FIB_EXTENSION_RATIOS = {"1.272": 0.272, "1.618": 0.618}  # applied as level = high + ratio*(high-low)
+# --- fibonacci extension continuation ---------------------------------
+FIB_EXTENSION_RATIOS = {"1.272": 0.272, "1.618": 0.618}
 EXTENSION_BUFFER_PCT = 0.3
-EXTENSION_TARGET = "1.272"  # which extension level extension_continuation_signal requires clearing
+EXTENSION_TARGET = "1.272"
 
-# --- v4: insufficient history -----------------------------------------------
-# 4h candles over OHLC_DAYS days implies roughly OHLC_DAYS*6 candles; if we
-# get much less than that, the coin probably hasn't traded that long
+# --- insufficient history -----------------------------------------------
 EXPECTED_CANDLES = OHLC_DAYS * 6
-MIN_CANDLE_COVERAGE_RATIO = 0.5  # need at least half the expected candles
+MIN_CANDLE_COVERAGE_RATIO = 0.5
 
-# --- v4: retest tracking ---------------------------------------------------
-RETEST_TOLERANCE_PCT = 1.5     # price must come back within this % of the level to count as a retest
-RETEST_MAX_AGE_DAYS = 10       # stop watching for a retest after this long
+# --- retest tracking ---------------------------------------------------
+RETEST_TOLERANCE_PCT = 1.5
+RETEST_MAX_AGE_DAYS = 10
 
-# --- v4: signal log ---------------------------------------------------------
+# --- v5: VWAP -------------------------------------------------------------
+VWAP_LOOKBACK_CANDLES = 30      # ~5 days at 4h - a shorter, more reactive window than the full history
+
+# --- v5: pullback entry (Stochastic) --------------------------------------
+STOCH_PERIOD = 14
+STOCH_OVERSOLD_LEVEL = 20.0
+
+# --- signal log ---------------------------------------------------------
 SIGNAL_LOG_MAX_ENTRIES = 2000
 
 REQUEST_TIMEOUT = 20
@@ -163,6 +162,27 @@ def daily_volumes_from_hourly(hourly: list):
     return [daily[d] for d in sorted(daily.keys())]
 
 
+def bucket_volumes_to_candles(candles: list, hourly_volumes: list) -> list:
+    """Sum hourly volume points falling within each candle's time window,
+    returning a list of volumes parallel to candles. Used for VWAP, since
+    the OHLC endpoint itself carries no volume field."""
+    if not candles or not hourly_volumes:
+        return [0] * len(candles)
+    candle_starts = [c[0] for c in candles]
+    bucket_vols = [0.0] * len(candles)
+    for ts_ms, vol in hourly_volumes:
+        # find the last candle whose start is <= this volume point's timestamp
+        idx = None
+        for i, start in enumerate(candle_starts):
+            if start <= ts_ms:
+                idx = i
+            else:
+                break
+        if idx is not None:
+            bucket_vols[idx] += vol or 0
+    return bucket_vols
+
+
 def find_resistance_zone(candles: list):
     if len(candles) < (PEAK_NEIGHBORS * 2 + MIN_TOUCHES + EXCLUDE_RECENT_CANDLES):
         return None
@@ -201,10 +221,8 @@ def check_breakout(candles: list, zone: dict):
     level = zone["level"]
     recent = candles[-CONFIRM_CANDLES:]
     closes_above = all(c[4] >= level * (1 + BREAKOUT_BUFFER_PCT / 100) for c in recent)
-
     pre_break = candles[-(CONFIRM_CANDLES + 3):-CONFIRM_CANDLES]
     was_below = any(c[4] < level for c in pre_break) if pre_break else True
-
     latest_close = candles[-1][4]
     pct_above = (latest_close - level) / level * 100
     return closes_above and was_below, pct_above
@@ -224,8 +242,6 @@ def check_volume(hourly_volumes: list):
     return round(ratio, 2), ratio >= VOLUME_CONFIRM_MULTIPLIER
 
 
-# ---------- v4: trend filter ----------
-
 def compute_ema(values: list, period: int) -> float:
     if len(values) < period:
         return None
@@ -237,8 +253,6 @@ def compute_ema(values: list, period: int) -> float:
 
 
 def check_trend_aligned(candles: list):
-    """True/False if we have enough candles for the EMA, else None (filter
-    is skipped rather than blocking the signal on insufficient data)."""
     closes = [c[4] for c in candles]
     ema = compute_ema(closes, TREND_EMA_PERIOD)
     if ema is None:
@@ -246,36 +260,24 @@ def check_trend_aligned(candles: list):
     return closes[-1] > ema, round(ema, 8)
 
 
-# ---------- v4: fibonacci extension ----------
-
 def compute_fib_extensions(low: float, high: float) -> dict:
     diff = high - low
     return {name: high + ratio * diff for name, ratio in FIB_EXTENSION_RATIOS.items()}
 
 
 def check_extension_continuation(candles: list, zone: dict, volume_confirmed: bool, trend_aligned):
-    """Anchor A = lowest low in the same lookback window used to find the
-    resistance zone; Anchor B = the zone level itself. Signal fires when the
-    latest close clears the target extension with volume support and the
-    trend filter (when available) agrees - this is meant for coins that
-    already broke resistance a while ago (breakout_confirmed=False because
-    the break isn't fresh) and are still extending, like INJ."""
     history = candles[:-EXCLUDE_RECENT_CANDLES]
     if not history:
         return None
-
-    swing_low = min(c[3] for c in history)  # c[3] = low
+    swing_low = min(c[3] for c in history)
     high = zone["level"]
     if swing_low >= high:
-        return None  # degenerate anchor, skip
-
+        return None
     extensions = compute_fib_extensions(swing_low, high)
     target_level = extensions[EXTENSION_TARGET]
     latest_close = candles[-1][4]
-
     cleared = latest_close >= target_level * (1 + EXTENSION_BUFFER_PCT / 100)
     signal = bool(cleared and volume_confirmed and (trend_aligned is not False))
-
     return {
         "fib_anchor_low": round(swing_low, 8),
         "fib_anchor_high": round(high, 8),
@@ -285,7 +287,68 @@ def check_extension_continuation(candles: list, zone: dict, volume_confirmed: bo
     }
 
 
-# ---------- v4: retest watchlist ----------
+# ---------- v5: VWAP ----------
+
+def compute_vwap(candles: list, bucket_volumes: list, lookback: int) -> float:
+    window_candles = candles[-lookback:]
+    window_volumes = bucket_volumes[-lookback:]
+    total_vol = sum(window_volumes)
+    if total_vol <= 0:
+        return None
+    weighted_sum = 0.0
+    for c, vol in zip(window_candles, window_volumes):
+        typical_price = (c[2] + c[3] + c[4]) / 3  # (high+low+close)/3
+        weighted_sum += typical_price * vol
+    return weighted_sum / total_vol
+
+
+# ---------- v5: Stochastic + pullback entry ----------
+
+def compute_stochastic_k_series(candles: list, period: int) -> list:
+    """Returns %K for every candle index where enough lookback exists (else None)."""
+    k_values = [None] * len(candles)
+    for i in range(period - 1, len(candles)):
+        window = candles[i - period + 1: i + 1]
+        highest_high = max(c[2] for c in window)
+        lowest_low = min(c[3] for c in window)
+        close = candles[i][4]
+        if highest_high == lowest_low:
+            k_values[i] = 50.0
+        else:
+            k_values[i] = (close - lowest_low) / (highest_high - lowest_low) * 100
+    return k_values
+
+
+def check_pullback_entry(candles: list, volume_confirmed: bool):
+    """Independent of resistance-zone logic entirely: uptrend (price above
+    both EMA50 and EMA100) + Stochastic %K crossing back above the oversold
+    level = a pullback resuming, adapted from a reviewed EMA+Stochastic
+    scalping strategy (their EMA50/EMA200 -> our EMA50/EMA100, since our
+    window can't reliably seed EMA200 on 4h candles)."""
+    closes = [c[4] for c in candles]
+    ema50 = compute_ema(closes, TREND_EMA_PERIOD)
+    ema100 = compute_ema(closes, TREND_EMA_LONG_PERIOD)
+    if ema50 is None or ema100 is None:
+        return None
+
+    k_series = compute_stochastic_k_series(candles, STOCH_PERIOD)
+    if k_series[-1] is None or k_series[-2] is None:
+        return None
+
+    uptrend_aligned = closes[-1] > ema50 and closes[-1] > ema100
+    crossed_up = k_series[-2] <= STOCH_OVERSOLD_LEVEL < k_series[-1]
+
+    signal = bool(uptrend_aligned and crossed_up and volume_confirmed)
+    return {
+        "ema50_4h_approx": round(ema50, 8),
+        "ema100_4h_approx": round(ema100, 8),
+        "stochastic_k": round(k_series[-1], 2),
+        "stochastic_k_prev": round(k_series[-2], 2),
+        "pullback_entry_signal": signal,
+    }
+
+
+# ---------- retest watchlist ----------
 
 def load_retest_watchlist() -> dict:
     if not RETEST_WATCHLIST_PATH.exists():
@@ -303,7 +366,7 @@ def save_retest_watchlist(watchlist: dict) -> None:
 def add_to_retest_watchlist(watchlist: dict, coin: dict, level: float, signal_type: str) -> None:
     entry_id = f"{coin['id']}:{signal_type}:{round(level, 6)}"
     if entry_id in watchlist:
-        return  # already watching this exact level/signal for this coin
+        return
     watchlist[entry_id] = {
         "coin_id": coin["id"],
         "symbol": coin["symbol"],
@@ -316,27 +379,21 @@ def add_to_retest_watchlist(watchlist: dict, coin: dict, level: float, signal_ty
 
 
 def update_retest_entries_for_coin(watchlist: dict, coin_id: str, candles: list) -> None:
-    """Check this coin's fresh candles against any open watchlist entries for
-    it: a retest is a low that came within RETEST_TOLERANCE_PCT of the level
-    followed by a later close back above it."""
     now = datetime.now(timezone.utc)
     for entry in watchlist.values():
         if entry["coin_id"] != coin_id or entry["status"] != "watching":
             continue
-
         detected_at = datetime.fromisoformat(entry["detected_at"])
         age_days = (now - detected_at).total_seconds() / 86400
         if age_days > RETEST_MAX_AGE_DAYS:
             entry["status"] = "expired"
             continue
-
         level = entry["level"]
         touched = False
         for i, c in enumerate(candles):
             low = c[3]
             if abs(low - level) / level * 100 <= RETEST_TOLERANCE_PCT:
                 touched = True
-                # look for a later close back above the level (the bounce)
                 for later in candles[i + 1:]:
                     if later[4] > level * (1 + BREAKOUT_BUFFER_PCT / 100):
                         entry["retest_confirmed"] = True
@@ -346,8 +403,6 @@ def update_retest_entries_for_coin(watchlist: dict, coin_id: str, candles: list)
         if touched and entry["status"] == "watching":
             entry["status"] = "touched_awaiting_bounce"
 
-
-# ---------- v4: signal log ----------
 
 def append_signal_log(coin: dict, record: dict) -> None:
     log = []
@@ -381,7 +436,7 @@ def main():
     candidates = select_rotating_candidates(all_listed)
 
     print(f"Running breakout check on {len(candidates)} of {len(all_listed)} Binance-listed candidates "
-          f"(rotating selection - skipping {len(coins) - len(all_listed)} not listed/unchecked).")
+          f"(rotating selection).")
 
     retest_watchlist = load_retest_watchlist()
 
@@ -397,7 +452,6 @@ def main():
             coin["breakout_error"] = str(exc)
             continue
 
-        # always update retest tracking for this coin, even if the rest fails
         if candles:
             update_retest_entries_for_coin(retest_watchlist, coin_id, candles)
 
@@ -405,23 +459,40 @@ def main():
             coin["insufficient_history"] = True
             coin["breakout_signal"] = False
             coin["extension_continuation_signal"] = False
+            coin["pullback_entry_signal"] = False
             coin.pop("breakout_error", None)
             append_signal_log(coin, {
                 "breakout_signal": False, "extension_continuation_signal": False,
-                "reason": "insufficient_history", "n_candles": len(candles),
+                "pullback_entry_signal": False, "reason": "insufficient_history", "n_candles": len(candles),
             })
             continue
+
+        volume_ratio, volume_confirmed = check_volume(hourly_volumes) if hourly_volumes else (None, False)
+        bucket_vols = bucket_volumes_to_candles(candles, hourly_volumes) if hourly_volumes else [0] * len(candles)
+        vwap = compute_vwap(candles, bucket_vols, VWAP_LOOKBACK_CANDLES)
+        above_vwap = (candles[-1][4] > vwap) if vwap else None
+        coin["vwap_4h_approx"] = round(vwap, 8) if vwap else None
+        coin["above_vwap"] = above_vwap
+
+        # pullback entry signal - independent of resistance zone
+        pullback_result = check_pullback_entry(candles, volume_confirmed)
+        if pullback_result:
+            coin.update(pullback_result)
+        else:
+            coin["pullback_entry_signal"] = False
 
         zone = find_resistance_zone(candles) if candles else None
         if zone is None:
             coin["breakout_signal"] = False
             coin["extension_continuation_signal"] = False
             coin.pop("breakout_error", None)
-            append_signal_log(coin, {"breakout_signal": False, "extension_continuation_signal": False, "reason": "no_resistance_zone_found"})
+            append_signal_log(coin, {
+                "breakout_signal": False, "extension_continuation_signal": False,
+                "pullback_entry_signal": coin["pullback_entry_signal"], "reason": "no_resistance_zone_found",
+            })
             continue
 
         breakout_confirmed, pct_above = check_breakout(candles, zone)
-        volume_ratio, volume_confirmed = check_volume(hourly_volumes)
         trend_aligned, trend_ema = check_trend_aligned(candles)
 
         coin["resistance_level"] = round(zone["level"], 6)
@@ -433,6 +504,7 @@ def main():
         coin["trend_aligned"] = trend_aligned
         coin["trend_ema50_4h_approx"] = round(trend_ema, 8) if trend_ema else None
         coin["breakout_signal"] = bool(breakout_confirmed and volume_confirmed and (trend_aligned is not False))
+        coin["breakout_signal_high_confidence"] = bool(coin["breakout_signal"] and above_vwap)
         coin.pop("breakout_error", None)
 
         ext_result = check_extension_continuation(candles, zone, volume_confirmed, trend_aligned)
@@ -448,10 +520,13 @@ def main():
 
         append_signal_log(coin, {
             "breakout_signal": coin["breakout_signal"],
+            "breakout_signal_high_confidence": coin["breakout_signal_high_confidence"],
             "extension_continuation_signal": coin.get("extension_continuation_signal", False),
+            "pullback_entry_signal": coin["pullback_entry_signal"],
             "resistance_level": coin["resistance_level"],
             "volume_ratio": volume_ratio,
             "trend_aligned": trend_aligned,
+            "above_vwap": above_vwap,
         })
 
     save_retest_watchlist(retest_watchlist)
@@ -459,9 +534,9 @@ def main():
     RADAR_FLAGS_PATH.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
     signals = sum(1 for c in candidates if c.get("breakout_signal"))
     ext_signals = sum(1 for c in candidates if c.get("extension_continuation_signal"))
-    confirmed_retests = sum(1 for e in retest_watchlist.values() if e.get("retest_confirmed"))
-    print(f"Checked {len(candidates)} candidates: {signals} fresh breakouts, {ext_signals} extension "
-          f"continuations, {confirmed_retests} confirmed retests in the watchlist.")
+    pullback_signals = sum(1 for c in candidates if c.get("pullback_entry_signal"))
+    print(f"Checked {len(candidates)} candidates: {signals} breakouts, {ext_signals} extensions, "
+          f"{pullback_signals} pullback entries.")
 
 
 if __name__ == "__main__":
