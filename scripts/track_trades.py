@@ -1,32 +1,31 @@
 """
-Investment Radar - Trade Tracker (v3)
+Investment Radar - Trade Tracker (v4)
 ---------------------------------------
-v3 additions on top of v2:
-  - PENDING LIMIT ENTRIES: a trade can now start as status="pending" with
-    an entry price BELOW the current market price (a "buy the pullback"
-    setup, exactly what a limit order does). Each run, if the coin's 24h
-    low touches or goes below that entry price, the trade is marked
-    "filled" and moves to status="open" - from that point it's tracked
-    exactly like any other open trade. No trade sits "pending" forever
-    without you being told: filled_at/actual_entry get recorded the moment
-    it happens, and the next scheduled-task check will report it.
-  - MULTIPLE TARGETS: a trade can list several targets in ascending order
-    (targets: [t1, t2, t3]) instead of a single target_low. Each run checks
-    which NEW targets the 24h high has cleared and appends them to
-    targets_hit (with a timestamp) - the position is only considered fully
-    closed once the stop is hit OR the highest target is reached, so a
-    trade can accumulate multiple targets_hit before finally closing.
-    Old-style trades with only "target_low" still work unchanged (treated
-    as a single-target list).
-  - PARTIAL-THEN-STOPPED tracking: if the stop is hit after one or more
-    targets were already recorded, the trade closes as
-    "stopped_after_partial_targets" instead of a plain "stopped" - so a
-    trade that reached target 1 before reversing isn't scored identically
-    to one that went straight to the stop.
+CRITICAL FIX from v3: pending-order fills were checked against the coin's
+rolling 24h low (low_24h_usd from market-scan.json), which looks backward
+24 hours from THE MOMENT OF THE CHECK - not from when the order was placed.
+A price dip that happened BEFORE the pending order even existed could
+therefore be wrongly counted as "the market came down and filled my order
+after I placed it." This is a real, serious bug: it can report a fill that
+never actually happened in the order's real lifetime.
 
-Conservative rule unchanged: if the stop and a target both look touched in
-the same 24h window, the stop wins by default (flagged in a note) rather
-than assuming the better outcome - same discipline as v2.
+Fix: pending fills are now checked against data/price-history.json (our own
+timestamped 15-minute snapshots), filtered to ONLY points recorded strictly
+AFTER the order's created_at timestamp. The first run that sees a new
+pending trade (no created_at yet) just stamps created_at = now and does NOT
+fill it that same run - fill detection only begins from snapshots taken
+after that stamp, so no pre-existing price action can count.
+
+Trade-off: precision is limited to the ~15-minute snapshot interval (the
+same approximation already disclosed everywhere else in this system), and
+a coin needs to already be accumulating history (flagged before, or in the
+watchlist) for this to work - if data/price-history.json has no entries yet
+for that coin, the pending order simply won't fill until history starts
+accumulating for it (which happens automatically the moment it's flagged).
+
+v3 features preserved: multiple targets with targets_hit accumulation,
+stopped_after_partial_targets classification, old single target_low trades
+still supported.
 """
 import json
 from pathlib import Path
@@ -35,6 +34,7 @@ from datetime import datetime, timezone
 BASE_DIR = Path(__file__).resolve().parent.parent
 TRADES_PATH = BASE_DIR / "config" / "trades.json"
 SCAN_PATH = BASE_DIR / "data" / "market-scan.json"
+HISTORY_PATH = BASE_DIR / "data" / "price-history.json"
 SUMMARY_PATH = BASE_DIR / "data" / "performance-summary.json"
 
 
@@ -49,8 +49,6 @@ def build_price_lookup(scan: dict) -> dict:
 
 
 def get_targets(trade: dict) -> list:
-    """Supports both the new 'targets' list and the old single 'target_low'
-    field, always returned sorted ascending."""
     targets = trade.get("targets")
     if targets:
         return sorted(targets)
@@ -59,17 +57,38 @@ def get_targets(trade: dict) -> list:
     return []
 
 
-def check_pending(trade: dict, coin: dict) -> bool:
-    """Returns True if the trade was filled this run."""
+def check_pending(trade: dict, price_history: dict) -> bool:
+    """FIXED: only fills against price snapshots recorded strictly after the
+    order's created_at timestamp - never against a rolling 24h low that can
+    include price action from before the order existed.
+
+    Returns True if the trade was filled this run.
+    """
     entry = trade.get("entry")
-    low = coin.get("low_24h_usd")
-    if entry is None or low is None:
+    if entry is None:
         return False
-    if low <= entry:
-        now = datetime.now(timezone.utc).isoformat()
+
+    now_iso = datetime.now(timezone.utc).isoformat()
+
+    if "created_at" not in trade:
+        # First time we've seen this pending order - stamp it now and stop.
+        # We deliberately do NOT check for a fill on this same run: doing so
+        # would risk using a snapshot from the very same 15-min bucket that
+        # predates our own knowledge of the order, recreating the same class
+        # of bug this fix exists to close. Fill-checking starts next run.
+        trade["created_at"] = now_iso
+        return False
+
+    points = price_history.get(trade["asset_id"], [])
+    post_order_points = [
+        p for p in points
+        if p.get("t") and p.get("t") > trade["created_at"] and p.get("price") is not None
+    ]
+    hit = next((p for p in post_order_points if p["price"] <= entry), None)
+    if hit:
         trade["status"] = "open"
-        trade["filled_at"] = now
-        trade["actual_entry"] = entry  # paper-trade simplifying assumption: filled exactly at the limit price
+        trade["filled_at"] = hit["t"]
+        trade["actual_entry"] = entry
         return True
     return False
 
@@ -100,7 +119,7 @@ def check_open(trade: dict, coin: dict) -> None:
     )
 
     if stop_hit and newly_hit:
-        trade["status"] = "stopped_after_partial_targets" if len(trade["targets_hit"]) > len(newly_hit) or trade["targets_hit"] else "stopped"
+        trade["status"] = "stopped_after_partial_targets" if trade["targets_hit"] else "stopped"
         trade["exit_price"] = stop
         trade["date_closed"] = now
         trade["note"] = (
@@ -115,7 +134,6 @@ def check_open(trade: dict, coin: dict) -> None:
         trade["status"] = "closed_targets_complete"
         trade["exit_price"] = final_target
         trade["date_closed"] = now
-    # else: still open, possibly with newly_hit targets recorded but not fully closed
 
 
 def pct_return(trade: dict) -> float:
@@ -126,8 +144,7 @@ def pct_return(trade: dict) -> float:
     return round((exit_price - entry) / entry * 100, 2)
 
 
-CLOSED_STATUSES = ("closed_targets_complete", "stopped", "stopped_after_partial_targets",
-                   "target_hit")  # target_hit kept for backward compatibility with old records
+CLOSED_STATUSES = ("closed_targets_complete", "stopped", "stopped_after_partial_targets", "target_hit")
 
 
 def summarize(trades: list) -> dict:
@@ -164,21 +181,22 @@ def summarize(trades: list) -> dict:
 def main():
     data = load_json(TRADES_PATH, {"trades": []})
     scan = load_json(SCAN_PATH, {"coins": []})
+    price_history = load_json(HISTORY_PATH, {})
     lookup = build_price_lookup(scan)
 
     filled = 0
     changed = 0
     for trade in data.get("trades", []):
-        coin = lookup.get(trade.get("asset_id"))
-        if coin is None:
+        if trade.get("status") == "pending":
+            if check_pending(trade, price_history):
+                filled += 1
             continue
 
-        if trade.get("status") == "pending":
-            if check_pending(trade, coin):
-                filled += 1
-            continue  # don't also run open-trade checks the same run it filled
-
         if trade.get("status") != "open":
+            continue
+
+        coin = lookup.get(trade.get("asset_id"))
+        if coin is None:
             continue
 
         before = trade.get("status")
