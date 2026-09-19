@@ -1,14 +1,20 @@
 """
-Investment Radar - CoinGecko Market Scanner
---------------------------------------------
-Runs periodically via GitHub Actions (server-side, no API key needed).
-Writes two JSON files into data/:
+Investment Radar - CoinGecko Market Scanner (v2)
+--------------------------------------------------
+Adds on top of v1:
+  - A rolling price-history store per tracked coin (data/price-history.json),
+    used to compute RSI(14), EMA(9/21) and a rough ATR(14) ourselves, so Claude
+    doesn't need a manual TradingView screenshot just to get a directional read.
+  - A dynamic volume baseline (rolling average from that same history) so the
+    "unusual volume" flag compares a coin to ITS OWN normal activity, not a
+    fixed ratio that some coins naturally exceed all the time.
+  - A once-a-day category snapshot (data/categories.json) for a curated list of
+    sectors, so reverse-catalyst-mapping can look up category-mates instantly
+    instead of a fresh web search every time.
 
-  - market-scan.json : full raw snapshot (top 250 by market cap + always-include watchlist)
-  - radar-flags.json : curated shortlist of coins showing notable activity right now
-
-Claude reads radar-flags.json (small, fast) when asked to "run the radar",
-and can fall back to market-scan.json for the full picture if needed.
+Approximation notice: history points are 15-minute snapshots (price + rolling
+24h high/low), not true exchange candles. RSI/EMA/ATR computed from them are
+directional approximations, not a replacement for a real chart at decision time.
 """
 import json
 import time
@@ -18,23 +24,43 @@ from pathlib import Path
 from datetime import datetime, timezone
 
 BASE_URL = "https://api.coingecko.com/api/v3/coins/markets"
+CATEGORY_URL = "https://api.coingecko.com/api/v3/coins/markets"
 VS_CURRENCY = "usd"
-PER_PAGE = 250          # CoinGecko max per page
-PAGES = 1               # 1 page = top 250 by market cap (raise to 2 for top 500, etc.)
+PER_PAGE = 250
+PAGES = 1
 CONFIG_PATH = Path(__file__).resolve().parent.parent / "config" / "watchlist.json"
 DATA_DIR = Path(__file__).resolve().parent.parent / "data"
 
-# --- Flag thresholds: tune these over time based on what turns out useful ---
-FLAG_24H_PCT = 8.0          # |24h change| %
-FLAG_7D_PCT = 20.0          # |7d change| %
-FLAG_VOL_MCAP_RATIO = 0.5   # 24h volume / market cap (unusually high turnover)
-FLAG_REVERSAL_24H = 5.0     # used together with FLAG_REVERSAL_7D for reversal detection
+HISTORY_PATH = DATA_DIR / "price-history.json"
+INDICATORS_PATH = DATA_DIR / "indicators.json"
+CATEGORIES_PATH = DATA_DIR / "categories.json"
+
+MAX_HISTORY_POINTS = 500          # ~5 days at 15-min intervals
+MIN_POINTS_FOR_INDICATORS = 14    # RSI(14) minimum
+
+# Curated categories for reverse-catalyst mapping (kept small to respect the
+# free-tier monthly call budget). Refreshed once per ~20h, not every run.
+CATEGORIES_TO_TRACK = [
+    "privacy-coins",
+    "decentralized-exchange",
+    "liquid-staking-tokens",
+    "layer-1",
+    "meme-token",
+    "real-world-assets-rwa",
+    "artificial-intelligence",
+    "yield-farming",
+]
+
+FLAG_24H_PCT = 8.0
+FLAG_7D_PCT = 20.0
+FLAG_REVERSAL_24H = 5.0
 FLAG_REVERSAL_7D = 5.0
+UNUSUAL_VOLUME_MULTIPLE = 2.5   # current volume >= 2.5x its own rolling average
 
 
-def fetch_markets(params: dict) -> list:
-    url = BASE_URL + "?" + urllib.parse.urlencode(params)
-    req = urllib.request.Request(url, headers={"User-Agent": "investment-radar/1.0"})
+def fetch_json(url: str, params: dict) -> list:
+    full_url = url + "?" + urllib.parse.urlencode(params)
+    req = urllib.request.Request(full_url, headers={"User-Agent": "investment-radar/2.0"})
     with urllib.request.urlopen(req, timeout=30) as resp:
         return json.loads(resp.read().decode())
 
@@ -49,13 +75,12 @@ def fetch_top(per_page=PER_PAGE, pages=PAGES) -> list:
             "page": page,
             "price_change_percentage": "24h,7d",
         }
-        out.extend(fetch_markets(params))
-        time.sleep(1.5)  # stay well under the free-tier rate limit
+        out.extend(fetch_json(BASE_URL, params))
+        time.sleep(1.5)
     return out
 
 
 def fetch_watchlist(ids: list) -> list:
-    """Explicitly fetch coins that must always be tracked, even if outside top 250 (e.g. PAXG)."""
     if not ids:
         return []
     params = {
@@ -63,7 +88,7 @@ def fetch_watchlist(ids: list) -> list:
         "ids": ",".join(ids),
         "price_change_percentage": "24h,7d",
     }
-    return fetch_markets(params)
+    return fetch_json(BASE_URL, params)
 
 
 def merge_unique(*lists) -> list:
@@ -74,12 +99,144 @@ def merge_unique(*lists) -> list:
     return list(seen.values())
 
 
-def compute_flags(coin: dict) -> list:
+def load_json(path: Path, default):
+    if not path.exists():
+        return default
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return default
+
+
+# ---------- Price history + indicators ----------
+
+def update_history(history: dict, coin: dict, timestamp: str, always_track: set) -> None:
+    """Append a point for coins worth tracking: watchlist, currently flagged,
+    or already being tracked (keeps continuity once a coin becomes interesting)."""
+    cid = coin["id"]
+    should_track = (
+        cid in always_track
+        or cid in history
+        or coin.get("_will_flag", False)
+    )
+    if not should_track:
+        return
+    points = history.setdefault(cid, [])
+    points.append({
+        "t": timestamp,
+        "price": coin.get("current_price"),
+        "high_24h": coin.get("high_24h"),
+        "low_24h": coin.get("low_24h"),
+        "volume": coin.get("total_volume"),
+    })
+    if len(points) > MAX_HISTORY_POINTS:
+        del points[: len(points) - MAX_HISTORY_POINTS]
+
+
+def compute_rsi(prices: list, period: int = 14) -> float:
+    if len(prices) < period + 1:
+        return None
+    gains, losses = [], []
+    for i in range(1, len(prices)):
+        change = prices[i] - prices[i - 1]
+        gains.append(max(change, 0))
+        losses.append(max(-change, 0))
+    avg_gain = sum(gains[-period:]) / period
+    avg_loss = sum(losses[-period:]) / period
+    if avg_loss == 0:
+        return 100.0
+    rs = avg_gain / avg_loss
+    return round(100 - (100 / (1 + rs)), 2)
+
+
+def compute_ema(prices: list, period: int) -> float:
+    if len(prices) < period:
+        return None
+    k = 2 / (period + 1)
+    ema = sum(prices[:period]) / period
+    for p in prices[period:]:
+        ema = p * k + ema * (1 - k)
+    return round(ema, 8)
+
+
+def compute_atr(points: list, period: int = 14) -> float:
+    """Rough ATR using each point's rolling 24h high/low as a proxy for a bar's
+    range. Approximation only — not a substitute for true candle ATR."""
+    ranges = [
+        (p["high_24h"] - p["low_24h"])
+        for p in points
+        if p.get("high_24h") is not None and p.get("low_24h") is not None
+    ]
+    if len(ranges) < period:
+        return None
+    return round(sum(ranges[-period:]) / period, 8)
+
+
+def compute_volume_baseline(points: list) -> float:
+    vols = [p["volume"] for p in points if p.get("volume") is not None]
+    if len(vols) < 4:
+        return None
+    return sum(vols) / len(vols)
+
+
+def build_indicators(history: dict) -> dict:
+    result = {}
+    for cid, points in history.items():
+        if len(points) < MIN_POINTS_FOR_INDICATORS:
+            continue
+        prices = [p["price"] for p in points if p.get("price") is not None]
+        result[cid] = {
+            "rsi14": compute_rsi(prices, 14),
+            "ema9": compute_ema(prices, 9),
+            "ema21": compute_ema(prices, 21),
+            "atr14_approx": compute_atr(points, 14),
+            "volume_baseline_avg": compute_volume_baseline(points),
+            "n_points": len(points),
+            "note": "approximated from 15-min snapshots, not true candles",
+        }
+    return result
+
+
+# ---------- Categories (daily throttle) ----------
+
+def categories_stale(existing: dict, max_age_hours: float = 20.0) -> bool:
+    updated_at = existing.get("updated_at")
+    if not updated_at:
+        return True
+    try:
+        last = datetime.fromisoformat(updated_at)
+    except ValueError:
+        return True
+    age_hours = (datetime.now(timezone.utc) - last).total_seconds() / 3600
+    return age_hours >= max_age_hours
+
+
+def fetch_categories() -> dict:
+    mapping = {}
+    for category in CATEGORIES_TO_TRACK:
+        params = {
+            "vs_currency": VS_CURRENCY,
+            "category": category,
+            "order": "market_cap_desc",
+            "per_page": 50,
+            "page": 1,
+        }
+        try:
+            coins = fetch_json(CATEGORY_URL, params)
+            mapping[category] = [c["id"] for c in coins]
+        except Exception as exc:  # noqa: BLE001 - keep scan running even if one category fails
+            mapping[category] = {"error": str(exc)}
+        time.sleep(1.5)
+    return mapping
+
+
+# ---------- Flags ----------
+
+def compute_flags(coin: dict, volume_baseline: float) -> list:
     flags = []
     chg24 = coin.get("price_change_percentage_24h_in_currency")
     chg7d = coin.get("price_change_percentage_7d_in_currency")
     vol = coin.get("total_volume") or 0
-    mcap = coin.get("market_cap") or 0
 
     if chg24 is not None and abs(chg24) >= FLAG_24H_PCT:
         flags.append(f"حركة سعرية حادة خلال 24 ساعة ({chg24:.1f}%)")
@@ -87,8 +244,14 @@ def compute_flags(coin: dict) -> list:
     if chg7d is not None and abs(chg7d) >= FLAG_7D_PCT:
         flags.append(f"حركة سعرية حادة خلال 7 أيام ({chg7d:.1f}%)")
 
-    if mcap and vol / mcap >= FLAG_VOL_MCAP_RATIO:
-        flags.append(f"نشاط تداول غير عادي نسبة لحجم السوق (Vol/MCap={vol / mcap:.2f})")
+    if volume_baseline and volume_baseline > 0 and vol / volume_baseline >= UNUSUAL_VOLUME_MULTIPLE:
+        flags.append(
+            f"نشاط تداول غير عادي مقارنة بمتوسط العملة نفسها (x{vol / volume_baseline:.1f})"
+        )
+    elif volume_baseline is None:
+        mcap = coin.get("market_cap") or 0
+        if mcap and vol / mcap >= 0.5:
+            flags.append(f"نشاط تداول غير عادي نسبة لحجم السوق (Vol/MCap={vol / mcap:.2f}) [بدون خط أساس بعد]")
 
     if chg24 is not None and chg7d is not None:
         if chg24 >= FLAG_REVERSAL_24H and chg7d <= -FLAG_REVERSAL_7D:
@@ -99,12 +262,14 @@ def compute_flags(coin: dict) -> list:
     return flags
 
 
-def build_record(coin: dict, flags: list) -> dict:
-    return {
+def build_record(coin: dict, flags: list, indicators: dict) -> dict:
+    record = {
         "id": coin["id"],
         "symbol": coin["symbol"].upper(),
         "name": coin["name"],
         "price_usd": coin.get("current_price"),
+        "high_24h_usd": coin.get("high_24h"),
+        "low_24h_usd": coin.get("low_24h"),
         "change_24h_pct": coin.get("price_change_percentage_24h_in_currency"),
         "change_7d_pct": coin.get("price_change_percentage_7d_in_currency"),
         "volume_24h_usd": coin.get("total_volume"),
@@ -112,6 +277,10 @@ def build_record(coin: dict, flags: list) -> dict:
         "market_cap_rank": coin.get("market_cap_rank"),
         "flags": flags,
     }
+    ind = indicators.get(coin["id"])
+    if ind:
+        record["indicators"] = ind
+    return record
 
 
 def main():
@@ -126,8 +295,36 @@ def main():
     watchlist_coins = fetch_watchlist(watchlist_ids)
     all_coins = merge_unique(top_coins, watchlist_coins)
 
-    records = [build_record(c, compute_flags(c)) for c in all_coins]
+    # First pass: figure out which coins would be flagged (needed to decide
+    # what to add to price history) without a volume baseline yet.
+    for coin in all_coins:
+        prelim_flags = compute_flags(coin, volume_baseline=None)
+        coin["_will_flag"] = bool(prelim_flags)
+
+    history = load_json(HISTORY_PATH, {})
     timestamp = datetime.now(timezone.utc).isoformat()
+    always_track = set(watchlist_ids)
+    for coin in all_coins:
+        update_history(history, coin, timestamp, always_track)
+    HISTORY_PATH.write_text(json.dumps(history, ensure_ascii=False), encoding="utf-8")
+
+    indicators = build_indicators(history)
+    INDICATORS_PATH.write_text(json.dumps(indicators, ensure_ascii=False, indent=2), encoding="utf-8")
+
+    # Categories: refresh at most once per ~20h
+    existing_categories = load_json(CATEGORIES_PATH, {})
+    if categories_stale(existing_categories):
+        cat_mapping = fetch_categories()
+        categories_out = {"updated_at": timestamp, "categories": cat_mapping}
+        CATEGORIES_PATH.write_text(json.dumps(categories_out, ensure_ascii=False, indent=2), encoding="utf-8")
+
+    # Final pass: real flags using volume baseline from history
+    records = []
+    for coin in all_coins:
+        points = history.get(coin["id"], [])
+        baseline = compute_volume_baseline(points) if len(points) >= 4 else None
+        flags = compute_flags(coin, baseline)
+        records.append(build_record(coin, flags, indicators))
 
     full_snapshot = {"updated_at": timestamp, "count": len(records), "coins": records}
     (DATA_DIR / "market-scan.json").write_text(
@@ -142,7 +339,8 @@ def main():
         json.dumps(radar_flags, ensure_ascii=False, indent=2), encoding="utf-8"
     )
 
-    print(f"Scanned {len(records)} coins, {len(flagged)} flagged.")
+    print(f"Scanned {len(records)} coins, {len(flagged)} flagged, "
+          f"{len(indicators)} with computed indicators, history for {len(history)} coins.")
 
 
 if __name__ == "__main__":
