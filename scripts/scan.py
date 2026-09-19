@@ -1,42 +1,27 @@
 """
-Investment Radar - CoinGecko Market Scanner (v3)
+Investment Radar - CoinGecko Market Scanner (v4)
 --------------------------------------------------
-v3 changes from v2 (post-audit fixes):
-  - FIXED: radar-flags.json's "count" field now matches the actual length of
-    the saved "coins" array (was reporting the pre-truncation total, e.g.
-    71, while only 40 coins were actually saved - a real inconsistency).
-  - REMOVED: the ATR(14) approximation. It was computed from the difference
-    between consecutive rolling-24h high/low snapshots, which overlap so
-    heavily (each 15-min snapshot shares ~99% of the same 24h window as the
-    one before it) that the resulting number carries little real signal -
-    closer to noise than a genuine volatility read. Better to have no ATR
-    than a falsely precise-looking one.
-  - ADDED: BTC-relative "excess return" - every coin's 24h/7d move is now
-    compared against BTC's own move over the same window. A coin moving
-    +15% while BTC also moved +14% is just beta, not idiosyncratic strength;
-    a coin moving +15% while BTC moved +1% is a genuinely different signal.
-    Only the latter now earns the "outperformance" flag.
-  - CONSOLIDATED: the generic "sharp 24h move" flag is now suppressed when
-    the reversal flag already fires for the same 24h number, and the
-    reversal flag's own text now includes the actual percentages - so the
-    same underlying number isn't reported twice under two different labels.
+v4 additions (professional-trader improvements, no paid data sources):
+  - MARKET BREADTH: what % of the scanned universe is green right now.
+    A single coin's breakout means something different in a 90%-green
+    market (everything is up) vs a 15%-green market (this coin is a real
+    outlier). Written as market_breadth_pct_green on every snapshot.
+  - CATEGORY CLUSTERING WARNING: if 2+ flagged coins this run share a
+    tracked category (from categories.json), that's one sector move, not
+    N independent opportunities - same "don't count correlated signals as
+    independent" discipline used everywhere else. Reported as
+    category_clusters at the top level of radar-flags.json.
 
-Adds on top of v1 (still true in v3):
-  - A rolling price-history store per tracked coin (data/price-history.json),
-    used to compute RSI(14) and EMA(9/21) ourselves, so Claude doesn't need a
-    manual TradingView screenshot just to get a directional read.
-  - A dynamic volume baseline (rolling average from that same history) so the
-    "unusual volume" flag compares a coin to ITS OWN normal activity, not a
-    fixed ratio that some coins naturally exceed all the time.
-  - A once-a-day category snapshot (data/categories.json) for a curated list
-    of sectors, so reverse-catalyst-mapping can look up category-mates
-    instantly instead of a fresh web search every time.
+v3 changes (still present):
+  - FIXED radar-flags.json's "count" to match the actual saved array length.
+  - REMOVED the unreliable ATR(14) approximation.
+  - ADDED BTC-relative excess return per coin (beta filter).
+  - CONSOLIDATED reversal + sharp-move flags to avoid double-reporting the
+    same 24h number under two labels.
 
-Approximation notice: history points are 15-minute snapshots (price + rolling
-24h high/low), not true exchange candles. RSI/EMA computed from them are
-directional approximations over a ~short window (14 points = ~3.5 hours),
-NOT the same as RSI(14)/EMA(9,21) read off a 1H or 4H chart on TradingView -
-don't compare the two numbers directly.
+Approximation notice: history points are 15-minute snapshots, not true
+exchange candles. RSI/EMA computed from them are directional approximations
+over a short window, not the same as chart-read RSI(14)/EMA(9,21).
 """
 import json
 import time
@@ -60,8 +45,6 @@ CATEGORIES_PATH = DATA_DIR / "categories.json"
 MAX_HISTORY_POINTS = 500          # ~5 days at 15-min intervals
 MIN_POINTS_FOR_INDICATORS = 14    # RSI(14) minimum
 
-# Curated categories for reverse-catalyst mapping (kept small to respect the
-# free-tier monthly call budget). Refreshed once per ~20h, not every run.
 CATEGORIES_TO_TRACK = [
     "privacy-coins",
     "decentralized-exchange",
@@ -77,15 +60,13 @@ FLAG_24H_PCT = 8.0
 FLAG_7D_PCT = 20.0
 FLAG_REVERSAL_24H = 5.0
 FLAG_REVERSAL_7D = 5.0
-UNUSUAL_VOLUME_MULTIPLE = 2.5   # current volume >= 2.5x its own rolling average
-EXCESS_VS_BTC_PCT = 10.0        # a coin's 24h move must beat BTC's by this many
-                                 # percentage points to count as genuine outperformance,
-                                 # not just market-wide beta
+UNUSUAL_VOLUME_MULTIPLE = 2.5
+EXCESS_VS_BTC_PCT = 10.0
 
 
 def fetch_json(url: str, params: dict) -> list:
     full_url = url + "?" + urllib.parse.urlencode(params)
-    req = urllib.request.Request(full_url, headers={"User-Agent": "investment-radar/3.0"})
+    req = urllib.request.Request(full_url, headers={"User-Agent": "investment-radar/4.0"})
     with urllib.request.urlopen(req, timeout=30) as resp:
         return json.loads(resp.read().decode())
 
@@ -133,11 +114,7 @@ def load_json(path: Path, default):
         return default
 
 
-# ---------- Price history + indicators ----------
-
 def update_history(history: dict, coin: dict, timestamp: str, always_track: set) -> None:
-    """Append a point for coins worth tracking: watchlist, currently flagged,
-    or already being tracked (keeps continuity once a coin becomes interesting)."""
     cid = coin["id"]
     should_track = (
         cid in always_track
@@ -208,8 +185,6 @@ def build_indicators(history: dict) -> dict:
     return result
 
 
-# ---------- Categories (daily throttle) ----------
-
 def categories_stale(existing: dict, max_age_hours: float = 20.0) -> bool:
     updated_at = existing.get("updated_at")
     if not updated_at:
@@ -235,13 +210,11 @@ def fetch_categories() -> dict:
         try:
             coins = fetch_json(CATEGORY_URL, params)
             mapping[category] = [c["id"] for c in coins]
-        except Exception as exc:  # noqa: BLE001 - keep scan running even if one category fails
+        except Exception as exc:  # noqa: BLE001
             mapping[category] = {"error": str(exc)}
         time.sleep(1.5)
     return mapping
 
-
-# ---------- Flags ----------
 
 def compute_flags(coin: dict, volume_baseline: float, btc_chg24: float, btc_chg7d: float) -> list:
     flags = []
@@ -249,9 +222,6 @@ def compute_flags(coin: dict, volume_baseline: float, btc_chg24: float, btc_chg7
     chg7d = coin.get("price_change_percentage_7d_in_currency")
     vol = coin.get("total_volume") or 0
 
-    # reversal check first - if it fires, its own message carries the 24h
-    # number, so the generic "sharp 24h move" flag below is skipped to avoid
-    # reporting the same underlying number twice under two different labels
     reversal_added = False
     if chg24 is not None and chg7d is not None:
         if chg24 >= FLAG_REVERSAL_24H and chg7d <= -FLAG_REVERSAL_7D:
@@ -276,7 +246,6 @@ def compute_flags(coin: dict, volume_baseline: float, btc_chg24: float, btc_chg7
         if mcap and vol / mcap >= 0.5:
             flags.append(f"نشاط تداول غير عادي نسبة لحجم السوق (Vol/MCap={vol / mcap:.2f}) [بدون خط أساس بعد]")
 
-    # BTC-relative outperformance - only meaningful when we actually have BTC's numbers
     if chg24 is not None and btc_chg24 is not None:
         excess = chg24 - btc_chg24
         if abs(excess) >= EXCESS_VS_BTC_PCT and excess > 0:
@@ -312,6 +281,21 @@ def build_record(coin: dict, flags: list, indicators: dict, btc_chg24: float) ->
     return record
 
 
+def compute_category_clusters(flagged_coins: list, categories: dict) -> dict:
+    """For each tracked category, list which flagged coins (by symbol) belong
+    to it. Only categories with 2+ flagged members are returned - a single
+    flagged coin in a category isn't a cluster."""
+    coin_id_to_symbol = {c["id"]: c["symbol"] for c in flagged_coins}
+    clusters = {}
+    for category, ids in categories.items():
+        if not isinstance(ids, list):
+            continue  # skip categories that errored during fetch
+        members = [coin_id_to_symbol[cid] for cid in ids if cid in coin_id_to_symbol]
+        if len(members) >= 2:
+            clusters[category] = members
+    return clusters
+
+
 def main():
     DATA_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -324,14 +308,10 @@ def main():
     watchlist_coins = fetch_watchlist(watchlist_ids)
     all_coins = merge_unique(top_coins, watchlist_coins)
 
-    # BTC is always in the watchlist (config/watchlist.json), so this should
-    # normally be found; if not, excess-return calculations are simply skipped.
     btc = next((c for c in all_coins if c["id"] == "bitcoin"), None)
     btc_chg24 = btc.get("price_change_percentage_24h_in_currency") if btc else None
     btc_chg7d = btc.get("price_change_percentage_7d_in_currency") if btc else None
 
-    # First pass: figure out which coins would be flagged (needed to decide
-    # what to add to price history) without a volume baseline yet.
     for coin in all_coins:
         prelim_flags = compute_flags(coin, volume_baseline=None, btc_chg24=btc_chg24, btc_chg7d=btc_chg7d)
         coin["_will_flag"] = bool(prelim_flags)
@@ -346,14 +326,15 @@ def main():
     indicators = build_indicators(history)
     INDICATORS_PATH.write_text(json.dumps(indicators, ensure_ascii=False, indent=2), encoding="utf-8")
 
-    # Categories: refresh at most once per ~20h
     existing_categories = load_json(CATEGORIES_PATH, {})
     if categories_stale(existing_categories):
         cat_mapping = fetch_categories()
         categories_out = {"updated_at": timestamp, "categories": cat_mapping}
         CATEGORIES_PATH.write_text(json.dumps(categories_out, ensure_ascii=False, indent=2), encoding="utf-8")
+        current_categories = cat_mapping
+    else:
+        current_categories = existing_categories.get("categories", {})
 
-    # Final pass: real flags using volume baseline from history
     records = []
     for coin in all_coins:
         points = history.get(coin["id"], [])
@@ -361,7 +342,17 @@ def main():
         flags = compute_flags(coin, baseline, btc_chg24, btc_chg7d)
         records.append(build_record(coin, flags, indicators, btc_chg24))
 
-    full_snapshot = {"updated_at": timestamp, "count": len(records), "coins": records}
+    # market breadth - what fraction of the scanned universe is green right now
+    with_change = [r for r in records if r.get("change_24h_pct") is not None]
+    green = [r for r in with_change if r["change_24h_pct"] > 0]
+    market_breadth_pct_green = round(len(green) / len(with_change) * 100, 1) if with_change else None
+
+    full_snapshot = {
+        "updated_at": timestamp,
+        "count": len(records),
+        "market_breadth_pct_green": market_breadth_pct_green,
+        "coins": records,
+    }
     (DATA_DIR / "market-scan.json").write_text(
         json.dumps(full_snapshot, ensure_ascii=False, indent=2), encoding="utf-8"
     )
@@ -370,15 +361,21 @@ def main():
     flagged.sort(key=lambda r: len(r["flags"]), reverse=True)
     top_flagged = flagged[:40]
 
-    # FIX: count now matches the actual saved array length, not the
-    # pre-truncation total (was a real bug: could say e.g. 71 while only
-    # 40 coins were actually saved in "coins").
-    radar_flags = {"updated_at": timestamp, "count": len(top_flagged), "coins": top_flagged}
+    category_clusters = compute_category_clusters(top_flagged, current_categories)
+
+    radar_flags = {
+        "updated_at": timestamp,
+        "count": len(top_flagged),
+        "market_breadth_pct_green": market_breadth_pct_green,
+        "category_clusters": category_clusters,
+        "coins": top_flagged,
+    }
     (DATA_DIR / "radar-flags.json").write_text(
         json.dumps(radar_flags, ensure_ascii=False, indent=2), encoding="utf-8"
     )
 
     print(f"Scanned {len(records)} coins, {len(flagged)} flagged (saved top {len(top_flagged)}), "
+          f"breadth={market_breadth_pct_green}% green, {len(category_clusters)} category clusters, "
           f"{len(indicators)} with computed indicators, history for {len(history)} coins.")
 
 
