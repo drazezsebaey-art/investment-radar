@@ -1,10 +1,27 @@
 """
-Investment Radar - Resistance Breakout Check
+Investment Radar - Resistance Breakout Check (v2)
 ------------------------------------------------------------
 Runs after check_liquidity.py, only against coins already confirmed
 binance_listed == True in data/radar-flags.json (no point spending API
 calls on a structural breakout read for a coin we can't trade anyway -
 same "check the hard gate first" discipline as the Binance listing fix).
+
+v2 changes from v1 (post-audit fixes):
+  - FIXED: rotation instead of a fixed top-N-by-rank slice. v1 always
+    checked the SAME highest-ranked MAX_CANDIDATES_PER_RUN coins every run
+    (sorting by market_cap_rank is deterministic, so lower-ranked coins
+    were NEVER checked unless their rank improved) - this silently broke
+    the promise that "the rest get checked on later runs." v2 persists a
+    rotation offset in data/breakout-rotation-state.json and advances it
+    each run, so every Binance-listed candidate gets checked in turn over
+    successive runs.
+  - FIXED: volume confirmation was comparing one HOURLY data point against
+    a ~30-day average of hourly points (CoinGecko's market_chart returns
+    hourly granularity for any days value between 2 and 90, not daily as
+    the v1 code assumed) - a much noisier, different metric than intended.
+    v2 aggregates the hourly series into daily buckets first, drops the
+    final (likely partial/incomplete) day, and compares the latest COMPLETE
+    day's volume against the average of the prior complete days.
 
 WHAT THIS ADDS THAT THE BASE SCANNER CAN'T SEE:
 scan.py only ever compares two numbers (price now vs price N days ago).
@@ -24,9 +41,10 @@ concept, using CoinGecko's historical OHLC + volume data:
      must also have closed above (or very near) it - one lone candle
      poking through is not treated as a confirmed break.
 
-  3. VOLUME CONFIRMATION - the latest day's trading volume must be
-     noticeably above its recent daily average. A breakout on thin volume
-     is exactly the kind of false break this step exists to filter out.
+  3. VOLUME CONFIRMATION - the latest COMPLETE day's trading volume must be
+     noticeably above the average of the prior complete days. A breakout on
+     thin volume is exactly the kind of false break this step exists to
+     filter out.
 
 A coin only gets breakout_signal: true when ALL THREE agree. This is a
 first-pass heuristic (simple peak-clustering), not full chart-pattern
@@ -39,7 +57,7 @@ Fields added to each qualifying coin in radar-flags.json:
   resistance_touches: int - how many prior peaks clustered into this zone
   breakout_confirmed: bool - close-based break confirmed over 2 candles
   breakout_pct_above: float - how far the latest close sits above the zone
-  volume_ratio: float - latest day's volume / recent average daily volume
+  volume_ratio: float - latest complete day's volume / avg of prior complete days
   volume_confirmed: bool - true if volume_ratio >= VOLUME_CONFIRM_MULTIPLIER
   breakout_signal: bool - true only if breakout_confirmed AND volume_confirmed
 """
@@ -50,9 +68,12 @@ import urllib.error
 import urllib.parse
 from pathlib import Path
 from statistics import mean
+from datetime import datetime, timezone
+from collections import defaultdict
 
 DATA_DIR = Path(__file__).resolve().parent.parent / "data"
 RADAR_FLAGS_PATH = DATA_DIR / "radar-flags.json"
+ROTATION_STATE_PATH = DATA_DIR / "breakout-rotation-state.json"
 COINGECKO_BASE = "https://api.coingecko.com/api/v3"
 
 # --- tunable thresholds -----------------------------------------------
@@ -64,8 +85,8 @@ EXCLUDE_RECENT_CANDLES = 3      # candles reserved for the breakout itself, not 
 BREAKOUT_BUFFER_PCT = 0.3       # latest close must clear the zone by at least this % to count as a real break
 CONFIRM_CANDLES = 2             # this many of the most recent candles must have closed above the zone
 
-VOLUME_DAYS = 30                # history window for the volume average
-VOLUME_CONFIRM_MULTIPLIER = 1.3  # latest day's volume must be at least this many times the recent average
+VOLUME_DAYS = 30                # history window for the volume average (fetched hourly, aggregated to daily)
+VOLUME_CONFIRM_MULTIPLIER = 1.3  # latest complete day's volume must be at least this many times the recent average
 
 REQUEST_TIMEOUT = 20
 POLITE_DELAY = 7                # seconds between CoinGecko calls - GitHub Actions runners share IPs
@@ -76,9 +97,41 @@ POLITE_DELAY = 7                # seconds between CoinGecko calls - GitHub Actio
 MAX_RETRIES = 3                 # retries on HTTP 429 before giving up on that call
 RETRY_BACKOFF_BASE = 15         # seconds - first retry waits this long, then doubles each attempt
 
-MAX_CANDIDATES_PER_RUN = 10     # cap total coins checked per run (2 calls each = up to 20 calls,
-                                 # well inside a 15-minute cron window even at 7s spacing); prioritized
-                                 # by market_cap_rank so the most liquid/relevant names go first
+MAX_CANDIDATES_PER_RUN = 10     # coins checked per run (2 calls each = up to 20 calls, well inside
+                                 # a 15-minute cron window even at 7s spacing); WHICH 10 rotates each
+                                 # run (see load_rotation_offset/save_rotation_offset) so every
+                                 # Binance-listed candidate eventually gets checked, not just the
+                                 # same highest-ranked ones every time
+
+
+def load_rotation_offset() -> int:
+    if not ROTATION_STATE_PATH.exists():
+        return 0
+    try:
+        return json.loads(ROTATION_STATE_PATH.read_text(encoding="utf-8")).get("next_offset", 0)
+    except (json.JSONDecodeError, AttributeError):
+        return 0
+
+
+def save_rotation_offset(offset: int) -> None:
+    ROTATION_STATE_PATH.write_text(json.dumps({"next_offset": offset}), encoding="utf-8")
+
+
+def select_rotating_candidates(all_listed: list) -> list:
+    """Pick the next MAX_CANDIDATES_PER_RUN coins in rotation order (by a
+    stable sort on id, so the ordering doesn't shift just because a coin's
+    market_cap_rank wiggled), advancing the persisted offset each run so
+    every coin gets its turn over successive runs instead of the same
+    top-N being picked forever."""
+    if not all_listed:
+        return []
+    ordered = sorted(all_listed, key=lambda c: c["id"])  # stable, rank-independent order
+    n = len(ordered)
+    offset = load_rotation_offset() % n
+    # take MAX_CANDIDATES_PER_RUN starting at offset, wrapping around
+    candidates = [ordered[(offset + i) % n] for i in range(min(MAX_CANDIDATES_PER_RUN, n))]
+    save_rotation_offset((offset + len(candidates)) % n)
+    return candidates
 
 
 def fetch_json(url: str):
@@ -106,11 +159,24 @@ def fetch_ohlc(coin_id: str):
     return fetch_json(url)
 
 
-def fetch_daily_volumes(coin_id: str):
-    """Returns a list of (timestamp, volume) from market_chart, ascending by time."""
+def fetch_hourly_volumes(coin_id: str):
+    """Returns [(timestamp_ms, volume), ...] from market_chart - CoinGecko
+    returns HOURLY granularity for any days value between 2 and 90, not
+    daily, so this must be aggregated before use (see daily_volumes_from_hourly)."""
     url = f"{COINGECKO_BASE}/coins/{coin_id}/market_chart?{urllib.parse.urlencode({'vs_currency': 'usd', 'days': VOLUME_DAYS})}"
     data = fetch_json(url)
     return data.get("total_volumes", [])
+
+
+def daily_volumes_from_hourly(hourly: list):
+    """Aggregate hourly (timestamp_ms, volume) points into daily totals,
+    ascending by date. The result's last entry is likely a partial day
+    (today, still in progress) - callers should drop it before averaging."""
+    daily = defaultdict(float)
+    for ts_ms, vol in hourly:
+        day = datetime.fromtimestamp(ts_ms / 1000, tz=timezone.utc).date()
+        daily[day] += vol or 0
+    return [daily[d] for d in sorted(daily.keys())]
 
 
 def find_resistance_zone(candles: list):
@@ -123,7 +189,6 @@ def find_resistance_zone(candles: list):
     history = candles[:-EXCLUDE_RECENT_CANDLES]
     highs = [c[2] for c in history]
 
-    # 1) find local peaks
     peaks = []
     for i in range(PEAK_NEIGHBORS, len(highs) - PEAK_NEIGHBORS):
         window = highs[i - PEAK_NEIGHBORS: i + PEAK_NEIGHBORS + 1]
@@ -133,7 +198,6 @@ def find_resistance_zone(candles: list):
     if len(peaks) < MIN_TOUCHES:
         return None
 
-    # 2) cluster peaks within TOUCH_TOLERANCE_PCT of each other
     peaks.sort()
     clusters = []
     current_cluster = [peaks[0]]
@@ -145,8 +209,6 @@ def find_resistance_zone(candles: list):
             current_cluster = [p]
     clusters.append(current_cluster)
 
-    # 3) keep clusters with enough touches, pick the one with the most touches
-    #    (ties broken by picking the highest zone - the most recently relevant ceiling)
     valid = [c for c in clusters if len(c) >= MIN_TOUCHES]
     if not valid:
         return None
@@ -161,7 +223,6 @@ def check_breakout(candles: list, zone: dict):
     recent = candles[-CONFIRM_CANDLES:]
     closes_above = all(c[4] >= level * (1 + BREAKOUT_BUFFER_PCT / 100) for c in recent)
 
-    # make sure this is a genuine break, not a level the price was already above
     pre_break = candles[-(CONFIRM_CANDLES + 3):-CONFIRM_CANDLES]
     was_below = any(c[4] < level for c in pre_break) if pre_break else True
 
@@ -170,13 +231,15 @@ def check_breakout(candles: list, zone: dict):
     return closes_above and was_below, pct_above
 
 
-def check_volume(volumes: list):
-    """Latest day's volume vs the average of the preceding days."""
-    if len(volumes) < 5:
+def check_volume(hourly_volumes: list):
+    """Latest COMPLETE day's total volume vs the average of the prior
+    complete days (aggregated from hourly points - see daily_volumes_from_hourly)."""
+    daily = daily_volumes_from_hourly(hourly_volumes)
+    if len(daily) < 6:  # need at least a few complete days plus the partial one to drop
         return None, False
-    values = [v[1] for v in volumes]
-    latest = values[-1]
-    baseline = values[:-1]
+    complete_days = daily[:-1]  # drop the last (likely partial/in-progress) day
+    latest = complete_days[-1]
+    baseline = complete_days[:-1]
     avg = mean(baseline) if baseline else 0
     if avg == 0:
         return None, False
@@ -193,22 +256,17 @@ def main():
     coins = data.get("coins", [])
 
     all_listed = [c for c in coins if c.get("binance_listed") is True]
-    # prioritize by market_cap_rank (lower = more relevant/liquid); unranked coins go last
-    all_listed.sort(key=lambda c: c.get("market_cap_rank") or 10**9)
-    candidates = all_listed[:MAX_CANDIDATES_PER_RUN]
-    skipped_for_cap = len(all_listed) - len(candidates)
+    candidates = select_rotating_candidates(all_listed)
 
     print(f"Running breakout check on {len(candidates)} of {len(all_listed)} Binance-listed candidates "
-          f"(skipping {len(coins) - len(all_listed)} not listed/unchecked"
-          + (f", {skipped_for_cap} deferred to next run due to the per-run cap" if skipped_for_cap else "")
-          + ").")
+          f"(rotating selection - skipping {len(coins) - len(all_listed)} not listed/unchecked).")
 
     for coin in candidates:
         coin_id = coin["id"]
         try:
             candles = fetch_ohlc(coin_id)
             time.sleep(POLITE_DELAY)
-            volumes = fetch_daily_volumes(coin_id)
+            hourly_volumes = fetch_hourly_volumes(coin_id)
             time.sleep(POLITE_DELAY)
         except Exception as exc:  # noqa: BLE001 - never let one bad coin kill the run
             coin["breakout_signal"] = None
@@ -222,7 +280,7 @@ def main():
             continue
 
         breakout_confirmed, pct_above = check_breakout(candles, zone)
-        volume_ratio, volume_confirmed = check_volume(volumes)
+        volume_ratio, volume_confirmed = check_volume(hourly_volumes)
 
         coin["resistance_level"] = round(zone["level"], 6)
         coin["resistance_touches"] = zone["touches"]
