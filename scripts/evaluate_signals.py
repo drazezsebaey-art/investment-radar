@@ -69,10 +69,14 @@ def evaluate_entry(entry: dict, price_lookup: dict, now: datetime) -> bool:
 
 
 def classify(entry: dict) -> str:
+    if entry.get("breakout_signal_high_confidence"):
+        return "breakout_signal_high_confidence"
     if entry.get("breakout_signal"):
         return "breakout_signal"
     if entry.get("extension_continuation_signal"):
         return "extension_continuation_signal"
+    if entry.get("pullback_entry_signal"):
+        return "pullback_entry_signal"
     return "no_signal_baseline"
 
 
@@ -89,7 +93,11 @@ def summarize(log: list) -> dict:
             "avg_change_pct": round(mean(changes), 2) if changes else None,
         }
 
-    groups = {"breakout_signal": [], "extension_continuation_signal": [], "no_signal_baseline": []}
+    groups = {
+        "breakout_signal": [], "breakout_signal_high_confidence": [],
+        "extension_continuation_signal": [], "pullback_entry_signal": [],
+        "no_signal_baseline": [],
+    }
     for e in evaluated:
         groups[classify(e)].append(e)
 
@@ -98,10 +106,12 @@ def summarize(log: list) -> dict:
         "note": (
             "n under ~30 per group is not statistically meaningful yet - directional only. "
             "no_signal_baseline is what an average logged coin does with no signal at all, "
-            "for comparison against the two signal types."
+            "for comparison against the signal types."
         ),
         "breakout_signal": stats_for(groups["breakout_signal"]),
+        "breakout_signal_high_confidence": stats_for(groups["breakout_signal_high_confidence"]),
         "extension_continuation_signal": stats_for(groups["extension_continuation_signal"]),
+        "pullback_entry_signal": stats_for(groups["pullback_entry_signal"]),
         "no_signal_baseline": stats_for(groups["no_signal_baseline"]),
     }
 
