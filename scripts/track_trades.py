@@ -255,15 +255,19 @@ def summarize(trades: list) -> dict:
     }
 
 
-def main():
-    data = load_json(TRADES_PATH, {"trades": []})
-    scan = load_json(SCAN_PATH, {"coins": []})
-    price_history = load_json(HISTORY_PATH, {})
-    lookup = build_price_lookup(scan)
+SHADOW_TRADES_PATH = BASE_DIR / "data" / "shadow-trades.json"
+SHADOW_SUMMARY_PATH = BASE_DIR / "data" / "shadow-performance-summary.json"
 
+
+def process_trades(trades: list, lookup: dict, price_history: dict) -> tuple:
+    """v9: pulled out of main() so the exact same fill/stop/target logic can
+    run over data/shadow-trades.json too (signals that fired but didn't
+    clear AUTO_TRADE_MIN_SCORE) without duplicating it - shadow trades are
+    tracked with identical rigor, just written to a separate summary file
+    that never mixes into the real performance-summary.json."""
     filled = 0
     changed = 0
-    for trade in data.get("trades", []):
+    for trade in trades:
         if trade.get("status") == "pending":
             if check_pending(trade, price_history):
                 filled += 1
@@ -281,6 +285,16 @@ def main():
         check_open(trade, coin, price_history)
         if trade.get("status") != before or len(trade.get("targets_hit", [])) != n_targets_before:
             changed += 1
+    return filled, changed
+
+
+def main():
+    data = load_json(TRADES_PATH, {"trades": []})
+    scan = load_json(SCAN_PATH, {"coins": []})
+    price_history = load_json(HISTORY_PATH, {})
+    lookup = build_price_lookup(scan)
+
+    filled, changed = process_trades(data.get("trades", []), lookup, price_history)
 
     TRADES_PATH.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
 
@@ -290,6 +304,21 @@ def main():
     print(f"Checked {len(data.get('trades', []))} trades: {filled} pending order(s) filled, "
           f"{changed} status/target change(s) this run. "
           f"Overall win rate so far: {summary['overall']['win_rate_pct']}")
+
+    # v9: shadow trades - same logic, separate file, never touches the real summary above
+    shadow_data = load_json(SHADOW_TRADES_PATH, {"trades": []})
+    if shadow_data.get("trades"):
+        s_filled, s_changed = process_trades(shadow_data["trades"], lookup, price_history)
+        SHADOW_TRADES_PATH.write_text(json.dumps(shadow_data, ensure_ascii=False, indent=2), encoding="utf-8")
+        shadow_summary = summarize(shadow_data.get("trades", []))
+        shadow_summary["note"] = (
+            "These are signals that fired but did NOT clear AUTO_TRADE_MIN_SCORE, tracked with the "
+            "same rigor as real paper trades purely to answer 'what would have happened if we'd said "
+            "yes anyway' - never counted toward the real performance-summary.json above. " + shadow_summary["note"]
+        )
+        SHADOW_SUMMARY_PATH.write_text(json.dumps(shadow_summary, ensure_ascii=False, indent=2), encoding="utf-8")
+        print(f"Shadow log: checked {len(shadow_data['trades'])} rejected-signal trades: "
+              f"{s_filled} filled, {s_changed} changed this run.")
 
 
 if __name__ == "__main__":
