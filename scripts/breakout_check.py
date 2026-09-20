@@ -129,6 +129,46 @@ UNLOCK_WARNING_DAYS = 14                 # flag if a KNOWN upcoming unlock lands
 KNOWN_UNLOCKS_PATH = Path(__file__).resolve().parent.parent / "config" / "known-unlocks.json"
 
 REQUEST_TIMEOUT = 20
+
+# --- v7: descending-trendline break detection ------------------------------
+# Rationale (from Azez's own repeated pattern observation on 2026-09-20,
+# FARTCOIN): breakout_signal/resistance_level above only catch a FLAT
+# horizontal level breaking. A lot of real setups are downtrend -> price
+# breaks above a DIAGONAL trendline connecting a series of lower highs ->
+# holds above it for a while -> then launches. This adds that as its own,
+# separate signal so it can be watched and entry-timed independently of
+# the horizontal-breakout logic above.
+TRENDLINE_WATCHLIST_PATH = DATA_DIR / "trendline-watchlist.json"
+TRENDLINE_SWING_LOOKBACK_CANDLES = 5        # a candle counts as a swing high if it's the max of the K candles either side
+TRENDLINE_MAX_CANDLES = 90                  # only look for swing highs within this recent window
+TRENDLINE_MIN_SWING_POINTS = 2              # need at least this many genuinely descending highs to fit a line
+TRENDLINE_CONFIRMATION_CANDLES = 3          # consecutive candles that must CLOSE above the frozen line before "confirmed"
+TRENDLINE_MAX_AGE_DAYS = 10                 # stop watching a break this old if it never confirms
+
+# --- v8: composite confidence score, ATR-based stop, Binance derivatives --
+# Rationale (from the 2026-09-20 design review): a single pass/fail signal
+# hides how MUCH evidence actually supports it. This replaces "did it fire"
+# with a 0-100 score built from weighted components, where weights start
+# conservative and are meant to be recalibrated later from agent-room-log.json
+# once there's enough sample size (see calibrate_weights.py note below) -
+# NOT frozen opinions. Our own backtest-results.json showed the raw
+# breakout_signal itself barely beats a coin flip (53.3% vs 51.2% baseline),
+# which is why it gets a LOW starting weight here, not a high one.
+INDICATOR_WEIGHTS_PATH = Path(__file__).resolve().parent.parent / "config" / "indicator-weights.json"
+DEFAULT_INDICATOR_WEIGHTS = {
+    "breakout_or_trendline_signal": 15,   # weak standalone edge per our own backtest - counted, not trusted alone
+    "volume_confirmed": 10,
+    "trend_aligned": 10,
+    "idiosyncratic_quality": 25,          # the single factor that actually flipped OP and ARB's verdicts
+    "oi_price_confirms": 15,              # new v8: real demand vs short-covering (the exact ARB gap)
+    "funding_not_crowded": 10,            # new v8: penalizes chasing an already one-sided, crowded trade
+    "deep_drawdown_penalty": -10,
+    "unlock_risk_penalty": -10,
+}
+ATR_PERIOD = 14
+BINANCE_FAPI_BASE = "https://fapi.binance.com/fapi/v1"
+FUNDING_REVERSAL_LOOKBACK = 6                # how many recent 8h funding readings to check for a sign flip
+OI_BASELINE_PATH = DATA_DIR / "oi-baseline.json"
 POLITE_DELAY = 7
 MAX_RETRIES = 3
 RETRY_BACKOFF_BASE = 15
@@ -265,6 +305,266 @@ def check_unlock_risk(coin_id: str, unlocks_config: dict, now: datetime):
     upcoming.sort(key=lambda t: t[0])
     _, nearest = upcoming[0]
     return True, nearest["date"], nearest.get("pct_of_supply")
+
+
+# ---------- v7: descending-trendline break detection ----------
+
+def find_swing_highs(candles: list, k: int = TRENDLINE_SWING_LOOKBACK_CANDLES) -> list:
+    """Returns [(index, high_price), ...] for local maxima - a candle whose
+    high is >= every candle's high within k positions on either side."""
+    highs = [c[2] for c in candles]
+    n = len(highs)
+    swings = []
+    for i in range(k, n - k):
+        window = highs[i - k:i + k + 1]
+        if highs[i] == max(window):
+            swings.append((i, highs[i]))
+    return swings
+
+
+def fit_descending_trendline(candles: list):
+    """Finds the most recent run of genuinely descending swing highs (each
+    earlier one higher than the next, moving forward in time - the exact
+    'connect the lower highs' line a chart reader draws by hand) within
+    TRENDLINE_MAX_CANDLES, and fits a least-squares line through them in
+    (candle_index, price) space. Returns (slope, intercept, n_points) or
+    None if there's no qualifying descending sequence. Pure-python least
+    squares (no numpy dependency, consistent with the rest of this file)."""
+    recent = candles[-TRENDLINE_MAX_CANDLES:]
+    offset = len(candles) - len(recent)
+    swings = find_swing_highs(recent)
+    if len(swings) < TRENDLINE_MIN_SWING_POINTS:
+        return None
+    descending = [swings[-1]]
+    for point in reversed(swings[:-1]):
+        if point[1] > descending[-1][1]:
+            descending.append(point)
+    descending.reverse()
+    if len(descending) < TRENDLINE_MIN_SWING_POINTS:
+        return None
+    xs = [p[0] + offset for p in descending]
+    ys = [p[1] for p in descending]
+    mean_x, mean_y = mean(xs), mean(ys)
+    denom = sum((x - mean_x) ** 2 for x in xs)
+    if denom == 0:
+        return None
+    slope = sum((x - mean_x) * (y - mean_y) for x, y in zip(xs, ys)) / denom
+    if slope >= 0:
+        return None  # fitted line isn't actually descending - reject rather than force it
+    intercept = mean_y - slope * mean_x
+    return slope, intercept, len(xs)
+
+
+def load_trendline_watchlist() -> dict:
+    if not TRENDLINE_WATCHLIST_PATH.exists():
+        return {}
+    try:
+        return json.loads(TRENDLINE_WATCHLIST_PATH.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return {}
+
+
+def save_trendline_watchlist(watchlist: dict) -> None:
+    TRENDLINE_WATCHLIST_PATH.write_text(json.dumps(watchlist, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
+def check_trendline_break(watchlist: dict, coin: dict, candles: list) -> dict:
+    """v7: detects a break of a descending trendline connecting recent lower
+    highs, and requires the price to hold above the SAME frozen line for
+    TRENDLINE_CONFIRMATION_CANDLES candles before flagging it confirmed - a
+    single-candle poke above the line isn't enough (this is the 'استقرار
+    فوقه' / hold-above-it step Azez asked for, not just the initial cross)."""
+    coin_id = coin["id"]
+    last_index = len(candles) - 1
+    last_close = candles[-1][4]
+    result = {
+        "trendline_break_detected": False,
+        "trendline_break_confirmed_signal": False,
+        "trendline_candles_held": 0,
+        "trendline_value_now": None,
+    }
+
+    entry = watchlist.get(coin_id)
+    if entry and entry.get("status") in ("watching", "confirmed"):
+        slope, intercept = entry["slope"], entry["intercept"]
+        projected_now = slope * last_index + intercept
+        result["trendline_value_now"] = round(projected_now, 8)
+        held = 0
+        for idx in range(entry["detected_at_index"], len(candles)):
+            proj = slope * idx + intercept
+            if candles[idx][4] > proj * (1 + BREAKOUT_BUFFER_PCT / 100):
+                held += 1
+            else:
+                held = 0  # a real close back below the line resets the count - no partial credit
+        entry["candles_held"] = held
+        result["trendline_break_detected"] = True
+        result["trendline_candles_held"] = held
+        detected_at = datetime.fromisoformat(entry["detected_at"])
+        age_days = (datetime.now(timezone.utc) - detected_at).total_seconds() / 86400
+        if age_days > TRENDLINE_MAX_AGE_DAYS or last_close < projected_now * (1 - BREAKOUT_BUFFER_PCT / 100):
+            entry["status"] = "invalidated"
+        elif held >= TRENDLINE_CONFIRMATION_CANDLES:
+            entry["status"] = "confirmed"
+            result["trendline_break_confirmed_signal"] = True
+        return result
+
+    fit = fit_descending_trendline(candles)
+    if not fit:
+        return result
+    slope, intercept, n_points = fit
+    projected_now = slope * last_index + intercept
+    result["trendline_value_now"] = round(projected_now, 8)
+    if last_close > projected_now * (1 + BREAKOUT_BUFFER_PCT / 100):
+        watchlist[coin_id] = {
+            "symbol": coin["symbol"], "slope": slope, "intercept": intercept,
+            "n_swing_points": n_points, "detected_at": datetime.now(timezone.utc).isoformat(),
+            "detected_at_index": last_index, "candles_held": 1, "status": "watching",
+        }
+        result["trendline_break_detected"] = True
+        result["trendline_candles_held"] = 1
+    return result
+
+
+# ---------- v8: ATR-based dynamic stop ----------
+
+def compute_atr(candles: list, period: int = ATR_PERIOD):
+    """Average True Range over the last `period` candles - a per-asset
+    volatility measure, so a naturally volatile coin gets a proportionally
+    wider stop than a calm one, instead of everyone getting the same fixed
+    percentage (the exact gap identified manually across the ARB/ZAMA/AVAX
+    reviews). Returns (atr_value, atr_pct_of_price) or (None, None) if
+    there isn't enough history."""
+    if len(candles) < period + 1:
+        return None, None
+    true_ranges = []
+    for i in range(1, len(candles)):
+        high, low = candles[i][2], candles[i][3]
+        prev_close = candles[i - 1][4]
+        tr = max(high - low, abs(high - prev_close), abs(low - prev_close))
+        true_ranges.append(tr)
+    recent_tr = true_ranges[-period:]
+    atr = mean(recent_tr)
+    last_close = candles[-1][4]
+    atr_pct = (atr / last_close * 100) if last_close else None
+    return round(atr, 8), round(atr_pct, 3) if atr_pct is not None else None
+
+
+# ---------- v8: Binance derivatives (funding rate + open interest) ----------
+
+def to_binance_symbol(symbol: str) -> str:
+    return f"{symbol.upper()}USDT"
+
+
+def fetch_funding_rate_history(symbol: str, limit: int = FUNDING_REVERSAL_LOOKBACK):
+    """Public endpoint, no API key needed. Returns a list of recent funding
+    rates (most recent last), or None if this symbol has no futures market
+    on Binance (most small-caps don't - that's expected, not an error)."""
+    params = {"symbol": to_binance_symbol(symbol), "limit": limit}
+    url = f"{BINANCE_FAPI_BASE}/fundingRate?{urllib.parse.urlencode(params)}"
+    try:
+        data = fetch_json(url)
+        if not isinstance(data, list) or not data:
+            return None
+        return [float(d["fundingRate"]) for d in data]
+    except Exception:  # noqa: BLE001 - no futures market for this symbol is routine, not exceptional
+        return None
+
+
+def fetch_open_interest_now(symbol: str):
+    params = {"symbol": to_binance_symbol(symbol)}
+    url = f"{BINANCE_FAPI_BASE}/openInterest?{urllib.parse.urlencode(params)}"
+    try:
+        data = fetch_json(url)
+        return float(data["openInterest"])
+    except Exception:  # noqa: BLE001
+        return None
+
+
+def detect_funding_reversal(rates: list):
+    """v8: a sign flip in recent funding (negative -> positive or vice
+    versa) often marks a crowded side getting squeezed/unwound - flagged
+    as a TIMING note, not a hard gate (see the funding-vs-OI design
+    discussion: these two answer related-but-different questions about
+    positioning, so both are kept as separate, moderate-weight inputs)."""
+    if not rates or len(rates) < 2:
+        return False, None
+    signs = [1 if r > 0 else (-1 if r < 0 else 0) for r in rates if r != 0]
+    if len(signs) < 2:
+        return False, None
+    reversed_ = signs[-1] != signs[0] and signs[-1] != 0
+    return reversed_, rates[-1]
+
+
+def assess_oi_price_relationship(price_change_24h_pct, oi_now, oi_baseline):
+    """v8: the exact check that was missing when we manually diagnosed ARB's
+    27% rally as partly short-covering rather than pure new demand.
+    price up + OI up = new money entering (healthier). price up + OI flat/
+    down = existing shorts closing (less durable). Needs a stored baseline
+    OI from a prior run to compare against - returns None (not "unhealthy")
+    until we have two data points, since one snapshot alone can't divergence-check."""
+    if oi_now is None or oi_baseline is None or price_change_24h_pct is None:
+        return None
+    oi_change_pct = (oi_now - oi_baseline) / oi_baseline * 100 if oi_baseline else None
+    if oi_change_pct is None:
+        return None
+    if price_change_24h_pct > 1 and oi_change_pct > 1:
+        return "confirms"       # price and OI both rising - new demand
+    if price_change_24h_pct > 1 and oi_change_pct < -1:
+        return "diverges"       # price up, OI down - short covering, not new demand
+    return "neutral"
+
+
+def load_oi_baseline() -> dict:
+    if not OI_BASELINE_PATH.exists():
+        return {}
+    try:
+        return json.loads(OI_BASELINE_PATH.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return {}
+
+
+def save_oi_baseline(baseline: dict) -> None:
+    OI_BASELINE_PATH.write_text(json.dumps(baseline, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
+# ---------- v8: composite confidence score ----------
+
+def load_indicator_weights() -> dict:
+    if not INDICATOR_WEIGHTS_PATH.exists():
+        return dict(DEFAULT_INDICATOR_WEIGHTS)
+    try:
+        loaded = json.loads(INDICATOR_WEIGHTS_PATH.read_text(encoding="utf-8"))
+        merged = dict(DEFAULT_INDICATOR_WEIGHTS)
+        merged.update(loaded)  # a partial file only overrides the keys it names
+        return merged
+    except json.JSONDecodeError:
+        return dict(DEFAULT_INDICATOR_WEIGHTS)
+
+
+def compute_confidence_score(coin: dict, weights: dict) -> dict:
+    """v8: replaces bare pass/fail with a transparent 0-100 score plus the
+    breakdown that produced it (never just the number - the breakdown is
+    what makes this auditable instead of a black box). Weights are starting
+    priors documented in DEFAULT_INDICATOR_WEIGHTS, meant to be recalibrated
+    later from real outcomes in agent-room-log.json, not treated as final."""
+    breakdown = {}
+    has_signal = bool(coin.get("breakout_signal") or coin.get("trendline_break_confirmed_signal"))
+    breakdown["breakout_or_trendline_signal"] = weights["breakout_or_trendline_signal"] if has_signal else 0
+    breakdown["volume_confirmed"] = weights["volume_confirmed"] if coin.get("volume_confirmed") else 0
+    breakdown["trend_aligned"] = weights["trend_aligned"] if coin.get("trend_aligned") else 0
+    breakdown["idiosyncratic_quality"] = (
+        weights["idiosyncratic_quality"] if coin.get("signal_quality") == "idiosyncratic" else 0
+    )
+    oi_rel = coin.get("oi_price_relationship")
+    breakdown["oi_price_confirms"] = weights["oi_price_confirms"] if oi_rel == "confirms" else 0
+    funding_reversed = coin.get("funding_reversal_detected")
+    breakdown["funding_not_crowded"] = 0 if funding_reversed else weights["funding_not_crowded"]
+    breakdown["deep_drawdown_penalty"] = weights["deep_drawdown_penalty"] if coin.get("deep_drawdown_flag") else 0
+    breakdown["unlock_risk_penalty"] = weights["unlock_risk_penalty"] if coin.get("unlock_risk_flag") else 0
+
+    score = sum(breakdown.values())
+    score = max(0, min(100, score))
+    return {"confidence_score": score, "confidence_breakdown": breakdown}
 
 
 def daily_volumes_from_hourly(hourly: list):
@@ -534,6 +834,9 @@ def queue_signal_log(pending: list, coin: dict, record: dict) -> None:
         "ath_change_pct": coin.get("ath_change_pct"),
         "deep_drawdown_flag": coin.get("deep_drawdown_flag"),
         "unlock_risk_flag": coin.get("unlock_risk_flag"),
+        "trendline_break_detected": coin.get("trendline_break_detected"),
+        "trendline_break_confirmed_signal": coin.get("trendline_break_confirmed_signal"),
+        "trendline_candles_held": coin.get("trendline_candles_held"),
         "_coin_ref": coin,  # temporary - resolved to cluster_wide_signal/signal_quality in flush_signal_log
         "evaluated": False,
     })
@@ -550,6 +853,11 @@ def flush_signal_log(pending: list) -> None:
         coin_ref = entry.pop("_coin_ref")
         entry["cluster_wide_signal"] = coin_ref.get("cluster_wide_signal")
         entry["signal_quality"] = coin_ref.get("signal_quality")
+        entry["confidence_score"] = coin_ref.get("confidence_score")
+        entry["confidence_breakdown"] = coin_ref.get("confidence_breakdown")
+        entry["atr_pct_of_price"] = coin_ref.get("atr_pct_of_price")
+        entry["oi_price_relationship"] = coin_ref.get("oi_price_relationship")
+        entry["funding_reversal_detected"] = coin_ref.get("funding_reversal_detected")
         log.append(entry)
     if len(log) > SIGNAL_LOG_MAX_ENTRIES:
         log = log[-SIGNAL_LOG_MAX_ENTRIES:]
@@ -575,6 +883,9 @@ def main():
     # v6: fetched/loaded once per run, reused for every candidate below
     btc_closes = fetch_btc_closes()
     unlocks_config = load_known_unlocks()
+    trendline_watchlist = load_trendline_watchlist()
+    oi_baseline = load_oi_baseline()
+    indicator_weights = load_indicator_weights()
     now = datetime.now(timezone.utc)
     pending_log_entries = []
 
@@ -614,6 +925,11 @@ def main():
             coin["deep_drawdown_flag"] = None
 
         # v6: known-unlock proximity (lightweight fundamental red flag #2)
+        # v7: descending-trendline break detection (independent of the horizontal breakout logic above)
+        if candles:
+            tl_result = check_trendline_break(trendline_watchlist, coin, candles)
+            coin.update(tl_result)
+
         unlock_flag, unlock_date, unlock_pct = check_unlock_risk(coin_id, unlocks_config, now)
         coin["unlock_risk_flag"] = unlock_flag
         coin["next_known_unlock_date"] = unlock_date
@@ -682,6 +998,29 @@ def main():
         if coin.get("extension_continuation_signal"):
             add_to_retest_watchlist(retest_watchlist, coin, ext_result["fib_extension_1272"], "extension")
 
+        # v8: ATR-based volatility/stop sizing - free, uses candles already in memory
+        atr_value, atr_pct = compute_atr(candles)
+        coin["atr_value"] = atr_value
+        coin["atr_pct_of_price"] = atr_pct
+
+        # v8: Binance derivatives - only worth the extra calls for coins that
+        # actually fired something; most small-caps have no futures market
+        # there anyway, which is a routine None result, not an error.
+        has_any_signal = coin["breakout_signal"] or coin.get("extension_continuation_signal") or coin.get("pullback_entry_signal")
+        funding_rates = fetch_funding_rate_history(coin["symbol"]) if has_any_signal else None
+        oi_now = fetch_open_interest_now(coin["symbol"]) if has_any_signal else None
+        if funding_rates or oi_now is not None:
+            time.sleep(POLITE_DELAY)
+        reversed_, latest_funding = detect_funding_reversal(funding_rates) if funding_rates else (False, None)
+        coin["funding_reversal_detected"] = reversed_
+        coin["latest_funding_rate"] = latest_funding
+        coin["open_interest_now"] = oi_now
+        coin["oi_price_relationship"] = assess_oi_price_relationship(
+            coin.get("change_24h_pct"), oi_now, oi_baseline.get(coin["id"], {}).get("oi")
+        )
+        if oi_now is not None:
+            oi_baseline[coin["id"]] = {"oi": oi_now, "ts": datetime.now(timezone.utc).isoformat()}
+
         queue_signal_log(pending_log_entries, coin, {
             "breakout_signal": coin["breakout_signal"],
             "breakout_signal_high_confidence": coin["breakout_signal_high_confidence"],
@@ -696,15 +1035,25 @@ def main():
     # v6: cluster-wide detection - only knowable after every candidate in this
     # run has been checked. A coin only gets a signal_quality label if it
     # actually fired something (no point labeling non-signals).
-    fired = [c for c in candidates if c.get("breakout_signal") or c.get("extension_continuation_signal")]
+    fired = [c for c in candidates if c.get("breakout_signal") or c.get("extension_continuation_signal")
+             or c.get("trendline_break_confirmed_signal")]
     is_cluster_run = len(fired) >= CLUSTER_SIGNAL_THRESHOLD
     for coin in fired:
         coin["cluster_wide_signal"] = is_cluster_run
         high_corr = (coin.get("btc_correlation_7d") or 0) >= HIGH_CORRELATION_THRESHOLD
         coin["signal_quality"] = "beta_driven_or_cluster" if (is_cluster_run or high_corr) else "idiosyncratic"
 
+    # v8: composite confidence score - only meaningful once signal_quality is
+    # known (right above), which is only knowable after the full-run cluster
+    # check, hence why this runs here rather than inside the per-coin loop.
+    for coin in fired:
+        score_result = compute_confidence_score(coin, indicator_weights)
+        coin.update(score_result)
+
     flush_signal_log(pending_log_entries)
     save_retest_watchlist(retest_watchlist)
+    save_trendline_watchlist(trendline_watchlist)
+    save_oi_baseline(oi_baseline)
 
     RADAR_FLAGS_PATH.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
     signals = sum(1 for c in candidates if c.get("breakout_signal"))
