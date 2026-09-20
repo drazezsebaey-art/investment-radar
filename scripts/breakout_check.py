@@ -166,6 +166,8 @@ DEFAULT_INDICATOR_WEIGHTS = {
     "unlock_risk_penalty": -10,
 }
 ATR_PERIOD = 14
+LIQUIDITY_STOP_BUFFER_ATR_MULT = 0.5     # push the stop this many ATRs past the obvious level
+LIQUIDITY_STOP_MIN_BUFFER_PCT = 0.3      # ...or at least this % of price, whichever is bigger (for low-volatility coins where 0.5*ATR would be tiny)
 BINANCE_FAPI_BASE = "https://fapi.binance.com/fapi/v1"
 FUNDING_REVERSAL_LOOKBACK = 6                # how many recent 8h funding readings to check for a sign flip
 OI_BASELINE_PATH = DATA_DIR / "oi-baseline.json"
@@ -447,6 +449,28 @@ def compute_atr(candles: list, period: int = ATR_PERIOD):
     last_close = candles[-1][4]
     atr_pct = (atr / last_close * 100) if last_close else None
     return round(atr, 8), round(atr_pct, 3) if atr_pct is not None else None
+
+
+def compute_liquidity_buffered_stop(reference_level: float, atr_value, direction: str = "long"):
+    """v8.1 (defensive application of the 'everyone's stop sits at the
+    obvious level' idea, per Azez's 2026-09-20 discussion): rather than
+    placing a stop exactly AT a support/trendline/swing level - where the
+    crowd's stops are also clustered and get hunted first - this pushes it
+    a bit further away by whichever is bigger: half an ATR, or a small
+    minimum percentage (the latter matters for low-volatility coins where
+    0.5*ATR would round to almost nothing). This only changes WHERE the
+    stop sits relative to a level we already compute (resistance_level,
+    trendline_value_now, etc.) - it doesn't invent a new entry signal,
+    which is deliberately deferred until sweep detection can be backtested
+    (see the offensive-application discussion - not implemented yet)."""
+    if reference_level is None or atr_value is None:
+        return None
+    pct_buffer = reference_level * (LIQUIDITY_STOP_MIN_BUFFER_PCT / 100)
+    atr_buffer = atr_value * LIQUIDITY_STOP_BUFFER_ATR_MULT
+    buffer = max(pct_buffer, atr_buffer)
+    if direction == "long":
+        return round(reference_level - buffer, 8)
+    return round(reference_level + buffer, 8)
 
 
 # ---------- v8: Binance derivatives (funding rate + open interest) ----------
@@ -858,6 +882,8 @@ def flush_signal_log(pending: list) -> None:
         entry["atr_pct_of_price"] = coin_ref.get("atr_pct_of_price")
         entry["oi_price_relationship"] = coin_ref.get("oi_price_relationship")
         entry["funding_reversal_detected"] = coin_ref.get("funding_reversal_detected")
+        entry["suggested_stop_resistance_based"] = coin_ref.get("suggested_stop_resistance_based")
+        entry["suggested_stop_trendline_based"] = coin_ref.get("suggested_stop_trendline_based")
         log.append(entry)
     if len(log) > SIGNAL_LOG_MAX_ENTRIES:
         log = log[-SIGNAL_LOG_MAX_ENTRIES:]
@@ -1002,6 +1028,19 @@ def main():
         atr_value, atr_pct = compute_atr(candles)
         coin["atr_value"] = atr_value
         coin["atr_pct_of_price"] = atr_pct
+
+        # v8.1: defensive liquidity-buffer stop - pushes the stop past the
+        # obvious level (resistance turned support, or the trendline) instead
+        # of sitting exactly on it where the crowd's stops also cluster.
+        # Computed against BOTH reference levels when available since a
+        # trendline break and a horizontal breakout can suggest different
+        # stops - the coin then carries both, not a single forced choice.
+        coin["suggested_stop_resistance_based"] = compute_liquidity_buffered_stop(
+            coin.get("resistance_level"), atr_value, "long"
+        )
+        coin["suggested_stop_trendline_based"] = compute_liquidity_buffered_stop(
+            coin.get("trendline_value_now"), atr_value, "long"
+        )
 
         # v8: Binance derivatives - only worth the extra calls for coins that
         # actually fired something; most small-caps have no futures market
