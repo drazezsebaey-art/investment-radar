@@ -100,12 +100,35 @@ def check_pending(trade: dict, price_history: dict) -> bool:
     return False
 
 
-def check_open(trade: dict, coin: dict) -> None:
-    low = coin.get("low_24h_usd")
-    high = coin.get("high_24h_usd")
+def check_open(trade: dict, coin: dict, price_history: dict) -> None:
+    """v5 FIX (caught by Azez, 2026-09-20): this was still using the coin's
+    raw rolling low_24h_usd/high_24h_usd to test stop/target hits - the
+    EXACT same bug class the v4 fix closed for pending-order fills, just
+    left open here. A price touch from BEFORE the trade was even filled
+    could sit inside that 24h window and get wrongly counted as "the stop/
+    target got hit after I opened this position." Fixed the same way: only
+    price-history.json snapshots recorded strictly after the trade's own
+    fill time count. If no such snapshot exists yet (this run is the first
+    one after the fill), falls back to the coin's single current spot price
+    only - never the 24h window, which is exactly what caused the bug."""
     stop = trade.get("stop")
     targets = get_targets(trade)
     now = datetime.now(timezone.utc).isoformat()
+
+    since = trade.get("filled_at") or trade.get("created_at") or trade.get("date_opened")
+    points = price_history.get(trade["asset_id"], [])
+    post_fill_points = [
+        p for p in points
+        if p.get("t") and since and p.get("t") > since and p.get("price") is not None
+    ]
+    if post_fill_points:
+        low = min(p["price"] for p in post_fill_points)
+        high = max(p["price"] for p in post_fill_points)
+    else:
+        # No snapshot recorded yet strictly after the fill - use only the
+        # coin's current spot price, not the rolling 24h window.
+        current = coin.get("price_usd")
+        low = high = current
 
     trade.setdefault("targets_hit", [])
     already_hit = {t["target"] for t in trade["targets_hit"]}
@@ -255,7 +278,7 @@ def main():
 
         before = trade.get("status")
         n_targets_before = len(trade.get("targets_hit", []))
-        check_open(trade, coin)
+        check_open(trade, coin, price_history)
         if trade.get("status") != before or len(trade.get("targets_hit", [])) != n_targets_before:
             changed += 1
 
