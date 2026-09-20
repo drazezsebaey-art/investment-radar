@@ -169,7 +169,7 @@ DEFAULT_INDICATOR_WEIGHTS = {
 ATR_PERIOD = 14
 LIQUIDITY_STOP_BUFFER_ATR_MULT = 0.5     # push the stop this many ATRs past the obvious level
 LIQUIDITY_STOP_MIN_BUFFER_PCT = 0.3      # ...or at least this % of price, whichever is bigger (for low-volatility coins where 0.5*ATR would be tiny)
-BINANCE_FAPI_BASE = "https://fapi.binance.com/fapi/v1"
+BYBIT_API_BASE = "https://api.bybit.com/v5/market"  # v12: switched from Binance (fapi.binance.com), which returns HTTP 451 for GitHub Actions' IP ranges - confirmed via the v11 diagnostic logging Azez ran
 FUNDING_REVERSAL_LOOKBACK = 6                # how many recent 8h funding readings to check for a sign flip
 OI_BASELINE_PATH = DATA_DIR / "oi-baseline.json"
 POLITE_DELAY = 7
@@ -496,43 +496,47 @@ def compute_liquidity_buffered_stop(reference_level: float, atr_value, direction
 
 # ---------- v8: Binance derivatives (funding rate + open interest) ----------
 
-def to_binance_symbol(symbol: str) -> str:
+def to_exchange_symbol(symbol: str) -> str:
     return f"{symbol.upper()}USDT"
 
 
 def fetch_funding_rate_history(symbol: str, limit: int = FUNDING_REVERSAL_LOOKBACK):
-    """Public endpoint, no API key needed. Returns a list of recent funding
-    rates (most recent last), or None if this symbol has no futures market
-    on Binance (most small-caps don't - that's expected, not an error).
-
-    v11 diagnostic note: data/oi-baseline.json has come back completely
-    empty across many runs where large-cap coins with real Binance futures
-    markets (ARB, APT, etc.) fired signals - that's NOT what "no futures
-    market for this symbol" should look like, so something else is likely
-    failing (a probable one: Binance blocking GitHub Actions' IP ranges
-    with a 451 or similar). The bare except below used to hide which case
-    this actually is - now it prints the real exception so the next run's
-    Actions log settles it instead of guessing."""
-    params = {"symbol": to_binance_symbol(symbol), "limit": limit}
-    url = f"{BINANCE_FAPI_BASE}/fundingRate?{urllib.parse.urlencode(params)}"
+    """v12: switched from Binance to Bybit's public v5 market API - Binance's
+    fapi.binance.com returns HTTP 451 for GitHub Actions' IP ranges (confirmed
+    via the v11 diagnostic logging: every single fetch failed with 451, not
+    a routine "no futures market" case). Bybit's public market-data
+    endpoints don't carry that block. Returns a list of recent funding
+    rates in chronological order (oldest first, most recent last, matching
+    what detect_funding_reversal expects), or None if this symbol has no
+    linear perpetual market on Bybit or the request otherwise fails."""
+    params = {"category": "linear", "symbol": to_exchange_symbol(symbol), "limit": limit}
+    url = f"{BYBIT_API_BASE}/funding/history?{urllib.parse.urlencode(params)}"
     try:
         data = fetch_json(url)
-        if not isinstance(data, list) or not data:
+        rows = (data.get("result") or {}).get("list") or []
+        if not rows:
             return None
-        return [float(d["fundingRate"]) for d in data]
+        # Bybit returns most-recent-first; reverse to oldest-first for our convention
+        rows = list(reversed(rows))
+        return [float(r["fundingRate"]) for r in rows]
     except Exception as exc:  # noqa: BLE001
-        print(f"  [diagnostic] Binance funding-rate fetch failed for {symbol}: {type(exc).__name__}: {exc}")
+        print(f"  [diagnostic] Bybit funding-rate fetch failed for {symbol}: {type(exc).__name__}: {exc}")
         return None
 
 
 def fetch_open_interest_now(symbol: str):
-    params = {"symbol": to_binance_symbol(symbol)}
-    url = f"{BINANCE_FAPI_BASE}/openInterest?{urllib.parse.urlencode(params)}"
+    """v12: Bybit equivalent of the old Binance open-interest call - see
+    fetch_funding_rate_history's docstring for why the switch happened."""
+    params = {"category": "linear", "symbol": to_exchange_symbol(symbol), "intervalTime": "5min", "limit": 1}
+    url = f"{BYBIT_API_BASE}/open-interest?{urllib.parse.urlencode(params)}"
     try:
         data = fetch_json(url)
-        return float(data["openInterest"])
+        rows = (data.get("result") or {}).get("list") or []
+        if not rows:
+            return None
+        return float(rows[0]["openInterest"])
     except Exception as exc:  # noqa: BLE001
-        print(f"  [diagnostic] Binance open-interest fetch failed for {symbol}: {type(exc).__name__}: {exc}")
+        print(f"  [diagnostic] Bybit open-interest fetch failed for {symbol}: {type(exc).__name__}: {exc}")
         return None
 
 
