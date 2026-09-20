@@ -174,7 +174,11 @@ OI_BASELINE_PATH = DATA_DIR / "oi-baseline.json"
 POLITE_DELAY = 7
 MAX_RETRIES = 3
 RETRY_BACKOFF_BASE = 15
-MAX_CANDIDATES_PER_RUN = 10
+# v9: raised from 10 - each extra candidate costs ~2-3 CoinGecko calls (+1
+# Binance pair for fired signals only), so at POLITE_DELAY=7s the run grows
+# from ~2-3min to ~4-5min at 16. Kept below 20 to leave headroom under
+# CoinGecko's free-tier rate limit rather than pushing it to the edge.
+MAX_CANDIDATES_PER_RUN = 16
 
 
 def load_rotation_offset() -> int:
