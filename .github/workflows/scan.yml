@@ -26,6 +26,9 @@ jobs:
 
       - name: Check resistance breakouts + fibonacci extensions + retests (rotating)
         run: python scripts/breakout_check.py
+      - name: Auto paper trades + shadow log
+        run: python scripts/auto_paper_trade.py
+        
 
       - name: Check open trades against latest prices + update performance summary
         run: python scripts/track_trades.py
