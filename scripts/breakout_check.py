@@ -142,7 +142,8 @@ TRENDLINE_WATCHLIST_PATH = DATA_DIR / "trendline-watchlist.json"
 TRENDLINE_SWING_LOOKBACK_CANDLES = 5        # a candle counts as a swing high if it's the max of the K candles either side
 TRENDLINE_MAX_CANDLES = 90                  # only look for swing highs within this recent window
 TRENDLINE_MIN_SWING_POINTS = 2              # need at least this many genuinely descending highs to fit a line
-TRENDLINE_CONFIRMATION_CANDLES = 3          # consecutive candles that must CLOSE above the frozen line before "confirmed"
+TRENDLINE_CONFIRMATION_CANDLES = 2          # v10: total candles (not necessarily consecutive) that must CLOSE above the frozen line before "confirmed" - lowered from 3
+TRENDLINE_INVALIDATION_CONSECUTIVE = 2      # v10: a REAL breakdown back below needs this many CONSECUTIVE closes below the line - a single dip/wick doesn't erase progress
 TRENDLINE_MAX_AGE_DAYS = 10                 # stop watching a break this old if it never confirms
 
 # --- v8: composite confidence score, ATR-based stop, Binance derivatives --
@@ -375,11 +376,22 @@ def save_trendline_watchlist(watchlist: dict) -> None:
 
 
 def check_trendline_break(watchlist: dict, coin: dict, candles: list) -> dict:
-    """v7: detects a break of a descending trendline connecting recent lower
-    highs, and requires the price to hold above the SAME frozen line for
-    TRENDLINE_CONFIRMATION_CANDLES candles before flagging it confirmed - a
-    single-candle poke above the line isn't enough (this is the 'استقرار
-    فوقه' / hold-above-it step Azez asked for, not just the initial cross)."""
+    """v10 (refined from v7 per Azez's 2026-09-20 feedback): confirmation and
+    invalidation are now two SEPARATE counters instead of one all-or-nothing
+    streak. Rationale: a single wick/dip back below a freshly-broken
+    trendline is normal noise, not proof the break failed - resetting all
+    progress to zero on one such candle (the old v7 behavior) was too
+    strict and could erase a genuinely good break over one brief pullback.
+    - trendline_candles_held: CUMULATIVE count of every candle (not
+      necessarily consecutive) that closed above the frozen line since
+      detection - confirmation only needs TRENDLINE_CONFIRMATION_CANDLES
+      of these total, so a single dip and recovery still counts both
+      "above" candles toward it.
+    - consecutive closes BELOW the line are tracked separately and only
+      invalidate the whole watch entry once they reach
+      TRENDLINE_INVALIDATION_CONSECUTIVE in a row - a real reversal back
+      under the line, not a single poke.
+    """
     coin_id = coin["id"]
     last_index = len(candles) - 1
     last_close = candles[-1][4]
@@ -395,19 +407,24 @@ def check_trendline_break(watchlist: dict, coin: dict, candles: list) -> dict:
         slope, intercept = entry["slope"], entry["intercept"]
         projected_now = slope * last_index + intercept
         result["trendline_value_now"] = round(projected_now, 8)
-        held = 0
+
+        held = 0                # cumulative candles closed above the line - never resets on a dip
+        consecutive_below = 0   # resets to 0 the moment a candle closes back above
         for idx in range(entry["detected_at_index"], len(candles)):
             proj = slope * idx + intercept
             if candles[idx][4] > proj * (1 + BREAKOUT_BUFFER_PCT / 100):
                 held += 1
+                consecutive_below = 0
             else:
-                held = 0  # a real close back below the line resets the count - no partial credit
+                consecutive_below += 1
+
         entry["candles_held"] = held
         result["trendline_break_detected"] = True
         result["trendline_candles_held"] = held
         detected_at = datetime.fromisoformat(entry["detected_at"])
         age_days = (datetime.now(timezone.utc) - detected_at).total_seconds() / 86400
-        if age_days > TRENDLINE_MAX_AGE_DAYS or last_close < projected_now * (1 - BREAKOUT_BUFFER_PCT / 100):
+
+        if age_days > TRENDLINE_MAX_AGE_DAYS or consecutive_below >= TRENDLINE_INVALIDATION_CONSECUTIVE:
             entry["status"] = "invalidated"
         elif held >= TRENDLINE_CONFIRMATION_CANDLES:
             entry["status"] = "confirmed"
@@ -486,7 +503,16 @@ def to_binance_symbol(symbol: str) -> str:
 def fetch_funding_rate_history(symbol: str, limit: int = FUNDING_REVERSAL_LOOKBACK):
     """Public endpoint, no API key needed. Returns a list of recent funding
     rates (most recent last), or None if this symbol has no futures market
-    on Binance (most small-caps don't - that's expected, not an error)."""
+    on Binance (most small-caps don't - that's expected, not an error).
+
+    v11 diagnostic note: data/oi-baseline.json has come back completely
+    empty across many runs where large-cap coins with real Binance futures
+    markets (ARB, APT, etc.) fired signals - that's NOT what "no futures
+    market for this symbol" should look like, so something else is likely
+    failing (a probable one: Binance blocking GitHub Actions' IP ranges
+    with a 451 or similar). The bare except below used to hide which case
+    this actually is - now it prints the real exception so the next run's
+    Actions log settles it instead of guessing."""
     params = {"symbol": to_binance_symbol(symbol), "limit": limit}
     url = f"{BINANCE_FAPI_BASE}/fundingRate?{urllib.parse.urlencode(params)}"
     try:
@@ -494,7 +520,8 @@ def fetch_funding_rate_history(symbol: str, limit: int = FUNDING_REVERSAL_LOOKBA
         if not isinstance(data, list) or not data:
             return None
         return [float(d["fundingRate"]) for d in data]
-    except Exception:  # noqa: BLE001 - no futures market for this symbol is routine, not exceptional
+    except Exception as exc:  # noqa: BLE001
+        print(f"  [diagnostic] Binance funding-rate fetch failed for {symbol}: {type(exc).__name__}: {exc}")
         return None
 
 
@@ -504,7 +531,8 @@ def fetch_open_interest_now(symbol: str):
     try:
         data = fetch_json(url)
         return float(data["openInterest"])
-    except Exception:  # noqa: BLE001
+    except Exception as exc:  # noqa: BLE001
+        print(f"  [diagnostic] Binance open-interest fetch failed for {symbol}: {type(exc).__name__}: {exc}")
         return None
 
 
@@ -570,14 +598,29 @@ def load_indicator_weights() -> dict:
 
 
 def compute_confidence_score(coin: dict, weights: dict) -> dict:
-    """v8: replaces bare pass/fail with a transparent 0-100 score plus the
-    breakdown that produced it (never just the number - the breakdown is
-    what makes this auditable instead of a black box). Weights are starting
-    priors documented in DEFAULT_INDICATOR_WEIGHTS, meant to be recalibrated
-    later from real outcomes in agent-room-log.json, not treated as final."""
+    """v11 (was v8): replaces bare pass/fail with a transparent 0-100 score
+    plus the breakdown that produced it (never just the number - the
+    breakdown is what makes this auditable instead of a black box). Weights
+    are starting priors documented in DEFAULT_INDICATOR_WEIGHTS, meant to be
+    recalibrated later from real outcomes in agent-room-log.json, not
+    treated as final.
+
+    v11 change: extension_continuation_signal now earns HALF of
+    breakout_or_trendline_signal's weight instead of zero - every fired
+    signal reviewed so far has been an extension (not a fresh breakout or
+    a confirmed trendline break), which meant this component was always
+    0 for every real candidate, not because the signal was worthless but
+    because full credit was reserved for a fresher signal type. An
+    extension is real, weaker evidence - not zero evidence."""
     breakdown = {}
-    has_signal = bool(coin.get("breakout_signal") or coin.get("trendline_break_confirmed_signal"))
-    breakdown["breakout_or_trendline_signal"] = weights["breakout_or_trendline_signal"] if has_signal else 0
+    has_full_signal = bool(coin.get("breakout_signal") or coin.get("trendline_break_confirmed_signal"))
+    has_extension_only = bool(coin.get("extension_continuation_signal")) and not has_full_signal
+    if has_full_signal:
+        breakdown["breakout_or_trendline_signal"] = weights["breakout_or_trendline_signal"]
+    elif has_extension_only:
+        breakdown["breakout_or_trendline_signal"] = round(weights["breakout_or_trendline_signal"] / 2)
+    else:
+        breakdown["breakout_or_trendline_signal"] = 0
     breakdown["volume_confirmed"] = weights["volume_confirmed"] if coin.get("volume_confirmed") else 0
     breakdown["trend_aligned"] = weights["trend_aligned"] if coin.get("trend_aligned") else 0
     breakdown["idiosyncratic_quality"] = (
