@@ -1,21 +1,21 @@
 {
-  "generated_at": "2026-09-19T17:58:09Z",
+  "generated_at": "2026-09-20T05:48:08Z",
   "note": "Tests the resistance+breakout logic ONLY (no volume/trend/VWAP confirmation - see script docstring for why). n under ~30 is directional only, not conclusive. overall_buy_and_hold_avg_pct is the simple average of each coin's buy-and-hold return over the same window - a baseline to judge whether the simulated signal beats 'doing nothing but holding', not a signal-weighted comparison.",
   "ohlc_days": 30,
   "forward_window_candles": 12,
   "overall": {
     "simulated_breakout": {
-      "n": 60,
-      "pct_positive": 53.3,
-      "avg_change_pct": 5.44
+      "n": 59,
+      "pct_positive": 55.9,
+      "avg_change_pct": 5.91
     },
     "no_signal_baseline": {
       "n": 165,
-      "pct_positive": 48.5,
-      "avg_change_pct": 1.69
+      "pct_positive": 49.7,
+      "avg_change_pct": 1.28
     }
   },
-  "overall_buy_and_hold_avg_pct": 39.91,
+  "overall_buy_and_hold_avg_pct": 30.41,
   "per_coin": {
     "aave": {
       "simulated_breakout": {
@@ -24,24 +24,24 @@
         "avg_change_pct": -1.06
       },
       "no_signal_baseline": {
-        "n": 12,
-        "pct_positive": 50.0,
-        "avg_change_pct": 0.98
+        "n": 13,
+        "pct_positive": 53.8,
+        "avg_change_pct": 0.96
       },
-      "buy_and_hold_pct": 47.16
+      "buy_and_hold_pct": 30.27
     },
     "avalanche-2": {
       "simulated_breakout": {
-        "n": 5,
+        "n": 6,
         "pct_positive": 100.0,
-        "avg_change_pct": 3.05
+        "avg_change_pct": 5.94
       },
       "no_signal_baseline": {
         "n": 13,
-        "pct_positive": 61.5,
-        "avg_change_pct": 1.15
+        "pct_positive": 53.8,
+        "avg_change_pct": 0.88
       },
-      "buy_and_hold_pct": 32.4
+      "buy_and_hold_pct": 27.98
     },
     "bitcoin": {
       "simulated_breakout": {
@@ -52,22 +52,22 @@
       "no_signal_baseline": {
         "n": 13,
         "pct_positive": 38.5,
-        "avg_change_pct": 0.1
+        "avg_change_pct": 0.01
       },
-      "buy_and_hold_pct": 12.34
+      "buy_and_hold_pct": 5.5
     },
     "ethereum": {
       "simulated_breakout": {
-        "n": 3,
+        "n": 1,
         "pct_positive": 0.0,
-        "avg_change_pct": -0.99
+        "avg_change_pct": -1.34
       },
       "no_signal_baseline": {
         "n": 13,
         "pct_positive": 46.2,
-        "avg_change_pct": 0.37
+        "avg_change_pct": 0.2
       },
-      "buy_and_hold_pct": 13.71
+      "buy_and_hold_pct": 9.14
     },
     "injective-protocol": {
       "simulated_breakout": {
@@ -76,11 +76,11 @@
         "avg_change_pct": 16.45
       },
       "no_signal_baseline": {
-        "n": 13,
-        "pct_positive": 46.2,
-        "avg_change_pct": 3.48
+        "n": 12,
+        "pct_positive": 41.7,
+        "avg_change_pct": 1.53
       },
-      "buy_and_hold_pct": 57.75
+      "buy_and_hold_pct": 55.33
     },
     "near": {
       "simulated_breakout": {
@@ -89,11 +89,11 @@
         "avg_change_pct": 19.48
       },
       "no_signal_baseline": {
-        "n": 13,
-        "pct_positive": 61.5,
-        "avg_change_pct": 7.54
+        "n": 11,
+        "pct_positive": 63.6,
+        "avg_change_pct": 3.55
       },
-      "buy_and_hold_pct": 109.88
+      "buy_and_hold_pct": 82.81
     },
     "optimism": {
       "simulated_breakout": {
@@ -103,10 +103,10 @@
       },
       "no_signal_baseline": {
         "n": 13,
-        "pct_positive": 46.2,
-        "avg_change_pct": 1.79
+        "pct_positive": 38.5,
+        "avg_change_pct": 1.94
       },
-      "buy_and_hold_pct": 33.22
+      "buy_and_hold_pct": 25.94
     },
     "pax-gold": {
       "simulated_breakout": {
@@ -116,10 +116,10 @@
       },
       "no_signal_baseline": {
         "n": 13,
-        "pct_positive": 23.1,
-        "avg_change_pct": -0.31
+        "pct_positive": 30.8,
+        "avg_change_pct": -0.02
       },
-      "buy_and_hold_pct": -3.34
+      "buy_and_hold_pct": -4.23
     },
     "ripple": {
       "simulated_breakout": {
@@ -129,10 +129,10 @@
       },
       "no_signal_baseline": {
         "n": 13,
-        "pct_positive": 46.2,
-        "avg_change_pct": -0.45
+        "pct_positive": 38.5,
+        "avg_change_pct": -0.64
       },
-      "buy_and_hold_pct": 16.26
+      "buy_and_hold_pct": 5.34
     },
     "sei-network": {
       "simulated_breakout": {
@@ -142,10 +142,10 @@
       },
       "no_signal_baseline": {
         "n": 12,
-        "pct_positive": 58.3,
-        "avg_change_pct": 0.49
+        "pct_positive": 75.0,
+        "avg_change_pct": 1.65
       },
-      "buy_and_hold_pct": 15.13
+      "buy_and_hold_pct": 7.14
     },
     "solana": {
       "simulated_breakout": {
@@ -154,11 +154,11 @@
         "avg_change_pct": -3.54
       },
       "no_signal_baseline": {
-        "n": 12,
-        "pct_positive": 50.0,
-        "avg_change_pct": 0.9
+        "n": 13,
+        "pct_positive": 46.2,
+        "avg_change_pct": 0.61
       },
-      "buy_and_hold_pct": 27.89
+      "buy_and_hold_pct": 20.5
     },
     "sui": {
       "simulated_breakout": {
@@ -167,11 +167,11 @@
         "avg_change_pct": 2.1
       },
       "no_signal_baseline": {
-        "n": 12,
-        "pct_positive": 41.7,
-        "avg_change_pct": 0.63
+        "n": 13,
+        "pct_positive": 53.8,
+        "avg_change_pct": 1.03
       },
-      "buy_and_hold_pct": 16.39
+      "buy_and_hold_pct": 6.4
     },
     "uniswap": {
       "simulated_breakout": {
@@ -181,10 +181,10 @@
       },
       "no_signal_baseline": {
         "n": 13,
-        "pct_positive": 61.5,
-        "avg_change_pct": 5.03
+        "pct_positive": 69.2,
+        "avg_change_pct": 5.37
       },
-      "buy_and_hold_pct": 140.0
+      "buy_and_hold_pct": 123.21
     }
   }
 }
