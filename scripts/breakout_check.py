@@ -169,7 +169,7 @@ DEFAULT_INDICATOR_WEIGHTS = {
 ATR_PERIOD = 14
 LIQUIDITY_STOP_BUFFER_ATR_MULT = 0.5     # push the stop this many ATRs past the obvious level
 LIQUIDITY_STOP_MIN_BUFFER_PCT = 0.3      # ...or at least this % of price, whichever is bigger (for low-volatility coins where 0.5*ATR would be tiny)
-BYBIT_API_BASE = "https://api.bybit.com/v5/market"  # v12: switched from Binance (fapi.binance.com), which returns HTTP 451 for GitHub Actions' IP ranges - confirmed via the v11 diagnostic logging Azez ran
+OKX_API_BASE = "https://www.okx.com/api/v5/public"  # v13: switched from Bybit (403 Forbidden from GitHub Actions IPs) - third attempt after Binance (451) and Bybit (403)
 FUNDING_REVERSAL_LOOKBACK = 6                # how many recent 8h funding readings to check for a sign flip
 OI_BASELINE_PATH = DATA_DIR / "oi-baseline.json"
 POLITE_DELAY = 7
@@ -497,46 +497,49 @@ def compute_liquidity_buffered_stop(reference_level: float, atr_value, direction
 # ---------- v8: Binance derivatives (funding rate + open interest) ----------
 
 def to_exchange_symbol(symbol: str) -> str:
-    return f"{symbol.upper()}USDT"
+    """v13: OKX's instrument-ID format for USDT-margined perpetual swaps:
+    {BASE}-USDT-SWAP - different shape from Binance/Bybit's concatenated
+    {BASE}USDT, so this format is now OKX-specific rather than shared."""
+    return f"{symbol.upper()}-USDT-SWAP"
 
 
 def fetch_funding_rate_history(symbol: str, limit: int = FUNDING_REVERSAL_LOOKBACK):
-    """v12: switched from Binance to Bybit's public v5 market API - Binance's
-    fapi.binance.com returns HTTP 451 for GitHub Actions' IP ranges (confirmed
-    via the v11 diagnostic logging: every single fetch failed with 451, not
-    a routine "no futures market" case). Bybit's public market-data
-    endpoints don't carry that block. Returns a list of recent funding
+    """v13: switched from Bybit to OKX's public v5 API - Bybit's public
+    market-data endpoints returned HTTP 403 Forbidden for GitHub Actions'
+    IP ranges (confirmed via the v12 diagnostic logging: every single fetch
+    failed with 403, following the same pattern as Binance's 451 before
+    it). OKX is the third exchange tried. Returns a list of recent funding
     rates in chronological order (oldest first, most recent last, matching
-    what detect_funding_reversal expects), or None if this symbol has no
-    linear perpetual market on Bybit or the request otherwise fails."""
-    params = {"category": "linear", "symbol": to_exchange_symbol(symbol), "limit": limit}
-    url = f"{BYBIT_API_BASE}/funding/history?{urllib.parse.urlencode(params)}"
+    what detect_funding_reversal expects), or None if this instrument
+    doesn't exist on OKX or the request otherwise fails."""
+    params = {"instId": to_exchange_symbol(symbol), "limit": limit}
+    url = f"{OKX_API_BASE}/funding-rate-history?{urllib.parse.urlencode(params)}"
     try:
         data = fetch_json(url)
-        rows = (data.get("result") or {}).get("list") or []
+        rows = data.get("data") or []
         if not rows:
             return None
-        # Bybit returns most-recent-first; reverse to oldest-first for our convention
+        # OKX returns most-recent-first; reverse to oldest-first for our convention
         rows = list(reversed(rows))
         return [float(r["fundingRate"]) for r in rows]
     except Exception as exc:  # noqa: BLE001
-        print(f"  [diagnostic] Bybit funding-rate fetch failed for {symbol}: {type(exc).__name__}: {exc}")
+        print(f"  [diagnostic] OKX funding-rate fetch failed for {symbol}: {type(exc).__name__}: {exc}")
         return None
 
 
 def fetch_open_interest_now(symbol: str):
-    """v12: Bybit equivalent of the old Binance open-interest call - see
+    """v13: OKX equivalent of the open-interest call - see
     fetch_funding_rate_history's docstring for why the switch happened."""
-    params = {"category": "linear", "symbol": to_exchange_symbol(symbol), "intervalTime": "5min", "limit": 1}
-    url = f"{BYBIT_API_BASE}/open-interest?{urllib.parse.urlencode(params)}"
+    params = {"instId": to_exchange_symbol(symbol)}
+    url = f"{OKX_API_BASE}/open-interest?{urllib.parse.urlencode(params)}"
     try:
         data = fetch_json(url)
-        rows = (data.get("result") or {}).get("list") or []
+        rows = data.get("data") or []
         if not rows:
             return None
-        return float(rows[0]["openInterest"])
+        return float(rows[0]["oi"])
     except Exception as exc:  # noqa: BLE001
-        print(f"  [diagnostic] Bybit open-interest fetch failed for {symbol}: {type(exc).__name__}: {exc}")
+        print(f"  [diagnostic] OKX open-interest fetch failed for {symbol}: {type(exc).__name__}: {exc}")
         return None
 
 
