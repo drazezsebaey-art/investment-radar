@@ -33,6 +33,16 @@ SCALP_TRADES_PATH = BASE_DIR / "data" / "scalp-trades.json"     # v2: the actual
 
 SCALP_MIN_SCORE = 30  # deliberately lower than AUTO_TRADE_MIN_SCORE (40) - this track's whole
                         # point is to log more candidates for learning, not to gate tightly
+
+# v3 (2026-09-21, Azez): fast-reject gates added AFTER seeing this track had
+# neither an R:R floor nor an overbought check - unlike SCALP's own fast-
+# reject gate (min 1.5:1 R:R, RSI>75 rejected). This track uses a slightly
+# looser R:R floor (it's a data-collection track, not real capital), but
+# the SAME RSI ceiling as SCALP for consistency. Deliberately NOT adding a
+# concurrent-open-trades cap - Azez wants this track to open as many
+# trades as qualify so there's more outcome data to analyze later.
+SCALP_MIN_RR = 1.3
+SCALP_RSI_OVERBOUGHT = 75.0
 OPEN_STATUSES = {"open", "pending"}
 
 
@@ -98,6 +108,29 @@ def has_open_scalp_trade(asset_id: str, trades: list) -> bool:
     return any(t.get("asset_id") == asset_id and t.get("status") in OPEN_STATUSES for t in trades)
 
 
+def fast_reject_reason(coin: dict, entry, stop, targets):
+    """v3: mirrors SCALP's own fast-reject gate (min R:R, RSI overbought
+    ceiling) for this track - catches exactly the two gaps Azez flagged:
+    no R:R floor and no overbought check. Returns None if the candidate
+    passes, or a short string reason if it should be rejected."""
+    if entry is None or stop is None or not targets:
+        return "missing entry/stop/targets"
+
+    risk = entry - stop
+    if risk <= 0:
+        return "non-positive risk (stop not below entry)"
+    reward = targets[0] - entry
+    rr = reward / risk
+    if rr < SCALP_MIN_RR:
+        return f"R:R {rr:.2f} below floor {SCALP_MIN_RR}"
+
+    rsi = (coin.get("indicators") or {}).get("rsi14")
+    if rsi is not None and rsi > SCALP_RSI_OVERBOUGHT:
+        return f"RSI {rsi:.1f} above overbought ceiling {SCALP_RSI_OVERBOUGHT}"
+
+    return None
+
+
 def build_scalp_trade(coin: dict) -> dict:
     entry, stop, targets, used_tf_stop = compute_stop_and_targets(coin)
     now = datetime.now(timezone.utc)
@@ -142,7 +175,7 @@ def main():
     trades_data = load_json(SCALP_TRADES_PATH, {"trades": []})
     trades = trades_data.get("trades", [])
 
-    n_opened, n_skipped_dup, n_skipped_no_stop = 0, 0, 0
+    n_opened, n_skipped_dup, n_skipped_no_stop, n_rejected = 0, 0, 0, 0
     for coin in qualifying:
         if has_open_scalp_trade(coin["id"], trades):
             n_skipped_dup += 1
@@ -150,6 +183,11 @@ def main():
         entry, stop, targets, _ = compute_stop_and_targets(coin)
         if entry is None or stop is None:
             n_skipped_no_stop += 1
+            continue
+        reason = fast_reject_reason(coin, entry, stop, targets)
+        if reason:
+            n_rejected += 1
+            print(f"  Scalp fast-reject {coin['symbol']}: {reason}")
             continue
         trades.append(build_scalp_trade(coin))
         n_opened += 1
@@ -161,7 +199,7 @@ def main():
     print(f"Scalp signals: {len(signals)} qualifying (score >= {SCALP_MIN_SCORE}), "
           f"{n_trend_following} trend-following-eligible. "
           f"Trades: {n_opened} opened, {n_skipped_dup} skipped (already open), "
-          f"{n_skipped_no_stop} skipped (no valid stop).")
+          f"{n_skipped_no_stop} skipped (no valid stop), {n_rejected} fast-rejected (R:R/RSI).")
 
 
 if __name__ == "__main__":
