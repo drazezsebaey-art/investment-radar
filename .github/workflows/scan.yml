@@ -30,6 +30,9 @@ jobs:
       - name: Auto paper trades + shadow log
         run: python scripts/auto_paper_trade.py
 
+      - name: Scalp/momentum signals (data-collection track)
+        run: python scripts/scalp_signals.py
+
       - name: Check open trades against latest prices + update performance summary
         run: python scripts/track_trades.py
 
