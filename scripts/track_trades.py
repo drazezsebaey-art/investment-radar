@@ -257,6 +257,8 @@ def summarize(trades: list) -> dict:
 
 SHADOW_TRADES_PATH = BASE_DIR / "data" / "shadow-trades.json"
 SHADOW_SUMMARY_PATH = BASE_DIR / "data" / "shadow-performance-summary.json"
+SCALP_TRADES_PATH = BASE_DIR / "data" / "scalp-trades.json"
+SCALP_SUMMARY_PATH = BASE_DIR / "data" / "scalp-performance-summary.json"
 
 
 def process_trades(trades: list, lookup: dict, price_history: dict) -> tuple:
@@ -319,6 +321,26 @@ def main():
         SHADOW_SUMMARY_PATH.write_text(json.dumps(shadow_summary, ensure_ascii=False, indent=2), encoding="utf-8")
         print(f"Shadow log: checked {len(shadow_data['trades'])} rejected-signal trades: "
               f"{s_filled} filled, {s_changed} changed this run.")
+
+    # v14/v2: scalp track - same logic, separate file, separate summary,
+    # never touches config/trades.json, shadow-trades.json, or SCALP's own
+    # real $100 fund. This is what makes scalp-trades.json trackable to a
+    # win/loss outcome instead of just a live snapshot that got overwritten
+    # every run (the gap Azez caught).
+    scalp_data = load_json(SCALP_TRADES_PATH, {"trades": []})
+    if scalp_data.get("trades"):
+        sc_filled, sc_changed = process_trades(scalp_data["trades"], lookup, price_history)
+        SCALP_TRADES_PATH.write_text(json.dumps(scalp_data, ensure_ascii=False, indent=2), encoding="utf-8")
+        scalp_summary = summarize(scalp_data.get("trades", []))
+        scalp_summary["note"] = (
+            "Scalp/momentum data-collection track (tight ATR-based stops, lower score threshold "
+            "than the main radar) - never counted toward the real performance-summary.json above "
+            "and separate from SCALP's own real $100 fund, which still requires the full Agent "
+            "Room debate before any real trade. " + scalp_summary["note"]
+        )
+        SCALP_SUMMARY_PATH.write_text(json.dumps(scalp_summary, ensure_ascii=False, indent=2), encoding="utf-8")
+        print(f"Scalp track: checked {len(scalp_data['trades'])} trades: "
+              f"{sc_filled} filled, {sc_changed} changed this run.")
 
 
 if __name__ == "__main__":
