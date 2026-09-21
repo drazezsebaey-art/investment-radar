@@ -163,6 +163,7 @@ DEFAULT_INDICATOR_WEIGHTS = {
     "idiosyncratic_quality": 25,          # the single factor that actually flipped OP and ARB's verdicts
     "oi_price_confirms": 15,              # new v8: real demand vs short-covering (the exact ARB gap)
     "funding_not_crowded": 10,            # new v8: penalizes chasing an already one-sided, crowded trade
+    "relative_strength_bonus": 15,        # v14: multi-week outperformance vs BTC - catches sustained strength even when signal_quality is beta_driven_or_cluster (the NEAR gap)
     "deep_drawdown_penalty": -10,
     "unlock_risk_penalty": -10,
 }
@@ -172,6 +173,28 @@ LIQUIDITY_STOP_MIN_BUFFER_PCT = 0.3      # ...or at least this % of price, which
 OKX_API_BASE = "https://www.okx.com/api/v5/public"  # v13: switched from Bybit (403 Forbidden from GitHub Actions IPs) - third attempt after Binance (451) and Bybit (403)
 FUNDING_REVERSAL_LOOKBACK = 6                # how many recent 8h funding readings to check for a sign flip
 OI_BASELINE_PATH = DATA_DIR / "oi-baseline.json"
+
+# --- v14: Trend-Following Entry mode + Relative Strength Rating ------------
+# Rationale (from the 2026-09-21 review): the Entry Quality Gate's distance-
+# to-nearest-support R:R systematically penalizes the STRONGEST, most
+# persistently-trending coins (NEAR, AVAX) - they haven't pulled back, so
+# their nearest support is far away, which reads as "bad R:R" even though
+# the underlying trend is exactly what we'd want to be in. This isn't a
+# logic bug, it's a blind spot: the gate was designed to catch chasing an
+# extended move, not to distinguish that from genuine sustained strength.
+SCORE_STREAK_PATH = DATA_DIR / "score-streak.json"
+TREND_FOLLOWING_MIN_SCORE = 38          # same tier already used elsewhere for "worth a look"
+TREND_FOLLOWING_MIN_STREAK = 3          # consecutive runs scoring >= the threshold, no pullback in between
+TREND_FOLLOWING_ATR_STOP_MULT = 2.0     # stop = current price - 2x ATR, NOT distance-to-support - this is the actual fix
+TREND_FOLLOWING_TARGET_ATR_MULTS = [3.0, 5.0, 8.0]  # targets as ATR multiples from entry, matching the wider risk unit
+
+# Relative Strength: multi-week outperformance vs BTC, distinct from
+# btc_correlation_7d (which measures CO-MOVEMENT direction, not who's
+# winning). A coin can be highly correlated with BTC's direction (tagged
+# beta_driven_or_cluster) while still meaningfully OUTPERFORMING it over
+# weeks - that's real relative strength, not beta, and NEAR showed exactly
+# this pattern for weeks before this was built.
+RS_STRONG_OUTPERFORM_PCT = 15.0         # coin beat BTC by at least this many percentage points over the window to earn the bonus
 POLITE_DELAY = 7
 MAX_RETRIES = 3
 RETRY_BACKOFF_BASE = 15
@@ -590,6 +613,75 @@ def save_oi_baseline(baseline: dict) -> None:
     OI_BASELINE_PATH.write_text(json.dumps(baseline, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
+# ---------- v14: Trend-Following Entry (score streak + ATR stop) ----------
+
+def load_score_streak() -> dict:
+    if not SCORE_STREAK_PATH.exists():
+        return {}
+    try:
+        return json.loads(SCORE_STREAK_PATH.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return {}
+
+
+def save_score_streak(streaks: dict) -> None:
+    SCORE_STREAK_PATH.write_text(json.dumps(streaks, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
+def update_score_streak(streaks: dict, coin_id: str, score) -> int:
+    """v14: increments a per-coin streak of consecutive runs scoring at or
+    above TREND_FOLLOWING_MIN_SCORE; any run below the threshold resets it
+    to 0. This is what NEAR would have accumulated for weeks - a
+    persistence signal the distance-to-support gate structurally can't
+    see. Returns the streak count AFTER this update."""
+    current = streaks.get(coin_id, 0)
+    if score is not None and score >= TREND_FOLLOWING_MIN_SCORE:
+        current += 1
+    else:
+        current = 0
+    streaks[coin_id] = current
+    return current
+
+
+def compute_trend_following_stop(current_price, atr_value):
+    """v14: the actual fix for the systemic bias - a stop sized from
+    volatility (ATR) around the CURRENT price, not from distance to a
+    support level that a strongly-trending coin may not have visited in
+    weeks. Returns (stop, targets) or (None, None) if inputs are missing."""
+    if current_price is None or atr_value is None:
+        return None, None
+    stop = round(current_price - TREND_FOLLOWING_ATR_STOP_MULT * atr_value, 8)
+    risk = current_price - stop
+    targets = [round(current_price + risk * mult / TREND_FOLLOWING_ATR_STOP_MULT, 8)
+               for mult in TREND_FOLLOWING_TARGET_ATR_MULTS]
+    return stop, targets
+
+
+# ---------- v14: Relative Strength Rating ----------
+
+def compute_relative_strength(coin_closes: list, btc_closes: list):
+    """v14: multi-week OUTPERFORMANCE vs BTC, as a percentage-point spread
+    of total return over the same window - different from
+    btc_correlation_7d, which measures whether the two move together, not
+    who's winning. A coin can be highly correlated (tagged
+    beta_driven_or_cluster) while still meaningfully outperforming BTC over
+    weeks - that's real relative strength being missed by correlation
+    alone. Uses whatever overlapping window both series share (the full
+    OHLC fetch, ~30 days) rather than the shorter 7-day correlation window,
+    since this is deliberately a slower, more weeks-scale read."""
+    if not coin_closes or not btc_closes:
+        return None
+    n = min(len(coin_closes), len(btc_closes))
+    if n < CORRELATION_MIN_OVERLAP:
+        return None
+    coin_tail, btc_tail = coin_closes[-n:], btc_closes[-n:]
+    if coin_tail[0] == 0 or btc_tail[0] == 0:
+        return None
+    coin_return_pct = (coin_tail[-1] / coin_tail[0] - 1) * 100
+    btc_return_pct = (btc_tail[-1] / btc_tail[0] - 1) * 100
+    return round(coin_return_pct - btc_return_pct, 2)
+
+
 # ---------- v8: composite confidence score ----------
 
 def load_indicator_weights() -> dict:
@@ -637,6 +729,10 @@ def compute_confidence_score(coin: dict, weights: dict) -> dict:
     breakdown["oi_price_confirms"] = weights["oi_price_confirms"] if oi_rel == "confirms" else 0
     funding_reversed = coin.get("funding_reversal_detected")
     breakdown["funding_not_crowded"] = 0 if funding_reversed else weights["funding_not_crowded"]
+    rs = coin.get("relative_strength_pct")
+    breakdown["relative_strength_bonus"] = (
+        weights["relative_strength_bonus"] if rs is not None and rs >= RS_STRONG_OUTPERFORM_PCT else 0
+    )
     breakdown["deep_drawdown_penalty"] = weights["deep_drawdown_penalty"] if coin.get("deep_drawdown_flag") else 0
     breakdown["unlock_risk_penalty"] = weights["unlock_risk_penalty"] if coin.get("unlock_risk_flag") else 0
 
@@ -966,6 +1062,7 @@ def main():
     trendline_watchlist = load_trendline_watchlist()
     oi_baseline = load_oi_baseline()
     indicator_weights = load_indicator_weights()
+    score_streak = load_score_streak()
     now = datetime.now(timezone.utc)
     pending_log_entries = []
 
@@ -1083,6 +1180,15 @@ def main():
         coin["atr_value"] = atr_value
         coin["atr_pct_of_price"] = atr_pct
 
+        # v14: relative strength vs BTC over the full fetched window - reuses
+        # candles and btc_closes already in memory, no extra API cost.
+        if candles and btc_closes and coin_id != BTC_COIN_ID:
+            coin["relative_strength_pct"] = compute_relative_strength(
+                [c[4] for c in candles], btc_closes
+            )
+        else:
+            coin["relative_strength_pct"] = None
+
         # v8.1: defensive liquidity-buffer stop - pushes the stop past the
         # obvious level (resistance turned support, or the trendline) instead
         # of sitting exactly on it where the crowd's stops also cluster.
@@ -1143,10 +1249,28 @@ def main():
         score_result = compute_confidence_score(coin, indicator_weights)
         coin.update(score_result)
 
+    # v14: update the persistent score streak for every candidate actually
+    # checked this run (fired or not - a checked-but-not-fired coin still
+    # breaks its streak, since update_score_streak(..., score=None) resets
+    # it; a coin simply not selected by this run's rotation is left alone).
+    for coin in candidates:
+        streak = update_score_streak(score_streak, coin["id"], coin.get("confidence_score"))
+        coin["score_streak"] = streak
+        eligible = streak >= TREND_FOLLOWING_MIN_STREAK
+        coin["trend_following_eligible"] = eligible
+        if eligible:
+            stop, targets = compute_trend_following_stop(coin.get("price_usd"), coin.get("atr_value"))
+            coin["trend_following_stop"] = stop
+            coin["trend_following_targets"] = targets
+        else:
+            coin["trend_following_stop"] = None
+            coin["trend_following_targets"] = None
+
     flush_signal_log(pending_log_entries)
     save_retest_watchlist(retest_watchlist)
     save_trendline_watchlist(trendline_watchlist)
     save_oi_baseline(oi_baseline)
+    save_score_streak(score_streak)
 
     RADAR_FLAGS_PATH.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
     signals = sum(1 for c in candidates if c.get("breakout_signal"))
