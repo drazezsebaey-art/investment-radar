@@ -1230,6 +1230,21 @@ def main():
         coin["suggested_stop_trendline_based"] = compute_liquidity_buffered_stop(
             coin.get("trendline_value_now"), atr_value, "long"
         )
+        # v22 fix (found via consistency_check.py, 22/9/2026): the helper
+        # above assumes price is currently ABOVE the reference level (a
+        # broken resistance/trendline now acting as support). If price has
+        # since pulled back BELOW that level - confirmed live on PUMP,
+        # where breakout_pct_above was -7.52% - the "stop below the level"
+        # math still runs and can land ABOVE current price: a nonsensical,
+        # inverted stop for a long. Null it out here rather than let a
+        # downstream consumer (pick_stop, the Entry Quality Gate) treat it
+        # as usable.
+        current_price = coin.get("price_usd")
+        if current_price is not None:
+            if coin["suggested_stop_resistance_based"] is not None and coin["suggested_stop_resistance_based"] >= current_price:
+                coin["suggested_stop_resistance_based"] = None
+            if coin["suggested_stop_trendline_based"] is not None and coin["suggested_stop_trendline_based"] >= current_price:
+                coin["suggested_stop_trendline_based"] = None
 
         # v8: Binance derivatives - only worth the extra calls for coins that
         # actually fired something; most small-caps have no futures market
