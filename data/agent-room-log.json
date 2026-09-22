@@ -18,5 +18,15 @@
     "verdict": "WAIT",
     "confidence": 60,
     "note": "Corrected from initial ACCUMULATE (60/100). Root cause: R:R was only 1.2-1.5:1 (barely at SCALP floor) on an already-extended move, and ARB had already given back >50% of an identical spike earlier the same month - both should have hard-gated the verdict to WAIT regardless of the strong Robinhood Chain/AEP fundamental story. Led to adding the Entry Quality Gate rule to agent-room-protocol.md."
+  },
+  {
+    "date": "2026-09-22",
+    "coin_id": "zama",
+    "symbol": "ZAMA",
+    "triggered_by": "trend_following_eligible",
+    "signal_quality_at_trigger": "beta_driven_or_cluster",
+    "verdict": "WAIT",
+    "confidence": 58,
+    "note": "Score 68, streak 6. Real fundamentals (Morpho vault expansion 5->21, Merkl partnership, Zama Swap launch, TVL 5M+) but Entry Quality Gate marginal: R:R exactly 1.5:1 on the ATR trend-following stop, a same-day 20.6% high-to-low giveback had already happened, and multi-timeframe RSI was overbought (1D 83.83, 4H 78.13) even though the radar's own 15-min-approximated RSI read only 61.08 - real TradingView data disagreed with the radar snapshot. Recommended waiting for a retest of $0.083-0.093 or a clean close above $0.105 before entry. This run also surfaced the has_open_position/pick_stop bugs fixed in v15."
   }
 ]
