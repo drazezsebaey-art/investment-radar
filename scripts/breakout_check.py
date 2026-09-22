@@ -32,6 +32,15 @@ scalping guide):
     candles to seed properly (CoinGecko still returns 4h candles up to 90
     days, so this doesn't change candle granularity, just history depth).
 
+v15 additions (from the 22/9/2026 committee audit): select_rotating_candidates()
+now also escalates any coin scan.py flagged priority_review this run (a
+Layer-2 early signal - CHoCH/squeeze/RSI-divergence/cluster-lag/relative-
+strength-in-consolidation) into the SAME run's deep evaluation, on top of
+the normal rotation slot, closing the detection-latency gap the audit found.
+check_unlock_risk() now also reports unlock_data_checked, distinguishing
+"never researched" from "researched, nothing upcoming" - previously both
+looked identical as unlock_risk_flag=False.
+
 v2-v4 fixes/features preserved: CoinGecko-based Binance-listing rotation,
 daily-aggregated volume confirmation, retry-with-backoff on HTTP 429,
 resistance-zone clustering + breakout confirmation, fibonacci extension
@@ -219,14 +228,24 @@ def save_rotation_offset(offset: int) -> None:
 
 
 def select_rotating_candidates(all_listed: list) -> list:
+    """v15 fix (22/9/2026 audit): the rotation alone left a real detection-
+    latency gap - a coin only got its deep confidence/OI/trend-following
+    fields recomputed roughly once every 2-3 runs (confirmed live: ZAMA had
+    full v14 fields one run, none the next). Any coin scan.py flagged
+    priority_review this run (a Layer-2 early signal fired) now gets a deep
+    check THIS run too, on top of the normal rotation slot - it doesn't
+    consume or shift the rotation offset, it's purely additive."""
     if not all_listed:
         return []
     ordered = sorted(all_listed, key=lambda c: c["id"])
     n = len(ordered)
     offset = load_rotation_offset() % n
-    candidates = [ordered[(offset + i) % n] for i in range(min(MAX_CANDIDATES_PER_RUN, n))]
-    save_rotation_offset((offset + len(candidates)) % n)
-    return candidates
+    rotation_slice = [ordered[(offset + i) % n] for i in range(min(MAX_CANDIDATES_PER_RUN, n))]
+    save_rotation_offset((offset + len(rotation_slice)) % n)
+
+    rotation_ids = {c["id"] for c in rotation_slice}
+    escalated = [c for c in ordered if c.get("priority_review") and c["id"] not in rotation_ids]
+    return rotation_slice + escalated
 
 
 def fetch_json(url: str):
@@ -320,6 +339,14 @@ def load_known_unlocks() -> dict:
 
 
 def check_unlock_risk(coin_id: str, unlocks_config: dict, now: datetime):
+    """v15: also returns whether this coin_id has EVER been manually
+    researched into known-unlocks.json at all - the 22/9 audit found
+    known-unlocks.json had exactly one entry (optimism) covering dozens of
+    traded coins, so unlock_risk_flag=False was silently reading as
+    "confirmed no unlock" everywhere else when it actually meant "never
+    checked". unlock_data_checked=False now makes that gap visible in the
+    output instead of hiding it."""
+    data_checked = coin_id in unlocks_config and coin_id != "_readme"
     events = unlocks_config.get(coin_id, [])
     upcoming = []
     for ev in events:
@@ -331,10 +358,10 @@ def check_unlock_risk(coin_id: str, unlocks_config: dict, now: datetime):
         if 0 <= days_until <= UNLOCK_WARNING_DAYS:
             upcoming.append((days_until, ev))
     if not upcoming:
-        return False, None, None
+        return False, None, None, data_checked
     upcoming.sort(key=lambda t: t[0])
     _, nearest = upcoming[0]
-    return True, nearest["date"], nearest.get("pct_of_supply")
+    return True, nearest["date"], nearest.get("pct_of_supply"), data_checked
 
 
 # ---------- v7: descending-trendline break detection ----------
@@ -1008,6 +1035,7 @@ def queue_signal_log(pending: list, coin: dict, record: dict) -> None:
         "ath_change_pct": coin.get("ath_change_pct"),
         "deep_drawdown_flag": coin.get("deep_drawdown_flag"),
         "unlock_risk_flag": coin.get("unlock_risk_flag"),
+        "unlock_data_checked": coin.get("unlock_data_checked"),
         "trendline_break_detected": coin.get("trendline_break_detected"),
         "trendline_break_confirmed_signal": coin.get("trendline_break_confirmed_signal"),
         "trendline_candles_held": coin.get("trendline_candles_held"),
@@ -1107,10 +1135,11 @@ def main():
             tl_result = check_trendline_break(trendline_watchlist, coin, candles)
             coin.update(tl_result)
 
-        unlock_flag, unlock_date, unlock_pct = check_unlock_risk(coin_id, unlocks_config, now)
+        unlock_flag, unlock_date, unlock_pct, unlock_data_checked = check_unlock_risk(coin_id, unlocks_config, now)
         coin["unlock_risk_flag"] = unlock_flag
         coin["next_known_unlock_date"] = unlock_date
         coin["next_known_unlock_pct_supply"] = unlock_pct
+        coin["unlock_data_checked"] = unlock_data_checked
 
         if candles and len(candles) < EXPECTED_CANDLES * MIN_CANDLE_COVERAGE_RATIO:
             coin["insufficient_history"] = True
