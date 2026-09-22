@@ -244,12 +244,23 @@ def detect_bullish_rsi_divergence(candles: list) -> bool:
 
 def detect_cluster_rotation_lag(coin_id: str, categories: dict, base_flagged_ids: set):
     """If 2+ OTHER coins in the same tracked category already show a real
-    (price/volume-based) flag THIS run but this coin doesn't, sector
+    (price/volume-based) flag THIS run but THIS coin doesn't, sector
     rotation lag makes it a reasonable early candidate for the next leg -
     sectors tend to move together with a delay, not simultaneously. Checked
     against base_flagged_ids only (not other coins' early signals), so this
     can't chain off another coin's own unconfirmed squeeze/CHoCH flag.
+
+    v15.1 fix (found live on 22/9/2026): the coin ITSELF must not already
+    have a base flag. Without this, a genuine sector-wide rally (e.g. the
+    whole decentralized-exchange category moving together) labeled EVERY
+    member "still quiet, lagging" - including coins like UNI/JUP/PENDLE
+    that were themselves already showing a strong price-move flag, which is
+    a factual contradiction (a coin that's already moving is not a lagging
+    coin). Only a coin with NO base flag of its own can be a laggard.
+
     Returns the category name, or None."""
+    if coin_id in base_flagged_ids:
+        return None
     for category, ids in categories.items():
         if not isinstance(ids, list) or coin_id not in ids:
             continue
