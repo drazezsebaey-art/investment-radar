@@ -45,6 +45,21 @@ SCALP_MIN_RR = 1.3
 SCALP_RSI_OVERBOUGHT = 75.0
 OPEN_STATUSES = {"open", "pending"}
 
+# v20 (22/9/2026): this track was silently reusing the MAIN swing-trade
+# track's ATR multiples - either straight from breakout_check.py's
+# trend_following_stop/targets (2x ATR stop, 1.5/2.5/4.0x risk targets) or
+# recomputed identically in the old fallback branch - despite this file's
+# own docstring claiming "narrow timeframe, narrow risk." Confirmed live:
+# 0 of 28 open scalp trades had closed after 4-23 hours, with average
+# stop/target distances of ~9.7%/~14.7% from entry - move sizes that
+# typically take DAYS for an altcoin, not the hours this track is meant to
+# operate on. Fixed by deriving stop/targets ONLY from atr_value with
+# scalp-specific (tighter) multipliers - trend_following_stop/targets are
+# never touched here anymore (that sizing stays correct for the main
+# track, it was just wrong reused here).
+SCALP_ATR_STOP_MULT = 0.75
+SCALP_TARGET_RISK_MULTS = (1.0, 1.75, 3.0)
+
 
 def load_json(path: Path, default):
     if not path.exists():
@@ -102,23 +117,23 @@ def determine_trigger(coin: dict) -> str:
 
 
 def compute_stop_and_targets(coin: dict):
+    """v20: always derives stop/targets from atr_value using the
+    scalp-specific multiples above - never reuses breakout_check.py's
+    trend_following_stop/targets, which are correctly sized for the MAIN
+    swing-trade track's multi-day holding period, not this track's
+    intended hours-to-a-day horizon. used_trend_following_stop is kept in
+    the trade schema for continuity with the other two tracks' records,
+    but is always False here now - this track no longer uses that
+    (swing-sized) stop at all, regardless of the coin's own trend-
+    following eligibility."""
     entry = coin.get("price_usd")
-    stop = coin.get("trend_following_stop")
-    targets = coin.get("trend_following_targets")
-    used_tf_stop = stop is not None
-
-    if stop is None:
-        # No trend-following eligibility yet (streak < 3) - fall back to a
-        # plain ATR stop from THIS run alone, still never the wide
-        # liquidity-buffered support stop the main radar uses, since this
-        # track is deliberately tight-risk regardless of streak status.
-        atr = coin.get("atr_value")
-        if entry is not None and atr is not None:
-            stop = round(entry - 2.0 * atr, 8)
-            risk = entry - stop
-            targets = [round(entry + risk * m, 8) for m in (1.5, 2.5, 4.0)]
-
-    return entry, stop, targets, used_tf_stop
+    atr = coin.get("atr_value")
+    if entry is None or atr is None:
+        return entry, None, None, False
+    stop = round(entry - SCALP_ATR_STOP_MULT * atr, 8)
+    risk = entry - stop
+    targets = [round(entry + risk * m, 8) for m in SCALP_TARGET_RISK_MULTS]
+    return entry, stop, targets, False
 
 
 def build_scalp_signal(coin: dict) -> dict:
