@@ -313,6 +313,9 @@ def compute_early_signals(coin_id: str, points: list, categories: dict,
         "relative_strength_consolidation": (
             detect_relative_strength_consolidation(points, btc_points) if btc_points else False
         ),
+        "flag_pattern": detect_flag_pattern(candles),
+        "double_bottom": detect_double_bottom(candles),
+        "triangle": detect_triangle(candles),
     }
 
 
@@ -336,7 +339,160 @@ def early_signal_flags(signals: dict) -> list:
         flags.append(f"تأخر دوران قطاعي — عملات تانية في {signals['cluster_rotation_lag']} تحركت وهي لسه ساكنة")
     if signals.get("relative_strength_consolidation"):
         flags.append("قوة نسبية خفية أثناء التماسك — بتتفوق على BTC وهي ساكنة ظاهريًا")
+    flag_pattern = signals.get("flag_pattern")
+    if flag_pattern and flag_pattern.get("direction") == "bullish":
+        flags.append(f"نمط علم صاعد (Bull Flag) — هدف Kirkpatrick بعد الاختراق: {flag_pattern['target_price']}")
+    double_bottom = signals.get("double_bottom")
+    if double_bottom:
+        stage = "مؤكد بعد كسر خط الرقبة" if double_bottom.get("confirmed") else "قيد التكوّن (لسه محدش كسر خط الرقبة)"
+        flags.append(f"قاع مزدوج {stage} — خط الرقبة {double_bottom['neckline']}، الهدف {double_bottom['target_price']}")
+    triangle = signals.get("triangle")
+    if triangle:
+        name = "مثلث صاعد" if triangle["pattern"] == "ascending_triangle" else "مثلث متماثل"
+        flags.append(f"{name} — مقاومة {triangle['resistance_level']}، الهدف بعد الاختراق {triangle['target_price']}")
     return flags
+
+
+# --- v25: classic chart patterns (Fidelity/Kirkpatrick toolkit) ------------
+# Rationale: these three were picked from the full toolkit as the ones that
+# translate to deterministic geometry rather than fuzzy visual judgment -
+# Head & Shoulders, Cup & Handle etc. stay a manual/chat-only read for now
+# (see the 22/9/2026 discussion). All three reuse find_swings/
+# build_synthetic_candles already built for CHoCH/BOS detection - no new
+# API calls, no new data collection.
+FLAGPOLE_LOOKBACK_CANDLES = 6       # window searched for the sharp initial move (the "pole")
+FLAGPOLE_MIN_MOVE_PCT = 15.0        # minimum % move within that window to count as a flagpole at all
+FLAG_CONSOLIDATION_CANDLES = 6      # candles since the pole that must show a tight consolidation (the "flag")
+FLAG_MAX_CONSOLIDATION_RANGE_PCT = 8.0   # consolidation must stay within this % range of its own midpoint
+
+DOUBLE_BOTTOM_LEVEL_TOLERANCE_PCT = 3.0   # how close two lows must be to count as "roughly the same level"
+DOUBLE_BOTTOM_MIN_SEPARATION = 3          # minimum candles between the two lows - needs a real peak between them, not noise
+
+TRIANGLE_MIN_SWINGS_EACH_SIDE = 2
+TRIANGLE_RESISTANCE_FLAT_TOLERANCE_PCT = 2.0   # highs within this % of each other count as "flat" (ascending triangle)
+
+
+def detect_flag_pattern(candles: list):
+    """Bull flag (per Kirkpatrick): a sharp impulsive move (the flagpole)
+    followed by a tight, shallow consolidation sloping slightly against the
+    trend. Target = flagpole height projected from the current price -
+    breakout tends to repeat the pole's magnitude. Returns None if there's
+    no sharp-enough recent move, or if one exists but the consolidation
+    since isn't tight enough yet to call it a flag (still just a raw
+    extension, which extension_continuation_signal elsewhere already
+    covers)."""
+    need = FLAGPOLE_LOOKBACK_CANDLES + FLAG_CONSOLIDATION_CANDLES
+    if len(candles) < need:
+        return None
+    consolidation = candles[-FLAG_CONSOLIDATION_CANDLES:]
+    pole = candles[-need:-FLAG_CONSOLIDATION_CANDLES]
+    if not pole:
+        return None
+    pole_start, pole_end = pole[0]["open"], pole[-1]["close"]
+    if not pole_start:
+        return None
+    pole_move_pct = (pole_end - pole_start) / pole_start * 100
+    if abs(pole_move_pct) < FLAGPOLE_MIN_MOVE_PCT:
+        return None
+    cons_high = max(c["high"] for c in consolidation)
+    cons_low = min(c["low"] for c in consolidation)
+    cons_mid = (cons_high + cons_low) / 2
+    if not cons_mid:
+        return None
+    cons_range_pct = (cons_high - cons_low) / cons_mid * 100
+    if cons_range_pct > FLAG_MAX_CONSOLIDATION_RANGE_PCT:
+        return None
+    direction = "bullish" if pole_move_pct > 0 else "bearish"
+    flagpole_height = abs(pole_end - pole_start)
+    latest_close = candles[-1]["close"]
+    target = latest_close + flagpole_height if direction == "bullish" else latest_close - flagpole_height
+    return {
+        "direction": direction,
+        "flagpole_move_pct": round(pole_move_pct, 2),
+        "consolidation_range_pct": round(cons_range_pct, 2),
+        "target_price": round(target, 8),
+    }
+
+
+def detect_double_bottom(candles: list):
+    """Developing (not yet necessarily confirmed) double bottom: two swing
+    lows at roughly the same level, separated by a swing high (the
+    neckline). Per Kirkpatrick the pattern only COMPLETES on a confirmed
+    close above the neckline - reporting the SETUP forming, before that
+    break, is exactly the point of an early/proactive signal here.
+    confirmed=True once the latest close has already cleared the neckline.
+    Target (once confirmed) = neckline + (neckline - lower low), the
+    standard height-projection formula."""
+    swings = find_swings(candles)
+    lows = [s for s in swings if s["type"] == "low"]
+    highs = [s for s in swings if s["type"] == "high"]
+    if len(lows) < 2:
+        return None
+    prev_low, last_low = lows[-2], lows[-1]
+    if last_low["index"] - prev_low["index"] < DOUBLE_BOTTOM_MIN_SEPARATION:
+        return None
+    lower_low = min(last_low["price"], prev_low["price"])
+    if not lower_low:
+        return None
+    level_diff_pct = abs(last_low["price"] - prev_low["price"]) / lower_low * 100
+    if level_diff_pct > DOUBLE_BOTTOM_LEVEL_TOLERANCE_PCT:
+        return None
+    between_highs = [h for h in highs if prev_low["index"] < h["index"] < last_low["index"]]
+    if not between_highs:
+        return None
+    neckline = max(h["price"] for h in between_highs)
+    if neckline <= lower_low:
+        return None
+    target = neckline + (neckline - lower_low)
+    return {
+        "lower_low": lower_low,
+        "neckline": round(neckline, 8),
+        "target_price": round(target, 8),
+        "confirmed": candles[-1]["close"] > neckline,
+    }
+
+
+def detect_triangle(candles: list):
+    """Ascending triangle: flat horizontal resistance (highs within
+    TRIANGLE_RESISTANCE_FLAT_TOLERANCE_PCT of each other) + rising support
+    (strictly increasing swing lows). Symmetrical triangle: descending
+    resistance + rising support (both converging). Target = pattern
+    height (resistance - lowest low) projected from the resistance level,
+    same formula for both per Kirkpatrick. Needs at least
+    TRIANGLE_MIN_SWINGS_EACH_SIDE swing highs and lows to even attempt a
+    read - returns None otherwise rather than guessing from too little
+    structure."""
+    swings = find_swings(candles)
+    highs = [s for s in swings if s["type"] == "high"]
+    lows = [s for s in swings if s["type"] == "low"]
+    if len(highs) < TRIANGLE_MIN_SWINGS_EACH_SIDE or len(lows) < TRIANGLE_MIN_SWINGS_EACH_SIDE:
+        return None
+    recent_highs = [h["price"] for h in highs[-TRIANGLE_MIN_SWINGS_EACH_SIDE:]]
+    recent_lows = [l["price"] for l in lows[-TRIANGLE_MIN_SWINGS_EACH_SIDE:]]
+    if min(recent_highs) <= 0:
+        return None
+
+    highs_flat = (max(recent_highs) - min(recent_highs)) / min(recent_highs) * 100 <= TRIANGLE_RESISTANCE_FLAT_TOLERANCE_PCT
+    highs_descending = all(recent_highs[i] > recent_highs[i + 1] for i in range(len(recent_highs) - 1))
+    lows_ascending = all(recent_lows[i] < recent_lows[i + 1] for i in range(len(recent_lows) - 1))
+
+    if highs_flat and lows_ascending:
+        pattern_type = "ascending_triangle"
+    elif highs_descending and lows_ascending:
+        pattern_type = "symmetrical_triangle"
+    else:
+        return None
+
+    resistance_level = max(recent_highs)
+    lowest_low = min(recent_lows)
+    height = resistance_level - lowest_low
+    if height <= 0:
+        return None
+    return {
+        "pattern": pattern_type,
+        "resistance_level": round(resistance_level, 8),
+        "target_price": round(resistance_level + height, 8),
+    }
 
 
 def fetch_json(url: str, params: dict) -> list:
