@@ -67,9 +67,21 @@ def save_json(path: Path, data) -> None:
 
 
 def get_fired_coins(radar_data: dict) -> list:
+    """v18 fix (22/9/2026): a Layer-2 early-signal coin (priority_review)
+    that got deep-evaluated this run - and therefore has a confidence_score
+    - now enters this list too, regardless of that score. The
+    AUTO_TRADE_MIN_SCORE gate below still decides real vs shadow exactly as
+    before; this only decides whether a coin is considered AT ALL. Without
+    this, a quiet-consolidation/early-CHoCH coin with a genuinely strong
+    confidence_score would still never reach shadow-trades.json (let alone
+    a real trade) until it ALSO produced an actual price breakout - directly
+    defeating the point of catching it before it moves. This does NOT lower
+    AUTO_TRADE_MIN_SCORE's bar for real money - a weak-scoring early signal
+    still only reaches the shadow log, same as any other weak signal."""
     coins = radar_data.get("coins", [])
     return [c for c in coins if c.get("breakout_signal") or c.get("extension_continuation_signal")
-            or c.get("trendline_break_confirmed_signal")]
+            or c.get("trendline_break_confirmed_signal")
+            or (c.get("priority_review") and c.get("confidence_score") is not None)]
 
 
 def find_open_trade(asset_id: str, trades: list):
