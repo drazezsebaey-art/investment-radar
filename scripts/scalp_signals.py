@@ -60,9 +60,45 @@ def save_json(path: Path, data) -> None:
 
 
 def get_fired_coins(radar_data: dict) -> list:
+    """v19 (22/9/2026): extended to match the v18 fix already applied to
+    auto_paper_trade.py's get_fired_coins() - without this, a priority_review
+    (Layer 2 early-signal) coin would never reach the scalp track at all,
+    even though this track's whole purpose is accumulating outcome data
+    faster than the main radar. AUTO_TRADE... (SCALP_MIN_SCORE below) still
+    gates which of these actually get a trade opened, exactly as before."""
     coins = radar_data.get("coins", [])
     return [c for c in coins if c.get("breakout_signal") or c.get("extension_continuation_signal")
-            or c.get("trendline_break_confirmed_signal")]
+            or c.get("trendline_break_confirmed_signal")
+            or (c.get("priority_review") and c.get("confidence_score") is not None)]
+
+
+def determine_trigger(coin: dict) -> str:
+    """v19: same helper as auto_paper_trade.py - records which signal(s)
+    fired for this coin so scalp-trades.json can be filtered by trigger
+    type the same way as the other two tracks, without a separate file."""
+    triggers = []
+    if coin.get("breakout_signal"):
+        triggers.append("breakout_signal")
+    if coin.get("extension_continuation_signal"):
+        triggers.append("extension_continuation")
+    if coin.get("trendline_break_confirmed_signal"):
+        triggers.append("trendline_break_confirmed")
+    if coin.get("priority_review") and coin.get("confidence_score") is not None:
+        early = coin.get("early_signals") or {}
+        reasons = []
+        structure = early.get("structure") or {}
+        if structure.get("signal") == "CHoCH_bullish":
+            reasons.append("choch_bullish")
+        if early.get("volatility_squeeze"):
+            reasons.append("squeeze")
+        if early.get("bullish_rsi_divergence"):
+            reasons.append("rsi_divergence")
+        if early.get("cluster_rotation_lag"):
+            reasons.append("cluster_rotation_lag")
+        if early.get("relative_strength_consolidation"):
+            reasons.append("relative_strength_consolidation")
+        triggers.append("priority_review:" + "+".join(reasons) if reasons else "priority_review")
+    return ",".join(triggers) if triggers else "unknown"
 
 
 def compute_stop_and_targets(coin: dict):
@@ -141,6 +177,7 @@ def build_scalp_trade(coin: dict) -> dict:
         "symbol": coin["symbol"],
         "type": "paper",
         "track": "scalp",
+        "triggered_by": determine_trigger(coin),
         "date_opened": date_str,
         "status": "open",
         "entry": entry,
