@@ -596,7 +596,15 @@ def main():
     # v15: bitcoin must always accumulate history regardless of whether it
     # ever gets flagged itself - it's the benchmark every early-signal
     # relative-strength check below is computed against.
-    always_track = set(watchlist_ids) | {"bitcoin"}
+    # v18 (22/9/2026): previously only watchlist coins + bitcoin + coins that
+    # had ALREADY been flagged at least once got their price history tracked -
+    # meaning a coin had to make a noticeable move before Layer 2's early
+    # signals (quiet-consolidation relative strength, squeeze, CHoCH) could
+    # ever see it, which defeats the point of catching it BEFORE it moves.
+    # Tracking the full scanned universe costs zero extra API calls (the
+    # scan already fetches all of them every run) - just one more point
+    # appended per coin in price-history.json.
+    always_track = {c["id"] for c in all_coins} | {"bitcoin"}
     for coin in all_coins:
         update_history(history, coin, timestamp, always_track)
     HISTORY_PATH.write_text(json.dumps(history, ensure_ascii=False), encoding="utf-8")
