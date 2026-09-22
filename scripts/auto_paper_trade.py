@@ -1,5 +1,5 @@
 """
-Investment Radar - Automatic Paper Trades + Shadow Log (v9)
+Investment Radar - Automatic Paper Trades + Shadow Log (v15)
 ------------------------------------------------------------
 Context (2026-09-20 discussion): manually reviewing a chart before opening
 each paper trade was the actual bottleneck limiting how much data
@@ -16,6 +16,22 @@ way as real ones (see track_trades.py's shadow pass) but never count toward
 performance-summary.json - they exist purely to answer "what would have
 happened if we'd said yes anyway", which is exactly the buy-and-hold-vs-
 signal question this whole line of discussion started from.
+
+v15 fixes (from the 22/9/2026 committee audit, confirmed live on ZAMA):
+  1. has_open_position() used to block a real trade FOREVER once a coin had
+     ANY open shadow entry, even after its score later cleared the bar -
+     ZAMA scored 30 on 20/9 (shadow-logged), then 68 on 21/9, and never got
+     promoted because the old check only asked "is anything open", not
+     "is anything REAL open". find_open_trade() + the promotion branch in
+     main() below fix this: a live real trade still blocks a duplicate, but
+     a shadow entry gets marked "superseded" and promoted instead of
+     silently blocking forever.
+  2. pick_stop() used to ALWAYS use the liquidity-buffered resistance/
+     trendline stop, even for trend_following_eligible coins - which for an
+     extended trender (no nearby support, by definition) meant a stop 50%+
+     below entry instead of the correct ATR-based trend_following_stop
+     breakout_check.py already computes for exactly this case. Now checked
+     first.
 
 Run order: after breakout_check.py (needs its confidence_score output),
 before track_trades.py (so a same-run price-history snapshot doesn't
@@ -56,35 +72,46 @@ def get_fired_coins(radar_data: dict) -> list:
             or c.get("trendline_break_confirmed_signal")]
 
 
-def has_open_position(asset_id: str, trades: list, shadow_trades: list) -> bool:
-    """Never open a second auto-trade (real or shadow) for a coin that
-    already has one live - avoids the log filling with duplicate entries
-    every single run a coin keeps firing the same ongoing signal."""
-    for t in trades + shadow_trades:
+def find_open_trade(asset_id: str, trades: list):
+    """Returns the open/pending trade for this asset in the given list, or
+    None. Deliberately checked against `trades` (real) and `shadow_trades`
+    SEPARATELY in main() below now, not merged into one boolean like the
+    old has_open_position() - the two cases need different handling."""
+    for t in trades:
         if t.get("asset_id") == asset_id and t.get("status") in OPEN_STATUSES:
-            return True
-    return False
+            return t
+    return None
 
 
 def pick_stop(coin: dict, entry: float):
-    """Prefer whichever liquidity-buffered stop (v8.1) is present and valid
-    (below entry, for a long) - resistance-based and trendline-based can
-    both exist; the tighter one is used since it's the more conservative
-    risk figure for sizing the trade off of."""
+    """v15 fix: a trend_following_eligible coin (extended move, no nearby
+    support by definition) must use the ATR-based trend_following_stop
+    breakout_check.py already computes for it - the liquidity-buffered
+    resistance/trendline stops below are anchored to a support level the
+    price may not have visited in weeks, which for an extended trender
+    isn't a "more conservative" stop, it's simply the wrong one (this is
+    exactly what happened reviewing ZAMA on 22/9/2026: the old-style stops
+    sat 50%+ below entry). Falls back to the pre-v15 logic when trend-
+    following mode isn't active for this coin."""
+    if coin.get("trend_following_eligible") and coin.get("trend_following_stop") is not None:
+        tf_stop = coin["trend_following_stop"]
+        if tf_stop < entry:
+            return tf_stop, True
     candidates = [
         coin.get("suggested_stop_resistance_based"),
         coin.get("suggested_stop_trendline_based"),
     ]
     valid = [s for s in candidates if s is not None and s < entry]
     if not valid:
-        return None
-    return max(valid)  # the tighter (higher, closer to entry) of the valid stops
+        return None, False
+    return max(valid), False  # the tighter (higher, closer to entry) of the valid stops
 
 
-def build_trade(coin: dict, entry: float, stop: float, kind: str, reason: str = None) -> dict:
+def build_trade(coin: dict, entry: float, stop: float, kind: str, used_tf_stop: bool,
+                 reason: str = None, now: datetime = None) -> dict:
     risk = entry - stop
     targets = [round(entry + risk * mult, 8) for mult in RISK_REWARD_TIERS]
-    now = datetime.now(timezone.utc)
+    now = now or datetime.now(timezone.utc)
     date_str = now.date().isoformat()
     trade = {
         "id": f"{coin['symbol'].lower()}-{kind}-{date_str}",
@@ -96,6 +123,7 @@ def build_trade(coin: dict, entry: float, stop: float, kind: str, reason: str = 
         "status": "open",
         "entry": entry,
         "stop": stop,
+        "used_trend_following_stop": used_tf_stop,
         "targets": targets,
         "created_at": now.isoformat(),
         "filled_at": now.isoformat(),
@@ -116,9 +144,11 @@ def main():
 
     trades = trades_data.get("trades", [])
     shadow_trades = shadow_data.get("trades", [])
+    now = datetime.now(timezone.utc)
 
     fired = get_fired_coins(radar_data)
     n_auto_opened = 0
+    n_promoted = 0
     n_shadow_logged = 0
     n_skipped_no_stop = 0
     n_skipped_duplicate = 0
@@ -130,11 +160,13 @@ def main():
         if entry is None or score is None:
             continue
 
-        if has_open_position(asset_id, trades, shadow_trades):
+        # v15 fix: a live REAL trade always blocks a duplicate - never
+        # touched automatically.
+        if find_open_trade(asset_id, trades) is not None:
             n_skipped_duplicate += 1
             continue
 
-        stop = pick_stop(coin, entry)
+        stop, used_tf_stop = pick_stop(coin, entry)
         if stop is None:
             # No valid computed stop for this coin this run - can't size a
             # trade responsibly, so it's skipped entirely (not even logged
@@ -142,12 +174,31 @@ def main():
             n_skipped_no_stop += 1
             continue
 
+        open_shadow = find_open_trade(asset_id, shadow_trades)
+
         if score >= AUTO_TRADE_MIN_SCORE:
-            trades.append(build_trade(coin, entry, stop, kind="auto"))
+            if open_shadow is not None:
+                # v15 fix: promote instead of silently staying blocked -
+                # the coin's score has since crossed the real bar, so the
+                # earlier shadow entry is superseded, not still "current".
+                open_shadow["status"] = "superseded"
+                open_shadow["superseded_at"] = now.isoformat()
+                open_shadow["superseded_reason"] = (
+                    f"promoted to a real auto trade at confidence_score {score}"
+                )
+                n_promoted += 1
+            trades.append(build_trade(coin, entry, stop, kind="auto", used_tf_stop=used_tf_stop, now=now))
             n_auto_opened += 1
         else:
+            if open_shadow is not None:
+                # Already logged in shadow at an equal-or-lower bar this
+                # run's signal doesn't beat - nothing new to record.
+                n_skipped_duplicate += 1
+                continue
             reason = f"confidence_score {score} < AUTO_TRADE_MIN_SCORE {AUTO_TRADE_MIN_SCORE}"
-            shadow_trades.append(build_trade(coin, entry, stop, kind="shadow", reason=reason))
+            shadow_trades.append(
+                build_trade(coin, entry, stop, kind="shadow", used_tf_stop=used_tf_stop, reason=reason, now=now)
+            )
             n_shadow_logged += 1
 
     trades_data["trades"] = trades
@@ -155,8 +206,9 @@ def main():
     save_json(TRADES_PATH, trades_data)
     save_json(SHADOW_TRADES_PATH, shadow_data)
 
-    print(f"Auto paper trades: {n_auto_opened} opened, {n_shadow_logged} logged to shadow, "
-          f"{n_skipped_duplicate} skipped (already open), {n_skipped_no_stop} skipped (no valid stop).")
+    print(f"Auto paper trades: {n_auto_opened} opened ({n_promoted} promoted from shadow), "
+          f"{n_shadow_logged} logged to shadow, {n_skipped_duplicate} skipped (already open), "
+          f"{n_skipped_no_stop} skipped (no valid stop).")
 
 
 if __name__ == "__main__":
