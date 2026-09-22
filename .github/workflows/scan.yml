@@ -54,6 +54,9 @@ jobs:
       - name: Check open trades against latest prices + update performance summary
         run: python scripts/track_trades.py
 
+      - name: Consistency & anomaly check (v22)
+        run: python scripts/consistency_check.py
+
       - name: Evaluate past signals against current prices
         run: python scripts/evaluate_signals.py
 
