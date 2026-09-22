@@ -1,7 +1,7 @@
 {
-  "checked_at": "2026-09-22T13:40:16.610008+00:00",
+  "checked_at": "2026-09-22T15:01:49.556349+00:00",
   "n_errors": 0,
-  "n_warnings": 4,
+  "n_warnings": 15,
   "findings": [
     {
       "severity": "warning",
@@ -17,13 +17,78 @@
     },
     {
       "severity": "warning",
+      "category": "priority_review_pipeline",
+      "message": "DCR: has a confidence_score but OI/funding data was never fetched for it",
+      "symbol": "DCR"
+    },
+    {
+      "severity": "warning",
+      "category": "priority_review_pipeline",
+      "message": "GNO: has a confidence_score but OI/funding data was never fetched for it",
+      "symbol": "GNO"
+    },
+    {
+      "severity": "warning",
+      "category": "monitoring_gap",
+      "message": "[shadow] BCH (bch-shadow-2026-09-22): monitored via current-spot-only fallback - no candle/snapshot data reaching it",
+      "trade_id": "bch-shadow-2026-09-22"
+    },
+    {
+      "severity": "warning",
+      "category": "monitoring_gap",
+      "message": "[shadow] ZEC (zec-shadow-2026-09-22): monitored via current-spot-only fallback - no candle/snapshot data reaching it",
+      "trade_id": "zec-shadow-2026-09-22"
+    },
+    {
+      "severity": "warning",
+      "category": "monitoring_gap",
+      "message": "[shadow] ETHFI (ethfi-shadow-2026-09-22): monitored via current-spot-only fallback - no candle/snapshot data reaching it",
+      "trade_id": "ethfi-shadow-2026-09-22"
+    },
+    {
+      "severity": "warning",
+      "category": "monitoring_gap",
+      "message": "[shadow] LINK (link-shadow-2026-09-22): monitored via current-spot-only fallback - no candle/snapshot data reaching it",
+      "trade_id": "link-shadow-2026-09-22"
+    },
+    {
+      "severity": "warning",
+      "category": "monitoring_gap",
+      "message": "[shadow] DOT (dot-shadow-2026-09-22): monitored via current-spot-only fallback - no candle/snapshot data reaching it",
+      "trade_id": "dot-shadow-2026-09-22"
+    },
+    {
+      "severity": "warning",
+      "category": "monitoring_gap",
+      "message": "[shadow] DCR (dcr-shadow-2026-09-22): monitored via current-spot-only fallback - no candle/snapshot data reaching it",
+      "trade_id": "dcr-shadow-2026-09-22"
+    },
+    {
+      "severity": "warning",
+      "category": "monitoring_gap",
+      "message": "[shadow] JTO (jto-shadow-2026-09-22): monitored via current-spot-only fallback - no candle/snapshot data reaching it",
+      "trade_id": "jto-shadow-2026-09-22"
+    },
+    {
+      "severity": "warning",
+      "category": "monitoring_gap",
+      "message": "[shadow] 1INCH (1inch-shadow-2026-09-22): monitored via current-spot-only fallback - no candle/snapshot data reaching it",
+      "trade_id": "1inch-shadow-2026-09-22"
+    },
+    {
+      "severity": "warning",
       "category": "unlock_coverage",
-      "message": "48/49 (98%) coins with an open trade have no researched unlock schedule at all"
+      "message": "56/57 (98%) coins with an open trade have no researched unlock schedule at all"
     },
     {
       "severity": "warning",
       "category": "thin_history",
-      "message": "108 coins have fewer than 8 price-history points - Layer 2 structure signals can't evaluate them yet"
+      "message": "107 coins have fewer than 8 price-history points - Layer 2 structure signals can't evaluate them yet"
+    },
+    {
+      "severity": "warning",
+      "category": "run_gap",
+      "message": "71 minutes since the previous run (target ~30) - check the external cron"
     }
   ]
 }
