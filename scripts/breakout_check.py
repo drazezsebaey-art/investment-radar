@@ -1263,8 +1263,19 @@ def main():
     # v6: cluster-wide detection - only knowable after every candidate in this
     # run has been checked. A coin only gets a signal_quality label if it
     # actually fired something (no point labeling non-signals).
+    # v19 fix (22/9/2026): this internal `fired` list is a SEPARATE gate from
+    # select_rotating_candidates()'s escalation - a priority_review coin was
+    # correctly pulled into `candidates` and got every individual indicator
+    # computed (OI, funding, trend-following eligibility, VWAP...), but never
+    # got signal_quality or confidence_score AT ALL unless it ALSO happened
+    # to trip breakout_signal/extension_continuation/trendline_break here.
+    # Confirmed live: CRV/FF/SNX sat with every other field populated but no
+    # confidence_score across two consecutive runs, purely because this list
+    # didn't know about priority_review - the same class of gap already
+    # fixed in scan.py's radar-flags selection and auto_paper_trade.py's
+    # get_fired_coins(), just one layer deeper inside this file.
     fired = [c for c in candidates if c.get("breakout_signal") or c.get("extension_continuation_signal")
-             or c.get("trendline_break_confirmed_signal")]
+             or c.get("trendline_break_confirmed_signal") or c.get("priority_review")]
     is_cluster_run = len(fired) >= CLUSTER_SIGNAL_THRESHOLD
     for coin in fired:
         coin["cluster_wide_signal"] = is_cluster_run
