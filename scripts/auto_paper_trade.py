@@ -119,6 +119,40 @@ def pick_stop(coin: dict, entry: float):
     return max(valid), False  # the tighter (higher, closer to entry) of the valid stops
 
 
+def determine_trigger(coin: dict) -> str:
+    """v19 (22/9/2026): records exactly which signal(s) fired for this coin,
+    so a future report can compare early-signal (Layer 2/priority_review)
+    performance against confirmed-signal (breakout/extension/trendline)
+    performance WITHOUT a separate trades file - just filter config/trades.json,
+    shadow-trades.json, and scalp-trades.json by this field. A coin can
+    satisfy more than one condition at once (e.g. both extension_continuation
+    and priority_review); all applicable ones are listed, comma-separated,
+    in the same order get_fired_coins() checks them."""
+    triggers = []
+    if coin.get("breakout_signal"):
+        triggers.append("breakout_signal")
+    if coin.get("extension_continuation_signal"):
+        triggers.append("extension_continuation")
+    if coin.get("trendline_break_confirmed_signal"):
+        triggers.append("trendline_break_confirmed")
+    if coin.get("priority_review") and coin.get("confidence_score") is not None:
+        early = coin.get("early_signals") or {}
+        reasons = []
+        structure = early.get("structure") or {}
+        if structure.get("signal") == "CHoCH_bullish":
+            reasons.append("choch_bullish")
+        if early.get("volatility_squeeze"):
+            reasons.append("squeeze")
+        if early.get("bullish_rsi_divergence"):
+            reasons.append("rsi_divergence")
+        if early.get("cluster_rotation_lag"):
+            reasons.append("cluster_rotation_lag")
+        if early.get("relative_strength_consolidation"):
+            reasons.append("relative_strength_consolidation")
+        triggers.append("priority_review:" + "+".join(reasons) if reasons else "priority_review")
+    return ",".join(triggers) if triggers else "unknown"
+
+
 def build_trade(coin: dict, entry: float, stop: float, kind: str, used_tf_stop: bool,
                  reason: str = None, now: datetime = None) -> dict:
     risk = entry - stop
@@ -131,6 +165,7 @@ def build_trade(coin: dict, entry: float, stop: float, kind: str, used_tf_stop: 
         "symbol": coin["symbol"],
         "type": "paper",
         "auto": True,
+        "triggered_by": determine_trigger(coin),
         "date_opened": date_str,
         "status": "open",
         "entry": entry,
