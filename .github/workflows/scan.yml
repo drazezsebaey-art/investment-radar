@@ -1,24 +1,30 @@
 name: Market Radar Scan
 
 on:
-  schedule:
-    - cron: '*/15 * * * *'   # every 15 minutes
-  workflow_dispatch: {}       # lets you trigger it manually from the Actions tab
-
-# v15 (22/9/2026): a run takes ~21 minutes but was scheduled every 15, so a
-# new run was starting before the previous one finished - the real reason
-# the commit step needed a 5-attempt rebase-and-retry loop below. This makes
-# a queued run WAIT for the current one to finish instead of running in
-# parallel against the same data/ and config/ files. cancel-in-progress is
-# false on purpose: killing a run mid-write is worse than a short queue -
-# a cancelled run can leave partial file writes if it's stopped between
-# scripts.
-concurrency:
-  group: radar-scan
-  cancel-in-progress: false
+  workflow_dispatch: {}       # triggered externally (cron-job.org -> GitHub API)
+                               # or manually from the Actions tab.
+  # v17 (22/9/2026): the internal `schedule: cron:` trigger was removed.
+  # GitHub's own scheduler was found to be unreliable at high frequency for
+  # this repo - 15-minute schedules were firing every 2-5 hours instead
+  # (confirmed from the Actions run history: gaps of 2h29m, 5h+ between
+  # consecutive "Scheduled" runs, despite Actions being fully enabled and
+  # no repo-inactivity auto-disable in play). This is documented, known
+  # GitHub Actions behavior under platform load - not something fixable
+  # from inside this workflow file. The fix: an external scheduler
+  # (cron-job.org) now calls this workflow's `workflow_dispatch` trigger
+  # directly via the GitHub REST API on a real, guaranteed schedule,
+  # removing GitHub's own scheduler from the critical path entirely.
 
 permissions:
   contents: write
+
+# v15: a run takes ~21-30+ minutes, so a new run must WAIT for the current
+# one to finish instead of racing it. cancel-in-progress is false on
+# purpose: killing a run mid-write is worse than a short queue - a
+# cancelled run can leave partial file writes if stopped between scripts.
+concurrency:
+  group: radar-scan
+  cancel-in-progress: false
 
 jobs:
   scan:
