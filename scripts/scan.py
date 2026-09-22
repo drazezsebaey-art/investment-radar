@@ -28,7 +28,8 @@ import time
 import urllib.request
 import urllib.parse
 from pathlib import Path
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
+from statistics import mean
 
 BASE_URL = "https://api.coingecko.com/api/v3/coins/markets"
 CATEGORY_URL = "https://api.coingecko.com/api/v3/coins/markets"
@@ -62,6 +63,269 @@ FLAG_REVERSAL_24H = 5.0
 FLAG_REVERSAL_7D = 5.0
 UNUSUAL_VOLUME_MULTIPLE = 2.5
 EXCESS_VS_BTC_PCT = 10.0
+
+# --- v15: Layer-2 cheap universal early-signal screening -------------------
+# Rationale (from the 22/9/2026 committee audit + brainstorm): every signal
+# in breakout_check.py is CONFIRMATORY - it needs the price to have already
+# broken out or extended. This runs on every coin already accumulating
+# price-history.json (not just this run's top-40 flagged list, which
+# reshuffles every run) at ZERO extra API cost, purely from data already
+# being collected. A hit here doesn't open any trade by itself - it only
+# marks priority_review so breakout_check.py's rotation gives the coin an
+# immediate deep-evaluation slot instead of waiting up to ~2-3 runs for its
+# normal turn (the detection-latency gap the audit found via ZAMA).
+SYNTHETIC_CANDLE_HOURS = 4      # bucket size for turning 15-min snapshots into swing-detectable bars
+MIN_CANDLES_FOR_STRUCTURE = 8   # need at least this many synthetic candles before trusting a swing read
+SWING_LOOKBACK = 2              # a candle is a swing point if it's the extreme of the 2 candles either side (fewer than breakout_check's TRENDLINE_SWING_LOOKBACK_CANDLES=5 since far fewer candles are available here)
+
+SQUEEZE_LOOKBACK_CANDLES = 12   # older comparison window
+SQUEEZE_COMPARE_CANDLES = 6     # recent window being checked for contraction
+SQUEEZE_CONTRACTION_RATIO = 0.7  # recent avg range must be <= 70% of the older avg range to count as coiling
+
+RS_CONSOLIDATION_LOOKBACK_HOURS = 48
+RS_CONSOLIDATION_MAX_OWN_MOVE_PCT = 8.0     # "consolidating" - hasn't already made its own big move (that's what FLAG_24H_PCT/FLAG_7D_PCT already catch)
+RS_CONSOLIDATION_MIN_OUTPERFORM_PCT = 6.0   # ...while still quietly beating BTC by at least this many points over the same window
+
+CLUSTER_LAG_MIN_FLAGGED_PEERS = 2  # need at least this many OTHER coins in the same tracked category to already show a real (price/volume-based) flag this run
+
+
+def build_synthetic_candles(points: list, bucket_hours: int = SYNTHETIC_CANDLE_HOURS) -> list:
+    """Aggregates 15-min price snapshots into synthetic OHLC-ish candles.
+    IMPORTANT LIMITATION: only the 'price' field is bucketed into open/high/
+    low/close. high_24h/low_24h/volume on each point are CoinGecko's
+    ROLLING 24h aggregates, not deltas for that specific 15-min slice, so
+    they cannot be safely turned into a candle's own high/low/volume - that
+    would silently smear 24h-old extremes into a 4h bar. This makes these
+    candles closer to "a line chart resampled into bars" than true OHLC -
+    good enough for swing/structure detection (which only needs relative
+    highs and lows of the PRICE series), not for anything that needs real
+    intrabar range or volume."""
+    buckets = {}
+    for p in points:
+        price = p.get("price")
+        ts = p.get("t")
+        if price is None or ts is None:
+            continue
+        try:
+            dt = datetime.fromisoformat(ts)
+        except ValueError:
+            continue
+        bucket_hour = (dt.hour // bucket_hours) * bucket_hours
+        bucket_key = dt.replace(hour=bucket_hour, minute=0, second=0, microsecond=0)
+        buckets.setdefault(bucket_key, []).append(price)
+    candles = []
+    for bucket_key in sorted(buckets.keys()):
+        prices = buckets[bucket_key]
+        candles.append({
+            "t": bucket_key.isoformat(),
+            "open": prices[0],
+            "high": max(prices),
+            "low": min(prices),
+            "close": prices[-1],
+        })
+    return candles
+
+
+def find_swings(candles: list, lookback: int = SWING_LOOKBACK) -> list:
+    """Fractal swing-point detection, same principle as breakout_check.py's
+    descending-trendline swing highs, applied here to both highs and lows.
+    Returns swings in chronological order as {"index", "t", "price", "type"}."""
+    swings = []
+    n = len(candles)
+    for i in range(lookback, n - lookback):
+        window = candles[i - lookback:i + lookback + 1]
+        if candles[i]["high"] == max(c["high"] for c in window):
+            swings.append({"index": i, "t": candles[i]["t"], "price": candles[i]["high"], "type": "high"})
+        if candles[i]["low"] == min(c["low"] for c in window):
+            swings.append({"index": i, "t": candles[i]["t"], "price": candles[i]["low"], "type": "low"})
+    return swings
+
+
+def detect_structure_signal(candles: list):
+    """CHoCH/BOS read (same definitions as the LuxAlgo SMC tool already in
+    use): BOS = price breaks the last swing point IN the current structure's
+    direction (continuation - not new information, breakout_check.py's own
+    logic already catches this once it's underway). CHoCH = price breaks
+    the last swing point AGAINST the current structure's direction for the
+    first time - this is the early one, the whole reason to run this before
+    any confirmed breakout. Returns None (not a guess) with too little
+    history, matching the insufficient-history discipline used elsewhere."""
+    if len(candles) < MIN_CANDLES_FOR_STRUCTURE:
+        return None
+    swings = find_swings(candles)
+    highs = [s for s in swings if s["type"] == "high"]
+    lows = [s for s in swings if s["type"] == "low"]
+    if len(highs) < 2 or len(lows) < 2:
+        return None
+    last_high, prev_high = highs[-1], highs[-2]
+    last_low, prev_low = lows[-1], lows[-2]
+    if last_high["price"] > prev_high["price"] and last_low["price"] > prev_low["price"]:
+        structure = "uptrend"
+    elif last_high["price"] < prev_high["price"] and last_low["price"] < prev_low["price"]:
+        structure = "downtrend"
+    else:
+        structure = "unclear"
+    latest_close = candles[-1]["close"]
+    signal = None
+    if structure == "downtrend" and latest_close > last_high["price"]:
+        signal = "CHoCH_bullish"    # the early-reversal case this whole layer exists to catch
+    elif structure == "uptrend" and latest_close < last_low["price"]:
+        signal = "CHoCH_bearish"
+    elif structure == "uptrend" and latest_close > last_high["price"]:
+        signal = "BOS_bullish"
+    elif structure == "downtrend" and latest_close < last_low["price"]:
+        signal = "BOS_bearish"
+    return {"structure": structure, "signal": signal,
+            "last_swing_high": last_high["price"], "last_swing_low": last_low["price"]}
+
+
+def detect_volatility_squeeze(candles: list) -> bool:
+    """True-range-as-%-of-close, comparing the recent window against the
+    window before it. A contracting range ahead of a move is the classic
+    pre-breakout "coiling" tell (Bollinger squeeze / VCP logic) - catching
+    it BEFORE the expansion, not after, is the point of this layer."""
+    need = SQUEEZE_LOOKBACK_CANDLES + SQUEEZE_COMPARE_CANDLES
+    if len(candles) < need:
+        return False
+
+    def avg_range_pct(subset):
+        ranges = [(c["high"] - c["low"]) / c["close"] for c in subset if c.get("close")]
+        return mean(ranges) if ranges else None
+
+    older = candles[-need:-SQUEEZE_COMPARE_CANDLES]
+    recent = candles[-SQUEEZE_COMPARE_CANDLES:]
+    older_range = avg_range_pct(older)
+    recent_range = avg_range_pct(recent)
+    if not older_range or recent_range is None:
+        return False
+    return recent_range <= older_range * SQUEEZE_CONTRACTION_RATIO
+
+
+def compute_rsi_series(closes: list, period: int = 14) -> list:
+    """Rolling RSI(period) at every candle, aligned index-for-index with
+    `closes` (leading entries are None until enough history exists). The
+    existing compute_rsi() only ever returns the single latest value, which
+    isn't enough to compare RSI at two different swing lows for divergence."""
+    n = len(closes)
+    series = [None] * n
+    if n < period + 1:
+        return series
+    gains, losses = [], []
+    for i in range(1, n):
+        change = closes[i] - closes[i - 1]
+        gains.append(max(change, 0))
+        losses.append(max(-change, 0))
+    for i in range(period, n):
+        g = gains[i - period:i]
+        l = losses[i - period:i]
+        avg_gain = mean(g)
+        avg_loss = mean(l)
+        series[i] = 100.0 if avg_loss == 0 else round(100 - (100 / (1 + avg_gain / avg_loss)), 2)
+    return series
+
+
+def detect_bullish_rsi_divergence(candles: list) -> bool:
+    """Price makes a lower low while RSI makes a higher low: downside
+    momentum is fading before the price itself turns - earlier than CHoCH,
+    which needs the structure to actually break first."""
+    if len(candles) < MIN_CANDLES_FOR_STRUCTURE:
+        return False
+    closes = [c["close"] for c in candles]
+    rsi_series = compute_rsi_series(closes)
+    swings = find_swings(candles)
+    lows = [s for s in swings if s["type"] == "low" and rsi_series[s["index"]] is not None]
+    if len(lows) < 2:
+        return False
+    prev_low, last_low = lows[-2], lows[-1]
+    price_lower_low = last_low["price"] < prev_low["price"]
+    rsi_higher_low = rsi_series[last_low["index"]] > rsi_series[prev_low["index"]]
+    return price_lower_low and rsi_higher_low
+
+
+def detect_cluster_rotation_lag(coin_id: str, categories: dict, base_flagged_ids: set):
+    """If 2+ OTHER coins in the same tracked category already show a real
+    (price/volume-based) flag THIS run but this coin doesn't, sector
+    rotation lag makes it a reasonable early candidate for the next leg -
+    sectors tend to move together with a delay, not simultaneously. Checked
+    against base_flagged_ids only (not other coins' early signals), so this
+    can't chain off another coin's own unconfirmed squeeze/CHoCH flag.
+    Returns the category name, or None."""
+    for category, ids in categories.items():
+        if not isinstance(ids, list) or coin_id not in ids:
+            continue
+        peers_flagged = sum(1 for cid in ids if cid != coin_id and cid in base_flagged_ids)
+        if peers_flagged >= CLUSTER_LAG_MIN_FLAGGED_PEERS:
+            return category
+    return None
+
+
+def _pct_change_over_window(points: list, lookback_hours: float):
+    if len(points) < 4:
+        return None
+    try:
+        now = datetime.fromisoformat(points[-1]["t"])
+    except (KeyError, ValueError):
+        return None
+    target = now - timedelta(hours=lookback_hours)
+    past_point = min(
+        points,
+        key=lambda p: abs(datetime.fromisoformat(p["t"]) - target) if p.get("t") else timedelta.max,
+    )
+    past_price = past_point.get("price")
+    latest_price = points[-1].get("price")
+    if not past_price or latest_price is None:
+        return None
+    return (latest_price - past_price) / past_price * 100
+
+
+def detect_relative_strength_consolidation(coin_points: list, btc_points: list) -> bool:
+    """A coin that's roughly flat on its own (genuinely consolidating - not
+    already mooning, which FLAG_24H_PCT/FLAG_7D_PCT already catch) while
+    quietly beating BTC over the same window is showing hidden strength
+    BEFORE any breakout - the "quiet accumulation" tell."""
+    own_chg = _pct_change_over_window(coin_points, RS_CONSOLIDATION_LOOKBACK_HOURS)
+    btc_chg = _pct_change_over_window(btc_points, RS_CONSOLIDATION_LOOKBACK_HOURS)
+    if own_chg is None or btc_chg is None:
+        return False
+    return (abs(own_chg) <= RS_CONSOLIDATION_MAX_OWN_MOVE_PCT
+            and (own_chg - btc_chg) >= RS_CONSOLIDATION_MIN_OUTPERFORM_PCT)
+
+
+def compute_early_signals(coin_id: str, points: list, categories: dict,
+                           base_flagged_ids: set, btc_points: list) -> dict:
+    candles = build_synthetic_candles(points)
+    return {
+        "structure": detect_structure_signal(candles),
+        "volatility_squeeze": detect_volatility_squeeze(candles),
+        "bullish_rsi_divergence": detect_bullish_rsi_divergence(candles),
+        "cluster_rotation_lag": detect_cluster_rotation_lag(coin_id, categories, base_flagged_ids),
+        "relative_strength_consolidation": (
+            detect_relative_strength_consolidation(points, btc_points) if btc_points else False
+        ),
+    }
+
+
+def early_signal_flags(signals: dict) -> list:
+    """Translates raw early-signal booleans into the same Arabic flags/
+    array style used by compute_flags() below, so they display identically
+    and count identically toward a coin's flag total. NOTE: these do NOT
+    feed compute_confidence_score() in breakout_check.py - per the 22/9
+    design decision, an early signal only earns a coin a priority_review
+    escalation to deep evaluation, never a scoring weight, until enough
+    outcomes are logged in agent-room-log.json to justify one."""
+    flags = []
+    structure = signals.get("structure") or {}
+    if structure.get("signal") == "CHoCH_bullish":
+        flags.append("CHoCH صاعد مبكر — تغيّر هيكلي محتمل قبل أي اختراق مؤكد")
+    if signals.get("volatility_squeeze"):
+        flags.append("انضغاط تقلب (Squeeze) — مدى الحركة بيضيق قبل احتمال انفجار")
+    if signals.get("bullish_rsi_divergence"):
+        flags.append("تباعد RSI صاعد — زخم الهبوط بيضعف قبل انعكاس السعر")
+    if signals.get("cluster_rotation_lag"):
+        flags.append(f"تأخر دوران قطاعي — عملات تانية في {signals['cluster_rotation_lag']} تحركت وهي لسه ساكنة")
+    if signals.get("relative_strength_consolidation"):
+        flags.append("قوة نسبية خفية أثناء التماسك — بتتفوق على BTC وهي ساكنة ظاهريًا")
+    return flags
 
 
 def fetch_json(url: str, params: dict) -> list:
@@ -318,7 +582,10 @@ def main():
 
     history = load_json(HISTORY_PATH, {})
     timestamp = datetime.now(timezone.utc).isoformat()
-    always_track = set(watchlist_ids)
+    # v15: bitcoin must always accumulate history regardless of whether it
+    # ever gets flagged itself - it's the benchmark every early-signal
+    # relative-strength check below is computed against.
+    always_track = set(watchlist_ids) | {"bitcoin"}
     for coin in all_coins:
         update_history(history, coin, timestamp, always_track)
     HISTORY_PATH.write_text(json.dumps(history, ensure_ascii=False), encoding="utf-8")
@@ -335,12 +602,39 @@ def main():
     else:
         current_categories = existing_categories.get("categories", {})
 
-    records = []
+    # v15: pass 1 - existing price/volume-based flags for every coin, so
+    # cluster_rotation_lag below can check which PEERS had a REAL flag this
+    # run before any coin's own early signals are computed (a squeeze flag
+    # on coin A must never count as coin B's "peer moved" evidence).
+    base_flags_by_id = {}
     for coin in all_coins:
         points = history.get(coin["id"], [])
         baseline = compute_volume_baseline(points) if len(points) >= 4 else None
-        flags = compute_flags(coin, baseline, btc_chg24, btc_chg7d)
-        records.append(build_record(coin, flags, indicators, btc_chg24))
+        base_flags_by_id[coin["id"]] = compute_flags(coin, baseline, btc_chg24, btc_chg7d)
+    base_flagged_ids = {cid for cid, flags in base_flags_by_id.items() if flags}
+
+    # v15: pass 2 - Layer-2 cheap universal early-signal screening, on every
+    # coin with enough accumulated history (not just this run's eventual
+    # top-40), at zero extra API cost.
+    btc_points = history.get("bitcoin", [])
+    records = []
+    for coin in all_coins:
+        cid = coin["id"]
+        points = history.get(cid, [])
+        flags = list(base_flags_by_id[cid])
+        priority_review = False
+        early_signals = None
+        if len(points) >= 4:
+            early_signals = compute_early_signals(cid, points, current_categories, base_flagged_ids, btc_points)
+            new_flags = early_signal_flags(early_signals)
+            if new_flags:
+                flags = flags + new_flags
+                priority_review = True
+        record = build_record(coin, flags, indicators, btc_chg24)
+        if early_signals is not None:
+            record["early_signals"] = early_signals
+        record["priority_review"] = priority_review
+        records.append(record)
 
     # market breadth - what fraction of the scanned universe is green right now
     with_change = [r for r in records if r.get("change_24h_pct") is not None]
@@ -359,7 +653,17 @@ def main():
 
     flagged = [r for r in records if r["flags"]]
     flagged.sort(key=lambda r: len(r["flags"]), reverse=True)
-    top_flagged = flagged[:40]
+    top_by_flag_count = flagged[:40]
+
+    # v15: a coin escalated by Layer 2 (priority_review) must reach
+    # breakout_check.py THIS run even if it ranks below the top 40 by raw
+    # flag count (a lone squeeze/CHoCH flag can rank under five coins each
+    # showing four ordinary price/volume flags) - otherwise the whole point
+    # of catching it early is lost to it simply not making the cut.
+    already_included_ids = {r["id"] for r in top_by_flag_count}
+    priority_extras = [r for r in flagged
+                        if r.get("priority_review") and r["id"] not in already_included_ids]
+    top_flagged = top_by_flag_count + priority_extras
 
     category_clusters = compute_category_clusters(top_flagged, current_categories)
 
@@ -374,8 +678,11 @@ def main():
         json.dumps(radar_flags, ensure_ascii=False, indent=2), encoding="utf-8"
     )
 
-    print(f"Scanned {len(records)} coins, {len(flagged)} flagged (saved top {len(top_flagged)}), "
+    n_priority = sum(1 for r in records if r.get("priority_review"))
+    print(f"Scanned {len(records)} coins, {len(flagged)} flagged (saved {len(top_flagged)}: "
+          f"top {len(top_by_flag_count)} by flag count + {len(priority_extras)} priority-escalated), "
           f"breadth={market_breadth_pct_green}% green, {len(category_clusters)} category clusters, "
+          f"{n_priority} coins with a Layer-2 early signal this run, "
           f"{len(indicators)} with computed indicators, history for {len(history)} coins.")
 
 
