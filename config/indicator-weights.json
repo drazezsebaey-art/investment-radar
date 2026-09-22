@@ -1,11 +1,12 @@
 {
-  "_readme": "v8 composite confidence score weights. These are STARTING PRIORS, not settled truth - breakout_or_trendline_signal is deliberately low because our own backtest-results.json showed the raw signal barely beats a coin flip (53.3% vs 51.2%). idiosyncratic_quality is high because it's what actually flipped the OP and ARB verdicts in review. Edit any value here to override the code default without redeploying breakout_check.py - a partial file only overrides the keys it names, everything else falls back to the code default. Once agent-room-log.json has ~15-20 entries, these should be recalibrated from real outcomes instead of left as opinion.",
+  "_readme": "v8 composite confidence score weights. These are STARTING PRIORS, not settled truth - breakout_or_trendline_signal is deliberately low because our own backtest-results.json showed the raw signal barely beats a coin flip (53.3% vs 51.2%). idiosyncratic_quality is high because it's what actually flipped the OP and ARB verdicts in review. relative_strength_bonus (v14) was added to the code's DEFAULT_INDICATOR_WEIGHTS but never added here - it fell back to the code default silently, which worked but was misleading to read, so it's now listed explicitly (22/9/2026 audit, P2 fix). Edit any value here to override the code default without redeploying breakout_check.py - a partial file only overrides the keys it names, everything else falls back to the code default. Once agent-room-log.json has ~15-20 entries, these should be recalibrated from real outcomes instead of left as opinion. Layer-2 early signals (CHoCH/squeeze/RSI-divergence/cluster-lag/RS-in-consolidation, added in scan.py v15) deliberately have NO entry here yet - they only escalate a coin to deep review (priority_review), they do not feed the score, until they've proven themselves in agent-room-log.json.",
   "breakout_or_trendline_signal": 15,
   "volume_confirmed": 10,
   "trend_aligned": 10,
   "idiosyncratic_quality": 25,
   "oi_price_confirms": 15,
   "funding_not_crowded": 10,
+  "relative_strength_bonus": 15,
   "deep_drawdown_penalty": -10,
   "unlock_risk_penalty": -10
 }
