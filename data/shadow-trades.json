@@ -556,7 +556,7 @@
       "type": "paper",
       "auto": true,
       "date_opened": "2026-09-21",
-      "status": "open",
+      "status": "superseded",
       "entry": 0.320634,
       "stop": 0.26361593,
       "targets": [
@@ -571,7 +571,9 @@
       "confidence_score_at_entry": 28,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 28 < AUTO_TRADE_MIN_SCORE 40",
-      "last_check_source": "okx_candles"
+      "last_check_source": "okx_candles",
+      "superseded_at": "2026-09-22T21:10:22.827232+00:00",
+      "superseded_reason": "promoted to a real auto trade at confidence_score 43"
     },
     {
       "id": "tia-shadow-2026-09-21",
@@ -619,7 +621,7 @@
       "type": "paper",
       "auto": true,
       "date_opened": "2026-09-21",
-      "status": "open",
+      "status": "superseded",
       "entry": 0.088258,
       "stop": 0.07821253,
       "targets": [
@@ -634,7 +636,9 @@
       "confidence_score_at_entry": 38,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 38 < AUTO_TRADE_MIN_SCORE 40",
-      "last_check_source": "okx_candles"
+      "last_check_source": "okx_candles",
+      "superseded_at": "2026-09-22T21:10:22.827232+00:00",
+      "superseded_reason": "promoted to a real auto trade at confidence_score 53"
     },
     {
       "id": "pepe-shadow-2026-09-21",
@@ -1268,7 +1272,12 @@
       "created_at": "2026-09-22T15:01:19.414348+00:00",
       "filled_at": "2026-09-22T15:01:19.414348+00:00",
       "actual_entry": 1.17,
-      "targets_hit": [],
+      "targets_hit": [
+        {
+          "target": 1.19857093,
+          "hit_at": "2026-09-22T21:10:54.794239+00:00"
+        }
+      ],
       "confidence_score_at_entry": 20,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 20 < AUTO_TRADE_MIN_SCORE 40",
@@ -1386,7 +1395,7 @@
       "auto": true,
       "triggered_by": "priority_review",
       "date_opened": "2026-09-22",
-      "status": "open",
+      "status": "closed_targets_complete",
       "entry": 0.00901409,
       "stop": 0.00875924,
       "used_trend_following_stop": false,
@@ -1406,12 +1415,18 @@
         {
           "target": 0.00965122,
           "hit_at": "2026-09-22T19:27:11.300008+00:00"
+        },
+        {
+          "target": 0.01003349,
+          "hit_at": "2026-09-22T21:10:54.794328+00:00"
         }
       ],
       "confidence_score_at_entry": 20,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 20 < AUTO_TRADE_MIN_SCORE 40",
-      "last_check_source": "okx_candles"
+      "last_check_source": "okx_candles",
+      "exit_price": 0.01003349,
+      "date_closed": "2026-09-22T21:10:54.794328+00:00"
     },
     {
       "id": "sent-shadow-2026-09-22",
@@ -1553,7 +1568,7 @@
       "auto": true,
       "triggered_by": "priority_review:cluster_rotation_lag",
       "date_opened": "2026-09-22",
-      "status": "open",
+      "status": "stopped",
       "entry": 116.98,
       "stop": 116.7823077,
       "used_trend_following_stop": false,
@@ -1569,6 +1584,138 @@
       "confidence_score_at_entry": 10,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 10 < AUTO_TRADE_MIN_SCORE 40",
+      "last_check_source": "price_history_snapshots",
+      "exit_price": 116.7823077,
+      "date_closed": "2026-09-22T21:10:54.794403+00:00"
+    },
+    {
+      "id": "xec-shadow-2026-09-22",
+      "asset_id": "ecash",
+      "symbol": "XEC",
+      "type": "paper",
+      "auto": true,
+      "triggered_by": "extension_continuation",
+      "date_opened": "2026-09-22",
+      "status": "open",
+      "entry": 9.13e-06,
+      "stop": 6.85e-06,
+      "used_trend_following_stop": false,
+      "targets": [
+        1.255e-05,
+        1.483e-05,
+        1.825e-05
+      ],
+      "created_at": "2026-09-22T21:10:22.827232+00:00",
+      "filled_at": "2026-09-22T21:10:22.827232+00:00",
+      "actual_entry": 9.13e-06,
+      "targets_hit": [],
+      "confidence_score_at_entry": 28,
+      "signal_quality_at_entry": "beta_driven_or_cluster",
+      "rejected_reason": "confidence_score 28 < AUTO_TRADE_MIN_SCORE 40",
+      "last_check_source": "current_spot_fallback"
+    },
+    {
+      "id": "paxg-shadow-2026-09-22",
+      "asset_id": "pax-gold",
+      "symbol": "PAXG",
+      "type": "paper",
+      "auto": true,
+      "triggered_by": "priority_review:choch_bullish",
+      "date_opened": "2026-09-22",
+      "status": "open",
+      "entry": 4357.21,
+      "stop": 4354.02253508,
+      "used_trend_following_stop": false,
+      "targets": [
+        4361.99119738,
+        4365.1786623,
+        4369.95985968
+      ],
+      "created_at": "2026-09-22T21:10:22.827232+00:00",
+      "filled_at": "2026-09-22T21:10:22.827232+00:00",
+      "actual_entry": 4357.21,
+      "targets_hit": [],
+      "confidence_score_at_entry": 20,
+      "signal_quality_at_entry": "beta_driven_or_cluster",
+      "rejected_reason": "confidence_score 20 < AUTO_TRADE_MIN_SCORE 40",
+      "last_check_source": "current_spot_fallback"
+    },
+    {
+      "id": "imx-shadow-2026-09-22",
+      "asset_id": "immutable-x",
+      "symbol": "IMX",
+      "type": "paper",
+      "auto": true,
+      "triggered_by": "priority_review",
+      "date_opened": "2026-09-22",
+      "status": "open",
+      "entry": 0.149909,
+      "stop": 0.13326915,
+      "used_trend_following_stop": false,
+      "targets": [
+        0.17486877,
+        0.19150862,
+        0.2164684
+      ],
+      "created_at": "2026-09-22T21:10:22.827232+00:00",
+      "filled_at": "2026-09-22T21:10:22.827232+00:00",
+      "actual_entry": 0.149909,
+      "targets_hit": [],
+      "confidence_score_at_entry": 10,
+      "signal_quality_at_entry": "beta_driven_or_cluster",
+      "rejected_reason": "confidence_score 10 < AUTO_TRADE_MIN_SCORE 40",
+      "last_check_source": "current_spot_fallback"
+    },
+    {
+      "id": "eth-shadow-2026-09-22",
+      "asset_id": "ethereum",
+      "symbol": "ETH",
+      "type": "paper",
+      "auto": true,
+      "triggered_by": "priority_review",
+      "date_opened": "2026-09-22",
+      "status": "open",
+      "entry": 2750.03,
+      "stop": 2495.20107143,
+      "used_trend_following_stop": false,
+      "targets": [
+        3132.27339286,
+        3387.10232143,
+        3769.34571428
+      ],
+      "created_at": "2026-09-22T21:10:22.827232+00:00",
+      "filled_at": "2026-09-22T21:10:22.827232+00:00",
+      "actual_entry": 2750.03,
+      "targets_hit": [],
+      "confidence_score_at_entry": 20,
+      "signal_quality_at_entry": "beta_driven_or_cluster",
+      "rejected_reason": "confidence_score 20 < AUTO_TRADE_MIN_SCORE 40",
+      "last_check_source": "current_spot_fallback"
+    },
+    {
+      "id": "xrp-shadow-2026-09-22",
+      "asset_id": "ripple",
+      "symbol": "XRP",
+      "type": "paper",
+      "auto": true,
+      "triggered_by": "extension_continuation,priority_review",
+      "date_opened": "2026-09-22",
+      "status": "open",
+      "entry": 1.58,
+      "stop": 1.42774815,
+      "used_trend_following_stop": false,
+      "targets": [
+        1.80837778,
+        1.96062963,
+        2.1890074
+      ],
+      "created_at": "2026-09-22T21:10:22.827232+00:00",
+      "filled_at": "2026-09-22T21:10:22.827232+00:00",
+      "actual_entry": 1.58,
+      "targets_hit": [],
+      "confidence_score_at_entry": 38,
+      "signal_quality_at_entry": "beta_driven_or_cluster",
+      "rejected_reason": "confidence_score 38 < AUTO_TRADE_MIN_SCORE 40",
       "last_check_source": "current_spot_fallback"
     }
   ]
