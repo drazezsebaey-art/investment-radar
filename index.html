@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>لوحة رادار السوق — investment-radar</title>
+<style>
+  :root {
+    --bg: #0d1117; --bg2: #161b22; --bg3: #1c2129; --border: #30363d;
+    --text: #c9d1d9; --text-dim: #8b949e; --text-bright: #f0f6fc;
+    --green: #3fb950; --red: #f85149; --amber: #d29922; --blue: #58a6ff; --purple: #a371f7;
+  }
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg); color: var(--text); font-family: -apple-system, "Segoe UI", Tahoma, Arial, sans-serif;
+    margin: 0; padding: 0 0 60px 0; line-height: 1.6; font-size: 14px;
+  }
+  a { color: var(--blue); }
+  header {
+    background: var(--bg2); border-bottom: 1px solid var(--border); padding: 14px 16px;
+    position: sticky; top: 0; z-index: 10;
+  }
+  header h1 { margin: 0 0 6px 0; font-size: 18px; color: var(--text-bright); }
+  #meta { display: flex; flex-wrap: wrap; gap: 14px; font-size: 12.5px; color: var(--text-dim); align-items: center; }
+  #meta .pill { background: var(--bg3); border: 1px solid var(--border); border-radius: 999px; padding: 3px 10px; }
+  #refreshBtn {
+    background: var(--bg3); color: var(--text); border: 1px solid var(--border); border-radius: 6px;
+    padding: 4px 10px; cursor: pointer; font-size: 12.5px;
+  }
+  #refreshBtn:hover { border-color: var(--blue); color: var(--blue); }
+  nav {
+    display: flex; gap: 4px; overflow-x: auto; padding: 8px 16px; background: var(--bg2);
+    border-bottom: 1px solid var(--border); position: sticky; top: 58px; z-index: 9;
+  }
+  nav a {
+    white-space: nowrap; text-decoration: none; color: var(--text-dim); background: var(--bg3);
+    border: 1px solid var(--border); border-radius: 6px; padding: 5px 12px; font-size: 12.5px;
+  }
+  main { max-width: 1200px; margin: 0 auto; padding: 16px; }
+  section { margin-bottom: 34px; }
+  h2 {
+    font-size: 15px; color: var(--text-bright); border-right: 3px solid var(--blue);
+    padding-right: 10px; margin: 0 0 12px 0;
+  }
+  .subnote { color: var(--text-dim); font-size: 12px; margin: -6px 0 12px 13px; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin-bottom: 14px; }
+  .card { background: var(--bg2); border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px; }
+  .card .label { color: var(--text-dim); font-size: 11.5px; margin-bottom: 4px; }
+  .card .value { font-size: 18px; color: var(--text-bright); font-weight: 600; }
+  table { width: 100%; border-collapse: collapse; background: var(--bg2); border-radius: 8px; overflow: hidden; }
+  thead th {
+    background: var(--bg3); color: var(--text-dim); font-weight: 500; font-size: 11.5px;
+    text-align: right; padding: 8px 10px; border-bottom: 1px solid var(--border); white-space: nowrap;
+  }
+  tbody td { padding: 8px 10px; border-bottom: 1px solid var(--border); font-size: 12.5px; white-space: nowrap; }
+  tbody tr:last-child td { border-bottom: none; }
+  tbody tr.rowclick { cursor: pointer; }
+  tbody tr.rowclick:hover { background: var(--bg3); }
+  .detail-row td { background: #0a0d12; white-space: normal; padding: 12px; }
+  .detail-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 6px 16px; font-size: 12px; }
+  .detail-grid div span { color: var(--text-dim); }
+  .sym { font-weight: 600; color: var(--text-bright); }
+  .badge {
+    display: inline-block; padding: 2px 8px; border-radius: 999px; font-size: 11px; font-weight: 600;
+  }
+  .b-open { background: rgba(88,166,255,.15); color: var(--blue); }
+  .b-pending { background: rgba(210,153,34,.15); color: var(--amber); }
+  .b-stopped { background: rgba(248,81,73,.15); color: var(--red); }
+  .b-win { background: rgba(63,185,80,.15); color: var(--green); }
+  .b-gray { background: rgba(139,148,158,.15); color: var(--text-dim); }
+  .pos { color: var(--green); } .neg { color: var(--red); }
+  .flags { font-size: 11.5px; color: var(--text-dim); }
+  .flags li { margin-bottom: 2px; }
+  .quality-idio { color: var(--green); } .quality-beta { color: var(--amber); }
+  .empty { color: var(--text-dim); font-size: 12.5px; padding: 14px; text-align: center; }
+  .err { color: var(--red); } .warn { color: var(--amber); }
+  .alert-item { padding: 8px 10px; border-radius: 6px; margin-bottom: 6px; font-size: 12.5px; }
+  .alert-err { background: rgba(248,81,73,.08); border: 1px solid rgba(248,81,73,.3); }
+  .alert-warn { background: rgba(210,153,34,.08); border: 1px solid rgba(210,153,34,.3); }
+  .thesis-card { background: var(--bg2); border: 1px solid var(--border); border-radius: 8px; padding: 12px; margin-bottom: 10px; }
+  .thesis-card.triggered { border-color: var(--green); }
+  .scenario { background: var(--bg3); border-radius: 6px; padding: 8px; margin-top: 6px; font-size: 12px; }
+  footer { text-align: center; color: var(--text-dim); font-size: 11.5px; padding: 20px; }
+  th.sortable { cursor: pointer; }
+  th.sortable:hover { color: var(--text-bright); }
+  ::-webkit-scrollbar { height: 8px; width: 8px; }
+  ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
+  .tablewrap { overflow-x: auto; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🛰️ لوحة رادار السوق</h1>
+  <div id="meta">
+    <span class="pill" id="lastUpdate">جارٍ التحميل...</span>
+    <span class="pill" id="breadth">—</span>
+    <span class="pill" id="coinCount">—</span>
+    <button id="refreshBtn" onclick="loadAll()">↻ تحديث الآن</button>
+    <span class="pill" id="autoRefreshLabel">تحديث تلقائي كل دقيقتين</span>
+  </div>
+</header>
+
+<nav>
+  <a href="#proactive">استباقي</a>
+  <a href="#momentum">زخم</a>
+  <a href="#real">حقيقي</a>
+  <a href="#shadow">شادو</a>
+  <a href="#scalp">سكالب</a>
+  <a href="#perf">الأداء</a>
+  <a href="#health">تنبيهات النظام</a>
+  <a href="#thesis">قائمة المتابعة</a>
+</nav>
+
+<main>
+
+  <section id="proactive">
+    <h2>🟣 الترشيحات الاستباقية (Layer 2)</h2>
+    <div class="subnote">عملات اتفلجت بإشارة مبكرة قبل أي حركة سعرية مؤكدة — مرتبة حسب السكور</div>
+    <div class="tablewrap"><table id="tblProactive">
+      <thead><tr>
+        <th>العملة</th><th>السكور</th><th>الجودة</th><th>الأسباب</th><th>السعر</th>
+        <th>تغير 24س</th><th>تغير 7ي</th><th>RSI</th><th>ATR%</th>
+      </tr></thead>
+      <tbody></tbody>
+    </table></div>
+  </section>
+
+  <section id="momentum">
+    <h2>🔵 ترشيحات الزخم (اختراق/امتداد مؤكد)</h2>
+    <div class="tablewrap"><table id="tblMomentum">
+      <thead><tr>
+        <th>العملة</th><th>السكور</th><th>الجودة</th><th>السبب</th><th>السعر</th>
+        <th>تغير 24س</th><th>تغير 7ي</th><th>RSI</th><th>القوة النسبية</th>
+      </tr></thead>
+      <tbody></tbody>
+    </table></div>
+  </section>
+
+  <section id="real">
+    <h2>💰 الصفقات الحقيقية</h2>
+    <div class="tablewrap"><table id="tblReal">
+      <thead><tr>
+        <th>العملة</th><th>الحالة</th><th>الدخول</th><th>الحالي</th><th>الربح/الخسارة</th>
+        <th>الستوب</th><th>مسافة الستوب</th><th>الهدف الأول</th><th>الأهداف المُحققة</th>
+        <th>السبب</th><th>تاريخ الفتح</th>
+      </tr></thead>
+      <tbody></tbody>
+    </table></div>
+  </section>
+
+  <section id="shadow">
+    <h2>👤 صفقات الشادو</h2>
+    <div class="subnote">إشارات فيرت لكن السكور تحت الحد الأدنى (40) — بنتتبعها لمعرفة "لو دخلنا كنا هنكسب ولا لأ"</div>
+    <div class="tablewrap"><table id="tblShadow">
+      <thead><tr>
+        <th>العملة</th><th>الحالة</th><th>الدخول</th><th>الحالي</th><th>الربح/الخسارة</th>
+        <th>الستوب</th><th>الهدف الأول</th><th>الأهداف المُحققة</th><th>السكور وقت الفتح</th>
+        <th>السبب</th><th>تاريخ الفتح</th>
+      </tr></thead>
+      <tbody></tbody>
+    </table></div>
+  </section>
+
+  <section id="scalp">
+    <h2>⚡ صفقات السكالب</h2>
+    <div class="subnote">مسار جمع بيانات منفصل — ستوب وأهداف أضيق (ساعات ليوم)، منفصل تمامًا عن صندوق /SCALP الحقيقي</div>
+    <div class="tablewrap"><table id="tblScalp">
+      <thead><tr>
+        <th>العملة</th><th>الحالة</th><th>الدخول</th><th>الحالي</th><th>الربح/الخسارة</th>
+        <th>الستوب</th><th>الهدف الأول</th><th>الأهداف المُحققة</th><th>السبب</th><th>تاريخ الفتح</th>
+      </tr></thead>
+      <tbody></tbody>
+    </table></div>
+  </section>
+
+  <section id="perf">
+    <h2>📊 ملخص الأداء</h2>
+    <div class="cards" id="perfCards"></div>
+  </section>
+
+  <section id="health">
+    <h2>🩺 تنبيهات النظام (consistency_check)</h2>
+    <div id="healthBox"></div>
+  </section>
+
+  <section id="thesis">
+    <h2>📌 قائمة المتابعة (Thesis Watchlist)</h2>
+    <div id="thesisBox"></div>
+  </section>
+
+</main>
+
+<footer>
+  البيانات من <a href="https://github.com/drazezsebaey-art/investment-radar" target="_blank">drazezsebaey-art/investment-radar</a> —
+  تحديث تلقائي كل دقيقتين من ملفات JSON مباشرة
+</footer>
+
+<script>
+const FILES = {
+  radar: 'data/radar-flags.json',
+  real: 'config/trades.json',
+  shadow: 'data/shadow-trades.json',
+  scalp: 'data/scalp-trades.json',
+  perfReal: 'data/performance-summary.json',
+  perfShadow: 'data/shadow-performance-summary.json',
+  perfScalp: 'data/scalp-performance-summary.json',
+  health: 'data/consistency-report.json',
+  thesis: 'data/thesis-watchlist.json',
+};
+
+async function fetchJSON(path) {
+  try {
+    const res = await fetch(path + '?t=' + Date.now());
+    if (!res.ok) return null;
+    return await res.json();
+  } catch (e) { return null; }
+}
+
+function fmt(n, digits) {
+  if (n === null || n === undefined || Number.isNaN(n)) return '—';
+  if (typeof n !== 'number') return n;
+  const abs = Math.abs(n);
+  const d = digits !== undefined ? digits : (abs < 0.01 ? 8 : abs < 1 ? 6 : abs < 100 ? 4 : 2);
+  return n.toLocaleString('en-US', { maximumFractionDigits: d, minimumFractionDigits: 0 });
+}
+function pct(n, digits) {
+  if (n === null || n === undefined || Number.isNaN(n)) return '—';
+  const cls = n >= 0 ? 'pos' : 'neg';
+  return `<span class="${cls}">${n >= 0 ? '+' : ''}${n.toFixed(digits !== undefined ? digits : 2)}%</span>`;
+}
+function timeAgo(iso) {
+  if (!iso) return '—';
+  const diffMin = Math.round((Date.now() - new Date(iso).getTime()) / 60000);
+  if (diffMin < 1) return 'الآن';
+  if (diffMin < 60) return `من ${diffMin} دقيقة`;
+  const h = Math.floor(diffMin / 60), m = diffMin % 60;
+  return `من ${h} ساعة${m ? ' و' + m + ' دقيقة' : ''}`;
+}
+
+const EARLY_KEYWORDS = ['CHoCH', 'انضغاط', 'تباعد RSI', 'تأخر دوران', 'قوة نسبية خفية', 'علم صاعد', 'قاع مزدوج', 'مثلث'];
+function isEarlyFlag(f) { return EARLY_KEYWORDS.some(k => f.includes(k)); }
+
+function statusBadge(status) {
+  const map = {
+    open: ['مفتوحة', 'b-open'], pending: ['معلّقة', 'b-pending'],
+    stopped: ['ستوب', 'b-stopped'], stopped_after_partial_targets: ['ستوب (بعد أهداف جزئية)', 'b-stopped'],
+    closed_targets_complete: ['كل الأهداف تحققت', 'b-win'],
+    superseded: ['اترقّت لحقيقية', 'b-gray'], voided_sizing_correction: ['أُلغيت (تصحيح حجم)', 'b-gray'],
+  };
+  const [label, cls] = map[status] || [status, 'b-gray'];
+  return `<span class="badge ${cls}">${label}</span>`;
+}
+
+function detailRow(cid, fieldsHtml) {
+  return `<tr class="detail-row" id="${cid}" style="display:none"><td colspan="20"><div class="detail-grid">${fieldsHtml}</div></td></tr>`;
+}
+function toggleDetail(id) {
+  const el = document.getElementById(id);
+  if (el) el.style.display = el.style.display === 'none' ? '' : 'none';
+}
+
+function coinDetailFields(c) {
+  const flags = (c.flags || []).map(f => `<li>${f}</li>`).join('');
+  return `
+    <div><span>الاسم: </span>${c.name || '—'}</div>
+    <div><span>رتبة السوق: </span>${c.market_cap_rank ?? '—'}</div>
+    <div><span>حجم التداول 24س: </span>$${fmt(c.volume_24h_usd, 0)}</div>
+    <div><span>القيمة السوقية: </span>$${fmt(c.market_cap_usd, 0)}</div>
+    <div><span>مُدرجة على Binance: </span>${c.binance_listed ? 'نعم' : 'لا'}</div>
+    <div><span>الترابط مع BTC (7ي): </span>${fmt(c.btc_correlation_7d, 2)}</div>
+    <div><span>الانحدار عن ATH: </span>${fmt(c.ath_change_pct, 1)}%</div>
+    <div><span>فاندنج: </span>${fmt(c.latest_funding_rate, 5)}</div>
+    <div><span>علاقة OI بالسعر: </span>${c.oi_price_relationship || '—'}</div>
+    <div><span>خطر unlock: </span>${c.unlock_risk_flag ? 'نعم' : (c.unlock_data_checked ? 'لا (مؤكد)' : 'لم يُفحص')}</div>
+    <div style="grid-column:1/-1"><span>كل الفلاجات: </span><ul class="flags">${flags || '<li>لا توجد</li>'}</ul></div>
+  `;
+}
+
+function renderCandidateTable(tbodySel, list, columns) {
+  const tbody = document.querySelector(tbodySel);
+  if (!list.length) { tbody.innerHTML = `<tr><td colspan="10" class="empty">لا توجد عملات حاليًا</td></tr>`; return; }
+  let html = '';
+  list.forEach((item, i) => {
+    const c = item.coin;
+    const rid = tbodySel.replace('#', '').replace(' ', '') + '-d' + i;
+    html += `<tr class="rowclick" onclick="toggleDetail('${rid}')">
+      <td class="sym">${c.symbol}</td>
+      <td>${c.confidence_score ?? '—'}</td>
+      <td class="${c.signal_quality === 'idiosyncratic' ? 'quality-idio' : 'quality-beta'}">${c.signal_quality === 'idiosyncratic' ? 'مستقلة' : (c.signal_quality ? 'بيتا/كتلة' : '—')}</td>
+      <td class="flags"><ul>${item.reasons.map(r => `<li>${r}</li>`).join('')}</ul></td>
+      <td>$${fmt(c.price_usd)}</td>
+      <td>${pct(c.change_24h_pct, 1)}</td>
+      <td>${pct(c.change_7d_pct, 1)}</td>
+      <td>${fmt(c.indicators && c.indicators.rsi14, 1)}</td>
+      <td>${fmt(c.atr_pct_of_price, 1)}${c.atr_pct_of_price != null ? '%' : ''}</td>
+    </tr>`;
+    html += detailRow(rid, coinDetailFields(c));
+  });
+  tbody.innerHTML = html;
+}
+
+function tradeDetailFields(t) {
+  return `
+    <div><span>ID: </span>${t.id}</div>
+    <div><span>نوع الستوب: </span>${t.used_trend_following_stop ? 'ATR (trend-following)' : 'مقاومة/ترند'}</div>
+    <div><span>مصدر آخر فحص: </span>${t.lastCheckSource || '—'}</div>
+    <div><span>الهدف الثاني: </span>${fmt(t.targets[1])}</div>
+    <div><span>الهدف الثالث: </span>${fmt(t.targets[2])}</div>
+    <div><span>مسافة الهدف الأول: </span>${pct(t.t1DistPct, 1)}</div>
+    <div><span>سعر الخروج: </span>${t.exitPrice != null ? fmt(t.exitPrice) : '—'}</div>
+    <div><span>تاريخ الإغلاق: </span>${t.dateClosed || '—'}</div>
+  `;
+}
+
+function computeTradeRow(trade, priceLookup) {
+  const entry = trade.actual_entry ?? trade.entry;
+  const current = priceLookup[trade.asset_id];
+  const stop = trade.stop;
+  const targets = trade.targets || (trade.target_low != null ? [trade.target_low] : []);
+  const t1 = targets[0];
+  let pnlPct = null, stopDistPct = null, t1DistPct = null;
+  if (entry) {
+    if (current != null) pnlPct = (current - entry) / entry * 100;
+    if (stop != null) stopDistPct = (entry - stop) / entry * 100;
+    if (t1 != null) t1DistPct = (t1 - entry) / entry * 100;
+  }
+  return {
+    id: trade.id, symbol: trade.symbol || (trade.asset_id || '').toUpperCase(),
+    status: trade.status, entry, stop, targets, targetsHit: (trade.targets_hit || []).length,
+    current, pnlPct, stopDistPct, t1DistPct,
+    triggeredBy: trade.triggered_by || '—',
+    scoreAtEntry: trade.confidence_score_at_entry,
+    dateOpened: trade.date_opened, lastCheckSource: trade.last_check_source,
+    used_trend_following_stop: trade.used_trend_following_stop,
+    exitPrice: trade.exit_price, dateClosed: trade.date_closed,
+  };
+}
+
+function renderTradeTable(tbodySel, trades, priceLookup, showScore, showStopDist) {
+  const tbody = document.querySelector(tbodySel);
+  const open = trades.filter(t => ['open', 'pending'].includes(t.status));
+  const rest = trades.filter(t => !['open', 'pending'].includes(t.status));
+  const ordered = [...open, ...rest];
+  if (!ordered.length) { tbody.innerHTML = `<tr><td colspan="11" class="empty">لا توجد صفقات</td></tr>`; return; }
+  let html = '';
+  ordered.forEach((raw, i) => {
+    const t = computeTradeRow(raw, priceLookup);
+    const rid = tbodySel.replace('#', '').replace(' ', '') + '-d' + i;
+    html += `<tr class="rowclick" onclick="toggleDetail('${rid}')">
+      <td class="sym">${t.symbol}</td>
+      <td>${statusBadge(t.status)}</td>
+      <td>${fmt(t.entry)}</td>
+      <td>${t.current != null ? '$' + fmt(t.current) : '—'}</td>
+      <td>${pct(t.pnlPct, 1)}</td>
+      <td>${fmt(t.stop)}</td>
+      ${showStopDist ? `<td>${pct(t.stopDistPct, 1)}</td>` : ''}
+      <td>${fmt(t.targets[0])}</td>
+      <td>${t.targetsHit} / ${t.targets.length}</td>
+      ${showScore ? `<td>${t.scoreAtEntry ?? '—'}</td>` : ''}
+      <td class="flags">${t.triggeredBy}</td>
+      <td>${t.dateOpened || '—'}</td>
+    </tr>`;
+    html += detailRow(rid, tradeDetailFields(t));
+  });
+  tbody.innerHTML = html;
+}
+
+function renderPerf(perfCards, summaries) {
+  const labels = { real: '💰 حقيقي', shadow: '👤 شادو', scalp: '⚡ سكالب' };
+  let html = '';
+  for (const [key, label] of Object.entries(labels)) {
+    const s = (summaries[key] && summaries[key].overall) || {};
+    html += `
+      <div class="card"><div class="label">${label} — صفقات مقفولة</div><div class="value">${s.n_closed ?? 0}</div></div>
+      <div class="card"><div class="label">${label} — معدل النجاح</div><div class="value">${s.win_rate_pct != null ? s.win_rate_pct + '%' : '—'}</div></div>
+      <div class="card"><div class="label">${label} — متوسط العائد</div><div class="value">${s.avg_return_pct != null ? pct(s.avg_return_pct, 2) : '—'}</div></div>
+      <div class="card"><div class="label">${label} — Profit Factor</div><div class="value">${s.profit_factor ?? '—'}</div></div>
+    `;
+  }
+  perfCards.innerHTML = html;
+}
+
+function renderHealth(box, report) {
+  if (!report) { box.innerHTML = `<div class="empty">مفيش تقرير consistency-check لسه — لسه محتاج رن بعد رفع الملف</div>`; return; }
+  const errs = (report.findings || []).filter(f => f.severity === 'error');
+  const warns = (report.findings || []).filter(f => f.severity === 'warning');
+  let html = `<div class="subnote">آخر فحص: ${timeAgo(report.checked_at)} — ${errs.length} خطأ، ${warns.length} تحذير</div>`;
+  if (!errs.length && !warns.length) html += `<div class="empty">✅ مفيش أي ملاحظات — كل حاجة متسقة</div>`;
+  errs.forEach(f => html += `<div class="alert-item alert-err"><b class="err">خطأ [${f.category}]</b> — ${f.message}</div>`);
+  warns.forEach(f => html += `<div class="alert-item alert-warn"><b class="warn">تحذير [${f.category}]</b> — ${f.message}</div>`);
+  box.innerHTML = html;
+}
+
+function renderThesis(box, watchlist) {
+  const entries = (watchlist && watchlist.watchlist) || [];
+  if (!entries.length) { box.innerHTML = `<div class="empty">مفيش عناصر في قائمة المتابعة حاليًا</div>`; return; }
+  let html = '';
+  entries.forEach(e => {
+    const triggered = e.status === 'triggered';
+    html += `<div class="thesis-card ${triggered ? 'triggered' : ''}">
+      <div><span class="sym">${e.symbol}</span> — ${statusBadge(e.status === 'triggered' ? 'closed_targets_complete' : (e.status === 'pending' ? 'pending' : e.status))}
+        <span style="color:var(--text-dim)"> — أُضيفت ${e.date_added} — القرار الأصلي: ${e.verdict_at_creation}</span></div>
+      <div style="margin-top:6px;color:var(--text-dim)">${e.note || ''}</div>
+      ${(e.scenarios || []).map(s => `<div class="scenario"><b>${s.label}</b>: ${
+        (s.conditions || []).map(c => {
+          const label = { price_above: 'السعر ≥', price_below: 'السعر ≤', rsi_above: 'RSI ≥', rsi_below: 'RSI ≤' }[c.type] || c.type;
+          return `${label} ${c.level}`;
+        }).join(' و ')
+      }</div>`).join('')}
+      ${triggered ? `<div style="margin-top:6px;color:var(--green)">✅ تحقق سيناريو "${e.triggered_scenario}" — السعر وقتها: $${fmt(e.price_at_trigger)}</div>` : ''}
+    </div>`;
+  });
+  box.innerHTML = html;
+}
+
+async function loadAll() {
+  document.getElementById('lastUpdate').textContent = 'جارٍ التحديث...';
+  const [radar, real, shadow, scalp, perfReal, perfShadow, perfScalp, health, thesis] = await Promise.all(
+    Object.values(FILES).map(fetchJSON)
+  );
+
+  if (radar) {
+    document.getElementById('lastUpdate').textContent = `آخر رن: ${timeAgo(radar.updated_at)}`;
+    document.getElementById('breadth').textContent = `اتساع السوق: ${radar.market_breadth_pct_green ?? '—'}%`;
+    document.getElementById('coinCount').textContent = `${radar.count ?? 0} عملة مفلجة`;
+  } else {
+    document.getElementById('lastUpdate').textContent = 'تعذّر تحميل radar-flags.json';
+  }
+
+  const coins = (radar && radar.coins) || [];
+  const priceLookup = {};
+  coins.forEach(c => priceLookup[c.id] = c.price_usd);
+
+  const proactive = [], momentum = [];
+  coins.forEach(c => {
+    const flags = c.flags || [];
+    const earlyFlags = flags.filter(isEarlyFlag);
+    if (c.priority_review) proactive.push({ coin: c, reasons: earlyFlags.length ? earlyFlags : ['priority_review'] });
+    if (c.breakout_signal || c.extension_continuation_signal || c.trendline_break_confirmed_signal) {
+      const reasons = [];
+      if (c.breakout_signal) reasons.push('اختراق مقاومة مؤكد');
+      if (c.extension_continuation_signal) reasons.push('استمرار امتداد');
+      if (c.trendline_break_confirmed_signal) reasons.push('كسر خط ترند مؤكد');
+      momentum.push({ coin: c, reasons });
+    }
+  });
+  proactive.sort((a, b) => (b.coin.confidence_score || -1) - (a.coin.confidence_score || -1));
+  momentum.sort((a, b) => (b.coin.confidence_score || -1) - (a.coin.confidence_score || -1));
+
+  renderCandidateTable('#tblProactive tbody', proactive);
+  renderCandidateTable('#tblMomentum tbody', momentum);
+
+  renderTradeTable('#tblReal tbody', (real && real.trades) || [], priceLookup, false, true);
+  renderTradeTable('#tblShadow tbody', (shadow && shadow.trades) || [], priceLookup, true, false);
+  renderTradeTable('#tblScalp tbody', (scalp && scalp.trades) || [], priceLookup, false, false);
+
+  renderPerf(document.getElementById('perfCards'), { real: perfReal, shadow: perfShadow, scalp: perfScalp });
+  renderHealth(document.getElementById('healthBox'), health);
+  renderThesis(document.getElementById('thesisBox'), thesis);
+}
+
+loadAll();
+setInterval(loadAll, 120000);
+</script>
+</body>
+</html>
