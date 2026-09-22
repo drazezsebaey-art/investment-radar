@@ -1,8 +1,20 @@
 {
-  "checked_at": "2026-09-22T16:10:22.256436+00:00",
+  "checked_at": "2026-09-22T17:36:03.032907+00:00",
   "n_errors": 0,
-  "n_warnings": 7,
+  "n_warnings": 19,
   "findings": [
+    {
+      "severity": "warning",
+      "category": "priority_review_pipeline",
+      "message": "VET: has a confidence_score but OI/funding data was never fetched for it",
+      "symbol": "VET"
+    },
+    {
+      "severity": "warning",
+      "category": "priority_review_pipeline",
+      "message": "PAXG: has a confidence_score but OI/funding data was never fetched for it",
+      "symbol": "PAXG"
+    },
     {
       "severity": "warning",
       "category": "priority_review_pipeline",
@@ -29,18 +41,78 @@
     },
     {
       "severity": "warning",
+      "category": "priority_review_pipeline",
+      "message": "KAIA: has a confidence_score but OI/funding data was never fetched for it",
+      "symbol": "KAIA"
+    },
+    {
+      "severity": "warning",
+      "category": "priority_review_pipeline",
+      "message": "SFP: has a confidence_score but OI/funding data was never fetched for it",
+      "symbol": "SFP"
+    },
+    {
+      "severity": "warning",
+      "category": "monitoring_gap",
+      "message": "[real] ARB (arb-auto-2026-09-22): monitored via current-spot-only fallback - no candle/snapshot data reaching it",
+      "trade_id": "arb-auto-2026-09-22"
+    },
+    {
+      "severity": "warning",
+      "category": "monitoring_gap",
+      "message": "[shadow] WLD (wld-shadow-2026-09-22): monitored via current-spot-only fallback - no candle/snapshot data reaching it",
+      "trade_id": "wld-shadow-2026-09-22"
+    },
+    {
+      "severity": "warning",
+      "category": "monitoring_gap",
+      "message": "[shadow] PENGU (pengu-shadow-2026-09-22): monitored via current-spot-only fallback - no candle/snapshot data reaching it",
+      "trade_id": "pengu-shadow-2026-09-22"
+    },
+    {
+      "severity": "warning",
+      "category": "monitoring_gap",
+      "message": "[shadow] SENT (sent-shadow-2026-09-22): monitored via current-spot-only fallback - no candle/snapshot data reaching it",
+      "trade_id": "sent-shadow-2026-09-22"
+    },
+    {
+      "severity": "warning",
+      "category": "monitoring_gap",
+      "message": "[shadow] COMP (comp-shadow-2026-09-22): monitored via current-spot-only fallback - no candle/snapshot data reaching it",
+      "trade_id": "comp-shadow-2026-09-22"
+    },
+    {
+      "severity": "warning",
+      "category": "monitoring_gap",
+      "message": "[shadow] KAIA (kaia-shadow-2026-09-22): monitored via current-spot-only fallback - no candle/snapshot data reaching it",
+      "trade_id": "kaia-shadow-2026-09-22"
+    },
+    {
+      "severity": "warning",
+      "category": "monitoring_gap",
+      "message": "[shadow] MANA (mana-shadow-2026-09-22): monitored via current-spot-only fallback - no candle/snapshot data reaching it",
+      "trade_id": "mana-shadow-2026-09-22"
+    },
+    {
+      "severity": "warning",
+      "category": "monitoring_gap",
+      "message": "[shadow] SFP (sfp-shadow-2026-09-22): monitored via current-spot-only fallback - no candle/snapshot data reaching it",
+      "trade_id": "sfp-shadow-2026-09-22"
+    },
+    {
+      "severity": "warning",
       "category": "unlock_coverage",
-      "message": "56/57 (98%) coins with an open trade have no researched unlock schedule at all"
+      "message": "63/64 (98%) coins with an open trade have no researched unlock schedule at all"
     },
     {
       "severity": "warning",
       "category": "thin_history",
-      "message": "107 coins have fewer than 8 price-history points - Layer 2 structure signals can't evaluate them yet"
+      "message": "106 coins have fewer than 8 price-history points - Layer 2 structure signals can't evaluate them yet"
     },
     {
       "severity": "warning",
       "category": "run_gap",
-      "message": "71 minutes since the previous run (target ~30) - check the external cron"
+      "message": "64 minutes since the previous run (target ~30) - check the external cron"
     }
   ]
 }
