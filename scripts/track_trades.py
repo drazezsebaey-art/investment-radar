@@ -1,6 +1,23 @@
 """
-Investment Radar - Trade Tracker (v4)
+Investment Radar - Trade Tracker (v16)
 ---------------------------------------
+v16 addition (from the 22/9/2026 monitoring audit): stop/target checks
+previously relied entirely on data/price-history.json's 15-min-ish point
+SAMPLES - a real touch between two samples could be missed if price
+reverted before the next sample. This adds a real-OHLC layer: OKX's public
+spot candles endpoint (confirmed reachable from GitHub Actions runners via
+the same exchange already used for OI/funding in breakout_check.py -
+Binance direct returns 451/geo-blocked, Bybit returns 403) gives TRUE
+high/low over the queried window, not a sample. For each run, one OKX
+fetch per unique symbol covers every trade on that coin across all three
+tracks (real/shadow/scalp), each trade then filters that shared candle set
+to its own fill/order time. Falls through to the pre-existing
+price-history.json sampling (still useful for coins OKX doesn't list) and
+finally to a single current-spot-price fallback - exactly the same
+fallback chain as before, with a real-candle layer added on top. Every
+check now records which source was actually used (last_check_source) so
+coverage stays auditable.
+
 v4 additions: Profit Factor (gross profit / gross loss, using summed % return
 per trade as a proxy for dollar P&L since position sizing isn't tracked) and
 Recovery Factor (net profit / max drawdown, both computed from a compounded
@@ -29,12 +46,19 @@ a coin needs to already be accumulating history (flagged before, or in the
 watchlist) for this to work - if data/price-history.json has no entries yet
 for that coin, the pending order simply won't fill until history starts
 accumulating for it (which happens automatically the moment it's flagged).
+v16 note: this whole trade-off is exactly what the OKX real-candle layer
+above now fixes for any coin OKX lists - the price-history fallback below
+still exists for coins it doesn't.
 
 v3 features preserved: multiple targets with targets_hit accumulation,
 stopped_after_partial_targets classification, old single target_low trades
 still supported.
 """
 import json
+import time
+import urllib.request
+import urllib.error
+import urllib.parse
 from pathlib import Path
 from datetime import datetime, timezone
 
@@ -43,6 +67,116 @@ TRADES_PATH = BASE_DIR / "config" / "trades.json"
 SCAN_PATH = BASE_DIR / "data" / "market-scan.json"
 HISTORY_PATH = BASE_DIR / "data" / "price-history.json"
 SUMMARY_PATH = BASE_DIR / "data" / "performance-summary.json"
+
+# --- v16: OKX real-candle layer -------------------------------------------
+OKX_MARKET_API_BASE = "https://www.okx.com/api/v5/market"
+OKX_CANDLE_BAR = "5m"          # true high/low per bar is accurate regardless of bar size, as long as
+                                 # bars fully cover the window - 5m keeps limit=300 covering ~25h, comfortably
+                                 # more than any realistic gap between runs, while keeping hit-timestamps precise
+OKX_CANDLE_LIMIT = 300
+OKX_REQUEST_TIMEOUT = 15
+OKX_POLITE_DELAY = 0.3          # seconds between per-symbol OKX calls - public market data has a generous
+                                 # rate limit, this just avoids hammering it needlessly
+
+
+def fetch_okx_candle_rows(symbol: str, since_iso: str):
+    """Fetches OKX spot candles for {symbol}-USDT strictly newer than
+    since_iso, as raw (ts_ms, high, low) tuples sorted oldest-first, or
+    None if the instrument doesn't exist on OKX or the request fails for
+    any reason (never let one bad symbol break the run - callers fall back
+    to price-history.json sampling)."""
+    if not symbol:
+        return None
+    try:
+        since_ms = int(datetime.fromisoformat(since_iso).timestamp() * 1000)
+    except (ValueError, TypeError):
+        return None
+    inst_id = f"{symbol.upper()}-USDT"
+    params = {"instId": inst_id, "bar": OKX_CANDLE_BAR, "before": since_ms, "limit": OKX_CANDLE_LIMIT}
+    url = f"{OKX_MARKET_API_BASE}/candles?{urllib.parse.urlencode(params)}"
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "investment-radar/1.0"})
+        with urllib.request.urlopen(req, timeout=OKX_REQUEST_TIMEOUT) as resp:
+            data = json.loads(resp.read().decode())
+        rows = data.get("data") or []
+        if not rows:
+            return None
+        # OKX candle row shape: [ts, open, high, low, close, vol, volCcy, volCcyQuote, confirm]
+        parsed = [(int(r[0]), float(r[2]), float(r[3])) for r in rows]
+        parsed.sort(key=lambda r: r[0])
+        return parsed
+    except Exception as exc:  # noqa: BLE001 - one bad symbol must never kill the run
+        print(f"  [diagnostic] OKX candle fetch failed for {symbol}: {type(exc).__name__}: {exc}")
+        return None
+
+
+def okx_range_since(cache_rows, since_iso: str):
+    """Filters a symbol's cached OKX candle rows down to those at/after
+    since_iso and returns the TRUE {high, high_at, low, low_at} over that
+    subset, or None if there's nothing to filter (no cache entry, or every
+    row predates since_iso)."""
+    if not cache_rows or not since_iso:
+        return None
+    try:
+        since_ms = int(datetime.fromisoformat(since_iso).timestamp() * 1000)
+    except (ValueError, TypeError):
+        return None
+    matching = [r for r in cache_rows if r[0] >= since_ms]
+    if not matching:
+        return None
+    high_row = max(matching, key=lambda r: r[1])
+    low_row = min(matching, key=lambda r: r[2])
+    return {
+        "high": high_row[1],
+        "high_at": datetime.fromtimestamp(high_row[0] / 1000, tz=timezone.utc).isoformat(),
+        "low": low_row[2],
+        "low_at": datetime.fromtimestamp(low_row[0] / 1000, tz=timezone.utc).isoformat(),
+    }
+
+
+def trade_symbol(trade: dict):
+    """Best-effort symbol for an OKX lookup - most trades have `symbol`
+    directly; a few older manually-added trades (pre-dating that
+    convention) only have `asset_id`, so fall back to its uppercase form."""
+    return trade.get("symbol") or (trade.get("asset_id", "").upper() or None)
+
+
+def collect_needed_symbols(all_trade_lists) -> dict:
+    """Maps symbol -> earliest timestamp needed across every open/pending
+    trade in ALL THREE tracks (real, shadow, scalp) combined, so a coin
+    that appears in more than one track (very common - the same signal
+    often ends up in all three) is fetched from OKX ONCE per run, not once
+    per trade."""
+    needed = {}
+    for trades in all_trade_lists:
+        for t in trades:
+            symbol = trade_symbol(t)
+            if not symbol:
+                continue
+            status = t.get("status")
+            if status == "pending":
+                since = t.get("created_at")
+            elif status == "open":
+                since = t.get("filled_at") or t.get("created_at") or t.get("date_opened")
+            else:
+                continue
+            if not since:
+                continue
+            if symbol not in needed or since < needed[symbol]:
+                needed[symbol] = since
+    return needed
+
+
+def build_okx_cache(all_trade_lists) -> dict:
+    needed = collect_needed_symbols(all_trade_lists)
+    cache = {}
+    for symbol, since in needed.items():
+        cache[symbol] = fetch_okx_candle_rows(symbol, since)
+        time.sleep(OKX_POLITE_DELAY)
+    n_hit = sum(1 for v in cache.values() if v is not None)
+    print(f"OKX candle cache: {n_hit}/{len(cache)} symbols have real OHLC data this run "
+          f"(the rest fall back to price-history.json sampling).")
+    return cache
 
 
 def load_json(path: Path, default):
@@ -64,10 +198,10 @@ def get_targets(trade: dict) -> list:
     return []
 
 
-def check_pending(trade: dict, price_history: dict) -> bool:
-    """FIXED: only fills against price snapshots recorded strictly after the
-    order's created_at timestamp - never against a rolling 24h low that can
-    include price action from before the order existed.
+def check_pending(trade: dict, price_history: dict, okx_cache: dict) -> bool:
+    """v16: tries the shared OKX candle cache first (real high/low since the
+    order was placed - see module docstring), falls back to the pre-existing
+    price-history.json sampling when OKX has nothing for this symbol.
 
     Returns True if the trade was filled this run.
     """
@@ -86,11 +220,23 @@ def check_pending(trade: dict, price_history: dict) -> bool:
         trade["created_at"] = now_iso
         return False
 
+    symbol = trade_symbol(trade)
+    okx_result = okx_range_since(okx_cache.get(symbol), trade["created_at"]) if symbol else None
+    if okx_result:
+        trade["last_check_source"] = "okx_candles"
+        if okx_result["low"] <= entry:
+            trade["status"] = "open"
+            trade["filled_at"] = okx_result["low_at"]
+            trade["actual_entry"] = entry
+            return True
+        return False
+
     points = price_history.get(trade["asset_id"], [])
     post_order_points = [
         p for p in points
         if p.get("t") and p.get("t") > trade["created_at"] and p.get("price") is not None
     ]
+    trade["last_check_source"] = "price_history_snapshots" if post_order_points else "no_data_yet"
     hit = next((p for p in post_order_points if p["price"] <= entry), None)
     if hit:
         trade["status"] = "open"
@@ -100,35 +246,46 @@ def check_pending(trade: dict, price_history: dict) -> bool:
     return False
 
 
-def check_open(trade: dict, coin: dict, price_history: dict) -> None:
-    """v5 FIX (caught by Azez, 2026-09-20): this was still using the coin's
-    raw rolling low_24h_usd/high_24h_usd to test stop/target hits - the
-    EXACT same bug class the v4 fix closed for pending-order fills, just
-    left open here. A price touch from BEFORE the trade was even filled
-    could sit inside that 24h window and get wrongly counted as "the stop/
-    target got hit after I opened this position." Fixed the same way: only
-    price-history.json snapshots recorded strictly after the trade's own
-    fill time count. If no such snapshot exists yet (this run is the first
-    one after the fill), falls back to the coin's single current spot price
-    only - never the 24h window, which is exactly what caused the bug."""
+def check_open(trade: dict, coin: dict, price_history: dict, okx_cache: dict) -> None:
+    """v16: tries the shared OKX candle cache first for the TRUE high/low
+    since fill (see module docstring) - this is what actually closes the
+    gap the 22/9/2026 audit found (freshly-filled trades with only 0-1
+    price-history snapshots so far). Falls back to the v5 sampling fix
+    below when OKX has nothing for this symbol, and finally to a single
+    current-spot-price reading when there's no post-fill data at all yet -
+    same fallback chain as before, OKX layered on top.
+
+    v5 FIX (caught by Azez, 2026-09-20) preserved: the sampling fallback
+    only ever uses price-history.json points recorded strictly after the
+    trade's own fill time - never the coin's rolling 24h high/low, which is
+    the bug class this whole function exists to avoid."""
     stop = trade.get("stop")
     targets = get_targets(trade)
     now = datetime.now(timezone.utc).isoformat()
 
     since = trade.get("filled_at") or trade.get("created_at") or trade.get("date_opened")
-    points = price_history.get(trade["asset_id"], [])
-    post_fill_points = [
-        p for p in points
-        if p.get("t") and since and p.get("t") > since and p.get("price") is not None
-    ]
-    if post_fill_points:
-        low = min(p["price"] for p in post_fill_points)
-        high = max(p["price"] for p in post_fill_points)
+    symbol = trade_symbol(trade)
+
+    okx_result = okx_range_since(okx_cache.get(symbol), since) if symbol else None
+    if okx_result:
+        low, high = okx_result["low"], okx_result["high"]
+        trade["last_check_source"] = "okx_candles"
     else:
-        # No snapshot recorded yet strictly after the fill - use only the
-        # coin's current spot price, not the rolling 24h window.
-        current = coin.get("price_usd")
-        low = high = current
+        points = price_history.get(trade["asset_id"], [])
+        post_fill_points = [
+            p for p in points
+            if p.get("t") and since and p.get("t") > since and p.get("price") is not None
+        ]
+        if post_fill_points:
+            low = min(p["price"] for p in post_fill_points)
+            high = max(p["price"] for p in post_fill_points)
+            trade["last_check_source"] = "price_history_snapshots"
+        else:
+            # No snapshot recorded yet strictly after the fill - use only the
+            # coin's current spot price, not the rolling 24h window.
+            current = coin.get("price_usd")
+            low = high = current
+            trade["last_check_source"] = "current_spot_fallback"
 
     trade.setdefault("targets_hit", [])
     already_hit = {t["target"] for t in trade["targets_hit"]}
@@ -153,7 +310,7 @@ def check_open(trade: dict, coin: dict, price_history: dict) -> None:
         trade["exit_price"] = stop
         trade["date_closed"] = now
         trade["note"] = (
-            "⚠️ تعارض: الستوب وهدف جديد الاتنين ظهروا متلمسين في نفس نافذة الـ24 ساعة — "
+            "⚠️ تعارض: الستوب وهدف جديد الاتنين ظهروا متلمسين في نفس نافذة الفحص — "
             "معتبرينها ستوب كافتراض متحفظ، الترتيب الفعلي مش مؤكد من البيانات دي."
         )
     elif stop_hit:
@@ -261,7 +418,7 @@ SCALP_TRADES_PATH = BASE_DIR / "data" / "scalp-trades.json"
 SCALP_SUMMARY_PATH = BASE_DIR / "data" / "scalp-performance-summary.json"
 
 
-def process_trades(trades: list, lookup: dict, price_history: dict) -> tuple:
+def process_trades(trades: list, lookup: dict, price_history: dict, okx_cache: dict) -> tuple:
     """v9: pulled out of main() so the exact same fill/stop/target logic can
     run over data/shadow-trades.json too (signals that fired but didn't
     clear AUTO_TRADE_MIN_SCORE) without duplicating it - shadow trades are
@@ -271,7 +428,7 @@ def process_trades(trades: list, lookup: dict, price_history: dict) -> tuple:
     changed = 0
     for trade in trades:
         if trade.get("status") == "pending":
-            if check_pending(trade, price_history):
+            if check_pending(trade, price_history, okx_cache):
                 filled += 1
             continue
 
@@ -284,7 +441,7 @@ def process_trades(trades: list, lookup: dict, price_history: dict) -> tuple:
 
         before = trade.get("status")
         n_targets_before = len(trade.get("targets_hit", []))
-        check_open(trade, coin, price_history)
+        check_open(trade, coin, price_history, okx_cache)
         if trade.get("status") != before or len(trade.get("targets_hit", [])) != n_targets_before:
             changed += 1
     return filled, changed
@@ -296,7 +453,19 @@ def main():
     price_history = load_json(HISTORY_PATH, {})
     lookup = build_price_lookup(scan)
 
-    filled, changed = process_trades(data.get("trades", []), lookup, price_history)
+    shadow_data = load_json(SHADOW_TRADES_PATH, {"trades": []})
+    scalp_data = load_json(SCALP_TRADES_PATH, {"trades": []})
+
+    # v16: one OKX fetch per unique symbol across ALL THREE tracks combined,
+    # built once up front - a coin open in real+shadow+scalp simultaneously
+    # (common) still only costs one OKX call, not three.
+    okx_cache = build_okx_cache([
+        data.get("trades", []),
+        shadow_data.get("trades", []),
+        scalp_data.get("trades", []),
+    ])
+
+    filled, changed = process_trades(data.get("trades", []), lookup, price_history, okx_cache)
 
     TRADES_PATH.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
 
@@ -308,9 +477,8 @@ def main():
           f"Overall win rate so far: {summary['overall']['win_rate_pct']}")
 
     # v9: shadow trades - same logic, separate file, never touches the real summary above
-    shadow_data = load_json(SHADOW_TRADES_PATH, {"trades": []})
     if shadow_data.get("trades"):
-        s_filled, s_changed = process_trades(shadow_data["trades"], lookup, price_history)
+        s_filled, s_changed = process_trades(shadow_data["trades"], lookup, price_history, okx_cache)
         SHADOW_TRADES_PATH.write_text(json.dumps(shadow_data, ensure_ascii=False, indent=2), encoding="utf-8")
         shadow_summary = summarize(shadow_data.get("trades", []))
         shadow_summary["note"] = (
@@ -327,9 +495,8 @@ def main():
     # real $100 fund. This is what makes scalp-trades.json trackable to a
     # win/loss outcome instead of just a live snapshot that got overwritten
     # every run (the gap Azez caught).
-    scalp_data = load_json(SCALP_TRADES_PATH, {"trades": []})
     if scalp_data.get("trades"):
-        sc_filled, sc_changed = process_trades(scalp_data["trades"], lookup, price_history)
+        sc_filled, sc_changed = process_trades(scalp_data["trades"], lookup, price_history, okx_cache)
         SCALP_TRADES_PATH.write_text(json.dumps(scalp_data, ensure_ascii=False, indent=2), encoding="utf-8")
         scalp_summary = summarize(scalp_data.get("trades", []))
         scalp_summary["note"] = (
