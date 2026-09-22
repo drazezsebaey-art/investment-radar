@@ -1234,7 +1234,15 @@ def main():
         # v8: Binance derivatives - only worth the extra calls for coins that
         # actually fired something; most small-caps have no futures market
         # there anyway, which is a routine None result, not an error.
-        has_any_signal = coin["breakout_signal"] or coin.get("extension_continuation_signal") or coin.get("pullback_entry_signal")
+        # v21 fix (22/9/2026, found via systematic grep for every remaining
+        # breakout_signal/extension_continuation_signal OR-chain after the
+        # v18/v19 gaps): this gate ran BEFORE and independently of the
+        # `fired` list below, so even after v19 gave priority_review coins a
+        # confidence_score, they still never got OI/funding fetched here -
+        # oi_price_confirms (15pts) and funding_not_crowded (10pts), a full
+        # quarter of the score, stayed permanently unavailable to them.
+        has_any_signal = (coin["breakout_signal"] or coin.get("extension_continuation_signal")
+                           or coin.get("pullback_entry_signal") or coin.get("priority_review"))
         funding_rates = fetch_funding_rate_history(coin["symbol"]) if has_any_signal else None
         oi_now = fetch_open_interest_now(coin["symbol"]) if has_any_signal else None
         if funding_rates or oi_now is not None:
