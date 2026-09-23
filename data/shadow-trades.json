@@ -1354,7 +1354,7 @@
       "auto": true,
       "triggered_by": "priority_review",
       "date_opened": "2026-09-22",
-      "status": "open",
+      "status": "stopped",
       "entry": 0.504678,
       "stop": 0.45693432,
       "used_trend_following_stop": false,
@@ -1370,7 +1370,9 @@
       "confidence_score_at_entry": 0,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 0 < AUTO_TRADE_MIN_SCORE 40",
-      "last_check_source": "okx_candles"
+      "last_check_source": "okx_candles",
+      "exit_price": 0.45693432,
+      "date_closed": "2026-09-23T16:27:58.662397+00:00"
     },
     {
       "id": "1inch-shadow-2026-09-22",
@@ -1988,7 +1990,7 @@
       "auto": true,
       "triggered_by": "priority_review",
       "date_opened": "2026-09-23",
-      "status": "open",
+      "status": "superseded",
       "entry": 1.79,
       "stop": 0.80943371,
       "used_trend_following_stop": false,
@@ -2004,7 +2006,9 @@
       "confidence_score_at_entry": 25,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 25 < AUTO_TRADE_MIN_SCORE 40",
-      "last_check_source": "okx_candles"
+      "last_check_source": "okx_candles",
+      "superseded_at": "2026-09-23T16:27:22.560068+00:00",
+      "superseded_reason": "promoted to a real auto trade at confidence_score 50"
     },
     {
       "id": "pump-shadow-2026-09-23",
@@ -2138,7 +2142,7 @@
       "confidence_score_at_entry": 28,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 28 < AUTO_TRADE_MIN_SCORE 40",
-      "last_check_source": "current_spot_fallback"
+      "last_check_source": "okx_candles"
     },
     {
       "id": "pepe-shadow-2026-09-23",
@@ -2164,7 +2168,7 @@
       "confidence_score_at_entry": 38,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 38 < AUTO_TRADE_MIN_SCORE 40",
-      "last_check_source": "current_spot_fallback"
+      "last_check_source": "okx_candles"
     },
     {
       "id": "dash-shadow-2026-09-23",
@@ -2174,7 +2178,7 @@
       "auto": true,
       "triggered_by": "priority_review:relative_strength_consolidation",
       "date_opened": "2026-09-23",
-      "status": "open",
+      "status": "stopped",
       "entry": 64.09,
       "stop": 60.85747509,
       "used_trend_following_stop": false,
@@ -2190,6 +2194,164 @@
       "confidence_score_at_entry": 25,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 25 < AUTO_TRADE_MIN_SCORE 40",
+      "last_check_source": "okx_candles",
+      "exit_price": 60.85747509,
+      "date_closed": "2026-09-23T16:27:58.662763+00:00"
+    },
+    {
+      "id": "morpho-shadow-2026-09-23",
+      "asset_id": "morpho",
+      "symbol": "MORPHO",
+      "type": "paper",
+      "auto": true,
+      "triggered_by": "priority_review",
+      "date_opened": "2026-09-23",
+      "status": "open",
+      "entry": 2.6,
+      "stop": 2.53142843,
+      "used_trend_following_stop": false,
+      "targets": [
+        2.70285735,
+        2.77142893,
+        2.87428628
+      ],
+      "created_at": "2026-09-23T16:27:22.560068+00:00",
+      "filled_at": "2026-09-23T16:27:22.560068+00:00",
+      "actual_entry": 2.6,
+      "targets_hit": [],
+      "confidence_score_at_entry": 20,
+      "signal_quality_at_entry": "beta_driven_or_cluster",
+      "rejected_reason": "confidence_score 20 < AUTO_TRADE_MIN_SCORE 40",
+      "last_check_source": "current_spot_fallback"
+    },
+    {
+      "id": "wld-shadow-2026-09-23",
+      "asset_id": "worldcoin-wld",
+      "symbol": "WLD",
+      "type": "paper",
+      "auto": true,
+      "triggered_by": "priority_review",
+      "date_opened": "2026-09-23",
+      "status": "open",
+      "entry": 0.418848,
+      "stop": 0.41692479,
+      "used_trend_following_stop": false,
+      "targets": [
+        0.42173282,
+        0.42365602,
+        0.42654084
+      ],
+      "created_at": "2026-09-23T16:27:22.560068+00:00",
+      "filled_at": "2026-09-23T16:27:22.560068+00:00",
+      "actual_entry": 0.418848,
+      "targets_hit": [],
+      "confidence_score_at_entry": 10,
+      "signal_quality_at_entry": "beta_driven_or_cluster",
+      "rejected_reason": "confidence_score 10 < AUTO_TRADE_MIN_SCORE 40",
+      "last_check_source": "current_spot_fallback"
+    },
+    {
+      "id": "wif-shadow-2026-09-23",
+      "asset_id": "dogwifcoin",
+      "symbol": "WIF",
+      "type": "paper",
+      "auto": true,
+      "triggered_by": "extension_continuation,priority_review",
+      "date_opened": "2026-09-23",
+      "status": "open",
+      "entry": 0.22758,
+      "stop": 0.21058696,
+      "used_trend_following_stop": false,
+      "targets": [
+        0.25306956,
+        0.2700626,
+        0.29555216
+      ],
+      "created_at": "2026-09-23T16:27:22.560068+00:00",
+      "filled_at": "2026-09-23T16:27:22.560068+00:00",
+      "actual_entry": 0.22758,
+      "targets_hit": [],
+      "confidence_score_at_entry": 28,
+      "signal_quality_at_entry": "beta_driven_or_cluster",
+      "rejected_reason": "confidence_score 28 < AUTO_TRADE_MIN_SCORE 40",
+      "last_check_source": "current_spot_fallback"
+    },
+    {
+      "id": "ondo-shadow-2026-09-23",
+      "asset_id": "ondo-finance",
+      "symbol": "ONDO",
+      "type": "paper",
+      "auto": true,
+      "triggered_by": "extension_continuation,priority_review",
+      "date_opened": "2026-09-23",
+      "status": "open",
+      "entry": 0.415829,
+      "stop": 0.383584,
+      "used_trend_following_stop": true,
+      "targets": [
+        0.4641965,
+        0.4964415,
+        0.544809
+      ],
+      "created_at": "2026-09-23T16:27:22.560068+00:00",
+      "filled_at": "2026-09-23T16:27:22.560068+00:00",
+      "actual_entry": 0.415829,
+      "targets_hit": [],
+      "confidence_score_at_entry": 38,
+      "signal_quality_at_entry": "beta_driven_or_cluster",
+      "rejected_reason": "confidence_score 38 < AUTO_TRADE_MIN_SCORE 40",
+      "last_check_source": "current_spot_fallback"
+    },
+    {
+      "id": "bat-shadow-2026-09-23",
+      "asset_id": "basic-attention-token",
+      "symbol": "BAT",
+      "type": "paper",
+      "auto": true,
+      "triggered_by": "priority_review:relative_strength_consolidation",
+      "date_opened": "2026-09-23",
+      "status": "open",
+      "entry": 0.089226,
+      "stop": 0.07865052,
+      "used_trend_following_stop": false,
+      "targets": [
+        0.10508922,
+        0.1156647,
+        0.13152792
+      ],
+      "created_at": "2026-09-23T16:27:22.560068+00:00",
+      "filled_at": "2026-09-23T16:27:22.560068+00:00",
+      "actual_entry": 0.089226,
+      "targets_hit": [],
+      "confidence_score_at_entry": 25,
+      "signal_quality_at_entry": "beta_driven_or_cluster",
+      "rejected_reason": "confidence_score 25 < AUTO_TRADE_MIN_SCORE 40",
+      "last_check_source": "current_spot_fallback"
+    },
+    {
+      "id": "xrp-shadow-2026-09-23",
+      "asset_id": "ripple",
+      "symbol": "XRP",
+      "type": "paper",
+      "auto": true,
+      "triggered_by": "extension_continuation,priority_review",
+      "date_opened": "2026-09-23",
+      "status": "open",
+      "entry": 1.52,
+      "stop": 1.42285714,
+      "used_trend_following_stop": true,
+      "targets": [
+        1.66571429,
+        1.76285715,
+        1.90857144
+      ],
+      "created_at": "2026-09-23T16:27:22.560068+00:00",
+      "filled_at": "2026-09-23T16:27:22.560068+00:00",
+      "actual_entry": 1.52,
+      "targets_hit": [],
+      "confidence_score_at_entry": 38,
+      "signal_quality_at_entry": "beta_driven_or_cluster",
+      "rejected_reason": "confidence_score 38 < AUTO_TRADE_MIN_SCORE 40",
       "last_check_source": "current_spot_fallback"
     }
   ]
