@@ -918,7 +918,7 @@
       "auto": true,
       "triggered_by": "priority_review:squeeze",
       "date_opened": "2026-09-22",
-      "status": "open",
+      "status": "stopped_after_partial_targets",
       "entry": 2.59,
       "stop": 2.52928557,
       "used_trend_following_stop": false,
@@ -939,7 +939,9 @@
       "confidence_score_at_entry": 20,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 20 < AUTO_TRADE_MIN_SCORE 40",
-      "last_check_source": "okx_candles"
+      "last_check_source": "okx_candles",
+      "exit_price": 2.52928557,
+      "date_closed": "2026-09-23T14:36:17.173636+00:00"
     },
     {
       "id": "zen-shadow-2026-09-22",
@@ -975,7 +977,7 @@
       "auto": true,
       "triggered_by": "priority_review:cluster_rotation_lag",
       "date_opened": "2026-09-22",
-      "status": "open",
+      "status": "stopped",
       "entry": 0.727283,
       "stop": 0.69893189,
       "used_trend_following_stop": false,
@@ -991,7 +993,9 @@
       "confidence_score_at_entry": 10,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 10 < AUTO_TRADE_MIN_SCORE 40",
-      "last_check_source": "okx_candles"
+      "last_check_source": "okx_candles",
+      "exit_price": 0.69893189,
+      "date_closed": "2026-09-23T14:36:17.173730+00:00"
     },
     {
       "id": "crv-shadow-2026-09-22",
@@ -1001,7 +1005,7 @@
       "auto": true,
       "triggered_by": "priority_review:cluster_rotation_lag",
       "date_opened": "2026-09-22",
-      "status": "open",
+      "status": "stopped",
       "entry": 0.360781,
       "stop": 0.33987236,
       "used_trend_following_stop": false,
@@ -1017,7 +1021,9 @@
       "confidence_score_at_entry": 20,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 20 < AUTO_TRADE_MIN_SCORE 40",
-      "last_check_source": "okx_candles"
+      "last_check_source": "okx_candles",
+      "exit_price": 0.33987236,
+      "date_closed": "2026-09-23T14:36:17.173778+00:00"
     },
     {
       "id": "ff-shadow-2026-09-22",
@@ -1779,7 +1785,7 @@
       "auto": true,
       "triggered_by": "extension_continuation",
       "date_opened": "2026-09-23",
-      "status": "open",
+      "status": "superseded",
       "entry": 74.02,
       "stop": 64.95907143,
       "used_trend_following_stop": false,
@@ -1795,7 +1801,9 @@
       "confidence_score_at_entry": 38,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 38 < AUTO_TRADE_MIN_SCORE 40",
-      "last_check_source": "price_history_snapshots"
+      "last_check_source": "price_history_snapshots",
+      "superseded_at": "2026-09-23T14:35:35.969437+00:00",
+      "superseded_reason": "promoted to a real auto trade at confidence_score 53"
     },
     {
       "id": "pengu-shadow-2026-09-23",
@@ -1952,7 +1960,7 @@
       "auto": true,
       "triggered_by": "priority_review:cluster_rotation_lag",
       "date_opened": "2026-09-23",
-      "status": "open",
+      "status": "stopped",
       "entry": 117.27,
       "stop": 116.55008242,
       "used_trend_following_stop": false,
@@ -1968,7 +1976,9 @@
       "confidence_score_at_entry": 10,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 10 < AUTO_TRADE_MIN_SCORE 40",
-      "last_check_source": "price_history_snapshots"
+      "last_check_source": "price_history_snapshots",
+      "exit_price": 116.55008242,
+      "date_closed": "2026-09-23T14:36:17.174414+00:00"
     },
     {
       "id": "ray-shadow-2026-09-23",
@@ -2084,7 +2094,7 @@
       "auto": true,
       "triggered_by": "priority_review:relative_strength_consolidation",
       "date_opened": "2026-09-23",
-      "status": "open",
+      "status": "stopped",
       "entry": 0.763777,
       "stop": 0.72457015,
       "used_trend_following_stop": false,
@@ -2100,7 +2110,87 @@
       "confidence_score_at_entry": 30,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 30 < AUTO_TRADE_MIN_SCORE 40",
-      "last_check_source": "okx_candles"
+      "last_check_source": "okx_candles",
+      "exit_price": 0.72457015,
+      "date_closed": "2026-09-23T14:36:17.174477+00:00"
+    },
+    {
+      "id": "etc-shadow-2026-09-23",
+      "asset_id": "ethereum-classic",
+      "symbol": "ETC",
+      "type": "paper",
+      "auto": true,
+      "triggered_by": "extension_continuation,priority_review:squeeze+relative_strength_consolidation",
+      "date_opened": "2026-09-23",
+      "status": "open",
+      "entry": 9.45,
+      "stop": 7.61089285,
+      "used_trend_following_stop": false,
+      "targets": [
+        12.20866072,
+        14.04776787,
+        16.8064286
+      ],
+      "created_at": "2026-09-23T14:35:35.969437+00:00",
+      "filled_at": "2026-09-23T14:35:35.969437+00:00",
+      "actual_entry": 9.45,
+      "targets_hit": [],
+      "confidence_score_at_entry": 28,
+      "signal_quality_at_entry": "beta_driven_or_cluster",
+      "rejected_reason": "confidence_score 28 < AUTO_TRADE_MIN_SCORE 40",
+      "last_check_source": "current_spot_fallback"
+    },
+    {
+      "id": "pepe-shadow-2026-09-23",
+      "asset_id": "pepe",
+      "symbol": "PEPE",
+      "type": "paper",
+      "auto": true,
+      "triggered_by": "extension_continuation,priority_review",
+      "date_opened": "2026-09-23",
+      "status": "open",
+      "entry": 4.74e-06,
+      "stop": 4.18e-06,
+      "used_trend_following_stop": true,
+      "targets": [
+        5.58e-06,
+        6.14e-06,
+        6.98e-06
+      ],
+      "created_at": "2026-09-23T14:35:35.969437+00:00",
+      "filled_at": "2026-09-23T14:35:35.969437+00:00",
+      "actual_entry": 4.74e-06,
+      "targets_hit": [],
+      "confidence_score_at_entry": 38,
+      "signal_quality_at_entry": "beta_driven_or_cluster",
+      "rejected_reason": "confidence_score 38 < AUTO_TRADE_MIN_SCORE 40",
+      "last_check_source": "current_spot_fallback"
+    },
+    {
+      "id": "dash-shadow-2026-09-23",
+      "asset_id": "dash",
+      "symbol": "DASH",
+      "type": "paper",
+      "auto": true,
+      "triggered_by": "priority_review:relative_strength_consolidation",
+      "date_opened": "2026-09-23",
+      "status": "open",
+      "entry": 64.09,
+      "stop": 60.85747509,
+      "used_trend_following_stop": false,
+      "targets": [
+        68.93878737,
+        72.17131228,
+        77.02009964
+      ],
+      "created_at": "2026-09-23T14:35:35.969437+00:00",
+      "filled_at": "2026-09-23T14:35:35.969437+00:00",
+      "actual_entry": 64.09,
+      "targets_hit": [],
+      "confidence_score_at_entry": 25,
+      "signal_quality_at_entry": "beta_driven_or_cluster",
+      "rejected_reason": "confidence_score 25 < AUTO_TRADE_MIN_SCORE 40",
+      "last_check_source": "current_spot_fallback"
     }
   ]
 }
