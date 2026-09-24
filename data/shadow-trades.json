@@ -2615,7 +2615,7 @@
       "auto": true,
       "triggered_by": "extension_continuation,priority_review",
       "date_opened": "2026-09-24",
-      "status": "open",
+      "status": "superseded",
       "entry": 0.239061,
       "stop": 0.22101714,
       "used_trend_following_stop": false,
@@ -2631,7 +2631,9 @@
       "confidence_score_at_entry": 28,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 28 < AUTO_TRADE_MIN_SCORE 40",
-      "last_check_source": "okx_candles"
+      "last_check_source": "okx_candles",
+      "superseded_at": "2026-09-24T17:27:28.177006+00:00",
+      "superseded_reason": "promoted to a real auto trade at confidence_score 43"
     },
     {
       "id": "lunc-shadow-2026-09-24",
@@ -3615,7 +3617,7 @@
       "confidence_score_at_entry": 35,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 35 < AUTO_TRADE_MIN_SCORE 40",
-      "last_check_source": "current_spot_fallback"
+      "last_check_source": "okx_candles"
     },
     {
       "id": "gram-shadow-20260924T165712",
@@ -3642,6 +3644,60 @@
       "confidence_score_at_entry": 38,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 38 < AUTO_TRADE_MIN_SCORE 40",
+      "last_check_source": "okx_candles"
+    },
+    {
+      "id": "xlm-shadow-20260924T172728",
+      "asset_id": "stellar",
+      "symbol": "XLM",
+      "type": "paper",
+      "auto": true,
+      "triggered_by": "extension_continuation,priority_review:cluster_rotation_lag",
+      "entry_archetype": "confluence_confirmed_plus_proactive",
+      "date_opened": "2026-09-24",
+      "status": "open",
+      "entry": 0.211909,
+      "stop": 0.18423735,
+      "used_trend_following_stop": false,
+      "targets": [
+        0.25341647,
+        0.28108812,
+        0.3225956
+      ],
+      "created_at": "2026-09-24T17:27:28.177006+00:00",
+      "filled_at": "2026-09-24T17:27:28.177006+00:00",
+      "actual_entry": 0.211909,
+      "targets_hit": [],
+      "confidence_score_at_entry": 38,
+      "signal_quality_at_entry": "beta_driven_or_cluster",
+      "rejected_reason": "confidence_score 38 < AUTO_TRADE_MIN_SCORE 40",
+      "last_check_source": "current_spot_fallback"
+    },
+    {
+      "id": "cvx-shadow-20260924T172728",
+      "asset_id": "convex-finance",
+      "symbol": "CVX",
+      "type": "paper",
+      "auto": true,
+      "triggered_by": "priority_review:cluster_rotation_lag",
+      "entry_archetype": "rotation_lag",
+      "date_opened": "2026-09-24",
+      "status": "open",
+      "entry": 2.05,
+      "stop": 2.0465592,
+      "used_trend_following_stop": false,
+      "targets": [
+        2.0551612,
+        2.058602,
+        2.0637632
+      ],
+      "created_at": "2026-09-24T17:27:28.177006+00:00",
+      "filled_at": "2026-09-24T17:27:28.177006+00:00",
+      "actual_entry": 2.05,
+      "targets_hit": [],
+      "confidence_score_at_entry": 25,
+      "signal_quality_at_entry": "beta_driven_or_cluster",
+      "rejected_reason": "confidence_score 25 < AUTO_TRADE_MIN_SCORE 40",
       "last_check_source": "current_spot_fallback"
     }
   ]
