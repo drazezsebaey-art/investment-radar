@@ -198,6 +198,64 @@ def score_v2_candidate(coin: dict, market_regime: dict) -> dict:
     }
 
 
+REJECTIONS_LOG_PATH = DATA_DIR / "rejections-log.json"
+
+# --- Entry Quality Gate - step 16 of the V2-merge plan --------------------
+# V2 section 59, scoped to data actually available. Deliberately does NOT
+# include R:R or "target blocked by resistance" here - those need the
+# target framework itself (step 17), not yet built; adding them here would
+# mean guessing at numbers step 17 is specifically responsible for. Also
+# deliberately does NOT hard-reject on market regime alone - V2 itself
+# states regime is context, not a standalone signal (already applied as a
+# score component in step 15); a genuinely hostile regime shows up as a
+# lower score, not a second penalty here.
+V2_MIN_VOLUME_24H_USD = 1_000_000
+V2_EXTREME_FUNDING_ABS = 0.0005
+V2_MIN_REAL_CANDLES = 15
+
+
+def log_v2_rejection(coin: dict, v2_result: dict, reasons: list) -> None:
+    log = {"rejections": []}
+    if REJECTIONS_LOG_PATH.exists():
+        try:
+            log = json.loads(REJECTIONS_LOG_PATH.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            pass
+    log.setdefault("rejections", []).append({
+        "asset_id": coin.get("id"), "symbol": coin.get("symbol"),
+        "timestamp": datetime.now(timezone.utc).isoformat(),
+        "stage": "v2_engine", "rejection_codes": reasons,
+        "score_at_rejection": v2_result.get("v2_score"),
+        "details": {"v2_decision_state_before_gate": v2_result.get("v2_decision_state")},
+    })
+    REJECTIONS_LOG_PATH.write_text(json.dumps(log, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
+def apply_v2_entry_quality_gate(coin: dict) -> list:
+    """Returns a list of rejection codes; empty list = passes the gate."""
+    reasons = []
+    real_candles = coin.get("real_candles") or []
+    if len(real_candles) < V2_MIN_REAL_CANDLES:
+        reasons.append("DATA_QUALITY_INSUFFICIENT")
+    if (coin.get("volume_24h_usd") or 0) < V2_MIN_VOLUME_24H_USD:
+        reasons.append("POOR_LIQUIDITY")
+    funding = coin.get("latest_funding_rate")
+    if funding is not None and abs(funding) >= V2_EXTREME_FUNDING_ABS:
+        reasons.append("EXTREME_FUNDING")
+    if coin.get("oi_price_relationship") == "diverges":
+        reasons.append("OI_CROWDING_RISK")
+    if coin.get("volume_confirmed") is False:
+        reasons.append("NO_VOLUME_CONFIRMATION")
+    lifecycle = coin.get("opportunity_lifecycle") or {}
+    if lifecycle.get("decay_state") == "decayed":
+        reasons.append("OVEREXTENDED_OPPORTUNITY_DECAYED")
+    structure_signal = (coin.get("real_structure") or {}).get("signal")
+    liquidity_present = coin.get("inducement") is not None or coin.get("liquidity_sweep") is not None
+    if structure_signal in ("BOS_bearish", "CHoCH_bearish") and liquidity_present:
+        reasons.append("CONTRADICTORY_EVIDENCE")
+    return reasons
+
+
 def main():
     radar = load_json(RADAR_FLAGS_PATH, {"coins": []})
     coins = radar.get("coins", [])
@@ -206,10 +264,24 @@ def main():
     top_tier_coins = [c for c in coins if c.get("funnel_stage") in TOP_FUNNEL_TIERS and c.get("real_candles")]
 
     scored = [score_v2_candidate(c, market_regime) for c in top_tier_coins]
+    coin_by_id = {c.get("id"): c for c in top_tier_coins}
+
+    for result in scored:
+        coin = coin_by_id.get(result["asset_id"], {})
+        gate_reasons = apply_v2_entry_quality_gate(coin)
+        result["v2_gate_passed"] = not gate_reasons
+        result["v2_gate_reject_reasons"] = gate_reasons
+        if gate_reasons and result["v2_decision_state"] in ("HIGH_PRIORITY_SETUP", "WATCH"):
+            log_v2_rejection(coin, result, gate_reasons)
+            result["v2_final_status"] = "REJECTED_BY_GATE"
+        else:
+            result["v2_final_status"] = result["v2_decision_state"]
+
     scored.sort(key=lambda r: -r["v2_score"])
 
-    n_high_priority = sum(1 for r in scored if r["v2_decision_state"] == "HIGH_PRIORITY_SETUP")
-    n_watch = sum(1 for r in scored if r["v2_decision_state"] == "WATCH")
+    n_high_priority = sum(1 for r in scored if r["v2_final_status"] == "HIGH_PRIORITY_SETUP")
+    n_watch = sum(1 for r in scored if r["v2_final_status"] == "WATCH")
+    n_gate_rejected = sum(1 for r in scored if r["v2_final_status"] == "REJECTED_BY_GATE")
 
     output = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
@@ -217,14 +289,15 @@ def main():
         "n_candidates_evaluated": len(scored),
         "n_high_priority": n_high_priority,
         "n_watch": n_watch,
+        "n_gate_rejected": n_gate_rejected,
         "candidates": scored,
     }
     V2_CANDIDATES_PATH.write_text(json.dumps(output, ensure_ascii=False, indent=2), encoding="utf-8")
 
     print(f"V2 engine: {len(scored)} candidates evaluated (from {len(coins)} total this run), "
-          f"{n_high_priority} HIGH_PRIORITY_SETUP, {n_watch} WATCH.")
+          f"{n_high_priority} HIGH_PRIORITY_SETUP, {n_watch} WATCH, {n_gate_rejected} rejected by gate.")
     for r in scored[:5]:
-        print(f"  {r['symbol']:8s} score={r['v2_score']:3d} {r['v2_decision_state']:20s} {r['v2_archetype']}")
+        print(f"  {r['symbol']:8s} score={r['v2_score']:3d} {r['v2_final_status']:20s} {r['v2_archetype']}")
 
 
 if __name__ == "__main__":
