@@ -21,8 +21,11 @@
     position: sticky; top: 0; z-index: 10;
   }
   header h1 { margin: 0 0 6px 0; font-size: 18px; color: var(--text-bright); }
-  #meta { display: flex; flex-wrap: wrap; gap: 14px; font-size: 12.5px; color: var(--text-dim); align-items: center; }
+  #meta { display: flex; flex-wrap: wrap; gap: 10px; font-size: 12.5px; color: var(--text-dim); align-items: center; }
   #meta .pill { background: var(--bg3); border: 1px solid var(--border); border-radius: 999px; padding: 3px 10px; }
+  .pill-risk-on { color: var(--green); border-color: var(--green) !important; }
+  .pill-risk-off { color: var(--red); border-color: var(--red) !important; }
+  .pill-neutral { color: var(--amber); }
   #refreshBtn {
     background: var(--bg3); color: var(--text); border: 1px solid var(--border); border-radius: 6px;
     padding: 4px 10px; cursor: pointer; font-size: 12.5px;
@@ -40,8 +43,9 @@
   section { margin-bottom: 34px; }
   h2 {
     font-size: 15px; color: var(--text-bright); border-right: 3px solid var(--blue);
-    padding-right: 10px; margin: 0 0 12px 0;
+    padding-right: 10px; margin: 0 0 12px 0; display: flex; align-items: center; gap: 8px;
   }
+  h2 .badge-count { font-size: 11px; background: var(--bg3); border-radius: 999px; padding: 1px 8px; color: var(--text-dim); font-weight: normal; }
   .subnote { color: var(--text-dim); font-size: 12px; margin: -6px 0 12px 13px; }
   .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin-bottom: 14px; }
   .card { background: var(--bg2); border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px; }
@@ -57,8 +61,9 @@
   tbody tr.rowclick { cursor: pointer; }
   tbody tr.rowclick:hover { background: var(--bg3); }
   .detail-row td { background: #0a0d12; white-space: normal; padding: 12px; }
-  .detail-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 6px 16px; font-size: 12px; }
+  .detail-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 8px 16px; font-size: 12px; }
   .detail-grid div span { color: var(--text-dim); }
+  .detail-section-title { grid-column: 1/-1; color: var(--purple); font-weight: 600; margin-top: 6px; font-size: 11.5px; }
   .sym { font-weight: 600; color: var(--text-bright); }
   .badge {
     display: inline-block; padding: 2px 8px; border-radius: 999px; font-size: 11px; font-weight: 600;
@@ -68,6 +73,7 @@
   .b-stopped { background: rgba(248,81,73,.15); color: var(--red); }
   .b-win { background: rgba(63,185,80,.15); color: var(--green); }
   .b-gray { background: rgba(139,148,158,.15); color: var(--text-dim); }
+  .b-purple { background: rgba(163,113,247,.15); color: var(--purple); }
   .pos { color: var(--green); } .neg { color: var(--red); }
   .flags { font-size: 11.5px; color: var(--text-dim); }
   .flags li { margin-bottom: 2px; }
@@ -80,9 +86,16 @@
   .thesis-card { background: var(--bg2); border: 1px solid var(--border); border-radius: 8px; padding: 12px; margin-bottom: 10px; }
   .thesis-card.triggered { border-color: var(--green); }
   .scenario { background: var(--bg3); border-radius: 6px; padding: 8px; margin-top: 6px; font-size: 12px; }
+  .smc-card { background: var(--bg2); border: 1px solid var(--border); border-radius: 8px; padding: 12px; margin-bottom: 10px; }
+  .smc-row { display: flex; justify-content: space-between; padding: 4px 0; border-bottom: 1px dashed var(--border); font-size: 12.5px; }
+  .smc-row:last-child { border-bottom: none; }
+  .quality-exceptional, .quality-strong, .quality-high_quality { color: var(--green); }
+  .quality-moderate, .quality-confirmed { color: var(--amber); }
+  .quality-weak, .quality-detected { color: var(--text-dim); }
+  .decay-fresh { color: var(--green); } .decay-developing { color: var(--amber); } .decay-decayed { color: var(--text-dim); }
+  .rej-bar-wrap { background: var(--bg3); border-radius: 4px; height: 8px; overflow: hidden; margin-top: 3px; }
+  .rej-bar { background: var(--red); height: 100%; }
   footer { text-align: center; color: var(--text-dim); font-size: 11.5px; padding: 20px; }
-  th.sortable { cursor: pointer; }
-  th.sortable:hover { color: var(--text-bright); }
   ::-webkit-scrollbar { height: 8px; width: 8px; }
   ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
   .tablewrap { overflow-x: auto; }
@@ -95,46 +108,55 @@
   <div id="meta">
     <span class="pill" id="lastUpdate">جارٍ التحميل...</span>
     <span class="pill" id="breadth">—</span>
+    <span class="pill" id="regime">—</span>
     <span class="pill" id="coinCount">—</span>
     <button id="refreshBtn" onclick="loadAll()">↻ تحديث الآن</button>
-    <span class="pill" id="autoRefreshLabel">تحديث تلقائي كل دقيقتين</span>
+    <span class="pill">تحديث تلقائي كل دقيقتين</span>
   </div>
 </header>
 
 <nav>
   <a href="#proactive">استباقي</a>
   <a href="#momentum">زخم</a>
+  <a href="#smc">تحليل SMC</a>
   <a href="#real">حقيقي</a>
   <a href="#shadow">شادو</a>
   <a href="#scalp">سكالب</a>
+  <a href="#v2candidates">مرشحو V2</a>
+  <a href="#v2trades">صفقات V2</a>
   <a href="#perf">الأداء</a>
   <a href="#health">تنبيهات النظام</a>
+  <a href="#rejections">سجل الرفض</a>
   <a href="#thesis">قائمة المتابعة</a>
 </nav>
 
 <main>
 
   <section id="proactive">
-    <h2>🟣 الترشيحات الاستباقية (Layer 2)</h2>
+    <h2>🟣 الترشيحات الاستباقية (Layer 2) <span class="badge-count" id="proactiveCount"></span></h2>
     <div class="subnote">عملات اتفلجت بإشارة مبكرة قبل أي حركة سعرية مؤكدة — مرتبة حسب السكور</div>
     <div class="tablewrap"><table id="tblProactive">
       <thead><tr>
-        <th>العملة</th><th>السكور</th><th>الجودة</th><th>الأسباب</th><th>السعر</th>
-        <th>تغير 24س</th><th>تغير 7ي</th><th>RSI</th><th>ATR%</th>
+        <th>العملة</th><th>السكور</th><th>الجودة</th><th>مرحلة القمع</th><th>عمر الفرصة</th><th>الأسباب</th><th>السعر</th>
       </tr></thead>
       <tbody></tbody>
     </table></div>
   </section>
 
   <section id="momentum">
-    <h2>🔵 ترشيحات الزخم (اختراق/امتداد مؤكد)</h2>
+    <h2>🔵 ترشيحات الزخم <span class="badge-count" id="momentumCount"></span></h2>
     <div class="tablewrap"><table id="tblMomentum">
       <thead><tr>
-        <th>العملة</th><th>السكور</th><th>الجودة</th><th>السبب</th><th>السعر</th>
-        <th>تغير 24س</th><th>تغير 7ي</th><th>RSI</th><th>القوة النسبية</th>
+        <th>العملة</th><th>السكور</th><th>الجودة</th><th>مرحلة القمع</th><th>السبب</th><th>السعر</th>
       </tr></thead>
       <tbody></tbody>
     </table></div>
+  </section>
+
+  <section id="smc">
+    <h2>🔬 تحليل SMC الحقيقي (أعلى المرشحين) <span class="badge-count" id="smcCount"></span></h2>
+    <div class="subnote">شموع حقيقية 4 ساعات — Fair Value Gap، Liquidity Sweep، Inducement، Order Block، BOS/CHoCH</div>
+    <div id="smcBox"></div>
   </section>
 
   <section id="real">
@@ -151,7 +173,6 @@
 
   <section id="shadow">
     <h2>👤 صفقات الشادو</h2>
-    <div class="subnote">إشارات فيرت لكن السكور تحت الحد الأدنى (40) — بنتتبعها لمعرفة "لو دخلنا كنا هنكسب ولا لأ"</div>
     <div class="tablewrap"><table id="tblShadow">
       <thead><tr>
         <th>العملة</th><th>الحالة</th><th>الدخول</th><th>الحالي</th><th>الربح/الخسارة</th>
@@ -164,7 +185,6 @@
 
   <section id="scalp">
     <h2>⚡ صفقات السكالب</h2>
-    <div class="subnote">مسار جمع بيانات منفصل — ستوب وأهداف أضيق (ساعات ليوم)، منفصل تمامًا عن صندوق /SCALP الحقيقي</div>
     <div class="tablewrap"><table id="tblScalp">
       <thead><tr>
         <th>العملة</th><th>الحالة</th><th>الدخول</th><th>الحالي</th><th>الربح/الخسارة</th>
@@ -174,14 +194,42 @@
     </table></div>
   </section>
 
+  <section id="v2candidates">
+    <h2>🧭 مرشحو محرك V2 المستقل <span class="badge-count" id="v2CandCount"></span></h2>
+    <div class="subnote">تقييم مستقل تمامًا (أهداف زمنية متكيفة + SMC حقيقي) — منفصل عن النظام الأساسي بالكامل</div>
+    <div class="tablewrap"><table id="tblV2Cand">
+      <thead><tr>
+        <th>العملة</th><th>السكور</th><th>الحالة النهائية</th><th>النمط</th><th>سبب الرفض (لو وجد)</th>
+      </tr></thead>
+      <tbody></tbody>
+    </table></div>
+  </section>
+
+  <section id="v2trades">
+    <h2>📈 صفقات V2 (شادو)</h2>
+    <div class="tablewrap"><table id="tblV2Trades">
+      <thead><tr>
+        <th>العملة</th><th>الحالة</th><th>الدخول</th><th>الحالي</th><th>الربح/الخسارة</th>
+        <th>الستوب</th><th>الأهداف (بالأفق الزمني)</th><th>السكور</th><th>تاريخ الفتح</th>
+      </tr></thead>
+      <tbody></tbody>
+    </table></div>
+  </section>
+
   <section id="perf">
-    <h2>📊 ملخص الأداء</h2>
+    <h2>📊 ملخص الأداء (4 مسارات)</h2>
     <div class="cards" id="perfCards"></div>
   </section>
 
   <section id="health">
     <h2>🩺 تنبيهات النظام (consistency_check)</h2>
     <div id="healthBox"></div>
+  </section>
+
+  <section id="rejections">
+    <h2>🚫 سجل الرفض <span class="badge-count" id="rejCount"></span></h2>
+    <div class="subnote">آخر 100 رفض — أي سبب متكرر يستاهل مراجعة العتبات</div>
+    <div id="rejectionsBox"></div>
   </section>
 
   <section id="thesis">
@@ -205,8 +253,12 @@ const FILES = {
   perfReal: 'data/performance-summary.json',
   perfShadow: 'data/shadow-performance-summary.json',
   perfScalp: 'data/scalp-performance-summary.json',
+  perfV2: 'data/v2-performance-summary.json',
   health: 'data/consistency-report.json',
   thesis: 'data/thesis-watchlist.json',
+  rejections: 'data/rejections-log.json',
+  v2Candidates: 'data/v2-candidates.json',
+  v2Trades: 'data/v2-shadow-trades.json',
 };
 
 async function fetchJSON(path) {
@@ -241,14 +293,44 @@ function timeAgo(iso) {
 const EARLY_KEYWORDS = ['CHoCH', 'انضغاط', 'تباعد RSI', 'تأخر دوران', 'قوة نسبية خفية', 'علم صاعد', 'قاع مزدوج', 'مثلث'];
 function isEarlyFlag(f) { return EARLY_KEYWORDS.some(k => f.includes(k)); }
 
+const FUNNEL_LABELS = {
+  agent_room_priority: ['أولوية غرفة الوكلاء', 'b-win'],
+  shortlist_10: ['قائمة العشرة', 'b-purple'],
+  shortlist_20: ['قائمة العشرين', 'b-pending'],
+  validated: ['بيانات حقيقية', 'b-gray'],
+};
+function funnelBadge(stage) {
+  if (!stage) return '—';
+  const [label, cls] = FUNNEL_LABELS[stage] || [stage, 'b-gray'];
+  return `<span class="badge ${cls}">${label}</span>`;
+}
+
+const DECAY_LABELS = { fresh: ['طازة', 'decay-fresh'], developing: ['بتتطور', 'decay-developing'], decayed: ['انتهت', 'decay-decayed'] };
+function decayBadge(lifecycle) {
+  if (!lifecycle || !lifecycle.decay_state) return '—';
+  const [label, cls] = DECAY_LABELS[lifecycle.decay_state] || [lifecycle.decay_state, ''];
+  return `<span class="${cls}">${label}${lifecycle.hours_since_flag != null ? ' (' + lifecycle.hours_since_flag.toFixed(0) + 'س)' : ''}</span>`;
+}
+
 function statusBadge(status) {
   const map = {
     open: ['مفتوحة', 'b-open'], pending: ['معلّقة', 'b-pending'],
     stopped: ['ستوب', 'b-stopped'], stopped_after_partial_targets: ['ستوب (بعد أهداف جزئية)', 'b-stopped'],
     closed_targets_complete: ['كل الأهداف تحققت', 'b-win'],
     superseded: ['اترقّت لحقيقية', 'b-gray'], voided_sizing_correction: ['أُلغيت (تصحيح حجم)', 'b-gray'],
+    expired_no_resolution: ['انتهت المدة (لا نتيجة)', 'b-gray'],
   };
   const [label, cls] = map[status] || [status, 'b-gray'];
+  return `<span class="badge ${cls}">${label}</span>`;
+}
+
+function decisionBadge(state) {
+  const map = {
+    HIGH_PRIORITY_SETUP: ['أولوية عالية', 'b-win'], WATCH: ['مراقبة', 'b-pending'],
+    WAIT_FOR_CONFIRMATION: ['انتظار تأكيد', 'b-gray'], NO_TRADE: ['لا صفقة', 'b-gray'],
+    REJECTED_BY_GATE: ['مرفوضة (بوابة)', 'b-stopped'],
+  };
+  const [label, cls] = map[state] || [state, 'b-gray'];
   return `<span class="badge ${cls}">${label}</span>`;
 }
 
@@ -268,17 +350,21 @@ function coinDetailFields(c) {
     <div><span>حجم التداول 24س: </span>$${fmt(c.volume_24h_usd, 0)}</div>
     <div><span>القيمة السوقية: </span>$${fmt(c.market_cap_usd, 0)}</div>
     <div><span>مُدرجة على Binance: </span>${c.binance_listed ? 'نعم' : 'لا'}</div>
-    <div><span>الترابط مع BTC (7ي): </span>${fmt(c.btc_correlation_7d, 2)}</div>
     <div><span>الانحدار عن ATH: </span>${fmt(c.ath_change_pct, 1)}%</div>
     <div><span>فاندنج: </span>${fmt(c.latest_funding_rate, 5)}</div>
     <div><span>علاقة OI بالسعر: </span>${c.oi_price_relationship || '—'}</div>
     <div><span>خطر unlock: </span>${c.unlock_risk_flag ? 'نعم' : (c.unlock_data_checked ? 'لا (مؤكد)' : 'لم يُفحص')}</div>
+    <div class="detail-section-title">جودة البيانات</div>
+    <div><span>RSI: </span>${(c.data_quality && c.data_quality.rsi14 && c.data_quality.rsi14.confidence) || '—'}</div>
+    <div><span>ATR/مقاومة: </span>${(c.data_quality && c.data_quality.atr && c.data_quality.atr.confidence) || '—'}</div>
+    <div><span>مشتقات: </span>${(c.data_quality && c.data_quality.derivatives && c.data_quality.derivatives.confidence) || '—'}</div>
     <div style="grid-column:1/-1"><span>كل الفلاجات: </span><ul class="flags">${flags || '<li>لا توجد</li>'}</ul></div>
   `;
 }
 
-function renderCandidateTable(tbodySel, list, columns) {
+function renderCandidateTable(tbodySel, list, countId) {
   const tbody = document.querySelector(tbodySel);
+  document.getElementById(countId).textContent = list.length;
   if (!list.length) { tbody.innerHTML = `<tr><td colspan="10" class="empty">لا توجد عملات حاليًا</td></tr>`; return; }
   let html = '';
   list.forEach((item, i) => {
@@ -288,12 +374,10 @@ function renderCandidateTable(tbodySel, list, columns) {
       <td class="sym">${c.symbol}</td>
       <td>${c.confidence_score ?? '—'}</td>
       <td class="${c.signal_quality === 'idiosyncratic' ? 'quality-idio' : 'quality-beta'}">${c.signal_quality === 'idiosyncratic' ? 'مستقلة' : (c.signal_quality ? 'بيتا/كتلة' : '—')}</td>
+      <td>${funnelBadge(c.funnel_stage)}</td>
+      ${item.isProactive ? `<td>${decayBadge(c.opportunity_lifecycle)}</td>` : ''}
       <td class="flags"><ul>${item.reasons.map(r => `<li>${r}</li>`).join('')}</ul></td>
       <td>$${fmt(c.price_usd)}</td>
-      <td>${pct(c.change_24h_pct, 1)}</td>
-      <td>${pct(c.change_7d_pct, 1)}</td>
-      <td>${fmt(c.indicators && c.indicators.rsi14, 1)}</td>
-      <td>${fmt(c.atr_pct_of_price, 1)}${c.atr_pct_of_price != null ? '%' : ''}</td>
     </tr>`;
     html += detailRow(rid, coinDetailFields(c));
   });
@@ -329,7 +413,7 @@ function computeTradeRow(trade, priceLookup) {
     id: trade.id, symbol: trade.symbol || (trade.asset_id || '').toUpperCase(),
     status: trade.status, entry, stop, targets, targetsHit: (trade.targets_hit || []).length,
     current, pnlPct, stopDistPct, t1DistPct,
-    triggeredBy: trade.triggered_by || '—',
+    triggeredBy: trade.entry_archetype || trade.triggered_by || '—',
     scoreAtEntry: trade.confidence_score_at_entry,
     dateOpened: trade.date_opened, lastCheckSource: trade.last_check_source,
     used_trend_following_stop: trade.used_trend_following_stop,
@@ -366,8 +450,30 @@ function renderTradeTable(tbodySel, trades, priceLookup, showScore, showStopDist
   tbody.innerHTML = html;
 }
 
+function renderSMC(box, topTierCoins) {
+  if (!topTierCoins.length) { box.innerHTML = `<div class="empty">لسه مفيش عملات وصلت لمرحلة التحليل الحقيقي هذا الرن</div>`; return; }
+  let html = '';
+  topTierCoins.forEach(c => {
+    const fvgs = c.fair_value_gaps || [];
+    const bestFvg = fvgs[0];
+    const sweep = c.liquidity_sweep;
+    const inducement = c.inducement;
+    const ob = c.order_block;
+    const structure = c.real_structure;
+    html += `<div class="smc-card">
+      <div class="sym" style="margin-bottom:6px">${c.symbol} — ${funnelBadge(c.funnel_stage)}</div>
+      <div class="smc-row"><span>Fair Value Gap</span><span class="quality-${bestFvg ? bestFvg.quality : ''}">${bestFvg ? bestFvg.quality + (bestFvg.mitigated ? ' (متغطاة)' : ' (طازة)') : '—'}</span></div>
+      <div class="smc-row"><span>Liquidity Sweep</span><span class="quality-${sweep ? sweep.confidence : ''}">${sweep ? sweep.confidence : '—'}</span></div>
+      <div class="smc-row"><span>Inducement</span><span class="quality-${inducement ? inducement.confidence : ''}">${inducement ? inducement.confidence : '—'}</span></div>
+      <div class="smc-row"><span>Order Block</span><span class="quality-${ob ? ob.quality : ''}">${ob ? ob.quality : '—'}</span></div>
+      <div class="smc-row"><span>الهيكل الحقيقي (BOS/CHoCH)</span><span>${structure ? structure.signal : '—'}</span></div>
+    </div>`;
+  });
+  box.innerHTML = html;
+}
+
 function renderPerf(perfCards, summaries) {
-  const labels = { real: '💰 حقيقي', shadow: '👤 شادو', scalp: '⚡ سكالب' };
+  const labels = { real: '💰 حقيقي', shadow: '👤 شادو', scalp: '⚡ سكالب', v2: '🧭 V2' };
   let html = '';
   for (const [key, label] of Object.entries(labels)) {
     const s = (summaries[key] && summaries[key].overall) || {};
@@ -375,20 +481,35 @@ function renderPerf(perfCards, summaries) {
       <div class="card"><div class="label">${label} — صفقات مقفولة</div><div class="value">${s.n_closed ?? 0}</div></div>
       <div class="card"><div class="label">${label} — معدل النجاح</div><div class="value">${s.win_rate_pct != null ? s.win_rate_pct + '%' : '—'}</div></div>
       <div class="card"><div class="label">${label} — متوسط العائد</div><div class="value">${s.avg_return_pct != null ? pct(s.avg_return_pct, 2) : '—'}</div></div>
-      <div class="card"><div class="label">${label} — Profit Factor</div><div class="value">${s.profit_factor ?? '—'}</div></div>
     `;
   }
   perfCards.innerHTML = html;
 }
 
 function renderHealth(box, report) {
-  if (!report) { box.innerHTML = `<div class="empty">مفيش تقرير consistency-check لسه — لسه محتاج رن بعد رفع الملف</div>`; return; }
+  if (!report) { box.innerHTML = `<div class="empty">مفيش تقرير consistency-check لسه</div>`; return; }
   const errs = (report.findings || []).filter(f => f.severity === 'error');
   const warns = (report.findings || []).filter(f => f.severity === 'warning');
   let html = `<div class="subnote">آخر فحص: ${timeAgo(report.checked_at)} — ${errs.length} خطأ، ${warns.length} تحذير</div>`;
   if (!errs.length && !warns.length) html += `<div class="empty">✅ مفيش أي ملاحظات — كل حاجة متسقة</div>`;
   errs.forEach(f => html += `<div class="alert-item alert-err"><b class="err">خطأ [${f.category}]</b> — ${f.message}</div>`);
   warns.forEach(f => html += `<div class="alert-item alert-warn"><b class="warn">تحذير [${f.category}]</b> — ${f.message}</div>`);
+  box.innerHTML = html;
+}
+
+function renderRejections(box, countEl, log) {
+  const all = (log && log.rejections) || [];
+  countEl.textContent = all.length;
+  if (!all.length) { box.innerHTML = `<div class="empty">مفيش رفض مسجّل لسه</div>`; return; }
+  const recent = all.slice(-100).reverse();
+  const counts = {};
+  recent.forEach(r => (r.rejection_codes || []).forEach(code => counts[code] = (counts[code] || 0) + 1));
+  const maxCount = Math.max(...Object.values(counts));
+  let html = '<div class="smc-card">';
+  Object.entries(counts).sort((a, b) => b[1] - a[1]).forEach(([code, n]) => {
+    html += `<div class="smc-row"><span>${code}</span><span>${n}</span></div><div class="rej-bar-wrap"><div class="rej-bar" style="width:${n / maxCount * 100}%"></div></div>`;
+  });
+  html += '</div>';
   box.innerHTML = html;
 }
 
@@ -399,7 +520,7 @@ function renderThesis(box, watchlist) {
   entries.forEach(e => {
     const triggered = e.status === 'triggered';
     html += `<div class="thesis-card ${triggered ? 'triggered' : ''}">
-      <div><span class="sym">${e.symbol}</span> — ${statusBadge(e.status === 'triggered' ? 'closed_targets_complete' : (e.status === 'pending' ? 'pending' : e.status))}
+      <div><span class="sym">${e.symbol}</span> — ${statusBadge(e.status === 'triggered' ? 'closed_targets_complete' : 'pending')}
         <span style="color:var(--text-dim)"> — أُضيفت ${e.date_added} — القرار الأصلي: ${e.verdict_at_creation}</span></div>
       <div style="margin-top:6px;color:var(--text-dim)">${e.note || ''}</div>
       ${(e.scenarios || []).map(s => `<div class="scenario"><b>${s.label}</b>: ${
@@ -414,9 +535,45 @@ function renderThesis(box, watchlist) {
   box.innerHTML = html;
 }
 
+function renderV2Candidates(tbody, countEl, data) {
+  const list = (data && data.candidates) || [];
+  countEl.textContent = list.length;
+  if (!list.length) { tbody.innerHTML = `<tr><td colspan="5" class="empty">مفيش مرشحين من V2 هذا الرن</td></tr>`; return; }
+  tbody.innerHTML = list.map(r => `<tr>
+    <td class="sym">${r.symbol}</td>
+    <td>${r.v2_score}</td>
+    <td>${decisionBadge(r.v2_final_status)}</td>
+    <td class="flags">${r.v2_archetype}</td>
+    <td class="flags">${(r.v2_gate_reject_reasons || []).join(', ') || '—'}</td>
+  </tr>`).join('');
+}
+
+function renderV2Trades(tbody, trades, priceLookup) {
+  if (!trades.length) { tbody.innerHTML = `<tr><td colspan="9" class="empty">مفيش صفقات V2 لسه</td></tr>`; return; }
+  const open = trades.filter(t => t.status === 'open');
+  const rest = trades.filter(t => t.status !== 'open');
+  const ordered = [...open, ...rest];
+  tbody.innerHTML = ordered.map(t => {
+    const current = priceLookup[t.asset_id];
+    const pnlPct = current != null && t.entry ? (current - t.entry) / t.entry * 100 : null;
+    const targetsStr = (t.targets || []).map(tg => `${tg.horizon_label}:+${tg.target_pct}%`).join(' / ');
+    return `<tr>
+      <td class="sym">${t.symbol}</td>
+      <td>${statusBadge(t.status)}</td>
+      <td>${fmt(t.entry)}</td>
+      <td>${current != null ? '$' + fmt(current) : '—'}</td>
+      <td>${pct(pnlPct, 1)}</td>
+      <td>${fmt(t.stop)}</td>
+      <td class="flags">${targetsStr}</td>
+      <td>${t.v2_score}</td>
+      <td>${t.date_opened}</td>
+    </tr>`;
+  }).join('');
+}
+
 async function loadAll() {
   document.getElementById('lastUpdate').textContent = 'جارٍ التحديث...';
-  const [radar, real, shadow, scalp, perfReal, perfShadow, perfScalp, health, thesis] = await Promise.all(
+  const [radar, real, shadow, scalp, perfReal, perfShadow, perfScalp, perfV2, health, thesis, rejections, v2Candidates, v2Trades] = await Promise.all(
     Object.values(FILES).map(fetchJSON)
   );
 
@@ -424,6 +581,16 @@ async function loadAll() {
     document.getElementById('lastUpdate').textContent = `آخر رن: ${timeAgo(radar.updated_at)}`;
     document.getElementById('breadth').textContent = `اتساع السوق: ${radar.market_breadth_pct_green ?? '—'}%`;
     document.getElementById('coinCount').textContent = `${radar.count ?? 0} عملة مفلجة`;
+    const regime = radar.market_regime;
+    const regimeEl = document.getElementById('regime');
+    if (regime && regime.risk_state) {
+      const map = { risk_on: ['صاعد', 'pill-risk-on'], risk_off: ['هابط', 'pill-risk-off'], neutral: ['محايد', 'pill-neutral'], unavailable: ['غير متاح', ''] };
+      const [label, cls] = map[regime.risk_state] || [regime.risk_state, ''];
+      regimeEl.textContent = `السوق العام: ${label}`;
+      regimeEl.className = 'pill ' + cls;
+    } else {
+      regimeEl.textContent = 'السوق العام: —';
+    }
   } else {
     document.getElementById('lastUpdate').textContent = 'تعذّر تحميل radar-flags.json';
   }
@@ -436,27 +603,35 @@ async function loadAll() {
   coins.forEach(c => {
     const flags = c.flags || [];
     const earlyFlags = flags.filter(isEarlyFlag);
-    if (c.priority_review) proactive.push({ coin: c, reasons: earlyFlags.length ? earlyFlags : ['priority_review'] });
+    if (c.priority_review) proactive.push({ coin: c, reasons: earlyFlags.length ? earlyFlags : ['priority_review'], isProactive: true });
     if (c.breakout_signal || c.extension_continuation_signal || c.trendline_break_confirmed_signal) {
       const reasons = [];
       if (c.breakout_signal) reasons.push('اختراق مقاومة مؤكد');
       if (c.extension_continuation_signal) reasons.push('استمرار امتداد');
       if (c.trendline_break_confirmed_signal) reasons.push('كسر خط ترند مؤكد');
-      momentum.push({ coin: c, reasons });
+      momentum.push({ coin: c, reasons, isProactive: false });
     }
   });
   proactive.sort((a, b) => (b.coin.confidence_score || -1) - (a.coin.confidence_score || -1));
   momentum.sort((a, b) => (b.coin.confidence_score || -1) - (a.coin.confidence_score || -1));
 
-  renderCandidateTable('#tblProactive tbody', proactive);
-  renderCandidateTable('#tblMomentum tbody', momentum);
+  renderCandidateTable('#tblProactive tbody', proactive, 'proactiveCount');
+  renderCandidateTable('#tblMomentum tbody', momentum, 'momentumCount');
+
+  const topTierCoins = coins.filter(c => c.funnel_stage === 'agent_room_priority' || c.funnel_stage === 'shortlist_10');
+  document.getElementById('smcCount').textContent = topTierCoins.length;
+  renderSMC(document.getElementById('smcBox'), topTierCoins);
 
   renderTradeTable('#tblReal tbody', (real && real.trades) || [], priceLookup, false, true);
   renderTradeTable('#tblShadow tbody', (shadow && shadow.trades) || [], priceLookup, true, false);
   renderTradeTable('#tblScalp tbody', (scalp && scalp.trades) || [], priceLookup, false, false);
 
-  renderPerf(document.getElementById('perfCards'), { real: perfReal, shadow: perfShadow, scalp: perfScalp });
+  renderV2Candidates(document.querySelector('#tblV2Cand tbody'), document.getElementById('v2CandCount'), v2Candidates);
+  renderV2Trades(document.querySelector('#tblV2Trades tbody'), (v2Trades && v2Trades.trades) || [], priceLookup);
+
+  renderPerf(document.getElementById('perfCards'), { real: perfReal, shadow: perfShadow, scalp: perfScalp, v2: perfV2 });
   renderHealth(document.getElementById('healthBox'), health);
+  renderRejections(document.getElementById('rejectionsBox'), document.getElementById('rejCount'), rejections);
   renderThesis(document.getElementById('thesisBox'), thesis);
 }
 
