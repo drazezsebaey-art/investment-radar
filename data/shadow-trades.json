@@ -3163,7 +3163,12 @@
       "created_at": "2026-09-24T13:09:20.908756+00:00",
       "filled_at": "2026-09-24T13:09:20.908756+00:00",
       "actual_entry": 0.392237,
-      "targets_hit": [],
+      "targets_hit": [
+        {
+          "target": 0.42757309,
+          "hit_at": "2026-09-24T18:58:09.523357+00:00"
+        }
+      ],
       "confidence_score_at_entry": 0,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 0 < AUTO_TRADE_MIN_SCORE 40",
@@ -3601,7 +3606,7 @@
       "triggered_by": "priority_review:relative_strength_consolidation",
       "entry_archetype": "hidden_relative_strength",
       "date_opened": "2026-09-24",
-      "status": "open",
+      "status": "superseded",
       "entry": 0.098737,
       "stop": 0.081368,
       "used_trend_following_stop": false,
@@ -3617,7 +3622,9 @@
       "confidence_score_at_entry": 35,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 35 < AUTO_TRADE_MIN_SCORE 40",
-      "last_check_source": "okx_candles"
+      "last_check_source": "okx_candles",
+      "superseded_at": "2026-09-24T18:57:15.734258+00:00",
+      "superseded_reason": "promoted to a real auto trade at confidence_score 50"
     },
     {
       "id": "gram-shadow-20260924T165712",
@@ -3628,7 +3635,7 @@
       "triggered_by": "extension_continuation,priority_review:choch_bullish",
       "entry_archetype": "confluence_confirmed_plus_proactive",
       "date_opened": "2026-09-24",
-      "status": "open",
+      "status": "superseded",
       "entry": 1.44,
       "stop": 1.3997619,
       "used_trend_following_stop": false,
@@ -3644,7 +3651,9 @@
       "confidence_score_at_entry": 38,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 38 < AUTO_TRADE_MIN_SCORE 40",
-      "last_check_source": "okx_candles"
+      "last_check_source": "okx_candles",
+      "superseded_at": "2026-09-24T18:57:15.734258+00:00",
+      "superseded_reason": "promoted to a real auto trade at confidence_score 53"
     },
     {
       "id": "xlm-shadow-20260924T172728",
@@ -3701,6 +3710,33 @@
       "last_check_source": "okx_candles",
       "exit_price": 2.0465592,
       "date_closed": "2026-09-24T17:58:02.939229+00:00"
+    },
+    {
+      "id": "trx-shadow-20260924T185715",
+      "asset_id": "tron",
+      "symbol": "TRX",
+      "type": "paper",
+      "auto": true,
+      "triggered_by": "priority_review:cluster_rotation_lag",
+      "entry_archetype": "rotation_lag",
+      "date_opened": "2026-09-24",
+      "status": "open",
+      "entry": 0.340892,
+      "stop": 0.34065327,
+      "used_trend_following_stop": false,
+      "targets": [
+        0.34125009,
+        0.34148882,
+        0.34184692
+      ],
+      "created_at": "2026-09-24T18:57:15.734258+00:00",
+      "filled_at": "2026-09-24T18:57:15.734258+00:00",
+      "actual_entry": 0.340892,
+      "targets_hit": [],
+      "confidence_score_at_entry": 10,
+      "signal_quality_at_entry": "beta_driven_or_cluster",
+      "rejected_reason": "confidence_score 10 < AUTO_TRADE_MIN_SCORE 40",
+      "last_check_source": "current_spot_fallback"
     }
   ]
 }
