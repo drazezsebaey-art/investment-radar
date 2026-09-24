@@ -922,6 +922,65 @@ def bucket_volumes_to_candles(candles: list, hourly_volumes: list) -> list:
     return bucket_vols
 
 
+def find_all_resistance_levels(candles: list) -> list:
+    """v34 (24/9/2026): Path-to-Target Analysis - step 6 of the V2-merge
+    plan. find_resistance_zone() above only keeps the SINGLE best cluster
+    and discards every other valid one - fine for picking one stop
+    reference, but Path-to-Target needs to know about EVERY known level
+    between here and a target, not just the strongest one. Duplicates the
+    same peak/cluster logic deliberately (kept as a separate read-only
+    function) rather than refactoring find_resistance_zone itself, so the
+    existing stop-sizing behavior is provably unchanged."""
+    if len(candles) < (PEAK_NEIGHBORS * 2 + MIN_TOUCHES + EXCLUDE_RECENT_CANDLES):
+        return []
+    history = candles[:-EXCLUDE_RECENT_CANDLES]
+    highs = [c[2] for c in history]
+    peaks = []
+    for i in range(PEAK_NEIGHBORS, len(highs) - PEAK_NEIGHBORS):
+        window = highs[i - PEAK_NEIGHBORS: i + PEAK_NEIGHBORS + 1]
+        if highs[i] == max(window):
+            peaks.append(highs[i])
+    if len(peaks) < MIN_TOUCHES:
+        return []
+    peaks.sort()
+    clusters, current_cluster = [], [peaks[0]]
+    for p in peaks[1:]:
+        if (p - current_cluster[-1]) / current_cluster[-1] * 100 <= TOUCH_TOLERANCE_PCT:
+            current_cluster.append(p)
+        else:
+            clusters.append(current_cluster)
+            current_cluster = [p]
+    clusters.append(current_cluster)
+    valid = [c for c in clusters if len(c) >= MIN_TOUCHES]
+    return sorted(round(mean(c), 6) for c in valid)
+
+
+def compute_path_to_target(current_price, targets: list, resistance_levels: list) -> dict:
+    """For each target, counts how many already-known resistance levels sit
+    strictly between current price and that target - the target being
+    theoretically reachable (per ATR/risk-reward math) says nothing about
+    what has to be cleared first to actually get there. path_quality per
+    target: clear (0 obstacles) / moderate (1) / crowded (2+)."""
+    if not targets or current_price is None:
+        return {"targets": []}
+    results = []
+    for t in targets:
+        lo, hi = (current_price, t) if t > current_price else (t, current_price)
+        obstacles = [lvl for lvl in resistance_levels if lo < lvl < hi]
+        if len(obstacles) == 0:
+            quality = "clear"
+        elif len(obstacles) == 1:
+            quality = "moderate"
+        else:
+            quality = "crowded"
+        results.append({
+            "target_price": t,
+            "obstacles_in_path": obstacles,
+            "path_quality": quality,
+        })
+    return {"targets": results}
+
+
 def find_resistance_zone(candles: list):
     if len(candles) < (PEAK_NEIGHBORS * 2 + MIN_TOUCHES + EXCLUDE_RECENT_CANDLES):
         return None
@@ -1308,6 +1367,7 @@ def main():
 
         coin["resistance_level"] = round(zone["level"], 6)
         coin["resistance_touches"] = zone["touches"]
+        coin["all_resistance_levels"] = find_all_resistance_levels(candles)
         coin["breakout_confirmed"] = breakout_confirmed
         coin["breakout_pct_above"] = round(pct_above, 2)
         coin["volume_ratio"] = volume_ratio
@@ -1484,6 +1544,9 @@ def main():
             stop, targets = compute_trend_following_stop(coin.get("price_usd"), coin.get("atr_value"))
             coin["trend_following_stop"] = stop
             coin["trend_following_targets"] = targets
+            coin["path_to_target"] = compute_path_to_target(
+                coin.get("price_usd"), targets or [], coin.get("all_resistance_levels", [])
+            )
         else:
             coin["trend_following_stop"] = None
             coin["trend_following_targets"] = None
