@@ -368,8 +368,14 @@ FLAGPOLE_MIN_MOVE_PCT = 15.0        # minimum % move within that window to count
 FLAG_CONSOLIDATION_CANDLES = 6      # candles since the pole that must show a tight consolidation (the "flag")
 FLAG_MAX_CONSOLIDATION_RANGE_PCT = 8.0   # consolidation must stay within this % range of its own midpoint
 
-DOUBLE_BOTTOM_LEVEL_TOLERANCE_PCT = 3.0   # how close two lows must be to count as "roughly the same level"
-DOUBLE_BOTTOM_MIN_SEPARATION = 3          # minimum candles between the two lows - needs a real peak between them, not noise
+DOUBLE_BOTTOM_LEVEL_TOLERANCE_PCT = 1.2   # v36 fix (24/9/2026): was 3.0 - measured 75/264 coins (28%) firing on real
+                                            # production data, the single cause of runs ballooning past an hour (every
+                                            # hit forces an expensive real-API deep-eval in breakout_check.py). At this
+                                            # synthetic-candle noise level, 3% was catching coincidental near-lows as
+                                            # "the same level" far too often. 1.2% measured at 15/264 (6%), in line
+                                            # with the other early-signal detectors' selectivity.
+DOUBLE_BOTTOM_MIN_SEPARATION = 5          # v36: was 3 - too short a window between the two lows made noise look structural
+DOUBLE_BOTTOM_MIN_NECKLINE_GAP_PCT = 2.0  # v36 new: neckline must clear the lows by a meaningful margin, not just >0
 
 TRIANGLE_MIN_SWINGS_EACH_SIDE = 2
 TRIANGLE_RESISTANCE_FLAT_TOLERANCE_PCT = 2.0   # highs within this % of each other count as "flat" (ascending triangle)
@@ -446,6 +452,8 @@ def detect_double_bottom(candles: list):
     neckline = max(h["price"] for h in between_highs)
     if neckline <= lower_low:
         return None
+    if (neckline - lower_low) / lower_low * 100 < DOUBLE_BOTTOM_MIN_NECKLINE_GAP_PCT:
+        return None  # v36: neckline barely above the lows isn't a meaningful reversal structure
     target = neckline + (neckline - lower_low)
     return {
         "lower_low": lower_low,
