@@ -38,12 +38,16 @@ jobs:
 
       - name: Run scanner (price history + indicators + categories + breadth)
         run: python scripts/scan.py
+        env:
+          COINGECKO_API_KEY: ${{ secrets.COINGECKO_API_KEY }}
 
       - name: Check Binance liquidity for candidates
         run: python scripts/check_liquidity.py
 
       - name: Check resistance breakouts + fibonacci extensions + retests (rotating)
         run: python scripts/breakout_check.py
+        env:
+          COINGECKO_API_KEY: ${{ secrets.COINGECKO_API_KEY }}
 
       - name: Auto paper trades + shadow log
         run: python scripts/auto_paper_trade.py
