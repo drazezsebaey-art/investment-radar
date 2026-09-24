@@ -875,6 +875,60 @@ def detect_order_block(candles: list, atr_value):
     return best
 
 
+# --- v46: Real-candle BOS/CHoCH detector - step 14 of the V2-merge plan --
+# Same structural logic as scan.py's detect_structure_signal (Layer 2), but
+# on real 4h CoinGecko candles instead of 15-min synthetic snapshots - a
+# firmer confirmation for the narrow top funnel tiers, NOT a replacement
+# for the proactive synthetic-based version (which still runs on all ~250
+# coins for early screening). CHoCH = the FIRST break against a prior
+# trend (a character change); BOS = a break confirming a trend already in
+# place. V2's own warning (section 20) applies: a break with no prior
+# established trend read is not automatically meaningful, hence the
+# explicit "sideways" case returning nothing rather than forcing a label.
+def find_swing_highs(candles: list, neighbors: int = 2) -> list:
+    highs = []
+    for i in range(neighbors, len(candles) - neighbors):
+        window = [candles[j][2] for j in range(i - neighbors, i + neighbors + 1)]
+        if candles[i][2] == max(window):
+            highs.append((i, candles[i][2]))
+    return highs
+
+
+def detect_structure_real(candles: list):
+    if not candles or len(candles) < 15:
+        return None
+    highs = find_swing_highs(candles)
+    lows = find_swing_lows(candles)
+    if len(highs) < 2 or len(lows) < 2:
+        return None
+
+    h_prev, h_last = highs[-2][1], highs[-1][1]
+    l_prev, l_last = lows[-2][1], lows[-1][1]
+    higher_high, lower_high = h_last > h_prev, h_last < h_prev
+    higher_low, lower_low = l_last > l_prev, l_last < l_prev
+
+    if higher_high and higher_low:
+        prior_trend = "up"
+    elif lower_high and lower_low:
+        prior_trend = "down"
+    else:
+        prior_trend = "sideways"
+
+    current_close = candles[-1][4]
+    signal = None
+    if current_close > h_last:
+        signal = "BOS_bullish" if prior_trend == "up" else "CHoCH_bullish"
+    elif current_close < l_last:
+        signal = "BOS_bearish" if prior_trend == "down" else "CHoCH_bearish"
+
+    if signal is None:
+        return None
+    return {
+        "signal": signal, "prior_trend": prior_trend,
+        "reference_high": round(h_last, 8), "reference_low": round(l_last, 8),
+    }
+
+
 def compute_atr(candles: list, period: int = ATR_PERIOD):
     """Average True Range over the last `period` candles - a per-asset
     volatility measure, so a naturally volatile coin gets a proportionally
@@ -1876,6 +1930,7 @@ def main():
             if order_block is not None:
                 order_block.pop("formed_at_index", None)
             coin["order_block"] = order_block
+            coin["real_structure"] = detect_structure_real(raw)
     # a candidate that fetched candles but never fired (never entered
     # "ranked" above) still had _candles_raw set by the per-coin loop -
     # without this, the transient key would leak into the saved JSON.
