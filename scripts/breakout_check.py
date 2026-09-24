@@ -48,6 +48,7 @@ continuation signal, EMA50-on-4h trend filter, insufficient-history flag,
 break-and-retest tracking, signal logging for scripts/evaluate_signals.py.
 """
 import json
+import os
 import time
 import urllib.request
 import urllib.error
@@ -288,8 +289,18 @@ def select_rotating_candidates(all_listed: list) -> list:
     return rotation_slice + escalated
 
 
+# v39 fix (24/9/2026): see scan.py's identical comment - keyless CoinGecko
+# calls are rate-limited per shared IP (confirmed in CoinGecko's own docs),
+# which is what the 24/9 run's 429 storm was. Optional, falls back to
+# keyless if the secret isn't configured yet.
+COINGECKO_API_KEY = os.environ.get("COINGECKO_API_KEY")
+
+
 def fetch_json(url: str):
-    req = urllib.request.Request(url, headers={"User-Agent": "investment-radar/1.0"})
+    headers = {"User-Agent": "investment-radar/1.0"}
+    if COINGECKO_API_KEY:
+        headers["x-cg-demo-api-key"] = COINGECKO_API_KEY
+    req = urllib.request.Request(url, headers=headers)
     last_exc = None
     for attempt in range(MAX_RETRIES + 1):
         try:
