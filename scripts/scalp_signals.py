@@ -28,6 +28,7 @@ from datetime import datetime, timezone
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 RADAR_FLAGS_PATH = BASE_DIR / "data" / "radar-flags.json"
+REJECTIONS_LOG_PATH = BASE_DIR / "data" / "rejections-log.json"
 SCALP_SIGNALS_PATH = BASE_DIR / "data" / "scalp-signals.json"   # live snapshot, kept for a quick glance
 SCALP_TRADES_PATH = BASE_DIR / "data" / "scalp-trades.json"     # v2: the actual persistent trade record
 
@@ -193,6 +194,27 @@ def fast_reject_reason(coin: dict, entry, stop, targets):
     return None
 
 
+def log_rejection(coin: dict, stage: str, rejection_codes: list, details: dict) -> None:
+    """v31 (24/9/2026): Rejection Engine - shared log with auto_paper_trade.py
+    (data/rejections-log.json). See that file's log_rejection for the full
+    rationale."""
+    log = {"rejections": []}
+    if REJECTIONS_LOG_PATH.exists():
+        try:
+            log = json.loads(REJECTIONS_LOG_PATH.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            pass
+    log.setdefault("rejections", []).append({
+        "asset_id": coin.get("id"), "symbol": coin.get("symbol"),
+        "timestamp": datetime.now(timezone.utc).isoformat(),
+        "stage": stage,
+        "rejection_codes": rejection_codes,
+        "score_at_rejection": coin.get("confidence_score"),
+        "details": details,
+    })
+    REJECTIONS_LOG_PATH.write_text(json.dumps(log, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
 def build_scalp_trade(coin: dict) -> dict:
     entry, stop, targets, used_tf_stop = compute_stop_and_targets(coin)
     now = datetime.now(timezone.utc)
@@ -246,10 +268,13 @@ def main():
         entry, stop, targets, _ = compute_stop_and_targets(coin)
         if entry is None or stop is None:
             n_skipped_no_stop += 1
+            log_rejection(coin, "scalp_trade", ["NO_STOP_CANDIDATE"], {"entry": entry, "atr_value": coin.get("atr_value")})
             continue
         reason = fast_reject_reason(coin, entry, stop, targets)
         if reason:
             n_rejected += 1
+            code = "RR_BELOW_FLOOR" if "R:R" in reason else ("RSI_OVERBOUGHT" if "RSI" in reason else "OTHER")
+            log_rejection(coin, "scalp_trade", [code], {"reason_text": reason, "entry": entry, "stop": stop, "targets": targets})
             print(f"  Scalp fast-reject {coin['symbol']}: {reason}")
             continue
         trades.append(build_scalp_trade(coin))
