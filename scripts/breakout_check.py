@@ -629,6 +629,252 @@ def check_trendline_break(watchlist: dict, coin: dict, candles: list) -> dict:
 
 # ---------- v8: ATR-based dynamic stop ----------
 
+# --- v42: Fair Value Gap detector - step 10 of the V2-merge plan ----------
+# Runs ONLY on real_candles (v41, top funnel tiers) - genuine OHLC, not the
+# synthetic snapshots scan.py's early signals use. Bullish FVG per the
+# standard ICT/SMC definition: candle[i-2].high < candle[i].low, i.e. a gap
+# the middle (displacement) candle punched through that price never traded
+# back into. Quality is graded, never a bare true/false, because a tiny
+# gap from ordinary noise and a large gap from a genuine impulsive move are
+# not the same evidence even though both technically satisfy the geometry.
+FVG_QUALITY_GAP_ATR_STRONG = 0.5     # gap size >= this fraction of ATR to call it "strong" evidence
+FVG_QUALITY_GAP_ATR_MODERATE = 0.25
+FVG_QUALITY_BODY_RATIO_STRONG = 0.7  # displacement candle's body/range ratio - a decisive candle, not an indecisive one
+
+
+def detect_fair_value_gaps(candles: list, atr_value) -> list:
+    if not candles or len(candles) < 3 or not atr_value:
+        return []
+    gaps = []
+    current_price = candles[-1][4]
+    for i in range(2, len(candles)):
+        c1, c2, c3 = candles[i - 2], candles[i - 1], candles[i]
+        gap_low, gap_high = c1[2], c3[3]   # c1 high, c3 low
+        if gap_high <= gap_low:
+            continue  # no gap - the standard geometry isn't satisfied here
+        gap_size = gap_high - gap_low
+        gap_size_pct_atr = gap_size / atr_value
+        c2_range = c2[2] - c2[3]
+        body_ratio = abs(c2[4] - c2[1]) / c2_range if c2_range else 0
+        # mitigation: has any LATER candle traded back down into [gap_low, gap_high]?
+        later_candles = candles[i + 1:]
+        mitigated = any(c[3] <= gap_high for c in later_candles)  # a later low reaching back into the gap
+        fresh = not mitigated and current_price > gap_high  # price moved on without revisiting
+
+        if gap_size_pct_atr >= FVG_QUALITY_GAP_ATR_STRONG and body_ratio >= FVG_QUALITY_BODY_RATIO_STRONG and fresh:
+            quality = "exceptional"
+        elif gap_size_pct_atr >= FVG_QUALITY_GAP_ATR_STRONG and fresh:
+            quality = "strong"
+        elif gap_size_pct_atr >= FVG_QUALITY_GAP_ATR_MODERATE:
+            quality = "moderate"
+        else:
+            quality = "weak"
+
+        gaps.append({
+            "gap_low": round(gap_low, 8), "gap_high": round(gap_high, 8),
+            "gap_size_pct_of_atr": round(gap_size_pct_atr * 100, 1),
+            "displacement_body_ratio": round(body_ratio, 2),
+            "mitigated": mitigated, "fresh": fresh, "quality": quality,
+            "candle_index": i,
+        })
+    # most useful to a consumer: the freshest, highest-quality gaps first
+    quality_rank = {"exceptional": 0, "strong": 1, "moderate": 2, "weak": 3}
+    gaps.sort(key=lambda g: (g["mitigated"], quality_rank[g["quality"]]))
+    return gaps[:5]  # cap - only the handful most relevant, not every gap in 30 days of candles
+
+
+# --- v43: Liquidity Sweep detector - step 11 of the V2-merge plan --------
+# Confidence tiers instead of a boolean, per the 24/9 design decision: a
+# genuine institutional-style sweep (real pool + real displacement after)
+# is categorically different evidence from a lone wick that happened to dip
+# and close back up. Never labeled "confirmed smart money sweep" outright -
+# "detected" is the honest floor when the geometry is there but the pool
+# or the follow-through can't be verified as real.
+LIQUIDITY_SWEEP_LOOKBACK = 20
+LIQUIDITY_SWEEP_POOL_TOLERANCE_PCT = 1.0   # lows within this % of each other count as the same liquidity pool
+LIQUIDITY_SWEEP_DISPLACEMENT_ATR_MULT = 0.5
+
+
+def find_swing_lows(candles: list, neighbors: int = 2) -> list:
+    lows = []
+    for i in range(neighbors, len(candles) - neighbors):
+        window = [candles[j][3] for j in range(i - neighbors, i + neighbors + 1)]
+        if candles[i][3] == min(window):
+            lows.append((i, candles[i][3]))
+    return lows
+
+
+def detect_liquidity_sweep(candles: list, atr_value):
+    if not candles or len(candles) < 10 or not atr_value:
+        return None
+    recent = candles[-LIQUIDITY_SWEEP_LOOKBACK:]
+    swing_lows = find_swing_lows(recent)
+    pool_candidates = [(i, p) for i, p in swing_lows if i < len(recent) - 3]  # leave room for a sweep to happen after
+    if not pool_candidates:
+        return None
+
+    ref_idx, ref_price = pool_candidates[-1]
+    equal_lows = [p for i, p in pool_candidates if abs(p - ref_price) / ref_price * 100 <= LIQUIDITY_SWEEP_POOL_TOLERANCE_PCT]
+    pool_level = min(equal_lows)
+    is_genuine_pool = len(equal_lows) >= 2   # a real cluster of lows, not a single isolated swing point
+
+    sweep_idx = None
+    for j in range(ref_idx + 1, len(recent)):
+        if recent[j][3] < pool_level and recent[j][4] > pool_level:  # wicked below, closed back above
+            sweep_idx = j
+            break
+    if sweep_idx is None:
+        return None
+
+    displacement_confirmed = False
+    for k in range(sweep_idx, min(sweep_idx + 3, len(recent))):
+        c = recent[k]
+        candle_range = c[2] - c[3]
+        body = c[4] - c[1]
+        if candle_range and body > 0 and candle_range >= LIQUIDITY_SWEEP_DISPLACEMENT_ATR_MULT * atr_value:
+            displacement_confirmed = True
+            break
+
+    if is_genuine_pool and displacement_confirmed:
+        confidence = "high_quality"
+    elif displacement_confirmed:
+        confidence = "confirmed"
+    else:
+        confidence = "detected"
+
+    return {
+        "pool_level": round(pool_level, 8),
+        "is_genuine_pool": is_genuine_pool,
+        "n_equal_lows": len(equal_lows),
+        "displacement_confirmed": displacement_confirmed,
+        "confidence": confidence,
+    }
+
+
+# --- v44: Inducement detector - step 12 of the V2-merge plan --------------
+# Deliberately stricter than detect_liquidity_sweep above: V2's own spec
+# (section 23) is explicit that inducement is NOT just "price moved before
+# the real move" - it requires a minor structure (L1) that plausibly drew
+# traders in, followed by a DEEPER sweep (L2 < L1) that took out both L1's
+# and the induced positions' liquidity, THEN real displacement. Sequential
+# two-low structure is what distinguishes this from a single-pool sweep.
+INDUCEMENT_LOOKBACK = 25
+INDUCEMENT_DISPLACEMENT_ATR_MULT = 0.5
+INDUCEMENT_BOUNCE_MIN_PCT = 0.5   # L1 must be followed by at least this much of a bounce to call it plausible bait, not just noise on the way down
+
+
+def detect_inducement(candles: list, atr_value):
+    if not candles or len(candles) < 15 or not atr_value:
+        return None
+    recent = candles[-INDUCEMENT_LOOKBACK:]
+    swing_lows = find_swing_lows(recent)
+    if len(swing_lows) < 2:
+        return None
+
+    best = None
+    for i in range(len(swing_lows) - 1):
+        l1_idx, l1_price = swing_lows[i]
+        for j in range(i + 1, len(swing_lows)):
+            l2_idx, l2_price = swing_lows[j]
+            if l2_price >= l1_price:
+                continue  # L2 must sweep DEEPER than L1 to count as taking out its liquidity too
+            between = recent[l1_idx + 1:l2_idx]
+            if not between:
+                continue
+            bounce_high = max(c[2] for c in between)
+            genuine_structure = l1_price and bounce_high >= l1_price * (1 + INDUCEMENT_BOUNCE_MIN_PCT / 100)
+
+            after_l2 = recent[l2_idx + 1:]
+            reversed_above_l1 = any(c[4] > l1_price for c in after_l2)
+            if not reversed_above_l1:
+                continue
+
+            displacement_confirmed = False
+            for k in range(l2_idx, min(l2_idx + 4, len(recent))):
+                c = recent[k]
+                candle_range = c[2] - c[3]
+                body = c[4] - c[1]
+                if candle_range and body > 0 and candle_range >= INDUCEMENT_DISPLACEMENT_ATR_MULT * atr_value:
+                    displacement_confirmed = True
+                    break
+
+            if genuine_structure and displacement_confirmed:
+                confidence = "high_quality"
+            elif displacement_confirmed:
+                confidence = "confirmed"
+            else:
+                confidence = "detected"
+
+            candidate = {
+                "induced_level": round(l1_price, 8), "swept_level": round(l2_price, 8),
+                "genuine_structure": genuine_structure, "displacement_confirmed": displacement_confirmed,
+                "confidence": confidence, "swept_at_index": l2_idx,
+            }
+            if best is None or (l2_idx, l1_idx) > (best["swept_at_index"], best["induced_at_index"]):
+                candidate["induced_at_index"] = l1_idx
+                best = candidate
+    if best is not None:
+        best.pop("induced_at_index", None)
+    return best
+
+
+# --- v45: Order Block detector - step 13 of the V2-merge plan ------------
+# V2's own warning (section 28) is explicit: never treat every last opposite
+# candle as an order block. This only qualifies a candle once it's followed
+# by a genuinely strong bullish displacement (decisive body, ATR-relative
+# size) - origin and displacement are checked, not just "last red candle".
+ORDER_BLOCK_DISPLACEMENT_ATR_MULT = 0.6
+ORDER_BLOCK_BODY_RATIO_MIN = 0.6
+
+
+def detect_order_block(candles: list, atr_value):
+    if not candles or len(candles) < 6 or not atr_value:
+        return None
+    best = None
+    for i in range(1, len(candles)):
+        c = candles[i]
+        candle_range = c[2] - c[3]
+        body = c[4] - c[1]
+        is_strong_bullish = (
+            body > 0 and candle_range > 0
+            and body / candle_range >= ORDER_BLOCK_BODY_RATIO_MIN
+            and candle_range >= ORDER_BLOCK_DISPLACEMENT_ATR_MULT * atr_value
+        )
+        if not is_strong_bullish:
+            continue
+
+        ob_idx = None
+        for j in range(i - 1, -1, -1):
+            if candles[j][4] < candles[j][1]:  # last BEARISH candle right before the displacement
+                ob_idx = j
+                break
+        if ob_idx is None:
+            continue
+
+        ob_candle = candles[ob_idx]
+        ob_low, ob_high = ob_candle[3], ob_candle[2]
+        after = candles[i + 1:]
+        mitigated = any(c2[3] <= ob_high for c2 in after)  # price has traded back down into the zone since
+        displacement_strength_atr = round(candle_range / atr_value, 2)
+
+        if mitigated:
+            quality = "weak"     # already retested - the zone's predictive value going forward is much lower
+        elif displacement_strength_atr >= 1.0:
+            quality = "strong"
+        else:
+            quality = "moderate"
+
+        candidate = {
+            "ob_low": round(ob_low, 8), "ob_high": round(ob_high, 8),
+            "displacement_strength_atr": displacement_strength_atr,
+            "mitigated": mitigated, "fresh": not mitigated, "quality": quality,
+            "formed_at_index": ob_idx,
+        }
+        if best is None or ob_idx > best["formed_at_index"]:
+            best = candidate
+    return best
+
+
 def compute_atr(candles: list, period: int = ATR_PERIOD):
     """Average True Range over the last `period` candles - a per-asset
     volatility measure, so a naturally volatile coin gets a proportionally
@@ -1620,6 +1866,16 @@ def main():
                 "granularity": "4h", "window_days": OHLC_DAYS, "source": "coingecko_ohlc",
                 "format": "[timestamp_ms, open, high, low, close]", "n_candles": len(raw),
             }
+            coin["fair_value_gaps"] = detect_fair_value_gaps(raw, coin.get("atr_value"))
+            coin["liquidity_sweep"] = detect_liquidity_sweep(raw, coin.get("atr_value"))
+            inducement = detect_inducement(raw, coin.get("atr_value"))
+            if inducement is not None:
+                inducement.pop("swept_at_index", None)  # internal-only, used for picking the most recent candidate
+            coin["inducement"] = inducement
+            order_block = detect_order_block(raw, coin.get("atr_value"))
+            if order_block is not None:
+                order_block.pop("formed_at_index", None)
+            coin["order_block"] = order_block
     # a candidate that fetched candles but never fired (never entered
     # "ranked" above) still had _candles_raw set by the per-coin loop -
     # without this, the transient key would leak into the saved JSON.
