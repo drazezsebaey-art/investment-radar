@@ -3099,7 +3099,7 @@
       "triggered_by": "priority_review:squeeze+triangle",
       "entry_archetype": "proactive_confluence",
       "date_opened": "2026-09-24",
-      "status": "open",
+      "status": "closed_targets_complete",
       "entry": 0.06309,
       "stop": 0.06180877,
       "used_trend_following_stop": false,
@@ -3119,12 +3119,18 @@
         {
           "target": 0.06629307,
           "hit_at": "2026-09-24T14:06:23.206813+00:00"
+        },
+        {
+          "target": 0.06821492,
+          "hit_at": "2026-09-24T15:57:45.383406+00:00"
         }
       ],
       "confidence_score_at_entry": 15,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 15 < AUTO_TRADE_MIN_SCORE 40",
-      "last_check_source": "okx_candles"
+      "last_check_source": "okx_candles",
+      "exit_price": 0.06821492,
+      "date_closed": "2026-09-24T15:57:45.383406+00:00"
     },
     {
       "id": "ldo-shadow-20260924T130920",
@@ -3279,7 +3285,7 @@
       "confidence_score_at_entry": 25,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 25 < AUTO_TRADE_MIN_SCORE 40",
-      "last_check_source": "current_spot_fallback"
+      "last_check_source": "okx_candles"
     },
     {
       "id": "2z-shadow-20260924T150114",
@@ -3290,7 +3296,7 @@
       "triggered_by": "priority_review:relative_strength_consolidation",
       "entry_archetype": "hidden_relative_strength",
       "date_opened": "2026-09-24",
-      "status": "open",
+      "status": "stopped",
       "entry": 0.055359,
       "stop": 0.05417743,
       "used_trend_following_stop": false,
@@ -3306,6 +3312,116 @@
       "confidence_score_at_entry": 20,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 20 < AUTO_TRADE_MIN_SCORE 40",
+      "last_check_source": "okx_candles",
+      "exit_price": 0.05417743,
+      "date_closed": "2026-09-24T15:57:45.383472+00:00"
+    },
+    {
+      "id": "ar-shadow-20260924T155657",
+      "asset_id": "arweave",
+      "symbol": "AR",
+      "type": "paper",
+      "auto": true,
+      "triggered_by": "priority_review:relative_strength_consolidation+double_bottom",
+      "entry_archetype": "proactive_confluence",
+      "date_opened": "2026-09-24",
+      "status": "open",
+      "entry": 4.53,
+      "stop": 4.48456188,
+      "used_trend_following_stop": false,
+      "targets": [
+        4.59815718,
+        4.6435953,
+        4.71175248
+      ],
+      "created_at": "2026-09-24T15:56:57.104368+00:00",
+      "filled_at": "2026-09-24T15:56:57.104368+00:00",
+      "actual_entry": 4.53,
+      "targets_hit": [],
+      "confidence_score_at_entry": 25,
+      "signal_quality_at_entry": "beta_driven_or_cluster",
+      "rejected_reason": "confidence_score 25 < AUTO_TRADE_MIN_SCORE 40",
+      "last_check_source": "current_spot_fallback"
+    },
+    {
+      "id": "icp-shadow-20260924T155657",
+      "asset_id": "internet-computer",
+      "symbol": "ICP",
+      "type": "paper",
+      "auto": true,
+      "triggered_by": "priority_review:relative_strength_consolidation",
+      "entry_archetype": "hidden_relative_strength",
+      "date_opened": "2026-09-24",
+      "status": "open",
+      "entry": 3.09,
+      "stop": 2.76803571,
+      "used_trend_following_stop": false,
+      "targets": [
+        3.57294643,
+        3.89491072,
+        4.37785716
+      ],
+      "created_at": "2026-09-24T15:56:57.104368+00:00",
+      "filled_at": "2026-09-24T15:56:57.104368+00:00",
+      "actual_entry": 3.09,
+      "targets_hit": [],
+      "confidence_score_at_entry": 35,
+      "signal_quality_at_entry": "beta_driven_or_cluster",
+      "rejected_reason": "confidence_score 35 < AUTO_TRADE_MIN_SCORE 40",
+      "last_check_source": "current_spot_fallback"
+    },
+    {
+      "id": "jup-shadow-20260924T155657",
+      "asset_id": "jupiter-exchange-solana",
+      "symbol": "JUP",
+      "type": "paper",
+      "auto": true,
+      "triggered_by": "priority_review:relative_strength_consolidation",
+      "entry_archetype": "hidden_relative_strength",
+      "date_opened": "2026-09-24",
+      "status": "open",
+      "entry": 0.304621,
+      "stop": 0.29407691,
+      "used_trend_following_stop": false,
+      "targets": [
+        0.32043713,
+        0.33098122,
+        0.34679736
+      ],
+      "created_at": "2026-09-24T15:56:57.104368+00:00",
+      "filled_at": "2026-09-24T15:56:57.104368+00:00",
+      "actual_entry": 0.304621,
+      "targets_hit": [],
+      "confidence_score_at_entry": 35,
+      "signal_quality_at_entry": "beta_driven_or_cluster",
+      "rejected_reason": "confidence_score 35 < AUTO_TRADE_MIN_SCORE 40",
+      "last_check_source": "current_spot_fallback"
+    },
+    {
+      "id": "crv-shadow-20260924T155657",
+      "asset_id": "curve-dao-token",
+      "symbol": "CRV",
+      "type": "paper",
+      "auto": true,
+      "triggered_by": "priority_review:cluster_rotation_lag",
+      "entry_archetype": "rotation_lag",
+      "date_opened": "2026-09-24",
+      "status": "open",
+      "entry": 0.345968,
+      "stop": 0.34053364,
+      "used_trend_following_stop": false,
+      "targets": [
+        0.35411954,
+        0.3595539,
+        0.36770544
+      ],
+      "created_at": "2026-09-24T15:56:57.104368+00:00",
+      "filled_at": "2026-09-24T15:56:57.104368+00:00",
+      "actual_entry": 0.345968,
+      "targets_hit": [],
+      "confidence_score_at_entry": 0,
+      "signal_quality_at_entry": "beta_driven_or_cluster",
+      "rejected_reason": "confidence_score 0 < AUTO_TRADE_MIN_SCORE 40",
       "last_check_source": "current_spot_fallback"
     }
   ]
