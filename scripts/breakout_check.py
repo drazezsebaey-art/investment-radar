@@ -1272,6 +1272,39 @@ def main():
         if oi_now is not None:
             oi_baseline[coin["id"]] = {"oi": oi_now, "ts": datetime.now(timezone.utc).isoformat()}
 
+        # v29 (24/9/2026): Data Tiering - the first step of the V2-merge plan
+        # agreed with Azez. Every important field must be honest about its
+        # own source and precision, not just present a number. Correction
+        # made while building this: ATR/resistance/trendline here are NOT
+        # approximate like indicators.rsi14 (that one comes from scan.py's
+        # 15-min synthetic snapshots) - they come from fetch_ohlc(), real
+        # CoinGecko OHLC candles (30 days). Tier 1 = real market-derived
+        # data (CoinGecko OHLC here; OKX derivatives elsewhere); Tier 0 =
+        # synthetic/approximate (scan.py's snapshot-built candles); Tier 2
+        # = deep market data (OI/funding). "unavailable" when a fetch
+        # simply failed this run - never silently treated as Tier 0.
+        has_resistance_data = coin.get("resistance_level") is not None or coin.get("trendline_value_now") is not None
+        coin["data_quality"] = {
+            "price": {"tier": 1, "source": "coingecko_simple_price", "confidence": "real"},
+            "rsi14": {"tier": 0, "source": "scan_synthetic_15m_samples", "confidence": "approximate"},
+            "atr": {
+                "tier": 1 if atr_value is not None else None,
+                "source": "coingecko_ohlc_30d",
+                "confidence": "real" if atr_value is not None else "unavailable",
+            },
+            "resistance_trendline": {
+                "tier": 1 if has_resistance_data else None,
+                "source": "coingecko_ohlc_30d",
+                "confidence": "real" if has_resistance_data else "unavailable",
+            },
+            "structure_layer2": {"tier": 0, "source": "scan_synthetic_15m_samples", "confidence": "approximate"},
+            "derivatives": {
+                "tier": 2 if oi_now is not None else None,
+                "source": "okx",
+                "confidence": "real" if oi_now is not None else "unavailable",
+            },
+        }
+
         queue_signal_log(pending_log_entries, coin, {
             "breakout_signal": coin["breakout_signal"],
             "breakout_signal_high_confidence": coin["breakout_signal_high_confidence"],
