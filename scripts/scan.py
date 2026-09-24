@@ -24,6 +24,7 @@ exchange candles. RSI/EMA computed from them are directional approximations
 over a short window, not the same as chart-read RSI(14)/EMA(9,21).
 """
 import json
+import os
 import time
 import urllib.request
 import urllib.parse
@@ -506,9 +507,22 @@ def detect_triangle(candles: list):
     }
 
 
+# v39 fix (24/9/2026): keyless CoinGecko requests are rate-limited PER SHARED IP
+# (CoinGecko's own docs: "shared across all users on the same IP") - GitHub
+# Actions runners share IP ranges with countless unrelated projects, so our
+# calls were being throttled by OTHER users' traffic, not our own pacing.
+# A free Demo API key is billed against the ACCOUNT instead, sidestepping
+# this entirely. Optional by design (falls back to keyless if unset) so
+# nothing breaks before the secret is configured in the repo.
+COINGECKO_API_KEY = os.environ.get("COINGECKO_API_KEY")
+
+
 def fetch_json(url: str, params: dict) -> list:
     full_url = url + "?" + urllib.parse.urlencode(params)
-    req = urllib.request.Request(full_url, headers={"User-Agent": "investment-radar/4.0"})
+    headers = {"User-Agent": "investment-radar/4.0"}
+    if COINGECKO_API_KEY:
+        headers["x-cg-demo-api-key"] = COINGECKO_API_KEY
+    req = urllib.request.Request(full_url, headers=headers)
     with urllib.request.urlopen(req, timeout=30) as resp:
         return json.loads(resp.read().decode())
 
