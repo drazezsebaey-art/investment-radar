@@ -173,7 +173,14 @@ def determine_trigger(coin: dict) -> str:
     shadow-trades.json, and scalp-trades.json by this field. A coin can
     satisfy more than one condition at once (e.g. both extension_continuation
     and priority_review); all applicable ones are listed, comma-separated,
-    in the same order get_fired_coins() checks them."""
+    in the same order get_fired_coins() checks them.
+
+    v35 fix (24/9/2026, found while building Entry Archetypes): this never
+    recognized v25's three chart-pattern early signals (flag_pattern,
+    double_bottom, triangle) - the exact same "new flag, old gate" bug
+    already fixed three times elsewhere in this system (v19/v21/v25's own
+    predecessors). A trade triggered ONLY by a chart pattern was logging as
+    bare "priority_review" with its actual reason silently lost."""
     triggers = []
     if coin.get("breakout_signal"):
         triggers.append("breakout_signal")
@@ -195,8 +202,59 @@ def determine_trigger(coin: dict) -> str:
             reasons.append("cluster_rotation_lag")
         if early.get("relative_strength_consolidation"):
             reasons.append("relative_strength_consolidation")
+        flag_pattern = early.get("flag_pattern") or {}
+        if flag_pattern.get("direction") == "bullish":
+            reasons.append("flag_pattern")
+        if early.get("double_bottom"):
+            reasons.append("double_bottom")
+        if early.get("triangle"):
+            reasons.append("triangle")
         triggers.append("priority_review:" + "+".join(reasons) if reasons else "priority_review")
     return ",".join(triggers) if triggers else "unknown"
+
+
+# v35 (24/9/2026): Entry Archetypes - step 7 of the V2-merge plan. Maps the
+# (now-complete) triggered_by string into one named setup type, so
+# performance can eventually be broken down by "which KIND of setup
+# actually works" instead of only by raw signal flags. A trade satisfying
+# BOTH a confirmed Layer-4 signal AND a proactive Layer-2 one is its own
+# "confluence" archetype - matches the INJ case (extension_continuation +
+# priority_review:squeeze together), a categorically different, stronger
+# situation than either alone.
+CONFIRMED_TRIGGER_NAMES = {"breakout_signal", "extension_continuation", "trendline_break_confirmed"}
+
+
+def classify_entry_archetype(triggered_by: str) -> str:
+    parts = [p for p in triggered_by.split(",") if p]
+    confirmed = [p for p in parts if p in CONFIRMED_TRIGGER_NAMES]
+    proactive_part = next((p for p in parts if p.startswith("priority_review")), None)
+    proactive_reasons = []
+    if proactive_part and ":" in proactive_part:
+        proactive_reasons = proactive_part.split(":", 1)[1].split("+")
+
+    if confirmed and proactive_part:
+        return "confluence_confirmed_plus_proactive"
+    if len(confirmed) >= 2:
+        return "confluence_multi_confirmed"
+    if confirmed:
+        return confirmed[0]  # breakout_signal / extension_continuation / trendline_break_confirmed
+    if proactive_part:
+        if len(proactive_reasons) >= 2:
+            return "proactive_confluence"
+        if not proactive_reasons:
+            return "priority_review_unspecified"
+        reason = proactive_reasons[0]
+        return {
+            "squeeze": "squeeze_expansion",
+            "choch_bullish": "structure_shift",
+            "cluster_rotation_lag": "rotation_lag",
+            "rsi_divergence": "rsi_divergence_reversal",
+            "relative_strength_consolidation": "hidden_relative_strength",
+            "flag_pattern": "chart_pattern_flag",
+            "double_bottom": "chart_pattern_double_bottom",
+            "triangle": "chart_pattern_triangle",
+        }.get(reason, f"proactive_{reason}")
+    return "unknown"
 
 
 def build_trade(coin: dict, entry: float, stop: float, kind: str, used_tf_stop: bool,
@@ -205,13 +263,15 @@ def build_trade(coin: dict, entry: float, stop: float, kind: str, used_tf_stop: 
     targets = [round(entry + risk * mult, 8) for mult in RISK_REWARD_TIERS]
     now = now or datetime.now(timezone.utc)
     date_str = now.date().isoformat()
+    triggered_by = determine_trigger(coin)
     trade = {
         "id": f"{coin['symbol'].lower()}-{kind}-{date_str}",
         "asset_id": coin["id"],
         "symbol": coin["symbol"],
         "type": "paper",
         "auto": True,
-        "triggered_by": determine_trigger(coin),
+        "triggered_by": triggered_by,
+        "entry_archetype": classify_entry_archetype(triggered_by),
         "date_opened": date_str,
         "status": "open",
         "entry": entry,
