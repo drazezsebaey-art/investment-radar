@@ -2648,7 +2648,7 @@
       "auto": true,
       "triggered_by": "priority_review",
       "date_opened": "2026-09-24",
-      "status": "open",
+      "status": "stopped",
       "entry": 0.342907,
       "stop": 0.33953972,
       "used_trend_following_stop": false,
@@ -2664,7 +2664,9 @@
       "confidence_score_at_entry": 10,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 10 < AUTO_TRADE_MIN_SCORE 40",
-      "last_check_source": "okx_candles"
+      "last_check_source": "okx_candles",
+      "exit_price": 0.33953972,
+      "date_closed": "2026-09-24T09:51:45.241562+00:00"
     },
     {
       "id": "usde-shadow-2026-09-24",
@@ -2948,7 +2950,7 @@
       "confidence_score_at_entry": 0,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 0 < AUTO_TRADE_MIN_SCORE 40",
-      "last_check_source": "current_spot_fallback"
+      "last_check_source": "okx_candles"
     },
     {
       "id": "awe-shadow-2026-09-24",
@@ -2975,7 +2977,7 @@
       "confidence_score_at_entry": 10,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 10 < AUTO_TRADE_MIN_SCORE 40",
-      "last_check_source": "current_spot_fallback"
+      "last_check_source": "price_history_snapshots"
     },
     {
       "id": "xtz-shadow-2026-09-24",
@@ -2986,7 +2988,7 @@
       "triggered_by": "priority_review:squeeze",
       "entry_archetype": "squeeze_expansion",
       "date_opened": "2026-09-24",
-      "status": "open",
+      "status": "stopped",
       "entry": 0.325441,
       "stop": 0.32054543,
       "used_trend_following_stop": false,
@@ -3002,7 +3004,9 @@
       "confidence_score_at_entry": 15,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 15 < AUTO_TRADE_MIN_SCORE 40",
-      "last_check_source": "current_spot_fallback"
+      "last_check_source": "okx_candles",
+      "exit_price": 0.32054543,
+      "date_closed": "2026-09-24T09:51:45.241718+00:00"
     },
     {
       "id": "axs-shadow-2026-09-24",
@@ -3029,7 +3033,7 @@
       "confidence_score_at_entry": 28,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 28 < AUTO_TRADE_MIN_SCORE 40",
-      "last_check_source": "current_spot_fallback"
+      "last_check_source": "okx_candles"
     },
     {
       "id": "chz-shadow-2026-09-24",
@@ -3056,6 +3060,87 @@
       "confidence_score_at_entry": 28,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 28 < AUTO_TRADE_MIN_SCORE 40",
+      "last_check_source": "okx_candles"
+    },
+    {
+      "id": "morpho-shadow-2026-09-24",
+      "asset_id": "morpho",
+      "symbol": "MORPHO",
+      "type": "paper",
+      "auto": true,
+      "triggered_by": "priority_review:relative_strength_consolidation",
+      "entry_archetype": "hidden_relative_strength",
+      "date_opened": "2026-09-24",
+      "status": "open",
+      "entry": 2.71,
+      "stop": 2.5927381,
+      "used_trend_following_stop": false,
+      "targets": [
+        2.88589285,
+        3.00315475,
+        3.1790476
+      ],
+      "created_at": "2026-09-24T09:51:06.052551+00:00",
+      "filled_at": "2026-09-24T09:51:06.052551+00:00",
+      "actual_entry": 2.71,
+      "targets_hit": [],
+      "confidence_score_at_entry": 20,
+      "signal_quality_at_entry": "beta_driven_or_cluster",
+      "rejected_reason": "confidence_score 20 < AUTO_TRADE_MIN_SCORE 40",
+      "last_check_source": "current_spot_fallback"
+    },
+    {
+      "id": "aster-shadow-2026-09-24",
+      "asset_id": "aster-2",
+      "symbol": "ASTER",
+      "type": "paper",
+      "auto": true,
+      "triggered_by": "priority_review:cluster_rotation_lag",
+      "entry_archetype": "rotation_lag",
+      "date_opened": "2026-09-24",
+      "status": "open",
+      "entry": 0.699464,
+      "stop": 0.69826911,
+      "used_trend_following_stop": false,
+      "targets": [
+        0.70125633,
+        0.70245122,
+        0.70424356
+      ],
+      "created_at": "2026-09-24T09:51:06.052551+00:00",
+      "filled_at": "2026-09-24T09:51:06.052551+00:00",
+      "actual_entry": 0.699464,
+      "targets_hit": [],
+      "confidence_score_at_entry": 10,
+      "signal_quality_at_entry": "beta_driven_or_cluster",
+      "rejected_reason": "confidence_score 10 < AUTO_TRADE_MIN_SCORE 40",
+      "last_check_source": "current_spot_fallback"
+    },
+    {
+      "id": "sun-shadow-2026-09-24",
+      "asset_id": "sun-token",
+      "symbol": "SUN",
+      "type": "paper",
+      "auto": true,
+      "triggered_by": "priority_review:double_bottom",
+      "entry_archetype": "chart_pattern_double_bottom",
+      "date_opened": "2026-09-24",
+      "status": "open",
+      "entry": 0.01712973,
+      "stop": 0.01700979,
+      "used_trend_following_stop": false,
+      "targets": [
+        0.01730964,
+        0.01742958,
+        0.01760949
+      ],
+      "created_at": "2026-09-24T09:51:06.052551+00:00",
+      "filled_at": "2026-09-24T09:51:06.052551+00:00",
+      "actual_entry": 0.01712973,
+      "targets_hit": [],
+      "confidence_score_at_entry": 20,
+      "signal_quality_at_entry": "beta_driven_or_cluster",
+      "rejected_reason": "confidence_score 20 < AUTO_TRADE_MIN_SCORE 40",
       "last_check_source": "current_spot_fallback"
     }
   ]
