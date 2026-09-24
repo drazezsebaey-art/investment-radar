@@ -49,6 +49,9 @@ jobs:
         env:
           COINGECKO_API_KEY: ${{ secrets.COINGECKO_API_KEY }}
 
+      - name: V2 engine - independent short-swing scoring (step 15)
+        run: python scripts/v2_engine.py
+
       - name: Auto paper trades + shadow log
         run: python scripts/auto_paper_trade.py
 
