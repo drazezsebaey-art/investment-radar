@@ -95,6 +95,9 @@ def find_open_trade(asset_id: str, trades: list):
     return None
 
 
+MAX_FALLBACK_STOP_DISTANCE_PCT = 20.0  # a fallback stop further than this from entry isn't a controlled risk - the trade is skipped, not opened with a meaningless stop
+
+
 def pick_stop(coin: dict, entry: float):
     """v15 fix: a trend_following_eligible coin (extended move, no nearby
     support by definition) must use the ATR-based trend_following_stop
@@ -104,7 +107,21 @@ def pick_stop(coin: dict, entry: float):
     isn't a "more conservative" stop, it's simply the wrong one (this is
     exactly what happened reviewing ZAMA on 22/9/2026: the old-style stops
     sat 50%+ below entry). Falls back to the pre-v15 logic when trend-
-    following mode isn't active for this coin."""
+    following mode isn't active for this coin.
+
+    v26 fix (22/9/2026, found via the dashboard on AR): the v15 guard only
+    covers trend_following_eligible coins, but a coin can be similarly
+    extended (breakout_pct_above far past its resistance) WITHOUT yet
+    having 3 consecutive qualifying runs, in which case trend_following_
+    stop is never computed and this function had nothing better to fall
+    back to than the exact same flawed resistance/trendline stops the v15
+    docstring already identified as wrong for an extended mover - AR
+    opened with a stop 54% below entry as a direct result. Rather than try
+    to widen eligibility rules further, this caps the fallback stop's
+    distance directly: past MAX_FALLBACK_STOP_DISTANCE_PCT, it's not a
+    stop this system can size a controlled trade around, so the coin is
+    skipped this run (the caller already treats a None stop as skip-not-
+    open) instead of opening with an unmanageable risk."""
     if coin.get("trend_following_eligible") and coin.get("trend_following_stop") is not None:
         tf_stop = coin["trend_following_stop"]
         if tf_stop < entry:
@@ -113,7 +130,11 @@ def pick_stop(coin: dict, entry: float):
         coin.get("suggested_stop_resistance_based"),
         coin.get("suggested_stop_trendline_based"),
     ]
-    valid = [s for s in candidates if s is not None and s < entry]
+    valid = [
+        s for s in candidates
+        if s is not None and s < entry
+        and (entry - s) / entry * 100 <= MAX_FALLBACK_STOP_DISTANCE_PCT
+    ]
     if not valid:
         return None, False
     return max(valid), False  # the tighter (higher, closer to entry) of the valid stops
