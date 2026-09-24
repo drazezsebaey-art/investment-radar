@@ -102,7 +102,11 @@ def get_fired_coins(radar_data: dict) -> list:
 def determine_trigger(coin: dict) -> str:
     """v19: same helper as auto_paper_trade.py - records which signal(s)
     fired for this coin so scalp-trades.json can be filtered by trigger
-    type the same way as the other two tracks, without a separate file."""
+    type the same way as the other two tracks, without a separate file.
+
+    v35 fix (24/9/2026): same "new flag, old gate" gap fixed in
+    auto_paper_trade.py's copy of this function - v25's three chart-pattern
+    early signals were never recognized here either."""
     triggers = []
     if coin.get("breakout_signal"):
         triggers.append("breakout_signal")
@@ -124,8 +128,53 @@ def determine_trigger(coin: dict) -> str:
             reasons.append("cluster_rotation_lag")
         if early.get("relative_strength_consolidation"):
             reasons.append("relative_strength_consolidation")
+        flag_pattern = early.get("flag_pattern") or {}
+        if flag_pattern.get("direction") == "bullish":
+            reasons.append("flag_pattern")
+        if early.get("double_bottom"):
+            reasons.append("double_bottom")
+        if early.get("triangle"):
+            reasons.append("triangle")
         triggers.append("priority_review:" + "+".join(reasons) if reasons else "priority_review")
     return ",".join(triggers) if triggers else "unknown"
+
+
+CONFIRMED_TRIGGER_NAMES = {"breakout_signal", "extension_continuation", "trendline_break_confirmed"}
+
+
+def classify_entry_archetype(triggered_by: str) -> str:
+    """v35: same archetype classifier as auto_paper_trade.py - see that
+    file for the full rationale."""
+    parts = [p for p in triggered_by.split(",") if p]
+    confirmed = [p for p in parts if p in CONFIRMED_TRIGGER_NAMES]
+    proactive_part = next((p for p in parts if p.startswith("priority_review")), None)
+    proactive_reasons = []
+    if proactive_part and ":" in proactive_part:
+        proactive_reasons = proactive_part.split(":", 1)[1].split("+")
+
+    if confirmed and proactive_part:
+        return "confluence_confirmed_plus_proactive"
+    if len(confirmed) >= 2:
+        return "confluence_multi_confirmed"
+    if confirmed:
+        return confirmed[0]
+    if proactive_part:
+        if len(proactive_reasons) >= 2:
+            return "proactive_confluence"
+        if not proactive_reasons:
+            return "priority_review_unspecified"
+        reason = proactive_reasons[0]
+        return {
+            "squeeze": "squeeze_expansion",
+            "choch_bullish": "structure_shift",
+            "cluster_rotation_lag": "rotation_lag",
+            "rsi_divergence": "rsi_divergence_reversal",
+            "relative_strength_consolidation": "hidden_relative_strength",
+            "flag_pattern": "chart_pattern_flag",
+            "double_bottom": "chart_pattern_double_bottom",
+            "triangle": "chart_pattern_triangle",
+        }.get(reason, f"proactive_{reason}")
+    return "unknown"
 
 
 def compute_stop_and_targets(coin: dict):
@@ -219,13 +268,15 @@ def build_scalp_trade(coin: dict) -> dict:
     entry, stop, targets, used_tf_stop = compute_stop_and_targets(coin)
     now = datetime.now(timezone.utc)
     date_str = now.date().isoformat()
+    triggered_by = determine_trigger(coin)
     return {
         "id": f"{coin['symbol'].lower()}-scalp-{now.strftime('%Y%m%dT%H%M%S')}",
         "asset_id": coin["id"],
         "symbol": coin["symbol"],
         "type": "paper",
         "track": "scalp",
-        "triggered_by": determine_trigger(coin),
+        "triggered_by": triggered_by,
+        "entry_archetype": classify_entry_archetype(triggered_by),
         "date_opened": date_str,
         "status": "open",
         "entry": entry,
