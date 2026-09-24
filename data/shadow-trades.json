@@ -406,7 +406,7 @@
       "type": "paper",
       "auto": true,
       "date_opened": "2026-09-20",
-      "status": "open",
+      "status": "superseded",
       "entry": 0.00816612,
       "stop": 0.0074609,
       "targets": [
@@ -426,7 +426,9 @@
       "confidence_score_at_entry": 20,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 20 < AUTO_TRADE_MIN_SCORE 40",
-      "last_check_source": "price_history_snapshots"
+      "last_check_source": "price_history_snapshots",
+      "superseded_at": "2026-09-24T05:22:24.329812+00:00",
+      "superseded_reason": "promoted to a real auto trade at confidence_score 43"
     },
     {
       "id": "fil-shadow-2026-09-20",
@@ -2537,7 +2539,7 @@
       "auto": true,
       "triggered_by": "priority_review",
       "date_opened": "2026-09-23",
-      "status": "open",
+      "status": "closed_targets_complete",
       "entry": 2.56,
       "stop": 2.53214271,
       "used_trend_following_stop": false,
@@ -2553,12 +2555,22 @@
         {
           "target": 2.60178594,
           "hit_at": "2026-09-24T03:29:24.586799+00:00"
+        },
+        {
+          "target": 2.62964323,
+          "hit_at": "2026-09-24T05:23:09.847916+00:00"
+        },
+        {
+          "target": 2.67142916,
+          "hit_at": "2026-09-24T05:23:09.847916+00:00"
         }
       ],
       "confidence_score_at_entry": 20,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 20 < AUTO_TRADE_MIN_SCORE 40",
-      "last_check_source": "okx_candles"
+      "last_check_source": "okx_candles",
+      "exit_price": 2.67142916,
+      "date_closed": "2026-09-24T05:23:09.847916+00:00"
     },
     {
       "id": "awe-shadow-2026-09-24",
@@ -2638,7 +2650,7 @@
       "confidence_score_at_entry": 10,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 10 < AUTO_TRADE_MIN_SCORE 40",
-      "last_check_source": "current_spot_fallback"
+      "last_check_source": "okx_candles"
     },
     {
       "id": "usde-shadow-2026-09-24",
@@ -2664,7 +2676,7 @@
       "confidence_score_at_entry": 20,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 20 < AUTO_TRADE_MIN_SCORE 40",
-      "last_check_source": "current_spot_fallback"
+      "last_check_source": "price_history_snapshots"
     },
     {
       "id": "aster-shadow-2026-09-24",
@@ -2674,7 +2686,7 @@
       "auto": true,
       "triggered_by": "priority_review:cluster_rotation_lag",
       "date_opened": "2026-09-24",
-      "status": "open",
+      "status": "stopped_after_partial_targets",
       "entry": 0.701386,
       "stop": 0.69821822,
       "used_trend_following_stop": false,
@@ -2686,6 +2698,196 @@
       "created_at": "2026-09-24T03:28:40.337807+00:00",
       "filled_at": "2026-09-24T03:28:40.337807+00:00",
       "actual_entry": 0.701386,
+      "targets_hit": [
+        {
+          "target": 0.70613767,
+          "hit_at": "2026-09-24T05:23:09.847978+00:00"
+        }
+      ],
+      "confidence_score_at_entry": 10,
+      "signal_quality_at_entry": "beta_driven_or_cluster",
+      "rejected_reason": "confidence_score 10 < AUTO_TRADE_MIN_SCORE 40",
+      "last_check_source": "okx_candles",
+      "exit_price": 0.69821822,
+      "date_closed": "2026-09-24T05:23:09.847978+00:00",
+      "note": "⚠️ تعارض: الستوب وهدف جديد الاتنين ظهروا متلمسين في نفس نافذة الفحص — معتبرينها ستوب كافتراض متحفظ، الترتيب الفعلي مش مؤكد من البيانات دي."
+    },
+    {
+      "id": "hbar-shadow-2026-09-24",
+      "asset_id": "hedera-hashgraph",
+      "symbol": "HBAR",
+      "type": "paper",
+      "auto": true,
+      "triggered_by": "extension_continuation,priority_review:squeeze",
+      "date_opened": "2026-09-24",
+      "status": "open",
+      "entry": 0.090228,
+      "stop": 0.07788743,
+      "used_trend_following_stop": false,
+      "targets": [
+        0.10873886,
+        0.12107943,
+        0.13959028
+      ],
+      "created_at": "2026-09-24T05:22:24.329812+00:00",
+      "filled_at": "2026-09-24T05:22:24.329812+00:00",
+      "actual_entry": 0.090228,
+      "targets_hit": [],
+      "confidence_score_at_entry": 28,
+      "signal_quality_at_entry": "beta_driven_or_cluster",
+      "rejected_reason": "confidence_score 28 < AUTO_TRADE_MIN_SCORE 40",
+      "last_check_source": "current_spot_fallback"
+    },
+    {
+      "id": "ens-shadow-2026-09-24",
+      "asset_id": "ethereum-name-service",
+      "symbol": "ENS",
+      "type": "paper",
+      "auto": true,
+      "triggered_by": "extension_continuation,priority_review",
+      "date_opened": "2026-09-24",
+      "status": "open",
+      "entry": 6.75,
+      "stop": 5.87503229,
+      "used_trend_following_stop": false,
+      "targets": [
+        8.06245156,
+        8.93741927,
+        10.24987084
+      ],
+      "created_at": "2026-09-24T05:22:24.329812+00:00",
+      "filled_at": "2026-09-24T05:22:24.329812+00:00",
+      "actual_entry": 6.75,
+      "targets_hit": [],
+      "confidence_score_at_entry": 28,
+      "signal_quality_at_entry": "beta_driven_or_cluster",
+      "rejected_reason": "confidence_score 28 < AUTO_TRADE_MIN_SCORE 40",
+      "last_check_source": "current_spot_fallback"
+    },
+    {
+      "id": "eigen-shadow-2026-09-24",
+      "asset_id": "eigenlayer",
+      "symbol": "EIGEN",
+      "type": "paper",
+      "auto": true,
+      "triggered_by": "extension_continuation,priority_review",
+      "date_opened": "2026-09-24",
+      "status": "open",
+      "entry": 0.239061,
+      "stop": 0.22101714,
+      "used_trend_following_stop": false,
+      "targets": [
+        0.26612679,
+        0.28417065,
+        0.31123644
+      ],
+      "created_at": "2026-09-24T05:22:24.329812+00:00",
+      "filled_at": "2026-09-24T05:22:24.329812+00:00",
+      "actual_entry": 0.239061,
+      "targets_hit": [],
+      "confidence_score_at_entry": 28,
+      "signal_quality_at_entry": "beta_driven_or_cluster",
+      "rejected_reason": "confidence_score 28 < AUTO_TRADE_MIN_SCORE 40",
+      "last_check_source": "current_spot_fallback"
+    },
+    {
+      "id": "lunc-shadow-2026-09-24",
+      "asset_id": "terra-luna",
+      "symbol": "LUNC",
+      "type": "paper",
+      "auto": true,
+      "triggered_by": "extension_continuation,priority_review",
+      "date_opened": "2026-09-24",
+      "status": "open",
+      "entry": 5.372e-05,
+      "stop": 5.045e-05,
+      "used_trend_following_stop": false,
+      "targets": [
+        5.863e-05,
+        6.19e-05,
+        6.68e-05
+      ],
+      "created_at": "2026-09-24T05:22:24.329812+00:00",
+      "filled_at": "2026-09-24T05:22:24.329812+00:00",
+      "actual_entry": 5.372e-05,
+      "targets_hit": [],
+      "confidence_score_at_entry": 28,
+      "signal_quality_at_entry": "beta_driven_or_cluster",
+      "rejected_reason": "confidence_score 28 < AUTO_TRADE_MIN_SCORE 40",
+      "last_check_source": "current_spot_fallback"
+    },
+    {
+      "id": "cfx-shadow-2026-09-24",
+      "asset_id": "conflux-token",
+      "symbol": "CFX",
+      "type": "paper",
+      "auto": true,
+      "triggered_by": "extension_continuation,priority_review",
+      "date_opened": "2026-09-24",
+      "status": "open",
+      "entry": 0.051588,
+      "stop": 0.04801771,
+      "used_trend_following_stop": false,
+      "targets": [
+        0.05694344,
+        0.06051373,
+        0.06586916
+      ],
+      "created_at": "2026-09-24T05:22:24.329812+00:00",
+      "filled_at": "2026-09-24T05:22:24.329812+00:00",
+      "actual_entry": 0.051588,
+      "targets_hit": [],
+      "confidence_score_at_entry": 28,
+      "signal_quality_at_entry": "beta_driven_or_cluster",
+      "rejected_reason": "confidence_score 28 < AUTO_TRADE_MIN_SCORE 40",
+      "last_check_source": "current_spot_fallback"
+    },
+    {
+      "id": "jto-shadow-2026-09-24",
+      "asset_id": "jito-governance-token",
+      "symbol": "JTO",
+      "type": "paper",
+      "auto": true,
+      "triggered_by": "priority_review",
+      "date_opened": "2026-09-24",
+      "status": "open",
+      "entry": 0.459153,
+      "stop": 0.4573976,
+      "used_trend_following_stop": false,
+      "targets": [
+        0.4617861,
+        0.4635415,
+        0.4661746
+      ],
+      "created_at": "2026-09-24T05:22:24.329812+00:00",
+      "filled_at": "2026-09-24T05:22:24.329812+00:00",
+      "actual_entry": 0.459153,
+      "targets_hit": [],
+      "confidence_score_at_entry": 0,
+      "signal_quality_at_entry": "beta_driven_or_cluster",
+      "rejected_reason": "confidence_score 0 < AUTO_TRADE_MIN_SCORE 40",
+      "last_check_source": "current_spot_fallback"
+    },
+    {
+      "id": "iota-shadow-2026-09-24",
+      "asset_id": "iota",
+      "symbol": "IOTA",
+      "type": "paper",
+      "auto": true,
+      "triggered_by": "priority_review",
+      "date_opened": "2026-09-24",
+      "status": "open",
+      "entry": 0.04651056,
+      "stop": 0.04106862,
+      "used_trend_following_stop": false,
+      "targets": [
+        0.05467347,
+        0.06011541,
+        0.06827832
+      ],
+      "created_at": "2026-09-24T05:22:24.329812+00:00",
+      "filled_at": "2026-09-24T05:22:24.329812+00:00",
+      "actual_entry": 0.04651056,
       "targets_hit": [],
       "confidence_score_at_entry": 10,
       "signal_quality_at_entry": "beta_driven_or_cluster",
