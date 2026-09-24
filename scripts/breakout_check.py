@@ -723,6 +723,48 @@ def load_indicator_weights() -> dict:
         return dict(DEFAULT_INDICATOR_WEIGHTS)
 
 
+# v30 (24/9/2026): Evidence Clusters - step 2 of the V2-merge plan. Groups
+# the existing scoring components into named clusters (Structure/Volume/
+# Derivatives/Context) with their own 0-100 sub-score, plus risk penalties
+# kept separate and visible rather than buried as a silent subtraction.
+# This does NOT change confidence_score's math at all - it's a read-only
+# re-presentation of the exact same breakdown, purely for auditability and
+# as the foundation the later archetype/rejection-engine steps build on.
+# Cluster membership (max points per DEFAULT_INDICATOR_WEIGHTS):
+#   structure:   breakout_or_trendline_signal(15) + trend_aligned(10) = 25
+#   volume:      volume_confirmed(10) = 10
+#   derivatives: oi_price_confirms(15) + funding_not_crowded(10) = 25
+#   context:     idiosyncratic_quality(25) + relative_strength_bonus(15) = 40
+# (structure+volume+derivatives+context max = 100, matching the score cap)
+EVIDENCE_CLUSTER_MEMBERS = {
+    "structure": ["breakout_or_trendline_signal", "trend_aligned"],
+    "volume": ["volume_confirmed"],
+    "derivatives": ["oi_price_confirms", "funding_not_crowded"],
+    "context": ["idiosyncratic_quality", "relative_strength_bonus"],
+}
+RISK_PENALTY_COMPONENTS = ["deep_drawdown_penalty", "unlock_risk_penalty"]
+
+
+def compute_evidence_clusters(breakdown: dict, weights: dict) -> dict:
+    clusters = {}
+    for cluster_name, components in EVIDENCE_CLUSTER_MEMBERS.items():
+        max_points = sum(weights.get(c, 0) for c in components)
+        earned_points = sum(breakdown.get(c, 0) for c in components)
+        clusters[cluster_name] = {
+            "score_0_100": round(earned_points / max_points * 100) if max_points else 0,
+            "earned_points": earned_points,
+            "max_points": max_points,
+            "components": {c: breakdown.get(c, 0) for c in components},
+        }
+    risk_points = sum(breakdown.get(c, 0) for c in RISK_PENALTY_COMPONENTS)
+    clusters["risk_penalties"] = {
+        "points_deducted": risk_points,  # already negative or zero - not a 0-100 score, a visible deduction
+        "components": {c: breakdown.get(c, 0) for c in RISK_PENALTY_COMPONENTS},
+        "active_penalties": [c for c in RISK_PENALTY_COMPONENTS if breakdown.get(c, 0) < 0],
+    }
+    return clusters
+
+
 def compute_confidence_score(coin: dict, weights: dict) -> dict:
     """v11 (was v8): replaces bare pass/fail with a transparent 0-100 score
     plus the breakdown that produced it (never just the number - the
@@ -1344,6 +1386,7 @@ def main():
     for coin in fired:
         score_result = compute_confidence_score(coin, indicator_weights)
         coin.update(score_result)
+        coin["evidence_clusters"] = compute_evidence_clusters(score_result["confidence_breakdown"], indicator_weights)
 
     # v14: update the persistent score streak for every candidate actually
     # checked this run (fired or not - a checked-but-not-fired coin still
