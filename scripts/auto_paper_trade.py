@@ -47,6 +47,31 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 RADAR_FLAGS_PATH = BASE_DIR / "data" / "radar-flags.json"
 TRADES_PATH = BASE_DIR / "config" / "trades.json"
 SHADOW_TRADES_PATH = BASE_DIR / "data" / "shadow-trades.json"
+REJECTIONS_LOG_PATH = BASE_DIR / "data" / "rejections-log.json"
+
+
+def log_rejection(coin: dict, stage: str, rejection_codes: list, details: dict) -> None:
+    """v31 (24/9/2026): Rejection Engine - step 3 of the V2-merge plan. Every
+    coin that fired (reached scoring) but never got a trade opened is worth
+    remembering WHY, not just silently skipped - this is the dataset a
+    future calibration pass needs to answer "does the system reject good
+    setups too often?" Appends to the shared data/rejections-log.json (also
+    written to by scalp_signals.py under stage="scalp_trade")."""
+    log = {"rejections": []}
+    if REJECTIONS_LOG_PATH.exists():
+        try:
+            log = json.loads(REJECTIONS_LOG_PATH.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            pass
+    log.setdefault("rejections", []).append({
+        "asset_id": coin.get("id"), "symbol": coin.get("symbol"),
+        "timestamp": datetime.now(timezone.utc).isoformat(),
+        "stage": stage,
+        "rejection_codes": rejection_codes,
+        "score_at_rejection": coin.get("confidence_score"),
+        "details": details,
+    })
+    REJECTIONS_LOG_PATH.write_text(json.dumps(log, ensure_ascii=False, indent=2), encoding="utf-8")
 
 AUTO_TRADE_MIN_SCORE = 40          # agreed starting threshold - same bar as a manual "worth reviewing" call
 RISK_REWARD_TIERS = [1.5, 2.5, 4.0]  # tiered targets as multiples of (entry - stop), matching the manual AAVE/SKY trades' shape
@@ -240,6 +265,16 @@ def main():
             # trade responsibly, so it's skipped entirely (not even logged
             # as shadow, since there's nothing concrete to compare against).
             n_skipped_no_stop += 1
+            candidates_raw = [coin.get("suggested_stop_resistance_based"), coin.get("suggested_stop_trendline_based")]
+            had_a_candidate = any(s is not None and s < entry for s in candidates_raw)
+            code = "STOP_TOO_WIDE" if had_a_candidate else "NO_STOP_CANDIDATE"
+            log_rejection(coin, "real_trade_stop_sizing", [code], {
+                "entry": entry,
+                "trend_following_eligible": coin.get("trend_following_eligible", False),
+                "suggested_stop_resistance_based": coin.get("suggested_stop_resistance_based"),
+                "suggested_stop_trendline_based": coin.get("suggested_stop_trendline_based"),
+                "max_allowed_stop_pct": MAX_FALLBACK_STOP_DISTANCE_PCT,
+            })
             continue
 
         open_shadow = find_open_trade(asset_id, shadow_trades)
