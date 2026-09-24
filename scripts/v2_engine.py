@@ -231,7 +231,74 @@ def log_v2_rejection(coin: dict, v2_result: dict, reasons: list) -> None:
     REJECTIONS_LOG_PATH.write_text(json.dumps(log, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
-def apply_v2_entry_quality_gate(coin: dict) -> list:
+# --- Target Framework - step 17 of the V2-merge plan (v2, corrected) ------
+# Azez's correction (24/9/2026) to the first version of this step: a strict
+# 72-hour cutoff was throwing away genuinely good opportunities - a coin
+# that can realistically deliver +9% over 5 days, or +12% over 10 days,
+# should be ACCEPTED, not rejected for being "too slow" against a fixed
+# short target. Redesigned around three TIME HORIZONS instead of three
+# fixed percentages: at each horizon, the target size is whatever this
+# coin's own ATR pace projects (floor = not worth entering for that
+# horizon if the pace can't even clear it; no ceiling on the upside per
+# Azez's explicit follow-up correction - the number stands as-is, never
+# artificially capped downward). A setup is only rejected if NONE of the
+# three horizons - up to two full weeks - clear their own floor.
+V2_TIME_HORIZONS = [
+    {"label": "fast", "max_hours": 48, "floor_pct": 3.0},
+    {"label": "medium", "max_hours": 168, "floor_pct": 5.0},     # up to 1 week
+    {"label": "extended", "max_hours": 336, "floor_pct": 8.0},   # up to 2 weeks
+]
+V2_CANDLE_HOURS = 4          # real_candles granularity (breakout_check.py's OHLC_DAYS window)
+V2_STOP_ATR_MULT = 1.0       # ATR-relative stop, NOT a fixed percentage - keeps risk sizing consistent across coins of different volatility
+
+
+def project_move_pct(atr_value, entry_price, hours: float):
+    """Linear projection of this coin's OWN historical 4h-ATR pace forward
+    to `hours` - not a guarantee, a pace-based estimate of what's plausible
+    given how this specific coin has actually been moving."""
+    if not atr_value or not entry_price or entry_price <= 0:
+        return None
+    n_candles = hours / V2_CANDLE_HOURS
+    return atr_value * n_candles / entry_price * 100
+
+
+def compute_v2_target_framework(coin: dict) -> dict:
+    entry = coin.get("price_usd")
+    atr = coin.get("atr_value")
+    resistance_levels = coin.get("all_resistance_levels") or []
+    stop = round(entry - V2_STOP_ATR_MULT * atr, 8) if entry and atr else None
+    risk = (entry - stop) if (entry and stop) else None
+
+    targets = []
+    for horizon in V2_TIME_HORIZONS:
+        projected = project_move_pct(atr, entry, horizon["max_hours"])
+        if projected is None or projected < horizon["floor_pct"]:
+            # this coin's own pace can't even clear the floor for this
+            # horizon - not a target worth proposing here, not forced
+            targets.append({
+                "horizon_label": horizon["label"], "max_hours": horizon["max_hours"],
+                "projected_pct_at_horizon": round(projected, 2) if projected is not None else None,
+                "target_pct": None, "target_price": None, "feasible": False,
+                "rr": None, "obstacles_in_path": [], "path_quality": None,
+            })
+            continue
+        pct = projected  # no ceiling per Azez's explicit request - the number stands as the pace-based estimate, not artificially capped
+        target_price = round(entry * (1 + pct / 100), 8)
+        rr = round((target_price - entry) / risk, 2) if (risk and risk > 0) else None
+        obstacles = [lvl for lvl in resistance_levels if entry < lvl < target_price]
+        targets.append({
+            "horizon_label": horizon["label"], "max_hours": horizon["max_hours"],
+            "projected_pct_at_horizon": round(projected, 2),
+            "target_pct": round(pct, 2), "target_price": target_price, "feasible": True,
+            "rr": rr, "obstacles_in_path": obstacles,
+            "path_quality": "clear" if not obstacles else ("moderate" if len(obstacles) == 1 else "crowded"),
+        })
+
+    return {"entry": entry, "stop": stop, "targets": targets,
+            "any_target_feasible": any(t["feasible"] for t in targets)}
+
+
+def apply_v2_entry_quality_gate(coin: dict, target_framework: dict = None) -> list:
     """Returns a list of rejection codes; empty list = passes the gate."""
     reasons = []
     real_candles = coin.get("real_candles") or []
@@ -253,6 +320,8 @@ def apply_v2_entry_quality_gate(coin: dict) -> list:
     liquidity_present = coin.get("inducement") is not None or coin.get("liquidity_sweep") is not None
     if structure_signal in ("BOS_bearish", "CHoCH_bearish") and liquidity_present:
         reasons.append("CONTRADICTORY_EVIDENCE")
+    if target_framework is not None and not target_framework.get("any_target_feasible", True):
+        reasons.append("TARGET_TIMEFRAME_TOO_SLOW")
     return reasons
 
 
@@ -268,7 +337,9 @@ def main():
 
     for result in scored:
         coin = coin_by_id.get(result["asset_id"], {})
-        gate_reasons = apply_v2_entry_quality_gate(coin)
+        target_framework = compute_v2_target_framework(coin)
+        result["v2_target_framework"] = target_framework
+        gate_reasons = apply_v2_entry_quality_gate(coin, target_framework)
         result["v2_gate_passed"] = not gate_reasons
         result["v2_gate_reject_reasons"] = gate_reasons
         if gate_reasons and result["v2_decision_state"] in ("HIGH_PRIORITY_SETUP", "WATCH"):
