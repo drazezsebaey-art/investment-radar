@@ -45,6 +45,9 @@ CATEGORIES_PATH = DATA_DIR / "categories.json"
 
 MAX_HISTORY_POINTS = 500          # ~5 days at 15-min intervals
 MIN_POINTS_FOR_INDICATORS = 14    # RSI(14) minimum
+OPPORTUNITY_LIFECYCLE_PATH = DATA_DIR / "opportunity-lifecycle.json"
+OPPORTUNITY_DECAY_MOVE_PCT = 6.0    # price already moved this much since first flag -> the move likely already happened
+OPPORTUNITY_DECAY_HOURS = 48        # flagged this long without resolving -> stale regardless of price
 
 CATEGORIES_TO_TRACK = [
     "privacy-coins",
@@ -545,6 +548,50 @@ def load_json(path: Path, default):
         return default
 
 
+def update_opportunity_lifecycle(lifecycle: dict, coin_id: str, is_flagged_now: bool,
+                                   price_now, now_iso: str) -> dict | None:
+    """v33 (24/9/2026): Opportunity Decay - step 5 of the V2-merge plan. The
+    radar runs every 30 minutes; without this, a coin flagged at 10:00 that
+    already moved +7% by 11:00 would still read as a fresh "high priority"
+    early signal at 11:00, when the anticipated move has likely already
+    happened. Tracks, per coin, the price and time at first flag, and
+    reports how much of that move has already played out. Resets (returns
+    None, entry removed) once a coin drops out of "currently flagged" for a
+    run, so the NEXT time it gets flagged starts a genuinely fresh clock
+    rather than inheriting a stale one."""
+    if not is_flagged_now:
+        return None  # not flagged this run - clear any prior tracking, ready for a fresh future flag
+
+    entry = lifecycle.get(coin_id)
+    if entry is None:
+        return {"first_flagged_at": now_iso, "price_at_first_flag": price_now,
+                "move_since_flag_pct": 0.0, "hours_since_flag": 0.0, "decay_state": "fresh"}
+
+    price_at_flag = entry.get("price_at_first_flag")
+    move_pct = round((price_now - price_at_flag) / price_at_flag * 100, 2) if price_at_flag and price_now else None
+    try:
+        hours = round((datetime.fromisoformat(now_iso) - datetime.fromisoformat(entry["first_flagged_at"])).total_seconds() / 3600, 1)
+    except (KeyError, ValueError):
+        hours = None
+
+    if move_pct is None or hours is None:
+        decay_state = "unknown"
+    elif abs(move_pct) >= OPPORTUNITY_DECAY_MOVE_PCT or hours >= OPPORTUNITY_DECAY_HOURS:
+        decay_state = "decayed"
+    elif abs(move_pct) >= OPPORTUNITY_DECAY_MOVE_PCT / 2 or hours >= OPPORTUNITY_DECAY_HOURS / 2:
+        decay_state = "developing"
+    else:
+        decay_state = "fresh"
+
+    return {
+        "first_flagged_at": entry["first_flagged_at"],
+        "price_at_first_flag": price_at_flag,
+        "move_since_flag_pct": move_pct,
+        "hours_since_flag": hours,
+        "decay_state": decay_state,
+    }
+
+
 def update_history(history: dict, coin: dict, timestamp: str, always_track: set) -> None:
     cid = coin["id"]
     should_track = (
@@ -803,6 +850,8 @@ def main():
     # coin with enough accumulated history (not just this run's eventual
     # top-40), at zero extra API cost.
     btc_points = history.get("bitcoin", [])
+    opportunity_lifecycle = load_json(OPPORTUNITY_LIFECYCLE_PATH, {})
+    now_iso = timestamp
     records = []
     for coin in all_coins:
         cid = coin["id"]
@@ -820,7 +869,24 @@ def main():
         if early_signals is not None:
             record["early_signals"] = early_signals
         record["priority_review"] = priority_review
+
+        # v33: Opportunity Decay - "currently flagged" means either an early
+        # signal fired OR the coin already had its own real price-based flag
+        # this run (base_flagged_ids) - either way, it's something the
+        # system called out, and its urgency should visibly age.
+        is_flagged_now = priority_review or cid in base_flagged_ids
+        lifecycle_entry = update_opportunity_lifecycle(
+            opportunity_lifecycle, cid, is_flagged_now, coin.get("current_price"), now_iso
+        )
+        if lifecycle_entry is not None:
+            opportunity_lifecycle[cid] = lifecycle_entry
+            record["opportunity_lifecycle"] = lifecycle_entry
+        else:
+            opportunity_lifecycle.pop(cid, None)
+
         records.append(record)
+
+    OPPORTUNITY_LIFECYCLE_PATH.write_text(json.dumps(opportunity_lifecycle, ensure_ascii=False), encoding="utf-8")
 
     # market breadth - what fraction of the scanned universe is green right now
     with_change = [r for r in records if r.get("change_24h_pct") is not None]
