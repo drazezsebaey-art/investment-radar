@@ -1338,6 +1338,7 @@ def main():
 
         if candles:
             update_retest_entries_for_coin(retest_watchlist, coin_id, candles)
+            coin["_candles_raw"] = candles  # v41: transient - promoted to real_candles for top funnel tiers only, deleted for everyone else before saving
 
         # v6: BTC correlation (skip for BTC itself - correlating BTC with BTC is meaningless)
         if candles and btc_closes and coin_id != BTC_COIN_ID:
@@ -1601,6 +1602,29 @@ def main():
                 break
         coin["funnel_stage"] = stage
         coin["funnel_rank_this_run"] = rank
+
+    # v41 (24/9/2026): Real OHLCV persistence - step 9 of the V2-merge plan.
+    # fetch_ohlc() already returns real 4-hour CoinGecko candles (30-day
+    # window) - previously used once for ATR/resistance and discarded, never
+    # actually stored for steps 10-14's future SMC detectors (FVG, order
+    # block, liquidity sweep) to build on. Persisting it for EVERY fired
+    # coin would bloat radar-flags.json for data 30 of 40 candidates will
+    # never need - only the top two funnel tiers (which steps 10-14 are
+    # meant to target) keep it; everyone else's transient copy is dropped.
+    REAL_CANDLES_FUNNEL_TIERS = {"agent_room_priority", "shortlist_10"}
+    for coin in ranked:
+        raw = coin.pop("_candles_raw", None)
+        if raw is not None and coin.get("funnel_stage") in REAL_CANDLES_FUNNEL_TIERS:
+            coin["real_candles"] = raw
+            coin["real_candles_meta"] = {
+                "granularity": "4h", "window_days": OHLC_DAYS, "source": "coingecko_ohlc",
+                "format": "[timestamp_ms, open, high, low, close]", "n_candles": len(raw),
+            }
+    # a candidate that fetched candles but never fired (never entered
+    # "ranked" above) still had _candles_raw set by the per-coin loop -
+    # without this, the transient key would leak into the saved JSON.
+    for coin in candidates:
+        coin.pop("_candles_raw", None)
 
     # v14: update the persistent score streak for every candidate actually
     # checked this run (fired or not - a checked-but-not-fired coin still
