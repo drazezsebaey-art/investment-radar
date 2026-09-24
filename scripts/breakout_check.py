@@ -182,6 +182,11 @@ LIQUIDITY_STOP_MIN_BUFFER_PCT = 0.3      # ...or at least this % of price, which
 OKX_API_BASE = "https://www.okx.com/api/v5/public"  # v13: switched from Bybit (403 Forbidden from GitHub Actions IPs) - third attempt after Binance (451) and Bybit (403)
 FUNDING_REVERSAL_LOOKBACK = 6                # how many recent 8h funding readings to check for a sign flip
 OI_BASELINE_PATH = DATA_DIR / "oi-baseline.json"
+BTC_VOLATILITY_BASELINE_PATH = DATA_DIR / "btc-volatility-baseline.json"
+BTC_VOLATILITY_BASELINE_WINDOW = 48   # rolling average over this many runs (~24h at 30min cadence)
+REGIME_BREADTH_RISK_ON = 55
+REGIME_BREADTH_RISK_OFF = 45
+REGIME_BTC_TREND_PCT = 1.0    # BTC move over the fetched OHLC window big enough to call a trend
 
 # --- v14: Trend-Following Entry mode + Relative Strength Rating ------------
 # Rationale (from the 2026-09-21 review): the Entry Quality Gate's distance-
@@ -319,6 +324,84 @@ def fetch_btc_closes():
     except Exception as exc:  # noqa: BLE001
         print(f"  Warning: could not fetch BTC closes for correlation check: {exc}")
         return None
+
+
+def load_btc_volatility_baseline() -> dict:
+    if not BTC_VOLATILITY_BASELINE_PATH.exists():
+        return {"recent_readings": []}
+    try:
+        return json.loads(BTC_VOLATILITY_BASELINE_PATH.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return {"recent_readings": []}
+
+
+def save_btc_volatility_baseline(baseline: dict) -> None:
+    BTC_VOLATILITY_BASELINE_PATH.write_text(json.dumps(baseline, ensure_ascii=False), encoding="utf-8")
+
+
+def compute_market_regime(btc_closes: list, breadth_pct_green, baseline: dict) -> dict:
+    """v32 (24/9/2026): Market Regime Classification - step 4 of the
+    V2-merge plan. Reuses btc_closes already fetched for the correlation
+    check (zero extra API cost) - no new data source, just a new read of
+    data we already pay for every run. Two independent axes, matching V2's
+    own framing that regime is CONTEXT for a candidate, never a standalone
+    trade signal by itself:
+      risk_state: combines BTC's own recent trend with market breadth -
+        deliberately requires BOTH to agree before calling it risk_on/off,
+        rather than either alone (a lone-BTC-pump with flat breadth, or
+        broad breadth with BTC itself flat, is a genuinely ambiguous state
+        and stays "neutral" rather than forcing a label).
+      volatility_state: BTC's own recent volatility vs its OWN rolling
+        history (not an arbitrary fixed threshold) - so "high volatility"
+        means high FOR BTC LATELY, not high by some hardcoded number that
+        stops making sense across different market eras.
+    """
+    if not btc_closes or len(btc_closes) < 3:
+        return {"risk_state": "unavailable", "volatility_state": "unavailable",
+                "btc_trend_recent_pct": None, "breadth_pct_green": breadth_pct_green}
+
+    recent_window = min(12, len(btc_closes))
+    recent = btc_closes[-recent_window:]
+    btc_trend_recent_pct = round((recent[-1] - recent[0]) / recent[0] * 100, 2) if recent[0] else None
+    btc_trend_full_pct = round((btc_closes[-1] - btc_closes[0]) / btc_closes[0] * 100, 2) if btc_closes[0] else None
+
+    pct_changes = [
+        (recent[i] - recent[i - 1]) / recent[i - 1] * 100
+        for i in range(1, len(recent)) if recent[i - 1]
+    ]
+    current_vol = (sum((c - sum(pct_changes) / len(pct_changes)) ** 2 for c in pct_changes) / len(pct_changes)) ** 0.5 if pct_changes else None
+
+    readings = baseline.get("recent_readings", [])
+    baseline_avg = sum(readings) / len(readings) if readings else None
+    if current_vol is not None:
+        readings.append(current_vol)
+        baseline["recent_readings"] = readings[-BTC_VOLATILITY_BASELINE_WINDOW:]
+
+    if baseline_avg is None or current_vol is None:
+        volatility_state = "baseline_building"   # not enough history yet - honest, not a guess
+    elif current_vol < 0.7 * baseline_avg:
+        volatility_state = "compressed"
+    elif current_vol > 1.3 * baseline_avg:
+        volatility_state = "expanded"
+    else:
+        volatility_state = "normal"
+
+    risk_state = "neutral"
+    if btc_trend_recent_pct is not None and breadth_pct_green is not None:
+        if btc_trend_recent_pct >= REGIME_BTC_TREND_PCT and breadth_pct_green >= REGIME_BREADTH_RISK_ON:
+            risk_state = "risk_on"
+        elif btc_trend_recent_pct <= -REGIME_BTC_TREND_PCT and breadth_pct_green <= REGIME_BREADTH_RISK_OFF:
+            risk_state = "risk_off"
+
+    return {
+        "risk_state": risk_state,
+        "volatility_state": volatility_state,
+        "btc_trend_recent_pct": btc_trend_recent_pct,
+        "btc_trend_full_window_pct": btc_trend_full_pct,
+        "btc_volatility_now": round(current_vol, 3) if current_vol is not None else None,
+        "btc_volatility_baseline_avg": round(baseline_avg, 3) if baseline_avg is not None else None,
+        "breadth_pct_green": breadth_pct_green,
+    }
 
 
 # ---------- v6: known-unlocks config (manually maintained) ----------
@@ -1410,6 +1493,12 @@ def main():
     save_trendline_watchlist(trendline_watchlist)
     save_oi_baseline(oi_baseline)
     save_score_streak(score_streak)
+
+    btc_volatility_baseline = load_btc_volatility_baseline()
+    data["market_regime"] = compute_market_regime(
+        btc_closes, data.get("market_breadth_pct_green"), btc_volatility_baseline
+    )
+    save_btc_volatility_baseline(btc_volatility_baseline)
 
     RADAR_FLAGS_PATH.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
     signals = sum(1 for c in candidates if c.get("breakout_signal"))
