@@ -709,6 +709,17 @@ def build_record(coin: dict, flags: list, indicators: dict, btc_chg24: float) ->
     ind = indicators.get(coin["id"])
     if ind:
         record["indicators"] = ind
+
+    # v29 (24/9/2026): Data Tiering baseline - every coin gets at least this
+    # much, even the ~250-40 that never reach breakout_check.py's deep-eval
+    # rotation this run. breakout_check.py OVERWRITES this with the fuller
+    # version (adding atr/resistance_trendline/derivatives tiers) for
+    # whichever subset it actually processes each run.
+    record["data_quality"] = {
+        "price": {"tier": 1, "source": "coingecko_simple_price", "confidence": "real"},
+        "rsi14": {"tier": 0, "source": "scan_synthetic_15m_samples", "confidence": "approximate"},
+        "structure_layer2": {"tier": 0, "source": "scan_synthetic_15m_samples", "confidence": "approximate"},
+    }
     return record
 
 
