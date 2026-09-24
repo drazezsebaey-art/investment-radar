@@ -2750,7 +2750,7 @@
       "confidence_score_at_entry": 28,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 28 < AUTO_TRADE_MIN_SCORE 40",
-      "last_check_source": "current_spot_fallback"
+      "last_check_source": "okx_candles"
     },
     {
       "id": "ens-shadow-2026-09-24",
@@ -2776,7 +2776,7 @@
       "confidence_score_at_entry": 28,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 28 < AUTO_TRADE_MIN_SCORE 40",
-      "last_check_source": "current_spot_fallback"
+      "last_check_source": "okx_candles"
     },
     {
       "id": "eigen-shadow-2026-09-24",
@@ -2802,7 +2802,7 @@
       "confidence_score_at_entry": 28,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 28 < AUTO_TRADE_MIN_SCORE 40",
-      "last_check_source": "current_spot_fallback"
+      "last_check_source": "okx_candles"
     },
     {
       "id": "lunc-shadow-2026-09-24",
@@ -2828,7 +2828,7 @@
       "confidence_score_at_entry": 28,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 28 < AUTO_TRADE_MIN_SCORE 40",
-      "last_check_source": "current_spot_fallback"
+      "last_check_source": "price_history_snapshots"
     },
     {
       "id": "cfx-shadow-2026-09-24",
@@ -2854,7 +2854,7 @@
       "confidence_score_at_entry": 28,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 28 < AUTO_TRADE_MIN_SCORE 40",
-      "last_check_source": "current_spot_fallback"
+      "last_check_source": "okx_candles"
     },
     {
       "id": "jto-shadow-2026-09-24",
@@ -2864,7 +2864,7 @@
       "auto": true,
       "triggered_by": "priority_review",
       "date_opened": "2026-09-24",
-      "status": "open",
+      "status": "closed_targets_complete",
       "entry": 0.459153,
       "stop": 0.4573976,
       "used_trend_following_stop": false,
@@ -2876,11 +2876,26 @@
       "created_at": "2026-09-24T05:22:24.329812+00:00",
       "filled_at": "2026-09-24T05:22:24.329812+00:00",
       "actual_entry": 0.459153,
-      "targets_hit": [],
+      "targets_hit": [
+        {
+          "target": 0.4617861,
+          "hit_at": "2026-09-24T08:03:19.868233+00:00"
+        },
+        {
+          "target": 0.4635415,
+          "hit_at": "2026-09-24T08:03:19.868233+00:00"
+        },
+        {
+          "target": 0.4661746,
+          "hit_at": "2026-09-24T08:03:19.868233+00:00"
+        }
+      ],
       "confidence_score_at_entry": 0,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 0 < AUTO_TRADE_MIN_SCORE 40",
-      "last_check_source": "current_spot_fallback"
+      "last_check_source": "okx_candles",
+      "exit_price": 0.4661746,
+      "date_closed": "2026-09-24T08:03:19.868233+00:00"
     },
     {
       "id": "iota-shadow-2026-09-24",
@@ -2906,6 +2921,141 @@
       "confidence_score_at_entry": 10,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 10 < AUTO_TRADE_MIN_SCORE 40",
+      "last_check_source": "okx_candles"
+    },
+    {
+      "id": "stx-shadow-2026-09-24",
+      "asset_id": "blockstack",
+      "symbol": "STX",
+      "type": "paper",
+      "auto": true,
+      "triggered_by": "priority_review:double_bottom",
+      "entry_archetype": "chart_pattern_double_bottom",
+      "date_opened": "2026-09-24",
+      "status": "open",
+      "entry": 0.309999,
+      "stop": 0.26603604,
+      "used_trend_following_stop": false,
+      "targets": [
+        0.37594344,
+        0.4199064,
+        0.48585084
+      ],
+      "created_at": "2026-09-24T08:02:42.384667+00:00",
+      "filled_at": "2026-09-24T08:02:42.384667+00:00",
+      "actual_entry": 0.309999,
+      "targets_hit": [],
+      "confidence_score_at_entry": 0,
+      "signal_quality_at_entry": "beta_driven_or_cluster",
+      "rejected_reason": "confidence_score 0 < AUTO_TRADE_MIN_SCORE 40",
+      "last_check_source": "current_spot_fallback"
+    },
+    {
+      "id": "awe-shadow-2026-09-24",
+      "asset_id": "stp-network",
+      "symbol": "AWE",
+      "type": "paper",
+      "auto": true,
+      "triggered_by": "priority_review:squeeze+double_bottom+triangle",
+      "entry_archetype": "proactive_confluence",
+      "date_opened": "2026-09-24",
+      "status": "open",
+      "entry": 0.063544,
+      "stop": 0.05479001,
+      "used_trend_following_stop": false,
+      "targets": [
+        0.07667499,
+        0.08542898,
+        0.09855996
+      ],
+      "created_at": "2026-09-24T08:02:42.384667+00:00",
+      "filled_at": "2026-09-24T08:02:42.384667+00:00",
+      "actual_entry": 0.063544,
+      "targets_hit": [],
+      "confidence_score_at_entry": 10,
+      "signal_quality_at_entry": "beta_driven_or_cluster",
+      "rejected_reason": "confidence_score 10 < AUTO_TRADE_MIN_SCORE 40",
+      "last_check_source": "current_spot_fallback"
+    },
+    {
+      "id": "xtz-shadow-2026-09-24",
+      "asset_id": "tezos",
+      "symbol": "XTZ",
+      "type": "paper",
+      "auto": true,
+      "triggered_by": "priority_review:squeeze",
+      "entry_archetype": "squeeze_expansion",
+      "date_opened": "2026-09-24",
+      "status": "open",
+      "entry": 0.325441,
+      "stop": 0.32054543,
+      "used_trend_following_stop": false,
+      "targets": [
+        0.33278435,
+        0.33767992,
+        0.34502328
+      ],
+      "created_at": "2026-09-24T08:02:42.384667+00:00",
+      "filled_at": "2026-09-24T08:02:42.384667+00:00",
+      "actual_entry": 0.325441,
+      "targets_hit": [],
+      "confidence_score_at_entry": 15,
+      "signal_quality_at_entry": "beta_driven_or_cluster",
+      "rejected_reason": "confidence_score 15 < AUTO_TRADE_MIN_SCORE 40",
+      "last_check_source": "current_spot_fallback"
+    },
+    {
+      "id": "axs-shadow-2026-09-24",
+      "asset_id": "axie-infinity",
+      "symbol": "AXS",
+      "type": "paper",
+      "auto": true,
+      "triggered_by": "extension_continuation,priority_review:double_bottom",
+      "entry_archetype": "confluence_confirmed_plus_proactive",
+      "date_opened": "2026-09-24",
+      "status": "open",
+      "entry": 1.05,
+      "stop": 0.94546272,
+      "used_trend_following_stop": false,
+      "targets": [
+        1.20680592,
+        1.3113432,
+        1.46814912
+      ],
+      "created_at": "2026-09-24T08:02:42.384667+00:00",
+      "filled_at": "2026-09-24T08:02:42.384667+00:00",
+      "actual_entry": 1.05,
+      "targets_hit": [],
+      "confidence_score_at_entry": 28,
+      "signal_quality_at_entry": "beta_driven_or_cluster",
+      "rejected_reason": "confidence_score 28 < AUTO_TRADE_MIN_SCORE 40",
+      "last_check_source": "current_spot_fallback"
+    },
+    {
+      "id": "chz-shadow-2026-09-24",
+      "asset_id": "chiliz",
+      "symbol": "CHZ",
+      "type": "paper",
+      "auto": true,
+      "triggered_by": "extension_continuation,priority_review:double_bottom",
+      "entry_archetype": "confluence_confirmed_plus_proactive",
+      "date_opened": "2026-09-24",
+      "status": "open",
+      "entry": 0.01601594,
+      "stop": 0.0137885,
+      "used_trend_following_stop": false,
+      "targets": [
+        0.0193571,
+        0.02158454,
+        0.0249257
+      ],
+      "created_at": "2026-09-24T08:02:42.384667+00:00",
+      "filled_at": "2026-09-24T08:02:42.384667+00:00",
+      "actual_entry": 0.01601594,
+      "targets_hit": [],
+      "confidence_score_at_entry": 28,
+      "signal_quality_at_entry": "beta_driven_or_cluster",
+      "rejected_reason": "confidence_score 28 < AUTO_TRADE_MIN_SCORE 40",
       "last_check_source": "current_spot_fallback"
     }
   ]
