@@ -265,7 +265,7 @@ def build_trade(coin: dict, entry: float, stop: float, kind: str, used_tf_stop: 
     date_str = now.date().isoformat()
     triggered_by = determine_trigger(coin)
     trade = {
-        "id": f"{coin['symbol'].lower()}-{kind}-{date_str}",
+        "id": f"{coin['symbol'].lower()}-{kind}-{now.strftime('%Y%m%dT%H%M%S')}",
         "asset_id": coin["id"],
         "symbol": coin["symbol"],
         "type": "paper",
