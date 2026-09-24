@@ -2276,7 +2276,12 @@
       "created_at": "2026-09-23T16:27:22.560068+00:00",
       "filled_at": "2026-09-23T16:27:22.560068+00:00",
       "actual_entry": 0.22758,
-      "targets_hit": [],
+      "targets_hit": [
+        {
+          "target": 0.25306956,
+          "hit_at": "2026-09-24T03:29:24.586688+00:00"
+        }
+      ],
       "confidence_score_at_entry": 28,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 28 < AUTO_TRADE_MIN_SCORE 40",
@@ -2424,7 +2429,7 @@
       "auto": true,
       "triggered_by": "priority_review",
       "date_opened": "2026-09-23",
-      "status": "open",
+      "status": "stopped",
       "entry": 0.407176,
       "stop": 0.40006739,
       "used_trend_following_stop": false,
@@ -2440,7 +2445,9 @@
       "confidence_score_at_entry": 10,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 10 < AUTO_TRADE_MIN_SCORE 40",
-      "last_check_source": "okx_candles"
+      "last_check_source": "okx_candles",
+      "exit_price": 0.40006739,
+      "date_closed": "2026-09-24T03:29:24.586761+00:00"
     },
     {
       "id": "bnb-shadow-2026-09-23",
@@ -2476,7 +2483,7 @@
       "auto": true,
       "triggered_by": "extension_continuation,priority_review",
       "date_opened": "2026-09-23",
-      "status": "open",
+      "status": "superseded",
       "entry": 61.03,
       "stop": 53.60660714,
       "used_trend_following_stop": false,
@@ -2492,7 +2499,9 @@
       "confidence_score_at_entry": 38,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 38 < AUTO_TRADE_MIN_SCORE 40",
-      "last_check_source": "okx_candles"
+      "last_check_source": "okx_candles",
+      "superseded_at": "2026-09-24T03:28:40.337807+00:00",
+      "superseded_reason": "promoted to a real auto trade at confidence_score 43"
     },
     {
       "id": "rlusd-shadow-2026-09-23",
@@ -2540,7 +2549,12 @@
       "created_at": "2026-09-23T23:46:17.130860+00:00",
       "filled_at": "2026-09-23T23:46:17.130860+00:00",
       "actual_entry": 2.56,
-      "targets_hit": [],
+      "targets_hit": [
+        {
+          "target": 2.60178594,
+          "hit_at": "2026-09-24T03:29:24.586799+00:00"
+        }
+      ],
       "confidence_score_at_entry": 20,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 20 < AUTO_TRADE_MIN_SCORE 40",
@@ -2554,7 +2568,7 @@
       "auto": true,
       "triggered_by": "priority_review:squeeze",
       "date_opened": "2026-09-24",
-      "status": "open",
+      "status": "stopped",
       "entry": 0.063475,
       "stop": 0.0634391,
       "used_trend_following_stop": false,
@@ -2570,7 +2584,9 @@
       "confidence_score_at_entry": 10,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 10 < AUTO_TRADE_MIN_SCORE 40",
-      "last_check_source": "current_spot_fallback"
+      "last_check_source": "price_history_snapshots",
+      "exit_price": 0.0634391,
+      "date_closed": "2026-09-24T03:29:24.586810+00:00"
     },
     {
       "id": "usds-shadow-2026-09-24",
@@ -2592,6 +2608,84 @@
       "created_at": "2026-09-24T01:43:44.161422+00:00",
       "filled_at": "2026-09-24T01:43:44.161422+00:00",
       "actual_entry": 0.999819,
+      "targets_hit": [],
+      "confidence_score_at_entry": 10,
+      "signal_quality_at_entry": "beta_driven_or_cluster",
+      "rejected_reason": "confidence_score 10 < AUTO_TRADE_MIN_SCORE 40",
+      "last_check_source": "okx_candles"
+    },
+    {
+      "id": "trx-shadow-2026-09-24",
+      "asset_id": "tron",
+      "symbol": "TRX",
+      "type": "paper",
+      "auto": true,
+      "triggered_by": "priority_review",
+      "date_opened": "2026-09-24",
+      "status": "open",
+      "entry": 0.342907,
+      "stop": 0.33953972,
+      "used_trend_following_stop": false,
+      "targets": [
+        0.34795792,
+        0.3513252,
+        0.35637612
+      ],
+      "created_at": "2026-09-24T03:28:40.337807+00:00",
+      "filled_at": "2026-09-24T03:28:40.337807+00:00",
+      "actual_entry": 0.342907,
+      "targets_hit": [],
+      "confidence_score_at_entry": 10,
+      "signal_quality_at_entry": "beta_driven_or_cluster",
+      "rejected_reason": "confidence_score 10 < AUTO_TRADE_MIN_SCORE 40",
+      "last_check_source": "current_spot_fallback"
+    },
+    {
+      "id": "usde-shadow-2026-09-24",
+      "asset_id": "ethena-usde",
+      "symbol": "USDE",
+      "type": "paper",
+      "auto": true,
+      "triggered_by": "priority_review",
+      "date_opened": "2026-09-24",
+      "status": "open",
+      "entry": 0.999588,
+      "stop": 0.99693819,
+      "used_trend_following_stop": false,
+      "targets": [
+        1.00356272,
+        1.00621253,
+        1.01018724
+      ],
+      "created_at": "2026-09-24T03:28:40.337807+00:00",
+      "filled_at": "2026-09-24T03:28:40.337807+00:00",
+      "actual_entry": 0.999588,
+      "targets_hit": [],
+      "confidence_score_at_entry": 20,
+      "signal_quality_at_entry": "beta_driven_or_cluster",
+      "rejected_reason": "confidence_score 20 < AUTO_TRADE_MIN_SCORE 40",
+      "last_check_source": "current_spot_fallback"
+    },
+    {
+      "id": "aster-shadow-2026-09-24",
+      "asset_id": "aster-2",
+      "symbol": "ASTER",
+      "type": "paper",
+      "auto": true,
+      "triggered_by": "priority_review:cluster_rotation_lag",
+      "date_opened": "2026-09-24",
+      "status": "open",
+      "entry": 0.701386,
+      "stop": 0.69821822,
+      "used_trend_following_stop": false,
+      "targets": [
+        0.70613767,
+        0.70930545,
+        0.71405712
+      ],
+      "created_at": "2026-09-24T03:28:40.337807+00:00",
+      "filled_at": "2026-09-24T03:28:40.337807+00:00",
+      "actual_entry": 0.701386,
       "targets_hit": [],
       "confidence_score_at_entry": 10,
       "signal_quality_at_entry": "beta_driven_or_cluster",
