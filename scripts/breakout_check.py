@@ -209,8 +209,18 @@ TREND_FOLLOWING_TARGET_ATR_MULTS = [3.0, 5.0, 8.0]  # targets as ATR multiples f
 # weeks - that's real relative strength, not beta, and NEAR showed exactly
 # this pattern for weeks before this was built.
 RS_STRONG_OUTPERFORM_PCT = 15.0         # coin beat BTC by at least this many percentage points over the window to earn the bonus
-POLITE_DELAY = 7
-MAX_RETRIES = 3
+POLITE_DELAY = 10   # v38 fix (24/9/2026): raised from 7 - live log evidence (attached to the 24/9 run) showed
+                     # EVERY candidate's CoinGecko call hitting 429 across all 3 retry attempts, never once
+                     # succeeding even after a 60s backoff wait - consistent with GitHub Actions' shared runner
+                     # IPs now being rate-limited more aggressively by CoinGecko's free tier (the same pattern
+                     # already seen with Binance/Bybit's outright IP blocks earlier in this project). A slightly
+                     # longer gap between OUR OWN calls reduces how often we trigger it in the first place.
+MAX_RETRIES = 1      # v38 fix: was 3. Since retrying was observed to NEVER succeed in that log (every candidate
+                     # burned all 3 attempts = ~105s for nothing), more retries were pure wasted time, not a
+                     # real chance at real data. One quick retry still catches genuinely transient blips; giving
+                     # up faster after that lets the run move on and accept "unavailable" for that field this
+                     # run (already handled honestly via data_quality from v29) rather than stall the whole
+                     # pipeline chasing a call that log evidence shows won't succeed anyway.
 RETRY_BACKOFF_BASE = 15
 # v9: raised from 10 - each extra candidate costs ~2-3 CoinGecko calls (+1
 # Binance pair for fired signals only), so at POLITE_DELAY=7s the run grows
