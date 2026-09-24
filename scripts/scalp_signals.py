@@ -58,7 +58,18 @@ OPEN_STATUSES = {"open", "pending"}
 # never touched here anymore (that sizing stays correct for the main
 # track, it was just wrong reused here).
 SCALP_ATR_STOP_MULT = 0.75
-SCALP_TARGET_RISK_MULTS = (1.0, 1.75, 3.0)
+# v27 fix (22/9/2026, found via the dashboard - 0 scalp trades opened since
+# v20 despite 15+ qualifying-by-score candidates every run): v20 set the
+# first target multiple to 1.0x risk, which makes R:R mathematically
+# EXACTLY 1.0 for every single candidate, always failing the pre-existing
+# SCALP_MIN_RR (1.3) fast-reject gate above - a silent, total deadlock
+# between two independently-reasonable-looking fixes. The tighter ABSOLUTE
+# price distance v20 wanted already comes entirely from the smaller stop
+# multiplier (0.75x ATR vs the old 2.0x) - reverting these ratios to the
+# original 1.5/2.5/4.0x restores a passing R:R (1.5 at target 1) while
+# keeping every absolute distance far tighter than pre-v20, since the risk
+# unit itself (0.75x ATR) is now much smaller than before.
+SCALP_TARGET_RISK_MULTS = (1.5, 2.5, 4.0)
 
 
 def load_json(path: Path, default):
