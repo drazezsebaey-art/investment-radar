@@ -1577,6 +1577,31 @@ def main():
         coin.update(score_result)
         coin["evidence_clusters"] = compute_evidence_clusters(score_result["confidence_breakdown"], indicator_weights)
 
+    # v40 (24/9/2026): Staged Data Funnel - step 8 of the V2-merge plan.
+    # "candidates" (up to MAX_TOTAL_CANDIDATES_PER_RUN, v37) already ARE the
+    # ~250-coin universe's promotion to real CoinGecko OHLC validation - the
+    # funnel's first narrowing already exists, it just wasn't labeled. This
+    # adds the FURTHER narrowing stages V2 describes (40 -> 20 -> 10 -> top
+    # 5 for Agent Room), using data already computed here at zero extra API
+    # cost - purely a ranking/labeling pass over "fired", not new fetches.
+    # Later steps (10-14, real-OHLCV SMC detectors) will target progressively
+    # narrower funnel_stage tiers instead of re-scanning everyone.
+    FUNNEL_TIERS = [
+        (5, "agent_room_priority"),
+        (10, "shortlist_10"),
+        (20, "shortlist_20"),
+    ]
+    ranked = sorted(fired, key=lambda c: -(c.get("confidence_score") or 0))
+    for i, coin in enumerate(ranked):
+        rank = i + 1
+        stage = "validated"  # got real OHLC data (fetch_ohlc/ATR/resistance) but outside the top narrowing tiers
+        for cutoff, label in FUNNEL_TIERS:
+            if rank <= cutoff:
+                stage = label
+                break
+        coin["funnel_stage"] = stage
+        coin["funnel_rank_this_run"] = rank
+
     # v14: update the persistent score streak for every candidate actually
     # checked this run (fired or not - a checked-but-not-fired coin still
     # breaks its streak, since update_score_streak(..., score=None) resets
