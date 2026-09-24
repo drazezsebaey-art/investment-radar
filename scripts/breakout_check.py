@@ -218,6 +218,22 @@ RETRY_BACKOFF_BASE = 15
 # CoinGecko's free-tier rate limit rather than pushing it to the edge.
 MAX_CANDIDATES_PER_RUN = 16
 
+# v37 fix (24/9/2026): the REAL root cause of runs reaching 45+ minutes,
+# found by measuring rather than guessing a timeout value. priority_review
+# escalation (v15) was purely ADDITIVE on top of the 16-slot rotation with
+# NO cap at all - documented cost is ~3 real API calls x POLITE_DELAY(7s)
+# per candidate (~21s each). At 115 priority_review coins in one real run
+# (16 + 115) x 21s ~= 46 minutes, matching the observed slowdown exactly.
+# v36 tightened double_bottom's over-firing, but ANY early-signal detector
+# firing broadly on a volatile day (squeeze alone hit 36-40 coins) can
+# reproduce this with no ceiling. This caps the COMBINED total instead of
+# hoping no detector ever over-fires again - when escalations exceed the
+# remaining budget, the freshest (per opportunity_lifecycle's decay_state,
+# built in v33) are kept and the rest simply wait for a later run rather
+# than all cramming into this one.
+MAX_TOTAL_CANDIDATES_PER_RUN = 40
+DECAY_PRIORITY_ORDER = {"fresh": 0, "developing": 1, "unknown": 2, "decayed": 3}
+
 
 def load_rotation_offset() -> int:
     if not ROTATION_STATE_PATH.exists():
@@ -250,6 +266,15 @@ def select_rotating_candidates(all_listed: list) -> list:
 
     rotation_ids = {c["id"] for c in rotation_slice}
     escalated = [c for c in ordered if c.get("priority_review") and c["id"] not in rotation_ids]
+
+    budget = max(0, MAX_TOTAL_CANDIDATES_PER_RUN - len(rotation_slice))
+    if len(escalated) > budget:
+        def escalation_priority(c):
+            decay = (c.get("opportunity_lifecycle") or {}).get("decay_state", "unknown")
+            n_signals = sum(1 for v in (c.get("early_signals") or {}).values() if v)
+            return (DECAY_PRIORITY_ORDER.get(decay, 2), -n_signals)
+        escalated = sorted(escalated, key=escalation_priority)[:budget]
+
     return rotation_slice + escalated
 
 
