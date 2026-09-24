@@ -44,8 +44,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 DATA_DIR = BASE_DIR / "data"
 RADAR_FLAGS_PATH = DATA_DIR / "radar-flags.json"
 V2_CANDIDATES_PATH = DATA_DIR / "v2-candidates.json"
+V2_SHADOW_TRADES_PATH = DATA_DIR / "v2-shadow-trades.json"
 
 TOP_FUNNEL_TIERS = {"agent_room_priority", "shortlist_10"}
+V2_TRADEABLE_STATES = {"HIGH_PRIORITY_SETUP", "WATCH"}
 
 FVG_QUALITY_POINTS = {"exceptional": 20, "strong": 15, "moderate": 8, "weak": 3}
 LIQUIDITY_CONFIDENCE_POINTS_INDUCEMENT = {"high_quality": 25, "confirmed": 18, "detected": 8}
@@ -325,6 +327,59 @@ def apply_v2_entry_quality_gate(coin: dict, target_framework: dict = None) -> li
     return reasons
 
 
+# --- V2 shadow trade opening - step 18 of the V2-merge plan ---------------
+# The requirement Azez set explicitly at the very start of the V2-merge
+# plan: every candidate the V2 engine actually qualifies (passes the gate,
+# reaches WATCH or HIGH_PRIORITY_SETUP) gets a REAL trade record here, not
+# just a score - otherwise there is no way to ever know if V2 is actually
+# better than the existing system, only whether its scoring LOOKS
+# reasonable. Writes to its own file, data/v2-shadow-trades.json - never
+# touches config/trades.json, data/shadow-trades.json, or
+# data/scalp-trades.json, matching the "fully separate, parallel track"
+# decision from the original merge-plan discussion.
+def has_open_v2_trade(asset_id, trades: list) -> bool:
+    return any(t.get("asset_id") == asset_id and t.get("status") == "open" for t in trades)
+
+
+def build_v2_trade(coin: dict, result: dict, market_regime: dict, now: datetime) -> dict:
+    tf = result["v2_target_framework"]
+    feasible_targets = [t for t in tf["targets"] if t["feasible"]]
+    date_str = now.date().isoformat()
+    return {
+        "id": f"{result['symbol'].lower()}-v2-{now.strftime('%Y%m%dT%H%M%S')}",
+        "asset_id": result["asset_id"], "symbol": result["symbol"],
+        "type": "paper", "track": "v2_shortswing",
+        "status": "open",
+        "entry": tf["entry"], "actual_entry": tf["entry"], "stop": tf["stop"],
+        "targets": feasible_targets,
+        "targets_hit": [],
+        "v2_score": result["v2_score"], "v2_score_breakdown": result["v2_score_breakdown"],
+        "v2_decision_state": result["v2_decision_state"], "v2_final_status": result["v2_final_status"],
+        "v2_archetype": result["v2_archetype"], "funnel_stage": result["funnel_stage"],
+        "market_regime_at_entry": market_regime,
+        "date_opened": date_str, "created_at": now.isoformat(), "filled_at": now.isoformat(),
+    }
+
+
+def open_v2_trades(scored: list, coin_by_id: dict, market_regime: dict) -> int:
+    trades_data = load_json(V2_SHADOW_TRADES_PATH, {"trades": []})
+    trades = trades_data.get("trades", [])
+    now = datetime.now(timezone.utc)
+    n_opened = 0
+    for result in scored:
+        if result["v2_final_status"] not in V2_TRADEABLE_STATES:
+            continue
+        asset_id = result["asset_id"]
+        if has_open_v2_trade(asset_id, trades):
+            continue
+        coin = coin_by_id.get(asset_id, {})
+        trades.append(build_v2_trade(coin, result, market_regime, now))
+        n_opened += 1
+    trades_data["trades"] = trades
+    V2_SHADOW_TRADES_PATH.write_text(json.dumps(trades_data, ensure_ascii=False, indent=2), encoding="utf-8")
+    return n_opened
+
+
 def main():
     radar = load_json(RADAR_FLAGS_PATH, {"coins": []})
     coins = radar.get("coins", [])
@@ -353,6 +408,7 @@ def main():
     n_high_priority = sum(1 for r in scored if r["v2_final_status"] == "HIGH_PRIORITY_SETUP")
     n_watch = sum(1 for r in scored if r["v2_final_status"] == "WATCH")
     n_gate_rejected = sum(1 for r in scored if r["v2_final_status"] == "REJECTED_BY_GATE")
+    n_trades_opened = open_v2_trades(scored, coin_by_id, market_regime)
 
     output = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
@@ -361,12 +417,14 @@ def main():
         "n_high_priority": n_high_priority,
         "n_watch": n_watch,
         "n_gate_rejected": n_gate_rejected,
+        "n_trades_opened_this_run": n_trades_opened,
         "candidates": scored,
     }
     V2_CANDIDATES_PATH.write_text(json.dumps(output, ensure_ascii=False, indent=2), encoding="utf-8")
 
     print(f"V2 engine: {len(scored)} candidates evaluated (from {len(coins)} total this run), "
-          f"{n_high_priority} HIGH_PRIORITY_SETUP, {n_watch} WATCH, {n_gate_rejected} rejected by gate.")
+          f"{n_high_priority} HIGH_PRIORITY_SETUP, {n_watch} WATCH, {n_gate_rejected} rejected by gate, "
+          f"{n_trades_opened} new v2-shadow-trades.json entries opened.")
     for r in scored[:5]:
         print(f"  {r['symbol']:8s} score={r['v2_score']:3d} {r['v2_final_status']:20s} {r['v2_archetype']}")
 
