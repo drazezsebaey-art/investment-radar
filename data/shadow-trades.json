@@ -3164,7 +3164,7 @@
       "triggered_by": "priority_review:squeeze",
       "entry_archetype": "squeeze_expansion",
       "date_opened": "2026-09-24",
-      "status": "open",
+      "status": "superseded",
       "entry": 0.392237,
       "stop": 0.36867961,
       "used_trend_following_stop": false,
@@ -3189,7 +3189,9 @@
       "confidence_score_at_entry": 0,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 0 < AUTO_TRADE_MIN_SCORE 40",
-      "last_check_source": "okx_candles"
+      "last_check_source": "okx_candles",
+      "superseded_at": "2026-09-25T07:57:51.762381+00:00",
+      "superseded_reason": "promoted to a real auto trade at confidence_score 43"
     },
     {
       "id": "dot-shadow-20260924T140541",
@@ -3227,7 +3229,7 @@
       "triggered_by": "priority_review:cluster_rotation_lag",
       "entry_archetype": "rotation_lag",
       "date_opened": "2026-09-24",
-      "status": "open",
+      "status": "closed_targets_complete",
       "entry": 0.703525,
       "stop": 0.6977501,
       "used_trend_following_stop": false,
@@ -3247,12 +3249,18 @@
         {
           "target": 0.71796225,
           "hit_at": "2026-09-24T16:58:07.005138+00:00"
+        },
+        {
+          "target": 0.7266246,
+          "hit_at": "2026-09-25T07:58:49.109496+00:00"
         }
       ],
       "confidence_score_at_entry": 10,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 10 < AUTO_TRADE_MIN_SCORE 40",
-      "last_check_source": "okx_candles"
+      "last_check_source": "okx_candles",
+      "exit_price": 0.7266246,
+      "date_closed": "2026-09-25T07:58:49.109496+00:00"
     },
     {
       "id": "crv-shadow-20260924T140541",
@@ -4122,7 +4130,7 @@
       "triggered_by": "priority_review:cluster_rotation_lag+triangle",
       "entry_archetype": "proactive_confluence",
       "date_opened": "2026-09-25",
-      "status": "open",
+      "status": "stopped_after_partial_targets",
       "entry": 0.341164,
       "stop": 0.34046871,
       "used_trend_following_stop": false,
@@ -4134,10 +4142,72 @@
       "created_at": "2026-09-25T07:27:41.088522+00:00",
       "filled_at": "2026-09-25T07:27:41.088522+00:00",
       "actual_entry": 0.341164,
-      "targets_hit": [],
+      "targets_hit": [
+        {
+          "target": 0.34220694,
+          "hit_at": "2026-09-25T07:58:49.109624+00:00"
+        }
+      ],
       "confidence_score_at_entry": 0,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 0 < AUTO_TRADE_MIN_SCORE 40",
+      "last_check_source": "okx_candles",
+      "exit_price": 0.34046871,
+      "date_closed": "2026-09-25T07:58:49.109624+00:00",
+      "note": "⚠️ تعارض: الستوب وهدف جديد الاتنين ظهروا متلمسين في نفس نافذة الفحص — معتبرينها ستوب كافتراض متحفظ، الترتيب الفعلي مش مؤكد من البيانات دي."
+    },
+    {
+      "id": "jto-shadow-20260925T075751",
+      "asset_id": "jito-governance-token",
+      "symbol": "JTO",
+      "type": "paper",
+      "auto": true,
+      "triggered_by": "priority_review:choch_bullish",
+      "entry_archetype": "structure_shift",
+      "date_opened": "2026-09-25",
+      "status": "open",
+      "entry": 0.507719,
+      "stop": 0.48983782,
+      "used_trend_following_stop": false,
+      "targets": [
+        0.53454077,
+        0.55242195,
+        0.57924372
+      ],
+      "created_at": "2026-09-25T07:57:51.762381+00:00",
+      "filled_at": "2026-09-25T07:57:51.762381+00:00",
+      "actual_entry": 0.507719,
+      "targets_hit": [],
+      "confidence_score_at_entry": 10,
+      "signal_quality_at_entry": "beta_driven_or_cluster",
+      "rejected_reason": "confidence_score 10 < AUTO_TRADE_MIN_SCORE 40",
+      "last_check_source": "current_spot_fallback"
+    },
+    {
+      "id": "cvx-shadow-20260925T075751",
+      "asset_id": "convex-finance",
+      "symbol": "CVX",
+      "type": "paper",
+      "auto": true,
+      "triggered_by": "priority_review:cluster_rotation_lag+triangle",
+      "entry_archetype": "proactive_confluence",
+      "date_opened": "2026-09-25",
+      "status": "open",
+      "entry": 2.05,
+      "stop": 2.04834491,
+      "used_trend_following_stop": false,
+      "targets": [
+        2.05248263,
+        2.05413772,
+        2.05662036
+      ],
+      "created_at": "2026-09-25T07:57:51.762381+00:00",
+      "filled_at": "2026-09-25T07:57:51.762381+00:00",
+      "actual_entry": 2.05,
+      "targets_hit": [],
+      "confidence_score_at_entry": 10,
+      "signal_quality_at_entry": "beta_driven_or_cluster",
+      "rejected_reason": "confidence_score 10 < AUTO_TRADE_MIN_SCORE 40",
       "last_check_source": "current_spot_fallback"
     }
   ]
