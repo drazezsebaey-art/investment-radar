@@ -3981,7 +3981,7 @@
       "triggered_by": "priority_review:cluster_rotation_lag+triangle",
       "entry_archetype": "proactive_confluence",
       "date_opened": "2026-09-25",
-      "status": "open",
+      "status": "stopped",
       "entry": 0.343721,
       "stop": 0.34046871,
       "used_trend_following_stop": false,
@@ -3997,7 +3997,9 @@
       "confidence_score_at_entry": 0,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 0 < AUTO_TRADE_MIN_SCORE 40",
-      "last_check_source": "okx_candles"
+      "last_check_source": "okx_candles",
+      "exit_price": 0.34046871,
+      "date_closed": "2026-09-25T06:58:16.318559+00:00"
     },
     {
       "id": "shib-shadow-20260925T055744",
@@ -4037,6 +4039,60 @@
       "exit_price": 5.76e-06,
       "date_closed": "2026-09-25T06:28:14.028203+00:00",
       "note": "⚠️ تعارض: الستوب وهدف جديد الاتنين ظهروا متلمسين في نفس نافذة الفحص — معتبرينها ستوب كافتراض متحفظ، الترتيب الفعلي مش مؤكد من البيانات دي."
+    },
+    {
+      "id": "cvx-shadow-20260925T065728",
+      "asset_id": "convex-finance",
+      "symbol": "CVX",
+      "type": "paper",
+      "auto": true,
+      "triggered_by": "priority_review:cluster_rotation_lag+triangle",
+      "entry_archetype": "proactive_confluence",
+      "date_opened": "2026-09-25",
+      "status": "open",
+      "entry": 2.06,
+      "stop": 2.04834491,
+      "used_trend_following_stop": false,
+      "targets": [
+        2.07748263,
+        2.08913773,
+        2.10662036
+      ],
+      "created_at": "2026-09-25T06:57:28.004633+00:00",
+      "filled_at": "2026-09-25T06:57:28.004633+00:00",
+      "actual_entry": 2.06,
+      "targets_hit": [],
+      "confidence_score_at_entry": 25,
+      "signal_quality_at_entry": "beta_driven_or_cluster",
+      "rejected_reason": "confidence_score 25 < AUTO_TRADE_MIN_SCORE 40",
+      "last_check_source": "current_spot_fallback"
+    },
+    {
+      "id": "shib-shadow-20260925T065728",
+      "asset_id": "shiba-inu",
+      "symbol": "SHIB",
+      "type": "paper",
+      "auto": true,
+      "triggered_by": "extension_continuation,priority_review:cluster_rotation_lag",
+      "entry_archetype": "confluence_confirmed_plus_proactive",
+      "date_opened": "2026-09-25",
+      "status": "open",
+      "entry": 5.77e-06,
+      "stop": 5.76e-06,
+      "used_trend_following_stop": false,
+      "targets": [
+        5.78e-06,
+        5.79e-06,
+        5.81e-06
+      ],
+      "created_at": "2026-09-25T06:57:28.004633+00:00",
+      "filled_at": "2026-09-25T06:57:28.004633+00:00",
+      "actual_entry": 5.77e-06,
+      "targets_hit": [],
+      "confidence_score_at_entry": 28,
+      "signal_quality_at_entry": "beta_driven_or_cluster",
+      "rejected_reason": "confidence_score 28 < AUTO_TRADE_MIN_SCORE 40",
+      "last_check_source": "current_spot_fallback"
     }
   ]
 }
