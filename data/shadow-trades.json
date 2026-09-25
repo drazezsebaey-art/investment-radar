@@ -2910,7 +2910,7 @@
       "triggered_by": "priority_review:relative_strength_consolidation",
       "entry_archetype": "hidden_relative_strength",
       "date_opened": "2026-09-24",
-      "status": "open",
+      "status": "superseded",
       "entry": 2.71,
       "stop": 2.5927381,
       "used_trend_following_stop": false,
@@ -2931,7 +2931,9 @@
       "confidence_score_at_entry": 20,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 20 < AUTO_TRADE_MIN_SCORE 40",
-      "last_check_source": "okx_candles"
+      "last_check_source": "okx_candles",
+      "superseded_at": "2026-09-25T04:27:07.055583+00:00",
+      "superseded_reason": "promoted to a real auto trade at confidence_score 43"
     },
     {
       "id": "aster-shadow-2026-09-24",
@@ -3908,7 +3910,7 @@
       "triggered_by": "priority_review:cluster_rotation_lag+triangle",
       "entry_archetype": "proactive_confluence",
       "date_opened": "2026-09-25",
-      "status": "open",
+      "status": "closed_targets_complete",
       "entry": 0.341009,
       "stop": 0.340334,
       "used_trend_following_stop": false,
@@ -3928,12 +3930,45 @@
         {
           "target": 0.3426965,
           "hit_at": "2026-09-25T03:57:59.789559+00:00"
+        },
+        {
+          "target": 0.343709,
+          "hit_at": "2026-09-25T04:27:59.430359+00:00"
         }
       ],
       "confidence_score_at_entry": 10,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 10 < AUTO_TRADE_MIN_SCORE 40",
-      "last_check_source": "okx_candles"
+      "last_check_source": "okx_candles",
+      "exit_price": 0.343709,
+      "date_closed": "2026-09-25T04:27:59.430359+00:00"
+    },
+    {
+      "id": "trump-shadow-20260925T042707",
+      "asset_id": "official-trump",
+      "symbol": "TRUMP",
+      "type": "paper",
+      "auto": true,
+      "triggered_by": "priority_review:cluster_rotation_lag",
+      "entry_archetype": "rotation_lag",
+      "date_opened": "2026-09-25",
+      "status": "open",
+      "entry": 2.08,
+      "stop": 2.04765872,
+      "used_trend_following_stop": false,
+      "targets": [
+        2.12851192,
+        2.1608532,
+        2.20936512
+      ],
+      "created_at": "2026-09-25T04:27:07.055583+00:00",
+      "filled_at": "2026-09-25T04:27:07.055583+00:00",
+      "actual_entry": 2.08,
+      "targets_hit": [],
+      "confidence_score_at_entry": 0,
+      "signal_quality_at_entry": "beta_driven_or_cluster",
+      "rejected_reason": "confidence_score 0 < AUTO_TRADE_MIN_SCORE 40",
+      "last_check_source": "current_spot_fallback"
     }
   ]
 }
