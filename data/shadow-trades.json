@@ -617,7 +617,7 @@
       "type": "paper",
       "auto": true,
       "date_opened": "2026-09-21",
-      "status": "open",
+      "status": "superseded",
       "entry": 0.115234,
       "stop": 0.09523981,
       "targets": [
@@ -632,7 +632,9 @@
       "confidence_score_at_entry": 28,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 28 < AUTO_TRADE_MIN_SCORE 40",
-      "last_check_source": "okx_candles"
+      "last_check_source": "okx_candles",
+      "superseded_at": "2026-09-25T09:27:46.220947+00:00",
+      "superseded_reason": "promoted to a real auto trade at confidence_score 40"
     },
     {
       "id": "wif-shadow-2026-09-21",
@@ -716,7 +718,7 @@
       "type": "paper",
       "auto": true,
       "date_opened": "2026-09-22",
-      "status": "open",
+      "status": "superseded",
       "entry": 0.099404,
       "stop": 0.08964039,
       "targets": [
@@ -731,7 +733,9 @@
       "confidence_score_at_entry": 38,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 38 < AUTO_TRADE_MIN_SCORE 40",
-      "last_check_source": "okx_candles"
+      "last_check_source": "okx_candles",
+      "superseded_at": "2026-09-25T09:27:46.220947+00:00",
+      "superseded_reason": "promoted to a real auto trade at confidence_score 53"
     },
     {
       "id": "floki-shadow-2026-09-22",
@@ -4305,7 +4309,12 @@
       "created_at": "2026-09-25T08:27:43.018147+00:00",
       "filled_at": "2026-09-25T08:27:43.018147+00:00",
       "actual_entry": 1.79,
-      "targets_hit": [],
+      "targets_hit": [
+        {
+          "target": 1.81839286,
+          "hit_at": "2026-09-25T09:28:44.359095+00:00"
+        }
+      ],
       "confidence_score_at_entry": 10,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 10 < AUTO_TRADE_MIN_SCORE 40",
@@ -4336,7 +4345,7 @@
       "confidence_score_at_entry": 28,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 28 < AUTO_TRADE_MIN_SCORE 40",
-      "last_check_source": "current_spot_fallback"
+      "last_check_source": "okx_candles"
     },
     {
       "id": "aster-shadow-20260925T085746",
@@ -4363,7 +4372,7 @@
       "confidence_score_at_entry": 20,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 20 < AUTO_TRADE_MIN_SCORE 40",
-      "last_check_source": "current_spot_fallback"
+      "last_check_source": "okx_candles"
     },
     {
       "id": "cvx-shadow-20260925T085746",
@@ -4386,10 +4395,69 @@
       "created_at": "2026-09-25T08:57:46.463915+00:00",
       "filled_at": "2026-09-25T08:57:46.463915+00:00",
       "actual_entry": 2.07,
-      "targets_hit": [],
+      "targets_hit": [
+        {
+          "target": 2.08392922,
+          "hit_at": "2026-09-25T09:28:44.359121+00:00"
+        }
+      ],
       "confidence_score_at_entry": 10,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 10 < AUTO_TRADE_MIN_SCORE 40",
+      "last_check_source": "okx_candles"
+    },
+    {
+      "id": "twt-shadow-20260925T092746",
+      "asset_id": "trust-wallet-token",
+      "symbol": "TWT",
+      "type": "paper",
+      "auto": true,
+      "triggered_by": "priority_review:triangle",
+      "entry_archetype": "chart_pattern_triangle",
+      "date_opened": "2026-09-25",
+      "status": "open",
+      "entry": 0.585882,
+      "stop": 0.57910843,
+      "used_trend_following_stop": false,
+      "targets": [
+        0.59604236,
+        0.60281593,
+        0.61297628
+      ],
+      "created_at": "2026-09-25T09:27:46.220947+00:00",
+      "filled_at": "2026-09-25T09:27:46.220947+00:00",
+      "actual_entry": 0.585882,
+      "targets_hit": [],
+      "confidence_score_at_entry": 35,
+      "signal_quality_at_entry": "beta_driven_or_cluster",
+      "rejected_reason": "confidence_score 35 < AUTO_TRADE_MIN_SCORE 40",
+      "last_check_source": "current_spot_fallback"
+    },
+    {
+      "id": "wlfi-shadow-20260925T092746",
+      "asset_id": "world-liberty-financial",
+      "symbol": "WLFI",
+      "type": "paper",
+      "auto": true,
+      "triggered_by": "priority_review:choch_bullish",
+      "entry_archetype": "structure_shift",
+      "date_opened": "2026-09-25",
+      "status": "open",
+      "entry": 0.056842,
+      "stop": 0.05682849,
+      "used_trend_following_stop": false,
+      "targets": [
+        0.05686226,
+        0.05687577,
+        0.05689604
+      ],
+      "created_at": "2026-09-25T09:27:46.220947+00:00",
+      "filled_at": "2026-09-25T09:27:46.220947+00:00",
+      "actual_entry": 0.056842,
+      "targets_hit": [],
+      "confidence_score_at_entry": 20,
+      "signal_quality_at_entry": "beta_driven_or_cluster",
+      "rejected_reason": "confidence_score 20 < AUTO_TRADE_MIN_SCORE 40",
       "last_check_source": "current_spot_fallback"
     }
   ]
