@@ -1882,7 +1882,7 @@
       "auto": true,
       "triggered_by": "extension_continuation,priority_review",
       "date_opened": "2026-09-23",
-      "status": "open",
+      "status": "superseded",
       "entry": 117.62,
       "stop": 103.97110372,
       "used_trend_following_stop": false,
@@ -1898,7 +1898,9 @@
       "confidence_score_at_entry": 38,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 38 < AUTO_TRADE_MIN_SCORE 40",
-      "last_check_source": "okx_candles"
+      "last_check_source": "okx_candles",
+      "superseded_at": "2026-09-25T12:58:01.522825+00:00",
+      "superseded_reason": "promoted to a real auto trade at confidence_score 40"
     },
     {
       "id": "btc-shadow-2026-09-23",
@@ -4325,7 +4327,7 @@
       "triggered_by": "priority_review:triangle",
       "entry_archetype": "chart_pattern_triangle",
       "date_opened": "2026-09-25",
-      "status": "open",
+      "status": "superseded",
       "entry": 1.79,
       "stop": 1.77107143,
       "used_trend_following_stop": false,
@@ -4346,7 +4348,9 @@
       "confidence_score_at_entry": 10,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 10 < AUTO_TRADE_MIN_SCORE 40",
-      "last_check_source": "okx_candles"
+      "last_check_source": "okx_candles",
+      "superseded_at": "2026-09-25T12:58:01.522825+00:00",
+      "superseded_reason": "promoted to a real auto trade at confidence_score 43"
     },
     {
       "id": "sand-shadow-20260925T085746",
@@ -4535,7 +4539,12 @@
       "created_at": "2026-09-25T09:57:08.162413+00:00",
       "filled_at": "2026-09-25T09:57:08.162413+00:00",
       "actual_entry": 0.345709,
-      "targets_hit": [],
+      "targets_hit": [
+        {
+          "target": 0.35324392,
+          "hit_at": "2026-09-25T12:58:58.549237+00:00"
+        }
+      ],
       "confidence_score_at_entry": 0,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 0 < AUTO_TRADE_MIN_SCORE 40",
@@ -4623,6 +4632,33 @@
       "last_check_source": "price_history_snapshots",
       "exit_price": 0.50609445,
       "date_closed": "2026-09-25T12:28:49.884655+00:00"
+    },
+    {
+      "id": "shib-shadow-20260925T125801",
+      "asset_id": "shiba-inu",
+      "symbol": "SHIB",
+      "type": "paper",
+      "auto": true,
+      "triggered_by": "extension_continuation,priority_review:cluster_rotation_lag+triangle",
+      "entry_archetype": "confluence_confirmed_plus_proactive",
+      "date_opened": "2026-09-25",
+      "status": "open",
+      "entry": 5.87e-06,
+      "stop": 5.71e-06,
+      "used_trend_following_stop": false,
+      "targets": [
+        6.11e-06,
+        6.27e-06,
+        6.51e-06
+      ],
+      "created_at": "2026-09-25T12:58:01.522825+00:00",
+      "filled_at": "2026-09-25T12:58:01.522825+00:00",
+      "actual_entry": 5.87e-06,
+      "targets_hit": [],
+      "confidence_score_at_entry": 28,
+      "signal_quality_at_entry": "beta_driven_or_cluster",
+      "rejected_reason": "confidence_score 28 < AUTO_TRADE_MIN_SCORE 40",
+      "last_check_source": "current_spot_fallback"
     }
   ]
 }
