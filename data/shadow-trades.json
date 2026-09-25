@@ -3651,7 +3651,7 @@
       "triggered_by": "priority_review:rsi_divergence",
       "entry_archetype": "rsi_divergence_reversal",
       "date_opened": "2026-09-24",
-      "status": "open",
+      "status": "superseded",
       "entry": 7.43,
       "stop": 7.08285714,
       "used_trend_following_stop": false,
@@ -3667,7 +3667,9 @@
       "confidence_score_at_entry": 25,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 25 < AUTO_TRADE_MIN_SCORE 40",
-      "last_check_source": "okx_candles"
+      "last_check_source": "okx_candles",
+      "superseded_at": "2026-09-25T22:27:04.083648+00:00",
+      "superseded_reason": "promoted to a real auto trade at confidence_score 40"
     },
     {
       "id": "a-shadow-20260924T165712",
@@ -5193,6 +5195,60 @@
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 20 < AUTO_TRADE_MIN_SCORE 40",
       "last_check_source": "okx_candles"
+    },
+    {
+      "id": "glm-shadow-20260925T222704",
+      "asset_id": "golem",
+      "symbol": "GLM",
+      "type": "paper",
+      "auto": true,
+      "triggered_by": "priority_review:cluster_rotation_lag+triangle",
+      "entry_archetype": "proactive_confluence",
+      "date_opened": "2026-09-25",
+      "status": "open",
+      "entry": 0.127276,
+      "stop": 0.12658555,
+      "used_trend_following_stop": false,
+      "targets": [
+        0.12831168,
+        0.12900213,
+        0.1300378
+      ],
+      "created_at": "2026-09-25T22:27:04.083648+00:00",
+      "filled_at": "2026-09-25T22:27:04.083648+00:00",
+      "actual_entry": 0.127276,
+      "targets_hit": [],
+      "confidence_score_at_entry": 10,
+      "signal_quality_at_entry": "beta_driven_or_cluster",
+      "rejected_reason": "confidence_score 10 < AUTO_TRADE_MIN_SCORE 40",
+      "last_check_source": "current_spot_fallback"
+    },
+    {
+      "id": "trx-shadow-20260925T222704",
+      "asset_id": "tron",
+      "symbol": "TRX",
+      "type": "paper",
+      "auto": true,
+      "triggered_by": "priority_review:cluster_rotation_lag",
+      "entry_archetype": "rotation_lag",
+      "date_opened": "2026-09-25",
+      "status": "open",
+      "entry": 0.337809,
+      "stop": 0.33729087,
+      "used_trend_following_stop": false,
+      "targets": [
+        0.3385862,
+        0.33910433,
+        0.33988152
+      ],
+      "created_at": "2026-09-25T22:27:04.083648+00:00",
+      "filled_at": "2026-09-25T22:27:04.083648+00:00",
+      "actual_entry": 0.337809,
+      "targets_hit": [],
+      "confidence_score_at_entry": 10,
+      "signal_quality_at_entry": "beta_driven_or_cluster",
+      "rejected_reason": "confidence_score 10 < AUTO_TRADE_MIN_SCORE 40",
+      "last_check_source": "current_spot_fallback"
     }
   ]
 }
