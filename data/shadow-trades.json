@@ -2866,7 +2866,12 @@
       "created_at": "2026-09-24T08:02:42.384667+00:00",
       "filled_at": "2026-09-24T08:02:42.384667+00:00",
       "actual_entry": 1.05,
-      "targets_hit": [],
+      "targets_hit": [
+        {
+          "target": 1.20680592,
+          "hit_at": "2026-09-25T07:28:33.388163+00:00"
+        }
+      ],
       "confidence_score_at_entry": 28,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 28 < AUTO_TRADE_MIN_SCORE 40",
@@ -3175,6 +3180,10 @@
         {
           "target": 0.42757309,
           "hit_at": "2026-09-24T18:58:09.523357+00:00"
+        },
+        {
+          "target": 0.45113048,
+          "hit_at": "2026-09-25T07:28:33.388340+00:00"
         }
       ],
       "confidence_score_at_entry": 0,
@@ -4049,7 +4058,7 @@
       "triggered_by": "priority_review:cluster_rotation_lag+triangle",
       "entry_archetype": "proactive_confluence",
       "date_opened": "2026-09-25",
-      "status": "open",
+      "status": "stopped",
       "entry": 2.06,
       "stop": 2.04834491,
       "used_trend_following_stop": false,
@@ -4065,7 +4074,9 @@
       "confidence_score_at_entry": 25,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 25 < AUTO_TRADE_MIN_SCORE 40",
-      "last_check_source": "current_spot_fallback"
+      "last_check_source": "okx_candles",
+      "exit_price": 2.04834491,
+      "date_closed": "2026-09-25T07:28:33.388579+00:00"
     },
     {
       "id": "shib-shadow-20260925T065728",
@@ -4076,7 +4087,7 @@
       "triggered_by": "extension_continuation,priority_review:cluster_rotation_lag",
       "entry_archetype": "confluence_confirmed_plus_proactive",
       "date_opened": "2026-09-25",
-      "status": "open",
+      "status": "stopped_after_partial_targets",
       "entry": 5.77e-06,
       "stop": 5.76e-06,
       "used_trend_following_stop": false,
@@ -4088,10 +4099,45 @@
       "created_at": "2026-09-25T06:57:28.004633+00:00",
       "filled_at": "2026-09-25T06:57:28.004633+00:00",
       "actual_entry": 5.77e-06,
-      "targets_hit": [],
+      "targets_hit": [
+        {
+          "target": 5.78e-06,
+          "hit_at": "2026-09-25T07:28:33.388590+00:00"
+        }
+      ],
       "confidence_score_at_entry": 28,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 28 < AUTO_TRADE_MIN_SCORE 40",
+      "last_check_source": "okx_candles",
+      "exit_price": 5.76e-06,
+      "date_closed": "2026-09-25T07:28:33.388590+00:00",
+      "note": "⚠️ تعارض: الستوب وهدف جديد الاتنين ظهروا متلمسين في نفس نافذة الفحص — معتبرينها ستوب كافتراض متحفظ، الترتيب الفعلي مش مؤكد من البيانات دي."
+    },
+    {
+      "id": "crv-shadow-20260925T072741",
+      "asset_id": "curve-dao-token",
+      "symbol": "CRV",
+      "type": "paper",
+      "auto": true,
+      "triggered_by": "priority_review:cluster_rotation_lag+triangle",
+      "entry_archetype": "proactive_confluence",
+      "date_opened": "2026-09-25",
+      "status": "open",
+      "entry": 0.341164,
+      "stop": 0.34046871,
+      "used_trend_following_stop": false,
+      "targets": [
+        0.34220694,
+        0.34290223,
+        0.34394516
+      ],
+      "created_at": "2026-09-25T07:27:41.088522+00:00",
+      "filled_at": "2026-09-25T07:27:41.088522+00:00",
+      "actual_entry": 0.341164,
+      "targets_hit": [],
+      "confidence_score_at_entry": 0,
+      "signal_quality_at_entry": "beta_driven_or_cluster",
+      "rejected_reason": "confidence_score 0 < AUTO_TRADE_MIN_SCORE 40",
       "last_check_source": "current_spot_fallback"
     }
   ]
