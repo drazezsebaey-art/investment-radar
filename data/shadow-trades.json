@@ -3786,7 +3786,7 @@
       "triggered_by": "priority_review:cluster_rotation_lag+triangle",
       "entry_archetype": "proactive_confluence",
       "date_opened": "2026-09-24",
-      "status": "open",
+      "status": "stopped",
       "entry": 2.08,
       "stop": 2.05714243,
       "used_trend_following_stop": false,
@@ -3802,7 +3802,9 @@
       "confidence_score_at_entry": 10,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 10 < AUTO_TRADE_MIN_SCORE 40",
-      "last_check_source": "okx_candles"
+      "last_check_source": "okx_candles",
+      "exit_price": 2.05714243,
+      "date_closed": "2026-09-25T06:28:14.028161+00:00"
     },
     {
       "id": "trx-shadow-20260924T205746",
@@ -4006,7 +4008,7 @@
       "triggered_by": "extension_continuation,priority_review:cluster_rotation_lag",
       "entry_archetype": "confluence_confirmed_plus_proactive",
       "date_opened": "2026-09-25",
-      "status": "open",
+      "status": "stopped_after_partial_targets",
       "entry": 5.77e-06,
       "stop": 5.76e-06,
       "used_trend_following_stop": false,
@@ -4018,11 +4020,23 @@
       "created_at": "2026-09-25T05:57:44.020791+00:00",
       "filled_at": "2026-09-25T05:57:44.020791+00:00",
       "actual_entry": 5.77e-06,
-      "targets_hit": [],
+      "targets_hit": [
+        {
+          "target": 5.78e-06,
+          "hit_at": "2026-09-25T06:28:14.028203+00:00"
+        },
+        {
+          "target": 5.79e-06,
+          "hit_at": "2026-09-25T06:28:14.028203+00:00"
+        }
+      ],
       "confidence_score_at_entry": 28,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 28 < AUTO_TRADE_MIN_SCORE 40",
-      "last_check_source": "current_spot_fallback"
+      "last_check_source": "okx_candles",
+      "exit_price": 5.76e-06,
+      "date_closed": "2026-09-25T06:28:14.028203+00:00",
+      "note": "⚠️ تعارض: الستوب وهدف جديد الاتنين ظهروا متلمسين في نفس نافذة الفحص — معتبرينها ستوب كافتراض متحفظ، الترتيب الفعلي مش مؤكد من البيانات دي."
     }
   ]
 }
