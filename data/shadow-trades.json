@@ -4181,7 +4181,12 @@
       "created_at": "2026-09-25T07:57:51.762381+00:00",
       "filled_at": "2026-09-25T07:57:51.762381+00:00",
       "actual_entry": 0.507719,
-      "targets_hit": [],
+      "targets_hit": [
+        {
+          "target": 0.53454077,
+          "hit_at": "2026-09-25T09:58:00.173218+00:00"
+        }
+      ],
       "confidence_score_at_entry": 10,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 10 < AUTO_TRADE_MIN_SCORE 40",
@@ -4431,7 +4436,7 @@
       "confidence_score_at_entry": 35,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 35 < AUTO_TRADE_MIN_SCORE 40",
-      "last_check_source": "current_spot_fallback"
+      "last_check_source": "price_history_snapshots"
     },
     {
       "id": "wlfi-shadow-20260925T092746",
@@ -4442,7 +4447,7 @@
       "triggered_by": "priority_review:choch_bullish",
       "entry_archetype": "structure_shift",
       "date_opened": "2026-09-25",
-      "status": "open",
+      "status": "stopped_after_partial_targets",
       "entry": 0.056842,
       "stop": 0.05682849,
       "used_trend_following_stop": false,
@@ -4454,10 +4459,107 @@
       "created_at": "2026-09-25T09:27:46.220947+00:00",
       "filled_at": "2026-09-25T09:27:46.220947+00:00",
       "actual_entry": 0.056842,
-      "targets_hit": [],
+      "targets_hit": [
+        {
+          "target": 0.05686226,
+          "hit_at": "2026-09-25T09:58:00.173315+00:00"
+        },
+        {
+          "target": 0.05687577,
+          "hit_at": "2026-09-25T09:58:00.173315+00:00"
+        },
+        {
+          "target": 0.05689604,
+          "hit_at": "2026-09-25T09:58:00.173315+00:00"
+        }
+      ],
       "confidence_score_at_entry": 20,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 20 < AUTO_TRADE_MIN_SCORE 40",
+      "last_check_source": "okx_candles",
+      "exit_price": 0.05682849,
+      "date_closed": "2026-09-25T09:58:00.173315+00:00",
+      "note": "⚠️ تعارض: الستوب وهدف جديد الاتنين ظهروا متلمسين في نفس نافذة الفحص — معتبرينها ستوب كافتراض متحفظ، الترتيب الفعلي مش مؤكد من البيانات دي."
+    },
+    {
+      "id": "crv-shadow-20260925T095708",
+      "asset_id": "curve-dao-token",
+      "symbol": "CRV",
+      "type": "paper",
+      "auto": true,
+      "triggered_by": "priority_review:cluster_rotation_lag+triangle",
+      "entry_archetype": "proactive_confluence",
+      "date_opened": "2026-09-25",
+      "status": "open",
+      "entry": 0.345709,
+      "stop": 0.34068572,
+      "used_trend_following_stop": false,
+      "targets": [
+        0.35324392,
+        0.3582672,
+        0.36580212
+      ],
+      "created_at": "2026-09-25T09:57:08.162413+00:00",
+      "filled_at": "2026-09-25T09:57:08.162413+00:00",
+      "actual_entry": 0.345709,
+      "targets_hit": [],
+      "confidence_score_at_entry": 0,
+      "signal_quality_at_entry": "beta_driven_or_cluster",
+      "rejected_reason": "confidence_score 0 < AUTO_TRADE_MIN_SCORE 40",
+      "last_check_source": "current_spot_fallback"
+    },
+    {
+      "id": "usd1-shadow-20260925T095708",
+      "asset_id": "usd1-wlfi",
+      "symbol": "USD1",
+      "type": "paper",
+      "auto": true,
+      "triggered_by": "priority_review:choch_bullish",
+      "entry_archetype": "structure_shift",
+      "date_opened": "2026-09-25",
+      "status": "open",
+      "entry": 0.999374,
+      "stop": 0.99676969,
+      "used_trend_following_stop": false,
+      "targets": [
+        1.00328047,
+        1.00588477,
+        1.00979124
+      ],
+      "created_at": "2026-09-25T09:57:08.162413+00:00",
+      "filled_at": "2026-09-25T09:57:08.162413+00:00",
+      "actual_entry": 0.999374,
+      "targets_hit": [],
+      "confidence_score_at_entry": 10,
+      "signal_quality_at_entry": "beta_driven_or_cluster",
+      "rejected_reason": "confidence_score 10 < AUTO_TRADE_MIN_SCORE 40",
+      "last_check_source": "current_spot_fallback"
+    },
+    {
+      "id": "u-shadow-20260925T095708",
+      "asset_id": "united-stables",
+      "symbol": "U",
+      "type": "paper",
+      "auto": true,
+      "triggered_by": "priority_review:choch_bullish",
+      "entry_archetype": "structure_shift",
+      "date_opened": "2026-09-25",
+      "status": "open",
+      "entry": 0.999588,
+      "stop": 0.99676571,
+      "used_trend_following_stop": false,
+      "targets": [
+        1.00382144,
+        1.00664372,
+        1.01087716
+      ],
+      "created_at": "2026-09-25T09:57:08.162413+00:00",
+      "filled_at": "2026-09-25T09:57:08.162413+00:00",
+      "actual_entry": 0.999588,
+      "targets_hit": [],
+      "confidence_score_at_entry": 10,
+      "signal_quality_at_entry": "beta_driven_or_cluster",
+      "rejected_reason": "confidence_score 10 < AUTO_TRADE_MIN_SCORE 40",
       "last_check_source": "current_spot_fallback"
     }
   ]
