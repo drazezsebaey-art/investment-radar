@@ -3879,7 +3879,7 @@
       "triggered_by": "priority_review:cluster_rotation_lag",
       "entry_archetype": "rotation_lag",
       "date_opened": "2026-09-24",
-      "status": "open",
+      "status": "stopped",
       "entry": 0.340058,
       "stop": 0.3395044,
       "used_trend_following_stop": false,
@@ -3895,7 +3895,9 @@
       "confidence_score_at_entry": 10,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 10 < AUTO_TRADE_MIN_SCORE 40",
-      "last_check_source": "okx_candles"
+      "last_check_source": "okx_candles",
+      "exit_price": 0.3395044,
+      "date_closed": "2026-09-25T03:57:59.789548+00:00"
     },
     {
       "id": "crv-shadow-20260925T032706",
@@ -3918,11 +3920,20 @@
       "created_at": "2026-09-25T03:27:06.029653+00:00",
       "filled_at": "2026-09-25T03:27:06.029653+00:00",
       "actual_entry": 0.341009,
-      "targets_hit": [],
+      "targets_hit": [
+        {
+          "target": 0.3420215,
+          "hit_at": "2026-09-25T03:57:59.789559+00:00"
+        },
+        {
+          "target": 0.3426965,
+          "hit_at": "2026-09-25T03:57:59.789559+00:00"
+        }
+      ],
       "confidence_score_at_entry": 10,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 10 < AUTO_TRADE_MIN_SCORE 40",
-      "last_check_source": "current_spot_fallback"
+      "last_check_source": "okx_candles"
     }
   ]
 }
