@@ -4836,7 +4836,7 @@
       "confidence_score_at_entry": 30,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 30 < AUTO_TRADE_MIN_SCORE 40",
-      "last_check_source": "current_spot_fallback"
+      "last_check_source": "price_history_snapshots"
     },
     {
       "id": "cvx-shadow-20260925T145730",
@@ -4859,10 +4859,42 @@
       "created_at": "2026-09-25T14:57:30.732244+00:00",
       "filled_at": "2026-09-25T14:57:30.732244+00:00",
       "actual_entry": 2.06,
-      "targets_hit": [],
+      "targets_hit": [
+        {
+          "target": 2.07748263,
+          "hit_at": "2026-09-25T15:29:19.026263+00:00"
+        }
+      ],
       "confidence_score_at_entry": 10,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 10 < AUTO_TRADE_MIN_SCORE 40",
+      "last_check_source": "okx_candles"
+    },
+    {
+      "id": "crv-shadow-20260925T152815",
+      "asset_id": "curve-dao-token",
+      "symbol": "CRV",
+      "type": "paper",
+      "auto": true,
+      "triggered_by": "priority_review:cluster_rotation_lag+triangle",
+      "entry_archetype": "proactive_confluence",
+      "date_opened": "2026-09-25",
+      "status": "open",
+      "entry": 0.344445,
+      "stop": 0.34077607,
+      "used_trend_following_stop": false,
+      "targets": [
+        0.3499484,
+        0.35361733,
+        0.35912072
+      ],
+      "created_at": "2026-09-25T15:28:15.194646+00:00",
+      "filled_at": "2026-09-25T15:28:15.194646+00:00",
+      "actual_entry": 0.344445,
+      "targets_hit": [],
+      "confidence_score_at_entry": 25,
+      "signal_quality_at_entry": "beta_driven_or_cluster",
+      "rejected_reason": "confidence_score 25 < AUTO_TRADE_MIN_SCORE 40",
       "last_check_source": "current_spot_fallback"
     }
   ]
