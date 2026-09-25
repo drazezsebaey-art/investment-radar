@@ -5038,7 +5038,7 @@
       "triggered_by": "priority_review:relative_strength_consolidation+triangle",
       "entry_archetype": "proactive_confluence",
       "date_opened": "2026-09-25",
-      "status": "open",
+      "status": "closed_targets_complete",
       "entry": 0.582442,
       "stop": 0.57803993,
       "used_trend_following_stop": false,
@@ -5050,11 +5050,26 @@
       "created_at": "2026-09-25T17:27:17.784974+00:00",
       "filled_at": "2026-09-25T17:27:17.784974+00:00",
       "actual_entry": 0.582442,
-      "targets_hit": [],
+      "targets_hit": [
+        {
+          "target": 0.58904511,
+          "hit_at": "2026-09-25T19:58:20.804203+00:00"
+        },
+        {
+          "target": 0.59344718,
+          "hit_at": "2026-09-25T19:58:20.804203+00:00"
+        },
+        {
+          "target": 0.60005028,
+          "hit_at": "2026-09-25T19:58:20.804203+00:00"
+        }
+      ],
       "confidence_score_at_entry": 35,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 35 < AUTO_TRADE_MIN_SCORE 40",
-      "last_check_source": "price_history_snapshots"
+      "last_check_source": "price_history_snapshots",
+      "exit_price": 0.60005028,
+      "date_closed": "2026-09-25T19:58:20.804203+00:00"
     },
     {
       "id": "atom-shadow-20260925T175714",
@@ -5092,7 +5107,7 @@
       "triggered_by": "priority_review:choch_bullish+squeeze",
       "entry_archetype": "proactive_confluence",
       "date_opened": "2026-09-25",
-      "status": "open",
+      "status": "closed_targets_complete",
       "entry": 0.056771,
       "stop": 0.0567036,
       "used_trend_following_stop": false,
@@ -5112,12 +5127,45 @@
         {
           "target": 0.0569395,
           "hit_at": "2026-09-25T19:28:33.860343+00:00"
+        },
+        {
+          "target": 0.0570406,
+          "hit_at": "2026-09-25T19:58:20.804229+00:00"
         }
       ],
       "confidence_score_at_entry": 20,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 20 < AUTO_TRADE_MIN_SCORE 40",
-      "last_check_source": "okx_candles"
+      "last_check_source": "okx_candles",
+      "exit_price": 0.0570406,
+      "date_closed": "2026-09-25T19:58:20.804229+00:00"
+    },
+    {
+      "id": "zec-shadow-20260925T195721",
+      "asset_id": "zcash",
+      "symbol": "ZEC",
+      "type": "paper",
+      "auto": true,
+      "triggered_by": "priority_review:cluster_rotation_lag",
+      "entry_archetype": "rotation_lag",
+      "date_opened": "2026-09-25",
+      "status": "open",
+      "entry": 1560.0,
+      "stop": 1524.69642857,
+      "used_trend_following_stop": false,
+      "targets": [
+        1612.95535714,
+        1648.25892857,
+        1701.21428572
+      ],
+      "created_at": "2026-09-25T19:57:21.614791+00:00",
+      "filled_at": "2026-09-25T19:57:21.614791+00:00",
+      "actual_entry": 1560.0,
+      "targets_hit": [],
+      "confidence_score_at_entry": 35,
+      "signal_quality_at_entry": "beta_driven_or_cluster",
+      "rejected_reason": "confidence_score 35 < AUTO_TRADE_MIN_SCORE 40",
+      "last_check_source": "current_spot_fallback"
     }
   ]
 }
