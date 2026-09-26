@@ -23,6 +23,7 @@ the "narrow timeframe, narrow risk" intent for this track. Falls back to a
 plain 2xATR stop when the coin hasn't hit the 3-run streak yet.
 """
 import json
+ENGINE_VERSION = "scalp_signals-v35"  # v48 (24/9/2026): schema/version tagging per the audit report
 from pathlib import Path
 from datetime import datetime, timezone
 
@@ -277,6 +278,7 @@ def build_scalp_trade(coin: dict) -> dict:
         "track": "scalp",
         "triggered_by": triggered_by,
         "entry_archetype": classify_entry_archetype(triggered_by),
+        "engine_version": ENGINE_VERSION,
         "date_opened": date_str,
         "status": "open",
         "entry": entry,
