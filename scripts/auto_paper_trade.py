@@ -123,7 +123,12 @@ def find_open_trade(asset_id: str, trades: list):
     return None
 
 
-MAX_FALLBACK_STOP_DISTANCE_PCT = 20.0  # a fallback stop further than this from entry isn't a controlled risk - the trade is skipped, not opened with a meaningless stop
+MAX_FALLBACK_STOP_DISTANCE_PCT = 25.0  # v57 fix (26/9/2026): was 20.0 - counterfactual_check.py's accumulated
+                                          # evidence (17 evaluated STOP_TOO_WIDE rejections) showed every stop
+                                          # between 20-25% would have been a WINNER (7/7, zero losers), while
+                                          # nothing between 25-50% added another win except one 52.9%-wide outlier
+                                          # not worth the added risk exposure across the broader universe. 25%
+                                          # captures the real gap the evidence showed without loosening further.
 
 
 def pick_stop(coin: dict, entry: float):
