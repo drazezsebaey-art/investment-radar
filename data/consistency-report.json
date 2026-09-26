@@ -1,19 +1,31 @@
 {
-  "checked_at": "2026-09-26T07:59:27.195667+00:00",
-  "n_errors": 10,
-  "n_warnings": 6,
+  "checked_at": "2026-09-26T08:58:55.100676+00:00",
+  "n_errors": 0,
+  "n_warnings": 11,
   "findings": [
     {
       "severity": "warning",
       "category": "priority_review_pipeline",
-      "message": "XAUT: has a confidence_score but OI/funding data was never fetched for it",
-      "symbol": "XAUT"
+      "message": "GNO: has a confidence_score but OI/funding data was never fetched for it",
+      "symbol": "GNO"
     },
     {
       "severity": "warning",
       "category": "priority_review_pipeline",
-      "message": "PAXG: has a confidence_score but OI/funding data was never fetched for it",
-      "symbol": "PAXG"
+      "message": "KAIA: has a confidence_score but OI/funding data was never fetched for it",
+      "symbol": "KAIA"
+    },
+    {
+      "severity": "warning",
+      "category": "priority_review_pipeline",
+      "message": "FDUSD: has a confidence_score but OI/funding data was never fetched for it",
+      "symbol": "FDUSD"
+    },
+    {
+      "severity": "warning",
+      "category": "priority_review_pipeline",
+      "message": "USD1: has a confidence_score but OI/funding data was never fetched for it",
+      "symbol": "USD1"
     },
     {
       "severity": "warning",
@@ -22,81 +34,39 @@
       "symbol": "BFUSD"
     },
     {
-      "severity": "error",
-      "category": "duplicate_id",
-      "message": "trade id 'ray-auto-2026-09-23' appears in both real and real",
-      "trade_id": "ray-auto-2026-09-23"
-    },
-    {
-      "severity": "error",
-      "category": "duplicate_id",
-      "message": "trade id 'night-auto-2026-09-23' appears in both real and real",
-      "trade_id": "night-auto-2026-09-23"
-    },
-    {
-      "severity": "error",
-      "category": "duplicate_id",
-      "message": "trade id 'morpho-shadow-2026-09-23' appears in both shadow and shadow",
-      "trade_id": "morpho-shadow-2026-09-23"
-    },
-    {
-      "severity": "error",
-      "category": "duplicate_id",
-      "message": "trade id 'wld-shadow-2026-09-23' appears in both shadow and shadow",
-      "trade_id": "wld-shadow-2026-09-23"
-    },
-    {
-      "severity": "error",
-      "category": "duplicate_id",
-      "message": "trade id 'morpho-shadow-2026-09-23' appears in both shadow and shadow",
-      "trade_id": "morpho-shadow-2026-09-23"
-    },
-    {
-      "severity": "error",
-      "category": "duplicate_id",
-      "message": "trade id 'awe-shadow-2026-09-24' appears in both shadow and shadow",
-      "trade_id": "awe-shadow-2026-09-24"
-    },
-    {
-      "severity": "error",
-      "category": "duplicate_id",
-      "message": "trade id 'aster-shadow-2026-09-24' appears in both shadow and shadow",
-      "trade_id": "aster-shadow-2026-09-24"
-    },
-    {
-      "severity": "error",
-      "category": "duplicate_id",
-      "message": "trade id 'xtz-shadow-2026-09-24' appears in both shadow and shadow",
-      "trade_id": "xtz-shadow-2026-09-24"
-    },
-    {
-      "severity": "error",
-      "category": "duplicate_id",
-      "message": "trade id 'aster-shadow-2026-09-24' appears in both shadow and shadow",
-      "trade_id": "aster-shadow-2026-09-24"
-    },
-    {
-      "severity": "error",
+      "severity": "warning",
       "category": "orphaned_promotion",
-      "message": "STX: shadow trade marked superseded but no real trade exists for this asset",
+      "message": "STX: shadow trade marked superseded but no real trade exists for this asset - orphaned promotion: the real trade this was promoted to was later voided (v26 wide-stop-sizing bug) and permanently deleted in the 24/9/2026 historical cleanup - this shadow record is kept as-is for audit history, not a live bug.",
       "trade_id": "stx-shadow-2026-09-21"
     },
     {
       "severity": "warning",
       "category": "monitoring_gap",
-      "message": "[real] SYRUP (syrup-auto-20260926T075832): monitored via current-spot-only fallback - no candle/snapshot data reaching it",
-      "trade_id": "syrup-auto-20260926T075832"
+      "message": "[real] ETHFI (ethfi-auto-20260926T085750): monitored via current-spot-only fallback - no candle/snapshot data reaching it",
+      "trade_id": "ethfi-auto-20260926T085750"
     },
     {
       "severity": "warning",
       "category": "monitoring_gap",
-      "message": "[scalp] DASH (dash-scalp-20260926T075832): monitored via current-spot-only fallback - no candle/snapshot data reaching it",
-      "trade_id": "dash-scalp-20260926T075832"
+      "message": "[shadow] WLFI (wlfi-shadow-20260926T085750): monitored via current-spot-only fallback - no candle/snapshot data reaching it",
+      "trade_id": "wlfi-shadow-20260926T085750"
+    },
+    {
+      "severity": "warning",
+      "category": "monitoring_gap",
+      "message": "[scalp] FIL (fil-scalp-20260926T085750): monitored via current-spot-only fallback - no candle/snapshot data reaching it",
+      "trade_id": "fil-scalp-20260926T085750"
+    },
+    {
+      "severity": "warning",
+      "category": "monitoring_gap",
+      "message": "[scalp] ETHFI (ethfi-scalp-20260926T085750): monitored via current-spot-only fallback - no candle/snapshot data reaching it",
+      "trade_id": "ethfi-scalp-20260926T085750"
     },
     {
       "severity": "warning",
       "category": "unlock_coverage",
-      "message": "120/121 (99%) coins with an open trade have no researched unlock schedule at all"
+      "message": "121/122 (99%) coins with an open trade have no researched unlock schedule at all"
     }
   ]
 }
