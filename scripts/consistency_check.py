@@ -262,8 +262,15 @@ def check_orphaned_promotions(shadow_trades: list, real_trades: list) -> list:
     out = []
     for t in shadow_trades:
         if t.get("status") == "superseded" and t.get("asset_id") not in real_assets:
-            out.append(finding("error", "orphaned_promotion",
-                                f"{t.get('symbol')}: shadow trade marked superseded but no real trade exists for this asset",
+            # v53 fix (26/9/2026): a manually-annotated orphan (its "note"
+            # field already explains why - e.g. the real trade it promoted
+            # to was voided and deleted) is documented audit history, not a
+            # live gap - keep it visible as a warning so it's never
+            # silently lost, but stop escalating it as an error every run.
+            severity = "warning" if t.get("note") else "error"
+            out.append(finding(severity, "orphaned_promotion",
+                                f"{t.get('symbol')}: shadow trade marked superseded but no real trade exists for this asset"
+                                + (f" - {t['note']}" if t.get("note") else ""),
                                 trade_id=t.get("id")))
     return out
 
