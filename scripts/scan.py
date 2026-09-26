@@ -378,7 +378,11 @@ DOUBLE_BOTTOM_LEVEL_TOLERANCE_PCT = 1.2   # v36 fix (24/9/2026): was 3.0 - measu
 DOUBLE_BOTTOM_MIN_SEPARATION = 5          # v36: was 3 - too short a window between the two lows made noise look structural
 DOUBLE_BOTTOM_MIN_NECKLINE_GAP_PCT = 2.0  # v36 new: neckline must clear the lows by a meaningful margin, not just >0
 
-TRIANGLE_MIN_SWINGS_EACH_SIDE = 2
+TRIANGLE_MIN_SWINGS_EACH_SIDE = 3   # v50 fix (26/9/2026): was 2 - measured 36.8% of 266 real coins firing
+                                      # (the exact same over-firing pattern double_bottom had before v36) since
+                                      # any 2 alternating swings satisfy "descending highs + ascending lows" by
+                                      # ordinary noise alone. 3 swings each side measured at 3.8%, in line with
+                                      # the other early-signal detectors' selectivity.
 TRIANGLE_RESISTANCE_FLAT_TOLERANCE_PCT = 2.0   # highs within this % of each other count as "flat" (ascending triangle)
 
 
