@@ -124,6 +124,9 @@
   <a href="#scalp">سكالب</a>
   <a href="#v2candidates">مرشحو V2</a>
   <a href="#v2trades">صفقات V2</a>
+  <a href="#v2watch">مراقبة V2</a>
+  <a href="#exposure">التعرّض</a>
+  <a href="#counterfactual">رفض افتراضي</a>
   <a href="#perf">الأداء</a>
   <a href="#health">تنبيهات النظام</a>
   <a href="#rejections">سجل الرفض</a>
@@ -216,6 +219,27 @@
     </table></div>
   </section>
 
+  <section id="v2watch">
+    <h2>👁️ قائمة مراقبة V2 <span class="badge-count" id="v2WatchCount"></span></h2>
+    <div class="subnote">ملاحظات فقط — مش صفقات فعلية، ومش محسوبة في أداء V2</div>
+    <div class="tablewrap"><table id="tblV2Watch">
+      <thead><tr>
+        <th>العملة</th><th>السعر وقت المراقبة</th><th>الحالي</th><th>التغيّر</th><th>السكور</th><th>النمط</th>
+      </tr></thead>
+      <tbody></tbody>
+    </table></div>
+  </section>
+
+  <section id="exposure">
+    <h2>🕸️ التعرّض والارتباط القطاعي</h2>
+    <div id="exposureBox"></div>
+  </section>
+
+  <section id="counterfactual">
+    <h2>🔄 تحليل الرفض الافتراضي</h2>
+    <div id="counterfactualBox"></div>
+  </section>
+
   <section id="perf">
     <h2>📊 ملخص الأداء (4 مسارات)</h2>
     <div class="cards" id="perfCards"></div>
@@ -259,6 +283,9 @@ const FILES = {
   rejections: 'data/rejections-log.json',
   v2Candidates: 'data/v2-candidates.json',
   v2Trades: 'data/v2-shadow-trades.json',
+  v2Watch: 'data/v2-watch-objects.json',
+  exposure: 'data/exposure-report.json',
+  counterfactual: 'data/counterfactual-summary.json',
 };
 
 async function fetchJSON(path) {
@@ -385,6 +412,9 @@ function renderCandidateTable(tbodySel, list, countId) {
 }
 
 function tradeDetailFields(t) {
+  const sectorHtml = t.sectorTags.length
+    ? t.sectorTags.map(s => `<span class="badge b-purple" style="margin-left:4px">${s}</span>`).join('')
+    : '<span style="color:var(--text-dim)">بدون قطاع معروف</span>';
   return `
     <div><span>ID: </span>${t.id}</div>
     <div><span>نوع الستوب: </span>${t.used_trend_following_stop ? 'ATR (trend-following)' : 'مقاومة/ترند'}</div>
@@ -394,6 +424,10 @@ function tradeDetailFields(t) {
     <div><span>مسافة الهدف الأول: </span>${pct(t.t1DistPct, 1)}</div>
     <div><span>سعر الخروج: </span>${t.exitPrice != null ? fmt(t.exitPrice) : '—'}</div>
     <div><span>تاريخ الإغلاق: </span>${t.dateClosed || '—'}</div>
+    <div><span>إصدار الكود: </span>${t.engineVersion || '—'}</div>
+    <div><span>حالة الفرصة وقت الدخول: </span>${t.decayStateAtEntry || 'غير مسجّلة (صفقة قديمة)'}</div>
+    <div><span>ساعات من أول فلاج: </span>${t.hoursFlaggedAtEntry != null ? t.hoursFlaggedAtEntry.toFixed(1) : '—'}</div>
+    <div style="grid-column:1/-1"><span>القطاعات: </span>${sectorHtml}</div>
   `;
 }
 
@@ -418,6 +452,9 @@ function computeTradeRow(trade, priceLookup) {
     dateOpened: trade.date_opened, lastCheckSource: trade.last_check_source,
     used_trend_following_stop: trade.used_trend_following_stop,
     exitPrice: trade.exit_price, dateClosed: trade.date_closed,
+    sectorTags: trade.sector_tags || [], engineVersion: trade.engine_version,
+    decayStateAtEntry: trade.decay_state_at_entry, hoursFlaggedAtEntry: trade.hours_since_flagged_at_entry,
+    funnelStageAtEntry: trade.funnel_stage_at_entry,
   };
 }
 
@@ -477,10 +514,13 @@ function renderPerf(perfCards, summaries) {
   let html = '';
   for (const [key, label] of Object.entries(labels)) {
     const s = (summaries[key] && summaries[key].overall) || {};
+    const netHtml = s.avg_return_pct != null ? pct(s.avg_return_pct, 2) : '—';
+    const grossNote = s.avg_return_pct_gross != null
+      ? `<div style="font-size:10.5px;color:var(--text-dim);margin-top:2px">قبل التكلفة: ${pct(s.avg_return_pct_gross, 2)}</div>` : '';
     html += `
       <div class="card"><div class="label">${label} — صفقات مقفولة</div><div class="value">${s.n_closed ?? 0}</div></div>
       <div class="card"><div class="label">${label} — معدل النجاح</div><div class="value">${s.win_rate_pct != null ? s.win_rate_pct + '%' : '—'}</div></div>
-      <div class="card"><div class="label">${label} — متوسط العائد</div><div class="value">${s.avg_return_pct != null ? pct(s.avg_return_pct, 2) : '—'}</div></div>
+      <div class="card"><div class="label">${label} — متوسط العائد (صافي)</div><div class="value">${netHtml}</div>${grossNote}</div>
     `;
   }
   perfCards.innerHTML = html;
@@ -571,9 +611,63 @@ function renderV2Trades(tbody, trades, priceLookup) {
   }).join('');
 }
 
+function renderV2Watch(tbody, objects, priceLookup) {
+  if (!objects.length) { tbody.innerHTML = `<tr><td colspan="6" class="empty">مفيش عملات تحت المراقبة حاليًا</td></tr>`; return; }
+  tbody.innerHTML = objects.map(o => {
+    const current = priceLookup[o.asset_id];
+    const pnlPct = current != null && o.price_at_watch ? (current - o.price_at_watch) / o.price_at_watch * 100 : null;
+    return `<tr>
+      <td class="sym">${o.symbol}</td>
+      <td>${fmt(o.price_at_watch)}</td>
+      <td>${current != null ? '$' + fmt(current) : '—'}</td>
+      <td>${pct(pnlPct, 1)}</td>
+      <td>${o.v2_score}</td>
+      <td class="flags">${o.v2_archetype}</td>
+    </tr>`;
+  }).join('');
+}
+
+function renderExposure(box, report) {
+  if (!report || !report.n_total_open_positions) { box.innerHTML = `<div class="empty">مفيش تقرير تعرّض بعد</div>`; return; }
+  const sectors = report.concentrated_sectors || {};
+  let html = `<div class="cards">
+    <div class="card"><div class="label">إجمالي المفتوح</div><div class="value">${report.n_total_open_positions}</div></div>
+    <div class="card"><div class="label">عملات فريدة</div><div class="value">${report.n_unique_symbols}</div></div>
+    <div class="card"><div class="label">رهانات مستقلة فعليًا</div><div class="value">${report.n_effective_independent_bets}</div></div>
+    <div class="card"><div class="label">بيتا BTC عالٍ</div><div class="value">${report.n_high_btc_beta_positions}</div></div>
+  </div>`;
+  const sectorEntries = Object.entries(sectors);
+  if (sectorEntries.length) {
+    html += '<div class="smc-card"><div class="detail-section-title" style="margin-top:0">قطاعات مركّزة (3+ صفقات متزامنة)</div>';
+    sectorEntries.forEach(([sector, members]) => {
+      html += `<div class="smc-row"><span>${sector}</span><span class="flags">${members.join(', ')}</span></div>`;
+    });
+    html += '</div>';
+  }
+  box.innerHTML = html;
+}
+
+function renderCounterfactual(box, summary) {
+  const byCode = (summary && summary.by_rejection_code) || {};
+  const entries = Object.entries(byCode);
+  if (!entries.length) { box.innerHTML = `<div class="empty">لسه مفيش رفض اتقيّم كفاية</div>`; return; }
+  let html = `<div class="subnote">هل قواعد الرفض بتاعتنا بتضيّع فرص كويسة؟ (عتبة الحركة المُعتبرة "فوز": ${summary.favorable_move_threshold_pct}%)</div><div class="smc-card">`;
+  entries.forEach(([code, counts]) => {
+    const total = counts.would_have_won + counts.would_have_lost + counts.flat;
+    const wonPct = total ? (counts.would_have_won / total * 100).toFixed(0) : 0;
+    html += `<div class="smc-row"><span>${code}</span><span>
+        <span class="pos">${counts.would_have_won} فوز</span> /
+        <span class="neg">${counts.would_have_lost} خسارة</span> /
+        ${counts.flat} تعادل — <b>${wonPct}%</b> كان هيكسب
+      </span></div>`;
+  });
+  html += '</div>';
+  box.innerHTML = html;
+}
+
 async function loadAll() {
   document.getElementById('lastUpdate').textContent = 'جارٍ التحديث...';
-  const [radar, real, shadow, scalp, perfReal, perfShadow, perfScalp, perfV2, health, thesis, rejections, v2Candidates, v2Trades] = await Promise.all(
+  const [radar, real, shadow, scalp, perfReal, perfShadow, perfScalp, perfV2, health, thesis, rejections, v2Candidates, v2Trades, v2Watch, exposure, counterfactual] = await Promise.all(
     Object.values(FILES).map(fetchJSON)
   );
 
@@ -628,6 +722,12 @@ async function loadAll() {
 
   renderV2Candidates(document.querySelector('#tblV2Cand tbody'), document.getElementById('v2CandCount'), v2Candidates);
   renderV2Trades(document.querySelector('#tblV2Trades tbody'), (v2Trades && v2Trades.trades) || [], priceLookup);
+
+  const watchObjects = (v2Watch && v2Watch.objects) || [];
+  document.getElementById('v2WatchCount').textContent = watchObjects.length;
+  renderV2Watch(document.querySelector('#tblV2Watch tbody'), watchObjects, priceLookup);
+  renderExposure(document.getElementById('exposureBox'), exposure);
+  renderCounterfactual(document.getElementById('counterfactualBox'), counterfactual);
 
   renderPerf(document.getElementById('perfCards'), { real: perfReal, shadow: perfShadow, scalp: perfScalp, v2: perfV2 });
   renderHealth(document.getElementById('healthBox'), health);
