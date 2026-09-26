@@ -84,7 +84,11 @@ SWING_LOOKBACK = 2              # a candle is a swing point if it's the extreme 
 
 SQUEEZE_LOOKBACK_CANDLES = 12   # older comparison window
 SQUEEZE_COMPARE_CANDLES = 6     # recent window being checked for contraction
-SQUEEZE_CONTRACTION_RATIO = 0.7  # recent avg range must be <= 70% of the older avg range to count as coiling
+SQUEEZE_CONTRACTION_RATIO = 0.5  # v54 fix (26/9/2026): was 0.7 - measured firing 33.8% of 266 real coins (the
+                                   # same over-loose-threshold pattern already fixed for double_bottom/triangle/
+                                   # cluster_rotation_lag) since a mere 30% range reduction over a noisy 6-candle
+                                   # synthetic window happens by chance often. 0.5 (a genuine range halving)
+                                   # measured at 9.8%, in line with the other early-signal detectors.
 
 RS_CONSOLIDATION_LOOKBACK_HOURS = 48
 RS_CONSOLIDATION_MAX_OWN_MOVE_PCT = 8.0     # "consolidating" - hasn't already made its own big move (that's what FLAG_24H_PCT/FLAG_7D_PCT already catch)
