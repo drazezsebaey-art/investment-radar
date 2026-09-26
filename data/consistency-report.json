@@ -1,19 +1,19 @@
 {
-  "checked_at": "2026-09-26T10:58:06.329609+00:00",
+  "checked_at": "2026-09-26T11:28:07.390553+00:00",
   "n_errors": 0,
-  "n_warnings": 13,
+  "n_warnings": 12,
   "findings": [
+    {
+      "severity": "warning",
+      "category": "priority_review_pipeline",
+      "message": "VET: has a confidence_score but OI/funding data was never fetched for it",
+      "symbol": "VET"
+    },
     {
       "severity": "warning",
       "category": "priority_review_pipeline",
       "message": "BFUSD: has a confidence_score but OI/funding data was never fetched for it",
       "symbol": "BFUSD"
-    },
-    {
-      "severity": "warning",
-      "category": "priority_review_pipeline",
-      "message": "CAKE: has a confidence_score but OI/funding data was never fetched for it",
-      "symbol": "CAKE"
     },
     {
       "severity": "warning",
@@ -36,6 +36,12 @@
     {
       "severity": "warning",
       "category": "priority_review_pipeline",
+      "message": "SUN: has a confidence_score but OI/funding data was never fetched for it",
+      "symbol": "SUN"
+    },
+    {
+      "severity": "warning",
+      "category": "priority_review_pipeline",
       "message": "DCR: has a confidence_score but OI/funding data was never fetched for it",
       "symbol": "DCR"
     },
@@ -47,12 +53,6 @@
     },
     {
       "severity": "warning",
-      "category": "priority_review_pipeline",
-      "message": "KAIA: has a confidence_score but OI/funding data was never fetched for it",
-      "symbol": "KAIA"
-    },
-    {
-      "severity": "warning",
       "category": "orphaned_promotion",
       "message": "STX: shadow trade marked superseded but no real trade exists for this asset - orphaned promotion: the real trade this was promoted to was later voided (v26 wide-stop-sizing bug) and permanently deleted in the 24/9/2026 historical cleanup - this shadow record is kept as-is for audit history, not a live bug.",
       "trade_id": "stx-shadow-2026-09-21"
@@ -60,25 +60,19 @@
     {
       "severity": "warning",
       "category": "monitoring_gap",
-      "message": "[real] BAT (bat-auto-20260926T105701): monitored via current-spot-only fallback - no candle/snapshot data reaching it",
-      "trade_id": "bat-auto-20260926T105701"
+      "message": "[shadow] GLM (glm-shadow-20260926T112706): monitored via current-spot-only fallback - no candle/snapshot data reaching it",
+      "trade_id": "glm-shadow-20260926T112706"
     },
     {
       "severity": "warning",
       "category": "monitoring_gap",
-      "message": "[shadow] ZEC (zec-shadow-20260926T105701): monitored via current-spot-only fallback - no candle/snapshot data reaching it",
-      "trade_id": "zec-shadow-20260926T105701"
-    },
-    {
-      "severity": "warning",
-      "category": "monitoring_gap",
-      "message": "[shadow] WLFI (wlfi-shadow-20260926T105701): monitored via current-spot-only fallback - no candle/snapshot data reaching it",
-      "trade_id": "wlfi-shadow-20260926T105701"
+      "message": "[scalp] QNT (qnt-scalp-20260926T112706): monitored via current-spot-only fallback - no candle/snapshot data reaching it",
+      "trade_id": "qnt-scalp-20260926T112706"
     },
     {
       "severity": "warning",
       "category": "unlock_coverage",
-      "message": "121/122 (99%) coins with an open trade have no researched unlock schedule at all"
+      "message": "122/123 (99%) coins with an open trade have no researched unlock schedule at all"
     }
   ]
 }
