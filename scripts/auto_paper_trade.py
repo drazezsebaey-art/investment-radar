@@ -40,6 +40,9 @@ filled_at guards already handle that either way, but this ordering is
 the more natural fit and mirrors how manual trades were added).
 """
 import json
+ENGINE_VERSION = "auto_paper_trade-v37"  # v48 (24/9/2026): schema/version tagging per the audit report -
+                                          # every trade now records exactly which code version produced it,
+                                          # so a trade found weeks from now can be traced to its exact logic
 from pathlib import Path
 from datetime import datetime, timezone
 
@@ -272,6 +275,7 @@ def build_trade(coin: dict, entry: float, stop: float, kind: str, used_tf_stop: 
         "auto": True,
         "triggered_by": triggered_by,
         "entry_archetype": classify_entry_archetype(triggered_by),
+        "engine_version": ENGINE_VERSION,
         "date_opened": date_str,
         "status": "open",
         "entry": entry,
