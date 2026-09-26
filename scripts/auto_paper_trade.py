@@ -276,6 +276,14 @@ def build_trade(coin: dict, entry: float, stop: float, kind: str, used_tf_stop: 
         "triggered_by": triggered_by,
         "entry_archetype": classify_entry_archetype(triggered_by),
         "engine_version": ENGINE_VERSION,
+        # v56 (26/9/2026): entry-context snapshot, added after discovering
+        # older trades have NO record of the opportunity's state at entry
+        # time - made it impossible to test whether real trades systematically
+        # enter "late" (after a decayed/extended move) vs shadow trades.
+        # Captured going forward so this becomes answerable in a few weeks.
+        "decay_state_at_entry": (coin.get("opportunity_lifecycle") or {}).get("decay_state"),
+        "hours_since_flagged_at_entry": (coin.get("opportunity_lifecycle") or {}).get("hours_since_flag"),
+        "funnel_stage_at_entry": coin.get("funnel_stage"),
         "date_opened": date_str,
         "status": "open",
         "entry": entry,
