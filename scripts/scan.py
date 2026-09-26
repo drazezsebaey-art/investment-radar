@@ -90,7 +90,12 @@ RS_CONSOLIDATION_LOOKBACK_HOURS = 48
 RS_CONSOLIDATION_MAX_OWN_MOVE_PCT = 8.0     # "consolidating" - hasn't already made its own big move (that's what FLAG_24H_PCT/FLAG_7D_PCT already catch)
 RS_CONSOLIDATION_MIN_OUTPERFORM_PCT = 6.0   # ...while still quietly beating BTC by at least this many points over the same window
 
-CLUSTER_LAG_MIN_FLAGGED_PEERS = 2  # need at least this many OTHER coins in the same tracked category to already show a real (price/volume-based) flag this run
+CLUSTER_LAG_MIN_FLAGGED_PEERS = 6  # v52 fix (26/9/2026): was 2 - CoinGecko's category endpoint always returns
+                                     # up to 50 members regardless of how many of them we actually track, so "2
+                                     # movers in a 50-member category" is a trivially low bar during any broad
+                                     # rally (measured firing 41.6-58% of tracked coins on a real 73.6%-breadth
+                                     # day). 6 measured at 26.7% - still fires meaningfully during genuine sector
+                                     # moves, without being satisfied by ordinary market-wide breadth alone.
 
 
 def build_synthetic_candles(points: list, bucket_hours: int = SYNTHETIC_CANDLE_HOURS) -> list:
