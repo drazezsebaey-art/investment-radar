@@ -2024,7 +2024,10 @@
         "suggested_stop_resistance_based": null,
         "suggested_stop_trendline_based": null,
         "max_allowed_stop_pct": 20.0
-      }
+      },
+      "counterfactual_move_pct": 1.12,
+      "counterfactual_outcome": "flat",
+      "counterfactual_checked_at": "2026-09-26T17:58:34.866921+00:00"
     },
     {
       "asset_id": "shiba-inu",
@@ -2041,7 +2044,10 @@
         "suggested_stop_resistance_based": null,
         "suggested_stop_trendline_based": null,
         "max_allowed_stop_pct": 20.0
-      }
+      },
+      "counterfactual_move_pct": 3.1,
+      "counterfactual_outcome": "flat",
+      "counterfactual_checked_at": "2026-09-26T17:58:34.866921+00:00"
     },
     {
       "asset_id": "pax-gold",
@@ -2058,7 +2064,10 @@
         "suggested_stop_resistance_based": null,
         "suggested_stop_trendline_based": null,
         "max_allowed_stop_pct": 20.0
-      }
+      },
+      "counterfactual_move_pct": 0.45,
+      "counterfactual_outcome": "flat",
+      "counterfactual_checked_at": "2026-09-26T17:58:34.866921+00:00"
     },
     {
       "asset_id": "pump-fun",
@@ -2075,7 +2084,10 @@
         "suggested_stop_resistance_based": null,
         "suggested_stop_trendline_based": null,
         "max_allowed_stop_pct": 20.0
-      }
+      },
+      "counterfactual_move_pct": 13.44,
+      "counterfactual_outcome": "would_have_won",
+      "counterfactual_checked_at": "2026-09-26T17:58:34.866921+00:00"
     },
     {
       "asset_id": "official-trump",
@@ -2092,7 +2104,10 @@
         "suggested_stop_resistance_based": null,
         "suggested_stop_trendline_based": null,
         "max_allowed_stop_pct": 20.0
-      }
+      },
+      "counterfactual_move_pct": 2.88,
+      "counterfactual_outcome": "flat",
+      "counterfactual_checked_at": "2026-09-26T17:58:34.866921+00:00"
     },
     {
       "asset_id": "falcon-finance-ff",
@@ -2109,7 +2124,10 @@
         "suggested_stop_resistance_based": 0.09332947,
         "suggested_stop_trendline_based": 0.10189097,
         "max_allowed_stop_pct": 20.0
-      }
+      },
+      "counterfactual_move_pct": 1.04,
+      "counterfactual_outcome": "flat",
+      "counterfactual_checked_at": "2026-09-26T17:58:34.866921+00:00"
     },
     {
       "asset_id": "ondo-finance",
@@ -12602,6 +12620,100 @@
       "asset_id": "the-open-network",
       "symbol": "GRAM",
       "timestamp": "2026-09-26T17:27:33.815154+00:00",
+      "stage": "scalp_trade",
+      "rejection_codes": [
+        "RSI_OVERBOUGHT"
+      ],
+      "score_at_rejection": 53,
+      "details": {
+        "reason_text": "RSI 90.0 above overbought ceiling 75.0",
+        "entry": 1.53,
+        "stop": 1.51285715,
+        "targets": [
+          1.55571427,
+          1.57285712,
+          1.5985714
+        ]
+      }
+    },
+    {
+      "asset_id": "bittensor",
+      "symbol": "TAO",
+      "timestamp": "2026-09-26T17:57:04.995077+00:00",
+      "stage": "v2_engine",
+      "rejection_codes": [
+        "OVEREXTENDED_OPPORTUNITY_DECAYED"
+      ],
+      "score_at_rejection": 60,
+      "details": {
+        "v2_decision_state_before_gate": "WATCH"
+      }
+    },
+    {
+      "asset_id": "eigenlayer",
+      "symbol": "EIGEN",
+      "timestamp": "2026-09-26T17:57:05.007513+00:00",
+      "stage": "v2_engine",
+      "rejection_codes": [
+        "OI_CROWDING_RISK",
+        "OVEREXTENDED_OPPORTUNITY_DECAYED"
+      ],
+      "score_at_rejection": 55,
+      "details": {
+        "v2_decision_state_before_gate": "WATCH"
+      }
+    },
+    {
+      "asset_id": "algorand",
+      "symbol": "ALGO",
+      "timestamp": "2026-09-26T17:57:05.019428+00:00",
+      "stage": "v2_engine",
+      "rejection_codes": [
+        "OVEREXTENDED_OPPORTUNITY_DECAYED"
+      ],
+      "score_at_rejection": 55,
+      "details": {
+        "v2_decision_state_before_gate": "WATCH"
+      }
+    },
+    {
+      "asset_id": "tether-gold",
+      "symbol": "XAUT",
+      "timestamp": "2026-09-26T17:57:33.327157+00:00",
+      "stage": "real_trade_stop_sizing",
+      "rejection_codes": [
+        "NO_STOP_CANDIDATE"
+      ],
+      "score_at_rejection": 10,
+      "details": {
+        "entry": 4278.44,
+        "trend_following_eligible": false,
+        "suggested_stop_resistance_based": null,
+        "suggested_stop_trendline_based": null,
+        "max_allowed_stop_pct": 25.0
+      }
+    },
+    {
+      "asset_id": "pax-gold",
+      "symbol": "PAXG",
+      "timestamp": "2026-09-26T17:57:33.340072+00:00",
+      "stage": "real_trade_stop_sizing",
+      "rejection_codes": [
+        "NO_STOP_CANDIDATE"
+      ],
+      "score_at_rejection": 10,
+      "details": {
+        "entry": 4276.78,
+        "trend_following_eligible": false,
+        "suggested_stop_resistance_based": null,
+        "suggested_stop_trendline_based": null,
+        "max_allowed_stop_pct": 25.0
+      }
+    },
+    {
+      "asset_id": "the-open-network",
+      "symbol": "GRAM",
+      "timestamp": "2026-09-26T17:57:33.405123+00:00",
       "stage": "scalp_trade",
       "rejection_codes": [
         "RSI_OVERBOUGHT"
