@@ -47,6 +47,10 @@ def load_json(path: Path, default):
         return default
 
 
+def save_json(path: Path, data) -> None:
+    path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
 def collect_open_positions() -> list:
     positions = []
     for path, track in [
@@ -106,6 +110,47 @@ def compute_exposure_report(open_positions: list, category_clusters: dict, coin_
     }
 
 
+CATEGORIES_RAW_PATH = DATA_DIR / "categories.json"
+
+
+def build_symbol_to_categories(categories_raw: dict, coin_by_id: dict) -> dict:
+    """Uses the FULLER raw category->coin_id mapping (up to 50 members per
+    category, regardless of whether they're currently flagged) rather than
+    category_clusters (flagged-only) - more complete coverage for tagging
+    every open position, not just the ones the radar happens to be
+    highlighting this run."""
+    symbol_to_categories = {}
+    for category, coin_ids in categories_raw.items():
+        if not isinstance(coin_ids, list):
+            continue
+        for cid in coin_ids:
+            coin = coin_by_id.get(cid)
+            symbol = coin.get("symbol") if coin else None
+            if symbol:
+                symbol_to_categories.setdefault(symbol, []).append(category)
+    return symbol_to_categories
+
+
+def tag_trades_with_sectors(path: Path, symbol_to_categories: dict) -> int:
+    """Per Azez's explicit decision (26/9/2026): tag, don't cap - no limit
+    on simultaneous same-sector positions, just make the sector membership
+    visible directly on the trade record itself (and therefore in the
+    dashboard) without needing a separate exposure-report lookup."""
+    data = load_json(path, {"trades": []})
+    trades = data.get("trades", [])
+    n_tagged = 0
+    for t in trades:
+        if t.get("status") not in ("open", "pending"):
+            continue
+        tags = symbol_to_categories.get(t.get("symbol"), [])
+        t["sector_tags"] = tags
+        if tags:
+            n_tagged += 1
+    data["trades"] = trades
+    save_json(path, data)
+    return n_tagged
+
+
 def main():
     radar = load_json(RADAR_FLAGS_PATH, {"coins": [], "category_clusters": {}})
     category_clusters = radar.get("category_clusters", {})
@@ -121,11 +166,23 @@ def main():
     )
     EXPOSURE_REPORT_PATH.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
 
+    # v55 (26/9/2026): sector tagging on every open trade - visible labeling,
+    # deliberately NOT a cap on concurrent same-sector positions.
+    categories_raw_doc = load_json(CATEGORIES_RAW_PATH, {"categories": {}})
+    categories_raw = categories_raw_doc.get("categories", {})
+    coin_by_id = {c.get("id"): c for c in radar.get("coins", [])}
+    symbol_to_categories = build_symbol_to_categories(categories_raw, coin_by_id)
+
+    n_tagged_total = 0
+    for path in (TRADES_PATH, SHADOW_TRADES_PATH, SCALP_TRADES_PATH, V2_SHADOW_TRADES_PATH):
+        n_tagged_total += tag_trades_with_sectors(path, symbol_to_categories)
+
     print(f"Exposure check: {report['n_total_open_positions']} open positions across "
           f"{report['n_unique_symbols']} unique symbols -> ~{report['n_effective_independent_bets']} "
           f"effective independent bets. {len(report['concentrated_sectors'])} concentrated sector(s): "
           f"{list(report['concentrated_sectors'].keys())}. "
-          f"{report['n_high_btc_beta_positions']} positions are high BTC-beta (corr>={HIGH_CORRELATION_THRESHOLD}).")
+          f"{report['n_high_btc_beta_positions']} positions are high BTC-beta (corr>={HIGH_CORRELATION_THRESHOLD}). "
+          f"Tagged {n_tagged_total} open trades with their sector(s).")
 
 
 if __name__ == "__main__":
