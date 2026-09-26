@@ -2864,7 +2864,7 @@
       "triggered_by": "extension_continuation,priority_review:double_bottom",
       "entry_archetype": "confluence_confirmed_plus_proactive",
       "date_opened": "2026-09-24",
-      "status": "open",
+      "status": "superseded",
       "entry": 1.05,
       "stop": 0.94546272,
       "used_trend_following_stop": false,
@@ -2885,7 +2885,9 @@
       "confidence_score_at_entry": 28,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 28 < AUTO_TRADE_MIN_SCORE 40",
-      "last_check_source": "okx_candles"
+      "last_check_source": "okx_candles",
+      "superseded_at": "2026-09-26T04:27:45.441434+00:00",
+      "superseded_reason": "promoted to a real auto trade at confidence_score 43"
     },
     {
       "id": "chz-shadow-2026-09-24",
@@ -5283,7 +5285,7 @@
       "triggered_by": "priority_review:cluster_rotation_lag+triangle",
       "entry_archetype": "proactive_confluence",
       "date_opened": "2026-09-25",
-      "status": "open",
+      "status": "stopped_after_partial_targets",
       "entry": 0.505697,
       "stop": 0.50473629,
       "used_trend_following_stop": false,
@@ -5304,7 +5306,9 @@
       "confidence_score_at_entry": 20,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 20 < AUTO_TRADE_MIN_SCORE 40",
-      "last_check_source": "price_history_snapshots"
+      "last_check_source": "price_history_snapshots",
+      "exit_price": 0.50473629,
+      "date_closed": "2026-09-26T04:28:52.216628+00:00"
     },
     {
       "id": "gno-shadow-20260926T002719",
@@ -5356,10 +5360,69 @@
       "created_at": "2026-09-26T03:57:29.084467+00:00",
       "filled_at": "2026-09-26T03:57:29.084467+00:00",
       "actual_entry": 0.00431542,
-      "targets_hit": [],
+      "targets_hit": [
+        {
+          "target": 0.00438373,
+          "hit_at": "2026-09-26T04:28:52.216647+00:00"
+        }
+      ],
       "confidence_score_at_entry": 35,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 35 < AUTO_TRADE_MIN_SCORE 40",
+      "last_check_source": "okx_candles"
+    },
+    {
+      "id": "2z-shadow-20260926T042745",
+      "asset_id": "doublezero",
+      "symbol": "2Z",
+      "type": "paper",
+      "auto": true,
+      "triggered_by": "priority_review:squeeze+triangle",
+      "entry_archetype": "proactive_confluence",
+      "date_opened": "2026-09-26",
+      "status": "open",
+      "entry": 0.057656,
+      "stop": 0.05377089,
+      "used_trend_following_stop": false,
+      "targets": [
+        0.06348366,
+        0.06736877,
+        0.07319644
+      ],
+      "created_at": "2026-09-26T04:27:45.441434+00:00",
+      "filled_at": "2026-09-26T04:27:45.441434+00:00",
+      "actual_entry": 0.057656,
+      "targets_hit": [],
+      "confidence_score_at_entry": 20,
+      "signal_quality_at_entry": "beta_driven_or_cluster",
+      "rejected_reason": "confidence_score 20 < AUTO_TRADE_MIN_SCORE 40",
+      "last_check_source": "current_spot_fallback"
+    },
+    {
+      "id": "bfusd-shadow-20260926T042745",
+      "asset_id": "bfusd",
+      "symbol": "BFUSD",
+      "type": "paper",
+      "auto": true,
+      "triggered_by": "priority_review:rsi_divergence",
+      "entry_archetype": "rsi_divergence_reversal",
+      "date_opened": "2026-09-26",
+      "status": "open",
+      "entry": 0.999685,
+      "stop": 0.99694716,
+      "used_trend_following_stop": false,
+      "targets": [
+        1.00379176,
+        1.0065296,
+        1.01063636
+      ],
+      "created_at": "2026-09-26T04:27:45.441434+00:00",
+      "filled_at": "2026-09-26T04:27:45.441434+00:00",
+      "actual_entry": 0.999685,
+      "targets_hit": [],
+      "confidence_score_at_entry": 20,
+      "signal_quality_at_entry": "beta_driven_or_cluster",
+      "rejected_reason": "confidence_score 20 < AUTO_TRADE_MIN_SCORE 40",
       "last_check_source": "current_spot_fallback"
     }
   ]
