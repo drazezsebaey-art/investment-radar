@@ -5892,7 +5892,7 @@
       "hours_since_flagged_at_entry": 42.0,
       "funnel_stage_at_entry": "validated",
       "date_opened": "2026-09-26",
-      "status": "open",
+      "status": "stopped",
       "entry": 0.130216,
       "stop": 0.12643537,
       "used_trend_following_stop": false,
@@ -5911,7 +5911,9 @@
       "last_check_source": "okx_candles",
       "sector_tags": [
         "artificial-intelligence"
-      ]
+      ],
+      "exit_price": 0.12643537,
+      "date_closed": "2026-09-26T20:58:23.111343+00:00"
     },
     {
       "id": "dcr-shadow-20260926T115720",
@@ -6164,6 +6166,40 @@
       "rejected_reason": "confidence_score 20 < AUTO_TRADE_MIN_SCORE 40",
       "last_check_source": "okx_candles",
       "sector_tags": []
+    },
+    {
+      "id": "trx-shadow-20260926T205715",
+      "asset_id": "tron",
+      "symbol": "TRX",
+      "type": "paper",
+      "auto": true,
+      "triggered_by": "priority_review:squeeze+cluster_rotation_lag",
+      "entry_archetype": "proactive_confluence",
+      "engine_version": "auto_paper_trade-v37",
+      "decay_state_at_entry": "decayed",
+      "hours_since_flagged_at_entry": 51.5,
+      "funnel_stage_at_entry": "validated",
+      "date_opened": "2026-09-26",
+      "status": "open",
+      "entry": 0.335541,
+      "stop": 0.33474587,
+      "used_trend_following_stop": false,
+      "targets": [
+        0.33673369,
+        0.33752882,
+        0.33872152
+      ],
+      "created_at": "2026-09-26T20:57:15.310850+00:00",
+      "filled_at": "2026-09-26T20:57:15.310850+00:00",
+      "actual_entry": 0.335541,
+      "targets_hit": [],
+      "confidence_score_at_entry": 10,
+      "signal_quality_at_entry": "beta_driven_or_cluster",
+      "rejected_reason": "confidence_score 10 < AUTO_TRADE_MIN_SCORE 40",
+      "last_check_source": "current_spot_fallback",
+      "sector_tags": [
+        "layer-1"
+      ]
     }
   ]
 }

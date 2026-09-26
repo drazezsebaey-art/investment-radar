@@ -1,24 +1,110 @@
 {
-  "generated_at": "2026-09-26T20:26:52.833569+00:00",
+  "generated_at": "2026-09-26T20:56:44.971208+00:00",
   "market_regime": {
     "risk_state": "neutral",
     "volatility_state": "normal",
-    "btc_trend_recent_pct": -0.3,
-    "btc_trend_full_window_pct": 5.25,
-    "btc_volatility_now": 0.394,
-    "btc_volatility_baseline_avg": 0.559,
-    "breadth_pct_green": 54.4
+    "btc_trend_recent_pct": -0.45,
+    "btc_trend_full_window_pct": 4.66,
+    "btc_volatility_now": 0.395,
+    "btc_volatility_baseline_avg": 0.553,
+    "breadth_pct_green": 42.8
   },
   "n_candidates_evaluated": 10,
   "n_high_priority": 0,
   "n_watch": 0,
-  "n_gate_rejected": 1,
+  "n_gate_rejected": 3,
   "n_trades_opened_this_run": 0,
   "n_watch_objects_recorded_this_run": 0,
   "candidates": [
     {
-      "asset_id": "quant-network",
-      "symbol": "QNT",
+      "asset_id": "thorchain",
+      "symbol": "RUNE",
+      "v2_score": 60,
+      "v2_score_breakdown": {
+        "liquidity_sequence": {
+          "points": 0,
+          "max": 25,
+          "detail": "none"
+        },
+        "displacement_fvg": {
+          "points": 20,
+          "max": 20,
+          "detail": "fvg:exceptional"
+        },
+        "order_block": {
+          "points": 15,
+          "max": 15,
+          "detail": "order_block:strong"
+        },
+        "structure": {
+          "points": 20,
+          "max": 20,
+          "detail": "structure:CHoCH_bullish"
+        },
+        "market_regime": {
+          "points": 0,
+          "max": 10,
+          "detail": "regime:neutral"
+        },
+        "relative_strength": {
+          "points": 5,
+          "max": 10,
+          "detail": "relative_strength:42.66%"
+        }
+      },
+      "v2_decision_state": "WATCH",
+      "v2_archetype": "order_block_retest_only",
+      "funnel_stage": "agent_room_priority",
+      "price_usd": 0.747659,
+      "v2_target_framework": {
+        "entry": 0.747659,
+        "stop": 0.72521579,
+        "targets": [
+          {
+            "horizon_label": "fast",
+            "max_hours": 48,
+            "projected_pct_at_horizon": 36.02,
+            "target_pct": 36.02,
+            "target_price": 1.01697752,
+            "feasible": true,
+            "rr": 12.0,
+            "obstacles_in_path": [],
+            "path_quality": "clear"
+          },
+          {
+            "horizon_label": "medium",
+            "max_hours": 168,
+            "projected_pct_at_horizon": 126.08,
+            "target_pct": 126.08,
+            "target_price": 1.69027382,
+            "feasible": true,
+            "rr": 42.0,
+            "obstacles_in_path": [],
+            "path_quality": "clear"
+          },
+          {
+            "horizon_label": "extended",
+            "max_hours": 336,
+            "projected_pct_at_horizon": 252.15,
+            "target_pct": 252.15,
+            "target_price": 2.63288864,
+            "feasible": true,
+            "rr": 84.0,
+            "obstacles_in_path": [],
+            "path_quality": "clear"
+          }
+        ],
+        "any_target_feasible": true
+      },
+      "v2_gate_passed": false,
+      "v2_gate_reject_reasons": [
+        "OVEREXTENDED_OPPORTUNITY_DECAYED"
+      ],
+      "v2_final_status": "REJECTED_BY_GATE"
+    },
+    {
+      "asset_id": "worldcoin-wld",
+      "symbol": "WLD",
       "v2_score": 55,
       "v2_score_breakdown": {
         "liquidity_sequence": {
@@ -49,23 +135,23 @@
         "relative_strength": {
           "points": 5,
           "max": 10,
-          "detail": "relative_strength:85.98%"
+          "detail": "relative_strength:24.24%"
         }
       },
       "v2_decision_state": "WATCH",
       "v2_archetype": "D_breakout_retest_continuation",
-      "funnel_stage": "agent_room_priority",
-      "price_usd": 123.23,
+      "funnel_stage": "shortlist_10",
+      "price_usd": 0.526768,
       "v2_target_framework": {
-        "entry": 123.23,
-        "stop": 116.15,
+        "entry": 0.526768,
+        "stop": 0.50440014,
         "targets": [
           {
             "horizon_label": "fast",
             "max_hours": 48,
-            "projected_pct_at_horizon": 68.94,
-            "target_pct": 68.94,
-            "target_price": 208.19,
+            "projected_pct_at_horizon": 50.95,
+            "target_pct": 50.95,
+            "target_price": 0.79518232,
             "feasible": true,
             "rr": 12.0,
             "obstacles_in_path": [],
@@ -74,9 +160,9 @@
           {
             "horizon_label": "medium",
             "max_hours": 168,
-            "projected_pct_at_horizon": 241.3,
-            "target_pct": 241.3,
-            "target_price": 420.59,
+            "projected_pct_at_horizon": 178.34,
+            "target_pct": 178.34,
+            "target_price": 1.46621812,
             "feasible": true,
             "rr": 42.0,
             "obstacles_in_path": [],
@@ -85,9 +171,9 @@
           {
             "horizon_label": "extended",
             "max_hours": 336,
-            "projected_pct_at_horizon": 482.61,
-            "target_pct": 482.61,
-            "target_price": 717.95,
+            "projected_pct_at_horizon": 356.68,
+            "target_pct": 356.68,
+            "target_price": 2.40566824,
             "feasible": true,
             "rr": 84.0,
             "obstacles_in_path": [],
@@ -98,6 +184,94 @@
       },
       "v2_gate_passed": false,
       "v2_gate_reject_reasons": [
+        "OI_CROWDING_RISK",
+        "OVEREXTENDED_OPPORTUNITY_DECAYED"
+      ],
+      "v2_final_status": "REJECTED_BY_GATE"
+    },
+    {
+      "asset_id": "eigenlayer",
+      "symbol": "EIGEN",
+      "v2_score": 55,
+      "v2_score_breakdown": {
+        "liquidity_sequence": {
+          "points": 0,
+          "max": 25,
+          "detail": "none"
+        },
+        "displacement_fvg": {
+          "points": 20,
+          "max": 20,
+          "detail": "fvg:exceptional"
+        },
+        "order_block": {
+          "points": 15,
+          "max": 15,
+          "detail": "order_block:strong"
+        },
+        "structure": {
+          "points": 15,
+          "max": 20,
+          "detail": "structure:BOS_bullish"
+        },
+        "market_regime": {
+          "points": 0,
+          "max": 10,
+          "detail": "regime:neutral"
+        },
+        "relative_strength": {
+          "points": 5,
+          "max": 10,
+          "detail": "relative_strength:31.75%"
+        }
+      },
+      "v2_decision_state": "WATCH",
+      "v2_archetype": "D_breakout_retest_continuation",
+      "funnel_stage": "shortlist_10",
+      "price_usd": 0.275685,
+      "v2_target_framework": {
+        "entry": 0.275685,
+        "stop": 0.26456479,
+        "targets": [
+          {
+            "horizon_label": "fast",
+            "max_hours": 48,
+            "projected_pct_at_horizon": 48.4,
+            "target_pct": 48.4,
+            "target_price": 0.40912752,
+            "feasible": true,
+            "rr": 12.0,
+            "obstacles_in_path": [],
+            "path_quality": "clear"
+          },
+          {
+            "horizon_label": "medium",
+            "max_hours": 168,
+            "projected_pct_at_horizon": 169.41,
+            "target_pct": 169.41,
+            "target_price": 0.74273382,
+            "feasible": true,
+            "rr": 42.0,
+            "obstacles_in_path": [],
+            "path_quality": "clear"
+          },
+          {
+            "horizon_label": "extended",
+            "max_hours": 336,
+            "projected_pct_at_horizon": 338.83,
+            "target_pct": 338.83,
+            "target_price": 1.20978264,
+            "feasible": true,
+            "rr": 84.0,
+            "obstacles_in_path": [],
+            "path_quality": "clear"
+          }
+        ],
+        "any_target_feasible": true
+      },
+      "v2_gate_passed": false,
+      "v2_gate_reject_reasons": [
+        "OI_CROWDING_RISK",
         "OVEREXTENDED_OPPORTUNITY_DECAYED"
       ],
       "v2_final_status": "REJECTED_BY_GATE"
@@ -135,23 +309,23 @@
         "relative_strength": {
           "points": 5,
           "max": 10,
-          "detail": "relative_strength:19.56%"
+          "detail": "relative_strength:20.15%"
         }
       },
       "v2_decision_state": "WAIT_FOR_CONFIRMATION",
       "v2_archetype": "liquidity_event_only",
       "funnel_stage": "shortlist_10",
-      "price_usd": 336.82,
+      "price_usd": 336.52,
       "v2_target_framework": {
-        "entry": 336.82,
-        "stop": 329.64142857,
+        "entry": 336.52,
+        "stop": 329.34142857,
         "targets": [
           {
             "horizon_label": "fast",
             "max_hours": 48,
-            "projected_pct_at_horizon": 25.58,
-            "target_pct": 25.58,
-            "target_price": 422.96285716,
+            "projected_pct_at_horizon": 25.6,
+            "target_pct": 25.6,
+            "target_price": 422.66285716,
             "feasible": true,
             "rr": 12.0,
             "obstacles_in_path": [
@@ -162,9 +336,9 @@
           {
             "horizon_label": "medium",
             "max_hours": 168,
-            "projected_pct_at_horizon": 89.51,
-            "target_pct": 89.51,
-            "target_price": 638.32000006,
+            "projected_pct_at_horizon": 89.59,
+            "target_pct": 89.59,
+            "target_price": 638.02000006,
             "feasible": true,
             "rr": 42.0,
             "obstacles_in_path": [
@@ -175,9 +349,9 @@
           {
             "horizon_label": "extended",
             "max_hours": 336,
-            "projected_pct_at_horizon": 179.03,
-            "target_pct": 179.03,
-            "target_price": 939.82000012,
+            "projected_pct_at_horizon": 179.19,
+            "target_pct": 179.19,
+            "target_price": 939.52000012,
             "feasible": true,
             "rr": 84.0,
             "obstacles_in_path": [
@@ -195,14 +369,14 @@
       "v2_final_status": "WAIT_FOR_CONFIRMATION"
     },
     {
-      "asset_id": "near",
-      "symbol": "NEAR",
-      "v2_score": 40,
+      "asset_id": "sui",
+      "symbol": "SUI",
+      "v2_score": 52,
       "v2_score_breakdown": {
         "liquidity_sequence": {
-          "points": 0,
+          "points": 25,
           "max": 25,
-          "detail": "none"
+          "detail": "inducement:high_quality"
         },
         "displacement_fvg": {
           "points": 20,
@@ -210,9 +384,9 @@
           "detail": "fvg:exceptional"
         },
         "order_block": {
-          "points": 15,
+          "points": 2,
           "max": 15,
-          "detail": "order_block:strong"
+          "detail": "order_block:weak"
         },
         "structure": {
           "points": 0,
@@ -227,23 +401,23 @@
         "relative_strength": {
           "points": 5,
           "max": 10,
-          "detail": "relative_strength:145.01%"
+          "detail": "relative_strength:44.09%"
         }
       },
       "v2_decision_state": "WAIT_FOR_CONFIRMATION",
-      "v2_archetype": "order_block_retest_only",
+      "v2_archetype": "liquidity_event_only",
       "funnel_stage": "agent_room_priority",
-      "price_usd": 4.83,
+      "price_usd": 1.16,
       "v2_target_framework": {
-        "entry": 4.83,
-        "stop": 4.59642857,
+        "entry": 1.16,
+        "stop": 1.11112264,
         "targets": [
           {
             "horizon_label": "fast",
             "max_hours": 48,
-            "projected_pct_at_horizon": 58.03,
-            "target_pct": 58.03,
-            "target_price": 7.63285716,
+            "projected_pct_at_horizon": 50.56,
+            "target_pct": 50.56,
+            "target_price": 1.74652832,
             "feasible": true,
             "rr": 12.0,
             "obstacles_in_path": [],
@@ -252,9 +426,9 @@
           {
             "horizon_label": "medium",
             "max_hours": 168,
-            "projected_pct_at_horizon": 203.11,
-            "target_pct": 203.11,
-            "target_price": 14.64000006,
+            "projected_pct_at_horizon": 176.97,
+            "target_pct": 176.97,
+            "target_price": 3.21284912,
             "feasible": true,
             "rr": 42.0,
             "obstacles_in_path": [],
@@ -263,9 +437,9 @@
           {
             "horizon_label": "extended",
             "max_hours": 336,
-            "projected_pct_at_horizon": 406.21,
-            "target_pct": 406.21,
-            "target_price": 24.45000012,
+            "projected_pct_at_horizon": 353.94,
+            "target_pct": 353.94,
+            "target_price": 5.26569824,
             "feasible": true,
             "rr": 84.0,
             "obstacles_in_path": [],
@@ -276,6 +450,93 @@
       },
       "v2_gate_passed": false,
       "v2_gate_reject_reasons": [
+        "OVEREXTENDED_OPPORTUNITY_DECAYED"
+      ],
+      "v2_final_status": "WAIT_FOR_CONFIRMATION"
+    },
+    {
+      "asset_id": "render-token",
+      "symbol": "RENDER",
+      "v2_score": 47,
+      "v2_score_breakdown": {
+        "liquidity_sequence": {
+          "points": 0,
+          "max": 25,
+          "detail": "none"
+        },
+        "displacement_fvg": {
+          "points": 20,
+          "max": 20,
+          "detail": "fvg:exceptional"
+        },
+        "order_block": {
+          "points": 2,
+          "max": 15,
+          "detail": "order_block:weak"
+        },
+        "structure": {
+          "points": 20,
+          "max": 20,
+          "detail": "structure:CHoCH_bullish"
+        },
+        "market_regime": {
+          "points": 0,
+          "max": 10,
+          "detail": "regime:neutral"
+        },
+        "relative_strength": {
+          "points": 5,
+          "max": 10,
+          "detail": "relative_strength:26.06%"
+        }
+      },
+      "v2_decision_state": "WAIT_FOR_CONFIRMATION",
+      "v2_archetype": "order_block_retest_only",
+      "funnel_stage": "agent_room_priority",
+      "price_usd": 1.99,
+      "v2_target_framework": {
+        "entry": 1.99,
+        "stop": 1.92785714,
+        "targets": [
+          {
+            "horizon_label": "fast",
+            "max_hours": 48,
+            "projected_pct_at_horizon": 37.47,
+            "target_pct": 37.47,
+            "target_price": 2.73571432,
+            "feasible": true,
+            "rr": 12.0,
+            "obstacles_in_path": [],
+            "path_quality": "clear"
+          },
+          {
+            "horizon_label": "medium",
+            "max_hours": 168,
+            "projected_pct_at_horizon": 131.16,
+            "target_pct": 131.16,
+            "target_price": 4.60000012,
+            "feasible": true,
+            "rr": 42.0,
+            "obstacles_in_path": [],
+            "path_quality": "clear"
+          },
+          {
+            "horizon_label": "extended",
+            "max_hours": 336,
+            "projected_pct_at_horizon": 262.31,
+            "target_pct": 262.31,
+            "target_price": 7.21000024,
+            "feasible": true,
+            "rr": 84.0,
+            "obstacles_in_path": [],
+            "path_quality": "clear"
+          }
+        ],
+        "any_target_feasible": true
+      },
+      "v2_gate_passed": false,
+      "v2_gate_reject_reasons": [
+        "OI_CROWDING_RISK",
         "OVEREXTENDED_OPPORTUNITY_DECAYED"
       ],
       "v2_final_status": "WAIT_FOR_CONFIRMATION"
@@ -313,23 +574,23 @@
         "relative_strength": {
           "points": 5,
           "max": 10,
-          "detail": "relative_strength:24.05%"
+          "detail": "relative_strength:24.65%"
         }
       },
       "v2_decision_state": "WAIT_FOR_CONFIRMATION",
       "v2_archetype": "order_block_retest_only",
       "funnel_stage": "shortlist_10",
-      "price_usd": 0.118136,
+      "price_usd": 0.118,
       "v2_target_framework": {
-        "entry": 0.118136,
-        "stop": 0.11431464,
+        "entry": 0.118,
+        "stop": 0.11417864,
         "targets": [
           {
             "horizon_label": "fast",
             "max_hours": 48,
-            "projected_pct_at_horizon": 38.82,
-            "target_pct": 38.82,
-            "target_price": 0.16399232,
+            "projected_pct_at_horizon": 38.86,
+            "target_pct": 38.86,
+            "target_price": 0.16385632,
             "feasible": true,
             "rr": 12.0,
             "obstacles_in_path": [],
@@ -338,9 +599,9 @@
           {
             "horizon_label": "medium",
             "max_hours": 168,
-            "projected_pct_at_horizon": 135.86,
-            "target_pct": 135.86,
-            "target_price": 0.27863312,
+            "projected_pct_at_horizon": 136.01,
+            "target_pct": 136.01,
+            "target_price": 0.27849712,
             "feasible": true,
             "rr": 42.0,
             "obstacles_in_path": [],
@@ -349,9 +610,9 @@
           {
             "horizon_label": "extended",
             "max_hours": 336,
-            "projected_pct_at_horizon": 271.72,
-            "target_pct": 271.72,
-            "target_price": 0.43913024,
+            "projected_pct_at_horizon": 272.03,
+            "target_pct": 272.03,
+            "target_price": 0.43899424,
             "feasible": true,
             "rr": 84.0,
             "obstacles_in_path": [],
@@ -365,93 +626,6 @@
         "OVEREXTENDED_OPPORTUNITY_DECAYED"
       ],
       "v2_final_status": "WAIT_FOR_CONFIRMATION"
-    },
-    {
-      "asset_id": "plasma",
-      "symbol": "XPL",
-      "v2_score": 27,
-      "v2_score_breakdown": {
-        "liquidity_sequence": {
-          "points": 0,
-          "max": 25,
-          "detail": "none"
-        },
-        "displacement_fvg": {
-          "points": 20,
-          "max": 20,
-          "detail": "fvg:exceptional"
-        },
-        "order_block": {
-          "points": 2,
-          "max": 15,
-          "detail": "order_block:weak"
-        },
-        "structure": {
-          "points": 0,
-          "max": 20,
-          "detail": "none"
-        },
-        "market_regime": {
-          "points": 0,
-          "max": 10,
-          "detail": "regime:neutral"
-        },
-        "relative_strength": {
-          "points": 5,
-          "max": 10,
-          "detail": "relative_strength:24.65%"
-        }
-      },
-      "v2_decision_state": "NO_TRADE",
-      "v2_archetype": "order_block_retest_only",
-      "funnel_stage": "shortlist_10",
-      "price_usd": 0.115193,
-      "v2_target_framework": {
-        "entry": 0.115193,
-        "stop": 0.10716807,
-        "targets": [
-          {
-            "horizon_label": "fast",
-            "max_hours": 48,
-            "projected_pct_at_horizon": 83.6,
-            "target_pct": 83.6,
-            "target_price": 0.21149216,
-            "feasible": true,
-            "rr": 12.0,
-            "obstacles_in_path": [],
-            "path_quality": "clear"
-          },
-          {
-            "horizon_label": "medium",
-            "max_hours": 168,
-            "projected_pct_at_horizon": 292.59,
-            "target_pct": 292.59,
-            "target_price": 0.45224006,
-            "feasible": true,
-            "rr": 42.0,
-            "obstacles_in_path": [],
-            "path_quality": "clear"
-          },
-          {
-            "horizon_label": "extended",
-            "max_hours": 336,
-            "projected_pct_at_horizon": 585.19,
-            "target_pct": 585.19,
-            "target_price": 0.78928712,
-            "feasible": true,
-            "rr": 84.0,
-            "obstacles_in_path": [],
-            "path_quality": "clear"
-          }
-        ],
-        "any_target_feasible": true
-      },
-      "v2_gate_passed": false,
-      "v2_gate_reject_reasons": [
-        "OI_CROWDING_RISK",
-        "OVEREXTENDED_OPPORTUNITY_DECAYED"
-      ],
-      "v2_final_status": "NO_TRADE"
     },
     {
       "asset_id": "aave",
@@ -486,23 +660,23 @@
         "relative_strength": {
           "points": 5,
           "max": 10,
-          "detail": "relative_strength:15.47%"
+          "detail": "relative_strength:16.06%"
         }
       },
       "v2_decision_state": "NO_TRADE",
       "v2_archetype": "order_block_retest_only",
       "funnel_stage": "agent_room_priority",
-      "price_usd": 154.59,
+      "price_usd": 154.3,
       "v2_target_framework": {
-        "entry": 154.59,
-        "stop": 150.48857143,
+        "entry": 154.3,
+        "stop": 150.19857143,
         "targets": [
           {
             "horizon_label": "fast",
             "max_hours": 48,
-            "projected_pct_at_horizon": 31.84,
-            "target_pct": 31.84,
-            "target_price": 203.80714284,
+            "projected_pct_at_horizon": 31.9,
+            "target_pct": 31.9,
+            "target_price": 203.51714284,
             "feasible": true,
             "rr": 12.0,
             "obstacles_in_path": [],
@@ -511,9 +685,9 @@
           {
             "horizon_label": "medium",
             "max_hours": 168,
-            "projected_pct_at_horizon": 111.43,
-            "target_pct": 111.43,
-            "target_price": 326.84999994,
+            "projected_pct_at_horizon": 111.64,
+            "target_pct": 111.64,
+            "target_price": 326.55999994,
             "feasible": true,
             "rr": 42.0,
             "obstacles_in_path": [],
@@ -522,179 +696,9 @@
           {
             "horizon_label": "extended",
             "max_hours": 336,
-            "projected_pct_at_horizon": 222.86,
-            "target_pct": 222.86,
-            "target_price": 499.10999988,
-            "feasible": true,
-            "rr": 84.0,
-            "obstacles_in_path": [],
-            "path_quality": "clear"
-          }
-        ],
-        "any_target_feasible": true
-      },
-      "v2_gate_passed": true,
-      "v2_gate_reject_reasons": [],
-      "v2_final_status": "NO_TRADE"
-    },
-    {
-      "asset_id": "pancakeswap-token",
-      "symbol": "CAKE",
-      "v2_score": 27,
-      "v2_score_breakdown": {
-        "liquidity_sequence": {
-          "points": 0,
-          "max": 25,
-          "detail": "none"
-        },
-        "displacement_fvg": {
-          "points": 20,
-          "max": 20,
-          "detail": "fvg:exceptional"
-        },
-        "order_block": {
-          "points": 2,
-          "max": 15,
-          "detail": "order_block:weak"
-        },
-        "structure": {
-          "points": 0,
-          "max": 20,
-          "detail": "none"
-        },
-        "market_regime": {
-          "points": 0,
-          "max": 10,
-          "detail": "regime:neutral"
-        },
-        "relative_strength": {
-          "points": 5,
-          "max": 10,
-          "detail": "relative_strength:51.0%"
-        }
-      },
-      "v2_decision_state": "NO_TRADE",
-      "v2_archetype": "order_block_retest_only",
-      "funnel_stage": "shortlist_10",
-      "price_usd": 2.75,
-      "v2_target_framework": {
-        "entry": 2.75,
-        "stop": 2.7,
-        "targets": [
-          {
-            "horizon_label": "fast",
-            "max_hours": 48,
-            "projected_pct_at_horizon": 21.82,
-            "target_pct": 21.82,
-            "target_price": 3.35,
-            "feasible": true,
-            "rr": 12.0,
-            "obstacles_in_path": [],
-            "path_quality": "clear"
-          },
-          {
-            "horizon_label": "medium",
-            "max_hours": 168,
-            "projected_pct_at_horizon": 76.36,
-            "target_pct": 76.36,
-            "target_price": 4.85,
-            "feasible": true,
-            "rr": 42.0,
-            "obstacles_in_path": [],
-            "path_quality": "clear"
-          },
-          {
-            "horizon_label": "extended",
-            "max_hours": 336,
-            "projected_pct_at_horizon": 152.73,
-            "target_pct": 152.73,
-            "target_price": 6.95,
-            "feasible": true,
-            "rr": 84.0,
-            "obstacles_in_path": [],
-            "path_quality": "clear"
-          }
-        ],
-        "any_target_feasible": true
-      },
-      "v2_gate_passed": false,
-      "v2_gate_reject_reasons": [
-        "OVEREXTENDED_OPPORTUNITY_DECAYED"
-      ],
-      "v2_final_status": "NO_TRADE"
-    },
-    {
-      "asset_id": "lido-dao",
-      "symbol": "LDO",
-      "v2_score": 27,
-      "v2_score_breakdown": {
-        "liquidity_sequence": {
-          "points": 0,
-          "max": 25,
-          "detail": "none"
-        },
-        "displacement_fvg": {
-          "points": 20,
-          "max": 20,
-          "detail": "fvg:exceptional"
-        },
-        "order_block": {
-          "points": 2,
-          "max": 15,
-          "detail": "order_block:weak"
-        },
-        "structure": {
-          "points": 0,
-          "max": 20,
-          "detail": "none"
-        },
-        "market_regime": {
-          "points": 0,
-          "max": 10,
-          "detail": "regime:neutral"
-        },
-        "relative_strength": {
-          "points": 5,
-          "max": 10,
-          "detail": "relative_strength:29.74%"
-        }
-      },
-      "v2_decision_state": "NO_TRADE",
-      "v2_archetype": "order_block_retest_only",
-      "funnel_stage": "agent_room_priority",
-      "price_usd": 0.483964,
-      "v2_target_framework": {
-        "entry": 0.483964,
-        "stop": 0.46180393,
-        "targets": [
-          {
-            "horizon_label": "fast",
-            "max_hours": 48,
-            "projected_pct_at_horizon": 54.95,
-            "target_pct": 54.95,
-            "target_price": 0.74988484,
-            "feasible": true,
-            "rr": 12.0,
-            "obstacles_in_path": [],
-            "path_quality": "clear"
-          },
-          {
-            "horizon_label": "medium",
-            "max_hours": 168,
-            "projected_pct_at_horizon": 192.31,
-            "target_pct": 192.31,
-            "target_price": 1.41468694,
-            "feasible": true,
-            "rr": 42.0,
-            "obstacles_in_path": [],
-            "path_quality": "clear"
-          },
-          {
-            "horizon_label": "extended",
-            "max_hours": 336,
-            "projected_pct_at_horizon": 384.62,
-            "target_pct": 384.62,
-            "target_price": 2.34540988,
+            "projected_pct_at_horizon": 223.28,
+            "target_pct": 223.28,
+            "target_price": 498.81999988,
             "feasible": true,
             "rr": 84.0,
             "obstacles_in_path": [],
@@ -710,7 +714,7 @@
     {
       "asset_id": "pendle",
       "symbol": "PENDLE",
-      "v2_score": 15,
+      "v2_score": 27,
       "v2_score_breakdown": {
         "liquidity_sequence": {
           "points": 0,
@@ -718,9 +722,9 @@
           "detail": "none"
         },
         "displacement_fvg": {
-          "points": 8,
+          "points": 20,
           "max": 20,
-          "detail": "fvg:moderate"
+          "detail": "fvg:exceptional"
         },
         "order_block": {
           "points": 2,
@@ -740,7 +744,7 @@
         "relative_strength": {
           "points": 5,
           "max": 10,
-          "detail": "relative_strength:40.82%"
+          "detail": "relative_strength:39.16%"
         }
       },
       "v2_decision_state": "NO_TRADE",
@@ -749,14 +753,14 @@
       "price_usd": 2.56,
       "v2_target_framework": {
         "entry": 2.56,
-        "stop": 2.47928571,
+        "stop": 2.48142857,
         "targets": [
           {
             "horizon_label": "fast",
             "max_hours": 48,
-            "projected_pct_at_horizon": 37.83,
-            "target_pct": 37.83,
-            "target_price": 3.52857148,
+            "projected_pct_at_horizon": 36.83,
+            "target_pct": 36.83,
+            "target_price": 3.50285716,
             "feasible": true,
             "rr": 12.0,
             "obstacles_in_path": [
@@ -769,9 +773,9 @@
           {
             "horizon_label": "medium",
             "max_hours": 168,
-            "projected_pct_at_horizon": 132.42,
-            "target_pct": 132.42,
-            "target_price": 5.95000018,
+            "projected_pct_at_horizon": 128.91,
+            "target_pct": 128.91,
+            "target_price": 5.86000006,
             "feasible": true,
             "rr": 42.0,
             "obstacles_in_path": [
@@ -784,9 +788,9 @@
           {
             "horizon_label": "extended",
             "max_hours": 336,
-            "projected_pct_at_horizon": 264.84,
-            "target_pct": 264.84,
-            "target_price": 9.34000036,
+            "projected_pct_at_horizon": 257.81,
+            "target_pct": 257.81,
+            "target_price": 9.16000012,
             "feasible": true,
             "rr": 84.0,
             "obstacles_in_path": [
@@ -836,7 +840,7 @@
         "relative_strength": {
           "points": 5,
           "max": 10,
-          "detail": "relative_strength:19.02%"
+          "detail": "relative_strength:19.61%"
         }
       },
       "v2_decision_state": "NO_TRADE",
