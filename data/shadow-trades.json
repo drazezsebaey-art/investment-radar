@@ -5398,7 +5398,7 @@
       "triggered_by": "priority_review:squeeze+triangle",
       "entry_archetype": "proactive_confluence",
       "date_opened": "2026-09-26",
-      "status": "open",
+      "status": "closed_targets_complete",
       "entry": 0.057656,
       "stop": 0.05377089,
       "used_trend_following_stop": false,
@@ -5418,12 +5418,18 @@
         {
           "target": 0.06736877,
           "hit_at": "2026-09-26T06:28:02.901307+00:00"
+        },
+        {
+          "target": 0.07319644,
+          "hit_at": "2026-09-26T07:29:15.166352+00:00"
         }
       ],
       "confidence_score_at_entry": 20,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 20 < AUTO_TRADE_MIN_SCORE 40",
-      "last_check_source": "okx_candles"
+      "last_check_source": "okx_candles",
+      "exit_price": 0.07319644,
+      "date_closed": "2026-09-26T07:29:15.166352+00:00"
     },
     {
       "id": "bfusd-shadow-20260926T042745",
@@ -5507,6 +5513,34 @@
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 35 < AUTO_TRADE_MIN_SCORE 40",
       "last_check_source": "price_history_snapshots"
+    },
+    {
+      "id": "trx-shadow-20260926T072808",
+      "asset_id": "tron",
+      "symbol": "TRX",
+      "type": "paper",
+      "auto": true,
+      "triggered_by": "priority_review:cluster_rotation_lag",
+      "entry_archetype": "rotation_lag",
+      "engine_version": "auto_paper_trade-v37",
+      "date_opened": "2026-09-26",
+      "status": "open",
+      "entry": 0.337205,
+      "stop": 0.33628773,
+      "used_trend_following_stop": false,
+      "targets": [
+        0.3385809,
+        0.33949817,
+        0.34087408
+      ],
+      "created_at": "2026-09-26T07:28:08.756498+00:00",
+      "filled_at": "2026-09-26T07:28:08.756498+00:00",
+      "actual_entry": 0.337205,
+      "targets_hit": [],
+      "confidence_score_at_entry": 10,
+      "signal_quality_at_entry": "beta_driven_or_cluster",
+      "rejected_reason": "confidence_score 10 < AUTO_TRADE_MIN_SCORE 40",
+      "last_check_source": "current_spot_fallback"
     }
   ]
 }
