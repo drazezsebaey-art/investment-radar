@@ -1267,9 +1267,7 @@
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 28 < AUTO_TRADE_MIN_SCORE 40",
       "last_check_source": "okx_candles",
-      "sector_tags": [
-        "decentralized-exchange"
-      ]
+      "sector_tags": []
     },
     {
       "id": "wld-shadow-2026-09-22",
@@ -5997,7 +5995,7 @@
       "hours_since_flagged_at_entry": 43.5,
       "funnel_stage_at_entry": "shortlist_20",
       "date_opened": "2026-09-26",
-      "status": "open",
+      "status": "closed_targets_complete",
       "entry": 1542.65,
       "stop": 1530.25678572,
       "used_trend_following_stop": false,
@@ -6017,6 +6015,10 @@
         {
           "target": 1573.6330357,
           "hit_at": "2026-09-26T17:28:39.839804+00:00"
+        },
+        {
+          "target": 1592.22285712,
+          "hit_at": "2026-09-26T21:28:52.253740+00:00"
         }
       ],
       "confidence_score_at_entry": 25,
@@ -6026,7 +6028,9 @@
       "sector_tags": [
         "privacy-coins",
         "layer-1"
-      ]
+      ],
+      "exit_price": 1592.22285712,
+      "date_closed": "2026-09-26T21:28:52.253740+00:00"
     },
     {
       "id": "pump-shadow-20260926T125717",
@@ -6196,10 +6200,42 @@
       "confidence_score_at_entry": 10,
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 10 < AUTO_TRADE_MIN_SCORE 40",
-      "last_check_source": "current_spot_fallback",
+      "last_check_source": "okx_candles",
       "sector_tags": [
         "layer-1"
       ]
+    },
+    {
+      "id": "zk-shadow-20260926T212745",
+      "asset_id": "zksync",
+      "symbol": "ZK",
+      "type": "paper",
+      "auto": true,
+      "triggered_by": "priority_review:relative_strength_consolidation",
+      "entry_archetype": "hidden_relative_strength",
+      "engine_version": "auto_paper_trade-v37",
+      "decay_state_at_entry": "fresh",
+      "hours_since_flagged_at_entry": 2.0,
+      "funnel_stage_at_entry": "validated",
+      "date_opened": "2026-09-26",
+      "status": "open",
+      "entry": 0.01273809,
+      "stop": 0.00957676,
+      "used_trend_following_stop": false,
+      "targets": [
+        0.01748008,
+        0.02064142,
+        0.02538341
+      ],
+      "created_at": "2026-09-26T21:27:45.923160+00:00",
+      "filled_at": "2026-09-26T21:27:45.923160+00:00",
+      "actual_entry": 0.01273809,
+      "targets_hit": [],
+      "confidence_score_at_entry": 15,
+      "signal_quality_at_entry": "beta_driven_or_cluster",
+      "rejected_reason": "confidence_score 15 < AUTO_TRADE_MIN_SCORE 40",
+      "last_check_source": "current_spot_fallback",
+      "sector_tags": []
     }
   ]
 }
