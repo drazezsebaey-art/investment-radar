@@ -89,8 +89,19 @@ def check_priority_review_pipeline(coins: list) -> list:
             continue  # not escalated, or correctly excluded (not tradeable)
         sym = c.get("symbol", c.get("id"))
         if c.get("confidence_score") is None:
+            # v51 fix (26/9/2026): the v37 cap (MAX_TOTAL_CANDIDATES_PER_RUN)
+            # means most priority_review coins on a busy run legitimately
+            # never reach the funnel at all this run - that's the cap doing
+            # its job, not a pipeline gap. funnel_stage is only ever set for
+            # a coin that DID get processed this run (breakout_check.py's
+            # ranking pass) - a coin with no funnel_stage simply never got a
+            # turn, which is expected and not worth an error. Only a coin
+            # that WAS selected into the funnel (has a funnel_stage) but
+            # still ended up without a score represents a genuine gap.
+            if c.get("funnel_stage") is None:
+                continue
             out.append(finding("error", "priority_review_pipeline",
-                                f"{sym}: priority_review+binance_listed but no confidence_score", symbol=sym))
+                                f"{sym}: priority_review+binance_listed reached funnel_stage={c.get('funnel_stage')} but no confidence_score", symbol=sym))
             continue
         if c.get("confidence_breakdown") is None:
             out.append(finding("error", "priority_review_pipeline",
