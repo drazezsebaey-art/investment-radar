@@ -37,6 +37,7 @@ opening (step 18) and its own target framework (step 17) are separate,
 later pieces - this step only discovers and scores.
 """
 import json
+ENGINE_VERSION = "v2_engine-v47"  # v48 (24/9/2026): schema/version tagging per the audit report
 from pathlib import Path
 from datetime import datetime, timezone
 
@@ -47,7 +48,9 @@ V2_CANDIDATES_PATH = DATA_DIR / "v2-candidates.json"
 V2_SHADOW_TRADES_PATH = DATA_DIR / "v2-shadow-trades.json"
 
 TOP_FUNNEL_TIERS = {"agent_room_priority", "shortlist_10"}
-V2_TRADEABLE_STATES = {"HIGH_PRIORITY_SETUP", "WATCH"}
+V2_TRADEABLE_STATES = {"HIGH_PRIORITY_SETUP"}
+V2_WATCH_STATES = {"WATCH"}
+V2_WATCH_OBJECTS_PATH = DATA_DIR / "v2-watch-objects.json"
 
 FVG_QUALITY_POINTS = {"exceptional": 20, "strong": 15, "moderate": 8, "weak": 3}
 LIQUIDITY_CONFIDENCE_POINTS_INDUCEMENT = {"high_quality": 25, "confirmed": 18, "detected": 8}
@@ -358,6 +361,7 @@ def build_v2_trade(coin: dict, result: dict, market_regime: dict, now: datetime)
         "v2_archetype": result["v2_archetype"], "funnel_stage": result["funnel_stage"],
         "market_regime_at_entry": market_regime,
         "date_opened": date_str, "created_at": now.isoformat(), "filled_at": now.isoformat(),
+        "engine_version": ENGINE_VERSION,
     }
 
 
@@ -378,6 +382,45 @@ def open_v2_trades(scored: list, coin_by_id: dict, market_regime: dict) -> int:
     trades_data["trades"] = trades
     V2_SHADOW_TRADES_PATH.write_text(json.dumps(trades_data, ensure_ascii=False, indent=2), encoding="utf-8")
     return n_opened
+
+
+def has_open_watch_object(asset_id, objects: list) -> bool:
+    return any(o.get("asset_id") == asset_id and o.get("status") == "watching" for o in objects)
+
+
+def record_watch_objects(scored: list, coin_by_id: dict, market_regime: dict) -> int:
+    """v47 (24/9/2026): per Azez's adoption of the audit report's objection
+    - WATCH is a genuinely lower confidence tier than HIGH_PRIORITY_SETUP,
+    and recording it as an executable paper trade at current price would
+    quietly contaminate V2's performance statistics with entries that were
+    never meant to represent "we would have taken this trade". WATCH
+    candidates are logged here instead as an observation object - price is
+    tracked for reference, but it is NEVER scored as a win/loss and NEVER
+    feeds v2-performance-summary.json. If a WATCH candidate later re-scores
+    as HIGH_PRIORITY_SETUP, it graduates into a real trade through the
+    normal path above, same run or a later one."""
+    objects_data = load_json(V2_WATCH_OBJECTS_PATH, {"objects": []})
+    objects = objects_data.get("objects", [])
+    now = datetime.now(timezone.utc)
+    n_recorded = 0
+    for result in scored:
+        if result["v2_final_status"] not in V2_WATCH_STATES:
+            continue
+        asset_id = result["asset_id"]
+        if has_open_watch_object(asset_id, objects):
+            continue
+        coin = coin_by_id.get(asset_id, {})
+        objects.append({
+            "asset_id": asset_id, "symbol": result["symbol"], "status": "watching",
+            "price_at_watch": coin.get("price_usd"), "v2_score": result["v2_score"],
+            "v2_archetype": result["v2_archetype"], "market_regime_at_watch": market_regime,
+            "recorded_at": now.isoformat(), "note": "observation only - not a simulated trade, never counted in performance stats",
+            "engine_version": ENGINE_VERSION,
+        })
+        n_recorded += 1
+    objects_data["objects"] = objects
+    V2_WATCH_OBJECTS_PATH.write_text(json.dumps(objects_data, ensure_ascii=False, indent=2), encoding="utf-8")
+    return n_recorded
 
 
 def main():
@@ -409,6 +452,7 @@ def main():
     n_watch = sum(1 for r in scored if r["v2_final_status"] == "WATCH")
     n_gate_rejected = sum(1 for r in scored if r["v2_final_status"] == "REJECTED_BY_GATE")
     n_trades_opened = open_v2_trades(scored, coin_by_id, market_regime)
+    n_watch_recorded = record_watch_objects(scored, coin_by_id, market_regime)
 
     output = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
@@ -418,13 +462,14 @@ def main():
         "n_watch": n_watch,
         "n_gate_rejected": n_gate_rejected,
         "n_trades_opened_this_run": n_trades_opened,
+        "n_watch_objects_recorded_this_run": n_watch_recorded,
         "candidates": scored,
     }
     V2_CANDIDATES_PATH.write_text(json.dumps(output, ensure_ascii=False, indent=2), encoding="utf-8")
 
     print(f"V2 engine: {len(scored)} candidates evaluated (from {len(coins)} total this run), "
           f"{n_high_priority} HIGH_PRIORITY_SETUP, {n_watch} WATCH, {n_gate_rejected} rejected by gate, "
-          f"{n_trades_opened} new v2-shadow-trades.json entries opened.")
+          f"{n_trades_opened} new trades opened, {n_watch_recorded} new watch objects recorded.")
     for r in scored[:5]:
         print(f"  {r['symbol']:8s} score={r['v2_score']:3d} {r['v2_final_status']:20s} {r['v2_archetype']}")
 
