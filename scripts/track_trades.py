@@ -331,20 +331,43 @@ def pct_return(trade: dict) -> float:
     return round((exit_price - entry) / entry * 100, 2)
 
 
+# --- v49 (24/9/2026): Cost Model, per the audit report's objection that ---
+# performance numbers with zero fees/slippage/latency are structurally
+# optimistic. Estimates only - real spot taker fees and slippage vary by
+# exchange, pair liquidity, and order size, but a flat estimate applied
+# consistently is far more honest than assuming zero cost. Applied as a
+# ROUND-TRIP drag (entry + exit, each paying fee + slippage once) directly
+# on the trade's realized % return - status (win/loss) itself still comes
+# from whether the STRATEGY correctly hit its target vs stop, not from
+# cost; a target-hit trade can still show a smaller (or even negative) net
+# return once costs are subtracted, which is exactly the honest signal
+# this was missing before.
+FEE_BPS = 10        # ~0.10% - typical spot taker fee on major exchanges (Binance/OKX)
+SLIPPAGE_BPS = 5     # ~0.05% - conservative estimate for a liquid pair at modest paper-trade size
+ROUND_TRIP_COST_PCT = round(2 * (FEE_BPS + SLIPPAGE_BPS) / 100, 3)  # both sides pay both costs once
+
+
+def net_pct_return(trade: dict) -> float:
+    gross = pct_return(trade)
+    if gross is None:
+        return None
+    return round(gross - ROUND_TRIP_COST_PCT, 2)
+
+
 CLOSED_STATUSES = ("closed_targets_complete", "stopped", "stopped_after_partial_targets", "target_hit")
 
 
 def build_equity_curve(subset: list) -> list:
     """Sort by close date and compound returns into an equity curve starting
-    at 100, for max-drawdown and recovery-factor calculation. Uses % return
-    per trade (no position-sizing data available), so this is a proxy for a
-    real equity curve, not a dollar-accurate one."""
-    dated = [t for t in subset if t.get("date_closed") and pct_return(t) is not None]
+    at 100, for max-drawdown and recovery-factor calculation. Uses NET (of
+    estimated cost) % return per trade (no position-sizing data available),
+    so this is a proxy for a real equity curve, not a dollar-accurate one."""
+    dated = [t for t in subset if t.get("date_closed") and net_pct_return(t) is not None]
     dated.sort(key=lambda t: t["date_closed"])
     equity = 100.0
     curve = [equity]
     for t in dated:
-        equity *= (1 + pct_return(t) / 100)
+        equity *= (1 + net_pct_return(t) / 100)
         curve.append(equity)
     return curve
 
@@ -366,14 +389,15 @@ def stats_for(subset: list) -> dict:
     wins = [t for t in subset if t.get("status") in ("closed_targets_complete", "target_hit")]
     partial = [t for t in subset if t.get("status") == "stopped_after_partial_targets"]
     losses = [t for t in subset if t.get("status") == "stopped"]
-    returns = [pct_return(t) for t in subset if pct_return(t) is not None]
-    win_returns = [pct_return(t) for t in wins if pct_return(t) is not None]
-    loss_returns = [pct_return(t) for t in (losses + partial) if pct_return(t) is not None]
+    returns_gross = [pct_return(t) for t in subset if pct_return(t) is not None]
+    returns_net = [net_pct_return(t) for t in subset if net_pct_return(t) is not None]
+    win_returns_net = [net_pct_return(t) for t in wins if net_pct_return(t) is not None]
+    loss_returns_net = [net_pct_return(t) for t in (losses + partial) if net_pct_return(t) is not None]
 
-    # Profit Factor = gross profit / gross loss, using summed % returns per
-    # trade as a proxy for dollar P&L (no position-sizing data tracked)
-    gross_profit = sum(r for r in returns if r > 0)
-    gross_loss = abs(sum(r for r in returns if r < 0))
+    # Profit Factor = gross profit / gross loss, using summed NET % returns
+    # per trade as a proxy for dollar P&L (no position-sizing data tracked)
+    gross_profit = sum(r for r in returns_net if r > 0)
+    gross_loss = abs(sum(r for r in returns_net if r < 0))
     profit_factor = round(gross_profit / gross_loss, 2) if gross_loss > 0 else None
 
     # Recovery Factor = net profit / max drawdown, both from a compounded
@@ -389,9 +413,14 @@ def stats_for(subset: list) -> dict:
         "losses": len(losses),
         "stopped_after_partial_targets": len(partial),
         "win_rate_pct": round(len(wins) / n * 100, 1) if n else None,
-        "avg_return_pct": round(sum(returns) / len(returns), 2) if returns else None,
-        "avg_win_pct": round(sum(win_returns) / len(win_returns), 2) if win_returns else None,
-        "avg_loss_pct": round(sum(loss_returns) / len(loss_returns), 2) if loss_returns else None,
+        # v49: "avg_return_pct" now means NET of estimated cost (the honest,
+        # headline number) - the old gross figure is kept alongside under
+        # its own explicit name so the cost drag itself stays visible.
+        "avg_return_pct": round(sum(returns_net) / len(returns_net), 2) if returns_net else None,
+        "avg_return_pct_gross": round(sum(returns_gross) / len(returns_gross), 2) if returns_gross else None,
+        "estimated_round_trip_cost_pct": ROUND_TRIP_COST_PCT,
+        "avg_win_pct": round(sum(win_returns_net) / len(win_returns_net), 2) if win_returns_net else None,
+        "avg_loss_pct": round(sum(loss_returns_net) / len(loss_returns_net), 2) if loss_returns_net else None,
         "profit_factor": profit_factor,
         "net_profit_pct_compounded": net_profit_pct,
         "max_drawdown_pct": max_dd,
