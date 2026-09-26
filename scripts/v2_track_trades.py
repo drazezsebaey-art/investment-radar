@@ -44,6 +44,12 @@ OKX_CANDLE_LIMIT = 100      # ~16.7 days - comfortably covers the 2-week extende
 OKX_REQUEST_TIMEOUT = 15
 OKX_POLITE_DELAY = 0.3
 
+# v49 (24/9/2026): Cost Model - same estimate as scripts/track_trades.py's
+# own constants, duplicated rather than shared to keep V2 fully independent.
+FEE_BPS = 10
+SLIPPAGE_BPS = 5
+ROUND_TRIP_COST_PCT = round(2 * (FEE_BPS + SLIPPAGE_BPS) / 100, 3)
+
 
 def load_json(path: Path, default):
     if not path.exists():
@@ -163,18 +169,25 @@ def compute_performance_summary(trades: list) -> dict:
     losses = [t for t in closed if t.get("status") == "stopped"]
     expired = [t for t in closed if t.get("status") == "expired_no_resolution"]
 
-    returns = []
+    # v49 (24/9/2026): Cost Model, per the audit report - same estimate as
+    # scripts/track_trades.py, kept as an independent constant here rather
+    # than importing from that file, matching V2's isolation principle.
+    returns_gross, returns_net = [], []
     for t in closed:
         entry, exit_price = t.get("entry"), t.get("exit_price")
         if entry and exit_price is not None:
-            returns.append((exit_price - entry) / entry * 100)
+            gross = (exit_price - entry) / entry * 100
+            returns_gross.append(gross)
+            returns_net.append(gross - ROUND_TRIP_COST_PCT)
 
     return {
         "n_open": len(open_trades),
         "n_closed": len(closed),
         "wins": len(wins), "losses": len(losses), "expired_no_resolution": len(expired),
         "win_rate_pct": round(len(wins) / len(closed) * 100, 1) if closed else None,
-        "avg_return_pct": round(sum(returns) / len(returns), 2) if returns else None,
+        "avg_return_pct": round(sum(returns_net) / len(returns_net), 2) if returns_net else None,
+        "avg_return_pct_gross": round(sum(returns_gross) / len(returns_gross), 2) if returns_gross else None,
+        "estimated_round_trip_cost_pct": ROUND_TRIP_COST_PCT,
     }
 
 
