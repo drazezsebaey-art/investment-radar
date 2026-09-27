@@ -33,7 +33,8 @@ COINGECKO_API_KEY = os.environ.get("COINGECKO_API_KEY")
 
 EVAL_WINDOW_MIN_HOURS = 48    # don't judge a rejection until at least this much time has passed
 EVAL_WINDOW_MAX_HOURS = 96    # if a run was missed and this window passed too, still catch it up to here
-COUNTERFACTUAL_BATCH_SIZE = 20
+COUNTERFACTUAL_BATCH_SIZE = 10  # v60 fix (27/9/2026): was 20 - halved as part of the CoinGecko
+                                  # credit-conservation fix (see CREDIT_GATE_HOURS below)
 FAVORABLE_MOVE_PCT = 4.0      # matches the system's own smallest typical target size (V2's "fast" floor)
 
 
@@ -111,7 +112,23 @@ def build_summary(rejections: list) -> dict:
     return summary
 
 
+CREDIT_GATE_HOURS = 4  # this evaluation doesn't need every-30-min freshness - the underlying
+                        # rejections themselves aren't even eligible for evaluation until 48h old
+                        # (EVAL_WINDOW_MIN_HOURS), so running once every 4 hours loses nothing
+                        # meaningful while cutting this step's CoinGecko usage to ~1,800/month
+
+
+def is_credit_gate_open(now: datetime = None) -> bool:
+    now = now or datetime.now(timezone.utc)
+    return now.hour % CREDIT_GATE_HOURS == 0 and now.minute < 30
+
+
 def main():
+    if not is_credit_gate_open():
+        print(f"Credit-conservation gate closed (runs every {CREDIT_GATE_HOURS}h) - "
+              f"skipping this cycle's counterfactual evaluation entirely.")
+        return
+
     log = load_json(REJECTIONS_LOG_PATH, {"rejections": []})
     rejections = log.get("rejections", [])
     now = datetime.now(timezone.utc)
