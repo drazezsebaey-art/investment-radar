@@ -530,14 +530,29 @@ def detect_triangle(candles: list):
 COINGECKO_API_KEY = os.environ.get("COINGECKO_API_KEY")
 
 
-def fetch_json(url: str, params: dict) -> list:
+def fetch_json(url: str, params: dict, max_retries: int = 3) -> list:
+    """v58 fix (26/9/2026): the audit report's item 34 gap, finally addressed
+    here - a real GitHub Actions run hit a 429 at fetch_watchlist() with zero
+    retry, killing the whole scan. Even with the CoinGecko API key, bursting
+    fetch_top()'s multiple paginated calls immediately followed by
+    fetch_watchlist() can still exceed the key's per-minute quota. Retries
+    with exponential backoff (2s, 4s, 8s) specifically on 429, so a
+    transient rate-limit doesn't fail the entire run - other error types
+    still raise immediately, matching the existing fail-fast behavior."""
     full_url = url + "?" + urllib.parse.urlencode(params)
     headers = {"User-Agent": "investment-radar/4.0"}
     if COINGECKO_API_KEY:
         headers["x-cg-demo-api-key"] = COINGECKO_API_KEY
     req = urllib.request.Request(full_url, headers=headers)
-    with urllib.request.urlopen(req, timeout=30) as resp:
-        return json.loads(resp.read().decode())
+    for attempt in range(max_retries):
+        try:
+            with urllib.request.urlopen(req, timeout=30) as resp:
+                return json.loads(resp.read().decode())
+        except urllib.error.HTTPError as e:
+            if e.code == 429 and attempt < max_retries - 1:
+                time.sleep(2 ** (attempt + 1))
+                continue
+            raise
 
 
 def fetch_top(per_page=PER_PAGE, pages=PAGES) -> list:
