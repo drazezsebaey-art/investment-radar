@@ -81,6 +81,9 @@ jobs:
       - name: Evaluate past signals against current prices
         run: python scripts/evaluate_signals.py
 
+      - name: ETF pipeline news check (v61, keyless SEC EDGAR + news, own 2h gate)
+        run: python scripts/etf_news_check.py
+
       - name: Commit results
         run: |
           git config user.name "radar-bot"
