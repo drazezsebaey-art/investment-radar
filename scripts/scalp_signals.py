@@ -44,7 +44,14 @@ SCALP_MIN_SCORE = 30  # deliberately lower than AUTO_TRADE_MIN_SCORE (40) - this
 # concurrent-open-trades cap - Azez wants this track to open as many
 # trades as qualify so there's more outcome data to analyze later.
 SCALP_MIN_RR = 1.3
-SCALP_RSI_OVERBOUGHT = 75.0
+SCALP_RSI_OVERBOUGHT = 82.0  # v61 fix (27/9/2026): was 75.0 - counterfactual_check.py's evidence (16 evaluated
+                               # RSI_OVERBOUGHT rejections) showed ZERO losses all the way up to RSI 88.9, with
+                               # 9/9 wins already captured by 82. Deliberately NOT raised to the sample's extreme
+                               # (90) - this evidence all comes from one recent bullish-momentum window, and
+                               # "overbought" behaving as a continuation signal rather than a reversal warning may
+                               # be regime-specific, not a permanent truth (per the crypto engine's own "no
+                               # indicator worship" principle). 82 captures the clear, low-risk plateau without
+                               # over-fitting to a single favorable stretch.
 OPEN_STATUSES = {"open", "pending"}
 
 # v20 (22/9/2026): this track was silently reusing the MAIN swing-trade
@@ -330,7 +337,11 @@ def main():
         if reason:
             n_rejected += 1
             code = "RR_BELOW_FLOOR" if "R:R" in reason else ("RSI_OVERBOUGHT" if "RSI" in reason else "OTHER")
-            log_rejection(coin, "scalp_trade", [code], {"reason_text": reason, "entry": entry, "stop": stop, "targets": targets})
+            # v61 fix (27/9/2026): the RSI value was only ever stored inside reason_text as free
+            # text, forcing regex-parsing to recalibrate the threshold - now logged as its own field
+            rsi_value = (coin.get("indicators") or {}).get("rsi14")
+            log_rejection(coin, "scalp_trade", [code], {"reason_text": reason, "entry": entry, "stop": stop,
+                                                          "targets": targets, "rsi14": rsi_value})
             print(f"  Scalp fast-reject {coin['symbol']}: {reason}")
             continue
         trades.append(build_scalp_trade(coin))
