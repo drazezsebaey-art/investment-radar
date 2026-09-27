@@ -530,27 +530,33 @@ def detect_triangle(candles: list):
 COINGECKO_API_KEY = os.environ.get("COINGECKO_API_KEY")
 
 
-def fetch_json(url: str, params: dict, max_retries: int = 3) -> list:
-    """v58 fix (26/9/2026): the audit report's item 34 gap, finally addressed
-    here - a real GitHub Actions run hit a 429 at fetch_watchlist() with zero
-    retry, killing the whole scan. Even with the CoinGecko API key, bursting
-    fetch_top()'s multiple paginated calls immediately followed by
-    fetch_watchlist() can still exceed the key's per-minute quota. Retries
-    with exponential backoff (2s, 4s, 8s) specifically on 429, so a
-    transient rate-limit doesn't fail the entire run - other error types
-    still raise immediately, matching the existing fail-fast behavior."""
+def fetch_json(url: str, params: dict, max_retries: int = 4) -> list:
+    """v59 fix (26/9/2026): a real run still hit a persistent 429 through
+    all of v58's short backoff (2s/4s/8s) on just TWO total API calls with
+    a 1.5s gap already between them - too fast a 429 recovery to be a
+    genuinely working keyed request hitting its own quota; far more likely
+    the key silently isn't being applied (falls back to keyless by design,
+    with no visible error) and we're back on the shared, hostile IP pool.
+    Backoff extended much more generously (5s/15s/30s/60s) as a defensive
+    layer regardless of cause, and a one-line diagnostic reports whether a
+    key was found at all - without ever printing the key itself - so a
+    future failure's cause is visible in the run log instead of a guess."""
     full_url = url + "?" + urllib.parse.urlencode(params)
     headers = {"User-Agent": "investment-radar/4.0"}
     if COINGECKO_API_KEY:
         headers["x-cg-demo-api-key"] = COINGECKO_API_KEY
     req = urllib.request.Request(full_url, headers=headers)
+    backoffs = [5, 15, 30, 60]
     for attempt in range(max_retries):
         try:
             with urllib.request.urlopen(req, timeout=30) as resp:
                 return json.loads(resp.read().decode())
         except urllib.error.HTTPError as e:
             if e.code == 429 and attempt < max_retries - 1:
-                time.sleep(2 ** (attempt + 1))
+                print(f"  [diagnostic] 429 on attempt {attempt + 1}/{max_retries} "
+                      f"(API key present: {bool(COINGECKO_API_KEY)}) - "
+                      f"waiting {backoffs[attempt]}s before retry")
+                time.sleep(backoffs[attempt])
                 continue
             raise
 
