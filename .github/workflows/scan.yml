@@ -84,6 +84,12 @@ jobs:
       - name: ETF pipeline news check (v61, keyless SEC EDGAR + news, own 2h gate)
         run: python scripts/etf_news_check.py
 
+      - name: Multiple-testing guard - trials log vs code (v62)
+        run: python scripts/trials_check.py
+
+      - name: Archive decision snapshot for future walk-forward/replay (v62, own 2h gate)
+        run: python scripts/archive_snapshot.py
+
       - name: Commit results
         run: |
           git config user.name "radar-bot"
