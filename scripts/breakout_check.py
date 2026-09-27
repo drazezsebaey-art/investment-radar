@@ -227,7 +227,9 @@ RETRY_BACKOFF_BASE = 15
 # Binance pair for fired signals only), so at POLITE_DELAY=7s the run grows
 # from ~2-3min to ~4-5min at 16. Kept below 20 to leave headroom under
 # CoinGecko's free-tier rate limit rather than pushing it to the edge.
-MAX_CANDIDATES_PER_RUN = 16
+MAX_CANDIDATES_PER_RUN = 10  # v60 fix (27/9/2026): was 16 - reduced proportionally with
+                               # MAX_TOTAL_CANDIDATES_PER_RUN so escalated (priority_review) coins still
+                               # get a fair share of the smaller budget, not just rotation coverage
 
 # v37 fix (24/9/2026): the REAL root cause of runs reaching 45+ minutes,
 # found by measuring rather than guessing a timeout value. priority_review
@@ -242,7 +244,9 @@ MAX_CANDIDATES_PER_RUN = 16
 # remaining budget, the freshest (per opportunity_lifecycle's decay_state,
 # built in v33) are kept and the rest simply wait for a later run rather
 # than all cramming into this one.
-MAX_TOTAL_CANDIDATES_PER_RUN = 40
+MAX_TOTAL_CANDIDATES_PER_RUN = 20  # v60 fix (27/9/2026): was 40 - halved as part of the CoinGecko
+                                     # credit-conservation fix (see CREDIT_GATE_HOURS above); combined
+                                     # with the 3-hour gate, keeps this step within its measured budget
 DECAY_PRIORITY_ORDER = {"fresh": 0, "developing": 1, "unknown": 2, "decayed": 3}
 
 
@@ -1598,7 +1602,28 @@ def flush_signal_log(pending: list) -> None:
     SIGNAL_LOG_PATH.write_text(json.dumps(log, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
+CREDIT_GATE_HOURS = 3  # v60 fix (27/9/2026): breakout_check.py's OHLC fetches were the single
+                        # largest driver of the CoinGecko 10,000/month quota being exhausted mid-month
+                        # (measured: up to 40 calls/run x 1440 runs/month = up to 57,600/month from this
+                        # step alone). Rather than replace the data provider under time pressure, this
+                        # step now only does its real work once every CREDIT_GATE_HOURS - on a "skip" run
+                        # it exits immediately without touching radar-flags.json at all, leaving whatever
+                        # confidence_score/real_candles the last real run computed untouched (stale by up
+                        # to ~3h, never blanked). Combined with a lower MAX_TOTAL_CANDIDATES_PER_RUN, this
+                        # measured out to ~4,800/month for this step - see the math in the 27/9/2026 chat.
+
+
+def is_credit_gate_open(now: datetime = None) -> bool:
+    now = now or datetime.now(timezone.utc)
+    return now.hour % CREDIT_GATE_HOURS == 0 and now.minute < 30
+
+
 def main():
+    if not is_credit_gate_open():
+        print(f"Credit-conservation gate closed (runs every {CREDIT_GATE_HOURS}h) - "
+              f"skipping this cycle's OHLC fetch entirely, radar-flags.json left untouched.")
+        return
+
     if not RADAR_FLAGS_PATH.exists():
         print("No radar-flags.json found, skipping breakout check.")
         return
