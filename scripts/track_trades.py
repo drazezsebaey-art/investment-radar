@@ -110,6 +110,49 @@ def fetch_okx_candle_rows(symbol: str, since_iso: str):
         return None
 
 
+OKX_HISTORY_LIMIT = 100          # history-candles endpoint max per page
+OKX_MAX_BACKFILL_PAGES = 24      # 24 x 100 x 5m = ~200h (~8 days) of backfill at most
+OKX_COVERAGE_TOLERANCE_MS = 10 * 60 * 1000
+
+
+def backfill_okx_rows(symbol: str, since_ms: int, rows: list, fetch_page=None):
+    """v62 (27/9/2026, backtest-discipline audit): /market/candles with only
+    `before` returns the NEWEST <=300 bars (~25h at 5m). After any outage
+    longer than that (e.g. the CoinGecko-quota stoppage), the start of a
+    trade's life silently fell outside the fetched window, so a stop/target
+    touch in that gap was never seen - and never would be. This pages
+    backward through /market/history-candles (`after` = older than ts)
+    until the window reaches since_ms or the page cap is hit.
+    Returns (rows_sorted, fully_covered: bool)."""
+    fetch_page = fetch_page or _fetch_history_page
+    rows = sorted(rows or [], key=lambda r: r[0])
+    pages = 0
+    while rows and rows[0][0] > since_ms + OKX_COVERAGE_TOLERANCE_MS and pages < OKX_MAX_BACKFILL_PAGES:
+        older = fetch_page(symbol, rows[0][0])
+        pages += 1
+        older = [r for r in (older or []) if r[0] < rows[0][0]]
+        if not older:
+            break
+        rows = sorted(older + rows, key=lambda r: r[0])
+        time.sleep(OKX_POLITE_DELAY)
+    covered = bool(rows) and rows[0][0] <= since_ms + OKX_COVERAGE_TOLERANCE_MS
+    return [r for r in rows if r[0] >= since_ms - OKX_COVERAGE_TOLERANCE_MS] or rows, covered
+
+
+def _fetch_history_page(symbol: str, older_than_ms: int):
+    params = {"instId": f"{symbol.upper()}-USDT", "bar": OKX_CANDLE_BAR,
+              "after": older_than_ms, "limit": OKX_HISTORY_LIMIT}
+    url = f"{OKX_MARKET_API_BASE}/history-candles?{urllib.parse.urlencode(params)}"
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "investment-radar/1.0"})
+        with urllib.request.urlopen(req, timeout=OKX_REQUEST_TIMEOUT) as resp:
+            data = json.loads(resp.read().decode())
+        return [(int(r[0]), float(r[2]), float(r[3])) for r in (data.get("data") or [])]
+    except Exception as exc:  # noqa: BLE001
+        print(f"  [diagnostic] OKX history backfill failed for {symbol}: {type(exc).__name__}: {exc}")
+        return None
+
+
 def okx_range_since(cache_rows, since_iso: str):
     """Filters a symbol's cached OKX candle rows down to those at/after
     since_iso and returns the TRUE {high, high_at, low, low_at} over that
@@ -167,12 +210,23 @@ def collect_needed_symbols(all_trade_lists) -> dict:
     return needed
 
 
+OKX_COVERAGE = {}   # v62: symbol -> True if the fetched window reaches back to the earliest needed time
+
+
 def build_okx_cache(all_trade_lists) -> dict:
     needed = collect_needed_symbols(all_trade_lists)
     cache = {}
     for symbol, since in needed.items():
-        cache[symbol] = fetch_okx_candle_rows(symbol, since)
+        rows = fetch_okx_candle_rows(symbol, since)
         time.sleep(OKX_POLITE_DELAY)
+        if rows:
+            try:
+                since_ms = int(datetime.fromisoformat(since).timestamp() * 1000)
+                rows, covered = backfill_okx_rows(symbol, since_ms, rows)
+                OKX_COVERAGE[symbol] = covered
+            except (ValueError, TypeError):
+                OKX_COVERAGE[symbol] = False
+        cache[symbol] = rows
     n_hit = sum(1 for v in cache.values() if v is not None)
     print(f"OKX candle cache: {n_hit}/{len(cache)} symbols have real OHLC data this run "
           f"(the rest fall back to price-history.json sampling).")
@@ -267,9 +321,14 @@ def check_open(trade: dict, coin: dict, price_history: dict, okx_cache: dict) ->
     symbol = trade_symbol(trade)
 
     okx_result = okx_range_since(okx_cache.get(symbol), since) if symbol else None
+    hit_time = None
     if okx_result:
         low, high = okx_result["low"], okx_result["high"]
+        hit_time = okx_result.get("high_at")
         trade["last_check_source"] = "okx_candles"
+        # v62: record honestly whether the whole life of the trade was visible
+        if symbol in OKX_COVERAGE and not OKX_COVERAGE[symbol]:
+            trade["coverage_gap"] = True
     else:
         points = price_history.get(trade["asset_id"], [])
         post_fill_points = [
@@ -297,7 +356,7 @@ def check_open(trade: dict, coin: dict, price_history: dict, okx_cache: dict) ->
                 newly_hit.append(t)
 
     for t in newly_hit:
-        trade["targets_hit"].append({"target": t, "hit_at": now})
+        trade["targets_hit"].append({"target": t, "hit_at": hit_time or now})
 
     stop_hit = stop is not None and low is not None and low <= stop
     final_target = targets[-1] if targets else None
@@ -428,6 +487,29 @@ def stats_for(subset: list) -> dict:
     }
 
 
+def regime_key(trade: dict) -> str:
+    """v62: bucket = market_regime_at_entry.risk_state (+ volatility_state)."""
+    r = trade.get("market_regime_at_entry") or {}
+    risk = r.get("risk_state") or "untagged"
+    vol = r.get("volatility_state")
+    return f"{risk}|{vol}" if vol else risk
+
+
+def by_regime(closed: list) -> dict:
+    """v62 (backtest-discipline audit, item 7): same stats per market regime
+    at entry. An edge that exists in only one regime is a regime bet.
+    Trades opened before v62 have no tag and land in 'untagged'."""
+    buckets = {}
+    for t in closed:
+        buckets.setdefault(regime_key(t), []).append(t)
+    out = {}
+    for k, ts in sorted(buckets.items()):
+        st = stats_for(ts)
+        st["meaningful"] = len(ts) >= 30
+        out[k] = st
+    return out
+
+
 def summarize(trades: list) -> dict:
     closed = [t for t in trades if t.get("status") in CLOSED_STATUSES]
 
@@ -437,6 +519,8 @@ def summarize(trades: list) -> dict:
         "overall": stats_for(closed),
         "real_only": stats_for([t for t in closed if t.get("type") == "real"]),
         "paper_only": stats_for([t for t in closed if t.get("type") == "paper"]),
+        "by_regime": by_regime(closed),
+        "n_closed_with_coverage_gap": sum(1 for t in closed if t.get("coverage_gap")),
         "note": "n_closed under ~20-30 is not statistically meaningful yet — treat as directional only.",
     }
 
@@ -464,9 +548,14 @@ def process_trades(trades: list, lookup: dict, price_history: dict, okx_cache: d
         if trade.get("status") != "open":
             continue
 
-        coin = lookup.get(trade.get("asset_id"))
-        if coin is None:
-            continue
+        # v62 (backtest-discipline audit, item 2 'survivorship'): a coin that
+        # dropped out of the scanned universe (typically BECAUSE it crashed)
+        # used to be skipped forever - its open trade stayed "open", so the
+        # worst losers never reached the stats. Keep tracking it via OKX /
+        # price-history; only the current-spot fallback needs the scan entry.
+        coin = lookup.get(trade.get("asset_id")) or {}
+        if not coin:
+            trade["out_of_scan_universe"] = True
 
         before = trade.get("status")
         n_targets_before = len(trade.get("targets_hit", []))

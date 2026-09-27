@@ -23,7 +23,7 @@ the "narrow timeframe, narrow risk" intent for this track. Falls back to a
 plain 2xATR stop when the coin hasn't hit the 3-run streak yet.
 """
 import json
-ENGINE_VERSION = "scalp_signals-v35"  # v48 (24/9/2026): schema/version tagging per the audit report
+ENGINE_VERSION = "scalp_signals-v62"  # v48 (24/9/2026): schema/version tagging per the audit report
 from pathlib import Path
 from datetime import datetime, timezone
 
@@ -272,7 +272,26 @@ def log_rejection(coin: dict, stage: str, rejection_codes: list, details: dict) 
     REJECTIONS_LOG_PATH.write_text(json.dumps(log, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
-def build_scalp_trade(coin: dict) -> dict:
+def resolve_fill_time(price_observed_at, now):
+    """v62 (27/9/2026, backtest-discipline audit, item 5 'fill assumption'):
+    the entry price comes from scan.py's snapshot (radar-flags.json
+    updated_at), but trades used to be stamped filled_at = now - often
+    10-25 minutes LATER in the same run. Any move between the snapshot and
+    `now` was invisible to the tracker, i.e. the trade was credited with a
+    price that may no longer have been available. The fill is now stamped at
+    the moment the price was actually observed, so the tracker's window
+    starts where the price came from. Falls back to `now` if the snapshot
+    time is missing, unparseable, or (clock skew) in the future."""
+    try:
+        observed = datetime.fromisoformat(price_observed_at) if price_observed_at else None
+    except (TypeError, ValueError):
+        observed = None
+    if observed is None or observed > now:
+        return now.isoformat()
+    return observed.isoformat()
+
+
+def build_scalp_trade(coin: dict, market_regime: dict = None, price_observed_at: str = None) -> dict:
     entry, stop, targets, used_tf_stop = compute_stop_and_targets(coin)
     now = datetime.now(timezone.utc)
     date_str = now.date().isoformat()
@@ -296,12 +315,14 @@ def build_scalp_trade(coin: dict) -> dict:
         "targets": targets,
         "used_trend_following_stop": used_tf_stop,
         "created_at": now.isoformat(),
-        "filled_at": now.isoformat(),
+        "filled_at": resolve_fill_time(price_observed_at, now),
+        "price_observed_at": price_observed_at,
         "actual_entry": entry,
         "targets_hit": [],
         "confidence_score_at_entry": coin.get("confidence_score"),
         "score_streak_at_entry": coin.get("score_streak"),
         "signal_quality_at_entry": coin.get("signal_quality"),
+        "market_regime_at_entry": market_regime,
     }
 
 
@@ -344,7 +365,7 @@ def main():
                                                           "targets": targets, "rsi14": rsi_value})
             print(f"  Scalp fast-reject {coin['symbol']}: {reason}")
             continue
-        trades.append(build_scalp_trade(coin))
+        trades.append(build_scalp_trade(coin, radar_data.get("market_regime"), radar_data.get("updated_at")))
         n_opened += 1
 
     trades_data["trades"] = trades

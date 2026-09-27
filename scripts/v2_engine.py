@@ -37,7 +37,7 @@ opening (step 18) and its own target framework (step 17) are separate,
 later pieces - this step only discovers and scores.
 """
 import json
-ENGINE_VERSION = "v2_engine-v47"  # v48 (24/9/2026): schema/version tagging per the audit report
+ENGINE_VERSION = "v2_engine-v62"  # v48 (24/9/2026): schema/version tagging per the audit report
 from pathlib import Path
 from datetime import datetime, timezone
 
@@ -344,7 +344,7 @@ def has_open_v2_trade(asset_id, trades: list) -> bool:
     return any(t.get("asset_id") == asset_id and t.get("status") == "open" for t in trades)
 
 
-def build_v2_trade(coin: dict, result: dict, market_regime: dict, now: datetime) -> dict:
+def build_v2_trade(coin: dict, result: dict, market_regime: dict, now: datetime, price_observed_at: str = None) -> dict:
     tf = result["v2_target_framework"]
     feasible_targets = [t for t in tf["targets"] if t["feasible"]]
     date_str = now.date().isoformat()
@@ -361,11 +361,14 @@ def build_v2_trade(coin: dict, result: dict, market_regime: dict, now: datetime)
         "v2_archetype": result["v2_archetype"], "funnel_stage": result["funnel_stage"],
         "market_regime_at_entry": market_regime,
         "date_opened": date_str, "created_at": now.isoformat(), "filled_at": now.isoformat(),
+        # v62: when the entry price was actually observed (scan snapshot) -
+        # v2_track_trades.py starts its candle window here, not at created_at
+        "price_observed_at": price_observed_at,
         "engine_version": ENGINE_VERSION,
     }
 
 
-def open_v2_trades(scored: list, coin_by_id: dict, market_regime: dict) -> int:
+def open_v2_trades(scored: list, coin_by_id: dict, market_regime: dict, price_observed_at: str = None) -> int:
     trades_data = load_json(V2_SHADOW_TRADES_PATH, {"trades": []})
     trades = trades_data.get("trades", [])
     now = datetime.now(timezone.utc)
@@ -377,7 +380,7 @@ def open_v2_trades(scored: list, coin_by_id: dict, market_regime: dict) -> int:
         if has_open_v2_trade(asset_id, trades):
             continue
         coin = coin_by_id.get(asset_id, {})
-        trades.append(build_v2_trade(coin, result, market_regime, now))
+        trades.append(build_v2_trade(coin, result, market_regime, now, price_observed_at))
         n_opened += 1
     trades_data["trades"] = trades
     V2_SHADOW_TRADES_PATH.write_text(json.dumps(trades_data, ensure_ascii=False, indent=2), encoding="utf-8")
@@ -451,7 +454,7 @@ def main():
     n_high_priority = sum(1 for r in scored if r["v2_final_status"] == "HIGH_PRIORITY_SETUP")
     n_watch = sum(1 for r in scored if r["v2_final_status"] == "WATCH")
     n_gate_rejected = sum(1 for r in scored if r["v2_final_status"] == "REJECTED_BY_GATE")
-    n_trades_opened = open_v2_trades(scored, coin_by_id, market_regime)
+    n_trades_opened = open_v2_trades(scored, coin_by_id, market_regime, radar.get("updated_at"))
     n_watch_recorded = record_watch_objects(scored, coin_by_id, market_regime)
 
     output = {

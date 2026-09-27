@@ -40,7 +40,7 @@ filled_at guards already handle that either way, but this ordering is
 the more natural fit and mirrors how manual trades were added).
 """
 import json
-ENGINE_VERSION = "auto_paper_trade-v37"  # v48 (24/9/2026): schema/version tagging per the audit report -
+ENGINE_VERSION = "auto_paper_trade-v62"  # v48 (24/9/2026): schema/version tagging per the audit report -
                                           # every trade now records exactly which code version produced it,
                                           # so a trade found weeks from now can be traced to its exact logic
 from pathlib import Path
@@ -265,8 +265,27 @@ def classify_entry_archetype(triggered_by: str) -> str:
     return "unknown"
 
 
+def resolve_fill_time(price_observed_at, now):
+    """v62 (27/9/2026, backtest-discipline audit, item 5 'fill assumption'):
+    the entry price comes from scan.py's snapshot (radar-flags.json
+    updated_at), but trades used to be stamped filled_at = now - often
+    10-25 minutes LATER in the same run. Any move between the snapshot and
+    `now` was invisible to the tracker, i.e. the trade was credited with a
+    price that may no longer have been available. The fill is now stamped at
+    the moment the price was actually observed, so the tracker's window
+    starts where the price came from. Falls back to `now` if the snapshot
+    time is missing, unparseable, or (clock skew) in the future."""
+    try:
+        observed = datetime.fromisoformat(price_observed_at) if price_observed_at else None
+    except (TypeError, ValueError):
+        observed = None
+    if observed is None or observed > now:
+        return now.isoformat()
+    return observed.isoformat()
+
+
 def build_trade(coin: dict, entry: float, stop: float, kind: str, used_tf_stop: bool,
-                 reason: str = None, now: datetime = None) -> dict:
+                 reason: str = None, now: datetime = None, market_regime: dict = None, price_observed_at: str = None) -> dict:
     risk = entry - stop
     targets = [round(entry + risk * mult, 8) for mult in RISK_REWARD_TIERS]
     now = now or datetime.now(timezone.utc)
@@ -296,11 +315,15 @@ def build_trade(coin: dict, entry: float, stop: float, kind: str, used_tf_stop: 
         "used_trend_following_stop": used_tf_stop,
         "targets": targets,
         "created_at": now.isoformat(),
-        "filled_at": now.isoformat(),
+        "filled_at": resolve_fill_time(price_observed_at, now),
+        "price_observed_at": price_observed_at,
         "actual_entry": entry,
         "targets_hit": [],
         "confidence_score_at_entry": coin.get("confidence_score"),
         "signal_quality_at_entry": coin.get("signal_quality"),
+        # v62: regime at entry, so performance can be split bull/bear/chop
+        # (the backtest-discipline audit's item 7) - V2 already had this.
+        "market_regime_at_entry": market_regime,
     }
     if reason:
         trade["rejected_reason"] = reason
@@ -315,6 +338,8 @@ def main():
     trades = trades_data.get("trades", [])
     shadow_trades = shadow_data.get("trades", [])
     now = datetime.now(timezone.utc)
+    market_regime = radar_data.get("market_regime")
+    price_observed_at = radar_data.get("updated_at")
 
     fired = get_fired_coins(radar_data)
     n_auto_opened = 0
@@ -367,7 +392,8 @@ def main():
                     f"promoted to a real auto trade at confidence_score {score}"
                 )
                 n_promoted += 1
-            trades.append(build_trade(coin, entry, stop, kind="auto", used_tf_stop=used_tf_stop, now=now))
+            trades.append(build_trade(coin, entry, stop, kind="auto", used_tf_stop=used_tf_stop, now=now,
+                                      market_regime=market_regime, price_observed_at=price_observed_at))
             n_auto_opened += 1
         else:
             if open_shadow is not None:
@@ -377,7 +403,8 @@ def main():
                 continue
             reason = f"confidence_score {score} < AUTO_TRADE_MIN_SCORE {AUTO_TRADE_MIN_SCORE}"
             shadow_trades.append(
-                build_trade(coin, entry, stop, kind="shadow", used_tf_stop=used_tf_stop, reason=reason, now=now)
+                build_trade(coin, entry, stop, kind="shadow", used_tf_stop=used_tf_stop, reason=reason, now=now,
+                            market_regime=market_regime, price_observed_at=price_observed_at)
             )
             n_shadow_logged += 1
 

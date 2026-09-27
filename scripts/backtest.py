@@ -70,6 +70,18 @@ MIN_LOOKBACK_CANDLES = 60        # need enough history before we start simulatin
 FORWARD_WINDOW_CANDLES = 12      # ~2 days at 4h - how far forward we measure the outcome
 BASELINE_SAMPLE_EVERY = 8        # sample every Nth non-signal candle as a baseline point (cost control)
 
+# v62 (27/9/2026) backtest-discipline audit fixes:
+#  - costs: same round-trip estimate as track_trades.py (10bps fee + 5bps
+#    slippage per side) applied to signal AND baseline outcomes alike
+#  - fill: enter at the NEXT candle's open, not the close of the very candle
+#    whose close produced the signal (that close is only known once it's gone)
+#  - overlap: a new signal on the same coin is ignored until the previous
+#    signal's forward window has ended - overlapping windows re-count the same
+#    price move and inflate n without adding independent evidence
+FEE_BPS = 10
+SLIPPAGE_BPS = 5
+ROUND_TRIP_COST_PCT = round(2 * (FEE_BPS + SLIPPAGE_BPS) / 100, 3)
+
 REQUEST_TIMEOUT = 20
 POLITE_DELAY = 7
 MAX_RETRIES = 3
@@ -150,6 +162,7 @@ def simulate_coin(coin_id: str, candles: list) -> list:
     the outcome from candles after it."""
     results = []
     n = len(candles)
+    next_allowed_signal_i = -1
     for i in range(MIN_LOOKBACK_CANDLES, n - FORWARD_WINDOW_CANDLES):
         known_so_far = candles[: i + 1]
         zone = find_resistance_zone(known_so_far)
@@ -157,12 +170,18 @@ def simulate_coin(coin_id: str, candles: list) -> list:
         if zone is not None:
             is_signal = check_breakout(known_so_far, zone)
 
+        if is_signal and i < next_allowed_signal_i:
+            continue  # v62: overlapping window of an earlier signal - not independent evidence
+        if is_signal:
+            next_allowed_signal_i = i + FORWARD_WINDOW_CANDLES
+
         if not is_signal and (i % BASELINE_SAMPLE_EVERY != 0):
             continue  # skip most non-signal points to control output size, keep a sample as baseline
 
-        entry_close = candles[i][4]
+        entry_close = candles[i + 1][1]          # v62: next candle's OPEN (first tradeable price)
         exit_close = candles[i + FORWARD_WINDOW_CANDLES][4]
-        pct_change = round((exit_close - entry_close) / entry_close * 100, 2) if entry_close else None
+        pct_change = (round((exit_close - entry_close) / entry_close * 100 - ROUND_TRIP_COST_PCT, 2)
+                      if entry_close else None)  # v62: net of estimated round-trip cost
 
         results.append({
             "coin_id": coin_id,
@@ -248,6 +267,10 @@ def main():
     output = {
         "generated_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
         "note": (
+            "v62: returns are NET of an estimated 0.3% round-trip cost, entries use the NEXT "
+            "candle's open, overlapping signal windows are de-duplicated. KNOWN LIMITS (not "
+            "fixed, deferred): the coin list is today's survivors (survivorship bias) and a "
+            "30-day window usually covers a single market regime - do not generalise. "
             "Tests the resistance+breakout logic ONLY (no volume/trend/VWAP confirmation - "
             "see script docstring for why). n under ~30 is directional only, not conclusive. "
             "overall_buy_and_hold_avg_pct is the simple average of each coin's buy-and-hold "

@@ -188,7 +188,38 @@ def compute_performance_summary(trades: list) -> dict:
         "avg_return_pct": round(sum(returns_net) / len(returns_net), 2) if returns_net else None,
         "avg_return_pct_gross": round(sum(returns_gross) / len(returns_gross), 2) if returns_gross else None,
         "estimated_round_trip_cost_pct": ROUND_TRIP_COST_PCT,
+        "by_regime": by_regime_split(closed),
     }
+
+
+def regime_key(trade: dict) -> str:
+    """v62: bucket = market_regime_at_entry.risk_state (+ volatility_state)."""
+    r = trade.get("market_regime_at_entry") or {}
+    risk = r.get("risk_state") or "untagged"
+    vol = r.get("volatility_state")
+    return f"{risk}|{vol}" if vol else risk
+
+
+def by_regime_split(closed: list) -> dict:
+    """v62 (backtest-discipline audit, item 7): the same edge must be shown
+    per market regime - an edge that only exists in one regime is a regime
+    bet, not an edge. Trades opened before v62 carry no tag -> 'untagged'."""
+    buckets = {}
+    for t in closed:
+        buckets.setdefault(regime_key(t), []).append(t)
+    out = {}
+    for k, ts in sorted(buckets.items()):
+        wins = [t for t in ts if t.get("status") == "closed_targets_complete"]
+        nets = []
+        for t in ts:
+            e, x = t.get("entry"), t.get("exit_price")
+            if e and x is not None:
+                nets.append((x - e) / e * 100 - ROUND_TRIP_COST_PCT)
+        out[k] = {"n_closed": len(ts),
+                  "win_rate_pct": round(len(wins) / len(ts) * 100, 1) if ts else None,
+                  "avg_return_pct": round(sum(nets) / len(nets), 2) if nets else None,
+                  "meaningful": len(ts) >= 30}
+    return out
 
 
 def main():
@@ -200,7 +231,9 @@ def main():
     n_stopped, n_completed, n_expired = 0, 0, 0
     for trade in open_trades:
         symbol = trade.get("symbol")
-        since_iso = trade.get("created_at")
+        # v62: start the window where the entry price was observed (scan
+        # snapshot), not when the trade record was written later in the run
+        since_iso = trade.get("price_observed_at") or trade.get("created_at")
         candle_rows = fetch_okx_candle_rows(symbol, since_iso)
         time.sleep(OKX_POLITE_DELAY)
         current_price = fetch_current_spot(symbol)
