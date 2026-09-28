@@ -82,35 +82,45 @@ jobs:
         run: python scripts/evaluate_signals.py
 
       - name: ETF pipeline news check (v61, keyless SEC EDGAR + news, own 2h gate)
+        if: always()   # v65.1: keyless layers keep running even when scan.py fails (e.g. CoinGecko quota)
         run: python scripts/etf_news_check.py
 
       - name: Derivatives snapshot - OKX funding/OI/long-short/taker/liquidations (v63, keyless, own 1h gate)
+        if: always()   # v65.1: keyless layers keep running even when scan.py fails (e.g. CoinGecko quota)
         run: python scripts/derivatives_snapshot.py
 
       - name: Correction monitor - BTC Q4 scenario + per-coin correction status (v65, OKX keyless, 2h gate)
+        if: always()   # v65.1: keyless layers keep running even when scan.py fails (e.g. CoinGecko quota)
         run: python scripts/correction_monitor.py
 
       - name: Fundamentals - DefiLlama revenue / holders revenue + Snapshot votes (v64, keyless, daily gate)
+        if: always()   # v65.1: keyless layers keep running even when scan.py fails (e.g. CoinGecko quota)
         run: python scripts/fundamentals_revenue.py
 
       - name: Altseason regime - BTC dominance, ETH/BTC, breadth, stablecoins (v64, keyless, 4h gate)
+        if: always()   # v65.1: keyless layers keep running even when scan.py fails (e.g. CoinGecko quota)
         run: python scripts/altseason_regime.py
 
       - name: Macro / gold - FRED real yield + dollar, CFTC COT gold (v64, keyless, 6h gate)
+        if: always()   # v65.1: keyless layers keep running even when scan.py fails (e.g. CoinGecko quota)
         env:
           FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
         run: python scripts/macro_gold.py
 
       - name: Pre-pump candidates + forward test (v64, no network except fallback prices)
+        if: always()   # v65.1: keyless layers keep running even when scan.py fails (e.g. CoinGecko quota)
         run: python scripts/prepump_watchlist.py
 
       - name: Multiple-testing guard - trials log vs code (v62)
+        if: always()   # v65.1: keyless layers keep running even when scan.py fails (e.g. CoinGecko quota)
         run: python scripts/trials_check.py
 
       - name: Archive decision snapshot for future walk-forward/replay (v62, own 2h gate)
+        if: always()   # v65.1: keyless layers keep running even when scan.py fails (e.g. CoinGecko quota)
         run: python scripts/archive_snapshot.py
 
       - name: Commit results
+        if: always()   # v65.1: keyless layers keep running even when scan.py fails (e.g. CoinGecko quota)
         run: |
           git config user.name "radar-bot"
           git config user.email "radar-bot@users.noreply.github.com"
