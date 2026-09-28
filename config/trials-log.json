@@ -1,43 +1,262 @@
 {
   "_doc": "v62 (27/9/2026) - every change to a tunable threshold/weight is a TRIAL and counts against the system (multiple-testing). Rules: (1) no threshold change on fewer than MIN_SAMPLE_FOR_CHANGE outcomes; (2) the evidence must come from data NOT used to pick the new value, or the entry is marked in_sample=true and must be re-validated before it is trusted; (3) every change adds an entry here AND updates tracked_parameters.current_value - scripts/trials_check.py warns when code and this file disagree.",
   "min_sample_for_change": 30,
-  "trials_count_total": 9,
+  "trials_count_total": 10,
   "tracked_parameters": [
-    {"name": "AUTO_TRADE_MIN_SCORE", "file": "scripts/auto_paper_trade.py", "current_value": 40},
-    {"name": "MAX_FALLBACK_STOP_DISTANCE_PCT", "file": "scripts/auto_paper_trade.py", "current_value": 25.0},
-    {"name": "RISK_REWARD_TIERS", "file": "scripts/auto_paper_trade.py", "current_value": [1.5, 2.5, 4.0]},
-    {"name": "SCALP_MIN_SCORE", "file": "scripts/scalp_signals.py", "current_value": 30},
-    {"name": "SCALP_MIN_RR", "file": "scripts/scalp_signals.py", "current_value": 1.3},
-    {"name": "SCALP_RSI_OVERBOUGHT", "file": "scripts/scalp_signals.py", "current_value": 82.0},
-    {"name": "SCALP_ATR_STOP_MULT", "file": "scripts/scalp_signals.py", "current_value": 0.75},
-    {"name": "SCALP_TARGET_RISK_MULTS", "file": "scripts/scalp_signals.py", "current_value": [1.5, 2.5, 4.0]},
-    {"name": "TREND_FOLLOWING_MIN_SCORE", "file": "scripts/breakout_check.py", "current_value": 38},
-    {"name": "TREND_FOLLOWING_MIN_STREAK", "file": "scripts/breakout_check.py", "current_value": 3},
-    {"name": "TREND_FOLLOWING_ATR_STOP_MULT", "file": "scripts/breakout_check.py", "current_value": 2.0},
-    {"name": "RS_STRONG_OUTPERFORM_PCT", "file": "scripts/breakout_check.py", "current_value": 15.0},
-    {"name": "SCORE_HIGH_PRIORITY", "file": "scripts/v2_engine.py", "current_value": 70},
-    {"name": "SCORE_WATCH", "file": "scripts/v2_engine.py", "current_value": 55}
+    {
+      "name": "AUTO_TRADE_MIN_SCORE",
+      "file": "scripts/auto_paper_trade.py",
+      "current_value": 40
+    },
+    {
+      "name": "MAX_FALLBACK_STOP_DISTANCE_PCT",
+      "file": "scripts/auto_paper_trade.py",
+      "current_value": 25.0
+    },
+    {
+      "name": "RISK_REWARD_TIERS",
+      "file": "scripts/auto_paper_trade.py",
+      "current_value": [
+        1.5,
+        2.5,
+        4.0
+      ]
+    },
+    {
+      "name": "SCALP_MIN_SCORE",
+      "file": "scripts/scalp_signals.py",
+      "current_value": 30
+    },
+    {
+      "name": "SCALP_MIN_RR",
+      "file": "scripts/scalp_signals.py",
+      "current_value": 1.3
+    },
+    {
+      "name": "SCALP_RSI_OVERBOUGHT",
+      "file": "scripts/scalp_signals.py",
+      "current_value": 82.0
+    },
+    {
+      "name": "SCALP_ATR_STOP_MULT",
+      "file": "scripts/scalp_signals.py",
+      "current_value": 0.75
+    },
+    {
+      "name": "SCALP_TARGET_RISK_MULTS",
+      "file": "scripts/scalp_signals.py",
+      "current_value": [
+        1.5,
+        2.5,
+        4.0
+      ]
+    },
+    {
+      "name": "TREND_FOLLOWING_MIN_SCORE",
+      "file": "scripts/breakout_check.py",
+      "current_value": 38
+    },
+    {
+      "name": "TREND_FOLLOWING_MIN_STREAK",
+      "file": "scripts/breakout_check.py",
+      "current_value": 3
+    },
+    {
+      "name": "TREND_FOLLOWING_ATR_STOP_MULT",
+      "file": "scripts/breakout_check.py",
+      "current_value": 2.0
+    },
+    {
+      "name": "RS_STRONG_OUTPERFORM_PCT",
+      "file": "scripts/breakout_check.py",
+      "current_value": 15.0
+    },
+    {
+      "name": "SCORE_HIGH_PRIORITY",
+      "file": "scripts/v2_engine.py",
+      "current_value": 70
+    },
+    {
+      "name": "SCORE_WATCH",
+      "file": "scripts/v2_engine.py",
+      "current_value": 55
+    },
+    {
+      "name": "DERIV_OI_MCAP_EXTREME_PCT",
+      "file": "scripts/derivatives_snapshot.py",
+      "current_value": 20.0
+    },
+    {
+      "name": "DERIV_TOP_POS_CROWDED",
+      "file": "scripts/derivatives_snapshot.py",
+      "current_value": 2.5
+    },
+    {
+      "name": "DERIV_FUNDING_HOT_PCTL",
+      "file": "scripts/derivatives_snapshot.py",
+      "current_value": 80.0
+    },
+    {
+      "name": "DERIV_DELEVERAGE_OI_DROP_PCT",
+      "file": "scripts/derivatives_snapshot.py",
+      "current_value": -15.0
+    },
+    {
+      "name": "DERIV_TAKER_SELL_DOMINANT",
+      "file": "scripts/derivatives_snapshot.py",
+      "current_value": 0.85
+    },
+    {
+      "name": "DERIV_TAKER_BUY_DOMINANT",
+      "file": "scripts/derivatives_snapshot.py",
+      "current_value": 1.15
+    },
+    {
+      "name": "DERIV_LIQ_DOMINANCE_X",
+      "file": "scripts/derivatives_snapshot.py",
+      "current_value": 3.0
+    }
   ],
   "trials": [
-    {"id": "T001", "version": "v14", "date": "2026-09-21", "parameter": "TREND_FOLLOWING_MIN_SCORE / MIN_STREAK", "old": null, "new": "38 / 3",
-     "evidence": "NEAR/AVAX missed-opportunity review", "n": 2, "in_sample": true, "revalidated": false, "retroactive_entry": true},
-    {"id": "T002", "version": "v14", "date": "2026-09-21", "parameter": "RS bonus (+15 pts)", "old": null, "new": "+15 if RS >= 15pp",
-     "evidence": "designed to lift NEAR's score", "n": 1, "in_sample": true, "revalidated": false, "retroactive_entry": true},
-    {"id": "T003", "version": "v20", "date": "2026-09-22", "parameter": "SCALP_ATR_STOP_MULT", "old": 2.0, "new": 0.75,
-     "evidence": "0/28 scalp trades closed in 4-23h (sizing mismatch, design fix)", "n": 28, "in_sample": true, "revalidated": false, "retroactive_entry": true},
-    {"id": "T004", "version": "v27", "date": "2026-09-23", "parameter": "SCALP_TARGET_RISK_MULTS", "old": [1.0, 1.75, 3.0], "new": [1.5, 2.5, 4.0],
-     "evidence": "bug fix - R:R was mathematically fixed at 1.0 (not a fitting trial, logged for completeness)", "n": null, "in_sample": false, "revalidated": null, "retroactive_entry": true},
-    {"id": "T005", "version": "v26", "date": "2026-09-23", "parameter": "MAX_FALLBACK_STOP_DISTANCE_PCT", "old": null, "new": 20.0,
-     "evidence": "AR stop 54% from entry (risk cap, design rule)", "n": 1, "in_sample": true, "revalidated": false, "retroactive_entry": true},
-    {"id": "T006", "version": "v57", "date": "2026-09-26", "parameter": "MAX_FALLBACK_STOP_DISTANCE_PCT", "old": 20.0, "new": 25.0,
-     "evidence": "counterfactual: 7/7 STOP_TOO_WIDE rejections between 20-25% would have won", "n": 7, "in_sample": true, "revalidated": false,
-     "retroactive_entry": true, "flag": "BELOW_MIN_SAMPLE - n=7 < 30, all from one bullish window; re-validate on post-1/10 data before trusting"},
-    {"id": "T007", "version": "v61", "date": "2026-09-27", "parameter": "SCALP_RSI_OVERBOUGHT", "old": 75.0, "new": 82.0,
-     "evidence": "counterfactual: 16 RSI_OVERBOUGHT rejections, 0 losses up to RSI 88.9", "n": 16, "in_sample": true, "revalidated": false,
-     "retroactive_entry": true, "flag": "BELOW_MIN_SAMPLE - n=16 < 30, single momentum regime (author already noted regime risk)"},
-    {"id": "T008", "version": "v3", "date": "2026-09-19", "parameter": "SCALP_MIN_RR", "old": null, "new": 1.3,
-     "evidence": "mirrors SCALP fund gate (design rule)", "n": null, "in_sample": false, "revalidated": null, "retroactive_entry": true},
-    {"id": "T009", "version": "v9", "date": "2026-09-19", "parameter": "AUTO_TRADE_MIN_SCORE", "old": null, "new": 40,
-     "evidence": "agreed starting threshold (design rule)", "n": null, "in_sample": false, "revalidated": null, "retroactive_entry": true}
+    {
+      "id": "T001",
+      "version": "v14",
+      "date": "2026-09-21",
+      "parameter": "TREND_FOLLOWING_MIN_SCORE / MIN_STREAK",
+      "old": null,
+      "new": "38 / 3",
+      "evidence": "NEAR/AVAX missed-opportunity review",
+      "n": 2,
+      "in_sample": true,
+      "revalidated": false,
+      "retroactive_entry": true
+    },
+    {
+      "id": "T002",
+      "version": "v14",
+      "date": "2026-09-21",
+      "parameter": "RS bonus (+15 pts)",
+      "old": null,
+      "new": "+15 if RS >= 15pp",
+      "evidence": "designed to lift NEAR's score",
+      "n": 1,
+      "in_sample": true,
+      "revalidated": false,
+      "retroactive_entry": true
+    },
+    {
+      "id": "T003",
+      "version": "v20",
+      "date": "2026-09-22",
+      "parameter": "SCALP_ATR_STOP_MULT",
+      "old": 2.0,
+      "new": 0.75,
+      "evidence": "0/28 scalp trades closed in 4-23h (sizing mismatch, design fix)",
+      "n": 28,
+      "in_sample": true,
+      "revalidated": false,
+      "retroactive_entry": true
+    },
+    {
+      "id": "T004",
+      "version": "v27",
+      "date": "2026-09-23",
+      "parameter": "SCALP_TARGET_RISK_MULTS",
+      "old": [
+        1.0,
+        1.75,
+        3.0
+      ],
+      "new": [
+        1.5,
+        2.5,
+        4.0
+      ],
+      "evidence": "bug fix - R:R was mathematically fixed at 1.0 (not a fitting trial, logged for completeness)",
+      "n": null,
+      "in_sample": false,
+      "revalidated": null,
+      "retroactive_entry": true
+    },
+    {
+      "id": "T005",
+      "version": "v26",
+      "date": "2026-09-23",
+      "parameter": "MAX_FALLBACK_STOP_DISTANCE_PCT",
+      "old": null,
+      "new": 20.0,
+      "evidence": "AR stop 54% from entry (risk cap, design rule)",
+      "n": 1,
+      "in_sample": true,
+      "revalidated": false,
+      "retroactive_entry": true
+    },
+    {
+      "id": "T006",
+      "version": "v57",
+      "date": "2026-09-26",
+      "parameter": "MAX_FALLBACK_STOP_DISTANCE_PCT",
+      "old": 20.0,
+      "new": 25.0,
+      "evidence": "counterfactual: 7/7 STOP_TOO_WIDE rejections between 20-25% would have won",
+      "n": 7,
+      "in_sample": true,
+      "revalidated": false,
+      "retroactive_entry": true,
+      "flag": "BELOW_MIN_SAMPLE - n=7 < 30, all from one bullish window; re-validate on post-1/10 data before trusting"
+    },
+    {
+      "id": "T007",
+      "version": "v61",
+      "date": "2026-09-27",
+      "parameter": "SCALP_RSI_OVERBOUGHT",
+      "old": 75.0,
+      "new": 82.0,
+      "evidence": "counterfactual: 16 RSI_OVERBOUGHT rejections, 0 losses up to RSI 88.9",
+      "n": 16,
+      "in_sample": true,
+      "revalidated": false,
+      "retroactive_entry": true,
+      "flag": "BELOW_MIN_SAMPLE - n=16 < 30, single momentum regime (author already noted regime risk)"
+    },
+    {
+      "id": "T008",
+      "version": "v3",
+      "date": "2026-09-19",
+      "parameter": "SCALP_MIN_RR",
+      "old": null,
+      "new": 1.3,
+      "evidence": "mirrors SCALP fund gate (design rule)",
+      "n": null,
+      "in_sample": false,
+      "revalidated": null,
+      "retroactive_entry": true
+    },
+    {
+      "id": "T009",
+      "version": "v9",
+      "date": "2026-09-19",
+      "parameter": "AUTO_TRADE_MIN_SCORE",
+      "old": null,
+      "new": 40,
+      "evidence": "agreed starting threshold (design rule)",
+      "n": null,
+      "in_sample": false,
+      "revalidated": null,
+      "retroactive_entry": true
+    },
+    {
+      "id": "T010",
+      "version": "v63",
+      "date": "2026-09-27",
+      "parameter": "DERIV_* flag thresholds (7)",
+      "old": null,
+      "new": "initial values",
+      "evidence": "design defaults from the NEAR/ONDO/TRB Coinglass reads (27/9) - descriptive flags only, no trade gating",
+      "n": null,
+      "in_sample": false,
+      "revalidated": null,
+      "retroactive_entry": false
+    }
   ]
 }
