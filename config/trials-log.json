@@ -1,7 +1,7 @@
 {
   "_doc": "v62 (27/9/2026) - every change to a tunable threshold/weight is a TRIAL and counts against the system (multiple-testing). Rules: (1) no threshold change on fewer than MIN_SAMPLE_FOR_CHANGE outcomes; (2) the evidence must come from data NOT used to pick the new value, or the entry is marked in_sample=true and must be re-validated before it is trusted; (3) every change adds an entry here AND updates tracked_parameters.current_value - scripts/trials_check.py warns when code and this file disagree.",
   "min_sample_for_change": 30,
-  "trials_count_total": 10,
+  "trials_count_total": 11,
   "tracked_parameters": [
     {
       "name": "AUTO_TRADE_MIN_SCORE",
@@ -115,6 +115,91 @@
       "name": "DERIV_LIQ_DOMINANCE_X",
       "file": "scripts/derivatives_snapshot.py",
       "current_value": 3.0
+    },
+    {
+      "name": "ALT_ETHBTC_TRIGGER",
+      "file": "scripts/altseason_regime.py",
+      "current_value": 0.03426
+    },
+    {
+      "name": "ALT_BTC_DOM_ROTATION",
+      "file": "scripts/altseason_regime.py",
+      "current_value": 55.0
+    },
+    {
+      "name": "ALT_BTC_DOM_LINE",
+      "file": "scripts/altseason_regime.py",
+      "current_value": 60.0
+    },
+    {
+      "name": "ALT_BREADTH_ALTSEASON_PCT",
+      "file": "scripts/altseason_regime.py",
+      "current_value": 75.0
+    },
+    {
+      "name": "FUND_MIN_REVENUE_30D_USD",
+      "file": "scripts/fundamentals_revenue.py",
+      "current_value": 300000
+    },
+    {
+      "name": "FUND_ACCEL_30D_PCT",
+      "file": "scripts/fundamentals_revenue.py",
+      "current_value": 30.0
+    },
+    {
+      "name": "FUND_HIGH_HOLDER_YIELD_PCT",
+      "file": "scripts/fundamentals_revenue.py",
+      "current_value": 8.0
+    },
+    {
+      "name": "FUND_HIGH_REVENUE_YIELD_PCT",
+      "file": "scripts/fundamentals_revenue.py",
+      "current_value": 15.0
+    },
+    {
+      "name": "MACRO_DIVERGENCE_GOLD_PCT",
+      "file": "scripts/macro_gold.py",
+      "current_value": 2.0
+    },
+    {
+      "name": "MACRO_DIVERGENCE_RY_BP",
+      "file": "scripts/macro_gold.py",
+      "current_value": 10.0
+    },
+    {
+      "name": "MACRO_COT_CROWDED_PCTL",
+      "file": "scripts/macro_gold.py",
+      "current_value": 85.0
+    },
+    {
+      "name": "PREPUMP_MIN_CATEGORIES",
+      "file": "scripts/prepump_watchlist.py",
+      "current_value": 2
+    },
+    {
+      "name": "PREPUMP_MAX_7D_PCT",
+      "file": "scripts/prepump_watchlist.py",
+      "current_value": 30.0
+    },
+    {
+      "name": "PREPUMP_MIN_MCAP_USD",
+      "file": "scripts/prepump_watchlist.py",
+      "current_value": 50000000
+    },
+    {
+      "name": "PREPUMP_LEADER_7D_PCT",
+      "file": "scripts/prepump_watchlist.py",
+      "current_value": 40.0
+    },
+    {
+      "name": "PREPUMP_PEER_MAX_7D_PCT",
+      "file": "scripts/prepump_watchlist.py",
+      "current_value": 10.0
+    },
+    {
+      "name": "PREPUMP_HIT_PCT",
+      "file": "scripts/prepump_watchlist.py",
+      "current_value": 20.0
     }
   ],
   "trials": [
@@ -253,6 +338,19 @@
       "old": null,
       "new": "initial values",
       "evidence": "design defaults from the NEAR/ONDO/TRB Coinglass reads (27/9) - descriptive flags only, no trade gating",
+      "n": null,
+      "in_sample": false,
+      "revalidated": null,
+      "retroactive_entry": false
+    },
+    {
+      "id": "T011",
+      "version": "v64",
+      "date": "2026-09-28",
+      "parameter": "ALT_* / FUND_* / MACRO_* / PREPUMP_* (17)",
+      "old": null,
+      "new": "initial values",
+      "evidence": "design defaults; PREPUMP candidates are forward-tested in data/prepump-stats.json - no threshold change before n>=30 evaluated",
       "n": null,
       "in_sample": false,
       "revalidated": null,
