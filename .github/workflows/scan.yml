@@ -87,6 +87,9 @@ jobs:
       - name: Derivatives snapshot - OKX funding/OI/long-short/taker/liquidations (v63, keyless, own 1h gate)
         run: python scripts/derivatives_snapshot.py
 
+      - name: Correction monitor - BTC Q4 scenario + per-coin correction status (v65, OKX keyless, 2h gate)
+        run: python scripts/correction_monitor.py
+
       - name: Fundamentals - DefiLlama revenue / holders revenue + Snapshot votes (v64, keyless, daily gate)
         run: python scripts/fundamentals_revenue.py
 
