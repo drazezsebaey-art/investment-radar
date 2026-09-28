@@ -1,7 +1,7 @@
 {
   "_doc": "v62 (27/9/2026) - every change to a tunable threshold/weight is a TRIAL and counts against the system (multiple-testing). Rules: (1) no threshold change on fewer than MIN_SAMPLE_FOR_CHANGE outcomes; (2) the evidence must come from data NOT used to pick the new value, or the entry is marked in_sample=true and must be re-validated before it is trusted; (3) every change adds an entry here AND updates tracked_parameters.current_value - scripts/trials_check.py warns when code and this file disagree.",
   "min_sample_for_change": 30,
-  "trials_count_total": 11,
+  "trials_count_total": 12,
   "tracked_parameters": [
     {
       "name": "AUTO_TRADE_MIN_SCORE",
@@ -200,6 +200,61 @@
       "name": "PREPUMP_HIT_PCT",
       "file": "scripts/prepump_watchlist.py",
       "current_value": 20.0
+    },
+    {
+      "name": "BTC_KEY_LEVEL",
+      "file": "scripts/correction_monitor.py",
+      "current_value": 82800.0
+    },
+    {
+      "name": "BTC_50W_TEST_PCT",
+      "file": "scripts/correction_monitor.py",
+      "current_value": 3.0
+    },
+    {
+      "name": "BTC_DEEP_DD_PCT",
+      "file": "scripts/correction_monitor.py",
+      "current_value": 20.0
+    },
+    {
+      "name": "IMPULSE_MIN_GAIN_PCT",
+      "file": "scripts/correction_monitor.py",
+      "current_value": 40.0
+    },
+    {
+      "name": "IMPULSE_LOOKBACK_DAYS",
+      "file": "scripts/correction_monitor.py",
+      "current_value": 45
+    },
+    {
+      "name": "PEAK_MAX_AGE_DAYS",
+      "file": "scripts/correction_monitor.py",
+      "current_value": 30
+    },
+    {
+      "name": "RETR_HEALTHY_MIN",
+      "file": "scripts/correction_monitor.py",
+      "current_value": 0.382
+    },
+    {
+      "name": "RETR_BROKEN",
+      "file": "scripts/correction_monitor.py",
+      "current_value": 0.786
+    },
+    {
+      "name": "VOL_DRYUP_RATIO",
+      "file": "scripts/correction_monitor.py",
+      "current_value": 0.7
+    },
+    {
+      "name": "OI_RESET_DD_PCT",
+      "file": "scripts/correction_monitor.py",
+      "current_value": 20.0
+    },
+    {
+      "name": "FUNDING_NEUTRAL_PCT",
+      "file": "scripts/correction_monitor.py",
+      "current_value": 0.005
     }
   ],
   "trials": [
@@ -351,6 +406,19 @@
       "old": null,
       "new": "initial values",
       "evidence": "design defaults; PREPUMP candidates are forward-tested in data/prepump-stats.json - no threshold change before n>=30 evaluated",
+      "n": null,
+      "in_sample": false,
+      "revalidated": null,
+      "retroactive_entry": false
+    },
+    {
+      "id": "T012",
+      "version": "v65",
+      "date": "2026-09-28",
+      "parameter": "correction monitor thresholds (11)",
+      "old": null,
+      "new": "initial values",
+      "evidence": "textbook Fibonacci depths + the NEAR plan's OI-flush rule (20%); BTC_KEY_LEVEL = May-2026 high cited by Cowen/Soloway (manual level - update it as a logged trial when the key level changes)",
       "n": null,
       "in_sample": false,
       "revalidated": null,
