@@ -87,6 +87,20 @@ jobs:
       - name: Derivatives snapshot - OKX funding/OI/long-short/taker/liquidations (v63, keyless, own 1h gate)
         run: python scripts/derivatives_snapshot.py
 
+      - name: Fundamentals - DefiLlama revenue / holders revenue + Snapshot votes (v64, keyless, daily gate)
+        run: python scripts/fundamentals_revenue.py
+
+      - name: Altseason regime - BTC dominance, ETH/BTC, breadth, stablecoins (v64, keyless, 4h gate)
+        run: python scripts/altseason_regime.py
+
+      - name: Macro / gold - FRED real yield + dollar, CFTC COT gold (v64, keyless, 6h gate)
+        env:
+          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+        run: python scripts/macro_gold.py
+
+      - name: Pre-pump candidates + forward test (v64, no network except fallback prices)
+        run: python scripts/prepump_watchlist.py
+
       - name: Multiple-testing guard - trials log vs code (v62)
         run: python scripts/trials_check.py
 
