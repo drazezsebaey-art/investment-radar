@@ -84,6 +84,9 @@ jobs:
       - name: ETF pipeline news check (v61, keyless SEC EDGAR + news, own 2h gate)
         run: python scripts/etf_news_check.py
 
+      - name: Derivatives snapshot - OKX funding/OI/long-short/taker/liquidations (v63, keyless, own 1h gate)
+        run: python scripts/derivatives_snapshot.py
+
       - name: Multiple-testing guard - trials log vs code (v62)
         run: python scripts/trials_check.py
 
