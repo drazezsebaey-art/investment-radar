@@ -1,19 +1,19 @@
-# Radar digest - 2026-09-29 16:31 UTC
+# Radar digest - 2026-09-29 17:05 UTC
 
 ## Market
-- BTC scenario **A** | price 83656 | wk close 84465 vs 82800 | 50W 78247 (6.91%) | 1h old
-- Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 55.94% | ETH/BTC 0.03245 | breadth7d 55% | stables 30d 1.33%
+- BTC scenario **A** | price 83104 | wk close 84465 vs 82800 | 50W 78247 (6.21%) | 1m old
+- Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 55.99% | ETH/BTC 0.03221 | breadth7d 55% | stables 30d 1.33%
 - Gold: PAXG 1m -5.16% | real10y - (-bp 1m) | USD 1m -% | pillar6 **insufficient_data**  | COT pctl 48
 
 ## Coins in correction (entry_ready first)
-- MINA: **ONGOING** | +312% impulse, retr 0.07 | OI dd 32% | fund -0.0326 | hold False | inval 0.14045 | OB 0.13934-0.14343
-- NEAR: **ONGOING** | +257% impulse, retr 0.15 | OI dd 17% | fund -0.0064 | hold True | inval 4.02900 | OB 4.24600-4.45100
-- ZEC: **ONGOING** | +251% impulse, retr 0.22 | OI dd 22% | fund -0.0020 | hold True | inval 1086.09000 | OB 1096.84000-1142.56000
-- UNI: **ONGOING** | +240% impulse, retr 0.26 | OI dd 20% | fund 0.0086 | hold True | inval 8.45500 | OB 5.80800-6.03200
-- KMNO: **ONGOING** | +193% impulse, retr 0.25 | OI dd 40% | fund -0.0252 | hold False | inval 0.03447 | OB 0.03493-0.03545
-- PYTH: **ONGOING** | +136% impulse, retr 0.20 | OI dd 6% | fund 0.0050 | hold False | inval 0.06008 | OB 0.06008-0.06346
-- SEI: **ONGOING** | +126% impulse, retr 0.27 | OI dd 0% | fund -0.0129 | hold False | inval 0.07059 | OB 0.07059-0.07286
-- FET: **ONGOING** | +118% impulse, retr 0.21 | OI dd 10% | fund -0.0112 | hold False | inval 0.19040 | OB 0.19040-0.19790
+- MINA: **ONGOING** | +312% impulse, retr 0.09 | OI dd 16% | fund -0.0396 | hold False | inval 0.14045 | OB 0.13934-0.14343
+- NEAR: **ONGOING** | +257% impulse, retr 0.16 | OI dd 14% | fund 0.0003 | hold True | inval 4.02900 | OB 4.24600-4.45100
+- ZEC: **ONGOING** | +250% impulse, retr 0.25 | OI dd 31% | fund 0.0080 | hold True | inval 1086.09000 | OB 1096.84000-1142.56000
+- UNI: **ONGOING** | +239% impulse, retr 0.28 | OI dd 19% | fund 0.0100 | hold True | inval 8.45500 | OB 5.80800-6.03200
+- KMNO: **ONGOING** | +193% impulse, retr 0.26 | OI dd 28% | fund -0.0339 | hold False | inval 0.03447 | OB 0.03493-0.03545
+- PYTH: **ONGOING** | +136% impulse, retr 0.22 | OI dd 13% | fund -0.0042 | hold False | inval 0.06008 | OB 0.06008-0.06346
+- SEI: **ONGOING** | +126% impulse, retr 0.29 | OI dd 10% | fund -0.0065 | hold False | inval 0.07059 | OB 0.05829-0.05928
+- FET: **ONGOING** | +118% impulse, retr 0.27 | OI dd 20% | fund 0.0050 | hold False | inval 0.19040 | OB 0.19040-0.19790
 
 ## Pre-pump candidates
 - MON: [C+D+E] 7d 7.6%
@@ -26,24 +26,24 @@
 - NIGHT: [C+E] 7d 4.4%
 
 ## ETF pipeline (new this run)
-- ripple NEW: other - XRP Price Cup-and-Handle Setup Points to $27 as ETF Inflows Build - The Market Periodical
-- solana NEW: other - Which Solana ETF Is the Best Choice? Bitwise Captures 68% of Last Week’s Record $188 Milli
+- kucoin-shares NEW: launch - Bitwise Launches First U.S. Spot NEAR ETF on NYSE Arca - KuCoin
 - ripple NEW: other - XRP or Solana: Which ETF Is Really Winning? The Answer Is 'Very Simple,' Bitwise CIO Says 
 - solana NEW: other - XRP or Solana: Which ETF Is Really Winning? The Answer Is 'Very Simple,' Bitwise CIO Says 
-- near: launch - Bitwise NEAR ETF goes live on NYSE Arca, will NEAR price benefit? - Crypto News
-- near: launch - Bitwise Asset Management Launches NEAR ETF NRR on NYSE Arca - TradingView
-- near: launch - NEAR Protocol Price Prediction After Bitwise Launches First Spot ETF - coingape.com
-- near: launch - Bitwise spot NEAR ETF begins trading on NYSE under ticker NRR - Crypto Briefing
+- near: launch - Bitwise Launches the First U.S. NEAR Spot ETF NRR - Moomoo
+- near: launch - NEAR Protocol Price Prediction After Bitwise Launches First Spot ETF - Cryptonews.net
+- near: launch - Bitwise’s NEAR ETF Debuts With Staking as NRR Begins Trading - The Crypto Times
+- near: launch - Bitwise Launches Bitwise NEAR ETF On NYSE Arca Trading Floor - Crypto Economy
+- zcash: launch - Nasdaq-listed DeFi Technologies's subsidary Valour launches Zcash ETP - thestreet.com
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc 0.18% | topPos 0.96 | taker 1.01
-- ETH: LONG_FLUSH_24H | OI/mc 0.57% | topPos 0.97 | taker 1.03
-- SOL: LONG_FLUSH_24H | OI/mc 0.55% | topPos 0.95 | taker 1.01
-- XRP: LONG_FLUSH_24H | OI/mc 0.14% | topPos 0.87 | taker 0.99
-- SEI: LONG_FLUSH_24H | OI/mc 0.78% | topPos 0.91 | taker 0.90
-- TAO: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.87 | taker 0.90
-- ZEC: LONG_FLUSH_24H | OI/mc 0.61% | topPos 1.07 | taker 0.95
-- WLD: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.96
+- BTC: LONG_FLUSH_24H | OI/mc 0.18% | topPos 0.96 | taker 1.00
+- ETH: LONG_FLUSH_24H | OI/mc 0.55% | topPos 0.96 | taker 1.03
+- SOL: LONG_FLUSH_24H | OI/mc 0.54% | topPos 0.95 | taker 0.99
+- XRP: LONG_FLUSH_24H | OI/mc 0.13% | topPos 0.88 | taker 0.97
+- SEI: LONG_FLUSH_24H | OI/mc 0.76% | topPos 0.91 | taker 0.89
+- TAO: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.87 | taker 0.88
+- ZEC: LONG_FLUSH_24H | OI/mc 0.56% | topPos 1.06 | taker 0.93
+- WLD: LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 0.95
 
 ## Revenue / buyback flags
 - Axiom: REVENUE_ACCELERATING
@@ -57,7 +57,7 @@
 - vote: Raptor until 2026-09-30 - [Treasury Management] - Cash Management for October 2026
 
 ## System
-- CoinGecko 61/10000 used, month-end projection 64 (1%), throttle level 0 | by script {'scan': 61}
+- CoinGecko 65/10000 used, month-end projection 68 (1%), throttle level 0 | by script {'scan': 65}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=0), H2 PENDING (n=0)
-- radar-flags.json scan age: 62h
+- radar-flags.json scan age: 63h
