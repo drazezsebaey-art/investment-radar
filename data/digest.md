@@ -1,7 +1,7 @@
-# Radar digest - 2026-09-29 22:04 UTC
+# Radar digest - 2026-09-29 22:31 UTC
 
 ## Market
-- BTC scenario **A** | price 83531 | wk close 84465 vs 82800 | 50W 78247 (6.75%) | 60m old
+- BTC scenario **A** | price 83531 | wk close 84465 vs 82800 | 50W 78247 (6.75%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 56.02% | ETH/BTC 0.03217 | breadth7d 55% | stables 30d 1.32%
 - Gold: PAXG 1m -4.11% | real10y - (-bp 1m) | USD 1m -% | pillar6 **insufficient_data**  | COT pctl -
 
@@ -57,7 +57,7 @@
 - vote: Raptor until 2026-09-30 - [Treasury Management] - Cash Management for October 2026
 
 ## System
-- CoinGecko 105/10000 used, month-end projection 109 (1%), throttle level 0 | by script {'scan': 105}
+- CoinGecko 109/10000 used, month-end projection 113 (1%), throttle level 0 | by script {'scan': 109}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=0), H2 PENDING (n=0)
 - radar-flags.json scan age: 68h
