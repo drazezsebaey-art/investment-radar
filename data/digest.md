@@ -1,19 +1,19 @@
-# Radar digest - 2026-09-29 14:31 UTC
+# Radar digest - 2026-09-29 15:07 UTC
 
 ## Market
-- BTC scenario **A** | price 84264 | wk close 84465 vs 82800 | 50W 78247 (7.69%) | 1h old
+- BTC scenario **A** | price 83656 | wk close 84465 vs 82800 | 50W 78247 (6.91%) | 3m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 55.94% | ETH/BTC 0.03245 | breadth7d 55% | stables 30d 1.33%
-- Gold: PAXG 1m -5.62% | real10y - (-bp 1m) | USD 1m -% | pillar6 **insufficient_data**  | COT pctl -
+- Gold: PAXG 1m -5.16% | real10y - (-bp 1m) | USD 1m -% | pillar6 **insufficient_data**  | COT pctl 48
 
 ## Coins in correction (entry_ready first)
-- MINA: **ONGOING** | +312% impulse, retr 0.08 | OI dd 32% | fund -0.0133 | hold False | inval 0.14045 | OB 0.13934-0.14343
-- NEAR: **ONGOING** | +257% impulse, retr 0.18 | OI dd 17% | fund -0.0135 | hold True | inval 4.02900 | OB 4.24600-4.45100
-- ZEC: **ONGOING** | +251% impulse, retr 0.21 | OI dd 22% | fund 0.0017 | hold True | inval 1086.09000 | OB 1096.84000-1142.56000
-- UNI: **ONGOING** | +240% impulse, retr 0.24 | OI dd 20% | fund -0.0095 | hold True | inval 8.45500 | OB 5.80800-6.03200
-- KMNO: **ONGOING** | +193% impulse, retr 0.23 | OI dd 40% | fund -0.0296 | hold False | inval 0.03447 | OB 0.03493-0.03545
-- PYTH: **ONGOING** | +136% impulse, retr 0.19 | OI dd 6% | fund 0.0030 | hold False | inval 0.06008 | OB 0.06008-0.06346
-- SEI: **ONGOING** | +126% impulse, retr 0.25 | OI dd 0% | fund -0.0141 | hold False | inval 0.07059 | OB 0.07059-0.07286
-- FET: **ONGOING** | +118% impulse, retr 0.20 | OI dd 10% | fund 0.0049 | hold False | inval 0.19040 | OB 0.19040-0.19790
+- MINA: **ONGOING** | +312% impulse, retr 0.07 | OI dd 32% | fund -0.0326 | hold False | inval 0.14045 | OB 0.13934-0.14343
+- NEAR: **ONGOING** | +257% impulse, retr 0.15 | OI dd 17% | fund -0.0064 | hold True | inval 4.02900 | OB 4.24600-4.45100
+- ZEC: **ONGOING** | +251% impulse, retr 0.22 | OI dd 22% | fund -0.0020 | hold True | inval 1086.09000 | OB 1096.84000-1142.56000
+- UNI: **ONGOING** | +240% impulse, retr 0.26 | OI dd 20% | fund 0.0086 | hold True | inval 8.45500 | OB 5.80800-6.03200
+- KMNO: **ONGOING** | +193% impulse, retr 0.25 | OI dd 40% | fund -0.0252 | hold False | inval 0.03447 | OB 0.03493-0.03545
+- PYTH: **ONGOING** | +136% impulse, retr 0.20 | OI dd 6% | fund 0.0050 | hold False | inval 0.06008 | OB 0.06008-0.06346
+- SEI: **ONGOING** | +126% impulse, retr 0.27 | OI dd 0% | fund -0.0129 | hold False | inval 0.07059 | OB 0.07059-0.07286
+- FET: **ONGOING** | +118% impulse, retr 0.21 | OI dd 10% | fund -0.0112 | hold False | inval 0.19040 | OB 0.19040-0.19790
 
 ## Pre-pump candidates
 - MON: [C+D+E] 7d 7.6%
@@ -26,23 +26,24 @@
 - NIGHT: [C+E] 7d 4.4%
 
 ## ETF pipeline (new this run)
-- ripple NEW: launch - Bitwise files amendment for XRP ETF; no confirmed September launch yet - Pluang
-- ripple NEW: filing - XRP ETF Gains Momentum As Bitwise Files New Prospectus, What’s Happening? - Cryptonews.net
-- solana NEW: other - Solana Surges 3.7% on Upgrades, ETF Inflows, and Tokenomics - CoinMarketCap
-- cash-4 NEW: other - Bitcoin ETF Giant IBIT Draws Fresh Cash as BTC Rally Gains Institutional Traction - TipRan
-- cash-4 NEW: other - Bitcoin Options, Elevated Yields: iShares’ Income-Focused ETF Draws Fresh Cash - TipRanks
-- ripple NEW: other - Can XRP price reach $1.80 after recent ETF inflows? - Crypto News
-- ripple NEW: other - Bitwise CIO Explains XRP’s Institutional Appeal After 80% ETF Jump - CryptoPotato
-- near: launch - The Bitwise NEAR ETF (NRR) Launches in the U.S. - Bitwise Asset Management
+- ripple NEW: other - XRP Price Cup-and-Handle Setup Points to $27 as ETF Inflows Build - The Market Periodical
+- solana NEW: other - Which Solana ETF Is the Best Choice? Bitwise Captures 68% of Last Week’s Record $188 Milli
+- ripple NEW: other - XRP or Solana: Which ETF Is Really Winning? The Answer Is 'Very Simple,' Bitwise CIO Says 
+- solana NEW: other - XRP or Solana: Which ETF Is Really Winning? The Answer Is 'Very Simple,' Bitwise CIO Says 
+- near: launch - Bitwise NEAR ETF goes live on NYSE Arca, will NEAR price benefit? - Crypto News
+- near: launch - Bitwise Asset Management Launches NEAR ETF NRR on NYSE Arca - TradingView
+- near: launch - NEAR Protocol Price Prediction After Bitwise Launches First Spot ETF - coingape.com
+- near: launch - Bitwise spot NEAR ETF begins trading on NYSE under ticker NRR - Crypto Briefing
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc 0.18% | topPos 0.98 | taker 1.01
-- SOL: SHORT_SQUEEZE_24H | OI/mc 0.55% | topPos 0.95 | taker 0.99
-- XRP: SHORT_SQUEEZE_24H | OI/mc 0.14% | topPos 0.87 | taker 0.96
-- SEI: QUIET_DELEVERAGING, LONG_FLUSH_24H | OI/mc 0.78% | topPos 0.91 | taker 0.89
-- ZEC: SHORT_SQUEEZE_24H | OI/mc 0.62% | topPos 1.05 | taker 0.95
-- XLM: LONG_FLUSH_24H | OI/mc 0.22% | topPos 0.89 | taker 0.95
-- ONDO: LONG_FLUSH_24H | OI/mc 0.93% | topPos 0.77 | taker 0.90
+- BTC: LONG_FLUSH_24H | OI/mc 0.19% | topPos 0.98 | taker 1.00
+- ETH: LONG_FLUSH_24H | OI/mc 0.58% | topPos 1.01 | taker 1.03
+- SOL: SHORT_SQUEEZE_24H | OI/mc 0.56% | topPos 0.96 | taker 0.99
+- XRP: SHORT_SQUEEZE_24H | OI/mc 0.14% | topPos 0.88 | taker 0.96
+- SEI: QUIET_DELEVERAGING, LONG_FLUSH_24H | OI/mc 0.79% | topPos 0.91 | taker 0.90
+- XLM: LONG_FLUSH_24H | OI/mc 0.22% | topPos 0.87 | taker 0.94
+- ONDO: LONG_FLUSH_24H | OI/mc 0.93% | topPos 0.78 | taker 0.90
+- ETC: SHORT_SQUEEZE_24H | OI/mc 0.67% | topPos 0.84 | taker 0.97
 
 ## Revenue / buyback flags
 - Axiom: REVENUE_ACCELERATING
@@ -56,7 +57,7 @@
 - vote: Raptor until 2026-09-30 - [Treasury Management] - Cash Management for October 2026
 
 ## System
-- CoinGecko 48/10000 used, month-end projection 50 (0%), throttle level 0 | by script {'scan': 48}
+- CoinGecko 52/10000 used, month-end projection 54 (0%), throttle level 0 | by script {'scan': 52}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=0), H2 PENDING (n=0)
-- radar-flags.json scan age: 60h
+- radar-flags.json scan age: 61h
