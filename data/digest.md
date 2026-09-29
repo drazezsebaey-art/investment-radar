@@ -1,7 +1,7 @@
-# Radar digest - 2026-09-29 19:31 UTC
+# Radar digest - 2026-09-29 20:03 UTC
 
 ## Market
-- BTC scenario **A** | price 83635 | wk close 84465 vs 82800 | 50W 78247 (6.89%) | 27m old
+- BTC scenario **A** | price 83635 | wk close 84465 vs 82800 | 50W 78247 (6.89%) | 59m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 55.99% | ETH/BTC 0.03221 | breadth7d 55% | stables 30d 1.33%
 - Gold: PAXG 1m -5.16% | real10y - (-bp 1m) | USD 1m -% | pillar6 **insufficient_data**  | COT pctl 48
 
@@ -16,6 +16,7 @@
 - FET: **ONGOING** | +118% impulse, retr 0.24 | OI dd 20% | fund 0.0050 | hold False | inval 0.19040 | OB 0.19040-0.19790
 
 ## Pre-pump candidates
+- AVAX: [A+B+E] 7d 4.8%
 - MON: [C+D+E] 7d 7.6%
 - SOL: [A+D+E] 7d 9.4%
 - INJ: [A+E] 7d -4.9%
@@ -23,7 +24,6 @@
 - HYPE: [A+E] 7d 1.1%
 - EDGE: [C+E] 7d 2.4%
 - ETH: [D+E] 7d 2.8%
-- NIGHT: [C+E] 7d 4.4%
 
 ## ETF pipeline (new this run)
 - solana NEW: other - Solana ETF Demand Builds Towards a $150 Test - Bitget
@@ -33,14 +33,14 @@
 - near: other - Bitwise NEAR ETF debuts with a bold $562.81 price target by 2030 - The Cryptonomist
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc 0.18% | topPos 0.96 | taker 0.98
-- ETH: SHORT_SQUEEZE_24H | OI/mc 0.54% | topPos 0.96 | taker 1.02
-- SOL: LONG_FLUSH_24H | OI/mc 0.54% | topPos 0.94 | taker 1.00
-- XRP: LONG_FLUSH_24H | OI/mc 0.13% | topPos 0.87 | taker 0.96
-- SEI: LONG_FLUSH_24H | OI/mc 0.76% | topPos 0.91 | taker 0.91
-- ZEC: SHORT_SQUEEZE_24H | OI/mc 0.58% | topPos 1.04 | taker 0.94
-- WLD: LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 0.94
-- XLM: LONG_FLUSH_24H | OI/mc 0.20% | topPos 0.87 | taker 0.96
+- BTC: SHORT_SQUEEZE_24H | OI/mc 0.18% | topPos 0.96 | taker 1.02
+- ETH: SHORT_SQUEEZE_24H | OI/mc 0.54% | topPos 0.96 | taker 1.03
+- SOL: LONG_FLUSH_24H | OI/mc 0.54% | topPos 0.94 | taker 0.99
+- AVAX: SHORT_SQUEEZE_FUEL, SHORT_SQUEEZE_24H | OI/mc 0.53% | topPos 0.88 | taker 1.02
+- XRP: LONG_FLUSH_24H | OI/mc 0.13% | topPos 0.88 | taker 0.96
+- SEI: LONG_FLUSH_24H | OI/mc 0.76% | topPos 0.91 | taker 0.92
+- WLD: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.94
+- XLM: LONG_FLUSH_24H | OI/mc 0.21% | topPos 0.87 | taker 0.96
 
 ## Revenue / buyback flags
 - Axiom: REVENUE_ACCELERATING
@@ -54,7 +54,7 @@
 - vote: Raptor until 2026-09-30 - [Treasury Management] - Cash Management for October 2026
 
 ## System
-- CoinGecko 85/10000 used, month-end projection 89 (1%), throttle level 0 | by script {'scan': 85}
+- CoinGecko 89/10000 used, month-end projection 93 (1%), throttle level 0 | by script {'scan': 89}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=0), H2 PENDING (n=0)
-- radar-flags.json scan age: 65h
+- radar-flags.json scan age: 66h
