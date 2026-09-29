@@ -15,6 +15,7 @@ Level 1/2 only, no rule changes automatically).
 Capped at COUNTERFACTUAL_BATCH_SIZE lookups per run - this runs on TOP of
 the pipeline's existing CoinGecko usage, so it stays a small, bounded add.
 """
+import cg_budget  # v66
 import json
 import os
 import time
@@ -51,7 +52,24 @@ def save_json(path: Path, data) -> None:
     path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
-def fetch_current_price(asset_id: str):
+def fetch_okx_price(symbol: str):
+    """v66: keyless OKX last price - no CoinGecko credit."""
+    try:
+        url = f"https://www.okx.com/api/v5/market/ticker?instId={symbol.upper()}-USDT"
+        with urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "investment-radar/1.0"}),
+                                    timeout=15) as resp:
+            data = json.loads(resp.read().decode()).get("data") or []
+        return float(data[0]["last"]) if data else None
+    except Exception:  # noqa: BLE001
+        return None
+
+
+def fetch_current_price(asset_id: str, symbol: str = None):
+    if symbol:
+        p = fetch_okx_price(symbol)
+        if p is not None:
+            return p
+    cg_budget.record("counterfactual_check")
     headers = {"User-Agent": "investment-radar/1.0"}
     if COINGECKO_API_KEY:
         headers["x-cg-demo-api-key"] = COINGECKO_API_KEY
@@ -120,7 +138,8 @@ CREDIT_GATE_HOURS = 4  # this evaluation doesn't need every-30-min freshness - t
 
 def is_credit_gate_open(now: datetime = None) -> bool:
     now = now or datetime.now(timezone.utc)
-    return now.hour % CREDIT_GATE_HOURS == 0 and now.minute < 30
+    hours = {0: CREDIT_GATE_HOURS, 1: CREDIT_GATE_HOURS * 2, 2: 24}[cg_budget.throttle_level(now)]  # v66
+    return now.hour % hours == 0 and now.minute < 30
 
 
 def main():
@@ -139,7 +158,7 @@ def main():
     n_evaluated = 0
     for r in batch:
         entry = get_reference_price(r)
-        current = fetch_current_price(r["asset_id"])
+        current = fetch_current_price(r["asset_id"], r.get("symbol"))
         time.sleep(0.5)
         if current is None:
             r["counterfactual_outcome"] = "price_unavailable"

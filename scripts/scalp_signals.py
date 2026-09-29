@@ -80,6 +80,27 @@ SCALP_ATR_STOP_MULT = 0.75
 # unit itself (0.75x ATR) is now much smaller than before.
 SCALP_TARGET_RISK_MULTS = (1.5, 2.5, 4.0)
 
+# v65.5 (28/9/2026) - cost-structural guards, from the Monte-Carlo review of 220
+# closed paper trades: stops closer than 2% averaged -1.07R (n=82) because the
+# ~0.3% round-trip cost alone exceeded the stop (worst cases -10R..-13.6R on
+# USDe / PAXG / TRX-type near-flat assets); stops >= 2% averaged +0.68R (n=138).
+# Logged as trial T015 in config/trials-log.json.
+MIN_STOP_DISTANCE_PCT = 2.0
+PEGGED_SYMBOLS = {"USDT", "USDC", "DAI", "USDE", "FDUSD", "USDS", "PYUSD", "TUSD", "FRAX", "USD1", "RLUSD",
+                  "USDD", "BUSD", "GHO", "CRVUSD", "EURC", "USDG", "USD0", "PAXG", "XAUT"}
+PEGGED_IDS = {"tether", "usd-coin", "dai", "ethena-usde", "first-digital-usd", "usds", "paypal-usd",
+              "true-usd", "frax", "pax-gold", "tether-gold"}
+
+
+def is_pegged(coin: dict) -> bool:
+    """Stablecoins and asset-pegged tokens (gold) - no room for a stop beyond costs."""
+    return (coin.get("id") in PEGGED_IDS) or ((coin.get("symbol") or "").upper() in PEGGED_SYMBOLS)
+
+
+def stop_distance_pct(entry, stop):
+    return (entry - stop) / entry * 100 if entry and stop is not None else None
+
+
 
 def load_json(path: Path, default):
     if not path.exists():
@@ -239,6 +260,8 @@ def fast_reject_reason(coin: dict, entry, stop, targets):
     risk = entry - stop
     if risk <= 0:
         return "non-positive risk (stop not below entry)"
+    if stop_distance_pct(entry, stop) < MIN_STOP_DISTANCE_PCT:          # v65.5
+        return f"stop {stop_distance_pct(entry, stop):.2f}% below min stop distance {MIN_STOP_DISTANCE_PCT}%"
     reward = targets[0] - entry
     rr = reward / risk
     if rr < SCALP_MIN_RR:
@@ -329,7 +352,8 @@ def build_scalp_trade(coin: dict, market_regime: dict = None, price_observed_at:
 def main():
     radar_data = load_json(RADAR_FLAGS_PATH, {"coins": []})
     fired = get_fired_coins(radar_data)
-    qualifying = [c for c in fired if (c.get("confidence_score") or 0) >= SCALP_MIN_SCORE]
+    qualifying = [c for c in fired if (c.get("confidence_score") or 0) >= SCALP_MIN_SCORE
+                  and not is_pegged(c)]                                     # v65.5
 
     # Live snapshot - kept for a quick "who qualifies right now" glance,
     # but this is NOT the trade record (that's scalp-trades.json below).
@@ -357,7 +381,8 @@ def main():
         reason = fast_reject_reason(coin, entry, stop, targets)
         if reason:
             n_rejected += 1
-            code = "RR_BELOW_FLOOR" if "R:R" in reason else ("RSI_OVERBOUGHT" if "RSI" in reason else "OTHER")
+            code = ("RR_BELOW_FLOOR" if "R:R" in reason else "RSI_OVERBOUGHT" if "RSI" in reason
+                    else "STOP_TOO_TIGHT" if "min stop distance" in reason else "OTHER")
             # v61 fix (27/9/2026): the RSI value was only ever stored inside reason_text as free
             # text, forcing regex-parsing to recalibrate the threshold - now logged as its own field
             rsi_value = (coin.get("indicators") or {}).get("rsi14")

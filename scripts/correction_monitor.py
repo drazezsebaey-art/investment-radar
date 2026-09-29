@@ -14,8 +14,10 @@ last IMPULSE_LOOKBACK_DAYS, peak inside the last PEAK_MAX_AGE_DAYS):
   volume ratio: avg daily quote volume since peak / during the impulse
   OI drawdown from its peak (OKX rubik daily OI, keyless)
   funding now (data/derivatives.json, OKX fallback)
-  4H structure: CHoCH up = a close above the last lower-high pivot that formed
-  between the peak and the pullback low.
+  4H structure (v65.2): scripts/smc_structure.py - LuxAlgo-SMC-modelled engine
+  (internal 5 / swing 50, close-based breaks, alternating right-confirmed swings,
+  order blocks with ATR filter). RESUMING = the latest INTERNAL event after the
+  peak is a bullish CHoCH. The legacy choch_up() below is kept for reference only.
   Status: BROKEN > RESUMING > RESET_DONE > ONGOING (see classify()).
 
 Output: data/correction-monitor.json. Own gate. Never fails the workflow.
@@ -27,6 +29,8 @@ import sys
 import time
 import urllib.parse
 import urllib.request
+
+from smc_structure import post_peak_read, levels_report  # v65.2 / v65.3
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
@@ -36,7 +40,7 @@ FLAGS = ROOT / "data" / "radar-flags.json"
 DERIV = ROOT / "data" / "derivatives.json"
 WATCHLIST = ROOT / "config" / "watchlist.json"
 ETF_WATCH = ROOT / "config" / "etf-watch.json"
-ENGINE_VERSION = "correction-v65"
+ENGINE_VERSION = "correction-v65.3"
 OKX = "https://www.okx.com/api/v5"
 GATE_MINUTES = 120
 PAUSE_SEC = 0.35
@@ -207,8 +211,11 @@ def analyse_coin(c, get, deriv, now):
          "volume_ratio": round((sum(pb_vol) / len(pb_vol)) / (sum(imp_vol) / len(imp_vol)), 2)
          if pb_vol and imp_vol and sum(imp_vol) else None}
     try:
-        c4 = parse_candles(get("/market/candles", {"instId": f"{sym}-USDT", "bar": "4H", "limit": 180}))
-        m.update(choch_up(c4, win[pk_i]["ts"]))
+        # v65.2: 300 x 4H (ATR(200) for the order-block volatility filter needs history)
+        c4 = parse_candles(get("/market/candles", {"instId": f"{sym}-USDT", "bar": "4H", "limit": 300}))
+        m.update(post_peak_read(c4, win[pk_i]["ts"]))
+        # v65.3: break validation / sweeps (hold signal) / premium-discount / volume profile / invalidation
+        m["levels"] = levels_report(c4, imp["low"], imp["peak"])
     except Exception as e:  # noqa: BLE001
         m["structure_error"] = str(e)[:100]
     try:
@@ -225,6 +232,13 @@ def analyse_coin(c, get, deriv, now):
         except Exception:  # noqa: BLE001
             pass
     m["status"] = classify(m)
+    lv = m.get("levels") or {}
+    pd_ = (lv.get("premium_discount_impulse") or {}).get("zone")
+    m["entry_ready"] = bool(m["status"] in ("RESET_DONE", "RESUMING")
+                            and (lv.get("bullish_hold_signal") or m.get("choch_up"))
+                            and pd_ in ("DISCOUNT", "DEEP_DISCOUNT", "EQUILIBRIUM"))
+    m["entry_ready_rule"] = ("status RESET_DONE/RESUMING + a hold signal (fresh low sweep or bullish internal CHoCH) "
+                             "+ price at/below the impulse equilibrium - still needs gate + Agent Room + visual check")
     return m
 
 

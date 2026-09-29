@@ -47,6 +47,7 @@ resistance-zone clustering + breakout confirmation, fibonacci extension
 continuation signal, EMA50-on-4h trend filter, insufficient-history flag,
 break-and-retest tracking, signal logging for scripts/evaluate_signals.py.
 """
+import cg_budget  # v66
 import json
 import os
 import time
@@ -300,7 +301,53 @@ def select_rotating_candidates(all_listed: list) -> list:
 COINGECKO_API_KEY = os.environ.get("COINGECKO_API_KEY")
 
 
+
+# ---------------- v66: OKX-first market data (keyless, zero CoinGecko credits) ----------------
+OKX_BASE = "https://www.okx.com/api/v5/market"
+
+
+def _okx_rows(inst_id: str, bar: str, limit: int, after: int = None):
+    params = {"instId": inst_id, "bar": bar, "limit": limit}
+    if after:
+        params["after"] = after
+    url = f"{OKX_BASE}/candles?{urllib.parse.urlencode(params)}"
+    req = urllib.request.Request(url, headers={"User-Agent": "investment-radar/1.0"})
+    with urllib.request.urlopen(req, timeout=REQUEST_TIMEOUT) as resp:
+        body = json.loads(resp.read().decode())
+    if str(body.get("code", "0")) != "0":
+        raise RuntimeError(f"OKX {inst_id} {bar}: {body.get('msg')}")
+    return body.get("data") or []
+
+
+def okx_ohlc_4h(symbol: str, bars: int = 180):
+    """CoinGecko /ohlc?days=30 shape: [[close_ts_ms, o, h, l, c], ...] oldest first
+    (CoinGecko stamps a candle at its CLOSE; OKX at its open -> +4h)."""
+    rows = _okx_rows(f"{symbol.upper()}-USDT", "4H", min(bars, 300))
+    out = [[int(r[0]) + 4 * 3600_000, float(r[1]), float(r[2]), float(r[3]), float(r[4])] for r in rows]
+    return sorted(out, key=lambda x: x[0])
+
+
+def okx_rolling_24h_volumes(symbol: str, hours: int = 720):
+    """CoinGecko market_chart total_volumes shape: [[ts_ms, rolling_24h_usd], ...]
+    built from OKX 1H quote volumes (single venue - ratios comparable, levels lower)."""
+    rows, after = [], None
+    while len(rows) < hours + 24:
+        page = _okx_rows(f"{symbol.upper()}-USDT", "1H", 300, after)
+        if not page:
+            break
+        rows.extend(page)
+        after = int(page[-1][0])
+        if len(page) < 300:
+            break
+    pts = sorted(((int(r[0]) + 3600_000, float(r[7])) for r in rows), key=lambda x: x[0])
+    out = []
+    for i in range(23, len(pts)):
+        out.append([pts[i][0], sum(v for _, v in pts[i - 23:i + 1])])
+    return out[-hours:]
+
+
 def fetch_json(url: str):
+    cg_budget.record("breakout_check")   # v66 credit ledger (every CoinGecko request counts)
     headers = {"User-Agent": "investment-radar/1.0"}
     if COINGECKO_API_KEY:
         headers["x-cg-demo-api-key"] = COINGECKO_API_KEY
@@ -321,18 +368,56 @@ def fetch_json(url: str):
     raise last_exc
 
 
-def fetch_ohlc(coin_id: str):
+def fetch_ohlc(coin_id: str, symbol: str = None):
+    """v66: OKX first (free), CoinGecko only if the coin has no OKX USDT market."""
+    if symbol:
+        try:
+            rows = okx_ohlc_4h(symbol)
+            if len(rows) >= 60:
+                return rows
+        except Exception as exc:  # noqa: BLE001
+            print(f"  [v66] OKX 4H unavailable for {symbol} ({exc}) - falling back to CoinGecko")
     url = f"{COINGECKO_BASE}/coins/{coin_id}/ohlc?{urllib.parse.urlencode({'vs_currency': 'usd', 'days': OHLC_DAYS})}"
     return fetch_json(url)
 
 
-def fetch_hourly_volumes(coin_id: str):
+def fetch_hourly_volumes(coin_id: str, symbol: str = None):
+    if symbol:
+        try:
+            vols = okx_rolling_24h_volumes(symbol, VOLUME_DAYS * 24)
+            if len(vols) >= 24 * 7:
+                return vols
+        except Exception as exc:  # noqa: BLE001
+            print(f"  [v66] OKX 1H unavailable for {symbol} ({exc}) - falling back to CoinGecko")
     url = f"{COINGECKO_BASE}/coins/{coin_id}/market_chart?{urllib.parse.urlencode({'vs_currency': 'usd', 'days': VOLUME_DAYS})}"
     data = fetch_json(url)
     return data.get("total_volumes", [])
 
 
+ATH_CACHE_PATH = Path(__file__).resolve().parent.parent / "data" / "ath-cache.json"
+ATH_CACHE_HOURS = 24          # v66: ATH distance moves slowly - one CoinGecko call per coin per day
+
+
 def fetch_coin_market_data(coin_id: str):
+    try:
+        cache = json.loads(ATH_CACHE_PATH.read_text(encoding="utf-8"))
+    except Exception:  # noqa: BLE001
+        cache = {}
+    hit = cache.get(coin_id)
+    if hit:
+        try:
+            age_h = (datetime.now(timezone.utc) - datetime.fromisoformat(hit["at"])).total_seconds() / 3600
+            if age_h < ATH_CACHE_HOURS:
+                return hit["ath_change"]
+        except (KeyError, ValueError):
+            pass
+    value = _fetch_coin_market_data_live(coin_id)
+    cache[coin_id] = {"ath_change": value, "at": datetime.now(timezone.utc).isoformat()}
+    ATH_CACHE_PATH.write_text(json.dumps(cache), encoding="utf-8")
+    return value
+
+
+def _fetch_coin_market_data_live(coin_id: str):
     """v6: one extra call for ath_change_percentage - the cheapest available
     proxy for 'is this a structurally beaten-down asset', regardless of how
     clean the short-term chart looks."""
@@ -368,7 +453,7 @@ def fetch_btc_closes():
     """Fetched ONCE per run (not per candidate) and reused - keeps the
     extra API cost flat regardless of how many candidates are checked."""
     try:
-        candles = fetch_ohlc(BTC_COIN_ID)
+        candles = fetch_ohlc(BTC_COIN_ID, "BTC")
         time.sleep(POLITE_DELAY)
         return [c[4] for c in candles]
     except Exception as exc:  # noqa: BLE001
@@ -1614,8 +1699,13 @@ CREDIT_GATE_HOURS = 3  # v60 fix (27/9/2026): breakout_check.py's OHLC fetches w
 
 
 def is_credit_gate_open(now: datetime = None) -> bool:
+    """v66: OHLC/volume now come from OKX, so the gate only protects the (cached)
+    ATH call and the CoinGecko fallback path; it widens automatically when the
+    monthly CoinGecko projection runs hot (cg_budget throttle level)."""
     now = now or datetime.now(timezone.utc)
-    return now.hour % CREDIT_GATE_HOURS == 0 and now.minute < 30
+    level = cg_budget.throttle_level(now)
+    hours = {0: CREDIT_GATE_HOURS, 1: CREDIT_GATE_HOURS * 2, 2: 12}[level]
+    return now.hour % hours == 0 and now.minute < 30
 
 
 def main():
@@ -1652,9 +1742,9 @@ def main():
     for coin in candidates:
         coin_id = coin["id"]
         try:
-            candles = fetch_ohlc(coin_id)
+            candles = fetch_ohlc(coin_id, coin.get("symbol"))
             time.sleep(POLITE_DELAY)
-            hourly_volumes = fetch_hourly_volumes(coin_id)
+            hourly_volumes = fetch_hourly_volumes(coin_id, coin.get("symbol"))
             time.sleep(POLITE_DELAY)
         except Exception as exc:  # noqa: BLE001
             coin["breakout_signal"] = None

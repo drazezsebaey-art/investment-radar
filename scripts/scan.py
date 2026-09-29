@@ -23,6 +23,7 @@ Approximation notice: history points are 15-minute snapshots, not true
 exchange candles. RSI/EMA computed from them are directional approximations
 over a short window, not the same as chart-read RSI(14)/EMA(9,21).
 """
+import cg_budget  # v66
 import json
 import os
 import time
@@ -548,6 +549,7 @@ def fetch_json(url: str, params: dict, max_retries: int = 4) -> list:
     req = urllib.request.Request(full_url, headers=headers)
     backoffs = [5, 15, 30, 60]
     for attempt in range(max_retries):
+        cg_budget.record("scan")   # v66 credit ledger - scan is essential and never throttled
         try:
             with urllib.request.urlopen(req, timeout=30) as resp:
                 return json.loads(resp.read().decode())

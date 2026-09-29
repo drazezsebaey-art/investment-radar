@@ -41,6 +41,27 @@ ENGINE_VERSION = "v2_engine-v62"  # v48 (24/9/2026): schema/version tagging per 
 from pathlib import Path
 from datetime import datetime, timezone
 
+# v65.5 (28/9/2026) - cost-structural guards, from the Monte-Carlo review of 220
+# closed paper trades: stops closer than 2% averaged -1.07R (n=82) because the
+# ~0.3% round-trip cost alone exceeded the stop (worst cases -10R..-13.6R on
+# USDe / PAXG / TRX-type near-flat assets); stops >= 2% averaged +0.68R (n=138).
+# Logged as trial T015 in config/trials-log.json.
+MIN_STOP_DISTANCE_PCT = 2.0
+PEGGED_SYMBOLS = {"USDT", "USDC", "DAI", "USDE", "FDUSD", "USDS", "PYUSD", "TUSD", "FRAX", "USD1", "RLUSD",
+                  "USDD", "BUSD", "GHO", "CRVUSD", "EURC", "USDG", "USD0", "PAXG", "XAUT"}
+PEGGED_IDS = {"tether", "usd-coin", "dai", "ethena-usde", "first-digital-usd", "usds", "paypal-usd",
+              "true-usd", "frax", "pax-gold", "tether-gold"}
+
+
+def is_pegged(coin: dict) -> bool:
+    """Stablecoins and asset-pegged tokens (gold) - no room for a stop beyond costs."""
+    return (coin.get("id") in PEGGED_IDS) or ((coin.get("symbol") or "").upper() in PEGGED_SYMBOLS)
+
+
+def stop_distance_pct(entry, stop):
+    return (entry - stop) / entry * 100 if entry and stop is not None else None
+
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 DATA_DIR = BASE_DIR / "data"
 RADAR_FLAGS_PATH = DATA_DIR / "radar-flags.json"
@@ -380,6 +401,13 @@ def open_v2_trades(scored: list, coin_by_id: dict, market_regime: dict, price_ob
         if has_open_v2_trade(asset_id, trades):
             continue
         coin = coin_by_id.get(asset_id, {})
+        # v65.5: no pegged assets, no stop inside the cost/noise band
+        if is_pegged(coin) or is_pegged({"id": asset_id, "symbol": result.get("symbol")}):
+            continue
+        tf = compute_v2_target_framework(coin) if coin.get("price_usd") and coin.get("atr_value") else {}
+        sd = stop_distance_pct(coin.get("price_usd"), tf.get("stop"))
+        if sd is not None and sd < MIN_STOP_DISTANCE_PCT:
+            continue
         trades.append(build_v2_trade(coin, result, market_regime, now, price_observed_at))
         n_opened += 1
     trades_data["trades"] = trades

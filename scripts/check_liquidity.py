@@ -27,6 +27,9 @@ binance_liquidity_error records why - never let one bad coin kill the run.
 """
 import json
 import time
+from datetime import datetime, timezone
+
+import cg_budget  # v66
 import urllib.request
 import urllib.error
 import urllib.parse
@@ -43,8 +46,15 @@ REQUEST_TIMEOUT = 20
 POLITE_DELAY = 1.5     # seconds between calls - stay well under CoinGecko's free-tier limit
 
 
+LIQ_CACHE_PATH = DATA_DIR / "liquidity-cache.json"
+LIQ_REFRESH_HOURS = 24        # v66: listing/liquidity changes slowly - refresh daily, reuse in between
+LIQ_MAX_CACHE_HOURS = {0: 24, 1: 48, 2: 96}   # longer reuse when the CoinGecko budget runs hot
+LIQ_FIELDS = ("binance_listed", "binance_spread_pct", "binance_quote_volume_24h", "binance_liquidity_ok")
+
+
 def fetch_tickers_page(coin_ids_param: str, page: int):
     """Fetch one page of Binance tickers filtered to the given coin_ids."""
+    cg_budget.record("check_liquidity")
     params = {"coin_ids": coin_ids_param, "page": page, "order": "volume_desc"}
     url = f"{TICKERS_URL}?{urllib.parse.urlencode(params)}"
     req = urllib.request.Request(url, headers={"User-Agent": "investment-radar/1.0"})
@@ -100,7 +110,31 @@ def main():
         print("No coins in radar-flags.json, nothing to check.")
         return
 
-    coin_ids = [c["id"] for c in coins]
+    # v66: reuse cached listing/liquidity for coins checked recently; only NEW or
+    # stale coins cost CoinGecko credits.
+    now = datetime.now(timezone.utc)
+    max_age = LIQ_MAX_CACHE_HOURS[cg_budget.throttle_level(now)]
+    try:
+        cache = json.loads(LIQ_CACHE_PATH.read_text(encoding="utf-8"))
+    except Exception:  # noqa: BLE001
+        cache = {}
+    fresh, stale = [], []
+    for c in coins:
+        hit = cache.get(c["id"])
+        try:
+            age = (now - datetime.fromisoformat(hit["at"])).total_seconds() / 3600 if hit else None
+        except (KeyError, ValueError):
+            age = None
+        if age is not None and age < max_age:
+            for f in LIQ_FIELDS:
+                if hit.get(f) is not None:
+                    c[f] = hit[f]
+            fresh.append(c)
+        else:
+            stale.append(c)
+    print(f"[v66] liquidity cache: {len(fresh)} reused, {len(stale)} to refresh (max age {max_age}h)")
+    coins_to_check = stale
+    coin_ids = [c["id"] for c in coins_to_check]
     all_tickers = []
     for i in range(0, len(coin_ids), BATCH_SIZE):
         batch = coin_ids[i:i + BATCH_SIZE]
@@ -110,7 +144,7 @@ def main():
             print(f"  unexpected error on batch {batch}: {exc}")
         time.sleep(POLITE_DELAY)
 
-    for coin in coins:
+    for coin in coins_to_check:
         try:
             ticker = best_usdt_ticker(all_tickers, coin["id"])
         except Exception as exc:  # noqa: BLE001
@@ -134,6 +168,10 @@ def main():
         coin["binance_liquidity_ok"] = quote_vol >= MIN_QUOTE_VOLUME_USD
         coin.pop("binance_liquidity_error", None)
 
+    for coin in coins_to_check:
+        if coin.get("binance_listed") is not None:
+            cache[coin["id"]] = {**{f: coin.get(f) for f in LIQ_FIELDS}, "at": now.isoformat()}
+    LIQ_CACHE_PATH.write_text(json.dumps(cache), encoding="utf-8")
     RADAR_FLAGS_PATH.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
     listed = sum(1 for c in coins if c.get("binance_listed"))
     print(f"Checked {len(coins)} candidates, {listed} listed on Binance with a USDT pair (via CoinGecko).")

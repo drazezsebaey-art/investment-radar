@@ -130,6 +130,27 @@ MAX_FALLBACK_STOP_DISTANCE_PCT = 25.0  # v57 fix (26/9/2026): was 20.0 - counter
                                           # not worth the added risk exposure across the broader universe. 25%
                                           # captures the real gap the evidence showed without loosening further.
 
+# v65.5 (28/9/2026) - cost-structural guards, from the Monte-Carlo review of 220
+# closed paper trades: stops closer than 2% averaged -1.07R (n=82) because the
+# ~0.3% round-trip cost alone exceeded the stop (worst cases -10R..-13.6R on
+# USDe / PAXG / TRX-type near-flat assets); stops >= 2% averaged +0.68R (n=138).
+# Logged as trial T015 in config/trials-log.json.
+MIN_STOP_DISTANCE_PCT = 2.0
+PEGGED_SYMBOLS = {"USDT", "USDC", "DAI", "USDE", "FDUSD", "USDS", "PYUSD", "TUSD", "FRAX", "USD1", "RLUSD",
+                  "USDD", "BUSD", "GHO", "CRVUSD", "EURC", "USDG", "USD0", "PAXG", "XAUT"}
+PEGGED_IDS = {"tether", "usd-coin", "dai", "ethena-usde", "first-digital-usd", "usds", "paypal-usd",
+              "true-usd", "frax", "pax-gold", "tether-gold"}
+
+
+def is_pegged(coin: dict) -> bool:
+    """Stablecoins and asset-pegged tokens (gold) - no room for a stop beyond costs."""
+    return (coin.get("id") in PEGGED_IDS) or ((coin.get("symbol") or "").upper() in PEGGED_SYMBOLS)
+
+
+def stop_distance_pct(entry, stop):
+    return (entry - stop) / entry * 100 if entry and stop is not None else None
+
+
 
 def pick_stop(coin: dict, entry: float):
     """v15 fix: a trend_following_eligible coin (extended move, no nearby
@@ -157,7 +178,7 @@ def pick_stop(coin: dict, entry: float):
     open) instead of opening with an unmanageable risk."""
     if coin.get("trend_following_eligible") and coin.get("trend_following_stop") is not None:
         tf_stop = coin["trend_following_stop"]
-        if tf_stop < entry:
+        if tf_stop < entry and stop_distance_pct(entry, tf_stop) >= MIN_STOP_DISTANCE_PCT:
             return tf_stop, True
     candidates = [
         coin.get("suggested_stop_resistance_based"),
@@ -166,7 +187,7 @@ def pick_stop(coin: dict, entry: float):
     valid = [
         s for s in candidates
         if s is not None and s < entry
-        and (entry - s) / entry * 100 <= MAX_FALLBACK_STOP_DISTANCE_PCT
+        and MIN_STOP_DISTANCE_PCT <= (entry - s) / entry * 100 <= MAX_FALLBACK_STOP_DISTANCE_PCT
     ]
     if not valid:
         return None, False
@@ -361,6 +382,11 @@ def main():
             n_skipped_duplicate += 1
             continue
 
+        # v65.5: stablecoins / pegged assets never get a paper trade
+        if is_pegged(coin):
+            log_rejection(coin, "real_trade_stop_sizing", ["PEGGED_ASSET"], {"entry": entry})
+            continue
+
         stop, used_tf_stop = pick_stop(coin, entry)
         if stop is None:
             # No valid computed stop for this coin this run - can't size a
@@ -368,14 +394,22 @@ def main():
             # as shadow, since there's nothing concrete to compare against).
             n_skipped_no_stop += 1
             candidates_raw = [coin.get("suggested_stop_resistance_based"), coin.get("suggested_stop_trendline_based")]
-            had_a_candidate = any(s is not None and s < entry for s in candidates_raw)
-            code = "STOP_TOO_WIDE" if had_a_candidate else "NO_STOP_CANDIDATE"
+            below = [s for s in candidates_raw if s is not None and s < entry]
+            if coin.get("trend_following_stop") is not None and coin["trend_following_stop"] < entry:
+                below.append(coin["trend_following_stop"])
+            if not below:
+                code = "NO_STOP_CANDIDATE"
+            elif all(stop_distance_pct(entry, s) < MIN_STOP_DISTANCE_PCT for s in below):
+                code = "STOP_TOO_TIGHT"          # v65.5
+            else:
+                code = "STOP_TOO_WIDE"
             log_rejection(coin, "real_trade_stop_sizing", [code], {
                 "entry": entry,
                 "trend_following_eligible": coin.get("trend_following_eligible", False),
                 "suggested_stop_resistance_based": coin.get("suggested_stop_resistance_based"),
                 "suggested_stop_trendline_based": coin.get("suggested_stop_trendline_based"),
                 "max_allowed_stop_pct": MAX_FALLBACK_STOP_DISTANCE_PCT,
+                "min_allowed_stop_pct": MIN_STOP_DISTANCE_PCT,
             })
             continue
 
