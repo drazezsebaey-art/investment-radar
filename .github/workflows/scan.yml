@@ -115,9 +115,17 @@ jobs:
         if: always()   # v65.1: keyless layers keep running even when scan.py fails (e.g. CoinGecko quota)
         run: python scripts/trials_check.py
 
+      - name: Forward test of pattern hypotheses H1/H2 (v65.4)
+        if: always()
+        run: python scripts/hypothesis_check.py
+
       - name: Archive decision snapshot for future walk-forward/replay (v62, own 2h gate)
         if: always()   # v65.1: keyless layers keep running even when scan.py fails (e.g. CoinGecko quota)
         run: python scripts/archive_snapshot.py
+
+      - name: Digest - one small summary of every layer for low-token reading (v66)
+        if: always()
+        run: python scripts/digest.py
 
       - name: Commit results
         if: always()   # v65.1: keyless layers keep running even when scan.py fails (e.g. CoinGecko quota)
