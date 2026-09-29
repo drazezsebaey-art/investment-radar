@@ -1,7 +1,7 @@
-# Radar digest - 2026-09-29 17:31 UTC
+# Radar digest - 2026-09-29 18:03 UTC
 
 ## Market
-- BTC scenario **A** | price 83104 | wk close 84465 vs 82800 | 50W 78247 (6.21%) | 27m old
+- BTC scenario **A** | price 83104 | wk close 84465 vs 82800 | 50W 78247 (6.21%) | 60m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 55.99% | ETH/BTC 0.03221 | breadth7d 55% | stables 30d 1.33%
 - Gold: PAXG 1m -5.16% | real10y - (-bp 1m) | USD 1m -% | pillar6 **insufficient_data**  | COT pctl 48
 
@@ -36,14 +36,14 @@
 - zcash: launch - Nasdaq-listed DeFi Technologies's subsidary Valour launches Zcash ETP - thestreet.com
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc 0.18% | topPos 0.96 | taker 1.00
+- BTC: LONG_FLUSH_24H | OI/mc 0.18% | topPos 0.96 | taker 0.99
 - ETH: LONG_FLUSH_24H | OI/mc 0.55% | topPos 0.96 | taker 1.03
-- SOL: LONG_FLUSH_24H | OI/mc 0.54% | topPos 0.95 | taker 0.99
-- XRP: LONG_FLUSH_24H | OI/mc 0.13% | topPos 0.88 | taker 0.97
-- SEI: LONG_FLUSH_24H | OI/mc 0.76% | topPos 0.91 | taker 0.89
-- TAO: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.87 | taker 0.88
-- ZEC: LONG_FLUSH_24H | OI/mc 0.56% | topPos 1.06 | taker 0.93
-- WLD: LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 0.95
+- SOL: LONG_FLUSH_24H | OI/mc 0.54% | topPos 0.94 | taker 1.00
+- XRP: LONG_FLUSH_24H | OI/mc 0.13% | topPos 0.88 | taker 0.95
+- SEI: LONG_FLUSH_24H | OI/mc 0.76% | topPos 0.91 | taker 0.92
+- WLD: LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 0.94
+- XLM: LONG_FLUSH_24H | OI/mc 0.21% | topPos 0.87 | taker 0.95
+- BCH: LONG_FLUSH_24H | OI/mc 0.43% | topPos 0.79 | taker 0.99
 
 ## Revenue / buyback flags
 - Axiom: REVENUE_ACCELERATING
@@ -57,7 +57,7 @@
 - vote: Raptor until 2026-09-30 - [Treasury Management] - Cash Management for October 2026
 
 ## System
-- CoinGecko 69/10000 used, month-end projection 72 (1%), throttle level 0 | by script {'scan': 69}
+- CoinGecko 73/10000 used, month-end projection 76 (1%), throttle level 0 | by script {'scan': 73}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=0), H2 PENDING (n=0)
-- radar-flags.json scan age: 63h
+- radar-flags.json scan age: 64h
