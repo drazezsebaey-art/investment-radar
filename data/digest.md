@@ -1,19 +1,19 @@
-# Radar digest - 2026-09-29 10:31 UTC
+# Radar digest - 2026-09-29 11:04 UTC
 
 ## Market
-- BTC scenario **A** | price 83785 | wk close 84465 vs 82800 | 50W 78247 (7.08%) | 1h old
+- BTC scenario **A** | price 83995 | wk close 84465 vs 82800 | 50W 78247 (7.35%) | 1m old
 - Alts: **BTC_LED** [-] | BTC.D 56% | ETH/BTC 0.03228 | breadth7d 55% | stables 30d 1.32%
 - Gold: PAXG 1m -5.62% | real10y - (-bp 1m) | USD 1m -% | pillar6 **insufficient_data**  | COT pctl -
 
 ## Coins in correction (entry_ready first)
-- MINA: **ONGOING** | +312% impulse, retr 0.05 | OI dd 32% | fund -0.0028 | hold False | inval 0.14045 | OB 0.13934-0.14343
-- NEAR: **ONGOING** | +257% impulse, retr 0.20 | OI dd 17% | fund -0.0150 | hold True | inval 4.02900 | OB 4.24600-4.45100
-- ZEC: **ONGOING** | +251% impulse, retr 0.24 | OI dd 22% | fund 0.0100 | hold True | inval 1086.09000 | OB 1096.84000-1142.56000
-- UNI: **ONGOING** | +240% impulse, retr 0.25 | OI dd 20% | fund -0.0050 | hold True | inval 8.45500 | OB 5.80800-6.03200
-- KMNO: **ONGOING** | +193% impulse, retr 0.23 | OI dd 40% | fund -0.0363 | hold False | inval 0.03447 | OB 0.03493-0.03545
-- PYTH: **ONGOING** | +136% impulse, retr 0.18 | OI dd 6% | fund 0.0050 | hold False | inval 0.06008 | OB 0.06008-0.06346
-- SEI: **ONGOING** | +126% impulse, retr 0.25 | OI dd 0% | fund 0.0050 | hold False | inval 0.07059 | OB 0.07059-0.07286
-- FET: **ONGOING** | +118% impulse, retr 0.21 | OI dd 10% | fund 0.0050 | hold False | inval 0.19040 | OB 0.19040-0.19790
+- MINA: **ONGOING** | +312% impulse, retr 0.04 | OI dd 32% | fund -0.0075 | hold False | inval 0.14045 | OB 0.13934-0.14343
+- NEAR: **ONGOING** | +257% impulse, retr 0.20 | OI dd 17% | fund -0.0174 | hold True | inval 4.02900 | OB 4.24600-4.45100
+- ZEC: **ONGOING** | +251% impulse, retr 0.23 | OI dd 22% | fund 0.0100 | hold True | inval 1086.09000 | OB 1096.84000-1142.56000
+- UNI: **ONGOING** | +240% impulse, retr 0.25 | OI dd 20% | fund -0.0094 | hold True | inval 8.45500 | OB 5.80800-6.03200
+- KMNO: **ONGOING** | +193% impulse, retr 0.24 | OI dd 40% | fund -0.0495 | hold False | inval 0.03447 | OB 0.03493-0.03545
+- PYTH: **ONGOING** | +136% impulse, retr 0.19 | OI dd 6% | fund -0.0004 | hold False | inval 0.06008 | OB 0.06008-0.06346
+- SEI: **ONGOING** | +126% impulse, retr 0.24 | OI dd 0% | fund -0.0070 | hold False | inval 0.07059 | OB 0.07059-0.07286
+- FET: **ONGOING** | +118% impulse, retr 0.22 | OI dd 10% | fund 0.0050 | hold False | inval 0.19040 | OB 0.19040-0.19790
 
 ## Pre-pump candidates
 - MON: [C+D+E] 7d 7.6%
@@ -26,19 +26,22 @@
 - NIGHT: [C+E] 7d 4.4%
 
 ## ETF pipeline (new this run)
-- solana NEW: filing - Solana Liquid Staking Token ETF Filed With SEC by Nasdaq - CoinMarketCap
-- ripple NEW: other - XRP Market Outlook: ETF Inflows and XRPL Upgrades Put $1.55 Back in Focus - cryptodaily.co
-- ripple NEW: other - XRP News Today: XRPL Upgrades, ETF Inflows and Evernorth’s Nasdaq Vote - Coin Gabbar
+- ripple NEW: filing - XRP aims for rare 3-month gain streak amid SEC spot ETF filing and bullish signals. - Plua
+- ripple NEW: filing - XRP ETF Gains Momentum As Bitwise Files New Prospectus, What’s Happening? - CoinGape
+- solana NEW: other - Which Solana ETF Is the Best Choice? Bitwise Captures 68% of Last Week's Record $188 Milli
+- zcash: filing - Grayscale files for ZCSH High Income ETF to gen... - Pluang
+- avalanche-2: filing - AVAX ETF Filing Submitted by Bitwise to SEC - CoinMarketCap
+- zcash: filing - Grayscale files for ZCSH High Income ETF to gen... - Pluang
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc 0.18% | topPos 0.98 | taker 0.99
+- BTC: SHORT_SQUEEZE_24H | OI/mc 0.18% | topPos 0.98 | taker 1.03
 - ETH: SHORT_SQUEEZE_24H | OI/mc 0.57% | topPos 1.01 | taker 1.03
-- SOL: SHORT_SQUEEZE_24H | OI/mc 0.55% | topPos 0.95 | taker 0.95
-- NEAR: QUIET_DELEVERAGING, LONG_FLUSH_24H | OI/mc -% | topPos 0.97 | taker 0.96
+- SOL: SHORT_SQUEEZE_24H | OI/mc 0.55% | topPos 0.95 | taker 0.98
+- NEAR: LONG_FLUSH_24H | OI/mc -% | topPos 0.97 | taker 1.00
 - XRP: LONG_FLUSH_24H | OI/mc 0.13% | topPos 0.87 | taker 0.96
-- SUI: LONG_FLUSH_24H | OI/mc 1.01% | topPos 0.85 | taker 0.96
-- SEI: QUIET_DELEVERAGING, LONG_FLUSH_24H | OI/mc 0.75% | topPos 0.92 | taker 0.95
-- WLD: QUIET_DELEVERAGING | OI/mc -% | topPos 0.86 | taker 0.92
+- SUI: LONG_FLUSH_24H | OI/mc 1.04% | topPos 0.85 | taker 1.00
+- SEI: QUIET_DELEVERAGING, LONG_FLUSH_24H | OI/mc 0.75% | topPos 0.92 | taker 0.96
+- WLD: QUIET_DELEVERAGING | OI/mc -% | topPos 0.87 | taker 0.92
 
 ## Revenue / buyback flags
 - Axiom: REVENUE_ACCELERATING
@@ -52,7 +55,7 @@
 - vote: Raptor until 2026-09-30 - [Treasury Management] - Cash Management for October 2026
 
 ## System
-- CoinGecko 16/10000 used, month-end projection 17 (0%), throttle level 0 | by script {'scan': 16}
+- CoinGecko 20/10000 used, month-end projection 21 (0%), throttle level 0 | by script {'scan': 20}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=0), H2 PENDING (n=0)
-- radar-flags.json scan age: 56h
+- radar-flags.json scan age: 57h
