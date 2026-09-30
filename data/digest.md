@@ -1,7 +1,7 @@
-# Radar digest - 2026-09-30 23:05 UTC
+# Radar digest - 2026-09-30 23:31 UTC
 
 ## Market
-- BTC scenario **A** | price 83750 | wk close 84465 vs 82800 | 50W 78247 (7.03%) | 1m old
+- BTC scenario **A** | price 83750 | wk close 84465 vs 82800 | 50W 78247 (7.03%) | 27m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.03% | ETH/BTC 0.03205 | breadth7d 55% | stables 30d 1.26%
 - Gold: PAXG 1m -4.58% | real10y 2.91 (47bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 48
 
@@ -54,7 +54,7 @@
 - (28 flagged protocol(s) without a tradeable token hidden)
 
 ## System
-- CoinGecko 325/10000 used, month-end projection 325 (3%), throttle level 0 | by script {'scan': 325}
+- CoinGecko 329/10000 used, month-end projection 329 (3%), throttle level 0 | by script {'scan': 329}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=0), H2 PENDING (n=0)
 - radar-flags.json scan age: 93h
