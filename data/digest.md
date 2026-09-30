@@ -1,7 +1,7 @@
-# Radar digest - 2026-09-29 23:31 UTC
+# Radar digest - 2026-09-30 00:03 UTC
 
 ## Market
-- BTC scenario **A** | price 83720 | wk close 84465 vs 82800 | 50W 78247 (6.99%) | 27m old
+- BTC scenario **A** | price 83720 | wk close 84465 vs 82800 | 50W 78247 (6.99%) | 59m old
 - Alts: **BTC_LED** [-] | BTC.D 56.02% | ETH/BTC 0.03217 | breadth7d 55% | stables 30d 1.32%
 - Gold: PAXG 1m -4.11% | real10y - (-bp 1m) | USD 1m -% | pillar6 **insufficient_data**  | COT pctl -
 
@@ -36,13 +36,13 @@
 - avalanche-2: other - Bitwise Avalanche ETF BAVA enables investors to participate in Avalanche - Bitget
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc 0.18% | topPos 0.96 | taker 1.00
-- SOL: LONG_FLUSH_24H | OI/mc 0.53% | topPos 0.94 | taker 1.00
+- BTC: SHORT_SQUEEZE_24H | OI/mc 0.18% | topPos 0.96 | taker 1.01
+- SOL: LONG_FLUSH_24H | OI/mc 0.54% | topPos 0.94 | taker 0.99
 - AVAX: SHORT_SQUEEZE_24H | OI/mc 0.54% | topPos 0.89 | taker 1.01
-- XRP: LONG_FLUSH_24H | OI/mc 0.13% | topPos 0.87 | taker 0.96
-- SEI: LONG_FLUSH_24H | OI/mc 0.77% | topPos 0.92 | taker 0.89
-- ZEC: LONG_FLUSH_24H | OI/mc 0.56% | topPos 1.03 | taker 0.97
-- WLD: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.95
+- XRP: LONG_FLUSH_24H | OI/mc 0.13% | topPos 0.87 | taker 0.97
+- SEI: LONG_FLUSH_24H | OI/mc 0.77% | topPos 0.91 | taker 0.90
+- ZEC: LONG_FLUSH_24H | OI/mc 0.57% | topPos 1.05 | taker 0.97
+- WLD: LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 0.96
 - XLM: LONG_FLUSH_24H | OI/mc 0.21% | topPos 0.89 | taker 0.97
 
 ## Revenue / buyback flags
@@ -57,7 +57,7 @@
 - vote: Raptor until 2026-09-30 - [Treasury Management] - Cash Management for October 2026
 
 ## System
-- CoinGecko 117/10000 used, month-end projection 121 (1%), throttle level 0 | by script {'scan': 117}
+- CoinGecko 121/10000 used, month-end projection 125 (1%), throttle level 0 | by script {'scan': 121}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=0), H2 PENDING (n=0)
-- radar-flags.json scan age: 69h
+- radar-flags.json scan age: 70h
