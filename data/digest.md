@@ -1,7 +1,7 @@
-# Radar digest - 2026-09-30 13:31 UTC
+# Radar digest - 2026-09-30 14:03 UTC
 
 ## Market
-- BTC scenario **A** | price 85220 | wk close 84465 vs 82800 | 50W 78247 (8.91%) | 27m old
+- BTC scenario **A** | price 85220 | wk close 84465 vs 82800 | 50W 78247 (8.91%) | 59m old
 - Alts: **BTC_LED** [-] | BTC.D 56.15% | ETH/BTC 0.03205 | breadth7d 55% | stables 30d 1.25%
 - Gold: PAXG 1m -3.86% | real10y - (-bp 1m) | USD 1m -% | pillar6 **insufficient_data**  | COT pctl -
 
@@ -20,10 +20,10 @@
 - MON: [C+D+E] 7d 7.6%
 - SOL: [A+D+E] 7d 9.4%
 - INJ: [A+E] 7d -4.9%
-- STRCX: [C+E] 7d -2.0%
 - HYPE: [A+E] 7d 1.1%
 - BNB: [A+E] 7d 1.4%
 - EDGE: [C+E] 7d 2.4%
+- ETH: [D+E] 7d 2.8%
 
 ## ETF pipeline (new this run)
 - near: launch - NEAR token breaks out, targeting 135% rally to $12 after Bitwise NEAR ETF launch. - Pluang
@@ -36,28 +36,26 @@
 - zcash: other - Grayscale Zcash ETF Nears $1 Billion As Inflows Slow - TronWeekly
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc 0.18% | topPos 0.99 | taker 0.95
-- ETH: SHORT_SQUEEZE_24H | OI/mc 0.54% | topPos 0.99 | taker 1.03
-- SOL: SHORT_SQUEEZE_24H | OI/mc 0.55% | topPos 0.96 | taker 0.94
-- NEAR: SHORT_SQUEEZE_24H | OI/mc -% | topPos 1.01 | taker 0.99
-- AVAX: LONG_FLUSH_24H | OI/mc 0.52% | topPos 0.88 | taker 0.91
-- XRP: SHORT_SQUEEZE_24H | OI/mc 0.14% | topPos 0.87 | taker 0.98
-- SEI: LONG_FLUSH_24H | OI/mc 0.77% | topPos 0.91 | taker 0.96
-- ZEC: SHORT_SQUEEZE_24H | OI/mc 0.61% | topPos 1.07 | taker 0.98
+- ETH: LONG_FLUSH_24H | OI/mc 0.55% | topPos 0.98 | taker 1.04
+- SOL: LONG_FLUSH_24H | OI/mc 0.56% | topPos 0.95 | taker 0.96
+- NEAR: SHORT_SQUEEZE_24H | OI/mc -% | topPos 1.03 | taker 1.01
+- AVAX: LONG_FLUSH_24H | OI/mc 0.53% | topPos 0.88 | taker 0.92
+- SUI: LONG_FLUSH_24H | OI/mc 1.03% | topPos 0.84 | taker 0.94
+- SEI: LONG_FLUSH_24H | OI/mc 0.78% | topPos 0.91 | taker 0.97
+- ZEC: LONG_FLUSH_24H | OI/mc 0.61% | topPos 1.10 | taker 1.01
+- LINK: LONG_FLUSH_24H | OI/mc 0.38% | topPos 1.00 | taker 0.94
 
 ## Revenue / buyback flags
-- ripple-usd: REVENUE_ACCELERATING
 - ethereum: REVENUE_ACCELERATING
-- Titan Builder: REVENUE_ACCELERATING
-- pump.fun Mobile App: REVENUE_ACCELERATING
-- Pacifica Perps: REVENUE_ACCELERATING
-- MetaMask Wallet: REVENUE_ACCELERATING
-- vote: Concentrator until 2026-10-02 - [sdCRV] Kill emissions for old cvxCRV/CRV pool (0x9D0464996170c6B9e75e
-- vote: sdCRV-Governance until 2026-10-02 - Kill emissions for old cvxCRV/CRV pool (0x9D0464996170c6B9e75eED71c68B
-- vote: PikuDAO until 2026-10-01 - Proposal 48 - Deploy 114,000 USDC from Piku Finance Treasury Across Mo
+- solana: REVENUE_ACCELERATING
+- thorchain: REVENUE_ACCELERATING
+- gains-network: REVENUE_ACCELERATING
+- railgun: REVENUE_ACCELERATING
+- monad: REVENUE_ACCELERATING
+- (28 flagged protocol(s) without a tradeable token hidden)
 
 ## System
-- CoinGecko 238/10000 used, month-end projection 242 (2%), throttle level 0 | by script {'scan': 238}
+- CoinGecko 243/10000 used, month-end projection 246 (2%), throttle level 0 | by script {'scan': 243}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=0), H2 PENDING (n=0)
-- radar-flags.json scan age: 83h
+- radar-flags.json scan age: 84h
