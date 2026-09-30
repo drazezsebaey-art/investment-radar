@@ -1,7 +1,7 @@
-# Radar digest - 2026-09-30 07:31 UTC
+# Radar digest - 2026-09-30 08:03 UTC
 
 ## Market
-- BTC scenario **A** | price 83060 | wk close 84465 vs 82800 | 50W 78247 (6.15%) | 27m old
+- BTC scenario **A** | price 83060 | wk close 84465 vs 82800 | 50W 78247 (6.15%) | 59m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 55.99% | ETH/BTC 0.03210 | breadth7d 55% | stables 30d 1.11%
 - Gold: PAXG 1m -4.07% | real10y - (-bp 1m) | USD 1m -% | pillar6 **insufficient_data**  | COT pctl -
 
@@ -30,14 +30,14 @@
 - ripple NEW: other - Crypto ETF News Today: Bitcoin, Ethereum, XRP And Solana Diverge Hard - Coin Gabbar
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc 0.18% | topPos 0.96 | taker 0.99
-- ETH: LONG_FLUSH_24H | OI/mc 0.54% | topPos 0.92 | taker 1.04
-- SOL: LONG_FLUSH_24H | OI/mc 0.54% | topPos 0.94 | taker 0.99
-- NEAR: SHORT_SQUEEZE_FUEL | OI/mc -% | topPos 0.97 | taker 0.99
-- XRP: LONG_FLUSH_24H | OI/mc 0.14% | topPos 0.87 | taker 0.99
-- SUI: LONG_FLUSH_24H | OI/mc 0.97% | topPos 0.85 | taker 0.99
-- SEI: LONG_FLUSH_24H | OI/mc 0.79% | topPos 0.91 | taker 0.93
-- ZEC: LONG_FLUSH_24H | OI/mc 0.59% | topPos 1.05 | taker 1.01
+- ETH: LONG_FLUSH_24H | OI/mc 0.55% | topPos 0.93 | taker 1.03
+- SOL: LONG_FLUSH_24H | OI/mc 0.54% | topPos 0.94 | taker 0.96
+- XRP: LONG_FLUSH_24H | OI/mc 0.14% | topPos 0.87 | taker 0.97
+- SUI: LONG_FLUSH_24H | OI/mc 0.98% | topPos 0.85 | taker 0.99
+- SEI: LONG_FLUSH_24H | OI/mc 0.77% | topPos 0.91 | taker 0.92
+- TAO: LONG_FLUSH_24H | OI/mc -% | topPos 0.89 | taker 0.89
+- WLD: LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 1.00
+- XLM: LONG_FLUSH_24H | OI/mc 0.20% | topPos 0.90 | taker 0.97
 
 ## Revenue / buyback flags
 - Axiom: REVENUE_ACCELERATING
@@ -51,7 +51,7 @@
 - vote: Raptor until 2026-09-30 - [Treasury Management] - Cash Management for October 2026
 
 ## System
-- CoinGecko 186/10000 used, month-end projection 190 (2%), throttle level 0 | by script {'scan': 186}
+- CoinGecko 190/10000 used, month-end projection 194 (2%), throttle level 0 | by script {'scan': 190}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=0), H2 PENDING (n=0)
-- radar-flags.json scan age: 77h
+- radar-flags.json scan age: 78h
