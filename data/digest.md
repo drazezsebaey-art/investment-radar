@@ -1,7 +1,7 @@
-# Radar digest - 2026-09-30 12:03 UTC
+# Radar digest - 2026-09-30 12:31 UTC
 
 ## Market
-- BTC scenario **A** | price 83765 | wk close 84465 vs 82800 | 50W 78247 (7.05%) | 59m old
+- BTC scenario **A** | price 83765 | wk close 84465 vs 82800 | 50W 78247 (7.05%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 55.95% | ETH/BTC 0.03216 | breadth7d 55% | stables 30d 1.26%
 - Gold: PAXG 1m -3.86% | real10y - (-bp 1m) | USD 1m -% | pillar6 **insufficient_data**  | COT pctl -
 
@@ -53,7 +53,7 @@
 - vote: PikuDAO until 2026-10-01 - Proposal 48 - Deploy 114,000 USDC from Piku Finance Treasury Across Mo
 
 ## System
-- CoinGecko 223/10000 used, month-end projection 227 (2%), throttle level 0 | by script {'scan': 223}
+- CoinGecko 228/10000 used, month-end projection 232 (2%), throttle level 0 | by script {'scan': 228}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=0), H2 PENDING (n=0)
 - radar-flags.json scan age: 82h
