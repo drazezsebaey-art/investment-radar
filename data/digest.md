@@ -1,7 +1,7 @@
-# Radar digest - 2026-09-30 17:31 UTC
+# Radar digest - 2026-09-30 18:03 UTC
 
 ## Market
-- BTC scenario **A** | price 84280 | wk close 84465 vs 82800 | 50W 78247 (7.71%) | 27m old
+- BTC scenario **A** | price 84280 | wk close 84465 vs 82800 | 50W 78247 (7.71%) | 59m old
 - Alts: **BTC_LED** [-] | BTC.D 56.05% | ETH/BTC 0.03196 | breadth7d 55% | stables 30d 1.24%
 - Gold: PAXG 1m -4.45% | real10y 2.90 (48bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl -
 
@@ -33,13 +33,13 @@
 
 ## Derivatives flags (OKX)
 - BTC: SHORT_SQUEEZE_24H | OI/mc 0.18% | topPos 0.98 | taker 1.01
-- SOL: LONG_FLUSH_24H | OI/mc 0.54% | topPos 0.94 | taker 0.97
-- AVAX: LONG_FLUSH_24H | OI/mc 0.49% | topPos 0.87 | taker 0.90
-- XRP: LONG_FLUSH_24H | OI/mc 0.14% | topPos 0.87 | taker 0.94
-- SEI: LONG_FLUSH_24H | OI/mc 0.77% | topPos 0.92 | taker 0.96
-- ZEC: SHORT_SQUEEZE_24H | OI/mc 0.59% | topPos 1.09 | taker 1.03
-- LINK: LONG_FLUSH_24H | OI/mc 0.36% | topPos 0.98 | taker 0.91
-- XLM: LONG_FLUSH_24H | OI/mc 0.20% | topPos 0.92 | taker 0.94
+- SOL: LONG_FLUSH_24H | OI/mc 0.54% | topPos 0.94 | taker 0.95
+- AVAX: LONG_FLUSH_24H | OI/mc 0.49% | topPos 0.87 | taker 0.94
+- XRP: LONG_FLUSH_24H | OI/mc 0.14% | topPos 0.87 | taker 0.96
+- SEI: LONG_FLUSH_24H | OI/mc 0.79% | topPos 0.92 | taker 0.99
+- ZEC: SHORT_SQUEEZE_24H | OI/mc 0.60% | topPos 1.10 | taker 1.04
+- LINK: LONG_FLUSH_24H | OI/mc 0.37% | topPos 0.98 | taker 0.93
+- XLM: LONG_FLUSH_24H | OI/mc 0.20% | topPos 0.91 | taker 0.94
 
 ## Revenue / buyback flags
 - ethereum: REVENUE_ACCELERATING
@@ -51,7 +51,7 @@
 - (28 flagged protocol(s) without a tradeable token hidden)
 
 ## System
-- CoinGecko 275/10000 used, month-end projection 278 (3%), throttle level 0 | by script {'scan': 275}
+- CoinGecko 280/10000 used, month-end projection 282 (3%), throttle level 0 | by script {'scan': 280}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=0), H2 PENDING (n=0)
-- radar-flags.json scan age: 87h
+- radar-flags.json scan age: 88h
