@@ -1,7 +1,7 @@
-# Radar digest - 2026-09-30 01:31 UTC
+# Radar digest - 2026-09-30 02:03 UTC
 
 ## Market
-- BTC scenario **A** | price 83443 | wk close 84465 vs 82800 | 50W 78247 (6.64%) | 27m old
+- BTC scenario **A** | price 83443 | wk close 84465 vs 82800 | 50W 78247 (6.64%) | 59m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.04% | ETH/BTC 0.03203 | breadth7d 55% | stables 30d 1.32%
 - Gold: PAXG 1m -4.11% | real10y - (-bp 1m) | USD 1m -% | pillar6 **insufficient_data**  | COT pctl -
 
@@ -34,14 +34,14 @@
 - ondo-finance: other - Defiance Quantum ETF Tokenized ETF (Ondo) - CryptoRank
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc 0.18% | topPos 0.96 | taker 1.01
-- ETH: LONG_FLUSH_24H | OI/mc 0.52% | topPos 0.95 | taker 1.04
-- SOL: LONG_FLUSH_24H | OI/mc 0.54% | topPos 0.94 | taker 0.99
-- AVAX: SHORT_SQUEEZE_24H | OI/mc 0.54% | topPos 0.90 | taker 1.01
+- BTC: SHORT_SQUEEZE_24H | OI/mc 0.18% | topPos 0.96 | taker 1.00
+- ETH: LONG_FLUSH_24H | OI/mc 0.53% | topPos 0.94 | taker 1.04
+- AVAX: SHORT_SQUEEZE_24H | OI/mc 0.54% | topPos 0.90 | taker 1.00
 - XRP: LONG_FLUSH_24H | OI/mc 0.13% | topPos 0.87 | taker 0.97
-- SEI: LONG_FLUSH_24H | OI/mc 0.77% | topPos 0.92 | taker 0.90
+- SUI: LONG_FLUSH_24H | OI/mc 0.95% | topPos 0.85 | taker 0.93
+- SEI: LONG_FLUSH_24H | OI/mc 0.78% | topPos 0.91 | taker 0.89
 - WLD: LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 0.95
-- XLM: LONG_FLUSH_24H | OI/mc 0.21% | topPos 0.91 | taker 0.95
+- LINK: QUIET_DELEVERAGING | OI/mc 0.36% | topPos 1.00 | taker 0.90
 
 ## Revenue / buyback flags
 - Axiom: REVENUE_ACCELERATING
@@ -55,7 +55,7 @@
 - vote: Raptor until 2026-09-30 - [Treasury Management] - Cash Management for October 2026
 
 ## System
-- CoinGecko 133/10000 used, month-end projection 137 (1%), throttle level 0 | by script {'scan': 133}
+- CoinGecko 137/10000 used, month-end projection 141 (1%), throttle level 0 | by script {'scan': 137}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=0), H2 PENDING (n=0)
-- radar-flags.json scan age: 71h
+- radar-flags.json scan age: 72h
