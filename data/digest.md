@@ -1,7 +1,7 @@
-# Radar digest - 2026-09-30 15:31 UTC
+# Radar digest - 2026-09-30 16:03 UTC
 
 ## Market
-- BTC scenario **A** | price 83869 | wk close 84465 vs 82800 | 50W 78247 (7.18%) | 27m old
+- BTC scenario **A** | price 83869 | wk close 84465 vs 82800 | 50W 78247 (7.18%) | 60m old
 - Alts: **BTC_LED** [-] | BTC.D 56.15% | ETH/BTC 0.03205 | breadth7d 55% | stables 30d 1.25%
 - Gold: PAXG 1m -4.45% | real10y 2.90 (48bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl -
 
@@ -32,14 +32,14 @@
 - zcash: other - Zcash ETF completes 3-for-1 share split - TradingView
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc 0.18% | topPos 0.97 | taker 1.02
-- ETH: LONG_FLUSH_24H | OI/mc 0.54% | topPos 0.95 | taker 1.04
-- SOL: LONG_FLUSH_24H | OI/mc 0.55% | topPos 0.94 | taker 0.95
-- AVAX: LONG_FLUSH_24H | OI/mc 0.51% | topPos 0.88 | taker 0.89
-- XRP: LONG_FLUSH_24H | OI/mc 0.14% | topPos 0.86 | taker 0.95
-- SUI: LONG_FLUSH_24H | OI/mc 1.06% | topPos 0.85 | taker 0.97
-- SEI: LONG_FLUSH_24H | OI/mc 0.75% | topPos 0.92 | taker 0.96
-- ZEC: LONG_FLUSH_24H | OI/mc 0.62% | topPos 1.06 | taker 1.01
+- ETH: LONG_FLUSH_24H | OI/mc 0.54% | topPos 0.94 | taker 1.03
+- SOL: LONG_FLUSH_24H | OI/mc 0.55% | topPos 0.94 | taker 0.97
+- AVAX: LONG_FLUSH_24H | OI/mc 0.49% | topPos 0.87 | taker 0.89
+- XRP: LONG_FLUSH_24H | OI/mc 0.14% | topPos 0.87 | taker 0.93
+- SUI: SHORT_SQUEEZE_FUEL, LONG_FLUSH_24H | OI/mc 1.08% | topPos 0.85 | taker 0.97
+- SEI: LONG_FLUSH_24H | OI/mc 0.77% | topPos 0.92 | taker 0.96
+- ZEC: LONG_FLUSH_24H | OI/mc 0.60% | topPos 1.07 | taker 1.00
+- WLD: LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 0.98
 
 ## Revenue / buyback flags
 - ethereum: REVENUE_ACCELERATING
@@ -51,7 +51,7 @@
 - (28 flagged protocol(s) without a tradeable token hidden)
 
 ## System
-- CoinGecko 256/10000 used, month-end projection 259 (3%), throttle level 0 | by script {'scan': 256}
+- CoinGecko 261/10000 used, month-end projection 264 (3%), throttle level 0 | by script {'scan': 261}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=0), H2 PENDING (n=0)
-- radar-flags.json scan age: 85h
+- radar-flags.json scan age: 86h
