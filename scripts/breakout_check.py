@@ -48,6 +48,7 @@ continuation signal, EMA50-on-4h trend filter, insufficient-history flag,
 break-and-retest tracking, signal logging for scripts/evaluate_signals.py.
 """
 import cg_budget  # v66
+import asset_filters  # v67
 import json
 import os
 import time
@@ -203,6 +204,15 @@ TREND_FOLLOWING_MIN_SCORE = 38          # same tier already used elsewhere for "
 TREND_FOLLOWING_MIN_STREAK = 3          # consecutive runs scoring >= the threshold, no pullback in between
 TREND_FOLLOWING_ATR_STOP_MULT = 2.0     # stop = current price - 2x ATR, NOT distance-to-support - this is the actual fix
 TREND_FOLLOWING_TARGET_ATR_MULTS = [3.0, 5.0, 8.0]  # targets as ATR multiples from entry, matching the wider risk unit
+# v67 (30/9/2026): a streak means "consecutive runs without a pullback". After a
+# long outage (e.g. 83h without scans, 27-30/9) nobody saw whether the coin
+# pulled back, so every stored streak is reset instead of being continued.
+# Normal spacing between real runs is the credit gate (3h, up to 12h when
+# throttled); the reset threshold scales with it so throttling never wipes
+# streaks by itself.
+STREAK_META_PATH = DATA_DIR / "streak-meta.json"
+STREAK_GAP_GATE_MULT = 2.5          # reset when the gap exceeds 2.5x the current gate interval
+STREAK_MIN_GAP_HOURS = 8.0          # ...but never below 8h
 
 # Relative Strength: multi-week outperformance vs BTC, distinct from
 # btc_correlation_7d (which measures CO-MOVEMENT direction, not who's
@@ -1188,6 +1198,34 @@ def update_score_streak(streaks: dict, coin_id: str, score) -> int:
     return current
 
 
+def streak_gap_threshold_hours(gate_hours: float) -> float:
+    """v67: how long a pause may be before stored streaks stop meaning anything."""
+    return max(STREAK_MIN_GAP_HOURS, STREAK_GAP_GATE_MULT * gate_hours)
+
+
+def reset_streaks_after_gap(streaks: dict, meta: dict, now: datetime, gate_hours: float):
+    """v67: returns (streaks, reset_info or None). Resets every streak to 0 when
+    the last real breakout run is older than streak_gap_threshold_hours()."""
+    last = meta.get("last_update")
+    if not last:
+        return streaks, None
+    try:
+        gap_h = (now - datetime.fromisoformat(last)).total_seconds() / 3600
+    except ValueError:
+        return streaks, None
+    threshold = streak_gap_threshold_hours(gate_hours)
+    if gap_h <= threshold:
+        return streaks, None
+    n_nonzero = sum(1 for v in streaks.values() if v)
+    return {k: 0 for k in streaks}, {"reset_at": now.isoformat(), "gap_hours": round(gap_h, 1),
+                                     "threshold_hours": threshold, "streaks_cleared": n_nonzero}
+
+
+def current_gate_hours(now: datetime = None) -> float:
+    level = cg_budget.throttle_level(now or datetime.now(timezone.utc))
+    return {0: CREDIT_GATE_HOURS, 1: CREDIT_GATE_HOURS * 2, 2: 12}[level]
+
+
 def compute_trend_following_stop(current_price, atr_value):
     """v14: the actual fix for the systemic bias - a stop sized from
     volatility (ATR) around the CURRENT price, not from distance to a
@@ -1721,7 +1759,8 @@ def main():
     data = json.loads(RADAR_FLAGS_PATH.read_text(encoding="utf-8"))
     coins = data.get("coins", [])
 
-    all_listed = [c for c in coins if c.get("binance_listed") is True]
+    all_listed = [c for c in coins if c.get("binance_listed") is True
+                  and not asset_filters.is_excluded(c)]  # v67: defence in depth (scan.py already drops them)
     candidates = select_rotating_candidates(all_listed)
 
     print(f"Running breakout check on {len(candidates)} of {len(all_listed)} Binance-listed candidates "
@@ -1737,6 +1776,15 @@ def main():
     indicator_weights = load_indicator_weights()
     score_streak = load_score_streak()
     now = datetime.now(timezone.utc)
+    try:
+        streak_meta = json.loads(STREAK_META_PATH.read_text(encoding="utf-8")) if STREAK_META_PATH.exists() else {}
+    except json.JSONDecodeError:
+        streak_meta = {}
+    score_streak, streak_reset = reset_streaks_after_gap(score_streak, streak_meta, now, current_gate_hours(now))
+    if streak_reset:
+        print(f"v67: score streaks reset after a {streak_reset['gap_hours']}h gap "
+              f"(> {streak_reset['threshold_hours']}h) - {streak_reset['streaks_cleared']} non-zero streak(s) cleared.")
+        streak_meta["last_reset"] = streak_reset
     pending_log_entries = []
 
     for coin in candidates:
@@ -2077,6 +2125,10 @@ def main():
     save_trendline_watchlist(trendline_watchlist)
     save_oi_baseline(oi_baseline)
     save_score_streak(score_streak)
+    streak_meta["last_update"] = now.isoformat()  # v67
+    STREAK_META_PATH.write_text(json.dumps(streak_meta, ensure_ascii=False, indent=2), encoding="utf-8")
+    if streak_reset:
+        data["score_streak_reset"] = streak_reset
 
     btc_volatility_baseline = load_btc_volatility_baseline()
     data["market_regime"] = compute_market_regime(

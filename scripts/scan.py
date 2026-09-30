@@ -24,6 +24,7 @@ exchange candles. RSI/EMA computed from them are directional approximations
 over a short window, not the same as chart-read RSI(14)/EMA(9,21).
 """
 import cg_budget  # v66
+import asset_filters  # v67
 import json
 import os
 import time
@@ -48,6 +49,16 @@ CATEGORIES_PATH = DATA_DIR / "categories.json"
 MAX_HISTORY_POINTS = 500          # ~5 days at 15-min intervals
 MIN_POINTS_FOR_INDICATORS = 14    # RSI(14) minimum
 OPPORTUNITY_LIFECYCLE_PATH = DATA_DIR / "opportunity-lifecycle.json"
+
+# v67 (30/9/2026): warm-up after a data gap. The synthetic 4H candles, RSI,
+# squeeze and CHoCH detectors all read price-history.json; after a long hole
+# (e.g. the 83h CoinGecko-quota outage of 27-30/9) the first candles span the
+# gap and produce distorted Layer-2 signals. During warm-up those signals are
+# still computed and saved (early_signals_warmup=True) but they do NOT add
+# flags and do NOT escalate priority_review - price-based flags work as usual.
+WARMUP_STATE_PATH = DATA_DIR / "warmup-state.json"
+WARMUP_GAP_HOURS = 2.0            # a hole longer than this between scans starts a warm-up
+WARMUP_DURATION_HOURS = 6.0       # 6h = 1.5 synthetic 4H candles of clean data after the gap
 OPPORTUNITY_DECAY_MOVE_PCT = 6.0    # price already moved this much since first flag -> the move likely already happened
 OPPORTUNITY_DECAY_HOURS = 48        # flagged this long without resolving -> stale regardless of price
 
@@ -650,6 +661,37 @@ def update_opportunity_lifecycle(lifecycle: dict, coin_id: str, is_flagged_now: 
     }
 
 
+def last_point_time(history: dict, coin_id: str = "bitcoin"):
+    """v67: timestamp of the newest stored point for the benchmark coin."""
+    pts = history.get(coin_id) or []
+    for p in reversed(pts):
+        try:
+            return datetime.fromisoformat(p["t"])
+        except (KeyError, TypeError, ValueError):
+            continue
+    return None
+
+
+def update_warmup_state(state: dict, last_seen, now: datetime) -> dict:
+    """v67: returns the new warm-up state. A gap > WARMUP_GAP_HOURS since the
+    previous scan (re)starts a warm-up window of WARMUP_DURATION_HOURS."""
+    state = dict(state or {})
+    if last_seen is not None:
+        gap_h = (now - last_seen).total_seconds() / 3600
+        state["last_gap_hours"] = round(gap_h, 2)
+        if gap_h > WARMUP_GAP_HOURS:
+            state["gap_detected_at"] = now.isoformat()
+            state["gap_hours"] = round(gap_h, 2)
+            state["warmup_until"] = (now + timedelta(hours=WARMUP_DURATION_HOURS)).isoformat()
+    try:
+        until = datetime.fromisoformat(state["warmup_until"]) if state.get("warmup_until") else None
+    except ValueError:
+        until = None
+    state["active"] = bool(until and now < until)
+    state["checked_at"] = now.isoformat()
+    return state
+
+
 def update_history(history: dict, coin: dict, timestamp: str, always_track: set) -> None:
     cid = coin["id"]
     should_track = (
@@ -864,7 +906,14 @@ def main():
         coin["_will_flag"] = bool(prelim_flags)
 
     history = load_json(HISTORY_PATH, {})
-    timestamp = datetime.now(timezone.utc).isoformat()
+    now_dt = datetime.now(timezone.utc)
+    timestamp = now_dt.isoformat()
+    # v67: detect a data gap BEFORE this run's point is appended
+    warmup = update_warmup_state(load_json(WARMUP_STATE_PATH, {}), last_point_time(history), now_dt)
+    WARMUP_STATE_PATH.write_text(json.dumps(warmup, ensure_ascii=False, indent=2), encoding="utf-8")
+    if warmup["active"]:
+        print(f"v67 warm-up ACTIVE until {warmup.get('warmup_until')} (gap {warmup.get('gap_hours')}h) - "
+              f"Layer-2 early signals are recorded but not flagged/escalated.")
     # v15: bitcoin must always accumulate history regardless of whether it
     # ever gets flagged itself - it's the benchmark every early-signal
     # relative-strength check below is computed against.
@@ -917,16 +966,26 @@ def main():
         flags = list(base_flags_by_id[cid])
         priority_review = False
         early_signals = None
-        if len(points) >= 4:
+        exclusion = asset_filters.exclusion_reason(cid, coin.get("symbol"))  # v67
+        suppressed_flags = []
+        if len(points) >= 4 and exclusion is None:
             early_signals = compute_early_signals(cid, points, current_categories, base_flagged_ids, btc_points)
             new_flags = early_signal_flags(early_signals)
-            if new_flags:
+            if new_flags and warmup["active"]:
+                suppressed_flags = new_flags          # v67: recorded, not acted on
+            elif new_flags:
                 flags = flags + new_flags
                 priority_review = True
         record = build_record(coin, flags, indicators, btc_chg24)
         if early_signals is not None:
             record["early_signals"] = early_signals
+            if warmup["active"]:
+                record["early_signals_warmup"] = True
+                if suppressed_flags:
+                    record["early_signal_flags_suppressed"] = suppressed_flags
         record["priority_review"] = priority_review
+        if exclusion:
+            record["excluded_reason"] = exclusion      # v67: kept in market-scan.json, never sent to radar-flags
 
         # v33: Opportunity Decay - "currently flagged" means either an early
         # signal fired OR the coin already had its own real price-based flag
@@ -961,7 +1020,7 @@ def main():
         json.dumps(full_snapshot, ensure_ascii=False, indent=2), encoding="utf-8"
     )
 
-    flagged = [r for r in records if r["flags"]]
+    flagged = [r for r in records if r["flags"] and not r.get("excluded_reason")]  # v67: no pegged / tokenized equities
     flagged.sort(key=lambda r: len(r["flags"]), reverse=True)
     top_by_flag_count = flagged[:40]
 
@@ -982,6 +1041,8 @@ def main():
         "count": len(top_flagged),
         "market_breadth_pct_green": market_breadth_pct_green,
         "category_clusters": category_clusters,
+        "warmup": {k: warmup.get(k) for k in ("active", "warmup_until", "gap_hours", "last_gap_hours")},  # v67
+        "excluded_count": sum(1 for r in records if r.get("excluded_reason")),  # v67
         "coins": top_flagged,
     }
     (DATA_DIR / "radar-flags.json").write_text(

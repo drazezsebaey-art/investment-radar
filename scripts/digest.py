@@ -22,6 +22,20 @@ def load(name):
         return None
 
 
+def is_tradeable_key(key: str) -> bool:
+    """v67: a fundamentals.json 'flagged' key is a CoinGecko id when the protocol
+    maps to a token (lower-case, no spaces, no 'protocol:' prefix), otherwise the
+    raw protocol name. Pegged assets (e.g. ripple-usd) are not tradeable either."""
+    if not key or " " in key or key.startswith("protocol:") or key != key.lower():
+        return False
+    try:
+        sys.path.insert(0, str(Path(__file__).resolve().parent))
+        import asset_filters
+        return asset_filters.exclusion_reason(key, None) is None
+    except Exception:  # noqa: BLE001
+        return True
+
+
 def fmt(x, nd=2):
     if x is None:
         return "-"
@@ -119,10 +133,16 @@ def build(now=None):
     fu = load("fundamentals.json")
     L.append("## Revenue / buyback flags")
     if fu and fu.get("flagged"):
-        for k, v in list(fu["flagged"].items())[:6]:
+        # v67: only protocols that map to a real, non-pegged token are actionable;
+        # entities without a token (wallets, builders) are counted, not listed
+        tradeable = {k: v for k, v in fu["flagged"].items() if is_tradeable_key(k)}
+        for k, v in list(tradeable.items())[:6]:
             L.append(f"- {k}: {', '.join(v)}")
-        for g in (fu.get("governance_catalysts") or [])[:3]:
-            L.append(f"- vote: {g.get('space')} until {g.get('ends')} - {g.get('title', '')[:70]}")
+        hidden = len(fu["flagged"]) - len(tradeable)
+        if hidden:
+            L.append(f"- ({hidden} flagged protocol(s) without a tradeable token hidden)")
+        for g in [g for g in (fu.get("governance_catalysts") or []) if g.get("coin")][:3]:
+            L.append(f"- vote: {g.get('coin')} ({g.get('space')}) until {g.get('ends')} - {g.get('title', '')[:70]}")
     else:
         L.append("- none" if fu else "- (file missing)")
     L.append("")
@@ -146,6 +166,16 @@ def build(now=None):
     rf = load("radar-flags.json")
     if rf:
         L.append(f"- radar-flags.json scan age: {age(rf.get('updated_at'), now)}")
+        wu = rf.get("warmup") or {}
+        if wu.get("active"):
+            L.append(f"- WARM-UP active until {wu.get('warmup_until')} after a {wu.get('gap_hours')}h gap: "
+                     f"Layer-2 early signals recorded, not flagged")
+        if rf.get("score_streak_reset"):
+            r = rf["score_streak_reset"]
+            L.append(f"- score streaks reset {r.get('reset_at')} after {r.get('gap_hours')}h gap "
+                     f"({r.get('streaks_cleared')} cleared)")
+        if rf.get("excluded_count"):
+            L.append(f"- excluded from radar (pegged/tokenized equity): {rf['excluded_count']}")
     if missing:
         L.append(f"- missing inputs: {', '.join(missing)}")
     return "\n".join(L) + "\n"

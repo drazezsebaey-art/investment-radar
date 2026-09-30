@@ -28,13 +28,15 @@ import sys
 import urllib.request
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parent))  # v67
+import asset_filters  # noqa: E402  v67
 
 ROOT = Path(__file__).resolve().parent.parent
 D = ROOT / "data"
 FLAGS, ETF, DERIV, FUND, CATS = (D / "radar-flags.json", D / "etf-news.json", D / "derivatives.json",
                                  D / "fundamentals.json", D / "categories.json")
 OUT, LOG, STATS = D / "prepump-candidates.json", D / "prepump-log.json", D / "prepump-stats.json"
-ENGINE_VERSION = "prepump-v64"
+ENGINE_VERSION = "prepump-v67"
 
 # thresholds (tracked in config/trials-log.json)
 PREPUMP_MIN_CATEGORIES = 2
@@ -116,6 +118,8 @@ def candidates(coins, sig):
     out = []
     for cid, cats in sig.items():
         c = coins[cid]
+        if asset_filters.exclusion_reason(cid, c.get("symbol")):  # v67: no pegged / tokenized equities
+            continue
         if len(cats) < PREPUMP_MIN_CATEGORIES:
             continue
         if (c.get("change_7d_pct") or 0) >= PREPUMP_MAX_7D_PCT:
