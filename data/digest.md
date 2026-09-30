@@ -1,7 +1,7 @@
-# Radar digest - 2026-09-30 09:31 UTC
+# Radar digest - 2026-09-30 10:03 UTC
 
 ## Market
-- BTC scenario **A** | price 83198 | wk close 84465 vs 82800 | 50W 78247 (6.33%) | 27m old
+- BTC scenario **A** | price 83198 | wk close 84465 vs 82800 | 50W 78247 (6.33%) | 59m old
 - Alts: **BTC_LED** [-] | BTC.D 55.95% | ETH/BTC 0.03216 | breadth7d 55% | stables 30d 1.26%
 - Gold: PAXG 1m -3.86% | real10y - (-bp 1m) | USD 1m -% | pillar6 **insufficient_data**  | COT pctl -
 
@@ -34,14 +34,14 @@
 - ondo-finance: other - iShares Large Cap Core Active ETF (Ondo Tokenized) BLCRON/CNY - CryptoRank
 
 ## Derivatives flags (OKX)
-- ETH: LONG_FLUSH_24H | OI/mc 0.55% | topPos 0.93 | taker 1.04
-- SOL: LONG_FLUSH_24H | OI/mc 0.54% | topPos 0.94 | taker 0.96
-- XRP: LONG_FLUSH_24H | OI/mc 0.13% | topPos 0.87 | taker 0.99
-- SUI: LONG_FLUSH_24H | OI/mc 1.00% | topPos 0.85 | taker 0.97
-- SEI: LONG_FLUSH_24H | OI/mc 0.78% | topPos 0.91 | taker 0.90
-- TAO: LONG_FLUSH_24H | OI/mc -% | topPos 0.90 | taker 0.86
+- BTC: SHORT_SQUEEZE_24H | OI/mc 0.19% | topPos 0.96 | taker 0.98
+- ETH: SHORT_SQUEEZE_24H | OI/mc 0.55% | topPos 0.94 | taker 1.03
+- SOL: LONG_FLUSH_24H | OI/mc 0.55% | topPos 0.95 | taker 0.97
+- SUI: LONG_FLUSH_24H | OI/mc 1.00% | topPos 0.85 | taker 0.99
+- SEI: LONG_FLUSH_24H | OI/mc 0.78% | topPos 0.91 | taker 0.94
+- TAO: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 0.88
 - ADA: LONG_FLUSH_24H | OI/mc 0.38% | topPos 0.95 | taker 0.98
-- XLM: LONG_FLUSH_24H | OI/mc 0.21% | topPos 0.90 | taker 1.00
+- LINK: LONG_FLUSH_24H | OI/mc 0.36% | topPos 1.01 | taker 0.87
 
 ## Revenue / buyback flags
 - ripple-usd: REVENUE_ACCELERATING
@@ -55,7 +55,7 @@
 - vote: PikuDAO until 2026-10-01 - Proposal 48 - Deploy 114,000 USDC from Piku Finance Treasury Across Mo
 
 ## System
-- CoinGecko 203/10000 used, month-end projection 207 (2%), throttle level 0 | by script {'scan': 203}
+- CoinGecko 208/10000 used, month-end projection 212 (2%), throttle level 0 | by script {'scan': 208}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=0), H2 PENDING (n=0)
-- radar-flags.json scan age: 79h
+- radar-flags.json scan age: 80h
