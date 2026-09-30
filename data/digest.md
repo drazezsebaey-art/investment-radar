@@ -1,19 +1,19 @@
-# Radar digest - 2026-09-30 22:31 UTC
+# Radar digest - 2026-09-30 23:05 UTC
 
 ## Market
-- BTC scenario **A** | price 83764 | wk close 84465 vs 82800 | 50W 78247 (7.05%) | 1h old
+- BTC scenario **A** | price 83750 | wk close 84465 vs 82800 | 50W 78247 (7.03%) | 1m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.03% | ETH/BTC 0.03205 | breadth7d 55% | stables 30d 1.26%
 - Gold: PAXG 1m -4.58% | real10y 2.91 (47bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 48
 
 ## Coins in correction (entry_ready first)
-- MINA: **ONGOING** | +312% impulse, retr 0.15 | OI dd 16% | fund -0.0248 | hold False | inval 0.13912 | OB 0.10261-0.10817
+- MINA: **ONGOING** | +312% impulse, retr 0.13 | OI dd 16% | fund -0.0329 | hold False | inval 0.13912 | OB 0.10261-0.10817
 - NEAR: **ONGOING** | +257% impulse, retr 0.05 | OI dd 10% | fund 0.0100 | hold False | inval 4.54500 | OB 4.24600-4.45100
-- UNI: **ONGOING** | +239% impulse, retr 0.27 | OI dd 20% | fund 0.0100 | hold False | inval 8.72100 | OB 5.80800-6.03200
-- ZEC: **ONGOING** | +239% impulse, retr 0.23 | OI dd 28% | fund 0.0056 | hold False | inval 1381.01000 | OB 1096.84000-1142.56000
-- KMNO: **ONGOING** | +190% impulse, retr 0.25 | OI dd 26% | fund -0.0444 | hold False | inval 0.04154 | OB 0.03493-0.03545
-- PYTH: **ONGOING** | +136% impulse, retr 0.23 | OI dd 14% | fund 0.0050 | hold False | inval 0.06008 | OB 0.06008-0.06346
-- SEI: **ONGOING** | +126% impulse, retr 0.28 | OI dd 10% | fund -0.0075 | hold False | inval 0.07059 | OB 0.07059-0.07286
-- FET: **ONGOING** | +117% impulse, retr 0.24 | OI dd 21% | fund 0.0050 | hold True | inval 0.21470 | OB 0.19040-0.19790
+- UNI: **ONGOING** | +239% impulse, retr 0.26 | OI dd 20% | fund 0.0100 | hold False | inval 8.72100 | OB 5.80800-6.03200
+- ZEC: **ONGOING** | +239% impulse, retr 0.21 | OI dd 28% | fund 0.0058 | hold False | inval 1381.01000 | OB 1096.84000-1142.56000
+- KMNO: **ONGOING** | +190% impulse, retr 0.27 | OI dd 26% | fund -0.0433 | hold False | inval 0.04154 | OB 0.03493-0.03545
+- PYTH: **ONGOING** | +136% impulse, retr 0.22 | OI dd 14% | fund 0.0050 | hold False | inval 0.06008 | OB 0.06008-0.06346
+- SEI: **ONGOING** | +126% impulse, retr 0.26 | OI dd 10% | fund -0.0088 | hold False | inval 0.07059 | OB 0.07059-0.07286
+- FET: **ONGOING** | +117% impulse, retr 0.23 | OI dd 21% | fund 0.0050 | hold True | inval 0.21470 | OB 0.19040-0.19790
 
 ## Pre-pump candidates
 - AVAX: [A+D+E] 7d 4.8%
@@ -26,20 +26,23 @@
 - EDGE: [C+E] 7d 2.4%
 
 ## ETF pipeline (new this run)
-- binancecoin NEW: amendment - VanEck BNB ETF Amends Custody Agreement, Names Figment as Staking Validator - Cryptonews.n
-- cash-4 NEW: other - Ethereum ETF Draws Fresh Cash as Price Surge Revives Institutional Appetite - TipRanks
-- chainlink: filing - Bitwise Advances Chainlink ETF Bid With New SEC Filing as LINK Surges - finance.biggo.com
-- chainlink: filing - Bitwise Advances Chainlink ETF Bid With New SEC Filing as LINK Surges - finance.biggo.com
+- kucoin-shares NEW: launch - Bitwise Launches First Spot NEAR ETF on NYSE Arca - KuCoin
+- ripple NEW: institutional_backing - Inside Bitwise’s XRP ETF: 0.34% Fee, Coinbase Custody and BNY Mellon - CryptoRank
+- cash-4 NEW: other - XRP News Today: $117M in ETF Cash and Nasdaq Vote Hit as Smart Money Moves to Pepeto - Tec
+- ripple NEW: other - XRP News Today: $117M in ETF Cash and Nasdaq Vote Hit as Smart Money Moves to Pepeto - Tec
+- cash-4 NEW: other - Ether ETF Turns Heads as Fidelity’s FETH Pulls In Fresh Cash - TipRanks
+- near: launch - Bitwise NEAR ETF Launch Highlighted by NEAR Co-Founder - Coinfomania
+- chainlink: filing - Grayscale expands LINK holdings as Bitwise files ETF: Can Chainlink reclaim $15.80? - Cryp
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc 0.18% | topPos 0.97 | taker 0.99
-- ETH: LONG_FLUSH_24H | OI/mc 0.54% | topPos 0.94 | taker 1.01
+- BTC: LONG_FLUSH_24H | OI/mc 0.18% | topPos 0.97 | taker 1.00
+- ETH: LONG_FLUSH_24H | OI/mc 0.54% | topPos 0.94 | taker 1.02
 - SOL: LONG_FLUSH_24H | OI/mc 0.53% | topPos 0.93 | taker 0.95
-- AVAX: LONG_FLUSH_24H | OI/mc 0.49% | topPos 0.87 | taker 0.91
-- XRP: LONG_FLUSH_24H | OI/mc 0.14% | topPos 0.86 | taker 0.97
-- SUI: SHORT_SQUEEZE_FUEL, LONG_FLUSH_24H | OI/mc 1.08% | topPos 0.87 | taker 0.99
-- SEI: LONG_FLUSH_24H | OI/mc 0.80% | topPos 0.92 | taker 0.97
-- ZEC: LONG_FLUSH_24H | OI/mc 0.58% | topPos 1.05 | taker 1.02
+- AVAX: LONG_FLUSH_24H | OI/mc 0.49% | topPos 0.88 | taker 0.91
+- XRP: LONG_FLUSH_24H | OI/mc 0.14% | topPos 0.86 | taker 0.96
+- SEI: SHORT_SQUEEZE_FUEL, LONG_FLUSH_24H | OI/mc 0.83% | topPos 0.92 | taker 0.97
+- LINK: LONG_FLUSH_24H | OI/mc 0.36% | topPos 0.98 | taker 0.90
+- XLM: LONG_FLUSH_24H | OI/mc 0.20% | topPos 0.92 | taker 0.94
 
 ## Revenue / buyback flags
 - ethereum: REVENUE_ACCELERATING
@@ -51,7 +54,7 @@
 - (28 flagged protocol(s) without a tradeable token hidden)
 
 ## System
-- CoinGecko 321/10000 used, month-end projection 322 (3%), throttle level 0 | by script {'scan': 321}
+- CoinGecko 325/10000 used, month-end projection 325 (3%), throttle level 0 | by script {'scan': 325}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=0), H2 PENDING (n=0)
-- radar-flags.json scan age: 92h
+- radar-flags.json scan age: 93h
