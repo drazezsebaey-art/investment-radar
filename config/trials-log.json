@@ -1,582 +1,616 @@
 {
-  "_doc": "v62 (27/9/2026) - every change to a tunable threshold/weight is a TRIAL and counts against the system (multiple-testing). Rules: (1) no threshold change on fewer than MIN_SAMPLE_FOR_CHANGE outcomes; (2) the evidence must come from data NOT used to pick the new value, or the entry is marked in_sample=true and must be re-validated before it is trusted; (3) every change adds an entry here AND updates tracked_parameters.current_value - scripts/trials_check.py warns when code and this file disagree.",
-  "min_sample_for_change": 30,
-  "trials_count_total": 16,
-  "tracked_parameters": [
-    {
-      "name": "AUTO_TRADE_MIN_SCORE",
-      "file": "scripts/auto_paper_trade.py",
-      "current_value": 40
-    },
-    {
-      "name": "MAX_FALLBACK_STOP_DISTANCE_PCT",
-      "file": "scripts/auto_paper_trade.py",
-      "current_value": 25.0
-    },
-    {
-      "name": "RISK_REWARD_TIERS",
-      "file": "scripts/auto_paper_trade.py",
-      "current_value": [
-        1.5,
-        2.5,
-        4.0
-      ]
-    },
-    {
-      "name": "SCALP_MIN_SCORE",
-      "file": "scripts/scalp_signals.py",
-      "current_value": 30
-    },
-    {
-      "name": "SCALP_MIN_RR",
-      "file": "scripts/scalp_signals.py",
-      "current_value": 1.3
-    },
-    {
-      "name": "SCALP_RSI_OVERBOUGHT",
-      "file": "scripts/scalp_signals.py",
-      "current_value": 82.0
-    },
-    {
-      "name": "SCALP_ATR_STOP_MULT",
-      "file": "scripts/scalp_signals.py",
-      "current_value": 0.75
-    },
-    {
-      "name": "SCALP_TARGET_RISK_MULTS",
-      "file": "scripts/scalp_signals.py",
-      "current_value": [
-        1.5,
-        2.5,
-        4.0
-      ]
-    },
-    {
-      "name": "TREND_FOLLOWING_MIN_SCORE",
-      "file": "scripts/breakout_check.py",
-      "current_value": 38
-    },
-    {
-      "name": "TREND_FOLLOWING_MIN_STREAK",
-      "file": "scripts/breakout_check.py",
-      "current_value": 3
-    },
-    {
-      "name": "TREND_FOLLOWING_ATR_STOP_MULT",
-      "file": "scripts/breakout_check.py",
-      "current_value": 2.0
-    },
-    {
-      "name": "RS_STRONG_OUTPERFORM_PCT",
-      "file": "scripts/breakout_check.py",
-      "current_value": 15.0
-    },
-    {
-      "name": "SCORE_HIGH_PRIORITY",
-      "file": "scripts/v2_engine.py",
-      "current_value": 70
-    },
-    {
-      "name": "SCORE_WATCH",
-      "file": "scripts/v2_engine.py",
-      "current_value": 55
-    },
-    {
-      "name": "DERIV_OI_MCAP_EXTREME_PCT",
-      "file": "scripts/derivatives_snapshot.py",
-      "current_value": 20.0
-    },
-    {
-      "name": "DERIV_TOP_POS_CROWDED",
-      "file": "scripts/derivatives_snapshot.py",
-      "current_value": 2.5
-    },
-    {
-      "name": "DERIV_FUNDING_HOT_PCTL",
-      "file": "scripts/derivatives_snapshot.py",
-      "current_value": 80.0
-    },
-    {
-      "name": "DERIV_DELEVERAGE_OI_DROP_PCT",
-      "file": "scripts/derivatives_snapshot.py",
-      "current_value": -15.0
-    },
-    {
-      "name": "DERIV_TAKER_SELL_DOMINANT",
-      "file": "scripts/derivatives_snapshot.py",
-      "current_value": 0.85
-    },
-    {
-      "name": "DERIV_TAKER_BUY_DOMINANT",
-      "file": "scripts/derivatives_snapshot.py",
-      "current_value": 1.15
-    },
-    {
-      "name": "DERIV_LIQ_DOMINANCE_X",
-      "file": "scripts/derivatives_snapshot.py",
-      "current_value": 3.0
-    },
-    {
-      "name": "ALT_ETHBTC_TRIGGER",
-      "file": "scripts/altseason_regime.py",
-      "current_value": 0.03426
-    },
-    {
-      "name": "ALT_BTC_DOM_ROTATION",
-      "file": "scripts/altseason_regime.py",
-      "current_value": 55.0
-    },
-    {
-      "name": "ALT_BTC_DOM_LINE",
-      "file": "scripts/altseason_regime.py",
-      "current_value": 60.0
-    },
-    {
-      "name": "ALT_BREADTH_ALTSEASON_PCT",
-      "file": "scripts/altseason_regime.py",
-      "current_value": 75.0
-    },
-    {
-      "name": "FUND_MIN_REVENUE_30D_USD",
-      "file": "scripts/fundamentals_revenue.py",
-      "current_value": 300000
-    },
-    {
-      "name": "FUND_ACCEL_30D_PCT",
-      "file": "scripts/fundamentals_revenue.py",
-      "current_value": 30.0
-    },
-    {
-      "name": "FUND_HIGH_HOLDER_YIELD_PCT",
-      "file": "scripts/fundamentals_revenue.py",
-      "current_value": 8.0
-    },
-    {
-      "name": "FUND_HIGH_REVENUE_YIELD_PCT",
-      "file": "scripts/fundamentals_revenue.py",
-      "current_value": 15.0
-    },
-    {
-      "name": "MACRO_DIVERGENCE_GOLD_PCT",
-      "file": "scripts/macro_gold.py",
-      "current_value": 2.0
-    },
-    {
-      "name": "MACRO_DIVERGENCE_RY_BP",
-      "file": "scripts/macro_gold.py",
-      "current_value": 10.0
-    },
-    {
-      "name": "MACRO_COT_CROWDED_PCTL",
-      "file": "scripts/macro_gold.py",
-      "current_value": 85.0
-    },
-    {
-      "name": "PREPUMP_MIN_CATEGORIES",
-      "file": "scripts/prepump_watchlist.py",
-      "current_value": 2
-    },
-    {
-      "name": "PREPUMP_MAX_7D_PCT",
-      "file": "scripts/prepump_watchlist.py",
-      "current_value": 30.0
-    },
-    {
-      "name": "PREPUMP_MIN_MCAP_USD",
-      "file": "scripts/prepump_watchlist.py",
-      "current_value": 50000000
-    },
-    {
-      "name": "PREPUMP_LEADER_7D_PCT",
-      "file": "scripts/prepump_watchlist.py",
-      "current_value": 40.0
-    },
-    {
-      "name": "PREPUMP_PEER_MAX_7D_PCT",
-      "file": "scripts/prepump_watchlist.py",
-      "current_value": 10.0
-    },
-    {
-      "name": "PREPUMP_HIT_PCT",
-      "file": "scripts/prepump_watchlist.py",
-      "current_value": 20.0
-    },
-    {
-      "name": "BTC_KEY_LEVEL",
-      "file": "scripts/correction_monitor.py",
-      "current_value": 82800.0
-    },
-    {
-      "name": "BTC_50W_TEST_PCT",
-      "file": "scripts/correction_monitor.py",
-      "current_value": 3.0
-    },
-    {
-      "name": "BTC_DEEP_DD_PCT",
-      "file": "scripts/correction_monitor.py",
-      "current_value": 20.0
-    },
-    {
-      "name": "IMPULSE_MIN_GAIN_PCT",
-      "file": "scripts/correction_monitor.py",
-      "current_value": 40.0
-    },
-    {
-      "name": "IMPULSE_LOOKBACK_DAYS",
-      "file": "scripts/correction_monitor.py",
-      "current_value": 45
-    },
-    {
-      "name": "PEAK_MAX_AGE_DAYS",
-      "file": "scripts/correction_monitor.py",
-      "current_value": 30
-    },
-    {
-      "name": "RETR_HEALTHY_MIN",
-      "file": "scripts/correction_monitor.py",
-      "current_value": 0.382
-    },
-    {
-      "name": "RETR_BROKEN",
-      "file": "scripts/correction_monitor.py",
-      "current_value": 0.786
-    },
-    {
-      "name": "VOL_DRYUP_RATIO",
-      "file": "scripts/correction_monitor.py",
-      "current_value": 0.7
-    },
-    {
-      "name": "OI_RESET_DD_PCT",
-      "file": "scripts/correction_monitor.py",
-      "current_value": 20.0
-    },
-    {
-      "name": "FUNDING_NEUTRAL_PCT",
-      "file": "scripts/correction_monitor.py",
-      "current_value": 0.005
-    },
-    {
-      "name": "INTERNAL_LEN",
-      "file": "scripts/smc_structure.py",
-      "current_value": 5
-    },
-    {
-      "name": "SWING_LEN",
-      "file": "scripts/smc_structure.py",
-      "current_value": 50
-    },
-    {
-      "name": "OB_VOL_MULT",
-      "file": "scripts/smc_structure.py",
-      "current_value": 2.0
-    },
-    {
-      "name": "VALIDATION_ATR_LEN",
-      "file": "scripts/smc_structure.py",
-      "current_value": 17
-    },
-    {
-      "name": "VALIDATION_ATR_MULT",
-      "file": "scripts/smc_structure.py",
-      "current_value": 0.5
-    },
-    {
-      "name": "VALIDATION_WINDOW",
-      "file": "scripts/smc_structure.py",
-      "current_value": 3
-    },
-    {
-      "name": "SWEEP_LOOKBACK_BARS",
-      "file": "scripts/smc_structure.py",
-      "current_value": 6
-    },
-    {
-      "name": "VP_BINS",
-      "file": "scripts/smc_structure.py",
-      "current_value": 48
-    },
-    {
-      "name": "VP_LOOKBACK",
-      "file": "scripts/smc_structure.py",
-      "current_value": 180
-    },
-    {
-      "name": "VP_VALUE_AREA",
-      "file": "scripts/smc_structure.py",
-      "current_value": 0.7
-    },
-    {
-      "name": "MIN_STOP_DISTANCE_PCT",
-      "file": "scripts/auto_paper_trade.py",
-      "current_value": 2.0
-    },
-    {
-      "name": "MIN_STOP_DISTANCE_PCT",
-      "file": "scripts/scalp_signals.py",
-      "current_value": 2.0
-    },
-    {
-      "name": "MIN_STOP_DISTANCE_PCT",
-      "file": "scripts/v2_engine.py",
-      "current_value": 2.0
-    },
-    {
-      "name": "ATH_CACHE_HOURS",
-      "file": "scripts/breakout_check.py",
-      "current_value": 24
-    },
-    {
-      "name": "LIQ_REFRESH_HOURS",
-      "file": "scripts/check_liquidity.py",
-      "current_value": 24
-    }
-  ],
-  "trials": [
-    {
-      "id": "T001",
-      "version": "v14",
-      "date": "2026-09-21",
-      "parameter": "TREND_FOLLOWING_MIN_SCORE / MIN_STREAK",
-      "old": null,
-      "new": "38 / 3",
-      "evidence": "NEAR/AVAX missed-opportunity review",
-      "n": 2,
-      "in_sample": true,
-      "revalidated": false,
-      "retroactive_entry": true
-    },
-    {
-      "id": "T002",
-      "version": "v14",
-      "date": "2026-09-21",
-      "parameter": "RS bonus (+15 pts)",
-      "old": null,
-      "new": "+15 if RS >= 15pp",
-      "evidence": "designed to lift NEAR's score",
-      "n": 1,
-      "in_sample": true,
-      "revalidated": false,
-      "retroactive_entry": true
-    },
-    {
-      "id": "T003",
-      "version": "v20",
-      "date": "2026-09-22",
-      "parameter": "SCALP_ATR_STOP_MULT",
-      "old": 2.0,
-      "new": 0.75,
-      "evidence": "0/28 scalp trades closed in 4-23h (sizing mismatch, design fix)",
-      "n": 28,
-      "in_sample": true,
-      "revalidated": false,
-      "retroactive_entry": true
-    },
-    {
-      "id": "T004",
-      "version": "v27",
-      "date": "2026-09-23",
-      "parameter": "SCALP_TARGET_RISK_MULTS",
-      "old": [
-        1.0,
-        1.75,
-        3.0
-      ],
-      "new": [
-        1.5,
-        2.5,
-        4.0
-      ],
-      "evidence": "bug fix - R:R was mathematically fixed at 1.0 (not a fitting trial, logged for completeness)",
-      "n": null,
-      "in_sample": false,
-      "revalidated": null,
-      "retroactive_entry": true
-    },
-    {
-      "id": "T005",
-      "version": "v26",
-      "date": "2026-09-23",
-      "parameter": "MAX_FALLBACK_STOP_DISTANCE_PCT",
-      "old": null,
-      "new": 20.0,
-      "evidence": "AR stop 54% from entry (risk cap, design rule)",
-      "n": 1,
-      "in_sample": true,
-      "revalidated": false,
-      "retroactive_entry": true
-    },
-    {
-      "id": "T006",
-      "version": "v57",
-      "date": "2026-09-26",
-      "parameter": "MAX_FALLBACK_STOP_DISTANCE_PCT",
-      "old": 20.0,
-      "new": 25.0,
-      "evidence": "counterfactual: 7/7 STOP_TOO_WIDE rejections between 20-25% would have won",
-      "n": 7,
-      "in_sample": true,
-      "revalidated": false,
-      "retroactive_entry": true,
-      "flag": "BELOW_MIN_SAMPLE - n=7 < 30, all from one bullish window; re-validate on post-1/10 data before trusting"
-    },
-    {
-      "id": "T007",
-      "version": "v61",
-      "date": "2026-09-27",
-      "parameter": "SCALP_RSI_OVERBOUGHT",
-      "old": 75.0,
-      "new": 82.0,
-      "evidence": "counterfactual: 16 RSI_OVERBOUGHT rejections, 0 losses up to RSI 88.9",
-      "n": 16,
-      "in_sample": true,
-      "revalidated": false,
-      "retroactive_entry": true,
-      "flag": "BELOW_MIN_SAMPLE - n=16 < 30, single momentum regime (author already noted regime risk)"
-    },
-    {
-      "id": "T008",
-      "version": "v3",
-      "date": "2026-09-19",
-      "parameter": "SCALP_MIN_RR",
-      "old": null,
-      "new": 1.3,
-      "evidence": "mirrors SCALP fund gate (design rule)",
-      "n": null,
-      "in_sample": false,
-      "revalidated": null,
-      "retroactive_entry": true
-    },
-    {
-      "id": "T009",
-      "version": "v9",
-      "date": "2026-09-19",
-      "parameter": "AUTO_TRADE_MIN_SCORE",
-      "old": null,
-      "new": 40,
-      "evidence": "agreed starting threshold (design rule)",
-      "n": null,
-      "in_sample": false,
-      "revalidated": null,
-      "retroactive_entry": true
-    },
-    {
-      "id": "T010",
-      "version": "v63",
-      "date": "2026-09-27",
-      "parameter": "DERIV_* flag thresholds (7)",
-      "old": null,
-      "new": "initial values",
-      "evidence": "design defaults from the NEAR/ONDO/TRB Coinglass reads (27/9) - descriptive flags only, no trade gating",
-      "n": null,
-      "in_sample": false,
-      "revalidated": null,
-      "retroactive_entry": false
-    },
-    {
-      "id": "T011",
-      "version": "v64",
-      "date": "2026-09-28",
-      "parameter": "ALT_* / FUND_* / MACRO_* / PREPUMP_* (17)",
-      "old": null,
-      "new": "initial values",
-      "evidence": "design defaults; PREPUMP candidates are forward-tested in data/prepump-stats.json - no threshold change before n>=30 evaluated",
-      "n": null,
-      "in_sample": false,
-      "revalidated": null,
-      "retroactive_entry": false
-    },
-    {
-      "id": "T012",
-      "version": "v65",
-      "date": "2026-09-28",
-      "parameter": "correction monitor thresholds (11)",
-      "old": null,
-      "new": "initial values",
-      "evidence": "textbook Fibonacci depths + the NEAR plan's OI-flush rule (20%); BTC_KEY_LEVEL = May-2026 high cited by Cowen/Soloway (manual level - update it as a logged trial when the key level changes)",
-      "n": null,
-      "in_sample": false,
-      "revalidated": null,
-      "retroactive_entry": false
-    },
-    {
-      "id": "T013",
-      "version": "v65.2",
-      "date": "2026-09-28",
-      "parameter": "structure engine (INTERNAL_LEN/SWING_LEN/OB_VOL_MULT)",
-      "old": "pivots N=2, one layer",
-      "new": "5 / 50 / 2.0 (mirrors Azez's LuxAlgo SMC settings)",
-      "evidence": "alignment with the indicator he reads, not fitted to outcomes",
-      "n": null,
-      "in_sample": false,
-      "revalidated": null,
-      "retroactive_entry": false
-    },
-    {
-      "id": "T014",
-      "version": "v65.3",
-      "date": "2026-09-28",
-      "parameter": "break validation / sweep / volume profile params (7)",
-      "old": null,
-      "new": "ATR(17) from the LuxAlgo concept; 0.5x width, 3-bar window, 6-bar sweep freshness, 48 bins / 30d / 70% are design defaults",
-      "evidence": "VALIDATION_ATR_MULT is NOT published by LuxAlgo - calibrate against his charts before trusting SWEEP vs CONFIRMED labels",
-      "n": null,
-      "in_sample": false,
-      "revalidated": null,
-      "retroactive_entry": false
-    },
-    {
-      "id": "T015",
-      "version": "v65.5",
-      "date": "2026-09-28",
-      "parameter": "MIN_STOP_DISTANCE_PCT (all engines) + pegged-asset exclusion",
-      "old": null,
-      "new": "2.0% / stablecoins+gold-pegged excluded",
-      "evidence": "cost arithmetic: 0.3% round trip vs sub-0.3% stops guarantees < -1R losses; in-sample stops<2% meanR -1.07 (n=82) vs >=2% +0.68 (n=138)",
-      "n": 220,
-      "in_sample": true,
-      "revalidated": false,
-      "retroactive_entry": false,
-      "flag": "structural (cost-driven) rule, not a fitted edge; re-check the <2% vs >=2% split on post-1/10 data"
-    },
-    {
-      "id": "T016",
-      "version": "v66",
-      "date": "2026-09-29",
-      "parameter": "breakout_check data source: OHLC + hourly volume from OKX (CoinGecko fallback); ATH cached 24h; liquidity cached 24h; counterfactual prices from OKX",
-      "old": "CoinGecko aggregated OHLC/volume",
-      "new": "OKX single-venue OHLC (close-stamped) and rolling-24h volume built from 1H quote volume",
-      "evidence": "credit conservation - CoinGecko Demo allowance ran out mid-September; volume LEVELS are lower on a single venue, ratios/spikes comparable",
-      "n": null,
-      "in_sample": false,
-      "revalidated": false,
-      "retroactive_entry": false,
-      "flag": "data-source change, not a threshold change - compare breakout signal rates before/after 1/10 before trusting volume-threshold comparisons"
-    }
-  ],
-  "hypotheses": [
-    {
-      "id": "H1",
-      "date": "2026-09-28",
-      "statement": "extension_continuation archetype outperforms other archetypes",
-      "in_sample": "n=21, win 47.6%, avg +6.05% vs control ~31%",
-      "status": "forward-test from 2026-10-01 (scripts/hypothesis_check.py)",
-      "adopt_rule": "only if SUPPORTED with n>=30 per arm on forward data"
-    },
-    {
-      "id": "H2",
-      "date": "2026-09-28",
-      "statement": "confidence 30-49 at entry outperforms confidence >=50",
-      "in_sample": "n=96 win ~42% vs n=47 win ~28%",
-      "status": "forward-test from 2026-10-01",
-      "adopt_rule": "only if SUPPORTED with n>=30 per arm on forward data"
-    }
-  ],
-  "_mining_note": "28/9/2026: ~40 buckets were inspected on 220 correlated in-sample trades from one regime; count this mining pass as ~40 trials when judging any 'discovered' pattern.",
-  "fund_risk_rule_change": {
-    "date": "2026-09-28",
-    "old": "max 10% of balance risked per trade",
-    "new": "max 3% (target 2%) per trade, both funds",
-    "evidence": "Monte Carlo on 138 in-sample trades with stops>=2%: P(-25% breaker within 30 trades) 2%->3.2%, 3%->20%, 5%->61%, 10%->99%"
+ "_doc": "v62 (27/9/2026) - every change to a tunable threshold/weight is a TRIAL and counts against the system (multiple-testing). Rules: (1) no threshold change on fewer than MIN_SAMPLE_FOR_CHANGE outcomes; (2) the evidence must come from data NOT used to pick the new value, or the entry is marked in_sample=true and must be re-validated before it is trusted; (3) every change adds an entry here AND updates tracked_parameters.current_value - scripts/trials_check.py warns when code and this file disagree.",
+ "min_sample_for_change": 30,
+ "trials_count_total": 17,
+ "tracked_parameters": [
+  {
+   "name": "AUTO_TRADE_MIN_SCORE",
+   "file": "scripts/auto_paper_trade.py",
+   "current_value": 40
+  },
+  {
+   "name": "MAX_FALLBACK_STOP_DISTANCE_PCT",
+   "file": "scripts/auto_paper_trade.py",
+   "current_value": 25.0
+  },
+  {
+   "name": "RISK_REWARD_TIERS",
+   "file": "scripts/auto_paper_trade.py",
+   "current_value": [
+    1.5,
+    2.5,
+    4.0
+   ]
+  },
+  {
+   "name": "SCALP_MIN_SCORE",
+   "file": "scripts/scalp_signals.py",
+   "current_value": 30
+  },
+  {
+   "name": "SCALP_MIN_RR",
+   "file": "scripts/scalp_signals.py",
+   "current_value": 1.3
+  },
+  {
+   "name": "SCALP_RSI_OVERBOUGHT",
+   "file": "scripts/scalp_signals.py",
+   "current_value": 82.0
+  },
+  {
+   "name": "SCALP_ATR_STOP_MULT",
+   "file": "scripts/scalp_signals.py",
+   "current_value": 0.75
+  },
+  {
+   "name": "SCALP_TARGET_RISK_MULTS",
+   "file": "scripts/scalp_signals.py",
+   "current_value": [
+    1.5,
+    2.5,
+    4.0
+   ]
+  },
+  {
+   "name": "TREND_FOLLOWING_MIN_SCORE",
+   "file": "scripts/breakout_check.py",
+   "current_value": 38
+  },
+  {
+   "name": "TREND_FOLLOWING_MIN_STREAK",
+   "file": "scripts/breakout_check.py",
+   "current_value": 3
+  },
+  {
+   "name": "TREND_FOLLOWING_ATR_STOP_MULT",
+   "file": "scripts/breakout_check.py",
+   "current_value": 2.0
+  },
+  {
+   "name": "RS_STRONG_OUTPERFORM_PCT",
+   "file": "scripts/breakout_check.py",
+   "current_value": 15.0
+  },
+  {
+   "name": "SCORE_HIGH_PRIORITY",
+   "file": "scripts/v2_engine.py",
+   "current_value": 70
+  },
+  {
+   "name": "SCORE_WATCH",
+   "file": "scripts/v2_engine.py",
+   "current_value": 55
+  },
+  {
+   "name": "DERIV_OI_MCAP_EXTREME_PCT",
+   "file": "scripts/derivatives_snapshot.py",
+   "current_value": 20.0
+  },
+  {
+   "name": "DERIV_TOP_POS_CROWDED",
+   "file": "scripts/derivatives_snapshot.py",
+   "current_value": 2.5
+  },
+  {
+   "name": "DERIV_FUNDING_HOT_PCTL",
+   "file": "scripts/derivatives_snapshot.py",
+   "current_value": 80.0
+  },
+  {
+   "name": "DERIV_DELEVERAGE_OI_DROP_PCT",
+   "file": "scripts/derivatives_snapshot.py",
+   "current_value": -15.0
+  },
+  {
+   "name": "DERIV_TAKER_SELL_DOMINANT",
+   "file": "scripts/derivatives_snapshot.py",
+   "current_value": 0.85
+  },
+  {
+   "name": "DERIV_TAKER_BUY_DOMINANT",
+   "file": "scripts/derivatives_snapshot.py",
+   "current_value": 1.15
+  },
+  {
+   "name": "DERIV_LIQ_DOMINANCE_X",
+   "file": "scripts/derivatives_snapshot.py",
+   "current_value": 3.0
+  },
+  {
+   "name": "ALT_ETHBTC_TRIGGER",
+   "file": "scripts/altseason_regime.py",
+   "current_value": 0.03426
+  },
+  {
+   "name": "ALT_BTC_DOM_ROTATION",
+   "file": "scripts/altseason_regime.py",
+   "current_value": 55.0
+  },
+  {
+   "name": "ALT_BTC_DOM_LINE",
+   "file": "scripts/altseason_regime.py",
+   "current_value": 60.0
+  },
+  {
+   "name": "ALT_BREADTH_ALTSEASON_PCT",
+   "file": "scripts/altseason_regime.py",
+   "current_value": 75.0
+  },
+  {
+   "name": "FUND_MIN_REVENUE_30D_USD",
+   "file": "scripts/fundamentals_revenue.py",
+   "current_value": 300000
+  },
+  {
+   "name": "FUND_ACCEL_30D_PCT",
+   "file": "scripts/fundamentals_revenue.py",
+   "current_value": 30.0
+  },
+  {
+   "name": "FUND_HIGH_HOLDER_YIELD_PCT",
+   "file": "scripts/fundamentals_revenue.py",
+   "current_value": 8.0
+  },
+  {
+   "name": "FUND_HIGH_REVENUE_YIELD_PCT",
+   "file": "scripts/fundamentals_revenue.py",
+   "current_value": 15.0
+  },
+  {
+   "name": "MACRO_DIVERGENCE_GOLD_PCT",
+   "file": "scripts/macro_gold.py",
+   "current_value": 2.0
+  },
+  {
+   "name": "MACRO_DIVERGENCE_RY_BP",
+   "file": "scripts/macro_gold.py",
+   "current_value": 10.0
+  },
+  {
+   "name": "MACRO_COT_CROWDED_PCTL",
+   "file": "scripts/macro_gold.py",
+   "current_value": 85.0
+  },
+  {
+   "name": "PREPUMP_MIN_CATEGORIES",
+   "file": "scripts/prepump_watchlist.py",
+   "current_value": 2
+  },
+  {
+   "name": "PREPUMP_MAX_7D_PCT",
+   "file": "scripts/prepump_watchlist.py",
+   "current_value": 30.0
+  },
+  {
+   "name": "PREPUMP_MIN_MCAP_USD",
+   "file": "scripts/prepump_watchlist.py",
+   "current_value": 50000000
+  },
+  {
+   "name": "PREPUMP_LEADER_7D_PCT",
+   "file": "scripts/prepump_watchlist.py",
+   "current_value": 40.0
+  },
+  {
+   "name": "PREPUMP_PEER_MAX_7D_PCT",
+   "file": "scripts/prepump_watchlist.py",
+   "current_value": 10.0
+  },
+  {
+   "name": "PREPUMP_HIT_PCT",
+   "file": "scripts/prepump_watchlist.py",
+   "current_value": 20.0
+  },
+  {
+   "name": "BTC_KEY_LEVEL",
+   "file": "scripts/correction_monitor.py",
+   "current_value": 82800.0
+  },
+  {
+   "name": "BTC_50W_TEST_PCT",
+   "file": "scripts/correction_monitor.py",
+   "current_value": 3.0
+  },
+  {
+   "name": "BTC_DEEP_DD_PCT",
+   "file": "scripts/correction_monitor.py",
+   "current_value": 20.0
+  },
+  {
+   "name": "IMPULSE_MIN_GAIN_PCT",
+   "file": "scripts/correction_monitor.py",
+   "current_value": 40.0
+  },
+  {
+   "name": "IMPULSE_LOOKBACK_DAYS",
+   "file": "scripts/correction_monitor.py",
+   "current_value": 45
+  },
+  {
+   "name": "PEAK_MAX_AGE_DAYS",
+   "file": "scripts/correction_monitor.py",
+   "current_value": 30
+  },
+  {
+   "name": "RETR_HEALTHY_MIN",
+   "file": "scripts/correction_monitor.py",
+   "current_value": 0.382
+  },
+  {
+   "name": "RETR_BROKEN",
+   "file": "scripts/correction_monitor.py",
+   "current_value": 0.786
+  },
+  {
+   "name": "VOL_DRYUP_RATIO",
+   "file": "scripts/correction_monitor.py",
+   "current_value": 0.7
+  },
+  {
+   "name": "OI_RESET_DD_PCT",
+   "file": "scripts/correction_monitor.py",
+   "current_value": 20.0
+  },
+  {
+   "name": "FUNDING_NEUTRAL_PCT",
+   "file": "scripts/correction_monitor.py",
+   "current_value": 0.005
+  },
+  {
+   "name": "INTERNAL_LEN",
+   "file": "scripts/smc_structure.py",
+   "current_value": 5
+  },
+  {
+   "name": "SWING_LEN",
+   "file": "scripts/smc_structure.py",
+   "current_value": 50
+  },
+  {
+   "name": "OB_VOL_MULT",
+   "file": "scripts/smc_structure.py",
+   "current_value": 2.0
+  },
+  {
+   "name": "VALIDATION_ATR_LEN",
+   "file": "scripts/smc_structure.py",
+   "current_value": 17
+  },
+  {
+   "name": "VALIDATION_ATR_MULT",
+   "file": "scripts/smc_structure.py",
+   "current_value": 0.5
+  },
+  {
+   "name": "VALIDATION_WINDOW",
+   "file": "scripts/smc_structure.py",
+   "current_value": 3
+  },
+  {
+   "name": "SWEEP_LOOKBACK_BARS",
+   "file": "scripts/smc_structure.py",
+   "current_value": 6
+  },
+  {
+   "name": "VP_BINS",
+   "file": "scripts/smc_structure.py",
+   "current_value": 48
+  },
+  {
+   "name": "VP_LOOKBACK",
+   "file": "scripts/smc_structure.py",
+   "current_value": 180
+  },
+  {
+   "name": "VP_VALUE_AREA",
+   "file": "scripts/smc_structure.py",
+   "current_value": 0.7
+  },
+  {
+   "name": "MIN_STOP_DISTANCE_PCT",
+   "file": "scripts/auto_paper_trade.py",
+   "current_value": 2.0
+  },
+  {
+   "name": "MIN_STOP_DISTANCE_PCT",
+   "file": "scripts/scalp_signals.py",
+   "current_value": 2.0
+  },
+  {
+   "name": "MIN_STOP_DISTANCE_PCT",
+   "file": "scripts/v2_engine.py",
+   "current_value": 2.0
+  },
+  {
+   "name": "ATH_CACHE_HOURS",
+   "file": "scripts/breakout_check.py",
+   "current_value": 24
+  },
+  {
+   "name": "LIQ_REFRESH_HOURS",
+   "file": "scripts/check_liquidity.py",
+   "current_value": 24
+  },
+  {
+   "name": "WARMUP_GAP_HOURS",
+   "file": "scripts/scan.py",
+   "current_value": 2.0
+  },
+  {
+   "name": "WARMUP_DURATION_HOURS",
+   "file": "scripts/scan.py",
+   "current_value": 6.0
+  },
+  {
+   "name": "STREAK_GAP_GATE_MULT",
+   "file": "scripts/breakout_check.py",
+   "current_value": 2.5
+  },
+  {
+   "name": "STREAK_MIN_GAP_HOURS",
+   "file": "scripts/breakout_check.py",
+   "current_value": 8.0
   }
+ ],
+ "trials": [
+  {
+   "id": "T001",
+   "version": "v14",
+   "date": "2026-09-21",
+   "parameter": "TREND_FOLLOWING_MIN_SCORE / MIN_STREAK",
+   "old": null,
+   "new": "38 / 3",
+   "evidence": "NEAR/AVAX missed-opportunity review",
+   "n": 2,
+   "in_sample": true,
+   "revalidated": false,
+   "retroactive_entry": true
+  },
+  {
+   "id": "T002",
+   "version": "v14",
+   "date": "2026-09-21",
+   "parameter": "RS bonus (+15 pts)",
+   "old": null,
+   "new": "+15 if RS >= 15pp",
+   "evidence": "designed to lift NEAR's score",
+   "n": 1,
+   "in_sample": true,
+   "revalidated": false,
+   "retroactive_entry": true
+  },
+  {
+   "id": "T003",
+   "version": "v20",
+   "date": "2026-09-22",
+   "parameter": "SCALP_ATR_STOP_MULT",
+   "old": 2.0,
+   "new": 0.75,
+   "evidence": "0/28 scalp trades closed in 4-23h (sizing mismatch, design fix)",
+   "n": 28,
+   "in_sample": true,
+   "revalidated": false,
+   "retroactive_entry": true
+  },
+  {
+   "id": "T004",
+   "version": "v27",
+   "date": "2026-09-23",
+   "parameter": "SCALP_TARGET_RISK_MULTS",
+   "old": [
+    1.0,
+    1.75,
+    3.0
+   ],
+   "new": [
+    1.5,
+    2.5,
+    4.0
+   ],
+   "evidence": "bug fix - R:R was mathematically fixed at 1.0 (not a fitting trial, logged for completeness)",
+   "n": null,
+   "in_sample": false,
+   "revalidated": null,
+   "retroactive_entry": true
+  },
+  {
+   "id": "T005",
+   "version": "v26",
+   "date": "2026-09-23",
+   "parameter": "MAX_FALLBACK_STOP_DISTANCE_PCT",
+   "old": null,
+   "new": 20.0,
+   "evidence": "AR stop 54% from entry (risk cap, design rule)",
+   "n": 1,
+   "in_sample": true,
+   "revalidated": false,
+   "retroactive_entry": true
+  },
+  {
+   "id": "T006",
+   "version": "v57",
+   "date": "2026-09-26",
+   "parameter": "MAX_FALLBACK_STOP_DISTANCE_PCT",
+   "old": 20.0,
+   "new": 25.0,
+   "evidence": "counterfactual: 7/7 STOP_TOO_WIDE rejections between 20-25% would have won",
+   "n": 7,
+   "in_sample": true,
+   "revalidated": false,
+   "retroactive_entry": true,
+   "flag": "BELOW_MIN_SAMPLE - n=7 < 30, all from one bullish window; re-validate on post-1/10 data before trusting"
+  },
+  {
+   "id": "T007",
+   "version": "v61",
+   "date": "2026-09-27",
+   "parameter": "SCALP_RSI_OVERBOUGHT",
+   "old": 75.0,
+   "new": 82.0,
+   "evidence": "counterfactual: 16 RSI_OVERBOUGHT rejections, 0 losses up to RSI 88.9",
+   "n": 16,
+   "in_sample": true,
+   "revalidated": false,
+   "retroactive_entry": true,
+   "flag": "BELOW_MIN_SAMPLE - n=16 < 30, single momentum regime (author already noted regime risk)"
+  },
+  {
+   "id": "T008",
+   "version": "v3",
+   "date": "2026-09-19",
+   "parameter": "SCALP_MIN_RR",
+   "old": null,
+   "new": 1.3,
+   "evidence": "mirrors SCALP fund gate (design rule)",
+   "n": null,
+   "in_sample": false,
+   "revalidated": null,
+   "retroactive_entry": true
+  },
+  {
+   "id": "T009",
+   "version": "v9",
+   "date": "2026-09-19",
+   "parameter": "AUTO_TRADE_MIN_SCORE",
+   "old": null,
+   "new": 40,
+   "evidence": "agreed starting threshold (design rule)",
+   "n": null,
+   "in_sample": false,
+   "revalidated": null,
+   "retroactive_entry": true
+  },
+  {
+   "id": "T010",
+   "version": "v63",
+   "date": "2026-09-27",
+   "parameter": "DERIV_* flag thresholds (7)",
+   "old": null,
+   "new": "initial values",
+   "evidence": "design defaults from the NEAR/ONDO/TRB Coinglass reads (27/9) - descriptive flags only, no trade gating",
+   "n": null,
+   "in_sample": false,
+   "revalidated": null,
+   "retroactive_entry": false
+  },
+  {
+   "id": "T011",
+   "version": "v64",
+   "date": "2026-09-28",
+   "parameter": "ALT_* / FUND_* / MACRO_* / PREPUMP_* (17)",
+   "old": null,
+   "new": "initial values",
+   "evidence": "design defaults; PREPUMP candidates are forward-tested in data/prepump-stats.json - no threshold change before n>=30 evaluated",
+   "n": null,
+   "in_sample": false,
+   "revalidated": null,
+   "retroactive_entry": false
+  },
+  {
+   "id": "T012",
+   "version": "v65",
+   "date": "2026-09-28",
+   "parameter": "correction monitor thresholds (11)",
+   "old": null,
+   "new": "initial values",
+   "evidence": "textbook Fibonacci depths + the NEAR plan's OI-flush rule (20%); BTC_KEY_LEVEL = May-2026 high cited by Cowen/Soloway (manual level - update it as a logged trial when the key level changes)",
+   "n": null,
+   "in_sample": false,
+   "revalidated": null,
+   "retroactive_entry": false
+  },
+  {
+   "id": "T013",
+   "version": "v65.2",
+   "date": "2026-09-28",
+   "parameter": "structure engine (INTERNAL_LEN/SWING_LEN/OB_VOL_MULT)",
+   "old": "pivots N=2, one layer",
+   "new": "5 / 50 / 2.0 (mirrors Azez's LuxAlgo SMC settings)",
+   "evidence": "alignment with the indicator he reads, not fitted to outcomes",
+   "n": null,
+   "in_sample": false,
+   "revalidated": null,
+   "retroactive_entry": false
+  },
+  {
+   "id": "T014",
+   "version": "v65.3",
+   "date": "2026-09-28",
+   "parameter": "break validation / sweep / volume profile params (7)",
+   "old": null,
+   "new": "ATR(17) from the LuxAlgo concept; 0.5x width, 3-bar window, 6-bar sweep freshness, 48 bins / 30d / 70% are design defaults",
+   "evidence": "VALIDATION_ATR_MULT is NOT published by LuxAlgo - calibrate against his charts before trusting SWEEP vs CONFIRMED labels",
+   "n": null,
+   "in_sample": false,
+   "revalidated": null,
+   "retroactive_entry": false
+  },
+  {
+   "id": "T015",
+   "version": "v65.5",
+   "date": "2026-09-28",
+   "parameter": "MIN_STOP_DISTANCE_PCT (all engines) + pegged-asset exclusion",
+   "old": null,
+   "new": "2.0% / stablecoins+gold-pegged excluded",
+   "evidence": "cost arithmetic: 0.3% round trip vs sub-0.3% stops guarantees < -1R losses; in-sample stops<2% meanR -1.07 (n=82) vs >=2% +0.68 (n=138)",
+   "n": 220,
+   "in_sample": true,
+   "revalidated": false,
+   "retroactive_entry": false,
+   "flag": "structural (cost-driven) rule, not a fitted edge; re-check the <2% vs >=2% split on post-1/10 data"
+  },
+  {
+   "id": "T016",
+   "version": "v66",
+   "date": "2026-09-29",
+   "parameter": "breakout_check data source: OHLC + hourly volume from OKX (CoinGecko fallback); ATH cached 24h; liquidity cached 24h; counterfactual prices from OKX",
+   "old": "CoinGecko aggregated OHLC/volume",
+   "new": "OKX single-venue OHLC (close-stamped) and rolling-24h volume built from 1H quote volume",
+   "evidence": "credit conservation - CoinGecko Demo allowance ran out mid-September; volume LEVELS are lower on a single venue, ratios/spikes comparable",
+   "n": null,
+   "in_sample": false,
+   "revalidated": false,
+   "retroactive_entry": false,
+   "flag": "data-source change, not a threshold change - compare breakout signal rates before/after 1/10 before trusting volume-threshold comparisons"
+  },
+  {
+   "id": "T017",
+   "version": "v67",
+   "date": "2026-09-30",
+   "parameter": "data-gap hygiene: Layer-2 warm-up after a >2h scan gap (6h), score-streak reset after a gap > max(8h, 2.5x credit gate), pegged/tokenized-equity exclusion before candidate selection",
+   "old": null,
+   "new": "WARMUP_GAP_HOURS=2.0, WARMUP_DURATION_HOURS=6.0, STREAK_GAP_GATE_MULT=2.5, STREAK_MIN_GAP_HOURS=8.0",
+   "evidence": "structural: 83h CoinGecko outage 27-30/9 left price-history with a hole and score-streak.json with pre-gap streaks (e.g. 69/60/43); USDC/PAXG/XAUT were taking deep-evaluation slots; STRCX (tokenized preferred) reached pre-pump candidates",
+   "n": null,
+   "in_sample": false,
+   "revalidated": false,
+   "retroactive_entry": false,
+   "flag": "hygiene rule, not a fitted edge - check after 1/10 that the first post-gap runs show warm-up and a streak reset in the digest"
+  }
+ ],
+ "hypotheses": [
+  {
+   "id": "H1",
+   "date": "2026-09-28",
+   "statement": "extension_continuation archetype outperforms other archetypes",
+   "in_sample": "n=21, win 47.6%, avg +6.05% vs control ~31%",
+   "status": "forward-test from 2026-10-01 (scripts/hypothesis_check.py)",
+   "adopt_rule": "only if SUPPORTED with n>=30 per arm on forward data"
+  },
+  {
+   "id": "H2",
+   "date": "2026-09-28",
+   "statement": "confidence 30-49 at entry outperforms confidence >=50",
+   "in_sample": "n=96 win ~42% vs n=47 win ~28%",
+   "status": "forward-test from 2026-10-01",
+   "adopt_rule": "only if SUPPORTED with n>=30 per arm on forward data"
+  }
+ ],
+ "_mining_note": "28/9/2026: ~40 buckets were inspected on 220 correlated in-sample trades from one regime; count this mining pass as ~40 trials when judging any 'discovered' pattern.",
+ "fund_risk_rule_change": {
+  "date": "2026-09-28",
+  "old": "max 10% of balance risked per trade",
+  "new": "max 3% (target 2%) per trade, both funds",
+  "evidence": "Monte Carlo on 138 in-sample trades with stops>=2%: P(-25% breaker within 30 trades) 2%->3.2%, 3%->20%, 5%->61%, 10%->99%"
+ }
 }
