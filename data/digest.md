@@ -1,7 +1,7 @@
-# Radar digest - 2026-09-30 11:31 UTC
+# Radar digest - 2026-09-30 12:03 UTC
 
 ## Market
-- BTC scenario **A** | price 83765 | wk close 84465 vs 82800 | 50W 78247 (7.05%) | 27m old
+- BTC scenario **A** | price 83765 | wk close 84465 vs 82800 | 50W 78247 (7.05%) | 59m old
 - Alts: **BTC_LED** [-] | BTC.D 55.95% | ETH/BTC 0.03216 | breadth7d 55% | stables 30d 1.26%
 - Gold: PAXG 1m -3.86% | real10y - (-bp 1m) | USD 1m -% | pillar6 **insufficient_data**  | COT pctl -
 
@@ -32,14 +32,14 @@
 - chainlink: other - Grayscale Chainlink ETF purchases 159,480 LINK worth $2.36 million from Coinbase Prime - K
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc 0.18% | topPos 0.97 | taker 0.97
-- ETH: SHORT_SQUEEZE_24H | OI/mc 0.54% | topPos 0.94 | taker 1.04
-- SOL: LONG_FLUSH_24H | OI/mc 0.54% | topPos 0.95 | taker 0.96
-- SUI: LONG_FLUSH_24H | OI/mc 1.00% | topPos 0.85 | taker 0.97
-- SEI: LONG_FLUSH_24H | OI/mc 0.78% | topPos 0.91 | taker 0.96
-- TAO: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 0.91
-- ZEC: SHORT_SQUEEZE_24H | OI/mc 0.59% | topPos 1.05 | taker 0.98
-- ADA: LONG_FLUSH_24H | OI/mc 0.39% | topPos 0.95 | taker 0.97
+- BTC: SHORT_SQUEEZE_24H | OI/mc 0.18% | topPos 0.97 | taker 0.98
+- ETH: SHORT_SQUEEZE_24H | OI/mc 0.55% | topPos 0.95 | taker 1.05
+- SOL: LONG_FLUSH_24H | OI/mc 0.55% | topPos 0.95 | taker 0.96
+- AVAX: LONG_FLUSH_24H | OI/mc 0.52% | topPos 0.89 | taker 0.94
+- SUI: LONG_FLUSH_24H | OI/mc 1.01% | topPos 0.85 | taker 0.97
+- SEI: LONG_FLUSH_24H | OI/mc 0.77% | topPos 0.91 | taker 0.96
+- TAO: LONG_FLUSH_24H | OI/mc -% | topPos 0.90 | taker 0.89
+- ZEC: SHORT_SQUEEZE_24H | OI/mc 0.60% | topPos 1.05 | taker 1.00
 
 ## Revenue / buyback flags
 - ripple-usd: REVENUE_ACCELERATING
@@ -53,7 +53,7 @@
 - vote: PikuDAO until 2026-10-01 - Proposal 48 - Deploy 114,000 USDC from Piku Finance Treasury Across Mo
 
 ## System
-- CoinGecko 219/10000 used, month-end projection 223 (2%), throttle level 0 | by script {'scan': 219}
+- CoinGecko 223/10000 used, month-end projection 227 (2%), throttle level 0 | by script {'scan': 223}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=0), H2 PENDING (n=0)
-- radar-flags.json scan age: 81h
+- radar-flags.json scan age: 82h
