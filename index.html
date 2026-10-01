@@ -99,6 +99,25 @@
   ::-webkit-scrollbar { height: 8px; width: 8px; }
   ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
   .tablewrap { overflow-x: auto; }
+  /* v69: search + archive */
+  #searchBar { max-width: 1200px; margin: 14px auto 0; padding: 0 16px; display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+  #searchInput {
+    flex: 1 1 260px; background: var(--bg2); color: var(--text-bright); border: 1px solid var(--border);
+    border-radius: 6px; padding: 9px 12px; font-size: 14px; font-family: inherit;
+  }
+  #searchInput:focus, .archive-toggle:focus-visible, #searchClear:focus-visible { outline: 2px solid var(--blue); outline-offset: 1px; }
+  #searchClear { background: var(--bg3); color: var(--text); border: 1px solid var(--border); border-radius: 6px; padding: 8px 12px; cursor: pointer; }
+  #searchSummary { color: var(--text-dim); font-size: 12.5px; }
+  #searchResults[hidden] { display: none; }
+  .book-tag { font-size: 11px; color: var(--text-dim); border: 1px solid var(--border); border-radius: 4px; padding: 1px 6px; }
+  .archive-row td { background: var(--bg); text-align: center; padding: 6px; }
+  .archive-toggle {
+    background: none; border: 1px dashed var(--border); color: var(--text-dim); border-radius: 6px;
+    padding: 5px 14px; cursor: pointer; font-size: 12px; font-family: inherit;
+  }
+  .archive-toggle:hover { color: var(--blue); border-color: var(--blue); }
+  tr.archived td { opacity: .78; }
+  .pill-warn { color: var(--amber); border-color: var(--amber) !important; }
 </style>
 </head>
 <body>
@@ -110,6 +129,9 @@
     <span class="pill" id="breadth">—</span>
     <span class="pill" id="regime">—</span>
     <span class="pill" id="coinCount">—</span>
+    <span class="pill" id="btcScenario" hidden></span>
+    <span class="pill" id="altRegime" hidden></span>
+    <span class="pill" id="yieldDriver" hidden></span>
     <button id="refreshBtn" onclick="loadAll()">↻ تحديث الآن</button>
     <span class="pill">تحديث تلقائي كل دقيقتين</span>
   </div>
@@ -119,7 +141,7 @@
   <a href="#proactive">استباقي</a>
   <a href="#momentum">زخم</a>
   <a href="#smc">تحليل SMC</a>
-  <a href="#real">حقيقي</a>
+  <a href="#real">الرئيسي</a>
   <a href="#shadow">شادو</a>
   <a href="#scalp">سكالب</a>
   <a href="#v2candidates">مرشحو V2</a>
@@ -133,7 +155,25 @@
   <a href="#thesis">قائمة المتابعة</a>
 </nav>
 
+<div id="searchBar" role="search">
+  <input id="searchInput" type="search" placeholder="ابحث باسم العملة (مثال: STRK أو near)" aria-label="بحث عن صفقات عملة" autocomplete="off">
+  <button id="searchClear" type="button">مسح</button>
+  <span id="searchSummary"></span>
+</div>
+
 <main>
+
+  <section id="searchResults" hidden>
+    <h2>🔎 كل صفقات العملة <span class="badge-count" id="searchCount"></span></h2>
+    <div class="subnote">من كل المسارات — المفتوحة أولًا ثم الأرشيف</div>
+    <div class="tablewrap"><table id="tblSearch">
+      <thead><tr>
+        <th>العملة</th><th>المسار</th><th>الحالة</th><th>الدخول</th><th>الخروج / الحالي</th><th>النتيجة</th>
+        <th>الستوب</th><th>الأهداف المُحققة</th><th>السبب</th><th>الفتح</th><th>الإغلاق</th>
+      </tr></thead>
+      <tbody></tbody>
+    </table></div>
+  </section>
 
   <section id="proactive">
     <h2>🟣 الترشيحات الاستباقية (Layer 2) <span class="badge-count" id="proactiveCount"></span></h2>
@@ -163,7 +203,8 @@
   </section>
 
   <section id="real">
-    <h2>💰 الصفقات الحقيقية</h2>
+    <h2>📘 المسار الرئيسي (ورقي) <span class="badge-count" id="realCount"></span></h2>
+    <div class="subnote">صفقات آلية على ورق — صفقاتك الحقيقية على Binance مش هنا</div>
     <div class="tablewrap"><table id="tblReal">
       <thead><tr>
         <th>العملة</th><th>الحالة</th><th>الدخول</th><th>الحالي</th><th>الربح/الخسارة</th>
@@ -175,7 +216,7 @@
   </section>
 
   <section id="shadow">
-    <h2>👤 صفقات الشادو</h2>
+    <h2>👤 صفقات الشادو <span class="badge-count" id="shadowCount"></span></h2>
     <div class="tablewrap"><table id="tblShadow">
       <thead><tr>
         <th>العملة</th><th>الحالة</th><th>الدخول</th><th>الحالي</th><th>الربح/الخسارة</th>
@@ -187,7 +228,7 @@
   </section>
 
   <section id="scalp">
-    <h2>⚡ صفقات السكالب</h2>
+    <h2>⚡ صفقات السكالب <span class="badge-count" id="scalpCount"></span></h2>
     <div class="tablewrap"><table id="tblScalp">
       <thead><tr>
         <th>العملة</th><th>الحالة</th><th>الدخول</th><th>الحالي</th><th>الربح/الخسارة</th>
@@ -209,7 +250,7 @@
   </section>
 
   <section id="v2trades">
-    <h2>📈 صفقات V2 (شادو)</h2>
+    <h2>📈 صفقات V2 (شادو) <span class="badge-count" id="v2TradesCount"></span></h2>
     <div class="tablewrap"><table id="tblV2Trades">
       <thead><tr>
         <th>العملة</th><th>الحالة</th><th>الدخول</th><th>الحالي</th><th>الربح/الخسارة</th>
@@ -286,6 +327,10 @@ const FILES = {
   v2Watch: 'data/v2-watch-objects.json',
   exposure: 'data/exposure-report.json',
   counterfactual: 'data/counterfactual-summary.json',
+  scan: 'data/market-scan.json',          // v69: prices for every scanned coin, not just flagged ones
+  correction: 'data/correction-monitor.json',
+  altseason: 'data/altseason.json',
+  macro: 'data/macro-gold.json',
 };
 
 async function fetchJSON(path) {
@@ -346,6 +391,7 @@ function statusBadge(status) {
     closed_targets_complete: ['كل الأهداف تحققت', 'b-win'],
     superseded: ['اترقّت لحقيقية', 'b-gray'], voided_sizing_correction: ['أُلغيت (تصحيح حجم)', 'b-gray'],
     expired_no_resolution: ['انتهت المدة (لا نتيجة)', 'b-gray'],
+    expired_unfilled: ['انتهى بدون تنفيذ', 'b-gray'], target_hit: ['هدف تحقق', 'b-win'],
   };
   const [label, cls] = map[status] || [status, 'b-gray'];
   return `<span class="badge ${cls}">${label}</span>`;
@@ -438,15 +484,17 @@ function computeTradeRow(trade, priceLookup) {
   const targets = trade.targets || (trade.target_low != null ? [trade.target_low] : []);
   const t1 = targets[0];
   let pnlPct = null, stopDistPct = null, t1DistPct = null;
+  const isLive = ['open', 'pending'].includes(trade.status);
+  const mark = isLive ? current : (trade.exit_price != null ? trade.exit_price : null);  // v69: closed = realised
   if (entry) {
-    if (current != null) pnlPct = (current - entry) / entry * 100;
+    if (mark != null && trade.status !== 'pending' && trade.status !== 'expired_unfilled') pnlPct = (mark - entry) / entry * 100;
     if (stop != null) stopDistPct = (entry - stop) / entry * 100;
     if (t1 != null) t1DistPct = (t1 - entry) / entry * 100;
   }
   return {
     id: trade.id, symbol: trade.symbol || (trade.asset_id || '').toUpperCase(),
     status: trade.status, entry, stop, targets, targetsHit: (trade.targets_hit || []).length,
-    current, pnlPct, stopDistPct, t1DistPct,
+    current, mark, isLive, pnlPct, stopDistPct, t1DistPct, assetId: trade.asset_id,
     triggeredBy: trade.entry_archetype || trade.triggered_by || '—',
     scoreAtEntry: trade.confidence_score_at_entry,
     dateOpened: trade.date_opened, lastCheckSource: trade.last_check_source,
@@ -458,21 +506,40 @@ function computeTradeRow(trade, priceLookup) {
   };
 }
 
-function renderTradeTable(tbodySel, trades, priceLookup, showScore, showStopDist) {
+const ARCHIVE_OPEN = new Set();   // v69: which archives the user expanded (survives auto-refresh)
+function toggleArchive(key) {
+  if (ARCHIVE_OPEN.has(key)) ARCHIVE_OPEN.delete(key); else ARCHIVE_OPEN.add(key);
+  document.querySelectorAll(`tr[data-archive="${key}"]`).forEach(r => {
+    if (r.classList.contains('detail-row')) r.style.display = 'none'; else r.hidden = !ARCHIVE_OPEN.has(key);
+  });
+  const btn = document.getElementById('arch-btn-' + key);
+  if (btn) btn.textContent = archiveLabel(key, btn.dataset.n);
+}
+function archiveLabel(key, n) {
+  return ARCHIVE_OPEN.has(key) ? `إخفاء الأرشيف (${n})` : `📁 عرض الأرشيف — ${n} صفقة مقفولة`;
+}
+
+function renderTradeTable(tbodySel, trades, priceLookup, showScore, showStopDist, countId) {
   const tbody = document.querySelector(tbodySel);
+  const key = tbodySel.replace(/[^a-zA-Z]/g, '');
   const open = trades.filter(t => ['open', 'pending'].includes(t.status));
-  const rest = trades.filter(t => !['open', 'pending'].includes(t.status));
-  const ordered = [...open, ...rest];
-  if (!ordered.length) { tbody.innerHTML = `<tr><td colspan="11" class="empty">لا توجد صفقات</td></tr>`; return; }
+  const archived = trades.filter(t => !['open', 'pending'].includes(t.status))
+    .sort((a, b) => String(b.date_closed || b.date_opened || '').localeCompare(String(a.date_closed || a.date_opened || '')));
+  if (countId) document.getElementById(countId).textContent = `${open.length} مفتوحة · ${archived.length} أرشيف`;
+  const cols = 9 + (showScore ? 1 : 0) + (showStopDist ? 1 : 0);
+  if (!trades.length) { tbody.innerHTML = `<tr><td colspan="${cols}" class="empty">لا توجد صفقات</td></tr>`; return; }
+  const isOpen = ARCHIVE_OPEN.has(key);
   let html = '';
-  ordered.forEach((raw, i) => {
+  const row = (raw, i, arch) => {
     const t = computeTradeRow(raw, priceLookup);
-    const rid = tbodySel.replace('#', '').replace(' ', '') + '-d' + i;
-    html += `<tr class="rowclick" onclick="toggleDetail('${rid}')">
+    const rid = key + (arch ? '-a' : '-d') + i;
+    const attrs = arch ? ` data-archive="${key}" class="rowclick archived"${isOpen ? '' : ' hidden'}` : ' class="rowclick"';
+    const shown = t.isLive ? t.current : t.mark;
+    let out = `<tr${attrs} onclick="toggleDetail('${rid}')">
       <td class="sym">${t.symbol}</td>
       <td>${statusBadge(t.status)}</td>
       <td>${fmt(t.entry)}</td>
-      <td>${t.current != null ? '$' + fmt(t.current) : '—'}</td>
+      <td>${shown != null ? '$' + fmt(shown) : '—'}${!t.isLive && shown != null ? ' <span class="book-tag">خروج</span>' : ''}</td>
       <td>${pct(t.pnlPct, 1)}</td>
       <td>${fmt(t.stop)}</td>
       ${showStopDist ? `<td>${pct(t.stopDistPct, 1)}</td>` : ''}
@@ -482,8 +549,17 @@ function renderTradeTable(tbodySel, trades, priceLookup, showScore, showStopDist
       <td class="flags">${t.triggeredBy}</td>
       <td>${t.dateOpened || '—'}</td>
     </tr>`;
-    html += detailRow(rid, tradeDetailFields(t));
-  });
+    let det = detailRow(rid, tradeDetailFields(t));
+    if (arch) det = det.replace('<tr class="detail-row"', `<tr class="detail-row" data-archive="${key}"`);
+    return out + det;
+  };
+  if (!open.length) html += `<tr><td colspan="${cols}" class="empty">مفيش صفقات مفتوحة حاليًا</td></tr>`;
+  open.forEach((raw, i) => html += row(raw, i, false));
+  if (archived.length) {
+    html += `<tr class="archive-row"><td colspan="${cols}"><button type="button" class="archive-toggle" id="arch-btn-${key}" data-n="${archived.length}"
+      aria-expanded="${isOpen}" onclick="event.stopPropagation(); toggleArchive('${key}'); this.setAttribute('aria-expanded', ARCHIVE_OPEN.has('${key}'))">${archiveLabel(key, archived.length)}</button></td></tr>`;
+    archived.forEach((raw, i) => html += row(raw, i, true));
+  }
   tbody.innerHTML = html;
 }
 
@@ -510,7 +586,7 @@ function renderSMC(box, topTierCoins) {
 }
 
 function renderPerf(perfCards, summaries) {
-  const labels = { real: '💰 حقيقي', shadow: '👤 شادو', scalp: '⚡ سكالب', v2: '🧭 V2' };
+  const labels = { real: '📘 الرئيسي', shadow: '👤 شادو', scalp: '⚡ سكالب', v2: '🧭 V2' };
   let html = '';
   for (const [key, label] of Object.entries(labels)) {
     const s = (summaries[key] && summaries[key].overall) || {};
@@ -589,24 +665,78 @@ function renderV2Candidates(tbody, countEl, data) {
 }
 
 function renderV2Trades(tbody, trades, priceLookup) {
-  if (!trades.length) { tbody.innerHTML = `<tr><td colspan="9" class="empty">مفيش صفقات V2 لسه</td></tr>`; return; }
+  const key = 'v2trades';
   const open = trades.filter(t => t.status === 'open');
-  const rest = trades.filter(t => t.status !== 'open');
-  const ordered = [...open, ...rest];
-  tbody.innerHTML = ordered.map(t => {
-    const current = priceLookup[t.asset_id];
-    const pnlPct = current != null && t.entry ? (current - t.entry) / t.entry * 100 : null;
+  const archived = trades.filter(t => t.status !== 'open');
+  document.getElementById('v2TradesCount').textContent = `${open.length} مفتوحة · ${archived.length} أرشيف`;
+  if (!trades.length) { tbody.innerHTML = `<tr><td colspan="9" class="empty">مفيش صفقات V2 لسه</td></tr>`; return; }
+  const isOpen = ARCHIVE_OPEN.has(key);
+  const row = (t, arch) => {
+    const live = t.status === 'open';
+    const mark = live ? priceLookup[t.asset_id] : t.exit_price;
+    const pnlPct = mark != null && t.entry ? (mark - t.entry) / t.entry * 100 : null;
     const targetsStr = (t.targets || []).map(tg => `${tg.horizon_label}:+${tg.target_pct}%`).join(' / ');
-    return `<tr>
+    return `<tr${arch ? ` data-archive="${key}" class="archived"${isOpen ? '' : ' hidden'}` : ''}>
       <td class="sym">${t.symbol}</td>
       <td>${statusBadge(t.status)}</td>
       <td>${fmt(t.entry)}</td>
-      <td>${current != null ? '$' + fmt(current) : '—'}</td>
+      <td>${mark != null ? '$' + fmt(mark) : '—'}${!live && mark != null ? ' <span class="book-tag">خروج</span>' : ''}</td>
       <td>${pct(pnlPct, 1)}</td>
       <td>${fmt(t.stop)}</td>
       <td class="flags">${targetsStr}</td>
       <td>${t.v2_score}</td>
       <td>${t.date_opened}</td>
+    </tr>`;
+  };
+  let html = open.length ? open.map(t => row(t, false)).join('') : `<tr><td colspan="9" class="empty">مفيش صفقات V2 مفتوحة حاليًا</td></tr>`;
+  if (archived.length) {
+    html += `<tr class="archive-row"><td colspan="9"><button type="button" class="archive-toggle" id="arch-btn-${key}" data-n="${archived.length}"
+      onclick="toggleArchive('${key}')">${archiveLabel(key, archived.length)}</button></td></tr>`;
+    html += archived.map(t => row(t, true)).join('');
+  }
+  tbody.innerHTML = html;
+}
+
+// ---- v69: search across every book ---------------------------------------
+let SEARCH_BOOKS = [], SEARCH_PRICES = {};
+const BOOK_LABELS = { main: 'الرئيسي', shadow: 'شادو', scalp: 'سكالب', v2: 'V2' };
+function runSearch() {
+  const q = document.getElementById('searchInput').value.trim().toLowerCase();
+  const box = document.getElementById('searchResults');
+  const summary = document.getElementById('searchSummary');
+  if (!q) { box.hidden = true; summary.textContent = ''; return; }
+  const hits = [];
+  SEARCH_BOOKS.forEach(([book, trades]) => trades.forEach(t => {
+    const sym = String(t.symbol || '').toLowerCase(), id = String(t.asset_id || '').toLowerCase();
+    if (sym === q || id === q || sym.includes(q) || id.includes(q)) hits.push([book, t]);
+  }));
+  const live = s => ['open', 'pending'].includes(s);
+  hits.sort((a, b) => (live(b[1].status) - live(a[1].status)) ||
+    String(b[1].date_opened || '').localeCompare(String(a[1].date_opened || '')));
+  box.hidden = false;
+  const nOpen = hits.filter(h => live(h[1].status)).length;
+  document.getElementById('searchCount').textContent = hits.length;
+  summary.textContent = hits.length ? `${hits.length} صفقة — ${nOpen} مفتوحة و${hits.length - nOpen} في الأرشيف` : '';
+  const tbody = document.querySelector('#tblSearch tbody');
+  if (!hits.length) { tbody.innerHTML = `<tr><td colspan="11" class="empty">مفيش صفقات لـ "${q.replace(/[<>&"]/g, '')}" — جرّب الرمز (STRK) أو الاسم في CoinGecko (starknet)</td></tr>`; return; }
+  tbody.innerHTML = hits.map(([book, raw]) => {
+    const isLive = live(raw.status);
+    const entry = raw.actual_entry ?? raw.entry;
+    const mark = isLive ? SEARCH_PRICES[raw.asset_id] : raw.exit_price;
+    const res = entry && mark != null && raw.status !== 'pending' && raw.status !== 'expired_unfilled' ? (mark - entry) / entry * 100 : null;
+    const nT = (raw.targets || []).length;
+    return `<tr${isLive ? '' : ' class="archived"'}>
+      <td class="sym">${raw.symbol || (raw.asset_id || '').toUpperCase()}</td>
+      <td><span class="book-tag">${BOOK_LABELS[book]}</span></td>
+      <td>${statusBadge(raw.status)}</td>
+      <td>${fmt(entry)}</td>
+      <td>${mark != null ? '$' + fmt(mark) : '—'}${!isLive && mark != null ? ' <span class="book-tag">خروج</span>' : ''}</td>
+      <td>${pct(res, 1)}</td>
+      <td>${fmt(raw.stop)}</td>
+      <td>${(raw.targets_hit || []).length} / ${nT}</td>
+      <td class="flags">${raw.entry_archetype || raw.triggered_by || raw.v2_archetype || '—'}</td>
+      <td>${raw.date_opened || '—'}</td>
+      <td>${String(raw.date_closed || raw.expired_at || '').slice(0, 10) || '—'}</td>
     </tr>`;
   }).join('');
 }
@@ -667,7 +797,7 @@ function renderCounterfactual(box, summary) {
 
 async function loadAll() {
   document.getElementById('lastUpdate').textContent = 'جارٍ التحديث...';
-  const [radar, real, shadow, scalp, perfReal, perfShadow, perfScalp, perfV2, health, thesis, rejections, v2Candidates, v2Trades, v2Watch, exposure, counterfactual] = await Promise.all(
+  const [radar, real, shadow, scalp, perfReal, perfShadow, perfScalp, perfV2, health, thesis, rejections, v2Candidates, v2Trades, v2Watch, exposure, counterfactual, scan, correction, altseason, macro] = await Promise.all(
     Object.values(FILES).map(fetchJSON)
   );
 
@@ -683,7 +813,7 @@ async function loadAll() {
       regimeEl.textContent = `السوق العام: ${label}`;
       regimeEl.className = 'pill ' + cls;
     } else {
-      regimeEl.textContent = 'السوق العام: —';
+      regimeEl.textContent = 'السوق العام: يُحدَّث مع فحص الاختراقات';
     }
   } else {
     document.getElementById('lastUpdate').textContent = 'تعذّر تحميل radar-flags.json';
@@ -691,7 +821,30 @@ async function loadAll() {
 
   const coins = (radar && radar.coins) || [];
   const priceLookup = {};
-  coins.forEach(c => priceLookup[c.id] = c.price_usd);
+  ((scan && scan.coins) || []).forEach(c => priceLookup[c.id] = c.price_usd);   // v69: all 250 scanned coins
+  coins.forEach(c => { if (c.price_usd != null) priceLookup[c.id] = c.price_usd; });
+
+  // v69: market context pills
+  const b = correction && correction.btc_q4_scenario;
+  const btcEl = document.getElementById('btcScenario');
+  if (b) {
+    btcEl.textContent = `BTC ${fmt(b.price, 0)} — سيناريو ${b.scenario} (إغلاق أسبوعي ${fmt(b.last_weekly_close, 0)} مقابل ${fmt(b.key_level, 0)})`;
+    btcEl.className = 'pill ' + (b.scenario === 'A' ? 'pill-risk-on' : 'pill-risk-off');
+    btcEl.hidden = false;
+  }
+  const altEl = document.getElementById('altRegime');
+  if (altseason) {
+    const risk = (altseason.alt_risk || {}).level;
+    altEl.textContent = `البديلة: ${altseason.regime || '—'}${risk ? ' · خطر هيمنة BTC: ' + risk : ''}`;
+    altEl.className = 'pill ' + (risk === 'HIGH' || risk === 'ELEVATED' ? 'pill-warn' : '');
+    altEl.hidden = false;
+  }
+  const yd = macro && macro.yield_decomposition && macro.yield_decomposition.chg_1m;
+  if (yd && yd.driver) {
+    const map = { REAL_YIELD_DRIVEN: 'عائد حقيقي', INFLATION_EXPECTATIONS_DRIVEN: 'توقعات تضخم', MIXED: 'مختلط', SMALL_MOVE: 'حركة صغيرة' };
+    document.getElementById('yieldDriver').hidden = false;
+    document.getElementById('yieldDriver').textContent = `عائد 10 سنين (شهر): ${yd.nominal_bp != null ? (yd.nominal_bp > 0 ? '+' : '') + yd.nominal_bp + 'bp' : ''} — ${map[yd.driver] || yd.driver}`;
+  }
 
   const proactive = [], momentum = [];
   coins.forEach(c => {
@@ -716,9 +869,14 @@ async function loadAll() {
   document.getElementById('smcCount').textContent = topTierCoins.length;
   renderSMC(document.getElementById('smcBox'), topTierCoins);
 
-  renderTradeTable('#tblReal tbody', (real && real.trades) || [], priceLookup, false, true);
-  renderTradeTable('#tblShadow tbody', (shadow && shadow.trades) || [], priceLookup, true, false);
-  renderTradeTable('#tblScalp tbody', (scalp && scalp.trades) || [], priceLookup, false, false);
+  renderTradeTable('#tblReal tbody', (real && real.trades) || [], priceLookup, false, true, 'realCount');
+  renderTradeTable('#tblShadow tbody', (shadow && shadow.trades) || [], priceLookup, true, false, 'shadowCount');
+  renderTradeTable('#tblScalp tbody', (scalp && scalp.trades) || [], priceLookup, false, false, 'scalpCount');
+
+  SEARCH_PRICES = priceLookup;
+  SEARCH_BOOKS = [['main', (real && real.trades) || []], ['shadow', (shadow && shadow.trades) || []],
+                  ['scalp', (scalp && scalp.trades) || []], ['v2', (v2Trades && v2Trades.trades) || []]];
+  runSearch();
 
   renderV2Candidates(document.querySelector('#tblV2Cand tbody'), document.getElementById('v2CandCount'), v2Candidates);
   renderV2Trades(document.querySelector('#tblV2Trades tbody'), (v2Trades && v2Trades.trades) || [], priceLookup);
@@ -735,6 +893,10 @@ async function loadAll() {
   renderThesis(document.getElementById('thesisBox'), thesis);
 }
 
+document.getElementById('searchInput').addEventListener('input', runSearch);
+document.getElementById('searchClear').addEventListener('click', () => {
+  const i = document.getElementById('searchInput'); i.value = ''; runSearch(); i.focus();
+});
 loadAll();
 setInterval(loadAll, 120000);
 </script>

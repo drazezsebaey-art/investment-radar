@@ -1,7 +1,7 @@
 {
  "_doc": "v62 (27/9/2026) - every change to a tunable threshold/weight is a TRIAL and counts against the system (multiple-testing). Rules: (1) no threshold change on fewer than MIN_SAMPLE_FOR_CHANGE outcomes; (2) the evidence must come from data NOT used to pick the new value, or the entry is marked in_sample=true and must be re-validated before it is trusted; (3) every change adds an entry here AND updates tracked_parameters.current_value - scripts/trials_check.py warns when code and this file disagree.",
  "min_sample_for_change": 30,
- "trials_count_total": 19,
+ "trials_count_total": 20,
  "tracked_parameters": [
   {
    "name": "AUTO_TRADE_MIN_SCORE",
@@ -420,6 +420,11 @@
    "name": "PEG_MAX_ABS_24H_PCT",
    "file": "scripts/asset_filters.py",
    "current_value": 0.3
+  },
+  {
+   "name": "PENDING_MAX_HOURS",
+   "file": "scripts/track_trades.py",
+   "current_value": 72
   }
  ],
  "trials": [
@@ -684,6 +689,20 @@
    "revalidated": false,
    "retroactive_entry": false,
    "flag": "infrastructure/observability rules, not fitted edges; alt-risk and decomposition thresholds are display-only until outcomes are logged"
+  },
+  {
+   "id": "T020",
+   "version": "v69",
+   "date": "2026-10-01",
+   "parameter": "pending limit orders expire after PENDING_MAX_HOURS=72 (status expired_unfilled, excluded from stats); V2 tracker falls back to price-history / market-scan prices when OKX does not list the pair",
+   "old": "pending forever; V2 'unavailable' trades never evaluated",
+   "new": "72h expiry; snapshot fallback",
+   "evidence": "1/10 audit: PENDLE main trade pending 261h (entry 1.701, price 2.39); V2 CAKE open below its stop (2.59 < 2.6686) because CAKE/RUNE had no OKX data",
+   "n": null,
+   "in_sample": false,
+   "revalidated": false,
+   "retroactive_entry": false,
+   "flag": "bookkeeping fix, not an edge; expired_unfilled never enters win-rate/return stats"
   }
  ],
  "hypotheses": [

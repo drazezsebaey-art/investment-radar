@@ -415,6 +415,28 @@ def net_pct_return(trade: dict) -> float:
 
 CLOSED_STATUSES = ("closed_targets_complete", "stopped", "stopped_after_partial_targets", "target_hit")
 
+# v69 (1/10/2026): a limit entry that never fills used to stay "pending" forever
+# (PENDLE pending since 20/9 at 1.701 while price ran to 2.39). After
+# PENDING_MAX_HOURS it is archived as expired_unfilled. It is NOT a closed trade:
+# never counted in win rate / returns (it never had a position).
+PENDING_MAX_HOURS = 72
+
+
+def expire_stale_pending(trade: dict, now: datetime) -> bool:
+    """v69: True when a pending order was archived this run."""
+    if trade.get("status") != "pending" or not trade.get("created_at"):
+        return False
+    try:
+        age_h = (now - datetime.fromisoformat(trade["created_at"])).total_seconds() / 3600
+    except ValueError:
+        return False
+    if age_h <= PENDING_MAX_HOURS:
+        return False
+    trade["status"] = "expired_unfilled"
+    trade["expired_at"] = now.isoformat()
+    trade["pending_hours"] = round(age_h, 1)
+    return True
+
 
 def build_equity_curve(subset: list) -> list:
     """Sort by close date and compound returns into an equity curve starting
@@ -543,6 +565,8 @@ def process_trades(trades: list, lookup: dict, price_history: dict, okx_cache: d
         if trade.get("status") == "pending":
             if check_pending(trade, price_history, okx_cache):
                 filled += 1
+            elif expire_stale_pending(trade, datetime.now(timezone.utc)):  # v69
+                changed += 1
             continue
 
         if trade.get("status") != "open":

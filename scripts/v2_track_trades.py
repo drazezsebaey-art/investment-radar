@@ -222,8 +222,29 @@ def by_regime_split(closed: list) -> dict:
     return out
 
 
+SCAN_PATH = DATA_DIR / "market-scan.json"          # v69
+HISTORY_PATH = DATA_DIR / "price-history.json"     # v69
+
+
+def history_rows_since(points, since_iso):
+    """v69: [(ts_ms, high, low)] from our own 15-30 min price snapshots, used when
+    OKX does not list the pair (CAKE, RUNE were 'unavailable' and CAKE sat below
+    its stop as 'open')."""
+    out = []
+    for p in points or []:
+        try:
+            if since_iso and p.get("t") and p["t"] > since_iso and p.get("price") is not None:
+                ts = int(datetime.fromisoformat(p["t"]).timestamp() * 1000)
+                out.append((ts, float(p["price"]), float(p["price"])))
+        except (TypeError, ValueError):
+            continue
+    return sorted(out) or None
+
+
 def main():
     trades_data = load_json(V2_SHADOW_TRADES_PATH, {"trades": []})
+    scan_prices = {c.get("id"): c.get("price_usd") for c in load_json(SCAN_PATH, {}).get("coins", [])}  # v69
+    history = load_json(HISTORY_PATH, {})  # v69
     trades = trades_data.get("trades", [])
     open_trades = [t for t in trades if t.get("status") == "open"]
 
@@ -238,9 +259,18 @@ def main():
         time.sleep(OKX_POLITE_DELAY)
         current_price = fetch_current_spot(symbol)
         time.sleep(OKX_POLITE_DELAY)
+        fallback = []
+        if candle_rows is None:  # v69: fall back to our own snapshots
+            candle_rows = history_rows_since(history.get(trade.get("asset_id")), since_iso)
+            fallback.append("price_history")
+        if current_price is None:
+            current_price = scan_prices.get(trade.get("asset_id"))
+            fallback.append("scan_price")
 
         before_status = trade.get("status")
         check_trade(trade, candle_rows, current_price, now)
+        if fallback and trade.get("last_check_source") != "unavailable":
+            trade["last_check_source"] = "fallback:" + "+".join(fallback)  # v69
         if trade["status"] != before_status:
             if trade["status"] == "stopped":
                 n_stopped += 1
