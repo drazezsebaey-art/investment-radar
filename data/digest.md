@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-01 20:13 UTC
+# Radar digest - 2026-10-01 20:45 UTC
 
 ## Market
-- BTC scenario **A** | price 84637 | wk close 84465 vs 82800 | 50W 78247 (8.17%) | 27m old
+- BTC scenario **A** | price 84637 | wk close 84465 vs 82800 | 50W 78247 (8.17%) | 60m old
 - Alts: **BTC_LED** [-] | BTC.D 56.32% | ETH/BTC 0.03184 | breadth7d 53% | stables 30d 1.11%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.33pt | 7d -pt | n=21
 - Gold: PAXG 1m -4.48% | real10y 2.91 (47bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl -
@@ -21,26 +21,26 @@
 ## Pre-pump candidates
 - SOL: [A+D+E] 7d 0.6%
 - AVAX: [A+D+E] 7d 5.3%
-- ZEC: [A+E] 7d -13.5%
-- INJ: [A+E] 7d -10.6%
-- HYPE: [A+E] 7d -5.9%
+- ZEC: [A+E] 7d -15.0%
+- INJ: [A+E] 7d -11.1%
+- HYPE: [A+E] 7d -7.0%
 - XRP: [A+E] 7d -2.4%
+- BNB: [A+E] 7d -1.6%
 - TRX: [A+E] 7d -1.3%
-- BNB: [A+E] 7d -1.0%
 
 ## ETF pipeline (new this run)
 - near: other - Bitwise NEAR ETF Tops $52.8M in 2 Days - Crypto Economy
 - zcash: other - Grayscale Stays Bullish on Zcash Even as ETF Outflows and Technicals Flash Caution - finan
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc 0.19% | topPos 1.00 | taker 1.01
-- ETH: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.97 | taker 1.00
-- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.90 | taker 0.95
-- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 0.91
-- SEI: LONG_FLUSH_24H | OI/mc 0.87% | topPos 0.92 | taker 0.96
-- TAO: LONG_FLUSH_24H | OI/mc -% | topPos 0.84 | taker 0.89
-- ZEC: LONG_FLUSH_24H | OI/mc 0.74% | topPos 0.98 | taker 0.91
-- WLD: LONG_FLUSH_24H | OI/mc 1.86% | topPos 0.87 | taker 0.87
+- BTC: SHORT_SQUEEZE_24H | OI/mc 0.19% | topPos 1.00 | taker 1.00
+- ETH: SHORT_SQUEEZE_24H | OI/mc 0.54% | topPos 0.97 | taker 0.99
+- AVAX: LONG_FLUSH_24H | OI/mc 0.48% | topPos 0.91 | taker 0.97
+- XRP: LONG_FLUSH_24H | OI/mc 0.14% | topPos 0.87 | taker 0.90
+- SEI: LONG_FLUSH_24H | OI/mc 0.86% | topPos 0.92 | taker 0.96
+- TAO: LONG_FLUSH_24H | OI/mc 0.81% | topPos 0.85 | taker 0.90
+- ZEC: LONG_FLUSH_24H | OI/mc 0.73% | topPos 1.00 | taker 0.89
+- WLD: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.88
 
 ## Revenue / buyback flags
 - stonk-3: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -52,12 +52,12 @@
 - (22 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 61 | mean 2.4% (0.29R) | in profit 31 | older than 7d 18
-- worst: TIA -0.82R, BCH -0.69R, PENGU -0.62R | best: JST 2.41R, aave 2.57R, sky 3.11R
+- open 61 | mean 2.6% (0.30R) | in profit 31 | older than 7d 18
+- worst: TIA -0.83R, BCH -0.67R, PENGU -0.62R | best: JST 2.36R, aave 2.64R, sky 3.17R
 
 ## System
-- CoinGecko 394/10000 used, month-end projection 4071 (41%), throttle level 0 | by script {'scan': 92, 'check_liquidity': 26, 'breakout_check': 276}
+- CoinGecko 404/10000 used, month-end projection 4175 (42%), throttle level 0 | by script {'scan': 102, 'check_liquidity': 26, 'breakout_check': 276}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=7), H2 PENDING (n=11)
-- radar-flags.json scan age: 13m
+- radar-flags.json scan age: 15m
 - excluded from radar (pegged/tokenized equity): 37
