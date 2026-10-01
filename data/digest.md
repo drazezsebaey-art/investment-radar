@@ -1,4 +1,4 @@
-# Radar digest - 2026-10-01 22:44 UTC
+# Radar digest - 2026-10-01 23:12 UTC
 
 ## Market
 - BTC scenario **A** | price 84503 | wk close 84465 vs 82800 | 50W 78247 (7.99%) | 1h old
@@ -19,11 +19,10 @@
 - MON: **ONGOING** | +69% impulse, retr 0.12 | OI dd 0% | fund -0.0080 | hold False | inval 0.02650 | OB 0.02088-0.02232
 
 ## Pre-pump candidates
-- ZEC: [A+E] 7d -14.6%
-- TRX: [A+E] 7d -1.4%
-- BNB: [A+E] 7d -1.2%
-- NEAR: [A+E] 7d 2.6%
-- AAVE: [C+D] 7d 17.1%
+- ZEC: [A+E] 7d -13.2%
+- TRX: [A+E] 7d -1.6%
+- BNB: [A+E] 7d -1.0%
+- NEAR: [A+E] 7d 4.1%
 
 ## ETF pipeline (new this run)
 - edgex NEW: other - SEI Tests Upper Edge Of Falling Wedge, Can Staked SEI ETF Boost SEI Price Next? - Cryptone
@@ -53,12 +52,12 @@
 - (22 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 60 | mean 2.0% (0.24R) | in profit 31 | older than 7d 17
-- worst: TIA -0.86R, RAY -0.69R, BCH -0.66R | best: JST 2.08R, aave 2.74R, sky 3.16R
+- open 60 | mean 2.1% (0.25R) | in profit 31 | older than 7d 17
+- worst: TIA -0.86R, RAY -0.69R, BCH -0.65R | best: JST 2.07R, aave 2.80R, sky 3.11R
 
 ## System
-- CoinGecko 462/10000 used, month-end projection 4774 (48%), throttle level 0 | by script {'scan': 110, 'check_liquidity': 26, 'breakout_check': 326}
+- CoinGecko 464/10000 used, month-end projection 4795 (48%), throttle level 0 | by script {'scan': 112, 'check_liquidity': 26, 'breakout_check': 326}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=9), H2 PENDING (n=13)
-- radar-flags.json scan age: 14m
+- radar-flags.json scan age: 12m
 - excluded from radar (pegged/tokenized equity): 37
