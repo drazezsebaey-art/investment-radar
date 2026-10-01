@@ -2171,6 +2171,7 @@ def main():
     )
     save_btc_volatility_baseline(btc_volatility_baseline)
 
+    data["deep_eval_at"] = now.isoformat()  # v70: lets scan.py carry these scores forward for display
     RADAR_FLAGS_PATH.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
     signals = sum(1 for c in candidates if c.get("breakout_signal"))
     ext_signals = sum(1 for c in candidates if c.get("extension_continuation_signal"))

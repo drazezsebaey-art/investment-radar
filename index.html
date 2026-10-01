@@ -118,6 +118,10 @@
   .archive-toggle:hover { color: var(--blue); border-color: var(--blue); }
   tr.archived td { opacity: .78; }
   .pill-warn { color: var(--amber); border-color: var(--amber) !important; }
+  #system { margin-top: 10px; border-top: 1px solid var(--border); padding-top: 14px; }
+  #system > summary { cursor: pointer; color: var(--text-dim); font-size: 13.5px; padding: 8px 0; margin-bottom: 14px; }
+  #system > summary:hover, #system > summary:focus-visible { color: var(--blue); }
+  .age-fresh { color: var(--green); } .age-old { color: var(--amber); }
 </style>
 </head>
 <body>
@@ -138,21 +142,14 @@
 </header>
 
 <nav>
-  <a href="#proactive">استباقي</a>
-  <a href="#momentum">زخم</a>
-  <a href="#smc">تحليل SMC</a>
-  <a href="#real">الرئيسي</a>
-  <a href="#shadow">شادو</a>
-  <a href="#scalp">سكالب</a>
-  <a href="#v2candidates">مرشحو V2</a>
-  <a href="#v2trades">صفقات V2</a>
-  <a href="#v2watch">مراقبة V2</a>
-  <a href="#exposure">التعرّض</a>
-  <a href="#counterfactual">رفض افتراضي</a>
-  <a href="#perf">الأداء</a>
-  <a href="#health">تنبيهات النظام</a>
-  <a href="#rejections">سجل الرفض</a>
-  <a href="#thesis">قائمة المتابعة</a>
+  <a href="#proactive">ترشيحات مبكرة</a>
+  <a href="#momentum">ترشيحات زخم</a>
+  <a href="#v2candidates">ترشيحات V2</a>
+  <a href="#real">مفتوح: الرئيسي</a>
+  <a href="#shadow">مفتوح: شادو</a>
+  <a href="#scalp">مفتوح: سكالب</a>
+  <a href="#v2trades">مفتوح: V2</a>
+  <a href="#system" onclick="document.getElementById('system').open = true">تفاصيل النظام</a>
 </nav>
 
 <div id="searchBar" role="search">
@@ -168,8 +165,8 @@
     <div class="subnote">من كل المسارات — المفتوحة أولًا ثم الأرشيف</div>
     <div class="tablewrap"><table id="tblSearch">
       <thead><tr>
-        <th>العملة</th><th>المسار</th><th>الحالة</th><th>الدخول</th><th>الخروج / الحالي</th><th>النتيجة</th>
-        <th>الستوب</th><th>الأهداف المُحققة</th><th>السبب</th><th>الفتح</th><th>الإغلاق</th>
+        <th>العملة</th><th>المسار</th><th>الحالة</th><th>الدخول</th><th>السعر الحالي / سعر الخروج</th><th>النتيجة</th>
+        <th>الستوب</th><th>الهدف الأول</th><th>المتبقي للهدف</th><th>الأهداف المُحققة</th><th>السبب</th><th>الفتح</th><th>الإغلاق</th>
       </tr></thead>
       <tbody></tbody>
     </table></div>
@@ -177,10 +174,10 @@
 
   <section id="proactive">
     <h2>🟣 الترشيحات الاستباقية (Layer 2) <span class="badge-count" id="proactiveCount"></span></h2>
-    <div class="subnote">عملات اتفلجت بإشارة مبكرة قبل أي حركة سعرية مؤكدة — مرتبة حسب السكور</div>
+    <div class="subnote">بس العملات اللي اتقيّمت فعلًا (ليها سكور) وفرصتها لسه قائمة — الباقي في الأرشيف تحت الجدول</div>
     <div class="tablewrap"><table id="tblProactive">
       <thead><tr>
-        <th>العملة</th><th>السكور</th><th>الجودة</th><th>مرحلة القمع</th><th>عمر الفرصة</th><th>الأسباب</th><th>السعر</th>
+        <th>العملة</th><th>السكور</th><th>الجودة</th><th>مرحلة القمع</th><th>عمر الفرصة</th><th>الأسباب</th><th>السعر</th><th>آخر تقييم</th>
       </tr></thead>
       <tbody></tbody>
     </table></div>
@@ -190,16 +187,10 @@
     <h2>🔵 ترشيحات الزخم <span class="badge-count" id="momentumCount"></span></h2>
     <div class="tablewrap"><table id="tblMomentum">
       <thead><tr>
-        <th>العملة</th><th>السكور</th><th>الجودة</th><th>مرحلة القمع</th><th>السبب</th><th>السعر</th>
+        <th>العملة</th><th>السكور</th><th>الجودة</th><th>مرحلة القمع</th><th>السبب</th><th>السعر</th><th>آخر تقييم</th>
       </tr></thead>
       <tbody></tbody>
     </table></div>
-  </section>
-
-  <section id="smc">
-    <h2>🔬 تحليل SMC الحقيقي (أعلى المرشحين) <span class="badge-count" id="smcCount"></span></h2>
-    <div class="subnote">شموع حقيقية 4 ساعات — Fair Value Gap، Liquidity Sweep، Inducement، Order Block، BOS/CHoCH</div>
-    <div id="smcBox"></div>
   </section>
 
   <section id="real">
@@ -239,7 +230,7 @@
   </section>
 
   <section id="v2candidates">
-    <h2>🧭 مرشحو محرك V2 المستقل <span class="badge-count" id="v2CandCount"></span></h2>
+    <h2>🧭 ترشيحات محرك V2 <span class="badge-count" id="v2CandCount"></span></h2>
     <div class="subnote">تقييم مستقل تمامًا (أهداف زمنية متكيفة + SMC حقيقي) — منفصل عن النظام الأساسي بالكامل</div>
     <div class="tablewrap"><table id="tblV2Cand">
       <thead><tr>
@@ -258,6 +249,14 @@
       </tr></thead>
       <tbody></tbody>
     </table></div>
+  </section>
+
+  <details id="system">
+    <summary>⚙️ تفاصيل النظام (SMC، الأداء، التنبيهات، سجل الرفض...)</summary>
+  <section id="smc">
+    <h2>🔬 تحليل SMC الحقيقي (أعلى المرشحين) <span class="badge-count" id="smcCount"></span></h2>
+    <div class="subnote">شموع حقيقية 4 ساعات — Fair Value Gap، Liquidity Sweep، Inducement، Order Block، BOS/CHoCH</div>
+    <div id="smcBox"></div>
   </section>
 
   <section id="v2watch">
@@ -301,6 +300,8 @@
     <h2>📌 قائمة المتابعة (Thesis Watchlist)</h2>
     <div id="thesisBox"></div>
   </section>
+
+  </details>
 
 </main>
 
@@ -435,25 +436,40 @@ function coinDetailFields(c) {
   `;
 }
 
-function renderCandidateTable(tbodySel, list, countId) {
+function evalAgeHours(iso) { return iso ? (Date.now() - new Date(iso).getTime()) / 3600000 : null; }
+
+function renderCandidateTable(tbodySel, list, countId, archiveNote) {
   const tbody = document.querySelector(tbodySel);
-  document.getElementById(countId).textContent = list.length;
-  if (!list.length) { tbody.innerHTML = `<tr><td colspan="10" class="empty">لا توجد عملات حاليًا</td></tr>`; return; }
-  let html = '';
-  list.forEach((item, i) => {
+  const key = tbodySel.replace(/[^a-zA-Z]/g, '');
+  const active = list.filter(i => i.actionable), stale = list.filter(i => !i.actionable);
+  document.getElementById(countId).textContent = `${active.length} قابلة للقرار${stale.length ? ' · ' + stale.length + ' أرشيف' : ''}`;
+  const cols = 8;
+  const isOpen = ARCHIVE_OPEN.has(key);
+  const row = (item, i, arch) => {
     const c = item.coin;
-    const rid = tbodySel.replace('#', '').replace(' ', '') + '-d' + i;
-    html += `<tr class="rowclick" onclick="toggleDetail('${rid}')">
+    const rid = key + (arch ? '-a' : '-d') + i;
+    const age = item.evalAge;
+    const ageHtml = age == null ? '—' : `<span class="${age <= 3.5 ? 'age-fresh' : 'age-old'}">${age < 1 ? 'من أقل من ساعة' : 'من ' + age.toFixed(0) + ' س'}</span>`;
+    const q = item.quality;
+    return `<tr class="rowclick${arch ? ' archived' : ''}"${arch ? ` data-archive="${key}"${isOpen ? '' : ' hidden'}` : ''} onclick="toggleDetail('${rid}')">
       <td class="sym">${c.symbol}</td>
-      <td>${c.confidence_score ?? '—'}</td>
-      <td class="${c.signal_quality === 'idiosyncratic' ? 'quality-idio' : 'quality-beta'}">${c.signal_quality === 'idiosyncratic' ? 'مستقلة' : (c.signal_quality ? 'بيتا/كتلة' : '—')}</td>
-      <td>${funnelBadge(c.funnel_stage)}</td>
+      <td>${item.score ?? '—'}</td>
+      <td class="${q === 'idiosyncratic' ? 'quality-idio' : 'quality-beta'}">${q === 'idiosyncratic' ? 'مستقلة' : (q ? 'بيتا/كتلة' : '—')}</td>
+      <td>${funnelBadge(item.funnel)}</td>
       ${item.isProactive ? `<td>${decayBadge(c.opportunity_lifecycle)}</td>` : ''}
       <td class="flags"><ul>${item.reasons.map(r => `<li>${r}</li>`).join('')}</ul></td>
       <td>$${fmt(c.price_usd)}</td>
-    </tr>`;
-    html += detailRow(rid, coinDetailFields(c));
-  });
+      <td>${ageHtml}</td>
+    </tr>` + detailRow(rid, coinDetailFields(c)).replace('<tr class="detail-row"', arch ? `<tr class="detail-row" data-archive="${key}"` : '<tr class="detail-row"');
+  };
+  let html = active.length ? active.map((it, i) => row(it, i, false)).join('')
+    : `<tr><td colspan="${cols}" class="empty">مفيش ترشيحات قابلة للقرار دلوقتي — آخر تقييم عميق بيتعمل كل 3 ساعات</td></tr>`;
+  if (stale.length) {
+    html += `<tr class="archive-row"><td colspan="${cols}"><button type="button" class="archive-toggle" id="arch-btn-${key}" data-n="${stale.length}"
+      onclick="toggleArchive('${key}')">${archiveLabel(key, stale.length)}</button>
+      <div class="subnote" style="margin:6px 0 0">${archiveNote}</div></td></tr>`;
+    html += stale.map((it, i) => row(it, i, true)).join('');
+  }
   tbody.innerHTML = html;
 }
 
@@ -516,7 +532,8 @@ function toggleArchive(key) {
   if (btn) btn.textContent = archiveLabel(key, btn.dataset.n);
 }
 function archiveLabel(key, n) {
-  return ARCHIVE_OPEN.has(key) ? `إخفاء الأرشيف (${n})` : `📁 عرض الأرشيف — ${n} صفقة مقفولة`;
+  const what = /tblProactive|tblMomentum|v2cand/.test(key) ? 'عملة غير مقيّمة أو فرصتها انتهت' : 'صفقة مقفولة';
+  return ARCHIVE_OPEN.has(key) ? `إخفاء الأرشيف (${n})` : `📁 عرض الأرشيف — ${n} ${what}`;
 }
 
 function renderTradeTable(tbodySel, trades, priceLookup, showScore, showStopDist, countId) {
@@ -652,16 +669,25 @@ function renderThesis(box, watchlist) {
 }
 
 function renderV2Candidates(tbody, countEl, data) {
+  const key = 'v2cand';
   const list = (data && data.candidates) || [];
-  countEl.textContent = list.length;
-  if (!list.length) { tbody.innerHTML = `<tr><td colspan="5" class="empty">مفيش مرشحين من V2 هذا الرن</td></tr>`; return; }
-  tbody.innerHTML = list.map(r => `<tr>
+  const active = list.filter(r => ['HIGH_PRIORITY_SETUP', 'WATCH'].includes(r.v2_final_status));
+  const rest = list.filter(r => !['HIGH_PRIORITY_SETUP', 'WATCH'].includes(r.v2_final_status));
+  countEl.textContent = `${active.length} قابلة للقرار${rest.length ? ' · ' + rest.length + ' أرشيف' : ''}`;
+  const isOpen = ARCHIVE_OPEN.has(key);
+  const row = (r, arch) => `<tr${arch ? ` data-archive="${key}" class="archived"${isOpen ? '' : ' hidden'}` : ''}>
     <td class="sym">${r.symbol}</td>
     <td>${r.v2_score}</td>
     <td>${decisionBadge(r.v2_final_status)}</td>
     <td class="flags">${r.v2_archetype}</td>
     <td class="flags">${(r.v2_gate_reject_reasons || []).join(', ') || '—'}</td>
-  </tr>`).join('');
+  </tr>`;
+  let html = active.length ? active.map(r => row(r, false)).join('') : `<tr><td colspan="5" class="empty">مفيش ترشيحات V2 قابلة للقرار هذا الرن</td></tr>`;
+  if (rest.length) {
+    html += `<tr class="archive-row"><td colspan="5"><button type="button" class="archive-toggle" id="arch-btn-${key}" data-n="${rest.length}"
+      onclick="toggleArchive('${key}')">${archiveLabel(key, rest.length)}</button></td></tr>` + rest.map(r => row(r, true)).join('');
+  }
+  tbody.innerHTML = html;
 }
 
 function renderV2Trades(tbody, trades, priceLookup) {
@@ -718,21 +744,25 @@ function runSearch() {
   document.getElementById('searchCount').textContent = hits.length;
   summary.textContent = hits.length ? `${hits.length} صفقة — ${nOpen} مفتوحة و${hits.length - nOpen} في الأرشيف` : '';
   const tbody = document.querySelector('#tblSearch tbody');
-  if (!hits.length) { tbody.innerHTML = `<tr><td colspan="11" class="empty">مفيش صفقات لـ "${q.replace(/[<>&"]/g, '')}" — جرّب الرمز (STRK) أو الاسم في CoinGecko (starknet)</td></tr>`; return; }
+  if (!hits.length) { tbody.innerHTML = `<tr><td colspan="13" class="empty">مفيش صفقات لـ "${q.replace(/[<>&"]/g, '')}" — جرّب الرمز (STRK) أو الاسم في CoinGecko (starknet)</td></tr>`; return; }
   tbody.innerHTML = hits.map(([book, raw]) => {
     const isLive = live(raw.status);
     const entry = raw.actual_entry ?? raw.entry;
     const mark = isLive ? SEARCH_PRICES[raw.asset_id] : raw.exit_price;
     const res = entry && mark != null && raw.status !== 'pending' && raw.status !== 'expired_unfilled' ? (mark - entry) / entry * 100 : null;
     const nT = (raw.targets || []).length;
+    const t0 = (raw.targets || [])[0];
+    const t1 = t0 != null && typeof t0 === 'object' ? t0.target_price : t0;
     return `<tr${isLive ? '' : ' class="archived"'}>
       <td class="sym">${raw.symbol || (raw.asset_id || '').toUpperCase()}</td>
       <td><span class="book-tag">${BOOK_LABELS[book]}</span></td>
       <td>${statusBadge(raw.status)}</td>
       <td>${fmt(entry)}</td>
-      <td>${mark != null ? '$' + fmt(mark) : '—'}${!isLive && mark != null ? ' <span class="book-tag">خروج</span>' : ''}</td>
+      <td>${mark != null ? '$' + fmt(mark) + ` <span class="book-tag">${isLive ? 'حالي' : 'خروج'}</span>` : '—'}</td>
       <td>${pct(res, 1)}</td>
       <td>${fmt(raw.stop)}</td>
+      <td>${t1 != null ? fmt(t1) : '—'}</td>
+      <td>${isLive && t1 != null && mark ? pct((t1 - mark) / mark * 100, 1) : '—'}</td>
       <td>${(raw.targets_hit || []).length} / ${nT}</td>
       <td class="flags">${raw.entry_archetype || raw.triggered_by || raw.v2_archetype || '—'}</td>
       <td>${raw.date_opened || '—'}</td>
@@ -848,22 +878,31 @@ async function loadAll() {
 
   const proactive = [], momentum = [];
   coins.forEach(c => {
+    const d = c.last_deep_eval || {};
+    const fresh = c.confidence_score != null;                       // evaluated in this very run
+    const score = fresh ? c.confidence_score : d.confidence_score;
+    const evalAge = fresh ? evalAgeHours(radar && (radar.deep_eval_at || radar.updated_at)) : evalAgeHours(d.evaluated_at);
+    const pick = k => (fresh ? c[k] : d[k]);
+    const base = { coin: c, score, evalAge, quality: pick('signal_quality'), funnel: pick('funnel_stage') };
     const flags = c.flags || [];
     const earlyFlags = flags.filter(isEarlyFlag);
-    if (c.priority_review) proactive.push({ coin: c, reasons: earlyFlags.length ? earlyFlags : ['priority_review'], isProactive: true });
-    if (c.breakout_signal || c.extension_continuation_signal || c.trendline_break_confirmed_signal) {
+    const decayed = (c.opportunity_lifecycle || {}).decay_state === 'decayed';
+    if (c.priority_review) proactive.push({ ...base, reasons: earlyFlags.length ? earlyFlags : ['priority_review'], isProactive: true,
+      actionable: score != null && !decayed });
+    const sigB = pick('breakout_signal'), sigE = pick('extension_continuation_signal'), sigT = pick('trendline_break_confirmed_signal');
+    if (sigB || sigE || sigT) {
       const reasons = [];
-      if (c.breakout_signal) reasons.push('اختراق مقاومة مؤكد');
-      if (c.extension_continuation_signal) reasons.push('استمرار امتداد');
-      if (c.trendline_break_confirmed_signal) reasons.push('كسر خط ترند مؤكد');
-      momentum.push({ coin: c, reasons, isProactive: false });
+      if (sigB) reasons.push('اختراق مقاومة مؤكد');
+      if (sigE) reasons.push('استمرار امتداد');
+      if (sigT) reasons.push('كسر خط ترند مؤكد');
+      momentum.push({ ...base, reasons, isProactive: false, actionable: score != null && !decayed });
     }
   });
-  proactive.sort((a, b) => (b.coin.confidence_score || -1) - (a.coin.confidence_score || -1));
-  momentum.sort((a, b) => (b.coin.confidence_score || -1) - (a.coin.confidence_score || -1));
+  const byScore = (a, b) => (b.score ?? -1) - (a.score ?? -1);
+  proactive.sort(byScore); momentum.sort(byScore);
 
-  renderCandidateTable('#tblProactive tbody', proactive, 'proactiveCount');
-  renderCandidateTable('#tblMomentum tbody', momentum, 'momentumCount');
+  renderCandidateTable('#tblProactive tbody', proactive, 'proactiveCount', 'مفيش ليها سكور (ما اتقيّمتش تقييم عميق في آخر 12 ساعة) أو الفرصة انتهت (عدّى عليها وقت طويل من غير حركة)');
+  renderCandidateTable('#tblMomentum tbody', momentum, 'momentumCount', 'إشارة زخم من غير سكور حديث أو فرصتها انتهت');
 
   const topTierCoins = coins.filter(c => c.funnel_stage === 'agent_room_priority' || c.funnel_stage === 'shortlist_10');
   document.getElementById('smcCount').textContent = topTierCoins.length;

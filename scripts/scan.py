@@ -59,6 +59,17 @@ OPPORTUNITY_LIFECYCLE_PATH = DATA_DIR / "opportunity-lifecycle.json"
 WARMUP_STATE_PATH = DATA_DIR / "warmup-state.json"
 WARMUP_GAP_HOURS = 2.0            # a hole longer than this between scans starts a warm-up
 WARMUP_DURATION_HOURS = 6.0       # 6h = 1.5 synthetic 4H candles of clean data after the gap
+
+# v70 (1/10/2026): breakout_check.py deep-evaluates only every 3h, but this
+# script rewrites radar-flags.json every 30 min, so the dashboard showed coins
+# with no score / quality for most of the day. The last deep evaluation is now
+# carried forward under a SEPARATE key (last_deep_eval) with its timestamp -
+# display only: auto_paper_trade.py still reads the top-level fields, which
+# exist only on a real deep-evaluation run, so no trade can open on a stale score.
+DEEP_EVAL_MAX_AGE_HOURS = 12.0
+DEEP_EVAL_FIELDS = ("confidence_score", "signal_quality", "funnel_stage", "breakout_signal",
+                    "extension_continuation_signal", "pullback_entry_signal", "trendline_break_confirmed_signal",
+                    "trend_following_eligible", "score_streak", "escalation_strength")
 OPPORTUNITY_DECAY_MOVE_PCT = 6.0    # price already moved this much since first flag -> the move likely already happened
 OPPORTUNITY_DECAY_HOURS = 48        # flagged this long without resolving -> stale regardless of price
 
@@ -692,6 +703,31 @@ def update_warmup_state(state: dict, last_seen, now: datetime) -> dict:
     return state
 
 
+def carry_deep_evals(prev_flags: dict, now: datetime) -> dict:
+    """v70: {coin_id: last_deep_eval} from the previous radar-flags.json, dropping
+    anything older than DEEP_EVAL_MAX_AGE_HOURS."""
+    out = {}
+    prev_eval_at = prev_flags.get("deep_eval_at")
+    for c in prev_flags.get("coins", []) or []:
+        cid = c.get("id")
+        if not cid:
+            continue
+        if c.get("confidence_score") is not None and prev_eval_at:
+            rec = {k: c.get(k) for k in DEEP_EVAL_FIELDS}
+            rec["evaluated_at"] = prev_eval_at
+        elif c.get("last_deep_eval"):
+            rec = c["last_deep_eval"]
+        else:
+            continue
+        try:
+            age_h = (now - datetime.fromisoformat(rec["evaluated_at"])).total_seconds() / 3600
+        except (KeyError, TypeError, ValueError):
+            continue
+        if age_h <= DEEP_EVAL_MAX_AGE_HOURS:
+            out[cid] = rec
+    return out
+
+
 def update_history(history: dict, coin: dict, timestamp: str, always_track: set) -> None:
     cid = coin["id"]
     should_track = (
@@ -1035,6 +1071,11 @@ def main():
     top_flagged = top_by_flag_count + priority_extras
 
     category_clusters = compute_category_clusters(top_flagged, current_categories)
+
+    carried = carry_deep_evals(load_json(DATA_DIR / "radar-flags.json", {}), now_dt)  # v70
+    for r in top_flagged:
+        if r["id"] in carried:
+            r["last_deep_eval"] = carried[r["id"]]
 
     radar_flags = {
         "updated_at": timestamp,

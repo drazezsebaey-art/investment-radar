@@ -1,7 +1,7 @@
 {
  "_doc": "v62 (27/9/2026) - every change to a tunable threshold/weight is a TRIAL and counts against the system (multiple-testing). Rules: (1) no threshold change on fewer than MIN_SAMPLE_FOR_CHANGE outcomes; (2) the evidence must come from data NOT used to pick the new value, or the entry is marked in_sample=true and must be re-validated before it is trusted; (3) every change adds an entry here AND updates tracked_parameters.current_value - scripts/trials_check.py warns when code and this file disagree.",
  "min_sample_for_change": 30,
- "trials_count_total": 20,
+ "trials_count_total": 21,
  "tracked_parameters": [
   {
    "name": "AUTO_TRADE_MIN_SCORE",
@@ -425,6 +425,11 @@
    "name": "PENDING_MAX_HOURS",
    "file": "scripts/track_trades.py",
    "current_value": 72
+  },
+  {
+   "name": "DEEP_EVAL_MAX_AGE_HOURS",
+   "file": "scripts/scan.py",
+   "current_value": 12.0
   }
  ],
  "trials": [
@@ -703,6 +708,20 @@
    "revalidated": false,
    "retroactive_entry": false,
    "flag": "bookkeeping fix, not an edge; expired_unfilled never enters win-rate/return stats"
+  },
+  {
+   "id": "T021",
+   "version": "v70",
+   "date": "2026-10-01",
+   "parameter": "display-only carry-forward of the last deep evaluation (last_deep_eval, max age DEEP_EVAL_MAX_AGE_HOURS=12) into radar-flags.json between breakout_check runs; dashboard shows only scored, non-decayed candidates and open trades, everything else archived",
+   "old": "scan.py rewrote radar-flags.json every 30 min, wiping confidence_score/signal_quality between 3h deep evaluations (0 scored coins on the 1/10 12:00 UTC file)",
+   "new": "nested last_deep_eval with evaluated_at; top-level trading fields untouched",
+   "evidence": "user report 1/10: candidates listed with no score and no quality; repo radar-flags.json had 0 coins with confidence_score",
+   "n": null,
+   "in_sample": false,
+   "revalidated": false,
+   "retroactive_entry": false,
+   "flag": "display/bookkeeping only - auto_paper_trade still reads top-level fields that exist only on a real deep-evaluation run"
   }
  ],
  "hypotheses": [
