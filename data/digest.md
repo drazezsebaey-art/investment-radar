@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-01 10:11 UTC
+# Radar digest - 2026-10-01 10:43 UTC
 
 ## Market
-- BTC scenario **A** | price 83874 | wk close 84465 vs 82800 | 50W 78247 (7.19%) | 26m old
+- BTC scenario **A** | price 83874 | wk close 84465 vs 82800 | 50W 78247 (7.19%) | 58m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.02% | ETH/BTC 0.03214 | breadth7d 69% | stables 30d 1.10%
 - Gold: PAXG 1m -4.57% | real10y 2.91 (47bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl -
 
@@ -16,14 +16,14 @@
 - SUI: **ONGOING** | +104% impulse, retr 0.20 | OI dd 3% | fund -0.0062 | hold False | inval 1.12740 | OB 0.93370-0.97450
 
 ## Pre-pump candidates
-- XRP: [A+B+E] 7d 0.4%
 - SOL: [A+D+E] 7d 3.2%
 - AVAX: [A+D+E] 7d 8.5%
-- BCH: [B+E] 7d -9.9%
+- BCH: [B+E] 7d -8.1%
 - ZEC: [A+E] 7d -7.6%
-- HYPE: [A+E] 7d -5.2%
-- INJ: [A+E] 7d -5.0%
-- TRX: [A+E] 7d -1.7%
+- HYPE: [A+E] 7d -3.4%
+- INJ: [A+E] 7d -3.3%
+- TRX: [A+E] 7d -1.1%
+- BNB: [A+E] 7d -0.1%
 
 ## ETF pipeline (new this run)
 - solana NEW: other - Crypto ETF News Today: Bitcoin, Ethereum, Solana Bloodbath, XRP Quiet - Coin Gabbar
@@ -31,14 +31,14 @@
 - near: other - Bitwise NEAR ETF Records $13.2 Million Inflow on Sept. 30 - tokenpost.com
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc 0.18% | topPos 0.95 | taker 1.03
-- ETH: LONG_FLUSH_24H | OI/mc 0.56% | topPos 0.95 | taker 1.01
-- SOL: LONG_FLUSH_24H | OI/mc 0.56% | topPos 0.92 | taker 0.95
-- AVAX: LONG_FLUSH_24H | OI/mc 0.49% | topPos 0.88 | taker 0.94
-- XRP: SHORT_SQUEEZE_FUEL, LONG_FLUSH_24H | OI/mc 0.15% | topPos 0.86 | taker 0.93
-- SUI: SHORT_SQUEEZE_FUEL, LONG_FLUSH_24H | OI/mc 1.13% | topPos 0.85 | taker 0.97
-- SEI: LONG_FLUSH_24H | OI/mc 0.85% | topPos 0.92 | taker 0.98
-- TAO: AGGRESSIVE_SELLING | OI/mc 0.82% | topPos 0.88 | taker 0.85
+- BTC: LONG_FLUSH_24H | OI/mc 0.18% | topPos 0.96 | taker 1.02
+- ETH: LONG_FLUSH_24H | OI/mc 0.55% | topPos 0.95 | taker 1.00
+- SOL: LONG_FLUSH_24H | OI/mc 0.57% | topPos 0.91 | taker 0.95
+- NEAR: SHORT_SQUEEZE_FUEL | OI/mc -% | topPos 1.00 | taker 1.04
+- AVAX: LONG_FLUSH_24H | OI/mc 0.49% | topPos 0.89 | taker 0.92
+- SUI: SHORT_SQUEEZE_FUEL, LONG_FLUSH_24H | OI/mc -% | topPos 0.84 | taker 0.96
+- SEI: LONG_FLUSH_24H | OI/mc 0.85% | topPos 0.92 | taker 0.96
+- TAO: AGGRESSIVE_SELLING | OI/mc 0.83% | topPos 0.87 | taker 0.84
 
 ## Revenue / buyback flags
 - stonk-3: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -50,8 +50,8 @@
 - (22 flagged protocol(s) without a tradeable token hidden)
 
 ## System
-- CoinGecko 190/10000 used, month-end projection 11780 (118%), throttle level 2 | by script {'scan': 52, 'check_liquidity': 18, 'breakout_check': 120}
+- CoinGecko 192/10000 used, month-end projection 11904 (119%), throttle level 2 | by script {'scan': 54, 'check_liquidity': 18, 'breakout_check': 120}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=5), H2 PENDING (n=4)
-- radar-flags.json scan age: 11m
+- radar-flags.json scan age: 13m
 - excluded from radar (pegged/tokenized equity): 20
