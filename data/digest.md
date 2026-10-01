@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-01 16:45 UTC
+# Radar digest - 2026-10-01 17:12 UTC
 
 ## Market
-- BTC scenario **A** | price 83993 | wk close 84465 vs 82800 | 50W 78247 (7.34%) | 59m old
+- BTC scenario **A** | price 83993 | wk close 84465 vs 82800 | 50W 78247 (7.34%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 56.08% | ETH/BTC 0.03214 | breadth7d 52% | stables 30d 1.11%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.27pt | 7d -pt | n=20
 - Gold: PAXG 1m -4.48% | real10y 2.91 (47bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl -
@@ -19,14 +19,14 @@
 - SUI: **ONGOING** | +104% impulse, retr 0.24 | OI dd 3% | fund 0.0015 | hold False | inval 1.12740 | OB 0.93370-0.97450
 
 ## Pre-pump candidates
-- SOL: [A+D+E] 7d 2.5%
-- AVAX: [A+D+E] 7d 6.4%
-- RAIL: [C+D] 7d -9.4%
-- ZEC: [A+E] 7d -7.7%
-- INJ: [A+E] 7d -7.6%
-- HYPE: [A+E] 7d -4.6%
-- AR: [C+E] 7d -2.4%
-- TRX: [A+E] 7d -1.7%
+- SOL: [A+D+E] 7d 0.6%
+- AVAX: [A+D+E] 7d 3.5%
+- INJ: [A+E] 7d -13.3%
+- ZEC: [A+E] 7d -11.5%
+- RAIL: [C+D] 7d -8.4%
+- HYPE: [A+E] 7d -7.1%
+- XRP: [A+E] 7d -2.2%
+- BNB: [A+E] 7d -1.8%
 
 ## ETF pipeline (new this run)
 - cap-4 NEW: other - Roundhill Memory ETF (Derivatives) Price (DRAM/USD) Today | Live Price, Market Cap & Chart
@@ -54,12 +54,12 @@
 - (22 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 59 | mean 1.7% (0.22R) | in profit 28 | older than 7d 18
-- worst: TIA -0.86R, PENGU -0.70R, BCH -0.70R | best: aave 2.42R, JST 2.57R, sky 2.61R
+- open 58 | mean 1.1% (0.16R) | in profit 27 | older than 7d 17
+- worst: TIA -0.93R, ONDO -0.76R, BCH -0.76R | best: sky 2.34R, aave 2.37R, JST 2.52R
 
 ## System
-- CoinGecko 329/10000 used, month-end projection 3400 (34%), throttle level 0 | by script {'scan': 78, 'check_liquidity': 23, 'breakout_check': 228}
+- CoinGecko 332/10000 used, month-end projection 3431 (34%), throttle level 0 | by script {'scan': 80, 'check_liquidity': 24, 'breakout_check': 228}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=7), H2 PENDING (n=10)
-- radar-flags.json scan age: 15m
+- radar-flags.json scan age: 12m
 - excluded from radar (pegged/tokenized equity): 38
