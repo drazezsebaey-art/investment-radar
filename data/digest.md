@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-01 15:47 UTC
+# Radar digest - 2026-10-01 16:13 UTC
 
 ## Market
-- BTC scenario **A** | price 83993 | wk close 84465 vs 82800 | 50W 78247 (7.34%) | 1m old
+- BTC scenario **A** | price 83993 | wk close 84465 vs 82800 | 50W 78247 (7.34%) | 27m old
 - Alts: **BTC_LED** [-] | BTC.D 56.08% | ETH/BTC 0.03214 | breadth7d 52% | stables 30d 1.11%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.27pt | 7d -pt | n=20
 - Gold: PAXG 1m -4.48% | real10y 2.91 (47bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl -
@@ -19,11 +19,14 @@
 - SUI: **ONGOING** | +104% impulse, retr 0.24 | OI dd 3% | fund 0.0015 | hold False | inval 1.12740 | OB 0.93370-0.97450
 
 ## Pre-pump candidates
-- ZEC: [A+E] 7d -9.2%
-- AR: [C+E] 7d -2.1%
-- BNB: [A+E] 7d -1.3%
-- ETH: [D+E] 7d 0.7%
-- NEAR: [A+E] 7d 7.7%
+- SOL: [A+D+E] 7d 2.5%
+- AVAX: [A+D+E] 7d 6.4%
+- ZEC: [A+E] 7d -7.7%
+- INJ: [A+E] 7d -7.6%
+- HYPE: [A+E] 7d -4.6%
+- AR: [C+E] 7d -2.4%
+- TRX: [A+E] 7d -1.7%
+- BNB: [A+E] 7d -1.4%
 
 ## ETF pipeline (new this run)
 - cap-4 NEW: other - Roundhill Memory ETF (Derivatives) Price (DRAM/USD) Today | Live Price, Market Cap & Chart
@@ -51,12 +54,12 @@
 - (22 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 59 | mean 1.9% (0.23R) | in profit 28 | older than 7d 18
-- worst: TIA -0.84R, PENGU -0.69R, BCH -0.68R | best: sky 2.28R, JST 2.42R, aave 2.50R
+- open 59 | mean 1.7% (0.22R) | in profit 28 | older than 7d 18
+- worst: TIA -0.85R, PENGU -0.71R, BCH -0.70R | best: aave 2.50R, sky 2.58R, JST 2.63R
 
 ## System
-- CoinGecko 324/10000 used, month-end projection 3348 (34%), throttle level 0 | by script {'scan': 74, 'check_liquidity': 22, 'breakout_check': 228}
+- CoinGecko 327/10000 used, month-end projection 3379 (34%), throttle level 0 | by script {'scan': 76, 'check_liquidity': 23, 'breakout_check': 228}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=7), H2 PENDING (n=10)
-- radar-flags.json scan age: 17m
+- radar-flags.json scan age: 13m
 - excluded from radar (pegged/tokenized equity): 37
