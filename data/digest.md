@@ -1,4 +1,4 @@
-# Radar digest - 2026-10-01 06:44 UTC
+# Radar digest - 2026-10-01 07:12 UTC
 
 ## Market
 - BTC scenario **A** | price 84263 | wk close 84465 vs 82800 | 50W 78247 (7.69%) | 1h old
@@ -16,14 +16,14 @@
 - SEI: **ONGOING** | +126% impulse, retr 0.26 | OI dd 10% | fund 0.0050 | hold False | inval 0.07059 | OB 0.07059-0.07286
 
 ## Pre-pump candidates
-- SOL: [A+D+E] 7d 3.4%
-- AVAX: [A+D+E] 7d 7.4%
+- SOL: [A+D+E] 7d 3.8%
+- AVAX: [A+D+E] 7d 8.7%
 - ZEC: [A+E] 7d -5.6%
 - INJ: [A+E] 7d -4.1%
 - HYPE: [A+E] 7d -3.3%
 - TRX: [A+E] 7d -1.7%
+- XRP: [A+E] 7d 0.1%
 - BNB: [A+E] 7d 0.1%
-- XRP: [A+E] 7d 0.5%
 
 ## ETF pipeline (new this run)
 - chainlink: filing - Grayscale expands LINK holdings as Bitwise files ETF: Can Chainlink reclaim $15.80? - Bitg
@@ -49,8 +49,8 @@
 - (28 flagged protocol(s) without a tradeable token hidden)
 
 ## System
-- CoinGecko 111/10000 used, month-end projection 6882 (69%), throttle level 0 | by script {'scan': 38, 'check_liquidity': 16, 'breakout_check': 57}
+- CoinGecko 113/10000 used, month-end projection 7006 (70%), throttle level 0 | by script {'scan': 40, 'check_liquidity': 16, 'breakout_check': 57}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=0), H2 PENDING (n=0)
-- radar-flags.json scan age: 14m
+- radar-flags.json scan age: 12m
 - excluded from radar (pegged/tokenized equity): 20
