@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-01 01:16 UTC
+# Radar digest - 2026-10-01 01:42 UTC
 
 ## Market
-- BTC scenario **A** | price 83541 | wk close 84465 vs 82800 | 50W 78247 (6.77%) | 1m old
+- BTC scenario **A** | price 83541 | wk close 84465 vs 82800 | 50W 78247 (6.77%) | 27m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 55.96% | ETH/BTC 0.03216 | breadth7d -% | stables 30d 1.26%
 - Gold: PAXG 1m -4.58% | real10y 2.91 (47bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 48
 
@@ -16,7 +16,7 @@
 - PUMP: **ONGOING** | +121% impulse, retr 0.07 | OI dd 2% | fund 0.0050 | hold False | inval 0.00430 | OB 0.00340-0.00354
 
 ## Pre-pump candidates
-- SEI: [A+B] 7d 24.9%
+- SEI: [A+B] 7d 25.3%
 
 ## ETF pipeline (new this run)
 - soon-2 NEW: approval - First US spot NEAR ETF wins NYSE Arca listing approval, trading could begin as soon as the
@@ -42,9 +42,9 @@
 - (28 flagged protocol(s) without a tradeable token hidden)
 
 ## System
-- CoinGecko 18/10000 used, month-end projection 1116 (11%), throttle level 0 | by script {'scan': 16, 'check_liquidity': 2}
+- CoinGecko 21/10000 used, month-end projection 1302 (13%), throttle level 0 | by script {'scan': 18, 'check_liquidity': 3}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=0), H2 PENDING (n=0)
-- radar-flags.json scan age: 16m
+- radar-flags.json scan age: 12m
 - WARM-UP active until 2026-10-01T06:30:35.021362+00:00 after a 94.0h gap: Layer-2 early signals recorded, not flagged
 - excluded from radar (pegged/tokenized equity): 20
