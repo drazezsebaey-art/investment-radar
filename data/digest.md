@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-01 08:12 UTC
+# Radar digest - 2026-10-01 08:45 UTC
 
 ## Market
-- BTC scenario **A** | price 83552 | wk close 84465 vs 82800 | 50W 78247 (6.78%) | 29m old
+- BTC scenario **A** | price 83552 | wk close 84465 vs 82800 | 50W 78247 (6.78%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 56.01% | ETH/BTC 0.03220 | breadth7d -% | stables 30d 1.08%
 - Gold: PAXG 1m -4.45% | real10y 2.91 (47bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl -
 
@@ -18,12 +18,12 @@
 ## Pre-pump candidates
 - SOL: [A+D+E] 7d 2.3%
 - AVAX: [A+D+E] 7d 7.0%
-- ZEC: [A+E] 7d -5.0%
-- INJ: [A+E] 7d -3.1%
-- HYPE: [A+E] 7d -3.0%
+- BCH: [B+E] 7d -10.0%
+- ZEC: [A+E] 7d -7.2%
+- INJ: [A+E] 7d -4.2%
+- HYPE: [A+E] 7d -3.9%
 - TRX: [A+E] 7d -1.7%
-- XRP: [A+E] 7d -1.1%
-- ETH: [D+E] 7d -0.3%
+- BNB: [A+E] 7d -1.1%
 
 ## ETF pipeline (new this run)
 - injective-protocol NEW: filing - Injective News: INJ Staking ETF Filing Signals Growing Altcoin Fund Demand - CoinMarketCap
@@ -36,14 +36,14 @@
 - chainlink: filing - Grayscale expands LINK holdings as Bitwise files ETF: Can Chainlink reclaim $15.80? - Bitg
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc 0.18% | topPos 0.96 | taker 1.01
-- ETH: LONG_FLUSH_24H | OI/mc 0.57% | topPos 0.99 | taker 1.01
-- SOL: LONG_FLUSH_24H | OI/mc 0.56% | topPos 0.93 | taker 0.96
-- AVAX: LONG_FLUSH_24H | OI/mc 0.50% | topPos 0.90 | taker 0.98
-- SEI: LONG_FLUSH_24H | OI/mc 0.88% | topPos 0.93 | taker 0.97
-- ZEC: LONG_FLUSH_24H | OI/mc 0.68% | topPos 1.04 | taker 1.02
-- WLD: LONG_FLUSH_24H | OI/mc -% | topPos 0.90 | taker 0.95
-- LINK: LONG_FLUSH_24H | OI/mc 0.36% | topPos 0.95 | taker 0.96
+- BTC: LONG_FLUSH_24H | OI/mc 0.18% | topPos 0.96 | taker 1.02
+- ETH: LONG_FLUSH_24H | OI/mc 0.55% | topPos 0.94 | taker 1.00
+- SOL: LONG_FLUSH_24H | OI/mc 0.55% | topPos 0.92 | taker 0.95
+- NEAR: SHORT_SQUEEZE_FUEL | OI/mc -% | topPos 1.02 | taker 1.03
+- AVAX: LONG_FLUSH_24H | OI/mc 0.49% | topPos 0.89 | taker 0.93
+- XRP: LONG_FLUSH_24H | OI/mc 0.14% | topPos 0.86 | taker 0.94
+- SUI: SHORT_SQUEEZE_FUEL, LONG_FLUSH_24H | OI/mc 1.14% | topPos 0.84 | taker 0.98
+- SEI: LONG_FLUSH_24H | OI/mc 0.86% | topPos 0.92 | taker 0.99
 
 ## Revenue / buyback flags
 - ethereum: REVENUE_ACCELERATING
@@ -55,8 +55,8 @@
 - (28 flagged protocol(s) without a tradeable token hidden)
 
 ## System
-- CoinGecko 118/10000 used, month-end projection 7316 (73%), throttle level 0 | by script {'scan': 44, 'check_liquidity': 17, 'breakout_check': 57}
+- CoinGecko 120/10000 used, month-end projection 7440 (74%), throttle level 0 | by script {'scan': 46, 'check_liquidity': 17, 'breakout_check': 57}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=2), H2 PENDING (n=2)
-- radar-flags.json scan age: 12m
+- radar-flags.json scan age: 15m
 - excluded from radar (pegged/tokenized equity): 20
