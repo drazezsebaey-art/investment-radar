@@ -1,4 +1,4 @@
-# Radar digest - 2026-10-01 18:46 UTC
+# Radar digest - 2026-10-01 19:12 UTC
 
 ## Market
 - BTC scenario **A** | price 85071 | wk close 84465 vs 82800 | 50W 78247 (8.72%) | 1h old
@@ -19,9 +19,9 @@
 - PUMP: **ONGOING** | +119% impulse, retr 0.09 | OI dd 6% | fund 0.0050 | hold False | inval 0.00430 | OB 0.00340-0.00354
 
 ## Pre-pump candidates
-- ZEC: [A+E] 7d -11.8%
-- BNB: [A+E] 7d -1.1%
-- NEAR: [A+E] 7d 4.0%
+- ZEC: [A+E] 7d -13.5%
+- BNB: [A+E] 7d -1.0%
+- NEAR: [A+E] 7d 4.5%
 
 ## ETF pipeline (new this run)
 - near: other - NEAR Protocol Price Forecast: NEAR rally advances as Bitwise ETF inflows reinforce bullish
@@ -46,12 +46,12 @@
 - (22 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 60 | mean 2.8% (0.32R) | in profit 33 | older than 7d 17
-- worst: TIA -0.85R, BCH -0.71R, PENGU -0.61R | best: aave 2.54R, JST 2.55R, sky 2.95R
+- open 60 | mean 2.6% (0.31R) | in profit 33 | older than 7d 17
+- worst: TIA -0.85R, BCH -0.71R, PENGU -0.61R | best: aave 2.48R, JST 2.58R, sky 3.15R
 
 ## System
-- CoinGecko 387/10000 used, month-end projection 3999 (40%), throttle level 0 | by script {'scan': 86, 'check_liquidity': 25, 'breakout_check': 276}
+- CoinGecko 389/10000 used, month-end projection 4020 (40%), throttle level 0 | by script {'scan': 88, 'check_liquidity': 25, 'breakout_check': 276}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=7), H2 PENDING (n=10)
-- radar-flags.json scan age: 16m
+- radar-flags.json scan age: 11m
 - excluded from radar (pegged/tokenized equity): 37
