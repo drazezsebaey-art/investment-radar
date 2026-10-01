@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-01 11:46 UTC
+# Radar digest - 2026-10-01 12:26 UTC
 
 ## Market
-- BTC scenario **A** | price 83986 | wk close 84465 vs 82800 | 50W 78247 (7.33%) | 1m old
+- BTC scenario **A** | price 83986 | wk close 84465 vs 82800 | 50W 78247 (7.33%) | 41m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.02% | ETH/BTC 0.03214 | breadth7d 69% | stables 30d 1.10%
 - Gold: PAXG 1m -4.57% | real10y 2.91 (47bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl -
 
@@ -16,14 +16,14 @@
 - SUI: **ONGOING** | +104% impulse, retr 0.20 | OI dd 3% | fund -0.0030 | hold False | inval 1.12740 | OB 0.93370-0.97450
 
 ## Pre-pump candidates
-- SOL: [A+D+E] 7d 4.3%
+- SOL: [A+D+E] 7d 4.1%
 - AVAX: [A+D+E] 7d 9.3%
-- BCH: [B+E] 7d -5.7%
-- ZEC: [A+E] 7d -5.7%
-- INJ: [A+E] 7d -3.8%
-- TRX: [A+E] 7d -1.8%
+- BCH: [B+E] 7d -7.0%
+- ZEC: [A+E] 7d -4.6%
+- INJ: [A+E] 7d -4.3%
+- TRX: [A+E] 7d -2.1%
 - HYPE: [A+E] 7d -0.9%
-- BNB: [A+E] 7d 0.5%
+- BNB: [A+E] 7d 0.3%
 
 ## ETF pipeline (new this run)
 - ondo-finance: other - How to Buy Franklin Focused Growth Tokenized ETF (Ondo) (FFOGon) in Vanuatu with Credit Ca
@@ -48,12 +48,12 @@
 - (22 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 61 | mean 2.0% (0.25R) | in profit 32 | older than 7d 18
-- worst: MET -0.90R, 2Z -0.87R, TIA -0.78R | best: aave 2.26R, FET 2.27R, JST 2.49R
+- open 62 | mean 2.5% (0.29R) | in profit 33 | older than 7d 18
+- worst: MET -0.86R, 2Z -0.82R, TIA -0.76R | best: aave 2.35R, FET 2.58R, JST 2.59R
 
 ## System
-- CoinGecko 197/10000 used, month-end projection 2036 (20%), throttle level 0 | by script {'scan': 58, 'check_liquidity': 19, 'breakout_check': 120}
+- CoinGecko 254/10000 used, month-end projection 2625 (26%), throttle level 0 | by script {'scan': 60, 'check_liquidity': 20, 'breakout_check': 174}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=5), H2 PENDING (n=4)
-- radar-flags.json scan age: 16m
+- radar-flags.json scan age: 26m
 - excluded from radar (pegged/tokenized equity): 37
