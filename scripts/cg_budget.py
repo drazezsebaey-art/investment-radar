@@ -27,6 +27,10 @@ USAGE = ROOT / "data" / "cg-usage.json"
 CONFIG = ROOT / "config" / "cg-budget.json"
 DEFAULT_LIMIT = 10000
 WARN_FRACTION = 0.90
+MIN_PROJECTION_DAYS = 3.0   # v68: early-month projections use at least this many days, so day-1 one-off
+                            # costs (cache refills after an outage, the 24h liquidity refresh) cannot
+                            # extrapolate into a false throttle (1/10/2026: 187 credits in 9.5h -> 116%)
+EARLY_MONTH_HARD_FRACTION = 0.50  # ...unless half the allowance is really already gone
 
 _pending = {}
 
@@ -82,6 +86,8 @@ def status(now=None, usage_path=USAGE):
         used = u.get("total", 0)
     days_in_month = calendar.monthrange(now.year, now.month)[1]
     elapsed = max(now.day - 1 + now.hour / 24, 0.5)
+    if used < EARLY_MONTH_HARD_FRACTION * limit:
+        elapsed = max(elapsed, MIN_PROJECTION_DAYS)  # v68
     projection = round(used / elapsed * days_in_month)
     level = 0
     if projection > limit or used >= 0.97 * limit:

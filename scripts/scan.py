@@ -966,7 +966,7 @@ def main():
         flags = list(base_flags_by_id[cid])
         priority_review = False
         early_signals = None
-        exclusion = asset_filters.exclusion_reason(cid, coin.get("symbol"))  # v67
+        exclusion = asset_filters.exclusion_reason_for(coin)  # v67 ids/symbols, v68 + peg behaviour
         suppressed_flags = []
         if len(points) >= 4 and exclusion is None:
             early_signals = compute_early_signals(cid, points, current_categories, base_flagged_ids, btc_points)

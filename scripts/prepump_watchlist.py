@@ -118,7 +118,7 @@ def candidates(coins, sig):
     out = []
     for cid, cats in sig.items():
         c = coins[cid]
-        if asset_filters.exclusion_reason(cid, c.get("symbol")):  # v67: no pegged / tokenized equities
+        if asset_filters.exclusion_reason_for({**c, "id": cid}):  # v67/v68: no pegged / tokenized equities
             continue
         if len(cats) < PREPUMP_MIN_CATEGORIES:
             continue

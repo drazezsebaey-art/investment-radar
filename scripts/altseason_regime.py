@@ -22,7 +22,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "data" / "altseason.json"
 FLAGS = ROOT / "data" / "radar-flags.json"
-ENGINE_VERSION = "altseason-v64"
+ENGINE_VERSION = "altseason-v68"
 GATE_MINUTES = 240
 HISTORY_MAX = 120
 TIMEOUT = 20
@@ -32,6 +32,9 @@ ALT_ETHBTC_TRIGGER = 0.03426          # weekly close above -> rotation signal (c
 ALT_BTC_DOM_ROTATION = 55.0           # dominance below -> broad-rotation zone
 ALT_BTC_DOM_LINE = 60.0               # line in the sand
 ALT_BREADTH_ALTSEASON_PCT = 75.0      # share outperforming BTC (7d proxy)
+ALT_RISK_DOM_RISE_3D_PT = 0.5         # v68: BTC.D up >= 0.5 pt in ~3 days = alts losing share
+ALT_RISK_BREAKOUT_MARGIN_PT = 0.2     # v68: recent BTC.D high clears the prior window's high by this much
+ALT_RISK_MIN_HISTORY = 18             # v68: ~3 days of 4h snapshots before any BTC.D trend call
 
 
 def now_utc():
@@ -157,6 +160,56 @@ def regime(m, history):
     return label, sig
 
 
+def _dom_series(history):
+    pts = []
+    for h in history:
+        try:
+            if h.get("btc_dominance_pct") is not None:
+                pts.append((datetime.fromisoformat(h["ts"]), float(h["btc_dominance_pct"])))
+        except (KeyError, TypeError, ValueError):
+            continue
+    return pts
+
+
+def _value_days_ago(pts, days):
+    cut = pts[-1][0] - timedelta(days=days)
+    older = [v for t, v in pts if t <= cut]
+    return older[-1] if older else None
+
+
+def btc_dominance_alt_risk(history):
+    """v68: altcoin-risk filter from BTC dominance (Soloway: a BTC.D breakout that
+    holds after a retest means alts can fall 2-3x a BTC pullback). Built from our
+    own 4h snapshots, so it reads a HORIZONTAL breakout of the prior window's high
+    and a 3-day rise - a hand-drawn trendline read stays a manual chart check."""
+    pts = _dom_series(history)
+    out = {"n_history": len(pts), "flags": [], "level": "UNKNOWN"}
+    if len(pts) < ALT_RISK_MIN_HISTORY:
+        out["note"] = f"needs {ALT_RISK_MIN_HISTORY} snapshots (~3 days) before a BTC.D trend call"
+        return out
+    last = pts[-1][1]
+    d3, d7 = _value_days_ago(pts, 3), _value_days_ago(pts, 7)
+    out["dom_now"] = last
+    out["dom_3d_change_pt"] = round(last - d3, 2) if d3 is not None else None
+    out["dom_7d_change_pt"] = round(last - d7, 2) if d7 is not None else None
+    recent, prior = pts[-6:], pts[:-6]
+    if prior:
+        prior_high = max(v for _, v in prior)
+        recent_high = max(v for _, v in recent)
+        out["prior_window_high"] = prior_high
+        if recent_high >= prior_high + ALT_RISK_BREAKOUT_MARGIN_PT:
+            out["flags"].append("BTC_DOM_BREAKOUT_HOLDING" if last >= prior_high else "BTC_DOM_BREAKOUT_FAILED")
+    if out["dom_3d_change_pt"] is not None and out["dom_3d_change_pt"] >= ALT_RISK_DOM_RISE_3D_PT:
+        out["flags"].append("BTC_DOM_RISING_3D")
+    if "BTC_DOM_BREAKOUT_HOLDING" in out["flags"] and "BTC_DOM_RISING_3D" in out["flags"]:
+        out["level"] = "HIGH"
+    elif {"BTC_DOM_BREAKOUT_HOLDING", "BTC_DOM_RISING_3D"} & set(out["flags"]):
+        out["level"] = "ELEVATED"
+    else:
+        out["level"] = "NORMAL"
+    return out
+
+
 def run(now=None, fetchers=None):
     now = now or now_utc()
     fetchers = fetchers or {"global": fetch_global, "ethbtc": fetch_ethbtc, "stable": fetch_stablecoins}
@@ -181,6 +234,7 @@ def run(now=None, fetchers=None):
     snap = {"ts": now.isoformat(), **{k: v for k, v in m.items()}}
     out = {"updated_at": now.isoformat(), "engine_version": ENGINE_VERSION,
            "regime": label, "signals": sig, "metrics": m,
+           "alt_risk": btc_dominance_alt_risk(history + [snap]),  # v68
            "stablecoin_chain_flows_since_last": chain_flows(by_chain, prev.get("_stable_by_chain", {})),
            "_stable_by_chain": by_chain or prev.get("_stable_by_chain", {}),
            "notes": "breadth_7d_pct is a fast 7-day proxy on the scanned universe, NOT the official 90-day Altcoin Season Index.",

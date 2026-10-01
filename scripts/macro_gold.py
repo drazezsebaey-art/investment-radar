@@ -29,7 +29,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "data" / "macro-gold.json"
-ENGINE_VERSION = "macro_gold-v64"
+ENGINE_VERSION = "macro_gold-v68"
 GATE_MINUTES = 360
 COT_REFRESH_HOURS = 24
 TIMEOUT = 30
@@ -41,6 +41,8 @@ GOLD_COT_CODE = "088691"
 MACRO_DIVERGENCE_GOLD_PCT = 2.0     # gold 20d move considered meaningful
 MACRO_DIVERGENCE_RY_BP = 10.0       # real-yield 20d move considered meaningful (basis points)
 MACRO_COT_CROWDED_PCTL = 85.0       # managed-money net long percentile (3y) = crowded
+MACRO_DECOMP_MIN_MOVE_BP = 10.0     # v68: nominal 10y move below this = too small to attribute
+MACRO_DECOMP_DOMINANT_SHARE = 0.70  # v68: share of the move one component must explain to "drive" it
 
 
 def now_utc():
@@ -136,6 +138,35 @@ def cot_metrics(rows):
     return out
 
 
+# ------------------------------------------------ v68 decomposition ----
+def yield_decomposition(macro):
+    """v68: split the 10y nominal move into the real-yield part (DFII10) and the
+    inflation-compensation part (T10YIE). Real-yield-driven = the price of money
+    / term premium / supply is rising (what gold reacts to most); breakeven-
+    driven = inflation fear. The two parts need not sum exactly to the nominal
+    move (TIPS liquidity, different print dates) - shares use |real|+|be|."""
+    nom, real, be = (macro.get(k) or {} for k in ("nominal_yield_10y_pct", "real_yield_10y_pct", "breakeven_10y_pct"))
+    out = {}
+    for w in ("chg_1w", "chg_1m"):
+        dn, dr, db = nom.get(w), real.get(w), be.get(w)
+        if None in (dn, dr, db):
+            out[w] = {"driver": "insufficient_data"}
+            continue
+        tot = abs(dr) + abs(db)
+        rs = round(abs(dr) / tot, 2) if tot else None
+        if abs(dn) < MACRO_DECOMP_MIN_MOVE_BP:
+            driver = "SMALL_MOVE"
+        elif rs is not None and rs >= MACRO_DECOMP_DOMINANT_SHARE:
+            driver = "REAL_YIELD_DRIVEN"
+        elif rs is not None and (1 - rs) >= MACRO_DECOMP_DOMINANT_SHARE:
+            driver = "INFLATION_EXPECTATIONS_DRIVEN"
+        else:
+            driver = "MIXED"
+        out[w] = {"nominal_bp": dn, "real_bp": dr, "breakeven_bp": db, "real_share": rs,
+                  "direction": "UP" if dn > 0 else "DOWN" if dn < 0 else "FLAT", "driver": driver}
+    return out
+
+
 # ---------------------------------------------------------- pillar 6 ----
 def pillar6(gold, ry, usd):
     g, r, u = gold.get("chg_1m"), ry.get("chg_1m"), usd.get("chg_1m")
@@ -177,7 +208,7 @@ def run(now=None, fetch=None):
     except Exception as e:  # noqa: BLE001
         gold = {}
         errors.append(f"gold: {type(e).__name__}: {str(e)[:100]}")
-    cot = prev.get("cot", {})
+    cot = prev.get("cot_gold_managed_money") or prev.get("cot", {})  # v68 fix: key mismatch emptied COT after one run
     last_cot = prev.get("cot_fetched_at")
     stale = not last_cot or now - datetime.fromisoformat(last_cot) >= timedelta(hours=COT_REFRESH_HOURS)
     cot_fetched_at = last_cot
@@ -191,6 +222,7 @@ def run(now=None, fetch=None):
            "fred_mode": "api_key" if os.environ.get("FRED_API_KEY") else "keyless_csv",
            "macro": macro, "gold_paxg": gold, "cot_gold_managed_money": cot, "cot_fetched_at": cot_fetched_at,
            "pillar6_check": pillar6(gold, macro.get("real_yield_10y_pct", {}), macro.get("usd_broad_index", {})),
+           "yield_decomposition": yield_decomposition(macro),  # v68
            "errors": errors}
     OUT.write_text(json.dumps(out, ensure_ascii=False, indent=2), encoding="utf-8")
     ry = macro.get("real_yield_10y_pct", {})

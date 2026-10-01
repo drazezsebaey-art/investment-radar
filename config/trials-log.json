@@ -1,7 +1,7 @@
 {
  "_doc": "v62 (27/9/2026) - every change to a tunable threshold/weight is a TRIAL and counts against the system (multiple-testing). Rules: (1) no threshold change on fewer than MIN_SAMPLE_FOR_CHANGE outcomes; (2) the evidence must come from data NOT used to pick the new value, or the entry is marked in_sample=true and must be re-validated before it is trusted; (3) every change adds an entry here AND updates tracked_parameters.current_value - scripts/trials_check.py warns when code and this file disagree.",
  "min_sample_for_change": 30,
- "trials_count_total": 17,
+ "trials_count_total": 19,
  "tracked_parameters": [
   {
    "name": "AUTO_TRADE_MIN_SCORE",
@@ -350,6 +350,76 @@
    "name": "STREAK_MIN_GAP_HOURS",
    "file": "scripts/breakout_check.py",
    "current_value": 8.0
+  },
+  {
+   "name": "MIN_PROJECTION_DAYS",
+   "file": "scripts/cg_budget.py",
+   "current_value": 3.0
+  },
+  {
+   "name": "EARLY_MONTH_HARD_FRACTION",
+   "file": "scripts/cg_budget.py",
+   "current_value": 0.5
+  },
+  {
+   "name": "MACRO_DECOMP_MIN_MOVE_BP",
+   "file": "scripts/macro_gold.py",
+   "current_value": 10.0
+  },
+  {
+   "name": "MACRO_DECOMP_DOMINANT_SHARE",
+   "file": "scripts/macro_gold.py",
+   "current_value": 0.7
+  },
+  {
+   "name": "ALT_RISK_DOM_RISE_3D_PT",
+   "file": "scripts/altseason_regime.py",
+   "current_value": 0.5
+  },
+  {
+   "name": "ALT_RISK_BREAKOUT_MARGIN_PT",
+   "file": "scripts/altseason_regime.py",
+   "current_value": 0.2
+  },
+  {
+   "name": "ALT_RISK_MIN_HISTORY",
+   "file": "scripts/altseason_regime.py",
+   "current_value": 18
+  },
+  {
+   "name": "ESCALATION_SIGNAL_WEIGHTS",
+   "file": "scripts/breakout_check.py",
+   "current_value": {
+    "choch_bullish": 3.0,
+    "relative_strength_consolidation": 3.0,
+    "double_bottom_confirmed": 3.0,
+    "flag_bullish": 2.0,
+    "triangle": 2.0,
+    "double_bottom_forming": 1.0,
+    "volatility_squeeze": 1.0,
+    "bullish_rsi_divergence": 1.0,
+    "cluster_rotation_lag": 0.5
+   }
+  },
+  {
+   "name": "ESCALATION_MIN_STRENGTH",
+   "file": "scripts/breakout_check.py",
+   "current_value": 1.0
+  },
+  {
+   "name": "PEG_BAND_PCT",
+   "file": "scripts/asset_filters.py",
+   "current_value": 3.0
+  },
+  {
+   "name": "PEG_MAX_ABS_7D_PCT",
+   "file": "scripts/asset_filters.py",
+   "current_value": 0.6
+  },
+  {
+   "name": "PEG_MAX_ABS_24H_PCT",
+   "file": "scripts/asset_filters.py",
+   "current_value": 0.3
   }
  ],
  "trials": [
@@ -586,6 +656,34 @@
    "revalidated": false,
    "retroactive_entry": false,
    "flag": "hygiene rule, not a fitted edge - check after 1/10 that the first post-gap runs show warm-up and a streak reset in the digest"
+  },
+  {
+   "id": "T018",
+   "version": "v68",
+   "date": "2026-10-01",
+   "parameter": "escalation ranking: weighted Layer-2 signal strength (ESCALATION_SIGNAL_WEIGHTS), minimum ESCALATION_MIN_STRENGTH=1.0, strength-first ordering; cluster_rotation_lag alone no longer escalates",
+   "old": "decay order, then count of truthy early_signals keys (structure dict always truthy)",
+   "new": "strength-first, decay as tiebreak",
+   "evidence": "1/10 run: 122/250 coins priority_review for ~10 slots, 68 from cluster_rotation_lag; on the same data 72 coins reach strength>=1, 33 reach >=2 - selection becomes ordered instead of near-random",
+   "n": null,
+   "in_sample": false,
+   "revalidated": false,
+   "retroactive_entry": false,
+   "flag": "weights are a priori specificity ranks, NOT fitted on outcomes; compare deep-eval hit rates of escalated coins before/after 1/10 once n>=30 per arm"
+  },
+  {
+   "id": "T019",
+   "version": "v68",
+   "date": "2026-10-01",
+   "parameter": "budget projection floor (MIN_PROJECTION_DAYS=3, EARLY_MONTH_HARD_FRACTION=0.5); peg-behaviour exclusion (price within 3% of $1, |7d|<=0.6%, |24h|<=0.3%); macro yield decomposition labels; BTC.D alt-risk flags",
+   "old": null,
+   "new": "see tracked_parameters",
+   "evidence": "1/10: day-1 projection 116% (187 credits in 9.5h incl. post-outage cache refills) pushed throttle level 2 and the breakout gate to 12h; 18 dollar products (USAT, USDTB, BUIDL, tokenized credit funds) were outside the static peg list",
+   "n": null,
+   "in_sample": false,
+   "revalidated": false,
+   "retroactive_entry": false,
+   "flag": "infrastructure/observability rules, not fitted edges; alt-risk and decomposition thresholds are display-only until outcomes are logged"
   }
  ],
  "hypotheses": [

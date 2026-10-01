@@ -71,6 +71,10 @@ def build(now=None):
         L.append(f"- Alts: **{al.get('regime')}** [{', '.join(al.get('signals') or []) or '-'}] | BTC.D "
                  f"{fmt(m.get('btc_dominance_pct'))}% | ETH/BTC {fmt(m.get('eth_btc'),5)} | breadth7d "
                  f"{fmt(m.get('breadth_7d_pct'),0)}% | stables 30d {fmt(m.get('stablecoin_30d_pct'))}%")
+        ar = al.get("alt_risk") or {}  # v68
+        if ar:
+            L.append(f"- Alt risk (BTC.D): **{ar.get('level')}** {ar.get('flags') or ''} | 3d {fmt(ar.get('dom_3d_change_pt'))}pt "
+                     f"| 7d {fmt(ar.get('dom_7d_change_pt'))}pt | n={ar.get('n_history')}")
     else:
         missing.append("altseason")
     if mg:
@@ -81,6 +85,12 @@ def build(now=None):
         L.append(f"- Gold: PAXG 1m {fmt((mg.get('gold_paxg') or {}).get('chg_1m'))}% | real10y {fmt(ry.get('value'))} "
                  f"({fmt(ry.get('chg_1m'),0)}bp 1m) | USD 1m {fmt(usd.get('chg_1m'))}% | pillar6 **{p6.get('status')}** "
                  f"{p6.get('flags') or ''} | COT pctl {fmt(cot.get('mm_net_percentile_3y'),0)}")
+        yd = (mg.get("yield_decomposition") or {})  # v68
+        for w, lab in (("chg_1w", "1w"), ("chg_1m", "1m")):
+            d = yd.get(w) or {}
+            if d.get("driver") and d["driver"] != "insufficient_data":
+                L.append(f"- 10y {lab}: {fmt(d.get('nominal_bp'),0)}bp = real {fmt(d.get('real_bp'),0)} + breakeven "
+                         f"{fmt(d.get('breakeven_bp'),0)} -> **{d['driver']}**")
     else:
         missing.append("macro-gold")
     L.append("")
@@ -145,6 +155,32 @@ def build(now=None):
             L.append(f"- vote: {g.get('coin')} ({g.get('space')}) until {g.get('ends')} - {g.get('title', '')[:70]}")
     else:
         L.append("- none" if fu else "- (file missing)")
+    L.append("")
+
+    # --- v68: paper book mark-to-market (observability only) -------------------
+    L.append("## Paper book (open trades, marked to last scan)")
+    try:
+        trades = json.loads((ROOT / "config" / "trades.json").read_text(encoding="utf-8")).get("trades", [])
+        ms = load("market-scan.json") or {}
+        px = {c.get("id"): c.get("price_usd") for c in ms.get("coins", [])}
+        rows = []
+        for t in trades:
+            if t.get("status") != "open":
+                continue
+            e, p, st = t.get("actual_entry") or t.get("entry"), px.get(t.get("asset_id")), t.get("stop")
+            if e and p and st and e > st:
+                rows.append(((p / e - 1) * 100, (p - e) / (e - st), t.get("date_opened") or "", t.get("symbol") or t.get("asset_id")))
+        if rows:
+            rows.sort(key=lambda r: r[1])  # by R multiple
+            old_n = sum(1 for r in rows if r[2] and (now.date() - datetime.fromisoformat(r[2]).date()).days > 7)
+            L.append(f"- open {len(rows)} | mean {sum(r[0] for r in rows)/len(rows):.1f}% ({sum(r[1] for r in rows)/len(rows):.2f}R) "
+                     f"| in profit {sum(1 for r in rows if r[0] > 0)} | older than 7d {old_n}")
+            L.append(f"- worst: {', '.join(f'{r[3]} {r[1]:.2f}R' for r in rows[:3])} | best: "
+                     f"{', '.join(f'{r[3]} {r[1]:.2f}R' for r in rows[-3:])}")
+        else:
+            L.append("- none")
+    except Exception as e:  # noqa: BLE001
+        L.append(f"- unavailable ({e})")
     L.append("")
 
     # --- system health -------------------------------------------------------

@@ -259,6 +259,15 @@ MAX_TOTAL_CANDIDATES_PER_RUN = 20  # v60 fix (27/9/2026): was 40 - halved as par
                                      # credit-conservation fix (see CREDIT_GATE_HOURS above); combined
                                      # with the 3-hour gate, keeps this step within its measured budget
 DECAY_PRIORITY_ORDER = {"fresh": 0, "developing": 1, "unknown": 2, "decayed": 3}
+# v68 (1/10/2026): escalation strength. On 1/10 scan.py marked 122 of 250 coins
+# priority_review for ~10 escalation slots, mostly from cluster_rotation_lag
+# (one mover in a 50-coin category marks every quiet peer), and the old ranking
+# counted early_signals keys that are always truthy (the structure dict exists
+# even with no CHoCH). Signals are now weighted by how specific they are; a coin
+# needs ESCALATION_MIN_STRENGTH to be escalated at all. cluster_rotation_lag
+# alone can no longer escalate (it still shows as a flag and breaks ties).
+ESCALATION_SIGNAL_WEIGHTS = {"choch_bullish": 3.0, "relative_strength_consolidation": 3.0, "double_bottom_confirmed": 3.0, "flag_bullish": 2.0, "triangle": 2.0, "double_bottom_forming": 1.0, "volatility_squeeze": 1.0, "bullish_rsi_divergence": 1.0, "cluster_rotation_lag": 0.5}
+ESCALATION_MIN_STRENGTH = 1.0
 
 
 def load_rotation_offset() -> int:
@@ -272,6 +281,28 @@ def load_rotation_offset() -> int:
 
 def save_rotation_offset(offset: int) -> None:
     ROTATION_STATE_PATH.write_text(json.dumps({"next_offset": offset}), encoding="utf-8")
+
+
+def escalation_strength(early_signals) -> float:
+    """v68: weighted strength of a coin's Layer-2 early signals (see ESCALATION_SIGNAL_WEIGHTS)."""
+    es = early_signals or {}
+    w = ESCALATION_SIGNAL_WEIGHTS
+    total = 0.0
+    if (es.get("structure") or {}).get("signal") == "CHoCH_bullish":
+        total += w["choch_bullish"]
+    if es.get("relative_strength_consolidation"):
+        total += w["relative_strength_consolidation"]
+    db = es.get("double_bottom")
+    if db:
+        total += w["double_bottom_confirmed"] if db.get("confirmed") else w["double_bottom_forming"]
+    if (es.get("flag_pattern") or {}).get("direction") == "bullish":
+        total += w["flag_bullish"]
+    if es.get("triangle"):
+        total += w["triangle"]
+    for k in ("volatility_squeeze", "bullish_rsi_divergence", "cluster_rotation_lag"):
+        if es.get(k):
+            total += w[k]
+    return round(total, 2)
 
 
 def select_rotating_candidates(all_listed: list) -> list:
@@ -291,14 +322,18 @@ def select_rotating_candidates(all_listed: list) -> list:
     save_rotation_offset((offset + len(rotation_slice)) % n)
 
     rotation_ids = {c["id"] for c in rotation_slice}
-    escalated = [c for c in ordered if c.get("priority_review") and c["id"] not in rotation_ids]
+    escalated = []
+    for c in ordered:
+        if c.get("priority_review") and c["id"] not in rotation_ids:
+            c["escalation_strength"] = escalation_strength(c.get("early_signals"))  # v68
+            if c["escalation_strength"] >= ESCALATION_MIN_STRENGTH:
+                escalated.append(c)
 
     budget = max(0, MAX_TOTAL_CANDIDATES_PER_RUN - len(rotation_slice))
     if len(escalated) > budget:
         def escalation_priority(c):
             decay = (c.get("opportunity_lifecycle") or {}).get("decay_state", "unknown")
-            n_signals = sum(1 for v in (c.get("early_signals") or {}).values() if v)
-            return (DECAY_PRIORITY_ORDER.get(decay, 2), -n_signals)
+            return (-c["escalation_strength"], DECAY_PRIORITY_ORDER.get(decay, 2))  # v68: strength first
         escalated = sorted(escalated, key=escalation_priority)[:budget]
 
     return rotation_slice + escalated
