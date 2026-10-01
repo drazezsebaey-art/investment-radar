@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-01 03:22 UTC
+# Radar digest - 2026-10-01 03:42 UTC
 
 ## Market
-- BTC scenario **A** | price 83450 | wk close 84465 vs 82800 | 50W 78247 (6.65%) | 1m old
+- BTC scenario **A** | price 83450 | wk close 84465 vs 82800 | 50W 78247 (6.65%) | 21m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 55.96% | ETH/BTC 0.03216 | breadth7d -% | stables 30d 1.26%
 - Gold: PAXG 1m -4.45% | real10y 2.91 (47bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl -
 
@@ -41,10 +41,9 @@
 - (28 flagged protocol(s) without a tradeable token hidden)
 
 ## System
-- CoinGecko 58/10000 used, month-end projection 3596 (36%), throttle level 0 | by script {'scan': 24, 'check_liquidity': 6, 'breakout_check': 28}
+- CoinGecko 61/10000 used, month-end projection 3782 (38%), throttle level 0 | by script {'scan': 26, 'check_liquidity': 7, 'breakout_check': 28}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=0), H2 PENDING (n=0)
-- radar-flags.json scan age: 21m
+- radar-flags.json scan age: 12m
 - WARM-UP active until 2026-10-01T06:30:35.021362+00:00 after a 94.0h gap: Layer-2 early signals recorded, not flagged
-- score streaks reset 2026-10-01T03:00:54.160673+00:00 after 97.0h gap (34 cleared)
 - excluded from radar (pegged/tokenized equity): 20
