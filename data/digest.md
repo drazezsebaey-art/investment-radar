@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-01 00:03 UTC
+# Radar digest - 2026-10-01 00:46 UTC
 
 ## Market
-- BTC scenario **A** | price 83750 | wk close 84465 vs 82800 | 50W 78247 (7.03%) | 59m old
+- BTC scenario **A** | price 83750 | wk close 84465 vs 82800 | 50W 78247 (7.03%) | 2h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.03% | ETH/BTC 0.03205 | breadth7d 55% | stables 30d 1.26%
 - Gold: PAXG 1m -4.58% | real10y 2.91 (47bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 48
 
@@ -16,14 +16,7 @@
 - FET: **ONGOING** | +117% impulse, retr 0.23 | OI dd 21% | fund 0.0050 | hold True | inval 0.21470 | OB 0.19040-0.19790
 
 ## Pre-pump candidates
-- AVAX: [A+D+E] 7d 4.8%
-- MON: [C+D+E] 7d 7.6%
-- SOL: [A+D+E] 7d 9.4%
-- INJ: [A+E] 7d -4.9%
-- TRX: [A+E] 7d -1.9%
-- HYPE: [A+E] 7d 1.1%
-- BNB: [A+E] 7d 1.4%
-- EDGE: [C+E] 7d 2.4%
+- SEI: [A+B] 7d 24.9%
 
 ## ETF pipeline (new this run)
 - kucoin-shares NEW: launch - Bitwise Launches First Spot NEAR ETF on NYSE Arca - KuCoin
@@ -54,7 +47,9 @@
 - (28 flagged protocol(s) without a tradeable token hidden)
 
 ## System
-- CoinGecko 4/10000 used, month-end projection 248 (2%), throttle level 0 | by script {'scan': 4}
+- CoinGecko 15/10000 used, month-end projection 930 (9%), throttle level 0 | by script {'scan': 14, 'check_liquidity': 1}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=0), H2 PENDING (n=0)
-- radar-flags.json scan age: 94h
+- radar-flags.json scan age: 16m
+- WARM-UP active until 2026-10-01T06:30:35.021362+00:00 after a 94.0h gap: Layer-2 early signals recorded, not flagged
+- excluded from radar (pegged/tokenized equity): 20
