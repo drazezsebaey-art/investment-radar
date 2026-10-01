@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-01 10:43 UTC
+# Radar digest - 2026-10-01 11:12 UTC
 
 ## Market
-- BTC scenario **A** | price 83874 | wk close 84465 vs 82800 | 50W 78247 (7.19%) | 58m old
+- BTC scenario **A** | price 83874 | wk close 84465 vs 82800 | 50W 78247 (7.19%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.02% | ETH/BTC 0.03214 | breadth7d 69% | stables 30d 1.10%
 - Gold: PAXG 1m -4.57% | real10y 2.91 (47bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl -
 
@@ -16,8 +16,8 @@
 - SUI: **ONGOING** | +104% impulse, retr 0.20 | OI dd 3% | fund -0.0062 | hold False | inval 1.12740 | OB 0.93370-0.97450
 
 ## Pre-pump candidates
-- SOL: [A+D+E] 7d 3.2%
-- AVAX: [A+D+E] 7d 8.5%
+- SOL: [A+D+E] 7d 4.3%
+- AVAX: [A+D+E] 7d 9.3%
 - BCH: [B+E] 7d -8.1%
 - ZEC: [A+E] 7d -7.6%
 - HYPE: [A+E] 7d -3.4%
@@ -49,9 +49,13 @@
 - thorchain: REVENUE_ACCELERATING
 - (22 flagged protocol(s) without a tradeable token hidden)
 
+## Paper book (open trades, marked to last scan)
+- open 61 | mean 2.3% (0.27R) | in profit 32 | older than 7d 18
+- worst: MET -0.88R, 2Z -0.86R, TIA -0.77R | best: aave 2.25R, FET 2.33R, JST 2.51R
+
 ## System
-- CoinGecko 192/10000 used, month-end projection 11904 (119%), throttle level 2 | by script {'scan': 54, 'check_liquidity': 18, 'breakout_check': 120}
+- CoinGecko 195/10000 used, month-end projection 2015 (20%), throttle level 0 | by script {'scan': 56, 'check_liquidity': 19, 'breakout_check': 120}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=5), H2 PENDING (n=4)
-- radar-flags.json scan age: 13m
-- excluded from radar (pegged/tokenized equity): 20
+- radar-flags.json scan age: 12m
+- excluded from radar (pegged/tokenized equity): 37
