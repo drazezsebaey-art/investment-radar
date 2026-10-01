@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-01 07:44 UTC
+# Radar digest - 2026-10-01 08:12 UTC
 
 ## Market
-- BTC scenario **A** | price 83552 | wk close 84465 vs 82800 | 50W 78247 (6.78%) | 1m old
+- BTC scenario **A** | price 83552 | wk close 84465 vs 82800 | 50W 78247 (6.78%) | 29m old
 - Alts: **BTC_LED** [-] | BTC.D 56.01% | ETH/BTC 0.03220 | breadth7d -% | stables 30d 1.08%
 - Gold: PAXG 1m -4.45% | real10y 2.91 (47bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl -
 
@@ -16,14 +16,14 @@
 - SUI: **ONGOING** | +104% impulse, retr 0.22 | OI dd 3% | fund 0.0025 | hold False | inval 1.12740 | OB 0.93370-0.97450
 
 ## Pre-pump candidates
-- SOL: [A+D+E] 7d 3.8%
-- AVAX: [A+D+E] 7d 8.7%
+- SOL: [A+D+E] 7d 2.3%
+- AVAX: [A+D+E] 7d 7.0%
 - ZEC: [A+E] 7d -5.0%
 - INJ: [A+E] 7d -3.1%
 - HYPE: [A+E] 7d -3.0%
 - TRX: [A+E] 7d -1.7%
-- BNB: [A+E] 7d -0.3%
-- XRP: [A+E] 7d 0.1%
+- XRP: [A+E] 7d -1.1%
+- ETH: [D+E] 7d -0.3%
 
 ## ETF pipeline (new this run)
 - injective-protocol NEW: filing - Injective News: INJ Staking ETF Filing Signals Growing Altcoin Fund Demand - CoinMarketCap
@@ -55,8 +55,8 @@
 - (28 flagged protocol(s) without a tradeable token hidden)
 
 ## System
-- CoinGecko 115/10000 used, month-end projection 7130 (71%), throttle level 0 | by script {'scan': 42, 'check_liquidity': 16, 'breakout_check': 57}
+- CoinGecko 118/10000 used, month-end projection 7316 (73%), throttle level 0 | by script {'scan': 44, 'check_liquidity': 17, 'breakout_check': 57}
 - Trials guard: OK (0 untracked)
-- Hypotheses: H1 PENDING (n=0), H2 PENDING (n=0)
-- radar-flags.json scan age: 14m
+- Hypotheses: H1 PENDING (n=2), H2 PENDING (n=2)
+- radar-flags.json scan age: 12m
 - excluded from radar (pegged/tokenized equity): 20
