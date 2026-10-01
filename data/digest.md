@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-01 19:46 UTC
+# Radar digest - 2026-10-01 20:13 UTC
 
 ## Market
-- BTC scenario **A** | price 84637 | wk close 84465 vs 82800 | 50W 78247 (8.17%) | 1m old
+- BTC scenario **A** | price 84637 | wk close 84465 vs 82800 | 50W 78247 (8.17%) | 27m old
 - Alts: **BTC_LED** [-] | BTC.D 56.32% | ETH/BTC 0.03184 | breadth7d 53% | stables 30d 1.11%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.33pt | 7d -pt | n=21
 - Gold: PAXG 1m -4.48% | real10y 2.91 (47bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl -
@@ -19,9 +19,14 @@
 - SUI: **ONGOING** | +100% impulse, retr 0.19 | OI dd 6% | fund 0.0100 | hold False | inval 1.12740 | OB 0.93370-0.97450
 
 ## Pre-pump candidates
+- SOL: [A+D+E] 7d 0.6%
+- AVAX: [A+D+E] 7d 5.3%
 - ZEC: [A+E] 7d -13.5%
+- INJ: [A+E] 7d -10.6%
+- HYPE: [A+E] 7d -5.9%
+- XRP: [A+E] 7d -2.4%
+- TRX: [A+E] 7d -1.3%
 - BNB: [A+E] 7d -1.0%
-- NEAR: [A+E] 7d 4.5%
 
 ## ETF pipeline (new this run)
 - near: other - Bitwise NEAR ETF Tops $52.8M in 2 Days - Crypto Economy
@@ -47,12 +52,12 @@
 - (22 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 60 | mean 2.1% (0.26R) | in profit 28 | older than 7d 17
-- worst: TIA -0.87R, BCH -0.74R, RAY -0.69R | best: aave 2.39R, JST 2.63R, sky 3.16R
+- open 61 | mean 2.4% (0.29R) | in profit 31 | older than 7d 18
+- worst: TIA -0.82R, BCH -0.69R, PENGU -0.62R | best: JST 2.41R, aave 2.57R, sky 3.11R
 
 ## System
-- CoinGecko 391/10000 used, month-end projection 4040 (40%), throttle level 0 | by script {'scan': 90, 'check_liquidity': 25, 'breakout_check': 276}
+- CoinGecko 394/10000 used, month-end projection 4071 (41%), throttle level 0 | by script {'scan': 92, 'check_liquidity': 26, 'breakout_check': 276}
 - Trials guard: OK (0 untracked)
-- Hypotheses: H1 PENDING (n=7), H2 PENDING (n=10)
-- radar-flags.json scan age: 16m
+- Hypotheses: H1 PENDING (n=7), H2 PENDING (n=11)
+- radar-flags.json scan age: 13m
 - excluded from radar (pegged/tokenized equity): 37
