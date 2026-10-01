@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-01 17:47 UTC
+# Radar digest - 2026-10-01 18:25 UTC
 
 ## Market
-- BTC scenario **A** | price 85071 | wk close 84465 vs 82800 | 50W 78247 (8.72%) | 1m old
+- BTC scenario **A** | price 85071 | wk close 84465 vs 82800 | 50W 78247 (8.72%) | 39m old
 - Alts: **BTC_LED** [-] | BTC.D 56.32% | ETH/BTC 0.03184 | breadth7d 53% | stables 30d 1.11%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.33pt | 7d -pt | n=21
 - Gold: PAXG 1m -4.48% | real10y 2.91 (47bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl -
@@ -21,7 +21,7 @@
 ## Pre-pump candidates
 - ZEC: [A+E] 7d -11.5%
 - BNB: [A+E] 7d -1.8%
-- NEAR: [A+E] 7d 5.4%
+- NEAR: [A+E] 7d 4.0%
 
 ## ETF pipeline (new this run)
 - near: other - NEAR Protocol Price Forecast: NEAR rally advances as Bitwise ETF inflows reinforce bullish
@@ -46,12 +46,12 @@
 - (22 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 58 | mean 2.6% (0.30R) | in profit 32 | older than 7d 17
-- worst: TIA -0.85R, BCH -0.69R, PENGU -0.64R | best: sky 2.46R, JST 2.50R, aave 2.51R
+- open 60 | mean 2.8% (0.32R) | in profit 32 | older than 7d 17
+- worst: TIA -0.82R, BCH -0.70R, PENGU -0.61R | best: JST 2.48R, aave 2.70R, sky 2.84R
 
 ## System
-- CoinGecko 335/10000 used, month-end projection 3462 (35%), throttle level 0 | by script {'scan': 82, 'check_liquidity': 25, 'breakout_check': 228}
+- CoinGecko 385/10000 used, month-end projection 3978 (40%), throttle level 0 | by script {'scan': 84, 'check_liquidity': 25, 'breakout_check': 276}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=7), H2 PENDING (n=10)
-- radar-flags.json scan age: 17m
-- excluded from radar (pegged/tokenized equity): 37
+- radar-flags.json scan age: 24m
+- excluded from radar (pegged/tokenized equity): 38

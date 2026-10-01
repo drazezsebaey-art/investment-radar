@@ -1,8 +1,20 @@
 {
-  "checked_at": "2026-10-01T17:43:28.818257+00:00",
+  "checked_at": "2026-10-01T18:25:02.581892+00:00",
   "n_errors": 0,
-  "n_warnings": 2,
+  "n_warnings": 6,
   "findings": [
+    {
+      "severity": "warning",
+      "category": "priority_review_pipeline",
+      "message": "RUNE: has a confidence_score but OI/funding data was never fetched for it",
+      "symbol": "RUNE"
+    },
+    {
+      "severity": "warning",
+      "category": "priority_review_pipeline",
+      "message": "FF: has a confidence_score but OI/funding data was never fetched for it",
+      "symbol": "FF"
+    },
     {
       "severity": "warning",
       "category": "orphaned_promotion",
@@ -11,8 +23,20 @@
     },
     {
       "severity": "warning",
+      "category": "monitoring_gap",
+      "message": "[real] QNT (qnt-auto-20261001T181418): monitored via current-spot-only fallback - no candle/snapshot data reaching it",
+      "trade_id": "qnt-auto-20261001T181418"
+    },
+    {
+      "severity": "warning",
+      "category": "monitoring_gap",
+      "message": "[scalp] QNT (qnt-scalp-20261001T181418): monitored via current-spot-only fallback - no candle/snapshot data reaching it",
+      "trade_id": "qnt-scalp-20261001T181418"
+    },
+    {
+      "severity": "warning",
       "category": "unlock_coverage",
-      "message": "93/94 (99%) coins with an open trade have no researched unlock schedule at all"
+      "message": "96/97 (99%) coins with an open trade have no researched unlock schedule at all"
     }
   ]
 }
