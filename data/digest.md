@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-02 09:47 UTC
+# Radar digest - 2026-10-02 10:12 UTC
 
 ## Market
-- BTC scenario **A** | price 86353 | wk close 84465 vs 82800 | 50W 78247 (10.36%) | 1m old
+- BTC scenario **A** | price 86353 | wk close 84465 vs 82800 | 50W 78247 (10.36%) | 26m old
 - Alts: **BTC_LED** [-] | BTC.D 56.45% | ETH/BTC 0.03181 | breadth7d 56% | stables 30d 1.36%
 - Alt risk (BTC.D): **ELEVATED** ['BTC_DOM_BREAKOUT_HOLDING'] | 3d 0.45pt | 7d -pt | n=25
 - Gold: PAXG 1m -3.82% | real10y 2.93 (49bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 48
@@ -19,14 +19,14 @@
 - AAVE: **ONGOING** | +116% impulse, retr 0.05 | OI dd 14% | fund 0.0100 | hold False | inval 157.59000 | OB 157.59000-162.03000
 
 ## Pre-pump candidates
-- SOL: [A+D+E] 7d 4.9%
+- SOL: [A+D+E] 7d 3.9%
 - ZEC: [A+E] 7d -11.5%
 - INJ: [A+E] 7d -4.0%
 - HYPE: [A+E] 7d -3.1%
 - TRX: [A+E] 7d -1.2%
-- XRP: [A+E] 7d 0.2%
+- XRP: [A+E] 7d -0.2%
 - BNB: [A+E] 7d 0.5%
-- ETH: [D+E] 7d 3.1%
+- ETH: [D+E] 7d 2.1%
 
 ## ETF pipeline (new this run)
 - dogecoin NEW: other - Dogecoin Price Prediction: Can DOGE Clear $0.10 in October as ETF Inflows Return? - crypto
@@ -56,12 +56,12 @@
 - vote: decentraland (Decentraland) until 2026-10-03 - Return the money in DAO Committee Multisigs to the DAO Treasury
 
 ## Paper book (open trades, marked to last scan)
-- open 63 | mean 4.8% (0.48R) | in profit 43 | older than 7d 39
-- worst: QNT -0.61R, TIA -0.48R, BCH -0.48R | best: SUI 2.05R, FET 2.22R, sky 4.21R
+- open 63 | mean 5.0% (0.49R) | in profit 46 | older than 7d 39
+- worst: QNT -0.65R, TIA -0.48R, BCH -0.46R | best: SUI 2.13R, FET 2.27R, sky 4.27R
 
 ## System
-- CoinGecko 731/10000 used, month-end projection 7554 (76%), throttle level 0 | by script {'scan': 154, 'check_liquidity': 45, 'breakout_check': 532}
+- CoinGecko 733/10000 used, month-end projection 7574 (76%), throttle level 0 | by script {'scan': 156, 'check_liquidity': 45, 'breakout_check': 532}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=10), H2 PENDING (n=16)
-- radar-flags.json scan age: 17m
+- radar-flags.json scan age: 12m
 - excluded from radar (pegged/tokenized equity): 37
