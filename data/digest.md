@@ -1,43 +1,42 @@
-# Radar digest - 2026-10-02 21:11 UTC
+# Radar digest - 2026-10-02 21:44 UTC
 
 ## Market
-- BTC scenario **A** | price 84166 | wk close 84465 vs 82800 | 50W 78247 (7.56%) | 1h old
-- Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.31% | ETH/BTC 0.03169 | breadth7d 53% | stables 30d 1.38%
-- Alt risk (BTC.D): **NORMAL**  | 3d 0.32pt | 7d -pt | n=27
-- Gold: PAXG 1m -4.80% | real10y 2.93 (49bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 48
-- 10y 1w: 18bp = real 17 + breakeven 3 -> **REAL_YIELD_DRIVEN**
-- 10y 1m: 50bp = real 49 + breakeven 2 -> **REAL_YIELD_DRIVEN**
+- BTC scenario **A** | price 84523 | wk close 84465 vs 82800 | 50W 78247 (8.02%) | 1m old
+- Alts: **BTC_LED** [-] | BTC.D 56.51% | ETH/BTC 0.03149 | breadth7d 34% | stables 30d 1.37%
+- Alt risk (BTC.D): **NORMAL**  | 3d 0.49pt | 7d -pt | n=28
+- Gold: PAXG 1m -4.61% | real10y 2.88 (43bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
+- 10y 1w: 6bp = real 3 + breakeven 2 -> **SMALL_MOVE**
+- 10y 1m: 45bp = real 43 + breakeven 1 -> **REAL_YIELD_DRIVEN**
 
 ## Coins in correction (entry_ready first)
-- NEAR: **ONGOING** | +236% impulse, retr 0.24 | OI dd 15% | fund 0.0035 | hold False | inval 4.54500 | OB 4.24600-4.45100
-- UNI: **ONGOING** | +215% impulse, retr 0.30 | OI dd 15% | fund 0.0018 | hold False | inval 8.44700 | OB 5.80800-6.03200
-- GRASS: **ONGOING** | +213% impulse, retr 0.27 | OI dd 8% | fund 0.0050 | hold True | inval 0.65780 | OB 0.56900-0.59990
-- ZEC: **ONGOING** | +212% impulse, retr 0.35 | OI dd 28% | fund 0.0100 | hold False | inval 1086.09000 | OB 1086.09000-1158.80000
-- CARDS: **ONGOING** | +183% impulse, retr 0.24 | OI dd -% | fund - | hold False | inval 0.18390 | OB 0.10510-0.12160
-- NIGHT: **ONGOING** | +181% impulse, retr 0.09 | OI dd 5% | fund -0.0141 | hold False | inval 0.03740 | OB 0.03830-0.03953
-- SEI: **ONGOING** | +120% impulse, retr 0.39 | OI dd 0% | fund 0.0014 | hold True | inval 0.05685 | OB 0.05829-0.05928
-- PUMP: **ONGOING** | +109% impulse, retr 0.27 | OI dd 6% | fund 0.0050 | hold False | inval 0.00430 | OB 0.00340-0.00354
+- NEAR: **ONGOING** | +236% impulse, retr 0.24 | OI dd 15% | fund -0.0053 | hold False | inval 4.54500 | OB 4.24600-4.45100
+- UNI: **ONGOING** | +215% impulse, retr 0.29 | OI dd 15% | fund 0.0044 | hold True | inval 8.72100 | OB 5.80800-6.03200
+- ZEC: **ONGOING** | +212% impulse, retr 0.36 | OI dd 28% | fund 0.0100 | hold False | inval 1086.09000 | OB 1086.09000-1158.80000
+- CARDS: **ONGOING** | +183% impulse, retr 0.25 | OI dd -% | fund - | hold False | inval 0.18390 | OB 0.10510-0.12160
+- NIGHT: **ONGOING** | +181% impulse, retr 0.11 | OI dd 5% | fund -0.0214 | hold False | inval 0.03740 | OB 0.03830-0.03953
+- SEI: **ONGOING** | +120% impulse, retr 0.38 | OI dd 0% | fund 0.0020 | hold True | inval 0.05685 | OB 0.05829-0.05928
+- PUMP: **ONGOING** | +109% impulse, retr 0.27 | OI dd 6% | fund -0.0026 | hold False | inval 0.00430 | OB 0.00340-0.00354
+- SUI: **ONGOING** | +92% impulse, retr 0.27 | OI dd 6% | fund -0.0198 | hold False | inval 1.09770 | OB 0.93370-0.97450
 
 ## Pre-pump candidates
 - NEAR: [A+E] 7d -8.2%
-- LINK: [A+E] 7d -1.8%
-- BNB: [A+E] 7d -1.1%
+- LINK: [A+E] 7d -2.3%
+- BNB: [A+E] 7d -1.4%
 - AVAX: [A+E] 7d 0.9%
+- MANA: [A+C] 7d 4.9%
 
 ## ETF pipeline (new this run)
-- near: launch - Bitwise Launches First US Spot NEAR ETF With Staking Rewards Under Ticker NRR - CryptoDail
-- near: launch - Bitwise Launches First US Spot NEAR ETF With Staking Rewards Under Ticker NRR - CryptoDail
-- near: other - Institutions Choose NEAR Protocol with $50M in Bitwise ETF - Coinfomania
+- none
 
 ## Derivatives flags (OKX)
 - BTC: LONG_FLUSH_24H | OI/mc -% | topPos 0.98 | taker 1.02
-- ETH: LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 1.01
+- ETH: LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 1.01
 - SOL: LONG_FLUSH_24H | OI/mc -% | topPos 0.93 | taker 0.99
-- NEAR: LONG_FLUSH_24H | OI/mc -% | topPos 0.96 | taker 0.89
-- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.90 | taker 0.97
-- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 0.94
-- SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 0.98
-- SEI: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 0.77
+- NEAR: LONG_FLUSH_24H | OI/mc -% | topPos 0.97 | taker 0.89
+- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.90 | taker 0.96
+- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 0.95
+- SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 1.00
+- SEI: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 0.78
 
 ## Revenue / buyback flags
 - collector-crypt: CHEAP_VS_REVENUE
@@ -50,12 +49,12 @@
 - vote: decentraland (Decentraland) until 2026-10-03 - Return the money in DAO Committee Multisigs to the DAO Treasury
 
 ## Paper book (open trades, marked to last scan)
-- open 59 | mean 0.1% (0.03R) | in profit 23 | older than 7d 35
-- worst: JTO -0.78R, TIA -0.77R, BCH -0.76R | best: NIGHT 1.33R, SUI 1.55R, JST 1.97R
+- open 59 | mean 0.2% (0.04R) | in profit 22 | older than 7d 35
+- worst: TIA -0.79R, JTO -0.77R, BCH -0.74R | best: NIGHT 1.29R, SUI 1.55R, JST 2.00R
 
 ## System
-- CoinGecko 952/10000 used, month-end projection 9837 (98%), throttle level 1 | by script {'scan': 208, 'check_liquidity': 52, 'breakout_check': 692}
+- CoinGecko 954/10000 used, month-end projection 9858 (99%), throttle level 1 | by script {'scan': 210, 'check_liquidity': 52, 'breakout_check': 692}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=17), H2 PENDING (n=35)
-- radar-flags.json scan age: 11m
+- radar-flags.json scan age: 14m
 - excluded from radar (pegged/tokenized equity): 37
