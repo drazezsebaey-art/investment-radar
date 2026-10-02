@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-02 11:13 UTC
+# Radar digest - 2026-10-02 11:46 UTC
 
 ## Market
-- BTC scenario **A** | price 86353 | wk close 84465 vs 82800 | 50W 78247 (10.36%) | 1h old
+- BTC scenario **A** | price 86511 | wk close 84465 vs 82800 | 50W 78247 (10.56%) | 1m old
 - Alts: **BTC_LED** [-] | BTC.D 56.45% | ETH/BTC 0.03181 | breadth7d 56% | stables 30d 1.36%
 - Alt risk (BTC.D): **ELEVATED** ['BTC_DOM_BREAKOUT_HOLDING'] | 3d 0.45pt | 7d -pt | n=25
 - Gold: PAXG 1m -3.82% | real10y 2.93 (49bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 48
@@ -9,40 +9,36 @@
 - 10y 1m: 50bp = real 49 + breakeven 2 -> **REAL_YIELD_DRIVEN**
 
 ## Coins in correction (entry_ready first)
-- NEAR: **ONGOING** | +257% impulse, retr 0.17 | OI dd 15% | fund -0.0181 | hold False | inval 4.54500 | OB 4.24600-4.45100
+- NEAR: **ONGOING** | +257% impulse, retr 0.18 | OI dd 15% | fund -0.0020 | hold False | inval 4.54500 | OB 4.24600-4.45100
 - ZEC: **ONGOING** | +239% impulse, retr 0.26 | OI dd 28% | fund 0.0100 | hold True | inval 1086.09000 | OB 1096.84000-1142.56000
-- UNI: **ONGOING** | +236% impulse, retr 0.25 | OI dd 15% | fund -0.0040 | hold False | inval 8.72700 | OB 5.80800-6.03200
-- NIGHT: **ONGOING** | +166% impulse, retr 0.03 | OI dd 8% | fund 0.0009 | hold False | inval 0.02520 | OB 0.02520-0.02577
-- ZRO: **ONGOING** | +151% impulse, retr 0.08 | OI dd 28% | fund 0.0050 | hold False | inval 1.62270 | OB 1.48250-1.57900
-- CARDS: **ONGOING** | +148% impulse, retr 0.13 | OI dd -% | fund - | hold False | inval 0.17970 | OB 0.19480-0.21010
-- SEI: **ONGOING** | +126% impulse, retr 0.31 | OI dd 0% | fund -0.0034 | hold True | inval 0.05685 | OB 0.05829-0.05928
-- AAVE: **ONGOING** | +116% impulse, retr 0.05 | OI dd 14% | fund 0.0100 | hold False | inval 157.59000 | OB 157.59000-162.03000
+- UNI: **ONGOING** | +236% impulse, retr 0.25 | OI dd 15% | fund 0.0006 | hold False | inval 8.72700 | OB 5.80800-6.03200
+- NIGHT: **ONGOING** | +170% impulse, retr 0.01 | OI dd 8% | fund -0.0033 | hold False | inval 0.02520 | OB 0.03830-0.03953
+- ZRO: **ONGOING** | +151% impulse, retr 0.07 | OI dd 28% | fund 0.0050 | hold False | inval 1.62270 | OB 1.48250-1.57900
+- CARDS: **ONGOING** | +148% impulse, retr 0.06 | OI dd -% | fund - | hold False | inval 0.17970 | OB 0.19480-0.21010
+- SEI: **ONGOING** | +126% impulse, retr 0.30 | OI dd 0% | fund -0.0013 | hold True | inval 0.05685 | OB 0.05829-0.05928
+- PUMP: **ONGOING** | +121% impulse, retr 0.10 | OI dd 6% | fund 0.0050 | hold False | inval 0.00539 | OB 0.00340-0.00354
 
 ## Pre-pump candidates
 - SOL: [A+D+E] 7d 3.0%
-- ZEC: [A+E] 7d -12.5%
-- INJ: [A+E] 7d -5.3%
-- HYPE: [A+E] 7d -3.6%
-- TRX: [A+E] 7d -1.0%
-- XRP: [A+E] 7d -0.9%
+- HYPE: [A+E] 7d -2.8%
+- TRX: [A+E] 7d -0.7%
 - NEAR: [A+E] 7d -0.6%
-- BNB: [A+E] 7d 0.2%
+- BNB: [A+E] 7d -0.1%
+- AVAX: [A+E] 7d 6.9%
 
 ## ETF pipeline (new this run)
-- dogecoin NEW: other - Dogecoin Price Prediction: Can DOGE Clear $0.10 in October as ETF Inflows Return? - crypto
-- solana NEW: other - Solana Gains 3.6% Amid ETF Flows and Bullish Narratives - CoinMarketCap
-- dogecoin NEW: other - Dogecoin: $0.098 and the ETF closure on October 14 - cryptoticker.io
-- dogecoin NEW: other - Is the Next 100x Crypto Already Live? Pepeto, Dogecoin, and Cardano Enter a $2.4 Billion E
-- zcash: other - Zcash Drops 21% From Peak Amid ETF Outflows and North Korean Hacker Rumors, But This Rally
+- dogecoin NEW: other - Dogecoin Price Prediction Turns Green as ETF Inflows Break Records and Pepeto Gains Moment
+- binancecoin NEW: other - BREAKING: VanEck Makes Major Change to BNB ETF, Will Binance Coin Price Rally? - coingape.
+- zcash: launch - Zcash and Ether.fi launch ETP in Europe with 21 shares - Bit2Me News
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc 0.19% | topPos 1.03 | taker 1.02
-- XRP: SHORT_SQUEEZE_24H | OI/mc 0.14% | topPos 0.88 | taker 0.97
-- SUI: SHORT_SQUEEZE_24H | OI/mc 1.00% | topPos 0.85 | taker 0.93
-- SEI: LONG_FLUSH_24H | OI/mc 0.81% | topPos 0.91 | taker 0.97
-- TAO: LONG_FLUSH_24H | OI/mc 0.82% | topPos 0.89 | taker 0.89
-- ZEC: SHORT_SQUEEZE_24H | OI/mc 0.70% | topPos 1.03 | taker 0.92
-- WLD: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.91 | taker 0.92
+- BTC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 1.03 | taker 1.02
+- XRP: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.88 | taker 0.98
+- SUI: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.84 | taker 0.94
+- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 0.96
+- TAO: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 0.90
+- ZEC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 1.02 | taker 0.94
+- WLD: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.92 | taker 0.93
 - LINK: LONG_FLUSH_24H | OI/mc -% | topPos 0.95 | taker 1.07
 
 ## Revenue / buyback flags
@@ -56,12 +52,12 @@
 - vote: decentraland (Decentraland) until 2026-10-03 - Return the money in DAO Committee Multisigs to the DAO Treasury
 
 ## Paper book (open trades, marked to last scan)
-- open 62 | mean 4.4% (0.41R) | in profit 43 | older than 7d 38
-- worst: QNT -0.69R, BCH -0.46R, PENGU -0.42R | best: ZRO 1.66R, SUI 2.05R, FET 2.13R
+- open 62 | mean 4.5% (0.41R) | in profit 44 | older than 7d 38
+- worst: QNT -0.46R, BCH -0.44R, PENGU -0.42R | best: ZRO 1.72R, SUI 2.05R, FET 2.09R
 
 ## System
-- CoinGecko 737/10000 used, month-end projection 7616 (76%), throttle level 0 | by script {'scan': 160, 'check_liquidity': 45, 'breakout_check': 532}
+- CoinGecko 739/10000 used, month-end projection 7636 (76%), throttle level 0 | by script {'scan': 162, 'check_liquidity': 45, 'breakout_check': 532}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=10), H2 PENDING (n=17)
-- radar-flags.json scan age: 13m
+- radar-flags.json scan age: 16m
 - excluded from radar (pegged/tokenized equity): 38
