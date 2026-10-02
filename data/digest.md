@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-02 06:25 UTC
+# Radar digest - 2026-10-02 06:45 UTC
 
 ## Market
-- BTC scenario **A** | price 86114 | wk close 84465 vs 82800 | 50W 78247 (10.05%) | 39m old
+- BTC scenario **A** | price 86114 | wk close 84465 vs 82800 | 50W 78247 (10.05%) | 59m old
 - Alts: **BTC_LED** [-] | BTC.D 56.47% | ETH/BTC 0.03157 | breadth7d 55% | stables 30d 1.37%
 - Alt risk (BTC.D): **ELEVATED** ['BTC_DOM_BREAKOUT_HOLDING'] | 3d 0.39pt | 7d -pt | n=24
 - Gold: PAXG 1m -3.93% | real10y 2.93 (49bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 48
@@ -36,14 +36,14 @@
 - near: other - Bitwise NEAR ETF attracts $9M inflows on day th... - Pluang
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc 0.19% | topPos 1.03 | taker 1.03
-- ETH: LONG_FLUSH_24H | OI/mc -% | topPos 1.01 | taker 1.00
-- SOL: SHORT_SQUEEZE_24H | OI/mc 0.55% | topPos 0.97 | taker 1.01
-- AVAX: LONG_FLUSH_24H | OI/mc 0.48% | topPos 0.87 | taker 1.00
-- XRP: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.86 | taker 0.98
-- SUI: SHORT_SQUEEZE_24H | OI/mc 1.00% | topPos 0.85 | taker 0.93
-- SEI: LONG_FLUSH_24H | OI/mc 0.81% | topPos 0.91 | taker 1.02
-- TAO: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 0.87
+- BTC: LONG_FLUSH_24H | OI/mc 0.19% | topPos 1.03 | taker 1.02
+- ETH: LONG_FLUSH_24H | OI/mc 0.57% | topPos 1.01 | taker 1.00
+- SOL: SHORT_SQUEEZE_24H | OI/mc 0.57% | topPos 0.96 | taker 0.99
+- AVAX: LONG_FLUSH_24H | OI/mc 0.48% | topPos 0.87 | taker 0.98
+- XRP: SHORT_SQUEEZE_24H | OI/mc 0.14% | topPos 0.86 | taker 0.95
+- SUI: SHORT_SQUEEZE_24H | OI/mc 0.99% | topPos 0.85 | taker 0.92
+- SEI: LONG_FLUSH_24H | OI/mc 0.81% | topPos 0.91 | taker 0.96
+- TAO: LONG_FLUSH_24H | OI/mc 0.81% | topPos 0.88 | taker 0.88
 
 ## Revenue / buyback flags
 - stonk-3: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -55,12 +55,12 @@
 - (22 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 62 | mean 3.6% (0.39R) | in profit 34 | older than 7d 39
-- worst: TIA -0.66R, BCH -0.54R, PENGU -0.44R | best: SUI 2.05R, FET 2.33R, sky 3.41R
+- open 62 | mean 4.1% (0.43R) | in profit 39 | older than 7d 39
+- worst: TIA -0.54R, BCH -0.51R, PENGU -0.41R | best: SUI 2.13R, FET 2.47R, sky 3.33R
 
 ## System
-- CoinGecko 658/10000 used, month-end projection 6799 (68%), throttle level 0 | by script {'scan': 140, 'check_liquidity': 37, 'breakout_check': 481}
+- CoinGecko 661/10000 used, month-end projection 6830 (68%), throttle level 0 | by script {'scan': 142, 'check_liquidity': 38, 'breakout_check': 481}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=9), H2 PENDING (n=14)
-- radar-flags.json scan age: 24m
+- radar-flags.json scan age: 15m
 - excluded from radar (pegged/tokenized equity): 37
