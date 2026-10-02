@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-02 00:26 UTC
+# Radar digest - 2026-10-02 00:45 UTC
 
 ## Market
-- BTC scenario **A** | price 84799 | wk close 84465 vs 82800 | 50W 78247 (8.37%) | 41m old
+- BTC scenario **A** | price 84799 | wk close 84465 vs 82800 | 50W 78247 (8.37%) | 59m old
 - Alts: **BTC_LED** [-] | BTC.D 56.34% | ETH/BTC 0.03184 | breadth7d 41% | stables 30d 1.11%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.34pt | 7d -pt | n=22
 - Gold: PAXG 1m -3.91% | real10y 2.93 (49bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 48
@@ -19,12 +19,14 @@
 - TAO: **ONGOING** | +81% impulse, retr 0.26 | OI dd 14% | fund 0.0100 | hold False | inval 297.30000 | OB 282.70000-290.00000
 
 ## Pre-pump candidates
+- SOL: [A+D+E] 7d 1.6%
 - AVAX: [A+D+E] 7d 7.9%
+- ZEC: [A+E] 7d -13.7%
+- INJ: [A+E] 7d -8.8%
+- HYPE: [A+E] 7d -5.0%
+- XRP: [A+E] 7d -2.5%
 - TRX: [A+E] 7d -1.6%
-- BNB: [A+E] 7d -1.0%
-- NEAR: [A+E] 7d 5.0%
-- HBAR: [A+E] 7d 9.4%
-- AAVE: [C+D] 7d 18.7%
+- BNB: [A+E] 7d -0.6%
 
 ## ETF pipeline (new this run)
 - hedera-hashgraph NEW: filing - Grayscale Files for Spot Hedera (HBAR) ETF as SEC Reviews Multiple Altcoin ETF Proposals -
@@ -35,14 +37,14 @@
 - near: other - About 67% of additional NEAR earned from staking would go to Bitwise NEAR ETF (NYSE: NRR).
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc 0.19% | topPos 1.00 | taker 0.99
-- ETH: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.97 | taker 0.99
-- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.90 | taker 0.99
-- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 0.91
-- SEI: LONG_FLUSH_24H | OI/mc 0.85% | topPos 0.92 | taker 1.01
-- TAO: LONG_FLUSH_24H | OI/mc -% | topPos 0.85 | taker 0.91
-- WLD: LONG_FLUSH_24H | OI/mc 1.81% | topPos 0.87 | taker 0.88
-- LINK: LONG_FLUSH_24H | OI/mc -% | topPos 0.97 | taker 1.03
+- BTC: SHORT_SQUEEZE_FUEL, SHORT_SQUEEZE_24H | OI/mc 0.19% | topPos 1.01 | taker 1.00
+- ETH: SHORT_SQUEEZE_24H | OI/mc 0.54% | topPos 0.98 | taker 0.99
+- NEAR: LONG_FLUSH_24H | OI/mc -% | topPos 0.96 | taker 0.97
+- AVAX: LONG_FLUSH_24H | OI/mc 0.49% | topPos 0.89 | taker 0.99
+- XRP: LONG_FLUSH_24H | OI/mc 0.14% | topPos 0.86 | taker 0.91
+- SEI: LONG_FLUSH_24H | OI/mc 0.84% | topPos 0.92 | taker 1.02
+- TAO: LONG_FLUSH_24H | OI/mc 0.81% | topPos 0.85 | taker 0.92
+- WLD: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.88
 
 ## Revenue / buyback flags
 - stonk-3: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -54,12 +56,12 @@
 - (22 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 61 | mean 2.2% (0.27R) | in profit 31 | older than 7d 40
-- worst: TIA -0.85R, BCH -0.65R, RAY -0.64R | best: SUI 2.05R, aave 2.78R, sky 3.32R
+- open 62 | mean 2.4% (0.29R) | in profit 33 | older than 7d 41
+- worst: TIA -0.81R, BCH -0.75R, PENGU -0.62R | best: FET 2.13R, aave 2.85R, sky 3.65R
 
 ## System
-- CoinGecko 522/10000 used, month-end projection 5394 (54%), throttle level 0 | by script {'scan': 116, 'check_liquidity': 27, 'breakout_check': 379}
+- CoinGecko 524/10000 used, month-end projection 5415 (54%), throttle level 0 | by script {'scan': 118, 'check_liquidity': 27, 'breakout_check': 379}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=9), H2 PENDING (n=13)
-- radar-flags.json scan age: 26m
+- radar-flags.json scan age: 15m
 - excluded from radar (pegged/tokenized equity): 37
