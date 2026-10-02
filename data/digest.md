@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-02 02:12 UTC
+# Radar digest - 2026-10-02 02:45 UTC
 
 ## Market
-- BTC scenario **A** | price 84600 | wk close 84465 vs 82800 | 50W 78247 (8.12%) | 26m old
+- BTC scenario **A** | price 84600 | wk close 84465 vs 82800 | 50W 78247 (8.12%) | 59m old
 - Alts: **BTC_LED** [-] | BTC.D 56.32% | ETH/BTC 0.03193 | breadth7d 54% | stables 30d 1.37%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.35pt | 7d -pt | n=23
 - Gold: PAXG 1m -3.91% | real10y 2.93 (49bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 48
@@ -20,24 +20,25 @@
 
 ## Pre-pump candidates
 - AVAX: [A+D+E] 7d 7.0%
+- STONK: [C+D] 7d -31.5%
 - TRX: [A+E] 7d -1.7%
-- BNB: [A+E] 7d -0.6%
+- BNB: [A+E] 7d -0.7%
 - NEAR: [A+E] 7d 6.5%
-- HBAR: [A+E] 7d 9.8%
+- AAVE: [B+D] 7d 20.4%
 
 ## ETF pipeline (new this run)
 - kucoin-shares NEW: launch - Bitwise Launches First U.S. Spot NEAR ETF With Staking Rewar - KuCoin
 - near: other - Bitwise NEAR ETF attracts $9M inflows on day th... - Pluang
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_FUEL, SHORT_SQUEEZE_24H | OI/mc 0.19% | topPos 1.01 | taker 0.99
-- ETH: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.98 | taker 0.99
-- NEAR: LONG_FLUSH_24H | OI/mc 0.99% | topPos 0.96 | taker 0.97
-- AVAX: LONG_FLUSH_24H | OI/mc 0.49% | topPos 0.89 | taker 0.99
-- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 0.91
-- SEI: LONG_FLUSH_24H | OI/mc 0.84% | topPos 0.91 | taker 1.06
-- TAO: LONG_FLUSH_24H | OI/mc -% | topPos 0.85 | taker 0.91
-- WLD: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.89
+- BTC: SHORT_SQUEEZE_FUEL, SHORT_SQUEEZE_24H | OI/mc 0.19% | topPos 1.01 | taker 1.00
+- ETH: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.99 | taker 0.99
+- SOL: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.94 | taker 0.93
+- NEAR: LONG_FLUSH_24H | OI/mc 0.99% | topPos 0.96 | taker 0.98
+- AVAX: LONG_FLUSH_24H | OI/mc 0.48% | topPos 0.89 | taker 0.98
+- SEI: LONG_FLUSH_24H | OI/mc 0.81% | topPos 0.91 | taker 1.05
+- TAO: LONG_FLUSH_24H | OI/mc -% | topPos 0.85 | taker 0.90
+- WLD: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 0.89
 
 ## Revenue / buyback flags
 - stonk-3: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -49,12 +50,12 @@
 - (22 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 61 | mean 2.8% (0.32R) | in profit 33 | older than 7d 40
-- worst: TIA -0.82R, BCH -0.70R, PENGU -0.63R | best: FET 2.28R, sky 3.08R, aave 3.12R
+- open 61 | mean 3.0% (0.34R) | in profit 34 | older than 7d 40
+- worst: TIA -0.80R, BCH -0.68R, PENGU -0.62R | best: FET 2.32R, aave 3.01R, sky 3.12R
 
 ## System
-- CoinGecko 533/10000 used, month-end projection 5508 (55%), throttle level 0 | by script {'scan': 124, 'check_liquidity': 30, 'breakout_check': 379}
+- CoinGecko 535/10000 used, month-end projection 5528 (55%), throttle level 0 | by script {'scan': 126, 'check_liquidity': 30, 'breakout_check': 379}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=9), H2 PENDING (n=13)
-- radar-flags.json scan age: 12m
+- radar-flags.json scan age: 15m
 - excluded from radar (pegged/tokenized equity): 37
