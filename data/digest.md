@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-02 00:45 UTC
+# Radar digest - 2026-10-02 01:13 UTC
 
 ## Market
-- BTC scenario **A** | price 84799 | wk close 84465 vs 82800 | 50W 78247 (8.37%) | 59m old
+- BTC scenario **A** | price 84799 | wk close 84465 vs 82800 | 50W 78247 (8.37%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 56.34% | ETH/BTC 0.03184 | breadth7d 41% | stables 30d 1.11%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.34pt | 7d -pt | n=22
 - Gold: PAXG 1m -3.91% | real10y 2.93 (49bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 48
@@ -19,14 +19,11 @@
 - TAO: **ONGOING** | +81% impulse, retr 0.26 | OI dd 14% | fund 0.0100 | hold False | inval 297.30000 | OB 282.70000-290.00000
 
 ## Pre-pump candidates
-- SOL: [A+D+E] 7d 1.6%
-- AVAX: [A+D+E] 7d 7.9%
-- ZEC: [A+E] 7d -13.7%
-- INJ: [A+E] 7d -8.8%
-- HYPE: [A+E] 7d -5.0%
-- XRP: [A+E] 7d -2.5%
-- TRX: [A+E] 7d -1.6%
+- AVAX: [A+D+E] 7d 7.3%
+- TRX: [A+E] 7d -1.7%
 - BNB: [A+E] 7d -0.6%
+- NEAR: [A+E] 7d 5.3%
+- HBAR: [A+E] 7d 9.8%
 
 ## ETF pipeline (new this run)
 - hedera-hashgraph NEW: filing - Grayscale Files for Spot Hedera (HBAR) ETF as SEC Reviews Multiple Altcoin ETF Proposals -
@@ -56,12 +53,12 @@
 - (22 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 62 | mean 2.4% (0.29R) | in profit 33 | older than 7d 41
-- worst: TIA -0.81R, BCH -0.75R, PENGU -0.62R | best: FET 2.13R, aave 2.85R, sky 3.65R
+- open 62 | mean 2.2% (0.27R) | in profit 31 | older than 7d 41
+- worst: TIA -0.83R, BCH -0.78R, PENGU -0.64R | best: FET 2.09R, aave 2.87R, sky 3.24R
 
 ## System
-- CoinGecko 524/10000 used, month-end projection 5415 (54%), throttle level 0 | by script {'scan': 118, 'check_liquidity': 27, 'breakout_check': 379}
+- CoinGecko 527/10000 used, month-end projection 5446 (54%), throttle level 0 | by script {'scan': 120, 'check_liquidity': 28, 'breakout_check': 379}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=9), H2 PENDING (n=13)
-- radar-flags.json scan age: 15m
+- radar-flags.json scan age: 12m
 - excluded from radar (pegged/tokenized equity): 37
