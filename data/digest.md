@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-02 22:13 UTC
+# Radar digest - 2026-10-02 22:45 UTC
 
 ## Market
-- BTC scenario **A** | price 84523 | wk close 84465 vs 82800 | 50W 78247 (8.02%) | 29m old
+- BTC scenario **A** | price 84523 | wk close 84465 vs 82800 | 50W 78247 (8.02%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 56.51% | ETH/BTC 0.03149 | breadth7d 34% | stables 30d 1.37%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.49pt | 7d -pt | n=28
 - Gold: PAXG 1m -4.61% | real10y 2.88 (43bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -30,12 +30,12 @@
 ## Derivatives flags (OKX)
 - BTC: LONG_FLUSH_24H | OI/mc -% | topPos 0.98 | taker 1.02
 - ETH: LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 1.01
-- SOL: LONG_FLUSH_24H | OI/mc -% | topPos 0.93 | taker 0.99
-- NEAR: LONG_FLUSH_24H | OI/mc -% | topPos 0.97 | taker 0.89
-- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.90 | taker 0.96
-- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 0.95
-- SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 1.00
-- SEI: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 0.78
+- SOL: LONG_FLUSH_24H | OI/mc -% | topPos 0.93 | taker 1.00
+- NEAR: LONG_FLUSH_24H | OI/mc -% | topPos 0.97 | taker 0.90
+- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.90 | taker 0.98
+- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 0.94
+- SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 1.01
+- SEI: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 0.80
 
 ## Revenue / buyback flags
 - collector-crypt: CHEAP_VS_REVENUE
@@ -48,12 +48,12 @@
 - vote: decentraland (Decentraland) until 2026-10-03 - Return the money in DAO Committee Multisigs to the DAO Treasury
 
 ## Paper book (open trades, marked to last scan)
-- open 59 | mean 1.0% (0.11R) | in profit 26 | older than 7d 35
-- worst: TIA -0.74R, JTO -0.74R, BCH -0.69R | best: NIGHT 1.45R, SUI 1.63R, JST 2.07R
+- open 59 | mean 1.0% (0.11R) | in profit 25 | older than 7d 35
+- worst: JTO -0.76R, TIA -0.74R, QNT -0.72R | best: SUI 1.55R, NIGHT 1.63R, JST 2.10R
 
 ## System
-- CoinGecko 956/10000 used, month-end projection 9879 (99%), throttle level 1 | by script {'scan': 212, 'check_liquidity': 52, 'breakout_check': 692}
+- CoinGecko 958/10000 used, month-end projection 9899 (99%), throttle level 1 | by script {'scan': 214, 'check_liquidity': 52, 'breakout_check': 692}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=17), H2 PENDING (n=35)
-- radar-flags.json scan age: 13m
+- radar-flags.json scan age: 15m
 - excluded from radar (pegged/tokenized equity): 37
