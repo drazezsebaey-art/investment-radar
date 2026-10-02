@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-02 16:45 UTC
+# Radar digest - 2026-10-02 17:12 UTC
 
 ## Market
-- BTC scenario **A** | price 85349 | wk close 84465 vs 82800 | 50W 78247 (9.08%) | 59m old
+- BTC scenario **A** | price 85349 | wk close 84465 vs 82800 | 50W 78247 (9.08%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 56.51% | ETH/BTC 0.03175 | breadth7d 40% | stables 30d 1.37%
 - Alt risk (BTC.D): **HIGH** ['BTC_DOM_BREAKOUT_HOLDING', 'BTC_DOM_RISING_3D'] | 3d 0.57pt | 7d -pt | n=26
 - Gold: PAXG 1m -4.80% | real10y 2.93 (49bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 48
@@ -19,14 +19,10 @@
 - PUMP: **ONGOING** | +122% impulse, retr 0.05 | OI dd 6% | fund 0.0050 | hold False | inval 0.00539 | OB 0.00340-0.00354
 
 ## Pre-pump candidates
-- SOL: [A+D+E] 7d -0.3%
-- ZEC: [A+E] 7d -13.0%
-- INJ: [A+E] 7d -8.6%
-- NEAR: [A+E] 7d -5.9%
-- XRP: [A+E] 7d -5.1%
-- HYPE: [A+E] 7d -2.6%
-- ADA: [A+E] 7d -1.3%
-- BNB: [A+E] 7d -0.3%
+- NEAR: [A+E] 7d -5.6%
+- BNB: [A+E] 7d -0.1%
+- LINK: [A+E] 7d 2.6%
+- AVAX: [A+E] 7d 7.1%
 
 ## ETF pipeline (new this run)
 - ripple NEW: filing - Bitwise XRP ETF Gets SEC Effectiveness Notice After Filing That Moved XRP 7.7% - Coinpaper
@@ -53,12 +49,12 @@
 - vote: decentraland (Decentraland) until 2026-10-03 - Return the money in DAO Committee Multisigs to the DAO Treasury
 
 ## Paper book (open trades, marked to last scan)
-- open 65 | mean 4.3% (0.38R) | in profit 44 | older than 7d 38
-- worst: PEPE -0.61R, BCH -0.57R, CAKE -0.57R | best: SUI 1.97R, FET 2.03R, ZRO 2.35R
+- open 65 | mean 3.9% (0.34R) | in profit 41 | older than 7d 38
+- worst: PEPE -0.71R, BCH -0.61R, CAKE -0.57R | best: FET 1.95R, SUI 1.97R, ZRO 2.30R
 
 ## System
-- CoinGecko 881/10000 used, month-end projection 9104 (91%), throttle level 1 | by script {'scan': 190, 'check_liquidity': 51, 'breakout_check': 640}
+- CoinGecko 884/10000 used, month-end projection 9135 (91%), throttle level 1 | by script {'scan': 192, 'check_liquidity': 52, 'breakout_check': 640}
 - Trials guard: OK (0 untracked)
-- Hypotheses: H1 PENDING (n=13), H2 PENDING (n=22)
-- radar-flags.json scan age: 15m
-- excluded from radar (pegged/tokenized equity): 37
+- Hypotheses: H1 PENDING (n=13), H2 PENDING (n=23)
+- radar-flags.json scan age: 12m
+- excluded from radar (pegged/tokenized equity): 35
