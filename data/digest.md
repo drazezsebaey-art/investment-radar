@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-02 18:25 UTC
+# Radar digest - 2026-10-02 18:44 UTC
 
 ## Market
-- BTC scenario **A** | price 84597 | wk close 84465 vs 82800 | 50W 78247 (8.11%) | 39m old
+- BTC scenario **A** | price 84597 | wk close 84465 vs 82800 | 50W 78247 (8.11%) | 57m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.31% | ETH/BTC 0.03169 | breadth7d 53% | stables 30d 1.38%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.32pt | 7d -pt | n=27
 - Gold: PAXG 1m -4.80% | real10y 2.93 (49bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 48
@@ -28,14 +28,14 @@
 - chainlink: other - Chainlink Price Outlook as LINK ETF Extends Inflow Streak to Three Straight Days - Crypton
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc -% | topPos 1.00 | taker 1.05
-- ETH: LONG_FLUSH_24H | OI/mc -% | topPos 0.94 | taker 1.03
+- BTC: LONG_FLUSH_24H | OI/mc -% | topPos 0.99 | taker 1.04
+- ETH: LONG_FLUSH_24H | OI/mc -% | topPos 0.93 | taker 1.04
 - SOL: LONG_FLUSH_24H | OI/mc -% | topPos 0.94 | taker 1.01
-- NEAR: LONG_FLUSH_24H | OI/mc -% | topPos 0.96 | taker 0.93
-- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 0.95
-- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 0.93
-- TAO: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.86
-- ZEC: LONG_FLUSH_24H | OI/mc -% | topPos 1.03 | taker 0.97
+- NEAR: LONG_FLUSH_24H | OI/mc -% | topPos 0.96 | taker 0.91
+- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 0.98
+- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 0.94
+- SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 0.99
+- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 0.91
 
 ## Revenue / buyback flags
 - collector-crypt: CHEAP_VS_REVENUE
@@ -48,12 +48,12 @@
 - vote: decentraland (Decentraland) until 2026-10-03 - Return the money in DAO Committee Multisigs to the DAO Treasury
 
 ## Paper book (open trades, marked to last scan)
-- open 64 | mean 3.1% (0.28R) | in profit 39 | older than 7d 38
-- worst: PENGU -0.69R, CAKE -0.65R, BCH -0.65R | best: FET 1.72R, JST 1.84R, SUI 1.88R
+- open 64 | mean 1.7% (0.16R) | in profit 31 | older than 7d 38
+- worst: PENGU -0.85R, CAKE -0.81R, SEI -0.75R | best: NIGHT 1.51R, SUI 1.80R, JST 1.95R
 
 ## System
-- CoinGecko 940/10000 used, month-end projection 9713 (97%), throttle level 1 | by script {'scan': 196, 'check_liquidity': 52, 'breakout_check': 692}
+- CoinGecko 942/10000 used, month-end projection 9734 (97%), throttle level 1 | by script {'scan': 198, 'check_liquidity': 52, 'breakout_check': 692}
 - Trials guard: OK (0 untracked)
-- Hypotheses: H1 PENDING (n=14), H2 PENDING (n=25)
-- radar-flags.json scan age: 25m
+- Hypotheses: H1 PENDING (n=15), H2 PENDING (n=30)
+- radar-flags.json scan age: 13m
 - excluded from radar (pegged/tokenized equity): 36
