@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-02 18:44 UTC
+# Radar digest - 2026-10-02 19:13 UTC
 
 ## Market
-- BTC scenario **A** | price 84597 | wk close 84465 vs 82800 | 50W 78247 (8.11%) | 57m old
+- BTC scenario **A** | price 84597 | wk close 84465 vs 82800 | 50W 78247 (8.11%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.31% | ETH/BTC 0.03169 | breadth7d 53% | stables 30d 1.38%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.32pt | 7d -pt | n=27
 - Gold: PAXG 1m -4.80% | real10y 2.93 (49bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 48
@@ -19,10 +19,10 @@
 - SUI: **ONGOING** | +92% impulse, retr 0.23 | OI dd 6% | fund -0.0068 | hold False | inval 1.12740 | OB 0.93370-0.97450
 
 ## Pre-pump candidates
-- NEAR: [A+E] 7d -4.7%
+- NEAR: [A+E] 7d -6.7%
 - BNB: [A+E] 7d 0.1%
+- AVAX: [A+E] 7d 1.3%
 - LINK: [A+E] 7d 2.6%
-- AVAX: [A+E] 7d 6.7%
 
 ## ETF pipeline (new this run)
 - chainlink: other - Chainlink Price Outlook as LINK ETF Extends Inflow Streak to Three Straight Days - Crypton
@@ -48,12 +48,12 @@
 - vote: decentraland (Decentraland) until 2026-10-03 - Return the money in DAO Committee Multisigs to the DAO Treasury
 
 ## Paper book (open trades, marked to last scan)
-- open 64 | mean 1.7% (0.16R) | in profit 31 | older than 7d 38
-- worst: PENGU -0.85R, CAKE -0.81R, SEI -0.75R | best: NIGHT 1.51R, SUI 1.80R, JST 1.95R
+- open 59 | mean 0.2% (0.04R) | in profit 23 | older than 7d 35
+- worst: BCH -0.90R, XRP -0.84R, TIA -0.81R | best: NIGHT 1.38R, SUI 1.55R, JST 1.91R
 
 ## System
-- CoinGecko 942/10000 used, month-end projection 9734 (97%), throttle level 1 | by script {'scan': 198, 'check_liquidity': 52, 'breakout_check': 692}
+- CoinGecko 944/10000 used, month-end projection 9755 (98%), throttle level 1 | by script {'scan': 200, 'check_liquidity': 52, 'breakout_check': 692}
 - Trials guard: OK (0 untracked)
-- Hypotheses: H1 PENDING (n=15), H2 PENDING (n=30)
+- Hypotheses: H1 PENDING (n=17), H2 PENDING (n=35)
 - radar-flags.json scan age: 13m
 - excluded from radar (pegged/tokenized equity): 36
