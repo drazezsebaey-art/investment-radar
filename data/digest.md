@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-02 17:47 UTC
+# Radar digest - 2026-10-02 18:25 UTC
 
 ## Market
-- BTC scenario **A** | price 84597 | wk close 84465 vs 82800 | 50W 78247 (8.11%) | 1m old
+- BTC scenario **A** | price 84597 | wk close 84465 vs 82800 | 50W 78247 (8.11%) | 39m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.31% | ETH/BTC 0.03169 | breadth7d 53% | stables 30d 1.38%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.32pt | 7d -pt | n=27
 - Gold: PAXG 1m -4.80% | real10y 2.93 (49bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 48
@@ -19,10 +19,10 @@
 - SUI: **ONGOING** | +92% impulse, retr 0.23 | OI dd 6% | fund -0.0068 | hold False | inval 1.12740 | OB 0.93370-0.97450
 
 ## Pre-pump candidates
-- NEAR: [A+E] 7d -5.6%
-- BNB: [A+E] 7d -0.1%
+- NEAR: [A+E] 7d -4.7%
+- BNB: [A+E] 7d 0.1%
 - LINK: [A+E] 7d 2.6%
-- AVAX: [A+E] 7d 7.1%
+- AVAX: [A+E] 7d 6.7%
 
 ## ETF pipeline (new this run)
 - chainlink: other - Chainlink Price Outlook as LINK ETF Extends Inflow Streak to Three Straight Days - Crypton
@@ -48,12 +48,12 @@
 - vote: decentraland (Decentraland) until 2026-10-03 - Return the money in DAO Committee Multisigs to the DAO Treasury
 
 ## Paper book (open trades, marked to last scan)
-- open 65 | mean 3.4% (0.30R) | in profit 39 | older than 7d 38
-- worst: PEPE -0.84R, CAKE -0.65R, BCH -0.64R | best: FET 1.82R, SUI 1.88R, ZRO 2.12R
+- open 64 | mean 3.1% (0.28R) | in profit 39 | older than 7d 38
+- worst: PENGU -0.69R, CAKE -0.65R, BCH -0.65R | best: FET 1.72R, JST 1.84R, SUI 1.88R
 
 ## System
-- CoinGecko 886/10000 used, month-end projection 9155 (92%), throttle level 1 | by script {'scan': 194, 'check_liquidity': 52, 'breakout_check': 640}
+- CoinGecko 940/10000 used, month-end projection 9713 (97%), throttle level 1 | by script {'scan': 196, 'check_liquidity': 52, 'breakout_check': 692}
 - Trials guard: OK (0 untracked)
-- Hypotheses: H1 PENDING (n=13), H2 PENDING (n=24)
-- radar-flags.json scan age: 17m
+- Hypotheses: H1 PENDING (n=14), H2 PENDING (n=25)
+- radar-flags.json scan age: 25m
 - excluded from radar (pegged/tokenized equity): 36
