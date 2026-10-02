@@ -1179,9 +1179,7 @@
       "signal_quality_at_entry": "beta_driven_or_cluster",
       "rejected_reason": "confidence_score 20 < AUTO_TRADE_MIN_SCORE 40",
       "last_check_source": "okx_candles",
-      "sector_tags": [
-        "real-world-assets-rwa"
-      ],
+      "sector_tags": [],
       "coverage_gap": true
     },
     {
@@ -6499,7 +6497,7 @@
       "hours_since_flagged_at_entry": 1.0,
       "funnel_stage_at_entry": "shortlist_10",
       "date_opened": "2026-10-01",
-      "status": "open",
+      "status": "superseded",
       "entry": 4.34e-06,
       "stop": 3.94e-06,
       "used_trend_following_stop": false,
@@ -6528,7 +6526,9 @@
       "last_check_source": "okx_candles",
       "sector_tags": [
         "meme-token"
-      ]
+      ],
+      "superseded_at": "2026-10-02T09:14:44.966782+00:00",
+      "superseded_reason": "promoted to a real auto trade at confidence_score 50"
     },
     {
       "id": "inj-shadow-20261001T091406",
@@ -6878,6 +6878,50 @@
       "last_check_source": "okx_candles",
       "sector_tags": [
         "layer-1"
+      ]
+    },
+    {
+      "id": "virtual-shadow-20261002T091444",
+      "asset_id": "virtual-protocol",
+      "symbol": "VIRTUAL",
+      "type": "paper",
+      "auto": true,
+      "triggered_by": "priority_review:double_bottom",
+      "entry_archetype": "chart_pattern_double_bottom",
+      "engine_version": "auto_paper_trade-v62",
+      "decay_state_at_entry": "decayed",
+      "hours_since_flagged_at_entry": 9.0,
+      "funnel_stage_at_entry": "shortlist_10",
+      "date_opened": "2026-10-02",
+      "status": "open",
+      "entry": 0.829859,
+      "stop": 0.73303247,
+      "used_trend_following_stop": false,
+      "targets": [
+        0.97509879,
+        1.07192533,
+        1.21716512
+      ],
+      "created_at": "2026-10-02T09:14:44.966782+00:00",
+      "filled_at": "2026-10-02T09:00:45.092487+00:00",
+      "price_observed_at": "2026-10-02T09:00:45.092487+00:00",
+      "actual_entry": 0.829859,
+      "targets_hit": [],
+      "confidence_score_at_entry": 35,
+      "signal_quality_at_entry": "beta_driven_or_cluster",
+      "market_regime_at_entry": {
+        "risk_state": "risk_on",
+        "volatility_state": "normal",
+        "btc_trend_recent_pct": 2.51,
+        "btc_trend_full_window_pct": 11.59,
+        "btc_volatility_now": 0.418,
+        "btc_volatility_baseline_avg": 0.437,
+        "breadth_pct_green": 64.0
+      },
+      "rejected_reason": "confidence_score 35 < AUTO_TRADE_MIN_SCORE 40",
+      "last_check_source": "okx_candles",
+      "sector_tags": [
+        "artificial-intelligence"
       ]
     }
   ]

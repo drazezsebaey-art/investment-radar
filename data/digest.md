@@ -1,10 +1,10 @@
-# Radar digest - 2026-10-02 08:44 UTC
+# Radar digest - 2026-10-02 09:27 UTC
 
 ## Market
-- BTC scenario **A** | price 85787 | wk close 84465 vs 82800 | 50W 78247 (9.64%) | 60m old
+- BTC scenario **A** | price 85787 | wk close 84465 vs 82800 | 50W 78247 (9.64%) | 2h old
 - Alts: **BTC_LED** [-] | BTC.D 56.47% | ETH/BTC 0.03157 | breadth7d 55% | stables 30d 1.37%
 - Alt risk (BTC.D): **ELEVATED** ['BTC_DOM_BREAKOUT_HOLDING'] | 3d 0.39pt | 7d -pt | n=24
-- Gold: PAXG 1m -3.93% | real10y 2.93 (49bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 48
+- Gold: PAXG 1m -3.82% | real10y 2.93 (49bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 48
 - 10y 1w: 18bp = real 17 + breakeven 3 -> **REAL_YIELD_DRIVEN**
 - 10y 1m: 50bp = real 49 + breakeven 2 -> **REAL_YIELD_DRIVEN**
 
@@ -20,13 +20,13 @@
 
 ## Pre-pump candidates
 - SOL: [A+D+E] 7d 4.6%
-- AVAX: [A+D+E] 7d 9.2%
 - ZEC: [A+E] 7d -10.3%
-- ONDO: [A+E] 7d -7.3%
 - INJ: [A+E] 7d -4.3%
 - HYPE: [A+E] 7d -2.8%
 - TRX: [A+E] 7d -1.2%
 - XRP: [A+E] 7d 0.1%
+- BNB: [A+E] 7d 0.4%
+- ETH: [D+E] 7d 2.3%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - Bitwise and Franklin ETF clients buy $7.24 million in XRP - cryptobriefing.com
@@ -49,21 +49,22 @@
 - WLD: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.90 | taker 0.92
 
 ## Revenue / buyback flags
-- stonk-3: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
 - collector-crypt: CHEAP_VS_REVENUE
 - ethereum: REVENUE_ACCELERATING
 - solana: REVENUE_ACCELERATING
 - convex-finance: REVENUE_ACCELERATING
 - thorchain: REVENUE_ACCELERATING
-- (22 flagged protocol(s) without a tradeable token hidden)
+- chip-2: REVENUE_ACCELERATING
+- (21 flagged protocol(s) without a tradeable token hidden)
+- vote: decentraland (Decentraland) until 2026-10-03 - Return the money in DAO Committee Multisigs to the DAO Treasury
 
 ## Paper book (open trades, marked to last scan)
-- open 62 | mean 5.1% (0.50R) | in profit 45 | older than 7d 39
-- worst: QNT -0.63R, BCH -0.47R, TIA -0.44R | best: SUI 2.13R, FET 2.46R, sky 3.36R
+- open 63 | mean 4.7% (0.48R) | in profit 43 | older than 7d 39
+- worst: QNT -0.58R, BCH -0.49R, TIA -0.48R | best: SUI 2.05R, FET 2.35R, sky 3.73R
 
 ## System
-- CoinGecko 676/10000 used, month-end projection 6985 (70%), throttle level 0 | by script {'scan': 150, 'check_liquidity': 45, 'breakout_check': 481}
+- CoinGecko 729/10000 used, month-end projection 7533 (75%), throttle level 0 | by script {'scan': 152, 'check_liquidity': 45, 'breakout_check': 532}
 - Trials guard: OK (0 untracked)
-- Hypotheses: H1 PENDING (n=10), H2 PENDING (n=15)
-- radar-flags.json scan age: 13m
+- Hypotheses: H1 PENDING (n=10), H2 PENDING (n=16)
+- radar-flags.json scan age: 27m
 - excluded from radar (pegged/tokenized equity): 37
