@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-02 13:47 UTC
+# Radar digest - 2026-10-02 14:13 UTC
 
 ## Market
-- BTC scenario **A** | price 86900 | wk close 84465 vs 82800 | 50W 78247 (11.06%) | 1m old
+- BTC scenario **A** | price 86900 | wk close 84465 vs 82800 | 50W 78247 (11.06%) | 27m old
 - Alts: **BTC_LED** [-] | BTC.D 56.51% | ETH/BTC 0.03175 | breadth7d 40% | stables 30d 1.37%
 - Alt risk (BTC.D): **HIGH** ['BTC_DOM_BREAKOUT_HOLDING', 'BTC_DOM_RISING_3D'] | 3d 0.57pt | 7d -pt | n=26
 - Gold: PAXG 1m -3.82% | real10y 2.93 (49bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 48
@@ -56,12 +56,12 @@
 - vote: decentraland (Decentraland) until 2026-10-03 - Return the money in DAO Committee Multisigs to the DAO Treasury
 
 ## Paper book (open trades, marked to last scan)
-- open 63 | mean 5.4% (0.48R) | in profit 47 | older than 7d 38
-- worst: BCH -0.49R, PENGU -0.45R, QNT -0.43R | best: FET 2.06R, ZRO 2.12R, SUI 2.22R
+- open 63 | mean 5.6% (0.49R) | in profit 48 | older than 7d 38
+- worst: BCH -0.48R, QNT -0.44R, PENGU -0.43R | best: FET 2.13R, SUI 2.22R, ZRO 2.24R
 
 ## System
-- CoinGecko 806/10000 used, month-end projection 8329 (83%), throttle level 0 | by script {'scan': 170, 'check_liquidity': 49, 'breakout_check': 587}
+- CoinGecko 808/10000 used, month-end projection 8349 (84%), throttle level 0 | by script {'scan': 172, 'check_liquidity': 49, 'breakout_check': 587}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=13), H2 PENDING (n=21)
-- radar-flags.json scan age: 17m
+- radar-flags.json scan age: 13m
 - excluded from radar (pegged/tokenized equity): 37
