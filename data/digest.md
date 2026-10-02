@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-02 10:12 UTC
+# Radar digest - 2026-10-02 10:44 UTC
 
 ## Market
-- BTC scenario **A** | price 86353 | wk close 84465 vs 82800 | 50W 78247 (10.36%) | 26m old
+- BTC scenario **A** | price 86353 | wk close 84465 vs 82800 | 50W 78247 (10.36%) | 57m old
 - Alts: **BTC_LED** [-] | BTC.D 56.45% | ETH/BTC 0.03181 | breadth7d 56% | stables 30d 1.36%
 - Alt risk (BTC.D): **ELEVATED** ['BTC_DOM_BREAKOUT_HOLDING'] | 3d 0.45pt | 7d -pt | n=25
 - Gold: PAXG 1m -3.82% | real10y 2.93 (49bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 48
@@ -20,12 +20,12 @@
 
 ## Pre-pump candidates
 - SOL: [A+D+E] 7d 3.9%
-- ZEC: [A+E] 7d -11.5%
-- INJ: [A+E] 7d -4.0%
-- HYPE: [A+E] 7d -3.1%
-- TRX: [A+E] 7d -1.2%
+- ZEC: [A+E] 7d -12.5%
+- INJ: [A+E] 7d -5.3%
+- HYPE: [A+E] 7d -3.6%
+- TRX: [A+E] 7d -1.0%
 - XRP: [A+E] 7d -0.2%
-- BNB: [A+E] 7d 0.5%
+- BNB: [A+E] 7d 0.2%
 - ETH: [D+E] 7d 2.1%
 
 ## ETF pipeline (new this run)
@@ -37,13 +37,13 @@
 
 ## Derivatives flags (OKX)
 - BTC: SHORT_SQUEEZE_24H | OI/mc 0.19% | topPos 1.03 | taker 1.02
-- ETH: SHORT_SQUEEZE_24H | OI/mc 0.59% | topPos 1.02 | taker 1.03
-- AVAX: LONG_FLUSH_24H | OI/mc 0.48% | topPos 0.87 | taker 0.98
-- XRP: SHORT_SQUEEZE_24H | OI/mc 0.15% | topPos 0.88 | taker 0.97
-- SUI: SHORT_SQUEEZE_24H | OI/mc 1.01% | topPos 0.85 | taker 0.91
-- SEI: LONG_FLUSH_24H | OI/mc 0.82% | topPos 0.91 | taker 0.95
-- TAO: LONG_FLUSH_24H | OI/mc 0.82% | topPos 0.89 | taker 0.90
-- ZEC: SHORT_SQUEEZE_24H | OI/mc 0.70% | topPos 1.04 | taker 0.92
+- XRP: SHORT_SQUEEZE_24H | OI/mc 0.14% | topPos 0.88 | taker 0.97
+- SUI: SHORT_SQUEEZE_24H | OI/mc 1.00% | topPos 0.85 | taker 0.93
+- SEI: LONG_FLUSH_24H | OI/mc 0.81% | topPos 0.91 | taker 0.97
+- TAO: LONG_FLUSH_24H | OI/mc 0.82% | topPos 0.89 | taker 0.89
+- ZEC: SHORT_SQUEEZE_24H | OI/mc 0.70% | topPos 1.03 | taker 0.92
+- WLD: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.91 | taker 0.92
+- LINK: LONG_FLUSH_24H | OI/mc -% | topPos 0.95 | taker 1.07
 
 ## Revenue / buyback flags
 - collector-crypt: CHEAP_VS_REVENUE
@@ -56,12 +56,12 @@
 - vote: decentraland (Decentraland) until 2026-10-03 - Return the money in DAO Committee Multisigs to the DAO Treasury
 
 ## Paper book (open trades, marked to last scan)
-- open 63 | mean 5.0% (0.49R) | in profit 46 | older than 7d 39
-- worst: QNT -0.65R, TIA -0.48R, BCH -0.46R | best: SUI 2.13R, FET 2.27R, sky 4.27R
+- open 62 | mean 4.2% (0.40R) | in profit 44 | older than 7d 38
+- worst: QNT -0.66R, TIA -0.48R, BCH -0.46R | best: BONK 1.68R, SUI 2.05R, FET 2.25R
 
 ## System
-- CoinGecko 733/10000 used, month-end projection 7574 (76%), throttle level 0 | by script {'scan': 156, 'check_liquidity': 45, 'breakout_check': 532}
+- CoinGecko 735/10000 used, month-end projection 7595 (76%), throttle level 0 | by script {'scan': 158, 'check_liquidity': 45, 'breakout_check': 532}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=10), H2 PENDING (n=16)
-- radar-flags.json scan age: 12m
-- excluded from radar (pegged/tokenized equity): 37
+- radar-flags.json scan age: 14m
+- excluded from radar (pegged/tokenized equity): 38
