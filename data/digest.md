@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-02 12:24 UTC
+# Radar digest - 2026-10-02 12:45 UTC
 
 ## Market
-- BTC scenario **A** | price 86511 | wk close 84465 vs 82800 | 50W 78247 (10.56%) | 39m old
+- BTC scenario **A** | price 86511 | wk close 84465 vs 82800 | 50W 78247 (10.56%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 56.45% | ETH/BTC 0.03181 | breadth7d 56% | stables 30d 1.36%
 - Alt risk (BTC.D): **ELEVATED** ['BTC_DOM_BREAKOUT_HOLDING'] | 3d 0.45pt | 7d -pt | n=25
 - Gold: PAXG 1m -3.82% | real10y 2.93 (49bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 48
@@ -20,13 +20,13 @@
 
 ## Pre-pump candidates
 - SOL: [A+D+E] 7d 2.3%
-- ZEC: [A+E] 7d -12.8%
-- INJ: [A+E] 7d -6.3%
-- HYPE: [A+E] 7d -2.8%
+- ZEC: [A+E] 7d -13.9%
+- INJ: [A+E] 7d -6.8%
+- HYPE: [A+E] 7d -3.3%
 - NEAR: [A+E] 7d -2.3%
 - XRP: [A+E] 7d -1.6%
-- TRX: [A+E] 7d -0.7%
-- BNB: [A+E] 7d -0.1%
+- TRX: [A+E] 7d -0.6%
+- BNB: [A+E] 7d 0.2%
 
 ## ETF pipeline (new this run)
 - dogecoin NEW: other - Dogecoin Price Prediction Turns Green as ETF Inflows Break Records and Pepeto Gains Moment
@@ -34,14 +34,14 @@
 - zcash: launch - Zcash and Ether.fi launch ETP in Europe with 21 shares - Bit2Me News
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 1.03 | taker 1.02
+- ETH: SHORT_SQUEEZE_24H | OI/mc -% | topPos 1.00 | taker 1.04
+- SOL: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.95 | taker 1.03
 - XRP: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.88 | taker 0.98
-- SUI: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.84 | taker 0.94
+- SUI: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.87 | taker 0.95
 - SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 0.96
-- TAO: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 0.90
-- ZEC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 1.02 | taker 0.94
-- WLD: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.92 | taker 0.93
-- LINK: LONG_FLUSH_24H | OI/mc -% | topPos 0.95 | taker 1.07
+- TAO: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 0.89
+- ZEC: LONG_FLUSH_24H | OI/mc -% | topPos 1.02 | taker 0.95
+- WLD: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.93 | taker 0.93
 
 ## Revenue / buyback flags
 - collector-crypt: CHEAP_VS_REVENUE
@@ -54,12 +54,12 @@
 - vote: decentraland (Decentraland) until 2026-10-03 - Return the money in DAO Committee Multisigs to the DAO Treasury
 
 ## Paper book (open trades, marked to last scan)
-- open 63 | mean 4.5% (0.40R) | in profit 43 | older than 7d 38
-- worst: PEPE -0.55R, BCH -0.48R, PENGU -0.44R | best: ZRO 1.66R, SUI 1.97R, FET 1.98R
+- open 63 | mean 4.8% (0.42R) | in profit 45 | older than 7d 38
+- worst: PEPE -0.48R, BCH -0.48R, PENGU -0.43R | best: ZRO 1.78R, SUI 2.05R, FET 2.06R
 
 ## System
-- CoinGecko 797/10000 used, month-end projection 8236 (82%), throttle level 0 | by script {'scan': 164, 'check_liquidity': 46, 'breakout_check': 587}
+- CoinGecko 800/10000 used, month-end projection 8267 (83%), throttle level 0 | by script {'scan': 166, 'check_liquidity': 47, 'breakout_check': 587}
 - Trials guard: OK (0 untracked)
-- Hypotheses: H1 PENDING (n=11), H2 PENDING (n=19)
-- radar-flags.json scan age: 24m
+- Hypotheses: H1 PENDING (n=12), H2 PENDING (n=20)
+- radar-flags.json scan age: 15m
 - excluded from radar (pegged/tokenized equity): 37
