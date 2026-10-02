@@ -1,4 +1,4 @@
-# Radar digest - 2026-10-02 12:45 UTC
+# Radar digest - 2026-10-02 13:13 UTC
 
 ## Market
 - BTC scenario **A** | price 86511 | wk close 84465 vs 82800 | 50W 78247 (10.56%) | 1h old
@@ -19,12 +19,12 @@
 - PUMP: **ONGOING** | +121% impulse, retr 0.10 | OI dd 6% | fund 0.0050 | hold False | inval 0.00539 | OB 0.00340-0.00354
 
 ## Pre-pump candidates
-- SOL: [A+D+E] 7d 2.3%
+- SOL: [A+D+E] 7d 1.4%
 - ZEC: [A+E] 7d -13.9%
 - INJ: [A+E] 7d -6.8%
+- XRP: [A+E] 7d -3.3%
 - HYPE: [A+E] 7d -3.3%
-- NEAR: [A+E] 7d -2.3%
-- XRP: [A+E] 7d -1.6%
+- NEAR: [A+E] 7d -1.7%
 - TRX: [A+E] 7d -0.6%
 - BNB: [A+E] 7d 0.2%
 
@@ -54,12 +54,12 @@
 - vote: decentraland (Decentraland) until 2026-10-03 - Return the money in DAO Committee Multisigs to the DAO Treasury
 
 ## Paper book (open trades, marked to last scan)
-- open 63 | mean 4.8% (0.42R) | in profit 45 | older than 7d 38
-- worst: PEPE -0.48R, BCH -0.48R, PENGU -0.43R | best: ZRO 1.78R, SUI 2.05R, FET 2.06R
+- open 63 | mean 5.5% (0.49R) | in profit 47 | older than 7d 38
+- worst: BCH -0.47R, PENGU -0.43R, PEPE -0.39R | best: ZRO 1.89R, FET 2.20R, SUI 2.22R
 
 ## System
-- CoinGecko 800/10000 used, month-end projection 8267 (83%), throttle level 0 | by script {'scan': 166, 'check_liquidity': 47, 'breakout_check': 587}
+- CoinGecko 803/10000 used, month-end projection 8298 (83%), throttle level 0 | by script {'scan': 168, 'check_liquidity': 48, 'breakout_check': 587}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=12), H2 PENDING (n=20)
-- radar-flags.json scan age: 15m
+- radar-flags.json scan age: 13m
 - excluded from radar (pegged/tokenized equity): 37
