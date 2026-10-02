@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-02 11:46 UTC
+# Radar digest - 2026-10-02 12:24 UTC
 
 ## Market
-- BTC scenario **A** | price 86511 | wk close 84465 vs 82800 | 50W 78247 (10.56%) | 1m old
+- BTC scenario **A** | price 86511 | wk close 84465 vs 82800 | 50W 78247 (10.56%) | 39m old
 - Alts: **BTC_LED** [-] | BTC.D 56.45% | ETH/BTC 0.03181 | breadth7d 56% | stables 30d 1.36%
 - Alt risk (BTC.D): **ELEVATED** ['BTC_DOM_BREAKOUT_HOLDING'] | 3d 0.45pt | 7d -pt | n=25
 - Gold: PAXG 1m -3.82% | real10y 2.93 (49bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 48
@@ -19,12 +19,14 @@
 - PUMP: **ONGOING** | +121% impulse, retr 0.10 | OI dd 6% | fund 0.0050 | hold False | inval 0.00539 | OB 0.00340-0.00354
 
 ## Pre-pump candidates
-- SOL: [A+D+E] 7d 3.0%
+- SOL: [A+D+E] 7d 2.3%
+- ZEC: [A+E] 7d -12.8%
+- INJ: [A+E] 7d -6.3%
 - HYPE: [A+E] 7d -2.8%
+- NEAR: [A+E] 7d -2.3%
+- XRP: [A+E] 7d -1.6%
 - TRX: [A+E] 7d -0.7%
-- NEAR: [A+E] 7d -0.6%
 - BNB: [A+E] 7d -0.1%
-- AVAX: [A+E] 7d 6.9%
 
 ## ETF pipeline (new this run)
 - dogecoin NEW: other - Dogecoin Price Prediction Turns Green as ETF Inflows Break Records and Pepeto Gains Moment
@@ -52,12 +54,12 @@
 - vote: decentraland (Decentraland) until 2026-10-03 - Return the money in DAO Committee Multisigs to the DAO Treasury
 
 ## Paper book (open trades, marked to last scan)
-- open 62 | mean 4.5% (0.41R) | in profit 44 | older than 7d 38
-- worst: QNT -0.46R, BCH -0.44R, PENGU -0.42R | best: ZRO 1.72R, SUI 2.05R, FET 2.09R
+- open 63 | mean 4.5% (0.40R) | in profit 43 | older than 7d 38
+- worst: PEPE -0.55R, BCH -0.48R, PENGU -0.44R | best: ZRO 1.66R, SUI 1.97R, FET 1.98R
 
 ## System
-- CoinGecko 739/10000 used, month-end projection 7636 (76%), throttle level 0 | by script {'scan': 162, 'check_liquidity': 45, 'breakout_check': 532}
+- CoinGecko 797/10000 used, month-end projection 8236 (82%), throttle level 0 | by script {'scan': 164, 'check_liquidity': 46, 'breakout_check': 587}
 - Trials guard: OK (0 untracked)
-- Hypotheses: H1 PENDING (n=10), H2 PENDING (n=17)
-- radar-flags.json scan age: 16m
-- excluded from radar (pegged/tokenized equity): 38
+- Hypotheses: H1 PENDING (n=11), H2 PENDING (n=19)
+- radar-flags.json scan age: 24m
+- excluded from radar (pegged/tokenized equity): 37
