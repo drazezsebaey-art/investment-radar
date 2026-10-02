@@ -1,10 +1,10 @@
-# Radar digest - 2026-10-02 02:45 UTC
+# Radar digest - 2026-10-02 03:26 UTC
 
 ## Market
-- BTC scenario **A** | price 84600 | wk close 84465 vs 82800 | 50W 78247 (8.12%) | 59m old
+- BTC scenario **A** | price 84600 | wk close 84465 vs 82800 | 50W 78247 (8.12%) | 2h old
 - Alts: **BTC_LED** [-] | BTC.D 56.32% | ETH/BTC 0.03193 | breadth7d 54% | stables 30d 1.37%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.35pt | 7d -pt | n=23
-- Gold: PAXG 1m -3.91% | real10y 2.93 (49bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 48
+- Gold: PAXG 1m -3.93% | real10y 2.93 (49bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 48
 - 10y 1w: 18bp = real 17 + breakeven 3 -> **REAL_YIELD_DRIVEN**
 - 10y 1m: 50bp = real 49 + breakeven 2 -> **REAL_YIELD_DRIVEN**
 
@@ -19,12 +19,11 @@
 - ZBCN: **ONGOING** | +89% impulse, retr 0.26 | OI dd -% | fund - | hold False | inval 0.00198 | OB 0.00198-0.00202
 
 ## Pre-pump candidates
-- AVAX: [A+D+E] 7d 7.0%
-- STONK: [C+D] 7d -31.5%
-- TRX: [A+E] 7d -1.7%
-- BNB: [A+E] 7d -0.7%
-- NEAR: [A+E] 7d 6.5%
-- AAVE: [B+D] 7d 20.4%
+- AVAX: [A+D+E] 7d 7.4%
+- TRX: [A+E] 7d -1.6%
+- BNB: [A+E] 7d -0.5%
+- NEAR: [A+E] 7d 9.2%
+- AAVE: [B+D] 7d 20.1%
 
 ## ETF pipeline (new this run)
 - kucoin-shares NEW: launch - Bitwise Launches First U.S. Spot NEAR ETF With Staking Rewar - KuCoin
@@ -50,12 +49,12 @@
 - (22 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 61 | mean 3.0% (0.34R) | in profit 34 | older than 7d 40
-- worst: TIA -0.80R, BCH -0.68R, PENGU -0.62R | best: FET 2.32R, aave 3.01R, sky 3.12R
+- open 61 | mean 3.5% (0.38R) | in profit 34 | older than 7d 40
+- worst: TIA -0.77R, BCH -0.66R, PENGU -0.59R | best: FET 2.57R, aave 3.03R, sky 3.34R
 
 ## System
-- CoinGecko 535/10000 used, month-end projection 5528 (55%), throttle level 0 | by script {'scan': 126, 'check_liquidity': 30, 'breakout_check': 379}
+- CoinGecko 587/10000 used, month-end projection 6066 (61%), throttle level 0 | by script {'scan': 128, 'check_liquidity': 31, 'breakout_check': 428}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=9), H2 PENDING (n=13)
-- radar-flags.json scan age: 15m
+- radar-flags.json scan age: 26m
 - excluded from radar (pegged/tokenized equity): 37
