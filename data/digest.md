@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-02 14:13 UTC
+# Radar digest - 2026-10-02 14:44 UTC
 
 ## Market
-- BTC scenario **A** | price 86900 | wk close 84465 vs 82800 | 50W 78247 (11.06%) | 27m old
+- BTC scenario **A** | price 86900 | wk close 84465 vs 82800 | 50W 78247 (11.06%) | 58m old
 - Alts: **BTC_LED** [-] | BTC.D 56.51% | ETH/BTC 0.03175 | breadth7d 40% | stables 30d 1.37%
 - Alt risk (BTC.D): **HIGH** ['BTC_DOM_BREAKOUT_HOLDING', 'BTC_DOM_RISING_3D'] | 3d 0.57pt | 7d -pt | n=26
 - Gold: PAXG 1m -3.82% | real10y 2.93 (49bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 48
@@ -19,14 +19,14 @@
 - PUMP: **ONGOING** | +121% impulse, retr 0.02 | OI dd 6% | fund 0.0050 | hold False | inval 0.00539 | OB 0.00539-0.00572
 
 ## Pre-pump candidates
-- SOL: [A+D+E] 7d 1.4%
-- ZEC: [A+E] 7d -13.1%
-- INJ: [A+E] 7d -8.5%
-- XRP: [A+E] 7d -3.3%
-- HYPE: [A+E] 7d -2.5%
-- NEAR: [A+E] 7d -1.7%
+- SOL: [A+D+E] 7d 1.2%
+- ZEC: [A+E] 7d -13.9%
+- INJ: [A+E] 7d -9.2%
+- XRP: [A+E] 7d -4.2%
+- HYPE: [A+E] 7d -2.9%
+- NEAR: [A+E] 7d -2.9%
 - TRX: [A+E] 7d -0.7%
-- BNB: [A+E] 7d 0.2%
+- ADA: [A+E] 7d -0.6%
 
 ## ETF pipeline (new this run)
 - filecoin NEW: other - Crypto News Weekly: $2.4B Bitcoin ETF Inflows, FIL Breakout - CoinDCX
@@ -36,14 +36,14 @@
 - chainlink: other - Chainlink Price Outlook as LINK ETF Extends Inflow Streak to Three Straight Days - CoinGap
 
 ## Derivatives flags (OKX)
-- ETH: SHORT_SQUEEZE_24H | OI/mc -% | topPos 1.01 | taker 1.07
-- SOL: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.96 | taker 1.04
-- XRP: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.88 | taker 1.00
-- SUI: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.88 | taker 0.96
-- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 0.96
-- TAO: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.87
-- ZEC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 1.03 | taker 0.95
-- WLD: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.95 | taker 0.95
+- BTC: LONG_FLUSH_24H | OI/mc -% | topPos 1.03 | taker 1.05
+- ETH: LONG_FLUSH_24H | OI/mc -% | topPos 0.99 | taker 1.05
+- XRP: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.87 | taker 1.00
+- SUI: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.87 | taker 0.95
+- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 0.94
+- TAO: LONG_FLUSH_24H | OI/mc -% | topPos 0.85 | taker 0.87
+- WLD: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.97 | taker 0.97
+- ADA: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.94 | taker 1.00
 
 ## Revenue / buyback flags
 - collector-crypt: CHEAP_VS_REVENUE
@@ -56,12 +56,12 @@
 - vote: decentraland (Decentraland) until 2026-10-03 - Return the money in DAO Committee Multisigs to the DAO Treasury
 
 ## Paper book (open trades, marked to last scan)
-- open 63 | mean 5.6% (0.49R) | in profit 48 | older than 7d 38
-- worst: BCH -0.48R, QNT -0.44R, PENGU -0.43R | best: FET 2.13R, SUI 2.22R, ZRO 2.24R
+- open 63 | mean 5.5% (0.48R) | in profit 46 | older than 7d 38
+- worst: BCH -0.51R, PEPE -0.45R, PENGU -0.45R | best: FET 2.10R, SUI 2.13R, ZRO 2.47R
 
 ## System
-- CoinGecko 808/10000 used, month-end projection 8349 (84%), throttle level 0 | by script {'scan': 172, 'check_liquidity': 49, 'breakout_check': 587}
+- CoinGecko 810/10000 used, month-end projection 8370 (84%), throttle level 0 | by script {'scan': 174, 'check_liquidity': 49, 'breakout_check': 587}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=13), H2 PENDING (n=21)
-- radar-flags.json scan age: 13m
+- radar-flags.json scan age: 14m
 - excluded from radar (pegged/tokenized equity): 37
