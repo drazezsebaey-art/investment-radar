@@ -1,4 +1,4 @@
-# Radar digest - 2026-10-02 20:45 UTC
+# Radar digest - 2026-10-02 21:11 UTC
 
 ## Market
 - BTC scenario **A** | price 84166 | wk close 84465 vs 82800 | 50W 78247 (7.56%) | 1h old
@@ -19,10 +19,10 @@
 - PUMP: **ONGOING** | +109% impulse, retr 0.27 | OI dd 6% | fund 0.0050 | hold False | inval 0.00430 | OB 0.00340-0.00354
 
 ## Pre-pump candidates
-- NEAR: [A+E] 7d -8.0%
+- NEAR: [A+E] 7d -8.2%
 - LINK: [A+E] 7d -1.8%
 - BNB: [A+E] 7d -1.1%
-- AVAX: [A+E] 7d 1.3%
+- AVAX: [A+E] 7d 0.9%
 
 ## ETF pipeline (new this run)
 - near: launch - Bitwise Launches First US Spot NEAR ETF With Staking Rewards Under Ticker NRR - CryptoDail
@@ -50,12 +50,12 @@
 - vote: decentraland (Decentraland) until 2026-10-03 - Return the money in DAO Committee Multisigs to the DAO Treasury
 
 ## Paper book (open trades, marked to last scan)
-- open 59 | mean 0.5% (0.06R) | in profit 25 | older than 7d 35
-- worst: JTO -0.76R, BCH -0.76R, RAY -0.73R | best: ZRO 1.38R, SUI 1.55R, JST 1.91R
+- open 59 | mean 0.1% (0.03R) | in profit 23 | older than 7d 35
+- worst: JTO -0.78R, TIA -0.77R, BCH -0.76R | best: NIGHT 1.33R, SUI 1.55R, JST 1.97R
 
 ## System
-- CoinGecko 950/10000 used, month-end projection 9817 (98%), throttle level 1 | by script {'scan': 206, 'check_liquidity': 52, 'breakout_check': 692}
+- CoinGecko 952/10000 used, month-end projection 9837 (98%), throttle level 1 | by script {'scan': 208, 'check_liquidity': 52, 'breakout_check': 692}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=17), H2 PENDING (n=35)
-- radar-flags.json scan age: 15m
+- radar-flags.json scan age: 11m
 - excluded from radar (pegged/tokenized equity): 37
