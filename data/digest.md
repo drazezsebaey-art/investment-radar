@@ -1,22 +1,22 @@
-# Radar digest - 2026-10-02 17:12 UTC
+# Radar digest - 2026-10-02 17:47 UTC
 
 ## Market
-- BTC scenario **A** | price 85349 | wk close 84465 vs 82800 | 50W 78247 (9.08%) | 1h old
-- Alts: **BTC_LED** [-] | BTC.D 56.51% | ETH/BTC 0.03175 | breadth7d 40% | stables 30d 1.37%
-- Alt risk (BTC.D): **HIGH** ['BTC_DOM_BREAKOUT_HOLDING', 'BTC_DOM_RISING_3D'] | 3d 0.57pt | 7d -pt | n=26
+- BTC scenario **A** | price 84597 | wk close 84465 vs 82800 | 50W 78247 (8.11%) | 1m old
+- Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.31% | ETH/BTC 0.03169 | breadth7d 53% | stables 30d 1.38%
+- Alt risk (BTC.D): **NORMAL**  | 3d 0.32pt | 7d -pt | n=27
 - Gold: PAXG 1m -4.80% | real10y 2.93 (49bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 48
 - 10y 1w: 18bp = real 17 + breakeven 3 -> **REAL_YIELD_DRIVEN**
 - 10y 1m: 50bp = real 49 + breakeven 2 -> **REAL_YIELD_DRIVEN**
 
 ## Coins in correction (entry_ready first)
-- NEAR: **ONGOING** | +257% impulse, retr 0.19 | OI dd 15% | fund 0.0025 | hold False | inval 4.74500 | OB 4.24600-4.45100
-- ZEC: **ONGOING** | +239% impulse, retr 0.28 | OI dd 28% | fund 0.0100 | hold False | inval 1305.25000 | OB 1086.09000-1158.80000
-- UNI: **ONGOING** | +236% impulse, retr 0.25 | OI dd 15% | fund 0.0063 | hold False | inval 8.72700 | OB 5.80800-6.03200
-- NIGHT: **ONGOING** | +196% impulse, retr 0.12 | OI dd 8% | fund -0.0227 | hold False | inval 0.03740 | OB 0.03830-0.03953
-- CARDS: **ONGOING** | +165% impulse, retr 0.06 | OI dd -% | fund - | hold False | inval 0.18390 | OB 0.10510-0.12160
-- ZRO: **ONGOING** | +159% impulse, retr 0.04 | OI dd 28% | fund -0.0021 | hold False | inval 1.62270 | OB 1.62270-1.70010
-- SEI: **ONGOING** | +126% impulse, retr 0.33 | OI dd 0% | fund -0.0029 | hold True | inval 0.05685 | OB 0.05829-0.05928
-- PUMP: **ONGOING** | +122% impulse, retr 0.05 | OI dd 6% | fund 0.0050 | hold False | inval 0.00539 | OB 0.00340-0.00354
+- NEAR: **ONGOING** | +236% impulse, retr 0.20 | OI dd 15% | fund 0.0063 | hold False | inval 4.74500 | OB 4.24600-4.45100
+- UNI: **ONGOING** | +215% impulse, retr 0.27 | OI dd 15% | fund 0.0083 | hold False | inval 8.72700 | OB 5.80800-6.03200
+- GRASS: **ONGOING** | +213% impulse, retr 0.25 | OI dd 8% | fund 0.0050 | hold False | inval 0.65780 | OB 0.56900-0.59990
+- ZEC: **ONGOING** | +212% impulse, retr 0.29 | OI dd 28% | fund 0.0100 | hold False | inval 1305.25000 | OB 1086.09000-1158.80000
+- CARDS: **ONGOING** | +183% impulse, retr 0.07 | OI dd -% | fund - | hold False | inval 0.18390 | OB 0.10510-0.12160
+- SEI: **ONGOING** | +120% impulse, retr 0.35 | OI dd 0% | fund 0.0008 | hold True | inval 0.05685 | OB 0.05829-0.05928
+- PUMP: **ONGOING** | +109% impulse, retr 0.13 | OI dd 6% | fund 0.0050 | hold False | inval 0.00539 | OB 0.00340-0.00354
+- SUI: **ONGOING** | +92% impulse, retr 0.23 | OI dd 6% | fund -0.0068 | hold False | inval 1.12740 | OB 0.93370-0.97450
 
 ## Pre-pump candidates
 - NEAR: [A+E] 7d -5.6%
@@ -25,18 +25,17 @@
 - AVAX: [A+E] 7d 7.1%
 
 ## ETF pipeline (new this run)
-- ripple NEW: filing - Bitwise XRP ETF Gets SEC Effectiveness Notice After Filing That Moved XRP 7.7% - Coinpaper
-- ripple NEW: other - SEC confirms effectiveness of Bitwise XRP ETF r... - Pluang
+- chainlink: other - Chainlink Price Outlook as LINK ETF Extends Inflow Streak to Three Straight Days - Crypton
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc -% | topPos 1.01 | taker 1.04
-- ETH: LONG_FLUSH_24H | OI/mc -% | topPos 0.95 | taker 1.03
+- BTC: LONG_FLUSH_24H | OI/mc -% | topPos 1.00 | taker 1.05
+- ETH: LONG_FLUSH_24H | OI/mc -% | topPos 0.94 | taker 1.03
 - SOL: LONG_FLUSH_24H | OI/mc -% | topPos 0.94 | taker 1.01
-- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 0.97
-- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 0.94
-- TAO: LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 0.86
-- ZEC: LONG_FLUSH_24H | OI/mc -% | topPos 1.02 | taker 0.95
-- LINK: LONG_FLUSH_24H | OI/mc -% | topPos 0.95 | taker 1.12
+- NEAR: LONG_FLUSH_24H | OI/mc -% | topPos 0.96 | taker 0.93
+- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 0.95
+- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 0.93
+- TAO: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.86
+- ZEC: LONG_FLUSH_24H | OI/mc -% | topPos 1.03 | taker 0.97
 
 ## Revenue / buyback flags
 - collector-crypt: CHEAP_VS_REVENUE
@@ -49,12 +48,12 @@
 - vote: decentraland (Decentraland) until 2026-10-03 - Return the money in DAO Committee Multisigs to the DAO Treasury
 
 ## Paper book (open trades, marked to last scan)
-- open 65 | mean 3.9% (0.34R) | in profit 41 | older than 7d 38
-- worst: PEPE -0.71R, BCH -0.61R, CAKE -0.57R | best: FET 1.95R, SUI 1.97R, ZRO 2.30R
+- open 65 | mean 3.4% (0.30R) | in profit 39 | older than 7d 38
+- worst: PEPE -0.84R, CAKE -0.65R, BCH -0.64R | best: FET 1.82R, SUI 1.88R, ZRO 2.12R
 
 ## System
-- CoinGecko 884/10000 used, month-end projection 9135 (91%), throttle level 1 | by script {'scan': 192, 'check_liquidity': 52, 'breakout_check': 640}
+- CoinGecko 886/10000 used, month-end projection 9155 (92%), throttle level 1 | by script {'scan': 194, 'check_liquidity': 52, 'breakout_check': 640}
 - Trials guard: OK (0 untracked)
-- Hypotheses: H1 PENDING (n=13), H2 PENDING (n=23)
-- radar-flags.json scan age: 12m
-- excluded from radar (pegged/tokenized equity): 35
+- Hypotheses: H1 PENDING (n=13), H2 PENDING (n=24)
+- radar-flags.json scan age: 17m
+- excluded from radar (pegged/tokenized equity): 36
