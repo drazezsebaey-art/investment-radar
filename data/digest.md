@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-03 03:46 UTC
+# Radar digest - 2026-10-03 04:12 UTC
 
 ## Market
-- BTC scenario **A** | price 84659 | wk close 84465 vs 82800 | 50W 78247 (8.19%) | 1m old
+- BTC scenario **A** | price 84659 | wk close 84465 vs 82800 | 50W 78247 (8.19%) | 27m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.39% | ETH/BTC 0.03168 | breadth7d 34% | stables 30d 1.38%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.35pt | 7d -pt | n=29
 - Gold: PAXG 1m -4.53% | real10y 2.88 (43bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -19,12 +19,14 @@
 - GALA: **ONGOING** | +103% impulse, retr 0.10 | OI dd 47% | fund -0.0009 | hold False | inval 0.00222 | OB 0.00222-0.00227
 
 ## Pre-pump candidates
-- XRP: [A+E] 7d -5.7%
-- NEAR: [A+E] 7d -5.3%
-- INJ: [A+E] 7d -3.4%
-- BNB: [A+E] 7d -1.0%
-- LINK: [A+E] 7d -0.0%
-- AVAX: [A+E] 7d 0.8%
+- SOL: [A+D+E] 7d -1.8%
+- ZEC: [A+E] 7d -13.9%
+- XRP: [A+E] 7d -4.8%
+- HYPE: [A+E] 7d -4.2%
+- NEAR: [A+E] 7d -3.9%
+- INJ: [A+E] 7d -2.5%
+- TRX: [A+E] 7d -1.0%
+- BNB: [A+E] 7d -0.9%
 
 ## ETF pipeline (new this run)
 - ripple NEW: filing - Bitwise XRP ETF Gets SEC Effectiveness Notice After Filing That Moved XRP 7.7% - CryptoRan
@@ -56,12 +58,12 @@
 - vote: decentraland (Decentraland) until 2026-10-03 - Return the money in DAO Committee Multisigs to the DAO Treasury
 
 ## Paper book (open trades, marked to last scan)
-- open 61 | mean 3.7% (0.33R) | in profit 38 | older than 7d 44
-- worst: BTC -0.60R, TIA -0.58R, BCH -0.58R | best: NIGHT 1.88R, SUI 1.88R, JST 2.96R
+- open 61 | mean 3.7% (0.34R) | in profit 38 | older than 7d 44
+- worst: TIA -0.61R, BCH -0.59R, JTO -0.57R | best: SUI 1.88R, NIGHT 2.05R, JST 3.21R
 
 ## System
-- CoinGecko 1038/10000 used, month-end projection 10726 (107%), throttle level 2 | by script {'scan': 234, 'check_liquidity': 54, 'breakout_check': 750}
+- CoinGecko 1041/10000 used, month-end projection 10757 (108%), throttle level 2 | by script {'scan': 236, 'check_liquidity': 55, 'breakout_check': 750}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=17), H2 PENDING (n=36)
-- radar-flags.json scan age: 16m
-- excluded from radar (pegged/tokenized equity): 36
+- radar-flags.json scan age: 11m
+- excluded from radar (pegged/tokenized equity): 37
