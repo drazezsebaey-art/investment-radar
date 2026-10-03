@@ -39,8 +39,11 @@ def fred_dates(release_id: int, key: str) -> list:
     url = (f"https://api.stlouisfed.org/fred/release/dates?release_id={release_id}&api_key={key}"
            "&file_type=json&realtime_start=2019-01-01&realtime_end=9999-12-31"
            "&include_release_dates_with_no_data=true&limit=10000&sort_order=asc")
-    with urllib.request.urlopen(url, timeout=60) as r:
-        data = json.load(r)
+    try:
+        with urllib.request.urlopen(url, timeout=60) as r:
+            data = json.load(r)
+    except Exception as e:  # noqa: BLE001
+        raise SystemExit(f"FRED request failed for release {release_id}: {e} (check the FRED_API_KEY secret)")
     return sorted({d["date"] for d in data.get("release_dates", []) if "2020-01-01" <= d["date"] <= "2026-12-31"})
 
 
@@ -57,14 +60,17 @@ def main():
     events.sort(key=lambda e: e["scheduled_utc"])
     for i, e in enumerate(events):
         e["id"] = f"{e['type']}-{e['date']}"
+    for y in range(2020, 2027):
+        print(y, {t: sum(1 for e in events if e["type"] == t and e["date"].startswith(str(y))) for t in ("CPI", "NFP", "FOMC")})
+    # 2025 legitimately has fewer releases (US government shutdown Oct-Nov 2025:
+    # releases cancelled or merged), so only an almost-empty year is treated as a FRED failure
+    bad = [f"{t}-{y}" for y in range(2020, 2027) for t in ("CPI", "NFP")
+           if sum(1 for e in events if e["type"] == t and e["date"].startswith(str(y))) < 6]
+    if bad:
+        raise SystemExit(f"almost no releases for {bad} - FRED answer looks wrong, calendar NOT written")
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps({"built_at": datetime.now(UTC).isoformat(), "events": events}, indent=1), encoding="utf-8")
-    counts = {t: sum(1 for e in events if e["type"] == t) for t in ("CPI", "NFP", "FOMC")}
-    print(counts)
-    bad = [y for y in range(2020, 2027) for t in ("CPI", "NFP")
-           if sum(1 for e in events if e["type"] == t and e["date"].startswith(str(y))) < (9 if y == 2026 else 11)]
-    if bad:
-        raise SystemExit(f"suspiciously few releases for {bad} - check FRED before using this calendar")
+    print(f"written {len(events)} events -> {OUT}")
 
 
 if __name__ == "__main__":
