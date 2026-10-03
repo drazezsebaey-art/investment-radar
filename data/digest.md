@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-03 07:47 UTC
+# Radar digest - 2026-10-03 08:12 UTC
 
 ## Market
-- BTC scenario **A** | price 84617 | wk close 84465 vs 82800 | 50W 78247 (8.14%) | 1m old
+- BTC scenario **A** | price 84617 | wk close 84465 vs 82800 | 50W 78247 (8.14%) | 26m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.39% | ETH/BTC 0.03164 | breadth7d 37% | stables 30d 1.39%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.40pt | 7d -pt | n=30
 - Gold: PAXG 1m -4.53% | real10y 2.88 (43bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -19,14 +19,14 @@
 - PUMP: **ONGOING** | +109% impulse, retr 0.22 | OI dd 6% | fund 0.0014 | hold True | inval 0.00430 | OB 0.00340-0.00354
 
 ## Pre-pump candidates
-- SOL: [A+D+E] 7d -0.9%
+- SOL: [A+D+E] 7d -0.7%
 - ZEC: [A+E] 7d -14.2%
-- XRP: [A+E] 7d -4.2%
+- NEAR: [A+E] 7d -5.1%
+- XRP: [A+E] 7d -4.3%
 - HYPE: [A+E] 7d -4.0%
-- NEAR: [A+E] 7d -3.7%
 - INJ: [A+E] 7d -1.0%
 - BNB: [A+E] 7d -0.9%
-- ETH: [D+E] 7d -0.2%
+- ETH: [D+E] 7d -0.1%
 
 ## ETF pipeline (new this run)
 - zcash: other - Grayscale’s Zcash ETF sheds $93.56 million in a single week - Crypto Briefing
@@ -54,12 +54,12 @@
 - vote: decentraland (Decentraland) until 2026-10-03 - Return the money in DAO Committee Multisigs to the DAO Treasury
 
 ## Paper book (open trades, marked to last scan)
-- open 61 | mean 3.2% (0.29R) | in profit 36 | older than 7d 44
-- worst: TIA -0.64R, XRP -0.63R, BCH -0.61R | best: SUI 1.80R, NIGHT 2.19R, JST 3.14R
+- open 61 | mean 3.0% (0.28R) | in profit 35 | older than 7d 44
+- worst: TIA -0.67R, XRP -0.63R, ZK -0.62R | best: SUI 1.88R, NIGHT 2.14R, JST 3.12R
 
 ## System
-- CoinGecko 1057/10000 used, month-end projection 10922 (109%), throttle level 2 | by script {'scan': 250, 'check_liquidity': 57, 'breakout_check': 750}
+- CoinGecko 1059/10000 used, month-end projection 10943 (109%), throttle level 2 | by script {'scan': 252, 'check_liquidity': 57, 'breakout_check': 750}
 - Trials guard: OK (0 untracked)
-- Hypotheses: H1 PENDING (n=17), H2 PENDING (n=36)
-- radar-flags.json scan age: 17m
+- Hypotheses: H1 PENDING (n=18), H2 PENDING (n=37)
+- radar-flags.json scan age: 12m
 - excluded from radar (pegged/tokenized equity): 36
