@@ -1,4 +1,4 @@
-# Radar digest - 2026-10-03 09:21 UTC
+# Radar digest - 2026-10-03 09:37 UTC
 
 ## Market
 - BTC scenario **A** | price 84617 | wk close 84465 vs 82800 | 50W 78247 (8.14%) | 2h old
@@ -44,22 +44,21 @@
 - SEI: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 0.80
 
 ## Revenue / buyback flags
-- collector-crypt: CHEAP_VS_REVENUE
+- pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
+- stonk-3: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
+- collector-crypt: REVENUE_ACCELERATING, CHEAP_VS_REVENUE
 - ethereum: REVENUE_ACCELERATING
 - solana: REVENUE_ACCELERATING
-- convex-finance: REVENUE_ACCELERATING
 - thorchain: REVENUE_ACCELERATING
-- chip-2: REVENUE_ACCELERATING
-- (21 flagged protocol(s) without a tradeable token hidden)
-- vote: decentraland (Decentraland) until 2026-10-03 - Return the money in DAO Committee Multisigs to the DAO Treasury
+- (20 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 61 | mean 3.2% (0.30R) | in profit 36 | older than 7d 44
-- worst: TIA -0.65R, XRP -0.63R, ZK -0.62R | best: ZRO 1.89R, NIGHT 1.94R, JST 3.09R
+- open 60 | mean 3.2% (0.29R) | in profit 36 | older than 7d 44
+- worst: ZK -0.64R, TIA -0.64R, XRP -0.63R | best: NIGHT 1.85R, SUI 1.97R, JST 3.03R
 
 ## System
-- CoinGecko 1063/10000 used, month-end projection 10984 (110%), throttle level 2 | by script {'scan': 256, 'check_liquidity': 57, 'breakout_check': 750}
+- CoinGecko 1065/10000 used, month-end projection 11005 (110%), throttle level 2 | by script {'scan': 258, 'check_liquidity': 57, 'breakout_check': 750}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=18), H2 PENDING (n=37)
-- radar-flags.json scan age: 13m
+- radar-flags.json scan age: 7m
 - excluded from radar (pegged/tokenized equity): 37
