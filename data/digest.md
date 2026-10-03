@@ -1,9 +1,9 @@
-# Radar digest - 2026-10-03 13:45 UTC
+# Radar digest - 2026-10-03 14:12 UTC
 
 ## Market
-- BTC scenario **A** | price 84859 | wk close 84465 vs 82800 | 50W 78247 (8.45%) | 1h old
-- Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.42% | ETH/BTC 0.03169 | breadth7d 31% | stables 30d 1.39%
-- Alt risk (BTC.D): **NORMAL**  | 3d 0.47pt | 7d -pt | n=31
+- BTC scenario **A** | price 84859 | wk close 84465 vs 82800 | 50W 78247 (8.45%) | 2h old
+- Alts: **BTC_LED** [-] | BTC.D 56.49% | ETH/BTC 0.03159 | breadth7d 25% | stables 30d 1.38%
+- Alt risk (BTC.D): **NORMAL**  | 3d 0.34pt | 7d -pt | n=32
 - Gold: PAXG 1m -4.63% | real10y 2.88 (43bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
 - 10y 1w: 6bp = real 3 + breakeven 2 -> **SMALL_MOVE**
 - 10y 1m: 45bp = real 43 + breakeven 1 -> **REAL_YIELD_DRIVEN**
@@ -19,9 +19,10 @@
 - SEI: **ONGOING** | +120% impulse, retr 0.32 | OI dd 0% | fund 0.0050 | hold False | inval 0.06672 | OB 0.05829-0.05928
 
 ## Pre-pump candidates
-- NEAR: [A+E] 7d -4.8%
+- NEAR: [A+E] 7d -4.4%
 - INJ: [A+E] 7d -2.9%
-- SOL: [A+D] 7d -1.5%
+- SOL: [A+D] 7d -1.4%
+- RAY: [C+E] 7d 1.1%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - XRP Price Forms Golden Cross as ETF Inflows Reach $121M - The Market Periodical
@@ -52,12 +53,12 @@
 - (20 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 62 | mean 4.0% (0.37R) | in profit 41 | older than 7d 44
-- worst: XRP -0.63R, BCH -0.61R, TIA -0.52R | best: SUI 2.05R, ZRO 2.98R, JST 3.24R
+- open 62 | mean 4.5% (0.41R) | in profit 41 | older than 7d 44
+- worst: BCH -0.58R, XRP -0.52R, JTO -0.50R | best: SUI 2.05R, ZRO 3.04R, JST 3.16R
 
 ## System
-- CoinGecko 1157/10000 used, month-end projection 11956 (120%), throttle level 2 | by script {'scan': 282, 'check_liquidity': 57, 'breakout_check': 818}
+- CoinGecko 1159/10000 used, month-end projection 11976 (120%), throttle level 2 | by script {'scan': 284, 'check_liquidity': 57, 'breakout_check': 818}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=18), H2 PENDING (n=37)
-- radar-flags.json scan age: 15m
+- radar-flags.json scan age: 12m
 - excluded from radar (pegged/tokenized equity): 37
