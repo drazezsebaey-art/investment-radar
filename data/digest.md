@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-03 12:28 UTC
+# Radar digest - 2026-10-03 12:45 UTC
 
 ## Market
-- BTC scenario **A** | price 84859 | wk close 84465 vs 82800 | 50W 78247 (8.45%) | 1m old
+- BTC scenario **A** | price 84859 | wk close 84465 vs 82800 | 50W 78247 (8.45%) | 18m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.42% | ETH/BTC 0.03169 | breadth7d 31% | stables 30d 1.39%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.47pt | 7d -pt | n=31
 - Gold: PAXG 1m -4.63% | real10y 2.88 (43bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -20,12 +20,12 @@
 
 ## Pre-pump candidates
 - SOL: [A+D+E] 7d -1.1%
-- ZEC: [A+E] 7d -13.6%
+- ZEC: [A+E] 7d -14.8%
 - NEAR: [A+E] 7d -4.7%
+- HYPE: [A+E] 7d -4.4%
 - XRP: [A+E] 7d -4.2%
-- HYPE: [A+E] 7d -4.2%
-- INJ: [A+E] 7d -2.2%
-- BNB: [A+E] 7d -0.3%
+- INJ: [A+E] 7d -2.8%
+- BNB: [A+E] 7d -0.5%
 - ETH: [D+E] 7d -0.1%
 
 ## ETF pipeline (new this run)
@@ -41,10 +41,10 @@
 - ETH: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.92 | taker 0.96
 - SOL: LONG_FLUSH_24H | OI/mc -% | topPos 0.94 | taker 0.95
 - NEAR: LONG_FLUSH_24H | OI/mc -% | topPos 0.95 | taker 0.92
-- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 0.93
+- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 0.97
 - XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 0.91
-- SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 0.95
-- SEI: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 0.82
+- SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 0.94
+- SEI: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 0.83
 - TAO: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.95
 
 ## Revenue / buyback flags
@@ -57,12 +57,12 @@
 - (20 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 62 | mean 4.2% (0.38R) | in profit 39 | older than 7d 44
-- worst: BCH -0.58R, BTC -0.56R, XRP -0.52R | best: SUI 2.13R, ZRO 2.52R, JST 3.24R
+- open 61 | mean 4.2% (0.38R) | in profit 40 | older than 7d 44
+- worst: BCH -0.59R, JTO -0.55R, ZK -0.54R | best: SUI 2.13R, ZRO 2.75R, JST 3.28R
 
 ## System
-- CoinGecko 1143/10000 used, month-end projection 11811 (118%), throttle level 2 | by script {'scan': 268, 'check_liquidity': 57, 'breakout_check': 818}
+- CoinGecko 1145/10000 used, month-end projection 11832 (118%), throttle level 2 | by script {'scan': 270, 'check_liquidity': 57, 'breakout_check': 818}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=18), H2 PENDING (n=37)
-- radar-flags.json scan age: 28m
+- radar-flags.json scan age: 15m
 - excluded from radar (pegged/tokenized equity): 37
