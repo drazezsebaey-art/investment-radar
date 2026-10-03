@@ -1,30 +1,129 @@
 {
-  "updated_at": "2026-10-03T16:44:44.913982+00:00",
+  "updated_at": "2026-10-03T18:45:54.933235+00:00",
   "engine_version": "correction-v65.3",
   "btc_q4_scenario": {
     "scenario": "A",
     "reason": "last closed weekly candle above the May high",
-    "price": 84831.9,
+    "price": 84940.9,
     "last_weekly_close": 84464.7,
     "key_level": 82800.0,
     "sma_50w": 78247.0,
-    "dist_to_50w_pct": 8.42,
-    "drawdown_from_30d_high_pct": 2.94,
+    "dist_to_50w_pct": 8.55,
+    "drawdown_from_30d_high_pct": 2.81,
     "action": "normal gate-approved sizing"
   },
   "coins_in_correction": [
+    {
+      "coin": "pump-fun",
+      "symbol": "PUMP",
+      "reasons": [
+        "top_7d_mover"
+      ],
+      "price": 0.00636,
+      "impulse_low": 0.003397,
+      "impulse_peak": 0.006427,
+      "impulse_gain_pct": 89.2,
+      "peak_date": "2026-10-03",
+      "retracement_now": 0.022,
+      "retracement_max": 0.225,
+      "fib_levels": {
+        "0.382": 0.00527,
+        "0.5": 0.004912,
+        "0.618": 0.004554,
+        "0.786": 0.004045
+      },
+      "volume_ratio": null,
+      "choch_up": true,
+      "last_internal_event": {
+        "type": "CHoCH",
+        "dir": "bull",
+        "level": 0.006197,
+        "ts": 1791043200000
+      },
+      "internal_trend": 1,
+      "swing_trend": 1,
+      "nearest_bull_ob_below": {
+        "top": 0.005413,
+        "bottom": 0.005203,
+        "layer": "internal"
+      },
+      "nearest_bear_ob_above": null,
+      "trailing_extremes": {
+        "top": 0.006427,
+        "top_label": "Weak High",
+        "bottom": 0.003397,
+        "bottom_label": "Strong Low",
+        "equilibrium": 0.004912
+      },
+      "premium_discount_luxalgo": "PREMIUM",
+      "structure_engine": "smc_structure-v65.4 (aligned to LuxAlgo SMC Pine source, CC BY-NC-SA 4.0)",
+      "levels": {
+        "recent_break_validations": [
+          {
+            "side": "high",
+            "level": 0.005446,
+            "result": "SWEEP",
+            "ts": 1790611200000
+          },
+          {
+            "side": "high",
+            "level": 0.006029,
+            "result": "SWEEP",
+            "ts": 1790827200000
+          },
+          {
+            "side": "low",
+            "level": 0.005387,
+            "result": "SWEEP",
+            "ts": 1790985600000
+          },
+          {
+            "side": "high",
+            "level": 0.006197,
+            "result": "PENDING",
+            "ts": 1791043200000
+          }
+        ],
+        "bullish_hold_signal": true,
+        "last_low_sweep": {
+          "level": 0.005387,
+          "ts": 1790985600000
+        },
+        "premium_discount_impulse": {
+          "position": 0.979,
+          "zone": "PREMIUM",
+          "equilibrium": 0.004912,
+          "range_low": 0.003397,
+          "range_high": 0.006427
+        },
+        "volume_profile_30d": {
+          "poc": 0.0043754375,
+          "value_area_high": 0.004912,
+          "value_area_low": 0.003460125,
+          "bars_used": 180
+        },
+        "long_invalidation_level": 0.005203,
+        "swing_low_ts": 1790971200000,
+        "layer_len": 5
+      },
+      "oi_drawdown_pct": 100.0,
+      "funding_now_pct": 0.005,
+      "status": "RESUMING",
+      "entry_ready": false,
+      "entry_ready_rule": "status RESET_DONE/RESUMING + a hold signal (fresh low sweep or bullish internal CHoCH) + price at/below the impulse equilibrium - still needs gate + Agent Room + visual check"
+    },
     {
       "coin": "the-sandbox",
       "symbol": "SAND",
       "reasons": [
         "top_7d_mover"
       ],
-      "price": 0.07367,
+      "price": 0.07356,
       "impulse_low": 0.03251,
       "impulse_peak": 0.08416,
       "impulse_gain_pct": 158.9,
       "peak_date": "2026-10-02",
-      "retracement_now": 0.203,
+      "retracement_now": 0.205,
       "retracement_max": 0.479,
       "fib_levels": {
         "0.382": 0.06443,
@@ -32,7 +131,7 @@
         "0.618": 0.05224,
         "0.786": 0.043563
       },
-      "volume_ratio": 0.18,
+      "volume_ratio": 0.39,
       "choch_up": false,
       "last_internal_event": null,
       "internal_trend": 1,
@@ -76,7 +175,7 @@
         "bullish_hold_signal": false,
         "last_low_sweep": null,
         "premium_discount_impulse": {
-          "position": 0.794,
+          "position": 0.795,
           "zone": "PREMIUM",
           "equilibrium": 0.058335,
           "range_low": 0.03251,
@@ -84,7 +183,7 @@
         },
         "volume_profile_30d": {
           "poc": 0.0448844792,
-          "value_area_high": 0.0723235417,
+          "value_area_high": 0.0733995833,
           "value_area_low": 0.03251,
           "bars_used": 180
         },
@@ -93,7 +192,7 @@
         "layer_len": 5
       },
       "oi_drawdown_pct": 100.0,
-      "funding_now_pct": -0.3978,
+      "funding_now_pct": -0.3628,
       "reset_checks": {
         "oi_reset": true,
         "funding_neutral": true,
@@ -110,12 +209,12 @@
       "reasons": [
         "watchlist"
       ],
-      "price": 0.07073,
+      "price": 0.07054,
       "impulse_low": 0.04119,
       "impulse_peak": 0.08662,
       "impulse_gain_pct": 110.3,
       "peak_date": "2026-09-27",
-      "retracement_now": 0.35,
+      "retracement_now": 0.354,
       "retracement_max": 0.438,
       "fib_levels": {
         "0.382": 0.069266,
@@ -164,7 +263,7 @@
         "bullish_hold_signal": false,
         "last_low_sweep": null,
         "premium_discount_impulse": {
-          "position": 0.65,
+          "position": 0.646,
           "zone": "PREMIUM",
           "equilibrium": 0.063905,
           "range_low": 0.04119,
@@ -180,129 +279,12 @@
         "swing_low_ts": 1790956800000,
         "layer_len": 5
       },
-      "oi_drawdown_pct": 0.3,
-      "funding_now_pct": -0.0026,
-      "reset_checks": {
-        "oi_reset": false,
-        "funding_neutral": true,
-        "volume_dried_up": true,
-        "healthy_depth": true
-      },
-      "status": "RESET_DONE",
-      "entry_ready": false,
-      "entry_ready_rule": "status RESET_DONE/RESUMING + a hold signal (fresh low sweep or bullish internal CHoCH) + price at/below the impulse equilibrium - still needs gate + Agent Room + visual check"
-    },
-    {
-      "coin": "starknet",
-      "symbol": "STRK",
-      "reasons": [
-        "top_7d_mover"
-      ],
-      "price": 0.04859,
-      "impulse_low": 0.02425,
-      "impulse_peak": 0.0509,
-      "impulse_gain_pct": 109.9,
-      "peak_date": "2026-09-20",
-      "retracement_now": 0.087,
-      "retracement_max": 0.483,
-      "fib_levels": {
-        "0.382": 0.04072,
-        "0.5": 0.037575,
-        "0.618": 0.03443,
-        "0.786": 0.029953
-      },
-      "volume_ratio": 1.0,
-      "choch_up": false,
-      "last_internal_event": {
-        "type": "BOS",
-        "dir": "bull",
-        "level": 0.04519,
-        "ts": 1791028800000
-      },
-      "internal_trend": 1,
-      "swing_trend": 1,
-      "nearest_bull_ob_below": {
-        "top": 0.04315,
-        "bottom": 0.04119,
-        "layer": "internal"
-      },
-      "nearest_bear_ob_above": null,
-      "trailing_extremes": {
-        "top": 0.0509,
-        "top_label": "Weak High",
-        "bottom": 0.03804,
-        "bottom_label": "Strong Low",
-        "equilibrium": 0.044469999999999996
-      },
-      "premium_discount_luxalgo": "PREMIUM",
-      "structure_engine": "smc_structure-v65.4 (aligned to LuxAlgo SMC Pine source, CC BY-NC-SA 4.0)",
-      "levels": {
-        "recent_break_validations": [
-          {
-            "side": "high",
-            "level": 0.04225,
-            "result": "CONFIRMED",
-            "ts": 1790668800000
-          },
-          {
-            "side": "high",
-            "level": 0.04452,
-            "result": "SWEEP",
-            "ts": 1790812800000
-          },
-          {
-            "side": "low",
-            "level": 0.04115,
-            "result": "SWEEP",
-            "ts": 1790956800000
-          },
-          {
-            "side": "high",
-            "level": 0.04514,
-            "result": "SWEEP",
-            "ts": 1790913600000
-          },
-          {
-            "side": "low",
-            "level": 0.04124,
-            "result": "SWEEP",
-            "ts": 1790956800000
-          },
-          {
-            "side": "high",
-            "level": 0.04519,
-            "result": "CONFIRMED",
-            "ts": 1791028800000
-          }
-        ],
-        "bullish_hold_signal": true,
-        "last_low_sweep": {
-          "level": 0.04124,
-          "ts": 1790956800000
-        },
-        "premium_discount_impulse": {
-          "position": 0.913,
-          "zone": "PREMIUM",
-          "equilibrium": 0.037575,
-          "range_low": 0.02425,
-          "range_high": 0.0509
-        },
-        "volume_profile_30d": {
-          "poc": 0.0426882292,
-          "value_area_high": 0.049310625,
-          "value_area_low": 0.0387147917,
-          "bars_used": 180
-        },
-        "long_invalidation_level": 0.04083,
-        "swing_low_ts": 1790956800000,
-        "layer_len": 5
-      },
       "oi_drawdown_pct": 100.0,
-      "funding_now_pct": 0.005,
+      "funding_now_pct": -0.0171,
       "reset_checks": {
         "oi_reset": true,
         "funding_neutral": true,
-        "volume_dried_up": false,
+        "volume_dried_up": true,
         "healthy_depth": true
       },
       "status": "RESET_DONE",
@@ -315,7 +297,7 @@
       "reasons": [
         "etf_watch"
       ],
-      "price": 0.4918,
+      "price": 0.4917,
       "impulse_low": 0.3174,
       "impulse_peak": 0.6084,
       "impulse_gain_pct": 91.7,
@@ -328,7 +310,7 @@
         "0.618": 0.428562,
         "0.786": 0.379674
       },
-      "volume_ratio": 1.03,
+      "volume_ratio": 1.04,
       "choch_up": false,
       "last_internal_event": {
         "type": "BOS",
@@ -394,7 +376,7 @@
         "swing_low_ts": 1790179200000,
         "layer_len": 5
       },
-      "oi_drawdown_pct": 21.1,
+      "oi_drawdown_pct": 100.0,
       "funding_now_pct": 0.005,
       "reset_checks": {
         "oi_reset": true,
@@ -412,12 +394,12 @@
       "reasons": [
         "etf_watch"
       ],
-      "price": 313.3,
+      "price": 314.3,
       "impulse_low": 212.9,
       "impulse_peak": 366.1,
       "impulse_gain_pct": 72.0,
       "peak_date": "2026-09-22",
-      "retracement_now": 0.345,
+      "retracement_now": 0.338,
       "retracement_max": 0.456,
       "fib_levels": {
         "0.382": 307.5776,
@@ -487,7 +469,7 @@
           "ts": 1790956800000
         },
         "premium_discount_impulse": {
-          "position": 0.655,
+          "position": 0.662,
           "zone": "PREMIUM",
           "equilibrium": 289.5,
           "range_low": 212.9,
@@ -504,7 +486,7 @@
         "layer_len": 5
       },
       "oi_drawdown_pct": 100.0,
-      "funding_now_pct": -0.002,
+      "funding_now_pct": -0.0064,
       "reset_checks": {
         "oi_reset": true,
         "funding_neutral": true,
@@ -521,12 +503,12 @@
       "reasons": [
         "etf_watch"
       ],
-      "price": 13.859,
+      "price": 13.909,
       "impulse_low": 10.493,
       "impulse_peak": 15.773,
       "impulse_gain_pct": 50.3,
       "peak_date": "2026-09-28",
-      "retracement_now": 0.362,
+      "retracement_now": 0.353,
       "retracement_max": 0.487,
       "fib_levels": {
         "0.382": 13.75604,
@@ -584,7 +566,7 @@
           "ts": 1790956800000
         },
         "premium_discount_impulse": {
-          "position": 0.638,
+          "position": 0.647,
           "zone": "PREMIUM",
           "equilibrium": 13.133,
           "range_low": 10.493,
@@ -613,115 +595,18 @@
       "entry_ready_rule": "status RESET_DONE/RESUMING + a hold signal (fresh low sweep or bullish internal CHoCH) + price at/below the impulse equilibrium - still needs gate + Agent Room + visual check"
     },
     {
-      "coin": "mina-protocol",
-      "symbol": "MINA",
-      "reasons": [
-        "top_7d_mover"
-      ],
-      "price": 0.15919,
-      "impulse_low": 0.04446,
-      "impulse_peak": 0.16994,
-      "impulse_gain_pct": 282.2,
-      "peak_date": "2026-10-02",
-      "retracement_now": 0.086,
-      "retracement_max": 0.12,
-      "fib_levels": {
-        "0.382": 0.122007,
-        "0.5": 0.1072,
-        "0.618": 0.092393,
-        "0.786": 0.071313
-      },
-      "volume_ratio": 0.03,
-      "choch_up": false,
-      "last_internal_event": null,
-      "internal_trend": 1,
-      "swing_trend": 1,
-      "nearest_bull_ob_below": {
-        "top": 0.14379,
-        "bottom": 0.13673,
-        "layer": "swing"
-      },
-      "nearest_bear_ob_above": null,
-      "trailing_extremes": {
-        "top": 0.16994,
-        "top_label": "Weak High",
-        "bottom": 0.03876,
-        "bottom_label": "Strong Low",
-        "equilibrium": 0.10435
-      },
-      "premium_discount_luxalgo": "PREMIUM",
-      "structure_engine": "smc_structure-v65.4 (aligned to LuxAlgo SMC Pine source, CC BY-NC-SA 4.0)",
-      "levels": {
-        "recent_break_validations": [
-          {
-            "side": "high",
-            "level": 0.16,
-            "result": "SWEEP",
-            "ts": 1790928000000
-          },
-          {
-            "side": "high",
-            "level": 0.15333,
-            "result": "SWEEP",
-            "ts": 1790668800000
-          },
-          {
-            "side": "high",
-            "level": 0.15824,
-            "result": "CONFIRMED",
-            "ts": 1790913600000
-          },
-          {
-            "side": "high",
-            "level": 0.149,
-            "result": "SWEEP",
-            "ts": 1790856000000
-          }
-        ],
-        "bullish_hold_signal": false,
-        "last_low_sweep": null,
-        "premium_discount_impulse": {
-          "position": 0.914,
-          "zone": "PREMIUM",
-          "equilibrium": 0.1072,
-          "range_low": 0.04446,
-          "range_high": 0.16994
-        },
-        "volume_profile_30d": {
-          "poc": 0.0822571875,
-          "value_area_high": 0.143119375,
-          "value_area_low": 0.072973125,
-          "bars_used": 180
-        },
-        "long_invalidation_level": 0.14069,
-        "swing_low_ts": 1790798400000,
-        "layer_len": 5
-      },
-      "oi_drawdown_pct": 100.0,
-      "funding_now_pct": -0.0204,
-      "reset_checks": {
-        "oi_reset": true,
-        "funding_neutral": true,
-        "volume_dried_up": true,
-        "healthy_depth": false
-      },
-      "status": "ONGOING",
-      "entry_ready": false,
-      "entry_ready_rule": "status RESET_DONE/RESUMING + a hold signal (fresh low sweep or bullish internal CHoCH) + price at/below the impulse equilibrium - still needs gate + Agent Room + visual check"
-    },
-    {
       "coin": "near",
       "symbol": "NEAR",
       "reasons": [
         "watchlist",
         "etf_watch"
       ],
-      "price": 4.644,
+      "price": 4.691,
       "impulse_low": 1.661,
       "impulse_peak": 5.58,
       "impulse_gain_pct": 235.9,
       "peak_date": "2026-09-27",
-      "retracement_now": 0.239,
+      "retracement_now": 0.227,
       "retracement_max": 0.264,
       "fib_levels": {
         "0.382": 4.082942,
@@ -729,7 +614,7 @@
         "0.618": 3.158058,
         "0.786": 2.499666
       },
-      "volume_ratio": 1.6,
+      "volume_ratio": 1.61,
       "choch_up": false,
       "last_internal_event": {
         "type": "BOS",
@@ -776,7 +661,7 @@
         "bullish_hold_signal": false,
         "last_low_sweep": null,
         "premium_discount_impulse": {
-          "position": 0.761,
+          "position": 0.773,
           "zone": "PREMIUM",
           "equilibrium": 3.6205,
           "range_low": 1.661,
@@ -810,12 +695,12 @@
       "reasons": [
         "top_7d_mover"
       ],
-      "price": 0.7331,
+      "price": 0.7186,
       "impulse_low": 0.2613,
       "impulse_peak": 0.8181,
       "impulse_gain_pct": 213.1,
       "peak_date": "2026-09-29",
-      "retracement_now": 0.153,
+      "retracement_now": 0.179,
       "retracement_max": 0.3,
       "fib_levels": {
         "0.382": 0.605402,
@@ -823,7 +708,7 @@
         "0.618": 0.473998,
         "0.786": 0.380455
       },
-      "volume_ratio": 1.87,
+      "volume_ratio": 1.89,
       "choch_up": false,
       "last_internal_event": {
         "type": "BOS",
@@ -875,7 +760,7 @@
           "ts": 1790956800000
         },
         "premium_discount_impulse": {
-          "position": 0.847,
+          "position": 0.819,
           "zone": "PREMIUM",
           "equilibrium": 0.5397,
           "range_low": 0.2613,
@@ -892,10 +777,10 @@
         "layer_len": 5
       },
       "oi_drawdown_pct": 100.0,
-      "funding_now_pct": 0.005,
+      "funding_now_pct": 0.0056,
       "reset_checks": {
         "oi_reset": true,
-        "funding_neutral": true,
+        "funding_neutral": false,
         "volume_dried_up": false,
         "healthy_depth": false
       },
@@ -909,12 +794,12 @@
       "reasons": [
         "etf_watch"
       ],
-      "price": 1296.81,
+      "price": 1299.69,
       "impulse_low": 561.19,
       "impulse_peak": 1697.45,
       "impulse_gain_pct": 202.5,
       "peak_date": "2026-09-26",
-      "retracement_now": 0.353,
+      "retracement_now": 0.35,
       "retracement_max": 0.375,
       "fib_levels": {
         "0.382": 1263.39868,
@@ -922,7 +807,7 @@
         "0.618": 995.24132,
         "0.786": 804.34964
       },
-      "volume_ratio": 0.99,
+      "volume_ratio": 1.0,
       "choch_up": false,
       "last_internal_event": {
         "type": "BOS",
@@ -996,7 +881,7 @@
           "ts": 1790985600000
         },
         "premium_discount_impulse": {
-          "position": 0.647,
+          "position": 0.65,
           "zone": "PREMIUM",
           "equilibrium": 1129.32,
           "range_low": 561.19,
@@ -1005,96 +890,11 @@
         "volume_profile_30d": {
           "poc": 1164.0113541667,
           "value_area_high": 1522.2910416667,
-          "value_area_low": 1076.431875,
+          "value_area_low": 1092.3554166667,
           "bars_used": 180
         },
         "long_invalidation_level": 1276.88,
         "swing_low_ts": 1790971200000,
-        "layer_len": 5
-      },
-      "oi_drawdown_pct": 100.0,
-      "funding_now_pct": 0.01,
-      "reset_checks": {
-        "oi_reset": true,
-        "funding_neutral": false,
-        "volume_dried_up": false,
-        "healthy_depth": false
-      },
-      "status": "ONGOING",
-      "entry_ready": false,
-      "entry_ready_rule": "status RESET_DONE/RESUMING + a hold signal (fresh low sweep or bullish internal CHoCH) + price at/below the impulse equilibrium - still needs gate + Agent Room + visual check"
-    },
-    {
-      "coin": "blockstack",
-      "symbol": "STX",
-      "reasons": [
-        "top_7d_mover"
-      ],
-      "price": 0.3933,
-      "impulse_low": 0.1387,
-      "impulse_peak": 0.4144,
-      "impulse_gain_pct": 198.8,
-      "peak_date": "2026-09-30",
-      "retracement_now": 0.077,
-      "retracement_max": 0.252,
-      "fib_levels": {
-        "0.382": 0.309083,
-        "0.5": 0.27655,
-        "0.618": 0.244017,
-        "0.786": 0.1977
-      },
-      "volume_ratio": 0.77,
-      "choch_up": false,
-      "last_internal_event": null,
-      "internal_trend": 1,
-      "swing_trend": 1,
-      "nearest_bull_ob_below": {
-        "top": 0.3156,
-        "bottom": 0.3109,
-        "layer": "internal"
-      },
-      "nearest_bear_ob_above": null,
-      "trailing_extremes": {
-        "top": 0.4144,
-        "top_label": "Weak High",
-        "bottom": 0.2287,
-        "bottom_label": "Strong Low",
-        "equilibrium": 0.32155
-      },
-      "premium_discount_luxalgo": "PREMIUM",
-      "structure_engine": "smc_structure-v65.4 (aligned to LuxAlgo SMC Pine source, CC BY-NC-SA 4.0)",
-      "levels": {
-        "recent_break_validations": [
-          {
-            "side": "high",
-            "level": 0.3598,
-            "result": "SWEEP",
-            "ts": 1790769600000
-          },
-          {
-            "side": "high",
-            "level": 0.3249,
-            "result": "CONFIRMED",
-            "ts": 1790769600000
-          }
-        ],
-        "bullish_hold_signal": false,
-        "last_low_sweep": null,
-        "premium_discount_impulse": {
-          "position": 0.923,
-          "zone": "PREMIUM",
-          "equilibrium": 0.27655,
-          "range_low": 0.1387,
-          "range_high": 0.4144
-        },
-        "volume_profile_30d": {
-          "poc": 0.269321875,
-          "value_area_high": 0.35636875,
-          "value_area_low": 0.2287,
-          "bars_used": 180
-        },
-        "long_invalidation_level": 0.3509,
-        "swing_low_ts": 1790956800000,
         "layer_len": 5
       },
       "oi_drawdown_pct": 100.0,
@@ -1115,12 +915,12 @@
       "reasons": [
         "etf_watch"
       ],
-      "price": 8.994,
+      "price": 8.975,
       "impulse_low": 3.669,
       "impulse_peak": 10.944,
       "impulse_gain_pct": 198.3,
       "peak_date": "2026-09-22",
-      "retracement_now": 0.268,
+      "retracement_now": 0.271,
       "retracement_max": 0.343,
       "fib_levels": {
         "0.382": 8.16495,
@@ -1202,14 +1002,14 @@
           "ts": 1790971200000
         },
         "premium_discount_impulse": {
-          "position": 0.732,
+          "position": 0.729,
           "zone": "PREMIUM",
           "equilibrium": 7.3065,
           "range_low": 3.669,
           "range_high": 10.944
         },
         "volume_profile_30d": {
-          "poc": 8.8575,
+          "poc": 9.0715,
           "value_area_high": 10.944,
           "value_area_low": 7.092,
           "bars_used": 180
@@ -1231,17 +1031,226 @@
       "entry_ready_rule": "status RESET_DONE/RESUMING + a hold signal (fresh low sweep or bullish internal CHoCH) + price at/below the impulse equilibrium - still needs gate + Agent Room + visual check"
     },
     {
+      "coin": "layerzero",
+      "symbol": "ZRO",
+      "reasons": [
+        "top_7d_mover"
+      ],
+      "price": 2.059,
+      "impulse_low": 0.8545,
+      "impulse_peak": 2.1273,
+      "impulse_gain_pct": 149.0,
+      "peak_date": "2026-10-03",
+      "retracement_now": 0.054,
+      "retracement_max": 0.083,
+      "fib_levels": {
+        "0.382": 1.64109,
+        "0.5": 1.4909,
+        "0.618": 1.34071,
+        "0.786": 1.126879
+      },
+      "volume_ratio": null,
+      "choch_up": false,
+      "last_internal_event": null,
+      "internal_trend": 1,
+      "swing_trend": 1,
+      "nearest_bull_ob_below": {
+        "top": 1.7727,
+        "bottom": 1.726,
+        "layer": "internal"
+      },
+      "nearest_bear_ob_above": null,
+      "trailing_extremes": {
+        "top": 2.1273,
+        "top_label": "Weak High",
+        "bottom": 0.9176,
+        "bottom_label": "Strong Low",
+        "equilibrium": 1.52245
+      },
+      "premium_discount_luxalgo": "PREMIUM",
+      "structure_engine": "smc_structure-v65.4 (aligned to LuxAlgo SMC Pine source, CC BY-NC-SA 4.0)",
+      "levels": {
+        "recent_break_validations": [
+          {
+            "side": "high",
+            "level": 1.7304,
+            "result": "CONFIRMED",
+            "ts": 1790726400000
+          },
+          {
+            "side": "high",
+            "level": 1.6302,
+            "result": "SWEEP",
+            "ts": 1790697600000
+          },
+          {
+            "side": "high",
+            "level": 1.8869,
+            "result": "SWEEP",
+            "ts": 1790913600000
+          },
+          {
+            "side": "high",
+            "level": 2.0037,
+            "result": "CONFIRMED",
+            "ts": 1791028800000
+          }
+        ],
+        "bullish_hold_signal": false,
+        "last_low_sweep": null,
+        "premium_discount_impulse": {
+          "position": 0.946,
+          "zone": "PREMIUM",
+          "equilibrium": 1.4909,
+          "range_low": 0.8545,
+          "range_high": 2.1273
+        },
+        "volume_profile_30d": {
+          "poc": 1.1318177083,
+          "value_area_high": 1.6736625,
+          "value_area_low": 0.9176,
+          "bars_used": 180
+        },
+        "long_invalidation_level": 1.6227,
+        "swing_low_ts": 1790841600000,
+        "layer_len": 5
+      },
+      "oi_drawdown_pct": 100.0,
+      "funding_now_pct": 0.005,
+      "reset_checks": {
+        "oi_reset": true,
+        "funding_neutral": true,
+        "volume_dried_up": false,
+        "healthy_depth": false
+      },
+      "status": "ONGOING",
+      "entry_ready": false,
+      "entry_ready_rule": "status RESET_DONE/RESUMING + a hold signal (fresh low sweep or bullish internal CHoCH) + price at/below the impulse equilibrium - still needs gate + Agent Room + visual check"
+    },
+    {
+      "coin": "starknet",
+      "symbol": "STRK",
+      "reasons": [
+        "top_7d_mover"
+      ],
+      "price": 0.05182,
+      "impulse_low": 0.02425,
+      "impulse_peak": 0.05363,
+      "impulse_gain_pct": 121.2,
+      "peak_date": "2026-10-03",
+      "retracement_now": 0.062,
+      "retracement_max": 0.181,
+      "fib_levels": {
+        "0.382": 0.042407,
+        "0.5": 0.03894,
+        "0.618": 0.035473,
+        "0.786": 0.030537
+      },
+      "volume_ratio": null,
+      "choch_up": false,
+      "last_internal_event": null,
+      "internal_trend": 1,
+      "swing_trend": 1,
+      "nearest_bull_ob_below": {
+        "top": 0.03962,
+        "bottom": 0.03804,
+        "layer": "swing"
+      },
+      "nearest_bear_ob_above": null,
+      "trailing_extremes": {
+        "top": 0.05363,
+        "top_label": "Weak High",
+        "bottom": 0.03804,
+        "bottom_label": "Strong Low",
+        "equilibrium": 0.045835
+      },
+      "premium_discount_luxalgo": "PREMIUM",
+      "structure_engine": "smc_structure-v65.4 (aligned to LuxAlgo SMC Pine source, CC BY-NC-SA 4.0)",
+      "levels": {
+        "recent_break_validations": [
+          {
+            "side": "high",
+            "level": 0.04225,
+            "result": "CONFIRMED",
+            "ts": 1790668800000
+          },
+          {
+            "side": "high",
+            "level": 0.04452,
+            "result": "SWEEP",
+            "ts": 1790812800000
+          },
+          {
+            "side": "low",
+            "level": 0.04115,
+            "result": "SWEEP",
+            "ts": 1790956800000
+          },
+          {
+            "side": "high",
+            "level": 0.04514,
+            "result": "SWEEP",
+            "ts": 1790913600000
+          },
+          {
+            "side": "low",
+            "level": 0.04124,
+            "result": "SWEEP",
+            "ts": 1790956800000
+          },
+          {
+            "side": "high",
+            "level": 0.04519,
+            "result": "CONFIRMED",
+            "ts": 1791028800000
+          }
+        ],
+        "bullish_hold_signal": true,
+        "last_low_sweep": {
+          "level": 0.04124,
+          "ts": 1790956800000
+        },
+        "premium_discount_impulse": {
+          "position": 0.938,
+          "zone": "PREMIUM",
+          "equilibrium": 0.03894,
+          "range_low": 0.02425,
+          "range_high": 0.05363
+        },
+        "volume_profile_30d": {
+          "poc": 0.0427766667,
+          "value_area_high": 0.05011,
+          "value_area_low": 0.0389633333,
+          "bars_used": 180
+        },
+        "long_invalidation_level": 0.04083,
+        "swing_low_ts": 1790956800000,
+        "layer_len": 5
+      },
+      "oi_drawdown_pct": 100.0,
+      "funding_now_pct": 0.005,
+      "reset_checks": {
+        "oi_reset": true,
+        "funding_neutral": true,
+        "volume_dried_up": false,
+        "healthy_depth": false
+      },
+      "status": "ONGOING",
+      "entry_ready": false,
+      "entry_ready_rule": "status RESET_DONE/RESUMING + a hold signal (fresh low sweep or bullish internal CHoCH) + price at/below the impulse equilibrium - still needs gate + Agent Room + visual check"
+    },
+    {
       "coin": "aave",
       "symbol": "AAVE",
       "reasons": [
         "top_7d_mover"
       ],
-      "price": 178.95,
+      "price": 179.09,
       "impulse_low": 96.14,
       "impulse_peak": 187.86,
       "impulse_gain_pct": 95.4,
       "peak_date": "2026-10-01",
-      "retracement_now": 0.097,
+      "retracement_now": 0.096,
       "retracement_max": 0.257,
       "fib_levels": {
         "0.382": 152.82296,
@@ -1249,7 +1258,7 @@
         "0.618": 131.17704,
         "0.786": 115.76808
       },
-      "volume_ratio": 0.54,
+      "volume_ratio": 0.56,
       "choch_up": false,
       "last_internal_event": {
         "type": "BOS",
@@ -1292,7 +1301,7 @@
         "bullish_hold_signal": false,
         "last_low_sweep": null,
         "premium_discount_impulse": {
-          "position": 0.903,
+          "position": 0.904,
           "zone": "PREMIUM",
           "equilibrium": 142.0,
           "range_low": 96.14,
@@ -1309,7 +1318,7 @@
         "layer_len": 5
       },
       "oi_drawdown_pct": 100.0,
-      "funding_now_pct": 0.0067,
+      "funding_now_pct": 0.01,
       "reset_checks": {
         "oi_reset": true,
         "funding_neutral": false,
@@ -1327,12 +1336,12 @@
         "watchlist",
         "etf_watch"
       ],
-      "price": 1.1727,
+      "price": 1.1731,
       "impulse_low": 0.6726,
       "impulse_peak": 1.2939,
       "impulse_gain_pct": 92.4,
       "peak_date": "2026-09-27",
-      "retracement_now": 0.195,
+      "retracement_now": 0.194,
       "retracement_max": 0.316,
       "fib_levels": {
         "0.382": 1.056563,
@@ -1356,8 +1365,8 @@
         "layer": "internal"
       },
       "nearest_bear_ob_above": {
-        "top": 1.2187,
-        "bottom": 1.1719,
+        "top": 1.2939,
+        "bottom": 1.2468,
         "layer": "internal"
       },
       "trailing_extremes": {
@@ -1408,7 +1417,7 @@
           "ts": 1790971200000
         },
         "premium_discount_impulse": {
-          "position": 0.805,
+          "position": 0.806,
           "zone": "PREMIUM",
           "equilibrium": 0.98325,
           "range_low": 0.6726,
@@ -1437,102 +1446,17 @@
       "entry_ready_rule": "status RESET_DONE/RESUMING + a hold signal (fresh low sweep or bullish internal CHoCH) + price at/below the impulse equilibrium - still needs gate + Agent Room + visual check"
     },
     {
-      "coin": "immutable-x",
-      "symbol": "IMX",
-      "reasons": [
-        "top_7d_mover"
-      ],
-      "price": 0.1838,
-      "impulse_low": 0.1086,
-      "impulse_peak": 0.2029,
-      "impulse_gain_pct": 86.8,
-      "peak_date": "2026-10-02",
-      "retracement_now": 0.203,
-      "retracement_max": 0.336,
-      "fib_levels": {
-        "0.382": 0.166877,
-        "0.5": 0.15575,
-        "0.618": 0.144623,
-        "0.786": 0.12878
-      },
-      "volume_ratio": 0.01,
-      "choch_up": false,
-      "last_internal_event": null,
-      "internal_trend": 1,
-      "swing_trend": 1,
-      "nearest_bull_ob_below": {
-        "top": 0.1689,
-        "bottom": 0.1652,
-        "layer": "internal"
-      },
-      "nearest_bear_ob_above": null,
-      "trailing_extremes": {
-        "top": 0.2029,
-        "top_label": "Weak High",
-        "bottom": 0.1144,
-        "bottom_label": "Strong Low",
-        "equilibrium": 0.15865
-      },
-      "premium_discount_luxalgo": "PREMIUM",
-      "structure_engine": "smc_structure-v65.4 (aligned to LuxAlgo SMC Pine source, CC BY-NC-SA 4.0)",
-      "levels": {
-        "recent_break_validations": [
-          {
-            "side": "high",
-            "level": 0.1951,
-            "result": "SWEEP",
-            "ts": 1791000000000
-          },
-          {
-            "side": "high",
-            "level": 0.174,
-            "result": "SWEEP",
-            "ts": 1790899200000
-          }
-        ],
-        "bullish_hold_signal": false,
-        "last_low_sweep": null,
-        "premium_discount_impulse": {
-          "position": 0.797,
-          "zone": "PREMIUM",
-          "equilibrium": 0.15575,
-          "range_low": 0.1086,
-          "range_high": 0.2029
-        },
-        "volume_profile_30d": {
-          "poc": 0.124540625,
-          "value_area_high": 0.17155625,
-          "value_area_low": 0.11624375,
-          "bars_used": 180
-        },
-        "long_invalidation_level": 0.1652,
-        "swing_low_ts": 1790841600000,
-        "layer_len": 5
-      },
-      "oi_drawdown_pct": 100.0,
-      "funding_now_pct": -0.0106,
-      "reset_checks": {
-        "oi_reset": true,
-        "funding_neutral": true,
-        "volume_dried_up": true,
-        "healthy_depth": false
-      },
-      "status": "ONGOING",
-      "entry_ready": false,
-      "entry_ready_rule": "status RESET_DONE/RESUMING + a hold signal (fresh low sweep or bullish internal CHoCH) + price at/below the impulse equilibrium - still needs gate + Agent Room + visual check"
-    },
-    {
       "coin": "worldcoin-wld",
       "symbol": "WLD",
       "reasons": [
         "etf_watch"
       ],
-      "price": 0.5983,
+      "price": 0.5933,
       "impulse_low": 0.3528,
       "impulse_peak": 0.6193,
       "impulse_gain_pct": 75.5,
       "peak_date": "2026-10-02",
-      "retracement_now": 0.079,
+      "retracement_now": 0.098,
       "retracement_max": 0.343,
       "fib_levels": {
         "0.382": 0.517497,
@@ -1540,7 +1464,7 @@
         "0.618": 0.454603,
         "0.786": 0.409831
       },
-      "volume_ratio": 0.05,
+      "volume_ratio": 0.13,
       "choch_up": false,
       "last_internal_event": null,
       "internal_trend": 1,
@@ -1578,7 +1502,7 @@
         "bullish_hold_signal": false,
         "last_low_sweep": null,
         "premium_discount_impulse": {
-          "position": 0.921,
+          "position": 0.902,
           "zone": "PREMIUM",
           "equilibrium": 0.48605,
           "range_low": 0.3528,
@@ -1613,12 +1537,12 @@
         "watchlist",
         "etf_watch"
       ],
-      "price": 11.062,
+      "price": 11.125,
       "impulse_low": 6.992,
       "impulse_peak": 12.005,
       "impulse_gain_pct": 71.7,
       "peak_date": "2026-09-28",
-      "retracement_now": 0.188,
+      "retracement_now": 0.176,
       "retracement_max": 0.347,
       "fib_levels": {
         "0.382": 10.090034,
@@ -1626,7 +1550,7 @@
         "0.618": 8.906966,
         "0.786": 8.064782
       },
-      "volume_ratio": 0.94,
+      "volume_ratio": 0.95,
       "choch_up": false,
       "last_internal_event": {
         "type": "CHoCH",
@@ -1684,7 +1608,7 @@
           "ts": 1790971200000
         },
         "premium_discount_impulse": {
-          "position": 0.812,
+          "position": 0.824,
           "zone": "PREMIUM",
           "equilibrium": 9.4985,
           "range_low": 6.992,
@@ -1693,17 +1617,17 @@
         "volume_profile_30d": {
           "poc": 11.0488645833,
           "value_area_high": 11.8037083333,
-          "value_area_low": 9.7907916667,
+          "value_area_low": 9.8914375,
           "bars_used": 180
         },
         "long_invalidation_level": 10.443,
         "swing_low_ts": 1790956800000,
         "layer_len": 5
       },
-      "oi_drawdown_pct": 5.1,
+      "oi_drawdown_pct": 100.0,
       "funding_now_pct": 0.01,
       "reset_checks": {
-        "oi_reset": false,
+        "oi_reset": true,
         "funding_neutral": false,
         "volume_dried_up": false,
         "healthy_depth": false
@@ -1718,12 +1642,12 @@
       "reasons": [
         "etf_watch"
       ],
-      "price": 291.4,
+      "price": 296.4,
       "impulse_low": 208.9,
       "impulse_peak": 341.2,
       "impulse_gain_pct": 63.3,
       "peak_date": "2026-09-25",
-      "retracement_now": 0.376,
+      "retracement_now": 0.339,
       "retracement_max": 0.45,
       "fib_levels": {
         "0.382": 290.6614,
@@ -1731,7 +1655,7 @@
         "0.618": 259.4386,
         "0.786": 237.2122
       },
-      "volume_ratio": 1.09,
+      "volume_ratio": 1.1,
       "choch_up": false,
       "last_internal_event": {
         "type": "BOS",
@@ -1742,9 +1666,9 @@
       "internal_trend": -1,
       "swing_trend": 1,
       "nearest_bull_ob_below": {
-        "top": 219.3,
-        "bottom": 213.5,
-        "layer": "swing"
+        "top": 292.9,
+        "bottom": 278.3,
+        "layer": "internal"
       },
       "nearest_bear_ob_above": {
         "top": 316.4,
@@ -1790,7 +1714,7 @@
         "bullish_hold_signal": false,
         "last_low_sweep": null,
         "premium_discount_impulse": {
-          "position": 0.624,
+          "position": 0.661,
           "zone": "PREMIUM",
           "equilibrium": 275.05,
           "range_low": 208.9,
@@ -1806,11 +1730,11 @@
         "swing_low_ts": 1790971200000,
         "layer_len": 5
       },
-      "oi_drawdown_pct": 14.0,
-      "funding_now_pct": 0.004,
+      "oi_drawdown_pct": 100.0,
+      "funding_now_pct": 0.01,
       "reset_checks": {
-        "oi_reset": false,
-        "funding_neutral": true,
+        "oi_reset": true,
+        "funding_neutral": false,
         "volume_dried_up": false,
         "healthy_depth": true
       },
@@ -1819,46 +1743,41 @@
       "entry_ready_rule": "status RESET_DONE/RESUMING + a hold signal (fresh low sweep or bullish internal CHoCH) + price at/below the impulse equilibrium - still needs gate + Agent Room + visual check"
     },
     {
-      "coin": "kaia",
-      "symbol": "KAIA",
+      "coin": "instadapp",
+      "symbol": "FLUID",
       "reasons": [
         "top_7d_mover"
       ],
-      "price": 0.03737,
-      "impulse_low": 0.0256,
-      "impulse_peak": 0.03892,
-      "impulse_gain_pct": 52.0,
-      "peak_date": "2026-09-30",
-      "retracement_now": 0.116,
-      "retracement_max": 0.366,
+      "price": 1.6684,
+      "impulse_low": 1.0499,
+      "impulse_peak": 1.69,
+      "impulse_gain_pct": 61.0,
+      "peak_date": "2026-10-03",
+      "retracement_now": 0.034,
+      "retracement_max": 0.054,
       "fib_levels": {
-        "0.382": 0.033832,
-        "0.5": 0.03226,
-        "0.618": 0.030688,
-        "0.786": 0.02845
+        "0.382": 1.445482,
+        "0.5": 1.36995,
+        "0.618": 1.294418,
+        "0.786": 1.186881
       },
-      "volume_ratio": 0.78,
+      "volume_ratio": null,
       "choch_up": false,
-      "last_internal_event": {
-        "type": "CHoCH",
-        "dir": "bear",
-        "level": 0.03593,
-        "ts": 1790956800000
-      },
-      "internal_trend": -1,
+      "last_internal_event": null,
+      "internal_trend": 1,
       "swing_trend": 1,
       "nearest_bull_ob_below": {
-        "top": 0.03392,
-        "bottom": 0.03302,
-        "layer": "internal"
+        "top": 1.0892,
+        "bottom": 1.0499,
+        "layer": "swing"
       },
       "nearest_bear_ob_above": null,
       "trailing_extremes": {
-        "top": 0.03892,
+        "top": 1.69,
         "top_label": "Weak High",
-        "bottom": 0.02662,
+        "bottom": 1.0499,
         "bottom_label": "Strong Low",
-        "equilibrium": 0.03277
+        "equilibrium": 1.36995
       },
       "premium_discount_luxalgo": "PREMIUM",
       "structure_engine": "smc_structure-v65.4 (aligned to LuxAlgo SMC Pine source, CC BY-NC-SA 4.0)",
@@ -1866,40 +1785,52 @@
         "recent_break_validations": [
           {
             "side": "high",
-            "level": 0.0369,
+            "level": 1.6425,
             "result": "CONFIRMED",
-            "ts": 1790812800000
+            "ts": 1791000000000
           },
           {
             "side": "high",
-            "level": 0.03473,
+            "level": 1.5209,
             "result": "SWEEP",
-            "ts": 1790784000000
+            "ts": 1790683200000
+          },
+          {
+            "side": "high",
+            "level": 1.5593,
+            "result": "CONFIRMED",
+            "ts": 1790928000000
           },
           {
             "side": "low",
-            "level": 0.03593,
-            "result": "CONFIRMED",
-            "ts": 1790956800000
+            "level": 1.4426,
+            "result": "SWEEP",
+            "ts": 1790841600000
+          },
+          {
+            "side": "high",
+            "level": 1.5185,
+            "result": "SWEEP",
+            "ts": 1790899200000
           }
         ],
         "bullish_hold_signal": false,
         "last_low_sweep": null,
         "premium_discount_impulse": {
-          "position": 0.884,
+          "position": 0.966,
           "zone": "PREMIUM",
-          "equilibrium": 0.03226,
-          "range_low": 0.0256,
-          "range_high": 0.03892
+          "equilibrium": 1.36995,
+          "range_low": 1.0499,
+          "range_high": 1.69
         },
         "volume_profile_30d": {
-          "poc": 0.029823125,
-          "value_area_high": 0.03610125,
-          "value_area_low": 0.02892625,
+          "poc": 1.4166239583,
+          "value_area_high": 1.48996875,
+          "value_area_low": 1.1832541667,
           "bars_used": 180
         },
-        "long_invalidation_level": 0.0349,
-        "swing_low_ts": 1790971200000,
+        "long_invalidation_level": 1.4331,
+        "swing_low_ts": 1790856000000,
         "layer_len": 5
       },
       "oi_error": "OKX /rubik/stat/contracts/open-interest-volume code=51012 msg=Token does not exist",
@@ -1920,12 +1851,12 @@
       "reasons": [
         "watchlist"
       ],
-      "price": 119.78,
+      "price": 119.93,
       "impulse_low": 86.67,
       "impulse_peak": 124.96,
       "impulse_gain_pct": 44.2,
       "peak_date": "2026-09-26",
-      "retracement_now": 0.135,
+      "retracement_now": 0.131,
       "retracement_max": 0.224,
       "fib_levels": {
         "0.382": 110.33322,
@@ -1933,7 +1864,7 @@
         "0.618": 101.29678,
         "0.786": 94.86406
       },
-      "volume_ratio": 0.74,
+      "volume_ratio": 0.75,
       "choch_up": false,
       "last_internal_event": {
         "type": "BOS",
@@ -1986,7 +1917,7 @@
         "bullish_hold_signal": false,
         "last_low_sweep": null,
         "premium_discount_impulse": {
-          "position": 0.865,
+          "position": 0.869,
           "zone": "PREMIUM",
           "equilibrium": 105.815,
           "range_low": 86.67,
@@ -2003,10 +1934,10 @@
         "layer_len": 5
       },
       "oi_drawdown_pct": 100.0,
-      "funding_now_pct": 0.0084,
+      "funding_now_pct": 0.0049,
       "reset_checks": {
         "oi_reset": true,
-        "funding_neutral": false,
+        "funding_neutral": true,
         "volume_dried_up": false,
         "healthy_depth": false
       },
@@ -2020,12 +1951,12 @@
       "reasons": [
         "etf_watch"
       ],
-      "price": 0.2449,
+      "price": 0.2457,
       "impulse_low": 0.1895,
       "impulse_peak": 0.2654,
       "impulse_gain_pct": 40.1,
       "peak_date": "2026-09-25",
-      "retracement_now": 0.27,
+      "retracement_now": 0.26,
       "retracement_max": 0.377,
       "fib_levels": {
         "0.382": 0.236406,
@@ -2107,7 +2038,7 @@
           "ts": 1790971200000
         },
         "premium_discount_impulse": {
-          "position": 0.73,
+          "position": 0.74,
           "zone": "PREMIUM",
           "equilibrium": 0.22745,
           "range_low": 0.1895,
@@ -2124,7 +2055,7 @@
         "layer_len": 5
       },
       "oi_drawdown_pct": 100.0,
-      "funding_now_pct": 0.0057,
+      "funding_now_pct": 0.0058,
       "reset_checks": {
         "oi_reset": true,
         "funding_neutral": false,
@@ -2138,9 +2069,9 @@
   ],
   "n_screened": 29,
   "status_counts": {
-    "RESUMING": 0,
-    "RESET_DONE": 6,
-    "ONGOING": 15,
+    "RESUMING": 1,
+    "RESET_DONE": 5,
+    "ONGOING": 14,
     "BROKEN": 0
   },
   "notes": "RESUMING still needs a visual check of the 4H chart before any entry; RESET_DONE = first-tranche zone at most. Gate + Agent Room always apply.",
