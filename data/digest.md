@@ -1,10 +1,10 @@
-# Radar digest - 2026-10-03 15:43 UTC
+# Radar digest - 2026-10-03 16:13 UTC
 
 ## Market
-- BTC scenario **A** | price 84760 | wk close 84465 vs 82800 | 50W 78247 (8.32%) | 59m old
+- BTC scenario **A** | price 84760 | wk close 84465 vs 82800 | 50W 78247 (8.32%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 56.49% | ETH/BTC 0.03159 | breadth7d 25% | stables 30d 1.38%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.34pt | 7d -pt | n=32
-- Gold: PAXG 1m -4.63% | real10y 2.88 (43bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
+- Gold: PAXG 1m -3.57% | real10y 2.88 (43bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
 - 10y 1w: 6bp = real 3 + breakeven 2 -> **SMALL_MOVE**
 - 10y 1m: 45bp = real 43 + breakeven 1 -> **REAL_YIELD_DRIVEN**
 
@@ -19,11 +19,14 @@
 - ATH: **ONGOING** | +90% impulse, retr 0.04 | OI dd 42% | fund 0.0050 | hold False | inval 0.00573 | OB 0.00573-0.00598
 
 ## Pre-pump candidates
-- NEAR: [A+E] 7d -3.1%
+- SOL: [A+D+E] 7d -1.0%
+- ZEC: [A+E] 7d -15.0%
+- TAO: [A+E] 7d -10.0%
+- NEAR: [A+E] 7d -4.1%
+- XRP: [A+E] 7d -3.6%
+- FIL: [C+E] 7d -1.7%
 - INJ: [A+E] 7d -0.9%
-- SOL: [A+D] 7d -0.8%
-- COMP: [C+E] 7d 6.0%
-- AAVE: [C+D] 7d 16.7%
+- ETH: [D+E] 7d -0.3%
 
 ## ETF pipeline (new this run)
 - optimism NEW: amendment - Canary amends PEPE ETF filing, signaling renewed confidence in crypto market and optimism 
@@ -55,11 +58,11 @@
 - (20 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 61 | mean 5.0% (0.46R) | in profit 42 | older than 7d 44
-- worst: BCH -0.54R, XRP -0.52R, BTC -0.49R | best: SUI 2.05R, ZRO 2.93R, JST 3.21R
+- open 61 | mean 5.4% (0.49R) | in profit 43 | older than 7d 44
+- worst: XRP -0.52R, BCH -0.52R, BTC -0.48R | best: SUI 2.05R, ZRO 3.10R, JST 3.28R
 
 ## System
-- CoinGecko 1165/10000 used, month-end projection 12038 (120%), throttle level 2 | by script {'scan': 290, 'check_liquidity': 57, 'breakout_check': 818}
+- CoinGecko 1168/10000 used, month-end projection 12069 (121%), throttle level 2 | by script {'scan': 292, 'check_liquidity': 58, 'breakout_check': 818}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=18), H2 PENDING (n=38)
 - radar-flags.json scan age: 13m
