@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-03 16:13 UTC
+# Radar digest - 2026-10-03 16:45 UTC
 
 ## Market
-- BTC scenario **A** | price 84760 | wk close 84465 vs 82800 | 50W 78247 (8.32%) | 1h old
+- BTC scenario **A** | price 84832 | wk close 84465 vs 82800 | 50W 78247 (8.42%) | 1m old
 - Alts: **BTC_LED** [-] | BTC.D 56.49% | ETH/BTC 0.03159 | breadth7d 25% | stables 30d 1.38%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.34pt | 7d -pt | n=32
 - Gold: PAXG 1m -3.57% | real10y 2.88 (43bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -9,44 +9,38 @@
 - 10y 1m: 45bp = real 43 + breakeven 1 -> **REAL_YIELD_DRIVEN**
 
 ## Coins in correction (entry_ready first)
-- NEAR: **ONGOING** | +236% impulse, retr 0.24 | OI dd 15% | fund 0.0100 | hold False | inval 4.54500 | OB 4.24600-4.45100
-- UNI: **ONGOING** | +215% impulse, retr 0.24 | OI dd 15% | fund 0.0100 | hold True | inval 8.58000 | OB 5.80800-6.03200
-- GRASS: **ONGOING** | +213% impulse, retr 0.12 | OI dd 8% | fund 0.0050 | hold True | inval 0.65460 | OB 0.66330-0.70210
-- ZEC: **ONGOING** | +212% impulse, retr 0.34 | OI dd 28% | fund 0.0100 | hold True | inval 1086.09000 | OB 1086.09000-1158.80000
-- SEI: **ONGOING** | +120% impulse, retr 0.32 | OI dd 0% | fund 0.0050 | hold False | inval 0.06672 | OB 0.05829-0.05928
-- PUMP: **ONGOING** | +109% impulse, retr 0.14 | OI dd 6% | fund 0.0050 | hold True | inval 0.00430 | OB 0.00340-0.00354
-- SUI: **ONGOING** | +92% impulse, retr 0.18 | OI dd 6% | fund 0.0100 | hold True | inval 1.10500 | OB 0.93370-0.97450
-- ATH: **ONGOING** | +90% impulse, retr 0.04 | OI dd 42% | fund 0.0050 | hold False | inval 0.00573 | OB 0.00573-0.00598
+- MINA: **ONGOING** | +282% impulse, retr 0.09 | OI dd 100% | fund -0.0204 | hold False | inval 0.14069 | OB 0.13673-0.14379
+- NEAR: **ONGOING** | +236% impulse, retr 0.24 | OI dd 100% | fund 0.0100 | hold False | inval 4.58800 | OB 4.24600-4.45100
+- GRASS: **ONGOING** | +213% impulse, retr 0.15 | OI dd 100% | fund 0.0050 | hold True | inval 0.65460 | OB 0.66330-0.70210
+- ZEC: **ONGOING** | +202% impulse, retr 0.35 | OI dd 100% | fund 0.0100 | hold True | inval 1276.88000 | OB 1086.09000-1158.80000
+- STX: **ONGOING** | +199% impulse, retr 0.08 | OI dd 100% | fund 0.0100 | hold False | inval 0.35090 | OB 0.31090-0.31560
+- UNI: **ONGOING** | +198% impulse, retr 0.27 | OI dd 100% | fund 0.0100 | hold True | inval 8.58000 | OB 5.80800-6.03200
+- AAVE: **ONGOING** | +95% impulse, retr 0.10 | OI dd 100% | fund 0.0067 | hold False | inval 157.59000 | OB 157.59000-162.03000
+- SUI: **ONGOING** | +92% impulse, retr 0.20 | OI dd 100% | fund 0.0100 | hold True | inval 1.10500 | OB 0.93370-0.97450
 
 ## Pre-pump candidates
-- SOL: [A+D+E] 7d -1.0%
-- ZEC: [A+E] 7d -15.0%
-- TAO: [A+E] 7d -10.0%
+- EIGEN: [C+E] 7d -8.7%
 - NEAR: [A+E] 7d -4.1%
-- XRP: [A+E] 7d -3.6%
-- FIL: [C+E] 7d -1.7%
-- INJ: [A+E] 7d -0.9%
-- ETH: [D+E] 7d -0.3%
+- SOL: [A+D] 7d -1.0%
+- AAVE: [C+D] 7d 15.3%
 
 ## ETF pipeline (new this run)
-- optimism NEW: amendment - Canary amends PEPE ETF filing, signaling renewed confidence in crypto market and optimism 
-- tron NEW: other - TRON: Canary Staked TRX ETF Rings Cboe Bell - blockchain.news
-- zcash: other - Zcash ETF Lost Over $93 Million This Week. Is the Rally Over for ZEC? - Yahoo Finance
-- zcash: other - Zcash Price Crashes Into Bear Market as ZEC ETF Outflows Jump - Benzinga
-- zcash: other - Grayscale Zcash Spot ETF Sees $93.56M in Single-Week Redemptions: Honeymoon Period Turns S
-- zcash: other - Grayscale Zcash ETF Records $93.56M Weekly Outflows - TronWeekly
-- ondo-finance: other - How to Buy Roundhill Memory ETF Tokenized ETF (Ondo) (DRAMon) in Solomon Islands with Cred
-- zcash: other - Zcash Price Crashes Into Bear Market as ZEC ETF Outflows Jump - Benzinga
+- pepe NEW: launch - Canary Pepe ETF Amended: What the Filing Says About Launch Odds - Coin Gabbar
+- pepe NEW: amendment - Crypto News | Canary Files Amended S-1 for PEPE ETF, Proposes Cboe BZX Listing - Binance
+- pepe NEW: filing - PEPE Price Drops 7% as Canary Updates Its Spot ETF Filing With SEC: Here's What Changed - 
+- pepe NEW: other - Pepe Price Prediction: Can PEPE Clear $0.00000462 After ETF News? - Coin Gabbar
+- cardano: other - Cardano Price Holds Near $0.24 as Hashdex ETF Adds ADA, but Pepeto Presale Tells a Differe
+- cardano: other - Cardano Price Holds Near $0.24 as Hashdex ETF Adds ADA, but Pepeto Presale Tells a Differe
 
 ## Derivatives flags (OKX)
-- ETH: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.92 | taker 0.98
-- SOL: LONG_FLUSH_24H | OI/mc -% | topPos 0.94 | taker 1.00
-- NEAR: LONG_FLUSH_24H | OI/mc -% | topPos 0.96 | taker 0.92
-- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 1.01
-- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 0.98
-- SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 0.94
-- SEI: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 0.81
-- TAO: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.98
+- ETH: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.92 | taker 0.96
+- SOL: LONG_FLUSH_24H | OI/mc -% | topPos 0.95 | taker 1.00
+- NEAR: LONG_FLUSH_24H | OI/mc -% | topPos 0.96 | taker 0.95
+- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 0.99
+- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 0.95
+- SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.92
+- SEI: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 0.78
+- TAO: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 0.97
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -58,12 +52,12 @@
 - (20 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 61 | mean 5.4% (0.49R) | in profit 43 | older than 7d 44
-- worst: XRP -0.52R, BCH -0.52R, BTC -0.48R | best: SUI 2.05R, ZRO 3.10R, JST 3.28R
+- open 62 | mean 5.1% (0.46R) | in profit 44 | older than 7d 44
+- worst: BCH -0.54R, XRP -0.52R, BTC -0.51R | best: SUI 1.97R, ZRO 2.81R, JST 3.59R
 
 ## System
-- CoinGecko 1168/10000 used, month-end projection 12069 (121%), throttle level 2 | by script {'scan': 292, 'check_liquidity': 58, 'breakout_check': 818}
+- CoinGecko 1170/10000 used, month-end projection 12090 (121%), throttle level 2 | by script {'scan': 294, 'check_liquidity': 58, 'breakout_check': 818}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=18), H2 PENDING (n=38)
-- radar-flags.json scan age: 13m
+- radar-flags.json scan age: 15m
 - excluded from radar (pegged/tokenized equity): 36
