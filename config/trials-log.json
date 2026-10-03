@@ -1,7 +1,7 @@
 {
  "_doc": "v62 (27/9/2026) - every change to a tunable threshold/weight is a TRIAL and counts against the system (multiple-testing). Rules: (1) no threshold change on fewer than MIN_SAMPLE_FOR_CHANGE outcomes; (2) the evidence must come from data NOT used to pick the new value, or the entry is marked in_sample=true and must be re-validated before it is trusted; (3) every change adds an entry here AND updates tracked_parameters.current_value - scripts/trials_check.py warns when code and this file disagree.",
  "min_sample_for_change": 30,
- "trials_count_total": 21,
+ "trials_count_total": 22,
  "tracked_parameters": [
   {
    "name": "AUTO_TRADE_MIN_SCORE",
@@ -324,7 +324,7 @@
   {
    "name": "ATH_CACHE_HOURS",
    "file": "scripts/breakout_check.py",
-   "current_value": 24
+   "current_value": 72
   },
   {
    "name": "LIQ_REFRESH_HOURS",
@@ -430,6 +430,11 @@
    "name": "DEEP_EVAL_MAX_AGE_HOURS",
    "file": "scripts/scan.py",
    "current_value": 12.0
+  },
+  {
+   "name": "CG_FALLBACK_CACHE_HOURS",
+   "file": "scripts/breakout_check.py",
+   "current_value": 6.0
   }
  ],
  "trials": [
@@ -722,6 +727,20 @@
    "revalidated": false,
    "retroactive_entry": false,
    "flag": "display/bookkeeping only - auto_paper_trade still reads top-level fields that exist only on a real deep-evaluation run"
+  },
+  {
+   "id": "T022",
+   "version": "v71",
+   "date": "2026-10-04",
+   "parameter": "CoinGecko cost: ATH price cached 72h (was the ATH % cached 24h) with the distance recomputed from the live scan price every run and new highs taken from our own candles; CoinGecko fallback 4H candles/volumes for coins without an OKX market cached 6h",
+   "old": "~480 CoinGecko credits/day (breakout_check ~360/day), month-end projection 108%, throttle level 2 on 3/10",
+   "new": "data-fetch frequency only - no signal rule changed; ATH distance is now fresher than before (live price instead of a 24h-old %)",
+   "evidence": "cg-usage.json 1-3 Oct 2026: 466/496/88 per day, breakout_check 750 of 1050",
+   "n": null,
+   "in_sample": false,
+   "revalidated": false,
+   "retroactive_entry": false,
+   "flag": "operational/bookkeeping - Baseline (baseline-v70) signal logic unchanged; user idea (ATH every 72h, distance computed locally)"
   }
  ],
  "hypotheses": [

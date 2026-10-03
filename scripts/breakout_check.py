@@ -413,8 +413,41 @@ def fetch_json(url: str):
     raise last_exc
 
 
+CG_FALLBACK_CACHE_PATH = Path(__file__).resolve().parent.parent / "data" / "cg-fallback-cache.json"
+CG_FALLBACK_CACHE_HOURS = 6.0   # v71: coins with no OKX market re-fetch CoinGecko 4H data at most every 6h (was every 3h gate run)
+
+
+def _cg_fallback_cached(kind: str, coin_id: str, url: str, extract=None):
+    """v71: CoinGecko fallback with a small on-disk cache. 4H candles barely
+    change in 6h for the slow features that use them; the scan still prices
+    every coin every 30 min, so entries are never priced from the cache."""
+    try:
+        cache = json.loads(CG_FALLBACK_CACHE_PATH.read_text(encoding="utf-8"))
+    except Exception:  # noqa: BLE001
+        cache = {}
+    key = f"{kind}:{coin_id}"
+    hit = cache.get(key)
+    if hit:
+        try:
+            age_h = (datetime.now(timezone.utc) - datetime.fromisoformat(hit["at"])).total_seconds() / 3600
+            if age_h < CG_FALLBACK_CACHE_HOURS:
+                return hit["data"]
+        except (KeyError, ValueError):
+            pass
+    data = fetch_json(url)
+    if extract:
+        data = extract(data)
+    cache[key] = {"data": data, "at": datetime.now(timezone.utc).isoformat()}
+    try:
+        CG_FALLBACK_CACHE_PATH.write_text(json.dumps(cache), encoding="utf-8")
+    except OSError:
+        pass
+    return data
+
+
 def fetch_ohlc(coin_id: str, symbol: str = None):
-    """v66: OKX first (free), CoinGecko only if the coin has no OKX USDT market."""
+    """v66: OKX first (free), CoinGecko only if the coin has no OKX USDT market.
+    v71: the CoinGecko fallback is cached for CG_FALLBACK_CACHE_HOURS."""
     if symbol:
         try:
             rows = okx_ohlc_4h(symbol)
@@ -423,7 +456,7 @@ def fetch_ohlc(coin_id: str, symbol: str = None):
         except Exception as exc:  # noqa: BLE001
             print(f"  [v66] OKX 4H unavailable for {symbol} ({exc}) - falling back to CoinGecko")
     url = f"{COINGECKO_BASE}/coins/{coin_id}/ohlc?{urllib.parse.urlencode({'vs_currency': 'usd', 'days': OHLC_DAYS})}"
-    return fetch_json(url)
+    return _cg_fallback_cached("ohlc", coin_id, url)
 
 
 def fetch_hourly_volumes(coin_id: str, symbol: str = None):
@@ -435,37 +468,57 @@ def fetch_hourly_volumes(coin_id: str, symbol: str = None):
         except Exception as exc:  # noqa: BLE001
             print(f"  [v66] OKX 1H unavailable for {symbol} ({exc}) - falling back to CoinGecko")
     url = f"{COINGECKO_BASE}/coins/{coin_id}/market_chart?{urllib.parse.urlencode({'vs_currency': 'usd', 'days': VOLUME_DAYS})}"
-    data = fetch_json(url)
-    return data.get("total_volumes", [])
+    return _cg_fallback_cached("vol", coin_id, url, extract=lambda d: d.get("total_volumes", []))
 
 
 ATH_CACHE_PATH = Path(__file__).resolve().parent.parent / "data" / "ath-cache.json"
-ATH_CACHE_HOURS = 24          # v66: ATH distance moves slowly - one CoinGecko call per coin per day
+ATH_CACHE_HOURS = 72          # v71: ATH *price* refreshed every 72h; distance recomputed from the live price every run
 
 
-def fetch_coin_market_data(coin_id: str):
+def ath_distance_pct(price, ath):
+    """v71: % distance of price below the all-time high (<= 0), same meaning as
+    CoinGecko's ath_change_percentage."""
+    if not price or not ath:
+        return None
+    return (price / ath - 1) * 100
+
+
+def fetch_coin_market_data(coin_id: str, price: float = None, recent_high: float = None):
+    """v71: the ATH *price* is fetched from CoinGecko at most every
+    ATH_CACHE_HOURS (72h) and the distance is recomputed locally every run from
+    the current scan price - so it stays current without a paid call. If a
+    candle high prints above the cached ATH, that high becomes the new ATH
+    locally (a fresh ATH needs no API call to be known)."""
     try:
         cache = json.loads(ATH_CACHE_PATH.read_text(encoding="utf-8"))
     except Exception:  # noqa: BLE001
         cache = {}
-    hit = cache.get(coin_id)
-    if hit:
+    hit = cache.get(coin_id) or {}
+    ath = hit.get("ath")
+    fresh = False
+    if ath:
         try:
-            age_h = (datetime.now(timezone.utc) - datetime.fromisoformat(hit["at"])).total_seconds() / 3600
-            if age_h < ATH_CACHE_HOURS:
-                return hit["ath_change"]
+            fresh = (datetime.now(timezone.utc) - datetime.fromisoformat(hit["at"])).total_seconds() / 3600 < ATH_CACHE_HOURS
         except (KeyError, ValueError):
-            pass
-    value = _fetch_coin_market_data_live(coin_id)
-    cache[coin_id] = {"ath_change": value, "at": datetime.now(timezone.utc).isoformat()}
+            fresh = False
+    if not fresh:
+        ath, live_change = _fetch_coin_market_data_live(coin_id)
+        hit = {"ath": ath, "at": datetime.now(timezone.utc).isoformat()}
+        if not price:
+            cache[coin_id] = hit
+            ATH_CACHE_PATH.write_text(json.dumps(cache), encoding="utf-8")
+            return live_change
+    if ath and recent_high and recent_high > ath:
+        ath = recent_high                      # new all-time high seen in our own candles
+        hit["ath"] = ath
+    cache[coin_id] = hit
     ATH_CACHE_PATH.write_text(json.dumps(cache), encoding="utf-8")
-    return value
+    return ath_distance_pct(price, ath)
 
 
 def _fetch_coin_market_data_live(coin_id: str):
-    """v6: one extra call for ath_change_percentage - the cheapest available
-    proxy for 'is this a structurally beaten-down asset', regardless of how
-    clean the short-term chart looks."""
+    """v6: one extra call for the ATH - the cheapest available proxy for 'is this
+    a structurally beaten-down asset'. v71: returns (ath_price, ath_change_pct)."""
     params = {
         "localization": "false", "tickers": "false", "market_data": "true",
         "community_data": "false", "developer_data": "false", "sparkline": "false",
@@ -473,8 +526,7 @@ def _fetch_coin_market_data_live(coin_id: str):
     url = f"{COINGECKO_BASE}/coins/{coin_id}?{urllib.parse.urlencode(params)}"
     data = fetch_json(url)
     md = data.get("market_data", {}) or {}
-    ath_change = (md.get("ath_change_percentage") or {}).get("usd")
-    return ath_change
+    return (md.get("ath") or {}).get("usd"), (md.get("ath_change_percentage") or {}).get("usd")
 
 
 # ---------- v6: BTC correlation (cluster/beta filter) ----------
@@ -1849,7 +1901,8 @@ def main():
 
         # v6: ATH drawdown (lightweight fundamental red flag #1)
         try:
-            ath_change = fetch_coin_market_data(coin_id)
+            recent_high = max((c[2] for c in candles[-6:]), default=None) if candles else None
+            ath_change = fetch_coin_market_data(coin_id, coin.get("price_usd"), recent_high)
             time.sleep(POLITE_DELAY)
             coin["ath_change_pct"] = round(ath_change, 2) if ath_change is not None else None
             coin["deep_drawdown_flag"] = bool(ath_change is not None and ath_change <= DEEP_DRAWDOWN_ATH_PCT)
