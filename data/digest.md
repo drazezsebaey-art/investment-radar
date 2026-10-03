@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-03 01:46 UTC
+# Radar digest - 2026-10-03 02:11 UTC
 
 ## Market
-- BTC scenario **A** | price 84635 | wk close 84465 vs 82800 | 50W 78247 (8.16%) | 1m old
+- BTC scenario **A** | price 84635 | wk close 84465 vs 82800 | 50W 78247 (8.16%) | 27m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.39% | ETH/BTC 0.03168 | breadth7d 34% | stables 30d 1.38%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.35pt | 7d -pt | n=29
 - Gold: PAXG 1m -4.61% | real10y 2.88 (43bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -21,12 +21,12 @@
 ## Pre-pump candidates
 - TAO: [A+E] 7d -7.6%
 - INJ: [A+E] 7d -6.9%
-- XRP: [A+E] 7d -5.1%
-- NEAR: [A+E] 7d -4.8%
+- AR: [C+E] 7d -6.8%
+- XRP: [A+E] 7d -4.7%
+- NEAR: [A+E] 7d -4.2%
 - BNB: [A+E] 7d -1.0%
 - LINK: [A+E] 7d -0.3%
-- AVAX: [A+E] 7d 2.5%
-- SYRUP: [C+E] 7d 9.5%
+- AVAX: [A+E] 7d 3.2%
 
 ## ETF pipeline (new this run)
 - ripple NEW: amendment - Canary amends PEPE ETF filing, signaling renewed confidence in crypto market and optimism 
@@ -56,12 +56,12 @@
 - vote: decentraland (Decentraland) until 2026-10-03 - Return the money in DAO Committee Multisigs to the DAO Treasury
 
 ## Paper book (open trades, marked to last scan)
-- open 61 | mean 3.4% (0.30R) | in profit 36 | older than 7d 44
-- worst: TIA -0.62R, BTC -0.59R, JTO -0.59R | best: NIGHT 1.83R, SUI 2.13R, JST 2.42R
+- open 61 | mean 3.0% (0.28R) | in profit 35 | older than 7d 44
+- worst: TIA -0.65R, JTO -0.61R, BTC -0.59R | best: NIGHT 1.95R, SUI 1.97R, JST 2.53R
 
 ## System
-- CoinGecko 1030/10000 used, month-end projection 10643 (106%), throttle level 2 | by script {'scan': 226, 'check_liquidity': 54, 'breakout_check': 750}
+- CoinGecko 1032/10000 used, month-end projection 10664 (107%), throttle level 2 | by script {'scan': 228, 'check_liquidity': 54, 'breakout_check': 750}
 - Trials guard: OK (0 untracked)
-- Hypotheses: H1 PENDING (n=17), H2 PENDING (n=35)
-- radar-flags.json scan age: 16m
+- Hypotheses: H1 PENDING (n=17), H2 PENDING (n=36)
+- radar-flags.json scan age: 11m
 - excluded from radar (pegged/tokenized equity): 37
