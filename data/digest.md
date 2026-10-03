@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-03 14:12 UTC
+# Radar digest - 2026-10-03 14:45 UTC
 
 ## Market
-- BTC scenario **A** | price 84859 | wk close 84465 vs 82800 | 50W 78247 (8.45%) | 2h old
+- BTC scenario **A** | price 84760 | wk close 84465 vs 82800 | 50W 78247 (8.32%) | 1m old
 - Alts: **BTC_LED** [-] | BTC.D 56.49% | ETH/BTC 0.03159 | breadth7d 25% | stables 30d 1.38%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.34pt | 7d -pt | n=32
 - Gold: PAXG 1m -4.63% | real10y 2.88 (43bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -9,39 +9,39 @@
 - 10y 1m: 45bp = real 43 + breakeven 1 -> **REAL_YIELD_DRIVEN**
 
 ## Coins in correction (entry_ready first)
-- MINA: **ONGOING** | +312% impulse, retr 0.07 | OI dd 28% | fund 0.0050 | hold False | inval 0.14069 | OB 0.13673-0.14379
 - NEAR: **ONGOING** | +236% impulse, retr 0.24 | OI dd 15% | fund 0.0100 | hold False | inval 4.54500 | OB 4.24600-4.45100
-- UNI: **ONGOING** | +215% impulse, retr 0.24 | OI dd 15% | fund 0.0032 | hold True | inval 8.58000 | OB 5.80800-6.03200
-- GRASS: **ONGOING** | +213% impulse, retr 0.15 | OI dd 8% | fund 0.0050 | hold True | inval 0.65460 | OB 0.56900-0.59990
+- UNI: **ONGOING** | +215% impulse, retr 0.24 | OI dd 15% | fund 0.0100 | hold True | inval 8.58000 | OB 5.80800-6.03200
+- GRASS: **ONGOING** | +213% impulse, retr 0.12 | OI dd 8% | fund 0.0050 | hold True | inval 0.65460 | OB 0.66330-0.70210
 - ZEC: **ONGOING** | +212% impulse, retr 0.34 | OI dd 28% | fund 0.0100 | hold True | inval 1086.09000 | OB 1086.09000-1158.80000
-- NIGHT: **ONGOING** | +197% impulse, retr 0.10 | OI dd 5% | fund -0.0075 | hold False | inval 0.03740 | OB 0.03830-0.03953
-- CARDS: **ONGOING** | +183% impulse, retr 0.15 | OI dd -% | fund - | hold False | inval 0.18390 | OB 0.10510-0.12160
 - SEI: **ONGOING** | +120% impulse, retr 0.32 | OI dd 0% | fund 0.0050 | hold False | inval 0.06672 | OB 0.05829-0.05928
+- PUMP: **ONGOING** | +109% impulse, retr 0.14 | OI dd 6% | fund 0.0050 | hold True | inval 0.00430 | OB 0.00340-0.00354
+- SUI: **ONGOING** | +92% impulse, retr 0.18 | OI dd 6% | fund 0.0100 | hold True | inval 1.10500 | OB 0.93370-0.97450
+- ATH: **ONGOING** | +90% impulse, retr 0.04 | OI dd 42% | fund 0.0050 | hold False | inval 0.00573 | OB 0.00573-0.00598
 
 ## Pre-pump candidates
 - NEAR: [A+E] 7d -4.4%
-- INJ: [A+E] 7d -2.9%
 - SOL: [A+D] 7d -1.4%
-- RAY: [C+E] 7d 1.1%
+- INJ: [A+E] 7d -1.2%
 
 ## ETF pipeline (new this run)
-- ripple NEW: other - XRP Price Forms Golden Cross as ETF Inflows Reach $121M - The Market Periodical
-- binancecoin NEW: other - VanEck BNB ETF Adds Staking, What Changes for VBNB Holders? - Coin Gabbar
-- ripple NEW: other - XRP News Today: Why Is XRP Down Today? Seoul Event and ETF Outflows - Coin Gabbar
-- tron NEW: other - Crypto Price Prediction: New TRX ETF Hits $50 Million in 3 Weeks While Pepeto Targets a Br
-- ripple NEW: other - XRPZ: The XRP ETF Boom Still Has A Long Way To Go (NYSEARCA:XRPZ) - Seeking Alpha
-- cardano: launch - Cardano Price Prediction and NEAR ETF Debut Share the Stage With Remittix’s $0.46 Final Pr
-- near: other - Bitwise NEAR ETF (NRR) Stock Price, News & Analysis - Stock Titan
+- optimism NEW: amendment - Canary amends PEPE ETF filing, signaling renewed confidence in crypto market and optimism 
+- tron NEW: other - TRON: Canary Staked TRX ETF Rings Cboe Bell - blockchain.news
+- zcash: other - Zcash ETF Lost Over $93 Million This Week. Is the Rally Over for ZEC? - Yahoo Finance
+- zcash: other - Zcash Price Crashes Into Bear Market as ZEC ETF Outflows Jump - Benzinga
+- zcash: other - Grayscale Zcash Spot ETF Sees $93.56M in Single-Week Redemptions: Honeymoon Period Turns S
+- zcash: other - Grayscale Zcash ETF Records $93.56M Weekly Outflows - TronWeekly
+- ondo-finance: other - How to Buy Roundhill Memory ETF Tokenized ETF (Ondo) (DRAMon) in Solomon Islands with Cred
+- zcash: other - Zcash Price Crashes Into Bear Market as ZEC ETF Outflows Jump - Benzinga
 
 ## Derivatives flags (OKX)
-- ETH: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.92 | taker 0.94
+- ETH: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.92 | taker 0.95
 - SOL: LONG_FLUSH_24H | OI/mc -% | topPos 0.94 | taker 0.94
-- NEAR: LONG_FLUSH_24H | OI/mc -% | topPos 0.95 | taker 0.92
-- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 0.97
+- NEAR: LONG_FLUSH_24H | OI/mc -% | topPos 0.96 | taker 0.92
+- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 0.99
 - XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 0.90
-- SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 0.94
-- SEI: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 0.77
-- TAO: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 0.96
+- SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 0.93
+- SEI: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 0.81
+- TAO: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.96
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -53,12 +53,12 @@
 - (20 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 62 | mean 4.5% (0.41R) | in profit 41 | older than 7d 44
-- worst: BCH -0.58R, XRP -0.52R, JTO -0.50R | best: SUI 2.05R, ZRO 3.04R, JST 3.16R
+- open 62 | mean 4.7% (0.43R) | in profit 41 | older than 7d 44
+- worst: BCH -0.59R, XRP -0.52R, BTC -0.50R | best: SUI 2.05R, ZRO 3.04R, JST 3.12R
 
 ## System
-- CoinGecko 1159/10000 used, month-end projection 11976 (120%), throttle level 2 | by script {'scan': 284, 'check_liquidity': 57, 'breakout_check': 818}
+- CoinGecko 1161/10000 used, month-end projection 11997 (120%), throttle level 2 | by script {'scan': 286, 'check_liquidity': 57, 'breakout_check': 818}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=18), H2 PENDING (n=37)
-- radar-flags.json scan age: 12m
-- excluded from radar (pegged/tokenized equity): 37
+- radar-flags.json scan age: 15m
+- excluded from radar (pegged/tokenized equity): 36
