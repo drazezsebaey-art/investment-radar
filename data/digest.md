@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-02 23:45 UTC
+# Radar digest - 2026-10-03 00:24 UTC
 
 ## Market
-- BTC scenario **A** | price 84571 | wk close 84465 vs 82800 | 50W 78247 (8.08%) | 1m old
+- BTC scenario **A** | price 84571 | wk close 84465 vs 82800 | 50W 78247 (8.08%) | 40m old
 - Alts: **BTC_LED** [-] | BTC.D 56.51% | ETH/BTC 0.03149 | breadth7d 34% | stables 30d 1.37%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.49pt | 7d -pt | n=28
 - Gold: PAXG 1m -4.61% | real10y 2.88 (43bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -19,10 +19,12 @@
 - SUI: **ONGOING** | +92% impulse, retr 0.24 | OI dd 6% | fund -0.0108 | hold True | inval 1.09770 | OB 0.93370-0.97450
 
 ## Pre-pump candidates
+- INJ: [A+E] 7d -7.7%
 - NEAR: [A+E] 7d -5.4%
-- BNB: [A+E] 7d -0.8%
-- LINK: [A+E] 7d 0.1%
-- AVAX: [A+E] 7d 2.5%
+- XRP: [A+E] 7d -5.3%
+- BNB: [A+E] 7d -1.1%
+- LINK: [A+E] 7d -0.5%
+- AVAX: [A+E] 7d 2.0%
 
 ## ETF pipeline (new this run)
 - pepe NEW: amendment - Canary amends PEPE ETF filing, signaling renewed confidence in crypto market and optimism 
@@ -50,12 +52,12 @@
 - vote: decentraland (Decentraland) until 2026-10-03 - Return the money in DAO Committee Multisigs to the DAO Treasury
 
 ## Paper book (open trades, marked to last scan)
-- open 59 | mean 1.9% (0.18R) | in profit 31 | older than 7d 35
-- worst: TIA -0.71R, JTO -0.70R, BCH -0.64R | best: NIGHT 1.63R, SUI 1.63R, JST 2.14R
+- open 61 | mean 2.5% (0.23R) | in profit 32 | older than 7d 44
+- worst: JTO -0.65R, TIA -0.64R, BTC -0.63R | best: NIGHT 1.71R, SUI 1.80R, JST 2.26R
 
 ## System
-- CoinGecko 962/10000 used, month-end projection 9941 (99%), throttle level 1 | by script {'scan': 218, 'check_liquidity': 52, 'breakout_check': 692}
+- CoinGecko 1023/10000 used, month-end projection 10571 (106%), throttle level 2 | by script {'scan': 220, 'check_liquidity': 53, 'breakout_check': 750}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=17), H2 PENDING (n=35)
-- radar-flags.json scan age: 15m
+- radar-flags.json scan age: 24m
 - excluded from radar (pegged/tokenized equity): 37
