@@ -8,8 +8,10 @@ on:
   workflow_dispatch:
     inputs:
       task:
-        description: "calendar | gate | tests"
-        default: "tests"
+        description: "What to run"
+        type: choice
+        options: [calendar, tests, gate]
+        default: calendar
         required: true
 
 permissions:
