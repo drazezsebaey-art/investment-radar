@@ -1,7 +1,7 @@
 {
  "_doc": "v62 (27/9/2026) - every change to a tunable threshold/weight is a TRIAL and counts against the system (multiple-testing). Rules: (1) no threshold change on fewer than MIN_SAMPLE_FOR_CHANGE outcomes; (2) the evidence must come from data NOT used to pick the new value, or the entry is marked in_sample=true and must be re-validated before it is trusted; (3) every change adds an entry here AND updates tracked_parameters.current_value - scripts/trials_check.py warns when code and this file disagree.",
  "min_sample_for_change": 30,
- "trials_count_total": 22,
+ "trials_count_total": 24,
  "tracked_parameters": [
   {
    "name": "AUTO_TRADE_MIN_SCORE",
@@ -741,6 +741,34 @@
    "revalidated": false,
    "retroactive_entry": false,
    "flag": "operational/bookkeeping - Baseline (baseline-v70) signal logic unchanged; user idea (ATH every 72h, distance computed locally)"
+  },
+  {
+   "id": "T023",
+   "version": "lab T1-v1.3",
+   "date": "2026-10-04",
+   "parameter": "T1 stop = donchian_high - 1.0 x ATR(4H) (was base_low - 0.2 x ATR)",
+   "old": "base-low stop: median distance 16.8% in development, 142 of 144 signals rejected by the 8% contract cap",
+   "new": "breakout-level stop, consistent with T1's own failure rule",
+   "evidence": "development-period signal COUNTS only, no performance viewed",
+   "n": null,
+   "in_sample": true,
+   "revalidated": false,
+   "retroactive_entry": false,
+   "flag": "mutation 1 of 3 for T1 in cycle 1; approved by Azez"
+  },
+  {
+   "id": "T024",
+   "version": "lab T1-v1.3",
+   "date": "2026-10-04",
+   "parameter": "translation fix: DATA_ERROR only for would-be signals (RC 10 wording)",
+   "old": "any candidate with a gap in its window logged as DATA_ERROR (44%)",
+   "new": "only candidates that pass every other rule (4.4%)",
+   "evidence": "development dry run",
+   "n": null,
+   "in_sample": true,
+   "revalidated": false,
+   "retroactive_entry": false,
+   "flag": "the one translation fix allowed in development"
   }
  ],
  "hypotheses": [

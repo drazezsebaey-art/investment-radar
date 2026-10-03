@@ -120,7 +120,13 @@ def simulate(spec: Spec, candles: List[Candle], candle_ms: int, optimistic: bool
         res.update(status="INVALID", reason="ENTRY_GAP", sub_reason=bad, fill_price=fill)
         return res
     risk = fill - spec.stop
-    targets = spec.targets_fn(fill, risk) if spec.targets_fn else list(spec.targets)
+    if spec.targets_fn:
+        try:
+            targets = spec.targets_fn(fill, risk, candles[fill_idx].t)   # T2: targets frozen at fill time
+        except TypeError:
+            targets = spec.targets_fn(fill, risk)
+    else:
+        targets = list(spec.targets)
     if spec.min_rr_net is not None:
         rr = (targets[0] - fill - spec.cost * fill) / risk
         if rr < spec.min_rr_net:
