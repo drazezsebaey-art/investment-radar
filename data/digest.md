@@ -1,4 +1,4 @@
-# Radar digest - 2026-10-03 00:45 UTC
+# Radar digest - 2026-10-03 01:13 UTC
 
 ## Market
 - BTC scenario **A** | price 84571 | wk close 84465 vs 82800 | 50W 78247 (8.08%) | 1h old
@@ -19,12 +19,12 @@
 - SUI: **ONGOING** | +92% impulse, retr 0.24 | OI dd 6% | fund -0.0108 | hold True | inval 1.09770 | OB 0.93370-0.97450
 
 ## Pre-pump candidates
-- INJ: [A+E] 7d -7.7%
-- NEAR: [A+E] 7d -5.4%
-- XRP: [A+E] 7d -5.3%
-- BNB: [A+E] 7d -1.1%
-- LINK: [A+E] 7d -0.5%
-- AVAX: [A+E] 7d 2.0%
+- INJ: [A+E] 7d -6.9%
+- XRP: [A+E] 7d -5.1%
+- NEAR: [A+E] 7d -4.8%
+- BNB: [A+E] 7d -1.0%
+- LINK: [A+E] 7d -0.3%
+- AVAX: [A+E] 7d 2.5%
 
 ## ETF pipeline (new this run)
 - pepe NEW: amendment - Canary amends PEPE ETF filing, signaling renewed confidence in crypto market and optimism 
@@ -52,12 +52,12 @@
 - vote: decentraland (Decentraland) until 2026-10-03 - Return the money in DAO Committee Multisigs to the DAO Treasury
 
 ## Paper book (open trades, marked to last scan)
-- open 61 | mean 3.1% (0.29R) | in profit 36 | older than 7d 44
-- worst: TIA -0.62R, JTO -0.62R, BTC -0.61R | best: NIGHT 1.76R, SUI 2.05R, JST 2.18R
+- open 61 | mean 3.4% (0.30R) | in profit 35 | older than 7d 44
+- worst: TIA -0.63R, JTO -0.61R, BCH -0.57R | best: SUI 2.13R, NIGHT 2.20R, JST 2.33R
 
 ## System
-- CoinGecko 1025/10000 used, month-end projection 10592 (106%), throttle level 2 | by script {'scan': 222, 'check_liquidity': 53, 'breakout_check': 750}
+- CoinGecko 1028/10000 used, month-end projection 10623 (106%), throttle level 2 | by script {'scan': 224, 'check_liquidity': 54, 'breakout_check': 750}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=17), H2 PENDING (n=35)
-- radar-flags.json scan age: 15m
+- radar-flags.json scan age: 13m
 - excluded from radar (pegged/tokenized equity): 37
