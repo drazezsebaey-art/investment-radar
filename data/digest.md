@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-03 11:13 UTC
+# Radar digest - 2026-10-03 11:45 UTC
 
 ## Market
-- BTC scenario **A** | price 84594 | wk close 84465 vs 82800 | 50W 78247 (8.11%) | 1h old
+- BTC scenario **A** | price 84594 | wk close 84465 vs 82800 | 50W 78247 (8.11%) | 2h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.42% | ETH/BTC 0.03169 | breadth7d 31% | stables 30d 1.39%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.47pt | 7d -pt | n=31
 - Gold: PAXG 1m -4.63% | real10y 2.88 (43bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -21,12 +21,12 @@
 ## Pre-pump candidates
 - SOL: [A+D+E] 7d -0.3%
 - ZEC: [A+E] 7d -13.6%
-- TAO: [A+E] 7d -6.8%
 - HYPE: [A+E] 7d -4.2%
 - XRP: [A+E] 7d -3.7%
 - NEAR: [A+E] 7d -3.5%
 - INJ: [A+E] 7d -2.2%
 - BNB: [A+E] 7d -0.3%
+- ETH: [D+E] 7d 0.1%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - Bitwise XRP ETF Sees Near‑3% AUM Surge as Investors Chase Token’s Momentum - TipRanks
@@ -39,10 +39,10 @@
 
 ## Derivatives flags (OKX)
 - ETH: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.92 | taker 0.96
-- SOL: LONG_FLUSH_24H | OI/mc -% | topPos 0.94 | taker 0.94
-- NEAR: LONG_FLUSH_24H | OI/mc -% | topPos 0.95 | taker 0.91
+- SOL: LONG_FLUSH_24H | OI/mc -% | topPos 0.94 | taker 0.95
+- NEAR: LONG_FLUSH_24H | OI/mc -% | topPos 0.95 | taker 0.92
 - AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 0.93
-- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 0.92
+- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 0.91
 - SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 0.95
 - SEI: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 0.82
 - TAO: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.95
@@ -57,12 +57,12 @@
 - (20 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 60 | mean 4.4% (0.39R) | in profit 39 | older than 7d 44
-- worst: XRP -0.63R, BCH -0.59R, BTC -0.58R | best: SUI 2.05R, ZRO 2.41R, JST 3.05R
+- open 61 | mean 3.9% (0.35R) | in profit 39 | older than 7d 44
+- worst: XRP -0.63R, BTC -0.58R, BCH -0.57R | best: SUI 2.05R, ZRO 2.47R, JST 3.09R
 
 ## System
-- CoinGecko 1071/10000 used, month-end projection 11067 (111%), throttle level 2 | by script {'scan': 264, 'check_liquidity': 57, 'breakout_check': 750}
+- CoinGecko 1073/10000 used, month-end projection 11088 (111%), throttle level 2 | by script {'scan': 266, 'check_liquidity': 57, 'breakout_check': 750}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=18), H2 PENDING (n=37)
-- radar-flags.json scan age: 13m
+- radar-flags.json scan age: 15m
 - excluded from radar (pegged/tokenized equity): 37
