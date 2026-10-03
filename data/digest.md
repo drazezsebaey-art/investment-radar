@@ -1,4 +1,4 @@
-# Radar digest - 2026-10-03 04:45 UTC
+# Radar digest - 2026-10-03 05:13 UTC
 
 ## Market
 - BTC scenario **A** | price 84659 | wk close 84465 vs 82800 | 50W 78247 (8.19%) | 1h old
@@ -58,12 +58,12 @@
 - vote: decentraland (Decentraland) until 2026-10-03 - Return the money in DAO Committee Multisigs to the DAO Treasury
 
 ## Paper book (open trades, marked to last scan)
-- open 61 | mean 3.0% (0.28R) | in profit 36 | older than 7d 44
-- worst: TIA -0.66R, BCH -0.65R, BTC -0.62R | best: SUI 1.80R, NIGHT 1.81R, JST 3.08R
+- open 61 | mean 3.2% (0.29R) | in profit 36 | older than 7d 44
+- worst: TIA -0.67R, BCH -0.65R, JTO -0.62R | best: SUI 1.80R, NIGHT 1.90R, JST 3.16R
 
 ## System
-- CoinGecko 1043/10000 used, month-end projection 10778 (108%), throttle level 2 | by script {'scan': 238, 'check_liquidity': 55, 'breakout_check': 750}
+- CoinGecko 1046/10000 used, month-end projection 10809 (108%), throttle level 2 | by script {'scan': 240, 'check_liquidity': 56, 'breakout_check': 750}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=17), H2 PENDING (n=36)
-- radar-flags.json scan age: 15m
+- radar-flags.json scan age: 13m
 - excluded from radar (pegged/tokenized equity): 37
