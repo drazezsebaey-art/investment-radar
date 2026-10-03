@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-03 18:46 UTC
+# Radar digest - 2026-10-03 19:13 UTC
 
 ## Market
-- BTC scenario **A** | price 84941 | wk close 84465 vs 82800 | 50W 78247 (8.55%) | 1m old
+- BTC scenario **A** | price 84941 | wk close 84465 vs 82800 | 50W 78247 (8.55%) | 28m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.43% | ETH/BTC 0.03160 | breadth7d 28% | stables 30d 1.39%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.38pt | 7d -pt | n=33
 - Gold: PAXG 1m -3.57% | real10y 2.88 (43bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -19,7 +19,9 @@
 - SUI: **ONGOING** | +92% impulse, retr 0.19 | OI dd 100% | fund 0.0100 | hold True | inval 1.10500 | OB 0.93370-0.97450
 
 ## Pre-pump candidates
+- INJ: [A+E] 7d -1.5%
 - SOL: [A+D] 7d -1.3%
+- AAVE: [C+D] 7d 15.5%
 
 ## ETF pipeline (new this run)
 - pepe NEW: amendment - Crypto News | Canary Files Amended S-1 for PEPE ETF, Proposes Cboe BZX Listing - Binance
@@ -46,12 +48,12 @@
 - (20 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 61 | mean 5.4% (0.49R) | in profit 43 | older than 7d 44
-- worst: XRP -0.52R, BCH -0.52R, BTC -0.43R | best: SUI 1.97R, ZRO 2.93R, JST 3.58R
+- open 61 | mean 5.5% (0.49R) | in profit 43 | older than 7d 44
+- worst: XRP -0.52R, BCH -0.50R, BTC -0.44R | best: SUI 1.97R, ZRO 2.98R, JST 3.54R
 
 ## System
-- CoinGecko 1178/10000 used, month-end projection 12173 (122%), throttle level 2 | by script {'scan': 302, 'check_liquidity': 58, 'breakout_check': 818}
+- CoinGecko 1180/10000 used, month-end projection 12193 (122%), throttle level 2 | by script {'scan': 304, 'check_liquidity': 58, 'breakout_check': 818}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=18), H2 PENDING (n=38)
-- radar-flags.json scan age: 16m
+- radar-flags.json scan age: 13m
 - excluded from radar (pegged/tokenized equity): 36
