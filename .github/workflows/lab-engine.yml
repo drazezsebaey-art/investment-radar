@@ -52,6 +52,6 @@ jobs:
         if: inputs.task != 'tests'
         run: |
           git config user.name "radar-bot"; git config user.email "radar-bot@users.noreply.github.com"
-          git add data/lab/macro-calendar.json data/lab/gate-replay.json 2>/dev/null || true
+          for f in data/lab/macro-calendar.json data/lab/gate-replay.json; do if [ -f "$f" ]; then git add "$f"; fi; done
           git diff --quiet --cached || git commit -m "lab: ${{ inputs.task }} $(date -u +%Y-%m-%dT%H:%MZ)"
           for i in 1 2 3 4 5; do git pull --rebase origin main && git push && break; sleep $((RANDOM % 10 + 5)); done
