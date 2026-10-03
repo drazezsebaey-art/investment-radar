@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-03 06:43 UTC
+# Radar digest - 2026-10-03 07:13 UTC
 
 ## Market
-- BTC scenario **A** | price 84636 | wk close 84465 vs 82800 | 50W 78247 (8.16%) | 58m old
+- BTC scenario **A** | price 84636 | wk close 84465 vs 82800 | 50W 78247 (8.16%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.39% | ETH/BTC 0.03164 | breadth7d 37% | stables 30d 1.39%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.40pt | 7d -pt | n=30
 - Gold: PAXG 1m -4.53% | real10y 2.88 (43bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -21,12 +21,12 @@
 ## Pre-pump candidates
 - SOL: [A+D+E] 7d -0.9%
 - ZEC: [A+E] 7d -14.2%
-- XRP: [A+E] 7d -4.6%
+- XRP: [A+E] 7d -4.2%
 - HYPE: [A+E] 7d -4.0%
-- NEAR: [A+E] 7d -3.8%
+- NEAR: [A+E] 7d -3.7%
 - INJ: [A+E] 7d -1.1%
 - BNB: [A+E] 7d -0.9%
-- ETH: [D+E] 7d -0.5%
+- ETH: [D+E] 7d -0.2%
 
 ## ETF pipeline (new this run)
 - solana NEW: other - Solana's Record ETF Inflows Put $125 Back in Play as SOL Defends $118 - CryptoDaily
@@ -55,11 +55,11 @@
 - vote: decentraland (Decentraland) until 2026-10-03 - Return the money in DAO Committee Multisigs to the DAO Treasury
 
 ## Paper book (open trades, marked to last scan)
-- open 61 | mean 3.4% (0.30R) | in profit 35 | older than 7d 44
-- worst: TIA -0.65R, BCH -0.63R, JTO -0.59R | best: SUI 1.88R, NIGHT 2.30R, JST 3.04R
+- open 61 | mean 3.4% (0.31R) | in profit 35 | older than 7d 44
+- worst: BCH -0.62R, TIA -0.62R, BTC -0.60R | best: SUI 1.80R, NIGHT 2.05R, JST 3.07R
 
 ## System
-- CoinGecko 1053/10000 used, month-end projection 10881 (109%), throttle level 2 | by script {'scan': 246, 'check_liquidity': 57, 'breakout_check': 750}
+- CoinGecko 1055/10000 used, month-end projection 10902 (109%), throttle level 2 | by script {'scan': 248, 'check_liquidity': 57, 'breakout_check': 750}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=17), H2 PENDING (n=36)
 - radar-flags.json scan age: 13m
