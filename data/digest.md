@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-03 16:45 UTC
+# Radar digest - 2026-10-03 17:11 UTC
 
 ## Market
-- BTC scenario **A** | price 84832 | wk close 84465 vs 82800 | 50W 78247 (8.42%) | 1m old
+- BTC scenario **A** | price 84832 | wk close 84465 vs 82800 | 50W 78247 (8.42%) | 27m old
 - Alts: **BTC_LED** [-] | BTC.D 56.49% | ETH/BTC 0.03159 | breadth7d 25% | stables 30d 1.38%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.34pt | 7d -pt | n=32
 - Gold: PAXG 1m -3.57% | real10y 2.88 (43bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -19,10 +19,11 @@
 - SUI: **ONGOING** | +92% impulse, retr 0.20 | OI dd 100% | fund 0.0100 | hold True | inval 1.10500 | OB 0.93370-0.97450
 
 ## Pre-pump candidates
-- EIGEN: [C+E] 7d -8.7%
-- NEAR: [A+E] 7d -4.1%
-- SOL: [A+D] 7d -1.0%
-- AAVE: [C+D] 7d 15.3%
+- OP: [A+C] 7d -9.7%
+- INJ: [A+E] 7d -2.7%
+- SOL: [A+D] 7d -1.8%
+- ALGO: [C+E] 7d 8.5%
+- AAVE: [C+D] 7d 15.4%
 
 ## ETF pipeline (new this run)
 - pepe NEW: launch - Canary Pepe ETF Amended: What the Filing Says About Launch Odds - Coin Gabbar
@@ -52,12 +53,12 @@
 - (20 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 62 | mean 5.1% (0.46R) | in profit 44 | older than 7d 44
-- worst: BCH -0.54R, XRP -0.52R, BTC -0.51R | best: SUI 1.97R, ZRO 2.81R, JST 3.59R
+- open 62 | mean 5.3% (0.48R) | in profit 44 | older than 7d 44
+- worst: BCH -0.55R, XRP -0.52R, BTC -0.48R | best: SUI 1.97R, ZRO 2.93R, JST 3.50R
 
 ## System
-- CoinGecko 1170/10000 used, month-end projection 12090 (121%), throttle level 2 | by script {'scan': 294, 'check_liquidity': 58, 'breakout_check': 818}
+- CoinGecko 1172/10000 used, month-end projection 12111 (121%), throttle level 2 | by script {'scan': 296, 'check_liquidity': 58, 'breakout_check': 818}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=18), H2 PENDING (n=38)
-- radar-flags.json scan age: 15m
+- radar-flags.json scan age: 11m
 - excluded from radar (pegged/tokenized equity): 36
