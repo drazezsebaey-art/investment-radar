@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-03 20:45 UTC
+# Radar digest - 2026-10-03 21:14 UTC
 
 ## Market
-- BTC scenario **A** | price 84859 | wk close 84465 vs 82800 | 50W 78247 (8.45%) | 1m old
+- BTC scenario **A** | price 84859 | wk close 84465 vs 82800 | 50W 78247 (8.45%) | 30m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.43% | ETH/BTC 0.03160 | breadth7d 28% | stables 30d 1.39%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.38pt | 7d -pt | n=33
 - Gold: PAXG 1m -3.57% | real10y 2.88 (43bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -19,11 +19,13 @@
 - SUI: **ONGOING** | +92% impulse, retr 0.18 | OI dd 100% | fund 0.0100 | hold True | inval 1.10500 | OB 0.93370-0.97450
 
 ## Pre-pump candidates
-- HYPE: [A+E] 7d -2.8%
-- PEPE: [A+E] 7d -1.6%
+- OP: [A+C] 7d -5.4%
+- HYPE: [A+E] 7d -2.6%
+- RUNE: [D+E] 7d -1.3%
 - SOL: [A+D] 7d -1.1%
-- INJ: [A+E] 7d -0.7%
-- RUNE: [D+E] 7d -0.1%
+- PEPE: [A+E] 7d -0.9%
+- INJ: [A+E] 7d -0.0%
+- AAVE: [C+D] 7d 17.0%
 
 ## ETF pipeline (new this run)
 - pepe NEW: amendment - Canary Amends Pepe ETF Filing, Signaling End of Crypto Winter - Cryptonews.net
@@ -53,12 +55,12 @@
 - (20 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 61 | mean 5.8% (0.52R) | in profit 44 | older than 7d 44
-- worst: XRP -0.52R, BCH -0.48R, BTC -0.47R | best: SUI 2.05R, ZRO 2.81R, JST 3.51R
+- open 61 | mean 5.9% (0.53R) | in profit 44 | older than 7d 44
+- worst: BTC -0.53R, XRP -0.52R, BCH -0.46R | best: SUI 2.05R, ZRO 2.81R, JST 3.53R
 
 ## System
-- CoinGecko 1187/10000 used, month-end projection 12266 (123%), throttle level 2 | by script {'scan': 310, 'check_liquidity': 59, 'breakout_check': 818}
+- CoinGecko 1189/10000 used, month-end projection 12286 (123%), throttle level 2 | by script {'scan': 312, 'check_liquidity': 59, 'breakout_check': 818}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=18), H2 PENDING (n=38)
-- radar-flags.json scan age: 15m
+- radar-flags.json scan age: 13m
 - excluded from radar (pegged/tokenized equity): 36
