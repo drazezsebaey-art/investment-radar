@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-03 21:14 UTC
+# Radar digest - 2026-10-03 21:44 UTC
 
 ## Market
-- BTC scenario **A** | price 84859 | wk close 84465 vs 82800 | 50W 78247 (8.45%) | 30m old
+- BTC scenario **A** | price 84859 | wk close 84465 vs 82800 | 50W 78247 (8.45%) | 60m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.43% | ETH/BTC 0.03160 | breadth7d 28% | stables 30d 1.39%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.38pt | 7d -pt | n=33
 - Gold: PAXG 1m -3.57% | real10y 2.88 (43bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -36,14 +36,14 @@
 - hyperliquid NEW: other - HYPE Price Gains Attention As ETF Growth Meets Key Technical Setup - TronWeekly
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.98 | taker 1.05
-- ETH: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.92 | taker 1.02
-- SOL: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.94 | taker 1.14
-- AVAX: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.91 | taker 1.03
-- XRP: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.87 | taker 1.02
-- SEI: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.91 | taker 0.91
-- ZEC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.97 | taker 0.98
-- ADA: LONG_FLUSH_24H | OI/mc -% | topPos 0.89 | taker 0.97
+- ETH: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.92 | taker 1.03
+- SOL: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.94 | taker 1.12
+- NEAR: AGGRESSIVE_BUYING | OI/mc -% | topPos 0.95 | taker 1.17
+- AVAX: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.91 | taker 1.02
+- XRP: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.87 | taker 1.01
+- SEI: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.91 | taker 0.92
+- ZEC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.98 | taker 0.98
+- ADA: LONG_FLUSH_24H | OI/mc -% | topPos 0.89 | taker 0.96
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -55,12 +55,12 @@
 - (20 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 61 | mean 5.9% (0.53R) | in profit 44 | older than 7d 44
-- worst: BTC -0.53R, XRP -0.52R, BCH -0.46R | best: SUI 2.05R, ZRO 2.81R, JST 3.53R
+- open 62 | mean 5.6% (0.50R) | in profit 45 | older than 7d 44
+- worst: BTC -0.55R, XRP -0.52R, BCH -0.45R | best: SUI 2.05R, ZRO 2.70R, JST 3.53R
 
 ## System
-- CoinGecko 1189/10000 used, month-end projection 12286 (123%), throttle level 2 | by script {'scan': 312, 'check_liquidity': 59, 'breakout_check': 818}
+- CoinGecko 1191/10000 used, month-end projection 12307 (123%), throttle level 2 | by script {'scan': 314, 'check_liquidity': 59, 'breakout_check': 818}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=18), H2 PENDING (n=38)
-- radar-flags.json scan age: 13m
+- radar-flags.json scan age: 14m
 - excluded from radar (pegged/tokenized equity): 36
