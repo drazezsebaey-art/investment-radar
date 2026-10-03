@@ -1,0 +1,101 @@
+name: Lab - data lake
+
+# Research Contract RC-1.2, step 2. Manual only. First run: stage = all.
+on:
+  workflow_dispatch:
+    inputs:
+      stage:
+        description: "all | universe | spot | futures | manifest"
+        default: "all"
+        required: true
+
+permissions:
+  contents: write
+
+env:
+  GH_TOKEN: ${{ github.token }}
+  RELEASE: data-lake-v1
+
+jobs:
+  universe:
+    if: inputs.stage == 'all' || inputs.stage == 'universe'
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    concurrency: { group: radar-scan, cancel-in-progress: false }
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: main }
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - name: Point-in-time universe, start date, splits
+        run: python scripts/lab/build_data_lake.py universe
+      - name: Release asset
+        run: |
+          gh release view "$RELEASE" >/dev/null 2>&1 || gh release create "$RELEASE" --title "Lab data lake v1" --notes "RC-1.2 research data (Binance archive). Do not edit by hand."
+          gh release upload "$RELEASE" lake/spot-1d-all.tar.gz --clobber
+      - name: Commit universe
+        run: |
+          git config user.name "radar-bot"; git config user.email "radar-bot@users.noreply.github.com"
+          git add data/lab/universe/
+          git diff --quiet --cached || git commit -m "lab: data lake universe $(date -u +%Y-%m-%dT%H:%MZ)"
+          for i in 1 2 3 4 5; do git pull --rebase origin main && git push && break; sleep $((RANDOM % 10 + 5)); done
+
+  spot:
+    needs: universe
+    if: always() && (inputs.stage == 'all' || inputs.stage == 'spot') && needs.universe.result != 'failure'
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    strategy:
+      fail-fast: false
+      matrix: { year: [2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026] }
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: main }
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - name: Spot 1H ${{ matrix.year }}
+        run: python scripts/lab/build_data_lake.py spot --year ${{ matrix.year }}
+      - name: Upload
+        run: |
+          for f in lake/spot-1h-${{ matrix.year }}.*; do [ -f "$f" ] && gh release upload "$RELEASE" "$f" --clobber; done || true
+
+  futures:
+    needs: universe
+    if: always() && (inputs.stage == 'all' || inputs.stage == 'futures') && needs.universe.result != 'failure'
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    strategy:
+      fail-fast: false
+      matrix: { year: [2020, 2021, 2022, 2023, 2024, 2025, 2026] }
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: main }
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - name: Futures ${{ matrix.year }}
+        run: python scripts/lab/build_data_lake.py futures --year ${{ matrix.year }}
+      - name: Upload
+        run: |
+          for f in lake/futures-${{ matrix.year }}.*; do [ -f "$f" ] && gh release upload "$RELEASE" "$f" --clobber; done || true
+
+  manifest:
+    needs: [spot, futures]
+    if: always() && (inputs.stage == 'all' || inputs.stage == 'manifest')
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    concurrency: { group: radar-scan, cancel-in-progress: false }
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: main }
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - name: Hash every lake file (dataset_version)
+        run: |
+          mkdir -p lake && gh release download "$RELEASE" -D lake --clobber
+          python scripts/lab/build_data_lake.py manifest
+      - name: Commit manifest
+        run: |
+          git config user.name "radar-bot"; git config user.email "radar-bot@users.noreply.github.com"
+          git add data/lab/universe/lake-manifest.json
+          git diff --quiet --cached || git commit -m "lab: data lake manifest $(date -u +%Y-%m-%dT%H:%MZ)"
+          for i in 1 2 3 4 5; do git pull --rebase origin main && git push && break; sleep $((RANDOM % 10 + 5)); done
