@@ -1,10 +1,10 @@
-# Radar digest - 2026-10-04 15:46 UTC
+# Radar digest - 2026-10-04 16:15 UTC
 
 ## Market
-- BTC scenario **A** | price 85336 | wk close 84465 vs 82800 | 50W 78247 (9.06%) | 33m old
+- BTC scenario **A** | price 85336 | wk close 84465 vs 82800 | 50W 78247 (9.06%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.37% | ETH/BTC 0.03164 | breadth7d 30% | stables 30d 1.06%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.29pt | 7d -pt | n=38
-- Gold: PAXG 1m -3.58% | real10y 2.88 (43bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
+- Gold: PAXG 1m -3.48% | real10y 2.88 (43bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
 - 10y 1w: 6bp = real 3 + breakeven 2 -> **SMALL_MOVE**
 - 10y 1m: 45bp = real 43 + breakeven 1 -> **REAL_YIELD_DRIVEN**
 
@@ -19,14 +19,14 @@
 - AAVE: **ONGOING** | +95% impulse, retr 0.10 | OI dd 100% | fund 0.0044 | hold False | inval 177.97000 | OB 157.59000-162.03000
 
 ## Pre-pump candidates
-- SOL: [A+D+E] 7d -1.1%
+- SOL: [A+D+E] 7d -0.1%
 - ZEC: [A+E] 7d -19.8%
-- NEAR: [A+E] 7d -7.4%
+- NEAR: [A+E] 7d -7.8%
 - TAO: [A+E] 7d -7.2%
 - ADA: [A+E] 7d -4.2%
 - HYPE: [A+E] 7d -2.7%
 - INJ: [A+E] 7d -2.5%
-- XRP: [A+E] 7d -2.0%
+- XRP: [A+E] 7d -0.7%
 
 ## ETF pipeline (new this run)
 - shiba-inu NEW: other - T. Rowe Price ETF May Hold Dogecoin, Shiba Inu Assets - CoinMarketCap
@@ -53,12 +53,12 @@
 - vote: derive (Derive) until 2026-10-05 - DIP: Increase $DRV Buyback Allocation from 35% to 50% of Protocol Fees
 
 ## Paper book (open trades, marked to last scan)
-- open 63 | mean 7.1% (0.63R) | in profit 48 | older than 7d 49
-- worst: BCH -0.42R, TIA -0.39R, XRP -0.31R | best: FET 2.78R, STRK 2.79R, JST 3.84R
+- open 63 | mean 7.0% (0.63R) | in profit 46 | older than 7d 49
+- worst: BCH -0.43R, TIA -0.42R, XRP -0.31R | best: STRK 2.78R, FET 3.11R, JST 3.86R
 
 ## System
-- CoinGecko 1393/10000 used, month-end projection 11913 (119%), throttle level 2 | by script {'scan': 392, 'check_liquidity': 63, 'breakout_check': 935, 'counterfactual_check': 3}
+- CoinGecko 1395/10000 used, month-end projection 11794 (118%), throttle level 2 | by script {'scan': 394, 'check_liquidity': 63, 'breakout_check': 935, 'counterfactual_check': 3}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=18), H2 PENDING (n=41)
-- radar-flags.json scan age: 16m
+- radar-flags.json scan age: 14m
 - excluded from radar (pegged/tokenized equity): 36
