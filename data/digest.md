@@ -1,10 +1,10 @@
-# Radar digest - 2026-10-04 21:45 UTC
+# Radar digest - 2026-10-04 22:13 UTC
 
 ## Market
-- BTC scenario **A** | price 86024 | wk close 85260 vs 82800 | 50W 77783 (10.59%) | 30m old
-- Alts: **BTC_LED** [-] | BTC.D 56.36% | ETH/BTC 0.03166 | breadth7d 26% | stables 30d 1.06%
-- Alt risk (BTC.D): **NORMAL**  | 3d 0.04pt | 7d -pt | n=39
-- Gold: PAXG 1m -3.48% | real10y 2.88 (43bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
+- BTC scenario **A** | price 86024 | wk close 85260 vs 82800 | 50W 77783 (10.59%) | 58m old
+- Alts: **BTC_LED** [-] | BTC.D 56.49% | ETH/BTC 0.03147 | breadth7d 25% | stables 30d 1.07%
+- Alt risk (BTC.D): **NORMAL**  | 3d 0.15pt | 7d -pt | n=40
+- Gold: PAXG 1m -3.36% | real10y 2.88 (43bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
 - 10y 1w: 6bp = real 3 + breakeven 2 -> **SMALL_MOVE**
 - 10y 1m: 45bp = real 43 + breakeven 1 -> **REAL_YIELD_DRIVEN**
 
@@ -19,14 +19,14 @@
 - ZBCN: **ONGOING** | +76% impulse, retr 0.32 | OI dd -% | fund - | hold False | inval 0.00244 | OB 0.00198-0.00202
 
 ## Pre-pump candidates
-- SEI: [A+C+E] 7d -2.2%
-- SOL: [A+D+E] 7d -1.4%
+- SOL: [A+D+E] 7d -1.2%
 - TAO: [A+E] 7d -7.7%
-- XRP: [A+E] 7d -1.7%
+- TIA: [C+E] 7d -5.6%
 - ADA: [A+E] 7d -1.4%
 - HYPE: [A+E] 7d -1.2%
+- XRP: [A+E] 7d -1.1%
 - TRX: [A+E] 7d 0.5%
-- ETH: [D+E] 7d 0.5%
+- AVAX: [A+E] 7d 0.6%
 
 ## ETF pipeline (new this run)
 - pepe NEW: amendment - Canary Capital Amends PEPE ETF Filing, Sets Out Cboe BZX Listing - CryptoRank
@@ -56,12 +56,12 @@
 - vote: derive (Derive) until 2026-10-05 - DIP: Increase $DRV Buyback Allocation from 35% to 50% of Protocol Fees
 
 ## Paper book (open trades, marked to last scan)
-- open 63 | mean 6.9% (0.63R) | in profit 45 | older than 7d 49
-- worst: BCH -0.47R, QNT -0.34R, TIA -0.32R | best: STRK 3.12R, FET 3.51R, JST 3.76R
+- open 63 | mean 6.4% (0.59R) | in profit 44 | older than 7d 49
+- worst: BCH -0.48R, TIA -0.36R, QNT -0.36R | best: STRK 3.19R, FET 3.39R, JST 3.80R
 
 ## System
-- CoinGecko 1418/10000 used, month-end projection 11344 (113%), throttle level 2 | by script {'scan': 416, 'check_liquidity': 64, 'breakout_check': 935, 'counterfactual_check': 3}
+- CoinGecko 1420/10000 used, month-end projection 11239 (112%), throttle level 2 | by script {'scan': 418, 'check_liquidity': 64, 'breakout_check': 935, 'counterfactual_check': 3}
 - Trials guard: OK (0 untracked)
-- Hypotheses: H1 PENDING (n=19), H2 PENDING (n=44)
-- radar-flags.json scan age: 15m
+- Hypotheses: H1 PENDING (n=19), H2 PENDING (n=45)
+- radar-flags.json scan age: 13m
 - excluded from radar (pegged/tokenized equity): 36
