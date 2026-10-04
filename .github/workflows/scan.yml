@@ -123,6 +123,14 @@ jobs:
         if: always()   # v65.1: keyless layers keep running even when scan.py fails (e.g. CoinGecko quota)
         run: python scripts/archive_snapshot.py
 
+      - name: Desk context for the trading-desk page - F&G, US calendar, BTC.D -> Supabase (v72, keyless sources, own gates)
+        if: always()
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          COINMARKETCAL_API_KEY: ${{ secrets.COINMARKETCAL_API_KEY }}
+        run: python scripts/desk_context.py
+
       - name: Digest - one small summary of every layer for low-token reading (v66)
         if: always()
         run: python scripts/digest.py
