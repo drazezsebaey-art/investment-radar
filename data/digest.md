@@ -1,9 +1,9 @@
-# Radar digest - 2026-10-04 05:46 UTC
+# Radar digest - 2026-10-04 06:14 UTC
 
 ## Market
 - BTC scenario **A** | price 84822 | wk close 84465 vs 82800 | 50W 78247 (8.40%) | 1h old
-- Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.30% | ETH/BTC 0.03176 | breadth7d 32% | stables 30d 1.07%
-- Alt risk (BTC.D): **NORMAL**  | 3d 0.34pt | 7d -pt | n=35
+- Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.31% | ETH/BTC 0.03174 | breadth7d 28% | stables 30d 1.07%
+- Alt risk (BTC.D): **NORMAL**  | 3d 0.30pt | 7d -pt | n=36
 - Gold: PAXG 1m -3.50% | real10y 2.88 (43bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
 - 10y 1w: 6bp = real 3 + breakeven 2 -> **SMALL_MOVE**
 - 10y 1m: 45bp = real 43 + breakeven 1 -> **REAL_YIELD_DRIVEN**
@@ -19,14 +19,14 @@
 - AAVE: **ONGOING** | +95% impulse, retr 0.06 | OI dd 100% | fund -0.0026 | hold False | inval 176.35000 | OB 157.59000-162.03000
 
 ## Pre-pump candidates
-- SOL: [A+D+E] 7d 0.0%
-- ZEC: [A+E] 7d -19.6%
+- SOL: [A+D+E] 7d 0.6%
 - RUNE: [D+E] 7d -8.1%
 - B: [C+E] 7d -6.5%
-- NEAR: [A+E] 7d -4.6%
+- NEAR: [A+E] 7d -4.3%
 - HYPE: [A+E] 7d -3.7%
 - ADA: [A+E] 7d -3.3%
 - AERO: [C+E] 7d -3.1%
+- TIA: [C+E] 7d -3.0%
 
 ## ETF pipeline (new this run)
 - pepe NEW: amendment - Crypto News | Canary Files Amended S-1 for PEPE ETF, Proposes Cboe BZX Listing - Binance
@@ -52,12 +52,12 @@
 - (20 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 63 | mean 6.4% (0.56R) | in profit 45 | older than 7d 49
-- worst: XRP -0.52R, BTC -0.48R, BCH -0.42R | best: SUI 2.13R, ZRO 2.81R, JST 3.51R
+- open 63 | mean 6.5% (0.57R) | in profit 48 | older than 7d 49
+- worst: XRP -0.52R, BTC -0.46R, BCH -0.42R | best: STRK 2.09R, ZRO 2.81R, JST 3.58R
 
 ## System
-- CoinGecko 1292/10000 used, month-end projection 12484 (125%), throttle level 2 | by script {'scan': 346, 'check_liquidity': 62, 'breakout_check': 881, 'counterfactual_check': 3}
+- CoinGecko 1294/10000 used, month-end projection 12343 (123%), throttle level 2 | by script {'scan': 348, 'check_liquidity': 62, 'breakout_check': 881, 'counterfactual_check': 3}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=18), H2 PENDING (n=40)
-- radar-flags.json scan age: 16m
+- radar-flags.json scan age: 13m
 - excluded from radar (pegged/tokenized equity): 36
