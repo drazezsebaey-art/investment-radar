@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-04 11:43 UTC
+# Radar digest - 2026-10-04 12:30 UTC
 
 ## Market
-- BTC scenario **A** | price 85288 | wk close 84465 vs 82800 | 50W 78247 (9.00%) | 26m old
+- BTC scenario **A** | price 85288 | wk close 84465 vs 82800 | 50W 78247 (9.00%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.34% | ETH/BTC 0.03170 | breadth7d 29% | stables 30d 1.07%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.32pt | 7d -pt | n=37
 - Gold: PAXG 1m -3.58% | real10y 2.88 (43bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -19,14 +19,14 @@
 - AAVE: **ONGOING** | +95% impulse, retr 0.08 | OI dd 100% | fund -0.0002 | hold False | inval 176.35000 | OB 157.59000-162.03000
 
 ## Pre-pump candidates
-- SOL: [A+D+E] 7d -2.5%
-- ZEC: [A+E] 7d -19.9%
+- SOL: [A+D+E] 7d -2.2%
+- ONDO: [A+E] 7d -9.9%
 - RAY: [C+E] 7d -9.8%
 - TAO: [A+E] 7d -9.5%
-- NEAR: [A+E] 7d -7.3%
+- NEAR: [A+E] 7d -6.4%
 - ADA: [A+E] 7d -4.3%
 - INJ: [A+E] 7d -3.5%
-- SEI: [A+E] 7d -3.5%
+- SEI: [A+E] 7d -3.1%
 
 ## ETF pipeline (new this run)
 - pepe NEW: filing - PEPE ETF Filing Gets an Update — Wall Street Is Watching - Binance
@@ -35,14 +35,14 @@
 - zcash: other - Zcash ETF Records First $93.6M Weekly Outflow: What Does It Mean for ZEC? - Binance
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.99 | taker 1.06
-- ETH: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.94 | taker 1.06
-- SOL: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.96 | taker 1.04
+- BTC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.99 | taker 1.05
+- ETH: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.94 | taker 1.03
+- SOL: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.96 | taker 1.03
 - NEAR: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.97 | taker 1.07
-- AVAX: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.91 | taker 1.04
-- XRP: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.87 | taker 1.00
-- SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 0.92
-- SEI: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.91 | taker 0.98
+- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 0.96
+- XRP: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.87 | taker 0.97
+- SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.85 | taker 0.93
+- SEI: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.90 | taker 0.96
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD
@@ -55,12 +55,12 @@
 - vote: derive (Derive) until 2026-10-05 - DIP: Increase $DRV Buyback Allocation from 35% to 50% of Protocol Fees
 
 ## Paper book (open trades, marked to last scan)
-- open 63 | mean 6.3% (0.55R) | in profit 44 | older than 7d 49
-- worst: XRP -0.42R, BCH -0.41R, TIA -0.38R | best: STRK 2.41R, ZRO 2.58R, JST 3.82R
+- open 64 | mean 6.1% (0.54R) | in profit 45 | older than 7d 49
+- worst: XRP -0.42R, BCH -0.41R, TIA -0.39R | best: STRK 2.43R, ZRO 2.52R, JST 3.79R
 
 ## System
-- CoinGecko 1325/10000 used, month-end projection 11877 (119%), throttle level 2 | by script {'scan': 378, 'check_liquidity': 63, 'breakout_check': 881, 'counterfactual_check': 3}
+- CoinGecko 1381/10000 used, month-end projection 12232 (122%), throttle level 2 | by script {'scan': 380, 'check_liquidity': 63, 'breakout_check': 935, 'counterfactual_check': 3}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=18), H2 PENDING (n=41)
-- radar-flags.json scan age: 13m
+- radar-flags.json scan age: 30m
 - excluded from radar (pegged/tokenized equity): 36
