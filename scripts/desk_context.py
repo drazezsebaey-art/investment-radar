@@ -23,6 +23,7 @@ Never fails the workflow.
 import json
 import os
 import sys
+import urllib.parse
 import urllib.request
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -30,13 +31,14 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "data" / "desk-context.json"
 ALTSEASON = ROOT / "data" / "altseason.json"
-ENGINE_VERSION = "desk-context-v72.1"
+ENGINE_VERSION = "desk-context-v73.1"
 TIMEOUT = 20
 GATES = {"fng": 60, "us_calendar": 180, "cmc_events": 360}
 
 FNG_URL = "https://api.alternative.me/fng/?limit=2"
 FF_URL = "https://nfs.faireconomy.media/ff_calendar_thisweek.json"
-CMC_URL = "https://developers.coinmarketcal.com/v1/events"
+CMC_URL = "https://api.coinmarketcal.com/v2/events"
+CMC_MAX_PAGES = 5
 
 
 def now_utc():
@@ -112,18 +114,24 @@ def fetch_btc_dominance():
 
 
 def fetch_cmc_events(key):
-    end = (now_utc() + timedelta(days=7)).strftime("%d/%m/%Y")
-    url = CMC_URL + "?max=75&dateRangeEnd=" + end
-    d = get_json(url, {"x-api-key": key})
-    out = []
-    for e in (d.get("body") or []):
-        title = e.get("title")
-        if isinstance(title, dict):
-            title = title.get("en")
-        out.append({"title": title, "date": e.get("date_event"),
-                    "coins": [c.get("symbol") for c in (e.get("coins") or []) if c.get("symbol")],
-                    "categories": [c.get("name") for c in (e.get("categories") or []) if isinstance(c, dict)]})
-    return {"events": out, "source": "CoinMarketCal"}
+    """CoinMarketCal API v2 (api.coinmarketcal.com, x-api-key). Free plan: next 7 days, 3k req/month."""
+    start = now_utc()
+    frm, to = start.strftime("%Y-%m-%dT00:00:00Z"), (start + timedelta(days=7)).strftime("%Y-%m-%dT23:59:59Z")
+    out, cursor = [], None
+    for _ in range(CMC_MAX_PAGES):
+        q = {"from": frm, "to": to, "limit": "100", "sortBy": "date_asc"}
+        if cursor:
+            q["cursor"] = cursor
+        d = get_json(CMC_URL + "?" + urllib.parse.urlencode(q), {"x-api-key": key})
+        for e in (d.get("data") or []):
+            out.append({"title": e.get("title"), "date": e.get("date"), "displayed": e.get("displayedDate"),
+                        "estimated": bool(e.get("isEstimated")),
+                        "coins": [str(c.get("symbol") or "").upper() for c in (e.get("coins") or []) if c.get("symbol")],
+                        "slugs": [c.get("slug") for c in (e.get("coins") or []) if c.get("slug")]})
+        cursor = (d.get("meta") or {}).get("cursor")
+        if not cursor:
+            break
+    return {"events": out, "source": "CoinMarketCal API v2", "window": [frm, to]}
 
 
 def upsert(rows):
