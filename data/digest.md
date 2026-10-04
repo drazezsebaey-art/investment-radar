@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-04 08:45 UTC
+# Radar digest - 2026-10-04 09:14 UTC
 
 ## Market
-- BTC scenario **A** | price 85081 | wk close 84465 vs 82800 | 50W 78247 (8.73%) | 1m old
+- BTC scenario **A** | price 85081 | wk close 84465 vs 82800 | 50W 78247 (8.73%) | 29m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.31% | ETH/BTC 0.03174 | breadth7d 28% | stables 30d 1.07%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.30pt | 7d -pt | n=36
 - Gold: PAXG 1m -3.50% | real10y 2.88 (43bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -19,14 +19,14 @@
 - STRK: **ONGOING** | +134% impulse, retr 0.09 | OI dd 100% | fund 0.0050 | hold False | inval 0.04083 | OB 0.03804-0.03962
 
 ## Pre-pump candidates
-- SOL: [A+D+E] 7d -0.2%
+- SOL: [A+D+E] 7d -2.6%
 - ZEC: [A+E] 7d -19.2%
 - NEAR: [A+E] 7d -11.4%
+- SEI: [A+E] 7d -5.0%
 - RUNE: [D+E] 7d -4.7%
 - ADA: [A+E] 7d -3.8%
-- SEI: [A+E] 7d -2.9%
 - HYPE: [A+E] 7d -2.9%
-- INJ: [A+E] 7d -2.7%
+- XRP: [A+E] 7d -2.8%
 
 ## ETF pipeline (new this run)
 - dogecoin NEW: other - Dogecoin News Today: DOGE ETF Questions Return as Remittix Opens Its Next PayFi Testing Ph
@@ -55,12 +55,12 @@
 - (20 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 63 | mean 6.9% (0.60R) | in profit 47 | older than 7d 49
-- worst: XRP -0.42R, BCH -0.40R, BTC -0.34R | best: STRK 2.40R, ZRO 2.58R, JST 3.72R
+- open 63 | mean 6.4% (0.57R) | in profit 45 | older than 7d 49
+- worst: XRP -0.42R, BCH -0.42R, BTC -0.38R | best: STRK 2.14R, ZRO 2.58R, JST 3.75R
 
 ## System
-- CoinGecko 1304/10000 used, month-end projection 12127 (121%), throttle level 2 | by script {'scan': 358, 'check_liquidity': 62, 'breakout_check': 881, 'counterfactual_check': 3}
+- CoinGecko 1314/10000 used, month-end projection 12069 (121%), throttle level 2 | by script {'scan': 368, 'check_liquidity': 62, 'breakout_check': 881, 'counterfactual_check': 3}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=18), H2 PENDING (n=41)
-- radar-flags.json scan age: 15m
+- radar-flags.json scan age: 14m
 - excluded from radar (pegged/tokenized equity): 36
