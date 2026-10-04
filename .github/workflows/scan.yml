@@ -131,6 +131,13 @@ jobs:
           COINMARKETCAL_API_KEY: ${{ secrets.COINMARKETCAL_API_KEY }}
         run: python scripts/desk_context.py
 
+      - name: OKX market cache for the trading-desk page - 1H candles (Volume Profile) + OI snapshots -> Supabase (v73, keyless, every run)
+        if: always()
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+        run: python scripts/okx_market_cache.py
+
       - name: Digest - one small summary of every layer for low-token reading (v66)
         if: always()
         run: python scripts/digest.py
