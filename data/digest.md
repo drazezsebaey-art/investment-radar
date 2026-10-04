@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-04 10:14 UTC
+# Radar digest - 2026-10-04 10:33 UTC
 
 ## Market
-- BTC scenario **A** | price 85081 | wk close 84465 vs 82800 | 50W 78247 (8.73%) | 1h old
+- BTC scenario **A** | price 85081 | wk close 84465 vs 82800 | 50W 78247 (8.73%) | 2h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.34% | ETH/BTC 0.03170 | breadth7d 29% | stables 30d 1.07%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.32pt | 7d -pt | n=37
 - Gold: PAXG 1m -3.58% | real10y 2.88 (43bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -20,13 +20,13 @@
 
 ## Pre-pump candidates
 - SOL: [A+D+E] 7d -2.2%
-- NEAR: [A+E] 7d -9.6%
-- TAO: [A+E] 7d -8.9%
-- ADA: [A+E] 7d -5.1%
-- INJ: [A+E] 7d -4.0%
+- ADA: [A+E] 7d -4.2%
 - SEI: [A+E] 7d -3.9%
-- PEPE: [A+E] 7d -3.8%
-- HYPE: [A+E] 7d -3.1%
+- PEPE: [A+E] 7d -3.0%
+- HYPE: [A+E] 7d -2.6%
+- XRP: [A+E] 7d -2.3%
+- AVAX: [A+E] 7d -0.9%
+- ETH: [D+E] 7d -0.4%
 
 ## ETF pipeline (new this run)
 - dogecoin NEW: other - Dogecoin News Today: DOGE ETF Questions Return as Remittix Opens Its Next PayFi Testing Ph
@@ -56,11 +56,11 @@
 - vote: derive (Derive) until 2026-10-05 - DIP: Increase $DRV Buyback Allocation from 35% to 50% of Protocol Fees
 
 ## Paper book (open trades, marked to last scan)
-- open 63 | mean 6.2% (0.55R) | in profit 44 | older than 7d 49
-- worst: BCH -0.42R, XRP -0.42R, TIA -0.37R | best: FET 2.14R, ZRO 2.70R, JST 3.83R
+- open 63 | mean 6.3% (0.55R) | in profit 44 | older than 7d 49
+- worst: BCH -0.43R, XRP -0.42R, TIA -0.38R | best: SUI 2.05R, ZRO 2.70R, JST 3.78R
 
 ## System
-- CoinGecko 1319/10000 used, month-end projection 11968 (120%), throttle level 2 | by script {'scan': 372, 'check_liquidity': 63, 'breakout_check': 881, 'counterfactual_check': 3}
+- CoinGecko 1321/10000 used, month-end projection 11986 (120%), throttle level 2 | by script {'scan': 374, 'check_liquidity': 63, 'breakout_check': 881, 'counterfactual_check': 3}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=18), H2 PENDING (n=41)
 - radar-flags.json scan age: 13m
