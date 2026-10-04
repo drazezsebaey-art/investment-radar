@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-04 19:45 UTC
+# Radar digest - 2026-10-04 20:15 UTC
 
 ## Market
-- BTC scenario **A** | price 85390 | wk close 85260 vs 82800 | 50W 77783 (9.78%) | 31m old
+- BTC scenario **A** | price 85390 | wk close 85260 vs 82800 | 50W 77783 (9.78%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 56.36% | ETH/BTC 0.03166 | breadth7d 26% | stables 30d 1.06%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.04pt | 7d -pt | n=39
 - Gold: PAXG 1m -3.48% | real10y 2.88 (43bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -19,14 +19,14 @@
 - ZBCN: **ONGOING** | +76% impulse, retr 0.35 | OI dd -% | fund - | hold False | inval 0.00244 | OB 0.00198-0.00202
 
 ## Pre-pump candidates
-- SOL: [A+D+E] 7d -0.4%
+- NEAR: [A+C+E] 7d -8.8%
+- SOL: [A+D+E] 7d -1.7%
 - ZEC: [A+E] 7d -16.0%
 - OP: [A+C] 7d -7.8%
 - TAO: [A+E] 7d -6.7%
 - INJ: [A+E] 7d -5.1%
-- NEAR: [A+E] 7d -4.4%
+- XRP: [A+E] 7d -2.1%
 - ADA: [A+E] 7d -1.8%
-- HYPE: [A+E] 7d -1.6%
 
 ## ETF pipeline (new this run)
 - pepe NEW: amendment - Canary Capital Amends PEPE ETF Filing, Eyes Cboe BZX Listing - KuCoin
@@ -56,12 +56,12 @@
 - vote: derive (Derive) until 2026-10-05 - DIP: Increase $DRV Buyback Allocation from 35% to 50% of Protocol Fees
 
 ## Paper book (open trades, marked to last scan)
-- open 64 | mean 6.9% (0.63R) | in profit 46 | older than 7d 49
-- worst: BCH -0.45R, TIA -0.33R, XRP -0.31R | best: ZRO 2.58R, FET 3.74R, JST 3.81R
+- open 63 | mean 7.1% (0.64R) | in profit 46 | older than 7d 49
+- worst: BCH -0.46R, XRP -0.31R, TIA -0.28R | best: ZRO 2.64R, FET 3.79R, JST 3.83R
 
 ## System
-- CoinGecko 1409/10000 used, month-end projection 11520 (115%), throttle level 2 | by script {'scan': 408, 'check_liquidity': 63, 'breakout_check': 935, 'counterfactual_check': 3}
+- CoinGecko 1412/10000 used, month-end projection 11419 (114%), throttle level 2 | by script {'scan': 410, 'check_liquidity': 64, 'breakout_check': 935, 'counterfactual_check': 3}
 - Trials guard: OK (0 untracked)
-- Hypotheses: H1 PENDING (n=18), H2 PENDING (n=44)
+- Hypotheses: H1 PENDING (n=19), H2 PENDING (n=44)
 - radar-flags.json scan age: 15m
-- excluded from radar (pegged/tokenized equity): 37
+- excluded from radar (pegged/tokenized equity): 36
