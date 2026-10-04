@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-04 07:13 UTC
+# Radar digest - 2026-10-04 07:46 UTC
 
 ## Market
-- BTC scenario **A** | price 84968 | wk close 84465 vs 82800 | 50W 78247 (8.59%) | 29m old
+- BTC scenario **A** | price 84968 | wk close 84465 vs 82800 | 50W 78247 (8.59%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.31% | ETH/BTC 0.03174 | breadth7d 28% | stables 30d 1.07%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.30pt | 7d -pt | n=36
 - Gold: PAXG 1m -3.50% | real10y 2.88 (43bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -20,27 +20,27 @@
 
 ## Pre-pump candidates
 - SOL: [A+D+E] 7d -0.1%
-- ZEC: [A+E] 7d -18.8%
+- ZEC: [A+E] 7d -19.6%
 - NEAR: [A+E] 7d -10.7%
-- RUNE: [D+E] 7d -6.3%
-- TAO: [A+E] 7d -3.9%
-- HYPE: [A+E] 7d -3.2%
-- AERO: [C+E] 7d -2.8%
-- ADA: [A+E] 7d -2.6%
+- B: [C+E] 7d -6.7%
+- RUNE: [D+E] 7d -5.2%
+- HYPE: [A+E] 7d -3.4%
+- ADA: [A+E] 7d -3.2%
+- AERO: [C+E] 7d -3.1%
 
 ## ETF pipeline (new this run)
 - pepe NEW: amendment - Crypto News | Canary Files Amended S-1 for PEPE ETF, Proposes Cboe BZX Listing - Binance
 - near: other - NEAR Protocol Price Forecast: NEAR rally advances as Bitwise ETF inflows reinforce bullish
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.98 | taker 1.07
+- BTC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.98 | taker 1.06
 - ETH: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.93 | taker 1.04
-- SOL: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.95 | taker 1.03
-- NEAR: AGGRESSIVE_BUYING | OI/mc -% | topPos 0.96 | taker 1.15
-- AVAX: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.90 | taker 1.06
+- SOL: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.95 | taker 1.05
+- AVAX: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.91 | taker 1.04
+- XRP: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.88 | taker 1.00
+- SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.85 | taker 0.94
 - SEI: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.91 | taker 0.94
-- TAO: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.88 | taker 0.85
-- ZEC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.99 | taker 0.99
+- TAO: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.89 | taker 0.87
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -52,12 +52,12 @@
 - (20 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 63 | mean 6.6% (0.58R) | in profit 48 | older than 7d 49
-- worst: XRP -0.42R, BTC -0.41R, BCH -0.41R | best: STRK 2.06R, ZRO 2.64R, JST 3.57R
+- open 63 | mean 6.7% (0.58R) | in profit 49 | older than 7d 49
+- worst: BTC -0.43R, XRP -0.42R, BCH -0.40R | best: STRK 2.11R, ZRO 2.70R, JST 3.59R
 
 ## System
-- CoinGecko 1298/10000 used, month-end projection 12224 (122%), throttle level 2 | by script {'scan': 352, 'check_liquidity': 62, 'breakout_check': 881, 'counterfactual_check': 3}
+- CoinGecko 1300/10000 used, month-end projection 12243 (122%), throttle level 2 | by script {'scan': 354, 'check_liquidity': 62, 'breakout_check': 881, 'counterfactual_check': 3}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=18), H2 PENDING (n=40)
-- radar-flags.json scan age: 13m
+- radar-flags.json scan age: 16m
 - excluded from radar (pegged/tokenized equity): 36
