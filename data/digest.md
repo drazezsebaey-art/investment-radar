@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-04 01:12 UTC
+# Radar digest - 2026-10-04 01:47 UTC
 
 ## Market
-- BTC scenario **A** | price 84803 | wk close 84465 vs 82800 | 50W 78247 (8.38%) | 26m old
+- BTC scenario **A** | price 84803 | wk close 84465 vs 82800 | 50W 78247 (8.38%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.35% | ETH/BTC 0.03169 | breadth7d 28% | stables 30d 1.39%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.32pt | 7d -pt | n=34
 - Gold: PAXG 1m -3.57% | real10y 2.88 (43bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -22,11 +22,11 @@
 - SOL: [A+D+E] 7d -1.0%
 - ZEC: [A+E] 7d -20.3%
 - ADA: [A+E] 7d -4.1%
-- RUNE: [D+E] 7d -3.9%
 - NEAR: [A+E] 7d -3.6%
 - HYPE: [A+E] 7d -3.5%
-- AERO: [C+E] 7d -2.9%
 - CRO: [A+E] 7d -2.7%
+- XRP: [A+E] 7d -2.6%
+- INJ: [A+E] 7d -1.5%
 
 ## ETF pipeline (new this run)
 - kucoin-shares NEW: launch - IEX Launches Options Trading, Files to List Bitcoin ETF Options - KuCoin
@@ -39,14 +39,14 @@
 - cardano: other - Cardano Price Prediction Heats Up as SEC ADA ETF Deadline Arrives, Pepeto Presale Quietly 
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.98 | taker 1.05
-- ETH: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.93 | taker 1.03
-- SOL: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.94 | taker 1.03
-- NEAR: AGGRESSIVE_BUYING | OI/mc -% | topPos 0.96 | taker 1.15
+- SOL: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.94 | taker 1.04
+- NEAR: AGGRESSIVE_BUYING | OI/mc -% | topPos 0.96 | taker 1.16
 - AVAX: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.91 | taker 1.03
-- SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.89
+- SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.93
 - SEI: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.91 | taker 0.92
-- TAO: AGGRESSIVE_SELLING, SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.90 | taker 0.84
+- TAO: AGGRESSIVE_SELLING, SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.91 | taker 0.83
+- ZEC: LONG_FLUSH_24H | OI/mc -% | topPos 0.98 | taker 0.92
+- ADA: LONG_FLUSH_24H | OI/mc -% | topPos 0.89 | taker 0.97
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -58,12 +58,12 @@
 - (20 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 62 | mean 5.9% (0.53R) | in profit 43 | older than 7d 49
-- worst: XRP -0.52R, BTC -0.51R, BCH -0.43R | best: STRK 2.34R, ZRO 2.58R, JST 3.50R
+- open 62 | mean 5.8% (0.51R) | in profit 44 | older than 7d 49
+- worst: BTC -0.53R, XRP -0.52R, BCH -0.44R | best: STRK 2.21R, ZRO 2.70R, JST 3.40R
 
 ## System
-- CoinGecko 1272/10000 used, month-end projection 12964 (130%), throttle level 2 | by script {'scan': 328, 'check_liquidity': 60, 'breakout_check': 881, 'counterfactual_check': 3}
+- CoinGecko 1274/10000 used, month-end projection 12984 (130%), throttle level 2 | by script {'scan': 330, 'check_liquidity': 60, 'breakout_check': 881, 'counterfactual_check': 3}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=18), H2 PENDING (n=39)
-- radar-flags.json scan age: 12m
+- radar-flags.json scan age: 16m
 - excluded from radar (pegged/tokenized equity): 37
