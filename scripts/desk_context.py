@@ -31,7 +31,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "data" / "desk-context.json"
 ALTSEASON = ROOT / "data" / "altseason.json"
-ENGINE_VERSION = "desk-context-v73.1"
+FLAGS = ROOT / "data" / "radar-flags.json"
+DIGEST = ROOT / "data" / "digest.md"
+ENGINE_VERSION = "desk-context-v74"
 TIMEOUT = 20
 GATES = {"fng": 60, "us_calendar": 180, "cmc_events": 360}
 
@@ -134,6 +136,35 @@ def fetch_cmc_events(key):
     return {"events": out, "source": "CoinMarketCal API v2", "window": [frm, to]}
 
 
+def fetch_radar():
+    """Compact per-coin radar view + digest text, for the page's Ask-Claude tools."""
+    d = load(FLAGS, {})
+    coins = {}
+    for c in (d.get("coins") or []):
+        sym = str(c.get("symbol") or "").upper()
+        if not sym:
+            continue
+        ev, es, ol, ind = c.get("last_deep_eval") or {}, c.get("early_signals") or {}, c.get("opportunity_lifecycle") or {}, c.get("indicators") or {}
+        early = [k for k in ("volatility_squeeze", "bullish_rsi_divergence", "relative_strength_consolidation") if es.get(k)]
+        st = es.get("structure") or {}
+        if st.get("signal"):
+            early.append(str(st.get("signal")))
+        for k in ("flag_pattern", "double_bottom", "triangle", "cluster_rotation_lag"):
+            if es.get(k):
+                early.append(k)
+        coins[sym] = {"flags": (c.get("flags") or [])[:4], "early": early, "priority_review": bool(c.get("priority_review")),
+                      "score": ev.get("confidence_score"), "signal_quality": ev.get("signal_quality"), "funnel": ev.get("funnel_stage"),
+                      "signals": [k.replace("_signal", "") for k in ("breakout_signal", "extension_continuation_signal", "pullback_entry_signal", "trendline_break_confirmed_signal") if ev.get(k)],
+                      "trend_following": ev.get("trend_following_eligible"), "decay": ol.get("decay_state"), "move_since_flag_pct": ol.get("move_since_flag_pct"),
+                      "hours_since_flag": ol.get("hours_since_flag"), "rsi_snap": ind.get("rsi14"), "ex24_vs_btc": c.get("excess_return_24h_vs_btc_pct")}
+    digest = ""
+    try:
+        digest = DIGEST.read_text(encoding="utf-8")[:6000]
+    except Exception:
+        pass
+    return {"updated_at": d.get("updated_at"), "breadth_green_pct": d.get("market_breadth_pct_green"), "coins": coins}, {"text": digest}
+
+
 def upsert(rows):
     url = os.environ.get("SUPABASE_URL", "").rstrip("/")
     key = os.environ.get("SUPABASE_SERVICE_KEY", "")
@@ -177,6 +208,14 @@ def main():
             rows.append({"key": "btc_dominance", "data": btcd, "updated_at": stamp})
     except Exception as e:
         print("desk_context: btc_dominance failed:", e)
+    try:
+        radar, dig = fetch_radar()
+        if radar.get("coins"):
+            rows.append({"key": "radar", "data": radar, "updated_at": stamp})
+        if dig.get("text"):
+            rows.append({"key": "radar_digest", "data": dig, "updated_at": stamp})
+    except Exception as e:
+        print("desk_context: radar summary failed:", e)
     state["engine_version"] = ENGINE_VERSION
     OUT.write_text(json.dumps(state, ensure_ascii=False, indent=1), encoding="utf-8")
     if rows:
