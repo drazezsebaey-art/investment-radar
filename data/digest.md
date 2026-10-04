@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-04 17:16 UTC
+# Radar digest - 2026-10-04 17:46 UTC
 
 ## Market
-- BTC scenario **A** | price 85327 | wk close 85260 vs 82800 | 50W 77783 (9.70%) | 1m old
+- BTC scenario **A** | price 85327 | wk close 85260 vs 82800 | 50W 77783 (9.70%) | 31m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.37% | ETH/BTC 0.03164 | breadth7d 30% | stables 30d 1.06%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.29pt | 7d -pt | n=38
 - Gold: PAXG 1m -3.48% | real10y 2.88 (43bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -20,12 +20,12 @@
 
 ## Pre-pump candidates
 - SOL: [A+D+E] 7d 0.0%
-- ZEC: [A+E] 7d -17.5%
-- TAO: [A+E] 7d -6.0%
+- ZEC: [A+E] 7d -15.3%
+- TAO: [A+E] 7d -5.2%
 - NEAR: [A+E] 7d -4.4%
-- INJ: [A+E] 7d -3.8%
-- ADA: [A+E] 7d -2.1%
-- HYPE: [A+E] 7d -1.5%
+- INJ: [A+E] 7d -3.9%
+- ADA: [A+E] 7d -2.7%
+- HYPE: [A+E] 7d -1.4%
 - XRP: [A+E] 7d -0.8%
 
 ## ETF pipeline (new this run)
@@ -36,14 +36,14 @@
 - ondo-finance: other - Invesco QQQ Tokenized ETF (Ondo) Price (QQQon/USD) Today | Live Price, Market Cap & Chart 
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.99 | taker 0.99
-- ETH: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.94 | taker 0.98
+- BTC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.99 | taker 1.00
+- ETH: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.94 | taker 0.99
 - SOL: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.96 | taker 0.99
-- NEAR: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.97 | taker 1.08
-- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 1.02
-- XRP: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.86 | taker 0.99
-- SUI: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.90 | taker 1.03
-- SEI: AGGRESSIVE_BUYING, SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.90 | taker 1.18
+- NEAR: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.97 | taker 1.07
+- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 1.04
+- XRP: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.86 | taker 0.97
+- SUI: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.89 | taker 1.04
+- SEI: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.90 | taker 1.15
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD
@@ -56,12 +56,12 @@
 - vote: derive (Derive) until 2026-10-05 - DIP: Increase $DRV Buyback Allocation from 35% to 50% of Protocol Fees
 
 ## Paper book (open trades, marked to last scan)
-- open 63 | mean 6.9% (0.63R) | in profit 46 | older than 7d 49
-- worst: BCH -0.45R, XRP -0.42R, TIA -0.40R | best: STRK 2.59R, FET 3.08R, JST 3.85R
+- open 63 | mean 6.7% (0.60R) | in profit 46 | older than 7d 49
+- worst: BCH -0.47R, XRP -0.42R, TIA -0.41R | best: STRK 2.44R, FET 2.96R, JST 3.85R
 
 ## System
-- CoinGecko 1399/10000 used, month-end projection 11695 (117%), throttle level 2 | by script {'scan': 398, 'check_liquidity': 63, 'breakout_check': 935, 'counterfactual_check': 3}
+- CoinGecko 1401/10000 used, month-end projection 11712 (117%), throttle level 2 | by script {'scan': 400, 'check_liquidity': 63, 'breakout_check': 935, 'counterfactual_check': 3}
 - Trials guard: OK (0 untracked)
-- Hypotheses: H1 PENDING (n=18), H2 PENDING (n=42)
+- Hypotheses: H1 PENDING (n=18), H2 PENDING (n=44)
 - radar-flags.json scan age: 16m
 - excluded from radar (pegged/tokenized equity): 36
