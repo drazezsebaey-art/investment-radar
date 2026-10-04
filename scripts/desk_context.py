@@ -30,7 +30,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "data" / "desk-context.json"
 ALTSEASON = ROOT / "data" / "altseason.json"
-ENGINE_VERSION = "desk-context-v72"
+ENGINE_VERSION = "desk-context-v72.1"
 TIMEOUT = 20
 GATES = {"fng": 60, "us_calendar": 180, "cmc_events": 360}
 
@@ -133,9 +133,11 @@ def upsert(rows):
         print("desk_context: SUPABASE_URL / SUPABASE_SERVICE_KEY not set - local file only")
         return False
     body = json.dumps(rows).encode()
-    req = urllib.request.Request(url + "/rest/v1/desk_context?on_conflict=key", data=body, method="POST", headers={
-        "apikey": key, "Authorization": "Bearer " + key, "Content-Type": "application/json",
-        "Prefer": "resolution=merge-duplicates,return=minimal"})
+    headers = {"apikey": key, "Content-Type": "application/json",
+               "Prefer": "resolution=merge-duplicates,return=minimal"}
+    if not key.startswith("sb_"):  # legacy JWT service_role key; new sb_secret_ keys go in apikey only
+        headers["Authorization"] = "Bearer " + key
+    req = urllib.request.Request(url + "/rest/v1/desk_context?on_conflict=key", data=body, method="POST", headers=headers)
     with urllib.request.urlopen(req, timeout=TIMEOUT) as r:
         print("desk_context: upserted", [x["key"] for x in rows], "HTTP", r.status)
     return True
