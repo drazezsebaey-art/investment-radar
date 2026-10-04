@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-04 20:15 UTC
+# Radar digest - 2026-10-04 20:47 UTC
 
 ## Market
-- BTC scenario **A** | price 85390 | wk close 85260 vs 82800 | 50W 77783 (9.78%) | 1h old
+- BTC scenario **A** | price 85390 | wk close 85260 vs 82800 | 50W 77783 (9.78%) | 2h old
 - Alts: **BTC_LED** [-] | BTC.D 56.36% | ETH/BTC 0.03166 | breadth7d 26% | stables 30d 1.06%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.04pt | 7d -pt | n=39
 - Gold: PAXG 1m -3.48% | real10y 2.88 (43bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -19,14 +19,14 @@
 - ZBCN: **ONGOING** | +76% impulse, retr 0.35 | OI dd -% | fund - | hold False | inval 0.00244 | OB 0.00198-0.00202
 
 ## Pre-pump candidates
-- NEAR: [A+C+E] 7d -8.8%
 - SOL: [A+D+E] 7d -1.7%
-- ZEC: [A+E] 7d -16.0%
-- OP: [A+C] 7d -7.8%
-- TAO: [A+E] 7d -6.7%
-- INJ: [A+E] 7d -5.1%
+- SEI: [A+C+E] 7d -1.4%
+- ZEC: [A+E] 7d -17.4%
+- NEAR: [A+E] 7d -8.8%
+- TAO: [A+E] 7d -8.1%
+- INJ: [A+E] 7d -6.1%
 - XRP: [A+E] 7d -2.1%
-- ADA: [A+E] 7d -1.8%
+- HYPE: [A+E] 7d -1.9%
 
 ## ETF pipeline (new this run)
 - pepe NEW: amendment - Canary Capital Amends PEPE ETF Filing, Eyes Cboe BZX Listing - KuCoin
@@ -36,14 +36,14 @@
 - ondo-finance: other - Invesco QQQ Tokenized ETF (Ondo) Price (QQQon/USD) Today | Live Price, Market Cap & Chart 
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.99 | taker 0.99
-- ETH: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.95 | taker 0.97
-- SOL: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.96 | taker 0.96
-- NEAR: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.98 | taker 1.04
-- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 0.95
-- XRP: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.87 | taker 0.95
-- SUI: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.87 | taker 1.05
-- SEI: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.90 | taker 1.12
+- BTC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.99 | taker 1.06
+- ETH: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.94 | taker 0.99
+- SOL: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.96 | taker 0.94
+- NEAR: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.98 | taker 1.02
+- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 0.93
+- XRP: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.86 | taker 0.96
+- SUI: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.88 | taker 1.03
+- SEI: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.91 | taker 1.14
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD
@@ -56,12 +56,12 @@
 - vote: derive (Derive) until 2026-10-05 - DIP: Increase $DRV Buyback Allocation from 35% to 50% of Protocol Fees
 
 ## Paper book (open trades, marked to last scan)
-- open 63 | mean 7.1% (0.64R) | in profit 46 | older than 7d 49
-- worst: BCH -0.46R, XRP -0.31R, TIA -0.28R | best: ZRO 2.64R, FET 3.79R, JST 3.83R
+- open 63 | mean 6.9% (0.63R) | in profit 46 | older than 7d 49
+- worst: BCH -0.48R, XRP -0.42R, ENS -0.30R | best: ZRO 2.58R, FET 3.63R, JST 3.87R
 
 ## System
-- CoinGecko 1412/10000 used, month-end projection 11419 (114%), throttle level 2 | by script {'scan': 410, 'check_liquidity': 64, 'breakout_check': 935, 'counterfactual_check': 3}
+- CoinGecko 1414/10000 used, month-end projection 11435 (114%), throttle level 2 | by script {'scan': 412, 'check_liquidity': 64, 'breakout_check': 935, 'counterfactual_check': 3}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=19), H2 PENDING (n=44)
-- radar-flags.json scan age: 15m
+- radar-flags.json scan age: 16m
 - excluded from radar (pegged/tokenized equity): 36
