@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-04 00:47 UTC
+# Radar digest - 2026-10-04 01:12 UTC
 
 ## Market
-- BTC scenario **A** | price 84803 | wk close 84465 vs 82800 | 50W 78247 (8.38%) | 1m old
+- BTC scenario **A** | price 84803 | wk close 84465 vs 82800 | 50W 78247 (8.38%) | 26m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.35% | ETH/BTC 0.03169 | breadth7d 28% | stables 30d 1.39%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.32pt | 7d -pt | n=34
 - Gold: PAXG 1m -3.57% | real10y 2.88 (43bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -19,14 +19,14 @@
 - STRK: **ONGOING** | +133% impulse, retr 0.05 | OI dd 100% | fund 0.0046 | hold False | inval 0.04083 | OB 0.03804-0.03962
 
 ## Pre-pump candidates
-- SOL: [A+D+E] 7d -1.2%
-- ZEC: [A+E] 7d -21.3%
-- OP: [A+C] 7d -4.8%
-- ADA: [A+E] 7d -3.3%
-- NEAR: [A+E] 7d -2.9%
-- HYPE: [A+E] 7d -2.8%
-- XRP: [A+E] 7d -2.3%
-- AERO: [C+E] 7d -2.3%
+- SOL: [A+D+E] 7d -1.0%
+- ZEC: [A+E] 7d -20.3%
+- ADA: [A+E] 7d -4.1%
+- RUNE: [D+E] 7d -3.9%
+- NEAR: [A+E] 7d -3.6%
+- HYPE: [A+E] 7d -3.5%
+- AERO: [C+E] 7d -2.9%
+- CRO: [A+E] 7d -2.7%
 
 ## ETF pipeline (new this run)
 - kucoin-shares NEW: launch - IEX Launches Options Trading, Files to List Bitcoin ETF Options - KuCoin
@@ -58,12 +58,12 @@
 - (20 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 62 | mean 6.0% (0.54R) | in profit 45 | older than 7d 49
-- worst: XRP -0.52R, BTC -0.50R, TIA -0.38R | best: STRK 2.40R, ZRO 2.52R, JST 3.48R
+- open 62 | mean 5.9% (0.53R) | in profit 43 | older than 7d 49
+- worst: XRP -0.52R, BTC -0.51R, BCH -0.43R | best: STRK 2.34R, ZRO 2.58R, JST 3.50R
 
 ## System
-- CoinGecko 1270/10000 used, month-end projection 13123 (131%), throttle level 2 | by script {'scan': 326, 'check_liquidity': 60, 'breakout_check': 881, 'counterfactual_check': 3}
+- CoinGecko 1272/10000 used, month-end projection 12964 (130%), throttle level 2 | by script {'scan': 328, 'check_liquidity': 60, 'breakout_check': 881, 'counterfactual_check': 3}
 - Trials guard: OK (0 untracked)
-- Hypotheses: H1 PENDING (n=18), H2 PENDING (n=38)
-- radar-flags.json scan age: 17m
+- Hypotheses: H1 PENDING (n=18), H2 PENDING (n=39)
+- radar-flags.json scan age: 12m
 - excluded from radar (pegged/tokenized equity): 37
