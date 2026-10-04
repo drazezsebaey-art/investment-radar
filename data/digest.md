@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-03 23:46 UTC
+# Radar digest - 2026-10-04 00:27 UTC
 
 ## Market
-- BTC scenario **A** | price 84793 | wk close 84465 vs 82800 | 50W 78247 (8.37%) | 60m old
+- BTC scenario **A** | price 84793 | wk close 84465 vs 82800 | 50W 78247 (8.37%) | 2h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.35% | ETH/BTC 0.03169 | breadth7d 28% | stables 30d 1.39%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.32pt | 7d -pt | n=34
 - Gold: PAXG 1m -3.57% | real10y 2.88 (43bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -19,13 +19,14 @@
 - SUI: **ONGOING** | +92% impulse, retr 0.18 | OI dd 100% | fund 0.0100 | hold True | inval 1.10500 | OB 0.93370-0.97450
 
 ## Pre-pump candidates
+- SOL: [A+D+E] 7d -1.2%
+- ZEC: [A+E] 7d -22.7%
 - OP: [A+C] 7d -5.2%
+- AERO: [C+E] 7d -3.9%
+- ADA: [A+E] 7d -3.2%
 - HYPE: [A+E] 7d -3.0%
-- RUNE: [D+E] 7d -1.9%
-- SOL: [A+D] 7d -1.3%
-- INJ: [A+E] 7d -0.8%
-- PEPE: [A+E] 7d -0.7%
-- LINK: [A+E] 7d 0.3%
+- NEAR: [A+E] 7d -2.9%
+- XRP: [A+E] 7d -2.3%
 
 ## ETF pipeline (new this run)
 - hyperliquid NEW: other - Hyperliquid Price Forecast: HYPE pares gains as ETF outflows cap tentative bullish recover
@@ -50,12 +51,12 @@
 - (20 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 61 | mean 6.1% (0.54R) | in profit 45 | older than 7d 44
-- worst: BTC -0.53R, XRP -0.52R, BCH -0.45R | best: STRK 2.46R, ZRO 2.64R, JST 3.49R
+- open 62 | mean 6.0% (0.53R) | in profit 45 | older than 7d 49
+- worst: BTC -0.53R, XRP -0.52R, BCH -0.38R | best: STRK 2.22R, ZRO 2.52R, JST 3.48R
 
 ## System
-- CoinGecko 1199/10000 used, month-end projection 12390 (124%), throttle level 2 | by script {'scan': 322, 'check_liquidity': 59, 'breakout_check': 818}
+- CoinGecko 1268/10000 used, month-end projection 13103 (131%), throttle level 2 | by script {'scan': 324, 'check_liquidity': 60, 'breakout_check': 881, 'counterfactual_check': 3}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=18), H2 PENDING (n=38)
-- radar-flags.json scan age: 16m
+- radar-flags.json scan age: 27m
 - excluded from radar (pegged/tokenized equity): 36
