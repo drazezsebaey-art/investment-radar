@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-04 02:47 UTC
+# Radar digest - 2026-10-04 03:12 UTC
 
 ## Market
-- BTC scenario **A** | price 84801 | wk close 84465 vs 82800 | 50W 78247 (8.38%) | 1m old
+- BTC scenario **A** | price 84801 | wk close 84465 vs 82800 | 50W 78247 (8.38%) | 26m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.30% | ETH/BTC 0.03176 | breadth7d 32% | stables 30d 1.07%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.34pt | 7d -pt | n=35
 - Gold: PAXG 1m -3.57% | real10y 2.88 (43bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -19,10 +19,10 @@
 - AAVE: **ONGOING** | +95% impulse, retr 0.06 | OI dd 100% | fund 0.0045 | hold False | inval 176.35000 | OB 157.59000-162.03000
 
 ## Pre-pump candidates
-- SOL: [A+D+E] 7d -0.5%
+- SOL: [A+D+E] 7d -0.9%
 - ZEC: [A+E] 7d -20.4%
+- NEAR: [A+E] 7d -5.7%
 - TIA: [C+E] 7d -4.4%
-- NEAR: [A+E] 7d -4.0%
 - RUNE: [D+E] 7d -3.5%
 - TAO: [A+E] 7d -3.4%
 - HYPE: [A+E] 7d -3.4%
@@ -54,12 +54,12 @@
 - (20 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 62 | mean 5.6% (0.50R) | in profit 44 | older than 7d 49
-- worst: XRP -0.52R, BTC -0.50R, TIA -0.43R | best: SUI 2.05R, ZRO 2.81R, JST 3.47R
+- open 62 | mean 5.7% (0.51R) | in profit 44 | older than 7d 49
+- worst: XRP -0.52R, BTC -0.51R, BCH -0.43R | best: STRK 2.05R, ZRO 2.75R, JST 3.36R
 
 ## System
-- CoinGecko 1278/10000 used, month-end projection 12849 (128%), throttle level 2 | by script {'scan': 334, 'check_liquidity': 60, 'breakout_check': 881, 'counterfactual_check': 3}
+- CoinGecko 1280/10000 used, month-end projection 12698 (127%), throttle level 2 | by script {'scan': 336, 'check_liquidity': 60, 'breakout_check': 881, 'counterfactual_check': 3}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=18), H2 PENDING (n=39)
-- radar-flags.json scan age: 17m
+- radar-flags.json scan age: 12m
 - excluded from radar (pegged/tokenized equity): 36
