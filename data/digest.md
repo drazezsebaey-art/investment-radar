@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-04 23:46 UTC
+# Radar digest - 2026-10-05 00:28 UTC
 
 ## Market
-- BTC scenario **A** | price 86593 | wk close 85260 vs 82800 | 50W 77783 (11.33%) | 32m old
+- BTC scenario **A** | price 86593 | wk close 85260 vs 82800 | 50W 77783 (11.33%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 56.49% | ETH/BTC 0.03147 | breadth7d 25% | stables 30d 1.07%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.15pt | 7d -pt | n=40
 - Gold: PAXG 1m -3.36% | real10y 2.88 (43bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -20,13 +20,13 @@
 
 ## Pre-pump candidates
 - SOL: [A+D+E] 7d -1.0%
-- NEAR: [A+E] 7d -10.4%
 - TAO: [A+E] 7d -7.1%
 - HYPE: [A+E] 7d -1.1%
 - TRX: [A+E] 7d 0.6%
 - AVAX: [A+E] 7d 1.2%
 - ETH: [D+E] 7d 1.7%
 - ADA: [A+E] 7d 2.2%
+- HBAR: [A+E] 7d 9.5%
 
 ## ETF pipeline (new this run)
 - solana NEW: other - Solana Price Faces Resistance Near USD 122.82 as Weekly ETF Buying Slows - Analytics Insig
@@ -52,12 +52,12 @@
 - vote: derive (Derive) until 2026-10-05 - DIP: Increase $DRV Buyback Allocation from 35% to 50% of Protocol Fees
 
 ## Paper book (open trades, marked to last scan)
-- open 63 | mean 7.4% (0.68R) | in profit 47 | older than 7d 49
-- worst: BCH -0.37R, QNT -0.34R, TIA -0.29R | best: STRK 3.06R, FET 3.54R, JST 3.81R
+- open 63 | mean 7.3% (0.67R) | in profit 47 | older than 7d 50
+- worst: BCH -0.40R, QNT -0.30R, TIA -0.29R | best: STRK 3.06R, FET 3.52R, JST 3.83R
 
 ## System
-- CoinGecko 1426/10000 used, month-end projection 11168 (112%), throttle level 2 | by script {'scan': 424, 'check_liquidity': 64, 'breakout_check': 935, 'counterfactual_check': 3}
+- CoinGecko 1496/10000 used, month-end projection 11594 (116%), throttle level 2 | by script {'scan': 426, 'check_liquidity': 64, 'breakout_check': 1001, 'counterfactual_check': 5}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=19), H2 PENDING (n=45)
-- radar-flags.json scan age: 16m
+- radar-flags.json scan age: 28m
 - excluded from radar (pegged/tokenized equity): 36
