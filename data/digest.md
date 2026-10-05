@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-05 12:28 UTC
+# Radar digest - 2026-10-05 12:45 UTC
 
 ## Market
-- BTC scenario **A** | price 85954 | wk close 85260 vs 82800 | 50W 77783 (10.51%) | 1h old
+- BTC scenario **A** | price 85954 | wk close 85260 vs 82800 | 50W 77783 (10.51%) | 2h old
 - Alts: **BTC_LED** [-] | BTC.D 56.43% | ETH/BTC 0.03159 | breadth7d 34% | stables 30d 1.07%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.02pt | 7d 0.46pt | n=43
 - Gold: PAXG 1m -3.02% | real10y 2.88 (43bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -26,14 +26,14 @@
 - chainlink: other - Chainlink Price Prediction: Why Is LINK Rising After ETF Inflows Now? - Coin Gabbar
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc -% | topPos 1.00 | taker 1.05
-- ETH: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.97 | taker 1.01
+- BTC: LONG_FLUSH_24H | OI/mc -% | topPos 1.00 | taker 1.06
+- ETH: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.96 | taker 1.02
 - SOL: LONG_FLUSH_24H | OI/mc -% | topPos 0.94 | taker 0.98
-- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 0.93
+- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 0.92
 - SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.90 | taker 1.10
 - TAO: LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 0.89
 - LINK: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.97 | taker 1.12
-- XLM: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 0.83
+- XLM: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.93 | taker 0.80
 
 ## Revenue / buyback flags
 - collector-crypt: REVENUE_ACCELERATING
@@ -44,12 +44,12 @@
 - vote: derive (Derive) until 2026-10-05 - DIP: Increase $DRV Buyback Allocation from 35% to 50% of Protocol Fees
 
 ## Paper book (open trades, marked to last scan)
-- open 61 | mean 7.4% (0.61R) | in profit 48 | older than 7d 48
-- worst: BCH -0.43R, TIA -0.30R, QNT -0.27R | best: ZRO 2.24R, SUI 2.55R, STRK 2.76R
+- open 61 | mean 7.0% (0.58R) | in profit 48 | older than 7d 48
+- worst: BCH -0.47R, TIA -0.36R, XRP -0.31R | best: ZRO 2.35R, SUI 2.47R, STRK 2.54R
 
 ## System
-- CoinGecko 1619/10000 used, month-end projection 11153 (112%), throttle level 2 | by script {'scan': 482, 'check_liquidity': 70, 'breakout_check': 1062, 'counterfactual_check': 5}
+- CoinGecko 1621/10000 used, month-end projection 11167 (112%), throttle level 2 | by script {'scan': 484, 'check_liquidity': 70, 'breakout_check': 1062, 'counterfactual_check': 5}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=19), H2 PENDING (n=48)
-- radar-flags.json scan age: 28m
+- radar-flags.json scan age: 15m
 - excluded from radar (pegged/tokenized equity): 36
