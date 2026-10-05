@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-05 10:45 UTC
+# Radar digest - 2026-10-05 11:16 UTC
 
 ## Market
-- BTC scenario **A** | price 85987 | wk close 85260 vs 82800 | 50W 77783 (10.55%) | 2h old
+- BTC scenario **A** | price 85954 | wk close 85260 vs 82800 | 50W 77783 (10.51%) | 2m old
 - Alts: **BTC_LED** [-] | BTC.D 56.43% | ETH/BTC 0.03159 | breadth7d 34% | stables 30d 1.07%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.02pt | 7d 0.46pt | n=43
 - Gold: PAXG 1m -3.02% | real10y 2.88 (43bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -9,30 +9,28 @@
 - 10y 1m: 45bp = real 43 + breakeven 1 -> **REAL_YIELD_DRIVEN**
 
 ## Coins in correction (entry_ready first)
-- ZEC: **ONGOING** | +161% impulse, retr 0.35 | OI dd 100% | fund 0.0100 | hold False | inval 1276.88000 | OB 1086.09000-1158.80000
-- STRK: **ONGOING** | +151% impulse, retr 0.09 | OI dd 100% | fund 0.0050 | hold False | inval 0.04083 | OB 0.03804-0.03962
+- NIGHT: **ONGOING** | +197% impulse, retr 0.18 | OI dd 100% | fund -0.0082 | hold False | inval 0.03740 | OB 0.03830-0.03953
+- ZEC: **ONGOING** | +161% impulse, retr 0.36 | OI dd 100% | fund 0.0100 | hold False | inval 1276.88000 | OB 1086.09000-1158.80000
 - ZRO: **ONGOING** | +146% impulse, retr 0.16 | OI dd 100% | fund 0.0050 | hold False | inval 1.72600 | OB 1.72600-1.77270
-- ATH: **ONGOING** | +107% impulse, retr 0.24 | OI dd 100% | fund 0.0050 | hold False | inval 0.00573 | OB 0.00573-0.00598
-- FET: **ONGOING** | +88% impulse, retr 0.04 | OI dd 100% | fund -0.0505 | hold False | inval 0.21480 | OB 0.21480-0.21960
-- WLD: **ONGOING** | +76% impulse, retr 0.14 | OI dd 100% | fund 0.0100 | hold False | inval 0.48060 | OB 0.48580-0.50480
-- AAVE: **ONGOING** | +73% impulse, retr 0.12 | OI dd 100% | fund -0.0041 | hold True | inval 177.97000 | OB 157.59000-162.03000
-- AVAX: **ONGOING** | +72% impulse, retr 0.20 | OI dd 100% | fund 0.0022 | hold False | inval 10.44300 | OB 10.26700-10.62100
+- ATH: **ONGOING** | +107% impulse, retr 0.25 | OI dd 100% | fund 0.0050 | hold False | inval 0.00573 | OB 0.00573-0.00598
+- FLUID: **ONGOING** | +81% impulse, retr 0.00 | OI dd -% | fund - | hold False | inval 1.70110 | OB 1.70110-1.73600
+- WLD: **ONGOING** | +76% impulse, retr 0.18 | OI dd 100% | fund 0.0047 | hold False | inval 0.48060 | OB 0.48580-0.50480
+- AAVE: **ONGOING** | +73% impulse, retr 0.10 | OI dd 100% | fund 0.0013 | hold True | inval 177.97000 | OB 157.59000-162.03000
+- AVAX: **ONGOING** | +72% impulse, retr 0.20 | OI dd 100% | fund 0.0094 | hold False | inval 10.44300 | OB 10.26700-10.62100
 
 ## Pre-pump candidates
-- HBAR: [A+E] 7d -4.1%
-- NEAR: [A+E] 7d -3.0%
-- TAO: [A+E] 7d 0.0%
-- TRX: [A+E] 7d 0.6%
-- SOL: [A+E] 7d 1.9%
-- ETH: [D+E] 7d 2.5%
-- HYPE: [A+E] 7d 4.0%
-- CRO: [A+E] 7d 7.9%
+- HBAR: [A+E] 7d -8.0%
+- TRX: [A+E] 7d 0.8%
+- NEAR: [A+E] 7d 0.8%
+- TAO: [A+E] 7d 2.0%
+- SOL: [A+E] 7d 2.6%
+- ETH: [D+E] 7d 2.9%
+- HYPE: [A+E] 7d 4.1%
+- CRO: [A+E] 7d 9.4%
 
 ## ETF pipeline (new this run)
-- tron NEW: other - TRX trades near $0.335 amid $96B stablecoins on TRON; price depends on network use and ETF
-- pi-network NEW: other - Pi Network News: Valour ETP Is Live, but Can an ETF Lift Price? - Coin Gabbar
-- hyperliquid NEW: other - Invesco QQQ Trust Tokenized ETF (Hyperliquid) Price (QQQ/USD) Today | Live Price, Market C
-- cardano: other - Cardano (ADA) price jumps 10.81% after T. Rowe Price adds ADA to a crypto ETF, boosting in
+- chainlink: other - Chainlink Price Prediction: Why Is LINK Rising After ETF Inflows Now? - Coin Gabbar
+- chainlink: other - Chainlink Price Prediction: Why Is LINK Rising After ETF Inflows Now? - Coin Gabbar
 
 ## Derivatives flags (OKX)
 - BTC: LONG_FLUSH_24H | OI/mc -% | topPos 1.00 | taker 1.05
@@ -53,12 +51,12 @@
 - vote: derive (Derive) until 2026-10-05 - DIP: Increase $DRV Buyback Allocation from 35% to 50% of Protocol Fees
 
 ## Paper book (open trades, marked to last scan)
-- open 61 | mean 7.3% (0.61R) | in profit 49 | older than 7d 48
-- worst: BCH -0.46R, TIA -0.32R, QNT -0.23R | best: ZRO 2.35R, SUI 2.55R, STRK 2.87R
+- open 61 | mean 7.2% (0.60R) | in profit 48 | older than 7d 48
+- worst: BCH -0.45R, TIA -0.32R, QNT -0.28R | best: ZRO 2.35R, SUI 2.55R, STRK 2.91R
 
 ## System
-- CoinGecko 1551/10000 used, month-end projection 10886 (109%), throttle level 2 | by script {'scan': 476, 'check_liquidity': 69, 'breakout_check': 1001, 'counterfactual_check': 5}
+- CoinGecko 1553/10000 used, month-end projection 10798 (108%), throttle level 2 | by script {'scan': 478, 'check_liquidity': 69, 'breakout_check': 1001, 'counterfactual_check': 5}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=19), H2 PENDING (n=48)
-- radar-flags.json scan age: 15m
+- radar-flags.json scan age: 16m
 - excluded from radar (pegged/tokenized equity): 36
