@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-05 14:45 UTC
+# Radar digest - 2026-10-05 15:16 UTC
 
 ## Market
-- BTC scenario **A** | price 86108 | wk close 85260 vs 82800 | 50W 77783 (10.70%) | 1h old
+- BTC scenario **A** | price 85534 | wk close 85260 vs 82800 | 50W 77783 (9.96%) | 2m old
 - Alts: **BTC_LED** [-] | BTC.D 56.50% | ETH/BTC 0.03149 | breadth7d 28% | stables 30d 1.07%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.01pt | 7d 0.69pt | n=44
 - Gold: PAXG 1m -3.02% | real10y 2.88 (43bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -9,27 +9,21 @@
 - 10y 1m: 45bp = real 43 + breakeven 1 -> **REAL_YIELD_DRIVEN**
 
 ## Coins in correction (entry_ready first)
-- ZEC: **ONGOING** | +161% impulse, retr 0.36 | OI dd 100% | fund 0.0100 | hold False | inval 1276.88000 | OB 1086.09000-1158.80000
-- ZRO: **ONGOING** | +146% impulse, retr 0.15 | OI dd 100% | fund 0.0050 | hold False | inval 1.72600 | OB 1.72600-1.77270
-- FLUID: **ONGOING** | +115% impulse, retr 0.10 | OI dd -% | fund - | hold False | inval 1.70110 | OB 1.70110-1.73600
-- SENT: **ONGOING** | +109% impulse, retr 0.10 | OI dd 100% | fund 0.0050 | hold False | inval 0.02029 | OB 0.02029-0.02123
-- ATH: **ONGOING** | +107% impulse, retr 0.24 | OI dd 100% | fund 0.0050 | hold False | inval 0.00573 | OB 0.00573-0.00598
-- WLD: **ONGOING** | +76% impulse, retr 0.19 | OI dd 100% | fund 0.0053 | hold False | inval 0.48060 | OB 0.48580-0.50480
-- AAVE: **ONGOING** | +73% impulse, retr 0.05 | OI dd 100% | fund 0.0092 | hold True | inval 177.97000 | OB 177.41000-181.30000
-- AVAX: **ONGOING** | +72% impulse, retr 0.21 | OI dd 100% | fund 0.0100 | hold False | inval 10.44300 | OB 10.26700-10.62100
+- CARDS: **ONGOING** | +183% impulse, retr 0.09 | OI dd -% | fund - | hold False | inval 0.18390 | OB 0.10510-0.12160
+- ZEC: **ONGOING** | +161% impulse, retr 0.37 | OI dd 100% | fund 0.0100 | hold False | inval 1276.88000 | OB 1086.09000-1158.80000
+- STRK: **ONGOING** | +151% impulse, retr 0.22 | OI dd 100% | fund 0.0050 | hold False | inval 0.04083 | OB 0.03804-0.03962
+- ZRO: **ONGOING** | +146% impulse, retr 0.14 | OI dd 100% | fund 0.0050 | hold False | inval 1.72600 | OB 1.72600-1.77270
+- FLUID: **ONGOING** | +115% impulse, retr 0.14 | OI dd -% | fund - | hold False | inval 1.70110 | OB 1.70110-1.73600
+- ATH: **ONGOING** | +107% impulse, retr 0.25 | OI dd 100% | fund 0.0050 | hold False | inval 0.00573 | OB 0.00573-0.00598
+- PUMP: **ONGOING** | +100% impulse, retr 0.13 | OI dd 100% | fund -0.0022 | hold False | inval 0.00520 | OB 0.00520-0.00541
+- SKY: **ONGOING** | +84% impulse, retr 0.19 | OI dd 100% | fund 0.0050 | hold True | inval 0.09156 | OB 0.08545-0.08850
 
 ## Pre-pump candidates
 - HASH: [C+E] 7d -6.9%
+- DRV: [A+C] 7d 6.4%
 
 ## ETF pipeline (new this run)
-- injective-protocol NEW: launch - Injective CEO Says US INJ Spot ETF Likely to Launch Before 2027 - finance.biggo.com
-- injective-protocol NEW: launch - Injective CEO Says US INJ ETF Could Launch Before 2027, Possibly This Year - bloomingbit
-- injective-protocol NEW: launch - Injective expects U.S. INJ ETF launch before 2027 amid licensing push - Traders Union
-- hyperliquid NEW: other - Hyperliquid ETF Debuts on Nasdaq With $1.2M Inflows - CoinMarketCap
-- injective-protocol NEW: other - Injective ETF momentum builds as two US applications advance - Crypto Briefing
-- near: other - Near Protocol ETF Puts NEAR Back on Institutional Investors’ Radar - Cryptonews
-- zcash: other - Zcash tumbled by more than 20% from the all-time high amid ETF outflows and geopolitical t
-- zcash: other - Zcash NU7 Upgrade Enters Testnet As ZEC Faces ETF Outflows - TronWeekly
+- edgex NEW: other - TheWall: Halogen aims to go mainstream with ETF, starting with digital assets - The Edge M
 
 ## Derivatives flags (OKX)
 - BTC: LONG_FLUSH_24H | OI/mc -% | topPos 1.00 | taker 1.07
@@ -50,12 +44,12 @@
 - vote: derive (Derive) until 2026-10-05 - DIP: Increase $DRV Buyback Allocation from 35% to 50% of Protocol Fees
 
 ## Paper book (open trades, marked to last scan)
-- open 61 | mean 6.9% (0.57R) | in profit 48 | older than 7d 48
-- worst: BCH -0.48R, TIA -0.41R, XRP -0.31R | best: STRK 2.14R, SUI 2.30R, ZRO 2.47R
+- open 61 | mean 5.7% (0.46R) | in profit 43 | older than 7d 48
+- worst: BCH -0.54R, TIA -0.46R, ZK -0.42R | best: STRK 2.00R, SUI 2.05R, ZRO 2.35R
 
 ## System
-- CoinGecko 1630/10000 used, month-end projection 11025 (110%), throttle level 2 | by script {'scan': 492, 'check_liquidity': 71, 'breakout_check': 1062, 'counterfactual_check': 5}
+- CoinGecko 1632/10000 used, month-end projection 10939 (109%), throttle level 2 | by script {'scan': 494, 'check_liquidity': 71, 'breakout_check': 1062, 'counterfactual_check': 5}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=19), H2 PENDING (n=50)
-- radar-flags.json scan age: 15m
+- radar-flags.json scan age: 16m
 - excluded from radar (pegged/tokenized equity): 36
