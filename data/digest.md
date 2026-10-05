@@ -1,12 +1,12 @@
-# Radar digest - 2026-10-05 21:46 UTC
+# Radar digest - 2026-10-05 22:13 UTC
 
 ## Market
-- BTC scenario **A** | price 85915 | wk close 85260 vs 82800 | 50W 77783 (10.45%) | 1m old
-- Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.34% | ETH/BTC 0.03168 | breadth7d 42% | stables 30d 1.07%
-- Alt risk (BTC.D): **NORMAL**  | 3d 0.03pt | 7d 0.35pt | n=45
-- Gold: PAXG 1m -4.92% | real10y 2.88 (43bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
-- 10y 1w: 6bp = real 3 + breakeven 2 -> **SMALL_MOVE**
-- 10y 1m: 45bp = real 43 + breakeven 1 -> **REAL_YIELD_DRIVEN**
+- BTC scenario **A** | price 85915 | wk close 85260 vs 82800 | 50W 77783 (10.45%) | 28m old
+- Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.34% | ETH/BTC 0.03164 | breadth7d -% | stables 30d 1.08%
+- Alt risk (BTC.D): **NORMAL**  | 3d -0.17pt | 7d 0.34pt | n=46
+- Gold: PAXG 1m -4.73% | real10y 2.92 (50bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
+- 10y 1w: 11bp = real 9 + breakeven 2 -> **REAL_YIELD_DRIVEN**
+- 10y 1m: 51bp = real 50 + breakeven 1 -> **REAL_YIELD_DRIVEN**
 
 ## Coins in correction (entry_ready first)
 - NIGHT: **ONGOING** | +197% impulse, retr 0.08 | OI dd 100% | fund -0.0005 | hold False | inval 0.04358 | OB 0.03830-0.03953
@@ -19,7 +19,7 @@
 - FLUID: **ONGOING** | +115% impulse, retr 0.09 | OI dd -% | fund - | hold False | inval 1.70110 | OB 1.70110-1.73600
 
 ## Pre-pump candidates
-- MON: [D+E] 7d 7.2%
+- MON: [D+E] 7d 9.1%
 
 ## ETF pipeline (new this run)
 - avalanche-2: institutional_backing - Grayscale Avalanche Staking ETF Adds Anchorage Digital to Diversify AVAX Custody Alongside
@@ -47,13 +47,13 @@
 - vote: derive (Derive) until 2026-10-05 - DIP: Increase $DRV Buyback Allocation from 35% to 50% of Protocol Fees
 
 ## Paper book (open trades, marked to last scan)
-- open 61 | mean 7.9% (0.66R) | in profit 47 | older than 7d 48
-- worst: BCH -0.47R, XRP -0.42R, SKY -0.31R | best: SUI 2.47R, FIL 3.13R, ZRO 3.16R
+- open 61 | mean 8.0% (0.66R) | in profit 48 | older than 7d 48
+- worst: BCH -0.47R, SKY -0.36R, XRP -0.31R | best: SUI 2.39R, ZRO 3.04R, FIL 3.26R
 
 ## System
-- CoinGecko 1654/10000 used, month-end projection 10518 (105%), throttle level 2 | by script {'scan': 512, 'check_liquidity': 75, 'breakout_check': 1062, 'counterfactual_check': 5}
+- CoinGecko 1656/10000 used, month-end projection 10441 (104%), throttle level 2 | by script {'scan': 514, 'check_liquidity': 75, 'breakout_check': 1062, 'counterfactual_check': 5}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=19), H2 PENDING (n=50)
-- radar-flags.json scan age: 16m
+- radar-flags.json scan age: 13m
 - WARM-UP active until 2026-10-06T03:30:40.063185+00:00 after a 2.39h gap: Layer-2 early signals recorded, not flagged
 - excluded from radar (pegged/tokenized equity): 36
