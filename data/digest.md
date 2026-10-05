@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-05 10:15 UTC
+# Radar digest - 2026-10-05 10:45 UTC
 
 ## Market
-- BTC scenario **A** | price 85987 | wk close 85260 vs 82800 | 50W 77783 (10.55%) | 60m old
+- BTC scenario **A** | price 85987 | wk close 85260 vs 82800 | 50W 77783 (10.55%) | 2h old
 - Alts: **BTC_LED** [-] | BTC.D 56.43% | ETH/BTC 0.03159 | breadth7d 34% | stables 30d 1.07%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.02pt | 7d 0.46pt | n=43
 - Gold: PAXG 1m -3.02% | real10y 2.88 (43bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -19,14 +19,14 @@
 - AVAX: **ONGOING** | +72% impulse, retr 0.20 | OI dd 100% | fund 0.0022 | hold False | inval 10.44300 | OB 10.26700-10.62100
 
 ## Pre-pump candidates
-- NEAR: [A+E] 7d -1.6%
-- TRX: [A+E] 7d 0.7%
-- TAO: [A+E] 7d 1.0%
-- SOL: [A+E] 7d 2.5%
-- ETH: [D+E] 7d 2.9%
-- HYPE: [A+E] 7d 5.1%
-- HBAR: [A+E] 7d 6.7%
-- CRO: [A+E] 7d 8.9%
+- HBAR: [A+E] 7d -4.1%
+- NEAR: [A+E] 7d -3.0%
+- TAO: [A+E] 7d 0.0%
+- TRX: [A+E] 7d 0.6%
+- SOL: [A+E] 7d 1.9%
+- ETH: [D+E] 7d 2.5%
+- HYPE: [A+E] 7d 4.0%
+- CRO: [A+E] 7d 7.9%
 
 ## ETF pipeline (new this run)
 - tron NEW: other - TRX trades near $0.335 amid $96B stablecoins on TRON; price depends on network use and ETF
@@ -35,13 +35,13 @@
 - cardano: other - Cardano (ADA) price jumps 10.81% after T. Rowe Price adds ADA to a crypto ETF, boosting in
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc -% | topPos 1.01 | taker 1.06
+- BTC: LONG_FLUSH_24H | OI/mc -% | topPos 1.00 | taker 1.05
 - ETH: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.97 | taker 1.01
-- SOL: LONG_FLUSH_24H | OI/mc -% | topPos 0.95 | taker 1.00
-- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.89 | taker 0.93
+- SOL: LONG_FLUSH_24H | OI/mc -% | topPos 0.94 | taker 0.98
+- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 0.92
 - SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.90 | taker 1.12
-- TAO: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 0.84
-- LINK: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.97 | taker 1.12
+- TAO: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.85 | taker 0.84
+- LINK: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.97 | taker 1.13
 - XLM: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 0.82
 
 ## Revenue / buyback flags
@@ -53,12 +53,12 @@
 - vote: derive (Derive) until 2026-10-05 - DIP: Increase $DRV Buyback Allocation from 35% to 50% of Protocol Fees
 
 ## Paper book (open trades, marked to last scan)
-- open 61 | mean 7.0% (0.58R) | in profit 47 | older than 7d 48
-- worst: BCH -0.46R, TIA -0.34R, XRP -0.31R | best: ZRO 2.35R, SUI 2.47R, STRK 2.84R
+- open 61 | mean 7.3% (0.61R) | in profit 49 | older than 7d 48
+- worst: BCH -0.46R, TIA -0.32R, QNT -0.23R | best: ZRO 2.35R, SUI 2.55R, STRK 2.87R
 
 ## System
-- CoinGecko 1549/10000 used, month-end projection 10872 (109%), throttle level 2 | by script {'scan': 474, 'check_liquidity': 69, 'breakout_check': 1001, 'counterfactual_check': 5}
+- CoinGecko 1551/10000 used, month-end projection 10886 (109%), throttle level 2 | by script {'scan': 476, 'check_liquidity': 69, 'breakout_check': 1001, 'counterfactual_check': 5}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=19), H2 PENDING (n=48)
-- radar-flags.json scan age: 14m
+- radar-flags.json scan age: 15m
 - excluded from radar (pegged/tokenized equity): 36
