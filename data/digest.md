@@ -1,9 +1,9 @@
-# Radar digest - 2026-10-05 17:46 UTC
+# Radar digest - 2026-10-05 18:15 UTC
 
 ## Market
-- BTC scenario **A** | price 85297 | wk close 85260 vs 82800 | 50W 77783 (9.66%) | 31m old
-- Alts: **BTC_LED** [-] | BTC.D 56.50% | ETH/BTC 0.03149 | breadth7d 28% | stables 30d 1.07%
-- Alt risk (BTC.D): **NORMAL**  | 3d -0.01pt | 7d 0.69pt | n=44
+- BTC scenario **A** | price 85297 | wk close 85260 vs 82800 | 50W 77783 (9.66%) | 60m old
+- Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.34% | ETH/BTC 0.03168 | breadth7d 42% | stables 30d 1.07%
+- Alt risk (BTC.D): **NORMAL**  | 3d 0.03pt | 7d 0.35pt | n=45
 - Gold: PAXG 1m -4.92% | real10y 2.88 (43bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
 - 10y 1w: 6bp = real 3 + breakeven 2 -> **SMALL_MOVE**
 - 10y 1m: 45bp = real 43 + breakeven 1 -> **REAL_YIELD_DRIVEN**
@@ -19,7 +19,6 @@
 - PUMP: **ONGOING** | +100% impulse, retr 0.16 | OI dd 100% | fund 0.0050 | hold False | inval 0.00520 | OB 0.00520-0.00541
 
 ## Pre-pump candidates
-- NEAR: [A+C] 7d 2.1%
 - ADA: [A+C] 7d 8.3%
 
 ## ETF pipeline (new this run)
@@ -44,12 +43,12 @@
 - vote: derive (Derive) until 2026-10-05 - DIP: Increase $DRV Buyback Allocation from 35% to 50% of Protocol Fees
 
 ## Paper book (open trades, marked to last scan)
-- open 61 | mean 5.9% (0.48R) | in profit 44 | older than 7d 48
-- worst: BCH -0.50R, TIA -0.46R, XRP -0.42R | best: JUP 1.95R, SUI 2.13R, ZRO 2.98R
+- open 61 | mean 6.0% (0.49R) | in profit 44 | older than 7d 48
+- worst: BCH -0.52R, TIA -0.43R, XRP -0.42R | best: SUI 2.13R, JUP 2.19R, ZRO 2.75R
 
 ## System
-- CoinGecko 1645/10000 used, month-end projection 10831 (108%), throttle level 2 | by script {'scan': 504, 'check_liquidity': 74, 'breakout_check': 1062, 'counterfactual_check': 5}
+- CoinGecko 1647/10000 used, month-end projection 10749 (108%), throttle level 2 | by script {'scan': 506, 'check_liquidity': 74, 'breakout_check': 1062, 'counterfactual_check': 5}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=19), H2 PENDING (n=50)
-- radar-flags.json scan age: 16m
+- radar-flags.json scan age: 15m
 - excluded from radar (pegged/tokenized equity): 36
