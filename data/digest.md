@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-05 09:16 UTC
+# Radar digest - 2026-10-05 09:45 UTC
 
 ## Market
-- BTC scenario **A** | price 85987 | wk close 85260 vs 82800 | 50W 77783 (10.55%) | 2m old
+- BTC scenario **A** | price 85987 | wk close 85260 vs 82800 | 50W 77783 (10.55%) | 30m old
 - Alts: **BTC_LED** [-] | BTC.D 56.43% | ETH/BTC 0.03156 | breadth7d 31% | stables 30d 1.08%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.04pt | 7d -pt | n=42
 - Gold: PAXG 1m -3.35% | real10y 2.88 (43bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -19,7 +19,14 @@
 - AVAX: **ONGOING** | +72% impulse, retr 0.20 | OI dd 100% | fund 0.0022 | hold False | inval 10.44300 | OB 10.26700-10.62100
 
 ## Pre-pump candidates
-- SOL: [A+D] 7d 2.5%
+- ZEC: [A+E] 7d -13.8%
+- SEI: [A+E] 7d -7.0%
+- NEAR: [A+E] 7d -1.6%
+- TRX: [A+E] 7d 0.7%
+- TAO: [A+E] 7d 1.0%
+- SOL: [A+E] 7d 2.5%
+- INJ: [A+E] 7d 2.7%
+- ETH: [D+E] 7d 2.9%
 
 ## ETF pipeline (new this run)
 - tron NEW: other - TRX trades near $0.335 amid $96B stablecoins on TRON; price depends on network use and ETF
@@ -28,32 +35,30 @@
 - cardano: other - Cardano (ADA) price jumps 10.81% after T. Rowe Price adds ADA to a crypto ETF, boosting in
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 1.01 | taker 1.07
+- BTC: LONG_FLUSH_24H | OI/mc -% | topPos 1.01 | taker 1.06
 - ETH: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.97 | taker 1.01
-- SOL: LONG_FLUSH_24H | OI/mc -% | topPos 0.96 | taker 0.99
-- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.89 | taker 0.92
-- SUI: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.88 | taker 1.04
+- SOL: LONG_FLUSH_24H | OI/mc -% | topPos 0.95 | taker 1.00
+- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.89 | taker 0.93
 - SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.90 | taker 1.12
 - TAO: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 0.84
-- LINK: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.97 | taker 1.13
+- LINK: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.97 | taker 1.12
+- XLM: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 0.82
 
 ## Revenue / buyback flags
-- pump-fun: HIGH_HOLDER_YIELD
-- stonk-3: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
-- collector-crypt: REVENUE_ACCELERATING, CHEAP_VS_REVENUE
+- collector-crypt: REVENUE_ACCELERATING
 - ethereum: REVENUE_ACCELERATING
-- solana: REVENUE_ACCELERATING
 - chip-2: REVENUE_ACCELERATING
-- (17 flagged protocol(s) without a tradeable token hidden)
+- monad: REVENUE_ACCELERATING
+- (19 flagged protocol(s) without a tradeable token hidden)
 - vote: derive (Derive) until 2026-10-05 - DIP: Increase $DRV Buyback Allocation from 35% to 50% of Protocol Fees
 
 ## Paper book (open trades, marked to last scan)
-- open 61 | mean 7.0% (0.59R) | in profit 48 | older than 7d 48
-- worst: BCH -0.46R, TIA -0.33R, XRP -0.31R | best: ZRO 2.30R, SUI 2.47R, STRK 3.09R
+- open 61 | mean 6.9% (0.57R) | in profit 46 | older than 7d 48
+- worst: BCH -0.47R, TIA -0.33R, XRP -0.31R | best: ZRO 2.24R, SUI 2.47R, STRK 2.92R
 
 ## System
-- CoinGecko 1545/10000 used, month-end projection 10947 (110%), throttle level 2 | by script {'scan': 470, 'check_liquidity': 69, 'breakout_check': 1001, 'counterfactual_check': 5}
+- CoinGecko 1547/10000 used, month-end projection 10962 (110%), throttle level 2 | by script {'scan': 472, 'check_liquidity': 69, 'breakout_check': 1001, 'counterfactual_check': 5}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=19), H2 PENDING (n=47)
-- radar-flags.json scan age: 16m
+- radar-flags.json scan age: 15m
 - excluded from radar (pegged/tokenized equity): 36
