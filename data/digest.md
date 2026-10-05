@@ -1,4 +1,4 @@
-# Radar digest - 2026-10-05 22:47 UTC
+# Radar digest - 2026-10-05 23:13 UTC
 
 ## Market
 - BTC scenario **A** | price 85915 | wk close 85260 vs 82800 | 50W 77783 (10.45%) | 1h old
@@ -47,13 +47,13 @@
 - vote: derive (Derive) until 2026-10-05 - DIP: Increase $DRV Buyback Allocation from 35% to 50% of Protocol Fees
 
 ## Paper book (open trades, marked to last scan)
-- open 61 | mean 8.0% (0.67R) | in profit 48 | older than 7d 48
-- worst: BCH -0.48R, XRP -0.31R, SKY -0.31R | best: SUI 2.39R, FIL 2.99R, ZRO 3.16R
+- open 61 | mean 7.9% (0.65R) | in profit 48 | older than 7d 48
+- worst: BCH -0.47R, SKY -0.38R, IOTA -0.35R | best: SUI 2.39R, FIL 2.99R, ZRO 3.21R
 
 ## System
-- CoinGecko 1658/10000 used, month-end projection 10454 (104%), throttle level 2 | by script {'scan': 516, 'check_liquidity': 75, 'breakout_check': 1062, 'counterfactual_check': 5}
+- CoinGecko 1660/10000 used, month-end projection 10378 (104%), throttle level 2 | by script {'scan': 518, 'check_liquidity': 75, 'breakout_check': 1062, 'counterfactual_check': 5}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=19), H2 PENDING (n=50)
-- radar-flags.json scan age: 17m
+- radar-flags.json scan age: 13m
 - WARM-UP active until 2026-10-06T03:30:40.063185+00:00 after a 2.39h gap: Layer-2 early signals recorded, not flagged
 - excluded from radar (pegged/tokenized equity): 36
