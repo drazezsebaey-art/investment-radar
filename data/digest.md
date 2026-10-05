@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-05 16:47 UTC
+# Radar digest - 2026-10-05 17:17 UTC
 
 ## Market
-- BTC scenario **A** | price 85534 | wk close 85260 vs 82800 | 50W 77783 (9.96%) | 2h old
+- BTC scenario **A** | price 85297 | wk close 85260 vs 82800 | 50W 77783 (9.66%) | 2m old
 - Alts: **BTC_LED** [-] | BTC.D 56.50% | ETH/BTC 0.03149 | breadth7d 28% | stables 30d 1.07%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.01pt | 7d 0.69pt | n=44
 - Gold: PAXG 1m -4.92% | real10y 2.88 (43bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -9,21 +9,21 @@
 - 10y 1m: 45bp = real 43 + breakeven 1 -> **REAL_YIELD_DRIVEN**
 
 ## Coins in correction (entry_ready first)
-- CARDS: **ONGOING** | +183% impulse, retr 0.09 | OI dd -% | fund - | hold False | inval 0.18390 | OB 0.10510-0.12160
-- ZEC: **ONGOING** | +161% impulse, retr 0.37 | OI dd 100% | fund 0.0100 | hold False | inval 1276.88000 | OB 1086.09000-1158.80000
+- CARDS: **ONGOING** | +183% impulse, retr 0.12 | OI dd -% | fund - | hold False | inval 0.23410 | OB 0.10510-0.12160
+- UNI: **ONGOING** | +173% impulse, retr 0.29 | OI dd 100% | fund 0.0030 | hold False | inval 8.58000 | OB 5.80800-6.03200
 - STRK: **ONGOING** | +151% impulse, retr 0.22 | OI dd 100% | fund 0.0050 | hold False | inval 0.04083 | OB 0.03804-0.03962
-- ZRO: **ONGOING** | +146% impulse, retr 0.14 | OI dd 100% | fund 0.0050 | hold False | inval 1.72600 | OB 1.72600-1.77270
-- FLUID: **ONGOING** | +115% impulse, retr 0.14 | OI dd -% | fund - | hold False | inval 1.70110 | OB 1.70110-1.73600
+- ZRO: **ONGOING** | +134% impulse, retr 0.04 | OI dd 100% | fund -0.0099 | hold False | inval 1.72600 | OB 1.72600-1.77270
+- ZEC: **ONGOING** | +126% impulse, retr 0.42 | OI dd 100% | fund 0.0100 | hold False | inval 1276.88000 | OB 1086.09000-1158.80000
+- FLUID: **ONGOING** | +115% impulse, retr 0.08 | OI dd -% | fund - | hold False | inval 1.70110 | OB 1.70110-1.73600
 - ATH: **ONGOING** | +107% impulse, retr 0.25 | OI dd 100% | fund 0.0050 | hold False | inval 0.00573 | OB 0.00573-0.00598
-- PUMP: **ONGOING** | +100% impulse, retr 0.13 | OI dd 100% | fund -0.0022 | hold False | inval 0.00520 | OB 0.00520-0.00541
-- SKY: **ONGOING** | +84% impulse, retr 0.19 | OI dd 100% | fund 0.0050 | hold True | inval 0.09156 | OB 0.08545-0.08850
+- PUMP: **ONGOING** | +100% impulse, retr 0.16 | OI dd 100% | fund 0.0050 | hold False | inval 0.00520 | OB 0.00520-0.00541
 
 ## Pre-pump candidates
-- NEAR: [A+C] 7d -0.4%
-- ADA: [A+C] 7d 9.4%
+- HASH: [C+E] 7d -5.7%
+- NEAR: [A+C] 7d 2.1%
 
 ## ETF pipeline (new this run)
-- edgex NEW: other - TheWall: Halogen aims to go mainstream with ETF, starting with digital assets - The Edge M
+- kucoin-shares NEW: other - Morgan Stanley's Bitcoin ETF Wallet Holds $904M in BTC - kucoin.com
 
 ## Derivatives flags (OKX)
 - BTC: LONG_FLUSH_24H | OI/mc -% | topPos 0.99 | taker 1.04
@@ -44,12 +44,12 @@
 - vote: derive (Derive) until 2026-10-05 - DIP: Increase $DRV Buyback Allocation from 35% to 50% of Protocol Fees
 
 ## Paper book (open trades, marked to last scan)
-- open 61 | mean 5.6% (0.45R) | in profit 42 | older than 7d 48
-- worst: BCH -0.53R, XRP -0.52R, TIA -0.44R | best: STRK 1.82R, SUI 2.05R, ZRO 2.81R
+- open 61 | mean 5.9% (0.47R) | in profit 42 | older than 7d 48
+- worst: XRP -0.52R, BCH -0.50R, TIA -0.43R | best: STRK 1.96R, SUI 2.13R, ZRO 3.04R
 
 ## System
-- CoinGecko 1639/10000 used, month-end projection 10888 (109%), throttle level 2 | by script {'scan': 500, 'check_liquidity': 72, 'breakout_check': 1062, 'counterfactual_check': 5}
+- CoinGecko 1642/10000 used, month-end projection 10811 (108%), throttle level 2 | by script {'scan': 502, 'check_liquidity': 73, 'breakout_check': 1062, 'counterfactual_check': 5}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=19), H2 PENDING (n=50)
-- radar-flags.json scan age: 17m
+- radar-flags.json scan age: 16m
 - excluded from radar (pegged/tokenized equity): 36
