@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-05 00:47 UTC
+# Radar digest - 2026-10-05 01:16 UTC
 
 ## Market
-- BTC scenario **A** | price 86593 | wk close 85260 vs 82800 | 50W 77783 (11.33%) | 2h old
+- BTC scenario **A** | price 86714 | wk close 85260 vs 82800 | 50W 77783 (11.48%) | 1m old
 - Alts: **BTC_LED** [-] | BTC.D 56.49% | ETH/BTC 0.03147 | breadth7d 25% | stables 30d 1.07%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.15pt | 7d -pt | n=40
 - Gold: PAXG 1m -3.36% | real10y 2.88 (43bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -9,26 +9,27 @@
 - 10y 1m: 45bp = real 43 + breakeven 1 -> **REAL_YIELD_DRIVEN**
 
 ## Coins in correction (entry_ready first)
-- NEAR: **ONGOING** | +236% impulse, retr 0.16 | OI dd 100% | fund 0.0100 | hold False | inval 4.58800 | OB 4.21400-4.43600
-- NIGHT: **ONGOING** | +197% impulse, retr 0.25 | OI dd 100% | fund 0.0050 | hold False | inval 0.03740 | OB 0.03830-0.03953
-- UNI: **ONGOING** | +195% impulse, retr 0.26 | OI dd 100% | fund 0.0092 | hold False | inval 8.94700 | OB 5.80800-6.03200
-- ZEC: **ONGOING** | +161% impulse, retr 0.32 | OI dd 100% | fund 0.0100 | hold False | inval 1276.88000 | OB 1086.09000-1158.80000
-- STRK: **ONGOING** | +151% impulse, retr 0.05 | OI dd 100% | fund 0.0050 | hold False | inval 0.04083 | OB 0.03804-0.03962
-- ZRO: **ONGOING** | +146% impulse, retr 0.14 | OI dd 100% | fund 0.0050 | hold False | inval 1.72600 | OB 1.72600-1.77270
-- ATH: **ONGOING** | +107% impulse, retr 0.17 | OI dd 100% | fund -0.0032 | hold False | inval 0.00573 | OB 0.00573-0.00598
-- PUMP: **ONGOING** | +100% impulse, retr 0.08 | OI dd 100% | fund -0.0150 | hold False | inval 0.00520 | OB 0.00520-0.00541
+- NEAR: **ONGOING** | +236% impulse, retr 0.17 | OI dd 100% | fund 0.0084 | hold False | inval 4.58800 | OB 4.21400-4.43600
+- NIGHT: **ONGOING** | +197% impulse, retr 0.23 | OI dd 100% | fund 0.0050 | hold False | inval 0.03740 | OB 0.03830-0.03953
+- ZEC: **ONGOING** | +161% impulse, retr 0.33 | OI dd 100% | fund 0.0100 | hold False | inval 1276.88000 | OB 1086.09000-1158.80000
+- ZRO: **ONGOING** | +146% impulse, retr 0.16 | OI dd 100% | fund 0.0050 | hold False | inval 1.72600 | OB 1.72600-1.77270
+- PUMP: **ONGOING** | +100% impulse, retr 0.10 | OI dd 100% | fund -0.0053 | hold False | inval 0.00520 | OB 0.00520-0.00541
+- WLD: **ONGOING** | +76% impulse, retr 0.14 | OI dd 100% | fund 0.0063 | hold False | inval 0.48060 | OB 0.48580-0.50480
+- AAVE: **ONGOING** | +73% impulse, retr 0.09 | OI dd 100% | fund 0.0025 | hold True | inval 177.97000 | OB 157.59000-162.03000
+- FLUID: **ONGOING** | +72% impulse, retr 0.05 | OI dd -% | fund - | hold False | inval 1.70110 | OB 1.04990-1.08920
 
 ## Pre-pump candidates
-- SOL: [A+D+E] 7d 0.1%
+- SOL: [A+D+E] 7d -0.5%
 - TAO: [A+E] 7d -4.7%
 - HYPE: [A+E] 7d -1.2%
 - TRX: [A+E] 7d 0.7%
-- ETH: [D+E] 7d 1.9%
+- AVAX: [A+E] 7d 1.0%
+- ETH: [D+E] 7d 1.6%
 - ADA: [A+E] 7d 2.6%
-- AVAX: [A+E] 7d 3.1%
+- CRO: [A+E] 7d 4.6%
 
 ## ETF pipeline (new this run)
-- solana NEW: other - Solana Price Faces Resistance Near USD 122.82 as Weekly ETF Buying Slows - Analytics Insig
+- none
 
 ## Derivatives flags (OKX)
 - BTC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 1.01 | taker 1.12
@@ -51,12 +52,12 @@
 - vote: derive (Derive) until 2026-10-05 - DIP: Increase $DRV Buyback Allocation from 35% to 50% of Protocol Fees
 
 ## Paper book (open trades, marked to last scan)
-- open 62 | mean 6.7% (0.60R) | in profit 48 | older than 7d 49
-- worst: BCH -0.43R, QNT -0.33R, XRP -0.31R | best: SUI 2.30R, STRK 3.11R, JST 3.80R
+- open 62 | mean 7.1% (0.64R) | in profit 49 | older than 7d 49
+- worst: BCH -0.40R, QNT -0.30R, TIA -0.26R | best: ZRO 2.47R, STRK 3.07R, JST 3.76R
 
 ## System
-- CoinGecko 1498/10000 used, month-end projection 11610 (116%), throttle level 2 | by script {'scan': 428, 'check_liquidity': 64, 'breakout_check': 1001, 'counterfactual_check': 5}
+- CoinGecko 1501/10000 used, month-end projection 11513 (115%), throttle level 2 | by script {'scan': 430, 'check_liquidity': 65, 'breakout_check': 1001, 'counterfactual_check': 5}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=19), H2 PENDING (n=45)
-- radar-flags.json scan age: 17m
+- radar-flags.json scan age: 16m
 - excluded from radar (pegged/tokenized equity): 36
