@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-05 07:16 UTC
+# Radar digest - 2026-10-05 07:47 UTC
 
 ## Market
-- BTC scenario **A** | price 86343 | wk close 85260 vs 82800 | 50W 77783 (11.00%) | 1m old
+- BTC scenario **A** | price 86343 | wk close 85260 vs 82800 | 50W 77783 (11.00%) | 32m old
 - Alts: **BTC_LED** [-] | BTC.D 56.43% | ETH/BTC 0.03156 | breadth7d 31% | stables 30d 1.08%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.04pt | 7d -pt | n=42
 - Gold: PAXG 1m -3.35% | real10y 2.88 (43bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -20,26 +20,26 @@
 
 ## Pre-pump candidates
 - SOL: [A+D+E] 7d 2.0%
-- TAO: [A+E] 7d -3.7%
+- ZEC: [A+E] 7d -14.4%
 - NEAR: [A+E] 7d -1.9%
-- TRX: [A+E] 7d 0.3%
-- HYPE: [A+E] 7d 1.0%
+- TAO: [A+E] 7d -1.6%
+- INJ: [A+E] 7d -0.1%
+- TRX: [A+E] 7d 0.5%
+- XRP: [A+E] 7d 2.3%
 - ETH: [D+E] 7d 2.7%
-- CRO: [A+E] 7d 5.7%
-- HBAR: [A+E] 7d 7.4%
 
 ## ETF pipeline (new this run)
 - none
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc -% | topPos 1.00 | taker 1.07
-- SOL: LONG_FLUSH_24H | OI/mc -% | topPos 0.95 | taker 0.98
-- AVAX: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.89 | taker 0.85
+- BTC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 1.00 | taker 1.08
+- ETH: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.97 | taker 1.03
+- SOL: LONG_FLUSH_24H | OI/mc -% | topPos 0.95 | taker 0.99
+- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.89 | taker 0.89
+- SUI: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.88 | taker 1.05
 - TAO: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.84 | taker 0.82
-- ZEC: LONG_FLUSH_24H | OI/mc -% | topPos 0.97 | taker 0.99
-- WLD: LONG_FLUSH_24H | OI/mc -% | topPos 0.93 | taker 0.88
-- LINK: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.97 | taker 1.12
-- XLM: AGGRESSIVE_SELLING | OI/mc -% | topPos 0.94 | taker 0.81
+- ZEC: LONG_FLUSH_24H | OI/mc -% | topPos 0.97 | taker 1.00
+- WLD: LONG_FLUSH_24H | OI/mc -% | topPos 0.93 | taker 0.89
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD
@@ -52,12 +52,12 @@
 - vote: derive (Derive) until 2026-10-05 - DIP: Increase $DRV Buyback Allocation from 35% to 50% of Protocol Fees
 
 ## Paper book (open trades, marked to last scan)
-- open 62 | mean 7.1% (0.64R) | in profit 48 | older than 7d 49
-- worst: BCH -0.39R, QNT -0.31R, TIA -0.30R | best: SUI 2.47R, STRK 2.81R, JST 3.92R
+- open 62 | mean 7.4% (0.66R) | in profit 48 | older than 7d 49
+- worst: BCH -0.39R, TIA -0.31R, QNT -0.26R | best: SUI 2.55R, STRK 2.70R, JST 3.97R
 
 ## System
-- CoinGecko 1536/10000 used, month-end projection 11095 (111%), throttle level 2 | by script {'scan': 462, 'check_liquidity': 68, 'breakout_check': 1001, 'counterfactual_check': 5}
+- CoinGecko 1538/10000 used, month-end projection 11109 (111%), throttle level 2 | by script {'scan': 464, 'check_liquidity': 68, 'breakout_check': 1001, 'counterfactual_check': 5}
 - Trials guard: OK (0 untracked)
-- Hypotheses: H1 PENDING (n=19), H2 PENDING (n=46)
+- Hypotheses: H1 PENDING (n=19), H2 PENDING (n=47)
 - radar-flags.json scan age: 16m
 - excluded from radar (pegged/tokenized equity): 36
