@@ -1,10 +1,10 @@
-# Radar digest - 2026-10-05 09:45 UTC
+# Radar digest - 2026-10-05 10:15 UTC
 
 ## Market
-- BTC scenario **A** | price 85987 | wk close 85260 vs 82800 | 50W 77783 (10.55%) | 30m old
-- Alts: **BTC_LED** [-] | BTC.D 56.43% | ETH/BTC 0.03156 | breadth7d 31% | stables 30d 1.08%
-- Alt risk (BTC.D): **NORMAL**  | 3d -0.04pt | 7d -pt | n=42
-- Gold: PAXG 1m -3.35% | real10y 2.88 (43bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
+- BTC scenario **A** | price 85987 | wk close 85260 vs 82800 | 50W 77783 (10.55%) | 60m old
+- Alts: **BTC_LED** [-] | BTC.D 56.43% | ETH/BTC 0.03159 | breadth7d 34% | stables 30d 1.07%
+- Alt risk (BTC.D): **NORMAL**  | 3d -0.02pt | 7d 0.46pt | n=43
+- Gold: PAXG 1m -3.02% | real10y 2.88 (43bp 1m) | USD 1m 1.67% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
 - 10y 1w: 6bp = real 3 + breakeven 2 -> **SMALL_MOVE**
 - 10y 1m: 45bp = real 43 + breakeven 1 -> **REAL_YIELD_DRIVEN**
 
@@ -19,14 +19,14 @@
 - AVAX: **ONGOING** | +72% impulse, retr 0.20 | OI dd 100% | fund 0.0022 | hold False | inval 10.44300 | OB 10.26700-10.62100
 
 ## Pre-pump candidates
-- ZEC: [A+E] 7d -13.8%
-- SEI: [A+E] 7d -7.0%
 - NEAR: [A+E] 7d -1.6%
 - TRX: [A+E] 7d 0.7%
 - TAO: [A+E] 7d 1.0%
 - SOL: [A+E] 7d 2.5%
-- INJ: [A+E] 7d 2.7%
 - ETH: [D+E] 7d 2.9%
+- HYPE: [A+E] 7d 5.1%
+- HBAR: [A+E] 7d 6.7%
+- CRO: [A+E] 7d 8.9%
 
 ## ETF pipeline (new this run)
 - tron NEW: other - TRX trades near $0.335 amid $96B stablecoins on TRON; price depends on network use and ETF
@@ -53,12 +53,12 @@
 - vote: derive (Derive) until 2026-10-05 - DIP: Increase $DRV Buyback Allocation from 35% to 50% of Protocol Fees
 
 ## Paper book (open trades, marked to last scan)
-- open 61 | mean 6.9% (0.57R) | in profit 46 | older than 7d 48
-- worst: BCH -0.47R, TIA -0.33R, XRP -0.31R | best: ZRO 2.24R, SUI 2.47R, STRK 2.92R
+- open 61 | mean 7.0% (0.58R) | in profit 47 | older than 7d 48
+- worst: BCH -0.46R, TIA -0.34R, XRP -0.31R | best: ZRO 2.35R, SUI 2.47R, STRK 2.84R
 
 ## System
-- CoinGecko 1547/10000 used, month-end projection 10962 (110%), throttle level 2 | by script {'scan': 472, 'check_liquidity': 69, 'breakout_check': 1001, 'counterfactual_check': 5}
+- CoinGecko 1549/10000 used, month-end projection 10872 (109%), throttle level 2 | by script {'scan': 474, 'check_liquidity': 69, 'breakout_check': 1001, 'counterfactual_check': 5}
 - Trials guard: OK (0 untracked)
-- Hypotheses: H1 PENDING (n=19), H2 PENDING (n=47)
-- radar-flags.json scan age: 15m
+- Hypotheses: H1 PENDING (n=19), H2 PENDING (n=48)
+- radar-flags.json scan age: 14m
 - excluded from radar (pegged/tokenized equity): 36
