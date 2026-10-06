@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-05 23:49 UTC
+# Radar digest - 2026-10-06 00:20 UTC
 
 ## Market
-- BTC scenario **A** | price 85736 | wk close 85260 vs 82800 | 50W 77783 (10.23%) | 2m old
+- BTC scenario **A** | price 85736 | wk close 85260 vs 82800 | 50W 77783 (10.23%) | 32m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.34% | ETH/BTC 0.03164 | breadth7d -% | stables 30d 1.08%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.17pt | 7d 0.34pt | n=46
 - Gold: PAXG 1m -4.73% | real10y 2.92 (50bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -43,11 +43,11 @@
 - vote: derive (Derive) until 2026-10-05 - DIP: Increase $DRV Buyback Allocation from 35% to 50% of Protocol Fees
 
 ## Paper book (open trades, marked to last scan)
-- open 61 | mean 7.6% (0.63R) | in profit 48 | older than 7d 48
-- worst: BCH -0.47R, SKY -0.36R, IOTA -0.33R | best: SUI 2.30R, FIL 2.99R, ZRO 3.21R
+- open 62 | mean 7.6% (0.62R) | in profit 48 | older than 7d 48
+- worst: SKY -0.55R, BCH -0.45R, IOTA -0.35R | best: SUI 2.30R, FIL 2.99R, ZRO 3.44R
 
 ## System
-- CoinGecko 1662/10000 used, month-end projection 10391 (104%), throttle level 2 | by script {'scan': 520, 'check_liquidity': 75, 'breakout_check': 1062, 'counterfactual_check': 5}
+- CoinGecko 1683/10000 used, month-end projection 10435 (104%), throttle level 2 | by script {'scan': 522, 'check_liquidity': 75, 'breakout_check': 1078, 'counterfactual_check': 8}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=19), H2 PENDING (n=50)
 - radar-flags.json scan age: 19m
