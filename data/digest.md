@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-06 22:48 UTC
+# Radar digest - 2026-10-06 23:15 UTC
 
 ## Market
-- BTC scenario **A** | price 85583 | wk close 85260 vs 82800 | 50W 77783 (10.03%) | 2m old
+- BTC scenario **A** | price 85583 | wk close 85260 vs 82800 | 50W 77783 (10.03%) | 29m old
 - Alts: **BTC_LED** [-] | BTC.D 56.42% | ETH/BTC 0.03152 | breadth7d 43% | stables 30d 1.22%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.07pt | 7d 0.40pt | n=52
 - Gold: PAXG 1m -4.42% | real10y 2.95 (52bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -19,13 +19,13 @@
 - ATH: **ONGOING** | +107% impulse, retr 0.33 | OI dd 42% | fund 0.0050 | hold False | inval 0.00573 | OB 0.00573-0.00598
 
 ## Pre-pump candidates
+- INJ: [A+C+E] 7d 5.7%
 - LINK: [A+E] 7d -5.2%
-- QNT: [C+E] 7d -1.8%
+- STABLE: [C+E] 7d -3.7%
 - TAO: [A+E] 7d -0.3%
-- AVAX: [A+E] 7d 0.8%
-- SOL: [A+E] 7d 1.6%
+- AVAX: [A+E] 7d 1.7%
+- SOL: [A+E] 7d 1.7%
 - PUMP: [D+E] 7d 4.4%
-- INJ: [A+E] 7d 5.7%
 - JUP: [C+E] 7d 6.3%
 
 ## ETF pipeline (new this run)
@@ -57,12 +57,12 @@
 - (15 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 62 | mean 5.3% (0.46R) | in profit 43 | older than 7d 46
-- worst: BCH -0.62R, UNI -0.59R, SAND -0.47R | best: RENDER 2.30R, JUP 2.52R, FIL 2.72R
+- open 62 | mean 5.4% (0.46R) | in profit 43 | older than 7d 46
+- worst: BCH -0.59R, UNI -0.53R, IOTA -0.49R | best: RENDER 2.30R, JUP 2.42R, FIL 2.72R
 
 ## System
-- CoinGecko 1915/10000 used, month-end projection 10034 (100%), throttle level 2 | by script {'scan': 626, 'check_liquidity': 103, 'breakout_check': 1178, 'counterfactual_check': 8}
+- CoinGecko 1918/10000 used, month-end projection 9979 (100%), throttle level 1 | by script {'scan': 628, 'check_liquidity': 104, 'breakout_check': 1178, 'counterfactual_check': 8}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=22), H2 PENDING (n=55)
-- radar-flags.json scan age: 18m
+- radar-flags.json scan age: 15m
 - excluded from radar (pegged/tokenized equity): 37
