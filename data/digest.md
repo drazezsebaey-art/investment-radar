@@ -1,10 +1,10 @@
-# Radar digest - 2026-10-06 03:49 UTC
+# Radar digest - 2026-10-06 04:14 UTC
 
 ## Market
-- BTC scenario **A** | price 85534 | wk close 85260 vs 82800 | 50W 77783 (9.97%) | 2m old
+- BTC scenario **A** | price 85534 | wk close 85260 vs 82800 | 50W 77783 (9.97%) | 27m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.37% | ETH/BTC 0.03162 | breadth7d -% | stables 30d 1.21%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.02pt | 7d 0.40pt | n=47
-- Gold: PAXG 1m -4.73% | real10y 2.92 (50bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
+- Gold: PAXG 1m -5.00% | real10y 2.92 (50bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
 - 10y 1w: 11bp = real 9 + breakeven 2 -> **REAL_YIELD_DRIVEN**
 - 10y 1m: 51bp = real 50 + breakeven 1 -> **REAL_YIELD_DRIVEN**
 
@@ -19,7 +19,14 @@
 - FLUID: **ONGOING** | +116% impulse, retr 0.25 | OI dd -% | fund - | hold False | inval 1.70110 | OB 1.70110-1.73600
 
 ## Pre-pump candidates
-- MON: [D+E] 7d 9.7%
+- HBAR: [A+E] 7d -15.7%
+- ZEC: [A+E] 7d -4.2%
+- TRX: [A+E] 7d 0.2%
+- SEI: [A+E] 7d 0.3%
+- TAO: [A+E] 7d 0.4%
+- CRO: [A+E] 7d 0.9%
+- XRP: [A+E] 7d 1.3%
+- ETH: [D+E] 7d 1.4%
 
 ## ETF pipeline (new this run)
 - zcash: launch - Zcash ETF sees first weekly outflow of $93.56M after strong gains since August launch - Pl
@@ -45,13 +52,12 @@
 - vote: derive (Derive) until 2026-10-05 - DIP: Increase $DRV Buyback Allocation from 35% to 50% of Protocol Fees
 
 ## Paper book (open trades, marked to last scan)
-- open 62 | mean 5.9% (0.48R) | in profit 43 | older than 7d 48
-- worst: SKY -0.57R, BCH -0.50R, TIA -0.48R | best: SUI 2.13R, FIL 2.86R, ZRO 3.33R
+- open 62 | mean 5.8% (0.47R) | in profit 41 | older than 7d 48
+- worst: SKY -0.53R, BCH -0.52R, TIA -0.47R | best: JUP 2.14R, FIL 2.86R, ZRO 3.39R
 
 ## System
-- CoinGecko 1711/10000 used, month-end projection 10349 (104%), throttle level 2 | by script {'scan': 544, 'check_liquidity': 81, 'breakout_check': 1078, 'counterfactual_check': 8}
+- CoinGecko 1714/10000 used, month-end projection 10284 (103%), throttle level 2 | by script {'scan': 546, 'check_liquidity': 82, 'breakout_check': 1078, 'counterfactual_check': 8}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=21), H2 PENDING (n=52)
-- radar-flags.json scan age: 19m
-- WARM-UP active until 2026-10-06T03:30:40.063185+00:00 after a 2.39h gap: Layer-2 early signals recorded, not flagged
-- excluded from radar (pegged/tokenized equity): 38
+- radar-flags.json scan age: 14m
+- excluded from radar (pegged/tokenized equity): 37
