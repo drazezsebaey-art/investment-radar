@@ -1,9 +1,9 @@
-# Radar digest - 2026-10-06 13:48 UTC
+# Radar digest - 2026-10-06 14:13 UTC
 
 ## Market
-- BTC scenario **A** | price 86133 | wk close 85260 vs 82800 | 50W 77783 (10.74%) | 1h old
-- Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.48% | ETH/BTC 0.03152 | breadth7d 33% | stables 30d 1.21%
-- Alt risk (BTC.D): **NORMAL**  | 3d 0.06pt | 7d 0.48pt | n=49
+- BTC scenario **A** | price 86133 | wk close 85260 vs 82800 | 50W 77783 (10.74%) | 2h old
+- Alts: **BTC_LED** [-] | BTC.D 56.51% | ETH/BTC 0.03144 | breadth7d -% | stables 30d 1.21%
+- Alt risk (BTC.D): **NORMAL**  | 3d 0.02pt | 7d 0.57pt | n=50
 - Gold: PAXG 1m -4.51% | real10y 2.92 (50bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
 - 10y 1w: 11bp = real 9 + breakeven 2 -> **REAL_YIELD_DRIVEN**
 - 10y 1m: 51bp = real 50 + breakeven 1 -> **REAL_YIELD_DRIVEN**
@@ -19,7 +19,7 @@
 - WLD: **ONGOING** | +76% impulse, retr 0.20 | OI dd 13% | fund 0.0096 | hold False | inval 0.48060 | OB 0.48580-0.50480
 
 ## Pre-pump candidates
-- LIT: [C+E] 7d -13.2%
+- none
 
 ## ETF pipeline (new this run)
 - cap-4 NEW: other - Bitcoin slips below $86k as ETF outflows cap recovery efforts - CoinJournal
@@ -50,12 +50,12 @@
 - (15 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 61 | mean 7.2% (0.59R) | in profit 46 | older than 7d 47
-- worst: BCH -0.47R, SAND -0.46R, XRP -0.31R | best: RENDER 2.46R, FIL 2.72R, ZRO 3.79R
+- open 61 | mean 7.1% (0.59R) | in profit 45 | older than 7d 47
+- worst: BCH -0.47R, SAND -0.43R, TIA -0.33R | best: RENDER 2.51R, FIL 2.59R, ZRO 3.73R
 
 ## System
-- CoinGecko 1820/10000 used, month-end projection 10181 (102%), throttle level 2 | by script {'scan': 582, 'check_liquidity': 98, 'breakout_check': 1132, 'counterfactual_check': 8}
+- CoinGecko 1822/10000 used, month-end projection 10116 (101%), throttle level 2 | by script {'scan': 584, 'check_liquidity': 98, 'breakout_check': 1132, 'counterfactual_check': 8}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=21), H2 PENDING (n=52)
-- radar-flags.json scan age: 18m
+- radar-flags.json scan age: 13m
 - excluded from radar (pegged/tokenized equity): 37
