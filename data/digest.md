@@ -1,9 +1,9 @@
-# Radar digest - 2026-10-06 01:48 UTC
+# Radar digest - 2026-10-06 02:15 UTC
 
 ## Market
-- BTC scenario **A** | price 85656 | wk close 85260 vs 82800 | 50W 77783 (10.12%) | 1m old
-- Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.34% | ETH/BTC 0.03164 | breadth7d -% | stables 30d 1.08%
-- Alt risk (BTC.D): **NORMAL**  | 3d -0.17pt | 7d 0.34pt | n=46
+- BTC scenario **A** | price 85656 | wk close 85260 vs 82800 | 50W 77783 (10.12%) | 29m old
+- Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.37% | ETH/BTC 0.03162 | breadth7d -% | stables 30d 1.21%
+- Alt risk (BTC.D): **NORMAL**  | 3d -0.02pt | 7d 0.40pt | n=47
 - Gold: PAXG 1m -4.73% | real10y 2.92 (50bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
 - 10y 1w: 11bp = real 9 + breakeven 2 -> **REAL_YIELD_DRIVEN**
 - 10y 1m: 51bp = real 50 + breakeven 1 -> **REAL_YIELD_DRIVEN**
@@ -43,13 +43,13 @@
 - vote: derive (Derive) until 2026-10-05 - DIP: Increase $DRV Buyback Allocation from 35% to 50% of Protocol Fees
 
 ## Paper book (open trades, marked to last scan)
-- open 62 | mean 6.7% (0.55R) | in profit 46 | older than 7d 48
-- worst: BCH -0.49R, TIA -0.42R, SAND -0.32R | best: JUP 2.26R, FIL 2.72R, ZRO 3.04R
+- open 62 | mean 6.4% (0.52R) | in profit 44 | older than 7d 48
+- worst: BCH -0.50R, TIA -0.43R, SKY -0.43R | best: SUI 2.22R, FIL 2.72R, ZRO 3.16R
 
 ## System
-- CoinGecko 1699/10000 used, month-end projection 10447 (104%), throttle level 2 | by script {'scan': 536, 'check_liquidity': 77, 'breakout_check': 1078, 'counterfactual_check': 8}
+- CoinGecko 1702/10000 used, month-end projection 10379 (104%), throttle level 2 | by script {'scan': 538, 'check_liquidity': 78, 'breakout_check': 1078, 'counterfactual_check': 8}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=21), H2 PENDING (n=51)
-- radar-flags.json scan age: 17m
+- radar-flags.json scan age: 15m
 - WARM-UP active until 2026-10-06T03:30:40.063185+00:00 after a 2.39h gap: Layer-2 early signals recorded, not flagged
 - excluded from radar (pegged/tokenized equity): 36
