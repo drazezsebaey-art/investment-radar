@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-06 08:43 UTC
+# Radar digest - 2026-10-06 09:16 UTC
 
 ## Market
-- BTC scenario **A** | price 85772 | wk close 85260 vs 82800 | 50W 77783 (10.27%) | 27m old
+- BTC scenario **A** | price 85772 | wk close 85260 vs 82800 | 50W 77783 (10.27%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.40% | ETH/BTC 0.03159 | breadth7d 48% | stables 30d 1.20%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.01pt | 7d 0.32pt | n=48
 - Gold: PAXG 1m -5.00% | real10y 2.92 (50bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -27,14 +27,14 @@
 - zcash: institutional_backing - Zcash ETF Adds Anchorage Digital as Additional Custodian to Diversify ZEC Storage - Tradin
 
 ## Derivatives flags (OKX)
-- ETH: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.94 | taker 0.97
-- SOL: SHORT_SQUEEZE_24H | OI/mc 0.56% | topPos 0.93 | taker 0.88
-- AVAX: LONG_FLUSH_24H | OI/mc 0.47% | topPos 0.88 | taker 1.05
-- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 0.98
-- SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.85 | taker 0.95
-- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.93 | taker 1.12
-- TAO: LONG_FLUSH_24H | OI/mc -% | topPos 0.85 | taker 0.96
-- WLD: AGGRESSIVE_SELLING | OI/mc 1.83% | topPos 0.92 | taker 0.85
+- ETH: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.96 | taker 0.98
+- SOL: SHORT_SQUEEZE_24H | OI/mc 0.56% | topPos 0.93 | taker 0.91
+- AVAX: LONG_FLUSH_24H | OI/mc 0.47% | topPos 0.88 | taker 1.06
+- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 1.00
+- SUI: SHORT_SQUEEZE_FUEL, LONG_FLUSH_24H | OI/mc -% | topPos 0.85 | taker 0.97
+- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.93 | taker 1.14
+- TAO: LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 0.98
+- WLD: AGGRESSIVE_SELLING | OI/mc 1.85% | topPos 0.92 | taker 0.85
 
 ## Revenue / buyback flags
 - collector-crypt: REVENUE_ACCELERATING
@@ -45,12 +45,12 @@
 - vote: derive (Derive) until 2026-10-05 - DIP: Increase $DRV Buyback Allocation from 35% to 50% of Protocol Fees
 
 ## Paper book (open trades, marked to last scan)
-- open 62 | mean 6.7% (0.56R) | in profit 44 | older than 7d 48
-- worst: MINA -0.56R, SAND -0.56R, BCH -0.47R | best: JUP 2.28R, FIL 3.26R, ZRO 3.33R
+- open 62 | mean 6.5% (0.54R) | in profit 45 | older than 7d 48
+- worst: MINA -0.78R, SAND -0.57R, BCH -0.49R | best: JUP 2.27R, FIL 3.13R, ZRO 3.16R
 
 ## System
-- CoinGecko 1742/10000 used, month-end projection 10125 (101%), throttle level 2 | by script {'scan': 564, 'check_liquidity': 92, 'breakout_check': 1078, 'counterfactual_check': 8}
+- CoinGecko 1744/10000 used, month-end projection 10058 (101%), throttle level 2 | by script {'scan': 566, 'check_liquidity': 92, 'breakout_check': 1078, 'counterfactual_check': 8}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=21), H2 PENDING (n=52)
-- radar-flags.json scan age: 13m
-- excluded from radar (pegged/tokenized equity): 37
+- radar-flags.json scan age: 16m
+- excluded from radar (pegged/tokenized equity): 38
