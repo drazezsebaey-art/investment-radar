@@ -1,4 +1,4 @@
-# Radar digest - 2026-10-06 02:47 UTC
+# Radar digest - 2026-10-06 03:15 UTC
 
 ## Market
 - BTC scenario **A** | price 85656 | wk close 85260 vs 82800 | 50W 77783 (10.12%) | 1h old
@@ -19,7 +19,7 @@
 - FLUID: **ONGOING** | +116% impulse, retr 0.07 | OI dd -% | fund - | hold False | inval 1.70110 | OB 1.70110-1.73600
 
 ## Pre-pump candidates
-- MON: [D+E] 7d 8.4%
+- MON: [D+E] 7d 9.7%
 
 ## ETF pipeline (new this run)
 - chainlink: institutional_backing - Grayscale Chainlink Trust adds Anchorage Digital as additional custodian for LINK holdings
@@ -43,13 +43,13 @@
 - vote: derive (Derive) until 2026-10-05 - DIP: Increase $DRV Buyback Allocation from 35% to 50% of Protocol Fees
 
 ## Paper book (open trades, marked to last scan)
-- open 62 | mean 6.3% (0.51R) | in profit 44 | older than 7d 48
-- worst: BCH -0.48R, TIA -0.44R, SKY -0.43R | best: JUP 2.27R, FIL 2.59R, ZRO 3.33R
+- open 62 | mean 6.0% (0.48R) | in profit 42 | older than 7d 48
+- worst: BCH -0.50R, TIA -0.47R, SKY -0.47R | best: JUP 2.17R, FIL 2.59R, ZRO 3.39R
 
 ## System
-- CoinGecko 1705/10000 used, month-end projection 10398 (104%), throttle level 2 | by script {'scan': 540, 'check_liquidity': 79, 'breakout_check': 1078, 'counterfactual_check': 8}
+- CoinGecko 1708/10000 used, month-end projection 10331 (103%), throttle level 2 | by script {'scan': 542, 'check_liquidity': 80, 'breakout_check': 1078, 'counterfactual_check': 8}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=21), H2 PENDING (n=52)
-- radar-flags.json scan age: 17m
+- radar-flags.json scan age: 15m
 - WARM-UP active until 2026-10-06T03:30:40.063185+00:00 after a 2.39h gap: Layer-2 early signals recorded, not flagged
-- excluded from radar (pegged/tokenized equity): 37
+- excluded from radar (pegged/tokenized equity): 38
