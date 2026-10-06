@@ -1,10 +1,10 @@
-# Radar digest - 2026-10-06 15:46 UTC
+# Radar digest - 2026-10-06 16:15 UTC
 
 ## Market
-- BTC scenario **A** | price 86252 | wk close 85260 vs 82800 | 50W 77783 (10.89%) | 60m old
+- BTC scenario **A** | price 86252 | wk close 85260 vs 82800 | 50W 77783 (10.89%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 56.51% | ETH/BTC 0.03144 | breadth7d -% | stables 30d 1.21%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.02pt | 7d 0.57pt | n=50
-- Gold: PAXG 1m -4.51% | real10y 2.92 (50bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
+- Gold: PAXG 1m -4.54% | real10y 2.92 (50bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
 - 10y 1w: 11bp = real 9 + breakeven 2 -> **REAL_YIELD_DRIVEN**
 - 10y 1m: 51bp = real 50 + breakeven 1 -> **REAL_YIELD_DRIVEN**
 
@@ -19,7 +19,7 @@
 - ADA: **ONGOING** | +49% impulse, retr 0.08 | OI dd 0% | fund 0.0100 | hold False | inval 0.24230 | OB 0.23870-0.24480
 
 ## Pre-pump candidates
-- none
+- PUMP: [D+E] 7d 9.3%
 
 ## ETF pipeline (new this run)
 - injective-protocol NEW: launch - Injective launches Trench Treasury as Canary files SEC ETF – Details - AMBCrypto
@@ -43,12 +43,12 @@
 - (15 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 60 | mean 6.5% (0.54R) | in profit 45 | older than 7d 46
-- worst: BCH -0.48R, SAND -0.47R, SKY -0.44R | best: JUP 2.28R, RENDER 2.46R, FIL 2.72R
+- open 60 | mean 5.7% (0.47R) | in profit 43 | older than 7d 46
+- worst: SAND -0.52R, BCH -0.50R, SKY -0.50R | best: JUP 2.19R, RENDER 2.30R, FIL 2.59R
 
 ## System
-- CoinGecko 1828/10000 used, month-end projection 10074 (101%), throttle level 2 | by script {'scan': 590, 'check_liquidity': 98, 'breakout_check': 1132, 'counterfactual_check': 8}
+- CoinGecko 1831/10000 used, month-end projection 10017 (100%), throttle level 2 | by script {'scan': 592, 'check_liquidity': 99, 'breakout_check': 1132, 'counterfactual_check': 8}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=21), H2 PENDING (n=52)
-- radar-flags.json scan age: 16m
-- excluded from radar (pegged/tokenized equity): 37
+- radar-flags.json scan age: 15m
+- excluded from radar (pegged/tokenized equity): 36
