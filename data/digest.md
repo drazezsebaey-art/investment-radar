@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-06 11:18 UTC
+# Radar digest - 2026-10-06 11:46 UTC
 
 ## Market
-- BTC scenario **A** | price 86065 | wk close 85260 vs 82800 | 50W 77783 (10.65%) | 1h old
+- BTC scenario **A** | price 86065 | wk close 85260 vs 82800 | 50W 77783 (10.65%) | 2h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.48% | ETH/BTC 0.03152 | breadth7d 33% | stables 30d 1.21%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.06pt | 7d 0.48pt | n=49
 - Gold: PAXG 1m -4.51% | real10y 2.92 (50bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -19,13 +19,11 @@
 - STX: **ONGOING** | +112% impulse, retr 0.16 | OI dd 28% | fund 0.0100 | hold False | inval 0.35090 | OB 0.31090-0.31560
 
 ## Pre-pump candidates
-- NEAR: [A+C] 7d 9.7%
+- LIT: [C+E] 7d -12.2%
 
 ## ETF pipeline (new this run)
-- pepe NEW: other - Pepe Coin Price Falls Despite Canary ETF Push while AlphaPepe Adds 100+ Holders Daily Befo
-- pepe NEW: other - PEPE price holds near $0.00000439 amid ETF fili... - pluang.com
-- pepe NEW: other - PEPE Price Prediction: Canary ETF Catalyst vs. Whale Trap — October 2026's Binary Decision
-- solana NEW: other - Grayscale Solana Staking ETF: This Is Now Becoming A Cash-Flow Product (NYSEARCA:GSOL) - S
+- near: other - Near Protocol ETF Puts NEAR Back on Institutional Investors’ Radar - Yahoo Finance
+- near: other - Near Protocol ETF Puts NEAR Back on Institutional Investors’ Radar - Yahoo Finance
 
 ## Derivatives flags (OKX)
 - BTC: SHORT_SQUEEZE_24H | OI/mc 0.19% | topPos 1.00 | taker 0.99
@@ -46,12 +44,12 @@
 - (15 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 61 | mean 7.1% (0.59R) | in profit 45 | older than 7d 47
-- worst: SAND -0.53R, BCH -0.43R, TIA -0.38R | best: SUI 2.22R, FIL 2.86R, ZRO 3.44R
+- open 61 | mean 7.3% (0.61R) | in profit 46 | older than 7d 47
+- worst: BCH -0.44R, SAND -0.44R, TIA -0.38R | best: RENDER 2.30R, FIL 2.86R, ZRO 3.44R
 
 ## System
-- CoinGecko 1754/10000 used, month-end projection 9962 (100%), throttle level 1 | by script {'scan': 574, 'check_liquidity': 94, 'breakout_check': 1078, 'counterfactual_check': 8}
+- CoinGecko 1757/10000 used, month-end projection 9979 (100%), throttle level 1 | by script {'scan': 576, 'check_liquidity': 95, 'breakout_check': 1078, 'counterfactual_check': 8}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=21), H2 PENDING (n=52)
-- radar-flags.json scan age: 17m
+- radar-flags.json scan age: 15m
 - excluded from radar (pegged/tokenized equity): 37
