@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-06 07:16 UTC
+# Radar digest - 2026-10-06 07:44 UTC
 
 ## Market
-- BTC scenario **A** | price 85523 | wk close 85260 vs 82800 | 50W 77783 (9.95%) | 1h old
+- BTC scenario **A** | price 85523 | wk close 85260 vs 82800 | 50W 77783 (9.95%) | 2h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.40% | ETH/BTC 0.03159 | breadth7d 48% | stables 30d 1.20%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.01pt | 7d 0.32pt | n=48
 - Gold: PAXG 1m -5.00% | real10y 2.92 (50bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -21,13 +21,16 @@
 ## Pre-pump candidates
 - NEAR: [A+C+E] 7d 10.0%
 - HBAR: [A+E] 7d -16.0%
+- HASH: [C+E] 7d -14.7%
 - LIT: [C+E] 7d -9.7%
 - ZEC: [A+E] 7d -4.6%
 - SOL: [A+E] 7d 1.4%
 - AVAX: [A+E] 7d 6.5%
 
 ## ETF pipeline (new this run)
-- none
+- solana NEW: other - Crypto ETF News Today: BTC, ETH, SOL Bleed Despite Market Turns Green - Coin Gabbar
+- litecoin NEW: other - Litecoin replaces Gram in the Virtune altcoin ETP - CryptoTicker
+- zcash: institutional_backing - Zcash ETF Adds Anchorage Digital as Additional Custodian to Diversify ZEC Storage - Tradin
 
 ## Derivatives flags (OKX)
 - BTC: LONG_FLUSH_24H | OI/mc 0.19% | topPos 0.98 | taker 0.98
@@ -48,12 +51,12 @@
 - vote: derive (Derive) until 2026-10-05 - DIP: Increase $DRV Buyback Allocation from 35% to 50% of Protocol Fees
 
 ## Paper book (open trades, marked to last scan)
-- open 62 | mean 5.9% (0.48R) | in profit 42 | older than 7d 48
-- worst: MINA -0.65R, SKY -0.54R, SAND -0.53R | best: SUI 2.13R, FIL 3.13R, ZRO 3.21R
+- open 62 | mean 6.0% (0.49R) | in profit 43 | older than 7d 48
+- worst: SAND -0.59R, SKY -0.50R, IOTA -0.49R | best: JUP 2.28R, ZRO 3.21R, FIL 3.26R
 
 ## System
-- CoinGecko 1733/10000 used, month-end projection 10152 (102%), throttle level 2 | by script {'scan': 558, 'check_liquidity': 89, 'breakout_check': 1078, 'counterfactual_check': 8}
+- CoinGecko 1736/10000 used, month-end projection 10170 (102%), throttle level 2 | by script {'scan': 560, 'check_liquidity': 90, 'breakout_check': 1078, 'counterfactual_check': 8}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=21), H2 PENDING (n=52)
-- radar-flags.json scan age: 15m
+- radar-flags.json scan age: 14m
 - excluded from radar (pegged/tokenized equity): 38
