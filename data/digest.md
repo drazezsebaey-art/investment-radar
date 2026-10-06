@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-06 06:14 UTC
+# Radar digest - 2026-10-06 06:44 UTC
 
 ## Market
-- BTC scenario **A** | price 85523 | wk close 85260 vs 82800 | 50W 77783 (9.95%) | 22m old
+- BTC scenario **A** | price 85523 | wk close 85260 vs 82800 | 50W 77783 (9.95%) | 52m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.40% | ETH/BTC 0.03159 | breadth7d 48% | stables 30d 1.20%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.01pt | 7d 0.32pt | n=48
 - Gold: PAXG 1m -5.00% | real10y 2.92 (50bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -19,9 +19,9 @@
 - FLUID: **ONGOING** | +116% impulse, retr 0.26 | OI dd -% | fund - | hold False | inval 1.70110 | OB 1.70110-1.73600
 
 ## Pre-pump candidates
-- HBAR: [A+E] 7d -15.1%
-- LIT: [C+E] 7d -8.6%
-- ZEC: [A+E] 7d -2.9%
+- HBAR: [A+E] 7d -16.5%
+- LIT: [C+E] 7d -9.6%
+- ZEC: [A+E] 7d -2.1%
 - SOL: [A+E] 7d 1.8%
 - AVAX: [A+E] 7d 7.7%
 - NEAR: [A+C] 7d 12.3%
@@ -48,12 +48,12 @@
 - vote: derive (Derive) until 2026-10-05 - DIP: Increase $DRV Buyback Allocation from 35% to 50% of Protocol Fees
 
 ## Paper book (open trades, marked to last scan)
-- open 62 | mean 6.0% (0.49R) | in profit 42 | older than 7d 48
-- worst: MINA -0.68R, SAND -0.57R, IOTA -0.56R | best: SUI 2.13R, FIL 3.13R, ZRO 3.33R
+- open 62 | mean 5.5% (0.44R) | in profit 40 | older than 7d 48
+- worst: MINA -0.65R, SAND -0.62R, IOTA -0.57R | best: SUI 2.13R, FIL 2.99R, ZRO 3.21R
 
 ## System
-- CoinGecko 1726/10000 used, month-end projection 10192 (102%), throttle level 2 | by script {'scan': 554, 'check_liquidity': 86, 'breakout_check': 1078, 'counterfactual_check': 8}
+- CoinGecko 1729/10000 used, month-end projection 10209 (102%), throttle level 2 | by script {'scan': 556, 'check_liquidity': 87, 'breakout_check': 1078, 'counterfactual_check': 8}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=21), H2 PENDING (n=52)
 - radar-flags.json scan age: 13m
-- excluded from radar (pegged/tokenized equity): 37
+- excluded from radar (pegged/tokenized equity): 38
