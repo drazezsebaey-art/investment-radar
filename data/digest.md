@@ -1,9 +1,9 @@
-# Radar digest - 2026-10-06 05:53 UTC
+# Radar digest - 2026-10-06 06:14 UTC
 
 ## Market
-- BTC scenario **A** | price 85523 | wk close 85260 vs 82800 | 50W 77783 (9.95%) | 2m old
-- Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.37% | ETH/BTC 0.03162 | breadth7d -% | stables 30d 1.21%
-- Alt risk (BTC.D): **NORMAL**  | 3d -0.02pt | 7d 0.40pt | n=47
+- BTC scenario **A** | price 85523 | wk close 85260 vs 82800 | 50W 77783 (9.95%) | 22m old
+- Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.40% | ETH/BTC 0.03159 | breadth7d 48% | stables 30d 1.20%
+- Alt risk (BTC.D): **NORMAL**  | 3d 0.01pt | 7d 0.32pt | n=48
 - Gold: PAXG 1m -5.00% | real10y 2.92 (50bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
 - 10y 1w: 11bp = real 9 + breakeven 2 -> **REAL_YIELD_DRIVEN**
 - 10y 1m: 51bp = real 50 + breakeven 1 -> **REAL_YIELD_DRIVEN**
@@ -20,9 +20,11 @@
 
 ## Pre-pump candidates
 - HBAR: [A+E] 7d -15.1%
+- LIT: [C+E] 7d -8.6%
 - ZEC: [A+E] 7d -2.9%
-- SOL: [A+E] 7d 1.9%
-- AVAX: [A+E] 7d 8.0%
+- SOL: [A+E] 7d 1.8%
+- AVAX: [A+E] 7d 7.7%
+- NEAR: [A+C] 7d 12.3%
 
 ## ETF pipeline (new this run)
 - none
@@ -46,12 +48,12 @@
 - vote: derive (Derive) until 2026-10-05 - DIP: Increase $DRV Buyback Allocation from 35% to 50% of Protocol Fees
 
 ## Paper book (open trades, marked to last scan)
-- open 62 | mean 6.2% (0.51R) | in profit 43 | older than 7d 48
-- worst: SAND -0.56R, MINA -0.49R, IOTA -0.48R | best: JUP 2.23R, FIL 3.13R, ZRO 3.33R
+- open 62 | mean 6.0% (0.49R) | in profit 42 | older than 7d 48
+- worst: MINA -0.68R, SAND -0.57R, IOTA -0.56R | best: SUI 2.13R, FIL 3.13R, ZRO 3.33R
 
 ## System
-- CoinGecko 1723/10000 used, month-end projection 10255 (103%), throttle level 2 | by script {'scan': 552, 'check_liquidity': 85, 'breakout_check': 1078, 'counterfactual_check': 8}
+- CoinGecko 1726/10000 used, month-end projection 10192 (102%), throttle level 2 | by script {'scan': 554, 'check_liquidity': 86, 'breakout_check': 1078, 'counterfactual_check': 8}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=21), H2 PENDING (n=52)
-- radar-flags.json scan age: 23m
+- radar-flags.json scan age: 13m
 - excluded from radar (pegged/tokenized equity): 37
