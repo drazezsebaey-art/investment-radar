@@ -1,9 +1,9 @@
-# Radar digest - 2026-10-06 17:46 UTC
+# Radar digest - 2026-10-06 18:27 UTC
 
 ## Market
-- BTC scenario **A** | price 85702 | wk close 85260 vs 82800 | 50W 77783 (10.18%) | 59m old
-- Alts: **BTC_LED** [-] | BTC.D 56.51% | ETH/BTC 0.03144 | breadth7d -% | stables 30d 1.21%
-- Alt risk (BTC.D): **NORMAL**  | 3d 0.02pt | 7d 0.57pt | n=50
+- BTC scenario **A** | price 85702 | wk close 85260 vs 82800 | 50W 77783 (10.18%) | 2h old
+- Alts: **BTC_LED** [-] | BTC.D 56.45% | ETH/BTC 0.03148 | breadth7d -% | stables 30d 1.21%
+- Alt risk (BTC.D): **NORMAL**  | 3d 0.02pt | 7d 0.46pt | n=51
 - Gold: PAXG 1m -4.54% | real10y 2.92 (50bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
 - 10y 1w: 11bp = real 9 + breakeven 2 -> **REAL_YIELD_DRIVEN**
 - 10y 1m: 51bp = real 50 + breakeven 1 -> **REAL_YIELD_DRIVEN**
@@ -51,12 +51,12 @@
 - (15 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 60 | mean 5.5% (0.46R) | in profit 41 | older than 7d 46
-- worst: SKY -0.57R, SAND -0.56R, BCH -0.51R | best: RENDER 2.57R, JUP 2.60R, FIL 2.72R
+- open 62 | mean 5.5% (0.45R) | in profit 42 | older than 7d 46
+- worst: SKY -0.63R, SAND -0.58R, BCH -0.49R | best: JUP 2.44R, RENDER 2.57R, FIL 2.86R
 
 ## System
-- CoinGecko 1839/10000 used, month-end projection 9987 (100%), throttle level 1 | by script {'scan': 598, 'check_liquidity': 101, 'breakout_check': 1132, 'counterfactual_check': 8}
+- CoinGecko 1887/10000 used, month-end projection 10173 (102%), throttle level 2 | by script {'scan': 600, 'check_liquidity': 101, 'breakout_check': 1178, 'counterfactual_check': 8}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=22), H2 PENDING (n=54)
-- radar-flags.json scan age: 16m
+- radar-flags.json scan age: 27m
 - excluded from radar (pegged/tokenized equity): 36

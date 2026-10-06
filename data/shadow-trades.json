@@ -6558,7 +6558,7 @@
       "hours_since_flagged_at_entry": 2.5,
       "funnel_stage_at_entry": "shortlist_10",
       "date_opened": "2026-10-01",
-      "status": "open",
+      "status": "superseded",
       "entry": 7.48,
       "stop": 6.10494599,
       "used_trend_following_stop": false,
@@ -6588,7 +6588,9 @@
       "sector_tags": [
         "layer-1",
         "real-world-assets-rwa"
-      ]
+      ],
+      "superseded_at": "2026-10-06T18:14:17.255687+00:00",
+      "superseded_reason": "promoted to a real auto trade at confidence_score 50"
     },
     {
       "id": "xpl-shadow-20261001T091406",
@@ -7037,10 +7039,7 @@
       },
       "rejected_reason": "confidence_score 20 < AUTO_TRADE_MIN_SCORE 40",
       "last_check_source": "price_history_snapshots",
-      "sector_tags": [
-        "real-world-assets-rwa",
-        "yield-farming"
-      ]
+      "sector_tags": []
     },
     {
       "id": "ape-shadow-20261003T121415",
@@ -7476,6 +7475,94 @@
         "breadth_pct_green": 42.6
       },
       "rejected_reason": "confidence_score 20 < AUTO_TRADE_MIN_SCORE 40",
+      "last_check_source": "okx_candles",
+      "sector_tags": [
+        "artificial-intelligence"
+      ]
+    },
+    {
+      "id": "aster-shadow-20261006T181417",
+      "asset_id": "aster-2",
+      "symbol": "ASTER",
+      "type": "paper",
+      "auto": true,
+      "triggered_by": "priority_review:triangle",
+      "entry_archetype": "chart_pattern_triangle",
+      "engine_version": "auto_paper_trade-v62",
+      "decay_state_at_entry": "fresh",
+      "hours_since_flagged_at_entry": 2.0,
+      "funnel_stage_at_entry": "shortlist_10",
+      "date_opened": "2026-10-06",
+      "status": "open",
+      "entry": 0.748998,
+      "stop": 0.70804336,
+      "used_trend_following_stop": false,
+      "targets": [
+        0.81042996,
+        0.8513846,
+        0.91281656
+      ],
+      "created_at": "2026-10-06T18:14:17.255687+00:00",
+      "filled_at": "2026-10-06T18:00:46.791125+00:00",
+      "price_observed_at": "2026-10-06T18:00:46.791125+00:00",
+      "actual_entry": 0.748998,
+      "targets_hit": [],
+      "confidence_score_at_entry": 35,
+      "signal_quality_at_entry": "beta_driven_or_cluster",
+      "market_regime_at_entry": {
+        "risk_state": "neutral",
+        "volatility_state": "normal",
+        "btc_trend_recent_pct": -0.86,
+        "btc_trend_full_window_pct": 6.78,
+        "btc_volatility_now": 0.504,
+        "btc_volatility_baseline_avg": 0.428,
+        "breadth_pct_green": 47.6
+      },
+      "rejected_reason": "confidence_score 35 < AUTO_TRADE_MIN_SCORE 40",
+      "last_check_source": "okx_candles",
+      "sector_tags": [
+        "decentralized-exchange"
+      ]
+    },
+    {
+      "id": "fet-shadow-20261006T181417",
+      "asset_id": "fetch-ai",
+      "symbol": "FET",
+      "type": "paper",
+      "auto": true,
+      "triggered_by": "priority_review:squeeze",
+      "entry_archetype": "squeeze_expansion",
+      "engine_version": "auto_paper_trade-v62",
+      "decay_state_at_entry": "fresh",
+      "hours_since_flagged_at_entry": 2.0,
+      "funnel_stage_at_entry": "agent_room_priority",
+      "date_opened": "2026-10-06",
+      "status": "open",
+      "entry": 0.24399,
+      "stop": 0.22600986,
+      "used_trend_following_stop": false,
+      "targets": [
+        0.27096021,
+        0.28894035,
+        0.31591056
+      ],
+      "created_at": "2026-10-06T18:14:17.255687+00:00",
+      "filled_at": "2026-10-06T18:00:46.791125+00:00",
+      "price_observed_at": "2026-10-06T18:00:46.791125+00:00",
+      "actual_entry": 0.24399,
+      "targets_hit": [],
+      "confidence_score_at_entry": 35,
+      "signal_quality_at_entry": "beta_driven_or_cluster",
+      "market_regime_at_entry": {
+        "risk_state": "neutral",
+        "volatility_state": "normal",
+        "btc_trend_recent_pct": -0.86,
+        "btc_trend_full_window_pct": 6.78,
+        "btc_volatility_now": 0.504,
+        "btc_volatility_baseline_avg": 0.428,
+        "breadth_pct_green": 47.6
+      },
+      "rejected_reason": "confidence_score 35 < AUTO_TRADE_MIN_SCORE 40",
       "last_check_source": "okx_candles",
       "sector_tags": [
         "artificial-intelligence"
