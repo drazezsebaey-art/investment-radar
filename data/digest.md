@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-06 14:48 UTC
+# Radar digest - 2026-10-06 15:15 UTC
 
 ## Market
-- BTC scenario **A** | price 86252 | wk close 85260 vs 82800 | 50W 77783 (10.89%) | 1m old
+- BTC scenario **A** | price 86252 | wk close 85260 vs 82800 | 50W 77783 (10.89%) | 29m old
 - Alts: **BTC_LED** [-] | BTC.D 56.51% | ETH/BTC 0.03144 | breadth7d -% | stables 30d 1.21%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.02pt | 7d 0.57pt | n=50
 - Gold: PAXG 1m -4.51% | real10y 2.92 (50bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -19,7 +19,12 @@
 - ADA: **ONGOING** | +49% impulse, retr 0.08 | OI dd 0% | fund 0.0100 | hold False | inval 0.24230 | OB 0.23870-0.24480
 
 ## Pre-pump candidates
-- PUMP: [D+E] 7d 8.0%
+- TAO: [A+E] 7d -3.5%
+- SEI: [A+E] 7d -1.5%
+- AVAX: [A+E] 7d -0.3%
+- SOL: [A+E] 7d 0.6%
+- INJ: [A+E] 7d 2.0%
+- BNB: [A+E] 7d 2.7%
 
 ## ETF pipeline (new this run)
 - cap-4 NEW: other - Bitcoin slips below $86k as ETF outflows cap recovery efforts - CoinJournal
@@ -50,12 +55,12 @@
 - (15 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 61 | mean 6.7% (0.55R) | in profit 44 | older than 7d 47
-- worst: SAND -0.51R, BCH -0.47R, SKY -0.43R | best: RENDER 2.46R, FIL 2.59R, ZRO 3.84R
+- open 61 | mean 7.3% (0.61R) | in profit 46 | older than 7d 47
+- worst: SAND -0.49R, BCH -0.45R, SKY -0.40R | best: RENDER 2.51R, FIL 2.72R, ZRO 3.90R
 
 ## System
-- CoinGecko 1824/10000 used, month-end projection 10127 (101%), throttle level 2 | by script {'scan': 586, 'check_liquidity': 98, 'breakout_check': 1132, 'counterfactual_check': 8}
+- CoinGecko 1826/10000 used, month-end projection 10063 (101%), throttle level 2 | by script {'scan': 588, 'check_liquidity': 98, 'breakout_check': 1132, 'counterfactual_check': 8}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=21), H2 PENDING (n=52)
-- radar-flags.json scan age: 18m
+- radar-flags.json scan age: 15m
 - excluded from radar (pegged/tokenized equity): 37
