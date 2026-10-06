@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-06 02:15 UTC
+# Radar digest - 2026-10-06 02:47 UTC
 
 ## Market
-- BTC scenario **A** | price 85656 | wk close 85260 vs 82800 | 50W 77783 (10.12%) | 29m old
+- BTC scenario **A** | price 85656 | wk close 85260 vs 82800 | 50W 77783 (10.12%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.37% | ETH/BTC 0.03162 | breadth7d -% | stables 30d 1.21%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.02pt | 7d 0.40pt | n=47
 - Gold: PAXG 1m -4.73% | real10y 2.92 (50bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -19,20 +19,20 @@
 - FLUID: **ONGOING** | +116% impulse, retr 0.07 | OI dd -% | fund - | hold False | inval 1.70110 | OB 1.70110-1.73600
 
 ## Pre-pump candidates
-- MON: [D+E] 7d 9.0%
+- MON: [D+E] 7d 8.4%
 
 ## ETF pipeline (new this run)
 - chainlink: institutional_backing - Grayscale Chainlink Trust adds Anchorage Digital as additional custodian for LINK holdings
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.99 | taker 1.02
-- ETH: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.96 | taker 0.98
-- SOL: LONG_FLUSH_24H | OI/mc -% | topPos 0.93 | taker 0.95
+- ETH: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.96 | taker 0.97
+- SOL: LONG_FLUSH_24H | OI/mc -% | topPos 0.94 | taker 0.95
 - NEAR: SHORT_SQUEEZE_24H | OI/mc -% | topPos 1.03 | taker 0.98
-- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.89 | taker 0.98
-- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.95
+- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.89 | taker 0.99
+- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.96
 - SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 0.94
-- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 1.11
+- SEI: AGGRESSIVE_BUYING, LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 1.16
+- TAO: LONG_FLUSH_24H | OI/mc -% | topPos 0.85 | taker 0.90
 
 ## Revenue / buyback flags
 - collector-crypt: REVENUE_ACCELERATING
@@ -43,13 +43,13 @@
 - vote: derive (Derive) until 2026-10-05 - DIP: Increase $DRV Buyback Allocation from 35% to 50% of Protocol Fees
 
 ## Paper book (open trades, marked to last scan)
-- open 62 | mean 6.4% (0.52R) | in profit 44 | older than 7d 48
-- worst: BCH -0.50R, TIA -0.43R, SKY -0.43R | best: SUI 2.22R, FIL 2.72R, ZRO 3.16R
+- open 62 | mean 6.3% (0.51R) | in profit 44 | older than 7d 48
+- worst: BCH -0.48R, TIA -0.44R, SKY -0.43R | best: JUP 2.27R, FIL 2.59R, ZRO 3.33R
 
 ## System
-- CoinGecko 1702/10000 used, month-end projection 10379 (104%), throttle level 2 | by script {'scan': 538, 'check_liquidity': 78, 'breakout_check': 1078, 'counterfactual_check': 8}
+- CoinGecko 1705/10000 used, month-end projection 10398 (104%), throttle level 2 | by script {'scan': 540, 'check_liquidity': 79, 'breakout_check': 1078, 'counterfactual_check': 8}
 - Trials guard: OK (0 untracked)
-- Hypotheses: H1 PENDING (n=21), H2 PENDING (n=51)
-- radar-flags.json scan age: 15m
+- Hypotheses: H1 PENDING (n=21), H2 PENDING (n=52)
+- radar-flags.json scan age: 17m
 - WARM-UP active until 2026-10-06T03:30:40.063185+00:00 after a 2.39h gap: Layer-2 early signals recorded, not flagged
-- excluded from radar (pegged/tokenized equity): 36
+- excluded from radar (pegged/tokenized equity): 37
