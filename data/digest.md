@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-06 04:45 UTC
+# Radar digest - 2026-10-06 05:14 UTC
 
 ## Market
-- BTC scenario **A** | price 85534 | wk close 85260 vs 82800 | 50W 77783 (9.97%) | 58m old
+- BTC scenario **A** | price 85534 | wk close 85260 vs 82800 | 50W 77783 (9.97%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.37% | ETH/BTC 0.03162 | breadth7d -% | stables 30d 1.21%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.02pt | 7d 0.40pt | n=47
 - Gold: PAXG 1m -5.00% | real10y 2.92 (50bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -19,11 +19,10 @@
 - FLUID: **ONGOING** | +116% impulse, retr 0.25 | OI dd -% | fund - | hold False | inval 1.70110 | OB 1.70110-1.73600
 
 ## Pre-pump candidates
-- HBAR: [A+E] 7d -14.5%
-- ZEC: [A+E] 7d -2.5%
-- ONDO: [A+E] 7d -1.5%
-- SOL: [A+E] 7d 2.7%
-- AVAX: [A+E] 7d 8.1%
+- HBAR: [A+E] 7d -15.1%
+- ZEC: [A+E] 7d -2.9%
+- SOL: [A+E] 7d 1.9%
+- AVAX: [A+E] 7d 8.0%
 
 ## ETF pipeline (new this run)
 - zcash: launch - Zcash ETF sees first weekly outflow of $93.56M after strong gains since August launch - Pl
@@ -49,12 +48,12 @@
 - vote: derive (Derive) until 2026-10-05 - DIP: Increase $DRV Buyback Allocation from 35% to 50% of Protocol Fees
 
 ## Paper book (open trades, marked to last scan)
-- open 62 | mean 6.1% (0.50R) | in profit 42 | older than 7d 48
-- worst: BCH -0.51R, SKY -0.47R, TIA -0.45R | best: JUP 2.26R, FIL 2.86R, ZRO 3.44R
+- open 62 | mean 6.0% (0.49R) | in profit 44 | older than 7d 48
+- worst: MINA -0.53R, SKY -0.52R, BCH -0.52R | best: JUP 2.24R, FIL 2.99R, ZRO 3.39R
 
 ## System
-- CoinGecko 1717/10000 used, month-end projection 10302 (103%), throttle level 2 | by script {'scan': 548, 'check_liquidity': 83, 'breakout_check': 1078, 'counterfactual_check': 8}
+- CoinGecko 1720/10000 used, month-end projection 10237 (102%), throttle level 2 | by script {'scan': 550, 'check_liquidity': 84, 'breakout_check': 1078, 'counterfactual_check': 8}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=21), H2 PENDING (n=52)
-- radar-flags.json scan age: 15m
-- excluded from radar (pegged/tokenized equity): 38
+- radar-flags.json scan age: 14m
+- excluded from radar (pegged/tokenized equity): 37
