@@ -1,4 +1,4 @@
-# Radar digest - 2026-10-06 09:16 UTC
+# Radar digest - 2026-10-06 09:46 UTC
 
 ## Market
 - BTC scenario **A** | price 85772 | wk close 85260 vs 82800 | 50W 77783 (10.27%) | 1h old
@@ -19,12 +19,13 @@
 - FLUID: **ONGOING** | +116% impulse, retr 0.20 | OI dd -% | fund - | hold False | inval 1.70110 | OB 1.70110-1.73600
 
 ## Pre-pump candidates
-- none
+- LIT: [C+E] 7d -11.7%
 
 ## ETF pipeline (new this run)
-- solana NEW: other - Crypto ETF News Today: BTC, ETH, SOL Bleed Despite Market Turns Green - Coin Gabbar
-- litecoin NEW: other - Litecoin replaces Gram in the Virtune altcoin ETP - CryptoTicker
-- zcash: institutional_backing - Zcash ETF Adds Anchorage Digital as Additional Custodian to Diversify ZEC Storage - Tradin
+- pepe NEW: other - Pepe Coin Price Falls Despite Canary ETF Push while AlphaPepe Adds 100+ Holders Daily Befo
+- pepe NEW: other - PEPE price holds near $0.00000439 amid ETF fili... - pluang.com
+- pepe NEW: other - PEPE Price Prediction: Canary ETF Catalyst vs. Whale Trap — October 2026's Binary Decision
+- solana NEW: other - Grayscale Solana Staking ETF: This Is Now Becoming A Cash-Flow Product (NYSEARCA:GSOL) - S
 
 ## Derivatives flags (OKX)
 - ETH: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.96 | taker 0.98
@@ -37,20 +38,20 @@
 - WLD: AGGRESSIVE_SELLING | OI/mc 1.85% | topPos 0.92 | taker 0.85
 
 ## Revenue / buyback flags
-- collector-crypt: REVENUE_ACCELERATING
-- ethereum: REVENUE_ACCELERATING
+- pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
+- stonk-3: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
+- collector-crypt: REVENUE_ACCELERATING, CHEAP_VS_REVENUE
 - chip-2: REVENUE_ACCELERATING
 - monad: REVENUE_ACCELERATING
-- (19 flagged protocol(s) without a tradeable token hidden)
-- vote: derive (Derive) until 2026-10-05 - DIP: Increase $DRV Buyback Allocation from 35% to 50% of Protocol Fees
+- (15 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 62 | mean 6.5% (0.54R) | in profit 45 | older than 7d 48
-- worst: MINA -0.78R, SAND -0.57R, BCH -0.49R | best: JUP 2.27R, FIL 3.13R, ZRO 3.16R
+- open 62 | mean 5.8% (0.48R) | in profit 42 | older than 7d 48
+- worst: MINA -0.79R, SAND -0.59R, SKY -0.56R | best: SUI 2.13R, FIL 2.72R, ZRO 3.10R
 
 ## System
-- CoinGecko 1744/10000 used, month-end projection 10058 (101%), throttle level 2 | by script {'scan': 566, 'check_liquidity': 92, 'breakout_check': 1078, 'counterfactual_check': 8}
+- CoinGecko 1746/10000 used, month-end projection 10070 (101%), throttle level 2 | by script {'scan': 568, 'check_liquidity': 92, 'breakout_check': 1078, 'counterfactual_check': 8}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=21), H2 PENDING (n=52)
-- radar-flags.json scan age: 16m
+- radar-flags.json scan age: 15m
 - excluded from radar (pegged/tokenized equity): 38
