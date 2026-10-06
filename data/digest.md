@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-06 04:14 UTC
+# Radar digest - 2026-10-06 04:45 UTC
 
 ## Market
-- BTC scenario **A** | price 85534 | wk close 85260 vs 82800 | 50W 77783 (9.97%) | 27m old
+- BTC scenario **A** | price 85534 | wk close 85260 vs 82800 | 50W 77783 (9.97%) | 58m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.37% | ETH/BTC 0.03162 | breadth7d -% | stables 30d 1.21%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.02pt | 7d 0.40pt | n=47
 - Gold: PAXG 1m -5.00% | real10y 2.92 (50bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -19,14 +19,11 @@
 - FLUID: **ONGOING** | +116% impulse, retr 0.25 | OI dd -% | fund - | hold False | inval 1.70110 | OB 1.70110-1.73600
 
 ## Pre-pump candidates
-- HBAR: [A+E] 7d -15.7%
-- ZEC: [A+E] 7d -4.2%
-- TRX: [A+E] 7d 0.2%
-- SEI: [A+E] 7d 0.3%
-- TAO: [A+E] 7d 0.4%
-- CRO: [A+E] 7d 0.9%
-- XRP: [A+E] 7d 1.3%
-- ETH: [D+E] 7d 1.4%
+- HBAR: [A+E] 7d -14.5%
+- ZEC: [A+E] 7d -2.5%
+- ONDO: [A+E] 7d -1.5%
+- SOL: [A+E] 7d 2.7%
+- AVAX: [A+E] 7d 8.1%
 
 ## ETF pipeline (new this run)
 - zcash: launch - Zcash ETF sees first weekly outflow of $93.56M after strong gains since August launch - Pl
@@ -34,14 +31,14 @@
 - zcash: other - Zcash ETF: $93.56 million outflow in one week - cryptoticker.io
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc -% | topPos 0.99 | taker 1.01
-- ETH: LONG_FLUSH_24H | OI/mc -% | topPos 0.95 | taker 0.96
-- NEAR: SHORT_SQUEEZE_24H | OI/mc -% | topPos 1.03 | taker 0.98
-- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.89 | taker 0.98
-- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.96
-- SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.85 | taker 0.94
-- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 1.12
-- TAO: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.90
+- BTC: LONG_FLUSH_24H | OI/mc -% | topPos 0.99 | taker 1.02
+- ETH: LONG_FLUSH_24H | OI/mc -% | topPos 0.94 | taker 0.97
+- NEAR: SHORT_SQUEEZE_24H | OI/mc -% | topPos 1.03 | taker 0.99
+- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 1.02
+- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 0.98
+- SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.85 | taker 0.96
+- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 1.11
+- TAO: LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 0.93
 
 ## Revenue / buyback flags
 - collector-crypt: REVENUE_ACCELERATING
@@ -52,12 +49,12 @@
 - vote: derive (Derive) until 2026-10-05 - DIP: Increase $DRV Buyback Allocation from 35% to 50% of Protocol Fees
 
 ## Paper book (open trades, marked to last scan)
-- open 62 | mean 5.8% (0.47R) | in profit 41 | older than 7d 48
-- worst: SKY -0.53R, BCH -0.52R, TIA -0.47R | best: JUP 2.14R, FIL 2.86R, ZRO 3.39R
+- open 62 | mean 6.1% (0.50R) | in profit 42 | older than 7d 48
+- worst: BCH -0.51R, SKY -0.47R, TIA -0.45R | best: JUP 2.26R, FIL 2.86R, ZRO 3.44R
 
 ## System
-- CoinGecko 1714/10000 used, month-end projection 10284 (103%), throttle level 2 | by script {'scan': 546, 'check_liquidity': 82, 'breakout_check': 1078, 'counterfactual_check': 8}
+- CoinGecko 1717/10000 used, month-end projection 10302 (103%), throttle level 2 | by script {'scan': 548, 'check_liquidity': 83, 'breakout_check': 1078, 'counterfactual_check': 8}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=21), H2 PENDING (n=52)
-- radar-flags.json scan age: 14m
-- excluded from radar (pegged/tokenized equity): 37
+- radar-flags.json scan age: 15m
+- excluded from radar (pegged/tokenized equity): 38
