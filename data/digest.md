@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-06 00:47 UTC
+# Radar digest - 2026-10-06 01:15 UTC
 
 ## Market
-- BTC scenario **A** | price 85736 | wk close 85260 vs 82800 | 50W 77783 (10.23%) | 60m old
+- BTC scenario **A** | price 85736 | wk close 85260 vs 82800 | 50W 77783 (10.23%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.34% | ETH/BTC 0.03164 | breadth7d -% | stables 30d 1.08%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.17pt | 7d 0.34pt | n=46
 - Gold: PAXG 1m -4.73% | real10y 2.92 (50bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -19,7 +19,7 @@
 - ATH: **ONGOING** | +107% impulse, retr 0.23 | OI dd 100% | fund 0.0050 | hold False | inval 0.00573 | OB 0.00573-0.00598
 
 ## Pre-pump candidates
-- NEAR: [A+E] 7d 9.2%
+- MON: [D+E] 7d 9.0%
 
 ## ETF pipeline (new this run)
 - none
@@ -43,13 +43,13 @@
 - vote: derive (Derive) until 2026-10-05 - DIP: Increase $DRV Buyback Allocation from 35% to 50% of Protocol Fees
 
 ## Paper book (open trades, marked to last scan)
-- open 62 | mean 7.5% (0.61R) | in profit 47 | older than 7d 48
-- worst: BCH -0.46R, SKY -0.38R, TIA -0.33R | best: SUI 2.39R, FIL 2.86R, ZRO 3.33R
+- open 62 | mean 7.0% (0.57R) | in profit 46 | older than 7d 48
+- worst: BCH -0.47R, TIA -0.39R, XRP -0.31R | best: SUI 2.30R, FIL 2.86R, ZRO 2.98R
 
 ## System
-- CoinGecko 1685/10000 used, month-end projection 10447 (104%), throttle level 2 | by script {'scan': 524, 'check_liquidity': 75, 'breakout_check': 1078, 'counterfactual_check': 8}
+- CoinGecko 1688/10000 used, month-end projection 10379 (104%), throttle level 2 | by script {'scan': 526, 'check_liquidity': 76, 'breakout_check': 1078, 'counterfactual_check': 8}
 - Trials guard: OK (0 untracked)
-- Hypotheses: H1 PENDING (n=19), H2 PENDING (n=50)
-- radar-flags.json scan age: 17m
+- Hypotheses: H1 PENDING (n=20), H2 PENDING (n=50)
+- radar-flags.json scan age: 15m
 - WARM-UP active until 2026-10-06T03:30:40.063185+00:00 after a 2.39h gap: Layer-2 early signals recorded, not flagged
 - excluded from radar (pegged/tokenized equity): 36
