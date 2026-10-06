@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-06 15:15 UTC
+# Radar digest - 2026-10-06 15:46 UTC
 
 ## Market
-- BTC scenario **A** | price 86252 | wk close 85260 vs 82800 | 50W 77783 (10.89%) | 29m old
+- BTC scenario **A** | price 86252 | wk close 85260 vs 82800 | 50W 77783 (10.89%) | 60m old
 - Alts: **BTC_LED** [-] | BTC.D 56.51% | ETH/BTC 0.03144 | breadth7d -% | stables 30d 1.21%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.02pt | 7d 0.57pt | n=50
 - Gold: PAXG 1m -4.51% | real10y 2.92 (50bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -19,32 +19,20 @@
 - ADA: **ONGOING** | +49% impulse, retr 0.08 | OI dd 0% | fund 0.0100 | hold False | inval 0.24230 | OB 0.23870-0.24480
 
 ## Pre-pump candidates
-- TAO: [A+E] 7d -3.5%
-- SEI: [A+E] 7d -1.5%
-- AVAX: [A+E] 7d -0.3%
-- SOL: [A+E] 7d 0.6%
-- INJ: [A+E] 7d 2.0%
-- BNB: [A+E] 7d 2.7%
+- none
 
 ## ETF pipeline (new this run)
-- cap-4 NEW: other - Bitcoin slips below $86k as ETF outflows cap recovery efforts - CoinJournal
-- binancecoin NEW: other - VanEck BNB ETF Had $2.674 Million in Assets on Oct. 2 - tokenpost.com
-- cap-4 NEW: other - American Account Trust Fund Price (AATF/USD) Today | Live Price, Market Cap & Chart - Bina
-- near: launch - High Engagement: NEAR Protocol Highlights New ETF Launch - Coinfomania
-- zcash: launch - Zcash Price Today: ZEC Holds $1,366 as NU7 Testnet Goes Live Early & ZCSH ETF Outflows Slo
-- zcash: other - Zcash ETF Lost Over $93 Million This Week. Is the Rally Over for ZEC? - Cryptonews.net
-- zcash: other - Zcash dips below $1,348 as ETF outflows ease and NU7 enters testing - CoinJournal
-- zcash: other - Zcash Joins Nasdaq Stockholm Through New ETP - Coindoo
+- injective-protocol NEW: launch - Injective launches Trench Treasury as Canary files SEC ETF – Details - AMBCrypto
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 1.02 | taker 0.97
-- SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 0.95
-- SEI: LONG_FLUSH_24H | OI/mc 0.87% | topPos 0.91 | taker 1.12
-- TAO: LONG_FLUSH_24H | OI/mc 0.82% | topPos 0.84 | taker 0.95
-- ZEC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 1.14 | taker 1.04
-- ADA: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.97 | taker 0.99
-- LINK: LONG_FLUSH_24H | OI/mc 0.35% | topPos 0.96 | taker 0.92
-- XLM: AGGRESSIVE_BUYING, LONG_FLUSH_24H | OI/mc -% | topPos 0.90 | taker 1.25
+- BTC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 1.02 | taker 0.98
+- AVAX: AGGRESSIVE_BUYING | OI/mc 0.46% | topPos 0.90 | taker 1.18
+- SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 0.98
+- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 1.15
+- TAO: LONG_FLUSH_24H | OI/mc 0.81% | topPos 0.86 | taker 0.96
+- ZEC: SHORT_SQUEEZE_FUEL, SHORT_SQUEEZE_24H | OI/mc -% | topPos 1.14 | taker 1.03
+- WLD: LONG_FLUSH_24H | OI/mc 1.90% | topPos 0.91 | taker 0.90
+- ADA: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.97 | taker 1.01
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -55,12 +43,12 @@
 - (15 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 61 | mean 7.3% (0.61R) | in profit 46 | older than 7d 47
-- worst: SAND -0.49R, BCH -0.45R, SKY -0.40R | best: RENDER 2.51R, FIL 2.72R, ZRO 3.90R
+- open 60 | mean 6.5% (0.54R) | in profit 45 | older than 7d 46
+- worst: BCH -0.48R, SAND -0.47R, SKY -0.44R | best: JUP 2.28R, RENDER 2.46R, FIL 2.72R
 
 ## System
-- CoinGecko 1826/10000 used, month-end projection 10063 (101%), throttle level 2 | by script {'scan': 588, 'check_liquidity': 98, 'breakout_check': 1132, 'counterfactual_check': 8}
+- CoinGecko 1828/10000 used, month-end projection 10074 (101%), throttle level 2 | by script {'scan': 590, 'check_liquidity': 98, 'breakout_check': 1132, 'counterfactual_check': 8}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=21), H2 PENDING (n=52)
-- radar-flags.json scan age: 15m
+- radar-flags.json scan age: 16m
 - excluded from radar (pegged/tokenized equity): 37
