@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-06 20:48 UTC
+# Radar digest - 2026-10-06 21:14 UTC
 
 ## Market
-- BTC scenario **A** | price 85649 | wk close 85260 vs 82800 | 50W 77783 (10.11%) | 2m old
+- BTC scenario **A** | price 85649 | wk close 85260 vs 82800 | 50W 77783 (10.11%) | 27m old
 - Alts: **BTC_LED** [-] | BTC.D 56.45% | ETH/BTC 0.03148 | breadth7d -% | stables 30d 1.21%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.02pt | 7d 0.46pt | n=51
 - Gold: PAXG 1m -4.54% | real10y 2.92 (50bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -19,13 +19,14 @@
 - STX: **ONGOING** | +87% impulse, retr 0.18 | OI dd 31% | fund 0.0100 | hold False | inval 0.35090 | OB 0.31090-0.31560
 
 ## Pre-pump candidates
-- SEI: [A+E] 7d -1.7%
-- TAO: [A+E] 7d -1.5%
-- SOL: [A+E] 7d 1.4%
-- AVAX: [A+E] 7d 1.6%
-- INJ: [A+E] 7d 2.9%
-- JUP: [C+E] 7d 5.4%
-- PUMP: [D+E] 7d 9.7%
+- TAO: [A+E] 7d 0.0%
+- AVAX: [A+E] 7d 0.9%
+- SOL: [A+E] 7d 1.9%
+- PUMP: [D+E] 7d 5.9%
+- INJ: [A+E] 7d 6.6%
+- JUP: [C+E] 7d 6.9%
+- AAVE: [A+E] 7d 9.1%
+- ADA: [A+C] 7d 11.4%
 
 ## ETF pipeline (new this run)
 - cap-4 NEW: other - Precision Trading with First Trust Exchange-traded Fund Viii Ft Cboe Vest U.s. Small Cap M
@@ -56,12 +57,12 @@
 - (15 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 62 | mean 5.7% (0.49R) | in profit 43 | older than 7d 46
-- worst: BCH -0.49R, SAND -0.45R, IOTA -0.42R | best: RENDER 2.40R, JUP 2.42R, FIL 2.72R
+- open 62 | mean 5.5% (0.47R) | in profit 42 | older than 7d 46
+- worst: BCH -0.51R, SAND -0.51R, UNI -0.46R | best: RENDER 2.35R, JUP 2.46R, FIL 2.72R
 
 ## System
-- CoinGecko 1899/10000 used, month-end projection 10092 (101%), throttle level 2 | by script {'scan': 610, 'check_liquidity': 103, 'breakout_check': 1178, 'counterfactual_check': 8}
+- CoinGecko 1901/10000 used, month-end projection 10031 (100%), throttle level 2 | by script {'scan': 612, 'check_liquidity': 103, 'breakout_check': 1178, 'counterfactual_check': 8}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=22), H2 PENDING (n=55)
-- radar-flags.json scan age: 18m
+- radar-flags.json scan age: 13m
 - excluded from radar (pegged/tokenized equity): 37
