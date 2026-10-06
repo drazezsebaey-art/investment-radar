@@ -1,4 +1,4 @@
-# Radar digest - 2026-10-06 19:46 UTC
+# Radar digest - 2026-10-06 20:13 UTC
 
 ## Market
 - BTC scenario **A** | price 85586 | wk close 85260 vs 82800 | 50W 77783 (10.03%) | 1h old
@@ -19,7 +19,13 @@
 - STX: **ONGOING** | +87% impulse, retr 0.18 | OI dd 31% | fund 0.0015 | hold False | inval 0.35090 | OB 0.31090-0.31560
 
 ## Pre-pump candidates
+- INJ: [A+C+E] 7d 3.2%
+- SEI: [A+E] 7d -1.7%
+- TAO: [A+E] 7d -0.7%
+- SOL: [A+E] 7d 1.4%
+- AVAX: [A+E] 7d 1.6%
 - AAVE: [A+E] 7d 9.6%
+- ADA: [A+C] 7d 12.4%
 
 ## ETF pipeline (new this run)
 - cap-4 NEW: other - Precision Trading with First Trust Exchange-traded Fund Viii Ft Cboe Vest U.s. Small Cap M
@@ -50,12 +56,12 @@
 - (15 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 62 | mean 5.0% (0.41R) | in profit 40 | older than 7d 46
-- worst: SAND -0.57R, BCH -0.52R, UNI -0.46R | best: JUP 2.32R, RENDER 2.35R, FIL 2.59R
+- open 62 | mean 5.4% (0.45R) | in profit 42 | older than 7d 46
+- worst: SAND -0.55R, BCH -0.51R, XRP -0.42R | best: JUP 2.45R, RENDER 2.46R, FIL 2.72R
 
 ## System
-- CoinGecko 1894/10000 used, month-end projection 10138 (101%), throttle level 2 | by script {'scan': 606, 'check_liquidity': 102, 'breakout_check': 1178, 'counterfactual_check': 8}
+- CoinGecko 1897/10000 used, month-end projection 10081 (101%), throttle level 2 | by script {'scan': 608, 'check_liquidity': 103, 'breakout_check': 1178, 'counterfactual_check': 8}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=22), H2 PENDING (n=55)
-- radar-flags.json scan age: 16m
+- radar-flags.json scan age: 13m
 - excluded from radar (pegged/tokenized equity): 37
