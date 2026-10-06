@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-06 12:32 UTC
+# Radar digest - 2026-10-06 13:13 UTC
 
 ## Market
-- BTC scenario **A** | price 86133 | wk close 85260 vs 82800 | 50W 77783 (10.74%) | 1m old
+- BTC scenario **A** | price 86133 | wk close 85260 vs 82800 | 50W 77783 (10.74%) | 43m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.48% | ETH/BTC 0.03152 | breadth7d 33% | stables 30d 1.21%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.06pt | 7d 0.48pt | n=49
 - Gold: PAXG 1m -4.51% | real10y 2.92 (50bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -19,9 +19,7 @@
 - WLD: **ONGOING** | +76% impulse, retr 0.20 | OI dd 13% | fund 0.0096 | hold False | inval 0.48060 | OB 0.48580-0.50480
 
 ## Pre-pump candidates
-- LIT: [C+E] 7d -12.2%
-- NEAR: [A+C] 7d 10.1%
-- S: [B+C] 7d 13.9%
+- none
 
 ## ETF pipeline (new this run)
 - near: other - Near Protocol ETF Puts NEAR Back on Institutional Investors’ Radar - Yahoo Finance
@@ -46,12 +44,12 @@
 - (15 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 61 | mean 7.4% (0.62R) | in profit 48 | older than 7d 47
-- worst: SAND -0.47R, BCH -0.43R, TIA -0.37R | best: RENDER 2.46R, FIL 2.86R, ZRO 3.50R
+- open 61 | mean 7.4% (0.61R) | in profit 49 | older than 7d 47
+- worst: SAND -0.51R, BCH -0.45R, TIA -0.33R | best: RENDER 2.40R, FIL 2.72R, ZRO 3.73R
 
 ## System
-- CoinGecko 1814/10000 used, month-end projection 10224 (102%), throttle level 2 | by script {'scan': 578, 'check_liquidity': 96, 'breakout_check': 1132, 'counterfactual_check': 8}
+- CoinGecko 1817/10000 used, month-end projection 10164 (102%), throttle level 2 | by script {'scan': 580, 'check_liquidity': 97, 'breakout_check': 1132, 'counterfactual_check': 8}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=21), H2 PENDING (n=52)
-- radar-flags.json scan age: 32m
+- radar-flags.json scan age: 13m
 - excluded from radar (pegged/tokenized equity): 37
