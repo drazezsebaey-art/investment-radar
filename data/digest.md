@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-07 21:12 UTC
+# Radar digest - 2026-10-07 21:47 UTC
 
 ## Market
-- BTC scenario **A** | price 83405 | wk close 85260 vs 82800 | 50W 77783 (7.23%) | 29m old
+- BTC scenario **A** | price 83405 | wk close 85260 vs 82800 | 50W 77783 (7.23%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 56.56% | ETH/BTC 0.03070 | breadth7d 29% | stables 30d 1.25%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.20pt | 7d 0.51pt | n=57
 - Gold: PAXG 1m -5.27% | real10y 2.95 (52bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -23,23 +23,23 @@
 - HYPE: [A+E] 7d -0.8%
 
 ## ETF pipeline (new this run)
-- sei-network NEW: amendment - SEI Price Eyes Breakout as Canary Capital Files Staked ETF Amendment - TradingView
-- litecoin NEW: institutional_backing - Litecoin Marks 15 Years With Grayscale Backing High-Stakes NYSE ETF Bid - Crypto Economy
-- solana NEW: other - Solana ETF Race Heats Up: Morgan Stanley Adds Staking To Proposed ‘MSOL’ Fund - Stocktwits
-- zcash: filing - ZEC expands institutional momentum as Winklevoss files for Zcash ETF - www.tmgm.com
-- zcash: other - Grayscale says crypto ETF market is entering new phase as Zcash ETF tops $1 billion - The 
-- ondo-finance: other - Global X NASDAQ 100 Covered Call Tokenized ETF (Ondo) Exchanges QYLDon Markets | Buy & Sel
-- ondo-finance: other - Global X Blockchain ETF (Ondo Tokenized) - CryptoRank
+- sei-network NEW: amendment - SEI Price Eyes Breakout as Canary Capital Files Staked ETF Amendment - Coinpedia Fintech N
+- sei-network NEW: filing - Canary Capital’s Staked SEI ETF Filing Could Improve The SEI Price Outlook - TronWeekly
+- near: other - Bitwise NEAR ETF hits $52.8M AUM with $13.2M in... - Pluang
+- near: other - Bitwise NEAR ETF Reaches $52.8 Million in Assets Under Management - TOKENPOST
+- zcash: other - Grayscale says crypto ETF market is entering new phase as Zcash ETF tops $1 billion - Cryp
+- zcash: other - Winklevoss twins seek Nasdaq listing for Zcash spot ETF 'WINK' - 디지털투데이
+- ondo-finance: other - iShares Core US Aggregate Bond Tokenized ETF (Ondo) price today, AGGon to USD chart, marke
 
 ## Derivatives flags (OKX)
 - ETH: SHORT_SQUEEZE_FUEL, AGGRESSIVE_SELLING, SHORT_SQUEEZE_24H | OI/mc 0.65% | topPos 0.87 | taker 0.84
-- SOL: LONG_FLUSH_24H | OI/mc 0.59% | topPos 0.90 | taker 0.87
-- NEAR: SHORT_SQUEEZE_24H | OI/mc 0.94% | topPos 1.05 | taker 0.97
-- AVAX: LONG_FLUSH_24H | OI/mc 0.46% | topPos 0.93 | taker 0.94
+- SOL: LONG_FLUSH_24H | OI/mc 0.60% | topPos 0.91 | taker 0.88
+- NEAR: SHORT_SQUEEZE_24H | OI/mc 0.97% | topPos 1.04 | taker 0.99
+- AVAX: LONG_FLUSH_24H | OI/mc 0.46% | topPos 0.94 | taker 0.94
 - XRP: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.14% | topPos 0.86 | taker 0.82
-- SUI: LONG_FLUSH_24H | OI/mc 1.07% | topPos 0.86 | taker 0.93
-- SEI: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.77% | topPos 0.93 | taker 0.83
-- TAO: LONG_FLUSH_24H | OI/mc 0.80% | topPos 0.88 | taker 0.95
+- SUI: LONG_FLUSH_24H | OI/mc 1.07% | topPos 0.87 | taker 0.93
+- SEI: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.77% | topPos 0.92 | taker 0.81
+- TAO: LONG_FLUSH_24H | OI/mc 0.80% | topPos 0.87 | taker 0.95
 
 ## Revenue / buyback flags
 - stonk-3: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -51,12 +51,12 @@
 - (16 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 53 | mean 2.4% (0.22R) | in profit 26 | older than 7d 42
-- worst: BCH -0.86R, EGLD -0.77R, GRAM -0.69R | best: SENT 1.82R, NEAR 1.93R, RAY 2.29R
+- open 53 | mean 2.1% (0.19R) | in profit 24 | older than 7d 42
+- worst: BCH -0.88R, EGLD -0.79R, GRAM -0.69R | best: NEAR 1.75R, SENT 1.93R, RAY 2.15R
 
 ## System
-- CoinGecko 2239/10000 used, month-end projection 10096 (101%), throttle level 2 | by script {'scan': 720, 'check_liquidity': 120, 'breakout_check': 1388, 'counterfactual_check': 11}
+- CoinGecko 2241/10000 used, month-end projection 10105 (101%), throttle level 2 | by script {'scan': 722, 'check_liquidity': 120, 'breakout_check': 1388, 'counterfactual_check': 11}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=28), H2 NOT_SUPPORTED (n=78)
-- radar-flags.json scan age: 12m
+- radar-flags.json scan age: 17m
 - excluded from radar (pegged/tokenized equity): 39
