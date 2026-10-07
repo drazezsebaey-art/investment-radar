@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-07 01:15 UTC
+# Radar digest - 2026-10-07 01:48 UTC
 
 ## Market
-- BTC scenario **A** | price 85526 | wk close 85260 vs 82800 | 50W 77783 (9.96%) | 30m old
+- BTC scenario **A** | price 85526 | wk close 85260 vs 82800 | 50W 77783 (9.96%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 56.42% | ETH/BTC 0.03152 | breadth7d 43% | stables 30d 1.22%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.07pt | 7d 0.40pt | n=52
 - Gold: PAXG 1m -4.42% | real10y 2.95 (52bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -19,34 +19,33 @@
 - WLD: **ONGOING** | +76% impulse, retr 0.24 | OI dd 16% | fund 0.0092 | hold False | inval 0.48060 | OB 0.48580-0.50480
 
 ## Pre-pump candidates
+- MET: [B+C+E] 7d -0.4%
 - QNT: [C+E] 7d -1.0%
-- MET: [C+E] 7d -0.4%
 - AVAX: [A+C] 7d 1.5%
 - INJ: [A+E] 7d 4.6%
-- NEAR: [A+C] 7d 5.4%
 - PUMP: [D+E] 7d 5.9%
 - JUP: [C+E] 7d 6.6%
 - AAVE: [A+E] 7d 8.4%
 
 ## ETF pipeline (new this run)
-- cap-4 NEW: other - Direxion Daily Semiconductor ETF (Derivatives) Price (SOXL/USD) Today | Live Price, Market
-- cap-4 NEW: other - GraniteShares 2X Long INTC ETF Tokenized bStocks Price (INTWB/USD) Today | Live Price, Mar
-- cap-4 NEW: other - State Street SPDR S&P 500 ETF Tokenized bStocks Price (SPYB/USD) Today | Live Price, Marke
-- zcash: launch - Zcash ETF Launch Paves the Way for a New Age in Cryptocurrency Ventures - OneSafe
-- zcash: launch - Zcash ETF Launch Paves the Way for a New Age in Cryptocurrency Ventures - OneSafe
-- zcash: amendment - One investor reports sole voting power over his Zcash ETF (ZCSH) stake in a passive owners
-- zcash: filing - Winklevoss-Backed Zcash Spot ETF Files Registration Statement With SEC - bloomingbit
+- solana NEW: other - Solana ETF Draws Fresh Cash as SOL Rally Lures Momentum Traders - TipRanks
+- cap-4 NEW: other - Global X Uranium ETF (Derivatives) Price (URA/USD) Today | Live Price, Market Cap & Chart 
+- ondo-finance: conversion - iShares US Technology Tokenized ETF (Ondo) to Euro Price Today | Live IYWon to EUR Convert
+- zcash: filing - ZEC expands institutional momentum as Winklevoss files for Zcash ETF - FXStreet
+- zcash: filing - Winklevoss Twins Take Aim at Grayscale With Low-Cost Spot Zcash ETF Filing - BigGo Finance
+- zcash: filing - Winklevoss Twins File for Zcash ETF 13 Years After Historic Bitcoin ETF Bid - U.Today
 - zcash: filing - Winklevoss Files for Spot Zcash ETF With $100M Indication of Interest - CoinMarketCap
+- zcash: filing - ZEC expands institutional momentum as Winklevoss files for Zcash ETF - FXStreet
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc 0.20% | topPos 0.99 | taker 0.94
-- ETH: LONG_FLUSH_24H | OI/mc -% | topPos 0.93 | taker 0.98
-- AVAX: LONG_FLUSH_24H | OI/mc 0.45% | topPos 0.90 | taker 1.09
-- SUI: LONG_FLUSH_24H | OI/mc 1.09% | topPos 0.86 | taker 0.98
-- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 1.09
-- TAO: LONG_FLUSH_24H | OI/mc 0.82% | topPos 0.84 | taker 1.00
-- WLD: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 1.87% | topPos 0.91 | taker 0.85
-- ADA: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.95 | taker 0.99
+- BTC: LONG_FLUSH_24H | OI/mc 0.20% | topPos 0.98 | taker 0.94
+- SOL: LONG_FLUSH_24H | OI/mc 0.56% | topPos 0.94 | taker 0.99
+- AVAX: LONG_FLUSH_24H | OI/mc 0.45% | topPos 0.91 | taker 1.07
+- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.93
+- SUI: LONG_FLUSH_24H | OI/mc 1.08% | topPos 0.86 | taker 0.97
+- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 0.99
+- TAO: LONG_FLUSH_24H | OI/mc 0.82% | topPos 0.85 | taker 0.95
+- WLD: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 1.86% | topPos 0.92 | taker 0.85
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -57,12 +56,12 @@
 - (15 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 62 | mean 5.6% (0.47R) | in profit 43 | older than 7d 46
-- worst: UNI -0.59R, BCH -0.59R, IOTA -0.48R | best: JUP 2.37R, RENDER 2.57R, FIL 2.72R
+- open 62 | mean 5.1% (0.42R) | in profit 43 | older than 7d 46
+- worst: UNI -0.70R, BCH -0.62R, XRP -0.52R | best: JUP 2.21R, RENDER 2.51R, FIL 2.72R
 
 ## System
-- CoinGecko 1985/10000 used, month-end projection 10185 (102%), throttle level 2 | by script {'scan': 636, 'check_liquidity': 106, 'breakout_check': 1232, 'counterfactual_check': 11}
+- CoinGecko 1987/10000 used, month-end projection 10195 (102%), throttle level 2 | by script {'scan': 638, 'check_liquidity': 106, 'breakout_check': 1232, 'counterfactual_check': 11}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=22), H2 PENDING (n=55)
-- radar-flags.json scan age: 15m
-- excluded from radar (pegged/tokenized equity): 37
+- radar-flags.json scan age: 18m
+- excluded from radar (pegged/tokenized equity): 38
