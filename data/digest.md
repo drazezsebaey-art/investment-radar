@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-07 17:46 UTC
+# Radar digest - 2026-10-07 18:26 UTC
 
 ## Market
-- BTC scenario **A** | price 83456 | wk close 85260 vs 82800 | 50W 77783 (7.29%) | 1h old
+- BTC scenario **A** | price 83456 | wk close 85260 vs 82800 | 50W 77783 (7.29%) | 2h old
 - Alts: **BTC_LED** [-] | BTC.D 56.48% | ETH/BTC 0.03084 | breadth7d 30% | stables 30d 1.26%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.11pt | 7d 0.33pt | n=56
 - Gold: PAXG 1m -5.27% | real10y 2.95 (52bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -19,7 +19,9 @@
 - SUI: **ONGOING** | +92% impulse, retr 0.27 | OI dd 9% | fund 0.0082 | hold True | inval 1.10500 | OB 0.93370-0.97450
 
 ## Pre-pump candidates
-- SOL: [A+D] 7d -2.1%
+- SOL: [A+D] 7d -3.3%
+- HYPE: [A+E] 7d 0.2%
+- AAVE: [A+E] 7d 7.3%
 
 ## ETF pipeline (new this run)
 - sei-network NEW: amendment - Canary Capital Files Amended S-1 for Staking Sei ETF - bloomingbit
@@ -50,12 +52,12 @@
 - (16 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 53 | mean 1.8% (0.16R) | in profit 25 | older than 7d 41
-- worst: JTO -0.91R, BCH -0.87R, TIA -0.77R | best: RENDER 1.69R, RAY 2.01R, MET 2.07R
+- open 52 | mean 1.5% (0.13R) | in profit 24 | older than 7d 41
+- worst: JTO -0.92R, BCH -0.87R, GRAM -0.76R | best: SENT 1.66R, RENDER 1.75R, RAY 1.97R
 
 ## System
-- CoinGecko 2165/10000 used, month-end projection 10005 (100%), throttle level 2 | by script {'scan': 698, 'check_liquidity': 119, 'breakout_check': 1337, 'counterfactual_check': 11}
+- CoinGecko 2227/10000 used, month-end projection 10228 (102%), throttle level 2 | by script {'scan': 708, 'check_liquidity': 120, 'breakout_check': 1388, 'counterfactual_check': 11}
 - Trials guard: OK (0 untracked)
-- Hypotheses: H1 PENDING (n=28), H2 NOT_SUPPORTED (n=77)
-- radar-flags.json scan age: 16m
+- Hypotheses: H1 PENDING (n=28), H2 NOT_SUPPORTED (n=78)
+- radar-flags.json scan age: 26m
 - excluded from radar (pegged/tokenized equity): 39
