@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-07 03:14 UTC
+# Radar digest - 2026-10-07 03:46 UTC
 
 ## Market
-- BTC scenario **A** | price 83853 | wk close 85260 vs 82800 | 50W 77783 (7.80%) | 29m old
+- BTC scenario **A** | price 83853 | wk close 85260 vs 82800 | 50W 77783 (7.80%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 56.42% | ETH/BTC 0.03120 | breadth7d 30% | stables 30d 1.27%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.12pt | 7d 0.38pt | n=53
 - Gold: PAXG 1m -4.42% | real10y 2.95 (52bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -20,33 +20,28 @@
 
 ## Pre-pump candidates
 - MET: [B+C+E] 7d -4.3%
-- INJ: [A+E] 7d -4.3%
-- TAO: [A+E] 7d -4.0%
-- AVAX: [A+E] 7d -3.4%
-- STABLE: [C+E] 7d -3.2%
-- SOL: [A+E] 7d -1.0%
-- XDC: [C+E] 7d 1.8%
-- FIL: [C+E] 7d 3.4%
+- PUMP: [D+E] 7d 6.3%
+- AAVE: [A+E] 7d 8.4%
 
 ## ETF pipeline (new this run)
-- solana NEW: other - Solana ETF Draws Fresh Cash as SOL Rally Lures Momentum Traders - TipRanks
-- cap-4 NEW: other - Global X Uranium ETF (Derivatives) Price (URA/USD) Today | Live Price, Market Cap & Chart 
-- ondo-finance: conversion - iShares US Technology Tokenized ETF (Ondo) to Euro Price Today | Live IYWon to EUR Convert
-- zcash: filing - ZEC expands institutional momentum as Winklevoss files for Zcash ETF - FXStreet
-- zcash: filing - Winklevoss Twins Take Aim at Grayscale With Low-Cost Spot Zcash ETF Filing - BigGo Finance
-- zcash: filing - Winklevoss Twins File for Zcash ETF 13 Years After Historic Bitcoin ETF Bid - U.Today
-- zcash: filing - Winklevoss Files for Spot Zcash ETF With $100M Indication of Interest - CoinMarketCap
-- zcash: filing - ZEC expands institutional momentum as Winklevoss files for Zcash ETF - FXStreet
+- cap-4 NEW: other - Invesco QQQ Trust Tokenized ETF (Hyperliquid) Price (QQQ/USD) Today | Live Price, Market C
+- cap-4 NEW: other - Tradr 2X Long SNDK ETF Tokenized bStocks Price (SNXXB/USD) Today | Live Price, Market Cap 
+- zcash: launch - Winklevoss Spot Zcash ETF Seeks SEC Approval For Nasdaq Debut - TronWeekly
+- zcash: launch - Winklevoss Spot Zcash ETF Seeks SEC Approval For Nasdaq Debut - TronWeekly
+- zcash: filing - Winklevoss-backed Zcash ETF files with SEC for Nasdaq listing - Cryptonews.net
+- zcash: filing - Zcash (ZEC) Volatility: ETF Filing and Upgrade News - CoinMarketCap
+- zcash: filing - Abstract Sets Dec. 15 Shutdown as Winklevoss Files for Zcash ETF - www.tokenpost.com
+- zcash: filing - Zcash (ZEC) Volatility: ETF Filing and Upgrade News - CoinMarketCap
 
 ## Derivatives flags (OKX)
 - BTC: LONG_FLUSH_24H | OI/mc 0.19% | topPos 0.96 | taker 0.90
-- ETH: LONG_FLUSH_24H | OI/mc 0.56% | topPos 0.90 | taker 0.97
-- SOL: LONG_FLUSH_24H | OI/mc 0.56% | topPos 0.93 | taker 1.00
-- NEAR: LONG_FLUSH_24H | OI/mc 0.87% | topPos 1.01 | taker 0.97
-- AVAX: LONG_FLUSH_24H | OI/mc 0.45% | topPos 0.92 | taker 1.05
-- XRP: LONG_FLUSH_24H | OI/mc 0.13% | topPos 0.88 | taker 0.92
-- SUI: LONG_FLUSH_24H | OI/mc 1.04% | topPos 0.87 | taker 0.92
-- SEI: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.80% | topPos 0.92 | taker 0.81
+- ETH: LONG_FLUSH_24H | OI/mc -% | topPos 0.89 | taker 0.92
+- SOL: LONG_FLUSH_24H | OI/mc 0.58% | topPos 0.92 | taker 0.99
+- NEAR: LONG_FLUSH_24H | OI/mc -% | topPos 1.01 | taker 0.96
+- AVAX: LONG_FLUSH_24H | OI/mc 0.45% | topPos 0.90 | taker 1.00
+- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.90
+- SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.87
+- SEI: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 0.79
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -57,12 +52,12 @@
 - (15 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 55 | mean 2.5% (0.22R) | in profit 31 | older than 7d 43
-- worst: BCH -0.74R, ZK -0.66R, TIA -0.62R | best: SENT 1.85R, FIL 1.91R, RENDER 1.91R
+- open 55 | mean 2.3% (0.20R) | in profit 30 | older than 7d 43
+- worst: BCH -0.73R, ZK -0.67R, TIA -0.65R | best: NIGHT 1.78R, FIL 1.91R, RENDER 1.91R
 
 ## System
-- CoinGecko 1995/10000 used, month-end projection 10097 (101%), throttle level 2 | by script {'scan': 644, 'check_liquidity': 108, 'breakout_check': 1232, 'counterfactual_check': 11}
+- CoinGecko 1997/10000 used, month-end projection 10107 (101%), throttle level 2 | by script {'scan': 646, 'check_liquidity': 108, 'breakout_check': 1232, 'counterfactual_check': 11}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=25), H2 NOT_SUPPORTED (n=67)
-- radar-flags.json scan age: 13m
+- radar-flags.json scan age: 15m
 - excluded from radar (pegged/tokenized equity): 38
