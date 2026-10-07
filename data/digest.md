@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-07 09:14 UTC
+# Radar digest - 2026-10-07 09:45 UTC
 
 ## Market
-- BTC scenario **A** | price 84010 | wk close 85260 vs 82800 | 50W 77783 (8.01%) | 29m old
+- BTC scenario **A** | price 84010 | wk close 85260 vs 82800 | 50W 77783 (8.01%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.47% | ETH/BTC 0.03110 | breadth7d 30% | stables 30d 1.27%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.16pt | 7d 0.48pt | n=54
 - Gold: PAXG 1m -4.98% | real10y 2.95 (52bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -19,50 +19,43 @@
 - SUI: **ONGOING** | +92% impulse, retr 0.25 | OI dd 3% | fund 0.0019 | hold True | inval 1.10500 | OB 0.93370-0.97450
 
 ## Pre-pump candidates
-- HBAR: [A+E] 7d -8.4%
-- SEI: [A+E] 7d -7.2%
-- ZEC: [A+E] 7d -5.1%
-- CRO: [A+E] 7d -3.2%
-- XRP: [A+E] 7d -2.5%
-- ETH: [B+E] 7d -2.4%
-- MET: [C+E] 7d -1.6%
-- TRX: [A+E] 7d -1.2%
+- INJ: [A+E] 7d -1.9%
+- AVAX: [A+E] 7d 0.7%
 
 ## ETF pipeline (new this run)
-- solana NEW: other - Crypto ETF News Today: Bitcoin, XRP Inflow While ETH, SOL Follow Crash - Coin Gabbar
-- cap-4 NEW: other - Roundhill Memory ETF Tokenized bStocks Price (DRAMB/USD) Today | Live Price, Market Cap & 
-- cap-4 NEW: other - iShares MSCI South Korea ETF Tokenized bStocks Price (EWYB/USD) Today | Live Price, Market
-- zcash: filing - Zcash price at $1,317 as Winklevoss files for ETF - Cryptonews.net
-- zcash: filing - Winklevoss brothers file for Zcash ETF - Traders Union
-- zcash: filing - Zcash price at $1,317 as Winklevoss files for ETF - Cryptonews.net
-- zcash: filing - Winklevoss brothers file for Zcash ETF - Traders Union
-- zcash: other - Zcash price prediction: Can ETF hopes help ZEC defend $1,300? - Traders Union
+- cap-4 NEW: other - Invesco QQQ Tokenized ETF - Robinhood Price: Live QQQ/USD Rate, Market Cap & QQQ Price Cha
+- near: launch - Bitwise NEAR ETF Launches in the U.S.: How Staking Could Differentiate NRR - MEXC
+- near: launch - Bitwise NEAR ETF Launches in the U.S.: How Staking Could Differentiate NRR - MEXC
+- zcash: filing - Winklevoss-backed Zcash ETF files with SEC for Nasdaq listing - Binance
+- zcash: filing - Winklevosses filed an application for a Zcash-backed exchange-traded fund - Coinspot.io
+- zcash: filing - Winklevosses filed an application for a Zcash-backed exchange-traded fund - Coinspot.io
 
 ## Derivatives flags (OKX)
-- ETH: SHORT_SQUEEZE_FUEL, LONG_FLUSH_24H | OI/mc 0.64% | topPos 0.89 | taker 0.94
-- SOL: LONG_FLUSH_24H | OI/mc 0.58% | topPos 0.92 | taker 0.99
-- NEAR: SHORT_SQUEEZE_24H | OI/mc 0.89% | topPos 1.03 | taker 0.95
-- AVAX: LONG_FLUSH_24H | OI/mc 0.46% | topPos 0.90 | taker 1.03
-- XRP: LONG_FLUSH_24H | OI/mc 0.14% | topPos 0.88 | taker 0.91
-- SUI: LONG_FLUSH_24H | OI/mc 1.08% | topPos 0.86 | taker 0.91
-- SEI: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.76% | topPos 0.92 | taker 0.76
-- TAO: LONG_FLUSH_24H | OI/mc 0.81% | topPos 0.86 | taker 0.98
+- BTC: LONG_FLUSH_24H | OI/mc -% | topPos 0.96 | taker 0.90
+- ETH: SHORT_SQUEEZE_FUEL, LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 0.94
+- SOL: LONG_FLUSH_24H | OI/mc -% | topPos 0.93 | taker 0.98
+- NEAR: SHORT_SQUEEZE_24H | OI/mc -% | topPos 1.02 | taker 0.96
+- AVAX: LONG_FLUSH_24H | OI/mc 0.45% | topPos 0.91 | taker 1.01
+- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 0.89
+- SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.90
+- SEI: QUIET_DELEVERAGING, AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 0.76
 
 ## Revenue / buyback flags
-- pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
 - stonk-3: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
-- collector-crypt: REVENUE_ACCELERATING, CHEAP_VS_REVENUE
+- collector-crypt: REVENUE_ACCELERATING
+- solana: REVENUE_ACCELERATING
+- venice-token: REVENUE_ACCELERATING
 - chip-2: REVENUE_ACCELERATING
 - monad: REVENUE_ACCELERATING
-- (15 flagged protocol(s) without a tradeable token hidden)
+- (16 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 55 | mean 2.8% (0.24R) | in profit 29 | older than 7d 42
-- worst: ZK -0.87R, BCH -0.71R, JTO -0.61R | best: NIGHT 1.71R, FIL 1.87R, RENDER 2.02R
+- open 55 | mean 2.4% (0.21R) | in profit 28 | older than 7d 42
+- worst: ZK -0.88R, BCH -0.70R, XLM -0.64R | best: SENT 1.72R, FIL 1.83R, RENDER 1.97R
 
 ## System
-- CoinGecko 2073/10000 used, month-end projection 10080 (101%), throttle level 2 | by script {'scan': 668, 'check_liquidity': 112, 'breakout_check': 1282, 'counterfactual_check': 11}
+- CoinGecko 2075/10000 used, month-end projection 10090 (101%), throttle level 2 | by script {'scan': 670, 'check_liquidity': 112, 'breakout_check': 1282, 'counterfactual_check': 11}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=26), H2 NOT_SUPPORTED (n=69)
-- radar-flags.json scan age: 14m
+- radar-flags.json scan age: 15m
 - excluded from radar (pegged/tokenized equity): 38
