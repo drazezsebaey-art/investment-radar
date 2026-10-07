@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-07 14:47 UTC
+# Radar digest - 2026-10-07 15:46 UTC
 
 ## Market
-- BTC scenario **A** | price 83037 | wk close 85260 vs 82800 | 50W 77783 (6.76%) | 2m old
+- BTC scenario **A** | price 83037 | wk close 85260 vs 82800 | 50W 77783 (6.76%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 56.48% | ETH/BTC 0.03084 | breadth7d 30% | stables 30d 1.26%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.11pt | 7d 0.33pt | n=56
 - Gold: PAXG 1m -5.47% | real10y 2.95 (52bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -19,31 +19,28 @@
 - PUMP: **ONGOING** | +100% impulse, retr 0.21 | OI dd 8% | fund 0.0050 | hold True | inval 0.00520 | OB 0.00520-0.00541
 
 ## Pre-pump candidates
-- SOL: [A+D] 7d -4.7%
-- AVAX: [A+C] 7d -0.3%
-- HYPE: [A+E] 7d 2.1%
-- BTW: [C+E] 7d 3.8%
-- AAVE: [A+E] 7d 4.8%
+- LINK: [A+E] 7d -8.0%
+- SOL: [A+D] 7d -4.3%
 
 ## ETF pipeline (new this run)
-- dogecoin NEW: other - Dogecoin News: Bitwise ETF Heads for Closure as Remittix Gives Utility Hunters a New Novem
-- ripple NEW: other - Bitcoin and XRP dominate US spot ETF market as Solana lags behind - Bitget
-- solana NEW: other - Bitcoin and XRP dominate US spot ETF market as Solana lags behind - Bitget
-- hyperliquid NEW: other - PEPE Price Prediction: Frog on the Ledge — ETF Hype Can't Stop a Make-or-Break Trendline R
-- pepe NEW: other - PEPE Price Prediction: Frog on the Ledge — ETF Hype Can't Stop a Make-or-Break Trendline R
-- zcash: filing - Winklevoss Asset Services Files for Zcash ETF Amid Security Concerns - Intellectia AI
-- zcash: filing - Winklevoss Twins File for Zcash ETF 13 Years After Historic Bitcoin ETF Bid - U.Today
-- zcash: filing - Zcash Gets Major Boost as Winklevoss Files Spot ZEC ETF With SEC - CoinCodex
+- solana NEW: other - Bitwise’s Solana Staking ETF Sees $6.5M Exit as Investors Bank Profits Despite ‘Strong Buy
+- litecoin NEW: other - Litecoin celebrates 15 years as Grayscale pushes for NYSE spot ETF listing. - Pluang
+- solana NEW: other - Backpack Adds Tokenized Brazil ETF and Cerebras Stock to Solana - Altcoin Buzz
+- zcash: launch - Winklevoss Twins To Launch New Zcash ETF - Yahoo Finance
+- zcash: filing - Winklevoss Files for Zcash ETF with 0.25% Fee and WINK Ticker - KuCoin
+- zcash: filing - Winklevoss Files for Zcash ETF with 0.25% Fee and WINK Ticker - KuCoin
+- zcash: other - Proposed WINK Fund Would Bring Zcash ETF Exposure to Brokerage Accounts - TradingView
+- zcash: other - Proposed WINK Fund Would Bring Zcash ETF Exposure to Brokerage Accounts - TradingView
 
 ## Derivatives flags (OKX)
 - BTC: LONG_FLUSH_24H | OI/mc 0.20% | topPos 0.94 | taker 0.87
-- ETH: LONG_FLUSH_24H | OI/mc 0.66% | topPos 0.87 | taker 0.88
+- ETH: LONG_FLUSH_24H | OI/mc 0.67% | topPos 0.87 | taker 0.88
 - SOL: LONG_FLUSH_24H | OI/mc 0.59% | topPos 0.91 | taker 0.88
-- AVAX: LONG_FLUSH_24H | OI/mc 0.46% | topPos 0.94 | taker 0.94
-- XRP: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.14% | topPos 0.88 | taker 0.83
-- SUI: LONG_FLUSH_24H | OI/mc 1.06% | topPos 0.86 | taker 0.91
+- AVAX: LONG_FLUSH_24H | OI/mc 0.46% | topPos 0.94 | taker 0.92
+- XRP: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.14% | topPos 0.87 | taker 0.83
+- SUI: LONG_FLUSH_24H | OI/mc 1.07% | topPos 0.86 | taker 0.92
 - SEI: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.75% | topPos 0.93 | taker 0.74
-- TAO: LONG_FLUSH_24H | OI/mc 0.80% | topPos 0.84 | taker 0.95
+- TAO: LONG_FLUSH_24H | OI/mc 0.80% | topPos 0.86 | taker 0.95
 
 ## Revenue / buyback flags
 - stonk-3: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -55,12 +52,12 @@
 - (16 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 55 | mean 0.6% (0.06R) | in profit 27 | older than 7d 42
-- worst: ZK -0.95R, BCH -0.88R, XLM -0.87R | best: SUI 1.55R, RENDER 1.69R, RAY 2.29R
+- open 53 | mean 0.5% (0.06R) | in profit 25 | older than 7d 41
+- worst: JTO -0.90R, BCH -0.89R, GRAM -0.83R | best: SUI 1.46R, RENDER 1.58R, RAY 2.01R
 
 ## System
-- CoinGecko 2155/10000 used, month-end projection 10148 (102%), throttle level 2 | by script {'scan': 690, 'check_liquidity': 117, 'breakout_check': 1337, 'counterfactual_check': 11}
+- CoinGecko 2158/10000 used, month-end projection 10098 (101%), throttle level 2 | by script {'scan': 692, 'check_liquidity': 118, 'breakout_check': 1337, 'counterfactual_check': 11}
 - Trials guard: OK (0 untracked)
-- Hypotheses: H1 PENDING (n=27), H2 NOT_SUPPORTED (n=73)
-- radar-flags.json scan age: 17m
+- Hypotheses: H1 PENDING (n=28), H2 NOT_SUPPORTED (n=76)
+- radar-flags.json scan age: 16m
 - excluded from radar (pegged/tokenized equity): 39
