@@ -1,4 +1,4 @@
-# Radar digest - 2026-10-07 07:46 UTC
+# Radar digest - 2026-10-07 08:13 UTC
 
 ## Market
 - BTC scenario **A** | price 84333 | wk close 85260 vs 82800 | 50W 77783 (8.42%) | 1h old
@@ -19,14 +19,11 @@
 - PUMP: **ONGOING** | +100% impulse, retr 0.10 | OI dd 8% | fund -0.0030 | hold True | inval 0.00617 | OB 0.00520-0.00541
 
 ## Pre-pump candidates
-- MET: [B+C+E] 7d -2.2%
-- TAO: [A+E] 7d -1.4%
-- STABLE: [C+E] 7d -1.2%
-- AVAX: [A+E] 7d -0.3%
-- SOL: [A+E] 7d -0.2%
-- FIL: [C+E] 7d 3.9%
-- XMR: [C+E] 7d 4.8%
-- AAVE: [A+E] 7d 8.5%
+- PRL: [C+E] 7d -7.7%
+- INJ: [A+E] 7d -0.0%
+- AVAX: [A+E] 7d 2.0%
+- XMR: [C+E] 7d 5.2%
+- ADA: [A+E] 7d 6.3%
 
 ## ETF pipeline (new this run)
 - solana NEW: other - Crypto ETF News Today: Bitcoin, XRP Inflow While ETH, SOL Follow Crash - Coin Gabbar
@@ -57,12 +54,12 @@
 - (15 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 56 | mean 3.3% (0.29R) | in profit 31 | older than 7d 43
-- worst: ZK -0.84R, EGLD -0.69R, BCH -0.69R | best: NIGHT 1.74R, FIL 2.04R, RENDER 2.19R
+- open 55 | mean 3.5% (0.30R) | in profit 31 | older than 7d 42
+- worst: ZK -0.85R, BCH -0.70R, JTO -0.51R | best: NIGHT 1.79R, FIL 1.91R, RENDER 2.13R
 
 ## System
-- CoinGecko 2066/10000 used, month-end projection 10179 (102%), throttle level 2 | by script {'scan': 662, 'check_liquidity': 111, 'breakout_check': 1282, 'counterfactual_check': 11}
+- CoinGecko 2069/10000 used, month-end projection 10127 (101%), throttle level 2 | by script {'scan': 664, 'check_liquidity': 112, 'breakout_check': 1282, 'counterfactual_check': 11}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=26), H2 NOT_SUPPORTED (n=69)
-- radar-flags.json scan age: 16m
+- radar-flags.json scan age: 13m
 - excluded from radar (pegged/tokenized equity): 38
