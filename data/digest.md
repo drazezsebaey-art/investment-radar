@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-07 00:47 UTC
+# Radar digest - 2026-10-07 01:15 UTC
 
 ## Market
-- BTC scenario **A** | price 85526 | wk close 85260 vs 82800 | 50W 77783 (9.96%) | 1m old
+- BTC scenario **A** | price 85526 | wk close 85260 vs 82800 | 50W 77783 (9.96%) | 30m old
 - Alts: **BTC_LED** [-] | BTC.D 56.42% | ETH/BTC 0.03152 | breadth7d 43% | stables 30d 1.22%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.07pt | 7d 0.40pt | n=52
 - Gold: PAXG 1m -4.42% | real10y 2.95 (52bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -19,11 +19,14 @@
 - WLD: **ONGOING** | +76% impulse, retr 0.24 | OI dd 16% | fund 0.0092 | hold False | inval 0.48060 | OB 0.48580-0.50480
 
 ## Pre-pump candidates
-- QNT: [C+E] 7d 1.7%
-- PUMP: [D+E] 7d 5.1%
-- INJ: [A+E] 7d 5.9%
-- JUP: [C+E] 7d 6.8%
-- AAVE: [A+E] 7d 8.3%
+- QNT: [C+E] 7d -1.0%
+- MET: [C+E] 7d -0.4%
+- AVAX: [A+C] 7d 1.5%
+- INJ: [A+E] 7d 4.6%
+- NEAR: [A+C] 7d 5.4%
+- PUMP: [D+E] 7d 5.9%
+- JUP: [C+E] 7d 6.6%
+- AAVE: [A+E] 7d 8.4%
 
 ## ETF pipeline (new this run)
 - cap-4 NEW: other - Direxion Daily Semiconductor ETF (Derivatives) Price (SOXL/USD) Today | Live Price, Market
@@ -54,12 +57,12 @@
 - (15 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 62 | mean 5.1% (0.43R) | in profit 41 | older than 7d 46
-- worst: UNI -0.61R, BCH -0.60R, IOTA -0.49R | best: JUP 2.39R, RENDER 2.46R, FIL 2.59R
+- open 62 | mean 5.6% (0.47R) | in profit 43 | older than 7d 46
+- worst: UNI -0.59R, BCH -0.59R, IOTA -0.48R | best: JUP 2.37R, RENDER 2.57R, FIL 2.72R
 
 ## System
-- CoinGecko 1983/10000 used, month-end projection 10246 (102%), throttle level 2 | by script {'scan': 634, 'check_liquidity': 106, 'breakout_check': 1232, 'counterfactual_check': 11}
+- CoinGecko 1985/10000 used, month-end projection 10185 (102%), throttle level 2 | by script {'scan': 636, 'check_liquidity': 106, 'breakout_check': 1232, 'counterfactual_check': 11}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=22), H2 PENDING (n=55)
-- radar-flags.json scan age: 17m
+- radar-flags.json scan age: 15m
 - excluded from radar (pegged/tokenized equity): 37
