@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-07 19:13 UTC
+# Radar digest - 2026-10-07 19:45 UTC
 
 ## Market
-- BTC scenario **A** | price 83375 | wk close 85260 vs 82800 | 50W 77783 (7.19%) | 28m old
+- BTC scenario **A** | price 83375 | wk close 85260 vs 82800 | 50W 77783 (7.19%) | 59m old
 - Alts: **BTC_LED** [-] | BTC.D 56.56% | ETH/BTC 0.03070 | breadth7d 29% | stables 30d 1.25%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.20pt | 7d 0.51pt | n=57
 - Gold: PAXG 1m -5.27% | real10y 2.95 (52bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -20,25 +20,27 @@
 
 ## Pre-pump candidates
 - SOL: [A+D] 7d -2.6%
+- NEAR: [A+C] 7d -2.0%
+- AVAX: [A+C] 7d 2.0%
 
 ## ETF pipeline (new this run)
-- sei-network NEW: amendment - Canary Capital Files Amended S-1 for Staking Sei ETF - bloomingbit
-- sei-network NEW: amendment - SEI Price Eyes Breakout as Canary Capital Files Staked ETF Amendment - CryptoRank
-- ripple NEW: other - Grayscale Just Made a Big Upgrade to Its XRP ETF - Bitget
-- zcash: launch - Crypto News Today: Bitcoin Inflow, Zcash ETF Launch, Conduit Sues Tether - Analytics Insig
-- zcash: launch - Crypto News Today: Bitcoin Inflow, Zcash ETF Launch, Conduit Sues Tether - Analytics Insig
-- near: other - Bitwise NEAR ETF Ranks Top 10 by AUM Among New US ETFs - Coinfomania
-- zcash: other - Winklevoss twins seek Nasdaq listing for Zcash spot ETF 'WINK' - 디지털투데이
+- sei-network NEW: amendment - SEI Price Eyes Breakout as Canary Capital Files Staked ETF Amendment - TradingView
+- litecoin NEW: institutional_backing - Litecoin Marks 15 Years With Grayscale Backing High-Stakes NYSE ETF Bid - Crypto Economy
+- solana NEW: other - Solana ETF Race Heats Up: Morgan Stanley Adds Staking To Proposed ‘MSOL’ Fund - Stocktwits
+- zcash: filing - ZEC expands institutional momentum as Winklevoss files for Zcash ETF - www.tmgm.com
+- zcash: other - Grayscale says crypto ETF market is entering new phase as Zcash ETF tops $1 billion - The 
+- ondo-finance: other - Global X NASDAQ 100 Covered Call Tokenized ETF (Ondo) Exchanges QYLDon Markets | Buy & Sel
+- ondo-finance: other - Global X Blockchain ETF (Ondo Tokenized) - CryptoRank
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc 0.20% | topPos 0.94 | taker 0.86
-- ETH: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.66% | topPos 0.88 | taker 0.83
-- SOL: LONG_FLUSH_24H | OI/mc 0.59% | topPos 0.90 | taker 0.86
-- AVAX: LONG_FLUSH_24H | OI/mc 0.45% | topPos 0.93 | taker 0.93
-- XRP: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.14% | topPos 0.86 | taker 0.81
-- SUI: LONG_FLUSH_24H | OI/mc 1.07% | topPos 0.87 | taker 0.96
-- SEI: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.75% | topPos 0.94 | taker 0.81
-- TAO: LONG_FLUSH_24H | OI/mc 0.80% | topPos 0.88 | taker 0.96
+- BTC: LONG_FLUSH_24H | OI/mc 0.20% | topPos 0.94 | taker 0.87
+- ETH: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.66% | topPos 0.87 | taker 0.85
+- SOL: LONG_FLUSH_24H | OI/mc 0.59% | topPos 0.90 | taker 0.87
+- NEAR: SHORT_SQUEEZE_24H | OI/mc 0.91% | topPos 1.04 | taker 0.97
+- AVAX: LONG_FLUSH_24H | OI/mc 0.46% | topPos 0.94 | taker 0.93
+- XRP: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.14% | topPos 0.87 | taker 0.83
+- SUI: LONG_FLUSH_24H | OI/mc 1.07% | topPos 0.87 | taker 0.94
+- SEI: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.77% | topPos 0.93 | taker 0.82
 
 ## Revenue / buyback flags
 - stonk-3: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -50,12 +52,12 @@
 - (16 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 52 | mean 1.9% (0.16R) | in profit 25 | older than 7d 41
-- worst: BCH -0.88R, GRAM -0.76R, TIA -0.67R | best: NEAR 1.63R, RENDER 1.80R, RAY 1.92R
+- open 52 | mean 2.1% (0.18R) | in profit 24 | older than 7d 41
+- worst: BCH -0.88R, GRAM -0.76R, TIA -0.68R | best: NEAR 1.75R, RAY 1.83R, RENDER 1.86R
 
 ## System
-- CoinGecko 2231/10000 used, month-end projection 10183 (102%), throttle level 2 | by script {'scan': 712, 'check_liquidity': 120, 'breakout_check': 1388, 'counterfactual_check': 11}
+- CoinGecko 2233/10000 used, month-end projection 10192 (102%), throttle level 2 | by script {'scan': 714, 'check_liquidity': 120, 'breakout_check': 1388, 'counterfactual_check': 11}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=28), H2 NOT_SUPPORTED (n=78)
-- radar-flags.json scan age: 13m
+- radar-flags.json scan age: 15m
 - excluded from radar (pegged/tokenized equity): 40
