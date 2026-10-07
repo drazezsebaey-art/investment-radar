@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-07 05:47 UTC
+# Radar digest - 2026-10-07 06:27 UTC
 
 ## Market
-- BTC scenario **A** | price 84040 | wk close 85260 vs 82800 | 50W 77783 (8.04%) | 1h old
+- BTC scenario **A** | price 84040 | wk close 85260 vs 82800 | 50W 77783 (8.04%) | 2h old
 - Alts: **BTC_LED** [-] | BTC.D 56.42% | ETH/BTC 0.03120 | breadth7d 30% | stables 30d 1.27%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.12pt | 7d 0.38pt | n=53
 - Gold: PAXG 1m -4.98% | real10y 2.95 (52bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -20,13 +20,13 @@
 
 ## Pre-pump candidates
 - MET: [B+C+E] 7d -4.7%
-- HBAR: [A+E] 7d -8.1%
-- ZEC: [A+E] 7d -6.2%
-- SEI: [A+E] 7d -5.8%
-- CRO: [A+E] 7d -4.8%
+- PRL: [C+E] 7d -14.1%
 - TAO: [A+E] 7d -2.5%
-- AVAX: [A+E] 7d -2.1%
-- XRP: [A+E] 7d -2.0%
+- STABLE: [C+E] 7d -0.9%
+- AVAX: [A+E] 7d -0.0%
+- SOL: [A+E] 7d 0.1%
+- FIL: [C+E] 7d 3.0%
+- AAVE: [A+E] 7d 9.0%
 
 ## ETF pipeline (new this run)
 - ripple NEW: launch - This $15 Trillion Investment Giant Has No Plans to Launch an XRP ETF. That's Why I'm Beari
@@ -57,12 +57,12 @@
 - (15 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 55 | mean 2.8% (0.24R) | in profit 30 | older than 7d 43
-- worst: ZK -0.84R, BCH -0.71R, TIA -0.64R | best: SUI 1.72R, FIL 1.79R, RENDER 2.02R
+- open 56 | mean 3.0% (0.26R) | in profit 30 | older than 7d 43
+- worst: ZK -0.80R, BCH -0.70R, TIA -0.63R | best: SUI 1.72R, FIL 2.04R, RENDER 2.13R
 
 ## System
-- CoinGecko 2006/10000 used, month-end projection 10017 (100%), throttle level 2 | by script {'scan': 654, 'check_liquidity': 109, 'breakout_check': 1232, 'counterfactual_check': 11}
+- CoinGecko 2059/10000 used, month-end projection 10213 (102%), throttle level 2 | by script {'scan': 656, 'check_liquidity': 110, 'breakout_check': 1282, 'counterfactual_check': 11}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=26), H2 NOT_SUPPORTED (n=69)
-- radar-flags.json scan age: 16m
+- radar-flags.json scan age: 27m
 - excluded from radar (pegged/tokenized equity): 38
