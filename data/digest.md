@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-07 07:12 UTC
+# Radar digest - 2026-10-07 07:46 UTC
 
 ## Market
-- BTC scenario **A** | price 84333 | wk close 85260 vs 82800 | 50W 77783 (8.42%) | 27m old
+- BTC scenario **A** | price 84333 | wk close 85260 vs 82800 | 50W 77783 (8.42%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.47% | ETH/BTC 0.03110 | breadth7d 30% | stables 30d 1.27%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.16pt | 7d 0.48pt | n=54
 - Gold: PAXG 1m -4.98% | real10y 2.95 (52bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -19,34 +19,34 @@
 - PUMP: **ONGOING** | +100% impulse, retr 0.10 | OI dd 8% | fund -0.0030 | hold True | inval 0.00617 | OB 0.00520-0.00541
 
 ## Pre-pump candidates
-- PRL: [C+E] 7d -11.1%
-- TAO: [A+E] 7d -1.8%
-- STABLE: [C+E] 7d -1.4%
-- MET: [C+E] 7d -1.2%
+- MET: [B+C+E] 7d -2.2%
+- TAO: [A+E] 7d -1.4%
+- STABLE: [C+E] 7d -1.2%
 - AVAX: [A+E] 7d -0.3%
 - SOL: [A+E] 7d -0.2%
-- XMR: [C+E] 7d 3.3%
-- FIL: [C+E] 7d 4.2%
+- FIL: [C+E] 7d 3.9%
+- XMR: [C+E] 7d 4.8%
+- AAVE: [A+E] 7d 8.5%
 
 ## ETF pipeline (new this run)
-- ripple NEW: launch - This $15 Trillion Investment Giant Has No Plans to Launch an XRP ETF. That's Why I'm Beari
-- hyperliquid NEW: filing - Grayscale Files SEC 8-K for Hyperliquid Staking ETF - Hokanews
-- hyperliquid NEW: institutional_backing - Grayscale Adds BitGo as Custodian for Hyperliquid Staking ETF: What Changes for HYPG - The
-- hyperliquid NEW: institutional_backing - Anchorage remains primary custodian as Grayscale Hyperliquid Staking ETF (HYPG) adds BitGo
-- ripple NEW: institutional_backing - $100M in aggregate theft insurance is required of Grayscale XRP Trust ETF (GXRP)'s new cus
-- ripple NEW: other - XRP ETF Inflows — XRPZ and Bitwise XRP ETF See Weekly Flows Drop 94% to $4.74M as XRP-USD 
-- ripple NEW: other - Bitwise’s XRP ETF Draws Fresh Cash as Ripple Token’s Rally Lures Cautious Buyers - TipRank
-- ripple NEW: other - Bitwise XRP ETF Draws Fresh Cash as Traders Chase XRP’s Rally - TipRanks
+- solana NEW: other - Crypto ETF News Today: Bitcoin, XRP Inflow While ETH, SOL Follow Crash - Coin Gabbar
+- cap-4 NEW: other - Roundhill Memory ETF Tokenized bStocks Price (DRAMB/USD) Today | Live Price, Market Cap & 
+- cap-4 NEW: other - iShares MSCI South Korea ETF Tokenized bStocks Price (EWYB/USD) Today | Live Price, Market
+- zcash: filing - Zcash price at $1,317 as Winklevoss files for ETF - Cryptonews.net
+- zcash: filing - Winklevoss brothers file for Zcash ETF - Traders Union
+- zcash: filing - Zcash price at $1,317 as Winklevoss files for ETF - Cryptonews.net
+- zcash: filing - Winklevoss brothers file for Zcash ETF - Traders Union
+- zcash: other - Zcash price prediction: Can ETF hopes help ZEC defend $1,300? - Traders Union
 
 ## Derivatives flags (OKX)
 - BTC: LONG_FLUSH_24H | OI/mc 0.20% | topPos 0.96 | taker 0.93
 - ETH: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 0.94
 - SOL: LONG_FLUSH_24H | OI/mc 0.57% | topPos 0.92 | taker 1.00
-- AVAX: LONG_FLUSH_24H | OI/mc 0.45% | topPos 0.90 | taker 1.01
-- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 0.91
-- SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 0.89
-- SEI: QUIET_DELEVERAGING, AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 0.79
-- TAO: LONG_FLUSH_24H | OI/mc 0.80% | topPos 0.86 | taker 1.00
+- AVAX: LONG_FLUSH_24H | OI/mc 0.46% | topPos 0.90 | taker 1.02
+- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 0.90
+- SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 0.91
+- SEI: QUIET_DELEVERAGING, AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 0.77
+- TAO: LONG_FLUSH_24H | OI/mc 0.79% | topPos 0.87 | taker 0.98
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -58,11 +58,11 @@
 
 ## Paper book (open trades, marked to last scan)
 - open 56 | mean 3.3% (0.29R) | in profit 31 | older than 7d 43
-- worst: ZK -0.81R, BCH -0.68R, EGLD -0.68R | best: NIGHT 1.74R, FIL 2.04R, RENDER 2.24R
+- worst: ZK -0.84R, EGLD -0.69R, BCH -0.69R | best: NIGHT 1.74R, FIL 2.04R, RENDER 2.19R
 
 ## System
-- CoinGecko 2064/10000 used, month-end projection 10170 (102%), throttle level 2 | by script {'scan': 660, 'check_liquidity': 111, 'breakout_check': 1282, 'counterfactual_check': 11}
+- CoinGecko 2066/10000 used, month-end projection 10179 (102%), throttle level 2 | by script {'scan': 662, 'check_liquidity': 111, 'breakout_check': 1282, 'counterfactual_check': 11}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=26), H2 NOT_SUPPORTED (n=69)
-- radar-flags.json scan age: 12m
+- radar-flags.json scan age: 16m
 - excluded from radar (pegged/tokenized equity): 38
