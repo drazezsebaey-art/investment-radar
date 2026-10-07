@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-07 20:45 UTC
+# Radar digest - 2026-10-07 21:12 UTC
 
 ## Market
-- BTC scenario **A** | price 83405 | wk close 85260 vs 82800 | 50W 77783 (7.23%) | 1m old
+- BTC scenario **A** | price 83405 | wk close 85260 vs 82800 | 50W 77783 (7.23%) | 29m old
 - Alts: **BTC_LED** [-] | BTC.D 56.56% | ETH/BTC 0.03070 | breadth7d 29% | stables 30d 1.25%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.20pt | 7d 0.51pt | n=57
 - Gold: PAXG 1m -5.27% | real10y 2.95 (52bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -19,7 +19,8 @@
 - SUI: **ONGOING** | +92% impulse, retr 0.28 | OI dd 9% | fund 0.0089 | hold True | inval 1.10500 | OB 0.93370-0.97450
 
 ## Pre-pump candidates
-- SOL: [A+D] 7d -2.4%
+- SOL: [A+D] 7d -0.9%
+- HYPE: [A+E] 7d -0.8%
 
 ## ETF pipeline (new this run)
 - sei-network NEW: amendment - SEI Price Eyes Breakout as Canary Capital Files Staked ETF Amendment - TradingView
@@ -50,12 +51,12 @@
 - (16 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 53 | mean 2.3% (0.21R) | in profit 27 | older than 7d 42
-- worst: BCH -0.86R, EGLD -0.77R, GRAM -0.69R | best: RENDER 1.75R, NEAR 1.91R, RAY 2.33R
+- open 53 | mean 2.4% (0.22R) | in profit 26 | older than 7d 42
+- worst: BCH -0.86R, EGLD -0.77R, GRAM -0.69R | best: SENT 1.82R, NEAR 1.93R, RAY 2.29R
 
 ## System
-- CoinGecko 2237/10000 used, month-end projection 10148 (102%), throttle level 2 | by script {'scan': 718, 'check_liquidity': 120, 'breakout_check': 1388, 'counterfactual_check': 11}
+- CoinGecko 2239/10000 used, month-end projection 10096 (101%), throttle level 2 | by script {'scan': 720, 'check_liquidity': 120, 'breakout_check': 1388, 'counterfactual_check': 11}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=28), H2 NOT_SUPPORTED (n=78)
-- radar-flags.json scan age: 15m
+- radar-flags.json scan age: 12m
 - excluded from radar (pegged/tokenized equity): 39
