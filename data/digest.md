@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-07 23:14 UTC
+# Radar digest - 2026-10-07 23:45 UTC
 
 ## Market
-- BTC scenario **A** | price 83312 | wk close 85260 vs 82800 | 50W 77783 (7.11%) | 31m old
+- BTC scenario **A** | price 83312 | wk close 85260 vs 82800 | 50W 77783 (7.11%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 56.52% | ETH/BTC 0.03085 | breadth7d 40% | stables 30d 1.24%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.03pt | 7d 0.49pt | n=58
 - Gold: PAXG 1m -5.29% | real10y 2.91 (48bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -22,25 +22,26 @@
 - HYPE: [A+E] 7d -3.4%
 - SOL: [A+D] 7d -1.7%
 - BTW: [C+E] 7d -0.0%
+- NEAR: [A+C] 7d 1.6%
+- JUP: [C+E] 7d 9.2%
 
 ## ETF pipeline (new this run)
-- sei-network NEW: amendment - SEI Price Eyes Breakout as Canary Capital Files Staked ETF Amendment - Coinpedia Fintech N
-- sei-network NEW: filing - Canary Capital’s Staked SEI ETF Filing Could Improve The SEI Price Outlook - TronWeekly
-- near: other - Bitwise NEAR ETF hits $52.8M AUM with $13.2M in... - Pluang
-- near: other - Bitwise NEAR ETF Reaches $52.8 Million in Assets Under Management - TOKENPOST
-- zcash: other - Grayscale says crypto ETF market is entering new phase as Zcash ETF tops $1 billion - Cryp
-- zcash: other - Winklevoss twins seek Nasdaq listing for Zcash spot ETF 'WINK' - 디지털투데이
-- ondo-finance: other - iShares Core US Aggregate Bond Tokenized ETF (Ondo) price today, AGGon to USD chart, marke
+- solana NEW: other - Solana Price Prediction: Institutional Breakthrough Meets ETF Outflows, but Where Does Rem
+- zcash: filing - Winklevoss Zcash ETF Filing Brings Privacy Coin Exposure To Nasdaq - TradingView
+- zcash: filing - Winklevoss Zcash ETF Filing Brings Privacy Coin Exposure To Nasdaq - NewsBTC
+- zcash: filing - Winklevoss Zcash ETF Filing Brings Privacy Coin Exposure To Nasdaq - TradingView
+- zcash: filing - Winklevoss Zcash ETF Filing Brings Privacy Coin Exposure To Nasdaq - NewsBTC
+- ondo-finance: other - Global X Artificial Intelligence & Technology ETF (Ondo Tokenized) - CryptoRank
 
 ## Derivatives flags (OKX)
 - ETH: SHORT_SQUEEZE_FUEL, AGGRESSIVE_SELLING, SHORT_SQUEEZE_24H | OI/mc 0.65% | topPos 0.87 | taker 0.84
-- SOL: LONG_FLUSH_24H | OI/mc 0.59% | topPos 0.90 | taker 0.87
-- NEAR: SHORT_SQUEEZE_24H | OI/mc 0.95% | topPos 1.03 | taker 0.99
-- AVAX: LONG_FLUSH_24H | OI/mc 0.45% | topPos 0.93 | taker 0.90
-- XRP: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.14% | topPos 0.86 | taker 0.81
-- SUI: LONG_FLUSH_24H | OI/mc 1.07% | topPos 0.87 | taker 0.94
-- SEI: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.77% | topPos 0.93 | taker 0.79
-- TAO: LONG_FLUSH_24H | OI/mc 0.79% | topPos 0.87 | taker 0.95
+- SOL: LONG_FLUSH_24H | OI/mc 0.59% | topPos 0.90 | taker 0.88
+- NEAR: SHORT_SQUEEZE_24H | OI/mc 0.96% | topPos 1.04 | taker 1.00
+- AVAX: LONG_FLUSH_24H | OI/mc 0.44% | topPos 0.93 | taker 0.92
+- XRP: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.14% | topPos 0.86 | taker 0.82
+- SUI: LONG_FLUSH_24H | OI/mc 1.06% | topPos 0.86 | taker 0.94
+- SEI: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.76% | topPos 0.93 | taker 0.82
+- TAO: LONG_FLUSH_24H | OI/mc 0.80% | topPos 0.87 | taker 0.95
 
 ## Revenue / buyback flags
 - stonk-3: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -52,12 +53,12 @@
 - (16 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 53 | mean 2.6% (0.25R) | in profit 28 | older than 7d 42
-- worst: BCH -0.90R, EGLD -0.72R, GRAM -0.69R | best: SENT 1.94R, RAY 2.10R, JUP 2.65R
+- open 53 | mean 2.9% (0.27R) | in profit 28 | older than 7d 42
+- worst: BCH -0.90R, EGLD -0.72R, GRAM -0.69R | best: SENT 1.99R, RAY 2.10R, JUP 2.74R
 
 ## System
-- CoinGecko 2247/10000 used, month-end projection 10011 (100%), throttle level 2 | by script {'scan': 728, 'check_liquidity': 120, 'breakout_check': 1388, 'counterfactual_check': 11}
+- CoinGecko 2249/10000 used, month-end projection 10019 (100%), throttle level 2 | by script {'scan': 730, 'check_liquidity': 120, 'breakout_check': 1388, 'counterfactual_check': 11}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=28), H2 NOT_SUPPORTED (n=78)
-- radar-flags.json scan age: 14m
+- radar-flags.json scan age: 15m
 - excluded from radar (pegged/tokenized equity): 40
