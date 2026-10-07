@@ -1,4 +1,4 @@
-# Radar digest - 2026-10-07 13:47 UTC
+# Radar digest - 2026-10-07 14:14 UTC
 
 ## Market
 - BTC scenario **A** | price 83496 | wk close 85260 vs 82800 | 50W 77783 (7.34%) | 1h old
@@ -20,7 +20,9 @@
 
 ## Pre-pump candidates
 - LINK: [A+E] 7d -7.4%
-- SOL: [A+D] 7d -2.5%
+- SOL: [A+D] 7d -4.7%
+- INJ: [A+E] 7d -4.3%
+- AVAX: [A+C] 7d -0.3%
 
 ## ETF pipeline (new this run)
 - dogecoin NEW: other - Dogecoin News: Bitwise ETF Heads for Closure as Remittix Gives Utility Hunters a New Novem
@@ -52,12 +54,12 @@
 - (16 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 55 | mean 1.0% (0.09R) | in profit 26 | older than 7d 42
-- worst: BCH -0.88R, ZK -0.86R, JTO -0.83R | best: SUI 1.55R, RENDER 1.69R, RAY 2.24R
+- open 55 | mean 1.1% (0.10R) | in profit 28 | older than 7d 42
+- worst: ZK -0.85R, BCH -0.84R, JTO -0.81R | best: SUI 1.55R, RENDER 1.75R, RAY 2.29R
 
 ## System
-- CoinGecko 2151/10000 used, month-end projection 10193 (102%), throttle level 2 | by script {'scan': 686, 'check_liquidity': 117, 'breakout_check': 1337, 'counterfactual_check': 11}
+- CoinGecko 2153/10000 used, month-end projection 10138 (101%), throttle level 2 | by script {'scan': 688, 'check_liquidity': 117, 'breakout_check': 1337, 'counterfactual_check': 11}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=27), H2 NOT_SUPPORTED (n=73)
-- radar-flags.json scan age: 17m
-- excluded from radar (pegged/tokenized equity): 38
+- radar-flags.json scan age: 13m
+- excluded from radar (pegged/tokenized equity): 39
