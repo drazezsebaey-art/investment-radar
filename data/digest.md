@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-07 13:13 UTC
+# Radar digest - 2026-10-07 13:47 UTC
 
 ## Market
-- BTC scenario **A** | price 83496 | wk close 85260 vs 82800 | 50W 77783 (7.34%) | 27m old
+- BTC scenario **A** | price 83496 | wk close 85260 vs 82800 | 50W 77783 (7.34%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 56.53% | ETH/BTC 0.03079 | breadth7d 25% | stables 30d 1.26%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.19pt | 7d 0.58pt | n=55
 - Gold: PAXG 1m -5.47% | real10y 2.95 (52bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -19,27 +19,28 @@
 - STX: **ONGOING** | +87% impulse, retr 0.09 | OI dd 31% | fund 0.0100 | hold False | inval 0.35090 | OB 0.31090-0.31560
 
 ## Pre-pump candidates
+- LINK: [A+E] 7d -7.4%
 - SOL: [A+D] 7d -2.5%
 
 ## ETF pipeline (new this run)
-- ripple NEW: launch - This $15 Trillion Investment Giant Has No Plans to Launch an XRP ETF. That's Why I'm Beari
-- hyperliquid NEW: institutional_backing - Grayscale Hyperliquid Staking ETF Adds BitGo as New Custodian - Coin Gabbar
-- dogecoin NEW: other - Dogecoin ETF inflows too small to impact price; Bitwise fund to liquidate by October 14, 2
-- dogecoin NEW: other - Dogecoin Price Prediction as DOGE ETF Inflows and Open Interest Fall - Benzinga
-- ripple NEW: other - Crypto Today: Bitcoin, Ethereum, XRP bulls battle to restart uptrend amid ETF outflows - w
-- ripple NEW: other - Crypto ETF News Today: Bitcoin, XRP Inflow While ETH, SOL Follow Crash - Coin Gabbar
-- dogecoin NEW: other - Dogecoin ETF Bleeds Cash Just as Meme Coin Heats Up - TipRanks
-- ripple NEW: other - Canary’s XRPC ETF Bleeds Cash While XRP Rally Marches On - TipRanks
+- dogecoin NEW: other - Dogecoin News: Bitwise ETF Heads for Closure as Remittix Gives Utility Hunters a New Novem
+- ripple NEW: other - Bitcoin and XRP dominate US spot ETF market as Solana lags behind - Bitget
+- solana NEW: other - Bitcoin and XRP dominate US spot ETF market as Solana lags behind - Bitget
+- hyperliquid NEW: other - PEPE Price Prediction: Frog on the Ledge — ETF Hype Can't Stop a Make-or-Break Trendline R
+- pepe NEW: other - PEPE Price Prediction: Frog on the Ledge — ETF Hype Can't Stop a Make-or-Break Trendline R
+- zcash: filing - Winklevoss Asset Services Files for Zcash ETF Amid Security Concerns - Intellectia AI
+- zcash: filing - Winklevoss Twins File for Zcash ETF 13 Years After Historic Bitcoin ETF Bid - U.Today
+- zcash: filing - Zcash Gets Major Boost as Winklevoss Files Spot ZEC ETF With SEC - CoinCodex
 
 ## Derivatives flags (OKX)
 - BTC: LONG_FLUSH_24H | OI/mc 0.20% | topPos 0.95 | taker 0.90
-- ETH: SHORT_SQUEEZE_FUEL, LONG_FLUSH_24H | OI/mc 0.66% | topPos 0.88 | taker 0.89
-- SOL: LONG_FLUSH_24H | OI/mc 0.60% | topPos 0.92 | taker 0.92
-- NEAR: SHORT_SQUEEZE_24H | OI/mc 0.89% | topPos 1.02 | taker 0.95
-- AVAX: LONG_FLUSH_24H | OI/mc 0.45% | topPos 0.91 | taker 0.94
-- XRP: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.14% | topPos 0.88 | taker 0.83
-- SUI: LONG_FLUSH_24H | OI/mc 1.07% | topPos 0.86 | taker 0.90
-- SEI: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.76% | topPos 0.92 | taker 0.75
+- ETH: LONG_FLUSH_24H | OI/mc 0.66% | topPos 0.88 | taker 0.90
+- SOL: LONG_FLUSH_24H | OI/mc 0.59% | topPos 0.92 | taker 0.91
+- NEAR: SHORT_SQUEEZE_24H | OI/mc 0.91% | topPos 1.02 | taker 0.94
+- AVAX: LONG_FLUSH_24H | OI/mc 0.45% | topPos 0.92 | taker 0.90
+- XRP: LONG_FLUSH_24H | OI/mc 0.14% | topPos 0.88 | taker 0.85
+- SUI: LONG_FLUSH_24H | OI/mc 1.08% | topPos 0.86 | taker 0.91
+- SEI: QUIET_DELEVERAGING, AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 0.74
 
 ## Revenue / buyback flags
 - stonk-3: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -51,12 +52,12 @@
 - (16 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 55 | mean 1.3% (0.12R) | in profit 26 | older than 7d 42
-- worst: ZK -0.86R, BCH -0.85R, JTO -0.80R | best: SENT 1.59R, RENDER 1.69R, RAY 2.01R
+- open 55 | mean 1.0% (0.09R) | in profit 26 | older than 7d 42
+- worst: BCH -0.88R, ZK -0.86R, JTO -0.83R | best: SUI 1.55R, RENDER 1.69R, RAY 2.24R
 
 ## System
-- CoinGecko 2149/10000 used, month-end projection 10184 (102%), throttle level 2 | by script {'scan': 684, 'check_liquidity': 117, 'breakout_check': 1337, 'counterfactual_check': 11}
+- CoinGecko 2151/10000 used, month-end projection 10193 (102%), throttle level 2 | by script {'scan': 686, 'check_liquidity': 117, 'breakout_check': 1337, 'counterfactual_check': 11}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=27), H2 NOT_SUPPORTED (n=73)
-- radar-flags.json scan age: 12m
-- excluded from radar (pegged/tokenized equity): 39
+- radar-flags.json scan age: 17m
+- excluded from radar (pegged/tokenized equity): 38
