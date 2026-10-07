@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-07 00:29 UTC
+# Radar digest - 2026-10-07 00:47 UTC
 
 ## Market
-- BTC scenario **A** | price 85583 | wk close 85260 vs 82800 | 50W 77783 (10.03%) | 2h old
+- BTC scenario **A** | price 85526 | wk close 85260 vs 82800 | 50W 77783 (9.96%) | 1m old
 - Alts: **BTC_LED** [-] | BTC.D 56.42% | ETH/BTC 0.03152 | breadth7d 43% | stables 30d 1.22%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.07pt | 7d 0.40pt | n=52
 - Gold: PAXG 1m -4.42% | real10y 2.95 (52bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -9,22 +9,21 @@
 - 10y 1m: 53bp = real 52 + breakeven -1 -> **REAL_YIELD_DRIVEN**
 
 ## Coins in correction (entry_ready first)
-- RAY: **ONGOING** | +220% impulse, retr 0.09 | OI dd 25% | fund 0.0100 | hold False | inval 1.99330 | OB 1.99330-2.04560
-- NIGHT: **ONGOING** | +197% impulse, retr 0.08 | OI dd 12% | fund 0.0050 | hold False | inval 0.04358 | OB 0.03830-0.03953
-- CARDS: **ONGOING** | +195% impulse, retr 0.01 | OI dd -% | fund - | hold False | inval 0.23410 | OB 0.23410-0.24270
+- CARDS: **ONGOING** | +200% impulse, retr 0.04 | OI dd -% | fund - | hold False | inval 0.23410 | OB 0.23410-0.24270
 - UNI: **ONGOING** | +165% impulse, retr 0.35 | OI dd 16% | fund 0.0100 | hold False | inval 8.44700 | OB 5.80800-6.03200
-- STRK: **ONGOING** | +151% impulse, retr 0.26 | OI dd 25% | fund 0.0050 | hold True | inval 0.04083 | OB 0.03804-0.03962
-- ZRO: **ONGOING** | +150% impulse, retr 0.03 | OI dd 0% | fund -0.0020 | hold False | inval 1.89560 | OB 1.89560-1.94330
-- FLUID: **ONGOING** | +116% impulse, retr 0.28 | OI dd -% | fund - | hold False | inval 1.70110 | OB 1.70110-1.73600
-- ATH: **ONGOING** | +107% impulse, retr 0.33 | OI dd 42% | fund 0.0050 | hold False | inval 0.00573 | OB 0.00573-0.00598
+- STRK: **ONGOING** | +151% impulse, retr 0.25 | OI dd 25% | fund 0.0050 | hold True | inval 0.05142 | OB 0.03804-0.03962
+- ZRO: **ONGOING** | +150% impulse, retr 0.02 | OI dd 0% | fund 0.0029 | hold False | inval 1.89560 | OB 1.89560-1.94330
+- FLUID: **ONGOING** | +116% impulse, retr 0.27 | OI dd -% | fund - | hold False | inval 1.70110 | OB 1.70110-1.73600
+- ATH: **ONGOING** | +107% impulse, retr 0.30 | OI dd 42% | fund 0.0050 | hold False | inval 0.00573 | OB 0.00573-0.00598
+- SUI: **ONGOING** | +92% impulse, retr 0.19 | OI dd 3% | fund -0.0051 | hold True | inval 1.16750 | OB 0.93370-0.97450
+- WLD: **ONGOING** | +76% impulse, retr 0.24 | OI dd 16% | fund 0.0092 | hold False | inval 0.48060 | OB 0.48580-0.50480
 
 ## Pre-pump candidates
-- INJ: [A+C+E] 7d 6.0%
-- QNT: [C+E] 7d -1.0%
-- MET: [B+E] 7d 0.1%
-- PUMP: [D+E] 7d 6.3%
-- JUP: [C+E] 7d 7.5%
-- AAVE: [A+E] 7d 8.2%
+- QNT: [C+E] 7d 1.7%
+- PUMP: [D+E] 7d 5.1%
+- INJ: [A+E] 7d 5.9%
+- JUP: [C+E] 7d 6.8%
+- AAVE: [A+E] 7d 8.3%
 
 ## ETF pipeline (new this run)
 - cap-4 NEW: other - Direxion Daily Semiconductor ETF (Derivatives) Price (SOXL/USD) Today | Live Price, Market
@@ -37,14 +36,14 @@
 - zcash: filing - Winklevoss Files for Spot Zcash ETF With $100M Indication of Interest - CoinMarketCap
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc 0.19% | topPos 0.99 | taker 0.95
+- BTC: LONG_FLUSH_24H | OI/mc 0.20% | topPos 0.99 | taker 0.94
 - ETH: LONG_FLUSH_24H | OI/mc -% | topPos 0.93 | taker 0.98
-- AVAX: LONG_FLUSH_24H | OI/mc 0.45% | topPos 0.89 | taker 1.12
+- AVAX: LONG_FLUSH_24H | OI/mc 0.45% | topPos 0.90 | taker 1.09
 - SUI: LONG_FLUSH_24H | OI/mc 1.09% | topPos 0.86 | taker 0.98
-- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 1.12
-- TAO: LONG_FLUSH_24H | OI/mc 0.81% | topPos 0.84 | taker 1.00
-- WLD: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 1.87% | topPos 0.91 | taker 0.84
-- ADA: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.96 | taker 0.99
+- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 1.09
+- TAO: LONG_FLUSH_24H | OI/mc 0.82% | topPos 0.84 | taker 1.00
+- WLD: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 1.87% | topPos 0.91 | taker 0.85
+- ADA: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.95 | taker 0.99
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -55,12 +54,12 @@
 - (15 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 62 | mean 5.3% (0.45R) | in profit 42 | older than 7d 46
-- worst: BCH -0.58R, UNI -0.53R, IOTA -0.49R | best: RENDER 2.35R, JUP 2.37R, FIL 2.59R
+- open 62 | mean 5.1% (0.43R) | in profit 41 | older than 7d 46
+- worst: UNI -0.61R, BCH -0.60R, IOTA -0.49R | best: JUP 2.39R, RENDER 2.46R, FIL 2.59R
 
 ## System
-- CoinGecko 1981/10000 used, month-end projection 10235 (102%), throttle level 2 | by script {'scan': 632, 'check_liquidity': 106, 'breakout_check': 1232, 'counterfactual_check': 11}
+- CoinGecko 1983/10000 used, month-end projection 10246 (102%), throttle level 2 | by script {'scan': 634, 'check_liquidity': 106, 'breakout_check': 1232, 'counterfactual_check': 11}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=22), H2 PENDING (n=55)
-- radar-flags.json scan age: 28m
+- radar-flags.json scan age: 17m
 - excluded from radar (pegged/tokenized equity): 37
