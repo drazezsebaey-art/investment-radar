@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-07 02:46 UTC
+# Radar digest - 2026-10-07 03:14 UTC
 
 ## Market
-- BTC scenario **A** | price 83853 | wk close 85260 vs 82800 | 50W 77783 (7.80%) | 1m old
+- BTC scenario **A** | price 83853 | wk close 85260 vs 82800 | 50W 77783 (7.80%) | 29m old
 - Alts: **BTC_LED** [-] | BTC.D 56.42% | ETH/BTC 0.03120 | breadth7d 30% | stables 30d 1.27%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.12pt | 7d 0.38pt | n=53
 - Gold: PAXG 1m -4.42% | real10y 2.95 (52bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -19,10 +19,14 @@
 - TAO: **ONGOING** | +60% impulse, retr 0.39 | OI dd 13% | fund 0.0100 | hold False | inval 285.40000 | OB 213.50000-219.30000
 
 ## Pre-pump candidates
-- MET: [B+C+E] 7d -2.9%
-- PUMP: [D+E] 7d 4.8%
-- HYPE: [A+E] 7d 5.1%
-- AAVE: [A+E] 7d 7.9%
+- MET: [B+C+E] 7d -4.3%
+- INJ: [A+E] 7d -4.3%
+- TAO: [A+E] 7d -4.0%
+- AVAX: [A+E] 7d -3.4%
+- STABLE: [C+E] 7d -3.2%
+- SOL: [A+E] 7d -1.0%
+- XDC: [C+E] 7d 1.8%
+- FIL: [C+E] 7d 3.4%
 
 ## ETF pipeline (new this run)
 - solana NEW: other - Solana ETF Draws Fresh Cash as SOL Rally Lures Momentum Traders - TipRanks
@@ -53,12 +57,12 @@
 - (15 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 55 | mean 2.6% (0.22R) | in profit 32 | older than 7d 43
-- worst: BCH -0.77R, TIA -0.64R, ZK -0.63R | best: NIGHT 1.87R, FIL 1.91R, RENDER 2.02R
+- open 55 | mean 2.5% (0.22R) | in profit 31 | older than 7d 43
+- worst: BCH -0.74R, ZK -0.66R, TIA -0.62R | best: SENT 1.85R, FIL 1.91R, RENDER 1.91R
 
 ## System
-- CoinGecko 1993/10000 used, month-end projection 10156 (102%), throttle level 2 | by script {'scan': 642, 'check_liquidity': 108, 'breakout_check': 1232, 'counterfactual_check': 11}
+- CoinGecko 1995/10000 used, month-end projection 10097 (101%), throttle level 2 | by script {'scan': 644, 'check_liquidity': 108, 'breakout_check': 1232, 'counterfactual_check': 11}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=25), H2 NOT_SUPPORTED (n=67)
-- radar-flags.json scan age: 16m
+- radar-flags.json scan age: 13m
 - excluded from radar (pegged/tokenized equity): 38
