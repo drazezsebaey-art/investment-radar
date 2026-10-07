@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-07 18:47 UTC
+# Radar digest - 2026-10-07 19:13 UTC
 
 ## Market
-- BTC scenario **A** | price 83375 | wk close 85260 vs 82800 | 50W 77783 (7.19%) | 1m old
+- BTC scenario **A** | price 83375 | wk close 85260 vs 82800 | 50W 77783 (7.19%) | 28m old
 - Alts: **BTC_LED** [-] | BTC.D 56.56% | ETH/BTC 0.03070 | breadth7d 29% | stables 30d 1.25%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.20pt | 7d 0.51pt | n=57
 - Gold: PAXG 1m -5.27% | real10y 2.95 (52bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -19,10 +19,7 @@
 - ADA: **ONGOING** | +49% impulse, retr 0.28 | OI dd 14% | fund -0.0012 | hold False | inval 0.24230 | OB 0.23870-0.24480
 
 ## Pre-pump candidates
-- SOL: [A+D] 7d -3.3%
-- HYPE: [A+E] 7d -3.2%
-- AVAX: [A+C] 7d 1.9%
-- AAVE: [A+E] 7d 6.0%
+- SOL: [A+D] 7d -2.6%
 
 ## ETF pipeline (new this run)
 - sei-network NEW: amendment - Canary Capital Files Amended S-1 for Staking Sei ETF - bloomingbit
@@ -53,12 +50,12 @@
 - (16 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 52 | mean 2.0% (0.18R) | in profit 27 | older than 7d 41
-- worst: BCH -0.89R, JTO -0.77R, GRAM -0.76R | best: SENT 1.67R, RAY 1.88R, RENDER 1.91R
+- open 52 | mean 1.9% (0.16R) | in profit 25 | older than 7d 41
+- worst: BCH -0.88R, GRAM -0.76R, TIA -0.67R | best: NEAR 1.63R, RENDER 1.80R, RAY 1.92R
 
 ## System
-- CoinGecko 2229/10000 used, month-end projection 10237 (102%), throttle level 2 | by script {'scan': 710, 'check_liquidity': 120, 'breakout_check': 1388, 'counterfactual_check': 11}
+- CoinGecko 2231/10000 used, month-end projection 10183 (102%), throttle level 2 | by script {'scan': 712, 'check_liquidity': 120, 'breakout_check': 1388, 'counterfactual_check': 11}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=28), H2 NOT_SUPPORTED (n=78)
-- radar-flags.json scan age: 16m
-- excluded from radar (pegged/tokenized equity): 39
+- radar-flags.json scan age: 13m
+- excluded from radar (pegged/tokenized equity): 40
