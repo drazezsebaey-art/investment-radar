@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-07 22:45 UTC
+# Radar digest - 2026-10-07 23:14 UTC
 
 ## Market
-- BTC scenario **A** | price 83312 | wk close 85260 vs 82800 | 50W 77783 (7.11%) | 1m old
+- BTC scenario **A** | price 83312 | wk close 85260 vs 82800 | 50W 77783 (7.11%) | 31m old
 - Alts: **BTC_LED** [-] | BTC.D 56.52% | ETH/BTC 0.03085 | breadth7d 40% | stables 30d 1.24%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.03pt | 7d 0.49pt | n=58
 - Gold: PAXG 1m -5.29% | real10y 2.91 (48bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -19,9 +19,9 @@
 - SUI: **ONGOING** | +92% impulse, retr 0.28 | OI dd 9% | fund 0.0100 | hold True | inval 1.10500 | OB 0.93370-0.97450
 
 ## Pre-pump candidates
-- BTW: [C+E] 7d -4.3%
-- HYPE: [A+E] 7d -3.0%
-- SOL: [A+D] 7d -2.3%
+- HYPE: [A+E] 7d -3.4%
+- SOL: [A+D] 7d -1.7%
+- BTW: [C+E] 7d -0.0%
 
 ## ETF pipeline (new this run)
 - sei-network NEW: amendment - SEI Price Eyes Breakout as Canary Capital Files Staked ETF Amendment - Coinpedia Fintech N
@@ -52,12 +52,12 @@
 - (16 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 53 | mean 2.4% (0.23R) | in profit 26 | older than 7d 42
-- worst: BCH -0.94R, EGLD -0.76R, GRAM -0.69R | best: SENT 2.15R, JUP 2.17R, RAY 2.20R
+- open 53 | mean 2.6% (0.25R) | in profit 28 | older than 7d 42
+- worst: BCH -0.90R, EGLD -0.72R, GRAM -0.69R | best: SENT 1.94R, RAY 2.10R, JUP 2.65R
 
 ## System
-- CoinGecko 2245/10000 used, month-end projection 10062 (101%), throttle level 2 | by script {'scan': 726, 'check_liquidity': 120, 'breakout_check': 1388, 'counterfactual_check': 11}
+- CoinGecko 2247/10000 used, month-end projection 10011 (100%), throttle level 2 | by script {'scan': 728, 'check_liquidity': 120, 'breakout_check': 1388, 'counterfactual_check': 11}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=28), H2 NOT_SUPPORTED (n=78)
-- radar-flags.json scan age: 15m
+- radar-flags.json scan age: 14m
 - excluded from radar (pegged/tokenized equity): 40
