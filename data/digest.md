@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-07 04:45 UTC
+# Radar digest - 2026-10-07 05:14 UTC
 
 ## Market
-- BTC scenario **A** | price 84040 | wk close 85260 vs 82800 | 50W 77783 (8.04%) | 1m old
+- BTC scenario **A** | price 84040 | wk close 85260 vs 82800 | 50W 77783 (8.04%) | 31m old
 - Alts: **BTC_LED** [-] | BTC.D 56.42% | ETH/BTC 0.03120 | breadth7d 30% | stables 30d 1.27%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.12pt | 7d 0.38pt | n=53
 - Gold: PAXG 1m -4.98% | real10y 2.95 (52bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -19,9 +19,14 @@
 - AAVE: **ONGOING** | +66% impulse, retr 0.19 | OI dd 2% | fund 0.0100 | hold False | inval 157.59000 | OB 157.59000-162.03000
 
 ## Pre-pump candidates
-- MET: [B+C+E] 7d -6.6%
-- PUMP: [D+E] 7d 8.0%
-- AAVE: [A+E] 7d 8.2%
+- MET: [B+C+E] 7d -4.7%
+- TAO: [A+E] 7d -2.5%
+- AVAX: [A+E] 7d -2.1%
+- STABLE: [C+E] 7d -0.9%
+- SOL: [A+E] 7d -0.9%
+- NEAR: [A+E] 7d 1.0%
+- AAVE: [A+E] 7d 9.0%
+- PUMP: [D+E] 7d 9.7%
 
 ## ETF pipeline (new this run)
 - cap-4 NEW: other - Invesco QQQ Trust Tokenized ETF (Hyperliquid) Price (QQQ/USD) Today | Live Price, Market C
@@ -52,12 +57,12 @@
 - (15 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 55 | mean 2.0% (0.18R) | in profit 28 | older than 7d 43
-- worst: ZK -0.75R, BCH -0.73R, TIA -0.66R | best: FIL 1.75R, NIGHT 1.77R, RENDER 1.86R
+- open 55 | mean 1.9% (0.17R) | in profit 29 | older than 7d 43
+- worst: ZK -0.78R, BCH -0.74R, TIA -0.69R | best: SUI 1.72R, FIL 1.72R, RENDER 1.86R
 
 ## System
-- CoinGecko 2001/10000 used, month-end projection 10059 (101%), throttle level 2 | by script {'scan': 650, 'check_liquidity': 108, 'breakout_check': 1232, 'counterfactual_check': 11}
+- CoinGecko 2003/10000 used, month-end projection 10002 (100%), throttle level 2 | by script {'scan': 652, 'check_liquidity': 108, 'breakout_check': 1232, 'counterfactual_check': 11}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=26), H2 NOT_SUPPORTED (n=69)
-- radar-flags.json scan age: 15m
+- radar-flags.json scan age: 14m
 - excluded from radar (pegged/tokenized equity): 38
