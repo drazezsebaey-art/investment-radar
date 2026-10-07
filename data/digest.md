@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-07 11:14 UTC
+# Radar digest - 2026-10-07 11:47 UTC
 
 ## Market
-- BTC scenario **A** | price 83679 | wk close 85260 vs 82800 | 50W 77783 (7.58%) | 29m old
+- BTC scenario **A** | price 83679 | wk close 85260 vs 82800 | 50W 77783 (7.58%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 56.53% | ETH/BTC 0.03079 | breadth7d 25% | stables 30d 1.26%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.19pt | 7d 0.58pt | n=55
 - Gold: PAXG 1m -5.47% | real10y 2.95 (52bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -19,27 +19,26 @@
 - STX: **ONGOING** | +87% impulse, retr 0.11 | OI dd 31% | fund 0.0100 | hold False | inval 0.35090 | OB 0.31090-0.31560
 
 ## Pre-pump candidates
-- MET: [C+E] 7d -3.2%
 - SOL: [A+D] 7d -1.4%
-- HYPE: [A+E] 7d 3.8%
-- AAVE: [A+E] 7d 8.8%
 
 ## ETF pipeline (new this run)
-- cap-4 NEW: other - Invesco QQQ Tokenized ETF - Robinhood Price: Live QQQ/USD Rate, Market Cap & QQQ Price Cha
-- near: launch - Bitwise NEAR ETF Launches in the U.S.: How Staking Could Differentiate NRR - MEXC
-- near: launch - Bitwise NEAR ETF Launches in the U.S.: How Staking Could Differentiate NRR - MEXC
-- zcash: filing - Winklevoss-backed Zcash ETF files with SEC for Nasdaq listing - Binance
-- zcash: filing - Winklevosses filed an application for a Zcash-backed exchange-traded fund - Coinspot.io
-- zcash: filing - Winklevosses filed an application for a Zcash-backed exchange-traded fund - Coinspot.io
+- ripple NEW: launch - This $15 Trillion Investment Giant Has No Plans to Launch an XRP ETF. That's Why I'm Beari
+- hyperliquid NEW: institutional_backing - Grayscale Hyperliquid Staking ETF Adds BitGo as New Custodian - Coin Gabbar
+- dogecoin NEW: other - Dogecoin ETF inflows too small to impact price; Bitwise fund to liquidate by October 14, 2
+- dogecoin NEW: other - Dogecoin Price Prediction as DOGE ETF Inflows and Open Interest Fall - Benzinga
+- ripple NEW: other - Crypto Today: Bitcoin, Ethereum, XRP bulls battle to restart uptrend amid ETF outflows - w
+- ripple NEW: other - Crypto ETF News Today: Bitcoin, XRP Inflow While ETH, SOL Follow Crash - Coin Gabbar
+- dogecoin NEW: other - Dogecoin ETF Bleeds Cash Just as Meme Coin Heats Up - TipRanks
+- ripple NEW: other - Canary’s XRPC ETF Bleeds Cash While XRP Rally Marches On - TipRanks
 
 ## Derivatives flags (OKX)
 - BTC: LONG_FLUSH_24H | OI/mc 0.20% | topPos 0.95 | taker 0.90
-- ETH: SHORT_SQUEEZE_FUEL, LONG_FLUSH_24H | OI/mc 0.66% | topPos 0.89 | taker 0.92
-- SOL: LONG_FLUSH_24H | OI/mc 0.59% | topPos 0.92 | taker 0.96
-- NEAR: SHORT_SQUEEZE_24H | OI/mc 0.87% | topPos 1.02 | taker 0.94
-- AVAX: LONG_FLUSH_24H | OI/mc 0.45% | topPos 0.91 | taker 0.97
-- XRP: LONG_FLUSH_24H | OI/mc 0.14% | topPos 0.88 | taker 0.86
-- SUI: LONG_FLUSH_24H | OI/mc 1.04% | topPos 0.86 | taker 0.89
+- ETH: SHORT_SQUEEZE_FUEL, LONG_FLUSH_24H | OI/mc 0.65% | topPos 0.88 | taker 0.89
+- SOL: LONG_FLUSH_24H | OI/mc 0.59% | topPos 0.92 | taker 0.93
+- NEAR: SHORT_SQUEEZE_24H | OI/mc 0.89% | topPos 1.02 | taker 0.96
+- AVAX: LONG_FLUSH_24H | OI/mc 0.46% | topPos 0.91 | taker 0.98
+- XRP: LONG_FLUSH_24H | OI/mc 0.14% | topPos 0.88 | taker 0.85
+- SUI: LONG_FLUSH_24H | OI/mc 1.05% | topPos 0.87 | taker 0.91
 - SEI: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.76% | topPos 0.92 | taker 0.76
 
 ## Revenue / buyback flags
@@ -52,12 +51,12 @@
 - (16 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 55 | mean 1.8% (0.15R) | in profit 27 | older than 7d 42
-- worst: BCH -0.79R, ZK -0.78R, XLM -0.69R | best: SENT 1.60R, SUI 1.63R, RENDER 1.64R
+- open 55 | mean 1.3% (0.11R) | in profit 26 | older than 7d 42
+- worst: ZK -0.87R, BCH -0.80R, XLM -0.71R | best: NIGHT 1.48R, SUI 1.55R, SENT 1.64R
 
 ## System
-- CoinGecko 2083/10000 used, month-end projection 9998 (100%), throttle level 1 | by script {'scan': 676, 'check_liquidity': 114, 'breakout_check': 1282, 'counterfactual_check': 11}
+- CoinGecko 2086/10000 used, month-end projection 10013 (100%), throttle level 2 | by script {'scan': 678, 'check_liquidity': 115, 'breakout_check': 1282, 'counterfactual_check': 11}
 - Trials guard: OK (0 untracked)
-- Hypotheses: H1 PENDING (n=27), H2 NOT_SUPPORTED (n=72)
-- radar-flags.json scan age: 14m
+- Hypotheses: H1 PENDING (n=27), H2 NOT_SUPPORTED (n=73)
+- radar-flags.json scan age: 17m
 - excluded from radar (pegged/tokenized equity): 38
