@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-07 06:46 UTC
+# Radar digest - 2026-10-07 07:12 UTC
 
 ## Market
-- BTC scenario **A** | price 84333 | wk close 85260 vs 82800 | 50W 77783 (8.42%) | 2m old
+- BTC scenario **A** | price 84333 | wk close 85260 vs 82800 | 50W 77783 (8.42%) | 27m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.47% | ETH/BTC 0.03110 | breadth7d 30% | stables 30d 1.27%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.16pt | 7d 0.48pt | n=54
 - Gold: PAXG 1m -4.98% | real10y 2.95 (52bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -19,14 +19,14 @@
 - PUMP: **ONGOING** | +100% impulse, retr 0.10 | OI dd 8% | fund -0.0030 | hold True | inval 0.00617 | OB 0.00520-0.00541
 
 ## Pre-pump candidates
+- PRL: [C+E] 7d -11.1%
 - TAO: [A+E] 7d -1.8%
 - STABLE: [C+E] 7d -1.4%
 - MET: [C+E] 7d -1.2%
-- AVAX: [A+E] 7d -0.0%
-- SOL: [A+E] 7d 0.1%
+- AVAX: [A+E] 7d -0.3%
+- SOL: [A+E] 7d -0.2%
 - XMR: [C+E] 7d 3.3%
 - FIL: [C+E] 7d 4.2%
-- AAVE: [A+E] 7d 9.2%
 
 ## ETF pipeline (new this run)
 - ripple NEW: launch - This $15 Trillion Investment Giant Has No Plans to Launch an XRP ETF. That's Why I'm Beari
@@ -57,12 +57,12 @@
 - (15 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 56 | mean 3.0% (0.26R) | in profit 30 | older than 7d 43
-- worst: ZK -0.82R, BCH -0.69R, EGLD -0.66R | best: SUI 1.72R, FIL 2.04R, RENDER 2.13R
+- open 56 | mean 3.3% (0.29R) | in profit 31 | older than 7d 43
+- worst: ZK -0.81R, BCH -0.68R, EGLD -0.68R | best: NIGHT 1.74R, FIL 2.04R, RENDER 2.24R
 
 ## System
-- CoinGecko 2061/10000 used, month-end projection 10223 (102%), throttle level 2 | by script {'scan': 658, 'check_liquidity': 110, 'breakout_check': 1282, 'counterfactual_check': 11}
+- CoinGecko 2064/10000 used, month-end projection 10170 (102%), throttle level 2 | by script {'scan': 660, 'check_liquidity': 111, 'breakout_check': 1282, 'counterfactual_check': 11}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=26), H2 NOT_SUPPORTED (n=69)
-- radar-flags.json scan age: 16m
+- radar-flags.json scan age: 12m
 - excluded from radar (pegged/tokenized equity): 38
