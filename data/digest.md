@@ -1,4 +1,4 @@
-# Radar digest - 2026-10-07 01:48 UTC
+# Radar digest - 2026-10-07 02:15 UTC
 
 ## Market
 - BTC scenario **A** | price 85526 | wk close 85260 vs 82800 | 50W 77783 (9.96%) | 1h old
@@ -20,8 +20,9 @@
 
 ## Pre-pump candidates
 - MET: [B+C+E] 7d -0.4%
+- LINK: [A+E] 7d -4.0%
 - QNT: [C+E] 7d -1.0%
-- AVAX: [A+C] 7d 1.5%
+- AVAX: [A+C] 7d -0.1%
 - INJ: [A+E] 7d 4.6%
 - PUMP: [D+E] 7d 5.9%
 - JUP: [C+E] 7d 6.6%
@@ -56,12 +57,12 @@
 - (15 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 62 | mean 5.1% (0.42R) | in profit 43 | older than 7d 46
-- worst: UNI -0.70R, BCH -0.62R, XRP -0.52R | best: JUP 2.21R, RENDER 2.51R, FIL 2.72R
+- open 55 | mean 5.0% (0.43R) | in profit 39 | older than 7d 43
+- worst: BCH -0.69R, JTO -0.42R, GRAM -0.41R | best: JUP 2.03R, FIL 2.31R, RENDER 2.40R
 
 ## System
-- CoinGecko 1987/10000 used, month-end projection 10195 (102%), throttle level 2 | by script {'scan': 638, 'check_liquidity': 106, 'breakout_check': 1232, 'counterfactual_check': 11}
+- CoinGecko 1990/10000 used, month-end projection 10141 (101%), throttle level 2 | by script {'scan': 640, 'check_liquidity': 107, 'breakout_check': 1232, 'counterfactual_check': 11}
 - Trials guard: OK (0 untracked)
-- Hypotheses: H1 PENDING (n=22), H2 PENDING (n=55)
-- radar-flags.json scan age: 18m
+- Hypotheses: H1 PENDING (n=24), H2 PENDING (n=67)
+- radar-flags.json scan age: 15m
 - excluded from radar (pegged/tokenized equity): 38
