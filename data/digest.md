@@ -1,10 +1,10 @@
-# Radar digest - 2026-10-07 15:46 UTC
+# Radar digest - 2026-10-07 16:12 UTC
 
 ## Market
 - BTC scenario **A** | price 83037 | wk close 85260 vs 82800 | 50W 77783 (6.76%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 56.48% | ETH/BTC 0.03084 | breadth7d 30% | stables 30d 1.26%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.11pt | 7d 0.33pt | n=56
-- Gold: PAXG 1m -5.47% | real10y 2.95 (52bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
+- Gold: PAXG 1m -5.27% | real10y 2.95 (52bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
 - 10y 1w: 7bp = real 5 + breakeven 1 -> **SMALL_MOVE**
 - 10y 1m: 53bp = real 52 + breakeven -1 -> **REAL_YIELD_DRIVEN**
 
@@ -19,8 +19,9 @@
 - PUMP: **ONGOING** | +100% impulse, retr 0.21 | OI dd 8% | fund 0.0050 | hold True | inval 0.00520 | OB 0.00520-0.00541
 
 ## Pre-pump candidates
-- LINK: [A+E] 7d -8.0%
-- SOL: [A+D] 7d -4.3%
+- LINK: [A+E] 7d -5.4%
+- SOL: [A+D] 7d -1.8%
+- INJ: [A+E] 7d -0.6%
 
 ## ETF pipeline (new this run)
 - solana NEW: other - Bitwise’s Solana Staking ETF Sees $6.5M Exit as Investors Bank Profits Despite ‘Strong Buy
@@ -52,12 +53,12 @@
 - (16 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 53 | mean 0.5% (0.06R) | in profit 25 | older than 7d 41
-- worst: JTO -0.90R, BCH -0.89R, GRAM -0.83R | best: SUI 1.46R, RENDER 1.58R, RAY 2.01R
+- open 53 | mean 2.0% (0.18R) | in profit 28 | older than 7d 41
+- worst: JTO -0.90R, BCH -0.84R, GRAM -0.76R | best: SAND 1.77R, RENDER 1.80R, RAY 2.10R
 
 ## System
-- CoinGecko 2158/10000 used, month-end projection 10098 (101%), throttle level 2 | by script {'scan': 692, 'check_liquidity': 118, 'breakout_check': 1337, 'counterfactual_check': 11}
+- CoinGecko 2160/10000 used, month-end projection 10044 (100%), throttle level 2 | by script {'scan': 694, 'check_liquidity': 118, 'breakout_check': 1337, 'counterfactual_check': 11}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=28), H2 NOT_SUPPORTED (n=76)
-- radar-flags.json scan age: 16m
+- radar-flags.json scan age: 12m
 - excluded from radar (pegged/tokenized equity): 39
