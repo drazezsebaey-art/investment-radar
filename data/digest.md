@@ -1,10 +1,10 @@
-# Radar digest - 2026-10-08 09:45 UTC
+# Radar digest - 2026-10-08 10:12 UTC
 
 ## Market
 - BTC scenario **A** | price 82886 | wk close 85260 vs 82800 | 50W 77783 (6.56%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.44% | ETH/BTC 0.03097 | breadth7d -% | stables 30d 1.13%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.01pt | 7d 0.43pt | n=60
-- Gold: PAXG 1m -4.62% | real10y 2.91 (48bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
+- Gold: PAXG 1m -5.00% | real10y 2.91 (48bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
 - 10y 1w: 1bp = real 0 + breakeven 0 -> **SMALL_MOVE**
 - 10y 1m: 47bp = real 48 + breakeven -1 -> **REAL_YIELD_DRIVEN**
 
@@ -20,6 +20,7 @@
 
 ## Pre-pump candidates
 - HYPE: [A+E] 7d -2.3%
+- CRV: [C+E] 7d 0.6%
 - AAVE: [A+E] 7d 4.4%
 - PUMP: [D+E] 7d 6.0%
 - CVX: [C+E] 7d 6.2%
@@ -49,12 +50,12 @@
 - (15 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 52 | mean 2.8% (0.23R) | in profit 29 | older than 7d 40
-- worst: ZRO -0.79R, GRAM -0.76R, EGLD -0.64R | best: SENT 1.91R, STRK 2.07R, RAY 2.10R
+- open 52 | mean 3.6% (0.30R) | in profit 31 | older than 7d 40
+- worst: ZRO -0.79R, GRAM -0.76R, VET -0.61R | best: RAY 2.01R, SENT 2.04R, STRK 2.57R
 
 ## System
-- CoinGecko 2403/10000 used, month-end projection 10101 (101%), throttle level 2 | by script {'scan': 770, 'check_liquidity': 123, 'breakout_check': 1496, 'counterfactual_check': 14}
+- CoinGecko 2405/10000 used, month-end projection 10052 (100%), throttle level 2 | by script {'scan': 772, 'check_liquidity': 123, 'breakout_check': 1496, 'counterfactual_check': 14}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=29), H2 NOT_SUPPORTED (n=79)
-- radar-flags.json scan age: 15m
+- radar-flags.json scan age: 12m
 - excluded from radar (pegged/tokenized equity): 39
