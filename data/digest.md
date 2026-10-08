@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-08 15:13 UTC
+# Radar digest - 2026-10-08 15:46 UTC
 
 ## Market
-- BTC scenario **A** | price 82547 | wk close 85260 vs 82800 | 50W 77783 (6.12%) | 29m old
+- BTC scenario **A** | price 82547 | wk close 85260 vs 82800 | 50W 77783 (6.12%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 56.60% | ETH/BTC 0.03063 | breadth7d -% | stables 30d 1.12%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.10pt | 7d 0.52pt | n=62
 - Gold: PAXG 1m -5.00% | real10y 2.91 (48bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -19,25 +19,28 @@
 - IMX: **ONGOING** | +77% impulse, retr 0.27 | OI dd 2% | fund -0.0013 | hold False | inval 0.16980 | OB 0.16520-0.16890
 
 ## Pre-pump candidates
-- HYPE: [A+E] 7d -4.4%
-- CRV: [C+E] 7d -1.7%
-- PUMP: [D+E] 7d 2.0%
+- HYPE: [A+E] 7d -3.8%
+- PUMP: [D+E] 7d 3.0%
 
 ## ETF pipeline (new this run)
-- zcash: other - Zcash ETF: $93.56 million outflow in one week - CryptoTicker
-- zcash: other - Zcash ETF Crosses $1 Billion As Crypto Funds Enter Selective Phase - TronWeekly
-- ondo-finance: other - Historical Data for Global X Artificial Intelligence & Technology ETF (Ondo Tokenized) in 
-- zcash: other - Proposed WINK Fund Would Bring Zcash ETF Exposure to Brokerage Accounts - Yahoo Finance
+- sui: approval - SEC Approves 2x Leveraged SUI ETF Amid Volatility Concerns - CoinMarketCap
+- zcash: filing - Winklevoss Group Files For Spot Zcash ETF, Suggesting WINK Ticker Symbol - Crowdfund Insid
+- zcash: filing - Zcash gets a new ETF filing as Grayscale bleeds $105M: could ZEC fall another 16%? - Invez
+- zcash: filing - ZEC Gets a WINK as Winklevoss Files for Nasdaq ETF - Yahoo Finance
+- zcash: filing - ZEC expands institutional momentum as Winklevoss files for Zcash ETF - www.tmgm.com
+- zcash: other - XRP ETFs Are Growing but Why Does the Zcash ETF Get all the Attention? - TradingView
+- zcash: other - Grayscale's Zcash ETF hits $1B, signaling a new era for crypto ETFs beyond Bitcoin and Eth
+- zcash: other - Zcash price drops amid whale buys and ETF outfl... - Pluang
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.93 | taker 0.95
-- ETH: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.88 | taker 0.90
-- SOL: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.60% | topPos 0.90 | taker 0.83
-- NEAR: LONG_FLUSH_24H | OI/mc 0.92% | topPos 1.02 | taker 0.99
-- AVAX: LONG_FLUSH_24H | OI/mc 0.44% | topPos 0.89 | taker 0.88
-- SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 0.97
-- SEI: LONG_FLUSH_24H | OI/mc 0.76% | topPos 0.93 | taker 0.90
-- TAO: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 0.81
+- BTC: LONG_FLUSH_24H | OI/mc -% | topPos 0.94 | taker 0.96
+- SOL: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.61% | topPos 0.90 | taker 0.83
+- NEAR: LONG_FLUSH_24H | OI/mc 0.97% | topPos 1.02 | taker 1.00
+- AVAX: LONG_FLUSH_24H | OI/mc 0.46% | topPos 0.88 | taker 0.88
+- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 0.89
+- SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 0.99
+- TAO: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.84 | taker 0.83
+- WLD: LONG_FLUSH_24H | OI/mc -% | topPos 0.90 | taker 1.03
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -48,12 +51,12 @@
 - (15 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 51 | mean 2.4% (0.19R) | in profit 26 | older than 7d 40
-- worst: GRAM -0.83R, VET -0.69R, BONK -0.68R | best: SENT 1.76R, FIL 1.84R, STRK 3.61R
+- open 42 | mean -0.1% (0.06R) | in profit 15 | older than 7d 33
+- worst: CFX -0.77R, ETC -0.76R, ENS -0.70R | best: FIL 1.16R, RAY 1.51R, STRK 3.24R
 
 ## System
-- CoinGecko 2488/10000 used, month-end projection 10115 (101%), throttle level 2 | by script {'scan': 800, 'check_liquidity': 124, 'breakout_check': 1550, 'counterfactual_check': 14}
+- CoinGecko 2490/10000 used, month-end projection 10123 (101%), throttle level 2 | by script {'scan': 802, 'check_liquidity': 124, 'breakout_check': 1550, 'counterfactual_check': 14}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=30), H2 NOT_SUPPORTED (n=81)
-- radar-flags.json scan age: 13m
-- excluded from radar (pegged/tokenized equity): 39
+- radar-flags.json scan age: 16m
+- excluded from radar (pegged/tokenized equity): 40
