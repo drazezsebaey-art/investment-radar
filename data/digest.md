@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-08 09:13 UTC
+# Radar digest - 2026-10-08 09:45 UTC
 
 ## Market
-- BTC scenario **A** | price 82886 | wk close 85260 vs 82800 | 50W 77783 (6.56%) | 28m old
+- BTC scenario **A** | price 82886 | wk close 85260 vs 82800 | 50W 77783 (6.56%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.44% | ETH/BTC 0.03097 | breadth7d -% | stables 30d 1.13%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.01pt | 7d 0.43pt | n=60
 - Gold: PAXG 1m -4.62% | real10y 2.91 (48bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -19,42 +19,42 @@
 - JUP: **ONGOING** | +93% impulse, retr 0.06 | OI dd 15% | fund 0.0050 | hold False | inval 0.31260 | OB 0.30940-0.31540
 
 ## Pre-pump candidates
-- HYPE: [A+E] 7d -2.7%
-- SOL: [A+D] 7d -2.3%
-- CRV: [C+E] 7d -0.1%
-- AAVE: [A+E] 7d 2.6%
+- HYPE: [A+E] 7d -2.3%
+- AAVE: [A+E] 7d 4.4%
+- PUMP: [D+E] 7d 6.0%
+- CVX: [C+E] 7d 6.2%
 
 ## ETF pipeline (new this run)
-- solana NEW: other - Ethereum and Solana Price Predictions: ETF Outflows Hit Both as Remittix Prepares to Go Li
-- zcash: other - Grayscale Trading Head: Zcash Spot ETF Attracts Over $1 Billion in First Month, Crypto ETF
-- ondo-finance: other - Global X Blockchain ETF (Ondo Tokenized) - CryptoRank
+- solana NEW: other - Crypto ETF News Today: BTC, ETH, SOL Outflow After Fed Minutes Meeting - Coin Gabbar
+- zcash: launch - Zcash Price Prediction: Third ETF Contender Emerges as Remittix Approaches Exchange Launch
+- zcash: filing - Zcash gets a new ETF filing as Grayscale bleeds $105M: could ZEC fall another 16%? - Invez
+- zcash: filing - Zcash gets a new ETF filing as Grayscale bleeds $105M: could ZEC fall another 16%? - Invez
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.93 | taker 0.89
-- ETH: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.88 | taker 0.88
-- SOL: LONG_FLUSH_24H | OI/mc 0.60% | topPos 0.90 | taker 0.85
-- AVAX: LONG_FLUSH_24H | OI/mc 0.43% | topPos 0.91 | taker 0.90
-- XRP: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 0.83
+- BTC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.93 | taker 0.91
+- ETH: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.88 | taker 0.89
+- SOL: LONG_FLUSH_24H | OI/mc 0.61% | topPos 0.89 | taker 0.86
+- AVAX: LONG_FLUSH_24H | OI/mc 0.44% | topPos 0.91 | taker 0.91
+- XRP: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 0.84
 - SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.94 | taker 0.90
-- TAO: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 0.85
-- ZEC: LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 0.92
+- TAO: LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 0.86
+- ZEC: LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 0.92
 
 ## Revenue / buyback flags
+- pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
 - stonk-3: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
-- collector-crypt: REVENUE_ACCELERATING
-- solana: REVENUE_ACCELERATING
+- collector-crypt: REVENUE_ACCELERATING, CHEAP_VS_REVENUE
 - venice-token: REVENUE_ACCELERATING
 - chip-2: REVENUE_ACCELERATING
-- monad: REVENUE_ACCELERATING
-- (16 flagged protocol(s) without a tradeable token hidden)
+- (15 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 52 | mean 2.2% (0.18R) | in profit 28 | older than 7d 40
-- worst: ZRO -0.84R, GRAM -0.83R, EGLD -0.69R | best: RENDER 1.69R, STRK 1.72R, RAY 2.15R
+- open 52 | mean 2.8% (0.23R) | in profit 29 | older than 7d 40
+- worst: ZRO -0.79R, GRAM -0.76R, EGLD -0.64R | best: SENT 1.91R, STRK 2.07R, RAY 2.10R
 
 ## System
-- CoinGecko 2401/10000 used, month-end projection 10092 (101%), throttle level 2 | by script {'scan': 768, 'check_liquidity': 123, 'breakout_check': 1496, 'counterfactual_check': 14}
+- CoinGecko 2403/10000 used, month-end projection 10101 (101%), throttle level 2 | by script {'scan': 770, 'check_liquidity': 123, 'breakout_check': 1496, 'counterfactual_check': 14}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=29), H2 NOT_SUPPORTED (n=79)
-- radar-flags.json scan age: 13m
+- radar-flags.json scan age: 15m
 - excluded from radar (pegged/tokenized equity): 39
