@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-08 05:13 UTC
+# Radar digest - 2026-10-08 05:44 UTC
 
 ## Market
-- BTC scenario **A** | price 82472 | wk close 85260 vs 82800 | 50W 77783 (6.03%) | 28m old
+- BTC scenario **A** | price 82472 | wk close 85260 vs 82800 | 50W 77783 (6.03%) | 59m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.40% | ETH/BTC 0.03104 | breadth7d -% | stables 30d 1.13%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.15pt | 7d 0.44pt | n=59
 - Gold: PAXG 1m -4.62% | real10y 2.91 (48bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -20,27 +20,27 @@
 
 ## Pre-pump candidates
 - SOL: [A+D] 7d -3.1%
-- HYPE: [A+E] 7d -1.9%
-- CRV: [C+E] 7d -1.2%
-- JUP: [B+C] 7d 13.2%
+- HYPE: [A+E] 7d -2.1%
+- CRV: [C+E] 7d -1.8%
+- NEAR: [A+C] 7d -0.7%
 
 ## ETF pipeline (new this run)
-- zcash: filing - Zcash Price Prediction: New Nasdaq ETF Filing Lands as Remittix Approaches Exchange Tradin
-- zcash: other - Grayscale's Zcash ETF hits $1B in 30 days, showing strong demand for crypto ETFs beyond Bi
-- ondo-finance: other - Global X NASDAQ 100 Covered Call Tokenized ETF (Ondo) Analytics - CryptoRank
+- litecoin NEW: conversion - Litecoin marks 15 years of uninterrupted operations as ETF conversion accelerates - 디지털투데이
+- zcash: other - Grayscale’s Zcash ETF Tops $1 Billion in Assets Within 30 Trading Days - bloomingbit
+- zcash: other - Zcash ETF Gathers More Than $1 Billion in First 30 Trading Days - www.tokenpost.com
+- zcash: other - Winklevoss twins pitch a low-fee spot Zcash ETF at Token2049 - Crypto Briefing
 - ondo-finance: other - Global X NASDAQ 100 Covered Call Tokenized ETF (Ondo) - CryptoRank
-- ondo-finance: other - Global X NASDAQ 100 Covered Call Tokenized ETF (Ondo) - CryptoRank
-- zcash: other - Winklevoss Twins Pitch Zcash Spot ETF At Token2049 - Briefs Finance
+- ondo-finance: other - Global X S&P 500 Covered Call ETF (Ondo Tokenized) - CryptoRank
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc -% | topPos 0.93 | taker 0.89
-- ETH: LONG_FLUSH_24H | OI/mc -% | topPos 0.89 | taker 0.88
-- SOL: LONG_FLUSH_24H | OI/mc -% | topPos 0.90 | taker 0.88
-- AVAX: LONG_FLUSH_24H | OI/mc 0.45% | topPos 0.92 | taker 0.95
-- XRP: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.84
-- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.93 | taker 1.00
-- TAO: LONG_FLUSH_24H | OI/mc -% | topPos 0.84 | taker 0.94
-- ZEC: LONG_FLUSH_24H | OI/mc -% | topPos 0.95 | taker 0.96
+- BTC: LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 0.88
+- ETH: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 0.87
+- SOL: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.60% | topPos 0.90 | taker 0.85
+- AVAX: LONG_FLUSH_24H | OI/mc 0.43% | topPos 0.91 | taker 0.92
+- XRP: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.83
+- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.93 | taker 0.93
+- TAO: LONG_FLUSH_24H | OI/mc -% | topPos 0.85 | taker 0.86
+- ZEC: LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 0.91
 
 ## Revenue / buyback flags
 - stonk-3: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -52,12 +52,12 @@
 - (16 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 52 | mean 1.9% (0.19R) | in profit 25 | older than 7d 41
-- worst: GRAM -0.83R, VET -0.71R, EGLD -0.69R | best: NEAR 1.81R, RAY 1.83R, JUP 3.44R
+- open 51 | mean 2.5% (0.21R) | in profit 27 | older than 7d 40
+- worst: GRAM -0.76R, VET -0.67R, EGLD -0.66R | best: RENDER 1.80R, NEAR 2.10R, RAY 2.10R
 
 ## System
-- CoinGecko 2329/10000 used, month-end projection 10016 (100%), throttle level 2 | by script {'scan': 752, 'check_liquidity': 121, 'breakout_check': 1442, 'counterfactual_check': 14}
+- CoinGecko 2331/10000 used, month-end projection 10025 (100%), throttle level 2 | by script {'scan': 754, 'check_liquidity': 121, 'breakout_check': 1442, 'counterfactual_check': 14}
 - Trials guard: OK (0 untracked)
-- Hypotheses: H1 PENDING (n=28), H2 NOT_SUPPORTED (n=78)
-- radar-flags.json scan age: 13m
+- Hypotheses: H1 PENDING (n=29), H2 NOT_SUPPORTED (n=79)
+- radar-flags.json scan age: 14m
 - excluded from radar (pegged/tokenized equity): 39
