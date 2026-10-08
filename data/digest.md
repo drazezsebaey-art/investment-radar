@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-07 23:45 UTC
+# Radar digest - 2026-10-08 00:27 UTC
 
 ## Market
-- BTC scenario **A** | price 83312 | wk close 85260 vs 82800 | 50W 77783 (7.11%) | 1h old
+- BTC scenario **A** | price 83312 | wk close 85260 vs 82800 | 50W 77783 (7.11%) | 2h old
 - Alts: **BTC_LED** [-] | BTC.D 56.52% | ETH/BTC 0.03085 | breadth7d 40% | stables 30d 1.24%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.03pt | 7d 0.49pt | n=58
 - Gold: PAXG 1m -5.29% | real10y 2.91 (48bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -19,11 +19,8 @@
 - SUI: **ONGOING** | +92% impulse, retr 0.28 | OI dd 9% | fund 0.0100 | hold True | inval 1.10500 | OB 0.93370-0.97450
 
 ## Pre-pump candidates
-- HYPE: [A+E] 7d -3.4%
-- SOL: [A+D] 7d -1.7%
+- SOL: [A+D] 7d -1.6%
 - BTW: [C+E] 7d -0.0%
-- NEAR: [A+C] 7d 1.6%
-- JUP: [C+E] 7d 9.2%
 
 ## ETF pipeline (new this run)
 - solana NEW: other - Solana Price Prediction: Institutional Breakthrough Meets ETF Outflows, but Where Does Rem
@@ -53,12 +50,12 @@
 - (16 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 53 | mean 2.9% (0.27R) | in profit 28 | older than 7d 42
-- worst: BCH -0.90R, EGLD -0.72R, GRAM -0.69R | best: SENT 1.99R, RAY 2.10R, JUP 2.74R
+- open 53 | mean 3.1% (0.28R) | in profit 29 | older than 7d 42
+- worst: BCH -0.89R, EGLD -0.71R, GRAM -0.69R | best: SENT 1.99R, RAY 2.10R, JUP 2.77R
 
 ## System
-- CoinGecko 2249/10000 used, month-end projection 10019 (100%), throttle level 2 | by script {'scan': 730, 'check_liquidity': 120, 'breakout_check': 1388, 'counterfactual_check': 11}
+- CoinGecko 2309/10000 used, month-end projection 10226 (102%), throttle level 2 | by script {'scan': 732, 'check_liquidity': 121, 'breakout_check': 1442, 'counterfactual_check': 14}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=28), H2 NOT_SUPPORTED (n=78)
-- radar-flags.json scan age: 15m
+- radar-flags.json scan age: 27m
 - excluded from radar (pegged/tokenized equity): 40
