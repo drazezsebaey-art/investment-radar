@@ -1,4 +1,4 @@
-# Radar digest - 2026-10-08 01:46 UTC
+# Radar digest - 2026-10-08 02:13 UTC
 
 ## Market
 - BTC scenario **A** | price 83275 | wk close 85260 vs 82800 | 50W 77783 (7.06%) | 1h old
@@ -19,9 +19,8 @@
 - SUI: **ONGOING** | +92% impulse, retr 0.25 | OI dd 9% | fund 0.0081 | hold True | inval 1.10500 | OB 0.93370-0.97450
 
 ## Pre-pump candidates
-- SOL: [A+D] 7d -1.4%
+- SOL: [A+D] 7d -1.6%
 - CRV: [C+E] 7d -0.8%
-- CVX: [C+E] 7d 7.8%
 
 ## ETF pipeline (new this run)
 - litecoin NEW: other - Litecoin Hits 15 Years of Uptime as Grayscale Pushes for NYSE Arca ETF Listing - BigGo Fin
@@ -49,12 +48,12 @@
 - (16 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 53 | mean 3.3% (0.30R) | in profit 31 | older than 7d 42
-- worst: BCH -0.89R, GRAM -0.76R, EGLD -0.66R | best: RAY 1.92R, SENT 1.93R, JUP 3.27R
+- open 53 | mean 2.9% (0.27R) | in profit 29 | older than 7d 42
+- worst: BCH -0.91R, GRAM -0.76R, EGLD -0.68R | best: RAY 1.88R, SENT 1.90R, JUP 3.31R
 
 ## System
-- CoinGecko 2315/10000 used, month-end projection 10191 (102%), throttle level 2 | by script {'scan': 738, 'check_liquidity': 121, 'breakout_check': 1442, 'counterfactual_check': 14}
+- CoinGecko 2317/10000 used, month-end projection 10140 (101%), throttle level 2 | by script {'scan': 740, 'check_liquidity': 121, 'breakout_check': 1442, 'counterfactual_check': 14}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=28), H2 NOT_SUPPORTED (n=78)
-- radar-flags.json scan age: 16m
+- radar-flags.json scan age: 13m
 - excluded from radar (pegged/tokenized equity): 40
