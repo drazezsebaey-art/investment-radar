@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-08 11:13 UTC
+# Radar digest - 2026-10-08 11:46 UTC
 
 ## Market
-- BTC scenario **A** | price 82718 | wk close 85260 vs 82800 | 50W 77783 (6.34%) | 28m old
+- BTC scenario **A** | price 82718 | wk close 85260 vs 82800 | 50W 77783 (6.34%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 56.48% | ETH/BTC 0.03088 | breadth7d -% | stables 30d 1.12%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.05pt | 7d 0.46pt | n=61
 - Gold: PAXG 1m -5.00% | real10y 2.91 (48bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -19,26 +19,30 @@
 - SUI: **ONGOING** | +92% impulse, retr 0.27 | OI dd 9% | fund 0.0070 | hold True | inval 1.10320 | OB 0.93370-0.97450
 
 ## Pre-pump candidates
-- HYPE: [A+E] 7d -2.1%
-- CRV: [C+E] 7d 0.5%
-- PUMP: [D+E] 7d 9.7%
-- STRK: [B+C] 7d 28.5%
+- HYPE: [A+E] 7d -2.8%
+- CRV: [C+E] 7d 0.2%
+- PUMP: [D+E] 7d 5.4%
+- JUP: [B+C] 7d 17.5%
 
 ## ETF pipeline (new this run)
-- solana NEW: other - Crypto ETF News Today: BTC, ETH, SOL Outflow After Fed Minutes Meeting - Coin Gabbar
-- zcash: launch - Zcash Price Prediction: Third ETF Contender Emerges as Remittix Approaches Exchange Launch
+- hyperliquid NEW: institutional_backing - Grayscale Adds BitGo To Hyperliquid Staking ETF Custody Setup - CryptoRank
+- zcash: filing - Zcash Price Prediction: Winklevoss ETF Filing Ignites ZEC Interest as Remittix Prepares fo
+- zcash: filing - Winklevoss Files for Spot Zcash ETF With $100M Indication of Interest - CoinMarketCap
+- zcash: filing - ZEC expands institutional momentum as Winklevoss files for Zcash ETF - www.tmgm.com
+- zcash: filing - Zcash Price Prediction: New WINK ETF Filing and 25-Second Blocks Put ZEC Back in the Spotl
 - zcash: filing - Zcash gets a new ETF filing as Grayscale bleeds $105M: could ZEC fall another 16%? - Invez
-- zcash: filing - Zcash gets a new ETF filing as Grayscale bleeds $105M: could ZEC fall another 16%? - Invez
+- zcash: other - Zcash ETF: $93.56 million outflow in one week - CryptoTicker
+- ondo-finance: other - Global X Artificial Intelligence & Technology ETF (Ondo Tokenized) Exchanges AIQON Markets
 
 ## Derivatives flags (OKX)
-- ETH: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.90
-- SOL: LONG_FLUSH_24H | OI/mc 0.61% | topPos 0.89 | taker 0.87
-- AVAX: LONG_FLUSH_24H | OI/mc 0.44% | topPos 0.91 | taker 0.94
-- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 0.88
-- SEI: LONG_FLUSH_24H | OI/mc 0.76% | topPos 0.93 | taker 0.92
-- TAO: LONG_FLUSH_24H | OI/mc -% | topPos 0.85 | taker 0.87
-- ZEC: LONG_FLUSH_24H | OI/mc -% | topPos 0.93 | taker 0.91
-- WLD: LONG_FLUSH_24H | OI/mc -% | topPos 0.89 | taker 1.06
+- BTC: LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 0.91
+- ETH: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.93
+- SOL: LONG_FLUSH_24H | OI/mc 0.62% | topPos 0.89 | taker 0.87
+- NEAR: LONG_FLUSH_24H | OI/mc 0.95% | topPos 1.04 | taker 1.02
+- AVAX: LONG_FLUSH_24H | OI/mc 0.44% | topPos 0.91 | taker 0.92
+- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.94 | taker 0.88
+- TAO: LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 0.85
+- ZEC: LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 0.89
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -49,12 +53,12 @@
 - (15 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 51 | mean 2.8% (0.23R) | in profit 29 | older than 7d 40
-- worst: GRAM -0.83R, VET -0.67R, EGLD -0.66R | best: RAY 2.06R, SENT 2.15R, STRK 2.31R
+- open 51 | mean 2.7% (0.23R) | in profit 28 | older than 7d 40
+- worst: GRAM -0.83R, VET -0.70R, EGLD -0.68R | best: SENT 2.10R, RAY 2.20R, STRK 3.04R
 
 ## System
-- CoinGecko 2409/10000 used, month-end projection 10013 (100%), throttle level 2 | by script {'scan': 776, 'check_liquidity': 123, 'breakout_check': 1496, 'counterfactual_check': 14}
+- CoinGecko 2411/10000 used, month-end projection 10021 (100%), throttle level 2 | by script {'scan': 778, 'check_liquidity': 123, 'breakout_check': 1496, 'counterfactual_check': 14}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=29), H2 NOT_SUPPORTED (n=79)
-- radar-flags.json scan age: 12m
-- excluded from radar (pegged/tokenized equity): 39
+- radar-flags.json scan age: 16m
+- excluded from radar (pegged/tokenized equity): 38
