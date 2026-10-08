@@ -1,12 +1,12 @@
-# Radar digest - 2026-10-08 21:42 UTC
+# Radar digest - 2026-10-08 22:10 UTC
 
 ## Market
 - BTC scenario **A** | price 81818 | wk close 85260 vs 82800 | 50W 77783 (5.19%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 56.93% | ETH/BTC 0.03003 | breadth7d 35% | stables 30d 1.13%
 - Alt risk (BTC.D): **HIGH** ['BTC_DOM_BREAKOUT_HOLDING', 'BTC_DOM_RISING_3D'] | 3d 0.59pt | 7d 0.61pt | n=63
-- Gold: PAXG 1m -5.79% | real10y 2.91 (48bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
-- 10y 1w: 1bp = real 0 + breakeven 0 -> **SMALL_MOVE**
-- 10y 1m: 47bp = real 48 + breakeven -1 -> **REAL_YIELD_DRIVEN**
+- Gold: PAXG 1m -5.29% | real10y 2.92 (46bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
+- 10y 1w: -1bp = real -1 + breakeven -1 -> **SMALL_MOVE**
+- 10y 1m: 45bp = real 46 + breakeven -5 -> **REAL_YIELD_DRIVEN**
 
 ## Coins in correction (entry_ready first)
 - WLD: **RESET_DONE** ENTRY_READY | +76% impulse, retr 0.51 | OI dd 30% | fund -0.0044 | hold True | inval 0.46590 | OB 0.35600-0.37680
@@ -50,12 +50,12 @@
 - (15 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 40 | mean 0.9% (0.13R) | in profit 19 | older than 7d 31
-- worst: JTO -0.72R, ENS -0.72R, ETC -0.72R | best: PYTH 1.43R, FIL 1.57R, STRK 2.35R
+- open 40 | mean 0.9% (0.14R) | in profit 19 | older than 7d 31
+- worst: JTO -0.76R, ETC -0.73R, ENS -0.73R | best: SENT 1.44R, FIL 1.61R, STRK 2.47R
 
 ## System
-- CoinGecko 2523/10000 used, month-end projection 9932 (99%), throttle level 1 | by script {'scan': 826, 'check_liquidity': 133, 'breakout_check': 1550, 'counterfactual_check': 14}
+- CoinGecko 2526/10000 used, month-end projection 9891 (99%), throttle level 1 | by script {'scan': 828, 'check_liquidity': 134, 'breakout_check': 1550, 'counterfactual_check': 14}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=30), H2 NOT_SUPPORTED (n=81)
-- radar-flags.json scan age: 12m
-- excluded from radar (pegged/tokenized equity): 40
+- radar-flags.json scan age: 10m
+- excluded from radar (pegged/tokenized equity): 39
