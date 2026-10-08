@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-08 17:10 UTC
+# Radar digest - 2026-10-08 17:44 UTC
 
 ## Market
-- BTC scenario **A** | price 81407 | wk close 85260 vs 82800 | 50W 77783 (4.66%) | 30m old
+- BTC scenario **A** | price 81407 | wk close 85260 vs 82800 | 50W 77783 (4.66%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 56.60% | ETH/BTC 0.03063 | breadth7d -% | stables 30d 1.12%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.10pt | 7d 0.52pt | n=62
 - Gold: PAXG 1m -5.79% | real10y 2.91 (48bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -22,24 +22,24 @@
 - HYPE: [A+E] 7d -4.3%
 
 ## ETF pipeline (new this run)
-- sui: approval - SEC Approves 2x Leveraged SUI ETF Amid Volatility Concerns - CoinMarketCap
-- zcash: filing - Winklevoss Group Files For Spot Zcash ETF, Suggesting WINK Ticker Symbol - Crowdfund Insid
-- zcash: filing - Zcash gets a new ETF filing as Grayscale bleeds $105M: could ZEC fall another 16%? - Invez
-- zcash: filing - ZEC Gets a WINK as Winklevoss Files for Nasdaq ETF - Yahoo Finance
-- zcash: filing - ZEC expands institutional momentum as Winklevoss files for Zcash ETF - www.tmgm.com
-- zcash: other - XRP ETFs Are Growing but Why Does the Zcash ETF Get all the Attention? - TradingView
-- zcash: other - Grayscale's Zcash ETF hits $1B, signaling a new era for crypto ETFs beyond Bitcoin and Eth
-- zcash: other - Zcash price drops amid whale buys and ETF outfl... - Pluang
+- dogecoin NEW: launch - Dogecoin News Today: ETF Closure Threatens DOGE Sentiment as Remittix Advances Toward Laun
+- ripple NEW: filing - XRP ETF Options Just Showed Up In An Official SEC Filing - Bitget
+- ripple NEW: filing - XRP ETF Options Just Showed Up In An Official SEC Filing - Times Tabloid
+- ripple NEW: institutional_backing - Grayscale XRP ETF Adds In-Kind Transactions and New Custodian - Bitcoin News
+- dogecoin NEW: other - Bitwise CEO says 'tragic' Dogecoin ETF failure shows gap between ETF buyers and crypto-app
+- dogecoin NEW: other - Bitwise to close Dogecoin ETF, DOGE hovers near $0.088 after golden cross - Bitget
+- dogecoin NEW: other - Dogecoin Price Prediction: Can DOGE Hold $0.085 as ETF Liquidation Nears? - CryptoRank
+- dogecoin NEW: other - Dogecoin News: Bitwise Sets ETF Exit Deadline as Remittix Gives Utility Buyers Another Rou
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc 0.20% | topPos 0.92 | taker 0.91
-- SOL: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.60% | topPos 0.90 | taker 0.80
-- NEAR: LONG_FLUSH_24H | OI/mc 0.91% | topPos 1.01 | taker 0.97
-- AVAX: LONG_FLUSH_24H | OI/mc 0.42% | topPos 0.87 | taker 0.86
-- XRP: AGGRESSIVE_SELLING | OI/mc 0.13% | topPos 0.88 | taker 0.84
-- SUI: LONG_FLUSH_24H | OI/mc 1.05% | topPos 0.89 | taker 0.91
-- SEI: AGGRESSIVE_SELLING | OI/mc 0.75% | topPos 0.94 | taker 0.84
-- TAO: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.84 | taker 0.81
+- BTC: LONG_FLUSH_24H | OI/mc 0.20% | topPos 0.93 | taker 0.91
+- ETH: LONG_FLUSH_24H | OI/mc 0.66% | topPos 0.87 | taker 0.90
+- SOL: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.61% | topPos 0.91 | taker 0.80
+- NEAR: LONG_FLUSH_24H | OI/mc 0.97% | topPos 1.01 | taker 0.97
+- AVAX: LONG_FLUSH_24H | OI/mc 0.44% | topPos 0.89 | taker 0.86
+- XRP: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.13% | topPos 0.89 | taker 0.82
+- SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.89 | taker 0.91
+- SEI: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.79% | topPos 0.95 | taker 0.83
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -50,12 +50,12 @@
 - (15 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 42 | mean -1.8% (-0.07R) | in profit 15 | older than 7d 33
-- worst: CFX -0.94R, APT -0.87R, ETC -0.83R | best: SENT 1.14R, RAY 1.46R, STRK 3.08R
+- open 40 | mean -3.2% (-0.15R) | in profit 13 | older than 7d 31
+- worst: ENS -0.95R, ETC -0.89R, JTO -0.89R | best: SENT 0.92R, RAY 1.01R, STRK 2.96R
 
 ## System
-- CoinGecko 2498/10000 used, month-end projection 10046 (100%), throttle level 2 | by script {'scan': 808, 'check_liquidity': 126, 'breakout_check': 1550, 'counterfactual_check': 14}
+- CoinGecko 2500/10000 used, month-end projection 10054 (100%), throttle level 2 | by script {'scan': 810, 'check_liquidity': 126, 'breakout_check': 1550, 'counterfactual_check': 14}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=30), H2 NOT_SUPPORTED (n=81)
-- radar-flags.json scan age: 10m
-- excluded from radar (pegged/tokenized equity): 41
+- radar-flags.json scan age: 13m
+- excluded from radar (pegged/tokenized equity): 40
