@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-08 13:44 UTC
+# Radar digest - 2026-10-08 14:13 UTC
 
 ## Market
-- BTC scenario **A** | price 82336 | wk close 85260 vs 82800 | 50W 77783 (5.85%) | 59m old
+- BTC scenario **A** | price 82336 | wk close 85260 vs 82800 | 50W 77783 (5.85%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 56.48% | ETH/BTC 0.03088 | breadth7d -% | stables 30d 1.12%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.05pt | 7d 0.46pt | n=61
 - Gold: PAXG 1m -5.00% | real10y 2.91 (48bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -21,7 +21,6 @@
 ## Pre-pump candidates
 - HYPE: [A+E] 7d -5.6%
 - CRV: [C+E] 7d -3.1%
-- PUMP: [D+E] 7d 1.8%
 
 ## ETF pipeline (new this run)
 - zcash: other - Zcash ETF: $93.56 million outflow in one week - CryptoTicker
@@ -48,12 +47,12 @@
 - (15 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 51 | mean 2.2% (0.19R) | in profit 25 | older than 7d 40
-- worst: GRAM -0.90R, BONK -0.73R, VET -0.69R | best: FIL 1.77R, SENT 2.30R, STRK 3.26R
+- open 51 | mean 2.1% (0.18R) | in profit 25 | older than 7d 40
+- worst: GRAM -0.90R, BONK -0.73R, VET -0.69R | best: RAY 1.69R, SENT 2.09R, STRK 3.28R
 
 ## System
-- CoinGecko 2474/10000 used, month-end projection 10169 (102%), throttle level 2 | by script {'scan': 786, 'check_liquidity': 124, 'breakout_check': 1550, 'counterfactual_check': 14}
+- CoinGecko 2484/10000 used, month-end projection 10154 (102%), throttle level 2 | by script {'scan': 796, 'check_liquidity': 124, 'breakout_check': 1550, 'counterfactual_check': 14}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=30), H2 NOT_SUPPORTED (n=80)
-- radar-flags.json scan age: 14m
-- excluded from radar (pegged/tokenized equity): 39
+- radar-flags.json scan age: 13m
+- excluded from radar (pegged/tokenized equity): 40
