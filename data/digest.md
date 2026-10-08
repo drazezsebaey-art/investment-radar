@@ -1,4 +1,4 @@
-# Radar digest - 2026-10-08 07:46 UTC
+# Radar digest - 2026-10-08 08:13 UTC
 
 ## Market
 - BTC scenario **A** | price 82714 | wk close 85260 vs 82800 | 50W 77783 (6.34%) | 1h old
@@ -19,10 +19,10 @@
 - ZEC: **ONGOING** | +126% impulse, retr 0.48 | OI dd 33% | fund 0.0100 | hold False | inval 1086.09000 | OB 1086.09000-1158.80000
 
 ## Pre-pump candidates
-- SOL: [A+D] 7d -3.4%
+- SOL: [A+D] 7d -3.5%
 - HYPE: [A+E] 7d -2.4%
-- NEAR: [A+C] 7d 0.6%
-- CVX: [C+E] 7d 6.6%
+- CRV: [C+E] 7d -0.3%
+- AAVE: [A+E] 7d 3.3%
 
 ## ETF pipeline (new this run)
 - solana NEW: other - Ethereum and Solana Price Predictions: ETF Outflows Hit Both as Remittix Prepares to Go Li
@@ -49,12 +49,12 @@
 - (16 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 52 | mean 2.8% (0.23R) | in profit 29 | older than 7d 40
-- worst: GRAM -0.76R, VET -0.69R, ZRO -0.63R | best: RENDER 1.80R, NEAR 2.10R, RAY 2.29R
+- open 52 | mean 2.3% (0.19R) | in profit 28 | older than 7d 40
+- worst: GRAM -0.83R, VET -0.66R, EGLD -0.64R | best: RENDER 1.80R, NEAR 1.89R, RAY 2.24R
 
 ## System
-- CoinGecko 2394/10000 used, month-end projection 10178 (102%), throttle level 2 | by script {'scan': 762, 'check_liquidity': 122, 'breakout_check': 1496, 'counterfactual_check': 14}
+- CoinGecko 2397/10000 used, month-end projection 10133 (101%), throttle level 2 | by script {'scan': 764, 'check_liquidity': 123, 'breakout_check': 1496, 'counterfactual_check': 14}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=29), H2 NOT_SUPPORTED (n=79)
-- radar-flags.json scan age: 16m
+- radar-flags.json scan age: 12m
 - excluded from radar (pegged/tokenized equity): 39
