@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-08 13:13 UTC
+# Radar digest - 2026-10-08 13:44 UTC
 
 ## Market
-- BTC scenario **A** | price 82336 | wk close 85260 vs 82800 | 50W 77783 (5.85%) | 28m old
+- BTC scenario **A** | price 82336 | wk close 85260 vs 82800 | 50W 77783 (5.85%) | 59m old
 - Alts: **BTC_LED** [-] | BTC.D 56.48% | ETH/BTC 0.03088 | breadth7d -% | stables 30d 1.12%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.05pt | 7d 0.46pt | n=61
 - Gold: PAXG 1m -5.00% | real10y 2.91 (48bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -19,29 +19,25 @@
 - ALGO: **ONGOING** | +72% impulse, retr 0.21 | OI dd 35% | fund 0.0100 | hold False | inval 0.11526 | OB 0.11408-0.11822
 
 ## Pre-pump candidates
-- HYPE: [A+E] 7d -4.8%
-- CRV: [C+E] 7d 0.5%
-- PUMP: [D+E] 7d 2.1%
+- HYPE: [A+E] 7d -5.6%
+- CRV: [C+E] 7d -3.1%
+- PUMP: [D+E] 7d 1.8%
 
 ## ETF pipeline (new this run)
-- hyperliquid NEW: institutional_backing - Grayscale Adds BitGo To Hyperliquid Staking ETF Custody Setup - CryptoRank
-- zcash: filing - Zcash Price Prediction: Winklevoss ETF Filing Ignites ZEC Interest as Remittix Prepares fo
-- zcash: filing - Winklevoss Files for Spot Zcash ETF With $100M Indication of Interest - CoinMarketCap
-- zcash: filing - ZEC expands institutional momentum as Winklevoss files for Zcash ETF - www.tmgm.com
-- zcash: filing - Zcash Price Prediction: New WINK ETF Filing and 25-Second Blocks Put ZEC Back in the Spotl
-- zcash: filing - Zcash gets a new ETF filing as Grayscale bleeds $105M: could ZEC fall another 16%? - Invez
 - zcash: other - Zcash ETF: $93.56 million outflow in one week - CryptoTicker
-- ondo-finance: other - Global X Artificial Intelligence & Technology ETF (Ondo Tokenized) Exchanges AIQON Markets
+- zcash: other - Zcash ETF Crosses $1 Billion As Crypto Funds Enter Selective Phase - TronWeekly
+- ondo-finance: other - Historical Data for Global X Artificial Intelligence & Technology ETF (Ondo Tokenized) in 
+- zcash: other - Proposed WINK Fund Would Bring Zcash ETF Exposure to Brokerage Accounts - Yahoo Finance
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 0.91
-- ETH: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.90
-- SOL: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.61% | topPos 0.89 | taker 0.85
-- NEAR: LONG_FLUSH_24H | OI/mc 0.96% | topPos 1.03 | taker 1.02
-- AVAX: LONG_FLUSH_24H | OI/mc 0.44% | topPos 0.90 | taker 0.93
+- BTC: LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 0.89
+- ETH: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.88
+- SOL: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.60% | topPos 0.90 | taker 0.83
+- NEAR: LONG_FLUSH_24H | OI/mc 0.95% | topPos 1.03 | taker 1.01
+- AVAX: LONG_FLUSH_24H | OI/mc 0.44% | topPos 0.90 | taker 0.91
+- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.85
+- SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 0.99
 - SEI: LONG_FLUSH_24H | OI/mc 0.76% | topPos 0.94 | taker 0.90
-- TAO: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.85 | taker 0.84
-- ZEC: LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 0.90
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -52,12 +48,12 @@
 - (15 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 51 | mean 2.0% (0.17R) | in profit 24 | older than 7d 40
-- worst: GRAM -0.96R, BONK -0.73R, VET -0.72R | best: RAY 1.83R, SENT 2.25R, STRK 2.72R
+- open 51 | mean 2.2% (0.19R) | in profit 25 | older than 7d 40
+- worst: GRAM -0.90R, BONK -0.73R, VET -0.69R | best: FIL 1.77R, SENT 2.30R, STRK 3.26R
 
 ## System
-- CoinGecko 2472/10000 used, month-end projection 10161 (102%), throttle level 2 | by script {'scan': 784, 'check_liquidity': 124, 'breakout_check': 1550, 'counterfactual_check': 14}
+- CoinGecko 2474/10000 used, month-end projection 10169 (102%), throttle level 2 | by script {'scan': 786, 'check_liquidity': 124, 'breakout_check': 1550, 'counterfactual_check': 14}
 - Trials guard: OK (0 untracked)
-- Hypotheses: H1 PENDING (n=29), H2 NOT_SUPPORTED (n=80)
-- radar-flags.json scan age: 13m
+- Hypotheses: H1 NOT_SUPPORTED (n=30), H2 NOT_SUPPORTED (n=80)
+- radar-flags.json scan age: 14m
 - excluded from radar (pegged/tokenized equity): 39
