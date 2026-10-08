@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-08 08:46 UTC
+# Radar digest - 2026-10-08 09:13 UTC
 
 ## Market
-- BTC scenario **A** | price 82886 | wk close 85260 vs 82800 | 50W 77783 (6.56%) | 1m old
+- BTC scenario **A** | price 82886 | wk close 85260 vs 82800 | 50W 77783 (6.56%) | 28m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.44% | ETH/BTC 0.03097 | breadth7d -% | stables 30d 1.13%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.01pt | 7d 0.43pt | n=60
 - Gold: PAXG 1m -4.62% | real10y 2.91 (48bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -19,9 +19,10 @@
 - JUP: **ONGOING** | +93% impulse, retr 0.06 | OI dd 15% | fund 0.0050 | hold False | inval 0.31260 | OB 0.30940-0.31540
 
 ## Pre-pump candidates
-- SOL: [A+D] 7d -3.5%
 - HYPE: [A+E] 7d -2.7%
+- SOL: [A+D] 7d -2.3%
 - CRV: [C+E] 7d -0.1%
+- AAVE: [A+E] 7d 2.6%
 
 ## ETF pipeline (new this run)
 - solana NEW: other - Ethereum and Solana Price Predictions: ETF Outflows Hit Both as Remittix Prepares to Go Li
@@ -48,12 +49,12 @@
 - (16 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 52 | mean 2.4% (0.19R) | in profit 27 | older than 7d 40
-- worst: GRAM -0.83R, ZRO -0.74R, VET -0.66R | best: NEAR 1.83R, RENDER 1.86R, RAY 2.29R
+- open 52 | mean 2.2% (0.18R) | in profit 28 | older than 7d 40
+- worst: ZRO -0.84R, GRAM -0.83R, EGLD -0.69R | best: RENDER 1.69R, STRK 1.72R, RAY 2.15R
 
 ## System
-- CoinGecko 2399/10000 used, month-end projection 10141 (101%), throttle level 2 | by script {'scan': 766, 'check_liquidity': 123, 'breakout_check': 1496, 'counterfactual_check': 14}
+- CoinGecko 2401/10000 used, month-end projection 10092 (101%), throttle level 2 | by script {'scan': 768, 'check_liquidity': 123, 'breakout_check': 1496, 'counterfactual_check': 14}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=29), H2 NOT_SUPPORTED (n=79)
-- radar-flags.json scan age: 16m
+- radar-flags.json scan age: 13m
 - excluded from radar (pegged/tokenized equity): 39
