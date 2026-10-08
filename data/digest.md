@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-08 23:10 UTC
+# Radar digest - 2026-10-08 23:43 UTC
 
 ## Market
-- BTC scenario **A** | price 81921 | wk close 85260 vs 82800 | 50W 77783 (5.32%) | 30m old
+- BTC scenario **A** | price 81921 | wk close 85260 vs 82800 | 50W 77783 (5.32%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 56.82% | ETH/BTC 0.03023 | breadth7d 43% | stables 30d 1.11%
 - Alt risk (BTC.D): **ELEVATED** ['BTC_DOM_BREAKOUT_HOLDING'] | 3d 0.48pt | 7d 0.48pt | n=64
 - Gold: PAXG 1m -5.29% | real10y 2.92 (46bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -21,27 +21,23 @@
 ## Pre-pump candidates
 - HYPE: [A+E] 7d -2.4%
 - AERO: [C+E] 7d 5.2%
-- TIA: [B+C] 7d 19.4%
 
 ## ETF pipeline (new this run)
-- hyperliquid NEW: institutional_backing - Grayscale adds BitGo Bank as custodian for part of its Hyperliquid Staking ETF holdings. -
-- dogecoin NEW: other - Bitwise to close its Dogecoin ETF BWOW on Oct. 14 due to low assets and outflows. - Pluang
-- solana NEW: other - Solana Surges, Morgan Stanley’s MSOL Bleeds: ETF Investors Cash Out Despite Crypto Rally -
-- zcash: other - XRP ETFs Are Growing but Why Does the Zcash ETF Get all the Attention? - Benzinga
-- zcash: other - Zcash (ZEC) Price Falls 13% as Open Interest Drops and ETF Outflows Rise - The Crypto Time
-- ondo-finance: other - Ondo Expands Tokenized U.S. Stocks and ETF Distribution Across Europe - www.tokenpost.com
-- ondo-finance: other - Global X S&P 500 Covered Call ETF (Ondo Tokenized) - CryptoRank
-- ondo-finance: other - Global X S&P 500 Covered Call ETF (Ondo Tokenized) - CryptoRank
+- backpack NEW: other - Backpack Adds Tokenized Brazil ETF and Cerebras Stock to Solana - Altcoin Buzz
+- solana NEW: other - Solana Surge: Fidelity’s FSOL ETF Pulls in Fresh Cash as Traders Chase the Rally - TipRank
+- zcash: filing - Zcash ETF WINK Filing: What Investors Should Know - 99Bitcoins
+- zcash: other - Is Zcash’s Privacy-ETF Rally Over? ZEC Slips 6.8% as $93M Exits Grayscale’s ZCSH - CryptoR
+- zcash: other - $Zcash (ZEC.CC)$ $The Zcash ETF (ZCSH.US)$ - Moomoo
 
 ## Derivatives flags (OKX)
 - BTC: SHORT_SQUEEZE_24H | OI/mc 0.20% | topPos 0.93 | taker 0.91
-- ETH: SHORT_SQUEEZE_24H | OI/mc 0.63% | topPos 0.88 | taker 0.93
-- SOL: SHORT_SQUEEZE_24H | OI/mc 0.60% | topPos 0.91 | taker 0.86
-- NEAR: LONG_FLUSH_24H | OI/mc 0.90% | topPos 1.01 | taker 0.96
-- AVAX: LONG_FLUSH_24H | OI/mc 0.42% | topPos 0.89 | taker 0.89
+- ETH: SHORT_SQUEEZE_24H | OI/mc 0.63% | topPos 0.88 | taker 0.92
+- SOL: SHORT_SQUEEZE_24H | OI/mc 0.59% | topPos 0.90 | taker 0.85
+- NEAR: LONG_FLUSH_24H | OI/mc 0.91% | topPos 1.00 | taker 0.96
+- AVAX: LONG_FLUSH_24H | OI/mc 0.42% | topPos 0.90 | taker 0.88
 - XRP: LONG_FLUSH_24H | OI/mc 0.13% | topPos 0.89 | taker 0.88
 - SUI: LONG_FLUSH_24H | OI/mc 1.00% | topPos 0.87 | taker 0.96
-- SEI: LONG_FLUSH_24H | OI/mc 0.79% | topPos 0.95 | taker 0.90
+- SEI: LONG_FLUSH_24H | OI/mc 0.78% | topPos 0.95 | taker 0.88
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -52,12 +48,12 @@
 - (15 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 40 | mean 1.3% (0.17R) | in profit 19 | older than 7d 31
-- worst: ENS -0.75R, JTO -0.73R, ETC -0.71R | best: FIL 1.50R, RAY 1.51R, STRK 2.61R
+- open 40 | mean 1.4% (0.18R) | in profit 19 | older than 7d 31
+- worst: ENS -0.74R, JTO -0.73R, ETC -0.69R | best: RAY 1.56R, FIL 1.65R, STRK 2.55R
 
 ## System
-- CoinGecko 2531/10000 used, month-end projection 9859 (99%), throttle level 1 | by script {'scan': 832, 'check_liquidity': 135, 'breakout_check': 1550, 'counterfactual_check': 14}
+- CoinGecko 2534/10000 used, month-end projection 9871 (99%), throttle level 1 | by script {'scan': 834, 'check_liquidity': 136, 'breakout_check': 1550, 'counterfactual_check': 14}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=30), H2 NOT_SUPPORTED (n=81)
-- radar-flags.json scan age: 10m
+- radar-flags.json scan age: 13m
 - excluded from radar (pegged/tokenized equity): 39
