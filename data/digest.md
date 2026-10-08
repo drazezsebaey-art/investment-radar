@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-08 16:42 UTC
+# Radar digest - 2026-10-08 17:10 UTC
 
 ## Market
-- BTC scenario **A** | price 81407 | wk close 85260 vs 82800 | 50W 77783 (4.66%) | 1m old
+- BTC scenario **A** | price 81407 | wk close 85260 vs 82800 | 50W 77783 (4.66%) | 30m old
 - Alts: **BTC_LED** [-] | BTC.D 56.60% | ETH/BTC 0.03063 | breadth7d -% | stables 30d 1.12%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.10pt | 7d 0.52pt | n=62
 - Gold: PAXG 1m -5.79% | real10y 2.91 (48bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -19,7 +19,7 @@
 - MET: **RESET_DONE** | +205% impulse, retr 0.31 | OI dd 0% | fund -0.0365 | hold False | inval 0.30270 | OB 0.28550-0.29500
 
 ## Pre-pump candidates
-- HYPE: [A+E] 7d -6.1%
+- HYPE: [A+E] 7d -4.3%
 
 ## ETF pipeline (new this run)
 - sui: approval - SEC Approves 2x Leveraged SUI ETF Amid Volatility Concerns - CoinMarketCap
@@ -50,12 +50,12 @@
 - (15 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 42 | mean -0.4% (0.03R) | in profit 15 | older than 7d 33
-- worst: CFX -0.81R, ETC -0.78R, ENS -0.75R | best: SENT 1.21R, RAY 1.56R, STRK 3.29R
+- open 42 | mean -1.8% (-0.07R) | in profit 15 | older than 7d 33
+- worst: CFX -0.94R, APT -0.87R, ETC -0.83R | best: SENT 1.14R, RAY 1.46R, STRK 3.08R
 
 ## System
-- CoinGecko 2496/10000 used, month-end projection 10093 (101%), throttle level 2 | by script {'scan': 806, 'check_liquidity': 126, 'breakout_check': 1550, 'counterfactual_check': 14}
+- CoinGecko 2498/10000 used, month-end projection 10046 (100%), throttle level 2 | by script {'scan': 808, 'check_liquidity': 126, 'breakout_check': 1550, 'counterfactual_check': 14}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=30), H2 NOT_SUPPORTED (n=81)
-- radar-flags.json scan age: 12m
-- excluded from radar (pegged/tokenized equity): 40
+- radar-flags.json scan age: 10m
+- excluded from radar (pegged/tokenized equity): 41
