@@ -1,10 +1,10 @@
-# Radar digest - 2026-10-08 03:47 UTC
+# Radar digest - 2026-10-08 04:14 UTC
 
 ## Market
 - BTC scenario **A** | price 83274 | wk close 85260 vs 82800 | 50W 77783 (7.06%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.40% | ETH/BTC 0.03104 | breadth7d -% | stables 30d 1.13%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.15pt | 7d 0.44pt | n=59
-- Gold: PAXG 1m -5.29% | real10y 2.91 (48bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
+- Gold: PAXG 1m -4.62% | real10y 2.91 (48bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
 - 10y 1w: 1bp = real 0 + breakeven 0 -> **SMALL_MOVE**
 - 10y 1m: 47bp = real 48 + breakeven -1 -> **REAL_YIELD_DRIVEN**
 
@@ -19,10 +19,8 @@
 - SUI: **ONGOING** | +92% impulse, retr 0.24 | OI dd 9% | fund -0.0012 | hold True | inval 1.10500 | OB 0.93370-0.97450
 
 ## Pre-pump candidates
-- HYPE: [A+E] 7d -1.5%
-- SOL: [A+D] 7d -1.4%
-- CRV: [C+E] 7d -0.1%
-- JUP: [B+C] 7d 13.9%
+- HYPE: [A+E] 7d -1.9%
+- JUP: [B+C] 7d 13.2%
 
 ## ETF pipeline (new this run)
 - zcash: filing - Zcash Price Prediction: New Nasdaq ETF Filing Lands as Remittix Approaches Exchange Tradin
@@ -52,12 +50,12 @@
 - (16 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 53 | mean 2.9% (0.27R) | in profit 30 | older than 7d 42
-- worst: BCH -0.91R, GRAM -0.76R, VET -0.66R | best: NEAR 1.87R, RAY 2.06R, JUP 3.65R
+- open 53 | mean 2.5% (0.24R) | in profit 28 | older than 7d 42
+- worst: BCH -0.94R, GRAM -0.76R, EGLD -0.68R | best: NEAR 1.77R, RAY 1.92R, JUP 3.55R
 
 ## System
-- CoinGecko 2323/10000 used, month-end projection 10107 (101%), throttle level 2 | by script {'scan': 746, 'check_liquidity': 121, 'breakout_check': 1442, 'counterfactual_check': 14}
+- CoinGecko 2325/10000 used, month-end projection 10057 (101%), throttle level 2 | by script {'scan': 748, 'check_liquidity': 121, 'breakout_check': 1442, 'counterfactual_check': 14}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=28), H2 NOT_SUPPORTED (n=78)
-- radar-flags.json scan age: 16m
+- radar-flags.json scan age: 13m
 - excluded from radar (pegged/tokenized equity): 39
