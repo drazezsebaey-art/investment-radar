@@ -1,4 +1,4 @@
-# Radar digest - 2026-10-08 19:43 UTC
+# Radar digest - 2026-10-08 20:10 UTC
 
 ## Market
 - BTC scenario **A** | price 81533 | wk close 85260 vs 82800 | 50W 77783 (4.82%) | 1h old
@@ -20,6 +20,7 @@
 
 ## Pre-pump candidates
 - HYPE: [A+E] 7d -4.3%
+- AERO: [C+E] 7d 2.4%
 
 ## ETF pipeline (new this run)
 - pepe NEW: amendment - Can Pepe avoid deeper losses after Canary Capital ETF amendment? - Traders Union
@@ -50,12 +51,12 @@
 - (15 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 40 | mean -0.1% (0.06R) | in profit 16 | older than 7d 31
-- worst: ENS -0.81R, ETC -0.77R, JTO -0.76R | best: RAY 1.19R, FIL 1.19R, STRK 2.99R
+- open 40 | mean 0.4% (0.09R) | in profit 17 | older than 7d 31
+- worst: ENS -0.77R, ETC -0.74R, JTO -0.72R | best: PYTH 1.21R, FIL 1.23R, STRK 2.67R
 
 ## System
-- CoinGecko 2512/10000 used, month-end projection 9994 (100%), throttle level 1 | by script {'scan': 818, 'check_liquidity': 130, 'breakout_check': 1550, 'counterfactual_check': 14}
+- CoinGecko 2515/10000 used, month-end projection 9953 (100%), throttle level 1 | by script {'scan': 820, 'check_liquidity': 131, 'breakout_check': 1550, 'counterfactual_check': 14}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=30), H2 NOT_SUPPORTED (n=81)
-- radar-flags.json scan age: 13m
-- excluded from radar (pegged/tokenized equity): 38
+- radar-flags.json scan age: 10m
+- excluded from radar (pegged/tokenized equity): 39
