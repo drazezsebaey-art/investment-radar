@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-08 07:11 UTC
+# Radar digest - 2026-10-08 07:46 UTC
 
 ## Market
-- BTC scenario **A** | price 82714 | wk close 85260 vs 82800 | 50W 77783 (6.34%) | 27m old
+- BTC scenario **A** | price 82714 | wk close 85260 vs 82800 | 50W 77783 (6.34%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.44% | ETH/BTC 0.03097 | breadth7d -% | stables 30d 1.13%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.01pt | 7d 0.43pt | n=60
 - Gold: PAXG 1m -4.62% | real10y 2.91 (48bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -20,28 +20,24 @@
 
 ## Pre-pump candidates
 - SOL: [A+D] 7d -3.4%
-- CRV: [C+E] 7d -2.7%
-- HYPE: [A+E] 7d -2.0%
+- HYPE: [A+E] 7d -2.4%
 - NEAR: [A+C] 7d 0.6%
-- CVX: [C+E] 7d 6.3%
+- CVX: [C+E] 7d 6.6%
 
 ## ETF pipeline (new this run)
-- litecoin NEW: conversion - Litecoin marks 15 years of uninterrupted operations as ETF conversion accelerates - 디지털투데이
-- zcash: other - Grayscale’s Zcash ETF Tops $1 Billion in Assets Within 30 Trading Days - bloomingbit
-- zcash: other - Zcash ETF Gathers More Than $1 Billion in First 30 Trading Days - www.tokenpost.com
-- zcash: other - Winklevoss twins pitch a low-fee spot Zcash ETF at Token2049 - Crypto Briefing
-- ondo-finance: other - Global X NASDAQ 100 Covered Call Tokenized ETF (Ondo) - CryptoRank
-- ondo-finance: other - Global X S&P 500 Covered Call ETF (Ondo Tokenized) - CryptoRank
+- solana NEW: other - Ethereum and Solana Price Predictions: ETF Outflows Hit Both as Remittix Prepares to Go Li
+- zcash: other - Grayscale Trading Head: Zcash Spot ETF Attracts Over $1 Billion in First Month, Crypto ETF
+- ondo-finance: other - Global X Blockchain ETF (Ondo Tokenized) - CryptoRank
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 0.88
-- SOL: LONG_FLUSH_24H | OI/mc 0.60% | topPos 0.90 | taker 0.85
-- AVAX: LONG_FLUSH_24H | OI/mc 0.44% | topPos 0.91 | taker 0.91
+- BTC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.93 | taker 0.88
+- ETH: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.89 | taker 0.88
+- SOL: LONG_FLUSH_24H | OI/mc 0.60% | topPos 0.90 | taker 0.86
+- AVAX: LONG_FLUSH_24H | OI/mc 0.43% | topPos 0.91 | taker 0.91
 - XRP: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.82
-- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.94 | taker 0.90
-- TAO: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.84 | taker 0.84
-- ZEC: LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 0.92
-- WLD: LONG_FLUSH_24H | OI/mc -% | topPos 0.89 | taker 1.04
+- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.93 | taker 0.90
+- TAO: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 0.84
+- WLD: LONG_FLUSH_24H | OI/mc -% | topPos 0.89 | taker 1.03
 
 ## Revenue / buyback flags
 - stonk-3: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -53,12 +49,12 @@
 - (16 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 52 | mean 2.2% (0.19R) | in profit 29 | older than 7d 40
-- worst: GRAM -0.83R, VET -0.68R, EGLD -0.68R | best: SENT 1.75R, NEAR 2.16R, RAY 2.20R
+- open 52 | mean 2.8% (0.23R) | in profit 29 | older than 7d 40
+- worst: GRAM -0.76R, VET -0.69R, ZRO -0.63R | best: RENDER 1.80R, NEAR 2.10R, RAY 2.29R
 
 ## System
-- CoinGecko 2392/10000 used, month-end projection 10169 (102%), throttle level 2 | by script {'scan': 760, 'check_liquidity': 122, 'breakout_check': 1496, 'counterfactual_check': 14}
+- CoinGecko 2394/10000 used, month-end projection 10178 (102%), throttle level 2 | by script {'scan': 762, 'check_liquidity': 122, 'breakout_check': 1496, 'counterfactual_check': 14}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 PENDING (n=29), H2 NOT_SUPPORTED (n=79)
-- radar-flags.json scan age: 11m
-- excluded from radar (pegged/tokenized equity): 40
+- radar-flags.json scan age: 16m
+- excluded from radar (pegged/tokenized equity): 39
