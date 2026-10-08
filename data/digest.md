@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-08 18:42 UTC
+# Radar digest - 2026-10-08 19:10 UTC
 
 ## Market
-- BTC scenario **A** | price 81533 | wk close 85260 vs 82800 | 50W 77783 (4.82%) | 1m old
+- BTC scenario **A** | price 81533 | wk close 85260 vs 82800 | 50W 77783 (4.82%) | 30m old
 - Alts: **BTC_LED** [-] | BTC.D 56.93% | ETH/BTC 0.03003 | breadth7d 35% | stables 30d 1.13%
 - Alt risk (BTC.D): **HIGH** ['BTC_DOM_BREAKOUT_HOLDING', 'BTC_DOM_RISING_3D'] | 3d 0.59pt | 7d 0.61pt | n=63
 - Gold: PAXG 1m -5.79% | real10y 2.91 (48bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -19,7 +19,7 @@
 - TIA: **ONGOING** | +68% impulse, retr 0.20 | OI dd 14% | fund 0.0050 | hold False | inval 0.43500 | OB 0.43500-0.45040
 
 ## Pre-pump candidates
-- HYPE: [A+E] 7d -4.7%
+- HYPE: [A+E] 7d -4.3%
 
 ## ETF pipeline (new this run)
 - dogecoin NEW: launch - Dogecoin News Today: ETF Closure Threatens DOGE Sentiment as Remittix Advances Toward Laun
@@ -50,12 +50,12 @@
 - (15 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 40 | mean -1.1% (-0.00R) | in profit 15 | older than 7d 31
-- worst: ENS -0.88R, ETC -0.81R, JTO -0.80R | best: RAY 1.24R, SENT 1.25R, STRK 2.99R
+- open 40 | mean -0.5% (0.03R) | in profit 16 | older than 7d 31
+- worst: ENS -0.84R, ETC -0.80R, JTO -0.76R | best: SENT 1.12R, RAY 1.37R, STRK 2.84R
 
 ## System
-- CoinGecko 2505/10000 used, month-end projection 10020 (100%), throttle level 2 | by script {'scan': 814, 'check_liquidity': 127, 'breakout_check': 1550, 'counterfactual_check': 14}
+- CoinGecko 2509/10000 used, month-end projection 9982 (100%), throttle level 1 | by script {'scan': 816, 'check_liquidity': 129, 'breakout_check': 1550, 'counterfactual_check': 14}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=30), H2 NOT_SUPPORTED (n=81)
-- radar-flags.json scan age: 12m
+- radar-flags.json scan age: 10m
 - excluded from radar (pegged/tokenized equity): 40
