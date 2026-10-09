@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-09 16:42 UTC
+# Radar digest - 2026-10-09 17:10 UTC
 
 ## Market
-- BTC scenario **A** | price 82758 | wk close 85260 vs 82800 | 50W 77783 (6.40%) | 1m old
+- BTC scenario **A** | price 82758 | wk close 85260 vs 82800 | 50W 77783 (6.40%) | 30m old
 - Alts: **BTC_LED** [-] | BTC.D 57.03% | ETH/BTC 0.02999 | breadth7d -% | stables 30d 0.82%
 - Alt risk (BTC.D): **HIGH** ['BTC_DOM_BREAKOUT_HOLDING', 'BTC_DOM_RISING_3D'] | 3d 0.52pt | 7d 0.52pt | n=68
 - Gold: PAXG 1m -3.98% | real10y 2.92 (46bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -22,11 +22,11 @@
 - HBAR: [A+E] 7d -13.1%
 - CRO: [A+E] 7d -12.0%
 - TAO: [A+E] 7d -11.4%
-- ZEC: [A+E] 7d -11.3%
-- SUI: [A+E] 7d -9.9%
-- SOL: [A+E] 7d -9.1%
+- SUI: [A+E] 7d -8.9%
 - LTC: [A+E] 7d -8.8%
-- XRP: [A+E] 7d -8.7%
+- SOL: [A+E] 7d -8.6%
+- XRP: [A+E] 7d -8.2%
+- AVAX: [A+E] 7d -8.1%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - XRP ETF Buyers Are 13% Underwater, Yet Inflows Keep Coming - BeInCrypto
@@ -48,12 +48,12 @@
 - (17 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 43 | mean 1.4% (0.21R) | in profit 21 | older than 7d 33
-- worst: ENS -0.73R, JTO -0.72R, ETC -0.61R | best: FIL 1.61R, BAT 2.15R, 币安人生 2.21R
+- open 43 | mean 1.5% (0.24R) | in profit 19 | older than 7d 33
+- worst: JTO -0.71R, ENS -0.69R, MET -0.65R | best: FIL 1.69R, BAT 2.20R, 币安人生 2.69R
 
 ## System
-- CoinGecko 2796/10000 used, month-end projection 10001 (100%), throttle level 2 | by script {'scan': 910, 'check_liquidity': 145, 'breakout_check': 1723, 'counterfactual_check': 18}
+- CoinGecko 2799/10000 used, month-end projection 9964 (100%), throttle level 1 | by script {'scan': 912, 'check_liquidity': 146, 'breakout_check': 1723, 'counterfactual_check': 18}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=30), H2 NOT_SUPPORTED (n=86)
-- radar-flags.json scan age: 12m
+- radar-flags.json scan age: 10m
 - excluded from radar (pegged/tokenized equity): 40
