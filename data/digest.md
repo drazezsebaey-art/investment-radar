@@ -1,10 +1,10 @@
-# Radar digest - 2026-10-09 09:43 UTC
+# Radar digest - 2026-10-09 10:09 UTC
 
 ## Market
 - BTC scenario **A** | price 82546 | wk close 85260 vs 82800 | 50W 77783 (6.12%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 56.81% | ETH/BTC 0.03029 | breadth7d -% | stables 30d 0.82%
 - Alt risk (BTC.D): **ELEVATED** ['BTC_DOM_BREAKOUT_HOLDING'] | 3d 0.41pt | 7d 0.34pt | n=66
-- Gold: PAXG 1m -4.34% | real10y 2.92 (46bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
+- Gold: PAXG 1m -4.18% | real10y 2.92 (46bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
 - 10y 1w: -1bp = real -1 + breakeven -1 -> **SMALL_MOVE**
 - 10y 1m: 45bp = real 46 + breakeven -5 -> **REAL_YIELD_DRIVEN**
 
@@ -40,12 +40,12 @@
 - (17 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 43 | mean 3.6% (0.38R) | in profit 22 | older than 7d 33
-- worst: ENS -0.69R, ETC -0.60R, JTO -0.59R | best: RAY 1.74R, KAIA 2.33R, 币安人生 2.50R
+- open 43 | mean 4.1% (0.42R) | in profit 22 | older than 7d 33
+- worst: ENS -0.68R, ETC -0.59R, JTO -0.58R | best: S 1.89R, 币安人生 2.23R, KAIA 3.19R
 
 ## System
-- CoinGecko 2704/10000 used, month-end projection 10009 (100%), throttle level 2 | by script {'scan': 874, 'check_liquidity': 141, 'breakout_check': 1673, 'counterfactual_check': 16}
+- CoinGecko 2707/10000 used, month-end projection 9970 (100%), throttle level 1 | by script {'scan': 876, 'check_liquidity': 142, 'breakout_check': 1673, 'counterfactual_check': 16}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=30), H2 NOT_SUPPORTED (n=82)
-- radar-flags.json scan age: 13m
+- radar-flags.json scan age: 9m
 - excluded from radar (pegged/tokenized equity): 40
