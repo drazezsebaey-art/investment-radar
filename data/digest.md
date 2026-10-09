@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-09 11:42 UTC
+# Radar digest - 2026-10-09 12:24 UTC
 
 ## Market
-- BTC scenario **A** | price 82428 | wk close 85260 vs 82800 | 50W 77783 (5.97%) | 1h old
+- BTC scenario **A** | price 82428 | wk close 85260 vs 82800 | 50W 77783 (5.97%) | 2h old
 - Alts: **BTC_LED** [-] | BTC.D 56.87% | ETH/BTC 0.03026 | breadth7d 46% | stables 30d 0.82%
 - Alt risk (BTC.D): **ELEVATED** ['BTC_DOM_BREAKOUT_HOLDING'] | 3d 0.39pt | 7d 0.42pt | n=67
 - Gold: PAXG 1m -4.18% | real10y 2.92 (46bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -23,10 +23,10 @@
 - TAO: [A+E] 7d -12.8%
 - ZEC: [A+E] 7d -12.0%
 - CRO: [A+E] 7d -11.7%
-- SUI: [A+E] 7d -10.8%
-- XRP: [A+E] 7d -10.0%
-- SOL: [A+E] 7d -10.0%
+- SUI: [A+E] 7d -9.1%
+- XRP: [A+E] 7d -9.0%
 - LTC: [A+E] 7d -9.0%
+- SOL: [A+E] 7d -8.9%
 
 ## ETF pipeline (new this run)
 - injective-protocol NEW: filing - Staked INJ ETF registration lifts Injective price toward $8.33 resistance - Traders Union
@@ -45,12 +45,12 @@
 - (17 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 42 | mean 1.6% (0.26R) | in profit 21 | older than 7d 33
-- worst: ENS -0.75R, JTO -0.65R, ETC -0.65R | best: 币安人生 1.67R, RAY 1.92R, S 2.18R
+- open 43 | mean 2.4% (0.31R) | in profit 22 | older than 7d 33
+- worst: ENS -0.71R, ETC -0.62R, JTO -0.60R | best: FIL 1.64R, S 1.85R, RAY 2.06R
 
 ## System
-- CoinGecko 2722/10000 used, month-end projection 9976 (100%), throttle level 1 | by script {'scan': 890, 'check_liquidity': 143, 'breakout_check': 1673, 'counterfactual_check': 16}
+- CoinGecko 2775/10000 used, month-end projection 10121 (101%), throttle level 2 | by script {'scan': 892, 'check_liquidity': 144, 'breakout_check': 1723, 'counterfactual_check': 16}
 - Trials guard: OK (0 untracked)
-- Hypotheses: H1 NOT_SUPPORTED (n=30), H2 NOT_SUPPORTED (n=84)
-- radar-flags.json scan age: 12m
-- excluded from radar (pegged/tokenized equity): 40
+- Hypotheses: H1 NOT_SUPPORTED (n=30), H2 NOT_SUPPORTED (n=85)
+- radar-flags.json scan age: 23m
+- excluded from radar (pegged/tokenized equity): 39
