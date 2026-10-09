@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-09 19:10 UTC
+# Radar digest - 2026-10-09 19:43 UTC
 
 ## Market
-- BTC scenario **A** | price 82432 | wk close 85260 vs 82800 | 50W 77783 (5.98%) | 28m old
+- BTC scenario **A** | price 82432 | wk close 85260 vs 82800 | 50W 77783 (5.98%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 56.92% | ETH/BTC 0.03010 | breadth7d 45% | stables 30d 0.83%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.47pt | 7d 0.61pt | n=69
 - Gold: PAXG 1m -3.98% | real10y 2.92 (46bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -19,33 +19,32 @@
 - MET: **RESET_DONE** | +205% impulse, retr 0.38 | OI dd 28% | fund -0.0009 | hold False | inval 0.30270 | OB 0.28550-0.29500
 
 ## Pre-pump candidates
-- HBAR: [A+E] 7d -12.2%
-- TAO: [A+E] 7d -10.6%
-- CRO: [A+E] 7d -10.5%
+- HBAR: [A+E] 7d -12.5%
+- TAO: [A+E] 7d -10.4%
+- CRO: [A+E] 7d -9.6%
+- INJ: [A+E] 7d -9.1%
 - LTC: [A+E] 7d -9.0%
 - SUI: [A+E] 7d -8.9%
 - SOL: [A+E] 7d -8.7%
-- INJ: [A+E] 7d -8.4%
 - AVAX: [A+E] 7d -8.1%
 
 ## ETF pipeline (new this run)
-- dogecoin NEW: delay_or_rejection - Dogecoin ETF Failure? Bitwise CEO Says DOGE Users Reject ETFs - Coin Gabbar
-- dogecoin NEW: other - Bitwise CEO Calls Dogecoin ETF Failure 'Tragic' as BWOW Set to Shut Down After Less Than a
-- dogecoin NEW: other - Bitwise to Liquidate Dogecoin ETF After Assets Stall Below $1 Million - BigGo Finance
-- dogecoin NEW: other - Bitwise’s Dogecoin ETF Faces Liquidation as CEO Calls Outcome ‘Tragic’ - bloomingbit
-- dogecoin NEW: other - Bitwise Plans Oct. 14 Closure of Dogecoin ETF With $725,870 in Assets - TOKENPOST
-- dogecoin NEW: other - Bitwise Dogecoin ETF Shuts With $725K Left; CEO: 'Tragic' - FinanceFeeds
-- dogecoin NEW: other - Dogecoin ETF: Huge Disappointment: Why Did Millions of DOGE Investors Fail to Show Interes
-- dogecoin NEW: other - Bitwise CEO Calls Dogecoin ETF Closure “Tragic” as Assets Fall to $684,000 - Hokanews
+- near: launch - NEAR Protocol surges 83% in a month, outpacing Bitcoin and Ether amid new US spot ETF laun
+- zcash: launch - Winklevoss Brothers Launch SEC Filing for Zcash (ZEC) ETF Under WINK Ticker - Blockonomi
+- zcash: filing - Zcash Price Prediction 2026: ZEC Holds $1,200 After Winklevoss ETF Filing as Pepeto Eyes 1
+- zcash: filing - Zcash Price Prediction 2026: ZEC Holds $1,200 After Winklevoss ETF Filing as Pepeto Eyes 1
+- near: other - Bitwise NEAR ETF (NRR) Risk - Yahoo! Finance Canada
+- ondo-finance: other - iShares China Large-Cap Tokenized ETF (Ondo) Price (FXIon/USD) Today | Live Price, Market 
+- ondo-finance: other - Global X S&P 500 Covered Call ETF (Ondo Tokenized) - CryptoRank
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc 0.20% | topPos 0.98 | taker 1.04
-- AVAX: LONG_FLUSH_24H | OI/mc 0.42% | topPos 0.86 | taker 0.94
-- SEI: LONG_FLUSH_24H | OI/mc 0.74% | topPos 0.92 | taker 1.07
-- TAO: LONG_FLUSH_24H | OI/mc 0.80% | topPos 0.89 | taker 0.97
-- ZEC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 1.09 | taker 1.11
-- WLD: SHORT_SQUEEZE_FUEL | OI/mc -% | topPos 0.87 | taker 1.05
-- LINK: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.93 | taker 1.15
+- BTC: LONG_FLUSH_24H | OI/mc 0.20% | topPos 0.98 | taker 1.03
+- SOL: LONG_FLUSH_24H | OI/mc 0.60% | topPos 0.90 | taker 1.10
+- AVAX: LONG_FLUSH_24H | OI/mc 0.41% | topPos 0.87 | taker 0.96
+- SEI: LONG_FLUSH_24H | OI/mc 0.74% | topPos 0.92 | taker 1.09
+- TAO: LONG_FLUSH_24H | OI/mc 0.80% | topPos 0.89 | taker 0.91
+- WLD: SHORT_SQUEEZE_FUEL | OI/mc -% | topPos 0.87 | taker 1.02
+- LINK: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.93 | taker 1.10
 - XLM: LONG_FLUSH_24H | OI/mc 0.18% | topPos 0.99 | taker 1.10
 
 ## Revenue / buyback flags
@@ -53,11 +52,11 @@
 
 ## Paper book (open trades, marked to last scan)
 - open 43 | mean 1.0% (0.22R) | in profit 19 | older than 7d 33
-- worst: JTO -0.83R, ENS -0.75R, ETC -0.60R | best: FIL 1.54R, BAT 2.35R, 币安人生 3.59R
+- worst: JTO -0.85R, ENS -0.75R, ETC -0.59R | best: FIL 1.56R, BAT 2.57R, 币安人生 3.43R
 
 ## System
-- CoinGecko 2855/10000 used, month-end projection 10067 (101%), throttle level 2 | by script {'scan': 920, 'check_liquidity': 147, 'breakout_check': 1770, 'counterfactual_check': 18}
+- CoinGecko 2857/10000 used, month-end projection 10074 (101%), throttle level 2 | by script {'scan': 922, 'check_liquidity': 147, 'breakout_check': 1770, 'counterfactual_check': 18}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=30), H2 NOT_SUPPORTED (n=86)
-- radar-flags.json scan age: 10m
+- radar-flags.json scan age: 13m
 - excluded from radar (pegged/tokenized equity): 39
