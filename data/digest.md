@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-08 23:43 UTC
+# Radar digest - 2026-10-09 00:24 UTC
 
 ## Market
-- BTC scenario **A** | price 81921 | wk close 85260 vs 82800 | 50W 77783 (5.32%) | 1h old
+- BTC scenario **A** | price 81921 | wk close 85260 vs 82800 | 50W 77783 (5.32%) | 2h old
 - Alts: **BTC_LED** [-] | BTC.D 56.82% | ETH/BTC 0.03023 | breadth7d 43% | stables 30d 1.11%
 - Alt risk (BTC.D): **ELEVATED** ['BTC_DOM_BREAKOUT_HOLDING'] | 3d 0.48pt | 7d 0.48pt | n=64
 - Gold: PAXG 1m -5.29% | real10y 2.92 (46bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -19,8 +19,8 @@
 - TIA: **ONGOING** | +68% impulse, retr 0.11 | OI dd 14% | fund -0.0044 | hold False | inval 0.43500 | OB 0.43500-0.45040
 
 ## Pre-pump candidates
-- HYPE: [A+E] 7d -2.4%
-- AERO: [C+E] 7d 5.2%
+- HYPE: [A+E] 7d -3.6%
+- AERO: [C+E] 7d 5.1%
 
 ## ETF pipeline (new this run)
 - backpack NEW: other - Backpack Adds Tokenized Brazil ETF and Cerebras Stock to Solana - Altcoin Buzz
@@ -48,12 +48,12 @@
 - (15 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 40 | mean 1.4% (0.18R) | in profit 19 | older than 7d 31
-- worst: ENS -0.74R, JTO -0.73R, ETC -0.69R | best: RAY 1.56R, FIL 1.65R, STRK 2.55R
+- open 42 | mean 0.6% (0.12R) | in profit 15 | older than 7d 34
+- worst: JTO -0.81R, ENS -0.78R, ETC -0.73R | best: RAY 1.42R, FIL 1.49R, STRK 2.47R
 
 ## System
-- CoinGecko 2534/10000 used, month-end projection 9871 (99%), throttle level 1 | by script {'scan': 834, 'check_liquidity': 136, 'breakout_check': 1550, 'counterfactual_check': 14}
+- CoinGecko 2602/10000 used, month-end projection 10083 (101%), throttle level 2 | by script {'scan': 836, 'check_liquidity': 137, 'breakout_check': 1613, 'counterfactual_check': 16}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=30), H2 NOT_SUPPORTED (n=81)
-- radar-flags.json scan age: 13m
-- excluded from radar (pegged/tokenized equity): 39
+- radar-flags.json scan age: 24m
+- excluded from radar (pegged/tokenized equity): 40
