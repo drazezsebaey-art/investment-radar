@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-09 08:43 UTC
+# Radar digest - 2026-10-09 09:10 UTC
 
 ## Market
-- BTC scenario **A** | price 82546 | wk close 85260 vs 82800 | 50W 77783 (6.12%) | 1m old
+- BTC scenario **A** | price 82546 | wk close 85260 vs 82800 | 50W 77783 (6.12%) | 28m old
 - Alts: **BTC_LED** [-] | BTC.D 56.81% | ETH/BTC 0.03029 | breadth7d -% | stables 30d 0.82%
 - Alt risk (BTC.D): **ELEVATED** ['BTC_DOM_BREAKOUT_HOLDING'] | 3d 0.41pt | 7d 0.34pt | n=66
 - Gold: PAXG 1m -4.34% | real10y 2.92 (46bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -19,8 +19,7 @@
 - SUI: **RESET_DONE** | +92% impulse, retr 0.36 | OI dd 17% | fund -0.0078 | hold False | inval 0.93370 | OB 0.93370-0.97450
 
 ## Pre-pump candidates
-- ZEC: [A+B] 7d -10.9%
-- HYPE: [A+E] 7d -4.5%
+- ONDO: [A+C] 7d -3.3%
 
 ## ETF pipeline (new this run)
 - injective-protocol NEW: filing - Injective: Three U.S. INJ ETF applications are filed - 08 Oct 2026 - TradingView
@@ -49,12 +48,12 @@
 - (15 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 43 | mean 3.1% (0.34R) | in profit 22 | older than 7d 33
-- worst: ENS -0.67R, ETC -0.58R, JTO -0.57R | best: FIL 1.60R, RAY 2.01R, 币安人生 2.21R
+- open 43 | mean 3.6% (0.38R) | in profit 23 | older than 7d 33
+- worst: ENS -0.66R, JTO -0.60R, ETC -0.59R | best: KAIA 1.84R, RAY 1.97R, 币安人生 2.17R
 
 ## System
-- CoinGecko 2700/10000 used, month-end projection 10044 (100%), throttle level 2 | by script {'scan': 870, 'check_liquidity': 141, 'breakout_check': 1673, 'counterfactual_check': 16}
+- CoinGecko 2702/10000 used, month-end projection 10001 (100%), throttle level 2 | by script {'scan': 872, 'check_liquidity': 141, 'breakout_check': 1673, 'counterfactual_check': 16}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=30), H2 NOT_SUPPORTED (n=82)
-- radar-flags.json scan age: 13m
-- excluded from radar (pegged/tokenized equity): 40
+- radar-flags.json scan age: 10m
+- excluded from radar (pegged/tokenized equity): 38
