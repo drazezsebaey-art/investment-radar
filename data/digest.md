@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-09 15:10 UTC
+# Radar digest - 2026-10-09 15:42 UTC
 
 ## Market
-- BTC scenario **A** | price 83000 | wk close 85260 vs 82800 | 50W 77783 (6.71%) | 29m old
+- BTC scenario **A** | price 83000 | wk close 85260 vs 82800 | 50W 77783 (6.71%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 57.03% | ETH/BTC 0.02999 | breadth7d -% | stables 30d 0.82%
 - Alt risk (BTC.D): **HIGH** ['BTC_DOM_BREAKOUT_HOLDING', 'BTC_DOM_RISING_3D'] | 3d 0.52pt | 7d 0.52pt | n=68
 - Gold: PAXG 1m -4.18% | real10y 2.92 (46bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -19,43 +19,41 @@
 - SEI: **RESET_DONE** | +110% impulse, retr 0.47 | OI dd 21% | fund -0.0008 | hold False | inval 0.06360 | OB 0.05685-0.05941
 
 ## Pre-pump candidates
-- HBAR: [A+E] 7d -14.2%
-- TAO: [A+E] 7d -12.5%
+- HBAR: [A+E] 7d -13.9%
+- CRO: [A+E] 7d -12.6%
+- TAO: [A+E] 7d -12.3%
+- SUI: [A+E] 7d -11.6%
+- LTC: [A+E] 7d -11.0%
+- SOL: [A+E] 7d -9.8%
+- XRP: [A+E] 7d -9.6%
 - SEI: [A+E] 7d -8.9%
-- APT: [C+E] 7d -4.4%
-- NEAR: [A+E] 7d -2.1%
-- TIA: [C+E] 7d -1.6%
-- TRX: [A+E] 7d -0.8%
-- BDX: [C+E] 7d 8.1%
 
 ## ETF pipeline (new this run)
-- zcash: other - Winklevoss Twins Pitch Zcash Spot ETF At Token2049 - Briefs Finance
-- zcash: other - The Zcash ETF Race Gets Crowded: Winklevoss Undercuts Grayscale Tenfold as ZCSH Posts Its 
-- zcash: other - The Zcash ETF Race Gets Crowded: Winklevoss Undercuts Grayscale Tenfold as ZCSH Posts Its 
-- ondo-finance: other - iShares Investment Grade Systematic Bond ETF (Ondo Tokenized) - CryptoRank
-- ondo-finance: other - SPDR S&P 500 Tokenized ETF (Ondo) Price (SPYon/USD) Today | Live Price, Market Cap & Chart
-- ondo-finance: other - SPDR S&P 500 Tokenized ETF (Ondo) Price (SPYon/USD) Today | Live Price, Market Cap & Chart
+- ripple NEW: other - XRP ETF Buyers Are 13% Underwater, Yet Inflows Keep Coming - BeInCrypto
+- ripple NEW: other - Ripple Market Boost: SEC Filings Open the Door to XRP ETF Options - FXLeaders
+- zcash: other - Why Are the Winklevoss Brothers Proposing a Zcash (ZEC) ETF? - Kalkine
+- ondo-finance: other - Global X S&P 500 Covered Call ETF (Ondo Tokenized) - CryptoRank
 
 ## Derivatives flags (OKX)
-- ETH: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.91 | taker 0.95
-- SOL: LONG_FLUSH_24H | OI/mc -% | topPos 0.90 | taker 0.97
-- NEAR: SHORT_SQUEEZE_24H | OI/mc 0.93% | topPos 1.03 | taker 0.95
-- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.88
-- TAO: LONG_FLUSH_24H | OI/mc 0.79% | topPos 0.88 | taker 0.93
-- WLD: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 0.88
-- ADA: LONG_FLUSH_24H | OI/mc -% | topPos 0.89 | taker 0.89
-- LINK: LONG_FLUSH_24H | OI/mc -% | topPos 0.93 | taker 1.04
+- ETH: SHORT_SQUEEZE_24H | OI/mc 0.61% | topPos 0.92 | taker 0.95
+- SOL: LONG_FLUSH_24H | OI/mc 0.59% | topPos 0.90 | taker 0.98
+- AVAX: LONG_FLUSH_24H | OI/mc 0.42% | topPos 0.86 | taker 0.88
+- SEI: LONG_FLUSH_24H | OI/mc 0.74% | topPos 0.93 | taker 0.94
+- TAO: LONG_FLUSH_24H | OI/mc 0.80% | topPos 0.88 | taker 0.93
+- WLD: LONG_FLUSH_24H | OI/mc -% | topPos 0.89 | taker 0.88
+- ADA: LONG_FLUSH_24H | OI/mc 0.42% | topPos 0.90 | taker 0.89
+- LINK: LONG_FLUSH_24H | OI/mc -% | topPos 0.93 | taker 1.05
 
 ## Revenue / buyback flags
 - (17 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 43 | mean 1.3% (0.22R) | in profit 18 | older than 7d 33
-- worst: ENS -0.75R, JTO -0.71R, ETC -0.61R | best: PYTH 1.69R, 币安人生 2.00R, S 2.01R
+- open 43 | mean 0.8% (0.17R) | in profit 17 | older than 7d 33
+- worst: ENS -0.77R, JTO -0.76R, ETC -0.63R | best: PYTH 1.58R, RAY 1.69R, 币安人生 1.96R
 
 ## System
-- CoinGecko 2787/10000 used, month-end projection 10017 (100%), throttle level 2 | by script {'scan': 904, 'check_liquidity': 144, 'breakout_check': 1723, 'counterfactual_check': 16}
+- CoinGecko 2789/10000 used, month-end projection 10024 (100%), throttle level 2 | by script {'scan': 906, 'check_liquidity': 144, 'breakout_check': 1723, 'counterfactual_check': 16}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=30), H2 NOT_SUPPORTED (n=86)
-- radar-flags.json scan age: 10m
+- radar-flags.json scan age: 12m
 - excluded from radar (pegged/tokenized equity): 40
