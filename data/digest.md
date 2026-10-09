@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-09 05:10 UTC
+# Radar digest - 2026-10-09 05:43 UTC
 
 ## Market
-- BTC scenario **A** | price 82354 | wk close 85260 vs 82800 | 50W 77783 (5.88%) | 28m old
+- BTC scenario **A** | price 82354 | wk close 85260 vs 82800 | 50W 77783 (5.88%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 56.82% | ETH/BTC 0.03027 | breadth7d 44% | stables 30d 0.82%
 - Alt risk (BTC.D): **ELEVATED** ['BTC_DOM_BREAKOUT_HOLDING'] | 3d 0.45pt | 7d 0.50pt | n=65
 - Gold: PAXG 1m -4.34% | real10y 2.92 (46bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -19,28 +19,22 @@
 - UNI: **RESET_DONE** | +165% impulse, retr 0.53 | OI dd 27% | fund 0.0032 | hold False | inval 6.00100 | OB 5.80800-6.03200
 
 ## Pre-pump candidates
-- ONDO: [A+E] 7d -4.2%
-- AERO: [C+E] 7d 5.1%
-- JUP: [C+E] 7d 5.2%
+- HYPE: [A+E] 7d -4.2%
+- PUMP: [D+E] 7d -3.5%
+- AERO: [C+E] 7d 4.7%
 
 ## ETF pipeline (new this run)
-- kucoin-shares NEW: other - Grayscale ETF Attracts Over $1 Billion in First Month, Signaling a Shift in the Crypto ETF
-- kucoin-shares NEW: other - Grayscale ETF Attracts Over $10 Billion in Its First Month, Signaling a Shift Beyond Bitco
-- kucoin-shares NEW: other - Ethereum Price Drops Below $2,600 Amid Six-Day ETF Outflow Streak - KuCoin
-- kucoin-shares NEW: other - NEAR Protocol Challenges Stellar's Top-20 Ranking Amid ETF and Network Growth - KuCoin
-- kucoin-shares NEW: other - T. Rowe Price Adds SHIB to ETF Eligible Assets, Expanding Institutional Exposure - KuCoin
-- near: other - NEAR Protocol Challenges Stellar's Top-20 Ranking Amid ETF and Network Growth - KuCoin
-- near: other - NEAR Protocol Challenges Stellar's Top-20 Ranking Amid ETF and Network Growth - KuCoin
-- ondo-finance: other - Global X S&P 500 Covered Call ETF (Ondo Tokenized) - CryptoRank
+- zcash: launch - Winklevoss Brothers Launch SEC Filing for Zcash (ZEC) ETF Under WINK Ticker - Blockonomi
+- zcash: other - Zcash News Today: Is Grayscale ETF Losing Its Early Momentum? - Coin Gabbar
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.94 | taker 0.91
+- BTC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.95 | taker 0.92
 - ETH: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.90 | taker 0.94
-- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.89 | taker 0.89
-- SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 0.92
-- SEI: LONG_FLUSH_24H | OI/mc 0.75% | topPos 0.93 | taker 0.94
-- TAO: LONG_FLUSH_24H | OI/mc -% | topPos 0.89 | taker 0.89
-- ZEC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 1.02 | taker 0.92
+- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 0.91
+- SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.85 | taker 0.93
+- SEI: LONG_FLUSH_24H | OI/mc 0.73% | topPos 0.93 | taker 0.95
+- TAO: LONG_FLUSH_24H | OI/mc -% | topPos 0.89 | taker 0.91
+- ZEC: SHORT_SQUEEZE_FUEL, SHORT_SQUEEZE_24H | OI/mc -% | topPos 1.03 | taker 0.96
 - WLD: LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 0.90
 
 ## Revenue / buyback flags
@@ -52,12 +46,12 @@
 - (15 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 41 | mean 1.8% (0.20R) | in profit 22 | older than 7d 33
-- worst: ENS -0.73R, JTO -0.63R, QNT -0.61R | best: SENT 1.47R, FIL 1.60R, RAY 2.06R
+- open 41 | mean 2.5% (0.25R) | in profit 22 | older than 7d 33
+- worst: ENS -0.71R, ETC -0.58R, JTO -0.56R | best: SENT 1.39R, FIL 1.57R, RAY 2.10R
 
 ## System
-- CoinGecko 2625/10000 used, month-end projection 9914 (99%), throttle level 1 | by script {'scan': 856, 'check_liquidity': 140, 'breakout_check': 1613, 'counterfactual_check': 16}
+- CoinGecko 2627/10000 used, month-end projection 9921 (99%), throttle level 1 | by script {'scan': 858, 'check_liquidity': 140, 'breakout_check': 1613, 'counterfactual_check': 16}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=30), H2 NOT_SUPPORTED (n=81)
-- radar-flags.json scan age: 10m
-- excluded from radar (pegged/tokenized equity): 40
+- radar-flags.json scan age: 13m
+- excluded from radar (pegged/tokenized equity): 39
