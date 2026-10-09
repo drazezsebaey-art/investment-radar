@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-09 09:10 UTC
+# Radar digest - 2026-10-09 09:43 UTC
 
 ## Market
-- BTC scenario **A** | price 82546 | wk close 85260 vs 82800 | 50W 77783 (6.12%) | 28m old
+- BTC scenario **A** | price 82546 | wk close 85260 vs 82800 | 50W 77783 (6.12%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 56.81% | ETH/BTC 0.03029 | breadth7d -% | stables 30d 0.82%
 - Alt risk (BTC.D): **ELEVATED** ['BTC_DOM_BREAKOUT_HOLDING'] | 3d 0.41pt | 7d 0.34pt | n=66
 - Gold: PAXG 1m -4.34% | real10y 2.92 (46bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -19,41 +19,33 @@
 - SUI: **RESET_DONE** | +92% impulse, retr 0.36 | OI dd 17% | fund -0.0078 | hold False | inval 0.93370 | OB 0.93370-0.97450
 
 ## Pre-pump candidates
-- ONDO: [A+C] 7d -3.3%
+- TAO: [A+E] 7d -11.2%
+- ONDO: [A+C] 7d -2.8%
 
 ## ETF pipeline (new this run)
-- injective-protocol NEW: filing - Injective: Three U.S. INJ ETF applications are filed - 08 Oct 2026 - TradingView
-- ripple NEW: other - Investors Tap the Brakes on Bitwise XRP ETF Even as Token’s Rally Stays Intact - TipRanks
-- ripple NEW: other - Crypto ETF News Today: Bitcoin, Ethereum, Solana Bleed Hard, XRP Gains - Coin Gabbar
-- solana NEW: other - Crypto ETF News Today: Bitcoin, Ethereum, Solana Bleed Hard, XRP Gains - Coin Gabbar
+- zcash: filing - Zcash gets a new ETF filing as Grayscale bleeds $105M: could ZEC fall another 16%? - Tradi
 - near: other - Best Crypto To Buy Now as NEAR Protocol Gets Its First US Spot ETP and AlphaPepe Nears $3M
-- zcash: other - Zcash dips below $1,348 as ETF outflows ease and NU7 enters testing - Cryptonews.net
 
 ## Derivatives flags (OKX)
 - BTC: SHORT_SQUEEZE_24H | OI/mc 0.20% | topPos 0.96 | taker 0.93
-- ETH: SHORT_SQUEEZE_24H | OI/mc 0.62% | topPos 0.91 | taker 0.93
-- NEAR: QUIET_DELEVERAGING | OI/mc -% | topPos 1.01 | taker 0.93
+- ETH: SHORT_SQUEEZE_24H | OI/mc 0.62% | topPos 0.91 | taker 0.92
+- SOL: SHORT_SQUEEZE_24H | OI/mc 0.60% | topPos 0.90 | taker 0.90
 - AVAX: LONG_FLUSH_24H | OI/mc 0.41% | topPos 0.89 | taker 0.89
-- SUI: LONG_FLUSH_24H | OI/mc 1.02% | topPos 0.85 | taker 0.94
-- TAO: LONG_FLUSH_24H | OI/mc 0.81% | topPos 0.88 | taker 0.93
-- ZEC: SHORT_SQUEEZE_FUEL, SHORT_SQUEEZE_24H | OI/mc 0.79% | topPos 1.07 | taker 0.96
-- WLD: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.90
+- SUI: LONG_FLUSH_24H | OI/mc 1.03% | topPos 0.85 | taker 0.93
+- TAO: LONG_FLUSH_24H | OI/mc 0.81% | topPos 0.89 | taker 0.93
+- ZEC: SHORT_SQUEEZE_24H | OI/mc 0.79% | topPos 1.07 | taker 0.97
+- WLD: LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 0.89
 
 ## Revenue / buyback flags
-- pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
-- stonk-3: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
-- collector-crypt: REVENUE_ACCELERATING, CHEAP_VS_REVENUE
-- venice-token: REVENUE_ACCELERATING
-- chip-2: REVENUE_ACCELERATING
-- (15 flagged protocol(s) without a tradeable token hidden)
+- (17 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 43 | mean 3.6% (0.38R) | in profit 23 | older than 7d 33
-- worst: ENS -0.66R, JTO -0.60R, ETC -0.59R | best: KAIA 1.84R, RAY 1.97R, 币安人生 2.17R
+- open 43 | mean 3.6% (0.38R) | in profit 22 | older than 7d 33
+- worst: ENS -0.69R, ETC -0.60R, JTO -0.59R | best: RAY 1.74R, KAIA 2.33R, 币安人生 2.50R
 
 ## System
-- CoinGecko 2702/10000 used, month-end projection 10001 (100%), throttle level 2 | by script {'scan': 872, 'check_liquidity': 141, 'breakout_check': 1673, 'counterfactual_check': 16}
+- CoinGecko 2704/10000 used, month-end projection 10009 (100%), throttle level 2 | by script {'scan': 874, 'check_liquidity': 141, 'breakout_check': 1673, 'counterfactual_check': 16}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=30), H2 NOT_SUPPORTED (n=82)
-- radar-flags.json scan age: 10m
-- excluded from radar (pegged/tokenized equity): 38
+- radar-flags.json scan age: 13m
+- excluded from radar (pegged/tokenized equity): 40
