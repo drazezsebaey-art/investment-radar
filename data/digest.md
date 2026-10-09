@@ -1,4 +1,4 @@
-# Radar digest - 2026-10-09 07:43 UTC
+# Radar digest - 2026-10-09 08:09 UTC
 
 ## Market
 - BTC scenario **A** | price 82597 | wk close 85260 vs 82800 | 50W 77783 (6.19%) | 1h old
@@ -19,10 +19,8 @@
 - ZEC: **RESET_DONE** | +126% impulse, retr 0.50 | OI dd 37% | fund -0.0033 | hold False | inval 1086.09000 | OB 1086.09000-1158.80000
 
 ## Pre-pump candidates
-- VVV: [D+E] 7d -18.6%
-- TAO: [A+E] 7d -10.6%
-- HYPE: [A+E] 7d -5.0%
-- PUMP: [D+E] 7d -3.5%
+- NEAR: [A+E] 7d -2.6%
+- BAT: [B+C] 7d 27.1%
 
 ## ETF pipeline (new this run)
 - injective-protocol NEW: filing - Injective: Three U.S. INJ ETF applications are filed - 08 Oct 2026 - TradingView
@@ -51,12 +49,12 @@
 - (15 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 43 | mean 2.9% (0.32R) | in profit 27 | older than 7d 33
-- worst: ENS -0.67R, ETC -0.58R, JTO -0.52R | best: PYTH 1.50R, FIL 1.75R, RAY 2.15R
+- open 43 | mean 2.9% (0.33R) | in profit 26 | older than 7d 33
+- worst: ENS -0.66R, ETC -0.58R, JTO -0.51R | best: FIL 1.65R, 币安人生 1.66R, RAY 2.10R
 
 ## System
-- CoinGecko 2696/10000 used, month-end projection 10080 (101%), throttle level 2 | by script {'scan': 866, 'check_liquidity': 141, 'breakout_check': 1673, 'counterfactual_check': 16}
+- CoinGecko 2698/10000 used, month-end projection 10037 (100%), throttle level 2 | by script {'scan': 868, 'check_liquidity': 141, 'breakout_check': 1673, 'counterfactual_check': 16}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=30), H2 NOT_SUPPORTED (n=82)
-- radar-flags.json scan age: 13m
-- excluded from radar (pegged/tokenized equity): 39
+- radar-flags.json scan age: 9m
+- excluded from radar (pegged/tokenized equity): 40
