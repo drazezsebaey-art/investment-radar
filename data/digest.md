@@ -1,4 +1,4 @@
-# Radar digest - 2026-10-09 13:42 UTC
+# Radar digest - 2026-10-09 14:09 UTC
 
 ## Market
 - BTC scenario **A** | price 83141 | wk close 85260 vs 82800 | 50W 77783 (6.89%) | 1h old
@@ -20,13 +20,13 @@
 
 ## Pre-pump candidates
 - HBAR: [A+E] 7d -13.1%
+- CRO: [A+E] 7d -11.5%
+- SUI: [A+E] 7d -11.4%
 - TAO: [A+E] 7d -11.4%
-- SEI: [A+E] 7d -8.0%
-- APT: [C+E] 7d -2.6%
-- NEAR: [A+E] 7d -1.1%
-- TRX: [A+E] 7d -0.6%
-- CC: [C+E] 7d 0.4%
-- XDC: [C+E] 7d 5.3%
+- ZEC: [A+E] 7d -11.1%
+- SOL: [A+E] 7d -10.5%
+- XRP: [A+E] 7d -10.5%
+- AVAX: [A+E] 7d -9.3%
 
 ## ETF pipeline (new this run)
 - zcash: other - Winklevoss Twins Pitch Zcash Spot ETF At Token2049 - Briefs Finance
@@ -50,12 +50,12 @@
 - (17 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 43 | mean 1.6% (0.25R) | in profit 22 | older than 7d 33
-- worst: JTO -0.76R, ENS -0.75R, ETC -0.62R | best: S 1.65R, RAY 1.83R, 币安人生 2.17R
+- open 43 | mean 1.3% (0.23R) | in profit 22 | older than 7d 33
+- worst: JTO -0.78R, ENS -0.77R, ETC -0.62R | best: PYTH 1.76R, RAY 1.83R, 币安人生 2.09R
 
 ## System
-- CoinGecko 2781/10000 used, month-end projection 10093 (101%), throttle level 2 | by script {'scan': 898, 'check_liquidity': 144, 'breakout_check': 1723, 'counterfactual_check': 16}
+- CoinGecko 2783/10000 used, month-end projection 10051 (100%), throttle level 2 | by script {'scan': 900, 'check_liquidity': 144, 'breakout_check': 1723, 'counterfactual_check': 16}
 - Trials guard: OK (0 untracked)
-- Hypotheses: H1 NOT_SUPPORTED (n=30), H2 NOT_SUPPORTED (n=85)
-- radar-flags.json scan age: 12m
+- Hypotheses: H1 NOT_SUPPORTED (n=30), H2 NOT_SUPPORTED (n=86)
+- radar-flags.json scan age: 9m
 - excluded from radar (pegged/tokenized equity): 40
