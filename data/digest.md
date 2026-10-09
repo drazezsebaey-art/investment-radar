@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-09 20:43 UTC
+# Radar digest - 2026-10-09 21:09 UTC
 
 ## Market
-- BTC scenario **A** | price 82426 | wk close 85260 vs 82800 | 50W 77783 (5.97%) | 1m old
+- BTC scenario **A** | price 82426 | wk close 85260 vs 82800 | 50W 77783 (5.97%) | 28m old
 - Alts: **BTC_LED** [-] | BTC.D 56.92% | ETH/BTC 0.03010 | breadth7d 45% | stables 30d 0.83%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.47pt | 7d 0.61pt | n=69
 - Gold: PAXG 1m -3.98% | real10y 2.92 (46bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -21,12 +21,12 @@
 ## Pre-pump candidates
 - HBAR: [A+E] 7d -10.0%
 - CRO: [A+E] 7d -8.7%
-- SOL: [A+E] 7d -8.1%
 - ZEC: [A+E] 7d -8.0%
 - LTC: [A+E] 7d -7.7%
-- SUI: [A+E] 7d -6.0%
+- SOL: [A+E] 7d -7.6%
 - INJ: [A+E] 7d -5.8%
 - TAO: [A+E] 7d -5.8%
+- XRP: [A+E] 7d -5.5%
 
 ## ETF pipeline (new this run)
 - near: launch - NEAR Protocol surges 83% in a month, outpacing Bitcoin and Ether amid new US spot ETF laun
@@ -51,12 +51,12 @@
 - (17 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 43 | mean 1.2% (0.23R) | in profit 19 | older than 7d 33
-- worst: JTO -0.81R, ENS -0.75R, ETC -0.59R | best: FIL 1.60R, BAT 2.73R, 币安人生 3.38R
+- open 43 | mean 1.4% (0.25R) | in profit 19 | older than 7d 33
+- worst: JTO -0.77R, ENS -0.75R, ETC -0.58R | best: FIL 1.75R, BAT 2.66R, 币安人生 3.39R
 
 ## System
-- CoinGecko 2862/10000 used, month-end projection 10044 (100%), throttle level 2 | by script {'scan': 926, 'check_liquidity': 148, 'breakout_check': 1770, 'counterfactual_check': 18}
+- CoinGecko 2864/10000 used, month-end projection 10004 (100%), throttle level 2 | by script {'scan': 928, 'check_liquidity': 148, 'breakout_check': 1770, 'counterfactual_check': 18}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=30), H2 NOT_SUPPORTED (n=86)
-- radar-flags.json scan age: 13m
-- excluded from radar (pegged/tokenized equity): 39
+- radar-flags.json scan age: 9m
+- excluded from radar (pegged/tokenized equity): 38
