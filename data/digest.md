@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-09 03:09 UTC
+# Radar digest - 2026-10-09 03:43 UTC
 
 ## Market
-- BTC scenario **A** | price 82033 | wk close 85260 vs 82800 | 50W 77783 (5.46%) | 27m old
+- BTC scenario **A** | price 82033 | wk close 85260 vs 82800 | 50W 77783 (5.46%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 56.82% | ETH/BTC 0.03027 | breadth7d 44% | stables 30d 0.82%
 - Alt risk (BTC.D): **ELEVATED** ['BTC_DOM_BREAKOUT_HOLDING'] | 3d 0.45pt | 7d 0.50pt | n=65
 - Gold: PAXG 1m -5.29% | real10y 2.92 (46bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -19,27 +19,29 @@
 - ATH: **RESET_DONE** | +107% impulse, retr 0.48 | OI dd 46% | fund 0.0050 | hold False | inval 0.00573 | OB 0.00573-0.00598
 
 ## Pre-pump candidates
-- HYPE: [A+E] 7d -4.0%
-- JUP: [C+E] 7d 3.8%
-- AERO: [C+E] 7d 5.3%
+- HYPE: [A+E] 7d -3.8%
+- JUP: [C+E] 7d 5.5%
+- AERO: [C+E] 7d 7.3%
 
 ## ETF pipeline (new this run)
-- sei-network NEW: approval - Canary Capital Files Second Pre-Effective Amendment for Staked SEI ETF - www.tokenpost.com
-- apecoin NEW: other - Weekly Crypto News: Bitcoin ETF Flows, APE Recovery, & Zcash NU7 - CoinDCX
-- near: launch - NEAR Protocol (NEAR) Soars 183% Following Bitwise ETF Debut and AI Agent Focus - Blockonom
-- ondo-finance: other - Global X Artificial Intelligence & Technology ETF (Ondo Tokenized) - CryptoRank
-- ondo-finance: other - Global X Blockchain ETF (Ondo Tokenized) - CryptoRank
+- kucoin-shares NEW: other - Grayscale ETF Attracts Over $1 Billion in First Month, Signaling a Shift in the Crypto ETF
+- kucoin-shares NEW: other - Grayscale ETF Attracts Over $10 Billion in Its First Month, Signaling a Shift Beyond Bitco
+- kucoin-shares NEW: other - Ethereum Price Drops Below $2,600 Amid Six-Day ETF Outflow Streak - KuCoin
+- kucoin-shares NEW: other - NEAR Protocol Challenges Stellar's Top-20 Ranking Amid ETF and Network Growth - KuCoin
+- kucoin-shares NEW: other - T. Rowe Price Adds SHIB to ETF Eligible Assets, Expanding Institutional Exposure - KuCoin
+- near: other - NEAR Protocol Challenges Stellar's Top-20 Ranking Amid ETF and Network Growth - KuCoin
+- near: other - NEAR Protocol Challenges Stellar's Top-20 Ranking Amid ETF and Network Growth - KuCoin
 - ondo-finance: other - Global X S&P 500 Covered Call ETF (Ondo Tokenized) - CryptoRank
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc 0.20% | topPos 0.94 | taker 0.90
-- ETH: SHORT_SQUEEZE_24H | OI/mc 0.63% | topPos 0.90 | taker 0.92
+- BTC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.94 | taker 0.91
+- ETH: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.89 | taker 0.93
 - NEAR: QUIET_DELEVERAGING | OI/mc -% | topPos 0.99 | taker 0.96
-- AVAX: LONG_FLUSH_24H | OI/mc 0.41% | topPos 0.89 | taker 0.88
-- SUI: LONG_FLUSH_24H | OI/mc 1.00% | topPos 0.86 | taker 0.94
-- SEI: LONG_FLUSH_24H | OI/mc 0.75% | topPos 0.94 | taker 0.92
-- TAO: LONG_FLUSH_24H | OI/mc 0.81% | topPos 0.89 | taker 0.88
-- ZEC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 1.01 | taker 0.91
+- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.89 | taker 0.89
+- SUI: QUIET_DELEVERAGING, LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 0.93
+- SEI: LONG_FLUSH_24H | OI/mc 0.74% | topPos 0.94 | taker 0.95
+- TAO: LONG_FLUSH_24H | OI/mc -% | topPos 0.89 | taker 0.89
+- ZEC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 1.01 | taker 0.92
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -50,12 +52,12 @@
 - (15 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 41 | mean 1.4% (0.17R) | in profit 20 | older than 7d 33
-- worst: ENS -0.75R, ETC -0.66R, JTO -0.59R | best: PYTH 1.27R, FIL 1.66R, RAY 2.01R
+- open 41 | mean 1.7% (0.20R) | in profit 20 | older than 7d 33
+- worst: ENS -0.72R, ETC -0.65R, QNT -0.57R | best: STX 1.36R, FIL 1.68R, RAY 2.20R
 
 ## System
-- CoinGecko 2615/10000 used, month-end projection 9977 (100%), throttle level 1 | by script {'scan': 848, 'check_liquidity': 138, 'breakout_check': 1613, 'counterfactual_check': 16}
+- CoinGecko 2618/10000 used, month-end projection 9989 (100%), throttle level 1 | by script {'scan': 850, 'check_liquidity': 139, 'breakout_check': 1613, 'counterfactual_check': 16}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=30), H2 NOT_SUPPORTED (n=81)
-- radar-flags.json scan age: 9m
-- excluded from radar (pegged/tokenized equity): 40
+- radar-flags.json scan age: 13m
+- excluded from radar (pegged/tokenized equity): 39
