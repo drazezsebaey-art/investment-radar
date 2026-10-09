@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-09 18:44 UTC
+# Radar digest - 2026-10-09 19:10 UTC
 
 ## Market
-- BTC scenario **A** | price 82432 | wk close 85260 vs 82800 | 50W 77783 (5.98%) | 2m old
+- BTC scenario **A** | price 82432 | wk close 85260 vs 82800 | 50W 77783 (5.98%) | 28m old
 - Alts: **BTC_LED** [-] | BTC.D 56.92% | ETH/BTC 0.03010 | breadth7d 45% | stables 30d 0.83%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.47pt | 7d 0.61pt | n=69
 - Gold: PAXG 1m -3.98% | real10y 2.92 (46bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -23,10 +23,10 @@
 - TAO: [A+E] 7d -10.6%
 - CRO: [A+E] 7d -10.5%
 - LTC: [A+E] 7d -9.0%
-- SUI: [A+E] 7d -8.7%
-- SOL: [A+E] 7d -8.4%
-- AVAX: [A+E] 7d -7.8%
-- XRP: [A+E] 7d -7.6%
+- SUI: [A+E] 7d -8.9%
+- SOL: [A+E] 7d -8.7%
+- INJ: [A+E] 7d -8.4%
+- AVAX: [A+E] 7d -8.1%
 
 ## ETF pipeline (new this run)
 - dogecoin NEW: delay_or_rejection - Dogecoin ETF Failure? Bitwise CEO Says DOGE Users Reject ETFs - Coin Gabbar
@@ -52,12 +52,12 @@
 - (17 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 43 | mean 1.5% (0.26R) | in profit 20 | older than 7d 33
-- worst: JTO -0.77R, ENS -0.72R, ETC -0.59R | best: FIL 1.64R, BAT 2.52R, 币安人生 3.39R
+- open 43 | mean 1.0% (0.22R) | in profit 19 | older than 7d 33
+- worst: JTO -0.83R, ENS -0.75R, ETC -0.60R | best: FIL 1.54R, BAT 2.35R, 币安人生 3.59R
 
 ## System
-- CoinGecko 2853/10000 used, month-end projection 10108 (101%), throttle level 2 | by script {'scan': 918, 'check_liquidity': 147, 'breakout_check': 1770, 'counterfactual_check': 18}
+- CoinGecko 2855/10000 used, month-end projection 10067 (101%), throttle level 2 | by script {'scan': 920, 'check_liquidity': 147, 'breakout_check': 1770, 'counterfactual_check': 18}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=30), H2 NOT_SUPPORTED (n=86)
-- radar-flags.json scan age: 13m
+- radar-flags.json scan age: 10m
 - excluded from radar (pegged/tokenized equity): 39
