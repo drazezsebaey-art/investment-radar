@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-09 01:10 UTC
+# Radar digest - 2026-10-09 01:43 UTC
 
 ## Market
-- BTC scenario **A** | price 81828 | wk close 85260 vs 82800 | 50W 77783 (5.20%) | 29m old
+- BTC scenario **A** | price 81828 | wk close 85260 vs 82800 | 50W 77783 (5.20%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 56.82% | ETH/BTC 0.03023 | breadth7d 43% | stables 30d 1.11%
 - Alt risk (BTC.D): **ELEVATED** ['BTC_DOM_BREAKOUT_HOLDING'] | 3d 0.48pt | 7d 0.48pt | n=64
 - Gold: PAXG 1m -5.29% | real10y 2.92 (46bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -19,25 +19,26 @@
 - SAND: **RESET_DONE** | +170% impulse, retr 0.37 | OI dd 46% | fund -0.0385 | hold False | inval 0.06488 | OB 0.06488-0.06700
 
 ## Pre-pump candidates
-- HYPE: [A+E] 7d -3.6%
-- AERO: [C+E] 7d 5.1%
+- HYPE: [A+E] 7d -3.7%
+- AERO: [C+E] 7d 4.0%
 
 ## ETF pipeline (new this run)
-- backpack NEW: other - Backpack Adds Tokenized Brazil ETF and Cerebras Stock to Solana - Altcoin Buzz
-- solana NEW: other - Solana Surge: Fidelity’s FSOL ETF Pulls in Fresh Cash as Traders Chase the Rally - TipRank
-- zcash: filing - Zcash ETF WINK Filing: What Investors Should Know - 99Bitcoins
-- zcash: other - Is Zcash’s Privacy-ETF Rally Over? ZEC Slips 6.8% as $93M Exits Grayscale’s ZCSH - CryptoR
-- zcash: other - $Zcash (ZEC.CC)$ $The Zcash ETF (ZCSH.US)$ - Moomoo
+- sei-network NEW: approval - Canary Capital Files Second Pre-Effective Amendment for Staked SEI ETF - www.tokenpost.com
+- apecoin NEW: other - Weekly Crypto News: Bitcoin ETF Flows, APE Recovery, & Zcash NU7 - CoinDCX
+- near: launch - NEAR Protocol (NEAR) Soars 183% Following Bitwise ETF Debut and AI Agent Focus - Blockonom
+- ondo-finance: other - Global X Artificial Intelligence & Technology ETF (Ondo Tokenized) - CryptoRank
+- ondo-finance: other - Global X Blockchain ETF (Ondo Tokenized) - CryptoRank
+- ondo-finance: other - Global X S&P 500 Covered Call ETF (Ondo Tokenized) - CryptoRank
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc 0.20% | topPos 0.93 | taker 0.91
+- BTC: SHORT_SQUEEZE_24H | OI/mc 0.20% | topPos 0.94 | taker 0.90
 - ETH: SHORT_SQUEEZE_24H | OI/mc 0.63% | topPos 0.89 | taker 0.92
 - NEAR: QUIET_DELEVERAGING | OI/mc -% | topPos 1.00 | taker 0.95
 - AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.89 | taker 0.87
 - XRP: LONG_FLUSH_24H | OI/mc 0.13% | topPos 0.89 | taker 0.88
-- SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.95
-- SEI: LONG_FLUSH_24H | OI/mc 0.78% | topPos 0.94 | taker 0.87
-- TAO: LONG_FLUSH_24H | OI/mc 0.81% | topPos 0.88 | taker 0.87
+- SUI: LONG_FLUSH_24H | OI/mc 0.99% | topPos 0.87 | taker 0.93
+- SEI: LONG_FLUSH_24H | OI/mc 0.77% | topPos 0.94 | taker 0.91
+- TAO: LONG_FLUSH_24H | OI/mc 0.81% | topPos 0.89 | taker 0.87
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -48,12 +49,12 @@
 - (15 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 42 | mean 1.0% (0.15R) | in profit 17 | older than 7d 34
-- worst: ENS -0.77R, JTO -0.74R, ETC -0.71R | best: FIL 1.50R, RAY 1.56R, STRK 2.90R
+- open 42 | mean 1.8% (0.21R) | in profit 21 | older than 7d 34
+- worst: ENS -0.75R, JTO -0.71R, ETC -0.68R | best: FIL 1.75R, RAY 1.78R, STRK 3.06R
 
 ## System
-- CoinGecko 2606/10000 used, month-end projection 10046 (100%), throttle level 2 | by script {'scan': 840, 'check_liquidity': 137, 'breakout_check': 1613, 'counterfactual_check': 16}
+- CoinGecko 2608/10000 used, month-end projection 10054 (100%), throttle level 2 | by script {'scan': 842, 'check_liquidity': 137, 'breakout_check': 1613, 'counterfactual_check': 16}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=30), H2 NOT_SUPPORTED (n=81)
-- radar-flags.json scan age: 10m
+- radar-flags.json scan age: 13m
 - excluded from radar (pegged/tokenized equity): 40
