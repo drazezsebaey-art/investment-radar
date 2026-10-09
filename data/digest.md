@@ -1,12 +1,12 @@
-# Radar digest - 2026-10-09 21:42 UTC
+# Radar digest - 2026-10-09 22:09 UTC
 
 ## Market
 - BTC scenario **A** | price 82426 | wk close 85260 vs 82800 | 50W 77783 (5.97%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 56.92% | ETH/BTC 0.03010 | breadth7d 45% | stables 30d 0.83%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.47pt | 7d 0.61pt | n=69
-- Gold: PAXG 1m -3.98% | real10y 2.92 (46bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
-- 10y 1w: -1bp = real -1 + breakeven -1 -> **SMALL_MOVE**
-- 10y 1m: 45bp = real 46 + breakeven -5 -> **REAL_YIELD_DRIVEN**
+- Gold: PAXG 1m -3.97% | real10y 2.87 (32bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
+- 10y 1w: -2bp = real -1 + breakeven -3 -> **SMALL_MOVE**
+- 10y 1m: 27bp = real 32 + breakeven -3 -> **REAL_YIELD_DRIVEN**
 
 ## Coins in correction (entry_ready first)
 - RAY: **ONGOING** | +242% impulse, retr 0.15 | OI dd 30% | fund -0.0364 | hold False | inval 2.20000 | OB 1.82110-1.90880
@@ -19,14 +19,14 @@
 - MET: **RESET_DONE** | +205% impulse, retr 0.39 | OI dd 28% | fund 0.0002 | hold False | inval 0.30270 | OB 0.28550-0.29500
 
 ## Pre-pump candidates
-- HBAR: [A+E] 7d -9.0%
-- SOL: [A+E] 7d -7.6%
-- CRO: [A+E] 7d -7.5%
-- LTC: [A+E] 7d -7.3%
-- INJ: [A+E] 7d -5.9%
-- XRP: [A+E] 7d -5.5%
-- ZEC: [A+E] 7d -5.4%
-- SUI: [A+E] 7d -5.3%
+- HBAR: [A+E] 7d -8.4%
+- SOL: [A+E] 7d -7.5%
+- LTC: [A+E] 7d -7.2%
+- CRO: [A+E] 7d -7.1%
+- XRP: [A+E] 7d -5.4%
+- ZEC: [A+E] 7d -4.9%
+- SUI: [A+E] 7d -4.8%
+- INJ: [A+E] 7d -4.6%
 
 ## ETF pipeline (new this run)
 - kucoin-shares NEW: filing - Winklevoss Files for Zcash ETF with 0.25% Fee and WINK Ticker - KuCoin
@@ -52,12 +52,12 @@
 - (17 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 43 | mean 1.5% (0.25R) | in profit 20 | older than 7d 33
-- worst: ENS -0.73R, JTO -0.72R, MET -0.57R | best: FIL 1.72R, BAT 2.26R, 币安人生 3.38R
+- open 43 | mean 1.9% (0.29R) | in profit 20 | older than 7d 33
+- worst: ENS -0.72R, JTO -0.71R, MET -0.63R | best: FIL 1.80R, BAT 2.54R, 币安人生 3.60R
 
 ## System
-- CoinGecko 2866/10000 used, month-end projection 10011 (100%), throttle level 2 | by script {'scan': 930, 'check_liquidity': 148, 'breakout_check': 1770, 'counterfactual_check': 18}
+- CoinGecko 2869/10000 used, month-end projection 9974 (100%), throttle level 1 | by script {'scan': 932, 'check_liquidity': 149, 'breakout_check': 1770, 'counterfactual_check': 18}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=31), H2 NOT_SUPPORTED (n=86)
-- radar-flags.json scan age: 12m
-- excluded from radar (pegged/tokenized equity): 39
+- radar-flags.json scan age: 9m
+- excluded from radar (pegged/tokenized equity): 38
