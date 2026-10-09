@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-09 17:42 UTC
+# Radar digest - 2026-10-09 18:23 UTC
 
 ## Market
-- BTC scenario **A** | price 82758 | wk close 85260 vs 82800 | 50W 77783 (6.40%) | 1h old
+- BTC scenario **A** | price 82758 | wk close 85260 vs 82800 | 50W 77783 (6.40%) | 2h old
 - Alts: **BTC_LED** [-] | BTC.D 57.03% | ETH/BTC 0.02999 | breadth7d -% | stables 30d 0.82%
 - Alt risk (BTC.D): **HIGH** ['BTC_DOM_BREAKOUT_HOLDING', 'BTC_DOM_RISING_3D'] | 3d 0.52pt | 7d 0.52pt | n=68
 - Gold: PAXG 1m -3.98% | real10y 2.92 (46bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
@@ -19,14 +19,14 @@
 - MET: **RESET_DONE** | +205% impulse, retr 0.39 | OI dd 28% | fund -0.0037 | hold False | inval 0.30270 | OB 0.28550-0.29500
 
 ## Pre-pump candidates
-- HBAR: [A+E] 7d -12.6%
-- CRO: [A+E] 7d -10.8%
+- HBAR: [A+E] 7d -12.2%
 - TAO: [A+E] 7d -10.6%
-- LTC: [A+E] 7d -10.4%
-- SOL: [A+E] 7d -8.6%
-- XRP: [A+E] 7d -8.2%
-- AVAX: [A+E] 7d -8.1%
-- SEI: [A+E] 7d -7.2%
+- CRO: [A+E] 7d -10.5%
+- LTC: [A+E] 7d -9.0%
+- SOL: [A+E] 7d -8.4%
+- AVAX: [A+E] 7d -7.8%
+- XRP: [A+E] 7d -7.6%
+- SEI: [A+E] 7d -6.2%
 
 ## ETF pipeline (new this run)
 - dogecoin NEW: delay_or_rejection - Dogecoin ETF Failure? Bitwise CEO Says DOGE Users Reject ETFs - Coin Gabbar
@@ -52,12 +52,12 @@
 - (17 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 43 | mean 1.2% (0.23R) | in profit 19 | older than 7d 33
-- worst: JTO -0.77R, MET -0.75R, ENS -0.72R | best: FIL 1.72R, BAT 2.62R, 币安人生 3.19R
+- open 43 | mean 1.7% (0.27R) | in profit 19 | older than 7d 33
+- worst: JTO -0.73R, ENS -0.71R, ETC -0.58R | best: FIL 1.70R, BAT 2.61R, 币安人生 3.26R
 
 ## System
-- CoinGecko 2801/10000 used, month-end projection 9971 (100%), throttle level 1 | by script {'scan': 914, 'check_liquidity': 146, 'breakout_check': 1723, 'counterfactual_check': 18}
+- CoinGecko 2851/10000 used, month-end projection 10101 (101%), throttle level 2 | by script {'scan': 916, 'check_liquidity': 147, 'breakout_check': 1770, 'counterfactual_check': 18}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=30), H2 NOT_SUPPORTED (n=86)
-- radar-flags.json scan age: 12m
+- radar-flags.json scan age: 22m
 - excluded from radar (pegged/tokenized equity): 39
