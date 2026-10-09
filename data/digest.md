@@ -1,26 +1,27 @@
-# Radar digest - 2026-10-09 02:10 UTC
+# Radar digest - 2026-10-09 02:43 UTC
 
 ## Market
-- BTC scenario **A** | price 81828 | wk close 85260 vs 82800 | 50W 77783 (5.20%) | 1h old
-- Alts: **BTC_LED** [-] | BTC.D 56.82% | ETH/BTC 0.03023 | breadth7d 43% | stables 30d 1.11%
-- Alt risk (BTC.D): **ELEVATED** ['BTC_DOM_BREAKOUT_HOLDING'] | 3d 0.48pt | 7d 0.48pt | n=64
+- BTC scenario **A** | price 82033 | wk close 85260 vs 82800 | 50W 77783 (5.46%) | 1m old
+- Alts: **BTC_LED** [-] | BTC.D 56.82% | ETH/BTC 0.03027 | breadth7d 44% | stables 30d 0.82%
+- Alt risk (BTC.D): **ELEVATED** ['BTC_DOM_BREAKOUT_HOLDING'] | 3d 0.45pt | 7d 0.50pt | n=65
 - Gold: PAXG 1m -5.29% | real10y 2.92 (46bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 40
 - 10y 1w: -1bp = real -1 + breakeven -1 -> **SMALL_MOVE**
 - 10y 1m: 45bp = real 46 + breakeven -5 -> **REAL_YIELD_DRIVEN**
 
 ## Coins in correction (entry_ready first)
-- RAY: **ONGOING** | +244% impulse, retr 0.13 | OI dd 27% | fund -0.0173 | hold False | inval 1.99330 | OB 1.82110-1.90880
-- NEAR: **ONGOING** | +215% impulse, retr 0.29 | OI dd 24% | fund -0.0168 | hold True | inval 4.02900 | OB 4.21400-4.43600
-- CARDS: **ONGOING** | +211% impulse, retr 0.31 | OI dd -% | fund - | hold True | inval 0.23410 | OB 0.19480-0.21010
-- MET: **ONGOING** | +205% impulse, retr 0.34 | OI dd 0% | fund -0.0555 | hold False | inval 0.30270 | OB 0.28550-0.29500
-- NIGHT: **ONGOING** | +197% impulse, retr 0.22 | OI dd 28% | fund 0.0050 | hold True | inval 0.03740 | OB 0.03830-0.03953
-- FLUID: **ONGOING** | +116% impulse, retr 0.24 | OI dd -% | fund - | hold True | inval 1.82540 | OB 1.70110-1.73600
-- TIA: **ONGOING** | +68% impulse, retr 0.18 | OI dd 14% | fund -0.0001 | hold False | inval 0.43500 | OB 0.43500-0.45040
-- SAND: **RESET_DONE** | +170% impulse, retr 0.37 | OI dd 46% | fund -0.0385 | hold False | inval 0.06488 | OB 0.06488-0.06700
+- NEAR: **ONGOING** | +215% impulse, retr 0.24 | OI dd 24% | fund -0.0160 | hold True | inval 4.02900 | OB 4.21400-4.43600
+- MET: **ONGOING** | +205% impulse, retr 0.32 | OI dd 0% | fund -0.0326 | hold False | inval 0.30270 | OB 0.28550-0.29500
+- NIGHT: **ONGOING** | +197% impulse, retr 0.21 | OI dd 28% | fund 0.0050 | hold True | inval 0.03740 | OB 0.03830-0.03953
+- UNI: **ONGOING** | +165% impulse, retr 0.53 | OI dd 27% | fund 0.0070 | hold False | inval 6.00100 | OB 5.80800-6.03200
+- SAND: **RESET_DONE** | +170% impulse, retr 0.33 | OI dd 46% | fund -0.0884 | hold False | inval 0.06488 | OB 0.06488-0.06700
+- ZEC: **RESET_DONE** | +126% impulse, retr 0.52 | OI dd 37% | fund -0.0004 | hold False | inval 1086.09000 | OB 1086.09000-1158.80000
+- SEI: **RESET_DONE** | +110% impulse, retr 0.44 | OI dd 21% | fund 0.0050 | hold False | inval 0.05685 | OB 0.05685-0.05941
+- ATH: **RESET_DONE** | +107% impulse, retr 0.48 | OI dd 46% | fund 0.0050 | hold False | inval 0.00573 | OB 0.00573-0.00598
 
 ## Pre-pump candidates
-- HYPE: [A+E] 7d -3.7%
-- AERO: [C+E] 7d 4.0%
+- HYPE: [A+E] 7d -4.0%
+- JUP: [C+E] 7d 3.8%
+- AERO: [C+E] 7d 5.3%
 
 ## ETF pipeline (new this run)
 - sei-network NEW: approval - Canary Capital Files Second Pre-Effective Amendment for Staked SEI ETF - www.tokenpost.com
@@ -32,13 +33,13 @@
 
 ## Derivatives flags (OKX)
 - BTC: SHORT_SQUEEZE_24H | OI/mc 0.20% | topPos 0.94 | taker 0.90
-- ETH: SHORT_SQUEEZE_24H | OI/mc 0.63% | topPos 0.89 | taker 0.92
-- NEAR: QUIET_DELEVERAGING | OI/mc -% | topPos 1.00 | taker 0.95
-- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.89 | taker 0.87
-- XRP: LONG_FLUSH_24H | OI/mc 0.13% | topPos 0.89 | taker 0.88
-- SUI: LONG_FLUSH_24H | OI/mc 0.99% | topPos 0.87 | taker 0.93
-- SEI: LONG_FLUSH_24H | OI/mc 0.77% | topPos 0.94 | taker 0.91
-- TAO: LONG_FLUSH_24H | OI/mc 0.81% | topPos 0.89 | taker 0.87
+- ETH: SHORT_SQUEEZE_24H | OI/mc 0.63% | topPos 0.90 | taker 0.92
+- NEAR: QUIET_DELEVERAGING | OI/mc -% | topPos 0.99 | taker 0.96
+- AVAX: LONG_FLUSH_24H | OI/mc 0.41% | topPos 0.89 | taker 0.88
+- SUI: LONG_FLUSH_24H | OI/mc 1.00% | topPos 0.86 | taker 0.94
+- SEI: LONG_FLUSH_24H | OI/mc 0.75% | topPos 0.94 | taker 0.92
+- TAO: LONG_FLUSH_24H | OI/mc 0.81% | topPos 0.89 | taker 0.88
+- ZEC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 1.01 | taker 0.91
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -49,12 +50,12 @@
 - (15 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 42 | mean 2.1% (0.24R) | in profit 22 | older than 7d 34
-- worst: ENS -0.75R, ETC -0.67R, JTO -0.65R | best: RAY 1.74R, FIL 1.75R, STRK 3.30R
+- open 42 | mean 1.9% (0.22R) | in profit 21 | older than 7d 34
+- worst: ENS -0.79R, JTO -0.71R, ETC -0.69R | best: FIL 1.61R, RAY 1.83R, STRK 3.51R
 
 ## System
-- CoinGecko 2610/10000 used, month-end projection 10009 (100%), throttle level 2 | by script {'scan': 844, 'check_liquidity': 137, 'breakout_check': 1613, 'counterfactual_check': 16}
+- CoinGecko 2612/10000 used, month-end projection 10017 (100%), throttle level 2 | by script {'scan': 846, 'check_liquidity': 137, 'breakout_check': 1613, 'counterfactual_check': 16}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=30), H2 NOT_SUPPORTED (n=81)
-- radar-flags.json scan age: 10m
-- excluded from radar (pegged/tokenized equity): 39
+- radar-flags.json scan age: 13m
+- excluded from radar (pegged/tokenized equity): 40
