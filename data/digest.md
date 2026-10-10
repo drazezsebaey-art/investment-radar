@@ -1,10 +1,10 @@
-# Radar digest - 2026-10-10 21:42 UTC
+# Radar digest - 2026-10-10 22:10 UTC
 
 ## Market
 - BTC scenario **A** | price 83068 | wk close 85260 vs 82800 | 50W 77783 (6.79%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.86% | ETH/BTC 0.03024 | breadth7d 41% | stables 30d 0.67%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.38pt | 7d 0.43pt | n=75
-- Gold: PAXG 1m -3.63% | real10y 2.87 (32bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
+- Gold: PAXG 1m -3.65% | real10y 2.87 (32bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
 - 10y 1w: -2bp = real -1 + breakeven -3 -> **SMALL_MOVE**
 - 10y 1m: 27bp = real 32 + breakeven -3 -> **REAL_YIELD_DRIVEN**
 
@@ -19,14 +19,8 @@
 - AVAX: **ONGOING** | +71% impulse, retr 0.30 | OI dd 25% | fund 0.0100 | hold False | inval 9.71400 | OB 7.17400-7.36200
 
 ## Pre-pump candidates
-- PUMP: [D+E] 7d -11.3%
-- HBAR: [A+E] 7d -9.7%
-- ALGO: [B+E] 7d -9.4%
-- CRO: [A+E] 7d -8.0%
-- SOL: [A+E] 7d -7.9%
-- ZEC: [A+E] 7d -7.2%
-- LTC: [A+E] 7d -6.8%
-- AVAX: [A+E] 7d -5.8%
+- PUMP: [D+E] 7d -12.7%
+- HYPE: [A+E] 7d -4.4%
 
 ## ETF pipeline (new this run)
 - pepe NEW: filing - Pepe Coin Price Prediction: Canary ETF Filing Puts PEPE Back in Focus as Pepeto Targets 10
@@ -53,12 +47,12 @@
 - (12 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 40 | mean 4.6% (0.39R) | in profit 23 | older than 7d 33
-- worst: ENS -0.60R, QNT -0.52R, ETC -0.51R | best: NEAR 1.85R, NIGHT 2.06R, FIL 2.31R
+- open 40 | mean 4.3% (0.37R) | in profit 22 | older than 7d 33
+- worst: ENS -0.60R, QNT -0.53R, ETC -0.52R | best: NEAR 1.79R, NIGHT 2.00R, FIL 2.18R
 
 ## System
-- CoinGecko 3200/10000 used, month-end projection 10046 (100%), throttle level 2 | by script {'scan': 1034, 'check_liquidity': 162, 'breakout_check': 1983, 'counterfactual_check': 21}
+- CoinGecko 3202/10000 used, month-end projection 10010 (100%), throttle level 2 | by script {'scan': 1036, 'check_liquidity': 162, 'breakout_check': 1983, 'counterfactual_check': 21}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=33), H2 SUPPORTED (n=96)
-- radar-flags.json scan age: 12m
+- radar-flags.json scan age: 10m
 - excluded from radar (pegged/tokenized equity): 39
