@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-10 13:10 UTC
+# Radar digest - 2026-10-10 13:42 UTC
 
 ## Market
-- BTC scenario **A** | price 82844 | wk close 85260 vs 82800 | 50W 77783 (6.51%) | 28m old
+- BTC scenario **A** | price 82844 | wk close 85260 vs 82800 | 50W 77783 (6.51%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.88% | ETH/BTC 0.03012 | breadth7d 52% | stables 30d 0.67%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.41pt | 7d 0.46pt | n=73
 - Gold: PAXG 1m -3.96% | real10y 2.87 (32bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -19,6 +19,7 @@
 - AVAX: **ONGOING** | +71% impulse, retr 0.29 | OI dd 24% | fund 0.0097 | hold False | inval 9.71400 | OB 7.17400-7.36200
 
 ## Pre-pump candidates
+- GRASS: [C+E] 7d -11.9%
 - LTC: [A+E] 7d -8.6%
 - HBAR: [A+E] 7d -8.6%
 - SOL: [A+E] 7d -8.1%
@@ -26,32 +27,34 @@
 - ZEC: [A+E] 7d -6.3%
 - SUI: [A+E] 7d -6.2%
 - XRP: [A+E] 7d -5.6%
-- AVAX: [A+E] 7d -5.5%
 
 ## ETF pipeline (new this run)
-- none
+- zcash: other - Grayscale Zcash ETF Sees $124 Million in Outflows Over Two Weeks - Hokanews
+- zcash: other - Grayscale Zcash ETF Sees $124 Million in Outflows Over Two Weeks - Hokanews
+- ondo-finance: other - iShares US Technology Tokenized ETF (Ondo) - CryptoRank
+- zcash: other - Why Are the Winklevoss Brothers Proposing a Zcash (ZEC) ETF? - Kalkine
 
 ## Derivatives flags (OKX)
-- SOL: LONG_FLUSH_24H | OI/mc 0.59% | topPos 0.89 | taker 0.97
-- NEAR: SHORT_SQUEEZE_24H | OI/mc -% | topPos 1.06 | taker 1.05
-- AVAX: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.40% | topPos 0.88 | taker 0.83
-- SEI: LONG_FLUSH_24H | OI/mc 0.68% | topPos 0.92 | taker 0.96
-- TAO: AGGRESSIVE_SELLING | OI/mc 0.80% | topPos 0.89 | taker 0.80
-- ZEC: SHORT_SQUEEZE_24H | OI/mc 0.72% | topPos 1.08 | taker 1.02
-- ADA: SHORT_SQUEEZE_24H | OI/mc 0.40% | topPos 0.95 | taker 1.05
-- LINK: SHORT_SQUEEZE_24H | OI/mc 0.33% | topPos 0.91 | taker 1.03
+- SOL: LONG_FLUSH_24H | OI/mc 0.59% | topPos 0.89 | taker 0.99
+- NEAR: SHORT_SQUEEZE_24H | OI/mc 0.99% | topPos 1.06 | taker 1.06
+- AVAX: LONG_FLUSH_24H | OI/mc 0.40% | topPos 0.88 | taker 0.86
+- SEI: LONG_FLUSH_24H | OI/mc 0.69% | topPos 0.92 | taker 0.98
+- TAO: AGGRESSIVE_SELLING, SHORT_SQUEEZE_24H | OI/mc 0.80% | topPos 0.89 | taker 0.83
+- ZEC: SHORT_SQUEEZE_24H | OI/mc 0.72% | topPos 1.08 | taker 1.01
+- ADA: SHORT_SQUEEZE_24H | OI/mc 0.40% | topPos 0.95 | taker 1.06
+- LINK: SHORT_SQUEEZE_24H | OI/mc 0.32% | topPos 0.91 | taker 1.04
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
 - (12 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 41 | mean 3.4% (0.32R) | in profit 21 | older than 7d 33
-- worst: ENS -0.62R, ETC -0.57R, JTO -0.51R | best: IMX 1.68R, NEAR 1.71R, FIL 2.18R
+- open 41 | mean 3.5% (0.32R) | in profit 21 | older than 7d 33
+- worst: ENS -0.62R, ETC -0.57R, JTO -0.53R | best: IMX 1.67R, NEAR 1.75R, FIL 2.18R
 
 ## System
-- CoinGecko 3102/10000 used, month-end projection 10078 (101%), throttle level 2 | by script {'scan': 1000, 'check_liquidity': 157, 'breakout_check': 1924, 'counterfactual_check': 21}
+- CoinGecko 3105/10000 used, month-end projection 10088 (101%), throttle level 2 | by script {'scan': 1002, 'check_liquidity': 158, 'breakout_check': 1924, 'counterfactual_check': 21}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=32), H2 SUPPORTED (n=93)
-- radar-flags.json scan age: 10m
+- radar-flags.json scan age: 12m
 - excluded from radar (pegged/tokenized equity): 39
