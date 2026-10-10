@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-10 17:10 UTC
+# Radar digest - 2026-10-10 17:42 UTC
 
 ## Market
-- BTC scenario **A** | price 83054 | wk close 85260 vs 82800 | 50W 77783 (6.78%) | 27m old
+- BTC scenario **A** | price 83054 | wk close 85260 vs 82800 | 50W 77783 (6.78%) | 58m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.81% | ETH/BTC 0.03028 | breadth7d 47% | stables 30d 0.67%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.28pt | 7d 0.32pt | n=74
 - Gold: PAXG 1m -3.63% | real10y 2.87 (32bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -19,39 +19,41 @@
 - AVAX: **ONGOING** | +71% impulse, retr 0.30 | OI dd 25% | fund 0.0100 | hold False | inval 9.71400 | OB 7.17400-7.36200
 
 ## Pre-pump candidates
-- HBAR: [A+E] 7d -9.6%
+- HBAR: [A+E] 7d -9.2%
 - SOL: [A+E] 7d -8.1%
-- LTC: [A+E] 7d -8.1%
-- CRO: [A+E] 7d -7.6%
-- ZEC: [A+E] 7d -5.8%
+- LTC: [A+E] 7d -7.8%
+- CRO: [A+E] 7d -6.8%
 - XRP: [A+E] 7d -5.8%
+- ZEC: [A+E] 7d -5.8%
 - AVAX: [A+E] 7d -5.3%
 - SUI: [A+E] 7d -4.8%
 
 ## ETF pipeline (new this run)
-- solana NEW: other - Leveraged Solana ETF Sees Investors Cash Out as Rally Cools - TipRanks
+- zcash: filing - Winklevoss Files for Spot Zcash ETF With 0.25% Fee and WINK Ticker - CryptoRank
+- zcash: filing - Winklevoss Files for Spot Zcash ETF With 0.25% Fee and WINK Ticker - CryptoRank
+- near: other - Common Shares of Beneficial Interest of Bitwise NEAR ETF (NYSE:NRR) Stock Quote - Financia
 
 ## Derivatives flags (OKX)
 - BTC: SHORT_SQUEEZE_24H | OI/mc 0.20% | topPos 0.97 | taker 1.10
-- ETH: SHORT_SQUEEZE_24H | OI/mc 0.59% | topPos 0.91 | taker 1.05
-- SOL: SHORT_SQUEEZE_24H | OI/mc 0.59% | topPos 0.90 | taker 1.02
-- NEAR: SHORT_SQUEEZE_24H | OI/mc 1.04% | topPos 1.07 | taker 1.07
-- AVAX: SHORT_SQUEEZE_24H | OI/mc 0.40% | topPos 0.89 | taker 0.88
-- XRP: SHORT_SQUEEZE_24H | OI/mc 0.13% | topPos 0.88 | taker 1.13
-- SUI: SHORT_SQUEEZE_24H | OI/mc 1.05% | topPos 0.88 | taker 1.00
-- TAO: AGGRESSIVE_SELLING, SHORT_SQUEEZE_24H | OI/mc 0.83% | topPos 0.91 | taker 0.77
+- ETH: SHORT_SQUEEZE_24H | OI/mc 0.59% | topPos 0.91 | taker 1.04
+- SOL: SHORT_SQUEEZE_24H | OI/mc 0.59% | topPos 0.90 | taker 0.98
+- NEAR: SHORT_SQUEEZE_24H | OI/mc 1.05% | topPos 1.07 | taker 1.07
+- AVAX: SHORT_SQUEEZE_24H | OI/mc 0.40% | topPos 0.88 | taker 0.86
+- XRP: SHORT_SQUEEZE_24H | OI/mc 0.13% | topPos 0.88 | taker 1.11
+- SUI: SHORT_SQUEEZE_24H | OI/mc 1.04% | topPos 0.88 | taker 0.97
+- TAO: AGGRESSIVE_SELLING, SHORT_SQUEEZE_24H | OI/mc 0.83% | topPos 0.90 | taker 0.71
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
 - (12 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 41 | mean 4.4% (0.41R) | in profit 25 | older than 7d 33
-- worst: ENS -0.62R, ETC -0.53R, QNT -0.48R | best: NEAR 1.91R, IMX 1.99R, FIL 2.31R
+- open 41 | mean 4.2% (0.39R) | in profit 25 | older than 7d 33
+- worst: ENS -0.61R, ETC -0.52R, QNT -0.47R | best: NEAR 1.87R, IMX 1.98R, FIL 2.18R
 
 ## System
-- CoinGecko 3121/10000 used, month-end projection 9966 (100%), throttle level 1 | by script {'scan': 1016, 'check_liquidity': 160, 'breakout_check': 1924, 'counterfactual_check': 21}
+- CoinGecko 3123/10000 used, month-end projection 9972 (100%), throttle level 1 | by script {'scan': 1018, 'check_liquidity': 160, 'breakout_check': 1924, 'counterfactual_check': 21}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=33), H2 SUPPORTED (n=94)
-- radar-flags.json scan age: 10m
-- excluded from radar (pegged/tokenized equity): 39
+- radar-flags.json scan age: 11m
+- excluded from radar (pegged/tokenized equity): 40
