@@ -1,4 +1,4 @@
-# Radar digest - 2026-10-10 13:42 UTC
+# Radar digest - 2026-10-10 14:09 UTC
 
 ## Market
 - BTC scenario **A** | price 82844 | wk close 85260 vs 82800 | 50W 77783 (6.51%) | 1h old
@@ -19,14 +19,14 @@
 - AVAX: **ONGOING** | +71% impulse, retr 0.29 | OI dd 24% | fund 0.0097 | hold False | inval 9.71400 | OB 7.17400-7.36200
 
 ## Pre-pump candidates
-- GRASS: [C+E] 7d -11.9%
 - LTC: [A+E] 7d -8.6%
 - HBAR: [A+E] 7d -8.6%
 - SOL: [A+E] 7d -8.1%
 - CRO: [A+E] 7d -7.8%
 - ZEC: [A+E] 7d -6.3%
-- SUI: [A+E] 7d -6.2%
-- XRP: [A+E] 7d -5.6%
+- SUI: [A+E] 7d -5.8%
+- XRP: [A+E] 7d -5.5%
+- AVAX: [A+E] 7d -5.3%
 
 ## ETF pipeline (new this run)
 - zcash: other - Grayscale Zcash ETF Sees $124 Million in Outflows Over Two Weeks - Hokanews
@@ -49,12 +49,12 @@
 - (12 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 41 | mean 3.5% (0.32R) | in profit 21 | older than 7d 33
-- worst: ENS -0.62R, ETC -0.57R, JTO -0.53R | best: IMX 1.67R, NEAR 1.75R, FIL 2.18R
+- open 41 | mean 3.6% (0.34R) | in profit 22 | older than 7d 33
+- worst: ENS -0.62R, ETC -0.57R, JTO -0.47R | best: IMX 1.77R, NEAR 1.83R, FIL 2.18R
 
 ## System
-- CoinGecko 3105/10000 used, month-end projection 10088 (101%), throttle level 2 | by script {'scan': 1002, 'check_liquidity': 158, 'breakout_check': 1924, 'counterfactual_check': 21}
+- CoinGecko 3107/10000 used, month-end projection 10050 (100%), throttle level 2 | by script {'scan': 1004, 'check_liquidity': 158, 'breakout_check': 1924, 'counterfactual_check': 21}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=32), H2 SUPPORTED (n=93)
-- radar-flags.json scan age: 12m
+- radar-flags.json scan age: 9m
 - excluded from radar (pegged/tokenized equity): 39
