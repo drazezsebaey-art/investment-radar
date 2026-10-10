@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-10 06:42 UTC
+# Radar digest - 2026-10-10 07:10 UTC
 
 ## Market
-- BTC scenario **A** | price 82792 | wk close 85260 vs 82800 | 50W 77783 (6.44%) | 1m old
+- BTC scenario **A** | price 82792 | wk close 85260 vs 82800 | 50W 77783 (6.44%) | 29m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.84% | ETH/BTC 0.03015 | breadth7d -% | stables 30d 0.67%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.42pt | 7d 0.45pt | n=72
 - Gold: PAXG 1m -3.97% | real10y 2.87 (32bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -19,14 +19,14 @@
 - ADA: **ONGOING** | +49% impulse, retr 0.32 | OI dd 23% | fund 0.0100 | hold False | inval 0.22380 | OB 0.21820-0.22220
 
 ## Pre-pump candidates
-- GRASS: [C+E] 7d -7.4%
-- ZEC: [A+E] 7d -6.9%
-- AWE: [C+E] 7d -4.7%
-- HYPE: [A+E] 7d -4.3%
-- SUI: [A+E] 7d -4.3%
-- TRX: [A+E] 7d -1.1%
-- THETA: [C+E] 7d 0.4%
-- AIOZ: [C+E] 7d 6.7%
+- INJ: [A+E] 7d -8.9%
+- HBAR: [A+E] 7d -8.5%
+- SOL: [A+E] 7d -8.3%
+- LTC: [A+E] 7d -7.9%
+- CRO: [A+E] 7d -7.7%
+- ZEC: [A+E] 7d -7.3%
+- XRP: [A+E] 7d -5.3%
+- HYPE: [A+E] 7d -4.8%
 
 ## ETF pipeline (new this run)
 - binancecoin NEW: other - LINK, BNB, and NEAR ETFs see inflows; SOL ETF p... - Pluang
@@ -48,11 +48,11 @@
 
 ## Paper book (open trades, marked to last scan)
 - open 43 | mean 4.1% (0.36R) | in profit 21 | older than 7d 35
-- worst: ENS -0.59R, JTO -0.52R, SENT -0.52R | best: IMX 1.91R, FIL 2.59R, BAT 2.71R
+- worst: ENS -0.59R, JTO -0.56R, ETC -0.51R | best: IMX 1.83R, FIL 2.59R, BAT 2.70R
 
 ## System
-- CoinGecko 3010/10000 used, month-end projection 10088 (101%), throttle level 2 | by script {'scan': 966, 'check_liquidity': 154, 'breakout_check': 1869, 'counterfactual_check': 21}
+- CoinGecko 3020/10000 used, month-end projection 10076 (101%), throttle level 2 | by script {'scan': 976, 'check_liquidity': 154, 'breakout_check': 1869, 'counterfactual_check': 21}
 - Trials guard: OK (0 untracked)
-- Hypotheses: H1 NOT_SUPPORTED (n=31), H2 SUPPORTED (n=88)
-- radar-flags.json scan age: 12m
-- excluded from radar (pegged/tokenized equity): 37
+- Hypotheses: H1 NOT_SUPPORTED (n=31), H2 SUPPORTED (n=89)
+- radar-flags.json scan age: 9m
+- excluded from radar (pegged/tokenized equity): 39
