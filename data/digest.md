@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-10 05:10 UTC
+# Radar digest - 2026-10-10 05:42 UTC
 
 ## Market
-- BTC scenario **A** | price 82683 | wk close 85260 vs 82800 | 50W 77783 (6.30%) | 29m old
+- BTC scenario **A** | price 82683 | wk close 85260 vs 82800 | 50W 77783 (6.30%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 56.85% | ETH/BTC 0.03019 | breadth7d 51% | stables 30d 0.67%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.43pt | 7d 0.46pt | n=71
 - Gold: PAXG 1m -3.97% | real10y 2.87 (32bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -19,41 +19,40 @@
 - AVAX: **ONGOING** | +71% impulse, retr 0.31 | OI dd 24% | fund 0.0100 | hold False | inval 9.71400 | OB 7.17400-7.36200
 
 ## Pre-pump candidates
-- LTC: [A+E] 7d -9.1%
-- HBAR: [A+E] 7d -9.0%
-- INJ: [A+E] 7d -8.4%
+- HBAR: [A+E] 7d -8.9%
 - SOL: [A+E] 7d -8.0%
+- LTC: [A+E] 7d -8.0%
+- INJ: [A+E] 7d -7.9%
 - ZEC: [A+E] 7d -7.9%
-- CRO: [A+E] 7d -7.1%
+- CRO: [A+E] 7d -7.0%
 - SEI: [A+E] 7d -6.8%
 - SUI: [A+E] 7d -6.1%
 
 ## ETF pipeline (new this run)
-- cap-4 NEW: other - Invesco QQQ Tokenized ETF (Ondo) Price (QQQon/USD) Today | Live Price, Market Cap & Chart 
-- cap-4 NEW: other - SPDR S&P 500 Tokenized ETF (Ondo) Price (SPYon/USD) Today | Live Price, Market Cap & Chart
-- zcash: other - Winklevoss Zcash ETF: a 0.25 Percent Fee - CryptoTicker
-- zcash: other - Zcash (ZEC) Price Falls 13% as Open Interest Drops and ETF Outflows Rise - The Crypto Time
+- binancecoin NEW: other - LINK, BNB, and NEAR ETFs see inflows; SOL ETF p... - Pluang
+- solana NEW: other - LINK, BNB, and NEAR ETFs see inflows; SOL ETF p... - Pluang
+- chainlink: other - LINK, BNB, and NEAR ETFs see inflows; SOL ETF p... - Pluang
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc 0.20% | topPos 0.97 | taker 1.05
-- ETH: LONG_FLUSH_24H | OI/mc 0.60% | topPos 0.91 | taker 0.98
+- BTC: LONG_FLUSH_24H | OI/mc 0.20% | topPos 0.97 | taker 1.08
 - SOL: LONG_FLUSH_24H | OI/mc 0.59% | topPos 0.89 | taker 1.02
-- NEAR: SHORT_SQUEEZE_24H | OI/mc 0.90% | topPos 1.03 | taker 0.98
-- AVAX: LONG_FLUSH_24H | OI/mc 0.40% | topPos 0.88 | taker 0.90
-- SUI: LONG_FLUSH_24H | OI/mc 1.02% | topPos 0.86 | taker 1.04
-- SEI: LONG_FLUSH_24H | OI/mc 0.71% | topPos 0.92 | taker 0.98
-- TAO: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.80% | topPos 0.90 | taker 0.83
+- NEAR: SHORT_SQUEEZE_24H | OI/mc 0.90% | topPos 1.03 | taker 1.01
+- AVAX: LONG_FLUSH_24H | OI/mc 0.40% | topPos 0.88 | taker 0.93
+- SEI: LONG_FLUSH_24H | OI/mc 0.69% | topPos 0.93 | taker 1.01
+- TAO: AGGRESSIVE_SELLING | OI/mc 0.80% | topPos 0.90 | taker 0.81
+- WLD: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.92 | taker 0.94
+- ADA: SHORT_SQUEEZE_24H | OI/mc 0.39% | topPos 0.93 | taker 1.04
 
 ## Revenue / buyback flags
 - (17 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 42 | mean 3.4% (0.32R) | in profit 19 | older than 7d 35
-- worst: ENS -0.62R, JTO -0.59R, ETC -0.52R | best: IMX 1.70R, BAT 2.68R, FIL 2.86R
+- open 42 | mean 4.0% (0.36R) | in profit 21 | older than 7d 35
+- worst: ENS -0.60R, JTO -0.58R, ETC -0.52R | best: IMX 1.72R, BAT 2.68R, FIL 2.86R
 
 ## System
-- CoinGecko 2954/10000 used, month-end projection 9945 (100%), throttle level 1 | by script {'scan': 960, 'check_liquidity': 153, 'breakout_check': 1820, 'counterfactual_check': 21}
+- CoinGecko 2956/10000 used, month-end projection 9951 (100%), throttle level 1 | by script {'scan': 962, 'check_liquidity': 153, 'breakout_check': 1820, 'counterfactual_check': 21}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=31), H2 SUPPORTED (n=88)
-- radar-flags.json scan age: 10m
+- radar-flags.json scan age: 12m
 - excluded from radar (pegged/tokenized equity): 38
