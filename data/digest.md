@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-10 07:10 UTC
+# Radar digest - 2026-10-10 07:43 UTC
 
 ## Market
-- BTC scenario **A** | price 82792 | wk close 85260 vs 82800 | 50W 77783 (6.44%) | 29m old
+- BTC scenario **A** | price 82792 | wk close 85260 vs 82800 | 50W 77783 (6.44%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.84% | ETH/BTC 0.03015 | breadth7d -% | stables 30d 0.67%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.42pt | 7d 0.45pt | n=72
 - Gold: PAXG 1m -3.97% | real10y 2.87 (32bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -29,30 +29,33 @@
 - HYPE: [A+E] 7d -4.8%
 
 ## ETF pipeline (new this run)
-- binancecoin NEW: other - LINK, BNB, and NEAR ETFs see inflows; SOL ETF p... - Pluang
-- solana NEW: other - LINK, BNB, and NEAR ETFs see inflows; SOL ETF p... - Pluang
-- chainlink: other - LINK, BNB, and NEAR ETFs see inflows; SOL ETF p... - Pluang
+- sei-network NEW: amendment - SEI Price Eyes Breakout as Canary Capital Files Staked ETF Amendment - Cryptonews.net
+- ripple NEW: other - Crypto ETF News Today: Bitcoin Climbs, ETH, SOL Slide, XRP Quiet - Coin Gabbar
+- solana NEW: other - Crypto ETF News Today: Bitcoin Climbs, ETH, SOL Slide, XRP Quiet - Coin Gabbar
+- zcash: filing - Zcash gets a new ETF filing as Grayscale bleeds $105M: could ZEC fall another 16%? - Crypt
+- ondo-finance: other - Global X Artificial Intelligence & Technology ETF (Ondo Tokenized) - CryptoRank
+- zcash: other - Grayscale says crypto ETF market is entering new phase as Zcash ETF tops $1 billion - Cryp
 
 ## Derivatives flags (OKX)
-- SOL: LONG_FLUSH_24H | OI/mc -% | topPos 0.89 | taker 1.02
-- NEAR: SHORT_SQUEEZE_24H | OI/mc -% | topPos 1.04 | taker 1.00
-- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.89 | taker 0.92
-- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 1.06
-- TAO: AGGRESSIVE_SELLING | OI/mc -% | topPos 0.90 | taker 0.84
-- WLD: SHORT_SQUEEZE_24H | OI/mc 1.82% | topPos 0.94 | taker 0.97
-- ADA: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.93 | taker 1.04
-- LINK: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.92 | taker 1.00
+- SOL: LONG_FLUSH_24H | OI/mc 0.59% | topPos 0.89 | taker 1.02
+- NEAR: SHORT_SQUEEZE_24H | OI/mc 0.93% | topPos 1.05 | taker 1.01
+- AVAX: LONG_FLUSH_24H | OI/mc 0.39% | topPos 0.88 | taker 0.86
+- SEI: LONG_FLUSH_24H | OI/mc 0.70% | topPos 0.92 | taker 1.04
+- WLD: SHORT_SQUEEZE_24H | OI/mc 1.91% | topPos 0.94 | taker 0.98
+- ADA: SHORT_SQUEEZE_24H | OI/mc 0.39% | topPos 0.93 | taker 1.04
+- XLM: LONG_FLUSH_24H | OI/mc 0.18% | topPos 0.97 | taker 1.02
+- BCH: LONG_FLUSH_24H | OI/mc 0.46% | topPos 0.81 | taker 1.02
 
 ## Revenue / buyback flags
 - (17 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 43 | mean 4.1% (0.36R) | in profit 21 | older than 7d 35
-- worst: ENS -0.59R, JTO -0.56R, ETC -0.51R | best: IMX 1.83R, FIL 2.59R, BAT 2.70R
+- open 43 | mean 3.9% (0.33R) | in profit 21 | older than 7d 35
+- worst: ENS -0.61R, JTO -0.58R, ETC -0.54R | best: NIGHT 1.79R, FIL 2.45R, BAT 2.76R
 
 ## System
-- CoinGecko 3020/10000 used, month-end projection 10076 (101%), throttle level 2 | by script {'scan': 976, 'check_liquidity': 154, 'breakout_check': 1869, 'counterfactual_check': 21}
+- CoinGecko 3022/10000 used, month-end projection 10082 (101%), throttle level 2 | by script {'scan': 978, 'check_liquidity': 154, 'breakout_check': 1869, 'counterfactual_check': 21}
 - Trials guard: OK (0 untracked)
-- Hypotheses: H1 NOT_SUPPORTED (n=31), H2 SUPPORTED (n=89)
-- radar-flags.json scan age: 9m
+- Hypotheses: H1 NOT_SUPPORTED (n=31), H2 SUPPORTED (n=90)
+- radar-flags.json scan age: 13m
 - excluded from radar (pegged/tokenized equity): 39
