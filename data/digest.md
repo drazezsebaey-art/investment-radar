@@ -1,4 +1,4 @@
-# Radar digest - 2026-10-10 03:42 UTC
+# Radar digest - 2026-10-10 04:10 UTC
 
 ## Market
 - BTC scenario **A** | price 82637 | wk close 85260 vs 82800 | 50W 77783 (6.24%) | 1h old
@@ -24,9 +24,9 @@
 - HBAR: [A+E] 7d -8.5%
 - ZEC: [A+E] 7d -8.2%
 - SOL: [A+E] 7d -7.8%
-- SUI: [A+E] 7d -7.4%
+- SUI: [A+E] 7d -7.1%
 - CRO: [A+E] 7d -7.1%
-- TAO: [A+E] 7d -6.3%
+- SEI: [A+E] 7d -6.6%
 
 ## ETF pipeline (new this run)
 - cap-4 NEW: other - Invesco QQQ Tokenized ETF (Ondo) Price (QQQon/USD) Today | Live Price, Market Cap & Chart 
@@ -48,12 +48,12 @@
 - (17 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 43 | mean 3.1% (0.35R) | in profit 20 | older than 7d 35
-- worst: MET -0.79R, JTO -0.66R, ENS -0.65R | best: BAT 2.68R, FIL 2.86R, 币安人生 3.19R
+- open 43 | mean 3.0% (0.35R) | in profit 20 | older than 7d 35
+- worst: MET -0.73R, JTO -0.66R, ENS -0.65R | best: BAT 2.50R, FIL 3.13R, 币安人生 3.24R
 
 ## System
-- CoinGecko 2947/10000 used, month-end projection 10012 (100%), throttle level 2 | by script {'scan': 954, 'check_liquidity': 152, 'breakout_check': 1820, 'counterfactual_check': 21}
+- CoinGecko 2950/10000 used, month-end projection 9976 (100%), throttle level 1 | by script {'scan': 956, 'check_liquidity': 153, 'breakout_check': 1820, 'counterfactual_check': 21}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=31), H2 NOT_SUPPORTED (n=87)
-- radar-flags.json scan age: 12m
+- radar-flags.json scan age: 10m
 - excluded from radar (pegged/tokenized equity): 39
