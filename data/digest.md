@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-10 04:43 UTC
+# Radar digest - 2026-10-10 05:10 UTC
 
 ## Market
-- BTC scenario **A** | price 82683 | wk close 85260 vs 82800 | 50W 77783 (6.30%) | 1m old
+- BTC scenario **A** | price 82683 | wk close 85260 vs 82800 | 50W 77783 (6.30%) | 29m old
 - Alts: **BTC_LED** [-] | BTC.D 56.85% | ETH/BTC 0.03019 | breadth7d 51% | stables 30d 0.67%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.43pt | 7d 0.46pt | n=71
 - Gold: PAXG 1m -3.97% | real10y 2.87 (32bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -22,11 +22,11 @@
 - LTC: [A+E] 7d -9.1%
 - HBAR: [A+E] 7d -9.0%
 - INJ: [A+E] 7d -8.4%
+- SOL: [A+E] 7d -8.0%
 - ZEC: [A+E] 7d -7.9%
-- SOL: [A+E] 7d -7.8%
-- SUI: [A+E] 7d -7.1%
 - CRO: [A+E] 7d -7.1%
-- SEI: [A+E] 7d -6.6%
+- SEI: [A+E] 7d -6.8%
+- SUI: [A+E] 7d -6.1%
 
 ## ETF pipeline (new this run)
 - cap-4 NEW: other - Invesco QQQ Tokenized ETF (Ondo) Price (QQQon/USD) Today | Live Price, Market Cap & Chart 
@@ -48,12 +48,12 @@
 - (17 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 43 | mean 3.1% (0.36R) | in profit 20 | older than 7d 35
-- worst: MET -0.71R, ENS -0.64R, JTO -0.62R | best: BAT 2.39R, FIL 2.99R, 币安人生 3.31R
+- open 42 | mean 3.4% (0.32R) | in profit 19 | older than 7d 35
+- worst: ENS -0.62R, JTO -0.59R, ETC -0.52R | best: IMX 1.70R, BAT 2.68R, FIL 2.86R
 
 ## System
-- CoinGecko 2952/10000 used, month-end projection 9983 (100%), throttle level 1 | by script {'scan': 958, 'check_liquidity': 153, 'breakout_check': 1820, 'counterfactual_check': 21}
+- CoinGecko 2954/10000 used, month-end projection 9945 (100%), throttle level 1 | by script {'scan': 960, 'check_liquidity': 153, 'breakout_check': 1820, 'counterfactual_check': 21}
 - Trials guard: OK (0 untracked)
-- Hypotheses: H1 NOT_SUPPORTED (n=31), H2 NOT_SUPPORTED (n=87)
-- radar-flags.json scan age: 13m
-- excluded from radar (pegged/tokenized equity): 39
+- Hypotheses: H1 NOT_SUPPORTED (n=31), H2 SUPPORTED (n=88)
+- radar-flags.json scan age: 10m
+- excluded from radar (pegged/tokenized equity): 38
