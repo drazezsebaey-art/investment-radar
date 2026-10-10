@@ -1,4 +1,4 @@
-# Radar digest - 2026-10-10 19:43 UTC
+# Radar digest - 2026-10-10 20:10 UTC
 
 ## Market
 - BTC scenario **A** | price 83037 | wk close 85260 vs 82800 | 50W 77783 (6.75%) | 1h old
@@ -21,12 +21,12 @@
 ## Pre-pump candidates
 - HBAR: [A+E] 7d -9.7%
 - ALGO: [B+E] 7d -9.5%
-- SOL: [A+E] 7d -8.1%
+- PUMP: [D+E] 7d -8.3%
+- SOL: [A+E] 7d -8.0%
 - CRO: [A+E] 7d -7.5%
 - LTC: [A+E] 7d -7.0%
 - ZEC: [A+E] 7d -6.2%
-- XRP: [A+E] 7d -6.1%
-- AVAX: [A+E] 7d -6.0%
+- AVAX: [A+E] 7d -5.8%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - Crypto Today: Bitcoin, Ethereum, XRP hold recovery levels amid minor ETF outflows - FXStre
@@ -48,12 +48,12 @@
 - (12 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 41 | mean 4.4% (0.42R) | in profit 23 | older than 7d 33
-- worst: ENS -0.61R, ETC -0.51R, QNT -0.49R | best: NIGHT 1.92R, FIL 2.18R, S 2.59R
+- open 41 | mean 4.4% (0.43R) | in profit 23 | older than 7d 33
+- worst: ENS -0.61R, ETC -0.51R, QNT -0.50R | best: NIGHT 1.91R, FIL 2.18R, S 2.53R
 
 ## System
-- CoinGecko 3191/10000 used, month-end projection 10103 (101%), throttle level 2 | by script {'scan': 1026, 'check_liquidity': 161, 'breakout_check': 1983, 'counterfactual_check': 21}
+- CoinGecko 3194/10000 used, month-end projection 10069 (101%), throttle level 2 | by script {'scan': 1028, 'check_liquidity': 162, 'breakout_check': 1983, 'counterfactual_check': 21}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=33), H2 SUPPORTED (n=94)
-- radar-flags.json scan age: 13m
+- radar-flags.json scan age: 10m
 - excluded from radar (pegged/tokenized equity): 39
