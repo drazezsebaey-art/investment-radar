@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-10 11:10 UTC
+# Radar digest - 2026-10-10 11:43 UTC
 
 ## Market
-- BTC scenario **A** | price 82817 | wk close 85260 vs 82800 | 50W 77783 (6.47%) | 30m old
+- BTC scenario **A** | price 82817 | wk close 85260 vs 82800 | 50W 77783 (6.47%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.88% | ETH/BTC 0.03012 | breadth7d 52% | stables 30d 0.67%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.41pt | 7d 0.46pt | n=73
 - Gold: PAXG 1m -3.96% | real10y 2.87 (32bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -19,40 +19,39 @@
 - ADA: **ONGOING** | +49% impulse, retr 0.29 | OI dd 23% | fund 0.0100 | hold False | inval 0.22380 | OB 0.21820-0.22220
 
 ## Pre-pump candidates
-- SUI: [A+B+E] 7d -5.3%
-- LTC: [A+E] 7d -8.5%
+- GRASS: [C+E] 7d -12.2%
+- HBAR: [A+E] 7d -8.4%
+- CRO: [A+E] 7d -8.3%
 - SOL: [A+E] 7d -8.1%
-- CRO: [A+E] 7d -8.1%
-- HBAR: [A+E] 7d -7.5%
-- ZEC: [A+E] 7d -7.1%
+- LTC: [A+E] 7d -7.3%
+- ZEC: [A+E] 7d -6.9%
 - SEI: [A+E] 7d -5.8%
 - XRP: [A+E] 7d -5.3%
 
 ## ETF pipeline (new this run)
-- cap-4 NEW: other - VanEck Semiconductor ETF (Derivatives) Price (SMH/USD) Today | Live Price, Market Cap & Ch
-- cap-4 NEW: other - GraniteShares 2X Long MRVL ETF Tokenized bStocks Price (MVLLB/USD) Today | Live Price, Mar
+- none
 
 ## Derivatives flags (OKX)
-- SOL: LONG_FLUSH_24H | OI/mc 0.59% | topPos 0.89 | taker 1.01
+- SOL: LONG_FLUSH_24H | OI/mc 0.59% | topPos 0.89 | taker 1.02
 - NEAR: SHORT_SQUEEZE_24H | OI/mc -% | topPos 1.06 | taker 1.06
-- AVAX: LONG_FLUSH_24H | OI/mc 0.39% | topPos 0.88 | taker 0.86
-- SUI: SHORT_SQUEEZE_FUEL | OI/mc 1.04% | topPos 0.87 | taker 1.01
+- AVAX: LONG_FLUSH_24H | OI/mc 0.40% | topPos 0.88 | taker 0.87
 - SEI: LONG_FLUSH_24H | OI/mc 0.68% | topPos 0.92 | taker 0.98
-- TAO: AGGRESSIVE_SELLING | OI/mc 0.81% | topPos 0.90 | taker 0.79
-- ZEC: SHORT_SQUEEZE_24H | OI/mc 0.72% | topPos 1.06 | taker 1.03
+- TAO: AGGRESSIVE_SELLING | OI/mc 0.80% | topPos 0.89 | taker 0.82
+- ZEC: SHORT_SQUEEZE_24H | OI/mc 0.72% | topPos 1.07 | taker 1.06
 - ADA: SHORT_SQUEEZE_24H | OI/mc 0.40% | topPos 0.94 | taker 1.06
+- LINK: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.91 | taker 1.07
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
 - (12 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 42 | mean 3.9% (0.33R) | in profit 22 | older than 7d 34
-- worst: ENS -0.62R, JTO -0.61R, ETC -0.57R | best: NIGHT 1.71R, FIL 2.18R, BAT 2.32R
+- open 42 | mean 4.4% (0.37R) | in profit 23 | older than 7d 34
+- worst: JTO -0.63R, ENS -0.62R, ETC -0.57R | best: NIGHT 1.70R, FIL 2.31R, BAT 2.96R
 
 ## System
-- CoinGecko 3038/10000 used, month-end projection 9957 (100%), throttle level 1 | by script {'scan': 992, 'check_liquidity': 156, 'breakout_check': 1869, 'counterfactual_check': 21}
+- CoinGecko 3040/10000 used, month-end projection 9964 (100%), throttle level 1 | by script {'scan': 994, 'check_liquidity': 156, 'breakout_check': 1869, 'counterfactual_check': 21}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=31), H2 SUPPORTED (n=93)
-- radar-flags.json scan age: 10m
+- radar-flags.json scan age: 13m
 - excluded from radar (pegged/tokenized equity): 39
