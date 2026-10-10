@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-10 14:43 UTC
+# Radar digest - 2026-10-10 15:09 UTC
 
 ## Market
-- BTC scenario **A** | price 83041 | wk close 85260 vs 82800 | 50W 77783 (6.76%) | 1m old
+- BTC scenario **A** | price 83041 | wk close 85260 vs 82800 | 50W 77783 (6.76%) | 27m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.81% | ETH/BTC 0.03028 | breadth7d 47% | stables 30d 0.67%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.28pt | 7d 0.32pt | n=74
 - Gold: PAXG 1m -3.96% | real10y 2.87 (32bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -21,12 +21,12 @@
 ## Pre-pump candidates
 - HBAR: [A+E] 7d -8.4%
 - LTC: [A+E] 7d -8.3%
-- SOL: [A+E] 7d -8.1%
 - CRO: [A+E] 7d -7.9%
-- SUI: [A+E] 7d -5.8%
+- SOL: [A+E] 7d -7.5%
 - ZEC: [A+E] 7d -5.8%
-- XRP: [A+E] 7d -5.5%
+- XRP: [A+E] 7d -5.4%
 - AVAX: [A+E] 7d -5.3%
+- HYPE: [A+E] 7d -4.4%
 
 ## ETF pipeline (new this run)
 - zcash: other - Grayscale Zcash ETF Sees $124 Million in Outflows Over Two Weeks - Hokanews
@@ -49,12 +49,12 @@
 - (12 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 41 | mean 3.9% (0.36R) | in profit 24 | older than 7d 33
-- worst: ENS -0.62R, ETC -0.57R, JTO -0.40R | best: IMX 1.76R, NEAR 1.91R, FIL 2.31R
+- open 41 | mean 4.4% (0.40R) | in profit 25 | older than 7d 33
+- worst: ENS -0.61R, ETC -0.55R, JTO -0.42R | best: NEAR 1.85R, IMX 1.94R, FIL 2.31R
 
 ## System
-- CoinGecko 3109/10000 used, month-end projection 10057 (101%), throttle level 2 | by script {'scan': 1006, 'check_liquidity': 158, 'breakout_check': 1924, 'counterfactual_check': 21}
+- CoinGecko 3111/10000 used, month-end projection 10020 (100%), throttle level 2 | by script {'scan': 1008, 'check_liquidity': 158, 'breakout_check': 1924, 'counterfactual_check': 21}
 - Trials guard: OK (0 untracked)
-- Hypotheses: H1 NOT_SUPPORTED (n=32), H2 SUPPORTED (n=93)
-- radar-flags.json scan age: 13m
+- Hypotheses: H1 NOT_SUPPORTED (n=33), H2 SUPPORTED (n=94)
+- radar-flags.json scan age: 9m
 - excluded from radar (pegged/tokenized equity): 39
