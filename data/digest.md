@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-10 18:42 UTC
+# Radar digest - 2026-10-10 19:10 UTC
 
 ## Market
-- BTC scenario **A** | price 83037 | wk close 85260 vs 82800 | 50W 77783 (6.75%) | 1m old
+- BTC scenario **A** | price 83037 | wk close 85260 vs 82800 | 50W 77783 (6.75%) | 29m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.86% | ETH/BTC 0.03024 | breadth7d 41% | stables 30d 0.67%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.38pt | 7d 0.43pt | n=75
 - Gold: PAXG 1m -3.63% | real10y 2.87 (32bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -21,12 +21,12 @@
 ## Pre-pump candidates
 - ALGO: [B+E] 7d -9.5%
 - HBAR: [A+E] 7d -9.3%
-- SOL: [A+E] 7d -8.2%
+- SOL: [A+E] 7d -8.1%
 - LTC: [A+E] 7d -7.3%
 - CRO: [A+E] 7d -7.2%
-- XRP: [A+E] 7d -5.8%
+- XRP: [A+E] 7d -6.1%
+- AVAX: [A+E] 7d -6.0%
 - ZEC: [A+E] 7d -5.4%
-- AVAX: [A+E] 7d -5.3%
 
 ## ETF pipeline (new this run)
 - zcash: filing - Winklevoss Files for Spot Zcash ETF With 0.25% Fee and WINK Ticker - CryptoRank
@@ -48,12 +48,12 @@
 - (12 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 41 | mean 4.1% (0.40R) | in profit 23 | older than 7d 33
-- worst: ENS -0.62R, QNT -0.52R, ETC -0.52R | best: S 1.99R, NIGHT 2.11R, FIL 2.18R
+- open 41 | mean 4.2% (0.42R) | in profit 23 | older than 7d 33
+- worst: ENS -0.61R, ETC -0.51R, QNT -0.50R | best: NIGHT 1.96R, FIL 2.18R, S 2.85R
 
 ## System
-- CoinGecko 3186/10000 used, month-end projection 10130 (101%), throttle level 2 | by script {'scan': 1022, 'check_liquidity': 160, 'breakout_check': 1983, 'counterfactual_check': 21}
+- CoinGecko 3188/10000 used, month-end projection 10093 (101%), throttle level 2 | by script {'scan': 1024, 'check_liquidity': 160, 'breakout_check': 1983, 'counterfactual_check': 21}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=33), H2 SUPPORTED (n=94)
-- radar-flags.json scan age: 12m
-- excluded from radar (pegged/tokenized equity): 40
+- radar-flags.json scan age: 10m
+- excluded from radar (pegged/tokenized equity): 39
