@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-10 22:44 UTC
+# Radar digest - 2026-10-10 23:11 UTC
 
 ## Market
-- BTC scenario **A** | price 83050 | wk close 85260 vs 82800 | 50W 77783 (6.77%) | 2m old
+- BTC scenario **A** | price 83050 | wk close 85260 vs 82800 | 50W 77783 (6.77%) | 29m old
 - Alts: **BTC_LED** [-] | BTC.D 56.86% | ETH/BTC 0.03022 | breadth7d 43% | stables 30d 0.67%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.30pt | 7d 0.51pt | n=76
 - Gold: PAXG 1m -3.65% | real10y 2.87 (32bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -21,6 +21,7 @@
 ## Pre-pump candidates
 - PUMP: [D+E] 7d -12.7%
 - HYPE: [A+E] 7d -4.4%
+- TAO: [A+E] 7d -4.0%
 
 ## ETF pipeline (new this run)
 - pepe NEW: filing - Pepe Coin Price Prediction: Canary ETF Filing Puts PEPE Back in Focus as Pepeto Targets 10
@@ -48,11 +49,11 @@
 
 ## Paper book (open trades, marked to last scan)
 - open 40 | mean 4.2% (0.36R) | in profit 22 | older than 7d 33
-- worst: ENS -0.62R, QNT -0.54R, ETC -0.52R | best: AERO 1.81R, NIGHT 1.91R, FIL 2.18R
+- worst: ENS -0.63R, QNT -0.53R, ETC -0.52R | best: AERO 1.83R, NIGHT 1.97R, FIL 2.18R
 
 ## System
-- CoinGecko 3204/10000 used, month-end projection 10016 (100%), throttle level 2 | by script {'scan': 1038, 'check_liquidity': 162, 'breakout_check': 1983, 'counterfactual_check': 21}
+- CoinGecko 3208/10000 used, month-end projection 9986 (100%), throttle level 1 | by script {'scan': 1040, 'check_liquidity': 164, 'breakout_check': 1983, 'counterfactual_check': 21}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=33), H2 SUPPORTED (n=96)
-- radar-flags.json scan age: 14m
+- radar-flags.json scan age: 11m
 - excluded from radar (pegged/tokenized equity): 39
