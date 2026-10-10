@@ -1,10 +1,10 @@
-# Radar digest - 2026-10-10 15:43 UTC
+# Radar digest - 2026-10-10 16:10 UTC
 
 ## Market
 - BTC scenario **A** | price 83041 | wk close 85260 vs 82800 | 50W 77783 (6.76%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.81% | ETH/BTC 0.03028 | breadth7d 47% | stables 30d 0.67%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.28pt | 7d 0.32pt | n=74
-- Gold: PAXG 1m -3.96% | real10y 2.87 (32bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
+- Gold: PAXG 1m -3.63% | real10y 2.87 (32bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
 - 10y 1w: -2bp = real -1 + breakeven -3 -> **SMALL_MOVE**
 - 10y 1m: 27bp = real 32 + breakeven -3 -> **REAL_YIELD_DRIVEN**
 
@@ -19,14 +19,7 @@
 - ADA: **ONGOING** | +49% impulse, retr 0.26 | OI dd 23% | fund 0.0100 | hold False | inval 0.22380 | OB 0.21820-0.22220
 
 ## Pre-pump candidates
-- HBAR: [A+E] 7d -8.6%
-- LTC: [A+E] 7d -8.2%
-- CRO: [A+E] 7d -7.6%
-- SOL: [A+E] 7d -7.5%
-- XRP: [A+E] 7d -5.4%
-- AVAX: [A+E] 7d -5.3%
-- ZEC: [A+E] 7d -5.3%
-- INJ: [A+E] 7d -4.5%
+- none
 
 ## ETF pipeline (new this run)
 - solana NEW: other - Leveraged Solana ETF Sees Investors Cash Out as Rally Cools - TipRanks
@@ -46,12 +39,12 @@
 - (12 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 41 | mean 4.3% (0.39R) | in profit 24 | older than 7d 33
-- worst: ENS -0.63R, ETC -0.55R, JTO -0.41R | best: IMX 1.88R, NEAR 1.93R, FIL 2.31R
+- open 41 | mean 4.3% (0.39R) | in profit 26 | older than 7d 33
+- worst: ENS -0.62R, ETC -0.54R, QNT -0.43R | best: NEAR 1.83R, IMX 1.93R, FIL 2.31R
 
 ## System
-- CoinGecko 3113/10000 used, month-end projection 10026 (100%), throttle level 2 | by script {'scan': 1010, 'check_liquidity': 158, 'breakout_check': 1924, 'counterfactual_check': 21}
+- CoinGecko 3116/10000 used, month-end projection 9993 (100%), throttle level 1 | by script {'scan': 1012, 'check_liquidity': 159, 'breakout_check': 1924, 'counterfactual_check': 21}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=33), H2 SUPPORTED (n=94)
-- radar-flags.json scan age: 13m
+- radar-flags.json scan age: 10m
 - excluded from radar (pegged/tokenized equity): 40
