@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-10 23:11 UTC
+# Radar digest - 2026-10-10 23:43 UTC
 
 ## Market
-- BTC scenario **A** | price 83050 | wk close 85260 vs 82800 | 50W 77783 (6.77%) | 29m old
+- BTC scenario **A** | price 83050 | wk close 85260 vs 82800 | 50W 77783 (6.77%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 56.86% | ETH/BTC 0.03022 | breadth7d 43% | stables 30d 0.67%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.30pt | 7d 0.51pt | n=76
 - Gold: PAXG 1m -3.65% | real10y 2.87 (32bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -19,29 +19,28 @@
 - AVAX: **ONGOING** | +71% impulse, retr 0.32 | OI dd 25% | fund 0.0100 | hold False | inval 9.71400 | OB 7.17400-7.36200
 
 ## Pre-pump candidates
-- PUMP: [D+E] 7d -12.7%
-- HYPE: [A+E] 7d -4.4%
-- TAO: [A+E] 7d -4.0%
+- PUMP: [D+E] 7d -13.4%
+- HBAR: [A+E] 7d -9.7%
+- CRO: [A+E] 7d -8.5%
+- SOL: [A+E] 7d -7.7%
+- LTC: [A+E] 7d -7.6%
+- ZEC: [A+E] 7d -7.2%
+- AVAX: [A+E] 7d -6.4%
+- XRP: [A+E] 7d -5.7%
 
 ## ETF pipeline (new this run)
-- pepe NEW: filing - Pepe Coin Price Prediction: Canary ETF Filing Puts PEPE Back in Focus as Pepeto Targets 10
-- pepe NEW: filing - Pepeto Price Prediction: Could Pepeto Explode 100x as Wall Street Files for a Pepe ETF? - 
-- dogecoin NEW: other - Dogecoin ETF to Shut as Bitwise CEO Flags Weak Demand - Bitget
-- dogecoin NEW: other - Bitwise to liquidate Dogecoin ETF BWOW less tha... - Pluang
-- dogecoin NEW: other - Bitwise Dogecoin ETF closes Oct 14; minimal pri... - Pluang
-- dogecoin NEW: other - Bitwise Winds Down Its DOGE ETF on 14 October - CryptoTicker
-- ripple NEW: other - Investors Double Down on Ripple: Franklin XRP ETF Sees Fresh Cash Flood as XRP Rally Heats
-- pepe NEW: other - Next Pepe Coin Hunt Heats Up as Canary Refiles Its PEPE ETF and Pepeto Chases a 100x Pepe 
+- near: other - Common Shares of Beneficial Interest of Bitwise NEAR ETF (NYSE:NRR) Stock Quote - The Chro
+- ondo-finance: other - Global X S&P 500 Covered Call ETF (Ondo Tokenized) Analytics - CryptoRank
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc 0.20% | topPos 0.97 | taker 1.14
-- ETH: SHORT_SQUEEZE_24H | OI/mc 0.60% | topPos 0.91 | taker 1.07
+- BTC: SHORT_SQUEEZE_24H | OI/mc 0.20% | topPos 0.97 | taker 1.13
+- ETH: SHORT_SQUEEZE_24H | OI/mc 0.60% | topPos 0.91 | taker 1.05
 - SOL: SHORT_SQUEEZE_24H | OI/mc 0.59% | topPos 0.90 | taker 1.03
-- AVAX: AGGRESSIVE_SELLING, SHORT_SQUEEZE_24H | OI/mc 0.40% | topPos 0.88 | taker 0.78
-- XRP: SHORT_SQUEEZE_24H | OI/mc 0.13% | topPos 0.88 | taker 1.14
-- SUI: SHORT_SQUEEZE_24H | OI/mc 1.04% | topPos 0.87 | taker 0.97
-- SEI: SHORT_SQUEEZE_24H | OI/mc 0.68% | topPos 0.93 | taker 0.94
-- TAO: AGGRESSIVE_SELLING, SHORT_SQUEEZE_24H | OI/mc 0.83% | topPos 0.90 | taker 0.83
+- AVAX: AGGRESSIVE_SELLING, SHORT_SQUEEZE_24H | OI/mc 0.40% | topPos 0.88 | taker 0.75
+- XRP: SHORT_SQUEEZE_24H | OI/mc 0.13% | topPos 0.88 | taker 1.12
+- SUI: SHORT_SQUEEZE_24H | OI/mc 1.04% | topPos 0.88 | taker 0.97
+- SEI: SHORT_SQUEEZE_24H | OI/mc 0.67% | topPos 0.93 | taker 0.91
+- TAO: AGGRESSIVE_SELLING, SHORT_SQUEEZE_24H | OI/mc 0.83% | topPos 0.90 | taker 0.82
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -49,11 +48,11 @@
 
 ## Paper book (open trades, marked to last scan)
 - open 40 | mean 4.2% (0.36R) | in profit 22 | older than 7d 33
-- worst: ENS -0.63R, QNT -0.53R, ETC -0.52R | best: AERO 1.83R, NIGHT 1.97R, FIL 2.18R
+- worst: ENS -0.64R, QNT -0.53R, ETC -0.52R | best: AERO 1.85R, NIGHT 1.88R, FIL 2.18R
 
 ## System
-- CoinGecko 3208/10000 used, month-end projection 9986 (100%), throttle level 1 | by script {'scan': 1040, 'check_liquidity': 164, 'breakout_check': 1983, 'counterfactual_check': 21}
+- CoinGecko 3211/10000 used, month-end projection 9996 (100%), throttle level 1 | by script {'scan': 1042, 'check_liquidity': 165, 'breakout_check': 1983, 'counterfactual_check': 21}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=33), H2 SUPPORTED (n=96)
-- radar-flags.json scan age: 11m
+- radar-flags.json scan age: 13m
 - excluded from radar (pegged/tokenized equity): 39
