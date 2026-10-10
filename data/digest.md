@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-10 05:42 UTC
+# Radar digest - 2026-10-10 06:24 UTC
 
 ## Market
-- BTC scenario **A** | price 82683 | wk close 85260 vs 82800 | 50W 77783 (6.30%) | 1h old
+- BTC scenario **A** | price 82683 | wk close 85260 vs 82800 | 50W 77783 (6.30%) | 2h old
 - Alts: **BTC_LED** [-] | BTC.D 56.85% | ETH/BTC 0.03019 | breadth7d 51% | stables 30d 0.67%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.43pt | 7d 0.46pt | n=71
 - Gold: PAXG 1m -3.97% | real10y 2.87 (32bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -19,14 +19,14 @@
 - AVAX: **ONGOING** | +71% impulse, retr 0.31 | OI dd 24% | fund 0.0100 | hold False | inval 9.71400 | OB 7.17400-7.36200
 
 ## Pre-pump candidates
-- HBAR: [A+E] 7d -8.9%
-- SOL: [A+E] 7d -8.0%
-- LTC: [A+E] 7d -8.0%
-- INJ: [A+E] 7d -7.9%
-- ZEC: [A+E] 7d -7.9%
-- CRO: [A+E] 7d -7.0%
-- SEI: [A+E] 7d -6.8%
-- SUI: [A+E] 7d -6.1%
+- ZEC: [A+E] 7d -6.9%
+- AWE: [C+E] 7d -4.7%
+- HYPE: [A+E] 7d -4.3%
+- SUI: [A+E] 7d -4.3%
+- TRX: [A+E] 7d -1.1%
+- THETA: [C+E] 7d 0.4%
+- GLM: [C+E] 7d 2.4%
+- ONDO: [A+C] 7d 2.8%
 
 ## ETF pipeline (new this run)
 - binancecoin NEW: other - LINK, BNB, and NEAR ETFs see inflows; SOL ETF p... - Pluang
@@ -47,12 +47,12 @@
 - (17 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 42 | mean 4.0% (0.36R) | in profit 21 | older than 7d 35
-- worst: ENS -0.60R, JTO -0.58R, ETC -0.52R | best: IMX 1.72R, BAT 2.68R, FIL 2.86R
+- open 43 | mean 4.3% (0.38R) | in profit 21 | older than 7d 35
+- worst: ENS -0.58R, SENT -0.56R, JTO -0.53R | best: IMX 1.82R, BAT 2.71R, FIL 2.86R
 
 ## System
-- CoinGecko 2956/10000 used, month-end projection 9951 (100%), throttle level 1 | by script {'scan': 962, 'check_liquidity': 153, 'breakout_check': 1820, 'counterfactual_check': 21}
+- CoinGecko 3008/10000 used, month-end projection 10081 (101%), throttle level 2 | by script {'scan': 964, 'check_liquidity': 154, 'breakout_check': 1869, 'counterfactual_check': 21}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=31), H2 SUPPORTED (n=88)
-- radar-flags.json scan age: 12m
+- radar-flags.json scan age: 23m
 - excluded from radar (pegged/tokenized equity): 38
