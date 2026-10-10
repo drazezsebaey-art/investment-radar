@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-10 11:43 UTC
+# Radar digest - 2026-10-10 12:23 UTC
 
 ## Market
-- BTC scenario **A** | price 82817 | wk close 85260 vs 82800 | 50W 77783 (6.47%) | 1h old
+- BTC scenario **A** | price 82817 | wk close 85260 vs 82800 | 50W 77783 (6.47%) | 2h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.88% | ETH/BTC 0.03012 | breadth7d 52% | stables 30d 0.67%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.41pt | 7d 0.46pt | n=73
 - Gold: PAXG 1m -3.96% | real10y 2.87 (32bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -19,14 +19,14 @@
 - ADA: **ONGOING** | +49% impulse, retr 0.29 | OI dd 23% | fund 0.0100 | hold False | inval 0.22380 | OB 0.21820-0.22220
 
 ## Pre-pump candidates
-- GRASS: [C+E] 7d -12.2%
 - HBAR: [A+E] 7d -8.4%
 - CRO: [A+E] 7d -8.3%
 - SOL: [A+E] 7d -8.1%
 - LTC: [A+E] 7d -7.3%
 - ZEC: [A+E] 7d -6.9%
-- SEI: [A+E] 7d -5.8%
-- XRP: [A+E] 7d -5.3%
+- SEI: [A+E] 7d -5.9%
+- XRP: [A+E] 7d -5.4%
+- SUI: [A+E] 7d -5.3%
 
 ## ETF pipeline (new this run)
 - none
@@ -46,12 +46,12 @@
 - (12 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 42 | mean 4.4% (0.37R) | in profit 23 | older than 7d 34
-- worst: JTO -0.63R, ENS -0.62R, ETC -0.57R | best: NIGHT 1.70R, FIL 2.31R, BAT 2.96R
+- open 41 | mean 3.5% (0.33R) | in profit 23 | older than 7d 33
+- worst: ENS -0.62R, JTO -0.59R, ETC -0.57R | best: NEAR 1.73R, RAY 1.78R, FIL 2.31R
 
 ## System
-- CoinGecko 3040/10000 used, month-end projection 9964 (100%), throttle level 1 | by script {'scan': 994, 'check_liquidity': 156, 'breakout_check': 1869, 'counterfactual_check': 21}
+- CoinGecko 3098/10000 used, month-end projection 10109 (101%), throttle level 2 | by script {'scan': 996, 'check_liquidity': 157, 'breakout_check': 1924, 'counterfactual_check': 21}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=31), H2 SUPPORTED (n=93)
-- radar-flags.json scan age: 13m
+- radar-flags.json scan age: 22m
 - excluded from radar (pegged/tokenized equity): 39
