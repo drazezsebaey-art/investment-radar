@@ -1,4 +1,4 @@
-# Radar digest - 2026-10-10 07:43 UTC
+# Radar digest - 2026-10-10 08:10 UTC
 
 ## Market
 - BTC scenario **A** | price 82792 | wk close 85260 vs 82800 | 50W 77783 (6.44%) | 1h old
@@ -19,14 +19,14 @@
 - ADA: **ONGOING** | +49% impulse, retr 0.32 | OI dd 23% | fund 0.0100 | hold False | inval 0.22380 | OB 0.21820-0.22220
 
 ## Pre-pump candidates
-- INJ: [A+E] 7d -8.9%
-- HBAR: [A+E] 7d -8.5%
-- SOL: [A+E] 7d -8.3%
+- SOL: [A+E] 7d -8.0%
 - LTC: [A+E] 7d -7.9%
-- CRO: [A+E] 7d -7.7%
 - ZEC: [A+E] 7d -7.3%
-- XRP: [A+E] 7d -5.3%
+- AWE: [C+E] 7d -4.9%
 - HYPE: [A+E] 7d -4.8%
+- SUI: [A+E] 7d -4.6%
+- TAO: [A+E] 7d -3.1%
+- TRX: [A+E] 7d -1.3%
 
 ## ETF pipeline (new this run)
 - sei-network NEW: amendment - SEI Price Eyes Breakout as Canary Capital Files Staked ETF Amendment - Cryptonews.net
@@ -50,12 +50,12 @@
 - (17 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 43 | mean 3.9% (0.33R) | in profit 21 | older than 7d 35
-- worst: ENS -0.61R, JTO -0.58R, ETC -0.54R | best: NIGHT 1.79R, FIL 2.45R, BAT 2.76R
+- open 43 | mean 3.7% (0.31R) | in profit 21 | older than 7d 35
+- worst: ENS -0.62R, JTO -0.62R, BEAM -0.59R | best: NIGHT 2.06R, FIL 2.31R, BAT 2.65R
 
 ## System
-- CoinGecko 3022/10000 used, month-end projection 10082 (101%), throttle level 2 | by script {'scan': 978, 'check_liquidity': 154, 'breakout_check': 1869, 'counterfactual_check': 21}
+- CoinGecko 3024/10000 used, month-end projection 10044 (100%), throttle level 2 | by script {'scan': 980, 'check_liquidity': 154, 'breakout_check': 1869, 'counterfactual_check': 21}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=31), H2 SUPPORTED (n=90)
-- radar-flags.json scan age: 13m
+- radar-flags.json scan age: 9m
 - excluded from radar (pegged/tokenized equity): 39
