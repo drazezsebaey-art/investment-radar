@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-10 21:10 UTC
+# Radar digest - 2026-10-10 21:42 UTC
 
 ## Market
-- BTC scenario **A** | price 83068 | wk close 85260 vs 82800 | 50W 77783 (6.79%) | 28m old
+- BTC scenario **A** | price 83068 | wk close 85260 vs 82800 | 50W 77783 (6.79%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.86% | ETH/BTC 0.03024 | breadth7d 41% | stables 30d 0.67%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.38pt | 7d 0.43pt | n=75
 - Gold: PAXG 1m -3.63% | real10y 2.87 (32bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -19,41 +19,46 @@
 - AVAX: **ONGOING** | +71% impulse, retr 0.30 | OI dd 25% | fund 0.0100 | hold False | inval 9.71400 | OB 7.17400-7.36200
 
 ## Pre-pump candidates
-- PUMP: [D+E] 7d -13.7%
-- ALGO: [B+E] 7d -9.7%
-- HBAR: [A+E] 7d -9.5%
+- PUMP: [D+E] 7d -11.3%
+- HBAR: [A+E] 7d -9.7%
+- ALGO: [B+E] 7d -9.4%
+- CRO: [A+E] 7d -8.0%
 - SOL: [A+E] 7d -7.9%
-- CRO: [A+E] 7d -7.4%
-- LTC: [A+E] 7d -7.2%
+- ZEC: [A+E] 7d -7.2%
+- LTC: [A+E] 7d -6.8%
 - AVAX: [A+E] 7d -5.8%
-- ZEC: [A+E] 7d -5.8%
 
 ## ETF pipeline (new this run)
-- ripple NEW: other - Crypto Today: Bitcoin, Ethereum, XRP hold recovery levels amid minor ETF outflows - FXStre
-- ripple NEW: other - Jane Street’s Bitcoin ETF Exposure Hits $1B, Goes 5X Bigger On XRP In Q2 - Stocktwits
-- solana NEW: other - Crypto ETF Exodus: Ether Funds Shed $542 Million, Solana's 14-Week Streak Snaps - BigGo Fi
+- pepe NEW: filing - Pepe Coin Price Prediction: Canary ETF Filing Puts PEPE Back in Focus as Pepeto Targets 10
+- pepe NEW: filing - Pepeto Price Prediction: Could Pepeto Explode 100x as Wall Street Files for a Pepe ETF? - 
+- dogecoin NEW: other - Dogecoin ETF to Shut as Bitwise CEO Flags Weak Demand - Bitget
+- dogecoin NEW: other - Bitwise to liquidate Dogecoin ETF BWOW less tha... - Pluang
+- dogecoin NEW: other - Bitwise Dogecoin ETF closes Oct 14; minimal pri... - Pluang
+- dogecoin NEW: other - Bitwise Winds Down Its DOGE ETF on 14 October - CryptoTicker
+- ripple NEW: other - Investors Double Down on Ripple: Franklin XRP ETF Sees Fresh Cash Flood as XRP Rally Heats
+- pepe NEW: other - Next Pepe Coin Hunt Heats Up as Canary Refiles Its PEPE ETF and Pepeto Chases a 100x Pepe 
 
 ## Derivatives flags (OKX)
-- BTC: AGGRESSIVE_BUYING, SHORT_SQUEEZE_24H | OI/mc 0.20% | topPos 0.97 | taker 1.20
-- ETH: SHORT_SQUEEZE_24H | OI/mc 0.60% | topPos 0.91 | taker 1.10
-- SOL: SHORT_SQUEEZE_24H | OI/mc 0.59% | topPos 0.90 | taker 1.06
-- AVAX: AGGRESSIVE_SELLING, SHORT_SQUEEZE_24H | OI/mc 0.40% | topPos 0.89 | taker 0.80
-- XRP: SHORT_SQUEEZE_24H | OI/mc 0.13% | topPos 0.88 | taker 1.15
-- SUI: SHORT_SQUEEZE_24H | OI/mc 1.05% | topPos 0.87 | taker 0.97
-- SEI: SHORT_SQUEEZE_24H | OI/mc 0.68% | topPos 0.92 | taker 0.97
-- TAO: AGGRESSIVE_SELLING, SHORT_SQUEEZE_24H | OI/mc 0.83% | topPos 0.91 | taker 0.80
+- BTC: AGGRESSIVE_BUYING, SHORT_SQUEEZE_24H | OI/mc 0.20% | topPos 0.97 | taker 1.16
+- ETH: SHORT_SQUEEZE_24H | OI/mc 0.59% | topPos 0.91 | taker 1.08
+- SOL: SHORT_SQUEEZE_24H | OI/mc 0.59% | topPos 0.90 | taker 1.03
+- AVAX: AGGRESSIVE_SELLING, SHORT_SQUEEZE_24H | OI/mc 0.40% | topPos 0.89 | taker 0.79
+- XRP: SHORT_SQUEEZE_24H | OI/mc 0.13% | topPos 0.88 | taker 1.14
+- SUI: SHORT_SQUEEZE_24H | OI/mc 1.05% | topPos 0.88 | taker 0.98
+- SEI: SHORT_SQUEEZE_24H | OI/mc 0.67% | topPos 0.93 | taker 0.94
+- TAO: AGGRESSIVE_SELLING, SHORT_SQUEEZE_24H | OI/mc 0.83% | topPos 0.90 | taker 0.80
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
 - (12 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 41 | mean 4.8% (0.47R) | in profit 23 | older than 7d 33
-- worst: ENS -0.60R, QNT -0.52R, ETC -0.51R | best: NIGHT 2.00R, FIL 2.31R, S 3.44R
+- open 40 | mean 4.6% (0.39R) | in profit 23 | older than 7d 33
+- worst: ENS -0.60R, QNT -0.52R, ETC -0.51R | best: NEAR 1.85R, NIGHT 2.06R, FIL 2.31R
 
 ## System
-- CoinGecko 3198/10000 used, month-end projection 10039 (100%), throttle level 2 | by script {'scan': 1032, 'check_liquidity': 162, 'breakout_check': 1983, 'counterfactual_check': 21}
+- CoinGecko 3200/10000 used, month-end projection 10046 (100%), throttle level 2 | by script {'scan': 1034, 'check_liquidity': 162, 'breakout_check': 1983, 'counterfactual_check': 21}
 - Trials guard: OK (0 untracked)
-- Hypotheses: H1 NOT_SUPPORTED (n=33), H2 SUPPORTED (n=94)
-- radar-flags.json scan age: 10m
+- Hypotheses: H1 NOT_SUPPORTED (n=33), H2 SUPPORTED (n=96)
+- radar-flags.json scan age: 12m
 - excluded from radar (pegged/tokenized equity): 39
