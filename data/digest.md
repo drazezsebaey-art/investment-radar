@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-11 08:42 UTC
+# Radar digest - 2026-10-11 09:09 UTC
 
 ## Market
-- BTC scenario **A** | price 83085 | wk close 85260 vs 82800 | 50W 77783 (6.82%) | 1m old
+- BTC scenario **A** | price 83085 | wk close 85260 vs 82800 | 50W 77783 (6.82%) | 28m old
 - Alts: **BTC_LED** [-] | BTC.D 56.95% | ETH/BTC 0.03013 | breadth7d 38% | stables 30d 0.81%
 - Alt risk (BTC.D): **ELEVATED** ['BTC_DOM_RISING_3D'] | 3d 0.55pt | 7d 0.64pt | n=78
 - Gold: PAXG 1m -3.63% | real10y 2.87 (32bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -24,9 +24,9 @@
 - SOL: [A+E] 7d -9.6%
 - HBAR: [A+E] 7d -9.6%
 - LTC: [A+E] 7d -9.5%
-- AAVE: [A+E] 7d -8.7%
 - ZEC: [A+E] 7d -8.0%
 - TAO: [A+E] 7d -7.7%
+- SUI: [A+E] 7d -7.2%
 
 ## ETF pipeline (new this run)
 - pepe NEW: filing - Pepe Coin Price Prediction: PEPE Eyes $0.0000050 After ETF Filing, but Pepeto Is Where Ear
@@ -46,12 +46,12 @@
 - (12 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 40 | mean 3.5% (0.29R) | in profit 22 | older than 7d 35
-- worst: ENS -0.78R, SAND -0.66R, QNT -0.59R | best: NIGHT 1.71R, FIL 1.91R, AERO 1.98R
+- open 40 | mean 3.8% (0.32R) | in profit 22 | older than 7d 35
+- worst: ENS -0.79R, SAND -0.61R, ETC -0.56R | best: NIGHT 1.77R, FIL 1.91R, AERO 2.09R
 
 ## System
-- CoinGecko 3359/10000 used, month-end projection 10077 (101%), throttle level 2 | by script {'scan': 1086, 'check_liquidity': 169, 'breakout_check': 2082, 'counterfactual_check': 22}
+- CoinGecko 3361/10000 used, month-end projection 10043 (100%), throttle level 2 | by script {'scan': 1088, 'check_liquidity': 169, 'breakout_check': 2082, 'counterfactual_check': 22}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=33), H2 SUPPORTED (n=97)
-- radar-flags.json scan age: 12m
-- excluded from radar (pegged/tokenized equity): 40
+- radar-flags.json scan age: 9m
+- excluded from radar (pegged/tokenized equity): 39
