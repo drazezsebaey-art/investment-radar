@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-11 07:09 UTC
+# Radar digest - 2026-10-11 07:42 UTC
 
 ## Market
-- BTC scenario **A** | price 83124 | wk close 85260 vs 82800 | 50W 77783 (6.87%) | 27m old
+- BTC scenario **A** | price 83124 | wk close 85260 vs 82800 | 50W 77783 (6.87%) | 60m old
 - Alts: **BTC_LED** [-] | BTC.D 56.95% | ETH/BTC 0.03013 | breadth7d 38% | stables 30d 0.81%
 - Alt risk (BTC.D): **ELEVATED** ['BTC_DOM_RISING_3D'] | 3d 0.55pt | 7d 0.64pt | n=78
 - Gold: PAXG 1m -3.63% | real10y 2.87 (32bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -19,40 +19,39 @@
 - TIA: **ONGOING** | +98% impulse, retr 0.07 | OI dd 0% | fund 0.0043 | hold False | inval 0.46250 | OB 0.42090-0.43290
 
 ## Pre-pump candidates
-- CRO: [A+E] 7d -10.7%
-- HBAR: [A+E] 7d -10.0%
+- INJ: [A+C+E] 7d 0.9%
+- NEAR: [A+C+E] 7d 8.6%
+- CRO: [A+E] 7d -10.8%
 - LTC: [A+E] 7d -9.5%
+- HBAR: [A+E] 7d -9.5%
 - SOL: [A+E] 7d -9.2%
-- AAVE: [A+E] 7d -8.1%
-- TAO: [A+E] 7d -7.9%
-- ZEC: [A+E] 7d -7.2%
-- SUI: [A+E] 7d -6.8%
+- AAVE: [A+E] 7d -7.7%
+- ZEC: [A+E] 7d -7.3%
 
 ## ETF pipeline (new this run)
-- zcash: other - Zcash Price Forecast: ZEC poses 20% downside risk amid steady ETF outflows - www.tmgm.com
-- ondo-finance: other - Global X NASDAQ 100 Covered Call Tokenized ETF (Ondo) - CryptoRank
+- pepe NEW: filing - Pepe Coin Price Prediction: PEPE Eyes $0.0000050 After ETF Filing, but Pepeto Is Where Ear
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc 0.20% | topPos 0.98 | taker 1.02
-- SOL: SHORT_SQUEEZE_24H | OI/mc 0.59% | topPos 0.89 | taker 0.93
-- NEAR: LONG_FLUSH_24H | OI/mc 1.03% | topPos 1.08 | taker 1.03
-- AVAX: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.40% | topPos 0.90 | taker 0.74
-- XRP: LONG_FLUSH_24H | OI/mc 0.13% | topPos 0.89 | taker 0.92
-- SUI: SHORT_SQUEEZE_24H | OI/mc 1.02% | topPos 0.87 | taker 0.88
-- SEI: AGGRESSIVE_SELLING, SHORT_SQUEEZE_24H | OI/mc 0.67% | topPos 0.92 | taker 0.84
-- TAO: AGGRESSIVE_SELLING, SHORT_SQUEEZE_24H | OI/mc 0.82% | topPos 0.91 | taker 0.74
+- BTC: SHORT_SQUEEZE_24H | OI/mc 0.20% | topPos 0.98 | taker 1.03
+- SOL: SHORT_SQUEEZE_24H | OI/mc 0.59% | topPos 0.90 | taker 0.95
+- NEAR: LONG_FLUSH_24H | OI/mc 1.03% | topPos 1.07 | taker 1.03
+- AVAX: LONG_FLUSH_24H | OI/mc 0.41% | topPos 0.89 | taker 0.89
+- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.89 | taker 0.94
+- SUI: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.88 | taker 0.89
+- SEI: AGGRESSIVE_SELLING, SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.91 | taker 0.84
+- TAO: AGGRESSIVE_SELLING, SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.91 | taker 0.73
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
 - (12 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 40 | mean 4.0% (0.33R) | in profit 22 | older than 7d 35
-- worst: ENS -0.73R, SAND -0.63R, QNT -0.59R | best: NIGHT 1.70R, AERO 1.98R, FIL 2.04R
+- open 40 | mean 3.8% (0.31R) | in profit 22 | older than 7d 35
+- worst: ENS -0.75R, SAND -0.62R, QNT -0.60R | best: NIGHT 1.67R, FIL 1.89R, AERO 2.01R
 
 ## System
-- CoinGecko 3353/10000 used, month-end projection 10100 (101%), throttle level 2 | by script {'scan': 1080, 'check_liquidity': 169, 'breakout_check': 2082, 'counterfactual_check': 22}
+- CoinGecko 3355/10000 used, month-end projection 10106 (101%), throttle level 2 | by script {'scan': 1082, 'check_liquidity': 169, 'breakout_check': 2082, 'counterfactual_check': 22}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=33), H2 SUPPORTED (n=97)
-- radar-flags.json scan age: 9m
+- radar-flags.json scan age: 12m
 - excluded from radar (pegged/tokenized equity): 39
