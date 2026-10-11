@@ -1,4 +1,4 @@
-# Radar digest - 2026-10-11 13:42 UTC
+# Radar digest - 2026-10-11 14:09 UTC
 
 ## Market
 - BTC scenario **A** | price 83125 | wk close 85260 vs 82800 | 50W 77783 (6.87%) | 1h old
@@ -21,12 +21,12 @@
 ## Pre-pump candidates
 - CRO: [A+E] 7d -12.7%
 - LTC: [A+E] 7d -10.8%
-- SOL: [A+E] 7d -9.7%
-- AAVE: [A+E] 7d -7.3%
-- XRP: [A+E] 7d -7.0%
+- SOL: [A+E] 7d -9.9%
+- XRP: [A+E] 7d -6.9%
 - HYPE: [A+E] 7d -5.7%
 - TAO: [A+E] 7d -5.3%
 - BNB: [A+E] 7d -5.0%
+- AVAX: [A+E] 7d -4.1%
 
 ## ETF pipeline (new this run)
 - dogecoin NEW: other - Dogecoin sees $57M net outflows amid 9% weekly price drop and Bitwise ETF closure. - Pluan
@@ -49,12 +49,12 @@
 - (14 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 41 | mean 3.7% (0.31R) | in profit 23 | older than 7d 35
-- worst: ENS -0.75R, SAND -0.62R, ETC -0.55R | best: NEAR 1.81R, FIL 1.91R, AERO 2.06R
+- open 41 | mean 3.6% (0.31R) | in profit 23 | older than 7d 35
+- worst: ENS -0.76R, SAND -0.62R, ETC -0.56R | best: NEAR 1.83R, FIL 1.89R, AERO 2.07R
 
 ## System
-- CoinGecko 3437/10000 used, month-end projection 10107 (101%), throttle level 2 | by script {'scan': 1106, 'check_liquidity': 172, 'breakout_check': 2137, 'counterfactual_check': 22}
+- CoinGecko 3439/10000 used, month-end projection 10073 (101%), throttle level 2 | by script {'scan': 1108, 'check_liquidity': 172, 'breakout_check': 2137, 'counterfactual_check': 22}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=33), H2 SUPPORTED (n=97)
-- radar-flags.json scan age: 12m
+- radar-flags.json scan age: 9m
 - excluded from radar (pegged/tokenized equity): 40
