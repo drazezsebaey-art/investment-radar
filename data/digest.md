@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-11 04:43 UTC
+# Radar digest - 2026-10-11 05:09 UTC
 
 ## Market
-- BTC scenario **A** | price 82992 | wk close 85260 vs 82800 | 50W 77783 (6.70%) | 1m old
+- BTC scenario **A** | price 82992 | wk close 85260 vs 82800 | 50W 77783 (6.70%) | 28m old
 - Alts: **BTC_LED** [-] | BTC.D 56.86% | ETH/BTC 0.03024 | breadth7d 42% | stables 30d 0.83%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.34pt | 7d 0.56pt | n=77
 - Gold: PAXG 1m -3.63% | real10y 2.87 (32bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -24,9 +24,9 @@
 - HBAR: [A+E] 7d -10.0%
 - SOL: [A+E] 7d -9.3%
 - TAO: [A+E] 7d -8.8%
-- AVAX: [A+E] 7d -7.8%
-- SUI: [A+E] 7d -7.4%
 - EIGEN: [C+E] 7d -7.4%
+- GRASS: [C+E] 7d -7.1%
+- AVAX: [A+E] 7d -6.8%
 
 ## ETF pipeline (new this run)
 - dogecoin NEW: other - Dogecoin Price Forecast as Bitwise CEO Calls DOGE ETF Failure ‘Tragic’ Ahead of October 14
@@ -47,12 +47,12 @@
 - (12 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 40 | mean 3.0% (0.26R) | in profit 20 | older than 7d 35
-- worst: ENS -0.78R, SAND -0.74R, ETC -0.57R | best: FIL 1.70R, NIGHT 1.72R, AERO 1.82R
+- open 40 | mean 3.4% (0.28R) | in profit 21 | older than 7d 35
+- worst: ENS -0.78R, SAND -0.69R, QNT -0.57R | best: NIGHT 1.74R, FIL 1.79R, AERO 1.84R
 
 ## System
-- CoinGecko 3288/10000 used, month-end projection 10026 (100%), throttle level 2 | by script {'scan': 1070, 'check_liquidity': 167, 'breakout_check': 2029, 'counterfactual_check': 22}
+- CoinGecko 3291/10000 used, month-end projection 9994 (100%), throttle level 1 | by script {'scan': 1072, 'check_liquidity': 168, 'breakout_check': 2029, 'counterfactual_check': 22}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=33), H2 SUPPORTED (n=97)
-- radar-flags.json scan age: 13m
-- excluded from radar (pegged/tokenized equity): 40
+- radar-flags.json scan age: 9m
+- excluded from radar (pegged/tokenized equity): 39
