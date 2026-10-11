@@ -1,10 +1,10 @@
-# Radar digest - 2026-10-11 09:43 UTC
+# Radar digest - 2026-10-11 10:10 UTC
 
 ## Market
 - BTC scenario **A** | price 83085 | wk close 85260 vs 82800 | 50W 77783 (6.82%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 56.95% | ETH/BTC 0.03013 | breadth7d 38% | stables 30d 0.81%
 - Alt risk (BTC.D): **ELEVATED** ['BTC_DOM_RISING_3D'] | 3d 0.55pt | 7d 0.64pt | n=78
-- Gold: PAXG 1m -3.63% | real10y 2.87 (32bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
+- Gold: PAXG 1m -3.58% | real10y 2.87 (32bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
 - 10y 1w: -2bp = real -1 + breakeven -3 -> **SMALL_MOVE**
 - 10y 1m: 27bp = real 32 + breakeven -3 -> **REAL_YIELD_DRIVEN**
 
@@ -23,10 +23,10 @@
 - CRO: [A+E] 7d -11.6%
 - HBAR: [A+E] 7d -10.4%
 - LTC: [A+E] 7d -9.8%
-- SOL: [A+E] 7d -9.6%
+- SOL: [A+E] 7d -9.5%
 - ZEC: [A+E] 7d -7.6%
 - TAO: [A+E] 7d -7.5%
-- SUI: [A+E] 7d -7.2%
+- XRP: [A+E] 7d -6.9%
 
 ## ETF pipeline (new this run)
 - pepe NEW: filing - Canary Capital Files for US Spot PEPE ETF - CoinMarketCap
@@ -49,12 +49,12 @@
 - (14 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 40 | mean 3.7% (0.31R) | in profit 21 | older than 7d 35
-- worst: ENS -0.78R, SAND -0.61R, ETC -0.56R | best: NIGHT 1.74R, FIL 1.88R, AERO 2.09R
+- open 40 | mean 3.7% (0.31R) | in profit 22 | older than 7d 35
+- worst: ENS -0.78R, SAND -0.56R, ETC -0.56R | best: NIGHT 1.76R, FIL 1.88R, AERO 2.14R
 
 ## System
-- CoinGecko 3363/10000 used, month-end projection 10048 (100%), throttle level 2 | by script {'scan': 1090, 'check_liquidity': 169, 'breakout_check': 2082, 'counterfactual_check': 22}
+- CoinGecko 3365/10000 used, month-end projection 10014 (100%), throttle level 2 | by script {'scan': 1092, 'check_liquidity': 169, 'breakout_check': 2082, 'counterfactual_check': 22}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=33), H2 SUPPORTED (n=97)
-- radar-flags.json scan age: 13m
+- radar-flags.json scan age: 10m
 - excluded from radar (pegged/tokenized equity): 39
