@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-11 11:43 UTC
+# Radar digest - 2026-10-11 12:23 UTC
 
 ## Market
-- BTC scenario **A** | price 82973 | wk close 85260 vs 82800 | 50W 77783 (6.67%) | 1h old
+- BTC scenario **A** | price 82973 | wk close 85260 vs 82800 | 50W 77783 (6.67%) | 2h old
 - Alts: **BTC_LED** [-] | BTC.D 56.91% | ETH/BTC 0.03013 | breadth7d 44% | stables 30d 0.81%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.47pt | 7d 0.57pt | n=79
 - Gold: PAXG 1m -3.58% | real10y 2.87 (32bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -21,10 +21,10 @@
 ## Pre-pump candidates
 - CRO: [A+E] 7d -13.8%
 - HBAR: [A+E] 7d -10.4%
-- SOL: [A+E] 7d -9.9%
 - LTC: [A+E] 7d -9.9%
-- XRP: [A+E] 7d -7.3%
-- ZEC: [A+E] 7d -7.1%
+- SOL: [A+E] 7d -9.6%
+- XRP: [A+E] 7d -7.2%
+- SUI: [A+E] 7d -6.9%
 - TAO: [A+E] 7d -6.7%
 - HYPE: [A+E] 7d -6.1%
 
@@ -49,12 +49,12 @@
 - (14 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 40 | mean 3.3% (0.29R) | in profit 21 | older than 7d 35
-- worst: ENS -0.80R, SAND -0.69R, ETC -0.57R | best: FIL 1.87R, NIGHT 1.91R, AERO 2.02R
+- open 41 | mean 3.4% (0.29R) | in profit 22 | older than 7d 35
+- worst: ENS -0.78R, SAND -0.65R, ETC -0.57R | best: NIGHT 1.83R, FIL 1.87R, AERO 2.16R
 
 ## System
-- CoinGecko 3373/10000 used, month-end projection 9998 (100%), throttle level 1 | by script {'scan': 1098, 'check_liquidity': 171, 'breakout_check': 2082, 'counterfactual_check': 22}
+- CoinGecko 3431/10000 used, month-end projection 10130 (101%), throttle level 2 | by script {'scan': 1100, 'check_liquidity': 172, 'breakout_check': 2137, 'counterfactual_check': 22}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=33), H2 SUPPORTED (n=97)
-- radar-flags.json scan age: 13m
+- radar-flags.json scan age: 23m
 - excluded from radar (pegged/tokenized equity): 39
