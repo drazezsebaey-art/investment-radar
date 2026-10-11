@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-11 10:43 UTC
+# Radar digest - 2026-10-11 11:10 UTC
 
 ## Market
-- BTC scenario **A** | price 82973 | wk close 85260 vs 82800 | 50W 77783 (6.67%) | 1m old
+- BTC scenario **A** | price 82973 | wk close 85260 vs 82800 | 50W 77783 (6.67%) | 28m old
 - Alts: **BTC_LED** [-] | BTC.D 56.91% | ETH/BTC 0.03013 | breadth7d 44% | stables 30d 0.81%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.47pt | 7d 0.57pt | n=79
 - Gold: PAXG 1m -3.58% | real10y 2.87 (32bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -19,14 +19,14 @@
 - TIA: **ONGOING** | +98% impulse, retr 0.16 | OI dd 0% | fund 0.0050 | hold False | inval 0.46250 | OB 0.42090-0.43290
 
 ## Pre-pump candidates
-- INJ: [A+C+E] 7d 0.4%
-- CRO: [A+E] 7d -13.4%
-- HBAR: [A+E] 7d -10.1%
-- LTC: [A+E] 7d -9.6%
-- SOL: [A+E] 7d -9.5%
-- XRP: [A+E] 7d -6.9%
-- TAO: [A+E] 7d -6.9%
-- SUI: [A+E] 7d -6.7%
+- CRO: [A+E] 7d -13.8%
+- HBAR: [A+E] 7d -10.4%
+- SOL: [A+E] 7d -9.9%
+- LTC: [A+E] 7d -9.9%
+- XRP: [A+E] 7d -7.3%
+- ZEC: [A+E] 7d -7.1%
+- TAO: [A+E] 7d -6.7%
+- HYPE: [A+E] 7d -6.1%
 
 ## ETF pipeline (new this run)
 - pepe NEW: filing - Canary Capital Files for US Spot PEPE ETF - CoinMarketCap
@@ -49,12 +49,12 @@
 - (14 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 40 | mean 3.4% (0.30R) | in profit 20 | older than 7d 35
-- worst: ENS -0.78R, SAND -0.63R, ETC -0.56R | best: FIL 1.84R, NIGHT 1.88R, AERO 2.05R
+- open 40 | mean 3.3% (0.28R) | in profit 20 | older than 7d 35
+- worst: ENS -0.80R, SAND -0.68R, ETC -0.58R | best: FIL 1.81R, NIGHT 1.92R, AERO 2.03R
 
 ## System
-- CoinGecko 3367/10000 used, month-end projection 10020 (100%), throttle level 2 | by script {'scan': 1094, 'check_liquidity': 169, 'breakout_check': 2082, 'counterfactual_check': 22}
+- CoinGecko 3370/10000 used, month-end projection 9989 (100%), throttle level 1 | by script {'scan': 1096, 'check_liquidity': 170, 'breakout_check': 2082, 'counterfactual_check': 22}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=33), H2 SUPPORTED (n=97)
-- radar-flags.json scan age: 13m
+- radar-flags.json scan age: 10m
 - excluded from radar (pegged/tokenized equity): 39
