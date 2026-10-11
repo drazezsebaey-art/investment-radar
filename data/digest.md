@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-11 18:43 UTC
+# Radar digest - 2026-10-11 19:10 UTC
 
 ## Market
-- BTC scenario **A** | price 83866 | wk close 83902 vs 82800 | 50W 77187 (8.65%) | 2m old
+- BTC scenario **A** | price 83866 | wk close 83902 vs 82800 | 50W 77187 (8.65%) | 28m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.82% | ETH/BTC 0.03030 | breadth7d 50% | stables 30d 0.81%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.11pt | 7d 0.46pt | n=81
 - Gold: PAXG 1m -3.20% | real10y 2.87 (32bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -21,11 +21,12 @@
 ## Pre-pump candidates
 - CRO: [A+E] 7d -10.6%
 - LTC: [A+E] 7d -9.1%
-- SOL: [A+E] 7d -7.9%
+- SOL: [A+E] 7d -8.3%
 - BNB: [A+E] 7d -4.4%
 - TAO: [A+E] 7d -3.9%
 - HYPE: [A+E] 7d -3.4%
 - AVAX: [A+E] 7d -1.8%
+- NIGHT: [C+E] 7d 1.3%
 
 ## ETF pipeline (new this run)
 - solana NEW: other - [Alt spot ETF] LINK, BNB and NEAR draw inflows as SOL posts outflows - www.tokenpost.com
@@ -50,12 +51,12 @@
 - (14 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 41 | mean 5.7% (0.49R) | in profit 27 | older than 7d 35
-- worst: ENS -0.66R, SAND -0.58R, ETC -0.48R | best: RAY 1.97R, NEAR 2.52R, FIL 2.59R
+- open 41 | mean 5.5% (0.47R) | in profit 26 | older than 7d 35
+- worst: ENS -0.66R, SAND -0.60R, ETC -0.49R | best: RAY 1.97R, NEAR 2.52R, FIL 2.72R
 
 ## System
-- CoinGecko 3513/10000 used, month-end projection 10131 (101%), throttle level 2 | by script {'scan': 1126, 'check_liquidity': 175, 'breakout_check': 2190, 'counterfactual_check': 22}
+- CoinGecko 3515/10000 used, month-end projection 10097 (101%), throttle level 2 | by script {'scan': 1128, 'check_liquidity': 175, 'breakout_check': 2190, 'counterfactual_check': 22}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=33), H2 SUPPORTED (n=100)
-- radar-flags.json scan age: 13m
+- radar-flags.json scan age: 10m
 - excluded from radar (pegged/tokenized equity): 39
