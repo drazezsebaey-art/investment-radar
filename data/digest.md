@@ -1,10 +1,10 @@
-# Radar digest - 2026-10-11 15:43 UTC
+# Radar digest - 2026-10-11 16:09 UTC
 
 ## Market
 - BTC scenario **A** | price 83140 | wk close 85260 vs 82800 | 50W 77783 (6.89%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 56.87% | ETH/BTC 0.03016 | breadth7d 46% | stables 30d 0.81%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.39pt | 7d 0.50pt | n=80
-- Gold: PAXG 1m -3.58% | real10y 2.87 (32bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
+- Gold: PAXG 1m -3.20% | real10y 2.87 (32bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
 - 10y 1w: -2bp = real -1 + breakeven -3 -> **SMALL_MOVE**
 - 10y 1m: 27bp = real 32 + breakeven -3 -> **REAL_YIELD_DRIVEN**
 
@@ -19,14 +19,14 @@
 - ZK: **ONGOING** | +108% impulse, retr 0.04 | OI dd 16% | fund 0.0036 | hold False | inval 0.01069 | OB 0.01069-0.01129
 
 ## Pre-pump candidates
-- SEI: [A+C+E] 7d -5.7%
+- MON: [C+E] 7d -22.1%
 - CRO: [A+E] 7d -12.2%
 - LTC: [A+E] 7d -10.3%
-- SOL: [A+E] 7d -9.9%
 - HBAR: [A+E] 7d -9.1%
+- SOL: [A+E] 7d -8.2%
 - ZEC: [A+E] 7d -7.4%
-- SUI: [A+E] 7d -7.1%
-- XRP: [A+E] 7d -6.8%
+- SUI: [A+E] 7d -5.7%
+- XRP: [A+E] 7d -5.3%
 
 ## ETF pipeline (new this run)
 - litecoin NEW: institutional_backing - Litecoin Gets Grayscale Backing for ETF Push While AlphaPepe Prepares Its Fifth Exchange P
@@ -49,12 +49,12 @@
 - (14 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 41 | mean 4.4% (0.37R) | in profit 24 | older than 7d 35
-- worst: ENS -0.69R, SAND -0.55R, ETC -0.53R | best: NEAR 1.87R, AERO 1.93R, FIL 2.18R
+- open 41 | mean 5.8% (0.49R) | in profit 28 | older than 7d 35
+- worst: ENS -0.62R, SAND -0.47R, ETC -0.47R | best: AERO 2.04R, FIL 2.18R, NEAR 2.85R
 
 ## System
-- CoinGecko 3446/10000 used, month-end projection 10054 (100%), throttle level 2 | by script {'scan': 1114, 'check_liquidity': 173, 'breakout_check': 2137, 'counterfactual_check': 22}
+- CoinGecko 3448/10000 used, month-end projection 10021 (100%), throttle level 2 | by script {'scan': 1116, 'check_liquidity': 173, 'breakout_check': 2137, 'counterfactual_check': 22}
 - Trials guard: OK (0 untracked)
-- Hypotheses: H1 NOT_SUPPORTED (n=33), H2 SUPPORTED (n=99)
-- radar-flags.json scan age: 13m
+- Hypotheses: H1 NOT_SUPPORTED (n=33), H2 SUPPORTED (n=100)
+- radar-flags.json scan age: 9m
 - excluded from radar (pegged/tokenized equity): 39
