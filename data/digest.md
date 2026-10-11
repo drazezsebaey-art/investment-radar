@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-11 06:43 UTC
+# Radar digest - 2026-10-11 07:09 UTC
 
 ## Market
-- BTC scenario **A** | price 83124 | wk close 85260 vs 82800 | 50W 77783 (6.87%) | 1m old
+- BTC scenario **A** | price 83124 | wk close 85260 vs 82800 | 50W 77783 (6.87%) | 27m old
 - Alts: **BTC_LED** [-] | BTC.D 56.95% | ETH/BTC 0.03013 | breadth7d 38% | stables 30d 0.81%
 - Alt risk (BTC.D): **ELEVATED** ['BTC_DOM_RISING_3D'] | 3d 0.55pt | 7d 0.64pt | n=78
 - Gold: PAXG 1m -3.63% | real10y 2.87 (32bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -22,11 +22,11 @@
 - CRO: [A+E] 7d -10.7%
 - HBAR: [A+E] 7d -10.0%
 - LTC: [A+E] 7d -9.5%
-- SOL: [A+E] 7d -9.4%
+- SOL: [A+E] 7d -9.2%
 - AAVE: [A+E] 7d -8.1%
 - TAO: [A+E] 7d -7.9%
-- SEI: [A+E] 7d -7.2%
-- AVAX: [A+E] 7d -7.2%
+- ZEC: [A+E] 7d -7.2%
+- SUI: [A+E] 7d -6.8%
 
 ## ETF pipeline (new this run)
 - zcash: other - Zcash Price Forecast: ZEC poses 20% downside risk amid steady ETF outflows - www.tmgm.com
@@ -47,12 +47,12 @@
 - (12 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 40 | mean 3.5% (0.29R) | in profit 20 | older than 7d 35
-- worst: ENS -0.74R, SAND -0.60R, QNT -0.60R | best: NIGHT 1.77R, FIL 1.89R, AERO 1.93R
+- open 40 | mean 4.0% (0.33R) | in profit 22 | older than 7d 35
+- worst: ENS -0.73R, SAND -0.63R, QNT -0.59R | best: NIGHT 1.70R, AERO 1.98R, FIL 2.04R
 
 ## System
-- CoinGecko 3351/10000 used, month-end projection 10135 (101%), throttle level 2 | by script {'scan': 1078, 'check_liquidity': 169, 'breakout_check': 2082, 'counterfactual_check': 22}
+- CoinGecko 3353/10000 used, month-end projection 10100 (101%), throttle level 2 | by script {'scan': 1080, 'check_liquidity': 169, 'breakout_check': 2082, 'counterfactual_check': 22}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=33), H2 SUPPORTED (n=97)
-- radar-flags.json scan age: 13m
+- radar-flags.json scan age: 9m
 - excluded from radar (pegged/tokenized equity): 39
