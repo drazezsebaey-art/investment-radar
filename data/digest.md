@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-10 23:43 UTC
+# Radar digest - 2026-10-11 00:23 UTC
 
 ## Market
-- BTC scenario **A** | price 83050 | wk close 85260 vs 82800 | 50W 77783 (6.77%) | 1h old
+- BTC scenario **A** | price 83050 | wk close 85260 vs 82800 | 50W 77783 (6.77%) | 2h old
 - Alts: **BTC_LED** [-] | BTC.D 56.86% | ETH/BTC 0.03022 | breadth7d 43% | stables 30d 0.67%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.30pt | 7d 0.51pt | n=76
 - Gold: PAXG 1m -3.65% | real10y 2.87 (32bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -22,11 +22,11 @@
 - PUMP: [D+E] 7d -13.4%
 - HBAR: [A+E] 7d -9.7%
 - CRO: [A+E] 7d -8.5%
-- SOL: [A+E] 7d -7.7%
+- SOL: [A+E] 7d -8.1%
 - LTC: [A+E] 7d -7.6%
 - ZEC: [A+E] 7d -7.2%
-- AVAX: [A+E] 7d -6.4%
-- XRP: [A+E] 7d -5.7%
+- AVAX: [A+E] 7d -6.6%
+- ICP: [C+E] 7d -6.2%
 
 ## ETF pipeline (new this run)
 - near: other - Common Shares of Beneficial Interest of Bitwise NEAR ETF (NYSE:NRR) Stock Quote - The Chro
@@ -47,12 +47,12 @@
 - (12 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 40 | mean 4.2% (0.36R) | in profit 22 | older than 7d 33
-- worst: ENS -0.64R, QNT -0.53R, ETC -0.52R | best: AERO 1.85R, NIGHT 1.88R, FIL 2.18R
+- open 40 | mean 4.2% (0.36R) | in profit 22 | older than 7d 35
+- worst: ENS -0.64R, QNT -0.53R, ETC -0.51R | best: AERO 1.82R, NIGHT 1.85R, FIL 2.18R
 
 ## System
-- CoinGecko 3211/10000 used, month-end projection 9996 (100%), throttle level 1 | by script {'scan': 1042, 'check_liquidity': 165, 'breakout_check': 1983, 'counterfactual_check': 21}
+- CoinGecko 3261/10000 used, month-end projection 10109 (101%), throttle level 2 | by script {'scan': 1044, 'check_liquidity': 166, 'breakout_check': 2029, 'counterfactual_check': 22}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=33), H2 SUPPORTED (n=96)
-- radar-flags.json scan age: 13m
+- radar-flags.json scan age: 22m
 - excluded from radar (pegged/tokenized equity): 39
