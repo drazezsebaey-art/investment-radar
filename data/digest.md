@@ -1,4 +1,4 @@
-# Radar digest - 2026-10-11 01:43 UTC
+# Radar digest - 2026-10-11 02:10 UTC
 
 ## Market
 - BTC scenario **A** | price 82979 | wk close 85260 vs 82800 | 50W 77783 (6.68%) | 1h old
@@ -19,14 +19,14 @@
 - TIA: **ONGOING** | +92% impulse, retr 0.04 | OI dd 0% | fund 0.0049 | hold False | inval 0.46250 | OB 0.42090-0.43290
 
 ## Pre-pump candidates
-- HBAR: [A+E] 7d -9.9%
-- LTC: [A+E] 7d -9.6%
-- CRO: [A+E] 7d -9.4%
-- SOL: [A+E] 7d -8.1%
-- TAO: [A+E] 7d -7.6%
-- AVAX: [A+E] 7d -7.1%
-- SUI: [A+E] 7d -6.5%
-- ZEC: [A+E] 7d -6.3%
+- LTC: [A+E] 7d -9.9%
+- HBAR: [A+E] 7d -9.0%
+- CRO: [A+E] 7d -8.8%
+- SOL: [A+E] 7d -8.5%
+- ZEC: [A+E] 7d -6.8%
+- TAO: [A+E] 7d -6.8%
+- AVAX: [A+E] 7d -6.6%
+- XRP: [A+E] 7d -5.9%
 
 ## ETF pipeline (new this run)
 - official-trump NEW: other - Exchange-Traded Funds, Equity Futures Down Pre-Bell Thursday as Oil Prices Rise After Trum
@@ -47,12 +47,12 @@
 - (12 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 40 | mean 4.1% (0.35R) | in profit 22 | older than 7d 35
-- worst: ENS -0.65R, SAND -0.64R, QNT -0.55R | best: NIGHT 1.80R, AERO 1.85R, FIL 2.04R
+- open 40 | mean 4.3% (0.36R) | in profit 22 | older than 7d 35
+- worst: SAND -0.66R, ENS -0.62R, QNT -0.58R | best: NIGHT 1.76R, AERO 1.86R, FIL 2.18R
 
 ## System
-- CoinGecko 3267/10000 used, month-end projection 10086 (101%), throttle level 2 | by script {'scan': 1050, 'check_liquidity': 166, 'breakout_check': 2029, 'counterfactual_check': 22}
+- CoinGecko 3269/10000 used, month-end projection 10050 (100%), throttle level 2 | by script {'scan': 1052, 'check_liquidity': 166, 'breakout_check': 2029, 'counterfactual_check': 22}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=33), H2 SUPPORTED (n=97)
-- radar-flags.json scan age: 13m
+- radar-flags.json scan age: 10m
 - excluded from radar (pegged/tokenized equity): 39
