@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-11 03:10 UTC
+# Radar digest - 2026-10-11 03:43 UTC
 
 ## Market
-- BTC scenario **A** | price 83140 | wk close 85260 vs 82800 | 50W 77783 (6.89%) | 28m old
+- BTC scenario **A** | price 83140 | wk close 85260 vs 82800 | 50W 77783 (6.89%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 56.86% | ETH/BTC 0.03024 | breadth7d 42% | stables 30d 0.83%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.34pt | 7d 0.56pt | n=77
 - Gold: PAXG 1m -3.65% | real10y 2.87 (32bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -19,40 +19,40 @@
 - TIA: **ONGOING** | +98% impulse, retr 0.06 | OI dd 0% | fund 0.0050 | hold False | inval 0.46250 | OB 0.42090-0.43290
 
 ## Pre-pump candidates
-- LTC: [A+E] 7d -9.9%
-- HBAR: [A+E] 7d -9.0%
-- CRO: [A+E] 7d -8.8%
+- HBAR: [A+E] 7d -9.3%
+- CRO: [A+E] 7d -9.1%
+- LTC: [A+E] 7d -9.0%
 - SOL: [A+E] 7d -8.5%
-- ZEC: [A+E] 7d -6.8%
-- TAO: [A+E] 7d -6.8%
+- TAO: [A+E] 7d -7.5%
 - AVAX: [A+E] 7d -6.7%
 - XRP: [A+E] 7d -5.9%
+- SUI: [A+E] 7d -5.7%
 
 ## ETF pipeline (new this run)
-- official-trump NEW: other - Exchange-Traded Funds, Equity Futures Down Pre-Bell Thursday as Oil Prices Rise After Trum
-- near: other - NEAR Protocol Surges 7.9% on Quantum Upgrade and ETF Inflows - CoinMarketCap
+- dogecoin NEW: other - Dogecoin Price Forecast as Bitwise CEO Calls DOGE ETF Failure ‘Tragic’ Ahead of October 14
+- dogecoin NEW: other - Dogecoin ETF: Huge Disappointment: Why Did Millions of DOGE Investors Fail to Show Interes
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc 0.20% | topPos 0.97 | taker 1.08
-- ETH: SHORT_SQUEEZE_24H | OI/mc 0.60% | topPos 0.91 | taker 1.03
-- SOL: SHORT_SQUEEZE_24H | OI/mc 0.58% | topPos 0.89 | taker 1.00
-- AVAX: AGGRESSIVE_SELLING, SHORT_SQUEEZE_24H | OI/mc 0.40% | topPos 0.88 | taker 0.76
-- XRP: LONG_FLUSH_24H | OI/mc 0.13% | topPos 0.88 | taker 0.97
-- SUI: SHORT_SQUEEZE_24H | OI/mc 1.03% | topPos 0.87 | taker 0.93
-- SEI: SHORT_SQUEEZE_24H | OI/mc 0.68% | topPos 0.92 | taker 0.94
-- TAO: AGGRESSIVE_SELLING, SHORT_SQUEEZE_24H | OI/mc 0.82% | topPos 0.91 | taker 0.80
+- BTC: SHORT_SQUEEZE_24H | OI/mc 0.20% | topPos 0.98 | taker 1.09
+- ETH: SHORT_SQUEEZE_24H | OI/mc 0.60% | topPos 0.91 | taker 1.04
+- SOL: SHORT_SQUEEZE_24H | OI/mc 0.59% | topPos 0.89 | taker 0.98
+- AVAX: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.40% | topPos 0.88 | taker 0.76
+- XRP: LONG_FLUSH_24H | OI/mc 0.13% | topPos 0.88 | taker 0.96
+- SUI: SHORT_SQUEEZE_24H | OI/mc 1.04% | topPos 0.88 | taker 0.94
+- SEI: SHORT_SQUEEZE_24H | OI/mc 0.68% | topPos 0.92 | taker 0.92
+- TAO: AGGRESSIVE_SELLING, SHORT_SQUEEZE_24H | OI/mc 0.83% | topPos 0.91 | taker 0.81
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
 - (12 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 40 | mean 4.3% (0.37R) | in profit 22 | older than 7d 35
-- worst: SAND -0.66R, ENS -0.64R, QNT -0.58R | best: NIGHT 1.78R, AERO 1.83R, FIL 2.04R
+- open 40 | mean 2.9% (0.26R) | in profit 20 | older than 7d 35
+- worst: SAND -0.76R, ENS -0.71R, QNT -0.59R | best: AERO 1.76R, NIGHT 1.76R, FIL 1.80R
 
 ## System
-- CoinGecko 3273/10000 used, month-end projection 10021 (100%), throttle level 2 | by script {'scan': 1056, 'check_liquidity': 166, 'breakout_check': 2029, 'counterfactual_check': 22}
+- CoinGecko 3283/10000 used, month-end projection 10052 (100%), throttle level 2 | by script {'scan': 1066, 'check_liquidity': 166, 'breakout_check': 2029, 'counterfactual_check': 22}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=33), H2 SUPPORTED (n=97)
-- radar-flags.json scan age: 10m
+- radar-flags.json scan age: 13m
 - excluded from radar (pegged/tokenized equity): 39
