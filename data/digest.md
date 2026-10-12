@@ -1,4 +1,4 @@
-# Radar digest - 2026-10-12 19:43 UTC
+# Radar digest - 2026-10-12 20:10 UTC
 
 ## Market
 - BTC scenario **A** | price 82486 | wk close 83902 vs 82800 | 50W 77187 (6.86%) | 1h old
@@ -21,7 +21,7 @@
 ## Pre-pump candidates
 - EIGEN: [C+E] 7d -2.0%
 - RENDER: [C+E] 7d 2.0%
-- NEAR: [A+E] 7d 6.6%
+- NEAR: [A+E] 7d 5.9%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - XRP Price Slid as Bitwise Drives $11 Million ETF Inflows - Cryptonews
@@ -45,12 +45,12 @@
 - (16 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 40 | mean 1.8% (0.26R) | in profit 20 | older than 7d 34
-- worst: ENS -0.81R, QNT -0.74R, SUPER -0.66R | best: NEAR 2.03R, BEAM 2.28R, STX 2.59R
+- open 40 | mean 2.2% (0.30R) | in profit 21 | older than 7d 34
+- worst: ENS -0.81R, QNT -0.72R, THETA -0.64R | best: NEAR 2.03R, BEAM 2.67R, STX 2.94R
 
 ## System
-- CoinGecko 3839/10000 used, month-end projection 10093 (101%), throttle level 2 | by script {'scan': 1234, 'check_liquidity': 186, 'breakout_check': 2394, 'counterfactual_check': 25}
+- CoinGecko 3849/10000 used, month-end projection 10083 (101%), throttle level 2 | by script {'scan': 1244, 'check_liquidity': 186, 'breakout_check': 2394, 'counterfactual_check': 25}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=37), H2 SUPPORTED (n=115)
-- radar-flags.json scan age: 13m
+- radar-flags.json scan age: 9m
 - excluded from radar (pegged/tokenized equity): 38
