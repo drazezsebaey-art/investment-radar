@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-12 18:43 UTC
+# Radar digest - 2026-10-12 19:10 UTC
 
 ## Market
-- BTC scenario **A** | price 82486 | wk close 83902 vs 82800 | 50W 77187 (6.86%) | 1m old
+- BTC scenario **A** | price 82486 | wk close 83902 vs 82800 | 50W 77187 (6.86%) | 28m old
 - Alts: **BTC_LED** [-] | BTC.D 56.86% | ETH/BTC 0.03048 | breadth7d 41% | stables 30d 0.83%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.17pt | 7d 0.52pt | n=87
 - Gold: PAXG 1m -2.64% | real10y 2.87 (32bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -20,8 +20,6 @@
 
 ## Pre-pump candidates
 - EIGEN: [C+E] 7d -1.9%
-- RENDER: [C+E] 7d 1.5%
-- PYTH: [B+C] 7d 10.6%
 
 ## ETF pipeline (new this run)
 - solana NEW: launch - Another Spot Solana ETF Set to Launch This Month - TradingView
@@ -45,12 +43,12 @@
 - (16 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 40 | mean 1.4% (0.23R) | in profit 21 | older than 7d 34
-- worst: ENS -0.81R, QNT -0.76R, THETA -0.69R | best: RENDER 1.75R, NEAR 1.95R, BEAM 2.45R
+- open 40 | mean 1.4% (0.24R) | in profit 20 | older than 7d 34
+- worst: ENS -0.81R, QNT -0.74R, THETA -0.69R | best: RENDER 1.75R, NEAR 1.93R, BEAM 3.13R
 
 ## System
-- CoinGecko 3835/10000 used, month-end projection 10118 (101%), throttle level 2 | by script {'scan': 1230, 'check_liquidity': 186, 'breakout_check': 2394, 'counterfactual_check': 25}
+- CoinGecko 3837/10000 used, month-end projection 10087 (101%), throttle level 2 | by script {'scan': 1232, 'check_liquidity': 186, 'breakout_check': 2394, 'counterfactual_check': 25}
 - Trials guard: OK (0 untracked)
-- Hypotheses: H1 NOT_SUPPORTED (n=37), H2 SUPPORTED (n=114)
-- radar-flags.json scan age: 13m
+- Hypotheses: H1 NOT_SUPPORTED (n=37), H2 SUPPORTED (n=115)
+- radar-flags.json scan age: 10m
 - excluded from radar (pegged/tokenized equity): 38
