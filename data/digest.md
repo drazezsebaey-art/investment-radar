@@ -1,4 +1,4 @@
-# Radar digest - 2026-10-12 07:43 UTC
+# Radar digest - 2026-10-12 08:11 UTC
 
 ## Market
 - BTC scenario **A** | price 84004 | wk close 83902 vs 82800 | 50W 77187 (8.83%) | 1h old
@@ -19,14 +19,14 @@
 - KAIA: **ONGOING** | +154% impulse, retr 0.44 | OI dd -% | fund - | hold False | inval 0.03616 | OB 0.03616-0.03760
 
 ## Pre-pump candidates
-- CRO: [A+E] 7d -8.9%
-- HBAR: [A+E] 7d -8.6%
-- SUI: [A+E] 7d -7.1%
-- SOL: [A+E] 7d -6.5%
-- AAVE: [A+E] 7d -6.3%
-- XRP: [A+E] 7d -6.1%
-- ADA: [A+E] 7d -6.0%
-- LTC: [A+E] 7d -6.0%
+- CRO: [A+E] 7d -10.4%
+- HBAR: [A+E] 7d -8.9%
+- SUI: [A+E] 7d -8.5%
+- SOL: [A+E] 7d -7.4%
+- XRP: [A+E] 7d -7.0%
+- AAVE: [A+E] 7d -6.5%
+- ADA: [A+E] 7d -6.5%
+- LTC: [A+E] 7d -6.2%
 
 ## ETF pipeline (new this run)
 - zcash: other - Zcash price tops $1,300 despite $124M ETF outflows: why is ZEC still rallying? - Invezz
@@ -47,12 +47,12 @@
 - (14 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 41 | mean 6.0% (0.48R) | in profit 28 | older than 7d 34
-- worst: SAND -0.68R, ENS -0.59R, QNT -0.54R | best: NIGHT 1.92R, ZRO 2.13R, NEAR 2.83R
+- open 41 | mean 6.2% (0.49R) | in profit 28 | older than 7d 34
+- worst: SAND -0.71R, MET -0.68R, ENS -0.61R | best: NIGHT 2.02R, ZRO 2.32R, NEAR 2.81R
 
 ## System
-- CoinGecko 3680/10000 used, month-end projection 10103 (101%), throttle level 2 | by script {'scan': 1186, 'check_liquidity': 180, 'breakout_check': 2289, 'counterfactual_check': 25}
+- CoinGecko 3683/10000 used, month-end projection 10074 (101%), throttle level 2 | by script {'scan': 1188, 'check_liquidity': 181, 'breakout_check': 2289, 'counterfactual_check': 25}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=33), H2 SUPPORTED (n=100)
-- radar-flags.json scan age: 13m
-- excluded from radar (pegged/tokenized equity): 37
+- radar-flags.json scan age: 10m
+- excluded from radar (pegged/tokenized equity): 36
