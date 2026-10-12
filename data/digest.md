@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-12 04:42 UTC
+# Radar digest - 2026-10-12 05:09 UTC
 
 ## Market
-- BTC scenario **A** | price 83957 | wk close 83902 vs 82800 | 50W 77187 (8.77%) | 1m old
+- BTC scenario **A** | price 83957 | wk close 83902 vs 82800 | 50W 77187 (8.77%) | 29m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.81% | ETH/BTC 0.03044 | breadth7d 48% | stables 30d 0.83%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.01pt | 7d 0.26pt | n=83
 - Gold: PAXG 1m -3.03% | real10y 2.87 (32bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -19,14 +19,14 @@
 - FLUID: **ONGOING** | +116% impulse, retr 0.07 | OI dd -% | fund - | hold True | inval 1.80790 | OB 1.70110-1.73600
 
 ## Pre-pump candidates
-- SEI: [A+B+E] 7d -5.6%
+- SEI: [A+B+E] 7d -3.4%
+- TAO: [A+C+E] 7d -3.3%
 - CRO: [A+E] 7d -10.7%
-- SUI: [A+E] 7d -10.4%
 - HBAR: [A+E] 7d -9.8%
-- SOL: [A+E] 7d -7.9%
 - LTC: [A+E] 7d -7.9%
-- XRP: [A+E] 7d -7.5%
+- SUI: [A+E] 7d -7.6%
 - ADA: [A+E] 7d -6.7%
+- BNB: [A+E] 7d -6.3%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - XRP Beats Bitcoin, Ethereum, Solana in ETF Flows: Can Price Follow? - TradingView
@@ -54,12 +54,12 @@
 - (14 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 41 | mean 5.4% (0.45R) | in profit 27 | older than 7d 34
-- worst: SAND -0.68R, ENS -0.64R, QNT -0.55R | best: AERO 1.77R, RAY 2.01R, NEAR 2.75R
+- open 41 | mean 6.4% (0.51R) | in profit 29 | older than 7d 34
+- worst: SAND -0.66R, ENS -0.58R, QNT -0.47R | best: AERO 1.80R, RAY 2.06R, NEAR 2.93R
 
 ## System
-- CoinGecko 3615/10000 used, month-end projection 10036 (100%), throttle level 2 | by script {'scan': 1174, 'check_liquidity': 177, 'breakout_check': 2239, 'counterfactual_check': 25}
+- CoinGecko 3617/10000 used, month-end projection 10004 (100%), throttle level 2 | by script {'scan': 1176, 'check_liquidity': 177, 'breakout_check': 2239, 'counterfactual_check': 25}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=33), H2 SUPPORTED (n=100)
-- radar-flags.json scan age: 12m
-- excluded from radar (pegged/tokenized equity): 38
+- radar-flags.json scan age: 9m
+- excluded from radar (pegged/tokenized equity): 37
