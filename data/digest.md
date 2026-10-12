@@ -1,10 +1,10 @@
-# Radar digest - 2026-10-12 21:43 UTC
+# Radar digest - 2026-10-12 22:10 UTC
 
 ## Market
 - BTC scenario **A** | price 83112 | wk close 83902 vs 82800 | 50W 77187 (7.68%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 56.86% | ETH/BTC 0.03048 | breadth7d 41% | stables 30d 0.83%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.17pt | 7d 0.52pt | n=87
-- Gold: PAXG 1m -2.64% | real10y 2.87 (32bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
+- Gold: PAXG 1m -2.46% | real10y 2.87 (32bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
 - 10y 1w: -2bp = real -1 + breakeven -3 -> **SMALL_MOVE**
 - 10y 1m: 27bp = real 32 + breakeven -3 -> **REAL_YIELD_DRIVEN**
 
@@ -19,7 +19,7 @@
 - STX: **ONGOING** | +102% impulse, retr 0.05 | OI dd 38% | fund 0.0100 | hold False | inval 0.37230 | OB 0.35090-0.36770
 
 ## Pre-pump candidates
-- PYTH: [B+C] 7d 9.8%
+- none
 
 ## ETF pipeline (new this run)
 - chainlink: other - Chainlink Price Eyes 10% Rally After ETF’s Second-Biggest Inflow of $9.48M - Bitget
@@ -39,12 +39,12 @@
 - (16 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 40 | mean 1.9% (0.27R) | in profit 22 | older than 7d 34
-- worst: ENS -0.78R, THETA -0.73R, QNT -0.73R | best: NEAR 1.87R, RENDER 2.24R, STX 3.25R
+- open 39 | mean 0.5% (0.17R) | in profit 20 | older than 7d 34
+- worst: ENS -0.87R, QNT -0.77R, AAVE -0.70R | best: AERO 1.48R, RENDER 2.02R, STX 2.28R
 
 ## System
-- CoinGecko 3855/10000 used, month-end projection 10064 (101%), throttle level 2 | by script {'scan': 1250, 'check_liquidity': 186, 'breakout_check': 2394, 'counterfactual_check': 25}
+- CoinGecko 3857/10000 used, month-end projection 10034 (100%), throttle level 2 | by script {'scan': 1252, 'check_liquidity': 186, 'breakout_check': 2394, 'counterfactual_check': 25}
 - Trials guard: OK (0 untracked)
-- Hypotheses: H1 NOT_SUPPORTED (n=37), H2 SUPPORTED (n=115)
-- radar-flags.json scan age: 13m
-- excluded from radar (pegged/tokenized equity): 37
+- Hypotheses: H1 NOT_SUPPORTED (n=37), H2 SUPPORTED (n=116)
+- radar-flags.json scan age: 10m
+- excluded from radar (pegged/tokenized equity): 39
