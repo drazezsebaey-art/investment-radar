@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-12 20:43 UTC
+# Radar digest - 2026-10-12 21:09 UTC
 
 ## Market
-- BTC scenario **A** | price 83112 | wk close 83902 vs 82800 | 50W 77187 (7.68%) | 1m old
+- BTC scenario **A** | price 83112 | wk close 83902 vs 82800 | 50W 77187 (7.68%) | 27m old
 - Alts: **BTC_LED** [-] | BTC.D 56.86% | ETH/BTC 0.03048 | breadth7d 41% | stables 30d 0.83%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.17pt | 7d 0.52pt | n=87
 - Gold: PAXG 1m -2.64% | real10y 2.87 (32bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -19,8 +19,7 @@
 - STX: **ONGOING** | +102% impulse, retr 0.05 | OI dd 38% | fund 0.0100 | hold False | inval 0.37230 | OB 0.35090-0.36770
 
 ## Pre-pump candidates
-- SENT: [C+E] 7d -10.4%
-- EIGEN: [C+E] 7d -0.5%
+- none
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - XRP Price Slid as Bitwise Drives $11 Million ETF Inflows - Cryptonews
@@ -44,12 +43,12 @@
 - (16 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 40 | mean 2.6% (0.33R) | in profit 22 | older than 7d 34
-- worst: ENS -0.79R, QNT -0.68R, THETA -0.65R | best: NEAR 2.14R, RENDER 2.35R, STX 3.27R
+- open 40 | mean 2.4% (0.30R) | in profit 22 | older than 7d 34
+- worst: ENS -0.78R, QNT -0.68R, THETA -0.67R | best: NEAR 1.95R, RENDER 2.24R, STX 3.01R
 
 ## System
-- CoinGecko 3851/10000 used, month-end projection 10089 (101%), throttle level 2 | by script {'scan': 1246, 'check_liquidity': 186, 'breakout_check': 2394, 'counterfactual_check': 25}
+- CoinGecko 3853/10000 used, month-end projection 10058 (101%), throttle level 2 | by script {'scan': 1248, 'check_liquidity': 186, 'breakout_check': 2394, 'counterfactual_check': 25}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=37), H2 SUPPORTED (n=115)
-- radar-flags.json scan age: 13m
-- excluded from radar (pegged/tokenized equity): 38
+- radar-flags.json scan age: 9m
+- excluded from radar (pegged/tokenized equity): 37
