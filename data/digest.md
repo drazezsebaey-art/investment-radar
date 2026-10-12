@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-12 21:09 UTC
+# Radar digest - 2026-10-12 21:43 UTC
 
 ## Market
-- BTC scenario **A** | price 83112 | wk close 83902 vs 82800 | 50W 77187 (7.68%) | 27m old
+- BTC scenario **A** | price 83112 | wk close 83902 vs 82800 | 50W 77187 (7.68%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 56.86% | ETH/BTC 0.03048 | breadth7d 41% | stables 30d 0.83%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.17pt | 7d 0.52pt | n=87
 - Gold: PAXG 1m -2.64% | real10y 2.87 (32bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -19,36 +19,32 @@
 - STX: **ONGOING** | +102% impulse, retr 0.05 | OI dd 38% | fund 0.0100 | hold False | inval 0.37230 | OB 0.35090-0.36770
 
 ## Pre-pump candidates
-- none
+- PYTH: [B+C] 7d 9.8%
 
 ## ETF pipeline (new this run)
-- ripple NEW: other - XRP Price Slid as Bitwise Drives $11 Million ETF Inflows - Cryptonews
-- ripple NEW: other - XRP price prediction: ETF gap to Solana at $160m - CryptoTicker
-- solana NEW: other - XRP price prediction: ETF gap to Solana at $160m - CryptoTicker
-- dogecoin NEW: other - Dogecoin Price Prediction Cools at $0.085 as Bitwise Shuts Its DOGE ETF, Money Chases Pepe
-- chainlink: other - Chainlink Price Eyes 10% Rally After ETF’s Second-Biggest Inflow of $9.48M - Cryptonews.ne
+- chainlink: other - Chainlink Price Eyes 10% Rally After ETF’s Second-Biggest Inflow of $9.48M - Bitget
 
 ## Derivatives flags (OKX)
-- SOL: LONG_FLUSH_24H | OI/mc -% | topPos 0.89 | taker 0.90
+- BTC: SHORT_SQUEEZE_24H | OI/mc 0.20% | topPos 0.97 | taker 0.97
+- ETH: LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 1.03
+- SOL: LONG_FLUSH_24H | OI/mc -% | topPos 0.89 | taker 0.91
 - NEAR: LONG_FLUSH_24H | OI/mc -% | topPos 1.04 | taker 0.94
-- AVAX: LONG_FLUSH_24H | OI/mc 0.43% | topPos 0.95 | taker 1.04
-- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 0.91
-- SUI: LONG_FLUSH_24H | OI/mc 1.00% | topPos 0.88 | taker 0.89
-- TAO: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 0.84
-- ZEC: LONG_FLUSH_24H | OI/mc -% | topPos 1.04 | taker 0.97
-- WLD: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.93 | taker 0.85
+- AVAX: LONG_FLUSH_24H | OI/mc 0.42% | topPos 0.95 | taker 1.03
+- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 0.92
+- SUI: LONG_FLUSH_24H | OI/mc 1.00% | topPos 0.87 | taker 0.89
+- TAO: LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 0.87
 
 ## Revenue / buyback flags
 - stonk-3: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
 - (16 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 40 | mean 2.4% (0.30R) | in profit 22 | older than 7d 34
-- worst: ENS -0.78R, QNT -0.68R, THETA -0.67R | best: NEAR 1.95R, RENDER 2.24R, STX 3.01R
+- open 40 | mean 1.9% (0.27R) | in profit 22 | older than 7d 34
+- worst: ENS -0.78R, THETA -0.73R, QNT -0.73R | best: NEAR 1.87R, RENDER 2.24R, STX 3.25R
 
 ## System
-- CoinGecko 3853/10000 used, month-end projection 10058 (101%), throttle level 2 | by script {'scan': 1248, 'check_liquidity': 186, 'breakout_check': 2394, 'counterfactual_check': 25}
+- CoinGecko 3855/10000 used, month-end projection 10064 (101%), throttle level 2 | by script {'scan': 1250, 'check_liquidity': 186, 'breakout_check': 2394, 'counterfactual_check': 25}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=37), H2 SUPPORTED (n=115)
-- radar-flags.json scan age: 9m
+- radar-flags.json scan age: 13m
 - excluded from radar (pegged/tokenized equity): 37
