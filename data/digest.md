@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-12 14:42 UTC
+# Radar digest - 2026-10-12 15:13 UTC
 
 ## Market
-- BTC scenario **A** | price 82625 | wk close 83902 vs 82800 | 50W 77187 (7.05%) | 1m old
+- BTC scenario **A** | price 82625 | wk close 83902 vs 82800 | 50W 77187 (7.05%) | 32m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.75% | ETH/BTC 0.03052 | breadth7d 44% | stables 30d 0.85%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.12pt | 7d 0.25pt | n=86
 - Gold: PAXG 1m -3.63% | real10y 2.87 (32bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -19,14 +19,8 @@
 - WLD: **ONGOING** | +76% impulse, retr 0.36 | OI dd 7% | fund 0.0100 | hold False | inval 0.45920 | OB 0.45920-0.48430
 
 ## Pre-pump candidates
-- LINK: [A+B+E] 7d -6.3%
-- CRO: [A+E] 7d -12.4%
-- HBAR: [A+E] 7d -10.1%
-- LTC: [A+E] 7d -9.5%
-- SUI: [A+E] 7d -9.5%
-- ADA: [A+E] 7d -8.9%
-- SOL: [A+E] 7d -8.3%
-- XRP: [A+E] 7d -7.9%
+- LINK: [A+B] 7d -7.9%
+- INJ: [A+C] 7d 2.3%
 
 ## ETF pipeline (new this run)
 - solana NEW: launch - Pando Finance to launch Hong Kong’s second spot Solana ETF on October 13 - Crypto News
@@ -49,12 +43,12 @@
 - (16 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 39 | mean 3.2% (0.31R) | in profit 22 | older than 7d 34
-- worst: ENS -0.75R, QNT -0.73R, SUPER -0.58R | best: RENDER 1.86R, ZRO 1.93R, NEAR 2.32R
+- open 39 | mean 2.7% (0.29R) | in profit 20 | older than 7d 34
+- worst: ENS -0.77R, QNT -0.73R, SUPER -0.63R | best: RENDER 1.75R, ZRO 1.81R, NEAR 2.28R
 
 ## System
-- CoinGecko 3761/10000 used, month-end projection 10065 (101%), throttle level 2 | by script {'scan': 1214, 'check_liquidity': 183, 'breakout_check': 2339, 'counterfactual_check': 25}
+- CoinGecko 3763/10000 used, month-end projection 10035 (100%), throttle level 2 | by script {'scan': 1216, 'check_liquidity': 183, 'breakout_check': 2339, 'counterfactual_check': 25}
 - Trials guard: OK (0 untracked)
-- Hypotheses: H1 NOT_SUPPORTED (n=37), H2 SUPPORTED (n=109)
-- radar-flags.json scan age: 12m
-- excluded from radar (pegged/tokenized equity): 38
+- Hypotheses: H1 NOT_SUPPORTED (n=37), H2 SUPPORTED (n=110)
+- radar-flags.json scan age: 10m
+- excluded from radar (pegged/tokenized equity): 37
