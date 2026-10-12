@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-12 07:10 UTC
+# Radar digest - 2026-10-12 07:43 UTC
 
 ## Market
-- BTC scenario **A** | price 84004 | wk close 83902 vs 82800 | 50W 77187 (8.83%) | 28m old
+- BTC scenario **A** | price 84004 | wk close 83902 vs 82800 | 50W 77187 (8.83%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.75% | ETH/BTC 0.03053 | breadth7d 50% | stables 30d 0.83%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.06pt | 7d 0.32pt | n=84
 - Gold: PAXG 1m -3.03% | real10y 2.87 (32bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -19,34 +19,27 @@
 - KAIA: **ONGOING** | +154% impulse, retr 0.44 | OI dd -% | fund - | hold False | inval 0.03616 | OB 0.03616-0.03760
 
 ## Pre-pump candidates
-- SEI: [A+B+E] 7d -5.7%
-- CRO: [A+E] 7d -8.6%
-- HBAR: [A+E] 7d -8.1%
+- CRO: [A+E] 7d -8.9%
+- HBAR: [A+E] 7d -8.6%
 - SUI: [A+E] 7d -7.1%
 - SOL: [A+E] 7d -6.5%
-- LTC: [A+E] 7d -6.3%
+- AAVE: [A+E] 7d -6.3%
 - XRP: [A+E] 7d -6.1%
-- AAVE: [A+E] 7d -5.8%
+- ADA: [A+E] 7d -6.0%
+- LTC: [A+E] 7d -6.0%
 
 ## ETF pipeline (new this run)
-- reserve-rights-token NEW: other - 32.79% Surge for RSR as Market Reacts to ETF Dynamics - Coinfomania
-- solana NEW: other - ETF Watch: ETH Sees Nine Consecutive Days of Outflows, SOL Ends 14-Week Net Inflow Streak,
-- ripple NEW: other - XRP, Bitcoin, Ethereum Prices Fall as ETF Inflows Slow Ahead of US Inflation Data - Benzin
-- zcash: delay_or_rejection - Zcash ETF sees $93.56M outflows in early October, first net withdrawal week since August -
-- zcash: filing - Winklevoss Files for a Zcash ETF at 0.25 Percent, a Tenth of the Grayscale Fee - Cryptonew
-- zcash: filing - Winklevoss Files for a Zcash ETF at 0.25 Percent, a Tenth of the Grayscale Fee - Cryptonew
-- zcash: other - Zcash Price Forecast: $30 million ETF outflows weigh on mild ZEC recovery - FXStreet
-- stellar: other - XRP ETF Inflows Meet Stellar’s RWA Growth as Remittix Builds Its Crypto-to-Bank Platform -
+- zcash: other - Zcash price tops $1,300 despite $124M ETF outflows: why is ZEC still rallying? - Invezz
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc 0.19% | topPos 0.99 | taker 1.06
-- ETH: SHORT_SQUEEZE_24H | OI/mc 0.58% | topPos 0.93 | taker 1.09
-- NEAR: SHORT_SQUEEZE_24H | OI/mc 1.08% | topPos 1.04 | taker 1.06
-- SEI: SHORT_SQUEEZE_FUEL | OI/mc 0.68% | topPos 0.91 | taker 1.00
-- ZEC: SHORT_SQUEEZE_24H | OI/mc 0.71% | topPos 1.11 | taker 1.10
-- ADA: LONG_FLUSH_24H | OI/mc 0.39% | topPos 0.94 | taker 1.02
-- LINK: AGGRESSIVE_BUYING, SHORT_SQUEEZE_24H | OI/mc 0.33% | topPos 0.92 | taker 1.18
-- BCH: SHORT_SQUEEZE_24H | OI/mc 0.44% | topPos 0.81 | taker 1.05
+- BTC: SHORT_SQUEEZE_24H | OI/mc 0.19% | topPos 0.99 | taker 1.07
+- ETH: SHORT_SQUEEZE_24H | OI/mc 0.58% | topPos 0.94 | taker 1.09
+- NEAR: SHORT_SQUEEZE_24H | OI/mc 1.07% | topPos 1.04 | taker 1.05
+- ZEC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 1.11 | taker 1.10
+- ADA: LONG_FLUSH_24H | OI/mc 0.39% | topPos 0.93 | taker 1.00
+- LINK: AGGRESSIVE_BUYING, SHORT_SQUEEZE_24H | OI/mc 0.33% | topPos 0.92 | taker 1.17
+- BCH: SHORT_SQUEEZE_24H | OI/mc 0.45% | topPos 0.81 | taker 1.00
+- UNI: SHORT_SQUEEZE_FUEL | OI/mc -% | topPos 0.85 | taker 0.99
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -54,12 +47,12 @@
 - (14 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 41 | mean 5.9% (0.47R) | in profit 28 | older than 7d 34
-- worst: SAND -0.72R, ENS -0.59R, QNT -0.52R | best: NIGHT 1.87R, RAY 1.88R, NEAR 2.79R
+- open 41 | mean 6.0% (0.48R) | in profit 28 | older than 7d 34
+- worst: SAND -0.68R, ENS -0.59R, QNT -0.54R | best: NIGHT 1.92R, ZRO 2.13R, NEAR 2.83R
 
 ## System
-- CoinGecko 3677/10000 used, month-end projection 10095 (101%), throttle level 2 | by script {'scan': 1184, 'check_liquidity': 179, 'breakout_check': 2289, 'counterfactual_check': 25}
+- CoinGecko 3680/10000 used, month-end projection 10103 (101%), throttle level 2 | by script {'scan': 1186, 'check_liquidity': 180, 'breakout_check': 2289, 'counterfactual_check': 25}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=33), H2 SUPPORTED (n=100)
-- radar-flags.json scan age: 9m
+- radar-flags.json scan age: 13m
 - excluded from radar (pegged/tokenized equity): 37
