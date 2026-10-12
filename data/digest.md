@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-12 11:45 UTC
+# Radar digest - 2026-10-12 12:23 UTC
 
 ## Market
-- BTC scenario **A** | price 83487 | wk close 83902 vs 82800 | 50W 77187 (8.16%) | 1h old
+- BTC scenario **A** | price 83487 | wk close 83902 vs 82800 | 50W 77187 (8.16%) | 2h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.73% | ETH/BTC 0.03061 | breadth7d 52% | stables 30d 0.84%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.14pt | 7d 0.30pt | n=85
 - Gold: PAXG 1m -3.63% | real10y 2.87 (32bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -19,8 +19,11 @@
 - WLD: **ONGOING** | +76% impulse, retr 0.27 | OI dd 7% | fund 0.0100 | hold False | inval 0.54050 | OB 0.45920-0.48430
 
 ## Pre-pump candidates
+- VVV: [C+E] 7d -16.8%
+- SENT: [C+E] 7d -10.9%
+- AAVE: [A+E] 7d -6.7%
 - LINK: [A+B] 7d -5.1%
-- ZEC: [A+C] 7d -0.6%
+- SYRUP: [C+E] 7d -1.9%
 
 ## ETF pipeline (new this run)
 - solana NEW: launch - Pando Finance to Launch Spot Solana ETF in Hong Kong: Will SOL Rise? - Coin Gabbar
@@ -42,12 +45,12 @@
 - (16 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 40 | mean 4.9% (0.42R) | in profit 24 | older than 7d 34
-- worst: SAND -0.85R, ENS -0.68R, QNT -0.65R | best: ZRO 2.06R, RENDER 2.08R, NEAR 2.58R
+- open 40 | mean 4.7% (0.41R) | in profit 24 | older than 7d 34
+- worst: SAND -0.87R, ENS -0.68R, QNT -0.66R | best: RENDER 2.13R, PYTH 2.17R, NEAR 2.44R
 
 ## System
-- CoinGecko 3698/10000 used, month-end projection 10005 (100%), throttle level 2 | by script {'scan': 1202, 'check_liquidity': 182, 'breakout_check': 2289, 'counterfactual_check': 25}
+- CoinGecko 3751/10000 used, month-end projection 10111 (101%), throttle level 2 | by script {'scan': 1204, 'check_liquidity': 183, 'breakout_check': 2339, 'counterfactual_check': 25}
 - Trials guard: OK (0 untracked)
-- Hypotheses: H1 NOT_SUPPORTED (n=35), H2 SUPPORTED (n=102)
-- radar-flags.json scan age: 15m
+- Hypotheses: H1 NOT_SUPPORTED (n=36), H2 SUPPORTED (n=103)
+- radar-flags.json scan age: 23m
 - excluded from radar (pegged/tokenized equity): 38
