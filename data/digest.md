@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-12 03:10 UTC
+# Radar digest - 2026-10-12 03:43 UTC
 
 ## Market
-- BTC scenario **A** | price 83831 | wk close 83902 vs 82800 | 50W 77187 (8.61%) | 28m old
+- BTC scenario **A** | price 83831 | wk close 83902 vs 82800 | 50W 77187 (8.61%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.81% | ETH/BTC 0.03044 | breadth7d 48% | stables 30d 0.83%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.01pt | 7d 0.26pt | n=83
 - Gold: PAXG 1m -3.22% | real10y 2.87 (32bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -19,27 +19,34 @@
 - SUI: **ONGOING** | +92% impulse, retr 0.29 | OI dd 14% | fund 0.0092 | hold False | inval 0.99780 | OB 0.93370-0.97450
 
 ## Pre-pump candidates
-- CRO: [A+E] 7d -12.3%
-- HBAR: [A+E] 7d -10.3%
+- CRO: [A+E] 7d -10.6%
+- HBAR: [A+E] 7d -9.9%
 - SUI: [A+E] 7d -9.4%
-- LTC: [A+E] 7d -8.5%
+- LTC: [A+E] 7d -7.7%
 - SOL: [A+E] 7d -7.5%
 - XRP: [A+E] 7d -7.5%
-- ZEC: [A+E] 7d -6.0%
 - BNB: [A+E] 7d -5.7%
+- ADA: [A+E] 7d -5.3%
 
 ## ETF pipeline (new this run)
-- ripple NEW: other - XRP ETF Inflows Hit $8.17M as Bitcoin and Ethereum Funds See Outflows - Coinpedia
+- ripple NEW: other - XRP Beats Bitcoin, Ethereum, Solana in ETF Flows: Can Price Follow? - TradingView
+- solana NEW: other - XRP Beats Bitcoin, Ethereum, Solana in ETF Flows: Can Price Follow? - TradingView
+- ripple NEW: other - XRP price slips below $1.50 – Can ETF demand fuel a recovery? - AMBCrypto
+- ripple NEW: other - XRP ETF Inflows Keep Rising as Remittix Builds a Competing Case for Payments-Focused Inves
+- solana NEW: other - Leveraged Solana ETF Draws Fresh Cash Inflows as Rally Tests Investors’ Nerve - TipRanks
+- ripple NEW: other - Canary XRP ETF Sees Cash Exit Just as XRP Rally Heats Up - TipRanks
+- ripple NEW: other - XRP Beats Bitcoin, Ethereum, Solana in ETF Flows: Can Price Follow? - Benzinga
+- solana NEW: other - XRP Beats Bitcoin, Ethereum, Solana in ETF Flows: Can Price Follow? - Benzinga
 
 ## Derivatives flags (OKX)
-- ETH: SHORT_SQUEEZE_24H | OI/mc 0.57% | topPos 0.92 | taker 1.02
-- NEAR: SHORT_SQUEEZE_24H | OI/mc -% | topPos 1.05 | taker 1.04
-- SEI: LONG_FLUSH_24H | OI/mc 0.69% | topPos 0.91 | taker 1.02
+- ETH: SHORT_SQUEEZE_24H | OI/mc 0.57% | topPos 0.92 | taker 1.05
+- NEAR: SHORT_SQUEEZE_24H | OI/mc 1.09% | topPos 1.04 | taker 1.04
 - ADA: LONG_FLUSH_24H | OI/mc 0.39% | topPos 0.93 | taker 0.99
-- LINK: SHORT_SQUEEZE_24H | OI/mc 0.32% | topPos 0.91 | taker 1.01
-- ONDO: LONG_FLUSH_24H | OI/mc 0.95% | topPos 0.73 | taker 0.97
-- S: SHORT_SQUEEZE_FUEL, LONG_FLUSH_24H | OI/mc 0.90% | topPos 0.94 | taker 1.03
-- BNB: SHORT_SQUEEZE_24H | OI/mc 0.05% | topPos 0.91 | taker 1.01
+- LINK: SHORT_SQUEEZE_24H | OI/mc 0.32% | topPos 0.92 | taker 1.04
+- BCH: SHORT_SQUEEZE_24H | OI/mc 0.44% | topPos 0.82 | taker 1.04
+- UNI: LONG_FLUSH_24H | OI/mc -% | topPos 0.85 | taker 0.98
+- ONDO: LONG_FLUSH_24H | OI/mc 0.95% | topPos 0.73 | taker 0.94
+- S: SHORT_SQUEEZE_FUEL, LONG_FLUSH_24H | OI/mc 0.97% | topPos 0.92 | taker 1.03
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -47,12 +54,12 @@
 - (14 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 41 | mean 5.2% (0.42R) | in profit 26 | older than 7d 34
-- worst: SAND -0.68R, ENS -0.65R, QNT -0.57R | best: AERO 1.74R, RAY 2.06R, NEAR 2.83R
+- open 41 | mean 5.2% (0.42R) | in profit 25 | older than 7d 34
+- worst: SAND -0.67R, ENS -0.65R, QNT -0.56R | best: AERO 1.75R, RAY 1.97R, NEAR 2.77R
 
 ## System
-- CoinGecko 3609/10000 used, month-end projection 10057 (101%), throttle level 2 | by script {'scan': 1168, 'check_liquidity': 177, 'breakout_check': 2239, 'counterfactual_check': 25}
+- CoinGecko 3611/10000 used, month-end projection 10062 (101%), throttle level 2 | by script {'scan': 1170, 'check_liquidity': 177, 'breakout_check': 2239, 'counterfactual_check': 25}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=33), H2 SUPPORTED (n=100)
-- radar-flags.json scan age: 10m
+- radar-flags.json scan age: 13m
 - excluded from radar (pegged/tokenized equity): 39
