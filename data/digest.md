@@ -1,10 +1,10 @@
-# Radar digest - 2026-10-12 09:43 UTC
+# Radar digest - 2026-10-12 10:10 UTC
 
 ## Market
 - BTC scenario **A** | price 83732 | wk close 83902 vs 82800 | 50W 77187 (8.48%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.75% | ETH/BTC 0.03053 | breadth7d 50% | stables 30d 0.83%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.06pt | 7d 0.32pt | n=84
-- Gold: PAXG 1m -3.03% | real10y 2.87 (32bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
+- Gold: PAXG 1m -3.63% | real10y 2.87 (32bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
 - 10y 1w: -2bp = real -1 + breakeven -3 -> **SMALL_MOVE**
 - 10y 1m: 27bp = real 32 + breakeven -3 -> **REAL_YIELD_DRIVEN**
 
@@ -21,8 +21,7 @@
 ## Pre-pump candidates
 - AAVE: [A+E] 7d -6.5%
 - LINK: [A+B] 7d -6.3%
-- CAKE: [C+E] 7d -5.4%
-- ZEC: [A+C] 7d -1.2%
+- SYRUP: [C+E] 7d -1.7%
 
 ## ETF pipeline (new this run)
 - solana NEW: launch - Solana ETF: Explosive 2831.HK Debut Fuels $1.9B Surge - TronWeekly
@@ -49,12 +48,12 @@
 - (16 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 40 | mean 5.7% (0.48R) | in profit 25 | older than 7d 34
-- worst: SAND -0.76R, ENS -0.66R, QNT -0.59R | best: RENDER 2.24R, ZRO 2.32R, NEAR 2.79R
+- open 40 | mean 5.6% (0.48R) | in profit 25 | older than 7d 34
+- worst: SAND -0.78R, ENS -0.67R, QNT -0.58R | best: RENDER 2.19R, ZRO 2.39R, NEAR 2.75R
 
 ## System
-- CoinGecko 3689/10000 used, month-end projection 10054 (100%), throttle level 2 | by script {'scan': 1194, 'check_liquidity': 181, 'breakout_check': 2289, 'counterfactual_check': 25}
+- CoinGecko 3691/10000 used, month-end projection 10022 (100%), throttle level 2 | by script {'scan': 1196, 'check_liquidity': 181, 'breakout_check': 2289, 'counterfactual_check': 25}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=34), H2 SUPPORTED (n=101)
-- radar-flags.json scan age: 13m
-- excluded from radar (pegged/tokenized equity): 37
+- radar-flags.json scan age: 9m
+- excluded from radar (pegged/tokenized equity): 38
