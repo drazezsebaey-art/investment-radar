@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-12 01:09 UTC
+# Radar digest - 2026-10-12 01:42 UTC
 
 ## Market
-- BTC scenario **A** | price 83920 | wk close 83902 vs 82800 | 50W 77187 (8.72%) | 29m old
+- BTC scenario **A** | price 83920 | wk close 83902 vs 82800 | 50W 77187 (8.72%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.83% | ETH/BTC 0.03030 | breadth7d 50% | stables 30d 0.82%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.01pt | 7d 0.34pt | n=82
 - Gold: PAXG 1m -3.22% | real10y 2.87 (32bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -20,28 +20,26 @@
 
 ## Pre-pump candidates
 - SEI: [A+B+E] 7d -4.4%
-- TAO: [A+C+E] 7d -3.1%
-- CRO: [A+E] 7d -11.3%
+- CRO: [A+E] 7d -11.9%
 - HBAR: [A+E] 7d -9.5%
-- LTC: [A+E] 7d -8.6%
 - SOL: [A+E] 7d -8.3%
+- LTC: [A+E] 7d -8.2%
 - XRP: [A+E] 7d -7.4%
 - SUI: [A+E] 7d -7.0%
+- BNB: [A+E] 7d -5.4%
 
 ## ETF pipeline (new this run)
-- dogecoin NEW: other - Bitwise Dogecoin ETF to Shut Down After Failing to Attract Enough Demand - Cryptonews.net
-- ripple NEW: other - XRP ETF News: Positive Fund Flows Strengthen the Bull Case as Remittix Challenges the Paym
-- cap-4 NEW: other - Direxion MU Bull 2X ETF Tokenized bStocks Price (MUUB/USD) Today | Live Price, Market Cap 
+- ripple NEW: other - XRP ETF Inflows Hit $8.17M as Bitcoin and Ethereum Funds See Outflows - Coinpedia
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc 0.19% | topPos 0.98 | taker 1.03
-- SOL: LONG_FLUSH_24H | OI/mc 0.58% | topPos 0.90 | taker 1.02
-- NEAR: SHORT_SQUEEZE_24H | OI/mc 1.07% | topPos 1.06 | taker 1.06
-- SEI: SHORT_SQUEEZE_FUEL, LONG_FLUSH_24H | OI/mc 0.69% | topPos 0.92 | taker 1.11
-- ZEC: LONG_FLUSH_24H | OI/mc -% | topPos 1.08 | taker 1.11
-- ADA: LONG_FLUSH_24H | OI/mc 0.39% | topPos 0.93 | taker 0.95
-- LINK: SHORT_SQUEEZE_24H | OI/mc 0.32% | topPos 0.91 | taker 1.02
-- ONDO: LONG_FLUSH_24H | OI/mc 0.93% | topPos 0.71 | taker 0.97
+- BTC: LONG_FLUSH_24H | OI/mc 0.19% | topPos 0.98 | taker 1.05
+- SOL: LONG_FLUSH_24H | OI/mc 0.58% | topPos 0.90 | taker 1.03
+- NEAR: SHORT_SQUEEZE_24H | OI/mc -% | topPos 1.06 | taker 1.05
+- SEI: SHORT_SQUEEZE_FUEL, LONG_FLUSH_24H | OI/mc 0.70% | topPos 0.91 | taker 1.07
+- ZEC: LONG_FLUSH_24H | OI/mc 0.67% | topPos 1.08 | taker 1.11
+- ADA: LONG_FLUSH_24H | OI/mc 0.39% | topPos 0.93 | taker 0.98
+- LINK: SHORT_SQUEEZE_24H | OI/mc 0.32% | topPos 0.91 | taker 1.03
+- ONDO: LONG_FLUSH_24H | OI/mc 0.95% | topPos 0.73 | taker 0.99
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -49,12 +47,12 @@
 - (14 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 41 | mean 5.2% (0.44R) | in profit 26 | older than 7d 34
-- worst: ENS -0.64R, SAND -0.62R, QNT -0.56R | best: BEAM 1.82R, RAY 1.92R, NEAR 2.91R
+- open 41 | mean 5.0% (0.41R) | in profit 25 | older than 7d 34
+- worst: ENS -0.66R, SAND -0.66R, QNT -0.54R | best: AERO 1.81R, RAY 2.10R, NEAR 2.89R
 
 ## System
-- CoinGecko 3601/10000 used, month-end projection 10110 (101%), throttle level 2 | by script {'scan': 1160, 'check_liquidity': 177, 'breakout_check': 2239, 'counterfactual_check': 25}
+- CoinGecko 3603/10000 used, month-end projection 10116 (101%), throttle level 2 | by script {'scan': 1162, 'check_liquidity': 177, 'breakout_check': 2239, 'counterfactual_check': 25}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=33), H2 SUPPORTED (n=100)
-- radar-flags.json scan age: 9m
+- radar-flags.json scan age: 12m
 - excluded from radar (pegged/tokenized equity): 39
