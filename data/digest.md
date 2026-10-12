@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-12 17:10 UTC
+# Radar digest - 2026-10-12 17:42 UTC
 
 ## Market
-- BTC scenario **A** | price 82837 | wk close 83902 vs 82800 | 50W 77187 (7.32%) | 29m old
+- BTC scenario **A** | price 82837 | wk close 83902 vs 82800 | 50W 77187 (7.32%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.75% | ETH/BTC 0.03052 | breadth7d 44% | stables 30d 0.85%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.12pt | 7d 0.25pt | n=86
 - Gold: PAXG 1m -2.64% | real10y 2.87 (32bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -19,37 +19,36 @@
 - TAO: **ONGOING** | +60% impulse, retr 0.44 | OI dd 18% | fund 0.0100 | hold False | inval 254.40000 | OB 213.50000-219.30000
 
 ## Pre-pump candidates
-- AAVE: [A+E] 7d -11.7%
 - EIGEN: [C+E] 7d -1.7%
-- PYTH: [B+C] 7d 11.3%
 
 ## ETF pipeline (new this run)
-- ripple NEW: other - Crypto Today: Bitcoin, Ethereum and XRP face recovery headwinds as ETF outflows weigh - FX
-- dogecoin NEW: other - Dogecoin Price Prediction: Pepeto Eyes a Pepe Style Run as DOGE Holds $0.085 Before the ET
-- ripple NEW: other - Grayscale XRP ETF Adds Anchorage Digital, Opens Door to In-Kind XRP Transfers - Coinpaper
-- zcash: other - Zcash Price Forecast: $30 million ETF outflows weigh on mild ZEC recovery - FXStreet
+- solana NEW: launch - Another Spot Solana ETF Set to Launch This Month - TradingView
+- dogecoin NEW: institutional_backing - Dogecoin custody: 144.8 million DOGE across two custodians, and what changes for ETP holde
+- solana NEW: other - XRP price prediction: ETF gap to Solana at $160m - CryptoTicker
+- ripple NEW: other - XRP price prediction: ETF gap to Solana at $160m - CryptoTicker
+- dogecoin NEW: other - Bitcoin’s $500,000 Bet, Ethereum’s AI Warning, Dogecoin ETF Drama and More: This Week in C
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc 0.20% | topPos 0.97 | taker 0.95
-- ETH: LONG_FLUSH_24H | OI/mc 0.58% | topPos 0.93 | taker 1.00
-- SOL: LONG_FLUSH_24H | OI/mc 0.59% | topPos 0.89 | taker 0.91
-- NEAR: LONG_FLUSH_24H | OI/mc 1.09% | topPos 1.06 | taker 0.93
-- AVAX: LONG_FLUSH_24H | OI/mc 0.43% | topPos 0.95 | taker 0.96
-- XRP: LONG_FLUSH_24H | OI/mc 0.13% | topPos 0.86 | taker 0.93
-- TAO: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.82% | topPos 0.91 | taker 0.80
-- ZEC: LONG_FLUSH_24H | OI/mc 0.66% | topPos 1.05 | taker 1.02
+- BTC: LONG_FLUSH_24H | OI/mc 0.20% | topPos 0.97 | taker 0.96
+- ETH: LONG_FLUSH_24H | OI/mc 0.57% | topPos 0.92 | taker 0.98
+- SOL: LONG_FLUSH_24H | OI/mc 0.60% | topPos 0.89 | taker 0.89
+- NEAR: LONG_FLUSH_24H | OI/mc -% | topPos 1.05 | taker 0.90
+- AVAX: LONG_FLUSH_24H | OI/mc 0.43% | topPos 0.95 | taker 0.94
+- XRP: LONG_FLUSH_24H | OI/mc 0.13% | topPos 0.87 | taker 0.89
+- SUI: LONG_FLUSH_24H | OI/mc 0.99% | topPos 0.87 | taker 0.88
+- TAO: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.82% | topPos 0.90 | taker 0.82
 
 ## Revenue / buyback flags
 - stonk-3: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
 - (16 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 39 | mean 1.3% (0.21R) | in profit 20 | older than 7d 34
-- worst: ENS -0.79R, QNT -0.74R, THETA -0.68R | best: RENDER 1.58R, PYTH 1.59R, NEAR 1.91R
+- open 39 | mean 1.8% (0.25R) | in profit 20 | older than 7d 34
+- worst: ENS -0.78R, QNT -0.76R, JTO -0.69R | best: BEAM 1.75R, RENDER 1.75R, NEAR 2.01R
 
 ## System
-- CoinGecko 3773/10000 used, month-end projection 9990 (100%), throttle level 1 | by script {'scan': 1224, 'check_liquidity': 185, 'breakout_check': 2339, 'counterfactual_check': 25}
+- CoinGecko 3776/10000 used, month-end projection 9998 (100%), throttle level 1 | by script {'scan': 1226, 'check_liquidity': 186, 'breakout_check': 2339, 'counterfactual_check': 25}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=37), H2 SUPPORTED (n=114)
-- radar-flags.json scan age: 10m
-- excluded from radar (pegged/tokenized equity): 37
+- radar-flags.json scan age: 12m
+- excluded from radar (pegged/tokenized equity): 38
