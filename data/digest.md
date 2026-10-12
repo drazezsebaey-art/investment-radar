@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-12 16:43 UTC
+# Radar digest - 2026-10-12 17:10 UTC
 
 ## Market
-- BTC scenario **A** | price 82837 | wk close 83902 vs 82800 | 50W 77187 (7.32%) | 1m old
+- BTC scenario **A** | price 82837 | wk close 83902 vs 82800 | 50W 77187 (7.32%) | 29m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.75% | ETH/BTC 0.03052 | breadth7d 44% | stables 30d 0.85%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.12pt | 7d 0.25pt | n=86
 - Gold: PAXG 1m -2.64% | real10y 2.87 (32bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -19,7 +19,9 @@
 - TAO: **ONGOING** | +60% impulse, retr 0.44 | OI dd 18% | fund 0.0100 | hold False | inval 254.40000 | OB 213.50000-219.30000
 
 ## Pre-pump candidates
-- none
+- AAVE: [A+E] 7d -11.7%
+- EIGEN: [C+E] 7d -1.7%
+- PYTH: [B+C] 7d 11.3%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - Crypto Today: Bitcoin, Ethereum and XRP face recovery headwinds as ETF outflows weigh - FX
@@ -42,12 +44,12 @@
 - (16 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 39 | mean 2.8% (0.32R) | in profit 20 | older than 7d 34
-- worst: ENS -0.74R, QNT -0.73R, SUPER -0.59R | best: PYTH 1.83R, BEAM 1.86R, NEAR 2.18R
+- open 39 | mean 1.3% (0.21R) | in profit 20 | older than 7d 34
+- worst: ENS -0.79R, QNT -0.74R, THETA -0.68R | best: RENDER 1.58R, PYTH 1.59R, NEAR 1.91R
 
 ## System
-- CoinGecko 3770/10000 used, month-end projection 10017 (100%), throttle level 2 | by script {'scan': 1222, 'check_liquidity': 184, 'breakout_check': 2339, 'counterfactual_check': 25}
+- CoinGecko 3773/10000 used, month-end projection 9990 (100%), throttle level 1 | by script {'scan': 1224, 'check_liquidity': 185, 'breakout_check': 2339, 'counterfactual_check': 25}
 - Trials guard: OK (0 untracked)
-- Hypotheses: H1 NOT_SUPPORTED (n=37), H2 SUPPORTED (n=111)
-- radar-flags.json scan age: 13m
+- Hypotheses: H1 NOT_SUPPORTED (n=37), H2 SUPPORTED (n=114)
+- radar-flags.json scan age: 10m
 - excluded from radar (pegged/tokenized equity): 37
