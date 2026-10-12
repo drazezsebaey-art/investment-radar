@@ -1,4 +1,4 @@
-# Radar digest - 2026-10-12 13:44 UTC
+# Radar digest - 2026-10-12 14:11 UTC
 
 ## Market
 - BTC scenario **A** | price 82724 | wk close 83902 vs 82800 | 50W 77187 (7.17%) | 1h old
@@ -19,8 +19,7 @@
 - CFX: **ONGOING** | +68% impulse, retr 0.37 | OI dd 0% | fund 0.0100 | hold False | inval 0.04750 | OB 0.04750-0.04960
 
 ## Pre-pump candidates
-- VVV: [C+E] 7d -19.0%
-- SENT: [C+E] 7d -9.6%
+- none
 
 ## ETF pipeline (new this run)
 - solana NEW: launch - Pando Finance to launch Hong Kong’s second spot Solana ETF on October 13 - Crypto News
@@ -43,12 +42,12 @@
 - (16 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 40 | mean 3.7% (0.35R) | in profit 23 | older than 7d 34
-- worst: SAND -0.93R, ENS -0.72R, QNT -0.67R | best: RENDER 2.02R, ZRO 2.26R, NEAR 2.36R
+- open 39 | mean 4.3% (0.39R) | in profit 24 | older than 7d 34
+- worst: ENS -0.71R, QNT -0.70R, SUPER -0.54R | best: ZRO 2.13R, RENDER 2.13R, NEAR 2.42R
 
 ## System
-- CoinGecko 3757/10000 used, month-end projection 10091 (101%), throttle level 2 | by script {'scan': 1210, 'check_liquidity': 183, 'breakout_check': 2339, 'counterfactual_check': 25}
+- CoinGecko 3759/10000 used, month-end projection 10060 (101%), throttle level 2 | by script {'scan': 1212, 'check_liquidity': 183, 'breakout_check': 2339, 'counterfactual_check': 25}
 - Trials guard: OK (0 untracked)
-- Hypotheses: H1 NOT_SUPPORTED (n=36), H2 SUPPORTED (n=103)
-- radar-flags.json scan age: 14m
-- excluded from radar (pegged/tokenized equity): 38
+- Hypotheses: H1 NOT_SUPPORTED (n=37), H2 SUPPORTED (n=104)
+- radar-flags.json scan age: 10m
+- excluded from radar (pegged/tokenized equity): 37
