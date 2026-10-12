@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-12 10:43 UTC
+# Radar digest - 2026-10-12 11:10 UTC
 
 ## Market
-- BTC scenario **A** | price 83487 | wk close 83902 vs 82800 | 50W 77187 (8.16%) | 1m old
+- BTC scenario **A** | price 83487 | wk close 83902 vs 82800 | 50W 77187 (8.16%) | 28m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.73% | ETH/BTC 0.03061 | breadth7d 52% | stables 30d 0.84%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.14pt | 7d 0.30pt | n=85
 - Gold: PAXG 1m -3.63% | real10y 2.87 (32bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -19,9 +19,7 @@
 - WLD: **ONGOING** | +76% impulse, retr 0.27 | OI dd 7% | fund 0.0100 | hold False | inval 0.54050 | OB 0.45920-0.48430
 
 ## Pre-pump candidates
-- AAVE: [A+E] 7d -6.9%
 - LINK: [A+B] 7d -5.5%
-- CAKE: [C+E] 7d -5.3%
 
 ## ETF pipeline (new this run)
 - solana NEW: launch - Solana ETF: Explosive 2831.HK Debut Fuels $1.9B Surge - TronWeekly
@@ -48,12 +46,12 @@
 - (16 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 40 | mean 5.2% (0.44R) | in profit 24 | older than 7d 34
-- worst: SAND -0.79R, ENS -0.68R, QNT -0.60R | best: ZRO 2.13R, RENDER 2.24R, NEAR 2.65R
+- open 40 | mean 5.5% (0.46R) | in profit 24 | older than 7d 34
+- worst: SAND -0.80R, ENS -0.65R, QNT -0.60R | best: RENDER 2.30R, ZRO 2.32R, NEAR 2.65R
 
 ## System
-- CoinGecko 3693/10000 used, month-end projection 10028 (100%), throttle level 2 | by script {'scan': 1198, 'check_liquidity': 181, 'breakout_check': 2289, 'counterfactual_check': 25}
+- CoinGecko 3696/10000 used, month-end projection 9999 (100%), throttle level 1 | by script {'scan': 1200, 'check_liquidity': 182, 'breakout_check': 2289, 'counterfactual_check': 25}
 - Trials guard: OK (0 untracked)
-- Hypotheses: H1 NOT_SUPPORTED (n=34), H2 SUPPORTED (n=101)
-- radar-flags.json scan age: 13m
-- excluded from radar (pegged/tokenized equity): 38
+- Hypotheses: H1 NOT_SUPPORTED (n=35), H2 SUPPORTED (n=102)
+- radar-flags.json scan age: 10m
+- excluded from radar (pegged/tokenized equity): 37
