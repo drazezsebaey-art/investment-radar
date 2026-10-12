@@ -1,4 +1,4 @@
-# Radar digest - 2026-10-12 01:42 UTC
+# Radar digest - 2026-10-12 02:09 UTC
 
 ## Market
 - BTC scenario **A** | price 83920 | wk close 83902 vs 82800 | 50W 77187 (8.72%) | 1h old
@@ -19,14 +19,14 @@
 - FLUID: **ONGOING** | +116% impulse, retr 0.06 | OI dd -% | fund - | hold True | inval 1.80790 | OB 1.70110-1.73600
 
 ## Pre-pump candidates
-- SEI: [A+B+E] 7d -4.4%
-- CRO: [A+E] 7d -11.9%
-- HBAR: [A+E] 7d -9.5%
-- SOL: [A+E] 7d -8.3%
-- LTC: [A+E] 7d -8.2%
-- XRP: [A+E] 7d -7.4%
-- SUI: [A+E] 7d -7.0%
-- BNB: [A+E] 7d -5.4%
+- SEI: [A+B+E] 7d -5.2%
+- CRO: [A+E] 7d -12.3%
+- HBAR: [A+E] 7d -10.3%
+- SUI: [A+E] 7d -9.0%
+- LTC: [A+E] 7d -8.5%
+- SOL: [A+E] 7d -8.2%
+- XRP: [A+E] 7d -7.9%
+- ZEC: [A+E] 7d -6.0%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - XRP ETF Inflows Hit $8.17M as Bitcoin and Ethereum Funds See Outflows - Coinpedia
@@ -47,12 +47,12 @@
 - (14 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 41 | mean 5.0% (0.41R) | in profit 25 | older than 7d 34
-- worst: ENS -0.66R, SAND -0.66R, QNT -0.54R | best: AERO 1.81R, RAY 2.10R, NEAR 2.89R
+- open 41 | mean 4.6% (0.39R) | in profit 25 | older than 7d 34
+- worst: ENS -0.69R, SAND -0.69R, QNT -0.56R | best: AERO 1.78R, RAY 2.01R, NEAR 2.79R
 
 ## System
-- CoinGecko 3603/10000 used, month-end projection 10116 (101%), throttle level 2 | by script {'scan': 1162, 'check_liquidity': 177, 'breakout_check': 2239, 'counterfactual_check': 25}
+- CoinGecko 3605/10000 used, month-end projection 10083 (101%), throttle level 2 | by script {'scan': 1164, 'check_liquidity': 177, 'breakout_check': 2239, 'counterfactual_check': 25}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=33), H2 SUPPORTED (n=100)
-- radar-flags.json scan age: 12m
+- radar-flags.json scan age: 9m
 - excluded from radar (pegged/tokenized equity): 39
