@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-12 00:42 UTC
+# Radar digest - 2026-10-12 01:09 UTC
 
 ## Market
-- BTC scenario **A** | price 83920 | wk close 83902 vs 82800 | 50W 77187 (8.72%) | 1m old
+- BTC scenario **A** | price 83920 | wk close 83902 vs 82800 | 50W 77187 (8.72%) | 29m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.83% | ETH/BTC 0.03030 | breadth7d 50% | stables 30d 0.82%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.01pt | 7d 0.34pt | n=82
 - Gold: PAXG 1m -3.22% | real10y 2.87 (32bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -19,14 +19,14 @@
 - FLUID: **ONGOING** | +116% impulse, retr 0.06 | OI dd -% | fund - | hold True | inval 1.80790 | OB 1.70110-1.73600
 
 ## Pre-pump candidates
-- SEI: [A+B+E] 7d -4.9%
+- SEI: [A+B+E] 7d -4.4%
+- TAO: [A+C+E] 7d -3.1%
 - CRO: [A+E] 7d -11.3%
 - HBAR: [A+E] 7d -9.5%
 - LTC: [A+E] 7d -8.6%
-- SOL: [A+E] 7d -8.6%
-- XRP: [A+E] 7d -7.2%
-- SUI: [A+E] 7d -6.9%
-- BNB: [A+E] 7d -5.3%
+- SOL: [A+E] 7d -8.3%
+- XRP: [A+E] 7d -7.4%
+- SUI: [A+E] 7d -7.0%
 
 ## ETF pipeline (new this run)
 - dogecoin NEW: other - Bitwise Dogecoin ETF to Shut Down After Failing to Attract Enough Demand - Cryptonews.net
@@ -49,12 +49,12 @@
 - (14 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 41 | mean 5.3% (0.44R) | in profit 26 | older than 7d 34
-- worst: ENS -0.62R, SAND -0.58R, QNT -0.56R | best: RAY 1.78R, AERO 1.82R, NEAR 2.81R
+- open 41 | mean 5.2% (0.44R) | in profit 26 | older than 7d 34
+- worst: ENS -0.64R, SAND -0.62R, QNT -0.56R | best: BEAM 1.82R, RAY 1.92R, NEAR 2.91R
 
 ## System
-- CoinGecko 3599/10000 used, month-end projection 10143 (101%), throttle level 2 | by script {'scan': 1158, 'check_liquidity': 177, 'breakout_check': 2239, 'counterfactual_check': 25}
+- CoinGecko 3601/10000 used, month-end projection 10110 (101%), throttle level 2 | by script {'scan': 1160, 'check_liquidity': 177, 'breakout_check': 2239, 'counterfactual_check': 25}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=33), H2 SUPPORTED (n=100)
-- radar-flags.json scan age: 12m
-- excluded from radar (pegged/tokenized equity): 38
+- radar-flags.json scan age: 9m
+- excluded from radar (pegged/tokenized equity): 39
