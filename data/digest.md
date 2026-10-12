@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-12 08:42 UTC
+# Radar digest - 2026-10-12 09:10 UTC
 
 ## Market
-- BTC scenario **A** | price 83732 | wk close 83902 vs 82800 | 50W 77187 (8.48%) | 1m old
+- BTC scenario **A** | price 83732 | wk close 83902 vs 82800 | 50W 77187 (8.48%) | 30m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.75% | ETH/BTC 0.03053 | breadth7d 50% | stables 30d 0.83%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.06pt | 7d 0.32pt | n=84
 - Gold: PAXG 1m -3.03% | real10y 2.87 (32bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -19,12 +19,12 @@
 - WLD: **ONGOING** | +76% impulse, retr 0.26 | OI dd 7% | fund 0.0100 | hold False | inval 0.54050 | OB 0.45920-0.48430
 
 ## Pre-pump candidates
-- SEI: [A+B+E] 7d -5.7%
+- SEI: [A+B+E] 7d -7.5%
 - CRO: [A+E] 7d -10.4%
+- SUI: [A+E] 7d -9.9%
 - HBAR: [A+E] 7d -8.9%
-- SUI: [A+E] 7d -8.5%
-- SOL: [A+E] 7d -7.4%
-- XRP: [A+E] 7d -7.0%
+- SOL: [A+E] 7d -8.2%
+- XRP: [A+E] 7d -7.7%
 - AAVE: [A+E] 7d -6.5%
 - ADA: [A+E] 7d -6.5%
 
@@ -47,12 +47,12 @@
 - (14 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 41 | mean 5.6% (0.46R) | in profit 28 | older than 7d 34
-- worst: MET -0.83R, SAND -0.79R, ENS -0.63R | best: RENDER 1.91R, ZRO 2.32R, NEAR 2.71R
+- open 41 | mean 5.6% (0.47R) | in profit 27 | older than 7d 34
+- worst: SAND -0.81R, MET -0.80R, ENS -0.65R | best: RENDER 2.08R, ZRO 2.58R, NEAR 2.77R
 
 ## System
-- CoinGecko 3685/10000 used, month-end projection 10080 (101%), throttle level 2 | by script {'scan': 1190, 'check_liquidity': 181, 'breakout_check': 2289, 'counterfactual_check': 25}
+- CoinGecko 3687/10000 used, month-end projection 10048 (100%), throttle level 2 | by script {'scan': 1192, 'check_liquidity': 181, 'breakout_check': 2289, 'counterfactual_check': 25}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=33), H2 SUPPORTED (n=101)
-- radar-flags.json scan age: 12m
+- radar-flags.json scan age: 10m
 - excluded from radar (pegged/tokenized equity): 37
