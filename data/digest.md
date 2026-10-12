@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-12 05:09 UTC
+# Radar digest - 2026-10-12 05:43 UTC
 
 ## Market
-- BTC scenario **A** | price 83957 | wk close 83902 vs 82800 | 50W 77187 (8.77%) | 29m old
+- BTC scenario **A** | price 83957 | wk close 83902 vs 82800 | 50W 77187 (8.77%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.81% | ETH/BTC 0.03044 | breadth7d 48% | stables 30d 0.83%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.01pt | 7d 0.26pt | n=83
 - Gold: PAXG 1m -3.03% | real10y 2.87 (32bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -20,33 +20,33 @@
 
 ## Pre-pump candidates
 - SEI: [A+B+E] 7d -3.4%
-- TAO: [A+C+E] 7d -3.3%
-- CRO: [A+E] 7d -10.7%
-- HBAR: [A+E] 7d -9.8%
-- LTC: [A+E] 7d -7.9%
+- TAO: [A+C+E] 7d -0.9%
+- CRO: [A+E] 7d -8.9%
+- HBAR: [A+E] 7d -8.7%
 - SUI: [A+E] 7d -7.6%
-- ADA: [A+E] 7d -6.7%
-- BNB: [A+E] 7d -6.3%
+- LTC: [A+E] 7d -6.6%
+- XRP: [A+E] 7d -6.1%
+- SOL: [A+E] 7d -6.0%
 
 ## ETF pipeline (new this run)
-- ripple NEW: other - XRP Beats Bitcoin, Ethereum, Solana in ETF Flows: Can Price Follow? - TradingView
-- solana NEW: other - XRP Beats Bitcoin, Ethereum, Solana in ETF Flows: Can Price Follow? - TradingView
-- ripple NEW: other - XRP price slips below $1.50 – Can ETF demand fuel a recovery? - AMBCrypto
-- ripple NEW: other - XRP ETF Inflows Keep Rising as Remittix Builds a Competing Case for Payments-Focused Inves
-- solana NEW: other - Leveraged Solana ETF Draws Fresh Cash Inflows as Rally Tests Investors’ Nerve - TipRanks
-- ripple NEW: other - Canary XRP ETF Sees Cash Exit Just as XRP Rally Heats Up - TipRanks
-- ripple NEW: other - XRP Beats Bitcoin, Ethereum, Solana in ETF Flows: Can Price Follow? - Benzinga
-- solana NEW: other - XRP Beats Bitcoin, Ethereum, Solana in ETF Flows: Can Price Follow? - Benzinga
+- reserve-rights-token NEW: other - 32.79% Surge for RSR as Market Reacts to ETF Dynamics - Coinfomania
+- solana NEW: other - ETF Watch: ETH Sees Nine Consecutive Days of Outflows, SOL Ends 14-Week Net Inflow Streak,
+- ripple NEW: other - XRP, Bitcoin, Ethereum Prices Fall as ETF Inflows Slow Ahead of US Inflation Data - Benzin
+- zcash: delay_or_rejection - Zcash ETF sees $93.56M outflows in early October, first net withdrawal week since August -
+- zcash: filing - Winklevoss Files for a Zcash ETF at 0.25 Percent, a Tenth of the Grayscale Fee - Cryptonew
+- zcash: filing - Winklevoss Files for a Zcash ETF at 0.25 Percent, a Tenth of the Grayscale Fee - Cryptonew
+- zcash: other - Zcash Price Forecast: $30 million ETF outflows weigh on mild ZEC recovery - FXStreet
+- stellar: other - XRP ETF Inflows Meet Stellar’s RWA Growth as Remittix Builds Its Crypto-to-Bank Platform -
 
 ## Derivatives flags (OKX)
-- ETH: SHORT_SQUEEZE_24H | OI/mc 0.57% | topPos 0.92 | taker 1.07
-- NEAR: SHORT_SQUEEZE_24H | OI/mc -% | topPos 1.04 | taker 1.06
-- SEI: SHORT_SQUEEZE_FUEL | OI/mc 0.68% | topPos 0.91 | taker 1.02
-- ZEC: SHORT_SQUEEZE_24H | OI/mc 0.68% | topPos 1.08 | taker 1.09
-- ADA: LONG_FLUSH_24H | OI/mc 0.39% | topPos 0.93 | taker 1.00
-- LINK: SHORT_SQUEEZE_24H | OI/mc 0.32% | topPos 0.91 | taker 1.07
-- BCH: SHORT_SQUEEZE_24H | OI/mc 0.45% | topPos 0.82 | taker 1.08
-- ONDO: LONG_FLUSH_24H | OI/mc 0.97% | topPos 0.73 | taker 0.97
+- BTC: SHORT_SQUEEZE_24H | OI/mc 0.19% | topPos 0.99 | taker 1.06
+- ETH: SHORT_SQUEEZE_24H | OI/mc 0.58% | topPos 0.93 | taker 1.08
+- SOL: SHORT_SQUEEZE_24H | OI/mc 0.58% | topPos 0.90 | taker 1.05
+- NEAR: SHORT_SQUEEZE_24H | OI/mc 1.06% | topPos 1.04 | taker 1.05
+- SEI: SHORT_SQUEEZE_FUEL | OI/mc 0.68% | topPos 0.92 | taker 1.05
+- ZEC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 1.13 | taker 1.13
+- ADA: LONG_FLUSH_24H | OI/mc 0.39% | topPos 0.95 | taker 1.03
+- LINK: SHORT_SQUEEZE_24H | OI/mc 0.33% | topPos 0.92 | taker 1.11
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -54,12 +54,12 @@
 - (14 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 41 | mean 6.4% (0.51R) | in profit 29 | older than 7d 34
-- worst: SAND -0.66R, ENS -0.58R, QNT -0.47R | best: AERO 1.80R, RAY 2.06R, NEAR 2.93R
+- open 41 | mean 6.1% (0.49R) | in profit 28 | older than 7d 34
+- worst: SAND -0.72R, ENS -0.56R, QNT -0.56R | best: NIGHT 1.83R, RAY 2.01R, NEAR 3.03R
 
 ## System
-- CoinGecko 3617/10000 used, month-end projection 10004 (100%), throttle level 2 | by script {'scan': 1176, 'check_liquidity': 177, 'breakout_check': 2239, 'counterfactual_check': 25}
+- CoinGecko 3620/10000 used, month-end projection 10012 (100%), throttle level 2 | by script {'scan': 1178, 'check_liquidity': 178, 'breakout_check': 2239, 'counterfactual_check': 25}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=33), H2 SUPPORTED (n=100)
-- radar-flags.json scan age: 9m
+- radar-flags.json scan age: 13m
 - excluded from radar (pegged/tokenized equity): 37
