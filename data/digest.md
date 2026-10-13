@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-13 15:10 UTC
+# Radar digest - 2026-10-13 15:42 UTC
 
 ## Market
-- BTC scenario **A** | price 83623 | wk close 83902 vs 82800 | 50W 77187 (8.34%) | 30m old
+- BTC scenario **A** | price 83623 | wk close 83902 vs 82800 | 50W 77187 (8.34%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 57.20% | ETH/BTC 0.03012 | breadth7d -% | stables 30d 0.76%
 - Alt risk (BTC.D): **ELEVATED** ['BTC_DOM_BREAKOUT_HOLDING'] | 3d 0.32pt | 7d 0.69pt | n=92
 - Gold: PAXG 1m -2.14% | real10y 2.87 (32bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -19,21 +19,21 @@
 - ZK: **ONGOING** | +110% impulse, retr 0.07 | OI dd 12% | fund -0.0128 | hold False | inval 0.01069 | OB 0.01069-0.01129
 
 ## Pre-pump candidates
+- TRX: [A+E] 7d -2.5%
 - NEAR: [A+E] 7d -2.4%
-- TRX: [A+E] 7d -2.2%
 
 ## ETF pipeline (new this run)
 - none
 
 ## Derivatives flags (OKX)
 - BTC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 1.00 | taker 0.98
-- ETH: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.93 | taker 0.99
-- SOL: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.90 | taker 0.94
-- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 0.98
-- SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 0.86
-- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 0.96
-- ZEC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 1.02 | taker 0.96
-- ADA: LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 0.89
+- ETH: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.93 | taker 1.00
+- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 0.99
+- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 0.97
+- SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.85 | taker 0.88
+- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 0.98
+- ADA: LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 0.89
+- LINK: LONG_FLUSH_24H | OI/mc -% | topPos 0.93 | taker 0.91
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -41,12 +41,12 @@
 - (16 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 39 | mean 0.9% (0.16R) | in profit 17 | older than 7d 32
-- worst: ORCA -0.83R, AAVE -0.69R, CHZ -0.69R | best: BEAM 1.58R, RENDER 1.69R, STX 2.06R
+- open 39 | mean 0.6% (0.15R) | in profit 18 | older than 7d 32
+- worst: ORCA -0.81R, ETC -0.69R, AAVE -0.69R | best: BEAM 1.56R, RENDER 1.69R, STX 2.32R
 
 ## System
-- CoinGecko 4092/10000 used, month-end projection 10048 (100%), throttle level 2 | by script {'scan': 1320, 'check_liquidity': 194, 'breakout_check': 2550, 'counterfactual_check': 28}
+- CoinGecko 4094/10000 used, month-end projection 10053 (100%), throttle level 2 | by script {'scan': 1322, 'check_liquidity': 194, 'breakout_check': 2550, 'counterfactual_check': 28}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=39), H2 SUPPORTED (n=120)
-- radar-flags.json scan age: 10m
+- radar-flags.json scan age: 12m
 - excluded from radar (pegged/tokenized equity): 38
