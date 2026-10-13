@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-13 13:09 UTC
+# Radar digest - 2026-10-13 13:42 UTC
 
 ## Market
-- BTC scenario **A** | price 83297 | wk close 83902 vs 82800 | 50W 77187 (7.92%) | 28m old
+- BTC scenario **A** | price 83297 | wk close 83902 vs 82800 | 50W 77187 (7.92%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 57.25% | ETH/BTC 0.02996 | breadth7d 46% | stables 30d 0.76%
 - Alt risk (BTC.D): **ELEVATED** ['BTC_DOM_BREAKOUT_HOLDING'] | 3d 0.37pt | 7d 0.77pt | n=91
 - Gold: PAXG 1m -2.14% | real10y 2.87 (32bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -19,29 +19,27 @@
 - S: **ONGOING** | +178% impulse, retr 0.08 | OI dd 0% | fund -0.0262 | hold False | inval 0.04247 | OB 0.03689-0.03890
 
 ## Pre-pump candidates
-- ADA: [A+E] 7d -15.7%
-- HBAR: [A+E] 7d -14.6%
-- CRO: [A+E] 7d -13.8%
-- LTC: [A+E] 7d -13.8%
+- ADA: [A+E] 7d -16.2%
+- HBAR: [A+E] 7d -14.2%
+- ZEC: [A+E] 7d -13.5%
+- LTC: [A+E] 7d -13.3%
 - SUI: [A+E] 7d -13.2%
-- ZEC: [A+E] 7d -12.9%
-- HYPE: [A+E] 7d -12.1%
+- HYPE: [A+E] 7d -13.1%
+- CRO: [A+E] 7d -13.1%
 - SOL: [A+E] 7d -11.4%
 
 ## ETF pipeline (new this run)
-- pendle NEW: launch - Pendle Announces Launch of Franklin Templeton ETF - Coinfomania
-- pendle NEW: other - Franklin Templeton’s tokenized high yield bond ETF lands on Pendle as FLHYon - Crypto Brie
-- solana NEW: other - Hong Kong to List Second Spot Solana ETF on October 13 - KuCoin
+- none
 
 ## Derivatives flags (OKX)
-- NEAR: QUIET_DELEVERAGING | OI/mc -% | topPos 1.03 | taker 0.93
-- AVAX: LONG_FLUSH_24H | OI/mc 0.41% | topPos 0.92 | taker 1.00
-- SUI: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.99% | topPos 0.86 | taker 0.85
-- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 0.89
-- TAO: AGGRESSIVE_SELLING | OI/mc 0.82% | topPos 0.91 | taker 0.84
-- ZEC: QUIET_DELEVERAGING, SHORT_SQUEEZE_24H | OI/mc -% | topPos 1.04 | taker 0.95
-- ADA: LONG_FLUSH_24H | OI/mc 0.40% | topPos 0.92 | taker 0.85
-- LINK: LONG_FLUSH_24H | OI/mc 0.32% | topPos 0.94 | taker 0.89
+- BTC: SHORT_SQUEEZE_24H | OI/mc 0.19% | topPos 1.00 | taker 0.99
+- ETH: SHORT_SQUEEZE_24H | OI/mc 0.56% | topPos 0.93 | taker 1.00
+- SOL: SHORT_SQUEEZE_24H | OI/mc 0.58% | topPos 0.90 | taker 0.93
+- NEAR: QUIET_DELEVERAGING | OI/mc -% | topPos 1.01 | taker 0.94
+- AVAX: LONG_FLUSH_24H | OI/mc 0.40% | topPos 0.92 | taker 1.00
+- SUI: LONG_FLUSH_24H | OI/mc 0.99% | topPos 0.85 | taker 0.86
+- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 0.94
+- ADA: LONG_FLUSH_24H | OI/mc 0.40% | topPos 0.92 | taker 0.88
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -49,12 +47,12 @@
 - (16 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 39 | mean 0.9% (0.17R) | in profit 19 | older than 7d 32
-- worst: ORCA -0.79R, AAVE -0.70R, CHZ -0.70R | best: BEAM 1.61R, STX 1.72R, RENDER 1.91R
+- open 39 | mean 1.1% (0.17R) | in profit 18 | older than 7d 32
+- worst: ORCA -0.79R, AAVE -0.70R, ETC -0.69R | best: BEAM 1.49R, STX 1.85R, RENDER 1.91R
 
 ## System
-- CoinGecko 4084/10000 used, month-end projection 10095 (101%), throttle level 2 | by script {'scan': 1312, 'check_liquidity': 194, 'breakout_check': 2550, 'counterfactual_check': 28}
+- CoinGecko 4086/10000 used, month-end projection 10100 (101%), throttle level 2 | by script {'scan': 1314, 'check_liquidity': 194, 'breakout_check': 2550, 'counterfactual_check': 28}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=39), H2 SUPPORTED (n=120)
-- radar-flags.json scan age: 8m
-- excluded from radar (pegged/tokenized equity): 36
+- radar-flags.json scan age: 12m
+- excluded from radar (pegged/tokenized equity): 37
