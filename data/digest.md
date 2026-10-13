@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-13 17:09 UTC
+# Radar digest - 2026-10-13 17:43 UTC
 
 ## Market
-- BTC scenario **A** | price 83433 | wk close 83902 vs 82800 | 50W 77187 (8.09%) | 29m old
+- BTC scenario **A** | price 83433 | wk close 83902 vs 82800 | 50W 77187 (8.09%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 57.20% | ETH/BTC 0.03012 | breadth7d -% | stables 30d 0.76%
 - Alt risk (BTC.D): **ELEVATED** ['BTC_DOM_BREAKOUT_HOLDING'] | 3d 0.32pt | 7d 0.69pt | n=92
 - Gold: PAXG 1m -2.24% | real10y 2.87 (32bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -19,23 +19,23 @@
 - S: **RESET_DONE** | +198% impulse, retr 0.31 | OI dd 0% | fund -0.0262 | hold False | inval 0.04247 | OB 0.03689-0.03890
 
 ## Pre-pump candidates
-- XTZ: [C+E] 7d -4.1%
 - TRX: [A+E] 7d -2.5%
 - NEAR: [A+E] 7d -2.3%
-- INJ: [A+E] 7d -1.0%
+- XTZ: [C+E] 7d -2.0%
+- INJ: [A+E] 7d 3.9%
 
 ## ETF pipeline (new this run)
-- none
+- ondo-finance: conversion - Convert EEMon to INR — iShares MSCI Emerging Markets Tokenized ETF - Ondo to Indian Rupee 
 
 ## Derivatives flags (OKX)
-- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 0.97
-- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.96
+- ETH: LONG_FLUSH_24H | OI/mc -% | topPos 0.94 | taker 1.01
+- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 1.02
+- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.98
 - SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 0.87
-- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 0.97
-- ZEC: LONG_FLUSH_24H | OI/mc -% | topPos 1.03 | taker 0.96
-- ADA: LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 0.89
-- LINK: LONG_FLUSH_24H | OI/mc -% | topPos 0.94 | taker 0.91
-- XLM: LONG_FLUSH_24H | OI/mc -% | topPos 1.01 | taker 0.95
+- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 0.89
+- ZEC: LONG_FLUSH_24H | OI/mc -% | topPos 1.04 | taker 0.98
+- ADA: LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 0.91
+- LINK: LONG_FLUSH_24H | OI/mc -% | topPos 0.94 | taker 0.89
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -43,12 +43,12 @@
 - (16 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 39 | mean 0.7% (0.16R) | in profit 17 | older than 7d 32
-- worst: ORCA -0.81R, CHZ -0.67R, ETC -0.67R | best: RENDER 1.80R, BEAM 1.97R, STX 2.69R
+- open 39 | mean 0.6% (0.15R) | in profit 16 | older than 7d 32
+- worst: ORCA -0.83R, CHZ -0.68R, ETC -0.67R | best: RENDER 1.80R, BEAM 2.01R, STX 2.58R
 
 ## System
-- CoinGecko 4108/10000 used, month-end projection 10021 (100%), throttle level 2 | by script {'scan': 1336, 'check_liquidity': 194, 'breakout_check': 2550, 'counterfactual_check': 28}
+- CoinGecko 4110/10000 used, month-end projection 10026 (100%), throttle level 2 | by script {'scan': 1338, 'check_liquidity': 194, 'breakout_check': 2550, 'counterfactual_check': 28}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=39), H2 SUPPORTED (n=120)
-- radar-flags.json scan age: 9m
-- excluded from radar (pegged/tokenized equity): 38
+- radar-flags.json scan age: 13m
+- excluded from radar (pegged/tokenized equity): 37
