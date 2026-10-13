@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-13 11:42 UTC
+# Radar digest - 2026-10-13 12:23 UTC
 
 ## Market
-- BTC scenario **A** | price 83358 | wk close 83902 vs 82800 | 50W 77187 (8.00%) | 1h old
+- BTC scenario **A** | price 83358 | wk close 83902 vs 82800 | 50W 77187 (8.00%) | 2h old
 - Alts: **BTC_LED** [-] | BTC.D 57.25% | ETH/BTC 0.02996 | breadth7d 46% | stables 30d 0.76%
 - Alt risk (BTC.D): **ELEVATED** ['BTC_DOM_BREAKOUT_HOLDING'] | 3d 0.37pt | 7d 0.77pt | n=91
 - Gold: PAXG 1m -2.14% | real10y 2.87 (32bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -22,11 +22,11 @@
 - ADA: [A+E] 7d -15.7%
 - PENDLE: [A+E] 7d -15.3%
 - HBAR: [A+E] 7d -14.2%
+- SUI: [A+E] 7d -13.6%
 - LTC: [A+E] 7d -13.5%
 - CRO: [A+E] 7d -12.8%
-- SUI: [A+E] 7d -12.5%
 - HYPE: [A+E] 7d -11.8%
-- SOL: [A+E] 7d -11.0%
+- SOL: [A+E] 7d -11.7%
 
 ## ETF pipeline (new this run)
 - pendle NEW: launch - Pendle Announces Launch of Franklin Templeton ETF - Coinfomania
@@ -49,12 +49,12 @@
 - (16 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 39 | mean 0.9% (0.17R) | in profit 18 | older than 7d 32
-- worst: ORCA -0.73R, AAVE -0.72R, CHZ -0.72R | best: BEAM 1.69R, RENDER 1.86R, STX 2.15R
+- open 39 | mean 0.3% (0.13R) | in profit 17 | older than 7d 32
+- worst: ORCA -0.79R, CHZ -0.74R, ETC -0.73R | best: BEAM 1.58R, RENDER 1.75R, STX 2.05R
 
 ## System
-- CoinGecko 4021/10000 used, month-end projection 10005 (100%), throttle level 2 | by script {'scan': 1306, 'check_liquidity': 193, 'breakout_check': 2494, 'counterfactual_check': 28}
+- CoinGecko 4080/10000 used, month-end projection 10118 (101%), throttle level 2 | by script {'scan': 1308, 'check_liquidity': 194, 'breakout_check': 2550, 'counterfactual_check': 28}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=39), H2 SUPPORTED (n=120)
-- radar-flags.json scan age: 12m
+- radar-flags.json scan age: 23m
 - excluded from radar (pegged/tokenized equity): 37
