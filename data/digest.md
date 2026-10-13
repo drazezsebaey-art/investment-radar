@@ -1,4 +1,4 @@
-# Radar digest - 2026-10-13 19:43 UTC
+# Radar digest - 2026-10-13 20:10 UTC
 
 ## Market
 - BTC scenario **A** | price 83049 | wk close 83902 vs 82800 | 50W 77187 (7.59%) | 1h old
@@ -20,10 +20,13 @@
 
 ## Pre-pump candidates
 - OP: [A+B+C] 7d 13.9%
-- PENDLE: [A+E] 7d -12.0%
-- TRX: [A+E] 7d -2.2%
-- NEAR: [A+E] 7d -0.3%
-- INJ: [A+E] 7d 3.9%
+- HBAR: [A+E] 7d -13.3%
+- ADA: [A+E] 7d -13.1%
+- SEI: [A+E] 7d -12.2%
+- HYPE: [A+E] 7d -11.5%
+- ZEC: [A+E] 7d -11.4%
+- SUI: [A+E] 7d -11.3%
+- CRO: [A+E] 7d -11.3%
 
 ## ETF pipeline (new this run)
 - pendle NEW: other - Franklin Templeton’s tokenized high-yield bond ETF gets yield trading on Pendle - Bitget
@@ -45,12 +48,12 @@
 - (16 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 40 | mean 1.3% (0.24R) | in profit 18 | older than 7d 32
-- worst: ORCA -0.77R, CHZ -0.67R, ETC -0.65R | best: RENDER 1.80R, STX 2.17R, BEAM 3.42R
+- open 39 | mean 1.0% (0.15R) | in profit 18 | older than 7d 32
+- worst: ORCA -0.79R, CHZ -0.66R, ETC -0.66R | best: AERO 1.57R, RENDER 1.86R, STX 2.17R
 
 ## System
-- CoinGecko 4169/10000 used, month-end projection 10103 (101%), throttle level 2 | by script {'scan': 1346, 'check_liquidity': 195, 'breakout_check': 2600, 'counterfactual_check': 28}
+- CoinGecko 4171/10000 used, month-end projection 10075 (101%), throttle level 2 | by script {'scan': 1348, 'check_liquidity': 195, 'breakout_check': 2600, 'counterfactual_check': 28}
 - Trials guard: OK (0 untracked)
-- Hypotheses: H1 NOT_SUPPORTED (n=39), H2 SUPPORTED (n=120)
-- radar-flags.json scan age: 13m
-- excluded from radar (pegged/tokenized equity): 35
+- Hypotheses: H1 NOT_SUPPORTED (n=39), H2 SUPPORTED (n=121)
+- radar-flags.json scan age: 10m
+- excluded from radar (pegged/tokenized equity): 37
