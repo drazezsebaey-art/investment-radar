@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-13 09:09 UTC
+# Radar digest - 2026-10-13 09:42 UTC
 
 ## Market
-- BTC scenario **A** | price 83752 | wk close 83902 vs 82800 | 50W 77187 (8.51%) | 28m old
+- BTC scenario **A** | price 83752 | wk close 83902 vs 82800 | 50W 77187 (8.51%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 57.10% | ETH/BTC 0.03026 | breadth7d 36% | stables 30d 0.76%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.26pt | 7d 0.70pt | n=90
 - Gold: PAXG 1m -2.10% | real10y 2.87 (32bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -29,33 +29,30 @@
 - ZEC: [A+E] 7d -8.6%
 
 ## ETF pipeline (new this run)
-- solana NEW: other - Crypto ETF News Today: BTC, ETH, SOL, XRP ETFs React to Market Drop - Coin Gabbar
-- ripple NEW: other - Crypto ETF News Today: BTC, ETH, SOL, XRP ETFs React to Market Drop - Coin Gabbar
-- ripple NEW: other - XRP News Today: 3.27% Price Drop, Ripple Deal and ETF Warning - Coin Gabbar
-- zcash: approval - Zcash pares losses amid improved risk sentiment as focus shifts to US CPI and Winklevoss E
-- chainlink: other - Chainlink Price Forecast: LINK regains strength on ETF inflows, whale demand - www.tmgm.co
+- solana NEW: launch - Solana ETF Launch Set for Hong Kong as U.S. Funds Lose $24.8M in One Week - Coinpaper
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc 0.20% | topPos 1.00 | taker 0.95
-- ETH: SHORT_SQUEEZE_24H | OI/mc 0.57% | topPos 0.94 | taker 0.98
-- SOL: SHORT_SQUEEZE_24H | OI/mc 0.60% | topPos 0.91 | taker 0.93
-- NEAR: QUIET_DELEVERAGING | OI/mc -% | topPos 1.03 | taker 0.91
+- ETH: LONG_FLUSH_24H | OI/mc 0.57% | topPos 0.96 | taker 0.97
+- SOL: LONG_FLUSH_24H | OI/mc 0.59% | topPos 0.91 | taker 0.92
+- NEAR: QUIET_DELEVERAGING | OI/mc -% | topPos 1.04 | taker 0.91
 - AVAX: LONG_FLUSH_24H | OI/mc 0.41% | topPos 0.94 | taker 0.97
-- SUI: LONG_FLUSH_24H | OI/mc 0.98% | topPos 0.86 | taker 0.91
-- SEI: LONG_FLUSH_24H | OI/mc 0.70% | topPos 0.91 | taker 0.91
-- TAO: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.83% | topPos 0.93 | taker 0.81
+- SUI: LONG_FLUSH_24H | OI/mc 0.97% | topPos 0.86 | taker 0.90
+- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 0.90
+- TAO: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.84% | topPos 0.93 | taker 0.81
+- ADA: LONG_FLUSH_24H | OI/mc 0.41% | topPos 0.93 | taker 0.87
 
 ## Revenue / buyback flags
-- stonk-3: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
+- pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
+- gains-network: REVENUE_ACCELERATING
 - (16 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 40 | mean 2.3% (0.29R) | in profit 23 | older than 7d 33
-- worst: QNT -0.78R, AAVE -0.66R, ETC -0.64R | best: BEAM 2.03R, STX 2.40R, RENDER 2.46R
+- open 40 | mean 1.6% (0.23R) | in profit 20 | older than 7d 33
+- worst: QNT -0.86R, AAVE -0.69R, ETC -0.67R | best: BEAM 1.84R, RENDER 2.30R, STX 2.32R
 
 ## System
-- CoinGecko 4009/10000 used, month-end projection 10043 (100%), throttle level 2 | by script {'scan': 1296, 'check_liquidity': 191, 'breakout_check': 2494, 'counterfactual_check': 28}
+- CoinGecko 4011/10000 used, month-end projection 10048 (100%), throttle level 2 | by script {'scan': 1298, 'check_liquidity': 191, 'breakout_check': 2494, 'counterfactual_check': 28}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=37), H2 SUPPORTED (n=119)
-- radar-flags.json scan age: 9m
+- radar-flags.json scan age: 11m
 - excluded from radar (pegged/tokenized equity): 38
