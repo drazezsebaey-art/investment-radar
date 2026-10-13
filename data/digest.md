@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-13 01:08 UTC
+# Radar digest - 2026-10-13 01:43 UTC
 
 ## Market
-- BTC scenario **A** | price 81480 | wk close 83902 vs 82800 | 50W 77187 (5.56%) | 28m old
+- BTC scenario **A** | price 81480 | wk close 83902 vs 82800 | 50W 77187 (5.56%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 57.01% | ETH/BTC 0.03012 | breadth7d 32% | stables 30d 0.84%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.09pt | 7d 0.67pt | n=88
 - Gold: PAXG 1m -2.46% | real10y 2.87 (32bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -19,38 +19,32 @@
 - CFX: **ONGOING** | +68% impulse, retr 0.57 | OI dd 32% | fund 0.0100 | hold False | inval 0.04750 | OB 0.04750-0.04960
 
 ## Pre-pump candidates
-- none
+- AAVE: [A+E] 7d -16.8%
 
 ## ETF pipeline (new this run)
-- pepe NEW: other - Dogecoin Price Prediction Cools at $0.085 as Bitwise Shuts Its DOGE ETF, Money Chases Pepe
-- pepe NEW: other - Pepe Coin Price Prediction: Canary Pushes a PEPE ETF Toward Cboe, but Analysts See Pepeto 
-- pepe NEW: other - Dogecoin Price Prediction: Pepeto Eyes Pepe Run as DOGE ETF Exits - Coin Gabbar
-- ripple NEW: other - XRP Price Slid as Bitwise Drives $11 Million ETF Inflows - Yahoo Finance
-- near: other - NEAR Protocol Price Forecast: NEAR rally stalls below $6 amid firm ETF inflows - www.tmgm.
-- zcash: other - Zcash Price Forecast: $30 million ETF outflows weigh on mild ZEC recovery - www.tmgm.com
-- zcash: other - Zcash Price Forecast: $30 million ETF outflows weigh on mild ZEC recovery - www.tmgm.com
+- none
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc 0.20% | topPos 0.96 | taker 0.92
-- SOL: LONG_FLUSH_24H | OI/mc 0.61% | topPos 0.91 | taker 0.87
-- NEAR: QUIET_DELEVERAGING, LONG_FLUSH_24H | OI/mc -% | topPos 1.04 | taker 0.91
-- AVAX: LONG_FLUSH_24H | OI/mc 0.43% | topPos 0.93 | taker 0.99
-- XRP: LONG_FLUSH_24H | OI/mc 0.13% | topPos 0.87 | taker 0.87
-- SUI: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 1.04% | topPos 0.87 | taker 0.83
-- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 0.85
-- TAO: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.89 | taker 0.82
+- BTC: SHORT_SQUEEZE_24H | OI/mc 0.20% | topPos 0.96 | taker 0.90
+- ETH: SHORT_SQUEEZE_24H | OI/mc 0.56% | topPos 0.88 | taker 0.94
+- SOL: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.60% | topPos 0.90 | taker 0.84
+- NEAR: QUIET_DELEVERAGING, LONG_FLUSH_24H | OI/mc -% | topPos 1.02 | taker 0.91
+- AVAX: LONG_FLUSH_24H | OI/mc 0.41% | topPos 0.91 | taker 0.98
+- XRP: LONG_FLUSH_24H | OI/mc 0.13% | topPos 0.87 | taker 0.86
+- SUI: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 1.02% | topPos 0.87 | taker 0.82
+- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 0.86
 
 ## Revenue / buyback flags
 - stonk-3: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
 - (16 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 38 | mean -3.1% (-0.12R) | in profit 13 | older than 7d 33
-- worst: JTO -0.90R, CHZ -0.88R, ETC -0.87R | best: AERO 1.25R, STX 1.54R, RENDER 1.75R
+- open 38 | mean -1.3% (0.03R) | in profit 15 | older than 7d 33
+- worst: QNT -0.79R, AAVE -0.79R, CHZ -0.78R | best: NEAR 1.38R, STX 2.01R, RENDER 2.02R
 
 ## System
-- CoinGecko 3924/10000 used, month-end projection 10102 (101%), throttle level 2 | by script {'scan': 1264, 'check_liquidity': 188, 'breakout_check': 2444, 'counterfactual_check': 28}
+- CoinGecko 3926/10000 used, month-end projection 10107 (101%), throttle level 2 | by script {'scan': 1266, 'check_liquidity': 188, 'breakout_check': 2444, 'counterfactual_check': 28}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=37), H2 SUPPORTED (n=119)
-- radar-flags.json scan age: 8m
+- radar-flags.json scan age: 13m
 - excluded from radar (pegged/tokenized equity): 39
