@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-13 05:41 UTC
+# Radar digest - 2026-10-13 06:22 UTC
 
 ## Market
-- BTC scenario **A** | price 83558 | wk close 83902 vs 82800 | 50W 77187 (8.25%) | 1h old
+- BTC scenario **A** | price 83558 | wk close 83902 vs 82800 | 50W 77187 (8.25%) | 2h old
 - Alts: **BTC_LED** [-] | BTC.D 57.14% | ETH/BTC 0.03001 | breadth7d 32% | stables 30d 0.75%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.23pt | 7d 0.77pt | n=89
 - Gold: PAXG 1m -2.10% | real10y 2.87 (32bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -20,7 +20,6 @@
 
 ## Pre-pump candidates
 - AAVE: [A+E] 7d -11.8%
-- SYRUP: [C+E] 7d 1.9%
 
 ## ETF pipeline (new this run)
 - ondo-finance: other - Global X Data Center & Digital Infrastructure Tokenized ETF (Ondo) - CryptoRank
@@ -40,12 +39,12 @@
 - (16 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 38 | mean 3.2% (0.37R) | in profit 21 | older than 7d 33
-- worst: QNT -0.73R, AAVE -0.63R, ETC -0.60R | best: BEAM 2.16R, STX 2.71R, RENDER 2.79R
+- open 40 | mean 2.9% (0.33R) | in profit 20 | older than 7d 33
+- worst: QNT -0.69R, AAVE -0.63R, ETC -0.61R | best: BEAM 2.16R, STX 2.50R, RENDER 2.57R
 
 ## System
-- CoinGecko 3942/10000 used, month-end projection 10010 (100%), throttle level 2 | by script {'scan': 1282, 'check_liquidity': 188, 'breakout_check': 2444, 'counterfactual_check': 28}
+- CoinGecko 3997/10000 used, month-end projection 10115 (101%), throttle level 2 | by script {'scan': 1284, 'check_liquidity': 191, 'breakout_check': 2494, 'counterfactual_check': 28}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=37), H2 SUPPORTED (n=119)
-- radar-flags.json scan age: 11m
+- radar-flags.json scan age: 22m
 - excluded from radar (pegged/tokenized equity): 39
