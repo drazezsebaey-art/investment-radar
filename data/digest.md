@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-13 04:42 UTC
+# Radar digest - 2026-10-13 05:08 UTC
 
 ## Market
-- BTC scenario **A** | price 83558 | wk close 83902 vs 82800 | 50W 77187 (8.25%) | 1m old
+- BTC scenario **A** | price 83558 | wk close 83902 vs 82800 | 50W 77187 (8.25%) | 28m old
 - Alts: **BTC_LED** [-] | BTC.D 57.14% | ETH/BTC 0.03001 | breadth7d 32% | stables 30d 0.75%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.23pt | 7d 0.77pt | n=89
 - Gold: PAXG 1m -2.10% | real10y 2.87 (32bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -20,7 +20,6 @@
 
 ## Pre-pump candidates
 - AAVE: [A+E] 7d -13.0%
-- SYRUP: [C+E] 7d 0.7%
 
 ## ETF pipeline (new this run)
 - chainlink: other - Chainlink eyes $13.50 breakout as ETF inflows hit yearly high - Bitget
@@ -42,12 +41,12 @@
 - (16 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 38 | mean 2.0% (0.27R) | in profit 18 | older than 7d 33
-- worst: QNT -0.74R, AAVE -0.68R, ETC -0.65R | best: PYTH 1.82R, RENDER 2.35R, STX 2.45R
+- open 38 | mean 2.4% (0.31R) | in profit 21 | older than 7d 33
+- worst: QNT -0.74R, AAVE -0.64R, ETC -0.62R | best: BEAM 1.83R, RENDER 2.51R, STX 2.55R
 
 ## System
-- CoinGecko 3938/10000 used, month-end projection 10034 (100%), throttle level 2 | by script {'scan': 1278, 'check_liquidity': 188, 'breakout_check': 2444, 'counterfactual_check': 28}
+- CoinGecko 3940/10000 used, month-end projection 10005 (100%), throttle level 2 | by script {'scan': 1280, 'check_liquidity': 188, 'breakout_check': 2444, 'counterfactual_check': 28}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=37), H2 SUPPORTED (n=119)
-- radar-flags.json scan age: 12m
+- radar-flags.json scan age: 8m
 - excluded from radar (pegged/tokenized equity): 39
