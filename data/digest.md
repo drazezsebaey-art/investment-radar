@@ -1,4 +1,4 @@
-# Radar digest - 2026-10-13 07:42 UTC
+# Radar digest - 2026-10-13 08:09 UTC
 
 ## Market
 - BTC scenario **A** | price 83692 | wk close 83902 vs 82800 | 50W 77187 (8.43%) | 1h old
@@ -19,7 +19,7 @@
 - AVAX: **ONGOING** | +71% impulse, retr 0.28 | OI dd 17% | fund 0.0100 | hold True | inval 9.71400 | OB 7.17400-7.36200
 
 ## Pre-pump candidates
-- AAVE: [A+E] 7d -11.5%
+- none
 
 ## ETF pipeline (new this run)
 - solana NEW: other - Crypto ETF News Today: BTC, ETH, SOL, XRP ETFs React to Market Drop - Coin Gabbar
@@ -43,12 +43,12 @@
 - (16 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 40 | mean 2.3% (0.28R) | in profit 22 | older than 7d 33
-- worst: QNT -0.75R, AAVE -0.65R, ETC -0.63R | best: BEAM 2.06R, RENDER 2.24R, STX 2.38R
+- open 40 | mean 2.7% (0.31R) | in profit 23 | older than 7d 33
+- worst: QNT -0.75R, AAVE -0.63R, ETC -0.61R | best: BEAM 2.07R, RENDER 2.35R, STX 2.41R
 
 ## System
-- CoinGecko 4003/10000 used, month-end projection 10096 (101%), throttle level 2 | by script {'scan': 1290, 'check_liquidity': 191, 'breakout_check': 2494, 'counterfactual_check': 28}
+- CoinGecko 4005/10000 used, month-end projection 10067 (101%), throttle level 2 | by script {'scan': 1292, 'check_liquidity': 191, 'breakout_check': 2494, 'counterfactual_check': 28}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=37), H2 SUPPORTED (n=119)
-- radar-flags.json scan age: 12m
+- radar-flags.json scan age: 9m
 - excluded from radar (pegged/tokenized equity): 38
