@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-13 21:09 UTC
+# Radar digest - 2026-10-13 21:42 UTC
 
 ## Market
-- BTC scenario **A** | price 83343 | wk close 83902 vs 82800 | 50W 77187 (7.98%) | 29m old
+- BTC scenario **A** | price 83343 | wk close 83902 vs 82800 | 50W 77187 (7.98%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 57.16% | ETH/BTC 0.03014 | breadth7d -% | stables 30d 0.77%
 - Alt risk (BTC.D): **ELEVATED** ['BTC_DOM_BREAKOUT_HOLDING'] | 3d 0.35pt | 7d 0.71pt | n=93
 - Gold: PAXG 1m -2.24% | real10y 2.87 (32bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -19,23 +19,21 @@
 - STRK: **RESET_DONE** | +422% impulse, retr 0.40 | OI dd 39% | fund -0.0056 | hold False | inval 0.04805 | OB 0.04805-0.04982
 
 ## Pre-pump candidates
-- NEAR: [A+E] 7d -1.3%
-- INJ: [A+E] 7d 4.1%
-- OP: [A+B] 7d 15.8%
+- INJ: [A+E] 7d 3.8%
+- OP: [A+B] 7d 20.9%
 
 ## ETF pipeline (new this run)
-- pendle NEW: other - Franklin Templeton’s tokenized high-yield bond ETF gets yield trading on Pendle - Bitget
-- pendle NEW: other - Franklin Templeton’s tokenized high-yield bond ETF gets yield trading on Pendle - The Cryp
+- none
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc -% | topPos 1.00 | taker 0.98
+- BTC: LONG_FLUSH_24H | OI/mc -% | topPos 0.99 | taker 0.98
 - ETH: LONG_FLUSH_24H | OI/mc -% | topPos 0.93 | taker 1.00
-- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 0.93
-- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.97
+- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 0.94
+- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.95
 - SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 0.87
-- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.93 | taker 0.96
+- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.93 | taker 0.97
 - ZEC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 1.04 | taker 0.98
-- ADA: LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 0.91
+- ADA: LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 0.91
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -43,12 +41,12 @@
 - (16 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 39 | mean 0.9% (0.14R) | in profit 16 | older than 7d 32
-- worst: ORCA -0.81R, CHZ -0.66R, ETC -0.66R | best: AERO 1.55R, RENDER 2.02R, STX 2.44R
+- open 39 | mean 0.5% (0.12R) | in profit 16 | older than 7d 32
+- worst: ORCA -0.81R, CHZ -0.68R, ETC -0.68R | best: AERO 1.53R, RENDER 1.97R, STX 2.37R
 
 ## System
-- CoinGecko 4175/10000 used, month-end projection 10052 (100%), throttle level 2 | by script {'scan': 1352, 'check_liquidity': 195, 'breakout_check': 2600, 'counterfactual_check': 28}
+- CoinGecko 4177/10000 used, month-end projection 10057 (101%), throttle level 2 | by script {'scan': 1354, 'check_liquidity': 195, 'breakout_check': 2600, 'counterfactual_check': 28}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=39), H2 SUPPORTED (n=121)
-- radar-flags.json scan age: 9m
+- radar-flags.json scan age: 12m
 - excluded from radar (pegged/tokenized equity): 36
