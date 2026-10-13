@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-13 12:42 UTC
+# Radar digest - 2026-10-13 13:09 UTC
 
 ## Market
-- BTC scenario **A** | price 83297 | wk close 83902 vs 82800 | 50W 77187 (7.92%) | 1m old
+- BTC scenario **A** | price 83297 | wk close 83902 vs 82800 | 50W 77187 (7.92%) | 28m old
 - Alts: **BTC_LED** [-] | BTC.D 57.25% | ETH/BTC 0.02996 | breadth7d 46% | stables 30d 0.76%
 - Alt risk (BTC.D): **ELEVATED** ['BTC_DOM_BREAKOUT_HOLDING'] | 3d 0.37pt | 7d 0.77pt | n=91
 - Gold: PAXG 1m -2.14% | real10y 2.87 (32bp 1m) | USD 1m 2.76% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -19,14 +19,14 @@
 - S: **ONGOING** | +178% impulse, retr 0.08 | OI dd 0% | fund -0.0262 | hold False | inval 0.04247 | OB 0.03689-0.03890
 
 ## Pre-pump candidates
-- PENDLE: [A+E] 7d -16.9%
 - ADA: [A+E] 7d -15.7%
 - HBAR: [A+E] 7d -14.6%
 - CRO: [A+E] 7d -13.8%
 - LTC: [A+E] 7d -13.8%
-- SUI: [A+E] 7d -13.6%
+- SUI: [A+E] 7d -13.2%
+- ZEC: [A+E] 7d -12.9%
 - HYPE: [A+E] 7d -12.1%
-- SOL: [A+E] 7d -11.7%
+- SOL: [A+E] 7d -11.4%
 
 ## ETF pipeline (new this run)
 - pendle NEW: launch - Pendle Announces Launch of Franklin Templeton ETF - Coinfomania
@@ -49,12 +49,12 @@
 - (16 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 39 | mean 0.3% (0.12R) | in profit 18 | older than 7d 32
-- worst: ORCA -0.77R, CHZ -0.74R, ETC -0.73R | best: AERO 1.37R, RENDER 1.80R, STX 1.87R
+- open 39 | mean 0.9% (0.17R) | in profit 19 | older than 7d 32
+- worst: ORCA -0.79R, AAVE -0.70R, CHZ -0.70R | best: BEAM 1.61R, STX 1.72R, RENDER 1.91R
 
 ## System
-- CoinGecko 4082/10000 used, month-end projection 10123 (101%), throttle level 2 | by script {'scan': 1310, 'check_liquidity': 194, 'breakout_check': 2550, 'counterfactual_check': 28}
+- CoinGecko 4084/10000 used, month-end projection 10095 (101%), throttle level 2 | by script {'scan': 1312, 'check_liquidity': 194, 'breakout_check': 2550, 'counterfactual_check': 28}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=39), H2 SUPPORTED (n=120)
-- radar-flags.json scan age: 12m
-- excluded from radar (pegged/tokenized equity): 37
+- radar-flags.json scan age: 8m
+- excluded from radar (pegged/tokenized equity): 36
