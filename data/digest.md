@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-13 23:42 UTC
+# Radar digest - 2026-10-14 00:22 UTC
 
 ## Market
-- BTC scenario **A** | price 83508 | wk close 83902 vs 82800 | 50W 77187 (8.19%) | 1h old
+- BTC scenario **A** | price 83508 | wk close 83902 vs 82800 | 50W 77187 (8.19%) | 2h old
 - Alts: **BTC_LED** [-] | BTC.D 57.22% | ETH/BTC 0.03011 | breadth7d -% | stables 30d 0.78%
 - Alt risk (BTC.D): **ELEVATED** ['BTC_DOM_BREAKOUT_HOLDING'] | 3d 0.36pt | 7d 0.77pt | n=94
 - Gold: PAXG 1m -2.11% | real10y 2.91 (31bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -19,9 +19,14 @@
 - SEI: **RESET_DONE** | +110% impulse, retr 0.49 | OI dd 30% | fund 0.0050 | hold True | inval 0.06038 | OB 0.05685-0.05941
 
 ## Pre-pump candidates
-- INJ: [A+E] 7d -1.4%
-- NEAR: [A+E] 7d -1.1%
-- OP: [A+B] 7d 21.1%
+- HBAR: [A+E] 7d -12.6%
+- AVAX: [A+E] 7d -12.0%
+- ADA: [A+E] 7d -11.9%
+- SOL: [A+E] 7d -11.6%
+- SUI: [A+E] 7d -11.3%
+- LTC: [A+E] 7d -11.2%
+- HYPE: [A+E] 7d -10.8%
+- CRO: [A+E] 7d -10.6%
 
 ## ETF pipeline (new this run)
 - zcash: other - Zcash Price Forecast: $30 million ETF outflows weigh on mild ZEC recovery - www.tmgm.com
@@ -43,12 +48,12 @@
 - (16 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 39 | mean 0.2% (0.09R) | in profit 15 | older than 7d 32
-- worst: ORCA -0.79R, CHZ -0.70R, ETC -0.69R | best: AERO 1.53R, RENDER 1.69R, STX 2.68R
+- open 41 | mean 0.4% (0.11R) | in profit 16 | older than 7d 32
+- worst: ORCA -0.77R, CHZ -0.69R, ETC -0.68R | best: AERO 1.55R, RENDER 1.64R, STX 2.67R
 
 ## System
-- CoinGecko 4185/10000 used, month-end projection 10012 (100%), throttle level 2 | by script {'scan': 1362, 'check_liquidity': 195, 'breakout_check': 2600, 'counterfactual_check': 28}
+- CoinGecko 4246/10000 used, month-end projection 10125 (101%), throttle level 2 | by script {'scan': 1364, 'check_liquidity': 196, 'breakout_check': 2655, 'counterfactual_check': 31}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=39), H2 SUPPORTED (n=121)
-- radar-flags.json scan age: 12m
+- radar-flags.json scan age: 21m
 - excluded from radar (pegged/tokenized equity): 36
