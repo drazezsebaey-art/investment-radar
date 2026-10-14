@@ -1,10 +1,10 @@
-# Radar digest - 2026-10-14 15:43 UTC
+# Radar digest - 2026-10-14 16:09 UTC
 
 ## Market
 - BTC scenario **A** | price 81908 | wk close 83902 vs 82800 | 50W 77187 (6.12%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 57.27% | ETH/BTC 0.02953 | breadth7d 42% | stables 30d 0.81%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.36pt | 7d 0.74pt | n=98
-- Gold: PAXG 1m -2.60% | real10y 2.91 (31bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
+- Gold: PAXG 1m -4.50% | real10y 2.91 (31bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
 - 10y 1w: -4bp = real -1 + breakeven -3 -> **SMALL_MOVE**
 - 10y 1m: 28bp = real 31 + breakeven -4 -> **REAL_YIELD_DRIVEN**
 
@@ -22,11 +22,11 @@
 - AVAX: [A+E] 7d -12.6%
 - ZEC: [A+E] 7d -12.4%
 - LTC: [A+E] 7d -11.1%
-- SOL: [A+E] 7d -10.6%
 - HBAR: [A+E] 7d -10.5%
+- SOL: [A+E] 7d -10.3%
 - ADA: [A+E] 7d -10.3%
+- SUI: [A+E] 7d -9.8%
 - HYPE: [A+E] 7d -9.7%
-- SUI: [A+E] 7d -9.5%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - Bitcoin ETFs Add $175.7M as XRP ETF Flows Stay Flat a Third Day - Altcoin Buzz
@@ -48,12 +48,12 @@
 - (19 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 39 | mean -2.8% (-0.14R) | in profit 13 | older than 7d 32
-- worst: CHZ -0.88R, ORCA -0.83R, JTO -0.81R | best: AERO 1.25R, PYTH 1.28R, STX 2.13R
+- open 39 | mean -3.6% (-0.19R) | in profit 12 | older than 7d 32
+- worst: FIL -0.90R, CHZ -0.90R, INJ -0.89R | best: PYTH 1.13R, AERO 1.19R, STX 1.89R
 
 ## System
-- CoinGecko 4424/10000 used, month-end projection 10066 (101%), throttle level 2 | by script {'scan': 1434, 'check_liquidity': 200, 'breakout_check': 2759, 'counterfactual_check': 31}
+- CoinGecko 4426/10000 used, month-end projection 10039 (100%), throttle level 2 | by script {'scan': 1436, 'check_liquidity': 200, 'breakout_check': 2759, 'counterfactual_check': 31}
 - Trials guard: OK (0 untracked)
-- Hypotheses: H1 NOT_SUPPORTED (n=40), H2 SUPPORTED (n=128)
-- radar-flags.json scan age: 13m
+- Hypotheses: H1 NOT_SUPPORTED (n=40), H2 SUPPORTED (n=129)
+- radar-flags.json scan age: 9m
 - excluded from radar (pegged/tokenized equity): 38
