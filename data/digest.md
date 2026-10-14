@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-14 11:10 UTC
+# Radar digest - 2026-10-14 11:41 UTC
 
 ## Market
-- BTC scenario **A** | price 83388 | wk close 83902 vs 82800 | 50W 77187 (8.03%) | 29m old
+- BTC scenario **A** | price 83388 | wk close 83902 vs 82800 | 50W 77187 (8.03%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 57.23% | ETH/BTC 0.03001 | breadth7d 39% | stables 30d 0.84%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.28pt | 7d 0.76pt | n=97
 - Gold: PAXG 1m -2.60% | real10y 2.91 (31bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -19,28 +19,23 @@
 - SUI: **RESET_DONE** | +92% impulse, retr 0.39 | OI dd 20% | fund -0.0026 | hold False | inval 1.03160 | OB 0.93370-0.97450
 
 ## Pre-pump candidates
-- HYPE: [A+E] 7d -10.4%
-- HBAR: [A+E] 7d -9.3%
-- RUNE: [D+E] 7d -9.3%
-- SOL: [A+E] 7d -9.1%
-- LTC: [A+E] 7d -8.9%
-- CRO: [A+E] 7d -8.7%
-- ADA: [A+E] 7d -8.4%
 - AVAX: [A+E] 7d -7.2%
+- ONDO: [A+E] 7d -0.4%
+- KMNO: [B+C] 7d 2.9%
+- OP: [A+C] 7d 24.9%
 
 ## ETF pipeline (new this run)
-- kucoin-shares NEW: other - BlackRock ETF Clients Sell $65.4M BTC and $75.07M ETH Amid Volatile Flows - KuCoin
-- ondo-finance: other - Global X Data Center & Digital Infrastructure Tokenized ETF (Ondo) - CryptoRank
+- none
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc 0.19% | topPos 0.99 | taker 1.06
-- ETH: LONG_FLUSH_24H | OI/mc 0.55% | topPos 0.90 | taker 1.02
-- SOL: LONG_FLUSH_24H | OI/mc 0.57% | topPos 0.89 | taker 0.97
-- TAO: SHORT_SQUEEZE_24H | OI/mc 0.82% | topPos 0.91 | taker 1.10
-- ADA: LONG_FLUSH_24H | OI/mc 0.40% | topPos 0.92 | taker 1.00
-- LINK: LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 0.91
-- XLM: LONG_FLUSH_24H | OI/mc 0.18% | topPos 1.01 | taker 1.05
-- BCH: LONG_FLUSH_24H | OI/mc 0.46% | topPos 0.83 | taker 0.94
+- BTC: LONG_FLUSH_24H | OI/mc -% | topPos 0.99 | taker 1.07
+- ETH: LONG_FLUSH_24H | OI/mc -% | topPos 0.90 | taker 1.03
+- SOL: LONG_FLUSH_24H | OI/mc -% | topPos 0.89 | taker 0.99
+- SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.84 | taker 0.91
+- TAO: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.91 | taker 1.08
+- ZEC: LONG_FLUSH_24H | OI/mc -% | topPos 1.09 | taker 1.00
+- ADA: LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 1.04
+- XLM: LONG_FLUSH_24H | OI/mc -% | topPos 0.99 | taker 1.09
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -49,12 +44,12 @@
 - (19 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 41 | mean -0.3% (0.04R) | in profit 13 | older than 7d 32
-- worst: CHZ -0.75R, ORCA -0.69R, ETC -0.69R | best: RENDER 1.48R, AERO 1.51R, STX 2.87R
+- open 41 | mean -0.3% (0.03R) | in profit 13 | older than 7d 32
+- worst: CHZ -0.75R, ETC -0.69R, ORCA -0.69R | best: RENDER 1.48R, AERO 1.53R, STX 2.80R
 
 ## System
-- CoinGecko 4344/10000 used, month-end projection 10006 (100%), throttle level 2 | by script {'scan': 1408, 'check_liquidity': 199, 'breakout_check': 2706, 'counterfactual_check': 31}
+- CoinGecko 4346/10000 used, month-end projection 10011 (100%), throttle level 2 | by script {'scan': 1410, 'check_liquidity': 199, 'breakout_check': 2706, 'counterfactual_check': 31}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=40), H2 SUPPORTED (n=123)
-- radar-flags.json scan age: 9m
-- excluded from radar (pegged/tokenized equity): 36
+- radar-flags.json scan age: 11m
+- excluded from radar (pegged/tokenized equity): 35
