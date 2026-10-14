@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-14 04:42 UTC
+# Radar digest - 2026-10-14 05:09 UTC
 
 ## Market
-- BTC scenario **A** | price 83781 | wk close 83902 vs 82800 | 50W 77187 (8.54%) | 1m old
+- BTC scenario **A** | price 83781 | wk close 83902 vs 82800 | 50W 77187 (8.54%) | 28m old
 - Alts: **BTC_LED** [-] | BTC.D 57.14% | ETH/BTC 0.03006 | breadth7d 40% | stables 30d 0.85%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.28pt | 7d 0.72pt | n=95
 - Gold: PAXG 1m -2.11% | real10y 2.91 (31bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -21,12 +21,12 @@
 ## Pre-pump candidates
 - HBAR: [A+E] 7d -9.7%
 - HYPE: [A+E] 7d -9.2%
-- SOL: [A+E] 7d -8.8%
+- SOL: [A+E] 7d -8.7%
 - LTC: [A+E] 7d -8.2%
-- SEI: [A+E] 7d -6.8%
-- SUI: [A+E] 7d -6.7%
+- SUI: [A+E] 7d -7.1%
 - ADA: [A+E] 7d -6.3%
 - AVAX: [A+E] 7d -6.2%
+- CRO: [A+E] 7d -6.2%
 
 ## ETF pipeline (new this run)
 - solana NEW: other - Grayscale's Solana ETF Sparks a Revolution in Institutional Crypto Interest - OneSafe
@@ -47,12 +47,12 @@
 - (16 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 41 | mean 0.8% (0.12R) | in profit 17 | older than 7d 32
-- worst: CHZ -0.67R, ORCA -0.67R, ETC -0.66R | best: AERO 1.57R, RENDER 1.80R, STX 2.60R
+- open 41 | mean 1.3% (0.17R) | in profit 18 | older than 7d 32
+- worst: ORCA -0.67R, ETC -0.65R, CHZ -0.65R | best: AERO 1.60R, RENDER 1.80R, STX 2.76R
 
 ## System
-- CoinGecko 4265/10000 used, month-end projection 10042 (100%), throttle level 2 | by script {'scan': 1382, 'check_liquidity': 197, 'breakout_check': 2655, 'counterfactual_check': 31}
+- CoinGecko 4267/10000 used, month-end projection 10015 (100%), throttle level 2 | by script {'scan': 1384, 'check_liquidity': 197, 'breakout_check': 2655, 'counterfactual_check': 31}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=39), H2 SUPPORTED (n=121)
-- radar-flags.json scan age: 12m
+- radar-flags.json scan age: 9m
 - excluded from radar (pegged/tokenized equity): 37
