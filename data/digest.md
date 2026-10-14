@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-14 03:09 UTC
+# Radar digest - 2026-10-14 03:42 UTC
 
 ## Market
-- BTC scenario **A** | price 83393 | wk close 83902 vs 82800 | 50W 77187 (8.04%) | 27m old
+- BTC scenario **A** | price 83393 | wk close 83902 vs 82800 | 50W 77187 (8.04%) | 59m old
 - Alts: **BTC_LED** [-] | BTC.D 57.14% | ETH/BTC 0.03006 | breadth7d 40% | stables 30d 0.85%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.28pt | 7d 0.72pt | n=95
 - Gold: PAXG 1m -2.11% | real10y 2.91 (31bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -19,34 +19,27 @@
 - ADA: **ONGOING** | +49% impulse, retr 0.49 | OI dd 27% | fund 0.0081 | hold False | inval 0.22420 | OB 0.21820-0.22220
 
 ## Pre-pump candidates
-- INJ: [A+C+E] 7d 2.2%
-- HBAR: [A+E] 7d -12.2%
-- ADA: [A+E] 7d -11.3%
-- LTC: [A+E] 7d -11.0%
-- HYPE: [A+E] 7d -10.8%
-- CRO: [A+E] 7d -10.3%
+- HBAR: [A+E] 7d -10.9%
+- LTC: [A+E] 7d -9.6%
 - SOL: [A+E] 7d -9.5%
 - AVAX: [A+E] 7d -9.1%
+- ADA: [A+E] 7d -8.8%
+- HYPE: [A+E] 7d -8.7%
+- CRO: [A+E] 7d -7.7%
+- SUI: [A+E] 7d -7.5%
 
 ## ETF pipeline (new this run)
-- ripple NEW: other - XRP ETF Price — Spot XRP ETFs Add $11.31M as XRP Falls to $1.345 — $230M Paper Loss, $1.31
-- solana NEW: other - Solana SOL Price Analysis as Pando ETF Enters Hong Kong Market - The Coin Republic
-- hyperliquid NEW: other - 数据：美国 HYPE 现货 ETF 单日净流入 282.09 万美元 - CryptoRank
-- solana NEW: other - Solana ETFs Took Money In for 14 Straight Weeks, Their Longest Run Yet. The Week It Ended,
-- solana NEW: other - Pando Solana ETF (02831) Lists on HKEX, Undercuts ChinaAMC on Fees - Altcoin Buzz
-- kucoin-shares NEW: other - ETH ETF experiences 9-day outflow, SOL ETF ends 14-week inflow, total spot ETFs lose $1.25
-- ripple NEW: other - XRP ETF Inflows at $1.80B Despite Active Users Slipping Below 100K - TradingView
-- ripple NEW: other - XRP Fell 8% in the Week It Got a Nasdaq Listing, a Dubai Bank Deal and an ETF Inflow. Why 
+- solana NEW: other - Grayscale's Solana ETF Sparks a Revolution in Institutional Crypto Interest - OneSafe
 
 ## Derivatives flags (OKX)
-- ETH: SHORT_SQUEEZE_24H | OI/mc 0.55% | topPos 0.91 | taker 1.04
-- SOL: LONG_FLUSH_24H | OI/mc 0.58% | topPos 0.90 | taker 0.98
-- SEI: SHORT_SQUEEZE_24H | OI/mc 0.72% | topPos 0.93 | taker 0.96
-- TAO: SHORT_SQUEEZE_24H | OI/mc 0.82% | topPos 0.91 | taker 0.99
-- ZEC: SHORT_SQUEEZE_24H | OI/mc 0.63% | topPos 1.09 | taker 1.03
-- ADA: LONG_FLUSH_24H | OI/mc 0.40% | topPos 0.92 | taker 1.01
-- LINK: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.93 | taker 0.95
-- XLM: LONG_FLUSH_24H | OI/mc 0.17% | topPos 1.02 | taker 0.93
+- BTC: SHORT_SQUEEZE_24H | OI/mc 0.19% | topPos 0.99 | taker 1.04
+- ETH: SHORT_SQUEEZE_24H | OI/mc 0.55% | topPos 0.92 | taker 1.02
+- SEI: SHORT_SQUEEZE_24H | OI/mc 0.72% | topPos 0.93 | taker 0.99
+- TAO: SHORT_SQUEEZE_24H | OI/mc 0.82% | topPos 0.90 | taker 1.00
+- ZEC: SHORT_SQUEEZE_24H | OI/mc 0.64% | topPos 1.09 | taker 1.01
+- WLD: SHORT_SQUEEZE_FUEL | OI/mc -% | topPos 0.89 | taker 0.86
+- ADA: LONG_FLUSH_24H | OI/mc 0.40% | topPos 0.92 | taker 1.00
+- XLM: LONG_FLUSH_24H | OI/mc 0.17% | topPos 1.02 | taker 0.95
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -54,12 +47,12 @@
 - (16 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 41 | mean 1.4% (0.17R) | in profit 18 | older than 7d 32
-- worst: ETC -0.66R, CHZ -0.65R, ORCA -0.65R | best: AERO 1.57R, RENDER 2.08R, STX 2.97R
+- open 41 | mean 1.3% (0.16R) | in profit 17 | older than 7d 32
+- worst: ETC -0.67R, ORCA -0.67R, CHZ -0.66R | best: AERO 1.55R, RENDER 1.86R, STX 2.92R
 
 ## System
-- CoinGecko 4258/10000 used, month-end projection 10057 (101%), throttle level 2 | by script {'scan': 1376, 'check_liquidity': 196, 'breakout_check': 2655, 'counterfactual_check': 31}
+- CoinGecko 4260/10000 used, month-end projection 10062 (101%), throttle level 2 | by script {'scan': 1378, 'check_liquidity': 196, 'breakout_check': 2655, 'counterfactual_check': 31}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=39), H2 SUPPORTED (n=121)
-- radar-flags.json scan age: 9m
+- radar-flags.json scan age: 12m
 - excluded from radar (pegged/tokenized equity): 37
