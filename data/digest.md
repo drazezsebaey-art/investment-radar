@@ -1,4 +1,4 @@
-# Radar digest - 2026-10-14 13:43 UTC
+# Radar digest - 2026-10-14 14:10 UTC
 
 ## Market
 - BTC scenario **A** | price 82817 | wk close 83902 vs 82800 | 50W 77187 (7.29%) | 1h old
@@ -19,14 +19,14 @@
 - MET: **RESET_DONE** | +205% impulse, retr 0.49 | OI dd 62% | fund -0.0225 | hold False | inval 0.36180 | OB 0.28550-0.29500
 
 ## Pre-pump candidates
-- SOL: [A+E] 7d -10.1%
+- AKE: [C+E] 7d -11.2%
+- AVAX: [A+E] 7d -10.5%
+- SOL: [A+E] 7d -9.8%
 - LTC: [A+E] 7d -9.7%
 - HYPE: [A+E] 7d -9.4%
 - ADA: [A+E] 7d -9.3%
 - HBAR: [A+E] 7d -9.2%
-- AVAX: [A+E] 7d -8.8%
-- SUI: [A+E] 7d -8.2%
-- CRO: [A+E] 7d -7.7%
+- SUI: [A+E] 7d -9.0%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - $1,000 Invested in the First U.S. Spot XRP ETF Falls to $712 in 2026 - Hokanews
@@ -52,12 +52,12 @@
 - (19 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 41 | mean -2.2% (-0.10R) | in profit 13 | older than 7d 32
-- worst: OP -0.84R, ZRO -0.84R, ORCA -0.83R | best: AERO 1.33R, PYTH 1.46R, STX 2.41R
+- open 39 | mean -1.8% (-0.06R) | in profit 13 | older than 7d 32
+- worst: CHZ -0.81R, ORCA -0.79R, ETC -0.76R | best: AERO 1.31R, PYTH 1.42R, STX 2.35R
 
 ## System
-- CoinGecko 4416/10000 used, month-end projection 10109 (101%), throttle level 2 | by script {'scan': 1426, 'check_liquidity': 200, 'breakout_check': 2759, 'counterfactual_check': 31}
+- CoinGecko 4418/10000 used, month-end projection 10083 (101%), throttle level 2 | by script {'scan': 1428, 'check_liquidity': 200, 'breakout_check': 2759, 'counterfactual_check': 31}
 - Trials guard: OK (0 untracked)
-- Hypotheses: H1 NOT_SUPPORTED (n=40), H2 SUPPORTED (n=126)
-- radar-flags.json scan age: 13m
-- excluded from radar (pegged/tokenized equity): 37
+- Hypotheses: H1 NOT_SUPPORTED (n=40), H2 SUPPORTED (n=127)
+- radar-flags.json scan age: 10m
+- excluded from radar (pegged/tokenized equity): 38
