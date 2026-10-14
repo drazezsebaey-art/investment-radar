@@ -1,4 +1,4 @@
-# Radar digest - 2026-10-14 01:41 UTC
+# Radar digest - 2026-10-14 02:09 UTC
 
 ## Market
 - BTC scenario **A** | price 83701 | wk close 83902 vs 82800 | 50W 77187 (8.44%) | 1h old
@@ -21,12 +21,12 @@
 ## Pre-pump candidates
 - HBAR: [A+E] 7d -12.2%
 - ADA: [A+E] 7d -11.2%
-- AVAX: [A+E] 7d -11.2%
+- AVAX: [A+E] 7d -11.1%
 - SOL: [A+E] 7d -11.0%
 - LTC: [A+E] 7d -10.9%
 - HYPE: [A+E] 7d -10.6%
 - CRO: [A+E] 7d -10.3%
-- SUI: [A+E] 7d -10.3%
+- SEI: [A+E] 7d -10.0%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - XRP ETF Price — Spot XRP ETFs Add $11.31M as XRP Falls to $1.345 — $230M Paper Loss, $1.31
@@ -55,11 +55,11 @@
 
 ## Paper book (open trades, marked to last scan)
 - open 41 | mean 0.8% (0.13R) | in profit 17 | older than 7d 32
-- worst: ORCA -0.73R, ETC -0.68R, CHZ -0.67R | best: AERO 1.59R, RENDER 1.86R, STX 2.69R
+- worst: ORCA -0.71R, CHZ -0.68R, ETC -0.68R | best: AERO 1.57R, RENDER 1.91R, STX 2.59R
 
 ## System
-- CoinGecko 4252/10000 used, month-end projection 10107 (101%), throttle level 2 | by script {'scan': 1370, 'check_liquidity': 196, 'breakout_check': 2655, 'counterfactual_check': 31}
+- CoinGecko 4254/10000 used, month-end projection 10080 (101%), throttle level 2 | by script {'scan': 1372, 'check_liquidity': 196, 'breakout_check': 2655, 'counterfactual_check': 31}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=39), H2 SUPPORTED (n=121)
-- radar-flags.json scan age: 11m
+- radar-flags.json scan age: 9m
 - excluded from radar (pegged/tokenized equity): 37
