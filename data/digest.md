@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-14 08:43 UTC
+# Radar digest - 2026-10-14 09:10 UTC
 
 ## Market
-- BTC scenario **A** | price 83562 | wk close 83902 vs 82800 | 50W 77187 (8.26%) | 1m old
+- BTC scenario **A** | price 83562 | wk close 83902 vs 82800 | 50W 77187 (8.26%) | 29m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.20% | ETH/BTC 0.03000 | breadth7d -% | stables 30d 0.84%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.34pt | 7d 0.78pt | n=96
 - Gold: PAXG 1m -2.11% | real10y 2.91 (31bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -19,12 +19,13 @@
 - UNI: **RESET_DONE** | +120% impulse, retr 0.60 | OI dd 34% | fund 0.0100 | hold False | inval 6.74200 | OB 5.80800-6.03200
 
 ## Pre-pump candidates
-- AVAX: [A+E] 7d -9.3%
-- LINK: [A+E] 7d -6.2%
-- NEAR: [A+E] 7d -2.8%
-- ONDO: [A+E] 7d -1.7%
-- KMNO: [B+C] 7d 1.7%
-- INJ: [A+E] 7d 7.6%
+- AVAX: [A+E] 7d -10.1%
+- AKE: [C+E] 7d -8.2%
+- LINK: [A+E] 7d -5.9%
+- KITE: [C+E] 7d -2.6%
+- ONDO: [A+E] 7d -1.8%
+- KMNO: [B+C] 7d 2.4%
+- INJ: [A+E] 7d 6.8%
 
 ## ETF pipeline (new this run)
 - none
@@ -45,12 +46,12 @@
 - (16 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 41 | mean 0.7% (0.13R) | in profit 16 | older than 7d 32
-- worst: CHZ -0.68R, ORCA -0.67R, ETC -0.65R | best: AERO 1.61R, RENDER 1.64R, STX 3.08R
+- open 41 | mean 0.1% (0.09R) | in profit 15 | older than 7d 32
+- worst: CHZ -0.71R, ORCA -0.71R, ETC -0.68R | best: AERO 1.56R, RENDER 1.58R, STX 2.97R
 
 ## System
-- CoinGecko 4334/10000 used, month-end projection 10077 (101%), throttle level 2 | by script {'scan': 1398, 'check_liquidity': 199, 'breakout_check': 2706, 'counterfactual_check': 31}
+- CoinGecko 4336/10000 used, month-end projection 10050 (100%), throttle level 2 | by script {'scan': 1400, 'check_liquidity': 199, 'breakout_check': 2706, 'counterfactual_check': 31}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=40), H2 SUPPORTED (n=122)
-- radar-flags.json scan age: 13m
+- radar-flags.json scan age: 10m
 - excluded from radar (pegged/tokenized equity): 36
