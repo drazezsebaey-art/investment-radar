@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-14 05:09 UTC
+# Radar digest - 2026-10-14 05:41 UTC
 
 ## Market
-- BTC scenario **A** | price 83781 | wk close 83902 vs 82800 | 50W 77187 (8.54%) | 28m old
+- BTC scenario **A** | price 83781 | wk close 83902 vs 82800 | 50W 77187 (8.54%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 57.14% | ETH/BTC 0.03006 | breadth7d 40% | stables 30d 0.85%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.28pt | 7d 0.72pt | n=95
 - Gold: PAXG 1m -2.11% | real10y 2.91 (31bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -19,27 +19,23 @@
 - STRK: **RESET_DONE** | +422% impulse, retr 0.42 | OI dd 39% | fund -0.0058 | hold False | inval 0.04805 | OB 0.04805-0.04982
 
 ## Pre-pump candidates
-- HBAR: [A+E] 7d -9.7%
-- HYPE: [A+E] 7d -9.2%
-- SOL: [A+E] 7d -8.7%
-- LTC: [A+E] 7d -8.2%
-- SUI: [A+E] 7d -7.1%
-- ADA: [A+E] 7d -6.3%
-- AVAX: [A+E] 7d -6.2%
-- CRO: [A+E] 7d -6.2%
+- TRX: [A+E] 7d -0.5%
+- NEAR: [A+E] 7d 3.0%
+- TRAC: [C+E] 7d 3.6%
+- OP: [A+C] 7d 27.6%
 
 ## ETF pipeline (new this run)
-- solana NEW: other - Grayscale's Solana ETF Sparks a Revolution in Institutional Crypto Interest - OneSafe
+- near: other - Bitwise NEAR ETF (NRR) risk - Yahoo Finance UK
 
 ## Derivatives flags (OKX)
 - BTC: SHORT_SQUEEZE_24H | OI/mc 0.19% | topPos 0.99 | taker 1.03
-- ETH: SHORT_SQUEEZE_24H | OI/mc 0.55% | topPos 0.92 | taker 1.00
-- SEI: SHORT_SQUEEZE_24H | OI/mc 0.71% | topPos 0.93 | taker 0.96
-- TAO: SHORT_SQUEEZE_24H | OI/mc 0.82% | topPos 0.90 | taker 1.04
-- WLD: AGGRESSIVE_SELLING | OI/mc -% | topPos 0.88 | taker 0.85
-- ADA: LONG_FLUSH_24H | OI/mc 0.40% | topPos 0.91 | taker 1.00
-- XLM: LONG_FLUSH_24H | OI/mc 0.17% | topPos 1.02 | taker 0.98
-- BCH: LONG_FLUSH_24H | OI/mc 0.45% | topPos 0.82 | taker 0.97
+- SUI: AGGRESSIVE_SELLING | OI/mc -% | topPos 0.85 | taker 0.84
+- SEI: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.93 | taker 0.98
+- TAO: SHORT_SQUEEZE_24H | OI/mc 0.82% | topPos 0.91 | taker 1.05
+- WLD: AGGRESSIVE_SELLING | OI/mc -% | topPos 0.89 | taker 0.84
+- ADA: LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 0.99
+- LINK: LONG_FLUSH_24H | OI/mc -% | topPos 0.93 | taker 0.91
+- XLM: LONG_FLUSH_24H | OI/mc -% | topPos 1.01 | taker 0.99
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -47,12 +43,12 @@
 - (16 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 41 | mean 1.3% (0.17R) | in profit 18 | older than 7d 32
-- worst: ORCA -0.67R, ETC -0.65R, CHZ -0.65R | best: AERO 1.60R, RENDER 1.80R, STX 2.76R
+- open 41 | mean 0.6% (0.11R) | in profit 16 | older than 7d 32
+- worst: CHZ -0.67R, ETC -0.67R, ORCA -0.65R | best: AERO 1.54R, RENDER 1.75R, STX 2.78R
 
 ## System
-- CoinGecko 4267/10000 used, month-end projection 10015 (100%), throttle level 2 | by script {'scan': 1384, 'check_liquidity': 197, 'breakout_check': 2655, 'counterfactual_check': 31}
+- CoinGecko 4269/10000 used, month-end projection 10019 (100%), throttle level 2 | by script {'scan': 1386, 'check_liquidity': 197, 'breakout_check': 2655, 'counterfactual_check': 31}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=39), H2 SUPPORTED (n=121)
-- radar-flags.json scan age: 9m
+- radar-flags.json scan age: 11m
 - excluded from radar (pegged/tokenized equity): 37
