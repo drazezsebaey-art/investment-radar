@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-14 23:09 UTC
+# Radar digest - 2026-10-14 23:42 UTC
 
 ## Market
-- BTC scenario **A** | price 81545 | wk close 83902 vs 82800 | 50W 77187 (5.65%) | 28m old
+- BTC scenario **A** | price 81545 | wk close 83902 vs 82800 | 50W 77187 (5.65%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 57.18% | ETH/BTC 0.02962 | breadth7d -% | stables 30d 0.86%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.36pt | 7d 0.62pt | n=100
 - Gold: PAXG 1m -3.98% | real10y 2.88 (28bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -20,22 +20,26 @@
 
 ## Pre-pump candidates
 - NEAR: [A+E] 7d -7.9%
-- OP: [A+C] 7d 13.4%
+- OP: [A+C] 7d 15.4%
 
 ## ETF pipeline (new this run)
-- solana NEW: other - Best Crypto to Buy Now: Remittix, Solana or NEAR as Payments and ETF Narratives Accelerate
-- injective-protocol NEW: other - Injective’s INJ heads toward Wall Street with proposed INJC staking ETF - Crypto Briefing
-- injective-protocol NEW: other - Canary’s Proposed Injective ETF Plans to Stake at Least 90% of INJ - TOKENPOST
+- injective-protocol NEW: other - INJ Price Analysis: $9 Breakout in Focus as Injective ETF Hopes Grow - Cryptonews.net
+- bittensor: other - Bittensor Price Prediction for 2026 and Beyond: Grayscale Trust - openPR.com
+- zcash: other - Cryptocurrency News: Bitcoin ETF Inflows Return as XRP, Zcash and Remittix Capture Market 
+- zcash: other - Grayscale ZCSH: $3.7M Zcash ETF Daily Inflow - Blockchain News
+- ondo-finance: other - iShares 20+ Year Treasury Bond Tokenized ETF (Ondo) Price (TLTon/USD) Today | Live Price, 
+- ondo-finance: other - Ondo Leads $686.5M Tokenized ETF Market with $325.7M Issued - Coinfomania
+- ondo-finance: other - iShares 20+ Year Treasury Bond Tokenized ETF (Ondo) Price (TLTon/USD) Today | Live Price, 
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc -% | topPos 0.95 | taker 0.96
-- ETH: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.93
+- BTC: LONG_FLUSH_24H | OI/mc -% | topPos 0.95 | taker 0.95
+- ETH: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.92
 - SOL: LONG_FLUSH_24H | OI/mc -% | topPos 0.89 | taker 1.02
-- NEAR: LONG_FLUSH_24H | OI/mc 1.00% | topPos 1.03 | taker 0.92
+- NEAR: LONG_FLUSH_24H | OI/mc 0.99% | topPos 1.02 | taker 0.92
 - XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.93
-- SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.85 | taker 0.89
-- ZEC: LONG_FLUSH_24H | OI/mc -% | topPos 0.98 | taker 0.95
-- WLD: LONG_FLUSH_24H | OI/mc -% | topPos 0.89 | taker 0.89
+- SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.85 | taker 0.90
+- ZEC: LONG_FLUSH_24H | OI/mc -% | topPos 0.97 | taker 0.95
+- WLD: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 0.89
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -44,12 +48,12 @@
 - (19 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 38 | mean -1.7% (-0.05R) | in profit 14 | older than 7d 32
-- worst: JTO -0.94R, CHZ -0.85R, AAVE -0.84R | best: AERO 1.59R, PYTH 1.68R, STX 2.27R
+- open 39 | mean -2.1% (-0.07R) | in profit 14 | older than 7d 32
+- worst: ORCA -0.95R, JTO -0.93R, CHZ -0.85R | best: AERO 1.58R, PYTH 1.61R, STX 2.32R
 
 ## System
-- CoinGecko 4511/10000 used, month-end projection 10018 (100%), throttle level 2 | by script {'scan': 1464, 'check_liquidity': 202, 'breakout_check': 2814, 'counterfactual_check': 31}
+- CoinGecko 4513/10000 used, month-end projection 10023 (100%), throttle level 2 | by script {'scan': 1466, 'check_liquidity': 202, 'breakout_check': 2814, 'counterfactual_check': 31}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=41), H2 SUPPORTED (n=132)
-- radar-flags.json scan age: 9m
-- excluded from radar (pegged/tokenized equity): 39
+- radar-flags.json scan age: 12m
+- excluded from radar (pegged/tokenized equity): 38
