@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-14 13:10 UTC
+# Radar digest - 2026-10-14 13:43 UTC
 
 ## Market
-- BTC scenario **A** | price 82817 | wk close 83902 vs 82800 | 50W 77187 (7.29%) | 29m old
+- BTC scenario **A** | price 82817 | wk close 83902 vs 82800 | 50W 77187 (7.29%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 57.23% | ETH/BTC 0.03001 | breadth7d 39% | stables 30d 0.84%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.28pt | 7d 0.76pt | n=97
 - Gold: PAXG 1m -2.60% | real10y 2.91 (31bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -19,20 +19,31 @@
 - MET: **RESET_DONE** | +205% impulse, retr 0.49 | OI dd 62% | fund -0.0225 | hold False | inval 0.36180 | OB 0.28550-0.29500
 
 ## Pre-pump candidates
-- ONDO: [A+E] 7d -0.4%
+- SOL: [A+E] 7d -10.1%
+- LTC: [A+E] 7d -9.7%
+- HYPE: [A+E] 7d -9.4%
+- ADA: [A+E] 7d -9.3%
+- HBAR: [A+E] 7d -9.2%
+- AVAX: [A+E] 7d -8.8%
+- SUI: [A+E] 7d -8.2%
+- CRO: [A+E] 7d -7.7%
 
 ## ETF pipeline (new this run)
-- none
+- ripple NEW: other - $1,000 Invested in the First U.S. Spot XRP ETF Falls to $712 in 2026 - Hokanews
+- hyperliquid NEW: other - EQX Plans 11 Tokenized Stock and ETF Markets on Hyperliquid - The Defiant
+- solana NEW: other - Solana ETF in Hong Kong at 0.6 percent: what changes for European investors - CryptoTicker
+- kucoin-shares NEW: other - Hong Kong to List Second Spot Solana ETF on October 13 - KuCoin
+- chainlink: other - Grayscale Chainlink Trust ETF ETF Price, Holdings, & News (NYSEARCA:GLNK) - MarketBeat
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc 0.19% | topPos 0.98 | taker 1.04
-- ETH: LONG_FLUSH_24H | OI/mc 0.54% | topPos 0.90 | taker 1.01
-- SOL: LONG_FLUSH_24H | OI/mc 0.56% | topPos 0.89 | taker 0.97
-- AVAX: LONG_FLUSH_24H | OI/mc 0.41% | topPos 0.93 | taker 0.98
-- SUI: LONG_FLUSH_24H | OI/mc 0.98% | topPos 0.85 | taker 0.96
-- ZEC: LONG_FLUSH_24H | OI/mc 0.60% | topPos 1.09 | taker 1.01
-- ADA: LONG_FLUSH_24H | OI/mc 0.40% | topPos 0.92 | taker 1.02
-- LINK: LONG_FLUSH_24H | OI/mc 0.32% | topPos 0.91 | taker 0.93
+- ETH: SHORT_SQUEEZE_24H | OI/mc 0.56% | topPos 0.90 | taker 0.98
+- SOL: LONG_FLUSH_24H | OI/mc 0.57% | topPos 0.89 | taker 0.94
+- NEAR: LONG_FLUSH_24H | OI/mc 1.01% | topPos 1.01 | taker 0.95
+- SUI: LONG_FLUSH_24H | OI/mc 1.00% | topPos 0.83 | taker 0.89
+- TAO: LONG_FLUSH_24H | OI/mc 0.81% | topPos 0.92 | taker 1.05
+- WLD: LONG_FLUSH_24H | OI/mc -% | topPos 0.89 | taker 0.94
+- ADA: LONG_FLUSH_24H | OI/mc 0.40% | topPos 0.91 | taker 0.95
+- LINK: LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 0.90
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -41,12 +52,12 @@
 - (19 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 41 | mean -1.6% (-0.06R) | in profit 13 | older than 7d 32
-- worst: CHZ -0.80R, ORCA -0.79R, OP -0.77R | best: AERO 1.41R, PYTH 1.44R, STX 2.26R
+- open 41 | mean -2.2% (-0.10R) | in profit 13 | older than 7d 32
+- worst: OP -0.84R, ZRO -0.84R, ORCA -0.83R | best: AERO 1.33R, PYTH 1.46R, STX 2.41R
 
 ## System
-- CoinGecko 4414/10000 used, month-end projection 10105 (101%), throttle level 2 | by script {'scan': 1424, 'check_liquidity': 200, 'breakout_check': 2759, 'counterfactual_check': 31}
+- CoinGecko 4416/10000 used, month-end projection 10109 (101%), throttle level 2 | by script {'scan': 1426, 'check_liquidity': 200, 'breakout_check': 2759, 'counterfactual_check': 31}
 - Trials guard: OK (0 untracked)
-- Hypotheses: H1 NOT_SUPPORTED (n=40), H2 SUPPORTED (n=124)
-- radar-flags.json scan age: 9m
+- Hypotheses: H1 NOT_SUPPORTED (n=40), H2 SUPPORTED (n=126)
+- radar-flags.json scan age: 13m
 - excluded from radar (pegged/tokenized equity): 37
