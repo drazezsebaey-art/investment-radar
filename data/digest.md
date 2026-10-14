@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-14 19:09 UTC
+# Radar digest - 2026-10-14 19:42 UTC
 
 ## Market
-- BTC scenario **A** | price 81575 | wk close 83902 vs 82800 | 50W 77187 (5.69%) | 28m old
+- BTC scenario **A** | price 81575 | wk close 83902 vs 82800 | 50W 77187 (5.69%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.21% | ETH/BTC 0.02972 | breadth7d -% | stables 30d 0.87%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.34pt | 7d 0.73pt | n=99
 - Gold: PAXG 1m -4.50% | real10y 2.91 (31bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -19,21 +19,33 @@
 - STRK: **RESET_DONE** | +403% impulse, retr 0.51 | OI dd 54% | fund 0.0050 | hold False | inval 0.04805 | OB 0.04805-0.04982
 
 ## Pre-pump candidates
-- AKE: [C+E] 7d -6.5%
-- NEAR: [A+E] 7d -6.2%
+- AVAX: [A+E] 7d -12.3%
+- ZEC: [A+E] 7d -11.7%
+- SOL: [A+E] 7d -10.3%
+- ADA: [A+E] 7d -10.2%
+- LTC: [A+E] 7d -9.8%
+- HBAR: [A+E] 7d -9.1%
+- SUI: [A+E] 7d -8.5%
+- HYPE: [A+E] 7d -8.2%
 
 ## ETF pipeline (new this run)
-- none
+- solana NEW: other - Grayscale's Solana ETF Draws Steady Inflows as Institutional Demand Holds - BigGo Finance
+- solana NEW: other - NEAR ETF sees inflows while SOL, Dogecoin, and Zcash ETFs face outflows in altcoin spot ma
+- solana NEW: other - Ethereum leads tokenized ETF market with $303M cap but faces rising competition from BNB C
+- binancecoin NEW: other - Ethereum leads tokenized ETF market with $303M cap but faces rising competition from BNB C
+- near: other - Bitwise NEAR ETF holds $79.2M in tokens two wee... - Pluang
+- chainlink: other - Grayscale Chainlink Trust ETF ETF Price, Holdings, & News (NYSEARCA:GLNK) - MarketBeat
+- zcash: other - NEAR ETF sees inflows while SOL, Dogecoin, and Zcash ETFs face outflows in altcoin spot ma
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc -% | topPos 0.95 | taker 0.98
-- ETH: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.94
-- NEAR: LONG_FLUSH_24H | OI/mc -% | topPos 1.02 | taker 0.96
-- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.91
-- SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.85 | taker 0.90
-- ZEC: LONG_FLUSH_24H | OI/mc -% | topPos 0.99 | taker 0.99
-- WLD: LONG_FLUSH_24H | OI/mc -% | topPos 0.89 | taker 0.92
-- ADA: LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 1.00
+- BTC: LONG_FLUSH_24H | OI/mc 0.21% | topPos 0.95 | taker 0.97
+- ETH: LONG_FLUSH_24H | OI/mc 0.61% | topPos 0.87 | taker 0.94
+- SOL: LONG_FLUSH_24H | OI/mc 0.59% | topPos 0.89 | taker 1.00
+- NEAR: LONG_FLUSH_24H | OI/mc 1.00% | topPos 1.02 | taker 0.94
+- XRP: LONG_FLUSH_24H | OI/mc 0.13% | topPos 0.87 | taker 0.91
+- SUI: LONG_FLUSH_24H | OI/mc 0.98% | topPos 0.84 | taker 0.89
+- ZEC: LONG_FLUSH_24H | OI/mc 0.62% | topPos 1.00 | taker 0.98
+- WLD: LONG_FLUSH_24H | OI/mc -% | topPos 0.89 | taker 0.90
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -42,12 +54,12 @@
 - (19 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 39 | mean -2.7% (-0.12R) | in profit 14 | older than 7d 32
-- worst: ORCA -0.91R, JTO -0.90R, CHZ -0.86R | best: PYTH 1.34R, AERO 1.35R, STX 2.11R
+- open 39 | mean -2.6% (-0.11R) | in profit 13 | older than 7d 32
+- worst: ORCA -0.91R, JTO -0.90R, CHZ -0.87R | best: PYTH 1.26R, AERO 1.43R, STX 2.39R
 
 ## System
-- CoinGecko 4495/10000 used, month-end projection 10104 (101%), throttle level 2 | by script {'scan': 1448, 'check_liquidity': 202, 'breakout_check': 2814, 'counterfactual_check': 31}
+- CoinGecko 4497/10000 used, month-end projection 10108 (101%), throttle level 2 | by script {'scan': 1450, 'check_liquidity': 202, 'breakout_check': 2814, 'counterfactual_check': 31}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=41), H2 NOT_SUPPORTED (n=131)
-- radar-flags.json scan age: 9m
+- radar-flags.json scan age: 11m
 - excluded from radar (pegged/tokenized equity): 38
