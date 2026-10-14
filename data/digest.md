@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-14 03:42 UTC
+# Radar digest - 2026-10-14 04:09 UTC
 
 ## Market
-- BTC scenario **A** | price 83393 | wk close 83902 vs 82800 | 50W 77187 (8.04%) | 59m old
+- BTC scenario **A** | price 83393 | wk close 83902 vs 82800 | 50W 77187 (8.04%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 57.14% | ETH/BTC 0.03006 | breadth7d 40% | stables 30d 0.85%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.28pt | 7d 0.72pt | n=95
 - Gold: PAXG 1m -2.11% | real10y 2.91 (31bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -21,12 +21,12 @@
 ## Pre-pump candidates
 - HBAR: [A+E] 7d -10.9%
 - LTC: [A+E] 7d -9.6%
-- SOL: [A+E] 7d -9.5%
-- AVAX: [A+E] 7d -9.1%
+- SOL: [A+E] 7d -8.8%
 - ADA: [A+E] 7d -8.8%
 - HYPE: [A+E] 7d -8.7%
 - CRO: [A+E] 7d -7.7%
-- SUI: [A+E] 7d -7.5%
+- SEI: [A+E] 7d -6.8%
+- SUI: [A+E] 7d -6.7%
 
 ## ETF pipeline (new this run)
 - solana NEW: other - Grayscale's Solana ETF Sparks a Revolution in Institutional Crypto Interest - OneSafe
@@ -47,12 +47,12 @@
 - (16 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 41 | mean 1.3% (0.16R) | in profit 17 | older than 7d 32
-- worst: ETC -0.67R, ORCA -0.67R, CHZ -0.66R | best: AERO 1.55R, RENDER 1.86R, STX 2.92R
+- open 41 | mean 1.3% (0.16R) | in profit 16 | older than 7d 32
+- worst: ORCA -0.67R, ETC -0.66R, CHZ -0.66R | best: AERO 1.58R, RENDER 1.86R, STX 2.84R
 
 ## System
-- CoinGecko 4260/10000 used, month-end projection 10062 (101%), throttle level 2 | by script {'scan': 1378, 'check_liquidity': 196, 'breakout_check': 2655, 'counterfactual_check': 31}
+- CoinGecko 4262/10000 used, month-end projection 10035 (100%), throttle level 2 | by script {'scan': 1380, 'check_liquidity': 196, 'breakout_check': 2655, 'counterfactual_check': 31}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=39), H2 SUPPORTED (n=121)
-- radar-flags.json scan age: 12m
-- excluded from radar (pegged/tokenized equity): 37
+- radar-flags.json scan age: 9m
+- excluded from radar (pegged/tokenized equity): 36
