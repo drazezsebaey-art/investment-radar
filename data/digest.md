@@ -1,4 +1,4 @@
-# Radar digest - 2026-10-14 19:42 UTC
+# Radar digest - 2026-10-14 20:10 UTC
 
 ## Market
 - BTC scenario **A** | price 81575 | wk close 83902 vs 82800 | 50W 77187 (5.69%) | 1h old
@@ -19,14 +19,14 @@
 - STRK: **RESET_DONE** | +403% impulse, retr 0.51 | OI dd 54% | fund 0.0050 | hold False | inval 0.04805 | OB 0.04805-0.04982
 
 ## Pre-pump candidates
-- AVAX: [A+E] 7d -12.3%
+- AVAX: [A+E] 7d -12.1%
 - ZEC: [A+E] 7d -11.7%
-- SOL: [A+E] 7d -10.3%
+- SOL: [A+E] 7d -10.4%
 - ADA: [A+E] 7d -10.2%
 - LTC: [A+E] 7d -9.8%
+- SEI: [A+E] 7d -9.5%
+- SUI: [A+E] 7d -9.1%
 - HBAR: [A+E] 7d -9.1%
-- SUI: [A+E] 7d -8.5%
-- HYPE: [A+E] 7d -8.2%
 
 ## ETF pipeline (new this run)
 - solana NEW: other - Grayscale's Solana ETF Draws Steady Inflows as Institutional Demand Holds - BigGo Finance
@@ -54,12 +54,12 @@
 - (19 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 39 | mean -2.6% (-0.11R) | in profit 13 | older than 7d 32
-- worst: ORCA -0.91R, JTO -0.90R, CHZ -0.87R | best: PYTH 1.26R, AERO 1.43R, STX 2.39R
+- open 39 | mean -2.9% (-0.13R) | in profit 14 | older than 7d 32
+- worst: JTO -0.94R, ORCA -0.93R, FIL -0.90R | best: PYTH 1.35R, AERO 1.40R, STX 2.35R
 
 ## System
-- CoinGecko 4497/10000 used, month-end projection 10108 (101%), throttle level 2 | by script {'scan': 1450, 'check_liquidity': 202, 'breakout_check': 2814, 'counterfactual_check': 31}
+- CoinGecko 4499/10000 used, month-end projection 10082 (101%), throttle level 2 | by script {'scan': 1452, 'check_liquidity': 202, 'breakout_check': 2814, 'counterfactual_check': 31}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=41), H2 NOT_SUPPORTED (n=131)
-- radar-flags.json scan age: 11m
+- radar-flags.json scan age: 10m
 - excluded from radar (pegged/tokenized equity): 38
