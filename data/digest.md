@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-14 02:44 UTC
+# Radar digest - 2026-10-14 03:09 UTC
 
 ## Market
-- BTC scenario **A** | price 83393 | wk close 83902 vs 82800 | 50W 77187 (8.04%) | 2m old
+- BTC scenario **A** | price 83393 | wk close 83902 vs 82800 | 50W 77187 (8.04%) | 27m old
 - Alts: **BTC_LED** [-] | BTC.D 57.14% | ETH/BTC 0.03006 | breadth7d 40% | stables 30d 0.85%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.28pt | 7d 0.72pt | n=95
 - Gold: PAXG 1m -2.11% | real10y 2.91 (31bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -19,14 +19,14 @@
 - ADA: **ONGOING** | +49% impulse, retr 0.49 | OI dd 27% | fund 0.0081 | hold False | inval 0.22420 | OB 0.21820-0.22220
 
 ## Pre-pump candidates
+- INJ: [A+C+E] 7d 2.2%
 - HBAR: [A+E] 7d -12.2%
 - ADA: [A+E] 7d -11.3%
-- AVAX: [A+E] 7d -11.1%
-- SOL: [A+E] 7d -11.0%
 - LTC: [A+E] 7d -11.0%
 - HYPE: [A+E] 7d -10.8%
 - CRO: [A+E] 7d -10.3%
-- SEI: [A+E] 7d -10.0%
+- SOL: [A+E] 7d -9.5%
+- AVAX: [A+E] 7d -9.1%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - XRP ETF Price — Spot XRP ETFs Add $11.31M as XRP Falls to $1.345 — $230M Paper Loss, $1.31
@@ -54,12 +54,12 @@
 - (16 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 41 | mean 1.0% (0.15R) | in profit 19 | older than 7d 32
-- worst: ORCA -0.71R, ETC -0.67R, CHZ -0.66R | best: AERO 1.54R, RENDER 1.91R, STX 2.69R
+- open 41 | mean 1.4% (0.17R) | in profit 18 | older than 7d 32
+- worst: ETC -0.66R, CHZ -0.65R, ORCA -0.65R | best: AERO 1.57R, RENDER 2.08R, STX 2.97R
 
 ## System
-- CoinGecko 4256/10000 used, month-end projection 10084 (101%), throttle level 2 | by script {'scan': 1374, 'check_liquidity': 196, 'breakout_check': 2655, 'counterfactual_check': 31}
+- CoinGecko 4258/10000 used, month-end projection 10057 (101%), throttle level 2 | by script {'scan': 1376, 'check_liquidity': 196, 'breakout_check': 2655, 'counterfactual_check': 31}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=39), H2 SUPPORTED (n=121)
-- radar-flags.json scan age: 14m
+- radar-flags.json scan age: 9m
 - excluded from radar (pegged/tokenized equity): 37
