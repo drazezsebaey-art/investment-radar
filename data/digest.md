@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-14 01:10 UTC
+# Radar digest - 2026-10-14 01:41 UTC
 
 ## Market
-- BTC scenario **A** | price 83701 | wk close 83902 vs 82800 | 50W 77187 (8.44%) | 29m old
+- BTC scenario **A** | price 83701 | wk close 83902 vs 82800 | 50W 77187 (8.44%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 57.22% | ETH/BTC 0.03011 | breadth7d -% | stables 30d 0.78%
 - Alt risk (BTC.D): **ELEVATED** ['BTC_DOM_BREAKOUT_HOLDING'] | 3d 0.36pt | 7d 0.77pt | n=94
 - Gold: PAXG 1m -2.11% | real10y 2.91 (31bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -19,28 +19,34 @@
 - ZEC: **ONGOING** | +115% impulse, retr 0.50 | OI dd 45% | fund 0.0053 | hold False | inval 1123.33000 | OB 1086.09000-1158.80000
 
 ## Pre-pump candidates
-- HBAR: [A+E] 7d -13.0%
-- ADA: [A+E] 7d -12.0%
-- LTC: [A+E] 7d -11.3%
-- HYPE: [A+E] 7d -11.2%
-- CRO: [A+E] 7d -11.2%
+- HBAR: [A+E] 7d -12.2%
+- ADA: [A+E] 7d -11.2%
 - AVAX: [A+E] 7d -11.2%
 - SOL: [A+E] 7d -11.0%
+- LTC: [A+E] 7d -10.9%
+- HYPE: [A+E] 7d -10.6%
+- CRO: [A+E] 7d -10.3%
 - SUI: [A+E] 7d -10.3%
 
 ## ETF pipeline (new this run)
-- zcash: other - Zcash Price Forecast: $30 million ETF outflows weigh on mild ZEC recovery - www.tmgm.com
-- zcash: other - Grayscale: Zcash ETF Posts $5.2M Daily Outflow - Blockchain News
+- ripple NEW: other - XRP ETF Price — Spot XRP ETFs Add $11.31M as XRP Falls to $1.345 — $230M Paper Loss, $1.31
+- solana NEW: other - Solana SOL Price Analysis as Pando ETF Enters Hong Kong Market - The Coin Republic
+- hyperliquid NEW: other - 数据：美国 HYPE 现货 ETF 单日净流入 282.09 万美元 - CryptoRank
+- solana NEW: other - Solana ETFs Took Money In for 14 Straight Weeks, Their Longest Run Yet. The Week It Ended,
+- solana NEW: other - Pando Solana ETF (02831) Lists on HKEX, Undercuts ChinaAMC on Fees - Altcoin Buzz
+- kucoin-shares NEW: other - ETH ETF experiences 9-day outflow, SOL ETF ends 14-week inflow, total spot ETFs lose $1.25
+- ripple NEW: other - XRP ETF Inflows at $1.80B Despite Active Users Slipping Below 100K - TradingView
+- ripple NEW: other - XRP Fell 8% in the Week It Got a Nasdaq Listing, a Dubai Bank Deal and an ETF Inflow. Why 
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc 0.19% | topPos 0.99 | taker 1.02
-- ETH: SHORT_SQUEEZE_24H | OI/mc 0.55% | topPos 0.92 | taker 1.05
-- AVAX: LONG_FLUSH_24H | OI/mc 0.40% | topPos 0.92 | taker 0.99
-- SUI: LONG_FLUSH_24H | OI/mc 0.99% | topPos 0.86 | taker 0.92
-- ZEC: SHORT_SQUEEZE_24H | OI/mc 0.61% | topPos 1.04 | taker 1.01
-- ADA: LONG_FLUSH_24H | OI/mc 0.40% | topPos 0.92 | taker 0.95
-- XLM: LONG_FLUSH_24H | OI/mc 0.17% | topPos 1.01 | taker 0.97
-- BCH: LONG_FLUSH_24H | OI/mc 0.45% | topPos 0.82 | taker 0.99
+- ETH: SHORT_SQUEEZE_24H | OI/mc 0.55% | topPos 0.92 | taker 1.07
+- SOL: LONG_FLUSH_24H | OI/mc 0.58% | topPos 0.90 | taker 1.04
+- SEI: SHORT_SQUEEZE_24H | OI/mc 0.73% | topPos 0.93 | taker 1.01
+- TAO: SHORT_SQUEEZE_24H | OI/mc 0.82% | topPos 0.91 | taker 1.04
+- ZEC: SHORT_SQUEEZE_24H | OI/mc 0.62% | topPos 1.06 | taker 1.05
+- ADA: LONG_FLUSH_24H | OI/mc 0.40% | topPos 0.92 | taker 1.02
+- LINK: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.94 | taker 0.99
+- XLM: LONG_FLUSH_24H | OI/mc 0.17% | topPos 1.02 | taker 0.97
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -49,11 +55,11 @@
 
 ## Paper book (open trades, marked to last scan)
 - open 41 | mean 0.8% (0.13R) | in profit 17 | older than 7d 32
-- worst: ORCA -0.73R, ETC -0.68R, CHZ -0.67R | best: AERO 1.61R, RENDER 1.69R, STX 2.74R
+- worst: ORCA -0.73R, ETC -0.68R, CHZ -0.67R | best: AERO 1.59R, RENDER 1.86R, STX 2.69R
 
 ## System
-- CoinGecko 4250/10000 used, month-end projection 10102 (101%), throttle level 2 | by script {'scan': 1368, 'check_liquidity': 196, 'breakout_check': 2655, 'counterfactual_check': 31}
+- CoinGecko 4252/10000 used, month-end projection 10107 (101%), throttle level 2 | by script {'scan': 1370, 'check_liquidity': 196, 'breakout_check': 2655, 'counterfactual_check': 31}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=39), H2 SUPPORTED (n=121)
-- radar-flags.json scan age: 10m
-- excluded from radar (pegged/tokenized equity): 36
+- radar-flags.json scan age: 11m
+- excluded from radar (pegged/tokenized equity): 37
