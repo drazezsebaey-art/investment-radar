@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-14 20:43 UTC
+# Radar digest - 2026-10-14 21:10 UTC
 
 ## Market
-- BTC scenario **A** | price 81795 | wk close 83902 vs 82800 | 50W 77187 (5.97%) | 1m old
+- BTC scenario **A** | price 81795 | wk close 83902 vs 82800 | 50W 77187 (5.97%) | 29m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.21% | ETH/BTC 0.02972 | breadth7d -% | stables 30d 0.87%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.34pt | 7d 0.73pt | n=99
 - Gold: PAXG 1m -4.50% | real10y 2.91 (31bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -19,7 +19,7 @@
 - UNI: **RESET_DONE** | +114% impulse, retr 0.66 | OI dd 33% | fund 0.0100 | hold False | inval 6.74200 | OB 5.80800-6.03200
 
 ## Pre-pump candidates
-- NEAR: [A+E] 7d -9.0%
+- NEAR: [A+E] 7d -10.1%
 
 ## ETF pipeline (new this run)
 - solana NEW: other - Grayscale's Solana ETF Draws Steady Inflows as Institutional Demand Holds - BigGo Finance
@@ -47,12 +47,12 @@
 - (19 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 39 | mean -2.6% (-0.10R) | in profit 14 | older than 7d 32
-- worst: JTO -0.95R, ORCA -0.91R, FIL -0.87R | best: AERO 1.46R, PYTH 1.58R, STX 2.37R
+- open 39 | mean -2.7% (-0.12R) | in profit 14 | older than 7d 32
+- worst: JTO -0.95R, ORCA -0.95R, CHZ -0.87R | best: AERO 1.45R, PYTH 1.69R, STX 2.09R
 
 ## System
-- CoinGecko 4501/10000 used, month-end projection 10087 (101%), throttle level 2 | by script {'scan': 1454, 'check_liquidity': 202, 'breakout_check': 2814, 'counterfactual_check': 31}
+- CoinGecko 4503/10000 used, month-end projection 10061 (101%), throttle level 2 | by script {'scan': 1456, 'check_liquidity': 202, 'breakout_check': 2814, 'counterfactual_check': 31}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=41), H2 NOT_SUPPORTED (n=131)
-- radar-flags.json scan age: 13m
-- excluded from radar (pegged/tokenized equity): 37
+- radar-flags.json scan age: 10m
+- excluded from radar (pegged/tokenized equity): 38
