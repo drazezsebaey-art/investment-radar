@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-14 10:43 UTC
+# Radar digest - 2026-10-14 11:10 UTC
 
 ## Market
-- BTC scenario **A** | price 83388 | wk close 83902 vs 82800 | 50W 77187 (8.03%) | 1m old
+- BTC scenario **A** | price 83388 | wk close 83902 vs 82800 | 50W 77187 (8.03%) | 29m old
 - Alts: **BTC_LED** [-] | BTC.D 57.23% | ETH/BTC 0.03001 | breadth7d 39% | stables 30d 0.84%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.28pt | 7d 0.76pt | n=97
 - Gold: PAXG 1m -2.60% | real10y 2.91 (31bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -20,13 +20,13 @@
 
 ## Pre-pump candidates
 - HYPE: [A+E] 7d -10.4%
-- SOL: [A+E] 7d -9.8%
 - HBAR: [A+E] 7d -9.3%
 - RUNE: [D+E] 7d -9.3%
-- AVAX: [A+E] 7d -9.0%
+- SOL: [A+E] 7d -9.1%
 - LTC: [A+E] 7d -8.9%
 - CRO: [A+E] 7d -8.7%
 - ADA: [A+E] 7d -8.4%
+- AVAX: [A+E] 7d -7.2%
 
 ## ETF pipeline (new this run)
 - kucoin-shares NEW: other - BlackRock ETF Clients Sell $65.4M BTC and $75.07M ETH Amid Volatile Flows - KuCoin
@@ -49,12 +49,12 @@
 - (19 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 41 | mean -0.6% (0.01R) | in profit 13 | older than 7d 32
-- worst: CHZ -0.77R, ORCA -0.73R, ETC -0.70R | best: RENDER 1.48R, AERO 1.50R, STX 2.67R
+- open 41 | mean -0.3% (0.04R) | in profit 13 | older than 7d 32
+- worst: CHZ -0.75R, ORCA -0.69R, ETC -0.69R | best: RENDER 1.48R, AERO 1.51R, STX 2.87R
 
 ## System
-- CoinGecko 4342/10000 used, month-end projection 10032 (100%), throttle level 2 | by script {'scan': 1406, 'check_liquidity': 199, 'breakout_check': 2706, 'counterfactual_check': 31}
+- CoinGecko 4344/10000 used, month-end projection 10006 (100%), throttle level 2 | by script {'scan': 1408, 'check_liquidity': 199, 'breakout_check': 2706, 'counterfactual_check': 31}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=40), H2 SUPPORTED (n=123)
-- radar-flags.json scan age: 13m
-- excluded from radar (pegged/tokenized equity): 37
+- radar-flags.json scan age: 9m
+- excluded from radar (pegged/tokenized equity): 36
