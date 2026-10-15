@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-15 19:07 UTC
+# Radar digest - 2026-10-15 19:40 UTC
 
 ## Market
-- BTC scenario **A** | price 82250 | wk close 83902 vs 82800 | 50W 77187 (6.56%) | 28m old
+- BTC scenario **A** | price 82250 | wk close 83902 vs 82800 | 50W 77187 (6.56%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 57.19% | ETH/BTC 0.02972 | breadth7d 40% | stables 30d 0.60%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.44pt | 7d 0.59pt | n=105
 - Gold: PAXG 1m -2.95% | real10y 2.88 (28bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -19,31 +19,34 @@
 - AVAX: **ONGOING** | +70% impulse, retr 0.40 | OI dd 27% | fund 0.0100 | hold False | inval 7.17400 | OB 7.17400-7.36200
 
 ## Pre-pump candidates
-- HBAR: [A+E] 7d -6.6%
-- LTC: [A+E] 7d -2.7%
+- HBAR: [A+E] 7d -4.9%
 - SEI: [A+E] 7d -2.6%
-- HYPE: [A+E] 7d -2.3%
-- CRO: [A+E] 7d -1.1%
+- LTC: [A+E] 7d -1.8%
+- HYPE: [A+E] 7d -1.6%
+- CRO: [A+E] 7d -1.3%
 - SOL: [A+E] 7d -0.5%
 - XRP: [A+E] 7d 1.1%
-- BNB: [A+E] 7d 1.4%
+- AVAX: [A+E] 7d 1.5%
 
 ## ETF pipeline (new this run)
-- ripple NEW: other - XRP Price Drops, But ETF Defies Crypto Bloodbath as Bitcoin and Ethereum Funds Bleed - Yah
-- ripple NEW: other - Bitcoin ETF Investors Put In $57 Billion and Now Hold $106 Billion. XRP ETF Investors Put 
-- ripple NEW: other - Thirteen Weeks of XRP ETF Inflows, and Net Assets Are Still Falling - Altcoin Buzz
-- zcash: filing - Tom Lee Crypto Outlook: Bitmine Tops 6M ETH and Winklevoss Files for a Zcash ETF. Where Do
-- zcash: filing - Tom Lee Crypto Outlook: Bitmine Tops 6M ETH and Winklevoss Files for a Zcash ETF. Where Do
+- solana NEW: launch - Best Crypto Presale to Buy Now: Remittix's November Debut Meets Solana's Upgrade and Zcash
+- solana NEW: launch - Next Crypto to Explode: Solana’s October 21 Upgrade and a Zcash ETF Bid Put Remittix’s Nov
+- ripple NEW: other - Investors Double Down on XRP: Bitwise ETF Attracts Fresh Cash Despite Short-Term Sell Sign
+- injective-protocol NEW: other - Injective ETF News: Can Staked INJ Shares Challenge Wallet Ownership? - Coin Gabbar
+- ripple NEW: other - Leveraged XRP ETF Draws Fresh Cash as Token’s Rally Pauses for Breath - TipRanks
+- injective-protocol NEW: other - INJ Price Analysis: $9 Breakout in Focus as Injective ETF Hopes Grow - TradingView
+- zcash: launch - Next Crypto to Explode: Solana’s October 21 Upgrade and a Zcash ETF Bid Put Remittix’s Nov
+- zcash: launch - Best Crypto Presale to Buy Now: Remittix's November Debut Meets Solana's Upgrade and Zcash
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc 0.20% | topPos 0.97 | taker 0.97
-- ETH: SHORT_SQUEEZE_24H | OI/mc 0.59% | topPos 0.91 | taker 0.97
-- SOL: SHORT_SQUEEZE_24H | OI/mc 0.58% | topPos 0.89 | taker 1.00
-- NEAR: SHORT_SQUEEZE_24H | OI/mc 0.96% | topPos 1.01 | taker 0.96
-- AVAX: LONG_FLUSH_24H | OI/mc 0.40% | topPos 0.94 | taker 0.97
-- SUI: LONG_FLUSH_24H | OI/mc 0.93% | topPos 0.83 | taker 0.92
-- TAO: LONG_FLUSH_24H | OI/mc 0.79% | topPos 0.89 | taker 0.88
-- ZEC: SHORT_SQUEEZE_24H | OI/mc 0.62% | topPos 1.04 | taker 0.97
+- BTC: SHORT_SQUEEZE_24H | OI/mc 0.20% | topPos 0.97 | taker 0.96
+- SOL: SHORT_SQUEEZE_24H | OI/mc 0.58% | topPos 0.90 | taker 0.99
+- NEAR: SHORT_SQUEEZE_24H | OI/mc 0.98% | topPos 1.03 | taker 0.96
+- AVAX: LONG_FLUSH_24H | OI/mc 0.40% | topPos 0.94 | taker 0.98
+- SUI: LONG_FLUSH_24H | OI/mc 0.93% | topPos 0.82 | taker 0.92
+- TAO: LONG_FLUSH_24H | OI/mc 0.79% | topPos 0.90 | taker 0.87
+- ZEC: SHORT_SQUEEZE_24H | OI/mc 0.60% | topPos 1.04 | taker 0.97
+- ADA: LONG_FLUSH_24H | OI/mc 0.40% | topPos 0.90 | taker 0.95
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -54,12 +57,12 @@
 - (14 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 27 | mean 3.3% (0.31R) | in profit 13 | older than 7d 23
-- worst: HBAR -0.64R, LDO -0.53R, NEO -0.48R | best: AERO 1.50R, NEAR 1.79R, PYTH 2.55R
+- open 27 | mean 3.6% (0.33R) | in profit 12 | older than 7d 23
+- worst: HBAR -0.59R, LDO -0.50R, NEO -0.46R | best: AERO 1.59R, NEAR 1.91R, PYTH 2.60R
 
 ## System
-- CoinGecko 4787/10000 used, month-end projection 10032 (100%), throttle level 2 | by script {'scan': 1552, 'check_liquidity': 221, 'breakout_check': 2976, 'counterfactual_check': 38}
+- CoinGecko 4789/10000 used, month-end projection 10037 (100%), throttle level 2 | by script {'scan': 1554, 'check_liquidity': 221, 'breakout_check': 2976, 'counterfactual_check': 38}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=46), H2 SUPPORTED (n=139)
-- radar-flags.json scan age: 7m
+- radar-flags.json scan age: 10m
 - excluded from radar (pegged/tokenized equity): 38
