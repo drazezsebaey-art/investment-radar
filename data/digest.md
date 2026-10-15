@@ -1,4 +1,4 @@
-# Radar digest - 2026-10-15 19:40 UTC
+# Radar digest - 2026-10-15 20:08 UTC
 
 ## Market
 - BTC scenario **A** | price 82250 | wk close 83902 vs 82800 | 50W 77187 (6.56%) | 1h old
@@ -20,13 +20,13 @@
 
 ## Pre-pump candidates
 - HBAR: [A+E] 7d -4.9%
-- SEI: [A+E] 7d -2.6%
+- SEI: [A+E] 7d -4.6%
+- SOL: [A+E] 7d -2.0%
 - LTC: [A+E] 7d -1.8%
 - HYPE: [A+E] 7d -1.6%
 - CRO: [A+E] 7d -1.3%
-- SOL: [A+E] 7d -0.5%
-- XRP: [A+E] 7d 1.1%
-- AVAX: [A+E] 7d 1.5%
+- XRP: [A+E] 7d -1.3%
+- AVAX: [A+E] 7d 0.5%
 
 ## ETF pipeline (new this run)
 - solana NEW: launch - Best Crypto Presale to Buy Now: Remittix's November Debut Meets Solana's Upgrade and Zcash
@@ -57,12 +57,12 @@
 - (14 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 27 | mean 3.6% (0.33R) | in profit 12 | older than 7d 23
-- worst: HBAR -0.59R, LDO -0.50R, NEO -0.46R | best: AERO 1.59R, NEAR 1.91R, PYTH 2.60R
+- open 27 | mean 3.4% (0.32R) | in profit 13 | older than 7d 23
+- worst: HBAR -0.59R, LDO -0.50R, NEO -0.48R | best: AERO 1.57R, NEAR 1.93R, PYTH 2.66R
 
 ## System
-- CoinGecko 4789/10000 used, month-end projection 10037 (100%), throttle level 2 | by script {'scan': 1554, 'check_liquidity': 221, 'breakout_check': 2976, 'counterfactual_check': 38}
+- CoinGecko 4792/10000 used, month-end projection 10015 (100%), throttle level 2 | by script {'scan': 1556, 'check_liquidity': 222, 'breakout_check': 2976, 'counterfactual_check': 38}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=46), H2 SUPPORTED (n=139)
-- radar-flags.json scan age: 10m
+- radar-flags.json scan age: 8m
 - excluded from radar (pegged/tokenized equity): 38
