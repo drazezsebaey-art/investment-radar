@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-15 11:41 UTC
+# Radar digest - 2026-10-15 12:21 UTC
 
 ## Market
-- BTC scenario **A** | price 81160 | wk close 83902 vs 82800 | 50W 77187 (5.15%) | 1h old
+- BTC scenario **A** | price 81160 | wk close 83902 vs 82800 | 50W 77187 (5.15%) | 2h old
 - Alts: **BTC_LED** [-] | BTC.D 57.42% | ETH/BTC 0.02921 | breadth7d 39% | stables 30d 0.59%
 - Alt risk (BTC.D): **ELEVATED** ['BTC_DOM_RISING_3D'] | 3d 0.67pt | 7d 0.98pt | n=103
 - Gold: PAXG 1m -2.91% | real10y 2.88 (28bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -19,7 +19,7 @@
 - ZK: **ONGOING** | +122% impulse, retr 0.15 | OI dd 32% | fund -0.0240 | hold False | inval 0.01398 | OB 0.01069-0.01129
 
 ## Pre-pump candidates
-- CRV: [C+E] 7d -11.0%
+- PENDLE: [A+E] 7d -16.3%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - ETF News | Bitcoin and Ether ETFs Have Shed $1.56 Billion in Two Weeks, and XRP’s $740,000
@@ -49,12 +49,12 @@
 - (14 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 28 | mean -2.3% (-0.09R) | in profit 10 | older than 7d 24
-- worst: ETHFI -0.92R, BTT -0.83R, HBAR -0.81R | best: AERO 1.05R, STX 1.30R, PYTH 1.64R
+- open 28 | mean -2.0% (-0.08R) | in profit 10 | older than 7d 24
+- worst: ETHFI -0.90R, BTT -0.85R, HBAR -0.80R | best: AERO 1.11R, STX 1.25R, PYTH 1.76R
 
 ## System
-- CoinGecko 4638/10000 used, month-end projection 9944 (99%), throttle level 1 | by script {'scan': 1522, 'check_liquidity': 214, 'breakout_check': 2869, 'counterfactual_check': 33}
+- CoinGecko 4691/10000 used, month-end projection 10029 (100%), throttle level 2 | by script {'scan': 1524, 'check_liquidity': 215, 'breakout_check': 2919, 'counterfactual_check': 33}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=46), H2 SUPPORTED (n=138)
-- radar-flags.json scan age: 11m
-- excluded from radar (pegged/tokenized equity): 39
+- radar-flags.json scan age: 21m
+- excluded from radar (pegged/tokenized equity): 40
