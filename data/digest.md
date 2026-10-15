@@ -1,4 +1,4 @@
-# Radar digest - 2026-10-15 05:40 UTC
+# Radar digest - 2026-10-15 06:08 UTC
 
 ## Market
 - BTC scenario **A** | price 81485 | wk close 83902 vs 82800 | 50W 77187 (5.57%) | 1h old
@@ -19,7 +19,8 @@
 - NEAR: **ONGOING** | +230% impulse, retr 0.31 | OI dd 21% | fund 0.0100 | hold False | inval 4.30100 | OB 4.45100-4.61300
 
 ## Pre-pump candidates
-- NEAR: [A+E] 7d -11.4%
+- AAVE: [A+E] 7d -13.9%
+- NEAR: [A+E] 7d -13.7%
 
 ## ETF pipeline (new this run)
 - dogecoin NEW: other - NEAR ETF sees inflows while SOL, Dogecoin, and Zcash ETFs face outflows in altcoin spot ma
@@ -42,12 +43,12 @@
 - (19 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 28 | mean -1.1% (-0.00R) | in profit 10 | older than 7d 24
-- worst: ETHFI -0.86R, BTT -0.85R, HBAR -0.82R | best: PYTH 1.68R, ZK 1.71R, STX 2.16R
+- open 28 | mean -2.3% (-0.08R) | in profit 10 | older than 7d 24
+- worst: ETHFI -0.90R, LDO -0.86R, HBAR -0.86R | best: ZK 1.33R, PYTH 1.55R, STX 1.94R
 
 ## System
-- CoinGecko 4596/10000 used, month-end projection 10028 (100%), throttle level 2 | by script {'scan': 1490, 'check_liquidity': 204, 'breakout_check': 2869, 'counterfactual_check': 33}
+- CoinGecko 4599/10000 used, month-end projection 10005 (100%), throttle level 2 | by script {'scan': 1492, 'check_liquidity': 205, 'breakout_check': 2869, 'counterfactual_check': 33}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=46), H2 SUPPORTED (n=138)
-- radar-flags.json scan age: 10m
+- radar-flags.json scan age: 7m
 - excluded from radar (pegged/tokenized equity): 40
