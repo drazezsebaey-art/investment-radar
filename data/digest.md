@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-15 14:41 UTC
+# Radar digest - 2026-10-15 15:08 UTC
 
 ## Market
-- BTC scenario **A** | price 81480 | wk close 83902 vs 82800 | 50W 77187 (5.56%) | 1m old
+- BTC scenario **A** | price 81480 | wk close 83902 vs 82800 | 50W 77187 (5.56%) | 28m old
 - Alts: **BTC_LED** [-] | BTC.D 57.37% | ETH/BTC 0.02923 | breadth7d 39% | stables 30d 0.60%
 - Alt risk (BTC.D): **ELEVATED** ['BTC_DOM_RISING_3D'] | 3d 0.64pt | 7d 0.89pt | n=104
 - Gold: PAXG 1m -2.91% | real10y 2.88 (28bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -20,8 +20,7 @@
 
 ## Pre-pump candidates
 - PENDLE: [A+E] 7d -12.6%
-- NEAR: [A+E] 7d -9.6%
-- VVV: [C+E] 7d 0.5%
+- NEAR: [A+E] 7d -0.7%
 
 ## ETF pipeline (new this run)
 - pendle NEW: launch - Franklin Templeton's tokenized high yield bond ETF FLHYon launches on Pendle with 2026 mat
@@ -52,12 +51,12 @@
 - (14 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 27 | mean -1.0% (0.00R) | in profit 11 | older than 7d 23
-- worst: ETHFI -0.82R, HBAR -0.79R, LDO -0.77R | best: STX 1.20R, AERO 1.32R, PYTH 1.77R
+- open 27 | mean 1.2% (0.16R) | in profit 11 | older than 7d 23
+- worst: HBAR -0.73R, ETHFI -0.69R, LDO -0.66R | best: AERO 1.39R, STX 1.48R, PYTH 2.18R
 
 ## System
-- CoinGecko 4703/10000 used, month-end projection 9997 (100%), throttle level 1 | by script {'scan': 1534, 'check_liquidity': 217, 'breakout_check': 2919, 'counterfactual_check': 33}
+- CoinGecko 4706/10000 used, month-end projection 9975 (100%), throttle level 1 | by script {'scan': 1536, 'check_liquidity': 218, 'breakout_check': 2919, 'counterfactual_check': 33}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=46), H2 SUPPORTED (n=139)
-- radar-flags.json scan age: 11m
-- excluded from radar (pegged/tokenized equity): 38
+- radar-flags.json scan age: 8m
+- excluded from radar (pegged/tokenized equity): 39
