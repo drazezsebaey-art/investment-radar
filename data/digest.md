@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-15 04:40 UTC
+# Radar digest - 2026-10-15 05:08 UTC
 
 ## Market
-- BTC scenario **A** | price 81485 | wk close 83902 vs 82800 | 50W 77187 (5.57%) | 1m old
+- BTC scenario **A** | price 81485 | wk close 83902 vs 82800 | 50W 77187 (5.57%) | 30m old
 - Alts: **BTC_LED** [-] | BTC.D 57.42% | ETH/BTC 0.02921 | breadth7d 40% | stables 30d 0.61%
 - Alt risk (BTC.D): **ELEVATED** ['BTC_DOM_RISING_3D'] | 3d 0.59pt | 7d 0.90pt | n=101
 - Gold: PAXG 1m -3.21% | real10y 2.88 (28bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -20,7 +20,7 @@
 
 ## Pre-pump candidates
 - AAVE: [A+E] 7d -14.7%
-- NEAR: [A+E] 7d -13.7%
+- NEAR: [A+E] 7d -11.4%
 
 ## ETF pipeline (new this run)
 - dogecoin NEW: launch - Bitwise Closes DOGE ETF Less Than a Year After Launch - CoinMarketCap
@@ -49,12 +49,12 @@
 - (19 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 28 | mean -0.9% (0.02R) | in profit 11 | older than 7d 24
-- worst: ETHFI -0.82R, BTT -0.78R, LDO -0.77R | best: AERO 1.24R, PYTH 1.74R, STX 2.20R
+- open 28 | mean -0.0% (0.08R) | in profit 12 | older than 7d 24
+- worst: BTT -0.80R, ETHFI -0.79R, HBAR -0.76R | best: ZK 1.55R, PYTH 1.82R, STX 2.40R
 
 ## System
-- CoinGecko 4592/10000 used, month-end projection 10048 (100%), throttle level 2 | by script {'scan': 1486, 'check_liquidity': 204, 'breakout_check': 2869, 'counterfactual_check': 33}
+- CoinGecko 4594/10000 used, month-end projection 10023 (100%), throttle level 2 | by script {'scan': 1488, 'check_liquidity': 204, 'breakout_check': 2869, 'counterfactual_check': 33}
 - Trials guard: OK (0 untracked)
-- Hypotheses: H1 NOT_SUPPORTED (n=45), H2 SUPPORTED (n=138)
-- radar-flags.json scan age: 10m
-- excluded from radar (pegged/tokenized equity): 41
+- Hypotheses: H1 NOT_SUPPORTED (n=46), H2 SUPPORTED (n=138)
+- radar-flags.json scan age: 8m
+- excluded from radar (pegged/tokenized equity): 40
