@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-15 07:07 UTC
+# Radar digest - 2026-10-15 07:40 UTC
 
 ## Market
-- BTC scenario **A** | price 81016 | wk close 83902 vs 82800 | 50W 77187 (4.96%) | 28m old
+- BTC scenario **A** | price 81016 | wk close 83902 vs 82800 | 50W 77187 (4.96%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 57.40% | ETH/BTC 0.02919 | breadth7d 38% | stables 30d 0.61%
 - Alt risk (BTC.D): **ELEVATED** ['BTC_DOM_RISING_3D'] | 3d 0.59pt | 7d 1.00pt | n=102
 - Gold: PAXG 1m -3.21% | real10y 2.88 (28bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -20,21 +20,21 @@
 
 ## Pre-pump candidates
 - NEAR: [A+E] 7d -14.0%
-- AAVE: [A+E] 7d -13.9%
+- AAVE: [A+E] 7d -12.8%
 
 ## ETF pipeline (new this run)
-- dogecoin NEW: other - NEAR ETF sees inflows while SOL, Dogecoin, and Zcash ETFs face outflows in altcoin spot ma
-- zcash: other - Zcash Price Forecast: ZEC declines as US inflation surprise offsets fresh ETF inflows - FX
+- solana NEW: other - Crypto ETF News Today: Bitcoin, Ethereum, Solana Bleed On US CPI Data - Coin Gabbar
+- zcash: other - Zcash price tops $1,300 despite $124M ETF outflows: why is ZEC still rallying? - Cryptonew
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc 0.20% | topPos 0.94 | taker 0.89
-- ETH: LONG_FLUSH_24H | OI/mc 0.63% | topPos 0.87 | taker 0.89
-- AVAX: LONG_FLUSH_24H | OI/mc 0.41% | topPos 0.92 | taker 0.99
-- XRP: LONG_FLUSH_24H | OI/mc 0.13% | topPos 0.87 | taker 0.94
-- SUI: LONG_FLUSH_24H | OI/mc 0.96% | topPos 0.84 | taker 0.86
-- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.94 | taker 0.93
-- TAO: LONG_FLUSH_24H | OI/mc 0.80% | topPos 0.88 | taker 0.95
-- ZEC: LONG_FLUSH_24H | OI/mc -% | topPos 0.95 | taker 0.90
+- BTC: LONG_FLUSH_24H | OI/mc 0.20% | topPos 0.94 | taker 0.90
+- AVAX: LONG_FLUSH_24H | OI/mc 0.40% | topPos 0.92 | taker 0.99
+- XRP: LONG_FLUSH_24H | OI/mc 0.13% | topPos 0.88 | taker 0.93
+- SUI: LONG_FLUSH_24H | OI/mc 0.96% | topPos 0.85 | taker 0.86
+- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.94 | taker 0.95
+- TAO: LONG_FLUSH_24H | OI/mc 0.81% | topPos 0.89 | taker 0.95
+- ZEC: LONG_FLUSH_24H | OI/mc -% | topPos 0.96 | taker 0.90
+- WLD: LONG_FLUSH_24H | OI/mc -% | topPos 0.90 | taker 0.87
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -43,12 +43,12 @@
 - (19 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 28 | mean -1.8% (-0.05R) | in profit 10 | older than 7d 24
-- worst: ETHFI -0.87R, BTT -0.83R, HBAR -0.82R | best: ZK 1.24R, PYTH 1.68R, STX 2.20R
+- open 28 | mean -1.6% (-0.04R) | in profit 10 | older than 7d 24
+- worst: ETHFI -0.87R, BTT -0.81R, HBAR -0.80R | best: AERO 1.15R, PYTH 1.61R, STX 2.01R
 
 ## System
-- CoinGecko 4607/10000 used, month-end projection 9993 (100%), throttle level 1 | by script {'scan': 1496, 'check_liquidity': 209, 'breakout_check': 2869, 'counterfactual_check': 33}
+- CoinGecko 4610/10000 used, month-end projection 10000 (100%), throttle level 1 | by script {'scan': 1498, 'check_liquidity': 210, 'breakout_check': 2869, 'counterfactual_check': 33}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=46), H2 SUPPORTED (n=138)
-- radar-flags.json scan age: 6m
+- radar-flags.json scan age: 10m
 - excluded from radar (pegged/tokenized equity): 39
