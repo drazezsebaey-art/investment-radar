@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-15 20:40 UTC
+# Radar digest - 2026-10-15 21:08 UTC
 
 ## Market
-- BTC scenario **A** | price 82441 | wk close 83902 vs 82800 | 50W 77187 (6.81%) | 1m old
+- BTC scenario **A** | price 82441 | wk close 83902 vs 82800 | 50W 77187 (6.81%) | 29m old
 - Alts: **BTC_LED** [-] | BTC.D 57.19% | ETH/BTC 0.02972 | breadth7d 40% | stables 30d 0.60%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.44pt | 7d 0.59pt | n=105
 - Gold: PAXG 1m -2.95% | real10y 2.88 (28bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -20,13 +20,13 @@
 
 ## Pre-pump candidates
 - HBAR: [A+E] 7d -6.9%
-- SEI: [A+E] 7d -4.6%
+- SEI: [A+E] 7d -6.4%
 - ONDO: [A+E] 7d -3.8%
+- SOL: [A+E] 7d -3.4%
 - LTC: [A+E] 7d -2.8%
+- XRP: [A+E] 7d -2.6%
 - CRO: [A+E] 7d -2.2%
-- SOL: [A+E] 7d -2.0%
 - HYPE: [A+E] 7d -2.0%
-- XRP: [A+E] 7d -1.3%
 
 ## ETF pipeline (new this run)
 - solana NEW: launch - Best Crypto Presale to Buy Now: Remittix's November Debut Meets Solana's Upgrade and Zcash
@@ -57,12 +57,12 @@
 - (14 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 27 | mean 3.7% (0.33R) | in profit 12 | older than 7d 23
-- worst: HBAR -0.60R, LDO -0.50R, NEO -0.48R | best: AERO 1.60R, NEAR 1.85R, PYTH 2.65R
+- open 27 | mean 3.0% (0.28R) | in profit 12 | older than 7d 23
+- worst: HBAR -0.61R, LDO -0.56R, NEO -0.50R | best: AERO 1.53R, NEAR 1.71R, PYTH 2.53R
 
 ## System
-- CoinGecko 4794/10000 used, month-end projection 10019 (100%), throttle level 2 | by script {'scan': 1558, 'check_liquidity': 222, 'breakout_check': 2976, 'counterfactual_check': 38}
+- CoinGecko 4797/10000 used, month-end projection 9997 (100%), throttle level 1 | by script {'scan': 1560, 'check_liquidity': 223, 'breakout_check': 2976, 'counterfactual_check': 38}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=46), H2 SUPPORTED (n=139)
-- radar-flags.json scan age: 10m
+- radar-flags.json scan age: 7m
 - excluded from radar (pegged/tokenized equity): 37
