@@ -1,10 +1,10 @@
-# Radar digest - 2026-10-15 09:41 UTC
+# Radar digest - 2026-10-15 10:08 UTC
 
 ## Market
 - BTC scenario **A** | price 81273 | wk close 83902 vs 82800 | 50W 77187 (5.29%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 57.40% | ETH/BTC 0.02919 | breadth7d 38% | stables 30d 0.61%
 - Alt risk (BTC.D): **ELEVATED** ['BTC_DOM_RISING_3D'] | 3d 0.59pt | 7d 1.00pt | n=102
-- Gold: PAXG 1m -3.21% | real10y 2.88 (28bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
+- Gold: PAXG 1m -2.91% | real10y 2.88 (28bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
 - 10y 1w: -10bp = real -7 + breakeven -1 -> **REAL_YIELD_DRIVEN**
 - 10y 1m: 24bp = real 28 + breakeven -3 -> **REAL_YIELD_DRIVEN**
 
@@ -19,7 +19,7 @@
 - ZEC: **ONGOING** | +115% impulse, retr 0.65 | OI dd 47% | fund 0.0100 | hold True | inval 1086.09000 | OB 985.40000-1050.48000
 
 ## Pre-pump candidates
-- NEAR: [A+E] 7d -12.1%
+- NEAR: [A+E] 7d -10.8%
 - PYTH: [B+C] 7d 16.7%
 
 ## ETF pipeline (new this run)
@@ -50,12 +50,12 @@
 - (14 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 28 | mean -1.7% (-0.05R) | in profit 10 | older than 7d 24
-- worst: ETHFI -0.87R, HBAR -0.80R, BTT -0.79R | best: AERO 1.08R, STX 1.51R, PYTH 1.84R
+- open 28 | mean -1.8% (-0.06R) | in profit 10 | older than 7d 24
+- worst: ETHFI -0.91R, HBAR -0.80R, BTT -0.80R | best: AERO 1.11R, STX 1.34R, PYTH 1.73R
 
 ## System
-- CoinGecko 4628/10000 used, month-end projection 9980 (100%), throttle level 1 | by script {'scan': 1514, 'check_liquidity': 212, 'breakout_check': 2869, 'counterfactual_check': 33}
+- CoinGecko 4630/10000 used, month-end projection 9956 (100%), throttle level 1 | by script {'scan': 1516, 'check_liquidity': 212, 'breakout_check': 2869, 'counterfactual_check': 33}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=46), H2 SUPPORTED (n=138)
-- radar-flags.json scan age: 11m
+- radar-flags.json scan age: 7m
 - excluded from radar (pegged/tokenized equity): 39
