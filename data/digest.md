@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-15 17:41 UTC
+# Radar digest - 2026-10-15 18:21 UTC
 
 ## Market
-- BTC scenario **A** | price 82121 | wk close 83902 vs 82800 | 50W 77187 (6.39%) | 1h old
+- BTC scenario **A** | price 82121 | wk close 83902 vs 82800 | 50W 77187 (6.39%) | 2h old
 - Alts: **BTC_LED** [-] | BTC.D 57.37% | ETH/BTC 0.02923 | breadth7d 39% | stables 30d 0.60%
 - Alt risk (BTC.D): **ELEVATED** ['BTC_DOM_RISING_3D'] | 3d 0.64pt | 7d 0.89pt | n=104
 - Gold: PAXG 1m -2.95% | real10y 2.88 (28bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -19,7 +19,7 @@
 - ZEC: **ONGOING** | +115% impulse, retr 0.57 | OI dd 45% | fund 0.0059 | hold True | inval 1086.09000 | OB 985.40000-1050.48000
 
 ## Pre-pump candidates
-- none
+- NEAR: [A+C] 7d 13.6%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - XRP Price Drops, But ETF Defies Crypto Bloodbath as Bitcoin and Ethereum Funds Bleed - Yah
@@ -47,12 +47,12 @@
 - (14 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 27 | mean 3.0% (0.28R) | in profit 13 | older than 7d 23
-- worst: HBAR -0.68R, LDO -0.54R, ETHFI -0.52R | best: RENDER 1.48R, AERO 1.49R, PYTH 2.53R
+- open 27 | mean 3.4% (0.32R) | in profit 14 | older than 7d 23
+- worst: HBAR -0.68R, LDO -0.53R, NEO -0.48R | best: RENDER 1.58R, NEAR 1.65R, PYTH 2.52R
 
 ## System
-- CoinGecko 4724/10000 used, month-end projection 9957 (100%), throttle level 1 | by script {'scan': 1546, 'check_liquidity': 221, 'breakout_check': 2919, 'counterfactual_check': 38}
+- CoinGecko 4783/10000 used, month-end projection 10052 (100%), throttle level 2 | by script {'scan': 1548, 'check_liquidity': 221, 'breakout_check': 2976, 'counterfactual_check': 38}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=46), H2 SUPPORTED (n=139)
-- radar-flags.json scan age: 11m
+- radar-flags.json scan age: 20m
 - excluded from radar (pegged/tokenized equity): 38
