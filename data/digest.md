@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-15 06:41 UTC
+# Radar digest - 2026-10-15 07:07 UTC
 
 ## Market
-- BTC scenario **A** | price 81016 | wk close 83902 vs 82800 | 50W 77187 (4.96%) | 1m old
+- BTC scenario **A** | price 81016 | wk close 83902 vs 82800 | 50W 77187 (4.96%) | 28m old
 - Alts: **BTC_LED** [-] | BTC.D 57.40% | ETH/BTC 0.02919 | breadth7d 38% | stables 30d 0.61%
 - Alt risk (BTC.D): **ELEVATED** ['BTC_DOM_RISING_3D'] | 3d 0.59pt | 7d 1.00pt | n=102
 - Gold: PAXG 1m -3.21% | real10y 2.88 (28bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -19,6 +19,7 @@
 - ZK: **ONGOING** | +122% impulse, retr 0.08 | OI dd 32% | fund -0.0322 | hold False | inval 0.01398 | OB 0.01483-0.01529
 
 ## Pre-pump candidates
+- NEAR: [A+E] 7d -14.0%
 - AAVE: [A+E] 7d -13.9%
 
 ## ETF pipeline (new this run)
@@ -43,11 +44,11 @@
 
 ## Paper book (open trades, marked to last scan)
 - open 28 | mean -1.8% (-0.05R) | in profit 10 | older than 7d 24
-- worst: ETHFI -0.87R, BTT -0.85R, HBAR -0.83R | best: ZK 1.31R, PYTH 1.76R, STX 2.02R
+- worst: ETHFI -0.87R, BTT -0.83R, HBAR -0.82R | best: ZK 1.24R, PYTH 1.68R, STX 2.20R
 
 ## System
-- CoinGecko 4601/10000 used, month-end projection 10009 (100%), throttle level 2 | by script {'scan': 1494, 'check_liquidity': 205, 'breakout_check': 2869, 'counterfactual_check': 33}
+- CoinGecko 4607/10000 used, month-end projection 9993 (100%), throttle level 1 | by script {'scan': 1496, 'check_liquidity': 209, 'breakout_check': 2869, 'counterfactual_check': 33}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=46), H2 SUPPORTED (n=138)
-- radar-flags.json scan age: 10m
+- radar-flags.json scan age: 6m
 - excluded from radar (pegged/tokenized equity): 39
