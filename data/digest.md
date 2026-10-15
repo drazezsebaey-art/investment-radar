@@ -1,4 +1,4 @@
-# Radar digest - 2026-10-15 01:41 UTC
+# Radar digest - 2026-10-15 02:09 UTC
 
 ## Market
 - BTC scenario **A** | price 81662 | wk close 83902 vs 82800 | 50W 77187 (5.80%) | 1h old
@@ -19,8 +19,8 @@
 - STRK: **RESET_DONE** | +403% impulse, retr 0.49 | OI dd 54% | fund 0.0050 | hold False | inval 0.04805 | OB 0.04805-0.04982
 
 ## Pre-pump candidates
-- NEAR: [A+E] 7d -9.4%
-- INJ: [A+C] 7d 2.5%
+- NEAR: [A+E] 7d -10.8%
+- OP: [A+C] 7d 14.9%
 
 ## ETF pipeline (new this run)
 - solana NEW: launch - Top 3 Cryptos to Buy Now: SOL Awaits Alpenglow, NEAR Attracts ETF Flows and Remittix Nears
@@ -43,12 +43,12 @@
 - (19 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 37 | mean -2.3% (-0.08R) | in profit 13 | older than 7d 31
-- worst: CHZ -0.91R, SUPER -0.87R, AAVE -0.85R | best: AERO 1.43R, PYTH 1.51R, STX 2.52R
+- open 37 | mean -2.3% (-0.08R) | in profit 14 | older than 7d 31
+- worst: CHZ -0.90R, SUPER -0.87R, FIL -0.85R | best: AERO 1.43R, PYTH 1.79R, STX 2.49R
 
 ## System
-- CoinGecko 4579/10000 used, month-end projection 10109 (101%), throttle level 2 | by script {'scan': 1474, 'check_liquidity': 203, 'breakout_check': 2869, 'counterfactual_check': 33}
+- CoinGecko 4581/10000 used, month-end projection 10084 (101%), throttle level 2 | by script {'scan': 1476, 'check_liquidity': 203, 'breakout_check': 2869, 'counterfactual_check': 33}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=42), H2 SUPPORTED (n=133)
-- radar-flags.json scan age: 11m
+- radar-flags.json scan age: 9m
 - excluded from radar (pegged/tokenized equity): 38
