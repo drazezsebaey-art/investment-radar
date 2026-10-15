@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-15 00:42 UTC
+# Radar digest - 2026-10-15 01:10 UTC
 
 ## Market
-- BTC scenario **A** | price 81662 | wk close 83902 vs 82800 | 50W 77187 (5.80%) | 1m old
+- BTC scenario **A** | price 81662 | wk close 83902 vs 82800 | 50W 77187 (5.80%) | 30m old
 - Alts: **BTC_LED** [-] | BTC.D 57.18% | ETH/BTC 0.02962 | breadth7d -% | stables 30d 0.86%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.36pt | 7d 0.62pt | n=100
 - Gold: PAXG 1m -3.98% | real10y 2.88 (28bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -19,7 +19,9 @@
 - STRK: **RESET_DONE** | +403% impulse, retr 0.49 | OI dd 54% | fund 0.0050 | hold False | inval 0.04805 | OB 0.04805-0.04982
 
 ## Pre-pump candidates
-- NEAR: [A+E] 7d -9.1%
+- NEAR: [A+E] 7d -9.4%
+- PEPE: [A+C] 7d -0.4%
+- INJ: [A+C] 7d 3.0%
 
 ## ETF pipeline (new this run)
 - injective-protocol NEW: other - INJ Price Analysis: $9 Breakout in Focus as Injective ETF Hopes Grow - Cryptonews.net
@@ -47,12 +49,12 @@
 - (19 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 39 | mean -2.3% (-0.08R) | in profit 14 | older than 7d 32
-- worst: JTO -0.96R, ORCA -0.95R, CHZ -0.86R | best: AERO 1.51R, PYTH 1.63R, STX 2.29R
+- open 38 | mean -2.5% (-0.10R) | in profit 14 | older than 7d 31
+- worst: ORCA -0.95R, CHZ -0.90R, SUPER -0.87R | best: AERO 1.46R, PYTH 1.48R, STX 2.38R
 
 ## System
-- CoinGecko 4575/10000 used, month-end projection 10130 (101%), throttle level 2 | by script {'scan': 1470, 'check_liquidity': 203, 'breakout_check': 2869, 'counterfactual_check': 33}
+- CoinGecko 4577/10000 used, month-end projection 10105 (101%), throttle level 2 | by script {'scan': 1472, 'check_liquidity': 203, 'breakout_check': 2869, 'counterfactual_check': 33}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=42), H2 SUPPORTED (n=133)
-- radar-flags.json scan age: 12m
-- excluded from radar (pegged/tokenized equity): 39
+- radar-flags.json scan age: 10m
+- excluded from radar (pegged/tokenized equity): 38
