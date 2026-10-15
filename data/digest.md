@@ -1,10 +1,10 @@
-# Radar digest - 2026-10-15 15:40 UTC
+# Radar digest - 2026-10-15 16:08 UTC
 
 ## Market
 - BTC scenario **A** | price 81480 | wk close 83902 vs 82800 | 50W 77187 (5.56%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 57.37% | ETH/BTC 0.02923 | breadth7d 39% | stables 30d 0.60%
 - Alt risk (BTC.D): **ELEVATED** ['BTC_DOM_RISING_3D'] | 3d 0.64pt | 7d 0.89pt | n=104
-- Gold: PAXG 1m -2.91% | real10y 2.88 (28bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
+- Gold: PAXG 1m -2.95% | real10y 2.88 (28bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
 - 10y 1w: -10bp = real -7 + breakeven -1 -> **REAL_YIELD_DRIVEN**
 - 10y 1m: 24bp = real 28 + breakeven -3 -> **REAL_YIELD_DRIVEN**
 
@@ -19,7 +19,7 @@
 - ZEC: **ONGOING** | +115% impulse, retr 0.64 | OI dd 47% | fund 0.0100 | hold True | inval 1086.09000 | OB 985.40000-1050.48000
 
 ## Pre-pump candidates
-- NEAR: [A+E] 7d -0.7%
+- NEAR: [A+E] 7d 2.3%
 
 ## ETF pipeline (new this run)
 - kucoin-shares NEW: delay_or_rejection - VanEck Withdraws Lido Staked Ethereum ETF Filing After Nearly a Year - KuCoin
@@ -43,12 +43,12 @@
 - (14 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 27 | mean 2.4% (0.25R) | in profit 12 | older than 7d 23
-- worst: HBAR -0.70R, LDO -0.61R, NEO -0.58R | best: AERO 1.38R, STX 1.80R, PYTH 2.91R
+- open 27 | mean 3.5% (0.33R) | in profit 12 | older than 7d 23
+- worst: HBAR -0.69R, LDO -0.56R, NEO -0.52R | best: AERO 1.50R, STX 1.80R, PYTH 2.97R
 
 ## System
-- CoinGecko 4709/10000 used, month-end projection 9981 (100%), throttle level 1 | by script {'scan': 1538, 'check_liquidity': 219, 'breakout_check': 2919, 'counterfactual_check': 33}
+- CoinGecko 4717/10000 used, month-end projection 9970 (100%), throttle level 1 | by script {'scan': 1540, 'check_liquidity': 220, 'breakout_check': 2919, 'counterfactual_check': 38}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=46), H2 SUPPORTED (n=139)
-- radar-flags.json scan age: 10m
-- excluded from radar (pegged/tokenized equity): 39
+- radar-flags.json scan age: 8m
+- excluded from radar (pegged/tokenized equity): 38
