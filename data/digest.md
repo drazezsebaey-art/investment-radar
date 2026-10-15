@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-15 08:40 UTC
+# Radar digest - 2026-10-15 09:07 UTC
 
 ## Market
-- BTC scenario **A** | price 81273 | wk close 83902 vs 82800 | 50W 77187 (5.29%) | 1m old
+- BTC scenario **A** | price 81273 | wk close 83902 vs 82800 | 50W 77187 (5.29%) | 29m old
 - Alts: **BTC_LED** [-] | BTC.D 57.40% | ETH/BTC 0.02919 | breadth7d 38% | stables 30d 0.61%
 - Alt risk (BTC.D): **ELEVATED** ['BTC_DOM_RISING_3D'] | 3d 0.59pt | 7d 1.00pt | n=102
 - Gold: PAXG 1m -3.21% | real10y 2.88 (28bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -19,7 +19,7 @@
 - ZEC: **ONGOING** | +115% impulse, retr 0.65 | OI dd 47% | fund 0.0100 | hold True | inval 1086.09000 | OB 985.40000-1050.48000
 
 ## Pre-pump candidates
-- NEAR: [A+E] 7d -13.7%
+- NEAR: [A+E] 7d -12.1%
 
 ## ETF pipeline (new this run)
 - solana NEW: other - Crypto ETF News Today: Bitcoin, Ethereum, Solana Bleed On US CPI Data - Coin Gabbar
@@ -42,12 +42,12 @@
 - (19 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 28 | mean -1.1% (0.01R) | in profit 10 | older than 7d 24
-- worst: ETHFI -0.85R, BTT -0.80R, HBAR -0.79R | best: ZK 1.47R, PYTH 1.85R, STX 2.14R
+- open 28 | mean -0.8% (0.02R) | in profit 11 | older than 7d 24
+- worst: ETHFI -0.83R, BTT -0.82R, HBAR -0.78R | best: ZK 1.44R, PYTH 1.93R, STX 2.01R
 
 ## System
-- CoinGecko 4624/10000 used, month-end projection 10001 (100%), throttle level 2 | by script {'scan': 1510, 'check_liquidity': 212, 'breakout_check': 2869, 'counterfactual_check': 33}
+- CoinGecko 4626/10000 used, month-end projection 9976 (100%), throttle level 1 | by script {'scan': 1512, 'check_liquidity': 212, 'breakout_check': 2869, 'counterfactual_check': 33}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=46), H2 SUPPORTED (n=138)
-- radar-flags.json scan age: 10m
-- excluded from radar (pegged/tokenized equity): 40
+- radar-flags.json scan age: 7m
+- excluded from radar (pegged/tokenized equity): 38
