@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-15 03:07 UTC
+# Radar digest - 2026-10-15 03:40 UTC
 
 ## Market
-- BTC scenario **A** | price 81188 | wk close 83902 vs 82800 | 50W 77187 (5.18%) | 26m old
+- BTC scenario **A** | price 81188 | wk close 83902 vs 82800 | 50W 77187 (5.18%) | 59m old
 - Alts: **BTC_LED** [-] | BTC.D 57.42% | ETH/BTC 0.02921 | breadth7d 40% | stables 30d 0.61%
 - Alt risk (BTC.D): **ELEVATED** ['BTC_DOM_RISING_3D'] | 3d 0.59pt | 7d 0.90pt | n=101
 - Gold: PAXG 1m -3.98% | real10y 2.88 (28bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -19,21 +19,27 @@
 - S: **ONGOING** | +198% impulse, retr 0.42 | OI dd 10% | fund -0.0033 | hold False | inval 0.04247 | OB 0.03689-0.03890
 
 ## Pre-pump candidates
-- NEAR: [A+E] 7d -9.7%
+- AAVE: [A+E] 7d -12.8%
 
 ## ETF pipeline (new this run)
-- solana NEW: launch - Top 3 Cryptos to Buy Now: SOL Awaits Alpenglow, NEAR Attracts ETF Flows and Remittix Nears
-- ripple NEW: other - XRP ETF Buyers Refuse to Quit Despite Sitting on a $230M Paper Loss - Cryptonews.net
+- dogecoin NEW: launch - Bitwise Closes DOGE ETF Less Than a Year After Launch - CoinMarketCap
+- dogecoin NEW: filing - SEC files Form 25 for Bitwise Dogecoin ETF as wind-down nears its end - Crypto Briefing
+- dogecoin NEW: other - Dogecoin Drops 3.9% Amid ETF Closure, Whale Selling, Risk-Off - CoinMarketCap
+- pepe NEW: other - Pepe Coin Price Prediction: $1.8B PEPE Eyes a Cboe ETF, but Is Pepeto Set for a Bigger Pep
+- chainlink: institutional_backing - Chainlink gains institutional backing but LINK token price lags despite ETF inflows. - Plu
+- zcash: other - Zcash Drops 3.9% on Macro Shift, ETF Outflows, Long Liquidation - CoinMarketCap
+- cardano: other - Solana ETF Outflows Hit $25M as Cardano Battles Near $0.25 - Could Apeing Stage 8 Be the N
+- chainlink: other - Chainlink sees $10M ETF inflows – Why LINK’s price still struggles - AMBCrypto
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc 0.21% | topPos 0.94 | taker 0.94
-- ETH: SHORT_SQUEEZE_24H | OI/mc 0.65% | topPos 0.87 | taker 0.93
-- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 1.02
-- XRP: LONG_FLUSH_24H | OI/mc 0.13% | topPos 0.87 | taker 0.94
-- SUI: LONG_FLUSH_24H | OI/mc 1.02% | topPos 0.83 | taker 0.90
-- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.94 | taker 0.92
-- TAO: LONG_FLUSH_24H | OI/mc 0.84% | topPos 0.89 | taker 1.03
-- WLD: LONG_FLUSH_24H | OI/mc -% | topPos 0.90 | taker 0.92
+- AVAX: LONG_FLUSH_24H | OI/mc 0.40% | topPos 0.92 | taker 0.98
+- XRP: LONG_FLUSH_24H | OI/mc 0.13% | topPos 0.88 | taker 0.90
+- SUI: LONG_FLUSH_24H | OI/mc 0.95% | topPos 0.84 | taker 0.87
+- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.94 | taker 0.95
+- TAO: LONG_FLUSH_24H | OI/mc 0.81% | topPos 0.89 | taker 0.98
+- ZEC: QUIET_DELEVERAGING | OI/mc -% | topPos 0.99 | taker 0.89
+- WLD: LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 0.90
+- ADA: LONG_FLUSH_24H | OI/mc 0.41% | topPos 0.90 | taker 0.90
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -42,12 +48,12 @@
 - (19 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 29 | mean -1.1% (-0.00R) | in profit 12 | older than 7d 24
-- worst: ETHFI -0.83R, LDO -0.79R, HBAR -0.75R | best: AERO 1.35R, PYTH 1.66R, STX 2.25R
+- open 29 | mean -2.2% (-0.08R) | in profit 10 | older than 7d 24
+- worst: PLUME -0.95R, ETHFI -0.88R, LDO -0.84R | best: AERO 1.24R, PYTH 1.48R, STX 2.06R
 
 ## System
-- CoinGecko 4586/10000 used, month-end projection 10065 (101%), throttle level 2 | by script {'scan': 1480, 'check_liquidity': 204, 'breakout_check': 2869, 'counterfactual_check': 33}
+- CoinGecko 4588/10000 used, month-end projection 10069 (101%), throttle level 2 | by script {'scan': 1482, 'check_liquidity': 204, 'breakout_check': 2869, 'counterfactual_check': 33}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=44), H2 SUPPORTED (n=136)
-- radar-flags.json scan age: 6m
-- excluded from radar (pegged/tokenized equity): 39
+- radar-flags.json scan age: 10m
+- excluded from radar (pegged/tokenized equity): 40
