@@ -1,10 +1,10 @@
-# Radar digest - 2026-10-15 03:40 UTC
+# Radar digest - 2026-10-15 04:07 UTC
 
 ## Market
-- BTC scenario **A** | price 81188 | wk close 83902 vs 82800 | 50W 77187 (5.18%) | 59m old
+- BTC scenario **A** | price 81188 | wk close 83902 vs 82800 | 50W 77187 (5.18%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 57.42% | ETH/BTC 0.02921 | breadth7d 40% | stables 30d 0.61%
 - Alt risk (BTC.D): **ELEVATED** ['BTC_DOM_RISING_3D'] | 3d 0.59pt | 7d 0.90pt | n=101
-- Gold: PAXG 1m -3.98% | real10y 2.88 (28bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
+- Gold: PAXG 1m -3.21% | real10y 2.88 (28bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
 - 10y 1w: -10bp = real -7 + breakeven -1 -> **REAL_YIELD_DRIVEN**
 - 10y 1m: 24bp = real 28 + breakeven -3 -> **REAL_YIELD_DRIVEN**
 
@@ -19,7 +19,7 @@
 - S: **ONGOING** | +198% impulse, retr 0.42 | OI dd 10% | fund -0.0033 | hold False | inval 0.04247 | OB 0.03689-0.03890
 
 ## Pre-pump candidates
-- AAVE: [A+E] 7d -12.8%
+- AAVE: [A+E] 7d -14.7%
 
 ## ETF pipeline (new this run)
 - dogecoin NEW: launch - Bitwise Closes DOGE ETF Less Than a Year After Launch - CoinMarketCap
@@ -48,12 +48,12 @@
 - (19 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 29 | mean -2.2% (-0.08R) | in profit 10 | older than 7d 24
-- worst: PLUME -0.95R, ETHFI -0.88R, LDO -0.84R | best: AERO 1.24R, PYTH 1.48R, STX 2.06R
+- open 28 | mean -2.3% (-0.09R) | in profit 10 | older than 7d 24
+- worst: ETHFI -0.87R, LDO -0.85R, BTT -0.85R | best: AERO 1.20R, PYTH 1.32R, STX 1.90R
 
 ## System
-- CoinGecko 4588/10000 used, month-end projection 10069 (101%), throttle level 2 | by script {'scan': 1482, 'check_liquidity': 204, 'breakout_check': 2869, 'counterfactual_check': 33}
+- CoinGecko 4590/10000 used, month-end projection 10044 (100%), throttle level 2 | by script {'scan': 1484, 'check_liquidity': 204, 'breakout_check': 2869, 'counterfactual_check': 33}
 - Trials guard: OK (0 untracked)
-- Hypotheses: H1 NOT_SUPPORTED (n=44), H2 SUPPORTED (n=136)
-- radar-flags.json scan age: 10m
+- Hypotheses: H1 NOT_SUPPORTED (n=44), H2 SUPPORTED (n=137)
+- radar-flags.json scan age: 7m
 - excluded from radar (pegged/tokenized equity): 40
