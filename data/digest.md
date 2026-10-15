@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-15 18:40 UTC
+# Radar digest - 2026-10-15 19:07 UTC
 
 ## Market
-- BTC scenario **A** | price 82250 | wk close 83902 vs 82800 | 50W 77187 (6.56%) | 1m old
+- BTC scenario **A** | price 82250 | wk close 83902 vs 82800 | 50W 77187 (6.56%) | 28m old
 - Alts: **BTC_LED** [-] | BTC.D 57.19% | ETH/BTC 0.02972 | breadth7d 40% | stables 30d 0.60%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.44pt | 7d 0.59pt | n=105
 - Gold: PAXG 1m -2.95% | real10y 2.88 (28bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -19,9 +19,14 @@
 - AVAX: **ONGOING** | +70% impulse, retr 0.40 | OI dd 27% | fund 0.0100 | hold False | inval 7.17400 | OB 7.17400-7.36200
 
 ## Pre-pump candidates
-- LINK: [A+E] 7d 1.5%
-- ONDO: [A+E] 7d 3.2%
-- NEAR: [A+C] 7d 13.6%
+- HBAR: [A+E] 7d -6.6%
+- LTC: [A+E] 7d -2.7%
+- SEI: [A+E] 7d -2.6%
+- HYPE: [A+E] 7d -2.3%
+- CRO: [A+E] 7d -1.1%
+- SOL: [A+E] 7d -0.5%
+- XRP: [A+E] 7d 1.1%
+- BNB: [A+E] 7d 1.4%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - XRP Price Drops, But ETF Defies Crypto Bloodbath as Bitcoin and Ethereum Funds Bleed - Yah
@@ -49,12 +54,12 @@
 - (14 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 27 | mean 2.8% (0.28R) | in profit 12 | older than 7d 23
-- worst: HBAR -0.67R, LDO -0.54R, NEO -0.50R | best: RENDER 1.48R, NEAR 1.75R, PYTH 2.38R
+- open 27 | mean 3.3% (0.31R) | in profit 13 | older than 7d 23
+- worst: HBAR -0.64R, LDO -0.53R, NEO -0.48R | best: AERO 1.50R, NEAR 1.79R, PYTH 2.55R
 
 ## System
-- CoinGecko 4785/10000 used, month-end projection 10057 (101%), throttle level 2 | by script {'scan': 1550, 'check_liquidity': 221, 'breakout_check': 2976, 'counterfactual_check': 38}
+- CoinGecko 4787/10000 used, month-end projection 10032 (100%), throttle level 2 | by script {'scan': 1552, 'check_liquidity': 221, 'breakout_check': 2976, 'counterfactual_check': 38}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=46), H2 SUPPORTED (n=139)
-- radar-flags.json scan age: 10m
+- radar-flags.json scan age: 7m
 - excluded from radar (pegged/tokenized equity): 38
