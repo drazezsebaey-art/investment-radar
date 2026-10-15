@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-15 22:41 UTC
+# Radar digest - 2026-10-15 23:08 UTC
 
 ## Market
-- BTC scenario **A** | price 82482 | wk close 83902 vs 82800 | 50W 77187 (6.86%) | 1m old
+- BTC scenario **A** | price 82482 | wk close 83902 vs 82800 | 50W 77187 (6.86%) | 29m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.18% | ETH/BTC 0.02982 | breadth7d 35% | stables 30d 0.60%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.32pt | 7d 0.25pt | n=106
 - Gold: PAXG 1m -2.50% | real10y 2.84 (22bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -21,12 +21,12 @@
 ## Pre-pump candidates
 - SENT: [C+E] 7d -15.0%
 - HBAR: [A+E] 7d -7.7%
-- SEI: [A+E] 7d -6.9%
+- SEI: [A+E] 7d -6.2%
+- SOL: [A+E] 7d -4.4%
 - CRO: [A+E] 7d -4.0%
 - LTC: [A+E] 7d -3.8%
-- SOL: [A+E] 7d -3.5%
-- XRP: [A+E] 7d -2.8%
 - HYPE: [A+E] 7d -2.7%
+- XRP: [A+E] 7d -2.6%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - Bitwise’s XRP ETF Draws Fresh Cash As Traders Eye A Rally That Screams ‘Sell’ - TipRanks
@@ -57,12 +57,12 @@
 - (14 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 27 | mean 3.8% (0.36R) | in profit 13 | older than 7d 23
-- worst: HBAR -0.60R, LDO -0.55R, NEO -0.50R | best: AERO 1.78R, STX 2.45R, PYTH 2.66R
+- open 27 | mean 3.6% (0.34R) | in profit 13 | older than 7d 23
+- worst: HBAR -0.59R, LDO -0.58R, NEO -0.50R | best: AERO 1.77R, STX 2.40R, PYTH 2.59R
 
 ## System
-- CoinGecko 4803/10000 used, month-end projection 9982 (100%), throttle level 1 | by script {'scan': 1566, 'check_liquidity': 223, 'breakout_check': 2976, 'counterfactual_check': 38}
+- CoinGecko 4805/10000 used, month-end projection 9958 (100%), throttle level 1 | by script {'scan': 1568, 'check_liquidity': 223, 'breakout_check': 2976, 'counterfactual_check': 38}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=47), H2 SUPPORTED (n=140)
-- radar-flags.json scan age: 11m
+- radar-flags.json scan age: 8m
 - excluded from radar (pegged/tokenized equity): 38
