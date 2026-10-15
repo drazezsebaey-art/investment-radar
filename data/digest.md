@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-15 05:08 UTC
+# Radar digest - 2026-10-15 05:40 UTC
 
 ## Market
-- BTC scenario **A** | price 81485 | wk close 83902 vs 82800 | 50W 77187 (5.57%) | 30m old
+- BTC scenario **A** | price 81485 | wk close 83902 vs 82800 | 50W 77187 (5.57%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 57.42% | ETH/BTC 0.02921 | breadth7d 40% | stables 30d 0.61%
 - Alt risk (BTC.D): **ELEVATED** ['BTC_DOM_RISING_3D'] | 3d 0.59pt | 7d 0.90pt | n=101
 - Gold: PAXG 1m -3.21% | real10y 2.88 (28bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -19,28 +19,21 @@
 - NEAR: **ONGOING** | +230% impulse, retr 0.31 | OI dd 21% | fund 0.0100 | hold False | inval 4.30100 | OB 4.45100-4.61300
 
 ## Pre-pump candidates
-- AAVE: [A+E] 7d -14.7%
 - NEAR: [A+E] 7d -11.4%
 
 ## ETF pipeline (new this run)
-- dogecoin NEW: launch - Bitwise Closes DOGE ETF Less Than a Year After Launch - CoinMarketCap
-- dogecoin NEW: filing - SEC files Form 25 for Bitwise Dogecoin ETF as wind-down nears its end - Crypto Briefing
-- dogecoin NEW: other - Dogecoin Drops 3.9% Amid ETF Closure, Whale Selling, Risk-Off - CoinMarketCap
-- pepe NEW: other - Pepe Coin Price Prediction: $1.8B PEPE Eyes a Cboe ETF, but Is Pepeto Set for a Bigger Pep
-- chainlink: institutional_backing - Chainlink gains institutional backing but LINK token price lags despite ETF inflows. - Plu
-- zcash: other - Zcash Drops 3.9% on Macro Shift, ETF Outflows, Long Liquidation - CoinMarketCap
-- cardano: other - Solana ETF Outflows Hit $25M as Cardano Battles Near $0.25 - Could Apeing Stage 8 Be the N
-- chainlink: other - Chainlink sees $10M ETF inflows – Why LINK’s price still struggles - AMBCrypto
+- dogecoin NEW: other - NEAR ETF sees inflows while SOL, Dogecoin, and Zcash ETFs face outflows in altcoin spot ma
+- zcash: other - Zcash Price Forecast: ZEC declines as US inflation surprise offsets fresh ETF inflows - FX
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc 0.20% | topPos 0.94 | taker 0.89
-- ETH: SHORT_SQUEEZE_24H | OI/mc 0.61% | topPos 0.88 | taker 0.88
-- SOL: SHORT_SQUEEZE_24H | OI/mc 0.60% | topPos 0.90 | taker 0.97
-- AVAX: LONG_FLUSH_24H | OI/mc 0.41% | topPos 0.92 | taker 0.97
-- XRP: LONG_FLUSH_24H | OI/mc 0.13% | topPos 0.87 | taker 0.91
-- SUI: LONG_FLUSH_24H | OI/mc 0.95% | topPos 0.84 | taker 0.86
-- SEI: LONG_FLUSH_24H | OI/mc 0.71% | topPos 0.94 | taker 0.97
-- TAO: LONG_FLUSH_24H | OI/mc 0.81% | topPos 0.90 | taker 0.97
+- BTC: LONG_FLUSH_24H | OI/mc 0.21% | topPos 0.95 | taker 0.90
+- ETH: LONG_FLUSH_24H | OI/mc 0.62% | topPos 0.88 | taker 0.89
+- AVAX: LONG_FLUSH_24H | OI/mc 0.41% | topPos 0.91 | taker 0.98
+- XRP: LONG_FLUSH_24H | OI/mc 0.13% | topPos 0.87 | taker 0.92
+- SUI: LONG_FLUSH_24H | OI/mc 0.98% | topPos 0.84 | taker 0.87
+- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.94 | taker 0.98
+- TAO: LONG_FLUSH_24H | OI/mc 0.83% | topPos 0.89 | taker 0.97
+- WLD: LONG_FLUSH_24H | OI/mc -% | topPos 0.90 | taker 0.90
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -49,12 +42,12 @@
 - (19 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 28 | mean -0.0% (0.08R) | in profit 12 | older than 7d 24
-- worst: BTT -0.80R, ETHFI -0.79R, HBAR -0.76R | best: ZK 1.55R, PYTH 1.82R, STX 2.40R
+- open 28 | mean -1.1% (-0.00R) | in profit 10 | older than 7d 24
+- worst: ETHFI -0.86R, BTT -0.85R, HBAR -0.82R | best: PYTH 1.68R, ZK 1.71R, STX 2.16R
 
 ## System
-- CoinGecko 4594/10000 used, month-end projection 10023 (100%), throttle level 2 | by script {'scan': 1488, 'check_liquidity': 204, 'breakout_check': 2869, 'counterfactual_check': 33}
+- CoinGecko 4596/10000 used, month-end projection 10028 (100%), throttle level 2 | by script {'scan': 1490, 'check_liquidity': 204, 'breakout_check': 2869, 'counterfactual_check': 33}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=46), H2 SUPPORTED (n=138)
-- radar-flags.json scan age: 8m
+- radar-flags.json scan age: 10m
 - excluded from radar (pegged/tokenized equity): 40
