@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-15 17:07 UTC
+# Radar digest - 2026-10-15 17:41 UTC
 
 ## Market
-- BTC scenario **A** | price 82121 | wk close 83902 vs 82800 | 50W 77187 (6.39%) | 28m old
+- BTC scenario **A** | price 82121 | wk close 83902 vs 82800 | 50W 77187 (6.39%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 57.37% | ETH/BTC 0.02923 | breadth7d 39% | stables 30d 0.60%
 - Alt risk (BTC.D): **ELEVATED** ['BTC_DOM_RISING_3D'] | 3d 0.64pt | 7d 0.89pt | n=104
 - Gold: PAXG 1m -2.95% | real10y 2.88 (28bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -19,20 +19,24 @@
 - ZEC: **ONGOING** | +115% impulse, retr 0.57 | OI dd 45% | fund 0.0059 | hold True | inval 1086.09000 | OB 985.40000-1050.48000
 
 ## Pre-pump candidates
-- TIA: [B+C] 7d 23.4%
+- none
 
 ## ETF pipeline (new this run)
-- kucoin-shares NEW: delay_or_rejection - VanEck Withdraws Lido Staked Ethereum ETF Filing After Nearly a Year - KuCoin
+- ripple NEW: other - XRP Price Drops, But ETF Defies Crypto Bloodbath as Bitcoin and Ethereum Funds Bleed - Yah
+- ripple NEW: other - Bitcoin ETF Investors Put In $57 Billion and Now Hold $106 Billion. XRP ETF Investors Put 
+- ripple NEW: other - Thirteen Weeks of XRP ETF Inflows, and Net Assets Are Still Falling - Altcoin Buzz
+- zcash: filing - Tom Lee Crypto Outlook: Bitmine Tops 6M ETH and Winklevoss Files for a Zcash ETF. Where Do
+- zcash: filing - Tom Lee Crypto Outlook: Bitmine Tops 6M ETH and Winklevoss Files for a Zcash ETF. Where Do
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc 0.20% | topPos 0.97 | taker 0.94
-- ETH: LONG_FLUSH_24H | OI/mc 0.60% | topPos 0.91 | taker 0.96
-- SOL: SHORT_SQUEEZE_24H | OI/mc 0.59% | topPos 0.90 | taker 1.02
-- NEAR: SHORT_SQUEEZE_24H | OI/mc 0.95% | topPos 1.02 | taker 0.94
-- AVAX: LONG_FLUSH_24H | OI/mc 0.40% | topPos 0.95 | taker 0.99
-- SUI: LONG_FLUSH_24H | OI/mc 0.95% | topPos 0.84 | taker 0.93
-- TAO: LONG_FLUSH_24H | OI/mc 0.78% | topPos 0.89 | taker 0.86
-- ZEC: SHORT_SQUEEZE_24H | OI/mc 0.62% | topPos 1.02 | taker 0.97
+- BTC: SHORT_SQUEEZE_24H | OI/mc 0.20% | topPos 0.97 | taker 0.95
+- ETH: SHORT_SQUEEZE_24H | OI/mc 0.59% | topPos 0.90 | taker 0.95
+- SOL: SHORT_SQUEEZE_24H | OI/mc 0.58% | topPos 0.90 | taker 1.00
+- NEAR: SHORT_SQUEEZE_24H | OI/mc 0.97% | topPos 1.02 | taker 0.94
+- AVAX: LONG_FLUSH_24H | OI/mc 0.40% | topPos 0.95 | taker 0.96
+- SUI: LONG_FLUSH_24H | OI/mc 0.93% | topPos 0.83 | taker 0.90
+- TAO: LONG_FLUSH_24H | OI/mc 0.78% | topPos 0.89 | taker 0.87
+- ZEC: SHORT_SQUEEZE_24H | OI/mc 0.61% | topPos 1.01 | taker 0.95
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -43,12 +47,12 @@
 - (14 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 27 | mean 2.6% (0.26R) | in profit 13 | older than 7d 23
-- worst: HBAR -0.70R, LDO -0.60R, ETHFI -0.58R | best: RENDER 1.42R, AERO 1.45R, PYTH 2.55R
+- open 27 | mean 3.0% (0.28R) | in profit 13 | older than 7d 23
+- worst: HBAR -0.68R, LDO -0.54R, ETHFI -0.52R | best: RENDER 1.48R, AERO 1.49R, PYTH 2.53R
 
 ## System
-- CoinGecko 4721/10000 used, month-end projection 9950 (100%), throttle level 1 | by script {'scan': 1544, 'check_liquidity': 220, 'breakout_check': 2919, 'counterfactual_check': 38}
+- CoinGecko 4724/10000 used, month-end projection 9957 (100%), throttle level 1 | by script {'scan': 1546, 'check_liquidity': 221, 'breakout_check': 2919, 'counterfactual_check': 38}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=46), H2 SUPPORTED (n=139)
-- radar-flags.json scan age: 7m
-- excluded from radar (pegged/tokenized equity): 37
+- radar-flags.json scan age: 11m
+- excluded from radar (pegged/tokenized equity): 38
