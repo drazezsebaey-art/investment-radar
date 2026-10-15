@@ -1,12 +1,12 @@
-# Radar digest - 2026-10-15 21:41 UTC
+# Radar digest - 2026-10-15 22:08 UTC
 
 ## Market
 - BTC scenario **A** | price 82441 | wk close 83902 vs 82800 | 50W 77187 (6.81%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 57.19% | ETH/BTC 0.02972 | breadth7d 40% | stables 30d 0.60%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.44pt | 7d 0.59pt | n=105
-- Gold: PAXG 1m -2.95% | real10y 2.88 (28bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
-- 10y 1w: -10bp = real -7 + breakeven -1 -> **REAL_YIELD_DRIVEN**
-- 10y 1m: 24bp = real 28 + breakeven -3 -> **REAL_YIELD_DRIVEN**
+- Gold: PAXG 1m -2.50% | real10y 2.84 (22bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
+- 10y 1w: -8bp = real -7 + breakeven -4 -> **SMALL_MOVE**
+- 10y 1m: 19bp = real 22 + breakeven -1 -> **REAL_YIELD_DRIVEN**
 
 ## Coins in correction (entry_ready first)
 - BCH: **RESET_DONE** ENTRY_READY | +72% impulse, retr 0.56 | OI dd 36% | fund 0.0100 | hold True | inval 256.20000 | OB 212.90000-224.00000
@@ -20,13 +20,13 @@
 
 ## Pre-pump candidates
 - HBAR: [A+E] 7d -8.0%
-- SEI: [A+E] 7d -6.4%
+- SEI: [A+E] 7d -6.9%
 - LTC: [A+E] 7d -3.7%
 - CRO: [A+E] 7d -3.6%
-- SOL: [A+E] 7d -3.4%
+- SOL: [A+E] 7d -3.5%
 - HYPE: [A+E] 7d -2.9%
-- XRP: [A+E] 7d -2.6%
-- AVAX: [A+E] 7d -1.4%
+- XRP: [A+E] 7d -2.8%
+- SUI: [A+E] 7d -1.9%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - Bitwise’s XRP ETF Draws Fresh Cash As Traders Eye A Rally That Screams ‘Sell’ - TipRanks
@@ -57,12 +57,12 @@
 - (14 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 27 | mean 3.5% (0.33R) | in profit 13 | older than 7d 23
-- worst: HBAR -0.60R, LDO -0.53R, NEO -0.50R | best: NEAR 1.75R, STX 1.85R, PYTH 2.66R
+- open 27 | mean 3.6% (0.34R) | in profit 13 | older than 7d 23
+- worst: HBAR -0.61R, LDO -0.55R, NEO -0.50R | best: NEAR 1.77R, STX 2.17R, PYTH 2.70R
 
 ## System
-- CoinGecko 4799/10000 used, month-end projection 10001 (100%), throttle level 2 | by script {'scan': 1562, 'check_liquidity': 223, 'breakout_check': 2976, 'counterfactual_check': 38}
+- CoinGecko 4801/10000 used, month-end projection 9977 (100%), throttle level 1 | by script {'scan': 1564, 'check_liquidity': 223, 'breakout_check': 2976, 'counterfactual_check': 38}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=47), H2 SUPPORTED (n=140)
-- radar-flags.json scan age: 11m
-- excluded from radar (pegged/tokenized equity): 37
+- radar-flags.json scan age: 8m
+- excluded from radar (pegged/tokenized equity): 38
