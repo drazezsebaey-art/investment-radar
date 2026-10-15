@@ -1,4 +1,4 @@
-# Radar digest - 2026-10-15 13:41 UTC
+# Radar digest - 2026-10-15 14:07 UTC
 
 ## Market
 - BTC scenario **A** | price 80860 | wk close 83902 vs 82800 | 50W 77187 (4.76%) | 1h old
@@ -20,7 +20,8 @@
 
 ## Pre-pump candidates
 - PENDLE: [A+E] 7d -14.4%
-- NEAR: [A+E] 7d -10.0%
+- NEAR: [A+E] 7d -9.6%
+- VVV: [C+E] 7d -7.9%
 
 ## ETF pipeline (new this run)
 - pendle NEW: launch - Franklin Templeton's tokenized high yield bond ETF FLHYon launches on Pendle with 2026 mat
@@ -51,12 +52,12 @@
 - (14 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 28 | mean -3.3% (-0.18R) | in profit 10 | older than 7d 24
-- worst: ETHFI -0.95R, BTT -0.88R, LDO -0.86R | best: STX 1.01R, AERO 1.07R, PYTH 1.15R
+- open 28 | mean -3.2% (-0.17R) | in profit 10 | older than 7d 24
+- worst: BTT -0.99R, ETHFI -0.93R, LDO -0.87R | best: STX 0.93R, AERO 1.13R, PYTH 1.31R
 
 ## System
-- CoinGecko 4697/10000 used, month-end projection 10013 (100%), throttle level 2 | by script {'scan': 1530, 'check_liquidity': 215, 'breakout_check': 2919, 'counterfactual_check': 33}
+- CoinGecko 4700/10000 used, month-end projection 9991 (100%), throttle level 1 | by script {'scan': 1532, 'check_liquidity': 216, 'breakout_check': 2919, 'counterfactual_check': 33}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=46), H2 SUPPORTED (n=139)
-- radar-flags.json scan age: 11m
+- radar-flags.json scan age: 7m
 - excluded from radar (pegged/tokenized equity): 39
