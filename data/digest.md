@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-15 11:07 UTC
+# Radar digest - 2026-10-15 11:41 UTC
 
 ## Market
-- BTC scenario **A** | price 81160 | wk close 83902 vs 82800 | 50W 77187 (5.15%) | 28m old
+- BTC scenario **A** | price 81160 | wk close 83902 vs 82800 | 50W 77187 (5.15%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 57.42% | ETH/BTC 0.02921 | breadth7d 39% | stables 30d 0.59%
 - Alt risk (BTC.D): **ELEVATED** ['BTC_DOM_RISING_3D'] | 3d 0.67pt | 7d 0.98pt | n=103
 - Gold: PAXG 1m -2.91% | real10y 2.88 (28bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -19,26 +19,26 @@
 - ZK: **ONGOING** | +122% impulse, retr 0.15 | OI dd 32% | fund -0.0240 | hold False | inval 0.01398 | OB 0.01069-0.01129
 
 ## Pre-pump candidates
-- none
+- CRV: [C+E] 7d -11.0%
 
 ## ETF pipeline (new this run)
-- cap-4 NEW: other - Ethereum leads tokenized ETF market with $303M market cap - Crypto Briefing
-- cap-4 NEW: other - Tokenized ETF Market Cap Triples in 2026 as Holder Count Jumps 51x - Cryptopolitan
-- chainlink: other - Chainlink sees $10M ETF inflows – Why LINK’s price still struggles - Bitget
-- zcash: other - Zcash Price Forecast: ZEC declines as US inflation surprise offsets fresh ETF inflows - Mi
-- zcash: other - Zcash risks slide toward $1,000 as inflation fears outweigh ETF inflows - Bitget
-- zcash: other - Zcash (ZEC) drops 12% amid rising US inflation and mixed ETF activity. - Pluang
-- chainlink: other - Chainlink sees $10M ETF inflows – Why LINK’s price still struggles - Bitget
+- ripple NEW: other - ETF News | Bitcoin and Ether ETFs Have Shed $1.56 Billion in Two Weeks, and XRP’s $740,000
+- cap-4 NEW: other - Ethereum leads tokenized ETF market with $303M cap but faces rising competition from BNB C
+- chainlink: other - Bitwise Chainlink ETF sees $10M inflows despite LINK price drop lowering net assets - Plua
+- chainlink: other - Bitwise Chainlink ETF gains $10M inflows but to... - Pluang
+- chainlink: other - Bitwise Chainlink ETF sees $10M inflows despite LINK price drop lowering net assets - Plua
+- chainlink: other - Bitwise Chainlink ETF gains $10M inflows but to... - Pluang
+- ondo-finance: other - Ondo Leads $686.5M Tokenized ETF Market with $325.7M Issued - Cryptonews.net
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc 0.20% | topPos 0.95 | taker 0.89
-- ETH: LONG_FLUSH_24H | OI/mc 0.62% | topPos 0.88 | taker 0.90
-- AVAX: LONG_FLUSH_24H | OI/mc 0.42% | topPos 0.92 | taker 0.98
-- XRP: LONG_FLUSH_24H | OI/mc 0.13% | topPos 0.89 | taker 0.94
-- SUI: LONG_FLUSH_24H | OI/mc 0.99% | topPos 0.84 | taker 0.88
-- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.93 | taker 1.03
-- TAO: LONG_FLUSH_24H | OI/mc 0.82% | topPos 0.88 | taker 0.94
-- ZEC: LONG_FLUSH_24H | OI/mc -% | topPos 0.95 | taker 0.92
+- ETH: LONG_FLUSH_24H | OI/mc 0.62% | topPos 0.88 | taker 0.89
+- NEAR: QUIET_DELEVERAGING | OI/mc -% | topPos 1.00 | taker 0.88
+- AVAX: LONG_FLUSH_24H | OI/mc 0.41% | topPos 0.93 | taker 0.98
+- XRP: LONG_FLUSH_24H | OI/mc 0.13% | topPos 0.88 | taker 0.93
+- SUI: LONG_FLUSH_24H | OI/mc 0.97% | topPos 0.83 | taker 0.87
+- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.93 | taker 0.99
+- TAO: LONG_FLUSH_24H | OI/mc 0.81% | topPos 0.89 | taker 0.95
+- ZEC: LONG_FLUSH_24H | OI/mc -% | topPos 0.94 | taker 0.92
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -49,12 +49,12 @@
 - (14 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 28 | mean -2.4% (-0.11R) | in profit 10 | older than 7d 24
-- worst: ETHFI -0.93R, BTT -0.84R, HBAR -0.83R | best: STX 1.00R, AERO 1.06R, PYTH 1.71R
+- open 28 | mean -2.3% (-0.09R) | in profit 10 | older than 7d 24
+- worst: ETHFI -0.92R, BTT -0.83R, HBAR -0.81R | best: AERO 1.05R, STX 1.30R, PYTH 1.64R
 
 ## System
-- CoinGecko 4635/10000 used, month-end projection 9938 (99%), throttle level 1 | by script {'scan': 1520, 'check_liquidity': 213, 'breakout_check': 2869, 'counterfactual_check': 33}
+- CoinGecko 4638/10000 used, month-end projection 9944 (99%), throttle level 1 | by script {'scan': 1522, 'check_liquidity': 214, 'breakout_check': 2869, 'counterfactual_check': 33}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=46), H2 SUPPORTED (n=138)
-- radar-flags.json scan age: 6m
+- radar-flags.json scan age: 11m
 - excluded from radar (pegged/tokenized equity): 39
