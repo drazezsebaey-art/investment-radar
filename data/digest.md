@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-15 23:40 UTC
+# Radar digest - 2026-10-16 00:21 UTC
 
 ## Market
-- BTC scenario **A** | price 82482 | wk close 83902 vs 82800 | 50W 77187 (6.86%) | 1h old
+- BTC scenario **A** | price 82482 | wk close 83902 vs 82800 | 50W 77187 (6.86%) | 2h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.18% | ETH/BTC 0.02982 | breadth7d 35% | stables 30d 0.60%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.32pt | 7d 0.25pt | n=106
 - Gold: PAXG 1m -2.50% | real10y 2.84 (22bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -19,14 +19,14 @@
 - ZK: **ONGOING** | +122% impulse, retr 0.15 | OI dd 0% | fund -0.0181 | hold False | inval 0.01483 | OB 0.01483-0.01529
 
 ## Pre-pump candidates
-- SENT: [C+E] 7d -16.2%
-- HBAR: [A+E] 7d -6.5%
-- SEI: [A+E] 7d -6.2%
-- SOL: [A+E] 7d -4.4%
+- SEI: [A+E] 7d -6.3%
+- SOL: [A+E] 7d -4.5%
 - CRO: [A+E] 7d -4.1%
 - LTC: [A+E] 7d -3.9%
-- HYPE: [A+E] 7d -2.8%
-- XRP: [A+E] 7d -2.6%
+- XRP: [A+E] 7d -3.5%
+- HYPE: [A+E] 7d -3.2%
+- ONDO: [A+E] 7d -2.6%
+- LINK: [A+E] 7d -2.5%
 
 ## ETF pipeline (new this run)
 - zcash: other - Grayscale ZCSH: $14.8M Zcash ETF Outflow - Blockchain News
@@ -51,12 +51,12 @@
 - (14 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 27 | mean 3.1% (0.30R) | in profit 13 | older than 7d 23
-- worst: HBAR -0.61R, LDO -0.60R, NEO -0.52R | best: AERO 1.73R, STX 2.29R, PYTH 2.42R
+- open 27 | mean 3.4% (0.33R) | in profit 13 | older than 7d 23
+- worst: HBAR -0.59R, LDO -0.58R, NEO -0.52R | best: AERO 1.79R, PYTH 2.47R, STX 2.52R
 
 ## System
-- CoinGecko 4807/10000 used, month-end projection 9962 (100%), throttle level 1 | by script {'scan': 1570, 'check_liquidity': 223, 'breakout_check': 2976, 'counterfactual_check': 38}
+- CoinGecko 4864/10000 used, month-end projection 10052 (100%), throttle level 2 | by script {'scan': 1572, 'check_liquidity': 224, 'breakout_check': 3028, 'counterfactual_check': 40}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=47), H2 SUPPORTED (n=140)
-- radar-flags.json scan age: 10m
+- radar-flags.json scan age: 21m
 - excluded from radar (pegged/tokenized equity): 38
