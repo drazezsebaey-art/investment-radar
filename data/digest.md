@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-16 22:40 UTC
+# Radar digest - 2026-10-16 23:08 UTC
 
 ## Market
-- BTC scenario **A** | price 81777 | wk close 83902 vs 82800 | 50W 77187 (5.95%) | 1m old
+- BTC scenario **A** | price 81777 | wk close 83902 vs 82800 | 50W 77187 (5.95%) | 29m old
 - Alts: **BTC_LED** [-] | BTC.D 57.27% | ETH/BTC 0.02965 | breadth7d 46% | stables 30d 0.76%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.11pt | 7d 0.35pt | n=112
 - Gold: PAXG 1m -2.55% | real10y 2.78 (10bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -19,14 +19,14 @@
 - ZEC: **ONGOING** | +111% impulse, retr 0.62 | OI dd 43% | fund 0.0100 | hold False | inval 1073.76000 | OB 985.40000-1050.48000
 
 ## Pre-pump candidates
-- UB: [C+E] 7d -10.2%
 - LTC: [A+E] 7d -7.0%
 - XRP: [A+E] 7d -6.0%
 - ZEC: [A+E] 7d -5.9%
 - ADA: [A+E] 7d -5.4%
 - CRO: [A+E] 7d -4.7%
-- SUI: [A+E] 7d -4.5%
-- SOL: [A+E] 7d -4.4%
+- HYPE: [A+E] 7d -4.4%
+- SUI: [A+E] 7d -4.3%
+- SOL: [A+E] 7d -4.2%
 
 ## ETF pipeline (new this run)
 - solana NEW: approval - Hong Kong Approves Solana ETF Ahead of United States - CoinMarketCap
@@ -52,12 +52,12 @@
 - (13 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 29 | mean 2.1% (0.20R) | in profit 12 | older than 7d 23
-- worst: HBAR -0.69R, LDO -0.62R, AXS -0.50R | best: AERO 1.38R, TIA 1.88R, PYTH 1.89R
+- open 29 | mean 2.3% (0.20R) | in profit 12 | older than 7d 23
+- worst: HBAR -0.69R, LDO -0.61R, AXS -0.50R | best: AERO 1.36R, PYTH 1.86R, TIA 1.88R
 
 ## System
-- CoinGecko 5128/10000 used, month-end projection 9988 (100%), throttle level 1 | by script {'scan': 1670, 'check_liquidity': 241, 'breakout_check': 3175, 'counterfactual_check': 42}
+- CoinGecko 5130/10000 used, month-end projection 9965 (100%), throttle level 1 | by script {'scan': 1672, 'check_liquidity': 241, 'breakout_check': 3175, 'counterfactual_check': 42}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=48), H2 SUPPORTED (n=148)
-- radar-flags.json scan age: 10m
+- radar-flags.json scan age: 8m
 - excluded from radar (pegged/tokenized equity): 38
