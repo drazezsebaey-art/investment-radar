@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-16 11:08 UTC
+# Radar digest - 2026-10-16 11:41 UTC
 
 ## Market
-- BTC scenario **A** | price 82116 | wk close 83902 vs 82800 | 50W 77187 (6.39%) | 29m old
+- BTC scenario **A** | price 82116 | wk close 83902 vs 82800 | 50W 77187 (6.39%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.08% | ETH/BTC 0.02994 | breadth7d 50% | stables 30d 0.77%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.02pt | 7d 0.27pt | n=109
 - Gold: PAXG 1m -2.46% | real10y 2.84 (22bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -19,21 +19,21 @@
 - AVAX: **ONGOING** | +70% impulse, retr 0.31 | OI dd 27% | fund 0.0061 | hold False | inval 9.33700 | OB 7.17400-7.36200
 
 ## Pre-pump candidates
-- WLD: [A+C] 7d 5.1%
-- ARB: [B+C] 7d 10.9%
+- WLD: [A+C] 7d 8.1%
+- ARB: [B+C] 7d 11.4%
 
 ## ETF pipeline (new this run)
-- pendle NEW: launch - Pendle Announces Launch of Franklin Templeton ETF - Cryptonews.net
+- zcash: other - Zcash News Today: ZEC Gains Roughly 9% With ETF Interest in Focus as Remittix Approaches I
 
 ## Derivatives flags (OKX)
-- ETH: SHORT_SQUEEZE_24H | OI/mc 0.59% | topPos 0.93 | taker 1.03
-- SOL: SHORT_SQUEEZE_24H | OI/mc 0.59% | topPos 0.90 | taker 1.04
-- AVAX: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.90 | taker 1.04
-- SEI: SHORT_SQUEEZE_24H | OI/mc 0.72% | topPos 0.94 | taker 0.95
-- ZEC: SHORT_SQUEEZE_24H | OI/mc 0.63% | topPos 1.12 | taker 1.01
-- ADA: LONG_FLUSH_24H | OI/mc 0.41% | topPos 0.90 | taker 1.12
-- XLM: LONG_FLUSH_24H | OI/mc 0.17% | topPos 1.00 | taker 1.05
-- ONDO: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.74 | taker 0.92
+- BTC: SHORT_SQUEEZE_24H | OI/mc 0.20% | topPos 0.96 | taker 1.04
+- ETH: SHORT_SQUEEZE_24H | OI/mc 0.58% | topPos 0.93 | taker 1.04
+- SOL: SHORT_SQUEEZE_24H | OI/mc 0.59% | topPos 0.89 | taker 1.05
+- AVAX: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.91 | taker 1.00
+- SEI: SHORT_SQUEEZE_24H | OI/mc 0.71% | topPos 0.89 | taker 0.96
+- ZEC: SHORT_SQUEEZE_24H | OI/mc 0.63% | topPos 1.12 | taker 1.02
+- WLD: SHORT_SQUEEZE_24H | OI/mc 1.91% | topPos 0.90 | taker 1.01
+- XLM: LONG_FLUSH_24H | OI/mc 0.17% | topPos 0.98 | taker 1.06
 
 ## Revenue / buyback flags
 - ore: REVENUE_ACCELERATING
@@ -44,12 +44,12 @@
 - (13 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 30 | mean 4.7% (0.37R) | in profit 16 | older than 7d 23
-- worst: HBAR -0.54R, NEO -0.44R, LDO -0.43R | best: STX 1.81R, TIA 1.96R, PYTH 2.28R
+- open 30 | mean 5.4% (0.43R) | in profit 16 | older than 7d 23
+- worst: HBAR -0.48R, NEO -0.42R, LDO -0.39R | best: STX 1.93R, TIA 2.12R, PYTH 2.26R
 
 ## System
-- CoinGecko 4976/10000 used, month-end projection 9979 (100%), throttle level 1 | by script {'scan': 1624, 'check_liquidity': 231, 'breakout_check': 3081, 'counterfactual_check': 40}
+- CoinGecko 4979/10000 used, month-end projection 9985 (100%), throttle level 1 | by script {'scan': 1626, 'check_liquidity': 232, 'breakout_check': 3081, 'counterfactual_check': 40}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=48), H2 SUPPORTED (n=142)
-- radar-flags.json scan age: 7m
-- excluded from radar (pegged/tokenized equity): 39
+- radar-flags.json scan age: 11m
+- excluded from radar (pegged/tokenized equity): 38
