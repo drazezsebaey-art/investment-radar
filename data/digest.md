@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-16 04:41 UTC
+# Radar digest - 2026-10-16 05:07 UTC
 
 ## Market
-- BTC scenario **A** | price 82061 | wk close 83902 vs 82800 | 50W 77187 (6.31%) | 2m old
+- BTC scenario **A** | price 82061 | wk close 83902 vs 82800 | 50W 77187 (6.31%) | 28m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.18% | ETH/BTC 0.02973 | breadth7d 36% | stables 30d 0.75%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.17pt | 7d 0.36pt | n=107
 - Gold: PAXG 1m -2.19% | real10y 2.84 (22bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -22,11 +22,11 @@
 - SENT: [C+E] 7d -14.2%
 - SEI: [A+E] 7d -7.0%
 - HYPE: [A+E] 7d -4.6%
-- SOL: [A+E] 7d -4.6%
-- XRP: [A+E] 7d -4.2%
+- SOL: [A+E] 7d -4.3%
+- XRP: [A+E] 7d -4.3%
 - LTC: [A+E] 7d -3.8%
 - CRO: [A+E] 7d -3.0%
-- AVAX: [A+E] 7d -2.2%
+- AVAX: [A+E] 7d -2.4%
 
 ## ETF pipeline (new this run)
 - solana NEW: filing - Best Crypto Presale 2026 Hunt: Solana's October 21 Upgrade and Zcash's ETF Filing Meet Rem
@@ -52,12 +52,12 @@
 - (14 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 27 | mean 3.3% (0.30R) | in profit 13 | older than 7d 23
-- worst: HBAR -0.61R, LDO -0.59R, NEO -0.48R | best: NEAR 1.55R, AERO 1.68R, PYTH 2.63R
+- open 27 | mean 3.2% (0.29R) | in profit 13 | older than 7d 23
+- worst: HBAR -0.60R, LDO -0.57R, NEO -0.48R | best: STX 1.49R, AERO 1.62R, PYTH 2.54R
 
 ## System
-- CoinGecko 4883/10000 used, month-end projection 9981 (100%), throttle level 1 | by script {'scan': 1590, 'check_liquidity': 225, 'breakout_check': 3028, 'counterfactual_check': 40}
+- CoinGecko 4894/10000 used, month-end projection 9976 (100%), throttle level 1 | by script {'scan': 1600, 'check_liquidity': 226, 'breakout_check': 3028, 'counterfactual_check': 40}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=47), H2 SUPPORTED (n=141)
-- radar-flags.json scan age: 11m
-- excluded from radar (pegged/tokenized equity): 39
+- radar-flags.json scan age: 7m
+- excluded from radar (pegged/tokenized equity): 38
