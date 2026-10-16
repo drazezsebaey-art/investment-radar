@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-16 01:08 UTC
+# Radar digest - 2026-10-16 01:40 UTC
 
 ## Market
-- BTC scenario **A** | price 82436 | wk close 83902 vs 82800 | 50W 77187 (6.80%) | 29m old
+- BTC scenario **A** | price 82436 | wk close 83902 vs 82800 | 50W 77187 (6.80%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.18% | ETH/BTC 0.02982 | breadth7d 35% | stables 30d 0.60%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.32pt | 7d 0.25pt | n=106
 - Gold: PAXG 1m -2.50% | real10y 2.84 (22bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -29,18 +29,20 @@
 - ADA: [A+E] 7d -0.7%
 
 ## ETF pipeline (new this run)
-- zcash: other - Grayscale ZCSH: $14.8M Zcash ETF Outflow - Blockchain News
-- ondo-finance: other - Franklin Income Equity Focus Tokenized ETF (Ondo) - CryptoRank
+- hyperliquid NEW: launch - Zcash, Hyperliquid or Remittix: Best Altcoin to Buy as the WINK ETF Filing Meets HYPE Buyb
+- zcash: launch - Zcash, Hyperliquid or Remittix: Best Altcoin to Buy as the WINK ETF Filing Meets HYPE Buyb
+- zcash: launch - Zcash, Hyperliquid or Remittix: Best Altcoin to Buy as the WINK ETF Filing Meets HYPE Buyb
+- chainlink: other - Chainlink Price Prediction: LINK ETF Pulls In $10M as Price Slides, While Pepeto's $0 Brid
 
 ## Derivatives flags (OKX)
-- ETH: LONG_FLUSH_24H | OI/mc 0.58% | topPos 0.91 | taker 0.96
+- ETH: LONG_FLUSH_24H | OI/mc 0.57% | topPos 0.91 | taker 0.96
 - SOL: SHORT_SQUEEZE_24H | OI/mc 0.58% | topPos 0.89 | taker 0.99
-- NEAR: SHORT_SQUEEZE_24H | OI/mc -% | topPos 1.04 | taker 0.95
-- AVAX: LONG_FLUSH_24H | OI/mc 0.39% | topPos 0.93 | taker 0.95
-- SUI: LONG_FLUSH_24H | OI/mc 0.93% | topPos 0.83 | taker 0.92
-- TAO: LONG_FLUSH_24H | OI/mc 0.81% | topPos 0.90 | taker 0.85
-- ZEC: SHORT_SQUEEZE_24H | OI/mc 0.62% | topPos 1.08 | taker 0.97
-- ADA: LONG_FLUSH_24H | OI/mc 0.41% | topPos 0.90 | taker 0.95
+- NEAR: SHORT_SQUEEZE_24H | OI/mc 1.00% | topPos 1.04 | taker 0.96
+- AVAX: LONG_FLUSH_24H | OI/mc 0.39% | topPos 0.93 | taker 0.96
+- SUI: LONG_FLUSH_24H | OI/mc 0.93% | topPos 0.82 | taker 0.94
+- SEI: SHORT_SQUEEZE_24H | OI/mc 0.73% | topPos 0.96 | taker 0.98
+- TAO: LONG_FLUSH_24H | OI/mc 0.81% | topPos 0.91 | taker 0.86
+- ZEC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 1.09 | taker 0.97
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -51,12 +53,12 @@
 - (14 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 27 | mean 3.5% (0.34R) | in profit 13 | older than 7d 23
-- worst: LDO -0.59R, HBAR -0.56R, NEO -0.50R | best: NEAR 1.81R, PYTH 2.47R, STX 2.52R
+- open 27 | mean 3.2% (0.31R) | in profit 13 | older than 7d 23
+- worst: LDO -0.60R, HBAR -0.57R, NEO -0.50R | best: NEAR 1.79R, STX 2.33R, PYTH 2.45R
 
 ## System
-- CoinGecko 4868/10000 used, month-end projection 10033 (100%), throttle level 2 | by script {'scan': 1576, 'check_liquidity': 224, 'breakout_check': 3028, 'counterfactual_check': 40}
+- CoinGecko 4870/10000 used, month-end projection 10037 (100%), throttle level 2 | by script {'scan': 1578, 'check_liquidity': 224, 'breakout_check': 3028, 'counterfactual_check': 40}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=47), H2 SUPPORTED (n=140)
-- radar-flags.json scan age: 8m
+- radar-flags.json scan age: 10m
 - excluded from radar (pegged/tokenized equity): 37
