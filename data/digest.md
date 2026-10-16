@@ -1,12 +1,12 @@
-# Radar digest - 2026-10-16 21:41 UTC
+# Radar digest - 2026-10-16 22:07 UTC
 
 ## Market
 - BTC scenario **A** | price 81670 | wk close 83902 vs 82800 | 50W 77187 (5.81%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 57.22% | ETH/BTC 0.02969 | breadth7d 42% | stables 30d 0.77%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.02pt | 7d 0.19pt | n=111
-- Gold: PAXG 1m -2.63% | real10y 2.84 (22bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
-- 10y 1w: -8bp = real -7 + breakeven -4 -> **SMALL_MOVE**
-- 10y 1m: 19bp = real 22 + breakeven -1 -> **REAL_YIELD_DRIVEN**
+- Gold: PAXG 1m -2.55% | real10y 2.78 (10bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
+- 10y 1w: -18bp = real -14 + breakeven 0 -> **REAL_YIELD_DRIVEN**
+- 10y 1m: 9bp = real 10 + breakeven 2 -> **SMALL_MOVE**
 
 ## Coins in correction (entry_ready first)
 - BCH: **RESUMING** ENTRY_READY | +72% impulse, retr 0.59 | OI dd 38% | fund 0.0037 | hold False | inval 256.20000 | OB 258.40000-266.60000
@@ -19,14 +19,14 @@
 - ZEC: **ONGOING** | +111% impulse, retr 0.61 | OI dd 43% | fund 0.0100 | hold False | inval 1073.76000 | OB 985.40000-1050.48000
 
 ## Pre-pump candidates
-- LTC: [A+E] 7d -6.0%
-- XRP: [A+E] 7d -5.8%
-- ADA: [A+E] 7d -4.7%
-- HYPE: [A+E] 7d -4.4%
-- SOL: [A+E] 7d -4.2%
-- CRO: [A+E] 7d -4.0%
-- SUI: [A+E] 7d -3.8%
-- BNB: [A+E] 7d -2.2%
+- UB: [C+E] 7d -10.2%
+- LTC: [A+E] 7d -7.0%
+- XRP: [A+E] 7d -6.0%
+- ZEC: [A+E] 7d -5.9%
+- ADA: [A+E] 7d -5.4%
+- CRO: [A+E] 7d -4.7%
+- SUI: [A+E] 7d -4.5%
+- SOL: [A+E] 7d -4.4%
 
 ## ETF pipeline (new this run)
 - solana NEW: approval - Hong Kong Approves Solana ETF Ahead of United States - CoinMarketCap
@@ -52,12 +52,12 @@
 - (13 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 29 | mean 2.0% (0.19R) | in profit 12 | older than 7d 23
-- worst: HBAR -0.70R, LDO -0.61R, AXS -0.51R | best: AERO 1.34R, TIA 1.74R, PYTH 1.79R
+- open 29 | mean 1.6% (0.16R) | in profit 12 | older than 7d 23
+- worst: HBAR -0.71R, LDO -0.64R, AXS -0.53R | best: AERO 1.39R, TIA 1.77R, PYTH 1.79R
 
 ## System
-- CoinGecko 5122/10000 used, month-end projection 10002 (100%), throttle level 2 | by script {'scan': 1666, 'check_liquidity': 239, 'breakout_check': 3175, 'counterfactual_check': 42}
+- CoinGecko 5125/10000 used, month-end projection 9982 (100%), throttle level 1 | by script {'scan': 1668, 'check_liquidity': 240, 'breakout_check': 3175, 'counterfactual_check': 42}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=48), H2 SUPPORTED (n=148)
-- radar-flags.json scan age: 10m
+- radar-flags.json scan age: 7m
 - excluded from radar (pegged/tokenized equity): 39
