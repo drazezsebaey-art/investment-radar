@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-16 23:08 UTC
+# Radar digest - 2026-10-16 23:40 UTC
 
 ## Market
-- BTC scenario **A** | price 81777 | wk close 83902 vs 82800 | 50W 77187 (5.95%) | 29m old
+- BTC scenario **A** | price 81777 | wk close 83902 vs 82800 | 50W 77187 (5.95%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 57.27% | ETH/BTC 0.02965 | breadth7d 46% | stables 30d 0.76%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.11pt | 7d 0.35pt | n=112
 - Gold: PAXG 1m -2.55% | real10y 2.78 (10bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -19,29 +19,28 @@
 - ZEC: **ONGOING** | +111% impulse, retr 0.62 | OI dd 43% | fund 0.0100 | hold False | inval 1073.76000 | OB 985.40000-1050.48000
 
 ## Pre-pump candidates
-- LTC: [A+E] 7d -7.0%
+- UB: [C+E] 7d -11.4%
+- LTC: [A+E] 7d -6.4%
+- ADA: [A+E] 7d -6.2%
 - XRP: [A+E] 7d -6.0%
-- ZEC: [A+E] 7d -5.9%
-- ADA: [A+E] 7d -5.4%
-- CRO: [A+E] 7d -4.7%
-- HYPE: [A+E] 7d -4.4%
+- ZEC: [A+E] 7d -5.8%
+- CRO: [A+E] 7d -4.8%
+- HYPE: [A+E] 7d -4.7%
 - SUI: [A+E] 7d -4.3%
-- SOL: [A+E] 7d -4.2%
 
 ## ETF pipeline (new this run)
-- solana NEW: approval - Hong Kong Approves Solana ETF Ahead of United States - CoinMarketCap
-- zcash: other - Zcash ETF posts 14.76 million USD outflow: What it means for the Zcash price - ad-hoc-news
-- ondo-finance: other - How to buy iShares J.P. Morgan EM Local Currency Bond Tokenized ETF (Ondo) (LEMBon) in Cur
+- injective-protocol NEW: other - INJ Price Analysis: $9 Breakout in Focus as Injective ETF Hopes Grow - TradingView
+- ripple NEW: other - XRP ETF — XRPR ($10.79) and XRPI ($7.04) Slide With XRP as Spot Funds Keep Buying Through 
 
 ## Derivatives flags (OKX)
 - SOL: LONG_FLUSH_24H | OI/mc 0.58% | topPos 0.88 | taker 0.92
-- AVAX: LONG_FLUSH_24H | OI/mc 0.40% | topPos 0.95 | taker 0.88
-- XRP: LONG_FLUSH_24H | OI/mc 0.13% | topPos 0.87 | taker 1.02
-- SUI: LONG_FLUSH_24H | OI/mc 0.93% | topPos 0.82 | taker 1.01
-- SEI: LONG_FLUSH_24H | OI/mc 0.71% | topPos 0.89 | taker 1.00
-- TAO: LONG_FLUSH_24H | OI/mc 0.81% | topPos 0.93 | taker 0.87
-- ZEC: LONG_FLUSH_24H | OI/mc 0.65% | topPos 0.99 | taker 0.97
-- WLD: SHORT_SQUEEZE_FUEL, LONG_FLUSH_24H | OI/mc -% | topPos 0.90 | taker 0.97
+- AVAX: LONG_FLUSH_24H | OI/mc 0.40% | topPos 0.94 | taker 0.88
+- XRP: LONG_FLUSH_24H | OI/mc 0.13% | topPos 0.87 | taker 1.01
+- SUI: LONG_FLUSH_24H | OI/mc 0.94% | topPos 0.81 | taker 1.00
+- SEI: LONG_FLUSH_24H | OI/mc 0.71% | topPos 0.88 | taker 1.02
+- TAO: LONG_FLUSH_24H | OI/mc 0.81% | topPos 0.93 | taker 0.88
+- ZEC: LONG_FLUSH_24H | OI/mc 0.65% | topPos 0.98 | taker 0.98
+- WLD: SHORT_SQUEEZE_FUEL, LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 0.98
 
 ## Revenue / buyback flags
 - ore: REVENUE_ACCELERATING
@@ -52,12 +51,12 @@
 - (13 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 29 | mean 2.3% (0.20R) | in profit 12 | older than 7d 23
-- worst: HBAR -0.69R, LDO -0.61R, AXS -0.50R | best: AERO 1.36R, PYTH 1.86R, TIA 1.88R
+- open 29 | mean 2.2% (0.20R) | in profit 12 | older than 7d 23
+- worst: HBAR -0.70R, LDO -0.61R, AXS -0.50R | best: AERO 1.36R, PYTH 1.78R, TIA 1.91R
 
 ## System
-- CoinGecko 5130/10000 used, month-end projection 9965 (100%), throttle level 1 | by script {'scan': 1672, 'check_liquidity': 241, 'breakout_check': 3175, 'counterfactual_check': 42}
+- CoinGecko 5132/10000 used, month-end projection 9969 (100%), throttle level 1 | by script {'scan': 1674, 'check_liquidity': 241, 'breakout_check': 3175, 'counterfactual_check': 42}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=48), H2 SUPPORTED (n=148)
-- radar-flags.json scan age: 8m
+- radar-flags.json scan age: 10m
 - excluded from radar (pegged/tokenized equity): 38
