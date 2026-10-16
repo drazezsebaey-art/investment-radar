@@ -1,4 +1,4 @@
-# Radar digest - 2026-10-16 01:40 UTC
+# Radar digest - 2026-10-16 02:08 UTC
 
 ## Market
 - BTC scenario **A** | price 82436 | wk close 83902 vs 82800 | 50W 77187 (6.80%) | 1h old
@@ -19,14 +19,14 @@
 - KAIA: **ONGOING** | +154% impulse, retr 0.60 | OI dd -% | fund - | hold False | inval 0.03616 | OB 0.03616-0.03760
 
 ## Pre-pump candidates
-- SEI: [A+E] 7d -4.4%
-- SOL: [A+E] 7d -3.8%
+- SEI: [A+E] 7d -5.2%
+- XRP: [A+E] 7d -4.1%
+- SOL: [A+E] 7d -3.9%
 - CRO: [A+E] 7d -3.8%
-- XRP: [A+E] 7d -3.2%
 - LTC: [A+E] 7d -3.1%
 - HYPE: [A+E] 7d -2.5%
-- BNB: [A+E] 7d -0.9%
-- ADA: [A+E] 7d -0.7%
+- SUI: [A+E] 7d -1.0%
+- AVAX: [A+E] 7d -1.0%
 
 ## ETF pipeline (new this run)
 - hyperliquid NEW: launch - Zcash, Hyperliquid or Remittix: Best Altcoin to Buy as the WINK ETF Filing Meets HYPE Buyb
@@ -53,12 +53,12 @@
 - (14 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 27 | mean 3.2% (0.31R) | in profit 13 | older than 7d 23
-- worst: LDO -0.60R, HBAR -0.57R, NEO -0.50R | best: NEAR 1.79R, STX 2.33R, PYTH 2.45R
+- open 27 | mean 2.7% (0.27R) | in profit 12 | older than 7d 23
+- worst: LDO -0.61R, HBAR -0.58R, NEO -0.52R | best: AERO 1.69R, STX 2.18R, PYTH 2.38R
 
 ## System
-- CoinGecko 4870/10000 used, month-end projection 10037 (100%), throttle level 2 | by script {'scan': 1578, 'check_liquidity': 224, 'breakout_check': 3028, 'counterfactual_check': 40}
+- CoinGecko 4872/10000 used, month-end projection 10013 (100%), throttle level 2 | by script {'scan': 1580, 'check_liquidity': 224, 'breakout_check': 3028, 'counterfactual_check': 40}
 - Trials guard: OK (0 untracked)
-- Hypotheses: H1 NOT_SUPPORTED (n=47), H2 SUPPORTED (n=140)
-- radar-flags.json scan age: 10m
-- excluded from radar (pegged/tokenized equity): 37
+- Hypotheses: H1 NOT_SUPPORTED (n=47), H2 SUPPORTED (n=141)
+- radar-flags.json scan age: 7m
+- excluded from radar (pegged/tokenized equity): 38
