@@ -9962,7 +9962,7 @@
       "hours_since_flagged_at_entry": 7.5,
       "funnel_stage_at_entry": "agent_room_priority",
       "date_opened": "2026-10-16",
-      "status": "open",
+      "status": "superseded",
       "entry": 8.54,
       "stop": 7.61410715,
       "used_trend_following_stop": false,
@@ -9992,7 +9992,9 @@
       "sector_tags": [
         "layer-1",
         "real-world-assets-rwa"
-      ]
+      ],
+      "superseded_at": "2026-10-16T06:14:43.491550+00:00",
+      "superseded_reason": "promoted to a real auto trade at confidence_score 50"
     },
     {
       "id": "apt-shadow-20261016T001409",
@@ -10036,6 +10038,94 @@
       "last_check_source": "okx_candles",
       "sector_tags": [
         "layer-1"
+      ]
+    },
+    {
+      "id": "pengu-shadow-20261016T061443",
+      "asset_id": "pudgy-penguins",
+      "symbol": "PENGU",
+      "type": "paper",
+      "auto": true,
+      "triggered_by": "priority_review:choch_bullish+rsi_divergence+cluster_rotation_lag",
+      "entry_archetype": "proactive_confluence",
+      "engine_version": "auto_paper_trade-v62",
+      "decay_state_at_entry": "developing",
+      "hours_since_flagged_at_entry": 24.5,
+      "funnel_stage_at_entry": "shortlist_20",
+      "date_opened": "2026-10-16",
+      "status": "open",
+      "entry": 0.00769785,
+      "stop": 0.00737989,
+      "used_trend_following_stop": false,
+      "targets": [
+        0.00817479,
+        0.00849275,
+        0.00896969
+      ],
+      "created_at": "2026-10-16T06:14:43.491550+00:00",
+      "filled_at": "2026-10-16T06:00:47.835523+00:00",
+      "price_observed_at": "2026-10-16T06:00:47.835523+00:00",
+      "actual_entry": 0.00769785,
+      "targets_hit": [],
+      "confidence_score_at_entry": 0,
+      "signal_quality_at_entry": "beta_driven_or_cluster",
+      "market_regime_at_entry": {
+        "risk_state": "neutral",
+        "volatility_state": "expanded",
+        "btc_trend_recent_pct": -1.55,
+        "btc_trend_full_window_pct": 7.78,
+        "btc_volatility_now": 0.946,
+        "btc_volatility_baseline_avg": 0.569,
+        "breadth_pct_green": 87.2
+      },
+      "rejected_reason": "confidence_score 0 < AUTO_TRADE_MIN_SCORE 40",
+      "last_check_source": "okx_candles",
+      "sector_tags": [
+        "meme-token"
+      ]
+    },
+    {
+      "id": "rsr-shadow-20261016T061443",
+      "asset_id": "reserve-rights-token",
+      "symbol": "RSR",
+      "type": "paper",
+      "auto": true,
+      "triggered_by": "priority_review:rsi_divergence",
+      "entry_archetype": "rsi_divergence_reversal",
+      "engine_version": "auto_paper_trade-v62",
+      "decay_state_at_entry": "developing",
+      "hours_since_flagged_at_entry": 32.5,
+      "funnel_stage_at_entry": "shortlist_10",
+      "date_opened": "2026-10-16",
+      "status": "open",
+      "entry": 0.00192379,
+      "stop": 0.00184872,
+      "used_trend_following_stop": false,
+      "targets": [
+        0.00203639,
+        0.00211146,
+        0.00222407
+      ],
+      "created_at": "2026-10-16T06:14:43.491550+00:00",
+      "filled_at": "2026-10-16T06:00:47.835523+00:00",
+      "price_observed_at": "2026-10-16T06:00:47.835523+00:00",
+      "actual_entry": 0.00192379,
+      "targets_hit": [],
+      "confidence_score_at_entry": 35,
+      "signal_quality_at_entry": "beta_driven_or_cluster",
+      "market_regime_at_entry": {
+        "risk_state": "neutral",
+        "volatility_state": "expanded",
+        "btc_trend_recent_pct": -1.55,
+        "btc_trend_full_window_pct": 7.78,
+        "btc_volatility_now": 0.946,
+        "btc_volatility_baseline_avg": 0.569,
+        "breadth_pct_green": 87.2
+      },
+      "rejected_reason": "confidence_score 35 < AUTO_TRADE_MIN_SCORE 40",
+      "last_check_source": "okx_candles",
+      "sector_tags": [
+        "real-world-assets-rwa"
       ]
     }
   ]

@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-16 05:40 UTC
+# Radar digest - 2026-10-16 06:21 UTC
 
 ## Market
-- BTC scenario **A** | price 82061 | wk close 83902 vs 82800 | 50W 77187 (6.31%) | 1h old
+- BTC scenario **A** | price 82061 | wk close 83902 vs 82800 | 50W 77187 (6.31%) | 2h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.18% | ETH/BTC 0.02973 | breadth7d 36% | stables 30d 0.75%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.17pt | 7d 0.36pt | n=107
 - Gold: PAXG 1m -2.19% | real10y 2.84 (22bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -19,14 +19,7 @@
 - INJ: **ONGOING** | +102% impulse, retr 0.03 | OI dd 33% | fund 0.0094 | hold False | inval 6.99400 | OB 6.41500-6.78300
 
 ## Pre-pump candidates
-- SEI: [A+E] 7d -7.0%
-- HYPE: [A+E] 7d -5.2%
-- SOL: [A+E] 7d -4.3%
-- XRP: [A+E] 7d -4.3%
-- LTC: [A+E] 7d -4.3%
-- CRO: [A+E] 7d -3.6%
-- ADA: [A+E] 7d -2.5%
-- AVAX: [A+E] 7d -2.4%
+- VVV: [C+E] 7d 6.1%
 
 ## ETF pipeline (new this run)
 - zcash: other - Zcash Price Prediction: $3.68M ETF Inflows! Is a Mega ZEC Rally Next? - Coin Gabbar
@@ -50,12 +43,12 @@
 - (14 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 27 | mean 3.5% (0.31R) | in profit 13 | older than 7d 23
-- worst: HBAR -0.58R, LDO -0.57R, AXS -0.46R | best: NEAR 1.55R, AERO 1.67R, PYTH 2.46R
+- open 30 | mean 3.7% (0.31R) | in profit 13 | older than 7d 23
+- worst: HBAR -0.55R, LDO -0.55R, AXS -0.46R | best: ZK 1.71R, AERO 1.75R, PYTH 2.65R
 
 ## System
-- CoinGecko 4896/10000 used, month-end projection 9980 (100%), throttle level 1 | by script {'scan': 1602, 'check_liquidity': 226, 'breakout_check': 3028, 'counterfactual_check': 40}
+- CoinGecko 4952/10000 used, month-end projection 10066 (101%), throttle level 2 | by script {'scan': 1604, 'check_liquidity': 227, 'breakout_check': 3081, 'counterfactual_check': 40}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=47), H2 SUPPORTED (n=141)
-- radar-flags.json scan age: 10m
-- excluded from radar (pegged/tokenized equity): 39
+- radar-flags.json scan age: 21m
+- excluded from radar (pegged/tokenized equity): 38
