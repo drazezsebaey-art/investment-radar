@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-16 19:08 UTC
+# Radar digest - 2026-10-16 19:40 UTC
 
 ## Market
-- BTC scenario **A** | price 81430 | wk close 83902 vs 82800 | 50W 77187 (5.50%) | 29m old
+- BTC scenario **A** | price 81430 | wk close 83902 vs 82800 | 50W 77187 (5.50%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 57.22% | ETH/BTC 0.02969 | breadth7d 42% | stables 30d 0.77%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.02pt | 7d 0.19pt | n=111
 - Gold: PAXG 1m -2.63% | real10y 2.84 (22bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -19,26 +19,28 @@
 - INJ: **ONGOING** | +103% impulse, retr 0.17 | OI dd 0% | fund 0.0100 | hold False | inval 7.06300 | OB 6.41500-6.78300
 
 ## Pre-pump candidates
-- HYPE: [A+E] 7d -7.1%
+- UB: [C+E] 7d -10.6%
+- HYPE: [A+E] 7d -7.0%
 - XRP: [A+E] 7d -6.9%
-- CRO: [A+E] 7d -6.4%
+- ADA: [A+E] 7d -6.8%
+- LTC: [A+E] 7d -6.7%
+- CRO: [A+E] 7d -6.7%
+- ZEC: [A+E] 7d -6.5%
 - SOL: [A+E] 7d -6.3%
-- LTC: [A+E] 7d -6.3%
-- ADA: [A+E] 7d -6.2%
-- ZEC: [A+E] 7d -6.2%
-- SUI: [A+E] 7d -5.9%
 
 ## ETF pipeline (new this run)
-- zcash: other - Zcash ETF posts 14.76 million USD outflow: What it means for the Zcash price - ad-hoc-news
+- solana NEW: other - Solana rebounds to $105.4 despite nine days of U.S. spot ETF outflows totaling $9.8M - Plu
+- ripple NEW: other - XRP ETF Inflows – Bitcoin Funds Bleed -Can XRP Reclaim $1.40? - InvestingHaven
+- injective-protocol NEW: other - Injective (INJ) Surges 4.52% on USDC CCTP Route, ETF News - CoinMarketCap
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc 0.20% | topPos 0.94 | taker 0.94
+- ETH: LONG_FLUSH_24H | OI/mc 0.58% | topPos 0.89 | taker 0.99
 - SOL: LONG_FLUSH_24H | OI/mc 0.58% | topPos 0.89 | taker 0.91
-- AVAX: LONG_FLUSH_24H | OI/mc 0.41% | topPos 0.94 | taker 0.87
-- XRP: LONG_FLUSH_24H | OI/mc 0.12% | topPos 0.87 | taker 0.97
+- AVAX: LONG_FLUSH_24H | OI/mc 0.40% | topPos 0.94 | taker 0.85
+- XRP: LONG_FLUSH_24H | OI/mc 0.13% | topPos 0.88 | taker 0.98
 - SUI: LONG_FLUSH_24H | OI/mc 0.93% | topPos 0.81 | taker 0.98
-- SEI: LONG_FLUSH_24H | OI/mc 0.72% | topPos 0.88 | taker 1.01
-- TAO: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.83% | topPos 0.94 | taker 0.83
+- SEI: LONG_FLUSH_24H | OI/mc 0.71% | topPos 0.87 | taker 0.99
+- TAO: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.82% | topPos 0.94 | taker 0.83
 - WLD: LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 0.96
 
 ## Revenue / buyback flags
@@ -50,12 +52,12 @@
 - (13 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 29 | mean 0.7% (0.10R) | in profit 12 | older than 7d 23
-- worst: HBAR -0.76R, LDO -0.69R, NEO -0.58R | best: AERO 1.24R, PYTH 1.42R, TIA 1.86R
+- open 29 | mean 1.5% (0.15R) | in profit 12 | older than 7d 23
+- worst: HBAR -0.74R, LDO -0.62R, NEO -0.54R | best: AERO 1.31R, PYTH 1.51R, TIA 1.90R
 
 ## System
-- CoinGecko 5110/10000 used, month-end projection 10031 (100%), throttle level 2 | by script {'scan': 1656, 'check_liquidity': 237, 'breakout_check': 3175, 'counterfactual_check': 42}
+- CoinGecko 5112/10000 used, month-end projection 10035 (100%), throttle level 2 | by script {'scan': 1658, 'check_liquidity': 237, 'breakout_check': 3175, 'counterfactual_check': 42}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=48), H2 SUPPORTED (n=148)
-- radar-flags.json scan age: 8m
+- radar-flags.json scan age: 10m
 - excluded from radar (pegged/tokenized equity): 39
