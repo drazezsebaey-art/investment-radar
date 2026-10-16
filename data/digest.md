@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-16 02:40 UTC
+# Radar digest - 2026-10-16 03:08 UTC
 
 ## Market
-- BTC scenario **A** | price 82207 | wk close 83902 vs 82800 | 50W 77187 (6.50%) | 1m old
+- BTC scenario **A** | price 82207 | wk close 83902 vs 82800 | 50W 77187 (6.50%) | 29m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.18% | ETH/BTC 0.02973 | breadth7d 36% | stables 30d 0.75%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.17pt | 7d 0.36pt | n=107
 - Gold: PAXG 1m -2.50% | real10y 2.84 (22bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -19,14 +19,7 @@
 - ZEC: **ONGOING** | +115% impulse, retr 0.52 | OI dd 45% | fund 0.0100 | hold True | inval 1073.76000 | OB 985.40000-1050.48000
 
 ## Pre-pump candidates
-- SEI: [A+E] 7d -5.2%
-- XRP: [A+E] 7d -4.1%
-- LTC: [A+E] 7d -3.9%
-- CRO: [A+E] 7d -3.9%
-- SOL: [A+E] 7d -3.9%
-- HYPE: [A+E] 7d -3.5%
-- ADA: [A+E] 7d -1.3%
-- SUI: [A+E] 7d -1.0%
+- ZRO: [B+C] 7d 10.0%
 
 ## ETF pipeline (new this run)
 - hyperliquid NEW: launch - Zcash, Hyperliquid or Remittix: Best Altcoin to Buy as the WINK ETF Filing Meets HYPE Buyb
@@ -53,12 +46,12 @@
 - (14 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 27 | mean 3.0% (0.29R) | in profit 13 | older than 7d 23
-- worst: LDO -0.59R, HBAR -0.58R, NEO -0.50R | best: NEAR 1.71R, STX 2.01R, PYTH 2.55R
+- open 27 | mean 2.9% (0.28R) | in profit 12 | older than 7d 23
+- worst: LDO -0.60R, HBAR -0.58R, NEO -0.50R | best: AERO 1.76R, STX 1.82R, PYTH 2.57R
 
 ## System
-- CoinGecko 4874/10000 used, month-end projection 10017 (100%), throttle level 2 | by script {'scan': 1582, 'check_liquidity': 224, 'breakout_check': 3028, 'counterfactual_check': 40}
+- CoinGecko 4876/10000 used, month-end projection 9994 (100%), throttle level 1 | by script {'scan': 1584, 'check_liquidity': 224, 'breakout_check': 3028, 'counterfactual_check': 40}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=47), H2 SUPPORTED (n=141)
-- radar-flags.json scan age: 10m
+- radar-flags.json scan age: 7m
 - excluded from radar (pegged/tokenized equity): 39
