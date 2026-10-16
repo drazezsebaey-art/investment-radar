@@ -1,4 +1,4 @@
-# Radar digest - 2026-10-16 07:40 UTC
+# Radar digest - 2026-10-16 08:08 UTC
 
 ## Market
 - BTC scenario **A** | price 82089 | wk close 83902 vs 82800 | 50W 77187 (6.35%) | 1h old
@@ -19,7 +19,14 @@
 - INJ: **ONGOING** | +102% impulse, retr 0.01 | OI dd 33% | fund 0.0100 | hold False | inval 6.99400 | OB 6.41500-6.78300
 
 ## Pre-pump candidates
-- none
+- UB: [C+E] 7d -10.9%
+- HYPE: [A+E] 7d -4.9%
+- LTC: [A+E] 7d -4.7%
+- SEI: [A+E] 7d -4.6%
+- XRP: [A+E] 7d -4.3%
+- SOL: [A+E] 7d -3.9%
+- CRO: [A+E] 7d -3.7%
+- ADA: [A+E] 7d -2.7%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - XRP and Solana Added to Major U.S. Crypto ETF as SEC Opens Floodgate - CoinMarketCap
@@ -50,12 +57,12 @@
 - (14 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 30 | mean 4.7% (0.38R) | in profit 15 | older than 7d 23
-- worst: HBAR -0.53R, NEO -0.44R, LDO -0.44R | best: TIA 1.81R, AERO 1.93R, PYTH 2.65R
+- open 30 | mean 4.6% (0.36R) | in profit 16 | older than 7d 23
+- worst: HBAR -0.54R, AXS -0.44R, NEO -0.44R | best: TIA 1.76R, AERO 2.00R, PYTH 2.51R
 
 ## System
-- CoinGecko 4961/10000 used, month-end projection 10057 (101%), throttle level 2 | by script {'scan': 1610, 'check_liquidity': 230, 'breakout_check': 3081, 'counterfactual_check': 40}
+- CoinGecko 4963/10000 used, month-end projection 10034 (100%), throttle level 2 | by script {'scan': 1612, 'check_liquidity': 230, 'breakout_check': 3081, 'counterfactual_check': 40}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=48), H2 SUPPORTED (n=142)
-- radar-flags.json scan age: 10m
+- radar-flags.json scan age: 8m
 - excluded from radar (pegged/tokenized equity): 39
