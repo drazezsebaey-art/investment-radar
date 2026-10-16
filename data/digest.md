@@ -1,10 +1,10 @@
-# Radar digest - 2026-10-16 15:40 UTC
+# Radar digest - 2026-10-16 16:08 UTC
 
 ## Market
 - BTC scenario **A** | price 82387 | wk close 83902 vs 82800 | 50W 77187 (6.74%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.10% | ETH/BTC 0.03007 | breadth7d 50% | stables 30d 0.76%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.15pt | 7d 0.23pt | n=110
-- Gold: PAXG 1m -2.46% | real10y 2.84 (22bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
+- Gold: PAXG 1m -2.63% | real10y 2.84 (22bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
 - 10y 1w: -8bp = real -7 + breakeven -4 -> **SMALL_MOVE**
 - 10y 1m: 19bp = real 22 + breakeven -1 -> **REAL_YIELD_DRIVEN**
 
@@ -22,11 +22,9 @@
 - HYPE: [A+E] 7d -5.5%
 - LTC: [A+E] 7d -5.0%
 - ADA: [A+E] 7d -3.5%
-- SUI: [A+E] 7d -1.1%
-- SEI: [A+E] 7d 0.7%
-- AKT: [C+E] 7d 1.8%
+- SUI: [A+E] 7d -3.4%
+- SEI: [A+E] 7d -1.6%
 - APT: [C+E] 7d 8.6%
-- FIL: [C+E] 7d 9.0%
 
 ## ETF pipeline (new this run)
 - injective-protocol NEW: filing - Injective's INJ token jumps 27% amid ETF filing news and supply contraction. - Pluang
@@ -52,12 +50,12 @@
 - (13 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 30 | mean 2.8% (0.22R) | in profit 14 | older than 7d 23
-- worst: PEPE -0.71R, PLUME -0.64R, HBAR -0.63R | best: STX 1.41R, PYTH 1.74R, TIA 2.18R
+- open 30 | mean 2.2% (0.17R) | in profit 14 | older than 7d 23
+- worst: PLUME -0.76R, PEPE -0.71R, HBAR -0.65R | best: AERO 1.36R, PYTH 1.74R, TIA 2.15R
 
 ## System
-- CoinGecko 5049/10000 used, month-end projection 10017 (100%), throttle level 2 | by script {'scan': 1642, 'check_liquidity': 234, 'breakout_check': 3133, 'counterfactual_check': 40}
+- CoinGecko 5054/10000 used, month-end projection 10000 (100%), throttle level 1 | by script {'scan': 1644, 'check_liquidity': 235, 'breakout_check': 3133, 'counterfactual_check': 42}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=48), H2 SUPPORTED (n=144)
-- radar-flags.json scan age: 10m
-- excluded from radar (pegged/tokenized equity): 39
+- radar-flags.json scan age: 7m
+- excluded from radar (pegged/tokenized equity): 40
