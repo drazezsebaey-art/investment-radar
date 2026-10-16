@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-16 17:08 UTC
+# Radar digest - 2026-10-16 17:40 UTC
 
 ## Market
-- BTC scenario **A** | price 81607 | wk close 83902 vs 82800 | 50W 77187 (5.73%) | 29m old
+- BTC scenario **A** | price 81607 | wk close 83902 vs 82800 | 50W 77187 (5.73%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.10% | ETH/BTC 0.03007 | breadth7d 50% | stables 30d 0.76%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.15pt | 7d 0.23pt | n=110
 - Gold: PAXG 1m -2.63% | real10y 2.84 (22bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -19,29 +19,24 @@
 - AVAX: **ONGOING** | +69% impulse, retr 0.38 | OI dd 27% | fund 0.0100 | hold False | inval 9.33700 | OB 7.17400-7.36200
 
 ## Pre-pump candidates
-- HYPE: [A+E] 7d -7.8%
-- ADA: [A+E] 7d -5.5%
-- LTC: [A+E] 7d -5.3%
+- HYPE: [A+E] 7d -7.1%
+- LTC: [A+E] 7d -6.0%
+- ADA: [A+E] 7d -5.4%
 - SUI: [A+E] 7d -3.8%
 - SEI: [A+E] 7d -1.8%
-- NEAR: [A+E] 7d 6.5%
-- APT: [C+E] 7d 6.9%
-- FIL: [C+E] 7d 8.9%
 
 ## ETF pipeline (new this run)
-- injective-protocol NEW: filing - Injective's INJ token jumps 27% amid ETF filing news and supply contraction. - Pluang
-- hyperliquid NEW: other - Hyperliquid's open interest in stock and ETF ma... - Pluang
-- hyperliquid NEW: other - SPDR Gold Shares Tokenized ETF (Hyperliquid) Price (GLD/USD) Today | Live Price, Market Ca
+- zcash: other - Zcash ETF posts 14.76 million USD outflow: What it means for the Zcash price - ad-hoc-news
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc -% | topPos 0.95 | taker 0.95
-- ETH: LONG_FLUSH_24H | OI/mc 0.58% | topPos 0.91 | taker 1.00
-- SOL: LONG_FLUSH_24H | OI/mc -% | topPos 0.89 | taker 0.90
+- SOL: LONG_FLUSH_24H | OI/mc -% | topPos 0.89 | taker 0.92
 - NEAR: LONG_FLUSH_24H | OI/mc -% | topPos 1.05 | taker 0.89
-- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.93 | taker 0.88
-- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 0.97
-- TAO: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.94 | taker 0.85
-- ZEC: LONG_FLUSH_24H | OI/mc -% | topPos 1.06 | taker 0.98
+- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.95 | taker 0.86
+- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.99
+- SUI: LONG_FLUSH_24H | OI/mc 0.96% | topPos 0.81 | taker 1.01
+- SEI: LONG_FLUSH_24H | OI/mc 0.73% | topPos 0.87 | taker 1.02
+- TAO: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.94 | taker 0.83
+- ZEC: LONG_FLUSH_24H | OI/mc -% | topPos 1.04 | taker 0.97
 
 ## Revenue / buyback flags
 - ore: REVENUE_ACCELERATING
@@ -52,12 +47,12 @@
 - (13 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 30 | mean 1.6% (0.13R) | in profit 12 | older than 7d 23
-- worst: PEPE -0.81R, PLUME -0.78R, HBAR -0.70R | best: AERO 1.28R, PYTH 1.71R, TIA 1.98R
+- open 28 | mean 0.6% (0.10R) | in profit 12 | older than 7d 23
+- worst: HBAR -0.76R, LDO -0.69R, NEO -0.58R | best: AERO 1.20R, PYTH 1.47R, TIA 1.86R
 
 ## System
-- CoinGecko 5059/10000 used, month-end projection 9984 (100%), throttle level 1 | by script {'scan': 1648, 'check_liquidity': 236, 'breakout_check': 3133, 'counterfactual_check': 42}
+- CoinGecko 5062/10000 used, month-end projection 9990 (100%), throttle level 1 | by script {'scan': 1650, 'check_liquidity': 237, 'breakout_check': 3133, 'counterfactual_check': 42}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=48), H2 SUPPORTED (n=147)
-- radar-flags.json scan age: 8m
+- radar-flags.json scan age: 10m
 - excluded from radar (pegged/tokenized equity): 39
