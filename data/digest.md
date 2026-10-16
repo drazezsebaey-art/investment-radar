@@ -1,10 +1,10 @@
-# Radar digest - 2026-10-16 03:41 UTC
+# Radar digest - 2026-10-16 04:07 UTC
 
 ## Market
 - BTC scenario **A** | price 82207 | wk close 83902 vs 82800 | 50W 77187 (6.50%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.18% | ETH/BTC 0.02973 | breadth7d 36% | stables 30d 0.75%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.17pt | 7d 0.36pt | n=107
-- Gold: PAXG 1m -2.50% | real10y 2.84 (22bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
+- Gold: PAXG 1m -2.19% | real10y 2.84 (22bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
 - 10y 1w: -8bp = real -7 + breakeven -4 -> **SMALL_MOVE**
 - 10y 1m: 19bp = real 22 + breakeven -1 -> **REAL_YIELD_DRIVEN**
 
@@ -19,7 +19,7 @@
 - ZEC: **ONGOING** | +115% impulse, retr 0.52 | OI dd 45% | fund 0.0100 | hold True | inval 1073.76000 | OB 985.40000-1050.48000
 
 ## Pre-pump candidates
-- ZRO: [B+C] 7d 10.0%
+- VVV: [C+E] 7d 8.6%
 
 ## ETF pipeline (new this run)
 - solana NEW: filing - Best Crypto Presale 2026 Hunt: Solana's October 21 Upgrade and Zcash's ETF Filing Meet Rem
@@ -45,12 +45,12 @@
 - (14 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 27 | mean 3.0% (0.28R) | in profit 12 | older than 7d 23
-- worst: LDO -0.61R, HBAR -0.59R, NEO -0.50R | best: AERO 1.69R, STX 1.77R, PYTH 2.54R
+- open 27 | mean 2.9% (0.28R) | in profit 13 | older than 7d 23
+- worst: HBAR -0.61R, LDO -0.61R, NEO -0.50R | best: STX 1.61R, AERO 1.69R, PYTH 2.60R
 
 ## System
-- CoinGecko 4878/10000 used, month-end projection 9998 (100%), throttle level 1 | by script {'scan': 1586, 'check_liquidity': 224, 'breakout_check': 3028, 'counterfactual_check': 40}
+- CoinGecko 4881/10000 used, month-end projection 9977 (100%), throttle level 1 | by script {'scan': 1588, 'check_liquidity': 225, 'breakout_check': 3028, 'counterfactual_check': 40}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=47), H2 SUPPORTED (n=141)
-- radar-flags.json scan age: 11m
+- radar-flags.json scan age: 7m
 - excluded from radar (pegged/tokenized equity): 39
