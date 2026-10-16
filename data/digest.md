@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-16 13:08 UTC
+# Radar digest - 2026-10-16 13:40 UTC
 
 ## Market
-- BTC scenario **A** | price 82262 | wk close 83902 vs 82800 | 50W 77187 (6.57%) | 29m old
+- BTC scenario **A** | price 82262 | wk close 83902 vs 82800 | 50W 77187 (6.57%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.08% | ETH/BTC 0.02994 | breadth7d 50% | stables 30d 0.77%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.02pt | 7d 0.27pt | n=109
 - Gold: PAXG 1m -2.46% | real10y 2.84 (22bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -20,26 +20,29 @@
 
 ## Pre-pump candidates
 - SEI: [A+B+E] 7d -1.4%
+- NEAR: [A+C+E] 7d 7.3%
+- HYPE: [A+E] 7d -5.6%
+- LTC: [A+E] 7d -5.1%
 - SOL: [A+E] 7d -5.1%
 - XRP: [A+E] 7d -4.7%
-- UB: [C+E] 7d -4.4%
-- HYPE: [A+E] 7d -4.4%
-- LTC: [A+E] 7d -4.1%
-- SUI: [A+E] 7d -2.8%
-- CRO: [A+E] 7d -2.7%
+- ADA: [A+E] 7d -4.5%
+- CRO: [A+E] 7d -3.7%
 
 ## ETF pipeline (new this run)
-- zcash: other - Zcash News Today: ZEC Gains Roughly 9% With ETF Interest in Focus as Remittix Approaches I
+- solana NEW: other - Solana Holds $106 as RWA Jumps 6x: Why Are ETF Investors Selling? - Coin Gabbar
+- near: other - Bitwise NEAR ETF (NRR) stock price, news, quote and history - Yahoo Finance UK
+- zcash: other - Zcash Price Prediction: Fresh ETF Money Fails to Stop the Slide as AlphaPepe Offers Entry 
+- chainlink: other - Chainlink trading stays rangebound amid institutional ETF inflows but falling asset values
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc 0.20% | topPos 0.96 | taker 1.05
-- ETH: LONG_FLUSH_24H | OI/mc 0.57% | topPos 0.93 | taker 1.05
-- SOL: SHORT_SQUEEZE_24H | OI/mc 0.58% | topPos 0.90 | taker 1.07
-- AVAX: SHORT_SQUEEZE_24H | OI/mc 0.38% | topPos 0.91 | taker 0.98
-- SEI: SHORT_SQUEEZE_FUEL, SHORT_SQUEEZE_24H | OI/mc 0.71% | topPos 0.88 | taker 0.94
-- WLD: SHORT_SQUEEZE_24H | OI/mc 1.91% | topPos 0.90 | taker 1.01
-- ADA: AGGRESSIVE_BUYING | OI/mc 0.40% | topPos 0.89 | taker 1.16
-- XLM: LONG_FLUSH_24H | OI/mc 0.17% | topPos 0.98 | taker 1.07
+- BTC: LONG_FLUSH_24H | OI/mc 0.20% | topPos 0.96 | taker 1.04
+- ETH: LONG_FLUSH_24H | OI/mc 0.58% | topPos 0.93 | taker 1.05
+- AVAX: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.92 | taker 0.95
+- XRP: LONG_FLUSH_24H | OI/mc 0.12% | topPos 0.86 | taker 1.03
+- SEI: SHORT_SQUEEZE_FUEL, SHORT_SQUEEZE_24H | OI/mc 0.71% | topPos 0.88 | taker 0.96
+- ADA: LONG_FLUSH_24H | OI/mc 0.40% | topPos 0.88 | taker 1.15
+- XLM: LONG_FLUSH_24H | OI/mc 0.17% | topPos 0.98 | taker 1.09
+- BCH: SHORT_SQUEEZE_FUEL | OI/mc 0.46% | topPos 0.81 | taker 1.04
 
 ## Revenue / buyback flags
 - ore: REVENUE_ACCELERATING
@@ -50,12 +53,12 @@
 - (13 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 30 | mean 4.3% (0.34R) | in profit 15 | older than 7d 23
-- worst: HBAR -0.51R, LDO -0.49R, NEO -0.46R | best: AERO 1.60R, PYTH 1.95R, TIA 2.15R
+- open 30 | mean 4.4% (0.34R) | in profit 15 | older than 7d 23
+- worst: HBAR -0.51R, LDO -0.50R, NEO -0.46R | best: STX 1.60R, PYTH 1.91R, TIA 2.31R
 
 ## System
-- CoinGecko 5039/10000 used, month-end projection 10051 (100%), throttle level 2 | by script {'scan': 1632, 'check_liquidity': 234, 'breakout_check': 3133, 'counterfactual_check': 40}
+- CoinGecko 5041/10000 used, month-end projection 10055 (101%), throttle level 2 | by script {'scan': 1634, 'check_liquidity': 234, 'breakout_check': 3133, 'counterfactual_check': 40}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=48), H2 SUPPORTED (n=142)
-- radar-flags.json scan age: 7m
+- radar-flags.json scan age: 10m
 - excluded from radar (pegged/tokenized equity): 39
