@@ -1,4 +1,4 @@
-# Radar digest - 2026-10-16 19:40 UTC
+# Radar digest - 2026-10-16 20:07 UTC
 
 ## Market
 - BTC scenario **A** | price 81430 | wk close 83902 vs 82800 | 50W 77187 (5.50%) | 1h old
@@ -21,12 +21,12 @@
 ## Pre-pump candidates
 - UB: [C+E] 7d -10.6%
 - HYPE: [A+E] 7d -7.0%
-- XRP: [A+E] 7d -6.9%
 - ADA: [A+E] 7d -6.8%
 - LTC: [A+E] 7d -6.7%
 - CRO: [A+E] 7d -6.7%
 - ZEC: [A+E] 7d -6.5%
-- SOL: [A+E] 7d -6.3%
+- XRP: [A+E] 7d -6.4%
+- SOL: [A+E] 7d -5.3%
 
 ## ETF pipeline (new this run)
 - solana NEW: other - Solana rebounds to $105.4 despite nine days of U.S. spot ETF outflows totaling $9.8M - Plu
@@ -52,12 +52,12 @@
 - (13 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 29 | mean 1.5% (0.15R) | in profit 12 | older than 7d 23
-- worst: HBAR -0.74R, LDO -0.62R, NEO -0.54R | best: AERO 1.31R, PYTH 1.51R, TIA 1.90R
+- open 29 | mean 1.6% (0.16R) | in profit 12 | older than 7d 23
+- worst: HBAR -0.73R, LDO -0.62R, NEO -0.54R | best: AERO 1.33R, PYTH 1.48R, TIA 1.96R
 
 ## System
-- CoinGecko 5112/10000 used, month-end projection 10035 (100%), throttle level 2 | by script {'scan': 1658, 'check_liquidity': 237, 'breakout_check': 3175, 'counterfactual_check': 42}
+- CoinGecko 5114/10000 used, month-end projection 10013 (100%), throttle level 2 | by script {'scan': 1660, 'check_liquidity': 237, 'breakout_check': 3175, 'counterfactual_check': 42}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=48), H2 SUPPORTED (n=148)
-- radar-flags.json scan age: 10m
+- radar-flags.json scan age: 7m
 - excluded from radar (pegged/tokenized equity): 39
