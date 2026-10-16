@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-16 03:08 UTC
+# Radar digest - 2026-10-16 03:41 UTC
 
 ## Market
-- BTC scenario **A** | price 82207 | wk close 83902 vs 82800 | 50W 77187 (6.50%) | 29m old
+- BTC scenario **A** | price 82207 | wk close 83902 vs 82800 | 50W 77187 (6.50%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.18% | ETH/BTC 0.02973 | breadth7d 36% | stables 30d 0.75%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.17pt | 7d 0.36pt | n=107
 - Gold: PAXG 1m -2.50% | real10y 2.84 (22bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -22,20 +22,19 @@
 - ZRO: [B+C] 7d 10.0%
 
 ## ETF pipeline (new this run)
-- hyperliquid NEW: launch - Zcash, Hyperliquid or Remittix: Best Altcoin to Buy as the WINK ETF Filing Meets HYPE Buyb
-- zcash: launch - Zcash, Hyperliquid or Remittix: Best Altcoin to Buy as the WINK ETF Filing Meets HYPE Buyb
-- zcash: launch - Zcash, Hyperliquid or Remittix: Best Altcoin to Buy as the WINK ETF Filing Meets HYPE Buyb
-- chainlink: other - Chainlink Price Prediction: LINK ETF Pulls In $10M as Price Slides, While Pepeto's $0 Brid
+- solana NEW: filing - Best Crypto Presale 2026 Hunt: Solana's October 21 Upgrade and Zcash's ETF Filing Meet Rem
+- zcash: filing - Best Crypto Presale 2026 Hunt: Solana's October 21 Upgrade and Zcash's ETF Filing Meet Rem
+- stellar: other - Grayscale Stellar Lumens Trust Sells 73,400 Shares in $1.14 Million Private Placement - Bi
 
 ## Derivatives flags (OKX)
-- ETH: LONG_FLUSH_24H | OI/mc 0.57% | topPos 0.91 | taker 0.96
-- SOL: SHORT_SQUEEZE_24H | OI/mc 0.58% | topPos 0.90 | taker 0.99
-- NEAR: SHORT_SQUEEZE_24H | OI/mc 0.99% | topPos 1.04 | taker 0.97
-- AVAX: SHORT_SQUEEZE_24H | OI/mc 0.39% | topPos 0.94 | taker 0.98
-- SEI: SHORT_SQUEEZE_24H | OI/mc 0.72% | topPos 0.96 | taker 0.99
-- ADA: LONG_FLUSH_24H | OI/mc 0.41% | topPos 0.89 | taker 0.96
-- XLM: LONG_FLUSH_24H | OI/mc 0.17% | topPos 1.02 | taker 0.94
-- BCH: LONG_FLUSH_24H | OI/mc 0.48% | topPos 0.83 | taker 0.98
+- ETH: LONG_FLUSH_24H | OI/mc 0.58% | topPos 0.91 | taker 1.03
+- AVAX: SHORT_SQUEEZE_24H | OI/mc 0.39% | topPos 0.94 | taker 1.02
+- SEI: SHORT_SQUEEZE_24H | OI/mc 0.73% | topPos 0.96 | taker 0.95
+- ZEC: LONG_FLUSH_24H | OI/mc -% | topPos 1.10 | taker 1.00
+- ADA: LONG_FLUSH_24H | OI/mc 0.41% | topPos 0.90 | taker 1.04
+- XLM: LONG_FLUSH_24H | OI/mc 0.17% | topPos 1.02 | taker 0.95
+- BCH: LONG_FLUSH_24H | OI/mc 0.48% | topPos 0.83 | taker 1.07
+- ONDO: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.73 | taker 0.94
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -46,12 +45,12 @@
 - (14 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 27 | mean 2.9% (0.28R) | in profit 12 | older than 7d 23
-- worst: LDO -0.60R, HBAR -0.58R, NEO -0.50R | best: AERO 1.76R, STX 1.82R, PYTH 2.57R
+- open 27 | mean 3.0% (0.28R) | in profit 12 | older than 7d 23
+- worst: LDO -0.61R, HBAR -0.59R, NEO -0.50R | best: AERO 1.69R, STX 1.77R, PYTH 2.54R
 
 ## System
-- CoinGecko 4876/10000 used, month-end projection 9994 (100%), throttle level 1 | by script {'scan': 1584, 'check_liquidity': 224, 'breakout_check': 3028, 'counterfactual_check': 40}
+- CoinGecko 4878/10000 used, month-end projection 9998 (100%), throttle level 1 | by script {'scan': 1586, 'check_liquidity': 224, 'breakout_check': 3028, 'counterfactual_check': 40}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=47), H2 SUPPORTED (n=141)
-- radar-flags.json scan age: 7m
+- radar-flags.json scan age: 11m
 - excluded from radar (pegged/tokenized equity): 39
