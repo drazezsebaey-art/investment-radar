@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-16 14:41 UTC
+# Radar digest - 2026-10-16 15:07 UTC
 
 ## Market
-- BTC scenario **A** | price 82387 | wk close 83902 vs 82800 | 50W 77187 (6.74%) | 2m old
+- BTC scenario **A** | price 82387 | wk close 83902 vs 82800 | 50W 77187 (6.74%) | 28m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.10% | ETH/BTC 0.03007 | breadth7d 50% | stables 30d 0.76%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.15pt | 7d 0.23pt | n=110
 - Gold: PAXG 1m -2.46% | real10y 2.84 (22bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -19,14 +19,14 @@
 - ZEC: **ONGOING** | +115% impulse, retr 0.52 | OI dd 45% | fund 0.0100 | hold False | inval 1073.76000 | OB 985.40000-1050.48000
 
 ## Pre-pump candidates
-- SEI: [A+B+C+E] 7d 0.3%
-- NEAR: [A+C+E] 7d 9.4%
+- SEI: [A+B+C+E] 7d 0.7%
 - HASH: [C+E] 7d -5.8%
 - HYPE: [A+E] 7d -5.2%
 - LTC: [A+E] 7d -4.8%
-- SOL: [A+E] 7d -4.3%
-- XRP: [A+E] 7d -4.0%
 - ADA: [A+E] 7d -3.8%
+- XRP: [A+E] 7d -3.6%
+- SOL: [A+E] 7d -3.5%
+- CRO: [A+E] 7d -3.5%
 
 ## ETF pipeline (new this run)
 - solana NEW: other - Solana Holds $106 as RWA Jumps 6x: Why Are ETF Investors Selling? - Coin Gabbar
@@ -53,12 +53,12 @@
 - (13 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 30 | mean 4.7% (0.36R) | in profit 15 | older than 7d 23
-- worst: HBAR -0.50R, LDO -0.50R, AXS -0.45R | best: STX 1.69R, PYTH 2.02R, TIA 2.29R
+- open 30 | mean 4.2% (0.33R) | in profit 15 | older than 7d 23
+- worst: HBAR -0.56R, LDO -0.51R, AXS -0.46R | best: STX 1.63R, PYTH 1.99R, TIA 2.28R
 
 ## System
-- CoinGecko 5045/10000 used, month-end projection 10036 (100%), throttle level 2 | by script {'scan': 1638, 'check_liquidity': 234, 'breakout_check': 3133, 'counterfactual_check': 40}
+- CoinGecko 5047/10000 used, month-end projection 10013 (100%), throttle level 2 | by script {'scan': 1640, 'check_liquidity': 234, 'breakout_check': 3133, 'counterfactual_check': 40}
 - Trials guard: OK (0 untracked)
-- Hypotheses: H1 NOT_SUPPORTED (n=48), H2 SUPPORTED (n=142)
-- radar-flags.json scan age: 11m
+- Hypotheses: H1 NOT_SUPPORTED (n=48), H2 SUPPORTED (n=143)
+- radar-flags.json scan age: 7m
 - excluded from radar (pegged/tokenized equity): 39
