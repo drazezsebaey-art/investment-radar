@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-17 10:40 UTC
+# Radar digest - 2026-10-17 11:07 UTC
 
 ## Market
-- BTC scenario **A** | price 81645 | wk close 83902 vs 82800 | 50W 77187 (5.78%) | 1m old
+- BTC scenario **A** | price 81645 | wk close 83902 vs 82800 | 50W 77187 (5.78%) | 28m old
 - Alts: **BTC_LED** [-] | BTC.D 57.16% | ETH/BTC 0.02985 | breadth7d 32% | stables 30d 0.60%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.04pt | 7d 0.32pt | n=115
 - Gold: PAXG 1m -2.68% | real10y 2.78 (10bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 29
@@ -20,7 +20,7 @@
 
 ## Pre-pump candidates
 - SOL: [A+D] 7d -4.6%
-- NEAR: [A+E] 7d -1.9%
+- NEAR: [A+E] 7d -2.2%
 
 ## ETF pipeline (new this run)
 - dogecoin NEW: other - Dogecoin News: DOGE Gains 3.9% After Bitwise Shuts Its ETF, Yet Pepeto Eyes a Pepe Repeat 
@@ -45,12 +45,12 @@
 - (13 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 30 | mean 2.0% (0.17R) | in profit 13 | older than 7d 23
-- worst: HBAR -0.70R, LDO -0.63R, ADA -0.54R | best: PYTH 1.53R, AERO 1.54R, TIA 1.87R
+- open 30 | mean 2.1% (0.17R) | in profit 14 | older than 7d 23
+- worst: HBAR -0.69R, LDO -0.61R, ADA -0.53R | best: AERO 1.54R, PYTH 1.55R, TIA 1.80R
 
 ## System
-- CoinGecko 5298/10000 used, month-end projection 10004 (100%), throttle level 2 | by script {'scan': 1726, 'check_liquidity': 252, 'breakout_check': 3278, 'counterfactual_check': 42}
+- CoinGecko 5301/10000 used, month-end projection 9985 (100%), throttle level 1 | by script {'scan': 1728, 'check_liquidity': 253, 'breakout_check': 3278, 'counterfactual_check': 42}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=48), H2 SUPPORTED (n=148)
-- radar-flags.json scan age: 10m
-- excluded from radar (pegged/tokenized equity): 37
+- radar-flags.json scan age: 7m
+- excluded from radar (pegged/tokenized equity): 38
