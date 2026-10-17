@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-17 15:08 UTC
+# Radar digest - 2026-10-17 15:41 UTC
 
 ## Market
-- BTC scenario **A** | price 81584 | wk close 83902 vs 82800 | 50W 77187 (5.70%) | 29m old
+- BTC scenario **A** | price 81584 | wk close 83902 vs 82800 | 50W 77187 (5.70%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 57.24% | ETH/BTC 0.02976 | breadth7d 27% | stables 30d 0.60%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.01pt | 7d 0.36pt | n=116
 - Gold: PAXG 1m -2.68% | real10y 2.78 (10bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 29
@@ -19,32 +19,25 @@
 - ZK: **ONGOING** | +124% impulse, retr 0.28 | OI dd 7% | fund 0.0042 | hold False | inval 0.01483 | OB 0.01483-0.01529
 
 ## Pre-pump candidates
-- SOL: [A+D+E] 7d -5.1%
-- SUI: [A+E] 7d -10.9%
-- XRP: [A+E] 7d -7.3%
-- SEI: [A+E] 7d -7.1%
-- LTC: [A+E] 7d -7.0%
-- HYPE: [A+E] 7d -6.7%
+- UB: [C+E] 7d -9.0%
 - NEAR: [A+E] 7d -6.4%
-- CRO: [A+E] 7d -6.0%
+- SOL: [A+D] 7d -5.1%
+- AKT: [C+E] 7d -2.0%
+- SENT: [C+E] 7d 5.2%
 
 ## ETF pipeline (new this run)
-- pepe NEW: other - Dogecoin News: DOGE Gains 3.9% After Bitwise Shuts Its ETF, Yet Pepeto Eyes a Pepe Repeat 
-- kucoin-shares NEW: other - Chainlink ETF Sees $10M Inflows Despite LINK Price Struggles - KuCoin
-- solana NEW: other - Leveraged Solana ETF Draws Fresh Cash as Rally Cools at the Edges - TipRanks
-- zcash: other - Zcash Price Prediction: ZEC Falls Near $1,150 With ETF Interest - openPR.com
-- zcash: other - Zcash (ZEC) Price Today: ZEC Drops 5% as ETF Demand Wavers. Dip or Drop - The Crypto Times
-- zcash: other - Zcash (ZEC) Price Today: ZEC Drops 5% as ETF Demand Wavers. Dip or Drop - The Crypto Times
+- ripple NEW: other - Leveraged XRP ETF Draws New Cash as Traders Chase Volatility Despite Sell Signal - TipRank
+- zcash: other - Zcash Drops 3.9% on Macro Shift, ETF Outflows, Long Liquidation - CoinMarketCap
 
 ## Derivatives flags (OKX)
-- SOL: AGGRESSIVE_SELLING | OI/mc 0.58% | topPos 0.89 | taker 0.84
-- AVAX: LONG_FLUSH_24H | OI/mc 0.40% | topPos 0.94 | taker 0.86
-- XRP: LONG_FLUSH_24H | OI/mc 0.13% | topPos 0.86 | taker 0.91
-- SUI: LONG_FLUSH_24H | OI/mc 0.96% | topPos 0.79 | taker 0.90
-- SEI: LONG_FLUSH_24H | OI/mc 0.69% | topPos 0.88 | taker 0.96
-- TAO: LONG_FLUSH_24H | OI/mc 0.80% | topPos 0.91 | taker 0.88
-- ZEC: LONG_FLUSH_24H | OI/mc 0.64% | topPos 1.02 | taker 0.98
-- WLD: LONG_FLUSH_24H | OI/mc 1.90% | topPos 0.91 | taker 0.89
+- ETH: LONG_FLUSH_24H | OI/mc 0.59% | topPos 0.89 | taker 0.99
+- SOL: AGGRESSIVE_SELLING | OI/mc 0.58% | topPos 0.89 | taker 0.85
+- AVAX: LONG_FLUSH_24H | OI/mc 0.40% | topPos 0.94 | taker 0.88
+- XRP: LONG_FLUSH_24H | OI/mc 0.13% | topPos 0.86 | taker 0.92
+- SUI: LONG_FLUSH_24H | OI/mc 0.97% | topPos 0.79 | taker 0.89
+- SEI: LONG_FLUSH_24H | OI/mc 0.70% | topPos 0.88 | taker 0.98
+- TAO: LONG_FLUSH_24H | OI/mc 0.81% | topPos 0.92 | taker 0.88
+- ZEC: LONG_FLUSH_24H | OI/mc 0.66% | topPos 1.01 | taker 0.99
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -56,12 +49,12 @@
 - (13 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 30 | mean 0.8% (0.07R) | in profit 13 | older than 7d 23
-- worst: LDO -0.72R, APT -0.70R, HBAR -0.69R | best: AERO 1.28R, PYTH 1.56R, TIA 1.74R
+- open 30 | mean 0.1% (0.01R) | in profit 12 | older than 7d 23
+- worst: APT -0.84R, LDO -0.75R, HBAR -0.72R | best: AERO 1.26R, PYTH 1.40R, TIA 1.67R
 
 ## System
-- CoinGecko 5370/10000 used, month-end projection 10013 (100%), throttle level 2 | by script {'scan': 1744, 'check_liquidity': 255, 'breakout_check': 3329, 'counterfactual_check': 42}
+- CoinGecko 5372/10000 used, month-end projection 10017 (100%), throttle level 2 | by script {'scan': 1746, 'check_liquidity': 255, 'breakout_check': 3329, 'counterfactual_check': 42}
 - Trials guard: OK (0 untracked)
-- Hypotheses: H1 NOT_SUPPORTED (n=48), H2 SUPPORTED (n=153)
-- radar-flags.json scan age: 8m
+- Hypotheses: H1 NOT_SUPPORTED (n=48), H2 SUPPORTED (n=154)
+- radar-flags.json scan age: 11m
 - excluded from radar (pegged/tokenized equity): 38
