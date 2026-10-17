@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-17 00:41 UTC
+# Radar digest - 2026-10-17 01:08 UTC
 
 ## Market
-- BTC scenario **A** | price 81632 | wk close 83902 vs 82800 | 50W 77187 (5.76%) | 1m old
+- BTC scenario **A** | price 81632 | wk close 83902 vs 82800 | 50W 77187 (5.76%) | 29m old
 - Alts: **BTC_LED** [-] | BTC.D 57.27% | ETH/BTC 0.02965 | breadth7d 46% | stables 30d 0.76%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.11pt | 7d 0.35pt | n=112
 - Gold: PAXG 1m -2.55% | real10y 2.78 (10bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -19,13 +19,13 @@
 - ZK: **ONGOING** | +124% impulse, retr 0.23 | OI dd 7% | fund -0.0130 | hold False | inval 0.01604 | OB 0.01483-0.01529
 
 ## Pre-pump candidates
-- ADA: [A+E] 7d -6.4%
+- ADA: [A+E] 7d -7.6%
+- CRO: [A+E] 7d -6.5%
+- XRP: [A+E] 7d -6.5%
 - LTC: [A+E] 7d -6.3%
-- XRP: [A+E] 7d -6.0%
-- ZEC: [A+E] 7d -5.3%
-- CRO: [A+E] 7d -5.2%
-- HYPE: [A+E] 7d -4.8%
-- SUI: [A+E] 7d -4.4%
+- SUI: [A+E] 7d -5.9%
+- HYPE: [A+E] 7d -5.1%
+- ZEC: [A+E] 7d -5.1%
 - SOL: [A+E] 7d -4.4%
 
 ## ETF pipeline (new this run)
@@ -51,12 +51,12 @@
 - (13 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 29 | mean 2.0% (0.18R) | in profit 12 | older than 7d 23
-- worst: HBAR -0.71R, LDO -0.62R, ADA -0.52R | best: AERO 1.32R, PYTH 1.72R, TIA 1.99R
+- open 29 | mean 1.9% (0.17R) | in profit 12 | older than 7d 23
+- worst: HBAR -0.70R, LDO -0.62R, ADA -0.51R | best: AERO 1.31R, PYTH 1.67R, TIA 2.00R
 
 ## System
-- CoinGecko 5189/10000 used, month-end projection 10054 (100%), throttle level 2 | by script {'scan': 1678, 'check_liquidity': 242, 'breakout_check': 3227, 'counterfactual_check': 42}
+- CoinGecko 5191/10000 used, month-end projection 10031 (100%), throttle level 2 | by script {'scan': 1680, 'check_liquidity': 242, 'breakout_check': 3227, 'counterfactual_check': 42}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=48), H2 SUPPORTED (n=148)
-- radar-flags.json scan age: 11m
+- radar-flags.json scan age: 8m
 - excluded from radar (pegged/tokenized equity): 38
