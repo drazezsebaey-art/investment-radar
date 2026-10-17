@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-17 02:40 UTC
+# Radar digest - 2026-10-17 03:08 UTC
 
 ## Market
-- BTC scenario **A** | price 81432 | wk close 83902 vs 82800 | 50W 77187 (5.50%) | 1m old
+- BTC scenario **A** | price 81432 | wk close 83902 vs 82800 | 50W 77187 (5.50%) | 30m old
 - Alts: **BTC_LED** [-] | BTC.D 57.21% | ETH/BTC 0.02971 | breadth7d 40% | stables 30d 0.62%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.01pt | 7d 0.30pt | n=113
 - Gold: PAXG 1m -2.55% | real10y 2.78 (10bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 34
@@ -19,14 +19,14 @@
 - ZK: **ONGOING** | +124% impulse, retr 0.25 | OI dd 7% | fund -0.0058 | hold False | inval 0.01604 | OB 0.01483-0.01529
 
 ## Pre-pump candidates
-- SEI: [A+C+E] 7d -4.0%
-- NEAR: [A+C+E] 7d 2.6%
 - ADA: [A+E] 7d -8.4%
 - CVX: [C+D] 7d -8.1%
-- XRP: [A+E] 7d -6.8%
-- SUI: [A+E] 7d -6.6%
+- SUI: [A+E] 7d -7.8%
+- XRP: [A+E] 7d -7.3%
 - CRO: [A+E] 7d -6.6%
 - LTC: [A+E] 7d -6.4%
+- ZEC: [A+E] 7d -5.3%
+- HYPE: [A+E] 7d -5.2%
 
 ## ETF pipeline (new this run)
 - dogecoin NEW: other - Bitwise to Close Dogecoin ETF Before Its First Anniversary - Decrypt
@@ -53,12 +53,12 @@
 - (13 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 29 | mean 2.2% (0.19R) | in profit 12 | older than 7d 23
-- worst: HBAR -0.66R, LDO -0.62R, ADA -0.52R | best: AERO 1.35R, PYTH 1.66R, TIA 2.18R
+- open 29 | mean 2.0% (0.17R) | in profit 12 | older than 7d 23
+- worst: HBAR -0.66R, LDO -0.63R, ADA -0.51R | best: AERO 1.35R, PYTH 1.63R, TIA 2.18R
 
 ## System
-- CoinGecko 5205/10000 used, month-end projection 10032 (100%), throttle level 2 | by script {'scan': 1694, 'check_liquidity': 242, 'breakout_check': 3227, 'counterfactual_check': 42}
+- CoinGecko 5207/10000 used, month-end projection 10010 (100%), throttle level 2 | by script {'scan': 1696, 'check_liquidity': 242, 'breakout_check': 3227, 'counterfactual_check': 42}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=48), H2 SUPPORTED (n=148)
-- radar-flags.json scan age: 10m
+- radar-flags.json scan age: 8m
 - excluded from radar (pegged/tokenized equity): 38
