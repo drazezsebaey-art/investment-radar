@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-17 05:07 UTC
+# Radar digest - 2026-10-17 05:41 UTC
 
 ## Market
-- BTC scenario **A** | price 81562 | wk close 83902 vs 82800 | 50W 77187 (5.67%) | 28m old
+- BTC scenario **A** | price 81562 | wk close 83902 vs 82800 | 50W 77187 (5.67%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 57.21% | ETH/BTC 0.02971 | breadth7d 40% | stables 30d 0.62%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.01pt | 7d 0.30pt | n=113
 - Gold: PAXG 1m -2.61% | real10y 2.78 (10bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 29
@@ -20,26 +20,27 @@
 
 ## Pre-pump candidates
 - SEI: [A+C+E] 7d -2.9%
-- NEAR: [A+C+E] 7d 2.3%
 - ADA: [A+E] 7d -10.4%
 - XRP: [A+E] 7d -6.8%
 - SUI: [A+E] 7d -6.4%
 - LTC: [A+E] 7d -5.9%
 - AR: [C+E] 7d -5.3%
 - HYPE: [A+E] 7d -5.0%
+- CRO: [A+E] 7d -5.0%
 
 ## ETF pipeline (new this run)
-- near: other - Bitwise NEAR ETF (NRR) stock price, news, quote and history - Yahoo Finance UK
+- ripple NEW: other - XRP News Today: $561M ETF Lead, but Why Is XRP Still Falling? - Coin Gabbar
+- ripple NEW: other - XRP ETF Inflows – Bitcoin Funds Bleed -Can XRP Reclaim $1.40? - InvestingHaven
 
 ## Derivatives flags (OKX)
-- SOL: LONG_FLUSH_24H | OI/mc 0.58% | topPos 0.89 | taker 0.92
-- AVAX: LONG_FLUSH_24H | OI/mc 0.40% | topPos 0.91 | taker 0.86
+- SOL: LONG_FLUSH_24H | OI/mc 0.58% | topPos 0.89 | taker 0.91
+- AVAX: LONG_FLUSH_24H | OI/mc 0.40% | topPos 0.92 | taker 0.86
 - XRP: LONG_FLUSH_24H | OI/mc 0.13% | topPos 0.87 | taker 1.03
-- SUI: LONG_FLUSH_24H | OI/mc 0.94% | topPos 0.81 | taker 1.00
-- SEI: LONG_FLUSH_24H | OI/mc 0.70% | topPos 0.88 | taker 1.01
-- TAO: LONG_FLUSH_24H | OI/mc 0.81% | topPos 0.93 | taker 0.87
-- ADA: LONG_FLUSH_24H | OI/mc 0.41% | topPos 0.88 | taker 1.00
-- LINK: LONG_FLUSH_24H | OI/mc -% | topPos 0.89 | taker 1.02
+- SUI: LONG_FLUSH_24H | OI/mc 0.95% | topPos 0.80 | taker 1.01
+- SEI: LONG_FLUSH_24H | OI/mc 0.71% | topPos 0.88 | taker 1.00
+- TAO: LONG_FLUSH_24H | OI/mc 0.81% | topPos 0.93 | taker 0.86
+- ADA: LONG_FLUSH_24H | OI/mc 0.41% | topPos 0.87 | taker 0.98
+- LINK: LONG_FLUSH_24H | OI/mc -% | topPos 0.89 | taker 0.97
 
 ## Revenue / buyback flags
 - ore: REVENUE_ACCELERATING
@@ -50,12 +51,12 @@
 - (13 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 29 | mean 2.9% (0.23R) | in profit 13 | older than 7d 23
-- worst: HBAR -0.67R, LDO -0.59R, ADA -0.50R | best: AERO 1.35R, PYTH 1.53R, TIA 2.69R
+- open 29 | mean 2.8% (0.22R) | in profit 12 | older than 7d 23
+- worst: HBAR -0.67R, LDO -0.60R, ADA -0.51R | best: AERO 1.41R, PYTH 1.52R, TIA 2.76R
 
 ## System
-- CoinGecko 5217/10000 used, month-end projection 9978 (100%), throttle level 1 | by script {'scan': 1704, 'check_liquidity': 244, 'breakout_check': 3227, 'counterfactual_check': 42}
+- CoinGecko 5220/10000 used, month-end projection 9984 (100%), throttle level 1 | by script {'scan': 1706, 'check_liquidity': 245, 'breakout_check': 3227, 'counterfactual_check': 42}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=48), H2 SUPPORTED (n=148)
-- radar-flags.json scan age: 7m
+- radar-flags.json scan age: 11m
 - excluded from radar (pegged/tokenized equity): 38
