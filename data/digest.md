@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-17 17:41 UTC
+# Radar digest - 2026-10-17 18:21 UTC
 
 ## Market
-- BTC scenario **A** | price 81266 | wk close 83902 vs 82800 | 50W 77187 (5.28%) | 1h old
+- BTC scenario **A** | price 81266 | wk close 83902 vs 82800 | 50W 77187 (5.28%) | 2h old
 - Alts: **BTC_LED** [-] | BTC.D 57.24% | ETH/BTC 0.02976 | breadth7d 27% | stables 30d 0.60%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.01pt | 7d 0.36pt | n=116
 - Gold: PAXG 1m 0.61% | real10y 2.78 (10bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 29
@@ -20,10 +20,9 @@
 
 ## Pre-pump candidates
 - AAVE: [A+E] 7d -12.4%
-- UB: [C+E] 7d -11.3%
-- NEAR: [A+E] 7d -9.1%
-- SOL: [A+D] 7d -6.6%
+- NEAR: [A+E] 7d -9.5%
 - PENDLE: [A+E] 7d -6.4%
+- SOL: [A+D] 7d -6.0%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - Bitwise XRP ETF Reaches $561 Million As Fund Leads Issuers - TronWeekly
@@ -51,12 +50,12 @@
 - (13 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 29 | mean -0.7% (-0.03R) | in profit 11 | older than 7d 23
-- worst: LDO -0.79R, HBAR -0.76R, NEO -0.64R | best: AERO 1.15R, PYTH 1.17R, TIA 1.69R
+- open 29 | mean -0.6% (-0.01R) | in profit 12 | older than 7d 23
+- worst: LDO -0.77R, HBAR -0.74R, NEO -0.64R | best: AERO 1.14R, PYTH 1.20R, TIA 1.72R
 
 ## System
-- CoinGecko 5389/10000 used, month-end projection 9999 (100%), throttle level 1 | by script {'scan': 1754, 'check_liquidity': 258, 'breakout_check': 3329, 'counterfactual_check': 48}
+- CoinGecko 5443/10000 used, month-end projection 10074 (101%), throttle level 2 | by script {'scan': 1756, 'check_liquidity': 259, 'breakout_check': 3380, 'counterfactual_check': 48}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=48), H2 SUPPORTED (n=155)
-- radar-flags.json scan age: 11m
+- radar-flags.json scan age: 21m
 - excluded from radar (pegged/tokenized equity): 38
