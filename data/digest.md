@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-17 19:08 UTC
+# Radar digest - 2026-10-17 19:40 UTC
 
 ## Market
-- BTC scenario **A** | price 81569 | wk close 83902 vs 82800 | 50W 77187 (5.68%) | 30m old
+- BTC scenario **A** | price 81569 | wk close 83902 vs 82800 | 50W 77187 (5.68%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 57.31% | ETH/BTC 0.02966 | breadth7d 26% | stables 30d 0.61%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.04pt | 7d 0.50pt | n=117
 - Gold: PAXG 1m 0.61% | real10y 2.78 (10bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 29
@@ -19,25 +19,26 @@
 - ZK: **ONGOING** | +124% impulse, retr 0.32 | OI dd 16% | fund -0.0029 | hold False | inval 0.01483 | OB 0.01483-0.01529
 
 ## Pre-pump candidates
-- AAVE: [A+E] 7d -11.3%
+- UB: [C+E] 7d -10.7%
+- AAVE: [A+E] 7d -10.6%
 - NEAR: [A+E] 7d -7.0%
 - SOL: [A+D] 7d -5.5%
-- PENDLE: [A+E] 7d -5.3%
+- PENDLE: [A+E] 7d -4.4%
 
 ## ETF pipeline (new this run)
-- ripple NEW: other - Bitwise XRP ETF Reaches $561 Million As Fund Leads Issuers - TronWeekly
+- ripple NEW: other - XRP ETF Demand Slows Sharply Despite $1.8 Billion in Cumulative Investor Inflows - CryptoR
+- ripple NEW: other - Which XRP ETF Is the Biggest? One Fund Holds More Than a Third of the Money. - AOL.com
 - avalanche-2: launch - Bitwise Launches Avalanche ETF With Staking Plans - CoinMarketCap
-- zcash: other - Zcash Price Forecast: ZEC declines as US inflation surprise offsets fresh ETF inflows - ww
-- ondo-finance: other - Global X Artificial Intelligence Tokenized ETF (Ondo) price today, AIQon to USD live price
+- ondo-finance: other - How to buy iShares J.P. Morgan EM Local Currency Bond Tokenized ETF (Ondo) (LEMBon) in Cur
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc 0.20% | topPos 0.95 | taker 0.96
-- ETH: LONG_FLUSH_24H | OI/mc 0.59% | topPos 0.88 | taker 1.00
-- SOL: LONG_FLUSH_24H | OI/mc 0.58% | topPos 0.88 | taker 0.91
-- NEAR: LONG_FLUSH_24H | OI/mc 1.11% | topPos 1.03 | taker 0.97
-- AVAX: LONG_FLUSH_24H | OI/mc 0.40% | topPos 0.93 | taker 0.93
-- XRP: LONG_FLUSH_24H | OI/mc 0.13% | topPos 0.86 | taker 0.96
-- SUI: LONG_FLUSH_24H | OI/mc 0.96% | topPos 0.80 | taker 0.92
+- BTC: LONG_FLUSH_24H | OI/mc 0.20% | topPos 0.95 | taker 0.97
+- ETH: LONG_FLUSH_24H | OI/mc 0.59% | topPos 0.88 | taker 1.01
+- SOL: LONG_FLUSH_24H | OI/mc 0.59% | topPos 0.88 | taker 0.94
+- NEAR: LONG_FLUSH_24H | OI/mc 1.12% | topPos 1.03 | taker 0.99
+- AVAX: LONG_FLUSH_24H | OI/mc 0.40% | topPos 0.92 | taker 0.98
+- XRP: LONG_FLUSH_24H | OI/mc 0.13% | topPos 0.86 | taker 0.95
+- SUI: LONG_FLUSH_24H | OI/mc 0.96% | topPos 0.79 | taker 0.93
 - SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.90 | taker 0.91
 
 ## Revenue / buyback flags
@@ -50,12 +51,12 @@
 - (13 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 29 | mean 0.5% (0.07R) | in profit 13 | older than 7d 23
-- worst: LDO -0.73R, HBAR -0.70R, NEO -0.60R | best: AERO 1.19R, PYTH 1.37R, TIA 1.77R
+- open 29 | mean 0.6% (0.07R) | in profit 14 | older than 7d 23
+- worst: LDO -0.73R, HBAR -0.69R, NEO -0.60R | best: AERO 1.19R, PYTH 1.32R, TIA 1.80R
 
 ## System
-- CoinGecko 5447/10000 used, month-end projection 10056 (101%), throttle level 2 | by script {'scan': 1760, 'check_liquidity': 259, 'breakout_check': 3380, 'counterfactual_check': 48}
+- CoinGecko 5449/10000 used, month-end projection 10060 (101%), throttle level 2 | by script {'scan': 1762, 'check_liquidity': 259, 'breakout_check': 3380, 'counterfactual_check': 48}
 - Trials guard: OK (0 untracked)
-- Hypotheses: H1 NOT_SUPPORTED (n=48), H2 SUPPORTED (n=155)
-- radar-flags.json scan age: 8m
-- excluded from radar (pegged/tokenized equity): 38
+- Hypotheses: H1 NOT_SUPPORTED (n=48), H2 SUPPORTED (n=156)
+- radar-flags.json scan age: 10m
+- excluded from radar (pegged/tokenized equity): 37
