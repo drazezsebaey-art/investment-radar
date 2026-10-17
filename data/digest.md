@@ -1,4 +1,4 @@
-# Radar digest - 2026-10-17 01:40 UTC
+# Radar digest - 2026-10-17 02:07 UTC
 
 ## Market
 - BTC scenario **A** | price 81632 | wk close 83902 vs 82800 | 50W 77187 (5.76%) | 1h old
@@ -19,14 +19,14 @@
 - ZK: **ONGOING** | +124% impulse, retr 0.23 | OI dd 7% | fund -0.0130 | hold False | inval 0.01604 | OB 0.01483-0.01529
 
 ## Pre-pump candidates
+- NEAR: [A+C+E] 7d 2.6%
 - ADA: [A+E] 7d -7.6%
+- XRP: [A+E] 7d -6.8%
+- SUI: [A+E] 7d -6.6%
 - CRO: [A+E] 7d -6.5%
-- XRP: [A+E] 7d -6.5%
 - LTC: [A+E] 7d -6.3%
-- SUI: [A+E] 7d -5.9%
 - HYPE: [A+E] 7d -5.1%
 - ZEC: [A+E] 7d -5.1%
-- SOL: [A+E] 7d -4.4%
 
 ## ETF pipeline (new this run)
 - dogecoin NEW: other - Bitwise to Close Dogecoin ETF Before Its First Anniversary - Decrypt
@@ -53,12 +53,12 @@
 - (13 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 29 | mean 2.0% (0.17R) | in profit 12 | older than 7d 23
-- worst: HBAR -0.68R, LDO -0.63R, ADA -0.52R | best: AERO 1.32R, PYTH 1.69R, TIA 2.04R
+- open 29 | mean 1.7% (0.16R) | in profit 12 | older than 7d 23
+- worst: HBAR -0.68R, LDO -0.64R, ADA -0.52R | best: AERO 1.33R, PYTH 1.69R, TIA 2.00R
 
 ## System
-- CoinGecko 5201/10000 used, month-end projection 10051 (100%), throttle level 2 | by script {'scan': 1690, 'check_liquidity': 242, 'breakout_check': 3227, 'counterfactual_check': 42}
+- CoinGecko 5203/10000 used, month-end projection 10029 (100%), throttle level 2 | by script {'scan': 1692, 'check_liquidity': 242, 'breakout_check': 3227, 'counterfactual_check': 42}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=48), H2 SUPPORTED (n=148)
-- radar-flags.json scan age: 10m
+- radar-flags.json scan age: 7m
 - excluded from radar (pegged/tokenized equity): 38
