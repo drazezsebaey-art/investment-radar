@@ -1,4 +1,4 @@
-# Radar digest - 2026-10-17 13:40 UTC
+# Radar digest - 2026-10-17 14:07 UTC
 
 ## Market
 - BTC scenario **A** | price 81532 | wk close 83902 vs 82800 | 50W 77187 (5.63%) | 1h old
@@ -19,10 +19,10 @@
 - ZEC: **ONGOING** | +111% impulse, retr 0.59 | OI dd 43% | fund 0.0089 | hold False | inval 1073.76000 | OB 985.40000-1050.48000
 
 ## Pre-pump candidates
-- PENDLE: [A+C+E] 7d -3.3%
-- WLD: [A+C] 7d -7.7%
-- SOL: [A+D] 7d -5.4%
-- NEAR: [A+E] 7d -4.8%
+- SEI: [A+C] 7d -7.6%
+- SOL: [A+D] 7d -5.3%
+- NEAR: [A+E] 7d -4.7%
+- PENDLE: [A+E] 7d -3.3%
 
 ## ETF pipeline (new this run)
 - pepe NEW: other - Dogecoin News: DOGE Gains 3.9% After Bitwise Shuts Its ETF, Yet Pepeto Eyes a Pepe Repeat 
@@ -52,12 +52,12 @@
 - (13 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 30 | mean 0.2% (0.03R) | in profit 12 | older than 7d 23
-- worst: LDO -0.73R, HBAR -0.73R, APT -0.72R | best: AERO 1.24R, PYTH 1.49R, TIA 1.83R
+- open 30 | mean 0.5% (0.05R) | in profit 12 | older than 7d 23
+- worst: HBAR -0.73R, APT -0.73R, LDO -0.73R | best: AERO 1.26R, PYTH 1.55R, TIA 1.94R
 
 ## System
-- CoinGecko 5364/10000 used, month-end projection 10052 (100%), throttle level 2 | by script {'scan': 1738, 'check_liquidity': 255, 'breakout_check': 3329, 'counterfactual_check': 42}
+- CoinGecko 5366/10000 used, month-end projection 10031 (100%), throttle level 2 | by script {'scan': 1740, 'check_liquidity': 255, 'breakout_check': 3329, 'counterfactual_check': 42}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=48), H2 SUPPORTED (n=153)
-- radar-flags.json scan age: 10m
+- radar-flags.json scan age: 7m
 - excluded from radar (pegged/tokenized equity): 38
