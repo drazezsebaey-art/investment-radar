@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-17 12:39 UTC
+# Radar digest - 2026-10-17 13:07 UTC
 
 ## Market
-- BTC scenario **A** | price 81532 | wk close 83902 vs 82800 | 50W 77187 (5.63%) | 1m old
+- BTC scenario **A** | price 81532 | wk close 83902 vs 82800 | 50W 77187 (5.63%) | 29m old
 - Alts: **BTC_LED** [-] | BTC.D 57.16% | ETH/BTC 0.02985 | breadth7d 32% | stables 30d 0.60%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.04pt | 7d 0.32pt | n=115
 - Gold: PAXG 1m -2.68% | real10y 2.78 (10bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 29
@@ -19,10 +19,9 @@
 - ZEC: **ONGOING** | +111% impulse, retr 0.59 | OI dd 43% | fund 0.0089 | hold False | inval 1073.76000 | OB 985.40000-1050.48000
 
 ## Pre-pump candidates
-- SEI: [A+C] 7d -5.6%
-- SOL: [A+D] 7d -4.6%
-- ZEC: [A+C] 7d -4.3%
-- NEAR: [A+E] 7d -2.1%
+- SEI: [A+C] 7d -6.6%
+- SOL: [A+D] 7d -5.4%
+- NEAR: [A+E] 7d -4.8%
 - PENDLE: [A+C] 7d -1.5%
 
 ## ETF pipeline (new this run)
@@ -49,12 +48,12 @@
 - (13 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 30 | mean 1.1% (0.10R) | in profit 14 | older than 7d 23
-- worst: HBAR -0.72R, LDO -0.65R, ADA -0.57R | best: AERO 1.29R, PYTH 1.55R, TIA 1.81R
+- open 30 | mean 0.4% (0.04R) | in profit 12 | older than 7d 23
+- worst: HBAR -0.74R, LDO -0.68R, APT -0.65R | best: AERO 1.26R, PYTH 1.53R, TIA 1.81R
 
 ## System
-- CoinGecko 5360/10000 used, month-end projection 10070 (101%), throttle level 2 | by script {'scan': 1734, 'check_liquidity': 255, 'breakout_check': 3329, 'counterfactual_check': 42}
+- CoinGecko 5362/10000 used, month-end projection 10049 (100%), throttle level 2 | by script {'scan': 1736, 'check_liquidity': 255, 'breakout_check': 3329, 'counterfactual_check': 42}
 - Trials guard: OK (0 untracked)
-- Hypotheses: H1 NOT_SUPPORTED (n=48), H2 SUPPORTED (n=151)
-- radar-flags.json scan age: 9m
+- Hypotheses: H1 NOT_SUPPORTED (n=48), H2 SUPPORTED (n=153)
+- radar-flags.json scan age: 7m
 - excluded from radar (pegged/tokenized equity): 38
