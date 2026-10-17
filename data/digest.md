@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-17 08:40 UTC
+# Radar digest - 2026-10-17 09:07 UTC
 
 ## Market
-- BTC scenario **A** | price 81694 | wk close 83902 vs 82800 | 50W 77187 (5.84%) | 1m old
+- BTC scenario **A** | price 81694 | wk close 83902 vs 82800 | 50W 77187 (5.84%) | 28m old
 - Alts: **BTC_LED** [-] | BTC.D 57.15% | ETH/BTC 0.02982 | breadth7d 34% | stables 30d 0.62%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.01pt | 7d 0.30pt | n=114
 - Gold: PAXG 1m -2.61% | real10y 2.78 (10bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 29
@@ -19,8 +19,8 @@
 - INJ: **ONGOING** | +103% impulse, retr 0.13 | OI dd 0% | fund 0.0020 | hold False | inval 7.06300 | OB 6.41500-6.78300
 
 ## Pre-pump candidates
-- SEI: [A+C] 7d -6.6%
-- NEAR: [A+E] 7d -1.4%
+- SEI: [A+C] 7d -5.2%
+- NEAR: [A+E] 7d -1.5%
 
 ## ETF pipeline (new this run)
 - sei-network NEW: filing - 21Shares Files for SEI ETF With Staking Features - CoinMarketCap
@@ -47,12 +47,12 @@
 - (13 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 30 | mean 2.4% (0.20R) | in profit 13 | older than 7d 23
-- worst: HBAR -0.66R, LDO -0.63R, NEO -0.52R | best: AERO 1.42R, PYTH 1.55R, TIA 2.41R
+- open 30 | mean 2.4% (0.19R) | in profit 13 | older than 7d 23
+- worst: HBAR -0.67R, LDO -0.64R, ADA -0.53R | best: AERO 1.43R, PYTH 1.59R, TIA 2.37R
 
 ## System
-- CoinGecko 5286/10000 used, month-end projection 10033 (100%), throttle level 2 | by script {'scan': 1718, 'check_liquidity': 248, 'breakout_check': 3278, 'counterfactual_check': 42}
+- CoinGecko 5288/10000 used, month-end projection 10011 (100%), throttle level 2 | by script {'scan': 1720, 'check_liquidity': 248, 'breakout_check': 3278, 'counterfactual_check': 42}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=48), H2 SUPPORTED (n=148)
-- radar-flags.json scan age: 10m
+- radar-flags.json scan age: 7m
 - excluded from radar (pegged/tokenized equity): 38
