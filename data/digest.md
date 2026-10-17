@@ -1,4 +1,4 @@
-# Radar digest - 2026-10-17 19:40 UTC
+# Radar digest - 2026-10-17 20:08 UTC
 
 ## Market
 - BTC scenario **A** | price 81569 | wk close 83902 vs 82800 | 50W 77187 (5.68%) | 1h old
@@ -21,8 +21,9 @@
 ## Pre-pump candidates
 - UB: [C+E] 7d -10.7%
 - AAVE: [A+E] 7d -10.6%
-- NEAR: [A+E] 7d -7.0%
-- SOL: [A+D] 7d -5.5%
+- SAND: [B+C] 7d -7.7%
+- NEAR: [A+E] 7d -6.7%
+- SOL: [A+D] 7d -5.6%
 - PENDLE: [A+E] 7d -4.4%
 
 ## ETF pipeline (new this run)
@@ -51,12 +52,12 @@
 - (13 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 29 | mean 0.6% (0.07R) | in profit 14 | older than 7d 23
-- worst: LDO -0.73R, HBAR -0.69R, NEO -0.60R | best: AERO 1.19R, PYTH 1.32R, TIA 1.80R
+- open 29 | mean 1.1% (0.11R) | in profit 14 | older than 7d 23
+- worst: LDO -0.71R, HBAR -0.60R, NEO -0.58R | best: AERO 1.20R, PYTH 1.44R, TIA 1.86R
 
 ## System
-- CoinGecko 5449/10000 used, month-end projection 10060 (101%), throttle level 2 | by script {'scan': 1762, 'check_liquidity': 259, 'breakout_check': 3380, 'counterfactual_check': 48}
+- CoinGecko 5451/10000 used, month-end projection 10038 (100%), throttle level 2 | by script {'scan': 1764, 'check_liquidity': 259, 'breakout_check': 3380, 'counterfactual_check': 48}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=48), H2 SUPPORTED (n=156)
-- radar-flags.json scan age: 10m
+- radar-flags.json scan age: 8m
 - excluded from radar (pegged/tokenized equity): 37
