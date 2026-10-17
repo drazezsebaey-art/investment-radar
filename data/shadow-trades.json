@@ -10116,7 +10116,7 @@
       "hours_since_flagged_at_entry": 32.5,
       "funnel_stage_at_entry": "shortlist_10",
       "date_opened": "2026-10-16",
-      "status": "open",
+      "status": "superseded",
       "entry": 0.00192379,
       "stop": 0.00184872,
       "used_trend_following_stop": false,
@@ -10146,7 +10146,9 @@
       "sector_tags": [
         "real-world-assets-rwa"
       ],
-      "out_of_scan_universe": true
+      "out_of_scan_universe": true,
+      "superseded_at": "2026-10-17T06:14:34.131512+00:00",
+      "superseded_reason": "promoted to a real auto trade at confidence_score 58"
     },
     {
       "id": "aave-shadow-20261016T121427",
@@ -10447,6 +10449,50 @@
       "rejected_reason": "confidence_score 15 < AUTO_TRADE_MIN_SCORE 40",
       "last_check_source": "okx_candles",
       "sector_tags": []
+    },
+    {
+      "id": "wif-shadow-20261017T061434",
+      "asset_id": "dogwifcoin",
+      "symbol": "WIF",
+      "type": "paper",
+      "auto": true,
+      "triggered_by": "priority_review:relative_strength_consolidation",
+      "entry_archetype": "hidden_relative_strength",
+      "engine_version": "auto_paper_trade-v62",
+      "decay_state_at_entry": "fresh",
+      "hours_since_flagged_at_entry": 0.0,
+      "funnel_stage_at_entry": "shortlist_20",
+      "date_opened": "2026-10-17",
+      "status": "open",
+      "entry": 0.204818,
+      "stop": 0.19456519,
+      "used_trend_following_stop": false,
+      "targets": [
+        0.22019722,
+        0.23045003,
+        0.24582924
+      ],
+      "created_at": "2026-10-17T06:14:34.131512+00:00",
+      "filled_at": "2026-10-17T06:00:42.423637+00:00",
+      "price_observed_at": "2026-10-17T06:00:42.423637+00:00",
+      "actual_entry": 0.204818,
+      "targets_hit": [],
+      "confidence_score_at_entry": 15,
+      "signal_quality_at_entry": "beta_driven_or_cluster",
+      "market_regime_at_entry": {
+        "risk_state": "neutral",
+        "volatility_state": "normal",
+        "btc_trend_recent_pct": 0.72,
+        "btc_trend_full_window_pct": 6.64,
+        "btc_volatility_now": 0.73,
+        "btc_volatility_baseline_avg": 0.6,
+        "breadth_pct_green": 24.1
+      },
+      "rejected_reason": "confidence_score 15 < AUTO_TRADE_MIN_SCORE 40",
+      "last_check_source": "okx_candles",
+      "sector_tags": [
+        "meme-token"
+      ]
     }
   ]
 }

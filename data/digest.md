@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-17 05:41 UTC
+# Radar digest - 2026-10-17 06:22 UTC
 
 ## Market
-- BTC scenario **A** | price 81562 | wk close 83902 vs 82800 | 50W 77187 (5.67%) | 1h old
+- BTC scenario **A** | price 81562 | wk close 83902 vs 82800 | 50W 77187 (5.67%) | 2h old
 - Alts: **BTC_LED** [-] | BTC.D 57.21% | ETH/BTC 0.02971 | breadth7d 40% | stables 30d 0.62%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.01pt | 7d 0.30pt | n=113
 - Gold: PAXG 1m -2.61% | real10y 2.78 (10bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 29
@@ -19,14 +19,14 @@
 - ZK: **ONGOING** | +124% impulse, retr 0.22 | OI dd 7% | fund -0.0007 | hold False | inval 0.01604 | OB 0.01483-0.01529
 
 ## Pre-pump candidates
-- SEI: [A+C+E] 7d -2.9%
+- THETA: [C+E] 7d -15.4%
 - ADA: [A+E] 7d -10.4%
-- XRP: [A+E] 7d -6.8%
-- SUI: [A+E] 7d -6.4%
+- SUI: [A+E] 7d -7.5%
+- XRP: [A+E] 7d -7.0%
 - LTC: [A+E] 7d -5.9%
-- AR: [C+E] 7d -5.3%
 - HYPE: [A+E] 7d -5.0%
 - CRO: [A+E] 7d -5.0%
+- ZEC: [A+E] 7d -4.9%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - XRP News Today: $561M ETF Lead, but Why Is XRP Still Falling? - Coin Gabbar
@@ -51,12 +51,12 @@
 - (13 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 29 | mean 2.8% (0.22R) | in profit 12 | older than 7d 23
-- worst: HBAR -0.67R, LDO -0.60R, ADA -0.51R | best: AERO 1.41R, PYTH 1.52R, TIA 2.76R
+- open 30 | mean 2.7% (0.21R) | in profit 12 | older than 7d 23
+- worst: HBAR -0.67R, LDO -0.58R, ADA -0.52R | best: AERO 1.40R, PYTH 1.54R, TIA 2.62R
 
 ## System
-- CoinGecko 5220/10000 used, month-end projection 9984 (100%), throttle level 1 | by script {'scan': 1706, 'check_liquidity': 245, 'breakout_check': 3227, 'counterfactual_check': 42}
+- CoinGecko 5274/10000 used, month-end projection 10061 (101%), throttle level 2 | by script {'scan': 1708, 'check_liquidity': 246, 'breakout_check': 3278, 'counterfactual_check': 42}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=48), H2 SUPPORTED (n=148)
-- radar-flags.json scan age: 11m
+- radar-flags.json scan age: 22m
 - excluded from radar (pegged/tokenized equity): 38
