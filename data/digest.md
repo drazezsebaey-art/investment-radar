@@ -1,39 +1,40 @@
-# Radar digest - 2026-10-17 22:08 UTC
+# Radar digest - 2026-10-17 22:40 UTC
 
 ## Market
-- BTC scenario **A** | price 81615 | wk close 83902 vs 82800 | 50W 77187 (5.74%) | 1h old
-- Alts: **BTC_LED** [-] | BTC.D 57.31% | ETH/BTC 0.02966 | breadth7d 26% | stables 30d 0.61%
-- Alt risk (BTC.D): **NORMAL**  | 3d 0.04pt | 7d 0.50pt | n=117
+- BTC scenario **A** | price 81312 | wk close 83902 vs 82800 | 50W 77187 (5.34%) | 1m old
+- Alts: **BTC_LED** [-] | BTC.D 57.36% | ETH/BTC 0.02942 | breadth7d 31% | stables 30d 0.62%
+- Alt risk (BTC.D): **NORMAL**  | 3d 0.15pt | 7d 0.50pt | n=118
 - Gold: PAXG 1m 0.41% | real10y 2.78 (10bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 29
 - 10y 1w: -18bp = real -14 + breakeven 0 -> **REAL_YIELD_DRIVEN**
 - 10y 1m: 9bp = real 10 + breakeven 2 -> **SMALL_MOVE**
 
 ## Coins in correction (entry_ready first)
-- BCH: **RESUMING** ENTRY_READY | +72% impulse, retr 0.58 | OI dd 38% | fund -0.0024 | hold True | inval 272.00000 | OB 258.40000-266.60000
-- TAO: **RESUMING** ENTRY_READY | +60% impulse, retr 0.54 | OI dd 26% | fund 0.0100 | hold False | inval 256.30000 | OB 256.30000-271.70000
-- RSR: **BROKEN** | +139% impulse, retr 0.61 | OI dd 50% | fund -0.0434 | hold False | inval 0.00188 | OB 0.00147-0.00154
-- UNI: **BROKEN** | +88% impulse, retr 0.73 | OI dd 34% | fund 0.0100 | hold False | inval 6.78300 | OB 5.80800-6.03200
-- ZEC: **BROKEN** | +82% impulse, retr 0.70 | OI dd 44% | fund 0.0100 | hold False | inval 1073.76000 | OB 985.40000-1050.48000
-- BAT: **ONGOING** | +224% impulse, retr 0.26 | OI dd 15% | fund -0.0342 | hold False | inval 0.16549 | OB 0.16733-0.17544
-- S: **RESET_DONE** | +198% impulse, retr 0.41 | OI dd 24% | fund 0.0050 | hold False | inval 0.05164 | OB 0.03689-0.03890
-- SEI: **RESET_DONE** | +110% impulse, retr 0.51 | OI dd 32% | fund -0.0069 | hold False | inval 0.05774 | OB 0.05685-0.05941
+- SUI: **RESET_DONE** ENTRY_READY | +92% impulse, retr 0.52 | OI dd 28% | fund -0.0000 | hold True | inval 0.95880 | OB 0.80880-0.83220
+- WLD: **RESET_DONE** ENTRY_READY | +74% impulse, retr 0.50 | OI dd 23% | fund -0.0076 | hold True | inval 0.46220 | OB 0.46620-0.48720
+- ADA: **RESET_DONE** ENTRY_READY | +48% impulse, retr 0.69 | OI dd 29% | fund -0.0069 | hold True | inval 0.21590 | OB 0.19010-0.19720
+- LINK: **RESET_DONE** ENTRY_READY | +48% impulse, retr 0.74 | OI dd 26% | fund -0.0027 | hold True | inval 11.82400 | OB 10.61800-10.96200
+- BCH: **RESUMING** ENTRY_READY | +72% impulse, retr 0.60 | OI dd 38% | fund -0.0029 | hold True | inval 272.00000 | OB 258.40000-266.60000
+- TAO: **RESUMING** ENTRY_READY | +60% impulse, retr 0.58 | OI dd 26% | fund 0.0100 | hold False | inval 256.30000 | OB 213.50000-219.30000
+- RSR: **BROKEN** | +139% impulse, retr 0.63 | OI dd 50% | fund -0.0461 | hold False | inval 0.00188 | OB 0.00147-0.00154
+- UNI: **BROKEN** | +88% impulse, retr 0.74 | OI dd 34% | fund 0.0075 | hold False | inval 6.78300 | OB 5.80800-6.03200
 
 ## Pre-pump candidates
-- AAVE: [A+E] 7d -9.9%
+- AAVE: [A+E] 7d -11.6%
+- SAND: [B+C] 7d -11.4%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - Bitwise XRP Fund Passes $500 Million as Spot ETF Demand Builds - BigGo Finance
 - ripple NEW: other - Bitwise XRP ETF hits $541M in assets after $684M inflows, signaling strong institutional c
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc 0.21% | topPos 0.94 | taker 0.94
-- ETH: LONG_FLUSH_24H | OI/mc 0.59% | topPos 0.89 | taker 0.99
-- SOL: LONG_FLUSH_24H | OI/mc 0.59% | topPos 0.89 | taker 0.91
-- NEAR: LONG_FLUSH_24H | OI/mc -% | topPos 1.03 | taker 0.98
-- AVAX: LONG_FLUSH_24H | OI/mc 0.41% | topPos 0.92 | taker 0.99
-- XRP: LONG_FLUSH_24H | OI/mc 0.13% | topPos 0.88 | taker 0.92
-- SUI: LONG_FLUSH_24H | OI/mc 0.98% | topPos 0.79 | taker 0.91
-- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.90 | taker 0.87
+- BTC: LONG_FLUSH_24H | OI/mc 0.20% | topPos 0.94 | taker 0.88
+- ETH: LONG_FLUSH_24H | OI/mc 0.57% | topPos 0.88 | taker 0.91
+- SOL: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.89 | taker 0.84
+- NEAR: LONG_FLUSH_24H | OI/mc -% | topPos 1.03 | taker 0.93
+- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.93 | taker 0.94
+- XRP: LONG_FLUSH_24H | OI/mc 0.13% | topPos 0.88 | taker 0.87
+- SUI: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.96% | topPos 0.78 | taker 0.83
+- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.90 | taker 0.86
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -45,12 +46,12 @@
 - (13 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 29 | mean -1.5% (-0.07R) | in profit 11 | older than 7d 23
-- worst: LDO -0.84R, NEO -0.70R, ADA -0.69R | best: AERO 1.09R, PYTH 1.21R, TIA 1.53R
+- open 29 | mean -1.1% (-0.04R) | in profit 12 | older than 7d 23
+- worst: LDO -0.79R, NEO -0.68R, HBAR -0.66R | best: PYTH 0.82R, AERO 1.11R, TIA 1.54R
 
 ## System
-- CoinGecko 5467/10000 used, month-end projection 10018 (100%), throttle level 2 | by script {'scan': 1780, 'check_liquidity': 259, 'breakout_check': 3380, 'counterfactual_check': 48}
+- CoinGecko 5469/10000 used, month-end projection 10022 (100%), throttle level 2 | by script {'scan': 1782, 'check_liquidity': 259, 'breakout_check': 3380, 'counterfactual_check': 48}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=48), H2 SUPPORTED (n=156)
-- radar-flags.json scan age: 7m
-- excluded from radar (pegged/tokenized equity): 38
+- radar-flags.json scan age: 10m
+- excluded from radar (pegged/tokenized equity): 37
