@@ -1,10 +1,10 @@
-# Radar digest - 2026-10-17 09:41 UTC
+# Radar digest - 2026-10-17 10:08 UTC
 
 ## Market
 - BTC scenario **A** | price 81694 | wk close 83902 vs 82800 | 50W 77187 (5.84%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 57.15% | ETH/BTC 0.02982 | breadth7d 34% | stables 30d 0.62%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.01pt | 7d 0.30pt | n=114
-- Gold: PAXG 1m -2.61% | real10y 2.78 (10bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 29
+- Gold: PAXG 1m -2.68% | real10y 2.78 (10bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 29
 - 10y 1w: -18bp = real -14 + breakeven 0 -> **REAL_YIELD_DRIVEN**
 - 10y 1m: 9bp = real 10 + breakeven 2 -> **SMALL_MOVE**
 
@@ -19,11 +19,10 @@
 - INJ: **ONGOING** | +103% impulse, retr 0.13 | OI dd 0% | fund 0.0020 | hold False | inval 7.06300 | OB 6.41500-6.78300
 
 ## Pre-pump candidates
-- PUMP: [C+D] 7d -17.2%
-- SEI: [A+C] 7d -5.2%
-- ZEC: [A+C] 7d -4.6%
-- SOL: [A+D] 7d -4.5%
-- NEAR: [A+E] 7d -1.5%
+- SEI: [A+C] 7d -5.8%
+- SOL: [A+D] 7d -4.6%
+- ZEC: [A+C] 7d -3.5%
+- NEAR: [A+E] 7d -1.9%
 
 ## ETF pipeline (new this run)
 - dogecoin NEW: other - Dogecoin News: DOGE Gains 3.9% After Bitwise Shuts Its ETF, Yet Pepeto Eyes a Pepe Repeat 
@@ -48,12 +47,12 @@
 - (13 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 30 | mean 2.3% (0.19R) | in profit 13 | older than 7d 23
-- worst: HBAR -0.69R, LDO -0.65R, ADA -0.54R | best: AERO 1.41R, PYTH 1.54R, TIA 2.33R
+- open 30 | mean 2.4% (0.20R) | in profit 14 | older than 7d 23
+- worst: HBAR -0.68R, LDO -0.63R, ADA -0.54R | best: AERO 1.45R, PYTH 1.53R, TIA 2.31R
 
 ## System
-- CoinGecko 5290/10000 used, month-end projection 10015 (100%), throttle level 2 | by script {'scan': 1722, 'check_liquidity': 248, 'breakout_check': 3278, 'counterfactual_check': 42}
+- CoinGecko 5296/10000 used, month-end projection 10001 (100%), throttle level 2 | by script {'scan': 1724, 'check_liquidity': 252, 'breakout_check': 3278, 'counterfactual_check': 42}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=48), H2 SUPPORTED (n=148)
-- radar-flags.json scan age: 11m
+- radar-flags.json scan age: 8m
 - excluded from radar (pegged/tokenized equity): 38
