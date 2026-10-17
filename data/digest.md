@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-17 06:40 UTC
+# Radar digest - 2026-10-17 07:07 UTC
 
 ## Market
-- BTC scenario **A** | price 81606 | wk close 83902 vs 82800 | 50W 77187 (5.72%) | 1m old
+- BTC scenario **A** | price 81606 | wk close 83902 vs 82800 | 50W 77187 (5.72%) | 29m old
 - Alts: **BTC_LED** [-] | BTC.D 57.15% | ETH/BTC 0.02982 | breadth7d 34% | stables 30d 0.62%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.01pt | 7d 0.30pt | n=114
 - Gold: PAXG 1m -2.61% | real10y 2.78 (10bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 29
@@ -19,14 +19,14 @@
 - ZK: **ONGOING** | +124% impulse, retr 0.25 | OI dd 7% | fund -0.0069 | hold False | inval 0.01604 | OB 0.01483-0.01529
 
 ## Pre-pump candidates
-- ZEC: [A+C+E] 7d -4.8%
-- SEI: [A+C+E] 7d -3.9%
 - ADA: [A+E] 7d -10.7%
-- SUI: [A+E] 7d -7.5%
-- XRP: [A+E] 7d -7.0%
-- AR: [C+E] 7d -6.3%
+- SUI: [A+E] 7d -8.8%
+- XRP: [A+E] 7d -7.2%
+- SEI: [A+E] 7d -6.2%
 - LTC: [A+E] 7d -6.2%
+- AVAX: [A+E] 7d -6.0%
 - CRO: [A+E] 7d -5.3%
+- HYPE: [A+E] 7d -5.1%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - XRP News Today: $561M ETF Lead, but Why Is XRP Still Falling? - Coin Gabbar
@@ -51,12 +51,12 @@
 - (13 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 30 | mean 2.8% (0.21R) | in profit 12 | older than 7d 23
-- worst: HBAR -0.68R, LDO -0.60R, ADA -0.52R | best: AERO 1.44R, PYTH 1.52R, TIA 2.66R
+- open 30 | mean 2.6% (0.20R) | in profit 12 | older than 7d 23
+- worst: HBAR -0.68R, LDO -0.62R, ADA -0.52R | best: AERO 1.46R, PYTH 1.48R, TIA 2.56R
 
 ## System
-- CoinGecko 5276/10000 used, month-end projection 10065 (101%), throttle level 2 | by script {'scan': 1710, 'check_liquidity': 246, 'breakout_check': 3278, 'counterfactual_check': 42}
+- CoinGecko 5278/10000 used, month-end projection 10043 (100%), throttle level 2 | by script {'scan': 1712, 'check_liquidity': 246, 'breakout_check': 3278, 'counterfactual_check': 42}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=48), H2 SUPPORTED (n=148)
-- radar-flags.json scan age: 10m
+- radar-flags.json scan age: 7m
 - excluded from radar (pegged/tokenized equity): 38
