@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-17 09:07 UTC
+# Radar digest - 2026-10-17 09:41 UTC
 
 ## Market
-- BTC scenario **A** | price 81694 | wk close 83902 vs 82800 | 50W 77187 (5.84%) | 28m old
+- BTC scenario **A** | price 81694 | wk close 83902 vs 82800 | 50W 77187 (5.84%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 57.15% | ETH/BTC 0.02982 | breadth7d 34% | stables 30d 0.62%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.01pt | 7d 0.30pt | n=114
 - Gold: PAXG 1m -2.61% | real10y 2.78 (10bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 29
@@ -19,40 +19,41 @@
 - INJ: **ONGOING** | +103% impulse, retr 0.13 | OI dd 0% | fund 0.0020 | hold False | inval 7.06300 | OB 6.41500-6.78300
 
 ## Pre-pump candidates
+- PUMP: [C+D] 7d -17.2%
 - SEI: [A+C] 7d -5.2%
+- ZEC: [A+C] 7d -4.6%
+- SOL: [A+D] 7d -4.5%
 - NEAR: [A+E] 7d -1.5%
 
 ## ETF pipeline (new this run)
-- sei-network NEW: filing - 21Shares Files for SEI ETF With Staking Features - CoinMarketCap
-- ripple NEW: other - XRP ETF Demand Slows Sharply Despite $1.8 Billion in Cumulative Investor Inflows - Coinpap
-- solana NEW: other - Crypto ETF News Today: Bitcoin, Ether, XRP, Solana Outflows Hard - Coin Gabbar
-- ripple NEW: other - Crypto ETF News Today: Bitcoin, Ether, XRP, Solana Outflows Hard - Coin Gabbar
+- dogecoin NEW: other - Dogecoin News: DOGE Gains 3.9% After Bitwise Shuts Its ETF, Yet Pepeto Eyes a Pepe Repeat 
 
 ## Derivatives flags (OKX)
 - ETH: SHORT_SQUEEZE_24H | OI/mc 0.59% | topPos 0.89 | taker 1.01
-- SOL: LONG_FLUSH_24H | OI/mc 0.58% | topPos 0.89 | taker 0.88
-- AVAX: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.40% | topPos 0.92 | taker 0.84
-- XRP: LONG_FLUSH_24H | OI/mc 0.13% | topPos 0.87 | taker 1.00
-- SUI: LONG_FLUSH_24H | OI/mc 0.95% | topPos 0.80 | taker 1.01
-- SEI: LONG_FLUSH_24H | OI/mc 0.71% | topPos 0.90 | taker 1.01
-- TAO: LONG_FLUSH_24H | OI/mc 0.80% | topPos 0.92 | taker 0.87
-- ZEC: SHORT_SQUEEZE_24H | OI/mc 0.66% | topPos 1.00 | taker 1.00
+- SOL: LONG_FLUSH_24H | OI/mc 0.58% | topPos 0.89 | taker 0.86
+- AVAX: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.39% | topPos 0.93 | taker 0.84
+- XRP: LONG_FLUSH_24H | OI/mc 0.13% | topPos 0.87 | taker 0.99
+- SUI: LONG_FLUSH_24H | OI/mc 0.95% | topPos 0.80 | taker 1.00
+- SEI: LONG_FLUSH_24H | OI/mc 0.71% | topPos 0.90 | taker 1.00
+- TAO: LONG_FLUSH_24H | OI/mc 0.80% | topPos 0.93 | taker 0.88
+- ZEC: SHORT_SQUEEZE_24H | OI/mc 0.66% | topPos 1.01 | taker 1.00
 
 ## Revenue / buyback flags
+- pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
 - ore: REVENUE_ACCELERATING
-- convex-finance: REVENUE_ACCELERATING
+- solana: REVENUE_ACCELERATING
+- lido-dao: HIGH_HOLDER_YIELD
 - thorchain: REVENUE_ACCELERATING
 - tornado-cash: REVENUE_ACCELERATING
-- thorswap: REVENUE_ACCELERATING
 - (13 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 30 | mean 2.4% (0.19R) | in profit 13 | older than 7d 23
-- worst: HBAR -0.67R, LDO -0.64R, ADA -0.53R | best: AERO 1.43R, PYTH 1.59R, TIA 2.37R
+- open 30 | mean 2.3% (0.19R) | in profit 13 | older than 7d 23
+- worst: HBAR -0.69R, LDO -0.65R, ADA -0.54R | best: AERO 1.41R, PYTH 1.54R, TIA 2.33R
 
 ## System
-- CoinGecko 5288/10000 used, month-end projection 10011 (100%), throttle level 2 | by script {'scan': 1720, 'check_liquidity': 248, 'breakout_check': 3278, 'counterfactual_check': 42}
+- CoinGecko 5290/10000 used, month-end projection 10015 (100%), throttle level 2 | by script {'scan': 1722, 'check_liquidity': 248, 'breakout_check': 3278, 'counterfactual_check': 42}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=48), H2 SUPPORTED (n=148)
-- radar-flags.json scan age: 7m
+- radar-flags.json scan age: 11m
 - excluded from radar (pegged/tokenized equity): 38
