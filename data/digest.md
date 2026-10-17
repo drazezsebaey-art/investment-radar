@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-17 11:07 UTC
+# Radar digest - 2026-10-17 11:41 UTC
 
 ## Market
-- BTC scenario **A** | price 81645 | wk close 83902 vs 82800 | 50W 77187 (5.78%) | 28m old
+- BTC scenario **A** | price 81645 | wk close 83902 vs 82800 | 50W 77187 (5.78%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 57.16% | ETH/BTC 0.02985 | breadth7d 32% | stables 30d 0.60%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.04pt | 7d 0.32pt | n=115
 - Gold: PAXG 1m -2.68% | real10y 2.78 (10bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 29
@@ -19,21 +19,24 @@
 - INJ: **ONGOING** | +103% impulse, retr 0.14 | OI dd 0% | fund 0.0100 | hold False | inval 7.06300 | OB 6.41500-6.78300
 
 ## Pre-pump candidates
+- SEI: [A+C] 7d -5.5%
 - SOL: [A+D] 7d -4.6%
+- ZEC: [A+C] 7d -3.8%
 - NEAR: [A+E] 7d -2.2%
 
 ## ETF pipeline (new this run)
-- dogecoin NEW: other - Dogecoin News: DOGE Gains 3.9% After Bitwise Shuts Its ETF, Yet Pepeto Eyes a Pepe Repeat 
+- ripple NEW: other - Which XRP ETF Is the Biggest? One Fund Holds More Than a Third of the Money. - 24/7 Wall S
+- ripple NEW: other - Which XRP ETF Is the Biggest? One Fund Holds More Than a Third of the Money. - Yahoo Finan
 
 ## Derivatives flags (OKX)
-- ETH: SHORT_SQUEEZE_24H | OI/mc 0.59% | topPos 0.89 | taker 1.02
-- SOL: LONG_FLUSH_24H | OI/mc 0.58% | topPos 0.89 | taker 0.87
-- AVAX: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.40% | topPos 0.93 | taker 0.83
+- ETH: SHORT_SQUEEZE_24H | OI/mc 0.59% | topPos 0.89 | taker 1.01
+- SOL: LONG_FLUSH_24H | OI/mc 0.58% | topPos 0.89 | taker 0.86
+- AVAX: LONG_FLUSH_24H | OI/mc 0.40% | topPos 0.93 | taker 0.86
 - XRP: LONG_FLUSH_24H | OI/mc 0.13% | topPos 0.87 | taker 0.99
-- SUI: LONG_FLUSH_24H | OI/mc 0.95% | topPos 0.79 | taker 1.00
-- SEI: LONG_FLUSH_24H | OI/mc 0.71% | topPos 0.90 | taker 1.02
+- SUI: LONG_FLUSH_24H | OI/mc 0.96% | topPos 0.79 | taker 0.99
+- SEI: LONG_FLUSH_24H | OI/mc 0.71% | topPos 0.89 | taker 1.02
 - TAO: LONG_FLUSH_24H | OI/mc 0.80% | topPos 0.92 | taker 0.88
-- ZEC: SHORT_SQUEEZE_24H | OI/mc 0.66% | topPos 1.01 | taker 1.01
+- ZEC: SHORT_SQUEEZE_24H | OI/mc 0.67% | topPos 1.02 | taker 1.00
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -45,12 +48,12 @@
 - (13 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 30 | mean 2.1% (0.17R) | in profit 14 | older than 7d 23
-- worst: HBAR -0.69R, LDO -0.61R, ADA -0.53R | best: AERO 1.54R, PYTH 1.55R, TIA 1.80R
+- open 30 | mean 1.6% (0.14R) | in profit 14 | older than 7d 23
+- worst: HBAR -0.71R, LDO -0.62R, ADA -0.54R | best: AERO 1.45R, PYTH 1.51R, TIA 1.76R
 
 ## System
-- CoinGecko 5301/10000 used, month-end projection 9985 (100%), throttle level 1 | by script {'scan': 1728, 'check_liquidity': 253, 'breakout_check': 3278, 'counterfactual_check': 42}
+- CoinGecko 5304/10000 used, month-end projection 9990 (100%), throttle level 1 | by script {'scan': 1730, 'check_liquidity': 254, 'breakout_check': 3278, 'counterfactual_check': 42}
 - Trials guard: OK (0 untracked)
-- Hypotheses: H1 NOT_SUPPORTED (n=48), H2 SUPPORTED (n=148)
-- radar-flags.json scan age: 7m
+- Hypotheses: H1 NOT_SUPPORTED (n=48), H2 SUPPORTED (n=149)
+- radar-flags.json scan age: 10m
 - excluded from radar (pegged/tokenized equity): 38
