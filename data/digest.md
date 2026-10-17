@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-17 07:07 UTC
+# Radar digest - 2026-10-17 07:40 UTC
 
 ## Market
-- BTC scenario **A** | price 81606 | wk close 83902 vs 82800 | 50W 77187 (5.72%) | 29m old
+- BTC scenario **A** | price 81606 | wk close 83902 vs 82800 | 50W 77187 (5.72%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 57.15% | ETH/BTC 0.02982 | breadth7d 34% | stables 30d 0.62%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.01pt | 7d 0.30pt | n=114
 - Gold: PAXG 1m -2.61% | real10y 2.78 (10bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 29
@@ -19,28 +19,30 @@
 - ZK: **ONGOING** | +124% impulse, retr 0.25 | OI dd 7% | fund -0.0069 | hold False | inval 0.01604 | OB 0.01483-0.01529
 
 ## Pre-pump candidates
-- ADA: [A+E] 7d -10.7%
+- SEI: [A+C+E] 7d -6.2%
+- ADA: [A+E] 7d -11.7%
 - SUI: [A+E] 7d -8.8%
 - XRP: [A+E] 7d -7.2%
-- SEI: [A+E] 7d -6.2%
-- LTC: [A+E] 7d -6.2%
+- LTC: [A+E] 7d -6.7%
+- CRO: [A+E] 7d -6.0%
 - AVAX: [A+E] 7d -6.0%
-- CRO: [A+E] 7d -5.3%
-- HYPE: [A+E] 7d -5.1%
+- ZEC: [A+E] 7d -5.3%
 
 ## ETF pipeline (new this run)
-- ripple NEW: other - XRP News Today: $561M ETF Lead, but Why Is XRP Still Falling? - Coin Gabbar
-- ripple NEW: other - XRP ETF Inflows – Bitcoin Funds Bleed -Can XRP Reclaim $1.40? - InvestingHaven
+- sei-network NEW: filing - 21Shares Files for SEI ETF With Staking Features - CoinMarketCap
+- ripple NEW: other - XRP ETF Demand Slows Sharply Despite $1.8 Billion in Cumulative Investor Inflows - Coinpap
+- solana NEW: other - Crypto ETF News Today: Bitcoin, Ether, XRP, Solana Outflows Hard - Coin Gabbar
+- ripple NEW: other - Crypto ETF News Today: Bitcoin, Ether, XRP, Solana Outflows Hard - Coin Gabbar
 
 ## Derivatives flags (OKX)
 - ETH: SHORT_SQUEEZE_24H | OI/mc 0.59% | topPos 0.89 | taker 1.00
-- SOL: LONG_FLUSH_24H | OI/mc 0.58% | topPos 0.89 | taker 0.89
-- AVAX: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.40% | topPos 0.92 | taker 0.85
-- XRP: LONG_FLUSH_24H | OI/mc 0.13% | topPos 0.87 | taker 1.02
+- SOL: LONG_FLUSH_24H | OI/mc 0.58% | topPos 0.89 | taker 0.88
+- AVAX: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.40% | topPos 0.92 | taker 0.84
+- XRP: LONG_FLUSH_24H | OI/mc 0.13% | topPos 0.87 | taker 1.01
 - SUI: LONG_FLUSH_24H | OI/mc 0.95% | topPos 0.80 | taker 1.02
-- SEI: LONG_FLUSH_24H | OI/mc 0.70% | topPos 0.89 | taker 1.00
-- TAO: LONG_FLUSH_24H | OI/mc 0.80% | topPos 0.93 | taker 0.86
-- ADA: LONG_FLUSH_24H | OI/mc 0.41% | topPos 0.87 | taker 0.97
+- SEI: LONG_FLUSH_24H | OI/mc 0.72% | topPos 0.89 | taker 1.02
+- TAO: LONG_FLUSH_24H | OI/mc 0.80% | topPos 0.93 | taker 0.85
+- ZEC: SHORT_SQUEEZE_24H | OI/mc 0.66% | topPos 1.00 | taker 1.00
 
 ## Revenue / buyback flags
 - ore: REVENUE_ACCELERATING
@@ -51,12 +53,12 @@
 - (13 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 30 | mean 2.6% (0.20R) | in profit 12 | older than 7d 23
-- worst: HBAR -0.68R, LDO -0.62R, ADA -0.52R | best: AERO 1.46R, PYTH 1.48R, TIA 2.56R
+- open 30 | mean 2.4% (0.19R) | in profit 13 | older than 7d 23
+- worst: HBAR -0.68R, LDO -0.64R, ADA -0.54R | best: AERO 1.43R, PYTH 1.47R, TIA 2.46R
 
 ## System
-- CoinGecko 5278/10000 used, month-end projection 10043 (100%), throttle level 2 | by script {'scan': 1712, 'check_liquidity': 246, 'breakout_check': 3278, 'counterfactual_check': 42}
+- CoinGecko 5280/10000 used, month-end projection 10047 (100%), throttle level 2 | by script {'scan': 1714, 'check_liquidity': 246, 'breakout_check': 3278, 'counterfactual_check': 42}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=48), H2 SUPPORTED (n=148)
-- radar-flags.json scan age: 7m
-- excluded from radar (pegged/tokenized equity): 38
+- radar-flags.json scan age: 10m
+- excluded from radar (pegged/tokenized equity): 39
