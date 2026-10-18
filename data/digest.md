@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-18 08:40 UTC
+# Radar digest - 2026-10-18 09:08 UTC
 
 ## Market
-- BTC scenario **A** | price 81750 | wk close 83902 vs 82800 | 50W 77187 (5.91%) | 1m old
+- BTC scenario **A** | price 81750 | wk close 83902 vs 82800 | 50W 77187 (5.91%) | 29m old
 - Alts: **BTC_LED** [-] | BTC.D 57.36% | ETH/BTC 0.02950 | breadth7d 26% | stables 30d 0.54%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.06pt | 7d 0.50pt | n=120
 - Gold: PAXG 1m 0.60% | real10y 2.78 (10bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 29
@@ -19,10 +19,10 @@
 - BAT: **ONGOING** | +224% impulse, retr 0.28 | OI dd 15% | fund -0.0235 | hold False | inval 0.16549 | OB 0.16733-0.17544
 
 ## Pre-pump candidates
-- AAVE: [A+E] 7d -9.3%
-- PENDLE: [A+E] 7d -6.3%
-- SOL: [A+D] 7d -5.9%
-- NEAR: [A+E] 7d -5.3%
+- AAVE: [A+E] 7d -8.9%
+- SOL: [A+D] 7d -5.6%
+- PENDLE: [A+E] 7d -5.3%
+- NEAR: [A+E] 7d -4.7%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - XRP Price Forms a Risky Pattern as ETF Outflows Climb and Macro Risks Intensify - Benzinga
@@ -48,12 +48,12 @@
 - (13 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 30 | mean -1.7% (-0.08R) | in profit 11 | older than 7d 23
-- worst: LDO -0.80R, NEO -0.72R, AXS -0.66R | best: NEAR 1.02R, AERO 1.05R, TIA 1.50R
+- open 30 | mean -1.4% (-0.07R) | in profit 12 | older than 7d 23
+- worst: LDO -0.80R, NEO -0.72R, AXS -0.66R | best: NEAR 1.02R, AERO 1.05R, TIA 1.61R
 
 ## System
-- CoinGecko 5630/10000 used, month-end projection 10069 (101%), throttle level 2 | by script {'scan': 1822, 'check_liquidity': 262, 'breakout_check': 3495, 'counterfactual_check': 51}
+- CoinGecko 5632/10000 used, month-end projection 10048 (100%), throttle level 2 | by script {'scan': 1824, 'check_liquidity': 262, 'breakout_check': 3495, 'counterfactual_check': 51}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=48), H2 SUPPORTED (n=157)
-- radar-flags.json scan age: 10m
+- radar-flags.json scan age: 8m
 - excluded from radar (pegged/tokenized equity): 39
