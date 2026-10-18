@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-18 13:08 UTC
+# Radar digest - 2026-10-18 13:40 UTC
 
 ## Market
-- BTC scenario **A** | price 81968 | wk close 83902 vs 82800 | 50W 77187 (6.19%) | 29m old
+- BTC scenario **A** | price 81968 | wk close 83902 vs 82800 | 50W 77187 (6.19%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 57.48% | ETH/BTC 0.02948 | breadth7d 32% | stables 30d 0.53%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.08pt | 7d 0.53pt | n=121
 - Gold: PAXG 1m 0.61% | real10y 2.78 (10bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 29
@@ -20,25 +20,25 @@
 
 ## Pre-pump candidates
 - SUI: [A+E] 7d -10.5%
-- AAVE: [A+E] 7d -7.9%
-- RUNE: [D+E] 7d -6.1%
-- PENDLE: [A+E] 7d -5.7%
+- AAVE: [A+E] 7d -7.8%
+- RUNE: [D+E] 7d -6.6%
+- PENDLE: [A+E] 7d -6.2%
 - SOL: [A+E] 7d -5.1%
+- INJ: [A+E] 7d 8.5%
 
 ## ETF pipeline (new this run)
-- kucoin-shares NEW: other - US ETF Cash Flow - Week 42, 2026 🔴 BTC -$228.58 million, Vo - KuCoin
-- zcash: other - Zcash ETF (Derivatives) Analytics: Price Dynamics, Quarterly Returns, and Annual Price Cha
-- ondo-finance: other - Global X Uranium Tokenized ETF (Ondo) price today, URAon to USD live price, marketcap and 
+- zcash: launch - Best Crypto Presale 2026: Remittix's November Debut Meets Zcash's ETF Filing and Grayscale
+- zcash: launch - Best Crypto Presale 2026: Remittix's November Debut Meets Zcash's ETF Filing and Grayscale
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc 0.20% | topPos 0.96 | taker 0.97
-- ETH: SHORT_SQUEEZE_24H | OI/mc 0.59% | topPos 0.89 | taker 0.99
-- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 1.01
-- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.90
-- SUI: LONG_FLUSH_24H | OI/mc 0.96% | topPos 0.80 | taker 0.86
-- SEI: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.89 | taker 0.76
-- TAO: LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 0.93
-- ADA: LONG_FLUSH_24H | OI/mc -% | topPos 0.89 | taker 1.08
+- BTC: LONG_FLUSH_24H | OI/mc 0.20% | topPos 0.96 | taker 0.98
+- ETH: LONG_FLUSH_24H | OI/mc 0.59% | topPos 0.89 | taker 1.00
+- SOL: LONG_FLUSH_24H | OI/mc 0.59% | topPos 0.89 | taker 0.94
+- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 1.04
+- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.99
+- SUI: LONG_FLUSH_24H | OI/mc 0.97% | topPos 0.80 | taker 0.92
+- SEI: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 0.77
+- TAO: LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 0.96
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -49,12 +49,12 @@
 - (11 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 30 | mean -1.9% (-0.11R) | in profit 11 | older than 7d 23
-- worst: LDO -0.80R, SAND -0.73R, NEO -0.72R | best: NEAR 0.96R, AERO 1.04R, TIA 1.38R
+- open 30 | mean -2.6% (-0.16R) | in profit 10 | older than 7d 23
+- worst: LDO -0.84R, NEO -0.76R, AXS -0.71R | best: NEAR 0.83R, AERO 0.98R, TIA 1.28R
 
 ## System
-- CoinGecko 5701/10000 used, month-end projection 10075 (101%), throttle level 2 | by script {'scan': 1840, 'check_liquidity': 263, 'breakout_check': 3547, 'counterfactual_check': 51}
+- CoinGecko 5703/10000 used, month-end projection 10078 (101%), throttle level 2 | by script {'scan': 1842, 'check_liquidity': 263, 'breakout_check': 3547, 'counterfactual_check': 51}
 - Trials guard: OK (0 untracked)
-- Hypotheses: H1 NOT_SUPPORTED (n=48), H2 SUPPORTED (n=158)
-- radar-flags.json scan age: 8m
+- Hypotheses: H1 NOT_SUPPORTED (n=48), H2 SUPPORTED (n=159)
+- radar-flags.json scan age: 10m
 - excluded from radar (pegged/tokenized equity): 39
