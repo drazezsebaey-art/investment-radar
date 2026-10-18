@@ -1,4 +1,4 @@
-# Radar digest - 2026-10-18 13:40 UTC
+# Radar digest - 2026-10-18 14:07 UTC
 
 ## Market
 - BTC scenario **A** | price 81968 | wk close 83902 vs 82800 | 50W 77187 (6.19%) | 1h old
@@ -19,12 +19,13 @@
 - BAT: **ONGOING** | +224% impulse, retr 0.29 | OI dd 15% | fund -0.0361 | hold False | inval 0.16549 | OB 0.16733-0.17544
 
 ## Pre-pump candidates
-- SUI: [A+E] 7d -10.5%
+- SUI: [A+E] 7d -12.0%
 - AAVE: [A+E] 7d -7.8%
 - RUNE: [D+E] 7d -6.6%
 - PENDLE: [A+E] 7d -6.2%
-- SOL: [A+E] 7d -5.1%
+- SOL: [A+E] 7d -6.0%
 - INJ: [A+E] 7d 8.5%
+- XMR: [C+E] 7d 9.3%
 
 ## ETF pipeline (new this run)
 - zcash: launch - Best Crypto Presale 2026: Remittix's November Debut Meets Zcash's ETF Filing and Grayscale
@@ -49,12 +50,12 @@
 - (11 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 30 | mean -2.6% (-0.16R) | in profit 10 | older than 7d 23
-- worst: LDO -0.84R, NEO -0.76R, AXS -0.71R | best: NEAR 0.83R, AERO 0.98R, TIA 1.28R
+- open 30 | mean -3.4% (-0.21R) | in profit 9 | older than 7d 23
+- worst: LDO -0.86R, NEO -0.80R, AXS -0.74R | best: NEAR 0.71R, AERO 0.88R, TIA 1.26R
 
 ## System
-- CoinGecko 5703/10000 used, month-end projection 10078 (101%), throttle level 2 | by script {'scan': 1842, 'check_liquidity': 263, 'breakout_check': 3547, 'counterfactual_check': 51}
+- CoinGecko 5705/10000 used, month-end projection 10058 (101%), throttle level 2 | by script {'scan': 1844, 'check_liquidity': 263, 'breakout_check': 3547, 'counterfactual_check': 51}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=48), H2 SUPPORTED (n=159)
-- radar-flags.json scan age: 10m
+- radar-flags.json scan age: 7m
 - excluded from radar (pegged/tokenized equity): 39
