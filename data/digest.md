@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-18 05:39 UTC
+# Radar digest - 2026-10-18 06:19 UTC
 
 ## Market
-- BTC scenario **A** | price 81843 | wk close 83902 vs 82800 | 50W 77187 (6.03%) | 1h old
+- BTC scenario **A** | price 81843 | wk close 83902 vs 82800 | 50W 77187 (6.03%) | 2h old
 - Alts: **BTC_LED** [-] | BTC.D 57.40% | ETH/BTC 0.02952 | breadth7d 32% | stables 30d 0.54%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.22pt | 7d 0.54pt | n=119
 - Gold: PAXG 1m 0.60% | real10y 2.78 (10bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 29
@@ -19,9 +19,9 @@
 - BAT: **ONGOING** | +224% impulse, retr 0.30 | OI dd 15% | fund 0.0016 | hold False | inval 0.16549 | OB 0.16733-0.17544
 
 ## Pre-pump candidates
-- AAVE: [A+E] 7d -8.9%
-- SOL: [A+D] 7d -4.9%
-- PENDLE: [A+E] 7d -4.8%
+- AAVE: [A+E] 7d -9.6%
+- PENDLE: [A+E] 7d -6.4%
+- SOL: [A+D] 7d -5.6%
 
 ## ETF pipeline (new this run)
 - chainlink: other - Chainlink ETF Sees $10M Inflows Despite LINK Price Struggles - KuCoin
@@ -46,12 +46,12 @@
 - (13 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 29 | mean -1.7% (-0.08R) | in profit 12 | older than 7d 23
-- worst: LDO -0.81R, NEO -0.72R, AXS -0.66R | best: NEAR 0.96R, AERO 1.08R, TIA 1.35R
+- open 30 | mean -1.7% (-0.08R) | in profit 11 | older than 7d 23
+- worst: LDO -0.81R, NEO -0.72R, XTZ -0.66R | best: NEAR 0.96R, AERO 1.06R, TIA 1.34R
 
 ## System
-- CoinGecko 5556/10000 used, month-end projection 10009 (100%), throttle level 2 | by script {'scan': 1810, 'check_liquidity': 261, 'breakout_check': 3434, 'counterfactual_check': 51}
+- CoinGecko 5620/10000 used, month-end projection 10100 (101%), throttle level 2 | by script {'scan': 1812, 'check_liquidity': 262, 'breakout_check': 3495, 'counterfactual_check': 51}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=48), H2 SUPPORTED (n=156)
-- radar-flags.json scan age: 9m
+- radar-flags.json scan age: 19m
 - excluded from radar (pegged/tokenized equity): 39
