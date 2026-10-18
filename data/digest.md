@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-18 09:08 UTC
+# Radar digest - 2026-10-18 09:40 UTC
 
 ## Market
-- BTC scenario **A** | price 81750 | wk close 83902 vs 82800 | 50W 77187 (5.91%) | 29m old
+- BTC scenario **A** | price 81750 | wk close 83902 vs 82800 | 50W 77187 (5.91%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 57.36% | ETH/BTC 0.02950 | breadth7d 26% | stables 30d 0.54%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.06pt | 7d 0.50pt | n=120
 - Gold: PAXG 1m 0.60% | real10y 2.78 (10bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 29
@@ -20,40 +20,38 @@
 
 ## Pre-pump candidates
 - AAVE: [A+E] 7d -8.9%
-- SOL: [A+D] 7d -5.6%
 - PENDLE: [A+E] 7d -5.3%
-- NEAR: [A+E] 7d -4.7%
 
 ## ETF pipeline (new this run)
-- ripple NEW: other - XRP Price Forms a Risky Pattern as ETF Outflows Climb and Macro Risks Intensify - Benzinga
-- ondo-finance: other - Historical Data for Global X MSCI Argentina Tokenized ETF (Ondo) in USD – CryptoRank - Nue
+- solana NEW: other - Solana Surge Lures Wall Street: Morgan Stanley’s MSOL ETF Pulls in Fresh Cash as Token Ral
+- zcash: other - Zcash risks slide toward $1,000 as inflation fears outweigh ETF inflows - Cryptonews.net
+- ondo-finance: other - iShares 0-1 Year Treasury Bond ETF (Ondo Tokenized ETF) (SHVON) Price Prediction for 2026 
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc 0.20% | topPos 0.95 | taker 0.91
-- AVAX: LONG_FLUSH_24H | OI/mc 0.40% | topPos 0.93 | taker 1.01
-- XRP: LONG_FLUSH_24H | OI/mc 0.13% | topPos 0.87 | taker 0.88
-- SUI: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.95% | topPos 0.80 | taker 0.83
-- SEI: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.69% | topPos 0.90 | taker 0.72
-- TAO: LONG_FLUSH_24H | OI/mc 0.79% | topPos 0.91 | taker 0.89
-- ZEC: LONG_FLUSH_24H | OI/mc 0.67% | topPos 0.97 | taker 0.94
-- WLD: QUIET_DELEVERAGING, LONG_FLUSH_24H | OI/mc -% | topPos 0.89 | taker 0.88
+- BTC: SHORT_SQUEEZE_24H | OI/mc 0.20% | topPos 0.95 | taker 0.92
+- ETH: SHORT_SQUEEZE_24H | OI/mc 0.59% | topPos 0.89 | taker 0.98
+- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.93 | taker 1.00
+- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.89
+- SUI: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.95% | topPos 0.79 | taker 0.84
+- SEI: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.89 | taker 0.72
+- TAO: LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 0.88
+- ZEC: LONG_FLUSH_24H | OI/mc -% | topPos 0.96 | taker 0.94
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
-- ore: REVENUE_ACCELERATING
-- solana: REVENUE_ACCELERATING
-- lido-dao: HIGH_HOLDER_YIELD
 - thorchain: REVENUE_ACCELERATING
 - tornado-cash: REVENUE_ACCELERATING
-- (13 flagged protocol(s) without a tradeable token hidden)
+- thorswap: REVENUE_ACCELERATING
+- render-token: REVENUE_ACCELERATING
+- (11 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 30 | mean -1.4% (-0.07R) | in profit 12 | older than 7d 23
-- worst: LDO -0.80R, NEO -0.72R, AXS -0.66R | best: NEAR 1.02R, AERO 1.05R, TIA 1.61R
+- open 30 | mean -1.3% (-0.06R) | in profit 11 | older than 7d 23
+- worst: LDO -0.79R, NEO -0.72R, AXS -0.65R | best: NEAR 1.04R, AERO 1.05R, TIA 1.67R
 
 ## System
-- CoinGecko 5632/10000 used, month-end projection 10048 (100%), throttle level 2 | by script {'scan': 1824, 'check_liquidity': 262, 'breakout_check': 3495, 'counterfactual_check': 51}
+- CoinGecko 5634/10000 used, month-end projection 10052 (100%), throttle level 2 | by script {'scan': 1826, 'check_liquidity': 262, 'breakout_check': 3495, 'counterfactual_check': 51}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=48), H2 SUPPORTED (n=157)
-- radar-flags.json scan age: 8m
+- radar-flags.json scan age: 10m
 - excluded from radar (pegged/tokenized equity): 39
