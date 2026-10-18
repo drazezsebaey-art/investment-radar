@@ -1,10 +1,10 @@
-# Radar digest - 2026-10-18 21:39 UTC
+# Radar digest - 2026-10-18 22:07 UTC
 
 ## Market
 - BTC scenario **B** | price 80883 | wk close 81175 vs 82800 | 50W 76608 (5.58%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 57.57% | ETH/BTC 0.02914 | breadth7d 24% | stables 30d 0.53%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.38pt | 7d 0.70pt | n=121
-- Gold: PAXG 1m -0.32% | real10y 2.78 (10bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 29
+- Gold: PAXG 1m 0.02% | real10y 2.78 (10bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 29
 - 10y 1w: -18bp = real -14 + breakeven 0 -> **REAL_YIELD_DRIVEN**
 - 10y 1m: 9bp = real 10 + breakeven 2 -> **SMALL_MOVE**
 
@@ -19,9 +19,8 @@
 - LINK: **BROKEN** | +48% impulse, retr 0.81 | OI dd 28% | fund -0.0018 | hold True | inval 10.61800 | OB 10.61800-10.96200
 
 ## Pre-pump candidates
-- NEAR: [A+E] 7d -17.6%
+- NEAR: [A+E] 7d -15.9%
 - AAVE: [A+E] 7d -13.9%
-- RENDER: [D+E] 7d -13.5%
 - PENDLE: [A+E] 7d -12.2%
 
 ## ETF pipeline (new this run)
@@ -46,12 +45,12 @@
 - (11 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 25 | mean -6.1% (-0.36R) | in profit 7 | older than 7d 20
-- worst: XTZ -0.91R, NEO -0.90R, IMX -0.86R | best: NEAR 0.45R, AERO 0.54R, TIA 0.91R
+- open 25 | mean -5.5% (-0.32R) | in profit 8 | older than 7d 20
+- worst: NEO -0.88R, XTZ -0.87R, IMX -0.81R | best: NEAR 0.57R, AERO 0.58R, TIA 0.95R
 
 ## System
-- CoinGecko 5748/10000 used, month-end projection 9969 (100%), throttle level 1 | by script {'scan': 1882, 'check_liquidity': 268, 'breakout_check': 3547, 'counterfactual_check': 51}
+- CoinGecko 5750/10000 used, month-end projection 9949 (100%), throttle level 1 | by script {'scan': 1884, 'check_liquidity': 268, 'breakout_check': 3547, 'counterfactual_check': 51}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=49), H2 SUPPORTED (n=164)
-- radar-flags.json scan age: 9m
+- radar-flags.json scan age: 6m
 - excluded from radar (pegged/tokenized equity): 40
