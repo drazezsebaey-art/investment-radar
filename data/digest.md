@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-18 18:40 UTC
+# Radar digest - 2026-10-18 19:08 UTC
 
 ## Market
-- BTC scenario **B** | price 81142 | wk close 81175 vs 82800 | 50W 76608 (5.92%) | 1m old
+- BTC scenario **B** | price 81142 | wk close 81175 vs 82800 | 50W 76608 (5.92%) | 29m old
 - Alts: **BTC_LED** [-] | BTC.D 57.57% | ETH/BTC 0.02914 | breadth7d 24% | stables 30d 0.53%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.38pt | 7d 0.70pt | n=121
 - Gold: PAXG 1m -0.32% | real10y 2.78 (10bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 29
@@ -19,7 +19,7 @@
 - LINK: **BROKEN** | +48% impulse, retr 0.78 | OI dd 28% | fund -0.0006 | hold True | inval 10.61800 | OB 10.61800-10.96200
 
 ## Pre-pump candidates
-- NEAR: [A+E] 7d -17.5%
+- NEAR: [A+E] 7d -16.8%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - Bitwise XRP ETF Attracts Fresh Cash Even as XRP Flashing ‘Sell’ Signal Keeps Traders on Ed
@@ -44,12 +44,12 @@
 - (11 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 28 | mean -5.1% (-0.31R) | in profit 7 | older than 7d 23
-- worst: LDO -0.94R, ICP -0.83R, NEO -0.82R | best: NEAR 0.65R, AERO 0.76R, TIA 1.20R
+- open 29 | mean -5.1% (-0.32R) | in profit 7 | older than 7d 23
+- worst: LDO -0.94R, ICP -0.83R, NEO -0.82R | best: NEAR 0.59R, AERO 0.73R, TIA 1.17R
 
 ## System
-- CoinGecko 5731/10000 used, month-end projection 10009 (100%), throttle level 2 | by script {'scan': 1870, 'check_liquidity': 263, 'breakout_check': 3547, 'counterfactual_check': 51}
+- CoinGecko 5734/10000 used, month-end projection 9991 (100%), throttle level 1 | by script {'scan': 1872, 'check_liquidity': 264, 'breakout_check': 3547, 'counterfactual_check': 51}
 - Trials guard: OK (0 untracked)
-- Hypotheses: H1 NOT_SUPPORTED (n=49), H2 SUPPORTED (n=161)
-- radar-flags.json scan age: 10m
+- Hypotheses: H1 NOT_SUPPORTED (n=49), H2 SUPPORTED (n=162)
+- radar-flags.json scan age: 8m
 - excluded from radar (pegged/tokenized equity): 40
