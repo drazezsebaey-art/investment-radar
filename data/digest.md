@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-18 22:39 UTC
+# Radar digest - 2026-10-18 23:06 UTC
 
 ## Market
-- BTC scenario **B** | price 81606 | wk close 81175 vs 82800 | 50W 76608 (6.52%) | 1m old
+- BTC scenario **B** | price 81606 | wk close 81175 vs 82800 | 50W 76608 (6.52%) | 29m old
 - Alts: **BTC_LED** [-] | BTC.D 57.52% | ETH/BTC 0.02926 | breadth7d 22% | stables 30d 0.55%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.33pt | 7d 0.70pt | n=121
 - Gold: PAXG 1m 0.02% | real10y 2.78 (10bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 29
@@ -19,7 +19,7 @@
 - BAT: **ONGOING** | +221% impulse, retr 0.33 | OI dd 6% | fund -0.0018 | hold False | inval 0.16549 | OB 0.13603-0.14156
 
 ## Pre-pump candidates
-- NEAR: [A+E] 7d -15.9%
+- NEAR: [A+E] 7d -13.8%
 - AAVE: [A+E] 7d -13.8%
 - PENDLE: [A+E] 7d -11.4%
 
@@ -45,12 +45,12 @@
 - (11 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 25 | mean -3.7% (-0.20R) | in profit 9 | older than 7d 20
-- worst: NEO -0.80R, AXS -0.75R, XTZ -0.72R | best: AERO 0.74R, NEAR 0.87R, TIA 1.04R
+- open 25 | mean -3.0% (-0.15R) | in profit 8 | older than 7d 20
+- worst: NEO -0.78R, AXS -0.72R, XTZ -0.68R | best: AERO 0.76R, NEAR 1.00R, TIA 1.17R
 
 ## System
-- CoinGecko 5753/10000 used, month-end projection 9954 (100%), throttle level 1 | by script {'scan': 1886, 'check_liquidity': 269, 'breakout_check': 3547, 'counterfactual_check': 51}
+- CoinGecko 5756/10000 used, month-end projection 9936 (99%), throttle level 1 | by script {'scan': 1888, 'check_liquidity': 270, 'breakout_check': 3547, 'counterfactual_check': 51}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=49), H2 SUPPORTED (n=164)
-- radar-flags.json scan age: 9m
+- radar-flags.json scan age: 6m
 - excluded from radar (pegged/tokenized equity): 39
