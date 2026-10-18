@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-17 23:40 UTC
+# Radar digest - 2026-10-18 00:21 UTC
 
 ## Market
-- BTC scenario **A** | price 81312 | wk close 83902 vs 82800 | 50W 77187 (5.34%) | 1h old
+- BTC scenario **A** | price 81312 | wk close 83902 vs 82800 | 50W 77187 (5.34%) | 2h old
 - Alts: **BTC_LED** [-] | BTC.D 57.36% | ETH/BTC 0.02942 | breadth7d 31% | stables 30d 0.62%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.15pt | 7d 0.50pt | n=118
 - Gold: PAXG 1m 0.41% | real10y 2.78 (10bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 29
@@ -19,8 +19,9 @@
 - UNI: **BROKEN** | +88% impulse, retr 0.74 | OI dd 34% | fund 0.0075 | hold False | inval 6.78300 | OB 5.80800-6.03200
 
 ## Pre-pump candidates
-- SAND: [B+C] 7d -11.4%
-- AAVE: [A+E] 7d -10.5%
+- SAND: [B+C] 7d -10.5%
+- AAVE: [A+E] 7d -10.2%
+- RENDER: [D+E] 7d -4.0%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - XRP's $1.30 Retest Triggers First ETF Outflow in 13 Weeks - TradingView
@@ -48,12 +49,12 @@
 - (13 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 29 | mean -0.8% (-0.02R) | in profit 12 | older than 7d 23
-- worst: LDO -0.77R, NEO -0.66R, ADA -0.64R | best: PYTH 0.95R, AERO 1.10R, TIA 1.55R
+- open 29 | mean -0.4% (0.01R) | in profit 13 | older than 7d 23
+- worst: LDO -0.74R, NEO -0.66R, ADA -0.62R | best: PYTH 1.01R, AERO 1.11R, TIA 1.56R
 
 ## System
-- CoinGecko 5473/10000 used, month-end projection 10005 (100%), throttle level 2 | by script {'scan': 1786, 'check_liquidity': 259, 'breakout_check': 3380, 'counterfactual_check': 48}
+- CoinGecko 5533/10000 used, month-end projection 10090 (101%), throttle level 2 | by script {'scan': 1788, 'check_liquidity': 260, 'breakout_check': 3434, 'counterfactual_check': 51}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=48), H2 SUPPORTED (n=156)
-- radar-flags.json scan age: 10m
+- radar-flags.json scan age: 21m
 - excluded from radar (pegged/tokenized equity): 37
