@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-18 07:08 UTC
+# Radar digest - 2026-10-18 07:40 UTC
 
 ## Market
-- BTC scenario **A** | price 81761 | wk close 83902 vs 82800 | 50W 77187 (5.93%) | 30m old
+- BTC scenario **A** | price 81761 | wk close 83902 vs 82800 | 50W 77187 (5.93%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 57.36% | ETH/BTC 0.02950 | breadth7d 26% | stables 30d 0.54%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.06pt | 7d 0.50pt | n=120
 - Gold: PAXG 1m 0.60% | real10y 2.78 (10bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 29
@@ -19,23 +19,24 @@
 - BAT: **ONGOING** | +224% impulse, retr 0.28 | OI dd 15% | fund -0.0098 | hold False | inval 0.16549 | OB 0.16733-0.17544
 
 ## Pre-pump candidates
-- AAVE: [A+E] 7d -9.6%
-- PENDLE: [A+E] 7d -6.4%
+- AAVE: [A+E] 7d -9.1%
+- PENDLE: [A+E] 7d -5.3%
 - SOL: [A+D] 7d -5.2%
 - NEAR: [A+E] 7d -4.6%
 
 ## ETF pipeline (new this run)
-- chainlink: other - Chainlink ETF Sees $10M Inflows Despite LINK Price Struggles - KuCoin
+- ripple NEW: other - XRP Price Forms a Risky Pattern as ETF Outflows Climb and Macro Risks Intensify - Benzinga
+- ondo-finance: other - Historical Data for Global X MSCI Argentina Tokenized ETF (Ondo) in USD – CryptoRank - Nue
 
 ## Derivatives flags (OKX)
 - BTC: SHORT_SQUEEZE_24H | OI/mc 0.20% | topPos 0.95 | taker 0.92
 - AVAX: LONG_FLUSH_24H | OI/mc 0.40% | topPos 0.93 | taker 1.00
-- XRP: LONG_FLUSH_24H | OI/mc 0.13% | topPos 0.87 | taker 0.86
-- SUI: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.96% | topPos 0.79 | taker 0.82
-- SEI: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.69% | topPos 0.90 | taker 0.74
-- TAO: LONG_FLUSH_24H | OI/mc 0.80% | topPos 0.91 | taker 0.89
-- WLD: QUIET_DELEVERAGING, LONG_FLUSH_24H | OI/mc -% | topPos 0.90 | taker 0.88
-- ADA: LONG_FLUSH_24H | OI/mc 0.42% | topPos 0.89 | taker 1.03
+- XRP: LONG_FLUSH_24H | OI/mc 0.13% | topPos 0.87 | taker 0.87
+- SUI: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.96% | topPos 0.80 | taker 0.82
+- SEI: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.69% | topPos 0.90 | taker 0.72
+- TAO: LONG_FLUSH_24H | OI/mc 0.79% | topPos 0.91 | taker 0.88
+- WLD: LONG_FLUSH_24H | OI/mc -% | topPos 0.90 | taker 0.89
+- ADA: LONG_FLUSH_24H | OI/mc 0.42% | topPos 0.89 | taker 1.04
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -47,12 +48,12 @@
 - (13 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 30 | mean -1.4% (-0.06R) | in profit 12 | older than 7d 23
-- worst: LDO -0.78R, NEO -0.70R, AXS -0.64R | best: NEAR 1.06R, AERO 1.06R, TIA 1.34R
+- open 30 | mean -1.7% (-0.08R) | in profit 11 | older than 7d 23
+- worst: LDO -0.80R, NEO -0.70R, AXS -0.64R | best: NEAR 0.98R, AERO 1.06R, TIA 1.33R
 
 ## System
-- CoinGecko 5624/10000 used, month-end projection 10083 (101%), throttle level 2 | by script {'scan': 1816, 'check_liquidity': 262, 'breakout_check': 3495, 'counterfactual_check': 51}
+- CoinGecko 5626/10000 used, month-end projection 10086 (101%), throttle level 2 | by script {'scan': 1818, 'check_liquidity': 262, 'breakout_check': 3495, 'counterfactual_check': 51}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=48), H2 SUPPORTED (n=156)
-- radar-flags.json scan age: 7m
+- radar-flags.json scan age: 9m
 - excluded from radar (pegged/tokenized equity): 39
