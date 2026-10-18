@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-18 07:40 UTC
+# Radar digest - 2026-10-18 08:08 UTC
 
 ## Market
-- BTC scenario **A** | price 81761 | wk close 83902 vs 82800 | 50W 77187 (5.93%) | 1h old
+- BTC scenario **A** | price 81761 | wk close 83902 vs 82800 | 50W 77187 (5.93%) | 2h old
 - Alts: **BTC_LED** [-] | BTC.D 57.36% | ETH/BTC 0.02950 | breadth7d 26% | stables 30d 0.54%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.06pt | 7d 0.50pt | n=120
 - Gold: PAXG 1m 0.60% | real10y 2.78 (10bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 29
@@ -20,9 +20,8 @@
 
 ## Pre-pump candidates
 - AAVE: [A+E] 7d -9.1%
+- SOL: [A+D] 7d -5.9%
 - PENDLE: [A+E] 7d -5.3%
-- SOL: [A+D] 7d -5.2%
-- NEAR: [A+E] 7d -4.6%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - XRP Price Forms a Risky Pattern as ETF Outflows Climb and Macro Risks Intensify - Benzinga
@@ -48,12 +47,12 @@
 - (13 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 30 | mean -1.7% (-0.08R) | in profit 11 | older than 7d 23
-- worst: LDO -0.80R, NEO -0.70R, AXS -0.64R | best: NEAR 0.98R, AERO 1.06R, TIA 1.33R
+- open 30 | mean -1.5% (-0.07R) | in profit 12 | older than 7d 23
+- worst: LDO -0.79R, NEO -0.72R, AXS -0.64R | best: NEAR 1.04R, AERO 1.06R, TIA 1.43R
 
 ## System
-- CoinGecko 5626/10000 used, month-end projection 10086 (101%), throttle level 2 | by script {'scan': 1818, 'check_liquidity': 262, 'breakout_check': 3495, 'counterfactual_check': 51}
+- CoinGecko 5628/10000 used, month-end projection 10065 (101%), throttle level 2 | by script {'scan': 1820, 'check_liquidity': 262, 'breakout_check': 3495, 'counterfactual_check': 51}
 - Trials guard: OK (0 untracked)
-- Hypotheses: H1 NOT_SUPPORTED (n=48), H2 SUPPORTED (n=156)
-- radar-flags.json scan age: 9m
+- Hypotheses: H1 NOT_SUPPORTED (n=48), H2 SUPPORTED (n=157)
+- radar-flags.json scan age: 8m
 - excluded from radar (pegged/tokenized equity): 39
