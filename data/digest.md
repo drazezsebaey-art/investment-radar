@@ -1,4 +1,4 @@
-# Radar digest - 2026-10-18 19:40 UTC
+# Radar digest - 2026-10-18 20:07 UTC
 
 ## Market
 - BTC scenario **B** | price 81142 | wk close 81175 vs 82800 | 50W 76608 (5.92%) | 1h old
@@ -19,7 +19,8 @@
 - LINK: **BROKEN** | +48% impulse, retr 0.78 | OI dd 28% | fund -0.0006 | hold True | inval 10.61800 | OB 10.61800-10.96200
 
 ## Pre-pump candidates
-- NEAR: [A+E] 7d -16.8%
+- NEAR: [A+E] 7d -18.7%
+- RENDER: [D+E] 7d -11.1%
 
 ## ETF pipeline (new this run)
 - solana NEW: other - Solana Surge, ETF Stumble: Bitwise’s BSOL Logs Outflows as Token Rally Stays Intact - TipR
@@ -43,12 +44,12 @@
 - (11 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 27 | mean -5.1% (-0.32R) | in profit 8 | older than 7d 22
-- worst: NEO -0.84R, XTZ -0.84R, ICP -0.83R | best: NEAR 0.49R, AERO 0.69R, TIA 1.10R
+- open 26 | mean -6.5% (-0.40R) | in profit 6 | older than 7d 21
+- worst: XTZ -0.96R, NEO -0.92R, AXS -0.86R | best: NEAR 0.37R, AERO 0.59R, TIA 1.00R
 
 ## System
-- CoinGecko 5737/10000 used, month-end projection 9996 (100%), throttle level 1 | by script {'scan': 1874, 'check_liquidity': 265, 'breakout_check': 3547, 'counterfactual_check': 51}
+- CoinGecko 5740/10000 used, month-end projection 9978 (100%), throttle level 1 | by script {'scan': 1876, 'check_liquidity': 266, 'breakout_check': 3547, 'counterfactual_check': 51}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=49), H2 SUPPORTED (n=163)
-- radar-flags.json scan age: 10m
+- radar-flags.json scan age: 6m
 - excluded from radar (pegged/tokenized equity): 40
