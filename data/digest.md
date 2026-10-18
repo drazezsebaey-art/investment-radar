@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-18 03:08 UTC
+# Radar digest - 2026-10-18 03:40 UTC
 
 ## Market
-- BTC scenario **A** | price 81756 | wk close 83902 vs 82800 | 50W 77187 (5.92%) | 30m old
+- BTC scenario **A** | price 81756 | wk close 83902 vs 82800 | 50W 77187 (5.92%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 57.40% | ETH/BTC 0.02952 | breadth7d 32% | stables 30d 0.54%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.22pt | 7d 0.54pt | n=119
 - Gold: PAXG 1m 0.41% | real10y 2.78 (10bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 29
@@ -19,21 +19,22 @@
 - BAT: **ONGOING** | +224% impulse, retr 0.29 | OI dd 15% | fund -0.0033 | hold False | inval 0.16549 | OB 0.16733-0.17544
 
 ## Pre-pump candidates
-- AAVE: [A+E] 7d -9.7%
-- RENDER: [D+E] 7d -2.9%
+- AAVE: [A+E] 7d -9.6%
+- RENDER: [D+E] 7d -4.1%
 
 ## ETF pipeline (new this run)
-- none
+- zcash: other - Zcash Price Forecast: ZEC declines as US inflation surprise offsets fresh ETF inflows - ww
+- chainlink: other - Chainlink sees $10M ETF inflows – Why LINK’s price still struggles - Cryptonews.net
 
 ## Derivatives flags (OKX)
+- BTC: SHORT_SQUEEZE_24H | OI/mc 0.20% | topPos 0.95 | taker 0.92
 - ETH: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.88 | taker 0.97
-- SOL: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 0.87
-- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.93 | taker 1.00
-- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.90
+- SOL: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 0.88
+- NEAR: LONG_FLUSH_24H | OI/mc -% | topPos 1.04 | taker 0.94
+- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.93 | taker 0.99
+- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.89
 - SUI: LONG_FLUSH_24H | OI/mc 0.95% | topPos 0.79 | taker 0.85
-- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.89 | taker 0.89
-- TAO: LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 0.91
-- WLD: LONG_FLUSH_24H | OI/mc 1.81% | topPos 0.90 | taker 0.88
+- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.90 | taker 0.87
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -45,12 +46,12 @@
 - (13 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 29 | mean -0.7% (-0.00R) | in profit 13 | older than 7d 23
-- worst: LDO -0.74R, NEO -0.68R, AXS -0.61R | best: AERO 1.08R, NEAR 1.10R, TIA 1.41R
+- open 29 | mean -0.8% (-0.01R) | in profit 12 | older than 7d 23
+- worst: LDO -0.74R, NEO -0.68R, AXS -0.61R | best: AERO 1.09R, NEAR 1.12R, TIA 1.42R
 
 ## System
-- CoinGecko 5545/10000 used, month-end projection 10038 (100%), throttle level 2 | by script {'scan': 1800, 'check_liquidity': 260, 'breakout_check': 3434, 'counterfactual_check': 51}
+- CoinGecko 5547/10000 used, month-end projection 10041 (100%), throttle level 2 | by script {'scan': 1802, 'check_liquidity': 260, 'breakout_check': 3434, 'counterfactual_check': 51}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=48), H2 SUPPORTED (n=156)
-- radar-flags.json scan age: 7m
+- radar-flags.json scan age: 10m
 - excluded from radar (pegged/tokenized equity): 39
