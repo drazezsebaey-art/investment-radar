@@ -1,12 +1,12 @@
-# Radar digest - 2026-10-19 21:39 UTC
+# Radar digest - 2026-10-19 22:07 UTC
 
 ## Market
 - BTC scenario **B** | price 82014 | wk close 81175 vs 82800 | 50W 76608 (7.06%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 57.56% | ETH/BTC 0.02928 | breadth7d 26% | stables 30d 0.36%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.46pt | 7d 0.81pt | n=121
-- Gold: PAXG 1m -0.57% | real10y 2.78 (10bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 29
-- 10y 1w: -18bp = real -14 + breakeven 0 -> **REAL_YIELD_DRIVEN**
-- 10y 1m: 9bp = real 10 + breakeven 2 -> **SMALL_MOVE**
+- Gold: PAXG 1m -0.48% | real10y 2.74 (13bp 1m) | USD 1m 1.72% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 29
+- 10y 1w: -13bp = real -13 + breakeven 2 -> **REAL_YIELD_DRIVEN**
+- 10y 1m: 15bp = real 13 + breakeven 2 -> **REAL_YIELD_DRIVEN**
 
 ## Coins in correction (entry_ready first)
 - AVAX: **RESET_DONE** ENTRY_READY | +67% impulse, retr 0.51 | OI dd 33% | fund 0.0084 | hold True | inval 9.26200 | OB 7.17400-7.36200
@@ -20,8 +20,9 @@
 
 ## Pre-pump candidates
 - RENDER: [D+E] 7d -13.5%
-- NEAR: [A+E] 7d -10.1%
-- KITE: [C+E] 7d -5.0%
+- NEAR: [A+E] 7d -8.9%
+- WLD: [A+C] 7d -1.3%
+- PEPE: [A+C] 7d 0.5%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - XRP Bounces to $1.31 as 13-Week ETF Inflow Streak Ends - Altcoin Buzz
@@ -52,12 +53,12 @@
 - (12 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 25 | mean -2.6% (-0.12R) | in profit 9 | older than 7d 20
-- worst: HBAR -0.75R, AXS -0.75R, NEO -0.74R | best: AERO 0.72R, NEAR 0.94R, TIA 1.18R
+- open 25 | mean -2.7% (-0.13R) | in profit 9 | older than 7d 20
+- worst: HBAR -0.77R, AXS -0.75R, NEO -0.74R | best: AERO 0.71R, NEAR 0.87R, TIA 1.16R
 
 ## System
-- CoinGecko 6100/10000 used, month-end projection 10019 (100%), throttle level 2 | by script {'scan': 1986, 'check_liquidity': 290, 'breakout_check': 3768, 'counterfactual_check': 56}
+- CoinGecko 6103/10000 used, month-end projection 10001 (100%), throttle level 2 | by script {'scan': 1988, 'check_liquidity': 291, 'breakout_check': 3768, 'counterfactual_check': 56}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=49), H2 SUPPORTED (n=168)
-- radar-flags.json scan age: 9m
+- radar-flags.json scan age: 7m
 - excluded from radar (pegged/tokenized equity): 39
