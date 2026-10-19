@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-19 11:39 UTC
+# Radar digest - 2026-10-19 12:20 UTC
 
 ## Market
-- BTC scenario **B** | price 82218 | wk close 81175 vs 82800 | 50W 76608 (7.32%) | 1h old
+- BTC scenario **B** | price 82218 | wk close 81175 vs 82800 | 50W 76608 (7.32%) | 2h old
 - Alts: **BTC_LED** [-] | BTC.D 57.55% | ETH/BTC 0.02942 | breadth7d 30% | stables 30d 0.36%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.44pt | 7d 0.80pt | n=121
 - Gold: PAXG 1m 0.05% | real10y 2.78 (10bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 29
@@ -19,7 +19,8 @@
 - SENT: **RESET_DONE** | +108% impulse, retr 0.32 | OI dd 50% | fund 0.0050 | hold False | inval 0.02045 | OB 0.02045-0.02104
 
 ## Pre-pump candidates
-- NEAR: [A+E] 7d -14.1%
+- NEAR: [A+E] 7d -14.0%
+- SENT: [C+E] 7d 5.1%
 
 ## ETF pipeline (new this run)
 - zcash: other - Zcash Gains Nearly 3% as Grayscale ETF Logs Third Weekly Outflow - TOKENPOST
@@ -46,11 +47,11 @@
 
 ## Paper book (open trades, marked to last scan)
 - open 25 | mean -3.0% (-0.15R) | in profit 9 | older than 7d 20
-- worst: NEO -0.78R, AXS -0.78R, HBAR -0.72R | best: AERO 0.68R, NEAR 1.02R, TIA 1.18R
+- worst: NEO -0.78R, AXS -0.77R, HBAR -0.72R | best: AERO 0.66R, NEAR 1.00R, TIA 1.15R
 
 ## System
-- CoinGecko 5939/10000 used, month-end projection 9974 (100%), throttle level 1 | by script {'scan': 1938, 'check_liquidity': 285, 'breakout_check': 3664, 'counterfactual_check': 52}
+- CoinGecko 5995/10000 used, month-end projection 10046 (100%), throttle level 2 | by script {'scan': 1940, 'check_liquidity': 286, 'breakout_check': 3717, 'counterfactual_check': 52}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=49), H2 SUPPORTED (n=164)
-- radar-flags.json scan age: 9m
+- radar-flags.json scan age: 20m
 - excluded from radar (pegged/tokenized equity): 39
