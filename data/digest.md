@@ -1,10 +1,10 @@
-# Radar digest - 2026-10-19 09:39 UTC
+# Radar digest - 2026-10-19 10:06 UTC
 
 ## Market
 - BTC scenario **B** | price 82893 | wk close 81175 vs 82800 | 50W 76608 (8.20%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 57.55% | ETH/BTC 0.02937 | breadth7d 24% | stables 30d 0.36%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.37pt | 7d 0.74pt | n=121
-- Gold: PAXG 1m 0.32% | real10y 2.78 (10bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 29
+- Gold: PAXG 1m 0.05% | real10y 2.78 (10bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 29
 - 10y 1w: -18bp = real -14 + breakeven 0 -> **REAL_YIELD_DRIVEN**
 - 10y 1m: 9bp = real 10 + breakeven 2 -> **SMALL_MOVE**
 
@@ -19,7 +19,8 @@
 - ONDO: **RESET_DONE** | +88% impulse, retr 0.59 | OI dd 42% | fund -0.0001 | hold False | inval 0.40380 | OB 0.40380-0.41850
 
 ## Pre-pump candidates
-- NEAR: [A+E] 7d -13.1%
+- NEAR: [A+E] 7d -13.3%
+- SENT: [C+E] 7d 5.3%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - Bitwise XRP ETF Lists $541.12 Million in Net Assets on Oct. 15 - TOKENPOST
@@ -48,12 +49,12 @@
 - (12 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 25 | mean -1.6% (-0.06R) | in profit 9 | older than 7d 20
-- worst: NEO -0.72R, AXS -0.71R, HBAR -0.62R | best: AERO 0.79R, TIA 1.16R, NEAR 1.26R
+- open 25 | mean -1.9% (-0.08R) | in profit 9 | older than 7d 20
+- worst: NEO -0.74R, AXS -0.72R, HBAR -0.65R | best: AERO 0.76R, TIA 1.17R, NEAR 1.20R
 
 ## System
-- CoinGecko 5925/10000 used, month-end projection 9996 (100%), throttle level 1 | by script {'scan': 1930, 'check_liquidity': 279, 'breakout_check': 3664, 'counterfactual_check': 52}
+- CoinGecko 5930/10000 used, month-end projection 9982 (100%), throttle level 1 | by script {'scan': 1932, 'check_liquidity': 282, 'breakout_check': 3664, 'counterfactual_check': 52}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=49), H2 SUPPORTED (n=164)
-- radar-flags.json scan age: 9m
+- radar-flags.json scan age: 6m
 - excluded from radar (pegged/tokenized equity): 39
