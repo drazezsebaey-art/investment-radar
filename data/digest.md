@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-19 14:40 UTC
+# Radar digest - 2026-10-19 15:07 UTC
 
 ## Market
-- BTC scenario **B** | price 81939 | wk close 81175 vs 82800 | 50W 76608 (6.96%) | 1m old
+- BTC scenario **B** | price 81939 | wk close 81175 vs 82800 | 50W 76608 (6.96%) | 29m old
 - Alts: **BTC_LED** [-] | BTC.D 57.60% | ETH/BTC 0.02922 | breadth7d 19% | stables 30d 0.36%
 - Alt risk (BTC.D): **ELEVATED** ['BTC_DOM_RISING_3D'] | 3d 0.52pt | 7d 0.87pt | n=121
 - Gold: PAXG 1m 0.05% | real10y 2.78 (10bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 29
@@ -19,8 +19,7 @@
 - ONDO: **RESET_DONE** | +88% impulse, retr 0.62 | OI dd 42% | fund 0.0100 | hold False | inval 0.40380 | OB 0.40380-0.41850
 
 ## Pre-pump candidates
-- RENDER: [D+E] 7d -13.7%
-- NEAR: [A+E] 7d -12.3%
+- none
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - Bitwise XRP ETF Crosses $541 Million in Net Assets - Coinpedia
@@ -49,12 +48,12 @@
 - (12 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 25 | mean -3.4% (-0.17R) | in profit 9 | older than 7d 20
-- worst: NEO -0.78R, AXS -0.78R, A -0.76R | best: AERO 0.60R, NEAR 0.92R, TIA 1.04R
+- open 25 | mean -2.9% (-0.14R) | in profit 9 | older than 7d 20
+- worst: A -0.80R, NEO -0.76R, AXS -0.75R | best: AERO 0.58R, NEAR 0.94R, TIA 1.04R
 
 ## System
-- CoinGecko 6013/10000 used, month-end projection 10031 (100%), throttle level 2 | by script {'scan': 1958, 'check_liquidity': 286, 'breakout_check': 3717, 'counterfactual_check': 52}
+- CoinGecko 6015/10000 used, month-end projection 10012 (100%), throttle level 2 | by script {'scan': 1960, 'check_liquidity': 286, 'breakout_check': 3717, 'counterfactual_check': 52}
 - Trials guard: OK (0 untracked)
-- Hypotheses: H1 NOT_SUPPORTED (n=49), H2 SUPPORTED (n=167)
-- radar-flags.json scan age: 9m
+- Hypotheses: H1 NOT_SUPPORTED (n=49), H2 SUPPORTED (n=168)
+- radar-flags.json scan age: 6m
 - excluded from radar (pegged/tokenized equity): 38
