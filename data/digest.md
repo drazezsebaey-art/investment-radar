@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-19 15:07 UTC
+# Radar digest - 2026-10-19 15:40 UTC
 
 ## Market
-- BTC scenario **B** | price 81939 | wk close 81175 vs 82800 | 50W 76608 (6.96%) | 29m old
+- BTC scenario **B** | price 81939 | wk close 81175 vs 82800 | 50W 76608 (6.96%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 57.60% | ETH/BTC 0.02922 | breadth7d 19% | stables 30d 0.36%
 - Alt risk (BTC.D): **ELEVATED** ['BTC_DOM_RISING_3D'] | 3d 0.52pt | 7d 0.87pt | n=121
 - Gold: PAXG 1m 0.05% | real10y 2.78 (10bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 29
@@ -22,22 +22,17 @@
 - none
 
 ## ETF pipeline (new this run)
-- ripple NEW: other - Bitwise XRP ETF Crosses $541 Million in Net Assets - Coinpedia
-- ripple NEW: other - XRP spot ETF cumulative inflows surpass $1.8 billion: XRP holders can earn up to $9,000 pe
-- near: other - NEAR Protocol price stands at 4.6892 USD with ETF inflow of 2.61 million USD - ad-hoc-news
-- near: other - NEAR ETF takes in 2.60 million USD: What it means for the NEAR Protocol price - ad-hoc-new
-- bittensor: other - Bittensor Price Prediction: TAO Tests $300 as ETF Hopes and AI Revenue Shape Its Outlook -
-- bittensor: other - Bittensor Price Prediction: TAO Tests $300 as ETF Hopes and AI Revenue Shape Its Outlook -
+- chainlink: delay_or_rejection - Will Chainlink’s 431900 LINK Reserve haul outweigh ETF withdrawals? - AMBCrypto
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc 0.20% | topPos 0.97 | taker 0.97
-- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 0.98
-- XRP: LONG_FLUSH_24H | OI/mc 0.13% | topPos 0.86 | taker 0.92
-- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.98 | taker 0.97
-- TAO: AGGRESSIVE_SELLING | OI/mc 0.81% | topPos 0.93 | taker 0.81
-- ADA: LONG_FLUSH_24H | OI/mc 0.41% | topPos 0.88 | taker 0.86
-- LINK: LONG_FLUSH_24H | OI/mc 0.32% | topPos 0.89 | taker 0.99
-- XLM: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.17% | topPos 0.99 | taker 0.75
+- BTC: SHORT_SQUEEZE_24H | OI/mc 0.20% | topPos 0.97 | taker 1.02
+- AVAX: LONG_FLUSH_24H | OI/mc 0.39% | topPos 0.91 | taker 1.02
+- SEI: LONG_FLUSH_24H | OI/mc 0.76% | topPos 0.99 | taker 1.01
+- ZEC: SHORT_SQUEEZE_24H | OI/mc 0.66% | topPos 1.05 | taker 1.00
+- ADA: LONG_FLUSH_24H | OI/mc 0.41% | topPos 0.88 | taker 0.87
+- LINK: LONG_FLUSH_24H | OI/mc 0.32% | topPos 0.90 | taker 1.01
+- XLM: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.17% | topPos 0.99 | taker 0.76
+- UNI: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 1.00
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -48,12 +43,12 @@
 - (12 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 25 | mean -2.9% (-0.14R) | in profit 9 | older than 7d 20
-- worst: A -0.80R, NEO -0.76R, AXS -0.75R | best: AERO 0.58R, NEAR 0.94R, TIA 1.04R
+- open 25 | mean -2.1% (-0.09R) | in profit 10 | older than 7d 20
+- worst: A -0.76R, NEO -0.74R, HBAR -0.73R | best: AERO 0.66R, NEAR 1.00R, TIA 1.18R
 
 ## System
-- CoinGecko 6015/10000 used, month-end projection 10012 (100%), throttle level 2 | by script {'scan': 1960, 'check_liquidity': 286, 'breakout_check': 3717, 'counterfactual_check': 52}
+- CoinGecko 6017/10000 used, month-end projection 10015 (100%), throttle level 2 | by script {'scan': 1962, 'check_liquidity': 286, 'breakout_check': 3717, 'counterfactual_check': 52}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=49), H2 SUPPORTED (n=168)
-- radar-flags.json scan age: 6m
+- radar-flags.json scan age: 10m
 - excluded from radar (pegged/tokenized equity): 38
