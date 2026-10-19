@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-19 09:07 UTC
+# Radar digest - 2026-10-19 09:39 UTC
 
 ## Market
-- BTC scenario **B** | price 82893 | wk close 81175 vs 82800 | 50W 76608 (8.20%) | 29m old
+- BTC scenario **B** | price 82893 | wk close 81175 vs 82800 | 50W 76608 (8.20%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 57.55% | ETH/BTC 0.02937 | breadth7d 24% | stables 30d 0.36%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.37pt | 7d 0.74pt | n=121
 - Gold: PAXG 1m 0.32% | real10y 2.78 (10bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 29
@@ -22,34 +22,38 @@
 - NEAR: [A+E] 7d -13.1%
 
 ## ETF pipeline (new this run)
-- ripple NEW: other - Investors Swim Against the Tide: Franklin’s XRP ETF Attracts Fresh Cash Despite Short-Term
-- near: other - NEAR ETF takes in 2.60 million USD: What it means for the NEAR Protocol price - ad-hoc-new
+- ripple NEW: other - Bitwise XRP ETF Lists $541.12 Million in Net Assets on Oct. 15 - TOKENPOST
+- ripple NEW: other - Bitwise XRP ETF surpasses $541M in net assets, signaling strong institutional interest in 
+- ripple NEW: other - Bitwise XRP ETF holds $541M in assets with 417.... - Pluang
+- ripple NEW: other - XRP price rebounds to $1.31 as ETF outflows end 13-week streak - Crypto News
+- zcash: other - Zcash Price Forecast: Downside risk looms as ETF outflows and falling Open Interest weigh 
+- ondo-finance: other - iShares MSCI EAFE Tokenized ETF (Ondo) USD (EFAON-USD) interactive price chart - Yahoo Fin
 
 ## Derivatives flags (OKX)
 - BTC: SHORT_SQUEEZE_24H | OI/mc 0.20% | topPos 0.99 | taker 0.97
 - ETH: SHORT_SQUEEZE_24H | OI/mc 0.60% | topPos 0.92 | taker 1.01
-- SOL: SHORT_SQUEEZE_24H | OI/mc 0.58% | topPos 0.90 | taker 1.00
-- NEAR: SHORT_SQUEEZE_24H | OI/mc 1.09% | topPos 1.03 | taker 0.94
+- SOL: SHORT_SQUEEZE_24H | OI/mc 0.58% | topPos 0.90 | taker 0.99
+- NEAR: SHORT_SQUEEZE_24H | OI/mc 1.08% | topPos 1.03 | taker 0.94
 - AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.93 | taker 1.02
-- SUI: LONG_FLUSH_24H | OI/mc 0.95% | topPos 0.81 | taker 0.96
-- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.98 | taker 0.94
-- TAO: LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 0.87
+- SUI: LONG_FLUSH_24H | OI/mc 0.96% | topPos 0.81 | taker 0.95
+- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.99 | taker 0.91
+- TAO: LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 0.86
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
 - thorchain: REVENUE_ACCELERATING
-- tornado-cash: REVENUE_ACCELERATING
 - thorswap: REVENUE_ACCELERATING
 - render-token: REVENUE_ACCELERATING
-- (11 flagged protocol(s) without a tradeable token hidden)
+- thor-wallet: REVENUE_ACCELERATING
+- (12 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 25 | mean -1.8% (-0.07R) | in profit 9 | older than 7d 20
-- worst: AXS -0.70R, NEO -0.70R, HBAR -0.62R | best: AERO 0.75R, TIA 1.13R, NEAR 1.26R
+- open 25 | mean -1.6% (-0.06R) | in profit 9 | older than 7d 20
+- worst: NEO -0.72R, AXS -0.71R, HBAR -0.62R | best: AERO 0.79R, TIA 1.16R, NEAR 1.26R
 
 ## System
-- CoinGecko 5922/10000 used, month-end projection 9991 (100%), throttle level 1 | by script {'scan': 1928, 'check_liquidity': 278, 'breakout_check': 3664, 'counterfactual_check': 52}
+- CoinGecko 5925/10000 used, month-end projection 9996 (100%), throttle level 1 | by script {'scan': 1930, 'check_liquidity': 279, 'breakout_check': 3664, 'counterfactual_check': 52}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=49), H2 SUPPORTED (n=164)
-- radar-flags.json scan age: 6m
+- radar-flags.json scan age: 9m
 - excluded from radar (pegged/tokenized equity): 39
