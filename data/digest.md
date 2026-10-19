@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-19 22:39 UTC
+# Radar digest - 2026-10-19 23:06 UTC
 
 ## Market
-- BTC scenario **B** | price 82103 | wk close 81175 vs 82800 | 50W 76608 (7.17%) | 1m old
+- BTC scenario **B** | price 82103 | wk close 81175 vs 82800 | 50W 76608 (7.17%) | 28m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.48% | ETH/BTC 0.02933 | breadth7d 27% | stables 30d 0.35%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.26pt | 7d 0.62pt | n=121
 - Gold: PAXG 1m -0.48% | real10y 2.74 (13bp 1m) | USD 1m 1.72% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 29
@@ -19,8 +19,9 @@
 - TIA: **RESET_DONE** | +140% impulse, retr 0.34 | OI dd 27% | fund 0.0007 | hold False | inval 0.58660 | OB 0.52010-0.55520
 
 ## Pre-pump candidates
-- RENDER: [D+E] 7d -14.9%
-- NEAR: [A+E] 7d -8.9%
+- NEAR: [A+E] 7d -4.5%
+- PEPE: [A+C] 7d 0.5%
+- BAT: [B+C] 7d 28.1%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - XRP Bounces to $1.31 as 13-Week ETF Inflow Streak Ends - Altcoin Buzz
@@ -51,12 +52,12 @@
 - (12 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 25 | mean -1.8% (-0.07R) | in profit 9 | older than 7d 20
-- worst: NEO -0.72R, AXS -0.72R, HBAR -0.72R | best: AERO 0.76R, NEAR 1.00R, TIA 1.29R
+- open 25 | mean -2.0% (-0.09R) | in profit 9 | older than 7d 20
+- worst: HBAR -0.73R, AXS -0.73R, NEO -0.72R | best: AERO 0.73R, NEAR 0.94R, TIA 1.26R
 
 ## System
-- CoinGecko 6105/10000 used, month-end projection 10005 (100%), throttle level 2 | by script {'scan': 1990, 'check_liquidity': 291, 'breakout_check': 3768, 'counterfactual_check': 56}
+- CoinGecko 6108/10000 used, month-end projection 9988 (100%), throttle level 1 | by script {'scan': 1992, 'check_liquidity': 292, 'breakout_check': 3768, 'counterfactual_check': 56}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=49), H2 SUPPORTED (n=168)
-- radar-flags.json scan age: 9m
+- radar-flags.json scan age: 6m
 - excluded from radar (pegged/tokenized equity): 39
