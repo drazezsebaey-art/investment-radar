@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-19 08:07 UTC
+# Radar digest - 2026-10-19 08:39 UTC
 
 ## Market
-- BTC scenario **B** | price 82866 | wk close 81175 vs 82800 | 50W 76608 (8.17%) | 1h old
+- BTC scenario **B** | price 82893 | wk close 81175 vs 82800 | 50W 76608 (8.20%) | 1m old
 - Alts: **BTC_LED** [-] | BTC.D 57.55% | ETH/BTC 0.02937 | breadth7d 24% | stables 30d 0.36%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.37pt | 7d 0.74pt | n=121
 - Gold: PAXG 1m 0.32% | real10y 2.78 (10bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 29
@@ -10,30 +10,30 @@
 
 ## Coins in correction (entry_ready first)
 - TAO: **RESET_DONE** ENTRY_READY | +60% impulse, retr 0.53 | OI dd 29% | fund 0.0100 | hold True | inval 254.40000 | OB 213.50000-219.30000
-- UNI: **BROKEN** | +88% impulse, retr 0.69 | OI dd 37% | fund 0.0037 | hold False | inval 6.78300 | OB 5.80800-6.03200
-- ZEC: **BROKEN** | +72% impulse, retr 0.75 | OI dd 44% | fund 0.0100 | hold True | inval 1035.96000 | OB 985.40000-1050.48000
-- LINK: **BROKEN** | +48% impulse, retr 0.69 | OI dd 28% | fund 0.0093 | hold False | inval 10.61800 | OB 10.61800-10.96200
-- FLUID: **ONGOING** | +139% impulse, retr 0.09 | OI dd -% | fund - | hold False | inval 2.14620 | OB 1.70110-1.73600
+- UNI: **BROKEN** | +88% impulse, retr 0.69 | OI dd 37% | fund -0.0011 | hold False | inval 6.78300 | OB 5.80800-6.03200
+- ZEC: **BROKEN** | +72% impulse, retr 0.74 | OI dd 44% | fund 0.0100 | hold True | inval 1035.96000 | OB 985.40000-1050.48000
+- LINK: **BROKEN** | +48% impulse, retr 0.70 | OI dd 28% | fund 0.0082 | hold False | inval 10.61800 | OB 10.61800-10.96200
+- FLUID: **ONGOING** | +139% impulse, retr 0.11 | OI dd -% | fund - | hold False | inval 2.14620 | OB 1.70110-1.73600
 - SEI: **RESET_DONE** | +110% impulse, retr 0.56 | OI dd 35% | fund 0.0050 | hold False | inval 0.05774 | OB 0.05685-0.05941
-- SUI: **RESET_DONE** | +92% impulse, retr 0.46 | OI dd 30% | fund 0.0027 | hold False | inval 0.93370 | OB 0.93370-0.97450
-- ONDO: **RESET_DONE** | +88% impulse, retr 0.60 | OI dd 42% | fund 0.0066 | hold False | inval 0.40380 | OB 0.40380-0.41850
+- SUI: **RESET_DONE** | +92% impulse, retr 0.46 | OI dd 30% | fund 0.0032 | hold False | inval 0.93370 | OB 0.93370-0.97450
+- ONDO: **RESET_DONE** | +88% impulse, retr 0.59 | OI dd 42% | fund -0.0001 | hold False | inval 0.40380 | OB 0.40380-0.41850
 
 ## Pre-pump candidates
-- none
+- NEAR: [A+E] 7d -13.0%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - Investors Swim Against the Tide: Franklin’s XRP ETF Attracts Fresh Cash Despite Short-Term
 - near: other - NEAR ETF takes in 2.60 million USD: What it means for the NEAR Protocol price - ad-hoc-new
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc 0.20% | topPos 0.98 | taker 0.97
-- ETH: SHORT_SQUEEZE_24H | OI/mc 0.60% | topPos 0.91 | taker 1.00
-- SOL: SHORT_SQUEEZE_24H | OI/mc 0.58% | topPos 0.90 | taker 0.99
-- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 1.03
-- SUI: LONG_FLUSH_24H | OI/mc 0.96% | topPos 0.81 | taker 0.96
-- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.96 | taker 0.91
-- TAO: LONG_FLUSH_24H | OI/mc 0.78% | topPos 0.90 | taker 0.87
-- WLD: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 0.93
+- BTC: SHORT_SQUEEZE_24H | OI/mc 0.20% | topPos 0.99 | taker 0.97
+- ETH: SHORT_SQUEEZE_24H | OI/mc 0.60% | topPos 0.92 | taker 1.01
+- SOL: SHORT_SQUEEZE_24H | OI/mc 0.58% | topPos 0.90 | taker 1.00
+- NEAR: SHORT_SQUEEZE_24H | OI/mc 1.09% | topPos 1.03 | taker 0.94
+- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.93 | taker 1.02
+- SUI: LONG_FLUSH_24H | OI/mc 0.95% | topPos 0.81 | taker 0.96
+- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.98 | taker 0.94
+- TAO: LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 0.87
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -44,12 +44,12 @@
 - (11 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 25 | mean -1.6% (-0.06R) | in profit 8 | older than 7d 20
-- worst: NEO -0.70R, AXS -0.70R, HBAR -0.63R | best: AERO 0.78R, TIA 1.21R, NEAR 1.24R
+- open 25 | mean -1.7% (-0.07R) | in profit 8 | older than 7d 20
+- worst: NEO -0.70R, AXS -0.70R, HBAR -0.62R | best: AERO 0.76R, TIA 1.16R, NEAR 1.22R
 
 ## System
-- CoinGecko 5917/10000 used, month-end projection 10005 (100%), throttle level 2 | by script {'scan': 1924, 'check_liquidity': 277, 'breakout_check': 3664, 'counterfactual_check': 52}
+- CoinGecko 5919/10000 used, month-end projection 10008 (100%), throttle level 2 | by script {'scan': 1926, 'check_liquidity': 277, 'breakout_check': 3664, 'counterfactual_check': 52}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=49), H2 SUPPORTED (n=164)
-- radar-flags.json scan age: 7m
+- radar-flags.json scan age: 9m
 - excluded from radar (pegged/tokenized equity): 39
