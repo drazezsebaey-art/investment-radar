@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-19 21:07 UTC
+# Radar digest - 2026-10-19 21:39 UTC
 
 ## Market
-- BTC scenario **B** | price 82014 | wk close 81175 vs 82800 | 50W 76608 (7.06%) | 29m old
+- BTC scenario **B** | price 82014 | wk close 81175 vs 82800 | 50W 76608 (7.06%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 57.56% | ETH/BTC 0.02928 | breadth7d 26% | stables 30d 0.36%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.46pt | 7d 0.81pt | n=121
 - Gold: PAXG 1m -0.57% | real10y 2.78 (10bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 29
@@ -19,22 +19,29 @@
 - BAT: **ONGOING** | +221% impulse, retr 0.17 | OI dd 4% | fund -0.0378 | hold False | inval 0.16679 | OB 0.13603-0.14156
 
 ## Pre-pump candidates
-- RENDER: [D+E] 7d -12.0%
+- RENDER: [D+E] 7d -13.5%
 - NEAR: [A+E] 7d -10.1%
-- VVV: [B+E] 7d 5.0%
+- KITE: [C+E] 7d -5.0%
 
 ## ETF pipeline (new this run)
-- none
+- ripple NEW: other - XRP Bounces to $1.31 as 13-Week ETF Inflow Streak Ends - Altcoin Buzz
+- ripple NEW: other - XRP Bottom 'Is In, Analyst Says—So Why Did ETF Inflows Stop? - Benzinga
+- ripple NEW: other - XRP ETF — XRPI ($6.98) and XRPR ($10.61) Fade From Opening Highs — XRP $1.38 Trigger - Tra
+- zcash: delay_or_rejection - Zcash price rebounds above $1,100 as ETF withdrawals shadow recovery - Crypto News
+- zcash: delay_or_rejection - Zcash price rebounds above $1,100 as ETF withdrawals shadow recovery - Crypto News
+- chainlink: institutional_backing - Chainlink ETF holds over 5 million LINK tokens, valued at $61.47M, fully backing its share
+- chainlink: institutional_backing - Chainlink ETF holds over 5 million LINK tokens, valued at $61.47M, fully backing its share
+- chainlink: other - Bitwise Chainlink ETF Holds More Than Five Million LINK Tokens - TOKENPOST
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc 0.20% | topPos 0.96 | taker 1.04
+- BTC: LONG_FLUSH_24H | OI/mc 0.20% | topPos 0.95 | taker 1.06
 - ETH: LONG_FLUSH_24H | OI/mc 0.59% | topPos 0.89 | taker 1.04
-- AVAX: LONG_FLUSH_24H | OI/mc 0.39% | topPos 0.91 | taker 1.02
-- TAO: AGGRESSIVE_SELLING, SHORT_SQUEEZE_24H | OI/mc 0.81% | topPos 0.92 | taker 0.81
-- ADA: LONG_FLUSH_24H | OI/mc 0.41% | topPos 0.88 | taker 0.95
-- LINK: LONG_FLUSH_24H | OI/mc 0.33% | topPos 0.90 | taker 0.94
-- BCH: SHORT_SQUEEZE_24H | OI/mc 0.45% | topPos 0.86 | taker 1.05
-- ONDO: LONG_FLUSH_24H | OI/mc -% | topPos 0.74 | taker 0.95
+- AVAX: LONG_FLUSH_24H | OI/mc 0.39% | topPos 0.92 | taker 1.02
+- TAO: AGGRESSIVE_SELLING, SHORT_SQUEEZE_24H | OI/mc 0.81% | topPos 0.92 | taker 0.78
+- ADA: LONG_FLUSH_24H | OI/mc 0.41% | topPos 0.88 | taker 0.97
+- LINK: LONG_FLUSH_24H | OI/mc 0.33% | topPos 0.90 | taker 0.93
+- BCH: SHORT_SQUEEZE_24H | OI/mc 0.45% | topPos 0.86 | taker 1.06
+- ONDO: LONG_FLUSH_24H | OI/mc -% | topPos 0.74 | taker 0.96
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -45,12 +52,12 @@
 - (12 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 25 | mean -3.0% (-0.15R) | in profit 9 | older than 7d 20
-- worst: HBAR -0.78R, NEO -0.76R, AXS -0.76R | best: AERO 0.69R, NEAR 0.92R, TIA 1.08R
+- open 25 | mean -2.6% (-0.12R) | in profit 9 | older than 7d 20
+- worst: HBAR -0.75R, AXS -0.75R, NEO -0.74R | best: AERO 0.72R, NEAR 0.94R, TIA 1.18R
 
 ## System
-- CoinGecko 6098/10000 used, month-end projection 10015 (100%), throttle level 2 | by script {'scan': 1984, 'check_liquidity': 290, 'breakout_check': 3768, 'counterfactual_check': 56}
+- CoinGecko 6100/10000 used, month-end projection 10019 (100%), throttle level 2 | by script {'scan': 1986, 'check_liquidity': 290, 'breakout_check': 3768, 'counterfactual_check': 56}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=49), H2 SUPPORTED (n=168)
-- radar-flags.json scan age: 6m
+- radar-flags.json scan age: 9m
 - excluded from radar (pegged/tokenized equity): 39
