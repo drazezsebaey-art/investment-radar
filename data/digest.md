@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-19 17:07 UTC
+# Radar digest - 2026-10-19 17:40 UTC
 
 ## Market
-- BTC scenario **B** | price 82029 | wk close 81175 vs 82800 | 50W 76608 (7.08%) | 29m old
+- BTC scenario **B** | price 82029 | wk close 81175 vs 82800 | 50W 76608 (7.08%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 57.60% | ETH/BTC 0.02922 | breadth7d 19% | stables 30d 0.36%
 - Alt risk (BTC.D): **ELEVATED** ['BTC_DOM_RISING_3D'] | 3d 0.52pt | 7d 0.87pt | n=121
 - Gold: PAXG 1m -0.57% | real10y 2.78 (10bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 29
@@ -19,27 +19,20 @@
 - SUI: **RESET_DONE** | +92% impulse, retr 0.48 | OI dd 28% | fund 0.0100 | hold False | inval 0.93740 | OB 0.93370-0.97450
 
 ## Pre-pump candidates
-- NEAR: [A+E] 7d -10.7%
-- SUI: [A+E] 7d -8.9%
-- LINK: [A+E] 7d -7.9%
-- HYPE: [A+E] 7d -6.8%
-- LTC: [A+E] 7d -5.8%
-- RUNE: [D+E] 7d -5.4%
-- SOL: [A+E] 7d -4.1%
-- BNB: [A+E] 7d -2.9%
+- none
 
 ## ETF pipeline (new this run)
-- chainlink: delay_or_rejection - Will Chainlink’s 431900 LINK Reserve haul outweigh ETF withdrawals? - AMBCrypto
+- none
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc 0.20% | topPos 0.96 | taker 1.01
-- ETH: LONG_FLUSH_24H | OI/mc 0.59% | topPos 0.89 | taker 1.02
-- AVAX: LONG_FLUSH_24H | OI/mc 0.39% | topPos 0.92 | taker 0.99
-- SEI: LONG_FLUSH_24H | OI/mc 0.77% | topPos 0.98 | taker 1.00
-- ZEC: SHORT_SQUEEZE_24H | OI/mc 0.66% | topPos 1.05 | taker 1.00
-- ADA: LONG_FLUSH_24H | OI/mc 0.41% | topPos 0.87 | taker 0.88
-- LINK: LONG_FLUSH_24H | OI/mc 0.32% | topPos 0.90 | taker 1.00
-- XLM: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.17% | topPos 0.99 | taker 0.80
+- BTC: LONG_FLUSH_24H | OI/mc 0.20% | topPos 0.96 | taker 1.03
+- ETH: LONG_FLUSH_24H | OI/mc -% | topPos 0.89 | taker 1.02
+- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 1.00
+- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.97 | taker 1.00
+- TAO: AGGRESSIVE_SELLING | OI/mc -% | topPos 0.92 | taker 0.84
+- ZEC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 1.05 | taker 1.01
+- ADA: LONG_FLUSH_24H | OI/mc 0.41% | topPos 0.87 | taker 0.89
+- LINK: LONG_FLUSH_24H | OI/mc 0.33% | topPos 0.89 | taker 0.95
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -50,12 +43,12 @@
 - (12 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 25 | mean -2.4% (-0.11R) | in profit 9 | older than 7d 20
-- worst: NEO -0.74R, HBAR -0.74R, AXS -0.74R | best: AERO 0.67R, NEAR 1.00R, TIA 1.15R
+- open 25 | mean -2.7% (-0.13R) | in profit 9 | older than 7d 20
+- worst: NEO -0.76R, AXS -0.76R, HBAR -0.74R | best: AERO 0.67R, NEAR 1.04R, TIA 1.11R
 
 ## System
-- CoinGecko 6030/10000 used, month-end projection 9992 (100%), throttle level 1 | by script {'scan': 1968, 'check_liquidity': 289, 'breakout_check': 3717, 'counterfactual_check': 56}
+- CoinGecko 6032/10000 used, month-end projection 9995 (100%), throttle level 1 | by script {'scan': 1970, 'check_liquidity': 289, 'breakout_check': 3717, 'counterfactual_check': 56}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=49), H2 SUPPORTED (n=168)
-- radar-flags.json scan age: 6m
+- radar-flags.json scan age: 9m
 - excluded from radar (pegged/tokenized equity): 38
