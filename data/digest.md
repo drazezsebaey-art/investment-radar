@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-19 11:07 UTC
+# Radar digest - 2026-10-19 11:39 UTC
 
 ## Market
-- BTC scenario **B** | price 82218 | wk close 81175 vs 82800 | 50W 76608 (7.32%) | 29m old
+- BTC scenario **B** | price 82218 | wk close 81175 vs 82800 | 50W 76608 (7.32%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 57.55% | ETH/BTC 0.02942 | breadth7d 30% | stables 30d 0.36%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.44pt | 7d 0.80pt | n=121
 - Gold: PAXG 1m 0.05% | real10y 2.78 (10bp 1m) | USD 1m 2.87% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 29
@@ -22,22 +22,19 @@
 - NEAR: [A+E] 7d -14.1%
 
 ## ETF pipeline (new this run)
-- ripple NEW: other - Bitwise XRP ETF Lists $541.12 Million in Net Assets on Oct. 15 - TOKENPOST
-- ripple NEW: other - Bitwise XRP ETF surpasses $541M in net assets, signaling strong institutional interest in 
-- ripple NEW: other - Bitwise XRP ETF holds $541M in assets with 417.... - Pluang
-- ripple NEW: other - XRP price rebounds to $1.31 as ETF outflows end 13-week streak - Crypto News
-- zcash: other - Zcash Price Forecast: Downside risk looms as ETF outflows and falling Open Interest weigh 
-- ondo-finance: other - iShares MSCI EAFE Tokenized ETF (Ondo) USD (EFAON-USD) interactive price chart - Yahoo Fin
+- zcash: other - Zcash Gains Nearly 3% as Grayscale ETF Logs Third Weekly Outflow - TOKENPOST
+- zcash: other - Zcash ETF records 1.22 million USD outflow: What it means for the Zcash price - ad-hoc-new
+- ondo-finance: other - IEFON-USD Gráfico interactivo de acciones | iShares 7-10 Year Treasury Bond Tokenized ETF 
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc 0.21% | topPos 0.99 | taker 0.94
-- ETH: LONG_FLUSH_24H | OI/mc -% | topPos 0.93 | taker 0.99
-- NEAR: SHORT_SQUEEZE_24H | OI/mc 1.10% | topPos 1.04 | taker 0.94
-- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 1.01
-- SUI: LONG_FLUSH_24H | OI/mc 0.97% | topPos 0.82 | taker 0.93
-- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.99 | taker 0.87
-- TAO: LONG_FLUSH_24H | OI/mc -% | topPos 0.93 | taker 0.85
-- ZEC: LONG_FLUSH_24H | OI/mc -% | topPos 1.10 | taker 0.99
+- BTC: LONG_FLUSH_24H | OI/mc 0.20% | topPos 0.98 | taker 0.94
+- ETH: LONG_FLUSH_24H | OI/mc -% | topPos 0.93 | taker 0.98
+- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.93 | taker 0.97
+- SUI: LONG_FLUSH_24H | OI/mc 0.98% | topPos 0.82 | taker 0.90
+- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.97 | taker 0.90
+- TAO: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 0.82
+- ZEC: LONG_FLUSH_24H | OI/mc -% | topPos 1.08 | taker 0.98
+- ADA: LONG_FLUSH_24H | OI/mc 0.41% | topPos 0.88 | taker 0.85
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -48,12 +45,12 @@
 - (12 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 25 | mean -2.5% (-0.12R) | in profit 9 | older than 7d 20
-- worst: NEO -0.76R, AXS -0.75R, HBAR -0.70R | best: AERO 0.71R, NEAR 1.08R, TIA 1.17R
+- open 25 | mean -3.0% (-0.15R) | in profit 9 | older than 7d 20
+- worst: NEO -0.78R, AXS -0.78R, HBAR -0.72R | best: AERO 0.68R, NEAR 1.02R, TIA 1.18R
 
 ## System
-- CoinGecko 5936/10000 used, month-end projection 9969 (100%), throttle level 1 | by script {'scan': 1936, 'check_liquidity': 284, 'breakout_check': 3664, 'counterfactual_check': 52}
+- CoinGecko 5939/10000 used, month-end projection 9974 (100%), throttle level 1 | by script {'scan': 1938, 'check_liquidity': 285, 'breakout_check': 3664, 'counterfactual_check': 52}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=49), H2 SUPPORTED (n=164)
-- radar-flags.json scan age: 6m
+- radar-flags.json scan age: 9m
 - excluded from radar (pegged/tokenized equity): 39
