@@ -1,4 +1,4 @@
-# Radar digest - 2026-10-19 13:39 UTC
+# Radar digest - 2026-10-19 14:06 UTC
 
 ## Market
 - BTC scenario **B** | price 82634 | wk close 81175 vs 82800 | 50W 76608 (7.87%) | 1h old
@@ -20,8 +20,7 @@
 
 ## Pre-pump candidates
 - RENDER: [D+E] 7d -14.1%
-- NEAR: [A+E] 7d -11.5%
-- SENT: [C+E] 7d 4.5%
+- NEAR: [A+E] 7d -12.3%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - Bitwise XRP ETF Crosses $541 Million in Net Assets - Coinpedia
@@ -50,12 +49,12 @@
 - (12 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 25 | mean -2.4% (-0.11R) | in profit 9 | older than 7d 20
-- worst: NEO -0.74R, AXS -0.74R, A -0.69R | best: AERO 0.67R, NEAR 1.06R, TIA 1.09R
+- open 25 | mean -2.9% (-0.15R) | in profit 9 | older than 7d 20
+- worst: NEO -0.76R, AXS -0.76R, HBAR -0.72R | best: AERO 0.63R, NEAR 0.98R, TIA 1.06R
 
 ## System
-- CoinGecko 6009/10000 used, month-end projection 10047 (100%), throttle level 2 | by script {'scan': 1954, 'check_liquidity': 286, 'breakout_check': 3717, 'counterfactual_check': 52}
+- CoinGecko 6011/10000 used, month-end projection 10027 (100%), throttle level 2 | by script {'scan': 1956, 'check_liquidity': 286, 'breakout_check': 3717, 'counterfactual_check': 52}
 - Trials guard: OK (0 untracked)
-- Hypotheses: H1 NOT_SUPPORTED (n=49), H2 SUPPORTED (n=165)
-- radar-flags.json scan age: 9m
-- excluded from radar (pegged/tokenized equity): 38
+- Hypotheses: H1 NOT_SUPPORTED (n=49), H2 SUPPORTED (n=166)
+- radar-flags.json scan age: 6m
+- excluded from radar (pegged/tokenized equity): 39
