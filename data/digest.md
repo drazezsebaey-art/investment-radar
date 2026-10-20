@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-20 11:07 UTC
+# Radar digest - 2026-10-20 11:39 UTC
 
 ## Market
-- BTC scenario **B** | price 81522 | wk close 81175 vs 82800 | 50W 76608 (6.41%) | 29m old
+- BTC scenario **B** | price 81522 | wk close 81175 vs 82800 | 50W 76608 (6.41%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.51% | ETH/BTC 0.02925 | breadth7d 52% | stables 30d 0.06%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.36pt | 7d 0.41pt | n=121
 - Gold: PAXG 1m -1.14% | real10y 2.74 (13bp 1m) | USD 1m 1.72% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 29
@@ -20,23 +20,23 @@
 
 ## Pre-pump candidates
 - NEAR: [A+E] 7d -8.4%
+- THETA: [C+E] 7d -3.6%
 - AWE: [C+E] 7d 2.0%
 - PEPE: [A+C] 7d 2.3%
-- WLD: [A+C] 7d 6.7%
 - VVV: [C+E] 7d 6.9%
 
 ## ETF pipeline (new this run)
-- near: other - Bitwise NEAR ETF's net assets rose to nearly $8... - Pluang
+- injective-protocol NEW: other - Injective News: Will INJ Price Hold After Pentiv, ETF, and Gulf Labs? - Coin Gabbar
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc 0.20% | topPos 0.94 | taker 0.97
-- ETH: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.99
-- SOL: LONG_FLUSH_24H | OI/mc -% | topPos 0.89 | taker 0.94
-- NEAR: LONG_FLUSH_24H | OI/mc 0.99% | topPos 0.97 | taker 1.03
-- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 0.98
-- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.93
-- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.99 | taker 1.15
-- TAO: LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 0.85
+- BTC: LONG_FLUSH_24H | OI/mc 0.21% | topPos 0.94 | taker 0.98
+- ETH: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 1.00
+- SOL: LONG_FLUSH_24H | OI/mc -% | topPos 0.89 | taker 0.95
+- NEAR: LONG_FLUSH_24H | OI/mc 0.98% | topPos 0.96 | taker 1.04
+- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 1.04
+- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 0.97
+- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.99 | taker 1.14
+- TAO: LONG_FLUSH_24H | OI/mc -% | topPos 0.90 | taker 0.90
 
 ## Revenue / buyback flags
 - collector-crypt: REVENUE_ACCELERATING, CHEAP_VS_REVENUE
@@ -48,12 +48,12 @@
 - (13 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 25 | mean -1.8% (-0.08R) | in profit 10 | older than 7d 21
-- worst: AXS -0.76R, NEO -0.76R, HBAR -0.75R | best: AERO 0.80R, BEAM 0.92R, TIA 1.53R
+- open 25 | mean -1.9% (-0.09R) | in profit 10 | older than 7d 21
+- worst: NEO -0.78R, AXS -0.77R, HBAR -0.75R | best: AERO 0.79R, BEAM 0.85R, TIA 1.64R
 
 ## System
-- CoinGecko 6230/10000 used, month-end projection 9925 (99%), throttle level 1 | by script {'scan': 2048, 'check_liquidity': 301, 'breakout_check': 3824, 'counterfactual_check': 57}
+- CoinGecko 6232/10000 used, month-end projection 9928 (99%), throttle level 1 | by script {'scan': 2050, 'check_liquidity': 301, 'breakout_check': 3824, 'counterfactual_check': 57}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=49), H2 SUPPORTED (n=168)
-- radar-flags.json scan age: 7m
+- radar-flags.json scan age: 9m
 - excluded from radar (pegged/tokenized equity): 39
