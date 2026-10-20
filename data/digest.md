@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-20 22:37 UTC
+# Radar digest - 2026-10-20 23:09 UTC
 
 ## Market
-- BTC scenario **B** | price 83034 | wk close 81175 vs 82800 | 50W 76608 (8.39%) | 1m old
+- BTC scenario **B** | price 83034 | wk close 81175 vs 82800 | 50W 76608 (8.39%) | 33m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.37% | ETH/BTC 0.02959 | breadth7d 43% | stables 30d 0.06%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.06pt | 7d 0.21pt | n=121
 - Gold: PAXG 1m -1.12% | real10y 2.80 (12bp 1m) | USD 1m 1.72% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 29
@@ -19,7 +19,7 @@
 - SEI: **RESET_DONE** | +110% impulse, retr 0.55 | OI dd 21% | fund 0.0050 | hold False | inval 0.05940 | OB 0.05685-0.05941
 
 ## Pre-pump candidates
-- PENDLE: [A+C] 7d 2.0%
+- UB: [C+E] 7d 2.5%
 
 ## ETF pipeline (new this run)
 - dogecoin NEW: other - Bitcoin at $82,000, ETH, XRP, Dogecoin Jump 3% on Growing ETF Flows - TradingView
@@ -27,14 +27,14 @@
 - zcash: other - Grayscale ETF investors selling their Zcash after a 30% pull - KuCoin
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc 0.19% | topPos 0.97 | taker 0.98
+- BTC: SHORT_SQUEEZE_24H | OI/mc 0.19% | topPos 0.97 | taker 0.99
 - ETH: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.91 | taker 1.03
-- NEAR: LONG_FLUSH_24H | OI/mc -% | topPos 0.97 | taker 1.01
+- NEAR: LONG_FLUSH_24H | OI/mc -% | topPos 0.98 | taker 1.01
 - AVAX: LONG_FLUSH_24H | OI/mc 0.40% | topPos 0.93 | taker 0.93
-- SEI: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.96 | taker 0.89
-- TAO: LONG_FLUSH_24H | OI/mc 0.80% | topPos 0.93 | taker 1.00
-- ZEC: SHORT_SQUEEZE_24H | OI/mc 0.67% | topPos 1.12 | taker 1.09
-- WLD: SHORT_SQUEEZE_24H | OI/mc 2.03% | topPos 1.00 | taker 1.06
+- SEI: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.97 | taker 0.85
+- TAO: LONG_FLUSH_24H | OI/mc 0.80% | topPos 0.93 | taker 0.99
+- ZEC: SHORT_SQUEEZE_24H | OI/mc 0.68% | topPos 1.16 | taker 1.09
+- WLD: SHORT_SQUEEZE_24H | OI/mc 2.08% | topPos 1.01 | taker 1.05
 
 ## Revenue / buyback flags
 - collector-crypt: REVENUE_ACCELERATING, CHEAP_VS_REVENUE
@@ -46,12 +46,12 @@
 - (13 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 25 | mean 2.9% (0.22R) | in profit 14 | older than 7d 21
-- worst: HBAR -0.65R, NEO -0.60R, KAIA -0.53R | best: BEAM 1.10R, TIA 1.33R, AERO 1.41R
+- open 25 | mean 2.6% (0.20R) | in profit 13 | older than 7d 21
+- worst: HBAR -0.66R, NEO -0.60R, IMX -0.55R | best: BEAM 1.15R, TIA 1.25R, AERO 1.38R
 
 ## System
-- CoinGecko 6397/10000 used, month-end projection 9957 (100%), throttle level 1 | by script {'scan': 2094, 'check_liquidity': 315, 'breakout_check': 3930, 'counterfactual_check': 58}
+- CoinGecko 6399/10000 used, month-end projection 9939 (99%), throttle level 1 | by script {'scan': 2096, 'check_liquidity': 315, 'breakout_check': 3930, 'counterfactual_check': 58}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=49), H2 SUPPORTED (n=170)
-- radar-flags.json scan age: 7m
-- excluded from radar (pegged/tokenized equity): 40
+- radar-flags.json scan age: 9m
+- excluded from radar (pegged/tokenized equity): 39
