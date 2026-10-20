@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-20 00:39 UTC
+# Radar digest - 2026-10-20 01:07 UTC
 
 ## Market
-- BTC scenario **B** | price 81721 | wk close 81175 vs 82800 | 50W 76608 (6.67%) | 1m old
+- BTC scenario **B** | price 81721 | wk close 81175 vs 82800 | 50W 76608 (6.67%) | 29m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.48% | ETH/BTC 0.02933 | breadth7d 27% | stables 30d 0.35%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.26pt | 7d 0.62pt | n=121
 - Gold: PAXG 1m -0.48% | real10y 2.74 (13bp 1m) | USD 1m 1.72% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 29
@@ -19,9 +19,9 @@
 - SEI: **RESET_DONE** | +110% impulse, retr 0.57 | OI dd 25% | fund 0.0050 | hold False | inval 0.05834 | OB 0.05685-0.05941
 
 ## Pre-pump candidates
-- NEAR: [A+E] 7d -3.1%
+- NEAR: [A+E] 7d -5.2%
 - PEPE: [A+C] 7d 4.5%
-- BAT: [B+C] 7d 25.5%
+- VVV: [C+E] 7d 7.2%
 
 ## ETF pipeline (new this run)
 - dogecoin NEW: other - Dogecoin News: Bitcoin ETF Outflows Hit $1.55 Billion as Pepeto Presale Crosses $10 Millio
@@ -49,12 +49,12 @@
 - (12 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 25 | mean -2.7% (-0.13R) | in profit 9 | older than 7d 21
-- worst: NEO -0.76R, AXS -0.75R, HBAR -0.75R | best: AERO 0.68R, NEAR 0.79R, TIA 1.15R
+- open 25 | mean -2.5% (-0.12R) | in profit 9 | older than 7d 21
+- worst: NEO -0.76R, AXS -0.75R, HBAR -0.73R | best: AERO 0.73R, NEAR 0.73R, TIA 1.17R
 
 ## System
-- CoinGecko 6115/10000 used, month-end projection 9977 (100%), throttle level 1 | by script {'scan': 1998, 'check_liquidity': 293, 'breakout_check': 3768, 'counterfactual_check': 56}
+- CoinGecko 6117/10000 used, month-end projection 9959 (100%), throttle level 1 | by script {'scan': 2000, 'check_liquidity': 293, 'breakout_check': 3768, 'counterfactual_check': 56}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=49), H2 SUPPORTED (n=168)
-- radar-flags.json scan age: 9m
+- radar-flags.json scan age: 6m
 - excluded from radar (pegged/tokenized equity): 39
