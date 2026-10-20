@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-20 19:36 UTC
+# Radar digest - 2026-10-20 20:10 UTC
 
 ## Market
-- BTC scenario **B** | price 82516 | wk close 81175 vs 82800 | 50W 76608 (7.71%) | 1h old
+- BTC scenario **B** | price 82516 | wk close 81175 vs 82800 | 50W 76608 (7.71%) | 2h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.41% | ETH/BTC 0.02954 | breadth7d 34% | stables 30d 0.07%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.17pt | 7d 0.21pt | n=121
 - Gold: PAXG 1m -1.11% | real10y 2.74 (13bp 1m) | USD 1m 1.72% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 29
@@ -19,27 +19,20 @@
 - SUI: **RESET_DONE** | +92% impulse, retr 0.45 | OI dd 22% | fund 0.0100 | hold False | inval 0.93740 | OB 0.93370-0.97450
 
 ## Pre-pump candidates
-- NEAR: [A+E] 7d -1.4%
+- none
 
 ## ETF pipeline (new this run)
-- pepe NEW: amendment - Pepe gains almost 11% after Canary Capital amends spot PEPE ETF filing - Traders Union
-- solana NEW: filing - BlackRock files for third Bitcoin ETF, still no Solana or XRP - Bitget
-- dogecoin NEW: other - Bitwise ETF payout on October 22, 2026: What it means for Dogecoin price - ad-hoc-news.de
-- solana NEW: other - Morgan Stanley Solana Trust sees $1.8M inflow a... - Pluang
-- solana NEW: other - Blackrock Seeks Third Spot Bitcoin ETF As Solana And XRP Wait - Menafn
-- near: other - NEAR Protocol Price Forecast: Resilient ETF inflows fail to halt mild correction - www.tmg
-- near: other - NEAR Protocol Price Forecast: Mild correction persists despite resilient ETF inflows - www
-- zcash: other - The Zcash ETF Posts $10.4 Million Net Outflow on Oct. 19 - www.tokenpost.com
+- near: other - NEAR Protocol Price Forecast: Why does a mild correction persist despite resilient ETF inf
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc 0.20% | topPos 0.97 | taker 0.99
-- SOL: LONG_FLUSH_24H | OI/mc 0.56% | topPos 0.88 | taker 0.97
-- NEAR: LONG_FLUSH_24H | OI/mc 0.95% | topPos 0.97 | taker 1.01
+- BTC: LONG_FLUSH_24H | OI/mc 0.19% | topPos 0.97 | taker 0.98
+- ETH: LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 1.03
+- SOL: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 0.96
+- NEAR: LONG_FLUSH_24H | OI/mc -% | topPos 0.96 | taker 1.01
 - AVAX: LONG_FLUSH_24H | OI/mc 0.40% | topPos 0.92 | taker 0.95
-- SEI: SHORT_SQUEEZE_24H | OI/mc 0.81% | topPos 0.98 | taker 0.88
-- TAO: LONG_FLUSH_24H | OI/mc 0.81% | topPos 0.92 | taker 0.98
-- ZEC: SHORT_SQUEEZE_24H | OI/mc 0.71% | topPos 1.12 | taker 1.07
-- ADA: AGGRESSIVE_BUYING | OI/mc -% | topPos 0.89 | taker 1.15
+- SEI: AGGRESSIVE_SELLING, SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.98 | taker 0.84
+- TAO: LONG_FLUSH_24H | OI/mc 0.80% | topPos 0.92 | taker 0.98
+- XLM: AGGRESSIVE_BUYING, LONG_FLUSH_24H | OI/mc -% | topPos 0.95 | taker 1.19
 
 ## Revenue / buyback flags
 - collector-crypt: REVENUE_ACCELERATING, CHEAP_VS_REVENUE
@@ -51,12 +44,12 @@
 - (13 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 25 | mean 1.0% (0.10R) | in profit 11 | older than 7d 21
-- worst: HBAR -0.72R, NEO -0.68R, ADA -0.61R | best: BEAM 1.00R, AERO 1.15R, TIA 1.33R
+- open 25 | mean 1.5% (0.13R) | in profit 11 | older than 7d 21
+- worst: HBAR -0.70R, NEO -0.66R, IMX -0.58R | best: BEAM 0.93R, AERO 1.24R, TIA 1.29R
 
 ## System
-- CoinGecko 6380/10000 used, month-end projection 9993 (100%), throttle level 1 | by script {'scan': 2082, 'check_liquidity': 310, 'breakout_check': 3930, 'counterfactual_check': 58}
+- CoinGecko 6383/10000 used, month-end projection 9977 (100%), throttle level 1 | by script {'scan': 2084, 'check_liquidity': 311, 'breakout_check': 3930, 'counterfactual_check': 58}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=49), H2 SUPPORTED (n=170)
-- radar-flags.json scan age: 6m
+- radar-flags.json scan age: 9m
 - excluded from radar (pegged/tokenized equity): 40
