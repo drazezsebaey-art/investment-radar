@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-20 03:06 UTC
+# Radar digest - 2026-10-20 03:40 UTC
 
 ## Market
-- BTC scenario **B** | price 81594 | wk close 81175 vs 82800 | 50W 76608 (6.51%) | 28m old
+- BTC scenario **B** | price 81594 | wk close 81175 vs 82800 | 50W 76608 (6.51%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.45% | ETH/BTC 0.02935 | breadth7d 45% | stables 30d 0.07%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.18pt | 7d 0.44pt | n=121
 - Gold: PAXG 1m -0.48% | real10y 2.74 (13bp 1m) | USD 1m 1.72% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 29
@@ -20,22 +20,20 @@
 
 ## Pre-pump candidates
 - NEAR: [A+E] 7d -6.6%
-- AKT: [C+E] 7d 3.7%
-- PEPE: [A+C] 7d 10.0%
-- BAT: [B+C] 7d 26.0%
+- PEPE: [A+C] 7d 5.6%
 
 ## ETF pipeline (new this run)
-- zcash: other - Zcash ETF sees $10.4M outflow on Oct 19, contin... - Pluang
+- none
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc 0.20% | topPos 0.95 | taker 1.01
-- ETH: LONG_FLUSH_24H | OI/mc -% | topPos 0.89 | taker 0.99
-- SOL: LONG_FLUSH_24H | OI/mc -% | topPos 0.89 | taker 0.95
-- NEAR: LONG_FLUSH_24H | OI/mc 1.04% | topPos 0.99 | taker 1.03
-- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 0.98
-- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.97 | taker 1.06
-- TAO: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.93 | taker 0.77
-- ZEC: LONG_FLUSH_24H | OI/mc -% | topPos 1.04 | taker 1.00
+- AVAX: LONG_FLUSH_24H | OI/mc 0.40% | topPos 0.91 | taker 0.97
+- SEI: LONG_FLUSH_24H | OI/mc 0.78% | topPos 0.99 | taker 1.06
+- TAO: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.82% | topPos 0.94 | taker 0.81
+- ADA: LONG_FLUSH_24H | OI/mc 0.41% | topPos 0.88 | taker 0.93
+- LINK: LONG_FLUSH_24H | OI/mc -% | topPos 0.90 | taker 0.94
+- XLM: LONG_FLUSH_24H | OI/mc 0.17% | topPos 0.98 | taker 0.89
+- UNI: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 0.99
+- ONDO: LONG_FLUSH_24H | OI/mc -% | topPos 0.76 | taker 0.92
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -46,12 +44,12 @@
 - (12 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 25 | mean -1.6% (-0.06R) | in profit 10 | older than 7d 21
-- worst: AXS -0.72R, NEO -0.72R, HBAR -0.71R | best: NEAR 0.77R, AERO 0.85R, TIA 1.39R
+- open 25 | mean -1.9% (-0.08R) | in profit 9 | older than 7d 21
+- worst: NEO -0.74R, HBAR -0.73R, AXS -0.73R | best: BEAM 0.73R, AERO 0.87R, TIA 1.28R
 
 ## System
-- CoinGecko 6127/10000 used, month-end projection 9931 (99%), throttle level 1 | by script {'scan': 2008, 'check_liquidity': 295, 'breakout_check': 3768, 'counterfactual_check': 56}
+- CoinGecko 6130/10000 used, month-end projection 9936 (99%), throttle level 1 | by script {'scan': 2010, 'check_liquidity': 296, 'breakout_check': 3768, 'counterfactual_check': 56}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=49), H2 SUPPORTED (n=168)
-- radar-flags.json scan age: 6m
+- radar-flags.json scan age: 9m
 - excluded from radar (pegged/tokenized equity): 38
