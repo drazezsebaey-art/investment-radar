@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-20 01:07 UTC
+# Radar digest - 2026-10-20 01:39 UTC
 
 ## Market
-- BTC scenario **B** | price 81721 | wk close 81175 vs 82800 | 50W 76608 (6.67%) | 29m old
+- BTC scenario **B** | price 81721 | wk close 81175 vs 82800 | 50W 76608 (6.67%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.48% | ETH/BTC 0.02933 | breadth7d 27% | stables 30d 0.35%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.26pt | 7d 0.62pt | n=121
 - Gold: PAXG 1m -0.48% | real10y 2.74 (13bp 1m) | USD 1m 1.72% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 29
@@ -20,25 +20,22 @@
 
 ## Pre-pump candidates
 - NEAR: [A+E] 7d -5.2%
-- PEPE: [A+C] 7d 4.5%
-- VVV: [C+E] 7d 7.2%
+- PEPE: [A+C] 7d 6.4%
+- WLD: [A+C] 7d 7.0%
+- BAT: [B+C] 7d 25.2%
 
 ## ETF pipeline (new this run)
-- dogecoin NEW: other - Dogecoin News: Bitcoin ETF Outflows Hit $1.55 Billion as Pepeto Presale Crosses $10 Millio
-- near: other - NEAR ETF took in 2.61 million USD: What it means for the NEAR Protocol price - ad-hoc-news
-- chainlink: other - Bitwise Chainlink ETF Holds More Than Five Million LINK Tokens - TOKENPOST
-- zcash: other - Zcash ETF (Derivatives) Price History and Historical Data - CoinMarketCap
-- chainlink: other - Chainlink Reserve Adds 431,900 LINK Over 30 Days as ETF Flows Turn Negative - TOKENPOST
+- zcash: other - Zcash ETF sees $10.4M outflow on Oct 19, contin... - Pluang
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc 0.20% | topPos 0.95 | taker 1.06
-- SOL: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.89 | taker 1.00
-- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 1.03
-- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.98 | taker 1.03
-- TAO: AGGRESSIVE_SELLING, SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.92 | taker 0.73
-- ADA: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 0.95
-- LINK: LONG_FLUSH_24H | OI/mc -% | topPos 0.90 | taker 0.96
-- XLM: LONG_FLUSH_24H | OI/mc -% | topPos 0.98 | taker 0.97
+- BTC: LONG_FLUSH_24H | OI/mc 0.20% | topPos 0.95 | taker 1.01
+- ETH: LONG_FLUSH_24H | OI/mc -% | topPos 0.89 | taker 1.02
+- SOL: LONG_FLUSH_24H | OI/mc -% | topPos 0.89 | taker 0.99
+- NEAR: LONG_FLUSH_24H | OI/mc 1.05% | topPos 0.99 | taker 1.02
+- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 1.02
+- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.97 | taker 1.06
+- TAO: AGGRESSIVE_SELLING | OI/mc -% | topPos 0.91 | taker 0.74
+- ZEC: LONG_FLUSH_24H | OI/mc -% | topPos 1.04 | taker 1.01
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -49,12 +46,12 @@
 - (12 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 25 | mean -2.5% (-0.12R) | in profit 9 | older than 7d 21
-- worst: NEO -0.76R, AXS -0.75R, HBAR -0.73R | best: AERO 0.73R, NEAR 0.73R, TIA 1.17R
+- open 25 | mean -2.9% (-0.15R) | in profit 9 | older than 7d 21
+- worst: NEO -0.78R, AXS -0.78R, HBAR -0.74R | best: AERO 0.67R, NEAR 0.73R, TIA 1.16R
 
 ## System
-- CoinGecko 6117/10000 used, month-end projection 9959 (100%), throttle level 1 | by script {'scan': 2000, 'check_liquidity': 293, 'breakout_check': 3768, 'counterfactual_check': 56}
+- CoinGecko 6119/10000 used, month-end projection 9962 (100%), throttle level 1 | by script {'scan': 2002, 'check_liquidity': 293, 'breakout_check': 3768, 'counterfactual_check': 56}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=49), H2 SUPPORTED (n=168)
-- radar-flags.json scan age: 6m
+- radar-flags.json scan age: 9m
 - excluded from radar (pegged/tokenized equity): 39
