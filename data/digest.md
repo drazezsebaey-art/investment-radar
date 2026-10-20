@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-20 21:09 UTC
+# Radar digest - 2026-10-20 21:37 UTC
 
 ## Market
-- BTC scenario **B** | price 82736 | wk close 81175 vs 82800 | 50W 76608 (8.00%) | 33m old
+- BTC scenario **B** | price 82736 | wk close 81175 vs 82800 | 50W 76608 (8.00%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.41% | ETH/BTC 0.02954 | breadth7d 34% | stables 30d 0.07%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.17pt | 7d 0.21pt | n=121
 - Gold: PAXG 1m -1.11% | real10y 2.74 (13bp 1m) | USD 1m 1.72% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 29
@@ -19,7 +19,7 @@
 - BCH: **RESET_DONE** | +72% impulse, retr 0.55 | OI dd 33% | fund 0.0100 | hold False | inval 264.10000 | OB 258.40000-266.60000
 
 ## Pre-pump candidates
-- NEAR: [A+E] 7d -1.1%
+- none
 
 ## ETF pipeline (new this run)
 - near: other - NEAR Protocol Price Forecast: Why does a mild correction persist despite resilient ETF inf
@@ -44,12 +44,12 @@
 - (13 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 25 | mean 2.5% (0.20R) | in profit 14 | older than 7d 21
-- worst: HBAR -0.65R, NEO -0.62R, IMX -0.55R | best: BEAM 1.11R, AERO 1.29R, TIA 1.36R
+- open 25 | mean 2.7% (0.21R) | in profit 13 | older than 7d 21
+- worst: HBAR -0.66R, NEO -0.62R, ADA -0.53R | best: BEAM 1.14R, AERO 1.31R, TIA 1.40R
 
 ## System
-- CoinGecko 6389/10000 used, month-end projection 9965 (100%), throttle level 1 | by script {'scan': 2088, 'check_liquidity': 313, 'breakout_check': 3930, 'counterfactual_check': 58}
+- CoinGecko 6392/10000 used, month-end projection 9970 (100%), throttle level 1 | by script {'scan': 2090, 'check_liquidity': 314, 'breakout_check': 3930, 'counterfactual_check': 58}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=49), H2 SUPPORTED (n=170)
-- radar-flags.json scan age: 9m
-- excluded from radar (pegged/tokenized equity): 39
+- radar-flags.json scan age: 7m
+- excluded from radar (pegged/tokenized equity): 41
