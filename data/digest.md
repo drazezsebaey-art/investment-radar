@@ -1,41 +1,41 @@
-# Radar digest - 2026-10-20 06:20 UTC
+# Radar digest - 2026-10-20 06:39 UTC
 
 ## Market
-- BTC scenario **B** | price 82147 | wk close 81175 vs 82800 | 50W 76608 (7.23%) | 2h old
-- Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.45% | ETH/BTC 0.02935 | breadth7d 45% | stables 30d 0.07%
-- Alt risk (BTC.D): **NORMAL**  | 3d 0.18pt | 7d 0.44pt | n=121
+- BTC scenario **B** | price 81786 | wk close 81175 vs 82800 | 50W 76608 (6.76%) | 1m old
+- Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.49% | ETH/BTC 0.02932 | breadth7d 52% | stables 30d 0.07%
+- Alt risk (BTC.D): **NORMAL**  | 3d 0.28pt | 7d 0.35pt | n=121
 - Gold: PAXG 1m -0.40% | real10y 2.74 (13bp 1m) | USD 1m 1.72% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 29
 - 10y 1w: -13bp = real -13 + breakeven 2 -> **REAL_YIELD_DRIVEN**
 - 10y 1m: 15bp = real 13 + breakeven 2 -> **REAL_YIELD_DRIVEN**
 
 ## Coins in correction (entry_ready first)
-- UNI: **BROKEN** | +88% impulse, retr 0.71 | OI dd 36% | fund 0.0100 | hold False | inval 6.81000 | OB 5.80800-6.03200
-- ZEC: **BROKEN** | +69% impulse, retr 0.79 | OI dd 44% | fund 0.0100 | hold False | inval 1048.53000 | OB 985.40000-1050.48000
-- LINK: **BROKEN** | +48% impulse, retr 0.71 | OI dd 26% | fund 0.0097 | hold False | inval 11.53500 | OB 10.61800-10.96200
-- BAT: **ONGOING** | +221% impulse, retr 0.18 | OI dd 4% | fund -0.0325 | hold False | inval 0.16679 | OB 0.13603-0.14156
-- INJ: **ONGOING** | +93% impulse, retr 0.17 | OI dd 22% | fund 0.0100 | hold False | inval 7.06300 | OB 6.41500-6.78300
-- TIA: **RESET_DONE** | +140% impulse, retr 0.33 | OI dd 27% | fund -0.0057 | hold False | inval 0.58660 | OB 0.52010-0.55520
-- SEI: **RESET_DONE** | +110% impulse, retr 0.56 | OI dd 25% | fund 0.0050 | hold False | inval 0.05834 | OB 0.05685-0.05941
-- SENT: **RESET_DONE** | +106% impulse, retr 0.36 | OI dd 54% | fund 0.0039 | hold False | inval 0.02045 | OB 0.02045-0.02104
+- UNI: **BROKEN** | +88% impulse, retr 0.73 | OI dd 36% | fund 0.0069 | hold False | inval 6.81000 | OB 5.80800-6.03200
+- ZEC: **BROKEN** | +69% impulse, retr 0.81 | OI dd 44% | fund 0.0060 | hold False | inval 1048.53000 | OB 985.40000-1050.48000
+- LINK: **BROKEN** | +48% impulse, retr 0.73 | OI dd 26% | fund 0.0037 | hold False | inval 11.53500 | OB 10.61800-10.96200
+- CARDS: **ONGOING** | +249% impulse, retr 0.10 | OI dd -% | fund - | hold False | inval 0.23780 | OB 0.18390-0.20790
+- BAT: **ONGOING** | +221% impulse, retr 0.16 | OI dd 4% | fund -0.0408 | hold False | inval 0.16679 | OB 0.13603-0.14156
+- SEI: **RESET_DONE** | +110% impulse, retr 0.58 | OI dd 25% | fund 0.0050 | hold False | inval 0.05834 | OB 0.05685-0.05941
+- SENT: **RESET_DONE** | +106% impulse, retr 0.37 | OI dd 54% | fund -0.0001 | hold False | inval 0.02045 | OB 0.02045-0.02104
+- SUI: **RESET_DONE** | +92% impulse, retr 0.48 | OI dd 28% | fund 0.0092 | hold False | inval 0.93740 | OB 0.93370-0.97450
 
 ## Pre-pump candidates
 - NEAR: [A+E] 7d -10.3%
-- KITE: [C+E] 7d -1.4%
-- AWE: [C+E] 7d 0.5%
-- PEPE: [A+C] 7d 3.8%
+- KITE: [C+E] 7d -3.9%
+- AKT: [C+E] 7d 1.7%
+- PEPE: [A+C] 7d 2.9%
 
 ## ETF pipeline (new this run)
 - none
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc 0.20% | topPos 0.96 | taker 1.01
-- ETH: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.90 | taker 1.00
-- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 0.99
-- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.99 | taker 1.07
-- TAO: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 0.84
-- WLD: SHORT_SQUEEZE_24H | OI/mc 1.94% | topPos 0.96 | taker 1.06
-- ADA: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 0.97
-- LINK: LONG_FLUSH_24H | OI/mc -% | topPos 0.90 | taker 0.97
+- BTC: LONG_FLUSH_24H | OI/mc 0.20% | topPos 0.95 | taker 1.00
+- ETH: LONG_FLUSH_24H | OI/mc -% | topPos 0.89 | taker 0.99
+- SOL: LONG_FLUSH_24H | OI/mc -% | topPos 0.90 | taker 0.93
+- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 0.98
+- SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.83 | taker 0.88
+- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.98 | taker 1.10
+- TAO: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 0.84
+- WLD: SHORT_SQUEEZE_24H | OI/mc 1.92% | topPos 0.97 | taker 1.04
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -47,11 +47,11 @@
 
 ## Paper book (open trades, marked to last scan)
 - open 25 | mean -2.0% (-0.09R) | in profit 9 | older than 7d 21
-- worst: AXS -0.75R, NEO -0.74R, HBAR -0.70R | best: NEAR 0.67R, AERO 0.84R, TIA 1.27R
+- worst: NEO -0.76R, AXS -0.75R, HBAR -0.70R | best: BEAM 0.69R, AERO 0.82R, TIA 1.40R
 
 ## System
-- CoinGecko 6199/10000 used, month-end projection 9983 (100%), throttle level 1 | by script {'scan': 2020, 'check_liquidity': 299, 'breakout_check': 3824, 'counterfactual_check': 56}
+- CoinGecko 6202/10000 used, month-end projection 9988 (100%), throttle level 1 | by script {'scan': 2022, 'check_liquidity': 300, 'breakout_check': 3824, 'counterfactual_check': 56}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=49), H2 SUPPORTED (n=168)
-- radar-flags.json scan age: 20m
-- excluded from radar (pegged/tokenized equity): 39
+- radar-flags.json scan age: 9m
+- excluded from radar (pegged/tokenized equity): 38
