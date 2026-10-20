@@ -1,10 +1,10 @@
-# Radar digest - 2026-10-20 09:40 UTC
+# Radar digest - 2026-10-20 10:07 UTC
 
 ## Market
 - BTC scenario **B** | price 81593 | wk close 81175 vs 82800 | 50W 76608 (6.51%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.49% | ETH/BTC 0.02932 | breadth7d 52% | stables 30d 0.07%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.28pt | 7d 0.35pt | n=121
-- Gold: PAXG 1m -0.40% | real10y 2.74 (13bp 1m) | USD 1m 1.72% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 29
+- Gold: PAXG 1m -1.14% | real10y 2.74 (13bp 1m) | USD 1m 1.72% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 29
 - 10y 1w: -13bp = real -13 + breakeven 2 -> **REAL_YIELD_DRIVEN**
 - 10y 1m: 15bp = real 13 + breakeven 2 -> **REAL_YIELD_DRIVEN**
 
@@ -20,8 +20,8 @@
 
 ## Pre-pump candidates
 - NEAR: [A+E] 7d -9.0%
-- KITE: [C+E] 7d -5.2%
 - PEPE: [A+C] 7d 1.2%
+- WLD: [A+C] 7d 3.1%
 
 ## ETF pipeline (new this run)
 - near: other - Bitwise NEAR ETF's net assets rose to nearly $8... - Pluang
@@ -46,12 +46,12 @@
 - (13 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 25 | mean -2.2% (-0.11R) | in profit 9 | older than 7d 21
-- worst: NEO -0.78R, AXS -0.77R, HBAR -0.74R | best: BEAM 0.61R, AERO 0.84R, TIA 1.56R
+- open 25 | mean -2.3% (-0.12R) | in profit 9 | older than 7d 21
+- worst: NEO -0.78R, AXS -0.77R, HBAR -0.74R | best: BEAM 0.68R, AERO 0.85R, TIA 1.45R
 
 ## System
-- CoinGecko 6224/10000 used, month-end projection 9958 (100%), throttle level 1 | by script {'scan': 2042, 'check_liquidity': 301, 'breakout_check': 3824, 'counterfactual_check': 57}
+- CoinGecko 6226/10000 used, month-end projection 9940 (99%), throttle level 1 | by script {'scan': 2044, 'check_liquidity': 301, 'breakout_check': 3824, 'counterfactual_check': 57}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=49), H2 SUPPORTED (n=168)
-- radar-flags.json scan age: 10m
+- radar-flags.json scan age: 7m
 - excluded from radar (pegged/tokenized equity): 39
