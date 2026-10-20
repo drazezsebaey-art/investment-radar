@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-20 13:07 UTC
+# Radar digest - 2026-10-20 13:39 UTC
 
 ## Market
-- BTC scenario **B** | price 81515 | wk close 81175 vs 82800 | 50W 76608 (6.41%) | 29m old
+- BTC scenario **B** | price 81515 | wk close 81175 vs 82800 | 50W 76608 (6.41%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.51% | ETH/BTC 0.02925 | breadth7d 52% | stables 30d 0.06%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.36pt | 7d 0.41pt | n=121
 - Gold: PAXG 1m -1.14% | real10y 2.74 (13bp 1m) | USD 1m 1.72% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 29
@@ -20,22 +20,26 @@
 
 ## Pre-pump candidates
 - NEAR: [A+E] 7d -6.7%
-- AKT: [C+E] 7d 2.9%
-- PEPE: [A+C] 7d 3.5%
+- THETA: [C+E] 7d -3.2%
 - AWE: [C+E] 7d 3.8%
 
 ## ETF pipeline (new this run)
-- injective-protocol NEW: other - Injective News: Will INJ Price Hold After Pentiv, ETF, and Gulf Labs? - Coin Gabbar
+- ripple NEW: filing - BlackRock files for third Bitcoin ETF, still no Solana or XRP - TradingView
+- ripple NEW: filing - BlackRock files for third Bitcoin ETF, still no Solana or XRP - Bitget
+- ripple NEW: other - Bitwise’s XRP ETF logs $3.75 million outflow as traders cash in on rally - TipRanks
+- ripple NEW: other - Crypto Today: Bitcoin, Ethereum, XRP tick lower amid mixed ETF flows - FXStreet
+- ripple NEW: other - Blackrock Seeks Third Spot Bitcoin ETF As Solana And XRP Wait - Menafn
+- ripple NEW: other - XRP price prediction: ETF inflow streak breaks - CryptoTicker
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc 0.20% | topPos 0.94 | taker 0.96
-- SOL: LONG_FLUSH_24H | OI/mc -% | topPos 0.89 | taker 0.95
-- NEAR: LONG_FLUSH_24H | OI/mc 0.95% | topPos 0.96 | taker 1.06
-- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 1.09
-- XRP: LONG_FLUSH_24H | OI/mc 0.14% | topPos 0.86 | taker 0.98
-- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.99 | taker 1.11
-- TAO: LONG_FLUSH_24H | OI/mc -% | topPos 0.90 | taker 0.91
-- ZEC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 1.05 | taker 1.05
+- BTC: LONG_FLUSH_24H | OI/mc 0.21% | topPos 0.94 | taker 0.97
+- ETH: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.87 | taker 1.01
+- SOL: LONG_FLUSH_24H | OI/mc -% | topPos 0.89 | taker 0.93
+- NEAR: LONG_FLUSH_24H | OI/mc 0.93% | topPos 0.95 | taker 1.06
+- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 1.07
+- XRP: LONG_FLUSH_24H | OI/mc 0.13% | topPos 0.86 | taker 0.99
+- SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.83 | taker 0.96
+- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 1.00 | taker 1.09
 
 ## Revenue / buyback flags
 - collector-crypt: REVENUE_ACCELERATING, CHEAP_VS_REVENUE
@@ -47,12 +51,12 @@
 - (13 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 25 | mean -1.6% (-0.06R) | in profit 10 | older than 7d 21
-- worst: HBAR -0.77R, NEO -0.76R, AXS -0.74R | best: AERO 0.78R, BEAM 1.08R, TIA 1.48R
+- open 25 | mean -1.6% (-0.06R) | in profit 11 | older than 7d 21
+- worst: HBAR -0.78R, NEO -0.76R, AXS -0.74R | best: AERO 0.76R, BEAM 1.18R, TIA 1.42R
 
 ## System
-- CoinGecko 6289/10000 used, month-end projection 9977 (100%), throttle level 1 | by script {'scan': 2056, 'check_liquidity': 302, 'breakout_check': 3874, 'counterfactual_check': 57}
+- CoinGecko 6291/10000 used, month-end projection 9980 (100%), throttle level 1 | by script {'scan': 2058, 'check_liquidity': 302, 'breakout_check': 3874, 'counterfactual_check': 57}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=49), H2 SUPPORTED (n=170)
-- radar-flags.json scan age: 7m
+- radar-flags.json scan age: 9m
 - excluded from radar (pegged/tokenized equity): 39
