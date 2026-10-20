@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-20 08:39 UTC
+# Radar digest - 2026-10-20 09:07 UTC
 
 ## Market
-- BTC scenario **B** | price 81593 | wk close 81175 vs 82800 | 50W 76608 (6.51%) | 1m old
+- BTC scenario **B** | price 81593 | wk close 81175 vs 82800 | 50W 76608 (6.51%) | 29m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.49% | ETH/BTC 0.02932 | breadth7d 52% | stables 30d 0.07%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.28pt | 7d 0.35pt | n=121
 - Gold: PAXG 1m -0.40% | real10y 2.74 (13bp 1m) | USD 1m 1.72% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 29
@@ -19,9 +19,8 @@
 - SENT: **RESET_DONE** | +106% impulse, retr 0.35 | OI dd 54% | fund 0.0020 | hold False | inval 0.02045 | OB 0.02045-0.02104
 
 ## Pre-pump candidates
-- NEAR: [A+E] 7d -9.6%
+- NEAR: [A+E] 7d -9.0%
 - KITE: [C+E] 7d -5.6%
-- AKT: [C+E] 7d -0.7%
 
 ## ETF pipeline (new this run)
 - near: other - Could NEAR Protocol regain bullish momentum on resilient ETF inflows? - FXStreet
@@ -46,12 +45,12 @@
 - (12 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 25 | mean -2.0% (-0.10R) | in profit 9 | older than 7d 21
-- worst: AXS -0.76R, NEO -0.76R, HBAR -0.74R | best: BEAM 0.75R, AERO 0.85R, TIA 1.37R
+- open 25 | mean -2.4% (-0.12R) | in profit 9 | older than 7d 21
+- worst: NEO -0.78R, AXS -0.78R, HBAR -0.75R | best: BEAM 0.74R, AERO 0.84R, TIA 1.34R
 
 ## System
-- CoinGecko 6212/10000 used, month-end projection 9961 (100%), throttle level 1 | by script {'scan': 2030, 'check_liquidity': 301, 'breakout_check': 3824, 'counterfactual_check': 57}
+- CoinGecko 6214/10000 used, month-end projection 9942 (99%), throttle level 1 | by script {'scan': 2032, 'check_liquidity': 301, 'breakout_check': 3824, 'counterfactual_check': 57}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=49), H2 SUPPORTED (n=168)
-- radar-flags.json scan age: 8m
+- radar-flags.json scan age: 6m
 - excluded from radar (pegged/tokenized equity): 39
