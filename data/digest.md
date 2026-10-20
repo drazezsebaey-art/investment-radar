@@ -1,4 +1,4 @@
-# Radar digest - 2026-10-20 13:39 UTC
+# Radar digest - 2026-10-20 14:07 UTC
 
 ## Market
 - BTC scenario **B** | price 81515 | wk close 81175 vs 82800 | 50W 76608 (6.41%) | 1h old
@@ -19,9 +19,11 @@
 - SENT: **RESET_DONE** | +106% impulse, retr 0.37 | OI dd 54% | fund 0.0050 | hold False | inval 0.02127 | OB 0.02045-0.02104
 
 ## Pre-pump candidates
-- NEAR: [A+E] 7d -6.7%
-- THETA: [C+E] 7d -3.2%
+- NEAR: [A+E] 7d -7.0%
+- KITE: [C+E] 7d -3.8%
+- AKT: [C+E] 7d 2.9%
 - AWE: [C+E] 7d 3.8%
+- INJ: [A+C] 7d 8.2%
 
 ## ETF pipeline (new this run)
 - ripple NEW: filing - BlackRock files for third Bitcoin ETF, still no Solana or XRP - TradingView
@@ -51,12 +53,12 @@
 - (13 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 25 | mean -1.6% (-0.06R) | in profit 11 | older than 7d 21
-- worst: HBAR -0.78R, NEO -0.76R, AXS -0.74R | best: AERO 0.76R, BEAM 1.18R, TIA 1.42R
+- open 25 | mean -0.6% (-0.00R) | in profit 11 | older than 7d 21
+- worst: HBAR -0.74R, NEO -0.74R, AXS -0.71R | best: AERO 0.90R, BEAM 1.06R, TIA 1.49R
 
 ## System
-- CoinGecko 6291/10000 used, month-end projection 9980 (100%), throttle level 1 | by script {'scan': 2058, 'check_liquidity': 302, 'breakout_check': 3874, 'counterfactual_check': 57}
+- CoinGecko 6294/10000 used, month-end projection 9963 (100%), throttle level 1 | by script {'scan': 2060, 'check_liquidity': 303, 'breakout_check': 3874, 'counterfactual_check': 57}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=49), H2 SUPPORTED (n=170)
-- radar-flags.json scan age: 9m
-- excluded from radar (pegged/tokenized equity): 39
+- radar-flags.json scan age: 7m
+- excluded from radar (pegged/tokenized equity): 38
