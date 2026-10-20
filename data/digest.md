@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-20 09:07 UTC
+# Radar digest - 2026-10-20 09:40 UTC
 
 ## Market
-- BTC scenario **B** | price 81593 | wk close 81175 vs 82800 | 50W 76608 (6.51%) | 29m old
+- BTC scenario **B** | price 81593 | wk close 81175 vs 82800 | 50W 76608 (6.51%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.49% | ETH/BTC 0.02932 | breadth7d 52% | stables 30d 0.07%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.28pt | 7d 0.35pt | n=121
 - Gold: PAXG 1m -0.40% | real10y 2.74 (13bp 1m) | USD 1m 1.72% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 29
@@ -20,37 +20,38 @@
 
 ## Pre-pump candidates
 - NEAR: [A+E] 7d -9.0%
-- KITE: [C+E] 7d -5.6%
+- KITE: [C+E] 7d -5.2%
+- PEPE: [A+C] 7d 1.2%
 
 ## ETF pipeline (new this run)
-- near: other - Could NEAR Protocol regain bullish momentum on resilient ETF inflows? - FXStreet
 - near: other - Bitwise NEAR ETF's net assets rose to nearly $8... - Pluang
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc 0.20% | topPos 0.95 | taker 1.00
-- ETH: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 0.99
-- SOL: LONG_FLUSH_24H | OI/mc -% | topPos 0.89 | taker 0.93
-- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 0.97
-- XRP: LONG_FLUSH_24H | OI/mc 0.13% | topPos 0.87 | taker 0.91
-- SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.83 | taker 0.87
-- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.99 | taker 1.07
-- TAO: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 0.84
+- BTC: LONG_FLUSH_24H | OI/mc 0.20% | topPos 0.94 | taker 0.98
+- ETH: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 0.98
+- SOL: LONG_FLUSH_24H | OI/mc -% | topPos 0.89 | taker 0.94
+- NEAR: LONG_FLUSH_24H | OI/mc 0.99% | topPos 0.98 | taker 1.04
+- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 0.99
+- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 0.91
+- SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.83 | taker 0.88
+- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.99 | taker 1.09
 
 ## Revenue / buyback flags
-- pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
-- thorchain: REVENUE_ACCELERATING
+- collector-crypt: REVENUE_ACCELERATING, CHEAP_VS_REVENUE
 - thorswap: REVENUE_ACCELERATING
 - render-token: REVENUE_ACCELERATING
+- chip-2: REVENUE_ACCELERATING
+- tornado-cash: REVENUE_ACCELERATING
 - thor-wallet: REVENUE_ACCELERATING
-- (12 flagged protocol(s) without a tradeable token hidden)
+- (13 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 25 | mean -2.4% (-0.12R) | in profit 9 | older than 7d 21
-- worst: NEO -0.78R, AXS -0.78R, HBAR -0.75R | best: BEAM 0.74R, AERO 0.84R, TIA 1.34R
+- open 25 | mean -2.2% (-0.11R) | in profit 9 | older than 7d 21
+- worst: NEO -0.78R, AXS -0.77R, HBAR -0.74R | best: BEAM 0.61R, AERO 0.84R, TIA 1.56R
 
 ## System
-- CoinGecko 6214/10000 used, month-end projection 9942 (99%), throttle level 1 | by script {'scan': 2032, 'check_liquidity': 301, 'breakout_check': 3824, 'counterfactual_check': 57}
+- CoinGecko 6224/10000 used, month-end projection 9958 (100%), throttle level 1 | by script {'scan': 2042, 'check_liquidity': 301, 'breakout_check': 3824, 'counterfactual_check': 57}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=49), H2 SUPPORTED (n=168)
-- radar-flags.json scan age: 6m
+- radar-flags.json scan age: 10m
 - excluded from radar (pegged/tokenized equity): 39
