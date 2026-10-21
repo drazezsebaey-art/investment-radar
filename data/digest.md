@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-21 22:07 UTC
+# Radar digest - 2026-10-21 22:39 UTC
 
 ## Market
-- BTC scenario **B** | price 84665 | wk close 81175 vs 82800 | 50W 76608 (10.52%) | 1h old
+- BTC scenario **B** | price 84665 | wk close 81175 vs 82800 | 50W 76608 (10.52%) | 2h old
 - Alts: **BTC_LED** [-] | BTC.D 57.46% | ETH/BTC 0.02954 | breadth7d 39% | stables 30d -0.06%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.11pt | 7d 0.25pt | n=121
 - Gold: PAXG 1m 0.15% | real10y - (-bp 1m) | USD 1m -% | pillar6 **insufficient_data**  | COT pctl 29
@@ -17,21 +17,20 @@
 - KMNO: **RESET_DONE** | +112% impulse, retr 0.37 | OI dd 30% | fund -0.0157 | hold False | inval 0.03884 | OB 0.03884-0.04030
 
 ## Pre-pump candidates
-- SUI: [A+B] 7d 2.5%
 - ZEC: [A+B] 7d 19.0%
 
 ## ETF pipeline (new this run)
 - none
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_FUEL | OI/mc 0.21% | topPos 1.02 | taker 1.04
-- ETH: LONG_FLUSH_24H | OI/mc 0.58% | topPos 0.95 | taker 1.01
-- SOL: SHORT_SQUEEZE_24H | OI/mc 0.57% | topPos 0.89 | taker 1.03
-- AVAX: SHORT_SQUEEZE_24H | OI/mc 0.41% | topPos 0.94 | taker 0.94
-- XRP: SHORT_SQUEEZE_24H | OI/mc 0.13% | topPos 0.87 | taker 1.01
-- SUI: SHORT_SQUEEZE_FUEL | OI/mc 1.05% | topPos 0.85 | taker 1.02
-- TAO: SHORT_SQUEEZE_24H | OI/mc 0.79% | topPos 0.92 | taker 0.91
-- ZEC: SHORT_SQUEEZE_FUEL | OI/mc 0.75% | topPos 1.21 | taker 1.11
+- BTC: SHORT_SQUEEZE_FUEL | OI/mc 0.21% | topPos 1.03 | taker 1.05
+- ETH: LONG_FLUSH_24H | OI/mc 0.57% | topPos 0.94 | taker 1.02
+- SOL: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.89 | taker 1.04
+- AVAX: SHORT_SQUEEZE_24H | OI/mc 0.41% | topPos 0.94 | taker 0.93
+- XRP: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.87 | taker 1.01
+- SUI: SHORT_SQUEEZE_FUEL | OI/mc -% | topPos 0.85 | taker 1.04
+- TAO: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.93 | taker 0.93
+- ZEC: SHORT_SQUEEZE_FUEL | OI/mc 0.75% | topPos 1.22 | taker 1.10
 
 ## Revenue / buyback flags
 - collector-crypt: REVENUE_ACCELERATING, CHEAP_VS_REVENUE
@@ -42,12 +41,12 @@
 - (8 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 27 | mean 3.3% (0.28R) | in profit 14 | older than 7d 22
-- worst: HBAR -0.60R, NEO -0.56R, KAIA -0.46R | best: RENDER 1.15R, TIA 1.24R, NEAR 1.77R
+- open 27 | mean 2.8% (0.26R) | in profit 15 | older than 7d 22
+- worst: HBAR -0.61R, NEO -0.56R, KAIA -0.48R | best: KMNO 1.12R, TIA 1.16R, NEAR 1.73R
 
 ## System
-- CoinGecko 6738/10000 used, month-end projection 9986 (100%), throttle level 1 | by script {'scan': 2194, 'check_liquidity': 338, 'breakout_check': 4144, 'counterfactual_check': 62}
+- CoinGecko 6741/10000 used, month-end projection 9991 (100%), throttle level 1 | by script {'scan': 2196, 'check_liquidity': 339, 'breakout_check': 4144, 'counterfactual_check': 62}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=49), H2 SUPPORTED (n=175)
-- radar-flags.json scan age: 7m
+- radar-flags.json scan age: 9m
 - excluded from radar (pegged/tokenized equity): 41
