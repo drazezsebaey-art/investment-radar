@@ -1,4 +1,4 @@
-# Radar digest - 2026-10-21 07:39 UTC
+# Radar digest - 2026-10-21 08:06 UTC
 
 ## Market
 - BTC scenario **B** | price 82824 | wk close 81175 vs 82800 | 50W 76608 (8.11%) | 1h old
@@ -19,9 +19,8 @@
 - COMP: **ONGOING** | +57% impulse, retr 0.32 | OI dd 26% | fund 0.0084 | hold False | inval 20.63000 | OB 20.63000-21.09000
 
 ## Pre-pump candidates
-- GRASS: [C+E] 7d -12.0%
-- KITE: [C+E] 7d -7.8%
-- RENDER: [D+E] 7d -7.2%
+- KITE: [C+E] 7d -12.0%
+- RENDER: [D+E] 7d -5.8%
 
 ## ETF pipeline (new this run)
 - zcash: other - Zcash ETF draws 1.61 million USD: What it means for the Zcash price - AD HOC NEWS
@@ -46,12 +45,12 @@
 - (13 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 26 | mean 2.5% (0.21R) | in profit 12 | older than 7d 22
-- worst: HBAR -0.65R, NEO -0.58R, KAIA -0.53R | best: AERO 1.12R, TIA 1.49R, NEAR 1.51R
+- open 26 | mean 2.7% (0.22R) | in profit 12 | older than 7d 22
+- worst: HBAR -0.63R, NEO -0.60R, KAIA -0.51R | best: AERO 1.12R, TIA 1.46R, NEAR 1.53R
 
 ## System
-- CoinGecko 6554/10000 used, month-end projection 10013 (100%), throttle level 2 | by script {'scan': 2138, 'check_liquidity': 323, 'breakout_check': 4034, 'counterfactual_check': 59}
+- CoinGecko 6560/10000 used, month-end projection 10001 (100%), throttle level 2 | by script {'scan': 2140, 'check_liquidity': 324, 'breakout_check': 4034, 'counterfactual_check': 62}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=49), H2 SUPPORTED (n=172)
-- radar-flags.json scan age: 8m
-- excluded from radar (pegged/tokenized equity): 42
+- radar-flags.json scan age: 6m
+- excluded from radar (pegged/tokenized equity): 41
