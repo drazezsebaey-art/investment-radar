@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-21 23:09 UTC
+# Radar digest - 2026-10-21 23:38 UTC
 
 ## Market
-- BTC scenario **B** | price 84296 | wk close 81175 vs 82800 | 50W 76608 (10.04%) | 1m old
+- BTC scenario **B** | price 84296 | wk close 81175 vs 82800 | 50W 76608 (10.04%) | 31m old
 - Alts: **BTC_LED** [-] | BTC.D 57.57% | ETH/BTC 0.02940 | breadth7d 31% | stables 30d -0.08%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.05pt | 7d 0.39pt | n=121
 - Gold: PAXG 1m 0.15% | real10y - (-bp 1m) | USD 1m -% | pillar6 **insufficient_data**  | COT pctl 29
@@ -23,14 +23,14 @@
 - zcash: other - Grayscale ZCSH: $15.2M Zcash ETF Daily Inflow - Blockchain News
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_FUEL | OI/mc 0.21% | topPos 1.03 | taker 1.05
-- ETH: LONG_FLUSH_24H | OI/mc 0.57% | topPos 0.94 | taker 1.02
-- SOL: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.89 | taker 1.04
-- AVAX: SHORT_SQUEEZE_24H | OI/mc 0.41% | topPos 0.94 | taker 0.93
-- XRP: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.87 | taker 1.01
-- SUI: SHORT_SQUEEZE_FUEL | OI/mc -% | topPos 0.85 | taker 1.04
-- TAO: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.93 | taker 0.93
-- ZEC: SHORT_SQUEEZE_FUEL | OI/mc 0.75% | topPos 1.22 | taker 1.10
+- BTC: SHORT_SQUEEZE_FUEL | OI/mc 0.21% | topPos 1.03 | taker 1.04
+- ETH: LONG_FLUSH_24H | OI/mc 0.57% | topPos 0.94 | taker 1.01
+- AVAX: SHORT_SQUEEZE_24H | OI/mc 0.41% | topPos 0.95 | taker 0.92
+- XRP: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.87 | taker 0.98
+- TAO: LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 0.95
+- ZEC: SHORT_SQUEEZE_FUEL, LONG_FLUSH_24H | OI/mc 0.76% | topPos 1.23 | taker 1.10
+- WLD: LONG_FLUSH_24H | OI/mc -% | topPos 1.01 | taker 0.93
+- ADA: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 1.05
 
 ## Revenue / buyback flags
 - collector-crypt: REVENUE_ACCELERATING, CHEAP_VS_REVENUE
@@ -41,12 +41,12 @@
 - (8 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 27 | mean 2.7% (0.26R) | in profit 14 | older than 7d 22
-- worst: HBAR -0.63R, NEO -0.56R, KAIA -0.48R | best: RENDER 1.15R, KMNO 1.23R, NEAR 1.69R
+- open 27 | mean 2.5% (0.25R) | in profit 14 | older than 7d 22
+- worst: HBAR -0.65R, NEO -0.58R, KAIA -0.49R | best: RENDER 1.09R, KMNO 1.35R, NEAR 1.63R
 
 ## System
-- CoinGecko 6743/10000 used, month-end projection 9974 (100%), throttle level 1 | by script {'scan': 2198, 'check_liquidity': 339, 'breakout_check': 4144, 'counterfactual_check': 62}
+- CoinGecko 6745/10000 used, month-end projection 9977 (100%), throttle level 1 | by script {'scan': 2200, 'check_liquidity': 339, 'breakout_check': 4144, 'counterfactual_check': 62}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=49), H2 SUPPORTED (n=175)
 - radar-flags.json scan age: 8m
-- excluded from radar (pegged/tokenized equity): 41
+- excluded from radar (pegged/tokenized equity): 40
