@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-21 08:40 UTC
+# Radar digest - 2026-10-21 09:07 UTC
 
 ## Market
-- BTC scenario **B** | price 83180 | wk close 81175 vs 82800 | 50W 76608 (8.58%) | 1m old
+- BTC scenario **B** | price 83180 | wk close 81175 vs 82800 | 50W 76608 (8.58%) | 28m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.40% | ETH/BTC 0.02951 | breadth7d 34% | stables 30d -0.09%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.04pt | 7d 0.26pt | n=121
 - Gold: PAXG 1m -1.26% | real10y 2.80 (12bp 1m) | USD 1m 1.72% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 29
@@ -21,6 +21,7 @@
 ## Pre-pump candidates
 - GRASS: [C+E] 7d -9.6%
 - RENDER: [D+E] 7d -5.8%
+- THETA: [C+E] 7d 0.2%
 
 ## ETF pipeline (new this run)
 - solana NEW: approval - New US President, SEC Could Pave Way for Approval of Spot Solana ETF, Bloomberg ETF Analys
@@ -48,12 +49,12 @@
 - (13 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 26 | mean 2.6% (0.21R) | in profit 12 | older than 7d 22
-- worst: HBAR -0.63R, NEO -0.62R, KAIA -0.52R | best: AERO 1.12R, TIA 1.44R, NEAR 1.49R
+- open 26 | mean 2.4% (0.20R) | in profit 12 | older than 7d 22
+- worst: HBAR -0.64R, NEO -0.62R, KAIA -0.54R | best: AERO 1.10R, TIA 1.33R, NEAR 1.55R
 
 ## System
-- CoinGecko 6562/10000 used, month-end projection 10004 (100%), throttle level 2 | by script {'scan': 2142, 'check_liquidity': 324, 'breakout_check': 4034, 'counterfactual_check': 62}
+- CoinGecko 6565/10000 used, month-end projection 9988 (100%), throttle level 1 | by script {'scan': 2144, 'check_liquidity': 325, 'breakout_check': 4034, 'counterfactual_check': 62}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=49), H2 SUPPORTED (n=172)
-- radar-flags.json scan age: 10m
+- radar-flags.json scan age: 6m
 - excluded from radar (pegged/tokenized equity): 41
