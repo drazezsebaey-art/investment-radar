@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-21 19:40 UTC
+# Radar digest - 2026-10-21 20:07 UTC
 
 ## Market
-- BTC scenario **B** | price 84303 | wk close 81175 vs 82800 | 50W 76608 (10.04%) | 33m old
+- BTC scenario **B** | price 84303 | wk close 81175 vs 82800 | 50W 76608 (10.04%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 57.46% | ETH/BTC 0.02954 | breadth7d 39% | stables 30d -0.06%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.11pt | 7d 0.25pt | n=121
 - Gold: PAXG 1m 0.01% | real10y - (-bp 1m) | USD 1m -% | pillar6 **insufficient_data**  | COT pctl 29
@@ -18,7 +18,7 @@
 
 ## Pre-pump candidates
 - RENDER: [D+E] 7d 0.6%
-- SUI: [A+B] 7d 1.7%
+- SUI: [A+B] 7d 2.0%
 
 ## ETF pipeline (new this run)
 - ripple NEW: launch - XRP Rallies on Ripple SEC Push as ETF Outflows Cloud Evernorth Debut - Cryptonews
@@ -43,12 +43,12 @@
 - (8 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 27 | mean 3.3% (0.26R) | in profit 16 | older than 7d 22
-- worst: NEO -0.58R, HBAR -0.57R, KAIA -0.46R | best: RENDER 1.15R, TIA 1.28R, NEAR 1.71R
+- open 27 | mean 3.5% (0.29R) | in profit 16 | older than 7d 22
+- worst: NEO -0.56R, HBAR -0.56R, KAIA -0.46R | best: RENDER 1.15R, TIA 1.33R, NEAR 1.75R
 
 ## System
-- CoinGecko 6726/10000 used, month-end projection 10028 (100%), throttle level 2 | by script {'scan': 2184, 'check_liquidity': 336, 'breakout_check': 4144, 'counterfactual_check': 62}
+- CoinGecko 6728/10000 used, month-end projection 10011 (100%), throttle level 2 | by script {'scan': 2186, 'check_liquidity': 336, 'breakout_check': 4144, 'counterfactual_check': 62}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=49), H2 SUPPORTED (n=175)
-- radar-flags.json scan age: 10m
+- radar-flags.json scan age: 7m
 - excluded from radar (pegged/tokenized equity): 41
