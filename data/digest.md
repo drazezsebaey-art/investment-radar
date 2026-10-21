@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-21 04:06 UTC
+# Radar digest - 2026-10-21 04:40 UTC
 
 ## Market
-- BTC scenario **B** | price 82822 | wk close 81175 vs 82800 | 50W 76608 (8.11%) | 1h old
+- BTC scenario **B** | price 82820 | wk close 81175 vs 82800 | 50W 76608 (8.11%) | 1m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.36% | ETH/BTC 0.02959 | breadth7d 33% | stables 30d -0.07%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.04pt | 7d 0.14pt | n=121
 - Gold: PAXG 1m -1.26% | real10y 2.80 (12bp 1m) | USD 1m 1.72% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 29
@@ -9,37 +9,30 @@
 - 10y 1m: 14bp = real 12 + breakeven 1 -> **REAL_YIELD_DRIVEN**
 
 ## Coins in correction (entry_ready first)
-- BCH: **RESUMING** ENTRY_READY | +72% impulse, retr 0.52 | OI dd 33% | fund 0.0100 | hold False | inval 264.10000 | OB 264.10000-270.70000
-- ADA: **RESUMING** ENTRY_READY | +48% impulse, retr 0.63 | OI dd 28% | fund 0.0100 | hold False | inval 0.21110 | OB 0.21460-0.21710
-- UNI: **BROKEN** | +88% impulse, retr 0.65 | OI dd 36% | fund -0.0056 | hold False | inval 6.81000 | OB 7.09700-7.18600
+- BCH: **RESUMING** ENTRY_READY | +72% impulse, retr 0.53 | OI dd 33% | fund 0.0094 | hold False | inval 264.10000 | OB 264.10000-270.70000
+- ADA: **RESUMING** ENTRY_READY | +48% impulse, retr 0.64 | OI dd 28% | fund 0.0100 | hold False | inval 0.21460 | OB 0.21460-0.21710
+- UNI: **BROKEN** | +88% impulse, retr 0.66 | OI dd 36% | fund -0.0070 | hold False | inval 7.09700 | OB 7.09700-7.18600
 - PEPE: **BROKEN** | +68% impulse, retr 0.40 | OI dd 22% | fund 0.0100 | hold False | inval 0.00000 | OB 0.00000-0.00000
-- ZEC: **BROKEN** | +64% impulse, retr 0.65 | OI dd 39% | fund 0.0026 | hold False | inval 1110.00000 | OB 1110.00000-1153.08000
-- LINK: **BROKEN** | +48% impulse, retr 0.66 | OI dd 26% | fund 0.0024 | hold False | inval 11.83900 | OB 11.83900-12.11500
-- INJ: **ONGOING** | +85% impulse, retr 0.06 | OI dd 28% | fund 0.0008 | hold False | inval 8.36000 | OB 6.41500-6.78300
-- COMP: **ONGOING** | +57% impulse, retr 0.34 | OI dd 26% | fund 0.0100 | hold False | inval 20.63000 | OB 20.63000-21.09000
+- ZEC: **BROKEN** | +64% impulse, retr 0.66 | OI dd 39% | fund 0.0049 | hold False | inval 1110.00000 | OB 1110.00000-1153.08000
+- LINK: **BROKEN** | +48% impulse, retr 0.66 | OI dd 26% | fund -0.0019 | hold False | inval 11.83900 | OB 11.83900-12.11500
+- INJ: **ONGOING** | +85% impulse, retr 0.13 | OI dd 28% | fund 0.0049 | hold False | inval 8.36000 | OB 6.41500-6.78300
+- COMP: **ONGOING** | +57% impulse, retr 0.32 | OI dd 26% | fund 0.0100 | hold False | inval 20.63000 | OB 20.63000-21.09000
 
 ## Pre-pump candidates
-- ZEC: [A+C] 7d 0.3%
+- KITE: [C+E] 7d -5.8%
 
 ## ETF pipeline (new this run)
-- ripple NEW: launch - First-Ever US XRP ETF Reportedly Set for Thursday Launch - CoinMarketCap
-- solana NEW: filing - BlackRock files for third Bitcoin ETF, still no Solana or XRP - Binance
-- ripple NEW: filing - BlackRock files for third Bitcoin ETF, still no Solana or XRP - Binance
-- ripple NEW: other - Bitcoin at $82,000, ETH, XRP, Dogecoin Jump 3% on Growing ETF Flows - TradingView
-- ripple NEW: other - Bitcoin at $82,000, ETH, XRP, Dogecoin Jump 3% on Growing ETF Flows - Benzinga
-- ripple NEW: other - Leading U.S. Wealth Manager Reports XRP ETF Exposure with SEC - The Crypto Basic
-- litecoin NEW: other - Litecoin Rises 3.53% Amid ETF Inflows and Bullish Sentiment - CoinMarketCap
-- hyperliquid NEW: other - Hyperliquid ETF: what drives HYPE and what to weigh first - 21Shares
+- zcash: conversion - Zcash ETF (Derivatives) to United States Dollar Price Today | Live ZCSH to USD Converter &
 
 ## Derivatives flags (OKX)
 - BTC: SHORT_SQUEEZE_24H | OI/mc 0.20% | topPos 0.97 | taker 1.01
-- AVAX: LONG_FLUSH_24H | OI/mc 0.41% | topPos 0.93 | taker 0.93
+- AVAX: LONG_FLUSH_24H | OI/mc 0.41% | topPos 0.93 | taker 0.94
 - SEI: AGGRESSIVE_SELLING, SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.95 | taker 0.84
-- TAO: LONG_FLUSH_24H | OI/mc 0.82% | topPos 0.92 | taker 0.91
-- ZEC: SHORT_SQUEEZE_24H | OI/mc 0.73% | topPos 1.17 | taker 1.10
+- TAO: LONG_FLUSH_24H | OI/mc 0.82% | topPos 0.92 | taker 0.87
+- ZEC: SHORT_SQUEEZE_24H | OI/mc 0.73% | topPos 1.17 | taker 1.09
 - WLD: SHORT_SQUEEZE_24H | OI/mc -% | topPos 1.02 | taker 1.04
-- LINK: SHORT_SQUEEZE_24H | OI/mc 0.32% | topPos 0.90 | taker 1.05
-- XLM: SHORT_SQUEEZE_FUEL, AGGRESSIVE_BUYING, LONG_FLUSH_24H | OI/mc -% | topPos 0.93 | taker 1.34
+- LINK: SHORT_SQUEEZE_24H | OI/mc 0.32% | topPos 0.91 | taker 1.02
+- XLM: AGGRESSIVE_BUYING, LONG_FLUSH_24H | OI/mc -% | topPos 0.94 | taker 1.30
 
 ## Revenue / buyback flags
 - collector-crypt: REVENUE_ACCELERATING, CHEAP_VS_REVENUE
@@ -51,12 +44,12 @@
 - (13 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 25 | mean 2.3% (0.19R) | in profit 12 | older than 7d 22
-- worst: HBAR -0.69R, NEO -0.58R, ADA -0.54R | best: NEAR 1.16R, TIA 1.20R, AERO 1.22R
+- open 25 | mean 2.1% (0.18R) | in profit 13 | older than 7d 22
+- worst: HBAR -0.70R, NEO -0.62R, KAIA -0.55R | best: NEAR 1.16R, AERO 1.22R, TIA 1.23R
 
 ## System
-- CoinGecko 6480/10000 used, month-end projection 9961 (100%), throttle level 1 | by script {'scan': 2116, 'check_liquidity': 322, 'breakout_check': 3983, 'counterfactual_check': 59}
+- CoinGecko 6482/10000 used, month-end projection 9964 (100%), throttle level 1 | by script {'scan': 2118, 'check_liquidity': 322, 'breakout_check': 3983, 'counterfactual_check': 59}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=49), H2 SUPPORTED (n=172)
-- radar-flags.json scan age: 6m
-- excluded from radar (pegged/tokenized equity): 40
+- radar-flags.json scan age: 10m
+- excluded from radar (pegged/tokenized equity): 41
