@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-21 03:06 UTC
+# Radar digest - 2026-10-21 03:39 UTC
 
 ## Market
-- BTC scenario **B** | price 82822 | wk close 81175 vs 82800 | 50W 76608 (8.11%) | 28m old
+- BTC scenario **B** | price 82822 | wk close 81175 vs 82800 | 50W 76608 (8.11%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.36% | ETH/BTC 0.02959 | breadth7d 33% | stables 30d -0.07%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.04pt | 7d 0.14pt | n=121
 - Gold: PAXG 1m -1.12% | real10y 2.80 (12bp 1m) | USD 1m 1.72% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 29
@@ -19,8 +19,7 @@
 - COMP: **ONGOING** | +57% impulse, retr 0.34 | OI dd 26% | fund 0.0100 | hold False | inval 20.63000 | OB 20.63000-21.09000
 
 ## Pre-pump candidates
-- ZEC: [A+C] 7d 2.2%
-- INJ: [A+C] 7d 14.5%
+- ZEC: [A+C] 7d 0.3%
 
 ## ETF pipeline (new this run)
 - ripple NEW: launch - First-Ever US XRP ETF Reportedly Set for Thursday Launch - CoinMarketCap
@@ -33,14 +32,14 @@
 - hyperliquid NEW: other - Hyperliquid ETF: what drives HYPE and what to weigh first - 21Shares
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc 0.20% | topPos 0.97 | taker 1.00
-- AVAX: LONG_FLUSH_24H | OI/mc 0.41% | topPos 0.93 | taker 0.94
-- SEI: SHORT_SQUEEZE_24H | OI/mc 0.80% | topPos 0.97 | taker 0.85
-- TAO: LONG_FLUSH_24H | OI/mc 0.82% | topPos 0.93 | taker 0.95
-- ZEC: SHORT_SQUEEZE_24H | OI/mc 0.72% | topPos 1.17 | taker 1.10
+- BTC: SHORT_SQUEEZE_24H | OI/mc 0.20% | topPos 0.97 | taker 1.01
+- AVAX: LONG_FLUSH_24H | OI/mc 0.41% | topPos 0.93 | taker 0.93
+- SEI: AGGRESSIVE_SELLING, SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.95 | taker 0.84
+- TAO: LONG_FLUSH_24H | OI/mc 0.82% | topPos 0.92 | taker 0.91
+- ZEC: SHORT_SQUEEZE_24H | OI/mc 0.73% | topPos 1.17 | taker 1.10
 - WLD: SHORT_SQUEEZE_24H | OI/mc -% | topPos 1.02 | taker 1.04
-- LINK: SHORT_SQUEEZE_24H | OI/mc 0.32% | topPos 0.91 | taker 1.09
-- XLM: SHORT_SQUEEZE_FUEL, AGGRESSIVE_BUYING, LONG_FLUSH_24H | OI/mc 0.17% | topPos 0.93 | taker 1.34
+- LINK: SHORT_SQUEEZE_24H | OI/mc 0.32% | topPos 0.90 | taker 1.05
+- XLM: SHORT_SQUEEZE_FUEL, AGGRESSIVE_BUYING, LONG_FLUSH_24H | OI/mc -% | topPos 0.93 | taker 1.34
 
 ## Revenue / buyback flags
 - collector-crypt: REVENUE_ACCELERATING, CHEAP_VS_REVENUE
@@ -52,12 +51,12 @@
 - (13 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 25 | mean 2.4% (0.19R) | in profit 12 | older than 7d 22
-- worst: HBAR -0.68R, NEO -0.58R, KAIA -0.54R | best: TIA 1.21R, AERO 1.24R, NEAR 1.26R
+- open 25 | mean 2.0% (0.17R) | in profit 11 | older than 7d 22
+- worst: HBAR -0.71R, NEO -0.60R, IMX -0.56R | best: NEAR 1.16R, TIA 1.16R, AERO 1.23R
 
 ## System
-- CoinGecko 6475/10000 used, month-end projection 9974 (100%), throttle level 1 | by script {'scan': 2112, 'check_liquidity': 321, 'breakout_check': 3983, 'counterfactual_check': 59}
+- CoinGecko 6477/10000 used, month-end projection 9977 (100%), throttle level 1 | by script {'scan': 2114, 'check_liquidity': 321, 'breakout_check': 3983, 'counterfactual_check': 59}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=49), H2 SUPPORTED (n=172)
-- radar-flags.json scan age: 6m
-- excluded from radar (pegged/tokenized equity): 38
+- radar-flags.json scan age: 8m
+- excluded from radar (pegged/tokenized equity): 40
