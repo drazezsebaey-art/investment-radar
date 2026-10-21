@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-21 09:07 UTC
+# Radar digest - 2026-10-21 09:39 UTC
 
 ## Market
-- BTC scenario **B** | price 83180 | wk close 81175 vs 82800 | 50W 76608 (8.58%) | 28m old
+- BTC scenario **B** | price 83180 | wk close 81175 vs 82800 | 50W 76608 (8.58%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.40% | ETH/BTC 0.02951 | breadth7d 34% | stables 30d -0.09%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.04pt | 7d 0.26pt | n=121
 - Gold: PAXG 1m -1.26% | real10y 2.80 (12bp 1m) | USD 1m 1.72% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 29
@@ -19,9 +19,9 @@
 - INJ: **ONGOING** | +85% impulse, retr 0.15 | OI dd 28% | fund -0.0022 | hold False | inval 8.36000 | OB 6.41500-6.78300
 
 ## Pre-pump candidates
-- GRASS: [C+E] 7d -9.6%
-- RENDER: [D+E] 7d -5.8%
-- THETA: [C+E] 7d 0.2%
+- GRASS: [C+E] 7d -12.4%
+- RENDER: [D+E] 7d -7.2%
+- THETA: [C+E] 7d -1.3%
 
 ## ETF pipeline (new this run)
 - solana NEW: approval - New US President, SEC Could Pave Way for Approval of Spot Solana ETF, Bloomberg ETF Analys
@@ -30,14 +30,14 @@
 - ripple NEW: other - Leading U.S. Wealth Manager Reports XRP ETF Exposure with SEC - CryptoRank
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc 0.20% | topPos 0.98 | taker 1.03
-- ETH: SHORT_SQUEEZE_24H | OI/mc 0.60% | topPos 0.91 | taker 1.05
-- NEAR: SHORT_SQUEEZE_24H | OI/mc -% | topPos 1.01 | taker 0.99
-- AVAX: LONG_FLUSH_24H | OI/mc 0.42% | topPos 0.94 | taker 0.94
-- SEI: SHORT_SQUEEZE_24H | OI/mc 0.77% | topPos 0.95 | taker 0.87
-- TAO: LONG_FLUSH_24H | OI/mc 0.81% | topPos 0.92 | taker 0.92
-- ZEC: SHORT_SQUEEZE_24H | OI/mc 0.75% | topPos 1.18 | taker 1.09
-- WLD: SHORT_SQUEEZE_24H | OI/mc -% | topPos 1.01 | taker 1.01
+- BTC: SHORT_SQUEEZE_24H | OI/mc 0.20% | topPos 0.99 | taker 1.04
+- ETH: SHORT_SQUEEZE_24H | OI/mc 0.60% | topPos 0.92 | taker 1.05
+- NEAR: SHORT_SQUEEZE_24H | OI/mc -% | topPos 1.02 | taker 1.00
+- AVAX: LONG_FLUSH_24H | OI/mc 0.41% | topPos 0.94 | taker 0.93
+- SEI: AGGRESSIVE_SELLING, SHORT_SQUEEZE_24H | OI/mc 0.77% | topPos 0.93 | taker 0.85
+- TAO: LONG_FLUSH_24H | OI/mc 0.81% | topPos 0.92 | taker 0.93
+- ZEC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 1.18 | taker 1.09
+- WLD: SHORT_SQUEEZE_24H | OI/mc -% | topPos 1.01 | taker 1.02
 
 ## Revenue / buyback flags
 - collector-crypt: REVENUE_ACCELERATING, CHEAP_VS_REVENUE
@@ -45,16 +45,15 @@
 - render-token: REVENUE_ACCELERATING
 - chip-2: REVENUE_ACCELERATING
 - tornado-cash: REVENUE_ACCELERATING
-- thor-wallet: REVENUE_ACCELERATING
-- (13 flagged protocol(s) without a tradeable token hidden)
+- (8 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
 - open 26 | mean 2.4% (0.20R) | in profit 12 | older than 7d 22
-- worst: HBAR -0.64R, NEO -0.62R, KAIA -0.54R | best: AERO 1.10R, TIA 1.33R, NEAR 1.55R
+- worst: NEO -0.62R, HBAR -0.61R, KAIA -0.53R | best: AERO 1.11R, TIA 1.32R, NEAR 1.55R
 
 ## System
-- CoinGecko 6565/10000 used, month-end projection 9988 (100%), throttle level 1 | by script {'scan': 2144, 'check_liquidity': 325, 'breakout_check': 4034, 'counterfactual_check': 62}
+- CoinGecko 6567/10000 used, month-end projection 9992 (100%), throttle level 1 | by script {'scan': 2146, 'check_liquidity': 325, 'breakout_check': 4034, 'counterfactual_check': 62}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=49), H2 SUPPORTED (n=172)
-- radar-flags.json scan age: 6m
+- radar-flags.json scan age: 9m
 - excluded from radar (pegged/tokenized equity): 41
