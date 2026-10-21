@@ -1,12 +1,10 @@
-# Radar digest - 2026-10-21 15:39 UTC
+# Radar digest - 2026-10-21 16:07 UTC
 
 ## Market
-- BTC scenario **B** | price 84657 | wk close 81175 vs 82800 | 50W 76608 (10.51%) | 32m old
+- BTC scenario **B** | price 84657 | wk close 81175 vs 82800 | 50W 76608 (10.51%) | 60m old
 - Alts: **BTC_LED** [-] | BTC.D 57.58% | ETH/BTC 0.02962 | breadth7d 22% | stables 30d -0.09%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.09pt | 7d 0.31pt | n=121
-- Gold: PAXG 1m -1.29% | real10y 2.80 (12bp 1m) | USD 1m 1.72% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 29
-- 10y 1w: -9bp = real -11 + breakeven 2 -> **SMALL_MOVE**
-- 10y 1m: 14bp = real 12 + breakeven 1 -> **REAL_YIELD_DRIVEN**
+- Gold: PAXG 1m 0.01% | real10y - (-bp 1m) | USD 1m -% | pillar6 **insufficient_data**  | COT pctl 29
 
 ## Coins in correction (entry_ready first)
 - SEI: **RESUMING** ENTRY_READY | +110% impulse, retr 0.53 | OI dd 21% | fund -0.0062 | hold False | inval 0.06059 | OB 0.05940-0.06134
@@ -19,8 +17,8 @@
 - NEAR: **ONGOING** | +169% impulse, retr 0.18 | OI dd 26% | fund 0.0100 | hold False | inval 4.63200 | OB 4.63200-4.78700
 
 ## Pre-pump candidates
-- RENDER: [D+E] 7d -1.1%
-- ZEC: [A+B] 7d 9.8%
+- RENDER: [D+E] 7d 0.3%
+- ZEC: [A+B] 7d 15.0%
 
 ## ETF pipeline (new this run)
 - zcash: other - Zcash rebounds 6% despite $115M ETF outflows, f... - Pluang
@@ -45,12 +43,12 @@
 - (8 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 27 | mean 3.9% (0.37R) | in profit 16 | older than 7d 22
-- worst: HBAR -0.57R, NEO -0.56R, AXS -0.45R | best: TIA 1.35R, NEAR 1.81R, KMNO 2.48R
+- open 27 | mean 4.0% (0.36R) | in profit 16 | older than 7d 22
+- worst: NEO -0.56R, HBAR -0.54R, AXS -0.45R | best: TIA 1.41R, KMNO 1.85R, NEAR 1.87R
 
 ## System
-- CoinGecko 6653/10000 used, month-end projection 10000 (100%), throttle level 1 | by script {'scan': 2168, 'check_liquidity': 332, 'breakout_check': 4091, 'counterfactual_check': 62}
+- CoinGecko 6656/10000 used, month-end projection 9984 (100%), throttle level 1 | by script {'scan': 2170, 'check_liquidity': 333, 'breakout_check': 4091, 'counterfactual_check': 62}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=49), H2 SUPPORTED (n=172)
-- radar-flags.json scan age: 8m
+- radar-flags.json scan age: 7m
 - excluded from radar (pegged/tokenized equity): 41
