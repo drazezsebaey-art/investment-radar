@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-21 11:11 UTC
+# Radar digest - 2026-10-21 11:37 UTC
 
 ## Market
-- BTC scenario **B** | price 83489 | wk close 81175 vs 82800 | 50W 76608 (8.98%) | 1m old
+- BTC scenario **B** | price 83489 | wk close 81175 vs 82800 | 50W 76608 (8.98%) | 27m old
 - Alts: **BTC_LED** [-] | BTC.D 57.44% | ETH/BTC 0.02951 | breadth7d 30% | stables 30d -0.10%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.04pt | 7d 0.21pt | n=121
 - Gold: PAXG 1m -1.29% | real10y 2.80 (12bp 1m) | USD 1m 1.72% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 29
@@ -19,8 +19,8 @@
 - COMP: **ONGOING** | +57% impulse, retr 0.33 | OI dd 26% | fund 0.0100 | hold False | inval 20.63000 | OB 20.63000-21.09000
 
 ## Pre-pump candidates
-- GRASS: [C+E] 7d -12.3%
-- RENDER: [D+E] 7d -6.4%
+- RENDER: [D+E] 7d -4.8%
+- ZEC: [A+B] 7d 3.8%
 
 ## ETF pipeline (new this run)
 - venice-token NEW: launch - Venice Token Surges 6.21% on 21Shares ETP Launch - CoinMarketCap
@@ -45,12 +45,12 @@
 - (8 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 26 | mean 2.3% (0.19R) | in profit 13 | older than 7d 22
-- worst: HBAR -0.63R, NEO -0.62R, KAIA -0.52R | best: AERO 1.13R, TIA 1.27R, NEAR 1.44R
+- open 26 | mean 2.7% (0.22R) | in profit 13 | older than 7d 22
+- worst: HBAR -0.61R, NEO -0.60R, KAIA -0.53R | best: AERO 1.15R, TIA 1.29R, NEAR 1.49R
 
 ## System
-- CoinGecko 6574/10000 used, month-end projection 9961 (100%), throttle level 1 | by script {'scan': 2150, 'check_liquidity': 328, 'breakout_check': 4034, 'counterfactual_check': 62}
+- CoinGecko 6577/10000 used, month-end projection 9966 (100%), throttle level 1 | by script {'scan': 2152, 'check_liquidity': 329, 'breakout_check': 4034, 'counterfactual_check': 62}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=49), H2 SUPPORTED (n=172)
-- radar-flags.json scan age: 11m
+- radar-flags.json scan age: 7m
 - excluded from radar (pegged/tokenized equity): 40
