@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-21 05:39 UTC
+# Radar digest - 2026-10-21 06:21 UTC
 
 ## Market
-- BTC scenario **B** | price 82820 | wk close 81175 vs 82800 | 50W 76608 (8.11%) | 1h old
+- BTC scenario **B** | price 82820 | wk close 81175 vs 82800 | 50W 76608 (8.11%) | 2h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.36% | ETH/BTC 0.02959 | breadth7d 33% | stables 30d -0.07%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.04pt | 7d 0.14pt | n=121
 - Gold: PAXG 1m -1.26% | real10y 2.80 (12bp 1m) | USD 1m 1.72% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 29
@@ -22,7 +22,8 @@
 - GRASS: [C+E] 7d -13.2%
 - RENDER: [D+E] 7d -9.9%
 - KITE: [C+E] 7d -8.2%
-- NEAR: [A+E] 7d -1.5%
+- NEAR: [A+E] 7d -2.2%
+- ZEC: [A+C] 7d -0.6%
 
 ## ETF pipeline (new this run)
 - zcash: conversion - Zcash ETF (Derivatives) to United States Dollar Price Today | Live ZCSH to USD Converter &
@@ -47,12 +48,12 @@
 - (13 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 25 | mean 1.7% (0.15R) | in profit 12 | older than 7d 22
-- worst: HBAR -0.71R, NEO -0.62R, KAIA -0.57R | best: PYTH 1.13R, AERO 1.17R, TIA 1.19R
+- open 26 | mean 1.4% (0.13R) | in profit 12 | older than 7d 22
+- worst: HBAR -0.71R, NEO -0.62R, IMX -0.57R | best: PYTH 1.06R, AERO 1.13R, TIA 1.24R
 
 ## System
-- CoinGecko 6487/10000 used, month-end projection 9951 (100%), throttle level 1 | by script {'scan': 2122, 'check_liquidity': 323, 'breakout_check': 3983, 'counterfactual_check': 59}
+- CoinGecko 6548/10000 used, month-end projection 10024 (100%), throttle level 2 | by script {'scan': 2132, 'check_liquidity': 323, 'breakout_check': 4034, 'counterfactual_check': 59}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=49), H2 SUPPORTED (n=172)
-- radar-flags.json scan age: 9m
+- radar-flags.json scan age: 20m
 - excluded from radar (pegged/tokenized equity): 41
