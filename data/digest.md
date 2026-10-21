@@ -1,28 +1,28 @@
-# Radar digest - 2026-10-21 18:40 UTC
+# Radar digest - 2026-10-21 19:08 UTC
 
 ## Market
-- BTC scenario **B** | price 84430 | wk close 81175 vs 82800 | 50W 76608 (10.21%) | 2h old
-- Alts: **BTC_LED** [-] | BTC.D 57.58% | ETH/BTC 0.02962 | breadth7d 22% | stables 30d -0.09%
-- Alt risk (BTC.D): **NORMAL**  | 3d 0.09pt | 7d 0.31pt | n=121
+- BTC scenario **B** | price 84303 | wk close 81175 vs 82800 | 50W 76608 (10.04%) | 1m old
+- Alts: **BTC_LED** [-] | BTC.D 57.46% | ETH/BTC 0.02954 | breadth7d 39% | stables 30d -0.06%
+- Alt risk (BTC.D): **NORMAL**  | 3d -0.11pt | 7d 0.25pt | n=121
 - Gold: PAXG 1m 0.01% | real10y - (-bp 1m) | USD 1m -% | pillar6 **insufficient_data**  | COT pctl 29
 
 ## Coins in correction (entry_ready first)
-- SEI: **RESUMING** ENTRY_READY | +110% impulse, retr 0.53 | OI dd 24% | fund -0.0010 | hold False | inval 0.06059 | OB 0.05940-0.06134
-- ONDO: **RESUMING** ENTRY_READY | +88% impulse, retr 0.50 | OI dd 36% | fund -0.0012 | hold False | inval 0.44170 | OB 0.44170-0.45340
-- BCH: **RESUMING** ENTRY_READY | +72% impulse, retr 0.51 | OI dd 34% | fund 0.0021 | hold False | inval 264.10000 | OB 264.10000-270.70000
-- UNI: **BROKEN** | +88% impulse, retr 0.66 | OI dd 31% | fund -0.0043 | hold False | inval 7.09700 | OB 7.09700-7.18600
-- ZEC: **BROKEN** | +64% impulse, retr 0.55 | OI dd 23% | fund 0.0013 | hold False | inval 1110.00000 | OB 1110.00000-1153.08000
-- LINK: **BROKEN** | +48% impulse, retr 0.61 | OI dd 23% | fund -0.0084 | hold False | inval 12.11300 | OB 11.92100-12.47300
-- NEAR: **ONGOING** | +169% impulse, retr 0.19 | OI dd 7% | fund 0.0100 | hold False | inval 4.63200 | OB 4.63200-4.78700
-- COMP: **ONGOING** | +57% impulse, retr 0.29 | OI dd 15% | fund 0.0100 | hold False | inval 20.63000 | OB 20.63000-21.09000
+- SEI: **RESUMING** ENTRY_READY | +110% impulse, retr 0.52 | OI dd 24% | fund 0.0050 | hold False | inval 0.06059 | OB 0.05940-0.06134
+- ONDO: **RESUMING** ENTRY_READY | +88% impulse, retr 0.50 | OI dd 36% | fund -0.0022 | hold False | inval 0.44170 | OB 0.44170-0.45340
+- BCH: **RESUMING** ENTRY_READY | +72% impulse, retr 0.52 | OI dd 34% | fund 0.0015 | hold False | inval 264.10000 | OB 264.10000-270.70000
+- UNI: **BROKEN** | +88% impulse, retr 0.66 | OI dd 31% | fund -0.0008 | hold False | inval 7.09700 | OB 7.09700-7.18600
+- ZEC: **BROKEN** | +64% impulse, retr 0.54 | OI dd 23% | fund 0.0054 | hold False | inval 1110.00000 | OB 1110.00000-1153.08000
+- LINK: **BROKEN** | +48% impulse, retr 0.60 | OI dd 23% | fund -0.0099 | hold False | inval 12.11300 | OB 11.92100-12.47300
+- CARDS: **ONGOING** | +262% impulse, retr 0.04 | OI dd -% | fund - | hold False | inval 0.23780 | OB 0.23780-0.26170
+- NEAR: **ONGOING** | +169% impulse, retr 0.20 | OI dd 7% | fund 0.0100 | hold False | inval 4.63200 | OB 4.63200-4.78700
 
 ## Pre-pump candidates
-- RENDER: [D+E] 7d -0.1%
 - LINK: [A+E] 7d 0.8%
-- ONDO: [A+E] 7d 4.2%
+- NEAR: [A+E] 7d 9.8%
 
 ## ETF pipeline (new this run)
-- none
+- ripple NEW: launch - XRP Rallies on Ripple SEC Push as ETF Outflows Cloud Evernorth Debut - Cryptonews
+- litecoin NEW: other - Litecoin price rebounds 5% as ETF assets double to $14M - AMBCrypto
 
 ## Derivatives flags (OKX)
 - BTC: SHORT_SQUEEZE_24H | OI/mc 0.21% | topPos 1.02 | taker 1.05
@@ -43,12 +43,12 @@
 - (8 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 27 | mean 4.2% (0.32R) | in profit 17 | older than 7d 22
-- worst: NEO -0.56R, HBAR -0.53R, AXS -0.43R | best: AERO 1.27R, TIA 1.41R, NEAR 1.79R
+- open 27 | mean 3.3% (0.26R) | in profit 16 | older than 7d 22
+- worst: NEO -0.58R, HBAR -0.56R, KAIA -0.46R | best: AERO 1.21R, TIA 1.28R, NEAR 1.71R
 
 ## System
-- CoinGecko 6722/10000 used, month-end projection 10043 (100%), throttle level 2 | by script {'scan': 2180, 'check_liquidity': 336, 'breakout_check': 4144, 'counterfactual_check': 62}
+- CoinGecko 6724/10000 used, month-end projection 10025 (100%), throttle level 2 | by script {'scan': 2182, 'check_liquidity': 336, 'breakout_check': 4144, 'counterfactual_check': 62}
 - Trials guard: OK (0 untracked)
-- Hypotheses: H1 NOT_SUPPORTED (n=49), H2 SUPPORTED (n=174)
-- radar-flags.json scan age: 9m
+- Hypotheses: H1 NOT_SUPPORTED (n=49), H2 SUPPORTED (n=175)
+- radar-flags.json scan age: 8m
 - excluded from radar (pegged/tokenized equity): 40
