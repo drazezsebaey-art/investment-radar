@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-21 19:08 UTC
+# Radar digest - 2026-10-21 19:40 UTC
 
 ## Market
-- BTC scenario **B** | price 84303 | wk close 81175 vs 82800 | 50W 76608 (10.04%) | 1m old
+- BTC scenario **B** | price 84303 | wk close 81175 vs 82800 | 50W 76608 (10.04%) | 33m old
 - Alts: **BTC_LED** [-] | BTC.D 57.46% | ETH/BTC 0.02954 | breadth7d 39% | stables 30d -0.06%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.11pt | 7d 0.25pt | n=121
 - Gold: PAXG 1m 0.01% | real10y - (-bp 1m) | USD 1m -% | pillar6 **insufficient_data**  | COT pctl 29
@@ -17,22 +17,22 @@
 - NEAR: **ONGOING** | +169% impulse, retr 0.20 | OI dd 7% | fund 0.0100 | hold False | inval 4.63200 | OB 4.63200-4.78700
 
 ## Pre-pump candidates
-- LINK: [A+E] 7d 0.8%
-- NEAR: [A+E] 7d 9.8%
+- RENDER: [D+E] 7d 0.6%
+- SUI: [A+B] 7d 1.7%
 
 ## ETF pipeline (new this run)
 - ripple NEW: launch - XRP Rallies on Ripple SEC Push as ETF Outflows Cloud Evernorth Debut - Cryptonews
 - litecoin NEW: other - Litecoin price rebounds 5% as ETF assets double to $14M - AMBCrypto
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc 0.21% | topPos 1.02 | taker 1.05
-- ETH: SHORT_SQUEEZE_24H | OI/mc 0.59% | topPos 0.96 | taker 1.04
-- SOL: SHORT_SQUEEZE_24H | OI/mc 0.58% | topPos 0.90 | taker 1.00
-- NEAR: SHORT_SQUEEZE_24H | OI/mc -% | topPos 1.02 | taker 1.07
-- AVAX: SHORT_SQUEEZE_24H | OI/mc 0.40% | topPos 0.94 | taker 1.00
-- XRP: SHORT_SQUEEZE_24H | OI/mc 0.14% | topPos 0.87 | taker 1.01
-- TAO: SHORT_SQUEEZE_24H | OI/mc 0.81% | topPos 0.93 | taker 0.92
-- ZEC: SHORT_SQUEEZE_24H | OI/mc 0.78% | topPos 1.20 | taker 1.13
+- BTC: LONG_FLUSH_24H | OI/mc 0.21% | topPos 1.02 | taker 1.05
+- ETH: LONG_FLUSH_24H | OI/mc 0.58% | topPos 0.95 | taker 1.03
+- SOL: SHORT_SQUEEZE_24H | OI/mc 0.57% | topPos 0.89 | taker 1.03
+- AVAX: SHORT_SQUEEZE_24H | OI/mc 0.40% | topPos 0.94 | taker 0.98
+- XRP: SHORT_SQUEEZE_24H | OI/mc 0.13% | topPos 0.86 | taker 1.02
+- SUI: SHORT_SQUEEZE_FUEL | OI/mc 1.03% | topPos 0.85 | taker 0.98
+- TAO: SHORT_SQUEEZE_24H | OI/mc 0.81% | topPos 0.92 | taker 0.91
+- LINK: SHORT_SQUEEZE_24H | OI/mc 0.31% | topPos 0.93 | taker 1.01
 
 ## Revenue / buyback flags
 - collector-crypt: REVENUE_ACCELERATING, CHEAP_VS_REVENUE
@@ -44,11 +44,11 @@
 
 ## Paper book (open trades, marked to last scan)
 - open 27 | mean 3.3% (0.26R) | in profit 16 | older than 7d 22
-- worst: NEO -0.58R, HBAR -0.56R, KAIA -0.46R | best: AERO 1.21R, TIA 1.28R, NEAR 1.71R
+- worst: NEO -0.58R, HBAR -0.57R, KAIA -0.46R | best: RENDER 1.15R, TIA 1.28R, NEAR 1.71R
 
 ## System
-- CoinGecko 6724/10000 used, month-end projection 10025 (100%), throttle level 2 | by script {'scan': 2182, 'check_liquidity': 336, 'breakout_check': 4144, 'counterfactual_check': 62}
+- CoinGecko 6726/10000 used, month-end projection 10028 (100%), throttle level 2 | by script {'scan': 2184, 'check_liquidity': 336, 'breakout_check': 4144, 'counterfactual_check': 62}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=49), H2 SUPPORTED (n=175)
-- radar-flags.json scan age: 8m
-- excluded from radar (pegged/tokenized equity): 40
+- radar-flags.json scan age: 10m
+- excluded from radar (pegged/tokenized equity): 41
