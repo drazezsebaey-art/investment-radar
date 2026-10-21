@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-21 06:40 UTC
+# Radar digest - 2026-10-21 07:06 UTC
 
 ## Market
-- BTC scenario **B** | price 82824 | wk close 81175 vs 82800 | 50W 76608 (8.11%) | 1m old
+- BTC scenario **B** | price 82824 | wk close 81175 vs 82800 | 50W 76608 (8.11%) | 28m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.40% | ETH/BTC 0.02951 | breadth7d 34% | stables 30d -0.09%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.04pt | 7d 0.26pt | n=121
 - Gold: PAXG 1m -1.26% | real10y 2.80 (12bp 1m) | USD 1m 1.72% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 29
@@ -22,7 +22,8 @@
 - GRASS: [C+E] 7d -12.6%
 - RENDER: [D+E] 7d -10.0%
 - KITE: [C+E] 7d -8.5%
-- NEAR: [A+E] 7d -2.2%
+- NEAR: [A+E] 7d 1.2%
+- VVV: [C+E] 7d 9.7%
 
 ## ETF pipeline (new this run)
 - zcash: other - Zcash ETF draws 1.61 million USD: What it means for the Zcash price - AD HOC NEWS
@@ -47,12 +48,12 @@
 - (13 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 26 | mean 1.5% (0.13R) | in profit 12 | older than 7d 22
-- worst: HBAR -0.71R, NEO -0.62R, KAIA -0.57R | best: NEAR 1.08R, AERO 1.11R, TIA 1.28R
+- open 26 | mean 1.9% (0.16R) | in profit 13 | older than 7d 22
+- worst: HBAR -0.68R, NEO -0.60R, KAIA -0.55R | best: AERO 1.12R, NEAR 1.24R, TIA 1.39R
 
 ## System
-- CoinGecko 6550/10000 used, month-end projection 10027 (100%), throttle level 2 | by script {'scan': 2134, 'check_liquidity': 323, 'breakout_check': 4034, 'counterfactual_check': 59}
+- CoinGecko 6552/10000 used, month-end projection 10010 (100%), throttle level 2 | by script {'scan': 2136, 'check_liquidity': 323, 'breakout_check': 4034, 'counterfactual_check': 59}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=49), H2 SUPPORTED (n=172)
-- radar-flags.json scan age: 9m
-- excluded from radar (pegged/tokenized equity): 41
+- radar-flags.json scan age: 6m
+- excluded from radar (pegged/tokenized equity): 42
