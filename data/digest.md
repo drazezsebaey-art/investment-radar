@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-22 11:09 UTC
+# Radar digest - 2026-10-22 11:39 UTC
 
 ## Market
-- BTC scenario **B** | price 81999 | wk close 81175 vs 82800 | 50W 76608 (7.04%) | 1m old
+- BTC scenario **B** | price 81999 | wk close 81175 vs 82800 | 50W 76608 (7.04%) | 32m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.41% | ETH/BTC 0.02932 | breadth7d 37% | stables 30d -0.53%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.14pt | 7d -0.01pt | n=121
 - Gold: PAXG 1m -0.88% | real10y 2.77 (15bp 1m) | USD 1m 1.72% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 29
@@ -20,7 +20,7 @@
 
 ## Pre-pump candidates
 - NEAR: [A+C] 7d 7.7%
-- PEPE: [A+C] 7d 12.0%
+- PEPE: [A+C] 7d 14.7%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - Why are Bitcoin, Ethereum and XRP falling despite ETF inflows? - FXStreet
@@ -28,14 +28,14 @@
 - near: other - Can NEAR Protocol avoid further losses as ETF demand falters - FXStreet
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc 0.20% | topPos 0.93 | taker 0.97
-- ETH: LONG_FLUSH_24H | OI/mc 0.60% | topPos 0.84 | taker 0.98
-- SOL: LONG_FLUSH_24H | OI/mc 0.58% | topPos 0.87 | taker 0.96
-- NEAR: LONG_FLUSH_24H | OI/mc 0.99% | topPos 0.99 | taker 0.97
-- AVAX: LONG_FLUSH_24H | OI/mc 0.42% | topPos 0.92 | taker 0.97
-- XRP: LONG_FLUSH_24H | OI/mc 0.14% | topPos 0.86 | taker 0.89
-- SUI: LONG_FLUSH_24H | OI/mc 1.00% | topPos 0.83 | taker 0.87
-- SEI: LONG_FLUSH_24H | OI/mc 0.73% | topPos 0.86 | taker 0.93
+- BTC: LONG_FLUSH_24H | OI/mc 0.20% | topPos 0.93 | taker 0.99
+- ETH: LONG_FLUSH_24H | OI/mc 0.60% | topPos 0.84 | taker 0.97
+- SOL: LONG_FLUSH_24H | OI/mc 0.58% | topPos 0.87 | taker 0.97
+- NEAR: LONG_FLUSH_24H | OI/mc 0.99% | topPos 0.99 | taker 0.98
+- AVAX: LONG_FLUSH_24H | OI/mc 0.42% | topPos 0.91 | taker 0.97
+- XRP: LONG_FLUSH_24H | OI/mc 0.14% | topPos 0.86 | taker 0.88
+- SUI: LONG_FLUSH_24H | OI/mc 0.99% | topPos 0.83 | taker 0.89
+- SEI: LONG_FLUSH_24H | OI/mc 0.72% | topPos 0.86 | taker 0.93
 
 ## Revenue / buyback flags
 - collector-crypt: REVENUE_ACCELERATING
@@ -46,12 +46,12 @@
 - (9 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 28 | mean -1.8% (-0.11R) | in profit 11 | older than 7d 24
-- worst: KMNO -0.87R, HBAR -0.86R, IMX -0.81R | best: AERO 0.87R, BEAM 1.04R, NEAR 1.10R
+- open 27 | mean -1.8% (-0.08R) | in profit 11 | older than 7d 24
+- worst: HBAR -0.86R, IMX -0.82R, KAIA -0.77R | best: AERO 0.88R, BEAM 1.05R, NEAR 1.08R
 
 ## System
-- CoinGecko 6919/10000 used, month-end projection 9996 (100%), throttle level 1 | by script {'scan': 2254, 'check_liquidity': 343, 'breakout_check': 4257, 'counterfactual_check': 65}
+- CoinGecko 6921/10000 used, month-end projection 9998 (100%), throttle level 1 | by script {'scan': 2256, 'check_liquidity': 343, 'breakout_check': 4257, 'counterfactual_check': 65}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=50), H2 SUPPORTED (n=178)
-- radar-flags.json scan age: 8m
+- radar-flags.json scan age: 9m
 - excluded from radar (pegged/tokenized equity): 42
