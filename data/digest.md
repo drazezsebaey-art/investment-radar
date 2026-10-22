@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-22 01:39 UTC
+# Radar digest - 2026-10-22 02:07 UTC
 
 ## Market
-- BTC scenario **B** | price 84200 | wk close 81175 vs 82800 | 50W 76608 (9.91%) | 32m old
+- BTC scenario **B** | price 84200 | wk close 81175 vs 82800 | 50W 76608 (9.91%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 57.57% | ETH/BTC 0.02940 | breadth7d 31% | stables 30d -0.08%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.05pt | 7d 0.39pt | n=121
 - Gold: PAXG 1m 0.15% | real10y - (-bp 1m) | USD 1m -% | pillar6 **insufficient_data**  | COT pctl 29
@@ -17,7 +17,7 @@
 - COMP: **ONGOING** | +57% impulse, retr 0.30 | OI dd 15% | fund 0.0100 | hold False | inval 20.63000 | OB 20.63000-21.09000
 
 ## Pre-pump candidates
-- none
+- NEAR: [A+E] 7d 7.7%
 
 ## ETF pipeline (new this run)
 - none
@@ -41,12 +41,12 @@
 - (8 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 28 | mean 2.7% (0.26R) | in profit 14 | older than 7d 24
-- worst: HBAR -0.65R, NEO -0.58R, KAIA -0.50R | best: RENDER 1.15R, KMNO 1.34R, NEAR 1.73R
+- open 28 | mean 1.3% (0.16R) | in profit 13 | older than 7d 24
+- worst: HBAR -0.68R, NEO -0.66R, KAIA -0.59R | best: KMNO 1.04R, TIA 1.05R, NEAR 1.53R
 
 ## System
-- CoinGecko 6816/10000 used, month-end projection 10042 (100%), throttle level 2 | by script {'scan': 2208, 'check_liquidity': 340, 'breakout_check': 4203, 'counterfactual_check': 65}
+- CoinGecko 6818/10000 used, month-end projection 10025 (100%), throttle level 2 | by script {'scan': 2210, 'check_liquidity': 340, 'breakout_check': 4203, 'counterfactual_check': 65}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=49), H2 SUPPORTED (n=175)
-- radar-flags.json scan age: 9m
+- radar-flags.json scan age: 7m
 - excluded from radar (pegged/tokenized equity): 40
