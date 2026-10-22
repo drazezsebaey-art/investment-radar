@@ -1,10 +1,10 @@
-# Radar digest - 2026-10-22 03:39 UTC
+# Radar digest - 2026-10-22 04:07 UTC
 
 ## Market
-- BTC scenario **B** | price 82942 | wk close 81175 vs 82800 | 50W 76608 (8.27%) | 32m old
+- BTC scenario **B** | price 82942 | wk close 81175 vs 82800 | 50W 76608 (8.27%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 57.44% | ETH/BTC 0.02946 | breadth7d 36% | stables 30d -0.52%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.06pt | 7d 0.02pt | n=121
-- Gold: PAXG 1m 0.15% | real10y - (-bp 1m) | USD 1m -% | pillar6 **insufficient_data**  | COT pctl 29
+- Gold: PAXG 1m -0.92% | real10y - (-bp 1m) | USD 1m -% | pillar6 **insufficient_data**  | COT pctl 29
 
 ## Coins in correction (entry_ready first)
 - SEI: **RESUMING** ENTRY_READY | +110% impulse, retr 0.57 | OI dd 24% | fund -0.0069 | hold False | inval 0.06059 | OB 0.05685-0.05941
@@ -17,7 +17,7 @@
 - COMP: **ONGOING** | +57% impulse, retr 0.39 | OI dd 15% | fund 0.0100 | hold False | inval 20.63000 | OB 20.63000-21.09000
 
 ## Pre-pump candidates
-- none
+- PEPE: [A+C] 7d 11.6%
 
 ## ETF pipeline (new this run)
 - ondo-finance: other - iShares 7-10 Year Treasury Bond Tokenized ETF (Ondo) price today, IEFon to USD live price,
@@ -41,12 +41,12 @@
 - (8 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 28 | mean -0.1% (0.06R) | in profit 12 | older than 7d 24
-- worst: HBAR -0.75R, NEO -0.68R, INJ -0.63R | best: TIA 0.85R, AERO 0.93R, NEAR 1.32R
+- open 28 | mean -0.1% (0.07R) | in profit 12 | older than 7d 24
+- worst: HBAR -0.75R, NEO -0.70R, KAIA -0.70R | best: KMNO 0.94R, AERO 0.97R, NEAR 1.34R
 
 ## System
-- CoinGecko 6832/10000 used, month-end projection 10026 (100%), throttle level 2 | by script {'scan': 2224, 'check_liquidity': 340, 'breakout_check': 4203, 'counterfactual_check': 65}
+- CoinGecko 6834/10000 used, month-end projection 10009 (100%), throttle level 2 | by script {'scan': 2226, 'check_liquidity': 340, 'breakout_check': 4203, 'counterfactual_check': 65}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=50), H2 SUPPORTED (n=176)
-- radar-flags.json scan age: 9m
+- radar-flags.json scan age: 7m
 - excluded from radar (pegged/tokenized equity): 40
