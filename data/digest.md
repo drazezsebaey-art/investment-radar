@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-22 11:39 UTC
+# Radar digest - 2026-10-22 12:20 UTC
 
 ## Market
-- BTC scenario **B** | price 81999 | wk close 81175 vs 82800 | 50W 76608 (7.04%) | 32m old
+- BTC scenario **B** | price 81999 | wk close 81175 vs 82800 | 50W 76608 (7.04%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.41% | ETH/BTC 0.02932 | breadth7d 37% | stables 30d -0.53%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.14pt | 7d -0.01pt | n=121
 - Gold: PAXG 1m -0.88% | real10y 2.77 (15bp 1m) | USD 1m 1.72% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 29
@@ -19,8 +19,8 @@
 - NEAR: **ONGOING** | +169% impulse, retr 0.27 | OI dd 7% | fund -0.0047 | hold False | inval 4.63200 | OB 4.63200-4.78700
 
 ## Pre-pump candidates
-- NEAR: [A+C] 7d 7.7%
-- PEPE: [A+C] 7d 14.7%
+- NEAR: [A+C] 7d 8.9%
+- PEPE: [A+C] 7d 14.5%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - Why are Bitcoin, Ethereum and XRP falling despite ETF inflows? - FXStreet
@@ -46,12 +46,12 @@
 - (9 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 27 | mean -1.8% (-0.08R) | in profit 11 | older than 7d 24
-- worst: HBAR -0.86R, IMX -0.82R, KAIA -0.77R | best: AERO 0.88R, BEAM 1.05R, NEAR 1.08R
+- open 27 | mean -1.9% (-0.08R) | in profit 11 | older than 7d 24
+- worst: HBAR -0.85R, IMX -0.83R, KAIA -0.77R | best: AERO 0.86R, NEAR 1.04R, BEAM 1.11R
 
 ## System
-- CoinGecko 6921/10000 used, month-end projection 9998 (100%), throttle level 1 | by script {'scan': 2256, 'check_liquidity': 343, 'breakout_check': 4257, 'counterfactual_check': 65}
+- CoinGecko 6980/10000 used, month-end projection 10064 (101%), throttle level 2 | by script {'scan': 2258, 'check_liquidity': 344, 'breakout_check': 4313, 'counterfactual_check': 65}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=50), H2 SUPPORTED (n=178)
-- radar-flags.json scan age: 9m
-- excluded from radar (pegged/tokenized equity): 42
+- radar-flags.json scan age: 20m
+- excluded from radar (pegged/tokenized equity): 41
