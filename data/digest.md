@@ -1,32 +1,31 @@
-# Radar digest - 2026-10-22 10:39 UTC
+# Radar digest - 2026-10-22 11:09 UTC
 
 ## Market
-- BTC scenario **B** | price 81863 | wk close 81175 vs 82800 | 50W 76608 (6.86%) | 2h old
-- Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.42% | ETH/BTC 0.02949 | breadth7d 32% | stables 30d -0.52%
-- Alt risk (BTC.D): **NORMAL**  | 3d -0.13pt | 7d 0.02pt | n=121
+- BTC scenario **B** | price 81999 | wk close 81175 vs 82800 | 50W 76608 (7.04%) | 1m old
+- Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.41% | ETH/BTC 0.02932 | breadth7d 37% | stables 30d -0.53%
+- Alt risk (BTC.D): **NORMAL**  | 3d -0.14pt | 7d -0.01pt | n=121
 - Gold: PAXG 1m -0.88% | real10y 2.77 (15bp 1m) | USD 1m 1.72% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 29
 - 10y 1w: -9bp = real -11 + breakeven 2 -> **SMALL_MOVE**
 - 10y 1m: 16bp = real 15 + breakeven 4 -> **REAL_YIELD_DRIVEN**
 
 ## Coins in correction (entry_ready first)
-- SEI: **RESET_DONE** ENTRY_READY | +110% impulse, retr 0.62 | OI dd 24% | fund -0.0159 | hold True | inval 0.05834 | OB 0.04119-0.04239
-- TAO: **RESET_DONE** ENTRY_READY | +60% impulse, retr 0.65 | OI dd 21% | fund -0.0122 | hold True | inval 254.30000 | OB 213.50000-219.30000
-- ADA: **RESET_DONE** ENTRY_READY | +48% impulse, retr 0.73 | OI dd 29% | fund -0.0119 | hold True | inval 0.21460 | OB 0.19010-0.19720
-- BCH: **RESUMING** ENTRY_READY | +72% impulse, retr 0.60 | OI dd 34% | fund 0.0072 | hold False | inval 264.10000 | OB 264.10000-270.70000
-- PUMP: **BROKEN** | +100% impulse, retr 0.62 | OI dd 41% | fund 0.0100 | hold False | inval 0.00384 | OB 0.00384-0.00419
-- UNI: **BROKEN** | +88% impulse, retr 0.76 | OI dd 31% | fund -0.0009 | hold True | inval 6.81000 | OB 5.80800-6.03200
-- ZEC: **BROKEN** | +64% impulse, retr 0.71 | OI dd 23% | fund 0.0100 | hold False | inval 1110.00000 | OB 1110.00000-1153.08000
-- LINK: **BROKEN** | +48% impulse, retr 0.73 | OI dd 23% | fund 0.0016 | hold False | inval 11.83900 | OB 10.61800-10.96200
+- SEI: **RESET_DONE** ENTRY_READY | +110% impulse, retr 0.62 | OI dd 24% | fund -0.0111 | hold True | inval 0.05834 | OB 0.04119-0.04239
+- TAO: **RESET_DONE** ENTRY_READY | +60% impulse, retr 0.63 | OI dd 21% | fund -0.0236 | hold True | inval 254.30000 | OB 213.50000-219.30000
+- ADA: **RESET_DONE** ENTRY_READY | +48% impulse, retr 0.71 | OI dd 29% | fund -0.0198 | hold True | inval 0.21460 | OB 0.19010-0.19720
+- BCH: **RESUMING** ENTRY_READY | +72% impulse, retr 0.58 | OI dd 34% | fund 0.0100 | hold False | inval 264.10000 | OB 264.10000-270.70000
+- UNI: **BROKEN** | +88% impulse, retr 0.75 | OI dd 31% | fund 0.0018 | hold True | inval 7.09700 | OB 5.80800-6.03200
+- ZEC: **BROKEN** | +64% impulse, retr 0.67 | OI dd 23% | fund 0.0100 | hold False | inval 1110.00000 | OB 1110.00000-1153.08000
+- LINK: **BROKEN** | +48% impulse, retr 0.72 | OI dd 23% | fund -0.0027 | hold False | inval 11.83900 | OB 10.61800-10.96200
+- NEAR: **ONGOING** | +169% impulse, retr 0.27 | OI dd 7% | fund -0.0047 | hold False | inval 4.63200 | OB 4.63200-4.78700
 
 ## Pre-pump candidates
-- NEAR: [A+C+E] 7d 4.7%
+- NEAR: [A+C] 7d 7.7%
 - PEPE: [A+C] 7d 12.0%
 
 ## ETF pipeline (new this run)
-- solana NEW: other - Crypto ETF News Today: Bitcoin, Ethereum, XRP and Solana Inflows - Coin Gabbar
-- ripple NEW: other - Crypto ETF News Today: Bitcoin, Ethereum, XRP and Solana Inflows - Coin Gabbar
-- zcash: other - Crypto Prices Today: Bitcoin Holds Near USD 82,800 as ETF Inflows Top USD 1 Billion, Zcash
-- zcash: other - Crypto Prices Today: Bitcoin Holds Near USD 82,800 as ETF Inflows Top USD 1 Billion, Zcash
+- ripple NEW: other - Why are Bitcoin, Ethereum and XRP falling despite ETF inflows? - FXStreet
+- ripple NEW: other - XRP News Today: $1.8B ETF Inflows Meet Binance’s 600K XRP Reward Pool - Coin Gabbar
+- near: other - Can NEAR Protocol avoid further losses as ETF demand falters - FXStreet
 
 ## Derivatives flags (OKX)
 - BTC: LONG_FLUSH_24H | OI/mc 0.20% | topPos 0.93 | taker 0.97
@@ -47,11 +46,11 @@
 - (9 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 28 | mean -1.6% (-0.09R) | in profit 11 | older than 7d 24
-- worst: HBAR -0.85R, KMNO -0.80R, KAIA -0.77R | best: TIA 0.82R, BEAM 0.97R, NEAR 1.10R
+- open 28 | mean -1.8% (-0.11R) | in profit 11 | older than 7d 24
+- worst: KMNO -0.87R, HBAR -0.86R, IMX -0.81R | best: AERO 0.87R, BEAM 1.04R, NEAR 1.10R
 
 ## System
-- CoinGecko 6916/10000 used, month-end projection 10011 (100%), throttle level 2 | by script {'scan': 2252, 'check_liquidity': 342, 'breakout_check': 4257, 'counterfactual_check': 65}
+- CoinGecko 6919/10000 used, month-end projection 9996 (100%), throttle level 1 | by script {'scan': 2254, 'check_liquidity': 343, 'breakout_check': 4257, 'counterfactual_check': 65}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=50), H2 SUPPORTED (n=178)
 - radar-flags.json scan age: 8m
