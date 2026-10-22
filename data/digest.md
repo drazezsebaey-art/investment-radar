@@ -1,12 +1,12 @@
-# Radar digest - 2026-10-22 21:39 UTC
+# Radar digest - 2026-10-22 22:07 UTC
 
 ## Market
-- BTC scenario **B** | price 81327 | wk close 81175 vs 82800 | 50W 76608 (6.16%) | 32m old
+- BTC scenario **B** | price 81327 | wk close 81175 vs 82800 | 50W 76608 (6.16%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.42% | ETH/BTC 0.02928 | breadth7d 37% | stables 30d -0.54%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.14pt | 7d 0.23pt | n=121
-- Gold: PAXG 1m -2.12% | real10y 2.77 (15bp 1m) | USD 1m 1.72% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 29
-- 10y 1w: -9bp = real -11 + breakeven 2 -> **SMALL_MOVE**
-- 10y 1m: 16bp = real 15 + breakeven 4 -> **REAL_YIELD_DRIVEN**
+- Gold: PAXG 1m -2.61% | real10y 2.76 (13bp 1m) | USD 1m 1.72% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 29
+- 10y 1w: -6bp = real -8 + breakeven 0 -> **SMALL_MOVE**
+- 10y 1m: 17bp = real 13 + breakeven -3 -> **REAL_YIELD_DRIVEN**
 
 ## Coins in correction (entry_ready first)
 - SEI: **RESET_DONE** ENTRY_READY | +110% impulse, retr 0.64 | OI dd 32% | fund -0.0119 | hold True | inval 0.05685 | OB 0.04119-0.04239
@@ -46,12 +46,12 @@
 - (9 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 26 | mean -3.4% (-0.17R) | in profit 11 | older than 7d 23
-- worst: HBAR -0.92R, KAIA -0.84R, ZK -0.83R | best: BEAM 0.74R, AERO 0.80R, NEAR 0.92R
+- open 26 | mean -3.7% (-0.19R) | in profit 10 | older than 7d 23
+- worst: HBAR -0.92R, KAIA -0.87R, ZK -0.84R | best: BEAM 0.73R, AERO 0.74R, NEAR 0.92R
 
 ## System
-- CoinGecko 7074/10000 used, month-end projection 10025 (100%), throttle level 2 | by script {'scan': 2296, 'check_liquidity': 348, 'breakout_check': 4365, 'counterfactual_check': 65}
+- CoinGecko 7077/10000 used, month-end projection 10010 (100%), throttle level 2 | by script {'scan': 2298, 'check_liquidity': 349, 'breakout_check': 4365, 'counterfactual_check': 65}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=50), H2 SUPPORTED (n=183)
-- radar-flags.json scan age: 9m
-- excluded from radar (pegged/tokenized equity): 42
+- radar-flags.json scan age: 7m
+- excluded from radar (pegged/tokenized equity): 41
