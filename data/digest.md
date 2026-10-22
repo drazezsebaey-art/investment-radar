@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-22 04:07 UTC
+# Radar digest - 2026-10-22 04:39 UTC
 
 ## Market
-- BTC scenario **B** | price 82942 | wk close 81175 vs 82800 | 50W 76608 (8.27%) | 1h old
+- BTC scenario **B** | price 82942 | wk close 81175 vs 82800 | 50W 76608 (8.27%) | 2h old
 - Alts: **BTC_LED** [-] | BTC.D 57.44% | ETH/BTC 0.02946 | breadth7d 36% | stables 30d -0.52%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.06pt | 7d 0.02pt | n=121
 - Gold: PAXG 1m -0.92% | real10y - (-bp 1m) | USD 1m -% | pillar6 **insufficient_data**  | COT pctl 29
@@ -17,20 +17,21 @@
 - COMP: **ONGOING** | +57% impulse, retr 0.39 | OI dd 15% | fund 0.0100 | hold False | inval 20.63000 | OB 20.63000-21.09000
 
 ## Pre-pump candidates
-- PEPE: [A+C] 7d 11.6%
+- NEAR: [A+E] 7d 7.1%
+- PEPE: [A+C] 7d 15.0%
 
 ## ETF pipeline (new this run)
 - ondo-finance: other - iShares 7-10 Year Treasury Bond Tokenized ETF (Ondo) price today, IEFon to USD live price,
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc 0.20% | topPos 0.97 | taker 1.00
-- ETH: LONG_FLUSH_24H | OI/mc -% | topPos 0.89 | taker 1.00
-- SOL: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 1.01
-- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.95
-- TAO: LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 0.93
-- ZEC: LONG_FLUSH_24H | OI/mc -% | topPos 1.23 | taker 1.05
-- WLD: LONG_FLUSH_24H | OI/mc -% | topPos 1.02 | taker 0.93
-- ADA: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.98
+- BTC: LONG_FLUSH_24H | OI/mc 0.20% | topPos 0.97 | taker 1.01
+- ETH: LONG_FLUSH_24H | OI/mc 0.58% | topPos 0.88 | taker 1.00
+- SOL: LONG_FLUSH_24H | OI/mc 0.57% | topPos 0.88 | taker 1.01
+- NEAR: LONG_FLUSH_24H | OI/mc 1.05% | topPos 1.01 | taker 1.03
+- XRP: LONG_FLUSH_24H | OI/mc 0.13% | topPos 0.87 | taker 0.94
+- TAO: LONG_FLUSH_24H | OI/mc 0.77% | topPos 0.90 | taker 0.95
+- ZEC: LONG_FLUSH_24H | OI/mc 0.74% | topPos 1.21 | taker 1.06
+- WLD: LONG_FLUSH_24H | OI/mc -% | topPos 1.01 | taker 0.94
 
 ## Revenue / buyback flags
 - collector-crypt: REVENUE_ACCELERATING, CHEAP_VS_REVENUE
@@ -41,12 +42,12 @@
 - (8 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 28 | mean -0.1% (0.07R) | in profit 12 | older than 7d 24
-- worst: HBAR -0.75R, NEO -0.70R, KAIA -0.70R | best: KMNO 0.94R, AERO 0.97R, NEAR 1.34R
+- open 28 | mean -0.1% (0.05R) | in profit 12 | older than 7d 24
+- worst: HBAR -0.74R, NEO -0.68R, KAIA -0.67R | best: BEAM 0.88R, AERO 0.97R, NEAR 1.32R
 
 ## System
-- CoinGecko 6834/10000 used, month-end projection 10009 (100%), throttle level 2 | by script {'scan': 2226, 'check_liquidity': 340, 'breakout_check': 4203, 'counterfactual_check': 65}
+- CoinGecko 6836/10000 used, month-end projection 10012 (100%), throttle level 2 | by script {'scan': 2228, 'check_liquidity': 340, 'breakout_check': 4203, 'counterfactual_check': 65}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=50), H2 SUPPORTED (n=176)
-- radar-flags.json scan age: 7m
-- excluded from radar (pegged/tokenized equity): 40
+- radar-flags.json scan age: 8m
+- excluded from radar (pegged/tokenized equity): 41
