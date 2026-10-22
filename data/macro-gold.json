@@ -1,18 +1,42 @@
 {
-  "updated_at": "2026-10-22T04:07:02.889578+00:00",
+  "updated_at": "2026-10-22T10:07:22.474439+00:00",
   "engine_version": "macro_gold-v68",
   "fred_mode": "api_key",
   "macro": {
-    "real_yield_10y_pct": {},
-    "nominal_yield_10y_pct": {},
-    "breakeven_10y_pct": {},
-    "usd_broad_index": {}
+    "real_yield_10y_pct": {
+      "value": 2.77,
+      "date": "2026-10-20",
+      "chg_1w": -11.0,
+      "chg_1m": 15.0,
+      "units_of_change": "bp"
+    },
+    "nominal_yield_10y_pct": {
+      "value": 5.12,
+      "date": "2026-10-20",
+      "chg_1w": -9.0,
+      "chg_1m": 16.0,
+      "units_of_change": "bp"
+    },
+    "breakeven_10y_pct": {
+      "value": 2.37,
+      "date": "2026-10-21",
+      "chg_1w": 2.0,
+      "chg_1m": 4.0,
+      "units_of_change": "bp"
+    },
+    "usd_broad_index": {
+      "value": 121.4048,
+      "date": "2026-10-16",
+      "chg_1w": -0.03,
+      "chg_1m": 1.72,
+      "units_of_change": "pct"
+    }
   },
   "gold_paxg": {
-    "value": 4098.4,
+    "value": 4099.8,
     "date": "2026-10-21",
-    "chg_1w": -1.47,
-    "chg_1m": -0.92,
+    "chg_1w": -1.44,
+    "chg_1m": -0.88,
     "units_of_change": "pct"
   },
   "cot_gold_managed_money": {
@@ -26,21 +50,27 @@
   },
   "cot_fetched_at": "2026-10-21T22:07:03.531949+00:00",
   "pillar6_check": {
-    "status": "insufficient_data",
-    "flags": []
+    "status": "CONSISTENT_OR_NEUTRAL",
+    "flags": [],
+    "note": "Deviation = the inverse relation is NOT holding; the engine must name the cause (debasement / geopolitics / de-dollarisation / bond-confidence), not assume the pattern."
   },
   "yield_decomposition": {
     "chg_1w": {
-      "driver": "insufficient_data"
+      "nominal_bp": -9.0,
+      "real_bp": -11.0,
+      "breakeven_bp": 2.0,
+      "real_share": 0.85,
+      "direction": "DOWN",
+      "driver": "SMALL_MOVE"
     },
     "chg_1m": {
-      "driver": "insufficient_data"
+      "nominal_bp": 16.0,
+      "real_bp": 15.0,
+      "breakeven_bp": 4.0,
+      "real_share": 0.79,
+      "direction": "UP",
+      "driver": "REAL_YIELD_DRIVEN"
     }
   },
-  "errors": [
-    "FRED DFII10: JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
-    "FRED DGS10: JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
-    "FRED T10YIE: JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
-    "FRED DTWEXBGS: JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
-  ]
+  "errors": []
 }

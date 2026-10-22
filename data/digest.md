@@ -1,10 +1,12 @@
-# Radar digest - 2026-10-22 09:39 UTC
+# Radar digest - 2026-10-22 10:08 UTC
 
 ## Market
-- BTC scenario **B** | price 81863 | wk close 81175 vs 82800 | 50W 76608 (6.86%) | 31m old
+- BTC scenario **B** | price 81863 | wk close 81175 vs 82800 | 50W 76608 (6.86%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.42% | ETH/BTC 0.02949 | breadth7d 32% | stables 30d -0.52%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.13pt | 7d 0.02pt | n=121
-- Gold: PAXG 1m -0.92% | real10y - (-bp 1m) | USD 1m -% | pillar6 **insufficient_data**  | COT pctl 29
+- Gold: PAXG 1m -0.88% | real10y 2.77 (15bp 1m) | USD 1m 1.72% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 29
+- 10y 1w: -9bp = real -11 + breakeven 2 -> **SMALL_MOVE**
+- 10y 1m: 16bp = real 15 + breakeven 4 -> **REAL_YIELD_DRIVEN**
 
 ## Coins in correction (entry_ready first)
 - SEI: **RESET_DONE** ENTRY_READY | +110% impulse, retr 0.62 | OI dd 24% | fund -0.0159 | hold True | inval 0.05834 | OB 0.04119-0.04239
@@ -17,7 +19,7 @@
 - LINK: **BROKEN** | +48% impulse, retr 0.73 | OI dd 23% | fund 0.0016 | hold False | inval 11.83900 | OB 10.61800-10.96200
 
 ## Pre-pump candidates
-- none
+- PEPE: [A+C] 7d 12.0%
 
 ## ETF pipeline (new this run)
 - solana NEW: other - Crypto ETF News Today: Bitcoin, Ethereum, XRP and Solana Inflows - Coin Gabbar
@@ -44,12 +46,12 @@
 - (9 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 28 | mean -2.2% (-0.12R) | in profit 11 | older than 7d 24
-- worst: HBAR -0.85R, IMX -0.82R, KMNO -0.82R | best: TIA 0.84R, NEAR 0.96R, BEAM 0.98R
+- open 28 | mean -1.8% (-0.10R) | in profit 11 | older than 7d 24
+- worst: HBAR -0.85R, IMX -0.80R, KAIA -0.75R | best: TIA 0.85R, BEAM 0.99R, NEAR 1.02R
 
 ## System
-- CoinGecko 6912/10000 used, month-end projection 10024 (100%), throttle level 2 | by script {'scan': 2248, 'check_liquidity': 342, 'breakout_check': 4257, 'counterfactual_check': 65}
+- CoinGecko 6914/10000 used, month-end projection 10008 (100%), throttle level 2 | by script {'scan': 2250, 'check_liquidity': 342, 'breakout_check': 4257, 'counterfactual_check': 65}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=50), H2 SUPPORTED (n=178)
-- radar-flags.json scan age: 8m
+- radar-flags.json scan age: 7m
 - excluded from radar (pegged/tokenized equity): 42
