@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-21 23:38 UTC
+# Radar digest - 2026-10-22 00:20 UTC
 
 ## Market
-- BTC scenario **B** | price 84296 | wk close 81175 vs 82800 | 50W 76608 (10.04%) | 31m old
+- BTC scenario **B** | price 84296 | wk close 81175 vs 82800 | 50W 76608 (10.04%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 57.57% | ETH/BTC 0.02940 | breadth7d 31% | stables 30d -0.08%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.05pt | 7d 0.39pt | n=121
 - Gold: PAXG 1m 0.15% | real10y - (-bp 1m) | USD 1m -% | pillar6 **insufficient_data**  | COT pctl 29
@@ -17,7 +17,7 @@
 - COMP: **ONGOING** | +57% impulse, retr 0.34 | OI dd 15% | fund 0.0100 | hold False | inval 20.63000 | OB 20.63000-21.09000
 
 ## Pre-pump candidates
-- ZEC: [A+B] 7d 18.0%
+- none
 
 ## ETF pipeline (new this run)
 - zcash: other - Grayscale ZCSH: $15.2M Zcash ETF Daily Inflow - Blockchain News
@@ -41,12 +41,12 @@
 - (8 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 27 | mean 2.5% (0.25R) | in profit 14 | older than 7d 22
-- worst: HBAR -0.65R, NEO -0.58R, KAIA -0.49R | best: RENDER 1.09R, KMNO 1.35R, NEAR 1.63R
+- open 28 | mean 2.3% (0.22R) | in profit 14 | older than 7d 24
+- worst: HBAR -0.67R, NEO -0.58R, ADA -0.50R | best: TIA 1.04R, RENDER 1.09R, NEAR 1.61R
 
 ## System
-- CoinGecko 6745/10000 used, month-end projection 9977 (100%), throttle level 1 | by script {'scan': 2200, 'check_liquidity': 339, 'breakout_check': 4144, 'counterfactual_check': 62}
+- CoinGecko 6810/10000 used, month-end projection 10053 (100%), throttle level 2 | by script {'scan': 2202, 'check_liquidity': 340, 'breakout_check': 4203, 'counterfactual_check': 65}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=49), H2 SUPPORTED (n=175)
-- radar-flags.json scan age: 8m
-- excluded from radar (pegged/tokenized equity): 40
+- radar-flags.json scan age: 19m
+- excluded from radar (pegged/tokenized equity): 41
