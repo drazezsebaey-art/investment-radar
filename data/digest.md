@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-23 08:06 UTC
+# Radar digest - 2026-10-23 08:39 UTC
 
 ## Market
-- BTC scenario **B** | price 81807 | wk close 81175 vs 82800 | 50W 76608 (6.79%) | 60m old
+- BTC scenario **B** | price 81807 | wk close 81175 vs 82800 | 50W 76608 (6.79%) | 2h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.35% | ETH/BTC 0.02942 | breadth7d 31% | stables 30d -0.64%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.14pt | 7d 0.24pt | n=121
 - Gold: PAXG 1m -2.91% | real10y 2.76 (13bp 1m) | USD 1m 1.72% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 29
@@ -19,7 +19,8 @@
 - COMP: **ONGOING** | +57% impulse, retr 0.44 | OI dd 19% | fund 0.0100 | hold False | inval 20.63000 | OB 20.63000-21.09000
 
 ## Pre-pump candidates
-- none
+- PEPE: [A+C] 7d 12.3%
+- ATH: [B+C] 7d 13.1%
 
 ## ETF pipeline (new this run)
 - kucoin-shares NEW: other - SWAP BTC, ETH, SOL, XRP, DOGE DIRECTLY FOR GRAYSCALE ETF - KuCoin
@@ -27,13 +28,13 @@
 
 ## Derivatives flags (OKX)
 - BTC: SHORT_SQUEEZE_24H | OI/mc 0.21% | topPos 0.92 | taker 0.97
-- ETH: LONG_FLUSH_24H | OI/mc -% | topPos 0.84 | taker 0.95
-- NEAR: LONG_FLUSH_24H | OI/mc -% | topPos 0.98 | taker 1.03
-- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.89 | taker 1.02
+- ETH: LONG_FLUSH_24H | OI/mc -% | topPos 0.85 | taker 0.94
+- NEAR: LONG_FLUSH_24H | OI/mc -% | topPos 0.98 | taker 1.02
+- AVAX: LONG_FLUSH_24H | OI/mc 0.41% | topPos 0.89 | taker 1.02
 - XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 0.92
-- SUI: LONG_FLUSH_24H | OI/mc 0.96% | topPos 0.81 | taker 0.98
-- TAO: LONG_FLUSH_24H | OI/mc -% | topPos 0.85 | taker 0.97
-- ADA: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.91
+- SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.81 | taker 0.97
+- TAO: LONG_FLUSH_24H | OI/mc 0.77% | topPos 0.85 | taker 0.97
+- ZEC: LONG_FLUSH_24H | OI/mc -% | topPos 1.02 | taker 1.03
 
 ## Revenue / buyback flags
 - collector-crypt: REVENUE_ACCELERATING
@@ -45,11 +46,11 @@
 
 ## Paper book (open trades, marked to last scan)
 - open 26 | mean -2.8% (-0.13R) | in profit 11 | older than 7d 23
-- worst: ZK -0.89R, HBAR -0.88R, KAIA -0.78R | best: AERO 0.74R, NEAR 0.94R, BEAM 0.97R
+- worst: ZK -0.93R, HBAR -0.89R, KAIA -0.79R | best: AERO 0.75R, NEAR 0.98R, BEAM 1.00R
 
 ## System
-- CoinGecko 7238/10000 used, month-end projection 10047 (100%), throttle level 2 | by script {'scan': 2346, 'check_liquidity': 353, 'breakout_check': 4471, 'counterfactual_check': 68}
+- CoinGecko 7240/10000 used, month-end projection 10050 (100%), throttle level 2 | by script {'scan': 2348, 'check_liquidity': 353, 'breakout_check': 4471, 'counterfactual_check': 68}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=50), H2 SUPPORTED (n=183)
-- radar-flags.json scan age: 6m
-- excluded from radar (pegged/tokenized equity): 42
+- radar-flags.json scan age: 9m
+- excluded from radar (pegged/tokenized equity): 43
