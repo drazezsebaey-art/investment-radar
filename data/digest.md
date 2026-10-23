@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-23 11:39 UTC
+# Radar digest - 2026-10-23 12:20 UTC
 
 ## Market
-- BTC scenario **B** | price 81597 | wk close 81175 vs 82800 | 50W 76608 (6.51%) | 32m old
+- BTC scenario **B** | price 81597 | wk close 81175 vs 82800 | 50W 76608 (6.51%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 57.38% | ETH/BTC 0.02933 | breadth7d 27% | stables 30d -0.64%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.13pt | 7d 0.30pt | n=121
 - Gold: PAXG 1m -2.65% | real10y 2.76 (13bp 1m) | USD 1m 1.72% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 29
@@ -19,7 +19,7 @@
 - CVX: **ONGOING** | +54% impulse, retr 0.25 | OI dd 20% | fund 0.0050 | hold False | inval 1.87300 | OB 1.81400-1.87700
 
 ## Pre-pump candidates
-- none
+- VVV: [A+E] 7d 7.1%
 
 ## ETF pipeline (new this run)
 - litecoin NEW: other - Litecoin price rebounds 5% as ETF assets double to $14M - Bitget
@@ -44,12 +44,12 @@
 - (7 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 25 | mean -3.2% (-0.15R) | in profit 10 | older than 7d 22
-- worst: HBAR -0.94R, KAIA -0.82R, INJ -0.76R | best: AERO 0.70R, NEAR 0.87R, BEAM 0.88R
+- open 25 | mean -3.0% (-0.13R) | in profit 11 | older than 7d 22
+- worst: HBAR -0.93R, KAIA -0.83R, INJ -0.77R | best: AERO 0.70R, BEAM 0.87R, NEAR 0.96R
 
 ## System
-- CoinGecko 7252/10000 used, month-end projection 10010 (100%), throttle level 2 | by script {'scan': 2360, 'check_liquidity': 353, 'breakout_check': 4471, 'counterfactual_check': 68}
+- CoinGecko 7306/10000 used, month-end projection 10066 (101%), throttle level 2 | by script {'scan': 2362, 'check_liquidity': 355, 'breakout_check': 4521, 'counterfactual_check': 68}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=51), H2 SUPPORTED (n=184)
-- radar-flags.json scan age: 9m
-- excluded from radar (pegged/tokenized equity): 43
+- radar-flags.json scan age: 20m
+- excluded from radar (pegged/tokenized equity): 42
