@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-23 17:08 UTC
+# Radar digest - 2026-10-23 17:39 UTC
 
 ## Market
-- BTC scenario **B** | price 81779 | wk close 81175 vs 82800 | 50W 76608 (6.75%) | 1m old
+- BTC scenario **B** | price 81779 | wk close 81175 vs 82800 | 50W 76608 (6.75%) | 33m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.35% | ETH/BTC 0.02946 | breadth7d 38% | stables 30d -0.63%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.08pt | 7d 0.25pt | n=121
 - Gold: PAXG 1m -3.03% | real10y 2.76 (13bp 1m) | USD 1m 1.72% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 29
@@ -19,21 +19,20 @@
 - COMP: **ONGOING** | +57% impulse, retr 0.44 | OI dd 20% | fund 0.0100 | hold False | inval 20.63000 | OB 20.63000-21.09000
 
 ## Pre-pump candidates
-- SENT: [B+C] 7d 13.2%
-- PEPE: [A+C] 7d 20.1%
+- PEPE: [A+C] 7d 21.0%
 
 ## ETF pipeline (new this run)
 - zcash: other - Zcash Price Forecast: What next as ZEC regains $1,300 and ETF inflow reaches 30-day high? 
 
 ## Derivatives flags (OKX)
-- ETH: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.96
-- NEAR: LONG_FLUSH_24H | OI/mc -% | topPos 0.97 | taker 1.00
-- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.89 | taker 0.94
-- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.95
-- SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.81 | taker 0.96
-- SEI: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.89 | taker 0.97
-- TAO: LONG_FLUSH_24H | OI/mc -% | topPos 0.84 | taker 0.99
-- WLD: LONG_FLUSH_24H | OI/mc 1.98% | topPos 0.95 | taker 1.03
+- ETH: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 1.01
+- NEAR: LONG_FLUSH_24H | OI/mc -% | topPos 0.97 | taker 1.06
+- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.90 | taker 0.93
+- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.99
+- SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.81 | taker 0.94
+- SEI: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.87 | taker 1.00
+- ZEC: SHORT_SQUEEZE_24H | OI/mc 0.64% | topPos 1.08 | taker 1.07
+- WLD: LONG_FLUSH_24H | OI/mc 1.98% | topPos 0.94 | taker 1.05
 
 ## Revenue / buyback flags
 - pump.fun: REVENUE_ACCELERATING
@@ -44,12 +43,12 @@
 - (7 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 25 | mean -3.3% (-0.15R) | in profit 10 | older than 7d 22
-- worst: HBAR -0.95R, INJ -0.87R, KAIA -0.84R | best: SUI 0.46R, NEAR 0.77R, BEAM 1.12R
+- open 25 | mean -3.4% (-0.16R) | in profit 10 | older than 7d 22
+- worst: HBAR -0.97R, KAIA -0.86R, INJ -0.85R | best: AERO 0.50R, NEAR 0.79R, BEAM 1.18R
 
 ## System
-- CoinGecko 7327/10000 used, month-end projection 10002 (100%), throttle level 2 | by script {'scan': 2382, 'check_liquidity': 356, 'breakout_check': 4521, 'counterfactual_check': 68}
+- CoinGecko 7329/10000 used, month-end projection 10005 (100%), throttle level 2 | by script {'scan': 2384, 'check_liquidity': 356, 'breakout_check': 4521, 'counterfactual_check': 68}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=51), H2 SUPPORTED (n=184)
-- radar-flags.json scan age: 7m
-- excluded from radar (pegged/tokenized equity): 41
+- radar-flags.json scan age: 9m
+- excluded from radar (pegged/tokenized equity): 40
