@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-23 12:39 UTC
+# Radar digest - 2026-10-23 13:08 UTC
 
 ## Market
-- BTC scenario **B** | price 81597 | wk close 81175 vs 82800 | 50W 76608 (6.51%) | 2h old
+- BTC scenario **B** | price 81676 | wk close 81175 vs 82800 | 50W 76608 (6.61%) | 1m old
 - Alts: **BTC_LED** [-] | BTC.D 57.38% | ETH/BTC 0.02933 | breadth7d 27% | stables 30d -0.64%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.13pt | 7d 0.30pt | n=121
 - Gold: PAXG 1m -2.65% | real10y 2.76 (13bp 1m) | USD 1m 1.72% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 29
@@ -9,21 +9,20 @@
 - 10y 1m: 17bp = real 13 + breakeven -3 -> **REAL_YIELD_DRIVEN**
 
 ## Coins in correction (entry_ready first)
-- SEI: **RESET_DONE** ENTRY_READY | +110% impulse, retr 0.64 | OI dd 32% | fund 0.0050 | hold True | inval 0.05685 | OB 0.04119-0.04239
-- TAO: **RESET_DONE** ENTRY_READY | +60% impulse, retr 0.64 | OI dd 32% | fund 0.0034 | hold True | inval 254.30000 | OB 213.50000-219.30000
-- ZEC: **BROKEN** | +64% impulse, retr 0.75 | OI dd 36% | fund 0.0045 | hold False | inval 1110.00000 | OB 1110.00000-1153.08000
-- ADA: **BROKEN** | +48% impulse, retr 0.73 | OI dd 33% | fund 0.0086 | hold True | inval 0.21110 | OB 0.19010-0.19720
-- LINK: **BROKEN** | +48% impulse, retr 0.72 | OI dd 28% | fund 0.0100 | hold True | inval 11.83900 | OB 10.61800-10.96200
+- SEI: **RESET_DONE** ENTRY_READY | +110% impulse, retr 0.63 | OI dd 32% | fund 0.0050 | hold True | inval 0.05685 | OB 0.04119-0.04239
+- TAO: **RESET_DONE** ENTRY_READY | +60% impulse, retr 0.63 | OI dd 32% | fund 0.0048 | hold True | inval 252.60000 | OB 213.50000-219.30000
+- ZEC: **BROKEN** | +64% impulse, retr 0.71 | OI dd 36% | fund 0.0031 | hold False | inval 1187.59000 | OB 1110.00000-1153.08000
+- ADA: **BROKEN** | +48% impulse, retr 0.71 | OI dd 33% | fund 0.0056 | hold True | inval 0.20950 | OB 0.19010-0.19720
+- LINK: **BROKEN** | +48% impulse, retr 0.72 | OI dd 28% | fund 0.0100 | hold True | inval 11.77600 | OB 10.61800-10.96200
 - CARDS: **ONGOING** | +266% impulse, retr 0.11 | OI dd -% | fund - | hold False | inval 0.31640 | OB 0.23780-0.26170
-- COMP: **ONGOING** | +57% impulse, retr 0.45 | OI dd 19% | fund 0.0044 | hold False | inval 20.63000 | OB 20.63000-21.09000
-- CVX: **ONGOING** | +54% impulse, retr 0.25 | OI dd 20% | fund 0.0050 | hold False | inval 1.87300 | OB 1.81400-1.87700
+- COMP: **ONGOING** | +57% impulse, retr 0.45 | OI dd 19% | fund 0.0100 | hold False | inval 20.63000 | OB 20.63000-21.09000
+- CVX: **ONGOING** | +54% impulse, retr 0.26 | OI dd 20% | fund -0.0040 | hold False | inval 1.87300 | OB 1.81400-1.87700
 
 ## Pre-pump candidates
-- none
+- VVV: [A+E] 7d 7.1%
 
 ## ETF pipeline (new this run)
-- litecoin NEW: other - Litecoin price rebounds 5% as ETF assets double to $14M - Bitget
-- zcash: other - Zcash ETF Inflows Hit $14.23M Today as Net Assets Reach $681M in Oct! - Coin Gabbar
+- zcash: other - $1,300 reclaimed: Zcash (ZEC) price forecast as ETF inflow reaches 30-day high - www.tmgm.
 
 ## Derivatives flags (OKX)
 - ETH: LONG_FLUSH_24H | OI/mc -% | topPos 0.85 | taker 0.97
@@ -44,12 +43,12 @@
 - (7 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 25 | mean -3.0% (-0.13R) | in profit 11 | older than 7d 22
-- worst: HBAR -0.92R, KAIA -0.83R, INJ -0.76R | best: AERO 0.68R, BEAM 0.89R, NEAR 0.98R
+- open 25 | mean -2.9% (-0.13R) | in profit 10 | older than 7d 22
+- worst: HBAR -0.91R, KAIA -0.85R, INJ -0.75R | best: AERO 0.66R, BEAM 0.93R, NEAR 1.00R
 
 ## System
-- CoinGecko 7308/10000 used, month-end projection 10069 (101%), throttle level 2 | by script {'scan': 2364, 'check_liquidity': 355, 'breakout_check': 4521, 'counterfactual_check': 68}
+- CoinGecko 7310/10000 used, month-end projection 10053 (100%), throttle level 2 | by script {'scan': 2366, 'check_liquidity': 355, 'breakout_check': 4521, 'counterfactual_check': 68}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=51), H2 SUPPORTED (n=184)
-- radar-flags.json scan age: 9m
-- excluded from radar (pegged/tokenized equity): 42
+- radar-flags.json scan age: 8m
+- excluded from radar (pegged/tokenized equity): 41
