@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-22 23:39 UTC
+# Radar digest - 2026-10-23 00:21 UTC
 
 ## Market
-- BTC scenario **B** | price 81411 | wk close 81175 vs 82800 | 50W 76608 (6.27%) | 32m old
+- BTC scenario **B** | price 81411 | wk close 81175 vs 82800 | 50W 76608 (6.27%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.43% | ETH/BTC 0.02932 | breadth7d 35% | stables 30d -0.55%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.05pt | 7d 0.25pt | n=121
 - Gold: PAXG 1m -2.61% | real10y 2.76 (13bp 1m) | USD 1m 1.72% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 29
@@ -19,9 +19,9 @@
 - CVX: **ONGOING** | +54% impulse, retr 0.27 | OI dd 20% | fund 0.0003 | hold False | inval 1.87300 | OB 1.81400-1.87700
 
 ## Pre-pump candidates
-- RENDER: [D+E] 7d -10.9%
-- NEAR: [A+E] 7d -9.0%
-- VVV: [A+E] 7d 4.2%
+- RENDER: [D+E] 7d -10.3%
+- NEAR: [A+E] 7d -8.2%
+- VVV: [A+E] 7d 4.8%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - XRP Declines 3.4% Amid Whale Deposits, Weak ETF Flows - CoinMarketCap
@@ -48,12 +48,12 @@
 - (9 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 26 | mean -4.3% (-0.22R) | in profit 10 | older than 7d 23
-- worst: HBAR -0.91R, ZK -0.89R, KAIA -0.85R | best: AERO 0.68R, BEAM 0.71R, NEAR 0.83R
+- open 26 | mean -4.0% (-0.21R) | in profit 10 | older than 7d 23
+- worst: HBAR -0.90R, ZK -0.87R, KAIA -0.86R | best: AERO 0.69R, BEAM 0.70R, NEAR 0.85R
 
 ## System
-- CoinGecko 7091/10000 used, month-end projection 10011 (100%), throttle level 2 | by script {'scan': 2312, 'check_liquidity': 349, 'breakout_check': 4365, 'counterfactual_check': 65}
+- CoinGecko 7146/10000 used, month-end projection 10069 (101%), throttle level 2 | by script {'scan': 2314, 'check_liquidity': 350, 'breakout_check': 4414, 'counterfactual_check': 68}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=50), H2 SUPPORTED (n=183)
-- radar-flags.json scan age: 9m
+- radar-flags.json scan age: 20m
 - excluded from radar (pegged/tokenized equity): 42
