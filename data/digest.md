@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-23 00:39 UTC
+# Radar digest - 2026-10-23 01:09 UTC
 
 ## Market
-- BTC scenario **B** | price 81411 | wk close 81175 vs 82800 | 50W 76608 (6.27%) | 2h old
+- BTC scenario **B** | price 81352 | wk close 81175 vs 82800 | 50W 76608 (6.19%) | 1m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.43% | ETH/BTC 0.02932 | breadth7d 35% | stables 30d -0.55%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.05pt | 7d 0.25pt | n=121
 - Gold: PAXG 1m -2.61% | real10y 2.76 (13bp 1m) | USD 1m 1.72% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 29
@@ -9,25 +9,24 @@
 - 10y 1m: 17bp = real 13 + breakeven -3 -> **REAL_YIELD_DRIVEN**
 
 ## Coins in correction (entry_ready first)
-- SEI: **RESET_DONE** ENTRY_READY | +110% impulse, retr 0.65 | OI dd 32% | fund -0.0057 | hold True | inval 0.05685 | OB 0.04119-0.04239
-- SUI: **RESET_DONE** ENTRY_READY | +92% impulse, retr 0.51 | OI dd 27% | fund -0.0043 | hold True | inval 0.93740 | OB 0.93370-0.97450
-- TAO: **RESET_DONE** ENTRY_READY | +60% impulse, retr 0.66 | OI dd 32% | fund -0.0277 | hold True | inval 254.30000 | OB 213.50000-219.30000
-- ZEC: **BROKEN** | +64% impulse, retr 0.73 | OI dd 36% | fund 0.0061 | hold False | inval 1110.00000 | OB 1110.00000-1153.08000
-- ADA: **BROKEN** | +48% impulse, retr 0.76 | OI dd 33% | fund -0.0148 | hold True | inval 0.21110 | OB 0.19010-0.19720
-- LINK: **BROKEN** | +48% impulse, retr 0.75 | OI dd 28% | fund -0.0031 | hold True | inval 11.83900 | OB 10.61800-10.96200
-- COMP: **ONGOING** | +57% impulse, retr 0.45 | OI dd 19% | fund 0.0100 | hold False | inval 20.63000 | OB 20.63000-21.09000
-- CVX: **ONGOING** | +54% impulse, retr 0.27 | OI dd 20% | fund 0.0003 | hold False | inval 1.87300 | OB 1.81400-1.87700
+- SEI: **RESET_DONE** ENTRY_READY | +110% impulse, retr 0.65 | OI dd 32% | fund -0.0059 | hold True | inval 0.05685 | OB 0.04119-0.04239
+- SUI: **RESET_DONE** ENTRY_READY | +92% impulse, retr 0.51 | OI dd 27% | fund 0.0012 | hold True | inval 0.93740 | OB 0.93370-0.97450
+- TAO: **RESET_DONE** ENTRY_READY | +60% impulse, retr 0.65 | OI dd 32% | fund -0.0227 | hold True | inval 254.30000 | OB 213.50000-219.30000
+- ZEC: **BROKEN** | +64% impulse, retr 0.73 | OI dd 36% | fund 0.0034 | hold False | inval 1110.00000 | OB 1110.00000-1153.08000
+- ADA: **BROKEN** | +48% impulse, retr 0.76 | OI dd 33% | fund -0.0154 | hold True | inval 0.21110 | OB 0.19010-0.19720
+- LINK: **BROKEN** | +48% impulse, retr 0.73 | OI dd 28% | fund -0.0024 | hold True | inval 11.83900 | OB 10.61800-10.96200
+- DASH: **BROKEN** | +48% impulse, retr 0.83 | OI dd 60% | fund -0.0202 | hold False | inval 46.30000 | OB 46.30000-48.25000
+- COMP: **ONGOING** | +57% impulse, retr 0.44 | OI dd 19% | fund 0.0100 | hold False | inval 20.63000 | OB 20.63000-21.09000
 
 ## Pre-pump candidates
 - RENDER: [D+E] 7d -10.3%
-- NEAR: [A+E] 7d -8.2%
+- NEAR: [A+E] 7d -6.8%
 - VVV: [A+E] 7d 4.8%
 
 ## ETF pipeline (new this run)
-- ripple NEW: other - XRP Declines 3.4% Amid Whale Deposits, Weak ETF Flows - CoinMarketCap
-- zcash: other - Crypto Prices Today: Bitcoin Holds Near USD 82,800 as ETF Inflows Top USD 1 Billion, Zcash
-- zcash: other - Zcash Price Forecast: ETF inflow reaches 30-day high as ZEC regains $1,300 - www.tmgm.com
-- zcash: other - Grayscale: Zcash ETF Sees $14.2M Daily Inflow - Blockchain News
+- injective-protocol NEW: other - Injective ETF Staking: How INJC Rewards And Risks Work - TronWeekly
+- zcash: other - Zcash Nears $1,300 as Grayscale ETF Pulls in $15.18 Million and Futures Open Interest Hits
+- cardano: other - Next Crypto to Explode After Thailand’s Bitcoin ETF Rule Change: Remittix, Solana or Carda
 
 ## Derivatives flags (OKX)
 - BTC: LONG_FLUSH_24H | OI/mc 0.21% | topPos 0.91 | taker 0.94
@@ -48,12 +47,12 @@
 - (9 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 26 | mean -4.0% (-0.21R) | in profit 10 | older than 7d 23
-- worst: HBAR -0.90R, KAIA -0.90R, ZK -0.87R | best: AERO 0.68R, BEAM 0.70R, NEAR 0.83R
+- open 26 | mean -3.8% (-0.20R) | in profit 10 | older than 7d 23
+- worst: HBAR -0.89R, ZK -0.89R, KAIA -0.87R | best: AERO 0.69R, BEAM 0.71R, NEAR 0.90R
 
 ## System
-- CoinGecko 7148/10000 used, month-end projection 10072 (101%), throttle level 2 | by script {'scan': 2316, 'check_liquidity': 350, 'breakout_check': 4414, 'counterfactual_check': 68}
+- CoinGecko 7150/10000 used, month-end projection 10056 (101%), throttle level 2 | by script {'scan': 2318, 'check_liquidity': 350, 'breakout_check': 4414, 'counterfactual_check': 68}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=50), H2 SUPPORTED (n=183)
-- radar-flags.json scan age: 9m
+- radar-flags.json scan age: 8m
 - excluded from radar (pegged/tokenized equity): 43
