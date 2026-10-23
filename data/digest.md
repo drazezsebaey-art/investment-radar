@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-23 01:39 UTC
+# Radar digest - 2026-10-23 02:07 UTC
 
 ## Market
-- BTC scenario **B** | price 81352 | wk close 81175 vs 82800 | 50W 76608 (6.19%) | 32m old
+- BTC scenario **B** | price 81352 | wk close 81175 vs 82800 | 50W 76608 (6.19%) | 59m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.43% | ETH/BTC 0.02932 | breadth7d 35% | stables 30d -0.55%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.05pt | 7d 0.25pt | n=121
 - Gold: PAXG 1m -2.61% | real10y 2.76 (13bp 1m) | USD 1m 1.72% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 29
@@ -19,8 +19,7 @@
 - COMP: **ONGOING** | +57% impulse, retr 0.44 | OI dd 19% | fund 0.0100 | hold False | inval 20.63000 | OB 20.63000-21.09000
 
 ## Pre-pump candidates
-- NEAR: [A+E] 7d -6.8%
-- VVV: [A+E] 7d 4.9%
+- none
 
 ## ETF pipeline (new this run)
 - injective-protocol NEW: other - Injective ETF Staking: How INJC Rewards And Risks Work - TronWeekly
@@ -46,12 +45,12 @@
 - (9 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 26 | mean -3.7% (-0.19R) | in profit 10 | older than 7d 23
-- worst: HBAR -0.89R, ZK -0.87R, KAIA -0.84R | best: AERO 0.70R, BEAM 0.70R, NEAR 0.96R
+- open 26 | mean -3.5% (-0.18R) | in profit 10 | older than 7d 23
+- worst: ZK -0.89R, HBAR -0.88R, KAIA -0.83R | best: AERO 0.68R, BEAM 0.69R, NEAR 0.96R
 
 ## System
-- CoinGecko 7152/10000 used, month-end projection 10059 (101%), throttle level 2 | by script {'scan': 2320, 'check_liquidity': 350, 'breakout_check': 4414, 'counterfactual_check': 68}
+- CoinGecko 7154/10000 used, month-end projection 10043 (100%), throttle level 2 | by script {'scan': 2322, 'check_liquidity': 350, 'breakout_check': 4414, 'counterfactual_check': 68}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=50), H2 SUPPORTED (n=183)
-- radar-flags.json scan age: 9m
-- excluded from radar (pegged/tokenized equity): 43
+- radar-flags.json scan age: 6m
+- excluded from radar (pegged/tokenized equity): 44
