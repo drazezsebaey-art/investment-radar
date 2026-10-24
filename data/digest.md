@@ -1,10 +1,10 @@
-# Radar digest - 2026-10-24 03:38 UTC
+# Radar digest - 2026-10-24 04:07 UTC
 
 ## Market
-- BTC scenario **B** | price 80986 | wk close 81175 vs 82800 | 50W 76608 (5.71%) | 31m old
+- BTC scenario **B** | price 80986 | wk close 81175 vs 82800 | 50W 76608 (5.71%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 57.38% | ETH/BTC 0.02945 | breadth7d 37% | stables 30d -0.54%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.02pt | 7d 0.17pt | n=121
-- Gold: PAXG 1m -3.34% | real10y 2.64 (-12bp 1m) | USD 1m 1.72% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 29
+- Gold: PAXG 1m -3.38% | real10y 2.64 (-12bp 1m) | USD 1m 1.72% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 29
 - 10y 1w: -14bp = real -14 + breakeven -1 -> **REAL_YIELD_DRIVEN**
 - 10y 1m: -15bp = real -12 + breakeven 1 -> **REAL_YIELD_DRIVEN**
 
@@ -19,7 +19,10 @@
 - NEAR: **RESET_DONE** | +166% impulse, retr 0.36 | OI dd 22% | fund -0.0088 | hold True | inval 4.63200 | OB 4.02900-4.48300
 
 ## Pre-pump candidates
-- LTC: [A+E] 7d -3.7%
+- HYPE: [A+E] 7d -3.2%
+- SOL: [A+E] 7d -1.8%
+- XRP: [A+E] 7d -1.1%
+- CARDS: [C+D] 7d 25.0%
 
 ## ETF pipeline (new this run)
 - ondo-finance: other - PIMCO High Yield Corporate Bond Index Tokenized ETF (Ondo) Markets - CoinMarketCap
@@ -43,12 +46,12 @@
 - (7 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 22 | mean -3.3% (-0.17R) | in profit 10 | older than 7d 20
-- worst: ADA -0.80R, NEO -0.80R, AXS -0.80R | best: NEAR 0.41R, TIA 0.48R, BEAM 1.42R
+- open 22 | mean -3.6% (-0.19R) | in profit 10 | older than 7d 20
+- worst: AXS -0.81R, ADA -0.80R, NEO -0.80R | best: NEAR 0.35R, TIA 0.49R, BEAM 1.38R
 
 ## System
-- CoinGecko 7490/10000 used, month-end projection 10041 (100%), throttle level 2 | by script {'scan': 2432, 'check_liquidity': 357, 'breakout_check': 4629, 'counterfactual_check': 72}
+- CoinGecko 7492/10000 used, month-end projection 10025 (100%), throttle level 2 | by script {'scan': 2434, 'check_liquidity': 357, 'breakout_check': 4629, 'counterfactual_check': 72}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=51), H2 SUPPORTED (n=188)
-- radar-flags.json scan age: 7m
+- radar-flags.json scan age: 6m
 - excluded from radar (pegged/tokenized equity): 42
