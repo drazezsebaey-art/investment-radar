@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-24 07:38 UTC
+# Radar digest - 2026-10-24 08:06 UTC
 
 ## Market
-- BTC scenario **B** | price 80868 | wk close 81175 vs 82800 | 50W 76608 (5.56%) | 32m old
+- BTC scenario **B** | price 80868 | wk close 81175 vs 82800 | 50W 76608 (5.56%) | 60m old
 - Alts: **BTC_LED** [-] | BTC.D 57.38% | ETH/BTC 0.02944 | breadth7d 43% | stables 30d -0.54%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.02pt | 7d 0.23pt | n=121
 - Gold: PAXG 1m -3.38% | real10y 2.64 (-12bp 1m) | USD 1m 1.72% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 29
@@ -19,10 +19,10 @@
 - NEAR: **RESET_DONE** | +166% impulse, retr 0.37 | OI dd 22% | fund -0.0042 | hold True | inval 4.63200 | OB 4.02900-4.48300
 
 ## Pre-pump candidates
-- LTC: [A+E] 7d -4.7%
-- HYPE: [A+E] 7d -3.7%
-- XRP: [A+E] 7d -1.5%
-- CARDS: [C+D] 7d 18.3%
+- LTC: [A+E] 7d -5.3%
+- HYPE: [A+E] 7d -4.6%
+- XRP: [A+E] 7d -1.9%
+- CARDS: [C+D] 7d 17.6%
 
 ## ETF pipeline (new this run)
 - bittensor: other - Form 144 Grayscale Bittensor Trust (TAO) For: 24 October By Investing.com - Investing.com 
@@ -47,12 +47,12 @@
 - (7 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 21 | mean -3.9% (-0.20R) | in profit 9 | older than 7d 20
-- worst: ADA -0.85R, AXS -0.84R, NEO -0.82R | best: NEAR 0.35R, TIA 0.44R, BEAM 1.60R
+- open 21 | mean -4.3% (-0.23R) | in profit 8 | older than 7d 20
+- worst: ADA -0.87R, AXS -0.86R, NEO -0.84R | best: NEAR 0.20R, TIA 0.41R, BEAM 1.50R
 
 ## System
-- CoinGecko 7509/10000 used, month-end projection 9994 (100%), throttle level 1 | by script {'scan': 2448, 'check_liquidity': 360, 'breakout_check': 4629, 'counterfactual_check': 72}
+- CoinGecko 7515/10000 used, month-end projection 9984 (100%), throttle level 1 | by script {'scan': 2450, 'check_liquidity': 361, 'breakout_check': 4629, 'counterfactual_check': 75}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=51), H2 SUPPORTED (n=189)
-- radar-flags.json scan age: 8m
+- radar-flags.json scan age: 6m
 - excluded from radar (pegged/tokenized equity): 43
