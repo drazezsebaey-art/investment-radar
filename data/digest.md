@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-24 19:37 UTC
+# Radar digest - 2026-10-24 20:05 UTC
 
 ## Market
-- BTC scenario **B** | price 80530 | wk close 81175 vs 82800 | 50W 76608 (5.12%) | 31m old
+- BTC scenario **B** | price 80530 | wk close 81175 vs 82800 | 50W 76608 (5.12%) | 60m old
 - Alts: **BTC_LED** [-] | BTC.D 57.49% | ETH/BTC 0.02903 | breadth7d 49% | stables 30d -0.53%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.09pt | 7d 0.18pt | n=121
 - Gold: PAXG 1m -3.70% | real10y 2.64 (-12bp 1m) | USD 1m 1.72% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
@@ -47,11 +47,11 @@
 
 ## Paper book (open trades, marked to last scan)
 - open 18 | mean -3.9% (-0.23R) | in profit 5 | older than 7d 17
-- worst: ETHFI -0.83R, MANA -0.80R, WLD -0.78R | best: COMP 0.06R, TIA 0.28R, BEAM 1.10R
+- worst: ETHFI -0.82R, WLD -0.80R, MANA -0.80R | best: COMP 0.07R, TIA 0.28R, BEAM 1.06R
 
 ## System
-- CoinGecko 7692/10000 used, month-end projection 10023 (100%), throttle level 2 | by script {'scan': 2504, 'check_liquidity': 373, 'breakout_check': 4734, 'counterfactual_check': 81}
+- CoinGecko 7695/10000 used, month-end projection 10009 (100%), throttle level 2 | by script {'scan': 2506, 'check_liquidity': 374, 'breakout_check': 4734, 'counterfactual_check': 81}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=51), H2 SUPPORTED (n=191)
-- radar-flags.json scan age: 7m
+- radar-flags.json scan age: 5m
 - excluded from radar (pegged/tokenized equity): 42
