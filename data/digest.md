@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-24 21:07 UTC
+# Radar digest - 2026-10-24 21:37 UTC
 
 ## Market
-- BTC scenario **B** | price 80460 | wk close 81175 vs 82800 | 50W 76608 (5.03%) | 1m old
+- BTC scenario **B** | price 80460 | wk close 81175 vs 82800 | 50W 76608 (5.03%) | 32m old
 - Alts: **BTC_LED** [-] | BTC.D 57.49% | ETH/BTC 0.02903 | breadth7d 49% | stables 30d -0.53%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.09pt | 7d 0.18pt | n=121
 - Gold: PAXG 1m -3.70% | real10y 2.64 (-12bp 1m) | USD 1m 1.72% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
@@ -25,14 +25,14 @@
 - ripple NEW: other - Crypto ETF Flows This Week: Bitcoin Funds Net $301 Million Despite $636 Million Thursday E
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.92 | taker 0.86
-- ETH: SHORT_SQUEEZE_24H | OI/mc 0.63% | topPos 0.85 | taker 0.86
-- AVAX: LONG_FLUSH_24H | OI/mc 0.38% | topPos 0.89 | taker 0.87
-- XRP: LONG_FLUSH_24H | OI/mc 0.13% | topPos 0.86 | taker 0.86
-- SUI: LONG_FLUSH_24H | OI/mc 0.94% | topPos 0.79 | taker 0.99
-- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 0.86
+- BTC: AGGRESSIVE_SELLING, SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.92 | taker 0.85
+- ETH: SHORT_SQUEEZE_24H | OI/mc 0.63% | topPos 0.86 | taker 0.87
+- AVAX: LONG_FLUSH_24H | OI/mc 0.38% | topPos 0.89 | taker 0.88
+- XRP: LONG_FLUSH_24H | OI/mc 0.13% | topPos 0.87 | taker 0.86
+- SUI: LONG_FLUSH_24H | OI/mc 0.93% | topPos 0.79 | taker 0.99
+- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 0.87
 - TAO: LONG_FLUSH_24H | OI/mc 0.78% | topPos 0.86 | taker 0.86
-- ZEC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 1.01 | taker 0.99
+- ZEC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 1.01 | taker 1.01
 
 ## Revenue / buyback flags
 - pump-fun: REVENUE_ACCELERATING, HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -44,12 +44,12 @@
 - (4 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 18 | mean -3.4% (-0.20R) | in profit 8 | older than 7d 17
-- worst: ETHFI -0.78R, WLD -0.77R, MANA -0.74R | best: COMP 0.08R, TIA 0.29R, BEAM 1.01R
+- open 18 | mean -3.8% (-0.23R) | in profit 4 | older than 7d 17
+- worst: ETHFI -0.82R, WLD -0.80R, MANA -0.77R | best: COMP 0.05R, TIA 0.28R, BEAM 0.97R
 
 ## System
-- CoinGecko 7700/10000 used, month-end projection 9998 (100%), throttle level 1 | by script {'scan': 2510, 'check_liquidity': 375, 'breakout_check': 4734, 'counterfactual_check': 81}
+- CoinGecko 7702/10000 used, month-end projection 10001 (100%), throttle level 2 | by script {'scan': 2512, 'check_liquidity': 375, 'breakout_check': 4734, 'counterfactual_check': 81}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=51), H2 SUPPORTED (n=191)
-- radar-flags.json scan age: 6m
+- radar-flags.json scan age: 7m
 - excluded from radar (pegged/tokenized equity): 42
