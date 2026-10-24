@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-24 18:18 UTC
+# Radar digest - 2026-10-24 18:37 UTC
 
 ## Market
-- BTC scenario **B** | price 80237 | wk close 81175 vs 82800 | 50W 76608 (4.74%) | 1h old
+- BTC scenario **B** | price 80237 | wk close 81175 vs 82800 | 50W 76608 (4.74%) | 2h old
 - Alts: **BTC_LED** [-] | BTC.D 57.48% | ETH/BTC 0.02909 | breadth7d 38% | stables 30d -0.54%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.04pt | 7d 0.24pt | n=121
 - Gold: PAXG 1m -3.70% | real10y 2.64 (-12bp 1m) | USD 1m 1.72% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
@@ -28,14 +28,14 @@
 - zcash: other - Zcash Gains 3.1% Amid ETF Inflows and NU7 Upgrade - CoinMarketCap
 
 ## Derivatives flags (OKX)
-- BTC: AGGRESSIVE_SELLING, SHORT_SQUEEZE_24H | OI/mc 0.21% | topPos 0.92 | taker 0.84
-- ETH: SHORT_SQUEEZE_24H | OI/mc 0.64% | topPos 0.85 | taker 0.86
-- NEAR: LONG_FLUSH_24H | OI/mc 0.97% | topPos 0.97 | taker 0.93
-- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.90 | taker 0.85
+- BTC: AGGRESSIVE_SELLING, SHORT_SQUEEZE_24H | OI/mc 0.21% | topPos 0.92 | taker 0.83
+- ETH: SHORT_SQUEEZE_24H | OI/mc 0.64% | topPos 0.85 | taker 0.85
+- NEAR: LONG_FLUSH_24H | OI/mc 0.96% | topPos 0.97 | taker 0.94
+- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.90 | taker 0.86
 - XRP: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.13% | topPos 0.86 | taker 0.85
 - SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.79 | taker 0.98
-- SEI: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 0.85
-- TAO: LONG_FLUSH_24H | OI/mc 0.78% | topPos 0.86 | taker 0.86
+- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 0.86
+- TAO: LONG_FLUSH_24H | OI/mc 0.77% | topPos 0.86 | taker 0.86
 
 ## Revenue / buyback flags
 - pump-fun: REVENUE_ACCELERATING, HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -47,12 +47,12 @@
 - (4 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 18 | mean -4.6% (-0.28R) | in profit 4 | older than 7d 17
-- worst: WLD -0.86R, ETHFI -0.86R, XTZ -0.82R | best: AERO 0.04R, TIA 0.19R, BEAM 1.16R
+- open 18 | mean -4.1% (-0.24R) | in profit 5 | older than 7d 17
+- worst: ETHFI -0.84R, WLD -0.82R, MANA -0.80R | best: AERO 0.06R, TIA 0.26R, BEAM 1.15R
 
 ## System
-- CoinGecko 7686/10000 used, month-end projection 10032 (100%), throttle level 2 | by script {'scan': 2498, 'check_liquidity': 373, 'breakout_check': 4734, 'counterfactual_check': 81}
+- CoinGecko 7688/10000 used, month-end projection 10035 (100%), throttle level 2 | by script {'scan': 2500, 'check_liquidity': 373, 'breakout_check': 4734, 'counterfactual_check': 81}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=51), H2 SUPPORTED (n=191)
-- radar-flags.json scan age: 18m
-- excluded from radar (pegged/tokenized equity): 43
+- radar-flags.json scan age: 6m
+- excluded from radar (pegged/tokenized equity): 42
