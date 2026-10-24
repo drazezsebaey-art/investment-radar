@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-24 13:07 UTC
+# Radar digest - 2026-10-24 13:38 UTC
 
 ## Market
-- BTC scenario **B** | price 80821 | wk close 81175 vs 82800 | 50W 76608 (5.50%) | 1m old
+- BTC scenario **B** | price 80821 | wk close 81175 vs 82800 | 50W 76608 (5.50%) | 32m old
 - Alts: **BTC_LED** [-] | BTC.D 57.44% | ETH/BTC 0.02939 | breadth7d 37% | stables 30d -0.55%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.04pt | 7d 0.28pt | n=121
 - Gold: PAXG 1m -3.45% | real10y 2.64 (-12bp 1m) | USD 1m 1.72% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
@@ -20,13 +20,11 @@
 
 ## Pre-pump candidates
 - NEAR: [A+E] 7d -12.7%
-- PUMP: [D+E] 7d -8.4%
-- LTC: [A+E] 7d -5.5%
-- HYPE: [A+E] 7d -5.2%
-- DOGE: [A+E] 7d -3.6%
+- PUMP: [D+E] 7d -7.6%
+- LTC: [A+E] 7d -5.2%
+- HYPE: [A+E] 7d -3.9%
+- DOGE: [A+E] 7d -3.4%
 - XRP: [A+E] 7d -1.7%
-- STABLE: [C+E] 7d 5.0%
-- PEPE: [A+E] 7d 9.9%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - Investors Tap the Brakes on Bitwise XRP ETF Even as XRP Price Rally Rolls On - TipRanks
@@ -35,13 +33,13 @@
 
 ## Derivatives flags (OKX)
 - BTC: LONG_FLUSH_24H | OI/mc 0.21% | topPos 0.92 | taker 0.88
-- ETH: LONG_FLUSH_24H | OI/mc 0.62% | topPos 0.86 | taker 0.92
+- ETH: LONG_FLUSH_24H | OI/mc 0.63% | topPos 0.86 | taker 0.92
 - SOL: LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 0.89
-- AVAX: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.90 | taker 0.84
-- XRP: LONG_FLUSH_24H | OI/mc 0.13% | topPos 0.86 | taker 0.92
-- SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.80 | taker 1.00
-- SEI: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.84 | taker 0.80
-- TAO: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 0.78
+- AVAX: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.90 | taker 0.82
+- XRP: LONG_FLUSH_24H | OI/mc 0.13% | topPos 0.86 | taker 0.94
+- SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.80 | taker 0.99
+- SEI: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.84 | taker 0.78
+- TAO: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.75% | topPos 0.86 | taker 0.79
 
 ## Revenue / buyback flags
 - pump-fun: REVENUE_ACCELERATING, HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -53,12 +51,12 @@
 - (4 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 21 | mean -4.9% (-0.27R) | in profit 6 | older than 7d 20
-- worst: AXS -0.89R, ADA -0.87R, NEO -0.84R | best: SUI 0.10R, TIA 0.48R, BEAM 1.19R
+- open 21 | mean -5.2% (-0.29R) | in profit 6 | older than 7d 20
+- worst: AXS -0.91R, ADA -0.89R, NEO -0.86R | best: SUI 0.08R, TIA 0.46R, BEAM 1.22R
 
 ## System
-- CoinGecko 7594/10000 used, month-end projection 10000 (100%), throttle level 1 | by script {'scan': 2470, 'check_liquidity': 366, 'breakout_check': 4683, 'counterfactual_check': 75}
+- CoinGecko 7596/10000 used, month-end projection 10003 (100%), throttle level 2 | by script {'scan': 2472, 'check_liquidity': 366, 'breakout_check': 4683, 'counterfactual_check': 75}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=51), H2 SUPPORTED (n=191)
-- radar-flags.json scan age: 7m
+- radar-flags.json scan age: 8m
 - excluded from radar (pegged/tokenized equity): 43
