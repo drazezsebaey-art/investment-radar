@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-24 14:07 UTC
+# Radar digest - 2026-10-24 14:39 UTC
 
 ## Market
-- BTC scenario **B** | price 80821 | wk close 81175 vs 82800 | 50W 76608 (5.50%) | 1h old
+- BTC scenario **B** | price 80821 | wk close 81175 vs 82800 | 50W 76608 (5.50%) | 2h old
 - Alts: **BTC_LED** [-] | BTC.D 57.44% | ETH/BTC 0.02939 | breadth7d 37% | stables 30d -0.55%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.04pt | 7d 0.28pt | n=121
 - Gold: PAXG 1m -3.45% | real10y 2.64 (-12bp 1m) | USD 1m 1.72% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
@@ -20,10 +20,9 @@
 
 ## Pre-pump candidates
 - NEAR: [A+E] 7d -12.2%
-- PUMP: [D+E] 7d -7.6%
-- LTC: [A+E] 7d -5.2%
-- HYPE: [A+E] 7d -3.9%
-- DOGE: [A+E] 7d -3.4%
+- LTC: [A+E] 7d -5.0%
+- HYPE: [A+E] 7d -3.5%
+- DOGE: [A+E] 7d -2.6%
 - XRP: [A+E] 7d -0.9%
 
 ## ETF pipeline (new this run)
@@ -32,14 +31,14 @@
 - ripple NEW: other - Crypto ETF News Today: BTC, ETH Bleed, XRP Gains as SOL Outflows Rise - Coin Gabbar
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc 0.21% | topPos 0.92 | taker 0.88
-- ETH: LONG_FLUSH_24H | OI/mc 0.63% | topPos 0.86 | taker 0.92
-- SOL: LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 0.89
+- BTC: LONG_FLUSH_24H | OI/mc 0.21% | topPos 0.92 | taker 0.86
+- SOL: LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 0.87
+- NEAR: LONG_FLUSH_24H | OI/mc 1.02% | topPos 0.99 | taker 0.90
 - AVAX: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.90 | taker 0.82
-- XRP: LONG_FLUSH_24H | OI/mc 0.13% | topPos 0.86 | taker 0.94
+- XRP: LONG_FLUSH_24H | OI/mc 0.14% | topPos 0.87 | taker 0.94
 - SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.80 | taker 0.99
-- SEI: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.84 | taker 0.78
-- TAO: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.75% | topPos 0.86 | taker 0.79
+- SEI: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.79
+- TAO: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.77% | topPos 0.85 | taker 0.78
 
 ## Revenue / buyback flags
 - pump-fun: REVENUE_ACCELERATING, HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -51,12 +50,12 @@
 - (4 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 21 | mean -5.4% (-0.30R) | in profit 6 | older than 7d 20
-- worst: AXS -0.91R, ADA -0.89R, NEO -0.86R | best: COMP 0.08R, TIA 0.42R, BEAM 1.21R
+- open 20 | mean -6.5% (-0.38R) | in profit 3 | older than 7d 19
+- worst: ADA -0.97R, NEO -0.94R, ETHFI -0.84R | best: COMP 0.01R, TIA 0.26R, BEAM 1.15R
 
 ## System
-- CoinGecko 7599/10000 used, month-end projection 9989 (100%), throttle level 1 | by script {'scan': 2474, 'check_liquidity': 367, 'breakout_check': 4683, 'counterfactual_check': 75}
+- CoinGecko 7602/10000 used, month-end projection 9993 (100%), throttle level 1 | by script {'scan': 2476, 'check_liquidity': 368, 'breakout_check': 4683, 'counterfactual_check': 75}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=51), H2 SUPPORTED (n=191)
-- radar-flags.json scan age: 6m
-- excluded from radar (pegged/tokenized equity): 43
+- radar-flags.json scan age: 8m
+- excluded from radar (pegged/tokenized equity): 44
