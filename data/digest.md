@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-24 23:06 UTC
+# Radar digest - 2026-10-24 23:37 UTC
 
 ## Market
-- BTC scenario **B** | price 80623 | wk close 81175 vs 82800 | 50W 76608 (5.24%) | 1m old
+- BTC scenario **B** | price 80623 | wk close 81175 vs 82800 | 50W 76608 (5.24%) | 33m old
 - Alts: **BTC_LED** [-] | BTC.D 57.47% | ETH/BTC 0.02908 | breadth7d -% | stables 30d -0.54%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.01pt | 7d 0.11pt | n=121
 - Gold: PAXG 1m -3.41% | real10y 2.64 (-12bp 1m) | USD 1m 1.72% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
@@ -26,14 +26,14 @@
 - ondo-finance: other - Sprott Nickel Miners Tokenized ETF (Ondo) USD (NIKLON-USD) Cryptocurrency Profile & Facts 
 
 ## Derivatives flags (OKX)
-- BTC: AGGRESSIVE_SELLING, SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.92 | taker 0.84
-- ETH: SHORT_SQUEEZE_24H | OI/mc 0.63% | topPos 0.86 | taker 0.86
-- AVAX: LONG_FLUSH_24H | OI/mc 0.38% | topPos 0.90 | taker 0.86
-- SUI: LONG_FLUSH_24H | OI/mc 0.94% | topPos 0.79 | taker 0.98
-- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 0.87
-- TAO: LONG_FLUSH_24H | OI/mc 0.78% | topPos 0.85 | taker 0.86
-- ZEC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 1.01 | taker 1.00
-- WLD: LONG_FLUSH_24H | OI/mc 2.08% | topPos 0.83 | taker 0.89
+- BTC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.92 | taker 0.89
+- ETH: SHORT_SQUEEZE_24H | OI/mc 0.63% | topPos 0.86 | taker 0.90
+- AVAX: LONG_FLUSH_24H | OI/mc 0.37% | topPos 0.90 | taker 0.94
+- SUI: LONG_FLUSH_24H | OI/mc 0.95% | topPos 0.79 | taker 0.99
+- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 0.99
+- TAO: LONG_FLUSH_24H | OI/mc 0.77% | topPos 0.85 | taker 0.90
+- ZEC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 1.02 | taker 1.03
+- WLD: LONG_FLUSH_24H | OI/mc 2.07% | topPos 0.83 | taker 0.93
 
 ## Revenue / buyback flags
 - pump-fun: REVENUE_ACCELERATING, HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -45,12 +45,12 @@
 - (4 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 18 | mean -3.5% (-0.21R) | in profit 6 | older than 7d 17
-- worst: ETHFI -0.80R, WLD -0.80R, MANA -0.77R | best: COMP 0.08R, TIA 0.27R, BEAM 1.09R
+- open 18 | mean -3.3% (-0.19R) | in profit 5 | older than 7d 17
+- worst: ETHFI -0.78R, WLD -0.78R, MANA -0.75R | best: COMP 0.10R, TIA 0.28R, BEAM 1.15R
 
 ## System
-- CoinGecko 7708/10000 used, month-end projection 9973 (100%), throttle level 1 | by script {'scan': 2518, 'check_liquidity': 375, 'breakout_check': 4734, 'counterfactual_check': 81}
+- CoinGecko 7710/10000 used, month-end projection 9976 (100%), throttle level 1 | by script {'scan': 2520, 'check_liquidity': 375, 'breakout_check': 4734, 'counterfactual_check': 81}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=51), H2 SUPPORTED (n=191)
-- radar-flags.json scan age: 6m
+- radar-flags.json scan age: 7m
 - excluded from radar (pegged/tokenized equity): 41
