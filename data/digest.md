@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-24 16:06 UTC
+# Radar digest - 2026-10-24 16:38 UTC
 
 ## Market
-- BTC scenario **B** | price 79871 | wk close 81175 vs 82800 | 50W 76608 (4.26%) | 1h old
+- BTC scenario **B** | price 79871 | wk close 81175 vs 82800 | 50W 76608 (4.26%) | 2h old
 - Alts: **BTC_LED** [-] | BTC.D 57.48% | ETH/BTC 0.02909 | breadth7d 38% | stables 30d -0.54%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.04pt | 7d 0.24pt | n=121
 - Gold: PAXG 1m -3.70% | real10y 2.64 (-12bp 1m) | USD 1m 1.72% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
@@ -26,14 +26,14 @@
 - ondo-finance: other - Direxion Daily Semi Bear 3X ETF Tokenized ETF (Ondo) USD (SOXSON-USD) cryptocurrency profi
 
 ## Derivatives flags (OKX)
-- BTC: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.21% | topPos 0.92 | taker 0.83
-- ETH: LONG_FLUSH_24H | OI/mc 0.64% | topPos 0.85 | taker 0.87
-- SOL: LONG_FLUSH_24H | OI/mc 0.62% | topPos 0.87 | taker 0.86
-- NEAR: LONG_FLUSH_24H | OI/mc -% | topPos 0.99 | taker 0.90
-- AVAX: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.39% | topPos 0.89 | taker 0.83
-- XRP: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.13% | topPos 0.87 | taker 0.85
-- SUI: LONG_FLUSH_24H | OI/mc 0.97% | topPos 0.80 | taker 0.99
-- SEI: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 0.80
+- BTC: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.21% | topPos 0.92 | taker 0.82
+- ETH: AGGRESSIVE_SELLING | OI/mc 0.64% | topPos 0.85 | taker 0.84
+- SOL: LONG_FLUSH_24H | OI/mc 0.61% | topPos 0.86 | taker 0.86
+- NEAR: LONG_FLUSH_24H | OI/mc -% | topPos 0.98 | taker 0.92
+- AVAX: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.38% | topPos 0.90 | taker 0.82
+- XRP: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.13% | topPos 0.86 | taker 0.82
+- SUI: LONG_FLUSH_24H | OI/mc 0.95% | topPos 0.81 | taker 0.98
+- SEI: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 0.82
 
 ## Revenue / buyback flags
 - pump-fun: REVENUE_ACCELERATING, HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -45,12 +45,12 @@
 - (4 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 18 | mean -5.1% (-0.31R) | in profit 4 | older than 7d 17
-- worst: ETHFI -0.87R, XTZ -0.86R, WLD -0.83R | best: AERO 0.02R, TIA 0.21R, BEAM 1.14R
+- open 18 | mean -5.5% (-0.34R) | in profit 3 | older than 7d 17
+- worst: ETHFI -0.88R, XTZ -0.87R, WLD -0.85R | best: COMP 0.02R, TIA 0.15R, BEAM 1.11R
 
 ## System
-- CoinGecko 7625/10000 used, month-end projection 9988 (100%), throttle level 1 | by script {'scan': 2490, 'check_liquidity': 371, 'breakout_check': 4683, 'counterfactual_check': 81}
+- CoinGecko 7627/10000 used, month-end projection 9990 (100%), throttle level 1 | by script {'scan': 2492, 'check_liquidity': 371, 'breakout_check': 4683, 'counterfactual_check': 81}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=51), H2 SUPPORTED (n=191)
-- radar-flags.json scan age: 5m
+- radar-flags.json scan age: 7m
 - excluded from radar (pegged/tokenized equity): 44
