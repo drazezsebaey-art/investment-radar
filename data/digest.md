@@ -1,42 +1,33 @@
-# Radar digest - 2026-10-24 06:38 UTC
+# Radar digest - 2026-10-24 07:07 UTC
 
 ## Market
-- BTC scenario **B** | price 80846 | wk close 81175 vs 82800 | 50W 76608 (5.53%) | 2h old
-- Alts: **BTC_LED** [-] | BTC.D 57.38% | ETH/BTC 0.02945 | breadth7d 37% | stables 30d -0.54%
-- Alt risk (BTC.D): **NORMAL**  | 3d 0.02pt | 7d 0.17pt | n=121
+- BTC scenario **B** | price 80868 | wk close 81175 vs 82800 | 50W 76608 (5.56%) | 1m old
+- Alts: **BTC_LED** [-] | BTC.D 57.38% | ETH/BTC 0.02944 | breadth7d 43% | stables 30d -0.54%
+- Alt risk (BTC.D): **NORMAL**  | 3d -0.02pt | 7d 0.23pt | n=121
 - Gold: PAXG 1m -3.38% | real10y 2.64 (-12bp 1m) | USD 1m 1.72% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 29
 - 10y 1w: -14bp = real -14 + breakeven -1 -> **REAL_YIELD_DRIVEN**
 - 10y 1m: -15bp = real -12 + breakeven 1 -> **REAL_YIELD_DRIVEN**
 
 ## Coins in correction (entry_ready first)
-- TAO: **RESET_DONE** ENTRY_READY | +60% impulse, retr 0.68 | OI dd 33% | fund -0.0125 | hold True | inval 252.60000 | OB 213.50000-219.30000
-- WLD: **RESUMING** ENTRY_READY | +74% impulse, retr 0.54 | OI dd 15% | fund -0.0011 | hold False | inval 0.45630 | OB 0.35600-0.37680
-- IRYS: **BROKEN** | +2628% impulse, retr 0.74 | OI dd 0% | fund 0.0025 | hold False | inval 0.01830 | OB 0.01173-0.01224
-- ZEC: **BROKEN** | +64% impulse, retr 0.80 | OI dd 41% | fund 0.0043 | hold False | inval 1110.00000 | OB 1110.00000-1153.08000
-- ADA: **BROKEN** | +48% impulse, retr 0.77 | OI dd 32% | fund -0.0054 | hold True | inval 0.20950 | OB 0.19010-0.19720
-- LINK: **BROKEN** | +48% impulse, retr 0.76 | OI dd 26% | fund 0.0061 | hold True | inval 11.77600 | OB 10.61800-10.96200
-- CARDS: **ONGOING** | +266% impulse, retr 0.05 | OI dd -% | fund - | hold False | inval 0.31640 | OB 0.23780-0.26170
-- NEAR: **RESET_DONE** | +166% impulse, retr 0.37 | OI dd 22% | fund -0.0126 | hold True | inval 4.63200 | OB 4.02900-4.48300
+- TAO: **RESET_DONE** ENTRY_READY | +60% impulse, retr 0.69 | OI dd 33% | fund -0.0056 | hold True | inval 252.60000 | OB 213.50000-219.30000
+- WLD: **RESUMING** ENTRY_READY | +74% impulse, retr 0.55 | OI dd 15% | fund 0.0057 | hold False | inval 0.45630 | OB 0.35600-0.37680
+- IRYS: **BROKEN** | +2628% impulse, retr 0.77 | OI dd 0% | fund 0.0025 | hold False | inval 0.01830 | OB 0.01173-0.01224
+- ZEC: **BROKEN** | +64% impulse, retr 0.79 | OI dd 41% | fund 0.0043 | hold False | inval 1110.00000 | OB 1110.00000-1153.08000
+- ADA: **BROKEN** | +48% impulse, retr 0.78 | OI dd 32% | fund -0.0116 | hold True | inval 0.20950 | OB 0.19010-0.19720
+- LINK: **BROKEN** | +48% impulse, retr 0.77 | OI dd 26% | fund 0.0100 | hold True | inval 11.77600 | OB 10.61800-10.96200
+- CARDS: **ONGOING** | +266% impulse, retr 0.11 | OI dd -% | fund - | hold False | inval 0.31640 | OB 0.23780-0.26170
+- NEAR: **RESET_DONE** | +166% impulse, retr 0.37 | OI dd 22% | fund -0.0042 | hold True | inval 4.63200 | OB 4.02900-4.48300
 
 ## Pre-pump candidates
-- SEI: [A+E] 7d -13.6%
-- INJ: [A+E] 7d -13.4%
-- RENDER: [D+E] 7d -9.9%
-- AVAX: [A+E] 7d -9.7%
-- NEAR: [A+E] 7d -8.7%
-- LTC: [A+E] 7d -4.7%
 - HYPE: [A+E] 7d -3.3%
-- SOL: [A+E] 7d -2.3%
+- XRP: [A+E] 7d -1.5%
+- TRAC: [C+E] 7d 4.3%
+- VVV: [A+E] 7d 7.9%
+- CARDS: [C+D] 7d 21.8%
 
 ## ETF pipeline (new this run)
-- dogecoin NEW: launch - Bitwise shuts down its Dogecoin ETF less than a year after launch - Startup Fortune
-- solana NEW: delay_or_rejection - Solana Price Prediction: Ten Straight Days of ETF Withdrawals - openPR.com
-- dogecoin NEW: other - Bitwise Dogecoin ETF Reaches Scheduled Liquidation As Holders Face Cash Redemption - Tradi
-- dogecoin NEW: other - Bitwise Dogecoin ETF (BWOW) delisted with cash distributions to shareholders underway. - P
-- hyperliquid NEW: other - Bitwise Hyperliquid ETF (BHYP) options chain - Yahoo Finance Australia
-- ripple NEW: other - WisdomTree's $113 Billion Fund Faces the Last XRP ETF Deadline of October - Startup Fortun
-- ripple NEW: other - XRP ETF Inflows Offset Exchange Supply Fears as Ledger Fix Slips to November - ad-hoc-news
-- solana NEW: other - Solana Stays Hot, but Bitwise’s BSOL ETF Sees Cooldown as Investors Pull Cash - TipRanks
+- bittensor: other - Form 144 Grayscale Bittensor Trust (TAO) For: 24 October By Investing.com - Investing.com 
+- avalanche-2: other - Form 144 Grayscale Avalanche Staking ETF (Ticker: GAVA) For: 24 October - Investing.com Ni
 
 ## Derivatives flags (OKX)
 - BTC: LONG_FLUSH_24H | OI/mc 0.21% | topPos 0.92 | taker 0.86
@@ -57,12 +48,12 @@
 - (7 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 21 | mean -3.7% (-0.19R) | in profit 10 | older than 7d 20
-- worst: ADA -0.82R, NEO -0.82R, AXS -0.82R | best: NEAR 0.33R, TIA 0.44R, BEAM 1.42R
+- open 21 | mean -3.5% (-0.17R) | in profit 10 | older than 7d 20
+- worst: ADA -0.83R, AXS -0.82R, NEO -0.80R | best: NEAR 0.35R, TIA 0.48R, BEAM 1.60R
 
 ## System
-- CoinGecko 7504/10000 used, month-end projection 10005 (100%), throttle level 2 | by script {'scan': 2444, 'check_liquidity': 359, 'breakout_check': 4629, 'counterfactual_check': 72}
+- CoinGecko 7507/10000 used, month-end projection 9991 (100%), throttle level 1 | by script {'scan': 2446, 'check_liquidity': 360, 'breakout_check': 4629, 'counterfactual_check': 72}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=51), H2 SUPPORTED (n=189)
-- radar-flags.json scan age: 8m
+- radar-flags.json scan age: 7m
 - excluded from radar (pegged/tokenized equity): 42
