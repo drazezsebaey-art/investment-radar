@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-24 09:07 UTC
+# Radar digest - 2026-10-24 09:38 UTC
 
 ## Market
-- BTC scenario **B** | price 80639 | wk close 81175 vs 82800 | 50W 76608 (5.26%) | 1m old
+- BTC scenario **B** | price 80639 | wk close 81175 vs 82800 | 50W 76608 (5.26%) | 33m old
 - Alts: **BTC_LED** [-] | BTC.D 57.38% | ETH/BTC 0.02944 | breadth7d 43% | stables 30d -0.54%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.02pt | 7d 0.23pt | n=121
 - Gold: PAXG 1m -3.38% | real10y 2.64 (-12bp 1m) | USD 1m 1.72% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 29
@@ -33,30 +33,31 @@
 - zcash: other - Zcash ETF Price: Is ZCSH Recovering After a Weak October? - Coin Gabbar
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 0.87
-- SOL: LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 0.93
-- NEAR: LONG_FLUSH_24H | OI/mc -% | topPos 0.98 | taker 0.92
-- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.90 | taker 0.86
-- XRP: LONG_FLUSH_24H | OI/mc 0.13% | topPos 0.86 | taker 0.94
-- SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.80 | taker 0.99
-- SEI: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.79
-- TAO: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 0.72
+- BTC: LONG_FLUSH_24H | OI/mc 0.21% | topPos 0.92 | taker 0.87
+- ETH: LONG_FLUSH_24H | OI/mc 0.62% | topPos 0.86 | taker 0.91
+- SOL: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.94
+- NEAR: LONG_FLUSH_24H | OI/mc 0.97% | topPos 0.98 | taker 0.89
+- AVAX: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.90 | taker 0.84
+- XRP: LONG_FLUSH_24H | OI/mc 0.13% | topPos 0.87 | taker 0.91
+- SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.81 | taker 0.99
+- SEI: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.85 | taker 0.81
 
 ## Revenue / buyback flags
-- pump.fun: REVENUE_ACCELERATING
+- pump-fun: REVENUE_ACCELERATING, HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
 - collector-crypt: REVENUE_ACCELERATING, CHEAP_VS_REVENUE
+- aethir: REVENUE_ACCELERATING
+- nullmask: REVENUE_ACCELERATING
 - thorswap: REVENUE_ACCELERATING
 - render-token: REVENUE_ACCELERATING
-- chip-2: REVENUE_ACCELERATING
-- (7 flagged protocol(s) without a tradeable token hidden)
+- (4 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 21 | mean -4.8% (-0.26R) | in profit 6 | older than 7d 20
-- worst: ADA -0.89R, AXS -0.87R, NEO -0.86R | best: AERO 0.17R, TIA 0.40R, BEAM 1.28R
+- open 21 | mean -5.2% (-0.29R) | in profit 6 | older than 7d 20
+- worst: ADA -0.90R, AXS -0.87R, NEO -0.86R | best: AERO 0.13R, TIA 0.39R, BEAM 1.28R
 
 ## System
-- CoinGecko 7520/10000 used, month-end projection 9973 (100%), throttle level 1 | by script {'scan': 2454, 'check_liquidity': 362, 'breakout_check': 4629, 'counterfactual_check': 75}
+- CoinGecko 7522/10000 used, month-end projection 9976 (100%), throttle level 1 | by script {'scan': 2456, 'check_liquidity': 362, 'breakout_check': 4629, 'counterfactual_check': 75}
 - Trials guard: OK (0 untracked)
-- Hypotheses: H1 NOT_SUPPORTED (n=51), H2 SUPPORTED (n=189)
-- radar-flags.json scan age: 7m
+- Hypotheses: H1 NOT_SUPPORTED (n=51), H2 SUPPORTED (n=190)
+- radar-flags.json scan age: 8m
 - excluded from radar (pegged/tokenized equity): 43
