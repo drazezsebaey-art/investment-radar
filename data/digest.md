@@ -1,31 +1,30 @@
-# Radar digest - 2026-10-24 18:37 UTC
+# Radar digest - 2026-10-24 19:07 UTC
 
 ## Market
-- BTC scenario **B** | price 80237 | wk close 81175 vs 82800 | 50W 76608 (4.74%) | 2h old
-- Alts: **BTC_LED** [-] | BTC.D 57.48% | ETH/BTC 0.02909 | breadth7d 38% | stables 30d -0.54%
-- Alt risk (BTC.D): **NORMAL**  | 3d 0.04pt | 7d 0.24pt | n=121
+- BTC scenario **B** | price 80530 | wk close 81175 vs 82800 | 50W 76608 (5.12%) | 1m old
+- Alts: **BTC_LED** [-] | BTC.D 57.49% | ETH/BTC 0.02903 | breadth7d 49% | stables 30d -0.53%
+- Alt risk (BTC.D): **NORMAL**  | 3d -0.09pt | 7d 0.18pt | n=121
 - Gold: PAXG 1m -3.70% | real10y 2.64 (-12bp 1m) | USD 1m 1.72% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
 - 10y 1w: -14bp = real -14 + breakeven -1 -> **REAL_YIELD_DRIVEN**
 - 10y 1m: -15bp = real -12 + breakeven 1 -> **REAL_YIELD_DRIVEN**
 
 ## Coins in correction (entry_ready first)
-- ATH: **RESET_DONE** ENTRY_READY | +107% impulse, retr 0.62 | OI dd 21% | fund 0.0050 | hold True | inval 0.00571 | OB 0.00532-0.00539
-- ONDO: **RESET_DONE** ENTRY_READY | +88% impulse, retr 0.72 | OI dd 46% | fund -0.0017 | hold True | inval 0.40120 | OB 0.32320-0.32980
-- TAO: **RESET_DONE** ENTRY_READY | +60% impulse, retr 0.73 | OI dd 35% | fund -0.0144 | hold True | inval 213.50000 | OB 213.50000-219.30000
-- WLD: **RESUMING** ENTRY_READY | +74% impulse, retr 0.59 | OI dd 26% | fund -0.0094 | hold False | inval 0.45630 | OB 0.35600-0.37680
-- ZEC: **BROKEN** | +64% impulse, retr 0.81 | OI dd 44% | fund 0.0025 | hold False | inval 1110.00000 | OB 1110.00000-1153.08000
-- ADA: **BROKEN** | +48% impulse, retr 0.84 | OI dd 36% | fund -0.0056 | hold True | inval 0.19010 | OB 0.19010-0.19720
-- LINK: **BROKEN** | +48% impulse, retr 0.84 | OI dd 30% | fund -0.0012 | hold True | inval 10.61800 | OB 10.61800-10.96200
-- NEAR: **ONGOING** | +166% impulse, retr 0.43 | OI dd 30% | fund 0.0064 | hold True | inval 4.30100 | OB 3.40300-3.68100
+- SUI: **RESET_DONE** ENTRY_READY | +92% impulse, retr 0.57 | OI dd 34% | fund 0.0022 | hold True | inval 0.80880 | OB 0.80880-0.83220
+- ONDO: **RESET_DONE** ENTRY_READY | +88% impulse, retr 0.71 | OI dd 46% | fund -0.0031 | hold True | inval 0.40120 | OB 0.32320-0.32980
+- TAO: **RESET_DONE** ENTRY_READY | +60% impulse, retr 0.72 | OI dd 35% | fund -0.0237 | hold True | inval 213.50000 | OB 213.50000-219.30000
+- WLD: **RESUMING** ENTRY_READY | +74% impulse, retr 0.58 | OI dd 26% | fund -0.0109 | hold False | inval 0.45630 | OB 0.35600-0.37680
+- ZEC: **BROKEN** | +64% impulse, retr 0.77 | OI dd 44% | fund -0.0032 | hold False | inval 1110.00000 | OB 1110.00000-1153.08000
+- ADA: **BROKEN** | +48% impulse, retr 0.82 | OI dd 36% | fund 0.0001 | hold True | inval 0.19010 | OB 0.19010-0.19720
+- LINK: **BROKEN** | +48% impulse, retr 0.82 | OI dd 30% | fund 0.0006 | hold True | inval 10.61800 | OB 10.61800-10.96200
+- DASH: **BROKEN** | +48% impulse, retr 0.95 | OI dd 64% | fund -0.0088 | hold True | inval 49.19000 | OB 46.30000-48.25000
 
 ## Pre-pump candidates
 - none
 
 ## ETF pipeline (new this run)
-- cap-4 NEW: other - iShares Semiconductor tokenized ETF (xStock) Price (SOXXx/USD) Today | Live Price, Market 
-- cap-4 NEW: other - Ishares Msci South Korea ETF (Derivatives) Price (EWY/USD) Today | Live Price, Market Cap 
-- zcash: other - Grayscale's New Zcash ETF Has Gathered $1 Billion in Assets in Just 30 Days. Here's Why In
-- zcash: other - Zcash Gains 3.1% Amid ETF Inflows and NU7 Upgrade - CoinMarketCap
+- cap-4 NEW: other - South Korea Bull 3X ETF Tokenized bStocks Price (KORUB/USD) Today | Live Price, Market Cap
+- dogecoin NEW: other - Dogecoin Price Prediction: Grayscale Lets Big Buyers Swap DOGE Into Its ETF, While Analyst
+- zcash: other - Per ETFDB, Grayscale's ZCash ETF is the #1 performing non-le - KuCoin
 
 ## Derivatives flags (OKX)
 - BTC: AGGRESSIVE_SELLING, SHORT_SQUEEZE_24H | OI/mc 0.21% | topPos 0.92 | taker 0.83
@@ -47,11 +46,11 @@
 - (4 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 18 | mean -4.1% (-0.24R) | in profit 5 | older than 7d 17
-- worst: ETHFI -0.84R, WLD -0.82R, MANA -0.80R | best: AERO 0.06R, TIA 0.26R, BEAM 1.15R
+- open 18 | mean -3.6% (-0.21R) | in profit 6 | older than 7d 17
+- worst: ETHFI -0.79R, MANA -0.78R, WLD -0.77R | best: COMP 0.07R, TIA 0.31R, BEAM 1.11R
 
 ## System
-- CoinGecko 7688/10000 used, month-end projection 10035 (100%), throttle level 2 | by script {'scan': 2500, 'check_liquidity': 373, 'breakout_check': 4734, 'counterfactual_check': 81}
+- CoinGecko 7690/10000 used, month-end projection 10020 (100%), throttle level 2 | by script {'scan': 2502, 'check_liquidity': 373, 'breakout_check': 4734, 'counterfactual_check': 81}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=51), H2 SUPPORTED (n=191)
 - radar-flags.json scan age: 6m
