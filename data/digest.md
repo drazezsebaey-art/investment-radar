@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-24 05:38 UTC
+# Radar digest - 2026-10-24 06:06 UTC
 
 ## Market
-- BTC scenario **B** | price 80846 | wk close 81175 vs 82800 | 50W 76608 (5.53%) | 32m old
+- BTC scenario **B** | price 80846 | wk close 81175 vs 82800 | 50W 76608 (5.53%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 57.38% | ETH/BTC 0.02945 | breadth7d 37% | stables 30d -0.54%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.02pt | 7d 0.17pt | n=121
 - Gold: PAXG 1m -3.38% | real10y 2.64 (-12bp 1m) | USD 1m 1.72% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 29
@@ -20,9 +20,8 @@
 
 ## Pre-pump candidates
 - HYPE: [A+E] 7d -3.4%
-- SOL: [A+E] 7d -2.1%
-- XRP: [A+E] 7d -1.2%
-- CARDS: [C+D] 7d 25.1%
+- SOL: [A+E] 7d -2.3%
+- XRP: [A+E] 7d -1.5%
 
 ## ETF pipeline (new this run)
 - dogecoin NEW: launch - Bitwise shuts down its Dogecoin ETF less than a year after launch - Startup Fortune
@@ -53,12 +52,12 @@
 - (7 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 21 | mean -3.6% (-0.18R) | in profit 10 | older than 7d 20
-- worst: NEO -0.82R, AXS -0.82R, ADA -0.81R | best: NEAR 0.33R, TIA 0.48R, BEAM 1.48R
+- open 21 | mean -3.5% (-0.17R) | in profit 10 | older than 7d 20
+- worst: NEO -0.82R, AXS -0.82R, ADA -0.81R | best: NEAR 0.33R, TIA 0.47R, BEAM 1.48R
 
 ## System
-- CoinGecko 7498/10000 used, month-end projection 10015 (100%), throttle level 2 | by script {'scan': 2440, 'check_liquidity': 357, 'breakout_check': 4629, 'counterfactual_check': 72}
+- CoinGecko 7502/10000 used, month-end projection 10003 (100%), throttle level 2 | by script {'scan': 2442, 'check_liquidity': 359, 'breakout_check': 4629, 'counterfactual_check': 72}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=51), H2 SUPPORTED (n=189)
-- radar-flags.json scan age: 8m
+- radar-flags.json scan age: 6m
 - excluded from radar (pegged/tokenized equity): 42
