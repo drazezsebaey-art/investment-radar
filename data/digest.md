@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-24 10:06 UTC
+# Radar digest - 2026-10-24 10:39 UTC
 
 ## Market
-- BTC scenario **B** | price 80639 | wk close 81175 vs 82800 | 50W 76608 (5.26%) | 1h old
+- BTC scenario **B** | price 80639 | wk close 81175 vs 82800 | 50W 76608 (5.26%) | 2h old
 - Alts: **BTC_LED** [-] | BTC.D 57.38% | ETH/BTC 0.02944 | breadth7d 43% | stables 30d -0.54%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.02pt | 7d 0.23pt | n=121
 - Gold: PAXG 1m -3.45% | real10y 2.64 (-12bp 1m) | USD 1m 1.72% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
@@ -20,10 +20,9 @@
 
 ## Pre-pump candidates
 - NEAR: [A+E] 7d -13.6%
-- HYPE: [A+E] 7d -5.8%
-- LTC: [A+E] 7d -5.0%
+- HYPE: [A+E] 7d -5.9%
+- LTC: [A+E] 7d -5.2%
 - XRP: [A+E] 7d -2.3%
-- CARDS: [C+D] 7d 16.3%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - Profit-Taking or Warning Shot? Bitwise XRP ETF Sees Cash Head for the Exits - TipRanks
@@ -33,13 +32,13 @@
 - zcash: other - Zcash ETF Price: Is ZCSH Recovering After a Weak October? - Coin Gabbar
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc 0.21% | topPos 0.92 | taker 0.87
-- ETH: LONG_FLUSH_24H | OI/mc 0.62% | topPos 0.86 | taker 0.91
-- SOL: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.94
-- NEAR: LONG_FLUSH_24H | OI/mc 0.97% | topPos 0.98 | taker 0.89
-- AVAX: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.90 | taker 0.84
-- XRP: LONG_FLUSH_24H | OI/mc 0.13% | topPos 0.87 | taker 0.91
-- SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.81 | taker 0.99
+- BTC: LONG_FLUSH_24H | OI/mc 0.21% | topPos 0.92 | taker 0.88
+- ETH: LONG_FLUSH_24H | OI/mc 0.62% | topPos 0.86 | taker 0.93
+- SOL: LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 0.91
+- NEAR: LONG_FLUSH_24H | OI/mc 0.96% | topPos 0.97 | taker 0.86
+- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.89 | taker 0.85
+- XRP: LONG_FLUSH_24H | OI/mc 0.13% | topPos 0.87 | taker 0.94
+- SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.80 | taker 0.99
 - SEI: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.85 | taker 0.81
 
 ## Revenue / buyback flags
@@ -52,12 +51,12 @@
 - (4 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 21 | mean -5.1% (-0.28R) | in profit 5 | older than 7d 20
-- worst: ADA -0.89R, AXS -0.87R, NEO -0.84R | best: AERO 0.14R, TIA 0.37R, BEAM 1.25R
+- open 21 | mean -5.2% (-0.29R) | in profit 6 | older than 7d 20
+- worst: ADA -0.88R, AXS -0.87R, NEO -0.86R | best: AERO 0.12R, TIA 0.35R, BEAM 1.22R
 
 ## System
-- CoinGecko 7524/10000 used, month-end projection 9961 (100%), throttle level 1 | by script {'scan': 2458, 'check_liquidity': 362, 'breakout_check': 4629, 'counterfactual_check': 75}
+- CoinGecko 7527/10000 used, month-end projection 9965 (100%), throttle level 1 | by script {'scan': 2460, 'check_liquidity': 363, 'breakout_check': 4629, 'counterfactual_check': 75}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=51), H2 SUPPORTED (n=191)
-- radar-flags.json scan age: 6m
+- radar-flags.json scan age: 9m
 - excluded from radar (pegged/tokenized equity): 43
