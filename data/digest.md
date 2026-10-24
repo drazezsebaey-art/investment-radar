@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-24 08:38 UTC
+# Radar digest - 2026-10-24 09:07 UTC
 
 ## Market
-- BTC scenario **B** | price 80868 | wk close 81175 vs 82800 | 50W 76608 (5.56%) | 2h old
+- BTC scenario **B** | price 80639 | wk close 81175 vs 82800 | 50W 76608 (5.26%) | 1m old
 - Alts: **BTC_LED** [-] | BTC.D 57.38% | ETH/BTC 0.02944 | breadth7d 43% | stables 30d -0.54%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.02pt | 7d 0.23pt | n=121
 - Gold: PAXG 1m -3.38% | real10y 2.64 (-12bp 1m) | USD 1m 1.72% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 29
@@ -9,24 +9,28 @@
 - 10y 1m: -15bp = real -12 + breakeven 1 -> **REAL_YIELD_DRIVEN**
 
 ## Coins in correction (entry_ready first)
-- TAO: **RESET_DONE** ENTRY_READY | +60% impulse, retr 0.69 | OI dd 33% | fund -0.0056 | hold True | inval 252.60000 | OB 213.50000-219.30000
-- WLD: **RESUMING** ENTRY_READY | +74% impulse, retr 0.55 | OI dd 15% | fund 0.0057 | hold False | inval 0.45630 | OB 0.35600-0.37680
-- IRYS: **BROKEN** | +2628% impulse, retr 0.77 | OI dd 0% | fund 0.0025 | hold False | inval 0.01830 | OB 0.01173-0.01224
-- ZEC: **BROKEN** | +64% impulse, retr 0.79 | OI dd 41% | fund 0.0043 | hold False | inval 1110.00000 | OB 1110.00000-1153.08000
-- ADA: **BROKEN** | +48% impulse, retr 0.78 | OI dd 32% | fund -0.0116 | hold True | inval 0.20950 | OB 0.19010-0.19720
-- LINK: **BROKEN** | +48% impulse, retr 0.77 | OI dd 26% | fund 0.0100 | hold True | inval 11.77600 | OB 10.61800-10.96200
-- CARDS: **ONGOING** | +266% impulse, retr 0.11 | OI dd -% | fund - | hold False | inval 0.31640 | OB 0.23780-0.26170
-- NEAR: **RESET_DONE** | +166% impulse, retr 0.37 | OI dd 22% | fund -0.0042 | hold True | inval 4.63200 | OB 4.02900-4.48300
+- TAO: **RESET_DONE** ENTRY_READY | +60% impulse, retr 0.71 | OI dd 33% | fund -0.0063 | hold True | inval 248.40000 | OB 213.50000-219.30000
+- WLD: **RESUMING** ENTRY_READY | +74% impulse, retr 0.58 | OI dd 15% | fund 0.0079 | hold False | inval 0.45630 | OB 0.35600-0.37680
+- IRYS: **BROKEN** | +2628% impulse, retr 0.78 | OI dd 0% | fund 0.0025 | hold False | inval 0.01830 | OB 0.01173-0.01224
+- ZEC: **BROKEN** | +64% impulse, retr 0.82 | OI dd 41% | fund 0.0056 | hold False | inval 1110.00000 | OB 1110.00000-1153.08000
+- ADA: **BROKEN** | +48% impulse, retr 0.81 | OI dd 32% | fund -0.0073 | hold True | inval 0.19010 | OB 0.19010-0.19720
+- LINK: **BROKEN** | +48% impulse, retr 0.81 | OI dd 26% | fund 0.0094 | hold True | inval 11.53500 | OB 10.61800-10.96200
+- CARDS: **ONGOING** | +266% impulse, retr 0.15 | OI dd -% | fund - | hold False | inval 0.31640 | OB 0.23780-0.26170
+- NEAR: **ONGOING** | +166% impulse, retr 0.40 | OI dd 22% | fund 0.0075 | hold True | inval 4.30100 | OB 4.02900-4.48300
 
 ## Pre-pump candidates
-- LTC: [A+E] 7d -5.3%
-- HYPE: [A+E] 7d -4.6%
-- XRP: [A+E] 7d -1.9%
-- CARDS: [C+D] 7d 17.6%
+- NEAR: [A+E] 7d -11.4%
+- HYPE: [A+E] 7d -5.8%
+- LTC: [A+E] 7d -5.0%
+- XRP: [A+E] 7d -2.1%
+- CARDS: [C+D] 7d 16.3%
 
 ## ETF pipeline (new this run)
-- bittensor: other - Form 144 Grayscale Bittensor Trust (TAO) For: 24 October By Investing.com - Investing.com 
-- avalanche-2: other - Form 144 Grayscale Avalanche Staking ETF (Ticker: GAVA) For: 24 October - Investing.com Ni
+- ripple NEW: other - Profit-Taking or Warning Shot? Bitwise XRP ETF Sees Cash Head for the Exits - TipRanks
+- litecoin NEW: other - Canary Litecoin ETF (LTCC) Stock Price, News & Analysis - 24/7 Wall St.
+- litecoin NEW: other - Litecoin ETF assets rise to $14M after late-Sep... - Pluang
+- zcash: other - Zcash ETF Price: Is ZCSH Recovering After a Weak October? - Coin Gabbar
+- zcash: other - Zcash ETF Price: Is ZCSH Recovering After a Weak October? - Coin Gabbar
 
 ## Derivatives flags (OKX)
 - BTC: LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 0.87
@@ -47,12 +51,12 @@
 - (7 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 21 | mean -4.4% (-0.24R) | in profit 8 | older than 7d 20
-- worst: ADA -0.87R, AXS -0.86R, NEO -0.82R | best: NEAR 0.20R, TIA 0.40R, BEAM 1.40R
+- open 21 | mean -4.8% (-0.26R) | in profit 6 | older than 7d 20
+- worst: ADA -0.89R, AXS -0.87R, NEO -0.86R | best: AERO 0.17R, TIA 0.40R, BEAM 1.28R
 
 ## System
-- CoinGecko 7517/10000 used, month-end projection 9987 (100%), throttle level 1 | by script {'scan': 2452, 'check_liquidity': 361, 'breakout_check': 4629, 'counterfactual_check': 75}
+- CoinGecko 7520/10000 used, month-end projection 9973 (100%), throttle level 1 | by script {'scan': 2454, 'check_liquidity': 362, 'breakout_check': 4629, 'counterfactual_check': 75}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=51), H2 SUPPORTED (n=189)
-- radar-flags.json scan age: 8m
+- radar-flags.json scan age: 7m
 - excluded from radar (pegged/tokenized equity): 43
