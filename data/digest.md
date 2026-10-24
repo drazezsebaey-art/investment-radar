@@ -1,10 +1,10 @@
-# Radar digest - 2026-10-24 21:37 UTC
+# Radar digest - 2026-10-24 22:05 UTC
 
 ## Market
-- BTC scenario **B** | price 80460 | wk close 81175 vs 82800 | 50W 76608 (5.03%) | 32m old
+- BTC scenario **B** | price 80460 | wk close 81175 vs 82800 | 50W 76608 (5.03%) | 60m old
 - Alts: **BTC_LED** [-] | BTC.D 57.49% | ETH/BTC 0.02903 | breadth7d 49% | stables 30d -0.53%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.09pt | 7d 0.18pt | n=121
-- Gold: PAXG 1m -3.70% | real10y 2.64 (-12bp 1m) | USD 1m 1.72% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
+- Gold: PAXG 1m -3.41% | real10y 2.64 (-12bp 1m) | USD 1m 1.72% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
 - 10y 1w: -14bp = real -14 + breakeven -1 -> **REAL_YIELD_DRIVEN**
 - 10y 1m: -15bp = real -12 + breakeven 1 -> **REAL_YIELD_DRIVEN**
 
@@ -19,7 +19,7 @@
 - NEAR: **RESET_DONE** | +166% impulse, retr 0.42 | OI dd 30% | fund -0.0092 | hold True | inval 4.30100 | OB 3.40300-3.68100
 
 ## Pre-pump candidates
-- none
+- BTW: [B+C] 7d -33.3%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - Crypto ETF Flows This Week: Bitcoin Funds Net $301 Million Despite $636 Million Thursday E
@@ -45,11 +45,11 @@
 
 ## Paper book (open trades, marked to last scan)
 - open 18 | mean -3.8% (-0.23R) | in profit 4 | older than 7d 17
-- worst: ETHFI -0.82R, WLD -0.80R, MANA -0.77R | best: COMP 0.05R, TIA 0.28R, BEAM 0.97R
+- worst: ETHFI -0.82R, WLD -0.80R, MANA -0.76R | best: COMP 0.08R, TIA 0.29R, BEAM 1.06R
 
 ## System
-- CoinGecko 7702/10000 used, month-end projection 10001 (100%), throttle level 2 | by script {'scan': 2512, 'check_liquidity': 375, 'breakout_check': 4734, 'counterfactual_check': 81}
+- CoinGecko 7704/10000 used, month-end projection 9986 (100%), throttle level 1 | by script {'scan': 2514, 'check_liquidity': 375, 'breakout_check': 4734, 'counterfactual_check': 81}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=51), H2 SUPPORTED (n=191)
-- radar-flags.json scan age: 7m
+- radar-flags.json scan age: 5m
 - excluded from radar (pegged/tokenized equity): 42
