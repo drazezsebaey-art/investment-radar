@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-24 15:07 UTC
+# Radar digest - 2026-10-24 15:39 UTC
 
 ## Market
-- BTC scenario **B** | price 79871 | wk close 81175 vs 82800 | 50W 76608 (4.26%) | 1m old
+- BTC scenario **B** | price 79871 | wk close 81175 vs 82800 | 50W 76608 (4.26%) | 33m old
 - Alts: **BTC_LED** [-] | BTC.D 57.48% | ETH/BTC 0.02909 | breadth7d 38% | stables 30d -0.54%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.04pt | 7d 0.24pt | n=121
 - Gold: PAXG 1m -3.45% | real10y 2.64 (-12bp 1m) | USD 1m 1.72% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
@@ -19,25 +19,21 @@
 - SEI: **RESET_DONE** | +110% impulse, retr 0.74 | OI dd 30% | fund -0.0078 | hold False | inval 0.04119 | OB 0.04119-0.04239
 
 ## Pre-pump candidates
-- NEAR: [A+E] 7d -13.9%
-- LTC: [A+E] 7d -5.0%
-- HYPE: [A+E] 7d -3.5%
-- DOGE: [A+E] 7d -2.6%
-- XRP: [A+E] 7d -1.9%
+- none
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - XRP News Today: ETF Inflows Return as Ripple Faces a Pivotal Week - Coin Gabbar
 - ondo-finance: other - Direxion Daily Semi Bear 3X ETF Tokenized ETF (Ondo) USD (SOXSON-USD) cryptocurrency profi
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc 0.21% | topPos 0.92 | taker 0.86
-- SOL: LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 0.87
-- NEAR: LONG_FLUSH_24H | OI/mc 1.02% | topPos 0.99 | taker 0.90
-- AVAX: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.90 | taker 0.82
-- XRP: LONG_FLUSH_24H | OI/mc 0.14% | topPos 0.87 | taker 0.94
-- SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.80 | taker 0.99
-- SEI: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.79
-- TAO: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.77% | topPos 0.85 | taker 0.78
+- BTC: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.21% | topPos 0.92 | taker 0.83
+- ETH: LONG_FLUSH_24H | OI/mc 0.64% | topPos 0.85 | taker 0.87
+- SOL: LONG_FLUSH_24H | OI/mc 0.62% | topPos 0.87 | taker 0.86
+- NEAR: LONG_FLUSH_24H | OI/mc -% | topPos 0.99 | taker 0.90
+- AVAX: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.39% | topPos 0.89 | taker 0.83
+- XRP: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.13% | topPos 0.87 | taker 0.85
+- SUI: LONG_FLUSH_24H | OI/mc 0.97% | topPos 0.80 | taker 0.99
+- SEI: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 0.80
 
 ## Revenue / buyback flags
 - pump-fun: REVENUE_ACCELERATING, HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -49,12 +45,12 @@
 - (4 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 20 | mean -5.7% (-0.33R) | in profit 4 | older than 7d 19
-- worst: ADA -0.95R, NEO -0.92R, ETHFI -0.82R | best: AERO 0.08R, TIA 0.30R, BEAM 1.34R
+- open 18 | mean -5.5% (-0.34R) | in profit 4 | older than 7d 17
+- worst: ETHFI -0.89R, XTZ -0.89R, MANA -0.84R | best: AERO 0.02R, TIA 0.22R, BEAM 1.11R
 
 ## System
-- CoinGecko 7605/10000 used, month-end projection 9979 (100%), throttle level 1 | by script {'scan': 2478, 'check_liquidity': 369, 'breakout_check': 4683, 'counterfactual_check': 75}
+- CoinGecko 7616/10000 used, month-end projection 9993 (100%), throttle level 1 | by script {'scan': 2488, 'check_liquidity': 370, 'breakout_check': 4683, 'counterfactual_check': 75}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=51), H2 SUPPORTED (n=191)
-- radar-flags.json scan age: 7m
-- excluded from radar (pegged/tokenized equity): 44
+- radar-flags.json scan age: 9m
+- excluded from radar (pegged/tokenized equity): 45
