@@ -1,10 +1,10 @@
-# Radar digest - 2026-10-24 09:38 UTC
+# Radar digest - 2026-10-24 10:06 UTC
 
 ## Market
-- BTC scenario **B** | price 80639 | wk close 81175 vs 82800 | 50W 76608 (5.26%) | 33m old
+- BTC scenario **B** | price 80639 | wk close 81175 vs 82800 | 50W 76608 (5.26%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 57.38% | ETH/BTC 0.02944 | breadth7d 43% | stables 30d -0.54%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.02pt | 7d 0.23pt | n=121
-- Gold: PAXG 1m -3.38% | real10y 2.64 (-12bp 1m) | USD 1m 1.72% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 29
+- Gold: PAXG 1m -3.45% | real10y 2.64 (-12bp 1m) | USD 1m 1.72% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
 - 10y 1w: -14bp = real -14 + breakeven -1 -> **REAL_YIELD_DRIVEN**
 - 10y 1m: -15bp = real -12 + breakeven 1 -> **REAL_YIELD_DRIVEN**
 
@@ -19,10 +19,10 @@
 - NEAR: **ONGOING** | +166% impulse, retr 0.40 | OI dd 22% | fund 0.0075 | hold True | inval 4.30100 | OB 4.02900-4.48300
 
 ## Pre-pump candidates
-- NEAR: [A+E] 7d -11.4%
+- NEAR: [A+E] 7d -13.6%
 - HYPE: [A+E] 7d -5.8%
 - LTC: [A+E] 7d -5.0%
-- XRP: [A+E] 7d -2.1%
+- XRP: [A+E] 7d -2.3%
 - CARDS: [C+D] 7d 16.3%
 
 ## ETF pipeline (new this run)
@@ -52,12 +52,12 @@
 - (4 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 21 | mean -5.2% (-0.29R) | in profit 6 | older than 7d 20
-- worst: ADA -0.90R, AXS -0.87R, NEO -0.86R | best: AERO 0.13R, TIA 0.39R, BEAM 1.28R
+- open 21 | mean -5.1% (-0.28R) | in profit 5 | older than 7d 20
+- worst: ADA -0.89R, AXS -0.87R, NEO -0.84R | best: AERO 0.14R, TIA 0.37R, BEAM 1.25R
 
 ## System
-- CoinGecko 7522/10000 used, month-end projection 9976 (100%), throttle level 1 | by script {'scan': 2456, 'check_liquidity': 362, 'breakout_check': 4629, 'counterfactual_check': 75}
+- CoinGecko 7524/10000 used, month-end projection 9961 (100%), throttle level 1 | by script {'scan': 2458, 'check_liquidity': 362, 'breakout_check': 4629, 'counterfactual_check': 75}
 - Trials guard: OK (0 untracked)
-- Hypotheses: H1 NOT_SUPPORTED (n=51), H2 SUPPORTED (n=190)
-- radar-flags.json scan age: 8m
+- Hypotheses: H1 NOT_SUPPORTED (n=51), H2 SUPPORTED (n=191)
+- radar-flags.json scan age: 6m
 - excluded from radar (pegged/tokenized equity): 43
