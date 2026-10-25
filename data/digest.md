@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-25 16:37 UTC
+# Radar digest - 2026-10-25 17:06 UTC
 
 ## Market
-- BTC scenario **B** | price 80706 | wk close 81175 vs 82800 | 50W 76608 (5.35%) | 2h old
+- BTC scenario **B** | price 80800 | wk close 80637 vs 82800 | 50W 76146 (6.11%) | 1m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.48% | ETH/BTC 0.02904 | breadth7d -% | stables 30d -1.04%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.07pt | 7d -0.01pt | n=121
 - Gold: PAXG 1m -3.94% | real10y 2.64 (-12bp 1m) | USD 1m 1.72% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
@@ -9,20 +9,23 @@
 - 10y 1m: -15bp = real -12 + breakeven 1 -> **REAL_YIELD_DRIVEN**
 
 ## Coins in correction (entry_ready first)
-- SUI: **RESET_DONE** ENTRY_READY | +92% impulse, retr 0.61 | OI dd 34% | fund 0.0014 | hold True | inval 0.80880 | OB 0.80880-0.83220
-- ONDO: **RESET_DONE** ENTRY_READY | +88% impulse, retr 0.71 | OI dd 46% | fund 0.0061 | hold True | inval 0.39660 | OB 0.32320-0.32980
-- ZEC: **BROKEN** | +64% impulse, retr 0.73 | OI dd 44% | fund 0.0057 | hold False | inval 1119.27000 | OB 1110.00000-1153.08000
-- ADA: **BROKEN** | +48% impulse, retr 0.84 | OI dd 36% | fund -0.0059 | hold False | inval 0.20050 | OB 0.19010-0.19720
-- LINK: **BROKEN** | +48% impulse, retr 0.85 | OI dd 30% | fund -0.0005 | hold False | inval 10.61800 | OB 10.61800-10.96200
-- CARDS: **ONGOING** | +235% impulse, retr 0.26 | OI dd -% | fund - | hold False | inval 0.29650 | OB 0.23780-0.26170
-- ZBCN: **ONGOING** | +76% impulse, retr 0.58 | OI dd -% | fund - | hold False | inval 0.00205 | OB 0.00198-0.00202
-- GRASS: **RESET_DONE** | +196% impulse, retr 0.32 | OI dd 33% | fund 0.0050 | hold True | inval 0.60710 | OB 0.60710-0.64950
+- SUI: **RESET_DONE** ENTRY_READY | +92% impulse, retr 0.59 | OI dd 32% | fund -0.0001 | hold True | inval 0.80880 | OB 0.80880-0.83220
+- ONDO: **RESET_DONE** ENTRY_READY | +88% impulse, retr 0.69 | OI dd 46% | fund 0.0061 | hold True | inval 0.39660 | OB 0.32320-0.32980
+- WLD: **RESET_DONE** ENTRY_READY | +74% impulse, retr 0.61 | OI dd 28% | fund -0.0002 | hold True | inval 0.39960 | OB 0.39960-0.41350
+- ZEC: **BROKEN** | +64% impulse, retr 0.72 | OI dd 41% | fund 0.0055 | hold False | inval 1119.27000 | OB 1110.00000-1153.08000
+- ADA: **BROKEN** | +48% impulse, retr 0.82 | OI dd 35% | fund -0.0053 | hold False | inval 0.20050 | OB 0.19010-0.19720
+- LINK: **BROKEN** | +48% impulse, retr 0.83 | OI dd 28% | fund 0.0015 | hold False | inval 10.61800 | OB 10.61800-10.96200
+- CARDS: **ONGOING** | +225% impulse, retr 0.27 | OI dd -% | fund - | hold False | inval 0.29650 | OB 0.23780-0.26170
+- ZBCN: **ONGOING** | +76% impulse, retr 0.52 | OI dd -% | fund - | hold False | inval 0.00205 | OB 0.00198-0.00202
 
 ## Pre-pump candidates
 - none
 
 ## ETF pipeline (new this run)
-- dogecoin NEW: other - Dogecoin Price Prediction: One DOGE ETF Closes as AlphaPepe Lines Up Four Exchange Partner
+- kucoin-shares NEW: other - XRP Price Rebounds From $1.27 Support Amid Mixed ETF Flows - KuCoin
+- kucoin-shares NEW: other - Bitwise Dogecoin ETF Completes Liquidation on October 22 - KuCoin
+- zcash: other - Grayscale's Zcash ETF draws $41.1M inflows amid Bitcoin and Ethereum ETF struggles - Pluan
+- zcash: other - Zcash ETF inflows rebound with $41.1M after thr... - Pluang
 
 ## Derivatives flags (OKX)
 - BTC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.92 | taker 1.04
@@ -43,12 +46,12 @@
 - (5 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 17 | mean -4.3% (-0.28R) | in profit 4 | older than 7d 16
-- worst: XTZ -0.94R, MANA -0.85R, ETHFI -0.82R | best: NEAR 0.14R, PYTH 0.15R, TIA 0.29R
+- open 17 | mean -3.3% (-0.21R) | in profit 7 | older than 7d 16
+- worst: XTZ -0.90R, MANA -0.80R, ETHFI -0.73R | best: PYTH 0.20R, TIA 0.31R, NEAR 0.39R
 
 ## System
-- CoinGecko 7960/10000 used, month-end projection 10004 (100%), throttle level 2 | by script {'scan': 2596, 'check_liquidity': 382, 'breakout_check': 4899, 'counterfactual_check': 83}
+- CoinGecko 7963/10000 used, month-end projection 9991 (100%), throttle level 1 | by script {'scan': 2598, 'check_liquidity': 383, 'breakout_check': 4899, 'counterfactual_check': 83}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=52), H2 SUPPORTED (n=192)
-- radar-flags.json scan age: 7m
-- excluded from radar (pegged/tokenized equity): 43
+- radar-flags.json scan age: 6m
+- excluded from radar (pegged/tokenized equity): 42
