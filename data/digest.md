@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-25 07:06 UTC
+# Radar digest - 2026-10-25 07:37 UTC
 
 ## Market
-- BTC scenario **B** | price 80574 | wk close 81175 vs 82800 | 50W 76608 (5.18%) | 1m old
+- BTC scenario **B** | price 80574 | wk close 81175 vs 82800 | 50W 76608 (5.18%) | 32m old
 - Alts: **BTC_LED** [-] | BTC.D 57.48% | ETH/BTC 0.02908 | breadth7d -% | stables 30d -1.04%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.04pt | 7d 0.12pt | n=121
 - Gold: PAXG 1m -3.38% | real10y 2.64 (-12bp 1m) | USD 1m 1.72% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
@@ -25,14 +25,14 @@
 - zcash: other - Zcash prepares for NU7 upgrade, boosting efficiency and ETF inflows amid strong demand for
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.93 | taker 0.93
-- ETH: LONG_FLUSH_24H | OI/mc 0.63% | topPos 0.89 | taker 0.92
-- SOL: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.87 | taker 0.88
-- AVAX: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.38% | topPos 0.91 | taker 0.83
-- SUI: LONG_FLUSH_24H | OI/mc 0.96% | topPos 0.80 | taker 0.89
-- SEI: LONG_FLUSH_24H | OI/mc 0.73% | topPos 0.90 | taker 1.07
-- TAO: LONG_FLUSH_24H | OI/mc 0.78% | topPos 0.84 | taker 0.94
-- WLD: SHORT_SQUEEZE_FUEL, LONG_FLUSH_24H | OI/mc -% | topPos 0.84 | taker 0.93
+- ETH: LONG_FLUSH_24H | OI/mc 0.63% | topPos 0.89 | taker 0.90
+- SOL: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.88 | taker 0.89
+- AVAX: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.38% | topPos 0.92 | taker 0.81
+- SUI: LONG_FLUSH_24H | OI/mc 0.97% | topPos 0.80 | taker 0.89
+- SEI: LONG_FLUSH_24H | OI/mc 0.74% | topPos 0.89 | taker 1.05
+- TAO: LONG_FLUSH_24H | OI/mc 0.77% | topPos 0.84 | taker 0.92
+- ZEC: LONG_FLUSH_24H | OI/mc -% | topPos 1.06 | taker 0.98
+- WLD: LONG_FLUSH_24H | OI/mc -% | topPos 0.84 | taker 0.91
 
 ## Revenue / buyback flags
 - pump-fun: REVENUE_ACCELERATING, HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -44,12 +44,12 @@
 - (4 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 18 | mean -4.7% (-0.29R) | in profit 3 | older than 7d 17
-- worst: ETHFI -0.90R, XTZ -0.84R, WLD -0.81R | best: PYTH 0.03R, TIA 0.25R, BEAM 0.83R
+- open 18 | mean -4.5% (-0.27R) | in profit 3 | older than 7d 17
+- worst: ETHFI -0.90R, XTZ -0.84R, WLD -0.80R | best: PYTH 0.07R, TIA 0.24R, BEAM 0.83R
 
 ## System
-- CoinGecko 7853/10000 used, month-end projection 10022 (100%), throttle level 2 | by script {'scan': 2550, 'check_liquidity': 378, 'breakout_check': 4842, 'counterfactual_check': 83}
+- CoinGecko 7855/10000 used, month-end projection 10024 (100%), throttle level 2 | by script {'scan': 2552, 'check_liquidity': 378, 'breakout_check': 4842, 'counterfactual_check': 83}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=51), H2 SUPPORTED (n=191)
-- radar-flags.json scan age: 6m
-- excluded from radar (pegged/tokenized equity): 41
+- radar-flags.json scan age: 7m
+- excluded from radar (pegged/tokenized equity): 42
