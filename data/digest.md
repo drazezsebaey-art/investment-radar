@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-25 01:07 UTC
+# Radar digest - 2026-10-25 01:37 UTC
 
 ## Market
-- BTC scenario **B** | price 80828 | wk close 81175 vs 82800 | 50W 76608 (5.51%) | 2m old
+- BTC scenario **B** | price 80828 | wk close 81175 vs 82800 | 50W 76608 (5.51%) | 32m old
 - Alts: **BTC_LED** [-] | BTC.D 57.47% | ETH/BTC 0.02908 | breadth7d -% | stables 30d -0.54%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.01pt | 7d 0.11pt | n=121
 - Gold: PAXG 1m -3.41% | real10y 2.64 (-12bp 1m) | USD 1m 1.72% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
@@ -28,14 +28,14 @@
 - aptos NEW: other - Next Crypto to Explode? October 19 ETF Inflows Put SUI, APT and $33M Remittix in the Early
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.92 | taker 0.91
-- ETH: SHORT_SQUEEZE_24H | OI/mc 0.62% | topPos 0.86 | taker 0.91
-- SOL: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.86 | taker 0.94
+- BTC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.92 | taker 0.94
+- ETH: SHORT_SQUEEZE_24H | OI/mc 0.62% | topPos 0.87 | taker 0.93
+- SOL: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.86 | taker 0.92
 - AVAX: LONG_FLUSH_24H | OI/mc 0.38% | topPos 0.90 | taker 0.94
-- SUI: LONG_FLUSH_24H | OI/mc 0.95% | topPos 0.79 | taker 0.97
-- SEI: LONG_FLUSH_24H | OI/mc 0.72% | topPos 0.91 | taker 0.91
-- TAO: LONG_FLUSH_24H | OI/mc 0.77% | topPos 0.85 | taker 0.92
-- ZEC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 1.02 | taker 1.01
+- SUI: LONG_FLUSH_24H | OI/mc 0.95% | topPos 0.79 | taker 0.96
+- SEI: LONG_FLUSH_24H | OI/mc 0.74% | topPos 0.89 | taker 0.99
+- TAO: LONG_FLUSH_24H | OI/mc 0.78% | topPos 0.84 | taker 0.98
+- ZEC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 1.03 | taker 1.01
 
 ## Revenue / buyback flags
 - pump-fun: REVENUE_ACCELERATING, HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -47,12 +47,12 @@
 - (4 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 18 | mean -2.5% (-0.14R) | in profit 10 | older than 7d 17
-- worst: ETHFI -0.77R, WLD -0.73R, XTZ -0.66R | best: COMP 0.12R, TIA 0.40R, BEAM 1.19R
+- open 18 | mean -2.8% (-0.16R) | in profit 10 | older than 7d 17
+- worst: ETHFI -0.78R, XTZ -0.72R, WLD -0.71R | best: COMP 0.10R, TIA 0.39R, BEAM 1.13R
 
 ## System
-- CoinGecko 7776/10000 used, month-end projection 10027 (100%), throttle level 2 | by script {'scan': 2526, 'check_liquidity': 376, 'breakout_check': 4791, 'counterfactual_check': 83}
+- CoinGecko 7778/10000 used, month-end projection 10029 (100%), throttle level 2 | by script {'scan': 2528, 'check_liquidity': 376, 'breakout_check': 4791, 'counterfactual_check': 83}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=51), H2 SUPPORTED (n=191)
-- radar-flags.json scan age: 6m
+- radar-flags.json scan age: 7m
 - excluded from radar (pegged/tokenized equity): 41
