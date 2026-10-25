@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-25 20:37 UTC
+# Radar digest - 2026-10-25 21:06 UTC
 
 ## Market
-- BTC scenario **B** | price 80651 | wk close 80637 vs 82800 | 50W 76146 (5.92%) | 2h old
+- BTC scenario **B** | price 80465 | wk close 80637 vs 82800 | 50W 76146 (5.67%) | 1m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.42% | ETH/BTC 0.02919 | breadth7d -% | stables 30d -1.05%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.04pt | 7d -0.15pt | n=121
 - Gold: PAXG 1m -3.94% | real10y 2.64 (-12bp 1m) | USD 1m 1.72% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
@@ -9,22 +9,20 @@
 - 10y 1m: -15bp = real -12 + breakeven 1 -> **REAL_YIELD_DRIVEN**
 
 ## Coins in correction (entry_ready first)
-- SUI: **RESET_DONE** ENTRY_READY | +92% impulse, retr 0.58 | OI dd 32% | fund -0.0067 | hold True | inval 0.80880 | OB 0.80880-0.83220
-- ONDO: **RESET_DONE** ENTRY_READY | +88% impulse, retr 0.70 | OI dd 46% | fund 0.0069 | hold True | inval 0.39660 | OB 0.32320-0.32980
-- WLD: **RESET_DONE** ENTRY_READY | +74% impulse, retr 0.61 | OI dd 28% | fund -0.0093 | hold True | inval 0.39960 | OB 0.39960-0.41350
-- ZEC: **BROKEN** | +64% impulse, retr 0.72 | OI dd 41% | fund 0.0071 | hold False | inval 1119.27000 | OB 1110.00000-1153.08000
-- ADA: **BROKEN** | +48% impulse, retr 0.83 | OI dd 35% | fund -0.0031 | hold False | inval 0.20050 | OB 0.19010-0.19720
-- LINK: **BROKEN** | +48% impulse, retr 0.83 | OI dd 28% | fund 0.0052 | hold False | inval 10.61800 | OB 10.61800-10.96200
-- CARDS: **ONGOING** | +225% impulse, retr 0.25 | OI dd -% | fund - | hold False | inval 0.29650 | OB 0.23780-0.26170
-- ZBCN: **ONGOING** | +76% impulse, retr 0.55 | OI dd -% | fund - | hold False | inval 0.00205 | OB 0.00198-0.00202
+- SUI: **RESET_DONE** ENTRY_READY | +92% impulse, retr 0.59 | OI dd 32% | fund -0.0047 | hold True | inval 0.80880 | OB 0.80880-0.83220
+- WLD: **RESET_DONE** ENTRY_READY | +74% impulse, retr 0.63 | OI dd 28% | fund -0.0038 | hold True | inval 0.39960 | OB 0.39960-0.41350
+- ZEC: **BROKEN** | +64% impulse, retr 0.73 | OI dd 41% | fund 0.0100 | hold False | inval 1119.27000 | OB 1110.00000-1153.08000
+- ADA: **BROKEN** | +48% impulse, retr 0.83 | OI dd 35% | fund -0.0002 | hold False | inval 0.20050 | OB 0.19010-0.19720
+- LINK: **BROKEN** | +48% impulse, retr 0.83 | OI dd 28% | fund 0.0100 | hold False | inval 10.61800 | OB 10.61800-10.96200
+- CARDS: **ONGOING** | +225% impulse, retr 0.29 | OI dd -% | fund - | hold False | inval 0.29650 | OB 0.23780-0.26170
+- GRASS: **RESET_DONE** | +196% impulse, retr 0.30 | OI dd 20% | fund 0.0050 | hold False | inval 0.60710 | OB 0.60710-0.64950
+- NEAR: **RESET_DONE** | +166% impulse, retr 0.39 | OI dd 28% | fund -0.0093 | hold False | inval 4.25000 | OB 4.02900-4.48300
 
 ## Pre-pump candidates
 - none
 
 ## ETF pipeline (new this run)
-- cap-4 NEW: other - ETF Price (ETF/USD) Today | Live Price, Market Cap & Chart - Binance
-- cap-4 NEW: other - Intuition Price (TRUST/USD) Today | Live Price, Market Cap & Chart - Binance
-- zcash: other - Grayscale’s Zcash ETF pulls in $41.1 million as Bitcoin and Ethereum funds wobble - Crypto
+- none
 
 ## Derivatives flags (OKX)
 - BTC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.92 | taker 1.00
@@ -45,12 +43,12 @@
 - (5 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 17 | mean -3.7% (-0.23R) | in profit 6 | older than 7d 16
-- worst: XTZ -0.96R, MANA -0.82R, ETHFI -0.67R | best: BEAM 0.18R, TIA 0.30R, PYTH 0.52R
+- open 17 | mean -3.7% (-0.22R) | in profit 5 | older than 7d 16
+- worst: XTZ -0.97R, MANA -0.82R, LTC -0.65R | best: TIA 0.28R, PYTH 0.44R, BEAM 0.48R
 
 ## System
-- CoinGecko 8035/10000 used, month-end projection 10030 (100%), throttle level 2 | by script {'scan': 2612, 'check_liquidity': 384, 'breakout_check': 4956, 'counterfactual_check': 83}
+- CoinGecko 8037/10000 used, month-end projection 10016 (100%), throttle level 2 | by script {'scan': 2614, 'check_liquidity': 384, 'breakout_check': 4956, 'counterfactual_check': 83}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=52), H2 SUPPORTED (n=192)
-- radar-flags.json scan age: 7m
+- radar-flags.json scan age: 5m
 - excluded from radar (pegged/tokenized equity): 42
