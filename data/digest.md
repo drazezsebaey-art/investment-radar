@@ -1,31 +1,28 @@
-# Radar digest - 2026-10-25 06:37 UTC
+# Radar digest - 2026-10-25 07:06 UTC
 
 ## Market
-- BTC scenario **B** | price 80930 | wk close 81175 vs 82800 | 50W 76608 (5.64%) | 2h old
-- Alts: **BTC_LED** [-] | BTC.D 57.44% | ETH/BTC 0.02921 | breadth7d -% | stables 30d -1.04%
-- Alt risk (BTC.D): **NORMAL**  | 3d -0.13pt | 7d 0.04pt | n=121
+- BTC scenario **B** | price 80574 | wk close 81175 vs 82800 | 50W 76608 (5.18%) | 1m old
+- Alts: **BTC_LED** [-] | BTC.D 57.48% | ETH/BTC 0.02908 | breadth7d -% | stables 30d -1.04%
+- Alt risk (BTC.D): **NORMAL**  | 3d 0.04pt | 7d 0.12pt | n=121
 - Gold: PAXG 1m -3.38% | real10y 2.64 (-12bp 1m) | USD 1m 1.72% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
 - 10y 1w: -14bp = real -14 + breakeven -1 -> **REAL_YIELD_DRIVEN**
 - 10y 1m: -15bp = real -12 + breakeven 1 -> **REAL_YIELD_DRIVEN**
 
 ## Coins in correction (entry_ready first)
-- ATH: **RESET_DONE** ENTRY_READY | +107% impulse, retr 0.61 | OI dd 21% | fund -0.0009 | hold True | inval 0.00571 | OB 0.00532-0.00539
-- SUI: **RESET_DONE** ENTRY_READY | +92% impulse, retr 0.58 | OI dd 34% | fund -0.0019 | hold True | inval 0.80880 | OB 0.80880-0.83220
-- ONDO: **RESET_DONE** ENTRY_READY | +88% impulse, retr 0.70 | OI dd 46% | fund -0.0094 | hold True | inval 0.40120 | OB 0.32320-0.32980
-- TAO: **RESET_DONE** ENTRY_READY | +60% impulse, retr 0.70 | OI dd 35% | fund -0.0163 | hold True | inval 213.50000 | OB 213.50000-219.30000
-- WLD: **RESUMING** ENTRY_READY | +74% impulse, retr 0.57 | OI dd 26% | fund -0.0113 | hold False | inval 0.45630 | OB 0.39960-0.41350
-- ZEC: **BROKEN** | +64% impulse, retr 0.72 | OI dd 44% | fund -0.0065 | hold False | inval 1110.00000 | OB 1110.00000-1153.08000
-- ADA: **BROKEN** | +48% impulse, retr 0.81 | OI dd 36% | fund -0.0057 | hold False | inval 0.19010 | OB 0.19010-0.19720
-- LINK: **BROKEN** | +48% impulse, retr 0.82 | OI dd 30% | fund 0.0100 | hold True | inval 10.61800 | OB 10.61800-10.96200
+- SUI: **RESET_DONE** ENTRY_READY | +92% impulse, retr 0.61 | OI dd 34% | fund 0.0034 | hold True | inval 0.80880 | OB 0.80880-0.83220
+- ONDO: **RESET_DONE** ENTRY_READY | +88% impulse, retr 0.72 | OI dd 46% | fund -0.0041 | hold True | inval 0.40120 | OB 0.32320-0.32980
+- TAO: **RESET_DONE** ENTRY_READY | +60% impulse, retr 0.73 | OI dd 35% | fund -0.0128 | hold True | inval 213.50000 | OB 213.50000-219.30000
+- WLD: **RESUMING** ENTRY_READY | +74% impulse, retr 0.59 | OI dd 26% | fund -0.0073 | hold False | inval 0.45630 | OB 0.39960-0.41350
+- ZEC: **BROKEN** | +64% impulse, retr 0.77 | OI dd 44% | fund -0.0040 | hold False | inval 1110.00000 | OB 1110.00000-1153.08000
+- ADA: **BROKEN** | +48% impulse, retr 0.84 | OI dd 36% | fund -0.0003 | hold False | inval 0.19010 | OB 0.19010-0.19720
+- LINK: **BROKEN** | +48% impulse, retr 0.85 | OI dd 30% | fund 0.0094 | hold True | inval 10.61800 | OB 10.61800-10.96200
+- CARDS: **ONGOING** | +235% impulse, retr 0.25 | OI dd -% | fund - | hold True | inval 0.23780 | OB 0.23780-0.26170
 
 ## Pre-pump candidates
 - none
 
 ## ETF pipeline (new this run)
-- shiba-inu NEW: filing - Crypto Market News: BlackRock Files 3rd Bitcoin ETF, and Pepeto Buyers Chase a Shiba Inu S
-- zcash: filing - Winklevoss Zcash ETF Filing Proposes Nasdaq Listing Under WINK - www.tokenpost.com
-- zcash: filing - Winklevoss Zcash ETF Filing Proposes Nasdaq Listing Under WINK - www.tokenpost.com
-- zcash: other - Zcash ETF Inflows Hit $14.23M Today as Net Assets Reach $681M in Oct! - Coin Gabbar
+- zcash: other - Zcash prepares for NU7 upgrade, boosting efficiency and ETF inflows amid strong demand for
 
 ## Derivatives flags (OKX)
 - BTC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.93 | taker 0.93
@@ -47,12 +44,12 @@
 - (4 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 18 | mean -4.3% (-0.26R) | in profit 4 | older than 7d 17
-- worst: ETHFI -0.87R, XTZ -0.81R, WLD -0.80R | best: PYTH 0.03R, TIA 0.28R, BEAM 0.86R
+- open 18 | mean -4.7% (-0.29R) | in profit 3 | older than 7d 17
+- worst: ETHFI -0.90R, XTZ -0.84R, WLD -0.81R | best: PYTH 0.03R, TIA 0.25R, BEAM 0.83R
 
 ## System
-- CoinGecko 7851/10000 used, month-end projection 10036 (100%), throttle level 2 | by script {'scan': 2548, 'check_liquidity': 378, 'breakout_check': 4842, 'counterfactual_check': 83}
+- CoinGecko 7853/10000 used, month-end projection 10022 (100%), throttle level 2 | by script {'scan': 2550, 'check_liquidity': 378, 'breakout_check': 4842, 'counterfactual_check': 83}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=51), H2 SUPPORTED (n=191)
-- radar-flags.json scan age: 7m
+- radar-flags.json scan age: 6m
 - excluded from radar (pegged/tokenized equity): 41
