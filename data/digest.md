@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-25 12:18 UTC
+# Radar digest - 2026-10-25 12:36 UTC
 
 ## Market
-- BTC scenario **B** | price 80418 | wk close 81175 vs 82800 | 50W 76608 (4.97%) | 1h old
+- BTC scenario **B** | price 80418 | wk close 81175 vs 82800 | 50W 76608 (4.97%) | 2h old
 - Alts: **BTC_LED** [-] | BTC.D 57.50% | ETH/BTC 0.02899 | breadth7d -% | stables 30d -1.05%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.08pt | 7d 0.02pt | n=121
 - Gold: PAXG 1m -3.49% | real10y 2.64 (-12bp 1m) | USD 1m 1.72% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
@@ -25,14 +25,14 @@
 - cap-4 NEW: other - Direxion Semiconductor Bear 3X ETF Tokenized bStocks Price (SOXSB/USD) Today | Live Price,
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc -% | topPos 0.93 | taker 0.91
-- ETH: LONG_FLUSH_24H | OI/mc 0.64% | topPos 0.87 | taker 0.88
-- SOL: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.91
-- AVAX: LONG_FLUSH_24H | OI/mc 0.38% | topPos 0.91 | taker 0.86
-- SUI: LONG_FLUSH_24H | OI/mc 0.97% | topPos 0.80 | taker 0.88
-- SEI: LONG_FLUSH_24H | OI/mc 0.75% | topPos 0.89 | taker 1.06
-- TAO: LONG_FLUSH_24H | OI/mc 0.78% | topPos 0.84 | taker 0.94
-- ZEC: LONG_FLUSH_24H | OI/mc -% | topPos 1.06 | taker 0.99
+- BTC: LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 0.93
+- ETH: SHORT_SQUEEZE_24H | OI/mc 0.64% | topPos 0.87 | taker 0.91
+- SOL: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.94
+- AVAX: LONG_FLUSH_24H | OI/mc 0.38% | topPos 0.92 | taker 0.89
+- SUI: LONG_FLUSH_24H | OI/mc 0.97% | topPos 0.79 | taker 0.90
+- SEI: LONG_FLUSH_24H | OI/mc 0.75% | topPos 0.88 | taker 1.10
+- TAO: LONG_FLUSH_24H | OI/mc 0.79% | topPos 0.84 | taker 0.96
+- ZEC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 1.08 | taker 1.03
 
 ## Revenue / buyback flags
 - collector-crypt: REVENUE_ACCELERATING, CHEAP_VS_REVENUE
@@ -43,12 +43,12 @@
 - (5 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 17 | mean -4.0% (-0.25R) | in profit 5 | older than 7d 16
-- worst: XTZ -0.94R, ETHFI -0.84R, MANA -0.82R | best: PYTH 0.14R, TIA 0.28R, BEAM 0.54R
+- open 17 | mean -4.7% (-0.30R) | in profit 3 | older than 7d 16
+- worst: XTZ -0.95R, ETHFI -0.85R, MANA -0.84R | best: PYTH 0.05R, TIA 0.23R, BEAM 0.46R
 
 ## System
-- CoinGecko 7940/10000 used, month-end projection 10047 (100%), throttle level 2 | by script {'scan': 2578, 'check_liquidity': 380, 'breakout_check': 4899, 'counterfactual_check': 83}
+- CoinGecko 7942/10000 used, month-end projection 10049 (100%), throttle level 2 | by script {'scan': 2580, 'check_liquidity': 380, 'breakout_check': 4899, 'counterfactual_check': 83}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=52), H2 SUPPORTED (n=192)
-- radar-flags.json scan age: 18m
-- excluded from radar (pegged/tokenized equity): 42
+- radar-flags.json scan age: 6m
+- excluded from radar (pegged/tokenized equity): 44
