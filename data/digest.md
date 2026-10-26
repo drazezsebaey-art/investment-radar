@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-26 18:18 UTC
+# Radar digest - 2026-10-26 18:37 UTC
 
 ## Market
-- BTC scenario **B** | price 80433 | wk close 80637 vs 82800 | 50W 76146 (5.63%) | 1h old
+- BTC scenario **B** | price 80433 | wk close 80637 vs 82800 | 50W 76146 (5.63%) | 2h old
 - Alts: **BTC_LED** [-] | BTC.D 57.42% | ETH/BTC 0.02893 | breadth7d -% | stables 30d -0.87%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.04pt | 7d -0.18pt | n=121
 - Gold: PAXG 1m -2.12% | real10y 2.64 (-12bp 1m) | USD 1m 1.72% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
@@ -19,8 +19,7 @@
 - SUI: **RESET_DONE** | +92% impulse, retr 0.60 | OI dd 31% | fund 0.0100 | hold False | inval 0.80880 | OB 0.80880-0.83220
 
 ## Pre-pump candidates
-- VVV: [A+C] 7d 5.6%
-- ZEC: [A+C] 7d 9.9%
+- none
 
 ## ETF pipeline (new this run)
 - cap-4 NEW: other - KraneShares STAR Market 50 ETF Tokenized bStocks Price (KSTRB/USD) Today | Live Price, Mar
@@ -30,14 +29,14 @@
 - bittensor: other - Grayscale Advances Plans to List Bittensor ETF on NYSE Arca, Will TAO Price Jump? - Crypto
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 0.97
+- BTC: LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 0.96
 - AVAX: LONG_FLUSH_24H | OI/mc 0.37% | topPos 0.95 | taker 0.94
-- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 0.99
-- SEI: LONG_FLUSH_24H | OI/mc 0.76% | topPos 0.97 | taker 0.97
-- TAO: LONG_FLUSH_24H | OI/mc 0.76% | topPos 0.85 | taker 0.94
-- LINK: LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 1.04
+- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 0.98
+- SEI: LONG_FLUSH_24H | OI/mc 0.78% | topPos 0.97 | taker 1.00
+- TAO: LONG_FLUSH_24H | OI/mc 0.77% | topPos 0.85 | taker 0.95
+- ZEC: LONG_FLUSH_24H | OI/mc 0.68% | topPos 1.11 | taker 0.99
+- LINK: LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 0.97
 - XLM: LONG_FLUSH_24H | OI/mc 0.18% | topPos 0.98 | taker 0.94
-- ONDO: SHORT_SQUEEZE_24H | OI/mc 0.76% | topPos 0.69 | taker 0.92
 
 ## Revenue / buyback flags
 - collector-crypt: REVENUE_ACCELERATING, CHEAP_VS_REVENUE
@@ -48,12 +47,12 @@
 - (7 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 16 | mean -1.4% (-0.05R) | in profit 7 | older than 7d 15
-- worst: MANA -0.75R, LTC -0.68R, ALGO -0.56R | best: NIGHT 0.44R, PYTH 0.47R, BEAM 1.47R
+- open 16 | mean -1.7% (-0.07R) | in profit 7 | older than 7d 15
+- worst: MANA -0.78R, LTC -0.70R, ETHFI -0.59R | best: TIA 0.44R, PYTH 0.47R, BEAM 1.47R
 
 ## System
-- CoinGecko 8348/10000 used, month-end projection 10050 (100%), throttle level 2 | by script {'scan': 2706, 'check_liquidity': 396, 'breakout_check': 5159, 'counterfactual_check': 87}
+- CoinGecko 8350/10000 used, month-end projection 10052 (100%), throttle level 2 | by script {'scan': 2708, 'check_liquidity': 396, 'breakout_check': 5159, 'counterfactual_check': 87}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=52), H2 SUPPORTED (n=195)
-- radar-flags.json scan age: 18m
-- excluded from radar (pegged/tokenized equity): 43
+- radar-flags.json scan age: 7m
+- excluded from radar (pegged/tokenized equity): 42
