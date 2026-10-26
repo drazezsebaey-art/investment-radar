@@ -1,29 +1,32 @@
-# Radar digest - 2026-10-26 22:37 UTC
+# Radar digest - 2026-10-26 23:06 UTC
 
 ## Market
-- BTC scenario **B** | price 79922 | wk close 80637 vs 82800 | 50W 76146 (4.96%) | 2h old
-- Alts: **BTC_LED** [-] | BTC.D 57.44% | ETH/BTC 0.02895 | breadth7d -% | stables 30d -0.90%
-- Alt risk (BTC.D): **NORMAL**  | 3d 0.09pt | 7d -0.12pt | n=121
+- BTC scenario **B** | price 79735 | wk close 80637 vs 82800 | 50W 76146 (4.71%) | 1m old
+- Alts: **BTC_LED** [-] | BTC.D 57.45% | ETH/BTC 0.02888 | breadth7d -% | stables 30d -0.93%
+- Alt risk (BTC.D): **NORMAL**  | 3d 0.13pt | 7d -0.03pt | n=121
 - Gold: PAXG 1m -2.18% | real10y 2.66 (-19bp 1m) | USD 1m 0.64% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
 - 10y 1w: -9bp = real -8 + breakeven -1 -> **SMALL_MOVE**
 - 10y 1m: -18bp = real -19 + breakeven 0 -> **REAL_YIELD_DRIVEN**
 
 ## Coins in correction (entry_ready first)
-- ONDO: **RESUMING** ENTRY_READY | +88% impulse, retr 0.69 | OI dd 45% | fund 0.0100 | hold False | inval 0.39720 | OB 0.39720-0.40510
-- ADA: **BROKEN** | +48% impulse, retr 0.84 | OI dd 33% | fund 0.0073 | hold True | inval 0.20040 | OB 0.19010-0.19720
-- LINK: **BROKEN** | +48% impulse, retr 0.86 | OI dd 26% | fund 0.0100 | hold False | inval 11.26200 | OB 10.61800-10.96200
-- GRASS: **RESET_DONE** | +196% impulse, retr 0.37 | OI dd 21% | fund 0.0050 | hold False | inval 0.60710 | OB 0.60710-0.64950
-- NEAR: **RESET_DONE** | +166% impulse, retr 0.42 | OI dd 29% | fund 0.0010 | hold False | inval 4.43100 | OB 3.40300-3.68100
-- SEI: **RESET_DONE** | +110% impulse, retr 0.77 | OI dd 35% | fund 0.0050 | hold False | inval 0.05170 | OB 0.04119-0.04239
-- SUI: **RESET_DONE** | +92% impulse, retr 0.62 | OI dd 31% | fund 0.0055 | hold False | inval 0.90010 | OB 0.80880-0.83220
-- WLD: **RESET_DONE** | +74% impulse, retr 0.69 | OI dd 24% | fund -0.0105 | hold False | inval 0.39960 | OB 0.39960-0.41350
+- ONDO: **RESUMING** ENTRY_READY | +88% impulse, retr 0.70 | OI dd 45% | fund 0.0100 | hold False | inval 0.39720 | OB 0.39720-0.40510
+- ADA: **BROKEN** | +48% impulse, retr 0.85 | OI dd 33% | fund 0.0027 | hold True | inval 0.20040 | OB 0.19010-0.19720
+- LINK: **BROKEN** | +48% impulse, retr 0.88 | OI dd 26% | fund 0.0100 | hold False | inval 10.61800 | OB 10.61800-10.96200
+- NEAR: **RESET_DONE** | +166% impulse, retr 0.42 | OI dd 29% | fund -0.0014 | hold False | inval 4.25000 | OB 3.40300-3.68100
+- ENA: **RESET_DONE** | +119% impulse, retr 0.56 | OI dd 22% | fund 0.0100 | hold False | inval 0.18400 | OB 0.18389-0.19046
+- SEI: **RESET_DONE** | +110% impulse, retr 0.77 | OI dd 35% | fund 0.0050 | hold False | inval 0.04119 | OB 0.04119-0.04239
+- SUI: **RESET_DONE** | +92% impulse, retr 0.63 | OI dd 31% | fund -0.0025 | hold False | inval 0.90010 | OB 0.80880-0.83220
+- WLD: **RESET_DONE** | +74% impulse, retr 0.70 | OI dd 24% | fund -0.0080 | hold False | inval 0.39960 | OB 0.39960-0.41350
 
 ## Pre-pump candidates
 - WLD: [A+B] 7d -14.6%
 - INJ: [A+C] 7d -6.2%
 
 ## ETF pipeline (new this run)
-- bittensor: other - Technical Analysis of 21Shares Bittensor ETP 2025-open end (EURONEXT:ATAO-EUR) - TradingVi
+- tron NEW: other - TRON DAO: Spotlights TRXS ETF Backed by Real TRX - Blockchain News
+- solana NEW: other - Fidelity’s Solana ETF Draws Fresh Cash as Token Rallies Past $100 - TipRanks
+- zcash: filing - Tuttle: Files for 2x Zcash Leveraged ETF - Blockchain News
+- zcash: filing - Tuttle: Files for 2x Zcash Leveraged ETF - Blockchain News
 
 ## Derivatives flags (OKX)
 - BTC: LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 0.99
@@ -44,12 +47,12 @@
 - (7 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 16 | mean -2.5% (-0.13R) | in profit 4 | older than 7d 15
-- worst: MANA -0.82R, LTC -0.72R, ETHFI -0.62R | best: PYTH 0.37R, TIA 0.46R, BEAM 1.53R
+- open 16 | mean -2.5% (-0.12R) | in profit 4 | older than 7d 15
+- worst: MANA -0.82R, LTC -0.72R, ETHFI -0.61R | best: PYTH 0.39R, TIA 0.41R, BEAM 1.55R
 
 ## System
-- CoinGecko 8367/10000 used, month-end projection 10008 (100%), throttle level 2 | by script {'scan': 2724, 'check_liquidity': 397, 'breakout_check': 5159, 'counterfactual_check': 87}
+- CoinGecko 8370/10000 used, month-end projection 9996 (100%), throttle level 1 | by script {'scan': 2726, 'check_liquidity': 398, 'breakout_check': 5159, 'counterfactual_check': 87}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=52), H2 SUPPORTED (n=195)
-- radar-flags.json scan age: 7m
+- radar-flags.json scan age: 6m
 - excluded from radar (pegged/tokenized equity): 44
