@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-26 11:06 UTC
+# Radar digest - 2026-10-26 11:37 UTC
 
 ## Market
-- BTC scenario **B** | price 80336 | wk close 80637 vs 82800 | 50W 76146 (5.50%) | 1m old
+- BTC scenario **B** | price 80336 | wk close 80637 vs 82800 | 50W 76146 (5.50%) | 32m old
 - Alts: **BTC_LED** [-] | BTC.D 57.51% | ETH/BTC 0.02897 | breadth7d -% | stables 30d -0.88%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.16pt | 7d -0.04pt | n=121
 - Gold: PAXG 1m -3.43% | real10y 2.64 (-12bp 1m) | USD 1m 1.72% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
@@ -19,7 +19,7 @@
 - SEI: **RESET_DONE** | +110% impulse, retr 0.76 | OI dd 38% | fund 0.0050 | hold False | inval 0.04119 | OB 0.04119-0.04239
 
 ## Pre-pump candidates
-- ZEC: [A+C] 7d 6.0%
+- ZEC: [A+C] 7d 5.4%
 
 ## ETF pipeline (new this run)
 - dogecoin NEW: other - What Happens to Dogecoin ETF After House of Doge Deal Ends? - Coin Gabbar
@@ -32,14 +32,14 @@
 - bittensor: other - Grayscale Advances Plans to List Bittensor ETF on NYSE Arca, Will TAO Price Jump? - CoinGa
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.92 | taker 0.99
+- BTC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.92 | taker 0.98
 - ETH: SHORT_SQUEEZE_24H | OI/mc 0.64% | topPos 0.87 | taker 1.02
-- AVAX: LONG_FLUSH_24H | OI/mc 0.37% | topPos 0.92 | taker 1.06
-- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.97
+- AVAX: LONG_FLUSH_24H | OI/mc 0.37% | topPos 0.93 | taker 1.05
+- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.98
 - SUI: LONG_FLUSH_24H | OI/mc 0.93% | topPos 0.80 | taker 1.00
-- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.97 | taker 1.03
-- ZEC: SHORT_SQUEEZE_24H | OI/mc 0.67% | topPos 1.12 | taker 1.04
-- WLD: LONG_FLUSH_24H | OI/mc -% | topPos 0.83 | taker 1.06
+- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.96 | taker 1.02
+- ZEC: SHORT_SQUEEZE_24H | OI/mc 0.68% | topPos 1.12 | taker 1.04
+- WLD: LONG_FLUSH_24H | OI/mc -% | topPos 0.84 | taker 1.06
 
 ## Revenue / buyback flags
 - collector-crypt: REVENUE_ACCELERATING, CHEAP_VS_REVENUE
@@ -51,11 +51,11 @@
 
 ## Paper book (open trades, marked to last scan)
 - open 16 | mean -3.1% (-0.15R) | in profit 4 | older than 7d 15
-- worst: MANA -0.84R, LTC -0.70R, ETHFI -0.65R | best: TIA 0.29R, PYTH 0.55R, BEAM 1.39R
+- worst: MANA -0.83R, LTC -0.71R, ETHFI -0.67R | best: TIA 0.31R, PYTH 0.54R, BEAM 1.36R
 
 ## System
-- CoinGecko 8213/10000 used, month-end projection 10001 (100%), throttle level 2 | by script {'scan': 2678, 'check_liquidity': 388, 'breakout_check': 5060, 'counterfactual_check': 87}
+- CoinGecko 8215/10000 used, month-end projection 10003 (100%), throttle level 2 | by script {'scan': 2680, 'check_liquidity': 388, 'breakout_check': 5060, 'counterfactual_check': 87}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=52), H2 SUPPORTED (n=195)
-- radar-flags.json scan age: 6m
+- radar-flags.json scan age: 7m
 - excluded from radar (pegged/tokenized equity): 43
