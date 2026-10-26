@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-26 02:05 UTC
+# Radar digest - 2026-10-26 02:37 UTC
 
 ## Market
-- BTC scenario **B** | price 80100 | wk close 80637 vs 82800 | 50W 76146 (5.19%) | 1h old
+- BTC scenario **B** | price 80100 | wk close 80637 vs 82800 | 50W 76146 (5.19%) | 2h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.43% | ETH/BTC 0.02908 | breadth7d -% | stables 30d -1.05%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.01pt | 7d -0.09pt | n=121
 - Gold: PAXG 1m -3.80% | real10y 2.64 (-12bp 1m) | USD 1m 1.72% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
@@ -25,14 +25,14 @@
 - zcash: other - Zcash ETF Flow Tables Diverge on $41.1 Million Weekly Total - TOKENPOST
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 0.94
-- ETH: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.94
-- AVAX: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.37% | topPos 0.91 | taker 0.78
-- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.91
-- SUI: LONG_FLUSH_24H | OI/mc 0.93% | topPos 0.80 | taker 0.90
-- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.93 | taker 1.09
-- TAO: LONG_FLUSH_24H | OI/mc 0.78% | topPos 0.85 | taker 0.94
-- ADA: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.40% | topPos 0.87 | taker 0.84
+- BTC: LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 0.93
+- ETH: LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 0.94
+- AVAX: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.37% | topPos 0.92 | taker 0.77
+- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.92
+- SUI: LONG_FLUSH_24H | OI/mc 0.94% | topPos 0.80 | taker 0.90
+- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.96 | taker 1.14
+- TAO: LONG_FLUSH_24H | OI/mc 0.77% | topPos 0.85 | taker 0.93
+- ADA: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.40% | topPos 0.88 | taker 0.84
 
 ## Revenue / buyback flags
 - collector-crypt: REVENUE_ACCELERATING, CHEAP_VS_REVENUE
@@ -43,12 +43,12 @@
 - (5 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 16 | mean -4.3% (-0.25R) | in profit 4 | older than 7d 15
-- worst: MANA -0.87R, ETHFI -0.79R, LTC -0.71R | best: TIA 0.28R, BEAM 0.40R, PYTH 0.47R
+- open 16 | mean -4.4% (-0.25R) | in profit 4 | older than 7d 15
+- worst: MANA -0.86R, ETHFI -0.80R, LTC -0.71R | best: TIA 0.34R, BEAM 0.42R, PYTH 0.45R
 
 ## System
-- CoinGecko 8116/10000 used, month-end projection 10030 (100%), throttle level 2 | by script {'scan': 2634, 'check_liquidity': 386, 'breakout_check': 5009, 'counterfactual_check': 87}
+- CoinGecko 8118/10000 used, month-end projection 10033 (100%), throttle level 2 | by script {'scan': 2636, 'check_liquidity': 386, 'breakout_check': 5009, 'counterfactual_check': 87}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=52), H2 SUPPORTED (n=193)
-- radar-flags.json scan age: 5m
-- excluded from radar (pegged/tokenized equity): 43
+- radar-flags.json scan age: 7m
+- excluded from radar (pegged/tokenized equity): 42
