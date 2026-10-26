@@ -1,10 +1,10 @@
-# Radar digest - 2026-10-26 09:37 UTC
+# Radar digest - 2026-10-26 10:05 UTC
 
 ## Market
-- BTC scenario **B** | price 80232 | wk close 80637 vs 82800 | 50W 76146 (5.37%) | 32m old
+- BTC scenario **B** | price 80232 | wk close 80637 vs 82800 | 50W 76146 (5.37%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.48% | ETH/BTC 0.02896 | breadth7d -% | stables 30d -0.88%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.11pt | 7d -0.07pt | n=121
-- Gold: PAXG 1m -3.63% | real10y 2.64 (-12bp 1m) | USD 1m 1.72% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
+- Gold: PAXG 1m -3.43% | real10y 2.64 (-12bp 1m) | USD 1m 1.72% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
 - 10y 1w: -14bp = real -14 + breakeven -1 -> **REAL_YIELD_DRIVEN**
 - 10y 1m: -15bp = real -12 + breakeven 1 -> **REAL_YIELD_DRIVEN**
 
@@ -19,7 +19,7 @@
 - SEI: **RESET_DONE** | +110% impulse, retr 0.75 | OI dd 38% | fund 0.0050 | hold False | inval 0.04119 | OB 0.04119-0.04239
 
 ## Pre-pump candidates
-- ZEC: [A+C] 7d 5.0%
+- ZEC: [A+C] 7d 6.0%
 
 ## ETF pipeline (new this run)
 - zcash: other - Zcash Price Forecast: Why are renewed ETF inflows struggling to offset broader market head
@@ -44,12 +44,12 @@
 - (7 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 16 | mean -2.8% (-0.13R) | in profit 5 | older than 7d 15
-- worst: MANA -0.82R, LTC -0.68R, ETHFI -0.66R | best: TIA 0.34R, PYTH 0.45R, BEAM 1.60R
+- open 16 | mean -2.8% (-0.14R) | in profit 5 | older than 7d 15
+- worst: MANA -0.83R, LTC -0.69R, ETHFI -0.66R | best: TIA 0.32R, PYTH 0.54R, BEAM 1.50R
 
 ## System
-- CoinGecko 8207/10000 used, month-end projection 10026 (100%), throttle level 2 | by script {'scan': 2672, 'check_liquidity': 388, 'breakout_check': 5060, 'counterfactual_check': 87}
+- CoinGecko 8209/10000 used, month-end projection 10012 (100%), throttle level 2 | by script {'scan': 2674, 'check_liquidity': 388, 'breakout_check': 5060, 'counterfactual_check': 87}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=52), H2 SUPPORTED (n=195)
-- radar-flags.json scan age: 7m
+- radar-flags.json scan age: 5m
 - excluded from radar (pegged/tokenized equity): 43
