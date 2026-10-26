@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-26 08:05 UTC
+# Radar digest - 2026-10-26 08:37 UTC
 
 ## Market
-- BTC scenario **B** | price 80170 | wk close 80637 vs 82800 | 50W 76146 (5.28%) | 1h old
+- BTC scenario **B** | price 80170 | wk close 80637 vs 82800 | 50W 76146 (5.28%) | 2h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.48% | ETH/BTC 0.02896 | breadth7d -% | stables 30d -0.88%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.11pt | 7d -0.07pt | n=121
 - Gold: PAXG 1m -3.63% | real10y 2.64 (-12bp 1m) | USD 1m 1.72% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
@@ -25,14 +25,14 @@
 - sui: other - 21Shares 2x Long Sui ETF TXXS Stock Forecast & Price Target - Yahoo! Finance Canada
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.92 | taker 0.97
-- ETH: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.87 | taker 0.98
 - SOL: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 1.04
-- AVAX: LONG_FLUSH_24H | OI/mc 0.37% | topPos 0.92 | taker 1.01
-- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.93
-- SUI: LONG_FLUSH_24H | OI/mc 0.94% | topPos 0.79 | taker 0.96
-- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.96 | taker 1.08
-- TAO: LONG_FLUSH_24H | OI/mc 0.78% | topPos 0.85 | taker 0.97
+- AVAX: LONG_FLUSH_24H | OI/mc 0.37% | topPos 0.93 | taker 1.01
+- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 0.92
+- SUI: LONG_FLUSH_24H | OI/mc 0.93% | topPos 0.80 | taker 0.94
+- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.96 | taker 1.07
+- ZEC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 1.10 | taker 1.01
+- WLD: LONG_FLUSH_24H | OI/mc -% | topPos 0.85 | taker 0.95
+- ADA: LONG_FLUSH_24H | OI/mc 0.41% | topPos 0.87 | taker 0.99
 
 ## Revenue / buyback flags
 - collector-crypt: REVENUE_ACCELERATING, CHEAP_VS_REVENUE
@@ -43,12 +43,12 @@
 - (5 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 16 | mean -4.3% (-0.24R) | in profit 4 | older than 7d 15
-- worst: MANA -0.88R, ETHFI -0.82R, LTC -0.74R | best: TIA 0.24R, PYTH 0.28R, BEAM 1.25R
+- open 16 | mean -3.8% (-0.21R) | in profit 4 | older than 7d 15
+- worst: MANA -0.87R, ETHFI -0.80R, LTC -0.73R | best: TIA 0.30R, PYTH 0.35R, BEAM 1.28R
 
 ## System
-- CoinGecko 8201/10000 used, month-end projection 10035 (100%), throttle level 2 | by script {'scan': 2666, 'check_liquidity': 388, 'breakout_check': 5060, 'counterfactual_check': 87}
+- CoinGecko 8203/10000 used, month-end projection 10038 (100%), throttle level 2 | by script {'scan': 2668, 'check_liquidity': 388, 'breakout_check': 5060, 'counterfactual_check': 87}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=52), H2 SUPPORTED (n=194)
-- radar-flags.json scan age: 5m
+- radar-flags.json scan age: 7m
 - excluded from radar (pegged/tokenized equity): 42
