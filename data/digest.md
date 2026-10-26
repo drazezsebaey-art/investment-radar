@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-26 16:36 UTC
+# Radar digest - 2026-10-26 17:06 UTC
 
 ## Market
-- BTC scenario **B** | price 80443 | wk close 80637 vs 82800 | 50W 76146 (5.64%) | 2h old
+- BTC scenario **B** | price 80433 | wk close 80637 vs 82800 | 50W 76146 (5.63%) | 1m old
 - Alts: **BTC_LED** [-] | BTC.D 57.42% | ETH/BTC 0.02893 | breadth7d -% | stables 30d -0.87%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.04pt | 7d -0.18pt | n=121
 - Gold: PAXG 1m -2.12% | real10y 2.64 (-12bp 1m) | USD 1m 1.72% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
@@ -9,33 +9,31 @@
 - 10y 1m: -15bp = real -12 + breakeven 1 -> **REAL_YIELD_DRIVEN**
 
 ## Coins in correction (entry_ready first)
-- WLD: **RESET_DONE** ENTRY_READY | +74% impulse, retr 0.65 | OI dd 28% | fund -0.0097 | hold True | inval 0.39960 | OB 0.39960-0.41350
-- ONDO: **RESUMING** ENTRY_READY | +88% impulse, retr 0.66 | OI dd 46% | fund 0.0004 | hold False | inval 0.39720 | OB 0.39720-0.40510
-- ZEC: **BROKEN** | +64% impulse, retr 0.67 | OI dd 41% | fund 0.0075 | hold False | inval 1119.27000 | OB 1110.00000-1153.08000
-- ADA: **BROKEN** | +48% impulse, retr 0.82 | OI dd 35% | fund 0.0015 | hold True | inval 0.20050 | OB 0.19010-0.19720
-- LINK: **BROKEN** | +48% impulse, retr 0.82 | OI dd 28% | fund 0.0100 | hold False | inval 11.26200 | OB 10.61800-10.96200
-- DASH: **BROKEN** | +48% impulse, retr 0.88 | OI dd 59% | fund 0.0050 | hold False | inval 48.97000 | OB 46.30000-48.25000
-- CARDS: **ONGOING** | +225% impulse, retr 0.26 | OI dd -% | fund - | hold True | inval 0.23780 | OB 0.23780-0.26170
-- NEAR: **ONGOING** | +166% impulse, retr 0.37 | OI dd 28% | fund 0.0057 | hold False | inval 4.25000 | OB 4.02900-4.48300
+- ONDO: **RESUMING** ENTRY_READY | +88% impulse, retr 0.67 | OI dd 45% | fund 0.0046 | hold False | inval 0.39720 | OB 0.39720-0.40510
+- MON: **BROKEN** | +72% impulse, retr 0.92 | OI dd 59% | fund -0.0088 | hold False | inval 0.02075 | OB 0.02075-0.02134
+- ADA: **BROKEN** | +48% impulse, retr 0.82 | OI dd 33% | fund 0.0060 | hold True | inval 0.20050 | OB 0.19010-0.19720
+- LINK: **BROKEN** | +48% impulse, retr 0.83 | OI dd 26% | fund 0.0100 | hold False | inval 11.26200 | OB 10.61800-10.96200
+- CARDS: **ONGOING** | +225% impulse, retr 0.24 | OI dd -% | fund - | hold True | inval 0.23780 | OB 0.23780-0.26170
+- NEAR: **RESET_DONE** | +166% impulse, retr 0.40 | OI dd 29% | fund 0.0087 | hold False | inval 4.25000 | OB 4.02900-4.48300
+- SEI: **RESET_DONE** | +110% impulse, retr 0.75 | OI dd 35% | fund 0.0050 | hold False | inval 0.04119 | OB 0.04119-0.04239
+- SUI: **RESET_DONE** | +92% impulse, retr 0.60 | OI dd 31% | fund 0.0100 | hold False | inval 0.80880 | OB 0.80880-0.83220
 
 ## Pre-pump candidates
-- SEI: [A+E] 7d -12.8%
+- SEI: [A+E] 7d -13.5%
 - WLD: [A+B] 7d -12.4%
 - INJ: [A+E] 7d -7.5%
-- AVAX: [A+E] 7d -7.1%
+- AVAX: [A+E] 7d -6.7%
 - TAO: [A+E] 7d -6.0%
-- ETH: [D+E] 7d -3.4%
-- SOL: [A+E] 7d -2.6%
+- ETH: [D+E] 7d -3.1%
+- SOL: [A+E] 7d -2.8%
 - DOGE: [A+E] 7d -2.2%
 
 ## ETF pipeline (new this run)
-- bittensor: conversion - Grayscale Files to Convert Bittensor Trust Into TAO ETF - Coinpedia
-- bittensor: conversion - Grayscale Files to Convert Bittensor Trust Into TAO ETF - Coinpedia
-- zcash: filing - Cryptex Files S-1 for Multi-Crypto ETF With XRP, SHIB, Zcash - Cryptonews.net
-- zcash: filing - Cryptex Files S-1 for Multi-Crypto ETF With XRP, SHIB, Zcash - Cryptonews.net
-- zcash: other - Zcash price rebounds as ETF inflows hit $41M, but $1,000 risk remains - TradingView
-- zcash: other - Zcash ETF Net Assets Reach $463 Million as ZEC Nears $1,200 - BeInCrypto
-- zcash: other - Zcash ETF Inflows Reverse Three Weeks of Outflows as ZEC Rallies - Blockonomi
+- cap-4 NEW: other - KraneShares STAR Market 50 ETF Tokenized bStocks Price (KSTRB/USD) Today | Live Price, Mar
+- solana NEW: other - XRP ETF Inflows Resume as Solana Funds Extend Three-Week Losing Streak - Analytics Insight
+- dogecoin NEW: other - 21Shares 2x Long Dogecoin ETF TXXD Stock Forecast & Price Target - Yahoo Finance
+- cap-4 NEW: other - SP500 tokenized ETF (xStock) Price (SPYX/USD) Today | Live Price, Market Cap & Chart - Bin
+- bittensor: other - Grayscale Advances Plans to List Bittensor ETF on NYSE Arca, Will TAO Price Jump? - Crypto
 
 ## Derivatives flags (OKX)
 - BTC: LONG_FLUSH_24H | OI/mc -% | topPos 0.93 | taker 0.98
@@ -57,11 +55,11 @@
 
 ## Paper book (open trades, marked to last scan)
 - open 16 | mean -2.1% (-0.09R) | in profit 7 | older than 7d 15
-- worst: MANA -0.80R, LTC -0.70R, ETHFI -0.66R | best: TIA 0.32R, PYTH 0.58R, BEAM 1.53R
+- worst: MANA -0.80R, LTC -0.71R, ETHFI -0.66R | best: TIA 0.32R, PYTH 0.56R, BEAM 1.51R
 
 ## System
-- CoinGecko 8293/10000 used, month-end projection 10016 (100%), throttle level 2 | by script {'scan': 2700, 'check_liquidity': 394, 'breakout_check': 5112, 'counterfactual_check': 87}
+- CoinGecko 8295/10000 used, month-end projection 10002 (100%), throttle level 2 | by script {'scan': 2702, 'check_liquidity': 394, 'breakout_check': 5112, 'counterfactual_check': 87}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=52), H2 SUPPORTED (n=195)
 - radar-flags.json scan age: 6m
-- excluded from radar (pegged/tokenized equity): 43
+- excluded from radar (pegged/tokenized equity): 42
