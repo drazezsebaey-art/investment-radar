@@ -1,29 +1,35 @@
-# Radar digest - 2026-10-26 10:37 UTC
+# Radar digest - 2026-10-26 11:06 UTC
 
 ## Market
-- BTC scenario **B** | price 80232 | wk close 80637 vs 82800 | 50W 76146 (5.37%) | 2h old
-- Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.48% | ETH/BTC 0.02896 | breadth7d -% | stables 30d -0.88%
-- Alt risk (BTC.D): **NORMAL**  | 3d 0.11pt | 7d -0.07pt | n=121
+- BTC scenario **B** | price 80336 | wk close 80637 vs 82800 | 50W 76146 (5.50%) | 1m old
+- Alts: **BTC_LED** [-] | BTC.D 57.51% | ETH/BTC 0.02897 | breadth7d -% | stables 30d -0.88%
+- Alt risk (BTC.D): **NORMAL**  | 3d 0.16pt | 7d -0.04pt | n=121
 - Gold: PAXG 1m -3.43% | real10y 2.64 (-12bp 1m) | USD 1m 1.72% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
 - 10y 1w: -14bp = real -14 + breakeven -1 -> **REAL_YIELD_DRIVEN**
 - 10y 1m: -15bp = real -12 + breakeven 1 -> **REAL_YIELD_DRIVEN**
 
 ## Coins in correction (entry_ready first)
-- WLD: **RESET_DONE** ENTRY_READY | +74% impulse, retr 0.68 | OI dd 28% | fund 0.0018 | hold True | inval 0.39960 | OB 0.39960-0.41350
-- ZEC: **BROKEN** | +64% impulse, retr 0.73 | OI dd 41% | fund 0.0060 | hold False | inval 1119.27000 | OB 1110.00000-1153.08000
-- ADA: **BROKEN** | +48% impulse, retr 0.85 | OI dd 35% | fund -0.0095 | hold True | inval 0.20050 | OB 0.19010-0.19720
-- LINK: **BROKEN** | +48% impulse, retr 0.84 | OI dd 28% | fund 0.0067 | hold False | inval 11.26200 | OB 10.61800-10.96200
-- CARDS: **ONGOING** | +225% impulse, retr 0.33 | OI dd -% | fund - | hold True | inval 0.23780 | OB 0.23780-0.26170
-- NEAR: **RESET_DONE** | +166% impulse, retr 0.40 | OI dd 28% | fund -0.0020 | hold False | inval 4.25000 | OB 4.02900-4.48300
-- ENA: **RESET_DONE** | +119% impulse, retr 0.53 | OI dd 36% | fund 0.0100 | hold False | inval 0.18400 | OB 0.18389-0.19046
-- SEI: **RESET_DONE** | +110% impulse, retr 0.75 | OI dd 38% | fund 0.0050 | hold False | inval 0.04119 | OB 0.04119-0.04239
+- WLD: **RESET_DONE** ENTRY_READY | +74% impulse, retr 0.69 | OI dd 28% | fund -0.0044 | hold True | inval 0.39960 | OB 0.39960-0.41350
+- ZEC: **BROKEN** | +64% impulse, retr 0.71 | OI dd 41% | fund 0.0018 | hold False | inval 1119.27000 | OB 1110.00000-1153.08000
+- ADA: **BROKEN** | +48% impulse, retr 0.85 | OI dd 35% | fund -0.0075 | hold True | inval 0.20050 | OB 0.19010-0.19720
+- LINK: **BROKEN** | +48% impulse, retr 0.84 | OI dd 28% | fund 0.0098 | hold False | inval 11.26200 | OB 10.61800-10.96200
+- CARDS: **ONGOING** | +225% impulse, retr 0.31 | OI dd -% | fund - | hold True | inval 0.23780 | OB 0.23780-0.26170
+- NEAR: **RESET_DONE** | +166% impulse, retr 0.40 | OI dd 28% | fund -0.0022 | hold False | inval 4.25000 | OB 4.02900-4.48300
+- ENA: **RESET_DONE** | +119% impulse, retr 0.55 | OI dd 36% | fund 0.0100 | hold False | inval 0.18400 | OB 0.18389-0.19046
+- SEI: **RESET_DONE** | +110% impulse, retr 0.76 | OI dd 38% | fund 0.0050 | hold False | inval 0.04119 | OB 0.04119-0.04239
 
 ## Pre-pump candidates
 - ZEC: [A+C] 7d 6.0%
 
 ## ETF pipeline (new this run)
-- zcash: other - Zcash Price Forecast: Why are renewed ETF inflows struggling to offset broader market head
-- zcash: other - Zcash price rebounds as ETF inflows hit $41M, but $1,000 risk remains - Invezz
+- dogecoin NEW: other - What Happens to Dogecoin ETF After House of Doge Deal Ends? - Coin Gabbar
+- gatechain-token NEW: other - Gate credits 67 stock and ETF dividends in USDT after 10% withholding, covering major firm
+- bittensor: conversion - Grayscale plans to list Bittensor trust on NYSE Arca, paving way for U.S. ETF conversion. 
+- bittensor: conversion - Grayscale plans to list Bittensor trust on NYSE Arca, paving way for U.S. ETF conversion. 
+- zcash: filing - Cryptex Files S-1 for Multi-Crypto ETF With XRP, SHIB, Zcash - CoinGape
+- zcash: filing - Cryptex Files S-1 for Multi-Crypto ETF With XRP, SHIB, Zcash - CoinGape
+- bittensor: other - Grayscale Bittensor Trust Proposes New ETF Listing - The Cryptonomist
+- bittensor: other - Grayscale Advances Plans to List Bittensor ETF on NYSE Arca, Will TAO Price Jump? - CoinGa
 
 ## Derivatives flags (OKX)
 - BTC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.92 | taker 0.99
@@ -44,12 +50,12 @@
 - (7 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 16 | mean -3.1% (-0.15R) | in profit 5 | older than 7d 15
-- worst: MANA -0.84R, LTC -0.69R, ETHFI -0.67R | best: TIA 0.29R, PYTH 0.49R, BEAM 1.44R
+- open 16 | mean -3.1% (-0.15R) | in profit 4 | older than 7d 15
+- worst: MANA -0.84R, LTC -0.70R, ETHFI -0.65R | best: TIA 0.29R, PYTH 0.55R, BEAM 1.39R
 
 ## System
-- CoinGecko 8211/10000 used, month-end projection 10015 (100%), throttle level 2 | by script {'scan': 2676, 'check_liquidity': 388, 'breakout_check': 5060, 'counterfactual_check': 87}
+- CoinGecko 8213/10000 used, month-end projection 10001 (100%), throttle level 2 | by script {'scan': 2678, 'check_liquidity': 388, 'breakout_check': 5060, 'counterfactual_check': 87}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=52), H2 SUPPORTED (n=195)
-- radar-flags.json scan age: 7m
+- radar-flags.json scan age: 6m
 - excluded from radar (pegged/tokenized equity): 43
