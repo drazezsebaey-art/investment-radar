@@ -1,12 +1,12 @@
-# Radar digest - 2026-10-26 21:36 UTC
+# Radar digest - 2026-10-26 22:05 UTC
 
 ## Market
-- BTC scenario **B** | price 79922 | wk close 80637 vs 82800 | 50W 76146 (4.96%) | 32m old
+- BTC scenario **B** | price 79922 | wk close 80637 vs 82800 | 50W 76146 (4.96%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 57.44% | ETH/BTC 0.02895 | breadth7d -% | stables 30d -0.90%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.09pt | 7d -0.12pt | n=121
-- Gold: PAXG 1m -2.12% | real10y 2.64 (-12bp 1m) | USD 1m 1.72% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
-- 10y 1w: -14bp = real -14 + breakeven -1 -> **REAL_YIELD_DRIVEN**
-- 10y 1m: -15bp = real -12 + breakeven 1 -> **REAL_YIELD_DRIVEN**
+- Gold: PAXG 1m -2.18% | real10y 2.66 (-19bp 1m) | USD 1m 0.64% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
+- 10y 1w: -9bp = real -8 + breakeven -1 -> **SMALL_MOVE**
+- 10y 1m: -18bp = real -19 + breakeven 0 -> **REAL_YIELD_DRIVEN**
 
 ## Coins in correction (entry_ready first)
 - ONDO: **RESUMING** ENTRY_READY | +88% impulse, retr 0.69 | OI dd 45% | fund 0.0100 | hold False | inval 0.39720 | OB 0.39720-0.40510
@@ -19,7 +19,8 @@
 - WLD: **RESET_DONE** | +74% impulse, retr 0.69 | OI dd 24% | fund -0.0105 | hold False | inval 0.39960 | OB 0.39960-0.41350
 
 ## Pre-pump candidates
-- WLD: [A+B] 7d -14.0%
+- WLD: [A+B] 7d -14.6%
+- INJ: [A+C] 7d -6.2%
 
 ## ETF pipeline (new this run)
 - bittensor: other - Technical Analysis of 21Shares Bittensor ETP 2025-open end (EURONEXT:ATAO-EUR) - TradingVi
@@ -43,12 +44,12 @@
 - (7 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 16 | mean -2.6% (-0.13R) | in profit 4 | older than 7d 15
-- worst: MANA -0.84R, LTC -0.71R, ETHFI -0.62R | best: PYTH 0.33R, TIA 0.39R, BEAM 1.52R
+- open 16 | mean -2.3% (-0.11R) | in profit 4 | older than 7d 15
+- worst: MANA -0.81R, LTC -0.70R, ETHFI -0.62R | best: PYTH 0.35R, TIA 0.49R, BEAM 1.47R
 
 ## System
-- CoinGecko 8363/10000 used, month-end projection 10019 (100%), throttle level 2 | by script {'scan': 2720, 'check_liquidity': 397, 'breakout_check': 5159, 'counterfactual_check': 87}
+- CoinGecko 8365/10000 used, month-end projection 10006 (100%), throttle level 2 | by script {'scan': 2722, 'check_liquidity': 397, 'breakout_check': 5159, 'counterfactual_check': 87}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=52), H2 SUPPORTED (n=195)
-- radar-flags.json scan age: 6m
+- radar-flags.json scan age: 5m
 - excluded from radar (pegged/tokenized equity): 43
