@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-26 00:37 UTC
+# Radar digest - 2026-10-26 01:06 UTC
 
 ## Market
-- BTC scenario **B** | price 80422 | wk close 80637 vs 82800 | 50W 76146 (5.62%) | 2h old
+- BTC scenario **B** | price 80100 | wk close 80637 vs 82800 | 50W 76146 (5.19%) | 1m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.43% | ETH/BTC 0.02908 | breadth7d -% | stables 30d -1.05%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.01pt | 7d -0.09pt | n=121
 - Gold: PAXG 1m -3.80% | real10y 2.64 (-12bp 1m) | USD 1m 1.72% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
@@ -9,23 +9,20 @@
 - 10y 1m: -15bp = real -12 + breakeven 1 -> **REAL_YIELD_DRIVEN**
 
 ## Coins in correction (entry_ready first)
-- SUI: **RESET_DONE** ENTRY_READY | +92% impulse, retr 0.60 | OI dd 32% | fund 0.0014 | hold True | inval 0.80880 | OB 0.80880-0.83220
-- WLD: **RESET_DONE** ENTRY_READY | +74% impulse, retr 0.64 | OI dd 28% | fund 0.0023 | hold True | inval 0.39960 | OB 0.39960-0.41350
-- ZEC: **BROKEN** | +64% impulse, retr 0.73 | OI dd 41% | fund 0.0100 | hold False | inval 1119.27000 | OB 1110.00000-1153.08000
-- ADA: **BROKEN** | +48% impulse, retr 0.84 | OI dd 35% | fund -0.0032 | hold False | inval 0.20050 | OB 0.19010-0.19720
-- LINK: **BROKEN** | +48% impulse, retr 0.83 | OI dd 28% | fund 0.0100 | hold False | inval 10.61800 | OB 10.61800-10.96200
-- CARDS: **ONGOING** | +225% impulse, retr 0.32 | OI dd -% | fund - | hold False | inval 0.29650 | OB 0.23780-0.26170
-- GRASS: **RESET_DONE** | +196% impulse, retr 0.28 | OI dd 20% | fund 0.0050 | hold False | inval 0.60710 | OB 0.60710-0.64950
-- NEAR: **RESET_DONE** | +166% impulse, retr 0.38 | OI dd 28% | fund -0.0040 | hold False | inval 4.25000 | OB 4.02900-4.48300
+- WLD: **RESET_DONE** ENTRY_READY | +74% impulse, retr 0.66 | OI dd 28% | fund 0.0064 | hold True | inval 0.39960 | OB 0.39960-0.41350
+- ZEC: **BROKEN** | +64% impulse, retr 0.74 | OI dd 41% | fund 0.0053 | hold False | inval 1119.27000 | OB 1110.00000-1153.08000
+- ADA: **BROKEN** | +48% impulse, retr 0.85 | OI dd 35% | fund -0.0040 | hold False | inval 0.20050 | OB 0.19010-0.19720
+- LINK: **BROKEN** | +48% impulse, retr 0.84 | OI dd 28% | fund 0.0100 | hold False | inval 10.61800 | OB 10.61800-10.96200
+- CARDS: **ONGOING** | +225% impulse, retr 0.34 | OI dd -% | fund - | hold True | inval 0.23780 | OB 0.23780-0.26170
+- NEAR: **RESET_DONE** | +166% impulse, retr 0.39 | OI dd 28% | fund -0.0081 | hold False | inval 4.25000 | OB 4.02900-4.48300
+- ENA: **RESET_DONE** | +119% impulse, retr 0.55 | OI dd 36% | fund 0.0100 | hold False | inval 0.18400 | OB 0.18389-0.19046
+- SEI: **RESET_DONE** | +110% impulse, retr 0.75 | OI dd 38% | fund 0.0050 | hold False | inval 0.04119 | OB 0.04119-0.04239
 
 ## Pre-pump candidates
 - none
 
 ## ETF pipeline (new this run)
-- bittensor: other - Grayscale Bittensor Trust (TAO) (GTAO) analyst ratings, estimates and forecasts - Yahoo Fi
-- bittensor: other - Form 144 Grayscale Bittensor Trust (TAO) For: 24 October By Investing.com - Investing.com 
-- bitcoin-cash: other - Grayscale Bitcoin Cash Trust (BCHG) Stock Price, News & Analysis - 24/7 Wall St.
-- avalanche-2: other - Form 144 Grayscale Avalanche Staking ETF (Ticker: GAVA) For: 24 October - Investing.com Ca
+- zcash: other - Zcash ETF Flow Tables Diverge on $41.1 Million Weekly Total - TOKENPOST
 
 ## Derivatives flags (OKX)
 - BTC: LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 0.93
@@ -46,11 +43,11 @@
 - (5 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 16 | mean -3.5% (-0.19R) | in profit 5 | older than 7d 15
-- worst: MANA -0.83R, ETHFI -0.73R, LTC -0.68R | best: TIA 0.28R, BEAM 0.46R, PYTH 0.52R
+- open 16 | mean -3.6% (-0.20R) | in profit 5 | older than 7d 15
+- worst: MANA -0.84R, ETHFI -0.73R, LTC -0.68R | best: TIA 0.30R, BEAM 0.51R, PYTH 0.51R
 
 ## System
-- CoinGecko 8110/10000 used, month-end projection 10056 (101%), throttle level 2 | by script {'scan': 2628, 'check_liquidity': 386, 'breakout_check': 5009, 'counterfactual_check': 87}
+- CoinGecko 8112/10000 used, month-end projection 10042 (100%), throttle level 2 | by script {'scan': 2630, 'check_liquidity': 386, 'breakout_check': 5009, 'counterfactual_check': 87}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=52), H2 SUPPORTED (n=193)
 - radar-flags.json scan age: 6m
