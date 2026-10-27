@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-27 15:06 UTC
+# Radar digest - 2026-10-27 15:36 UTC
 
 ## Market
-- BTC scenario **B** | price 80400 | wk close 80637 vs 82800 | 50W 76146 (5.59%) | 1m old
+- BTC scenario **B** | price 80400 | wk close 80637 vs 82800 | 50W 76146 (5.59%) | 32m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.42% | ETH/BTC 0.02907 | breadth7d -% | stables 30d -1.20%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.02pt | 7d -0.01pt | n=121
 - Gold: PAXG 1m -2.54% | real10y 2.66 (-19bp 1m) | USD 1m 0.64% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
@@ -19,20 +19,21 @@
 - ENA: **RESET_DONE** | +119% impulse, retr 0.54 | OI dd 22% | fund 0.0089 | hold False | inval 0.18400 | OB 0.18389-0.19046
 
 ## Pre-pump candidates
-- none
+- ZEC: [A+B+C] 7d 8.1%
+- INJ: [A+C] 7d -8.1%
 
 ## ETF pipeline (new this run)
 - none
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.92 | taker 1.01
-- NEAR: LONG_FLUSH_24H | OI/mc 0.96% | topPos 0.98 | taker 1.03
-- AVAX: AGGRESSIVE_SELLING | OI/mc -% | topPos 0.93 | taker 0.82
-- SEI: LONG_FLUSH_24H | OI/mc 0.77% | topPos 0.95 | taker 1.02
-- WLD: LONG_FLUSH_24H | OI/mc 2.16% | topPos 0.83 | taker 0.93
-- ADA: LONG_FLUSH_24H | OI/mc 0.41% | topPos 0.86 | taker 0.96
-- LINK: LONG_FLUSH_24H | OI/mc -% | topPos 0.90 | taker 0.87
-- XLM: LONG_FLUSH_24H | OI/mc 0.18% | topPos 0.98 | taker 0.88
+- BTC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.92 | taker 1.00
+- ETH: SHORT_SQUEEZE_24H | OI/mc 0.66% | topPos 0.88 | taker 0.99
+- SOL: SHORT_SQUEEZE_24H | OI/mc 0.62% | topPos 0.87 | taker 0.94
+- NEAR: LONG_FLUSH_24H | OI/mc 0.97% | topPos 0.98 | taker 1.03
+- AVAX: AGGRESSIVE_SELLING | OI/mc -% | topPos 0.93 | taker 0.83
+- XRP: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.86 | taker 1.01
+- SUI: LONG_FLUSH_24H | OI/mc 0.96% | topPos 0.78 | taker 0.98
+- SEI: LONG_FLUSH_24H | OI/mc 0.77% | topPos 0.94 | taker 0.97
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -44,11 +45,11 @@
 - (7 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 16 | mean -2.6% (-0.12R) | in profit 5 | older than 7d 15
-- worst: MANA -0.85R, LTC -0.71R, ALGO -0.66R | best: PYTH 0.22R, TIA 0.27R, BEAM 1.80R
+- open 16 | mean -2.2% (-0.10R) | in profit 7 | older than 7d 15
+- worst: MANA -0.82R, LTC -0.68R, ALGO -0.63R | best: PYTH 0.26R, TIA 0.37R, BEAM 1.49R
 
 ## System
-- CoinGecko 8614/10000 used, month-end projection 10029 (100%), throttle level 2 | by script {'scan': 2798, 'check_liquidity': 404, 'breakout_check': 5322, 'counterfactual_check': 90}
+- CoinGecko 8616/10000 used, month-end projection 10032 (100%), throttle level 2 | by script {'scan': 2800, 'check_liquidity': 404, 'breakout_check': 5322, 'counterfactual_check': 90}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=52), H2 SUPPORTED (n=196)
 - radar-flags.json scan age: 6m
