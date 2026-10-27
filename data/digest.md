@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-27 08:05 UTC
+# Radar digest - 2026-10-27 08:36 UTC
 
 ## Market
-- BTC scenario **B** | price 79672 | wk close 80637 vs 82800 | 50W 76146 (4.63%) | 1h old
+- BTC scenario **B** | price 79672 | wk close 80637 vs 82800 | 50W 76146 (4.63%) | 2h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.42% | ETH/BTC 0.02891 | breadth7d -% | stables 30d -1.20%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.04pt | 7d -0.07pt | n=121
 - Gold: PAXG 1m -2.15% | real10y 2.66 (-19bp 1m) | USD 1m 0.64% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
@@ -19,20 +19,20 @@
 - SEI: **RESET_DONE** | +110% impulse, retr 0.77 | OI dd 35% | fund 0.0050 | hold False | inval 0.04119 | OB 0.04119-0.04239
 
 ## Pre-pump candidates
-- WLD: [A+B] 7d -19.0%
+- WLD: [A+B] 7d -19.5%
 
 ## ETF pipeline (new this run)
 - solana NEW: other - Bitwise’s Solana Staking ETF Sees $5.7 Million Exit as Traders Eye Sell Signals Above $100
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 0.99
-- ETH: LONG_FLUSH_24H | OI/mc 0.66% | topPos 0.85 | taker 1.04
-- SOL: LONG_FLUSH_24H | OI/mc 0.63% | topPos 0.86 | taker 0.99
-- AVAX: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.36% | topPos 0.95 | taker 0.80
-- SUI: SHORT_SQUEEZE_24H | OI/mc 0.96% | topPos 0.79 | taker 1.05
-- SEI: LONG_FLUSH_24H | OI/mc 0.77% | topPos 0.95 | taker 0.98
-- ZEC: LONG_FLUSH_24H | OI/mc 0.69% | topPos 1.07 | taker 1.04
-- WLD: SHORT_SQUEEZE_FUEL, LONG_FLUSH_24H | OI/mc 2.25% | topPos 0.84 | taker 1.01
+- BTC: LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 1.00
+- SOL: LONG_FLUSH_24H | OI/mc 0.64% | topPos 0.86 | taker 0.99
+- AVAX: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.37% | topPos 0.95 | taker 0.81
+- SUI: SHORT_SQUEEZE_24H | OI/mc 0.97% | topPos 0.78 | taker 1.05
+- SEI: LONG_FLUSH_24H | OI/mc 0.78% | topPos 0.94 | taker 0.98
+- WLD: SHORT_SQUEEZE_FUEL, LONG_FLUSH_24H | OI/mc 2.27% | topPos 0.84 | taker 1.00
+- ADA: LONG_FLUSH_24H | OI/mc 0.41% | topPos 0.87 | taker 0.97
+- LINK: LONG_FLUSH_24H | OI/mc 0.33% | topPos 0.91 | taker 0.89
 
 ## Revenue / buyback flags
 - collector-crypt: REVENUE_ACCELERATING, CHEAP_VS_REVENUE
@@ -43,12 +43,12 @@
 - (7 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 16 | mean -3.1% (-0.17R) | in profit 4 | older than 7d 15
-- worst: MANA -0.88R, LTC -0.71R, ALGO -0.62R | best: NIGHT 0.27R, PYTH 0.35R, BEAM 1.26R
+- open 16 | mean -3.3% (-0.18R) | in profit 4 | older than 7d 15
+- worst: MANA -0.89R, LTC -0.72R, ALGO -0.64R | best: NIGHT 0.24R, PYTH 0.30R, BEAM 1.27R
 
 ## System
-- CoinGecko 8527/10000 used, month-end projection 10038 (100%), throttle level 2 | by script {'scan': 2770, 'check_liquidity': 403, 'breakout_check': 5264, 'counterfactual_check': 90}
+- CoinGecko 8529/10000 used, month-end projection 10040 (100%), throttle level 2 | by script {'scan': 2772, 'check_liquidity': 403, 'breakout_check': 5264, 'counterfactual_check': 90}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=52), H2 SUPPORTED (n=196)
-- radar-flags.json scan age: 5m
-- excluded from radar (pegged/tokenized equity): 43
+- radar-flags.json scan age: 6m
+- excluded from radar (pegged/tokenized equity): 41
