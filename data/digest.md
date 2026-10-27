@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-27 19:06 UTC
+# Radar digest - 2026-10-27 19:37 UTC
 
 ## Market
-- BTC scenario **B** | price 80710 | wk close 80637 vs 82800 | 50W 76146 (5.99%) | 1m old
+- BTC scenario **B** | price 80710 | wk close 80637 vs 82800 | 50W 76146 (5.99%) | 33m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.39% | ETH/BTC 0.02908 | breadth7d 32% | stables 30d -1.18%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.09pt | 7d -0.02pt | n=121
 - Gold: PAXG 1m -1.23% | real10y 2.66 (-19bp 1m) | USD 1m 0.64% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 26
@@ -23,14 +23,14 @@
 - cardano: other - Brazil ETF EWZ Drops 18% as Dollar Nears R$5.50 After Lula’s Reelection | Cardano Feed - H
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc 0.21% | topPos 0.93 | taker 1.00
+- BTC: SHORT_SQUEEZE_24H | OI/mc 0.21% | topPos 0.93 | taker 1.01
 - ETH: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.89 | taker 1.01
-- SOL: SHORT_SQUEEZE_24H | OI/mc 0.62% | topPos 0.87 | taker 0.93
+- SOL: SHORT_SQUEEZE_24H | OI/mc 0.62% | topPos 0.87 | taker 0.94
+- NEAR: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.99 | taker 1.09
 - SUI: LONG_FLUSH_24H | OI/mc 0.96% | topPos 0.79 | taker 0.96
-- SEI: LONG_FLUSH_24H | OI/mc 0.76% | topPos 0.92 | taker 0.98
-- ZEC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 1.17 | taker 1.07
-- WLD: LONG_FLUSH_24H | OI/mc 2.16% | topPos 0.84 | taker 0.94
-- ADA: LONG_FLUSH_24H | OI/mc 0.41% | topPos 0.86 | taker 0.92
+- SEI: LONG_FLUSH_24H | OI/mc 0.76% | topPos 0.92 | taker 0.99
+- ZEC: SHORT_SQUEEZE_24H | OI/mc 0.76% | topPos 1.18 | taker 1.07
+- WLD: LONG_FLUSH_24H | OI/mc 2.18% | topPos 0.84 | taker 0.94
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -42,12 +42,12 @@
 - (7 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 16 | mean -2.0% (-0.09R) | in profit 7 | older than 7d 15
-- worst: MANA -0.82R, LTC -0.69R, ALGO -0.60R | best: NEAR 0.35R, TIA 0.36R, BEAM 1.43R
+- open 16 | mean -2.0% (-0.08R) | in profit 7 | older than 7d 15
+- worst: MANA -0.83R, LTC -0.69R, ALGO -0.59R | best: NEAR 0.35R, TIA 0.38R, BEAM 1.54R
 
 ## System
-- CoinGecko 8683/10000 used, month-end projection 10047 (100%), throttle level 2 | by script {'scan': 2814, 'check_liquidity': 406, 'breakout_check': 5373, 'counterfactual_check': 90}
+- CoinGecko 8685/10000 used, month-end projection 10049 (100%), throttle level 2 | by script {'scan': 2816, 'check_liquidity': 406, 'breakout_check': 5373, 'counterfactual_check': 90}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=52), H2 SUPPORTED (n=196)
-- radar-flags.json scan age: 6m
+- radar-flags.json scan age: 7m
 - excluded from radar (pegged/tokenized equity): 42
