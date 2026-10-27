@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-27 05:37 UTC
+# Radar digest - 2026-10-27 06:18 UTC
 
 ## Market
-- BTC scenario **B** | price 79873 | wk close 80637 vs 82800 | 50W 76146 (4.89%) | 32m old
+- BTC scenario **B** | price 79873 | wk close 80637 vs 82800 | 50W 76146 (4.89%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.39% | ETH/BTC 0.02898 | breadth7d -% | stables 30d -1.20%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.06pt | 7d -0.06pt | n=121
 - Gold: PAXG 1m -2.15% | real10y 2.66 (-19bp 1m) | USD 1m 0.64% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
@@ -24,7 +24,6 @@
 - ONDO: [A+E] 7d -7.9%
 - TAO: [A+E] 7d -7.6%
 - VVV: [A+E] 7d -0.5%
-- QNT: [C+E] 7d 1.0%
 
 ## ETF pipeline (new this run)
 - cash-4 NEW: other - Steady Hands Buy the Dip: Bitwise’s ETHW ETF Attracts Fresh Cash as Ethereum Rally Pauses 
@@ -55,12 +54,12 @@
 - (7 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 16 | mean -3.7% (-0.20R) | in profit 4 | older than 7d 15
-- worst: MANA -0.91R, LTC -0.73R, CVX -0.65R | best: TIA 0.20R, PYTH 0.29R, BEAM 1.40R
+- open 16 | mean -3.2% (-0.16R) | in profit 4 | older than 7d 15
+- worst: MANA -0.90R, LTC -0.71R, ALGO -0.63R | best: TIA 0.23R, PYTH 0.33R, BEAM 1.47R
 
 ## System
-- CoinGecko 8458/10000 used, month-end projection 10004 (100%), throttle level 2 | by script {'scan': 2760, 'check_liquidity': 402, 'breakout_check': 5206, 'counterfactual_check': 90}
+- CoinGecko 8519/10000 used, month-end projection 10061 (101%), throttle level 2 | by script {'scan': 2762, 'check_liquidity': 403, 'breakout_check': 5264, 'counterfactual_check': 90}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=52), H2 SUPPORTED (n=196)
-- radar-flags.json scan age: 7m
+- radar-flags.json scan age: 17m
 - excluded from radar (pegged/tokenized equity): 41
