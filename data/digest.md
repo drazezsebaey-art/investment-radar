@@ -1,28 +1,26 @@
-# Radar digest - 2026-10-27 18:37 UTC
+# Radar digest - 2026-10-27 19:06 UTC
 
 ## Market
-- BTC scenario **B** | price 80596 | wk close 80637 vs 82800 | 50W 76146 (5.84%) | 2h old
-- Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.42% | ETH/BTC 0.02907 | breadth7d -% | stables 30d -1.20%
-- Alt risk (BTC.D): **NORMAL**  | 3d -0.02pt | 7d -0.01pt | n=121
+- BTC scenario **B** | price 80710 | wk close 80637 vs 82800 | 50W 76146 (5.99%) | 1m old
+- Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.39% | ETH/BTC 0.02908 | breadth7d 32% | stables 30d -1.18%
+- Alt risk (BTC.D): **NORMAL**  | 3d -0.09pt | 7d -0.02pt | n=121
 - Gold: PAXG 1m -1.23% | real10y 2.66 (-19bp 1m) | USD 1m 0.64% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 26
 - 10y 1w: -9bp = real -8 + breakeven -1 -> **SMALL_MOVE**
 - 10y 1m: -18bp = real -19 + breakeven 0 -> **REAL_YIELD_DRIVEN**
 
 ## Coins in correction (entry_ready first)
-- AVAX: **RESET_DONE** ENTRY_READY | +67% impulse, retr 0.66 | OI dd 42% | fund 0.0062 | hold True | inval 8.74400 | OB 7.17400-7.36200
-- ADA: **BROKEN** | +48% impulse, retr 0.83 | OI dd 35% | fund 0.0061 | hold False | inval 0.20040 | OB 0.19010-0.19720
+- AVAX: **RESET_DONE** ENTRY_READY | +67% impulse, retr 0.65 | OI dd 42% | fund 0.0055 | hold True | inval 8.74400 | OB 7.17400-7.36200
+- ADA: **BROKEN** | +48% impulse, retr 0.83 | OI dd 35% | fund 0.0045 | hold False | inval 0.20040 | OB 0.19010-0.19720
 - LINK: **BROKEN** | +48% impulse, retr 0.83 | OI dd 27% | fund 0.0100 | hold True | inval 11.26200 | OB 10.61800-10.96200
-- GRASS: **RESET_DONE** | +196% impulse, retr 0.29 | OI dd 26% | fund 0.0050 | hold False | inval 0.66860 | OB 0.60710-0.64950
-- NEAR: **RESET_DONE** | +164% impulse, retr 0.38 | OI dd 26% | fund 0.0100 | hold False | inval 4.25000 | OB 4.02900-4.48300
-- WLD: **RESET_DONE** | +74% impulse, retr 0.70 | OI dd 26% | fund 0.0022 | hold False | inval 0.39960 | OB 0.39960-0.41350
+- GRASS: **RESET_DONE** | +196% impulse, retr 0.30 | OI dd 26% | fund 0.0050 | hold False | inval 0.66860 | OB 0.60710-0.64950
+- NEAR: **RESET_DONE** | +164% impulse, retr 0.37 | OI dd 26% | fund 0.0100 | hold False | inval 4.25000 | OB 4.02900-4.48300
+- WLD: **RESET_DONE** | +74% impulse, retr 0.69 | OI dd 26% | fund 0.0020 | hold False | inval 0.39960 | OB 0.39960-0.41350
 
 ## Pre-pump candidates
-- none
+- ZEC: [A+C] 7d 6.3%
 
 ## ETF pipeline (new this run)
-- shiba-inu NEW: amendment - Cryptex Finance Files S-1 Amendment for BAGZ Multi-Crypto ETF Featuring XRP, SHIB and Zcas
-- shiba-inu NEW: filing - Cryptex Files S-1 for Multi-Crypto ETF With XRP, SHIB, Zcash - Cryptonews.net
-- shiba-inu NEW: other - $2 Trillion-Tracking ETF Adds XRP & SHIB - DailyCoin
+- cardano: other - Brazil ETF EWZ Drops 18% as Dollar Nears R$5.50 After Lula’s Reelection | Cardano Feed - H
 
 ## Derivatives flags (OKX)
 - BTC: SHORT_SQUEEZE_24H | OI/mc 0.21% | topPos 0.93 | taker 1.00
@@ -44,12 +42,12 @@
 - (7 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 16 | mean -1.9% (-0.08R) | in profit 7 | older than 7d 15
-- worst: MANA -0.82R, LTC -0.68R, ALGO -0.60R | best: TIA 0.34R, NEAR 0.35R, BEAM 1.53R
+- open 16 | mean -2.0% (-0.09R) | in profit 7 | older than 7d 15
+- worst: MANA -0.82R, LTC -0.69R, ALGO -0.60R | best: NEAR 0.35R, TIA 0.36R, BEAM 1.43R
 
 ## System
-- CoinGecko 8681/10000 used, month-end projection 10060 (101%), throttle level 2 | by script {'scan': 2812, 'check_liquidity': 406, 'breakout_check': 5373, 'counterfactual_check': 90}
+- CoinGecko 8683/10000 used, month-end projection 10047 (100%), throttle level 2 | by script {'scan': 2814, 'check_liquidity': 406, 'breakout_check': 5373, 'counterfactual_check': 90}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=52), H2 SUPPORTED (n=196)
-- radar-flags.json scan age: 7m
+- radar-flags.json scan age: 6m
 - excluded from radar (pegged/tokenized equity): 42
