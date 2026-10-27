@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-27 17:37 UTC
+# Radar digest - 2026-10-27 18:19 UTC
 
 ## Market
-- BTC scenario **B** | price 80596 | wk close 80637 vs 82800 | 50W 76146 (5.84%) | 33m old
+- BTC scenario **B** | price 80596 | wk close 80637 vs 82800 | 50W 76146 (5.84%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.42% | ETH/BTC 0.02907 | breadth7d -% | stables 30d -1.20%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.02pt | 7d -0.01pt | n=121
 - Gold: PAXG 1m -1.23% | real10y 2.66 (-19bp 1m) | USD 1m 0.64% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 26
@@ -17,7 +17,7 @@
 - WLD: **RESET_DONE** | +74% impulse, retr 0.70 | OI dd 26% | fund 0.0022 | hold False | inval 0.39960 | OB 0.39960-0.41350
 
 ## Pre-pump candidates
-- ZEC: [A+B+C] 7d 9.8%
+- none
 
 ## ETF pipeline (new this run)
 - shiba-inu NEW: amendment - Cryptex Finance Files S-1 Amendment for BAGZ Multi-Crypto ETF Featuring XRP, SHIB and Zcas
@@ -45,11 +45,11 @@
 
 ## Paper book (open trades, marked to last scan)
 - open 16 | mean -2.2% (-0.10R) | in profit 7 | older than 7d 15
-- worst: MANA -0.83R, LTC -0.68R, ALGO -0.61R | best: TIA 0.30R, NEAR 0.31R, BEAM 1.45R
+- worst: MANA -0.84R, LTC -0.70R, ALGO -0.61R | best: NEAR 0.31R, TIA 0.33R, BEAM 1.60R
 
 ## System
-- CoinGecko 8624/10000 used, month-end projection 10010 (100%), throttle level 2 | by script {'scan': 2808, 'check_liquidity': 404, 'breakout_check': 5322, 'counterfactual_check': 90}
+- CoinGecko 8679/10000 used, month-end projection 10058 (101%), throttle level 2 | by script {'scan': 2810, 'check_liquidity': 406, 'breakout_check': 5373, 'counterfactual_check': 90}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=52), H2 SUPPORTED (n=196)
-- radar-flags.json scan age: 7m
-- excluded from radar (pegged/tokenized equity): 43
+- radar-flags.json scan age: 18m
+- excluded from radar (pegged/tokenized equity): 42
