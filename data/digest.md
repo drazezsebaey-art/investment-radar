@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-27 05:06 UTC
+# Radar digest - 2026-10-27 05:37 UTC
 
 ## Market
-- BTC scenario **B** | price 79873 | wk close 80637 vs 82800 | 50W 76146 (4.89%) | 1m old
+- BTC scenario **B** | price 79873 | wk close 80637 vs 82800 | 50W 76146 (4.89%) | 32m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.39% | ETH/BTC 0.02898 | breadth7d -% | stables 30d -1.20%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.06pt | 7d -0.06pt | n=121
 - Gold: PAXG 1m -2.15% | real10y 2.66 (-19bp 1m) | USD 1m 0.64% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
@@ -19,11 +19,12 @@
 - SEI: **RESET_DONE** | +110% impulse, retr 0.77 | OI dd 35% | fund 0.0050 | hold False | inval 0.04119 | OB 0.04119-0.04239
 
 ## Pre-pump candidates
-- WLD: [A+B] 7d -18.9%
-- INJ: [A+E] 7d -8.3%
-- TAO: [A+E] 7d -7.2%
-- ONDO: [A+E] 7d -6.8%
-- VVV: [A+E] 7d -0.4%
+- WLD: [A+B] 7d -19.9%
+- INJ: [A+E] 7d -9.7%
+- ONDO: [A+E] 7d -7.9%
+- TAO: [A+E] 7d -7.6%
+- VVV: [A+E] 7d -0.5%
+- QNT: [C+E] 7d 1.0%
 
 ## ETF pipeline (new this run)
 - cash-4 NEW: other - Steady Hands Buy the Dip: Bitwise’s ETHW ETF Attracts Fresh Cash as Ethereum Rally Pauses 
@@ -36,14 +37,14 @@
 - cash-4 NEW: other - Leveraged Ether ETF Draws New Cash as Crypto Rally Meets a Cautious ‘Hold’ Signal - TipRan
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 1.00
-- SOL: LONG_FLUSH_24H | OI/mc 0.63% | topPos 0.86 | taker 1.04
-- AVAX: LONG_FLUSH_24H | OI/mc 0.36% | topPos 0.94 | taker 0.92
-- SUI: SHORT_SQUEEZE_24H | OI/mc 0.96% | topPos 0.78 | taker 1.07
+- BTC: LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 0.99
+- SOL: LONG_FLUSH_24H | OI/mc 0.64% | topPos 0.86 | taker 1.02
+- AVAX: LONG_FLUSH_24H | OI/mc 0.37% | topPos 0.94 | taker 0.87
+- SUI: SHORT_SQUEEZE_24H | OI/mc 0.97% | topPos 0.78 | taker 1.07
 - SEI: LONG_FLUSH_24H | OI/mc 0.78% | topPos 0.95 | taker 0.97
-- ZEC: LONG_FLUSH_24H | OI/mc 0.69% | topPos 1.07 | taker 1.05
-- WLD: SHORT_SQUEEZE_FUEL, LONG_FLUSH_24H | OI/mc 2.23% | topPos 0.84 | taker 1.03
-- ADA: LONG_FLUSH_24H | OI/mc 0.42% | topPos 0.87 | taker 1.02
+- ZEC: LONG_FLUSH_24H | OI/mc 0.69% | topPos 1.05 | taker 1.04
+- WLD: SHORT_SQUEEZE_FUEL, LONG_FLUSH_24H | OI/mc 2.25% | topPos 0.84 | taker 1.02
+- ADA: LONG_FLUSH_24H | OI/mc 0.42% | topPos 0.87 | taker 0.99
 
 ## Revenue / buyback flags
 - collector-crypt: REVENUE_ACCELERATING, CHEAP_VS_REVENUE
@@ -54,12 +55,12 @@
 - (7 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 16 | mean -3.6% (-0.19R) | in profit 4 | older than 7d 15
-- worst: MANA -0.90R, LTC -0.72R, ALGO -0.64R | best: PYTH 0.23R, TIA 0.25R, BEAM 1.44R
+- open 16 | mean -3.7% (-0.20R) | in profit 4 | older than 7d 15
+- worst: MANA -0.91R, LTC -0.73R, CVX -0.65R | best: TIA 0.20R, PYTH 0.29R, BEAM 1.40R
 
 ## System
-- CoinGecko 8456/10000 used, month-end projection 10002 (100%), throttle level 2 | by script {'scan': 2758, 'check_liquidity': 402, 'breakout_check': 5206, 'counterfactual_check': 90}
+- CoinGecko 8458/10000 used, month-end projection 10004 (100%), throttle level 2 | by script {'scan': 2760, 'check_liquidity': 402, 'breakout_check': 5206, 'counterfactual_check': 90}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=52), H2 SUPPORTED (n=196)
-- radar-flags.json scan age: 5m
+- radar-flags.json scan age: 7m
 - excluded from radar (pegged/tokenized equity): 41
