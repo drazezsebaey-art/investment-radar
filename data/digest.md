@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-27 12:37 UTC
+# Radar digest - 2026-10-27 13:06 UTC
 
 ## Market
-- BTC scenario **B** | price 80136 | wk close 80637 vs 82800 | 50W 76146 (5.24%) | 2h old
+- BTC scenario **B** | price 80232 | wk close 80637 vs 82800 | 50W 76146 (5.37%) | 1m old
 - Alts: **BTC_LED** [-] | BTC.D 57.44% | ETH/BTC 0.02898 | breadth7d -% | stables 30d -1.21%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.06pt | 7d -0.07pt | n=121
 - Gold: PAXG 1m -2.54% | real10y 2.66 (-19bp 1m) | USD 1m 0.64% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
@@ -9,17 +9,17 @@
 - 10y 1m: -18bp = real -19 + breakeven 0 -> **REAL_YIELD_DRIVEN**
 
 ## Coins in correction (entry_ready first)
-- AVAX: **RESET_DONE** ENTRY_READY | +67% impulse, retr 0.66 | OI dd 40% | fund 0.0070 | hold True | inval 8.74400 | OB 7.17400-7.36200
+- AVAX: **RESET_DONE** ENTRY_READY | +67% impulse, retr 0.66 | OI dd 40% | fund 0.0067 | hold True | inval 8.74400 | OB 7.17400-7.36200
 - ONDO: **RESUMING** ENTRY_READY | +88% impulse, retr 0.69 | OI dd 45% | fund 0.0100 | hold False | inval 0.39720 | OB 0.39720-0.40510
-- ADA: **BROKEN** | +48% impulse, retr 0.84 | OI dd 33% | fund 0.0057 | hold False | inval 0.20040 | OB 0.19010-0.19720
-- LINK: **BROKEN** | +48% impulse, retr 0.85 | OI dd 26% | fund -0.0036 | hold True | inval 11.26200 | OB 10.61800-10.96200
-- GRASS: **RESET_DONE** | +196% impulse, retr 0.35 | OI dd 21% | fund 0.0050 | hold False | inval 0.60710 | OB 0.60710-0.64950
-- NEAR: **RESET_DONE** | +166% impulse, retr 0.40 | OI dd 29% | fund -0.0001 | hold False | inval 4.25000 | OB 4.02900-4.48300
-- ENA: **RESET_DONE** | +119% impulse, retr 0.56 | OI dd 22% | fund 0.0096 | hold False | inval 0.18400 | OB 0.18389-0.19046
+- ADA: **BROKEN** | +48% impulse, retr 0.84 | OI dd 33% | fund 0.0089 | hold False | inval 0.20040 | OB 0.19010-0.19720
+- LINK: **BROKEN** | +48% impulse, retr 0.86 | OI dd 26% | fund -0.0015 | hold True | inval 11.26200 | OB 10.61800-10.96200
+- NEAR: **ONGOING** | +166% impulse, retr 0.39 | OI dd 29% | fund 0.0100 | hold False | inval 4.25000 | OB 4.02900-4.48300
+- GRASS: **RESET_DONE** | +196% impulse, retr 0.33 | OI dd 21% | fund 0.0050 | hold False | inval 0.60710 | OB 0.60710-0.64950
+- ENA: **RESET_DONE** | +119% impulse, retr 0.56 | OI dd 22% | fund 0.0075 | hold False | inval 0.18400 | OB 0.18389-0.19046
 - SEI: **RESET_DONE** | +110% impulse, retr 0.76 | OI dd 35% | fund 0.0050 | hold False | inval 0.04119 | OB 0.04119-0.04239
 
 ## Pre-pump candidates
-- none
+- INJ: [A+C] 7d -8.1%
 
 ## ETF pipeline (new this run)
 - none
@@ -44,12 +44,12 @@
 - (7 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 16 | mean -3.0% (-0.15R) | in profit 5 | older than 7d 15
-- worst: MANA -0.87R, LTC -0.74R, ALGO -0.64R | best: PYTH 0.25R, NIGHT 0.31R, BEAM 1.30R
+- open 16 | mean -2.2% (-0.10R) | in profit 5 | older than 7d 15
+- worst: MANA -0.84R, LTC -0.69R, ALGO -0.62R | best: NIGHT 0.29R, PYTH 0.31R, BEAM 1.49R
 
 ## System
-- CoinGecko 8604/10000 used, month-end projection 10065 (101%), throttle level 2 | by script {'scan': 2788, 'check_liquidity': 404, 'breakout_check': 5322, 'counterfactual_check': 90}
+- CoinGecko 8606/10000 used, month-end projection 10052 (100%), throttle level 2 | by script {'scan': 2790, 'check_liquidity': 404, 'breakout_check': 5322, 'counterfactual_check': 90}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=52), H2 SUPPORTED (n=196)
-- radar-flags.json scan age: 7m
+- radar-flags.json scan age: 6m
 - excluded from radar (pegged/tokenized equity): 43
