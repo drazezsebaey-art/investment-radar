@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-27 18:19 UTC
+# Radar digest - 2026-10-27 18:37 UTC
 
 ## Market
-- BTC scenario **B** | price 80596 | wk close 80637 vs 82800 | 50W 76146 (5.84%) | 1h old
+- BTC scenario **B** | price 80596 | wk close 80637 vs 82800 | 50W 76146 (5.84%) | 2h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.42% | ETH/BTC 0.02907 | breadth7d -% | stables 30d -1.20%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.02pt | 7d -0.01pt | n=121
 - Gold: PAXG 1m -1.23% | real10y 2.66 (-19bp 1m) | USD 1m 0.64% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 26
@@ -25,14 +25,14 @@
 - shiba-inu NEW: other - $2 Trillion-Tracking ETF Adds XRP & SHIB - DailyCoin
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc 0.22% | topPos 0.93 | taker 0.99
-- ETH: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.89 | taker 1.00
+- BTC: SHORT_SQUEEZE_24H | OI/mc 0.21% | topPos 0.93 | taker 1.00
+- ETH: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.89 | taker 1.01
 - SOL: SHORT_SQUEEZE_24H | OI/mc 0.62% | topPos 0.87 | taker 0.93
-- XRP: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.86 | taker 1.02
-- SUI: LONG_FLUSH_24H | OI/mc 0.96% | topPos 0.79 | taker 0.95
-- SEI: LONG_FLUSH_24H | OI/mc 0.76% | topPos 0.93 | taker 1.01
-- ZEC: SHORT_SQUEEZE_FUEL, SHORT_SQUEEZE_24H | OI/mc 0.78% | topPos 1.16 | taker 1.09
-- WLD: LONG_FLUSH_24H | OI/mc 2.15% | topPos 0.84 | taker 0.93
+- SUI: LONG_FLUSH_24H | OI/mc 0.96% | topPos 0.79 | taker 0.96
+- SEI: LONG_FLUSH_24H | OI/mc 0.76% | topPos 0.92 | taker 0.98
+- ZEC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 1.17 | taker 1.07
+- WLD: LONG_FLUSH_24H | OI/mc 2.16% | topPos 0.84 | taker 0.94
+- ADA: LONG_FLUSH_24H | OI/mc 0.41% | topPos 0.86 | taker 0.92
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -44,12 +44,12 @@
 - (7 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 16 | mean -2.2% (-0.10R) | in profit 7 | older than 7d 15
-- worst: MANA -0.84R, LTC -0.70R, ALGO -0.61R | best: NEAR 0.31R, TIA 0.33R, BEAM 1.60R
+- open 16 | mean -1.9% (-0.08R) | in profit 7 | older than 7d 15
+- worst: MANA -0.82R, LTC -0.68R, ALGO -0.60R | best: TIA 0.34R, NEAR 0.35R, BEAM 1.53R
 
 ## System
-- CoinGecko 8679/10000 used, month-end projection 10058 (101%), throttle level 2 | by script {'scan': 2810, 'check_liquidity': 406, 'breakout_check': 5373, 'counterfactual_check': 90}
+- CoinGecko 8681/10000 used, month-end projection 10060 (101%), throttle level 2 | by script {'scan': 2812, 'check_liquidity': 406, 'breakout_check': 5373, 'counterfactual_check': 90}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=52), H2 SUPPORTED (n=196)
-- radar-flags.json scan age: 18m
+- radar-flags.json scan age: 7m
 - excluded from radar (pegged/tokenized equity): 42
