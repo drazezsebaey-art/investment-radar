@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-27 02:05 UTC
+# Radar digest - 2026-10-27 02:36 UTC
 
 ## Market
-- BTC scenario **B** | price 80250 | wk close 80637 vs 82800 | 50W 76146 (5.39%) | 1h old
+- BTC scenario **B** | price 80250 | wk close 80637 vs 82800 | 50W 76146 (5.39%) | 2h old
 - Alts: **BTC_LED** [-] | BTC.D 57.45% | ETH/BTC 0.02888 | breadth7d -% | stables 30d -0.93%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.13pt | 7d -0.03pt | n=121
 - Gold: PAXG 1m -2.18% | real10y 2.66 (-19bp 1m) | USD 1m 0.64% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
@@ -19,22 +19,22 @@
 - WLD: **RESET_DONE** | +74% impulse, retr 0.67 | OI dd 24% | fund -0.0080 | hold False | inval 0.39960 | OB 0.39960-0.41350
 
 ## Pre-pump candidates
-- WLD: [A+B] 7d -17.0%
-- TAO: [A+E] 7d -6.5%
-- VVV: [A+E] 7d 3.8%
+- WLD: [A+B] 7d -17.5%
+- TAO: [A+E] 7d -6.2%
+- VVV: [A+E] 7d 4.2%
 
 ## ETF pipeline (new this run)
 - zcash: other - Zcash Price Forecast: Renewed ETF inflows offer limited relief from wider market headwinds
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 0.98
-- SOL: LONG_FLUSH_24H | OI/mc 0.62% | topPos 0.87 | taker 1.01
-- SEI: LONG_FLUSH_24H | OI/mc 0.78% | topPos 0.95 | taker 0.96
-- ZEC: LONG_FLUSH_24H | OI/mc 0.67% | topPos 1.09 | taker 1.03
-- WLD: SHORT_SQUEEZE_FUEL, LONG_FLUSH_24H | OI/mc 2.21% | topPos 0.85 | taker 1.02
-- LINK: LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 0.93
-- XLM: LONG_FLUSH_24H | OI/mc 0.18% | topPos 0.98 | taker 0.92
-- ONDO: SHORT_SQUEEZE_24H | OI/mc 0.76% | topPos 0.68 | taker 0.91
+- BTC: LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 0.99
+- ETH: SHORT_SQUEEZE_24H | OI/mc 0.65% | topPos 0.87 | taker 1.03
+- SOL: LONG_FLUSH_24H | OI/mc 0.62% | topPos 0.87 | taker 1.00
+- SUI: SHORT_SQUEEZE_24H | OI/mc 0.96% | topPos 0.78 | taker 1.04
+- SEI: LONG_FLUSH_24H | OI/mc 0.77% | topPos 0.95 | taker 0.92
+- ZEC: LONG_FLUSH_24H | OI/mc 0.67% | topPos 1.09 | taker 1.04
+- WLD: SHORT_SQUEEZE_FUEL, LONG_FLUSH_24H | OI/mc 2.20% | topPos 0.86 | taker 1.02
+- LINK: LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 0.93
 
 ## Revenue / buyback flags
 - collector-crypt: REVENUE_ACCELERATING, CHEAP_VS_REVENUE
@@ -45,12 +45,12 @@
 - (7 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 16 | mean -2.3% (-0.11R) | in profit 5 | older than 7d 15
-- worst: MANA -0.80R, LTC -0.70R, ALGO -0.56R | best: TIA 0.32R, PYTH 0.35R, BEAM 1.63R
+- open 16 | mean -2.8% (-0.14R) | in profit 4 | older than 7d 15
+- worst: MANA -0.83R, LTC -0.72R, ALGO -0.59R | best: PYTH 0.33R, TIA 0.33R, BEAM 1.54R
 
 ## System
-- CoinGecko 8434/10000 used, month-end projection 10024 (100%), throttle level 2 | by script {'scan': 2738, 'check_liquidity': 400, 'breakout_check': 5206, 'counterfactual_check': 90}
+- CoinGecko 8436/10000 used, month-end projection 10026 (100%), throttle level 2 | by script {'scan': 2740, 'check_liquidity': 400, 'breakout_check': 5206, 'counterfactual_check': 90}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=52), H2 SUPPORTED (n=195)
-- radar-flags.json scan age: 5m
-- excluded from radar (pegged/tokenized equity): 43
+- radar-flags.json scan age: 6m
+- excluded from radar (pegged/tokenized equity): 44
