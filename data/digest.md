@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-27 20:37 UTC
+# Radar digest - 2026-10-27 21:06 UTC
 
 ## Market
-- BTC scenario **B** | price 80710 | wk close 80637 vs 82800 | 50W 76146 (5.99%) | 2h old
+- BTC scenario **B** | price 80768 | wk close 80637 vs 82800 | 50W 76146 (6.07%) | 1m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.39% | ETH/BTC 0.02908 | breadth7d 32% | stables 30d -1.18%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.09pt | 7d -0.02pt | n=121
 - Gold: PAXG 1m -1.23% | real10y 2.66 (-19bp 1m) | USD 1m 0.64% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 26
@@ -9,25 +9,27 @@
 - 10y 1m: -18bp = real -19 + breakeven 0 -> **REAL_YIELD_DRIVEN**
 
 ## Coins in correction (entry_ready first)
-- AVAX: **RESET_DONE** ENTRY_READY | +67% impulse, retr 0.65 | OI dd 42% | fund 0.0055 | hold True | inval 8.74400 | OB 7.17400-7.36200
-- ADA: **BROKEN** | +48% impulse, retr 0.83 | OI dd 35% | fund 0.0045 | hold False | inval 0.20040 | OB 0.19010-0.19720
-- LINK: **BROKEN** | +48% impulse, retr 0.83 | OI dd 27% | fund 0.0100 | hold True | inval 11.26200 | OB 10.61800-10.96200
-- GRASS: **RESET_DONE** | +196% impulse, retr 0.30 | OI dd 26% | fund 0.0050 | hold False | inval 0.66860 | OB 0.60710-0.64950
-- NEAR: **RESET_DONE** | +164% impulse, retr 0.37 | OI dd 26% | fund 0.0100 | hold False | inval 4.25000 | OB 4.02900-4.48300
-- WLD: **RESET_DONE** | +74% impulse, retr 0.69 | OI dd 26% | fund 0.0020 | hold False | inval 0.39960 | OB 0.39960-0.41350
+- AVAX: **RESET_DONE** ENTRY_READY | +67% impulse, retr 0.65 | OI dd 42% | fund 0.0080 | hold True | inval 8.74400 | OB 7.17400-7.36200
+- ADA: **BROKEN** | +48% impulse, retr 0.84 | OI dd 35% | fund 0.0011 | hold False | inval 0.20040 | OB 0.19010-0.19720
+- LINK: **BROKEN** | +48% impulse, retr 0.84 | OI dd 27% | fund 0.0100 | hold True | inval 11.26200 | OB 10.61800-10.96200
+- GRASS: **RESET_DONE** | +196% impulse, retr 0.27 | OI dd 26% | fund 0.0050 | hold False | inval 0.66860 | OB 0.66860-0.68480
+- NEAR: **RESET_DONE** | +164% impulse, retr 0.37 | OI dd 26% | fund 0.0100 | hold False | inval 4.38800 | OB 4.02900-4.48300
+- WLD: **RESET_DONE** | +74% impulse, retr 0.69 | OI dd 26% | fund -0.0045 | hold False | inval 0.39960 | OB 0.39960-0.41350
 
 ## Pre-pump candidates
-- ZEC: [A+C+E] 7d 7.7%
+- ZEC: [A+C+E] 7d 7.3%
 - SEI: [A+E] 7d -13.9%
-- TAO: [A+E] 7d -7.1%
-- PUMP: [D+E] 7d -6.8%
-- SOL: [A+E] 7d -4.6%
-- SHIB: [A+E] 7d -4.2%
-- DOGE: [A+E] 7d -3.5%
-- BCH: [B+E] 7d 4.0%
+- PUMP: [D+E] 7d -8.5%
+- TAO: [A+E] 7d -7.3%
+- SOL: [A+E] 7d -4.8%
+- SHIB: [A+E] 7d -4.4%
+- DOGE: [A+E] 7d -3.9%
+- SPX: [C+E] 7d -0.5%
 
 ## ETF pipeline (new this run)
-- cardano: other - Brazil ETF EWZ Drops 18% as Dollar Nears R$5.50 After Lula’s Reelection | Cardano Feed - H
+- bittensor: other - Form 144 Grayscale Bittensor Trust (TAO) For: 27 October By Investing.com - Investing.com 
+- bitcoin-cash: other - Form 144 GRAYSCALE BITCOIN CASH TRUST (BCH) For: 27 October By Investing.com - Investing.c
+- avalanche-2: other - Form 144 Grayscale Avalanche Staking ETF (Ticker: GAVA) For: 27 October - Investing.com UK
 
 ## Derivatives flags (OKX)
 - BTC: SHORT_SQUEEZE_24H | OI/mc 0.21% | topPos 0.93 | taker 1.01
@@ -50,11 +52,11 @@
 
 ## Paper book (open trades, marked to last scan)
 - open 16 | mean -2.0% (-0.09R) | in profit 7 | older than 7d 15
-- worst: MANA -0.85R, LTC -0.69R, ALGO -0.61R | best: NEAR 0.33R, TIA 0.41R, BEAM 1.55R
+- worst: MANA -0.83R, LTC -0.69R, ALGO -0.63R | best: NIGHT 0.37R, TIA 0.40R, BEAM 1.54R
 
 ## System
-- CoinGecko 8690/10000 used, month-end projection 10039 (100%), throttle level 2 | by script {'scan': 2820, 'check_liquidity': 407, 'breakout_check': 5373, 'counterfactual_check': 90}
+- CoinGecko 8692/10000 used, month-end projection 10026 (100%), throttle level 2 | by script {'scan': 2822, 'check_liquidity': 407, 'breakout_check': 5373, 'counterfactual_check': 90}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=52), H2 SUPPORTED (n=196)
-- radar-flags.json scan age: 7m
-- excluded from radar (pegged/tokenized equity): 42
+- radar-flags.json scan age: 5m
+- excluded from radar (pegged/tokenized equity): 43
