@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-27 10:05 UTC
+# Radar digest - 2026-10-27 10:37 UTC
 
 ## Market
-- BTC scenario **B** | price 79810 | wk close 80637 vs 82800 | 50W 76146 (4.81%) | 1h old
+- BTC scenario **B** | price 79810 | wk close 80637 vs 82800 | 50W 76146 (4.81%) | 2h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.42% | ETH/BTC 0.02891 | breadth7d -% | stables 30d -1.20%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.04pt | 7d -0.07pt | n=121
 - Gold: PAXG 1m -2.54% | real10y 2.66 (-19bp 1m) | USD 1m 0.64% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
@@ -19,22 +19,21 @@
 - SEI: **RESET_DONE** | +110% impulse, retr 0.77 | OI dd 35% | fund 0.0050 | hold False | inval 0.04119 | OB 0.04119-0.04239
 
 ## Pre-pump candidates
-- WLD: [A+B] 7d -19.3%
-- ZEC: [A+B] 7d 9.6%
+- ZEC: [A+B] 7d 10.2%
 
 ## ETF pipeline (new this run)
 - injective-protocol NEW: other - Injective Bitnomial Futures: Could INJ Be Next for a Staked ETF? - Coin Gabbar
 - chainlink: other - Brazil ETF EWZ Drops 18% as Dollar Nears R$5.50 After Lula’s Reelection - Howl.Link
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 0.99
-- SOL: LONG_FLUSH_24H | OI/mc 0.64% | topPos 0.86 | taker 0.99
-- AVAX: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.37% | topPos 0.95 | taker 0.78
-- SUI: SHORT_SQUEEZE_24H | OI/mc 0.97% | topPos 0.78 | taker 1.01
-- SEI: LONG_FLUSH_24H | OI/mc 0.78% | topPos 0.93 | taker 0.96
-- ZEC: SHORT_SQUEEZE_FUEL | OI/mc 0.71% | topPos 1.13 | taker 1.04
-- WLD: SHORT_SQUEEZE_FUEL, LONG_FLUSH_24H | OI/mc 2.25% | topPos 0.84 | taker 1.00
-- ADA: LONG_FLUSH_24H | OI/mc 0.41% | topPos 0.87 | taker 0.96
+- BTC: LONG_FLUSH_24H | OI/mc -% | topPos 0.90 | taker 0.99
+- ETH: LONG_FLUSH_24H | OI/mc 0.66% | topPos 0.85 | taker 1.01
+- SOL: LONG_FLUSH_24H | OI/mc 0.64% | topPos 0.86 | taker 1.00
+- AVAX: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.37% | topPos 0.94 | taker 0.76
+- SEI: LONG_FLUSH_24H | OI/mc 0.78% | topPos 0.95 | taker 1.00
+- ZEC: SHORT_SQUEEZE_FUEL | OI/mc 0.71% | topPos 1.13 | taker 1.03
+- WLD: LONG_FLUSH_24H | OI/mc 2.23% | topPos 0.84 | taker 0.98
+- ADA: LONG_FLUSH_24H | OI/mc 0.42% | topPos 0.87 | taker 0.92
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -46,12 +45,12 @@
 - (7 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 16 | mean -4.1% (-0.23R) | in profit 4 | older than 7d 15
-- worst: MANA -0.91R, LTC -0.76R, ALGO -0.68R | best: TIA 0.17R, PYTH 0.22R, BEAM 1.17R
+- open 16 | mean -4.3% (-0.24R) | in profit 4 | older than 7d 15
+- worst: MANA -0.97R, LTC -0.78R, ALGO -0.69R | best: TIA 0.19R, PYTH 0.22R, BEAM 1.17R
 
 ## System
-- CoinGecko 8535/10000 used, month-end projection 10016 (100%), throttle level 2 | by script {'scan': 2778, 'check_liquidity': 403, 'breakout_check': 5264, 'counterfactual_check': 90}
+- CoinGecko 8537/10000 used, month-end projection 10018 (100%), throttle level 2 | by script {'scan': 2780, 'check_liquidity': 403, 'breakout_check': 5264, 'counterfactual_check': 90}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=52), H2 SUPPORTED (n=196)
-- radar-flags.json scan age: 4m
-- excluded from radar (pegged/tokenized equity): 42
+- radar-flags.json scan age: 7m
+- excluded from radar (pegged/tokenized equity): 43
