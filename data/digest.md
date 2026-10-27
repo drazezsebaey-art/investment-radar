@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-27 00:19 UTC
+# Radar digest - 2026-10-27 00:37 UTC
 
 ## Market
-- BTC scenario **B** | price 79735 | wk close 80637 vs 82800 | 50W 76146 (4.71%) | 1h old
+- BTC scenario **B** | price 79735 | wk close 80637 vs 82800 | 50W 76146 (4.71%) | 2h old
 - Alts: **BTC_LED** [-] | BTC.D 57.45% | ETH/BTC 0.02888 | breadth7d -% | stables 30d -0.93%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.13pt | 7d -0.03pt | n=121
 - Gold: PAXG 1m -2.18% | real10y 2.66 (-19bp 1m) | USD 1m 0.64% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
@@ -19,7 +19,9 @@
 - WLD: **RESET_DONE** | +74% impulse, retr 0.70 | OI dd 24% | fund -0.0080 | hold False | inval 0.39960 | OB 0.39960-0.41350
 
 ## Pre-pump candidates
-- WLD: [A+B] 7d -15.3%
+- WLD: [A+B] 7d -16.0%
+- TAO: [A+E] 7d -6.1%
+- VVV: [A+E] 7d 3.8%
 
 ## ETF pipeline (new this run)
 - tron NEW: other - TRON DAO: Spotlights TRXS ETF Backed by Real TRX - Blockchain News
@@ -28,14 +30,14 @@
 - zcash: filing - Tuttle: Files for 2x Zcash Leveraged ETF - Blockchain News
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 0.97
-- ETH: LONG_FLUSH_24H | OI/mc 0.64% | topPos 0.86 | taker 1.00
-- SOL: LONG_FLUSH_24H | OI/mc 0.61% | topPos 0.87 | taker 1.01
-- AVAX: LONG_FLUSH_24H | OI/mc 0.37% | topPos 0.95 | taker 0.96
-- SEI: LONG_FLUSH_24H | OI/mc 0.77% | topPos 0.97 | taker 0.98
-- TAO: LONG_FLUSH_24H | OI/mc 0.76% | topPos 0.85 | taker 0.94
-- ZEC: LONG_FLUSH_24H | OI/mc 0.66% | topPos 1.08 | taker 1.03
-- WLD: SHORT_SQUEEZE_FUEL, LONG_FLUSH_24H | OI/mc 2.16% | topPos 0.84 | taker 0.99
+- BTC: LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 0.98
+- SOL: LONG_FLUSH_24H | OI/mc 0.62% | topPos 0.87 | taker 1.01
+- SEI: LONG_FLUSH_24H | OI/mc 0.78% | topPos 0.96 | taker 0.97
+- ZEC: LONG_FLUSH_24H | OI/mc 0.66% | topPos 1.09 | taker 1.03
+- WLD: SHORT_SQUEEZE_FUEL, LONG_FLUSH_24H | OI/mc 2.18% | topPos 0.85 | taker 1.01
+- LINK: LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 0.95
+- XLM: LONG_FLUSH_24H | OI/mc 0.18% | topPos 0.98 | taker 0.92
+- ONDO: SHORT_SQUEEZE_24H | OI/mc 0.76% | topPos 0.68 | taker 0.92
 
 ## Revenue / buyback flags
 - collector-crypt: REVENUE_ACCELERATING, CHEAP_VS_REVENUE
@@ -46,12 +48,12 @@
 - (7 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 16 | mean -1.7% (-0.07R) | in profit 5 | older than 7d 15
-- worst: MANA -0.77R, LTC -0.69R, ALGO -0.52R | best: TIA 0.44R, PYTH 0.54R, BEAM 1.57R
+- open 16 | mean -1.6% (-0.07R) | in profit 5 | older than 7d 15
+- worst: MANA -0.76R, LTC -0.68R, ALGO -0.52R | best: TIA 0.42R, PYTH 0.49R, BEAM 1.53R
 
 ## System
-- CoinGecko 8426/10000 used, month-end projection 10046 (100%), throttle level 2 | by script {'scan': 2730, 'check_liquidity': 400, 'breakout_check': 5206, 'counterfactual_check': 90}
+- CoinGecko 8428/10000 used, month-end projection 10049 (100%), throttle level 2 | by script {'scan': 2732, 'check_liquidity': 400, 'breakout_check': 5206, 'counterfactual_check': 90}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=52), H2 SUPPORTED (n=195)
-- radar-flags.json scan age: 18m
+- radar-flags.json scan age: 7m
 - excluded from radar (pegged/tokenized equity): 43
