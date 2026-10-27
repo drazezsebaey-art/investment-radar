@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-27 23:06 UTC
+# Radar digest - 2026-10-27 23:37 UTC
 
 ## Market
-- BTC scenario **B** | price 80929 | wk close 80637 vs 82800 | 50W 76146 (6.28%) | 1m old
+- BTC scenario **B** | price 80929 | wk close 80637 vs 82800 | 50W 76146 (6.28%) | 32m old
 - Alts: **BTC_LED** [-] | BTC.D 57.42% | ETH/BTC 0.02905 | breadth7d 34% | stables 30d -1.20%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.07pt | 7d 0.05pt | n=121
 - Gold: PAXG 1m -1.24% | real10y 2.66 (-17bp 1m) | USD 1m 0.64% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 26
@@ -17,20 +17,20 @@
 - NEAR: **RESUMING** | +164% impulse, retr 0.35 | OI dd 26% | fund 0.0100 | hold False | inval 4.38800 | OB 4.38800-4.53900
 
 ## Pre-pump candidates
-- ZEC: [A+C] 7d 5.0%
+- PEPE: [A+C] 7d 1.0%
 
 ## ETF pipeline (new this run)
 - bitcoin-cash: other - Form 144 GRAYSCALE BITCOIN CASH TRUST (BCH) For: 27 October By Investing.com - Investing.c
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc 0.21% | topPos 0.93 | taker 1.05
-- ETH: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.89 | taker 1.02
-- SOL: SHORT_SQUEEZE_24H | OI/mc 0.62% | topPos 0.87 | taker 0.93
-- NEAR: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.99 | taker 1.09
-- XRP: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.86 | taker 0.99
+- BTC: SHORT_SQUEEZE_24H | OI/mc 0.21% | topPos 0.93 | taker 1.04
+- ETH: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.89 | taker 1.01
+- SOL: SHORT_SQUEEZE_24H | OI/mc 0.63% | topPos 0.87 | taker 0.94
+- NEAR: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.99 | taker 1.10
+- XRP: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.86 | taker 1.00
 - TAO: SHORT_SQUEEZE_24H | OI/mc 0.74% | topPos 0.85 | taker 1.05
-- WLD: LONG_FLUSH_24H | OI/mc 2.18% | topPos 0.85 | taker 0.96
-- ADA: LONG_FLUSH_24H | OI/mc 0.41% | topPos 0.86 | taker 0.94
+- ZEC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 1.16 | taker 1.06
+- WLD: LONG_FLUSH_24H | OI/mc 2.19% | topPos 0.84 | taker 0.96
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -43,11 +43,11 @@
 
 ## Paper book (open trades, marked to last scan)
 - open 16 | mean -1.7% (-0.06R) | in profit 7 | older than 7d 15
-- worst: MANA -0.78R, LTC -0.66R, ALGO -0.63R | best: NEAR 0.49R, NIGHT 0.53R, BEAM 1.51R
+- worst: MANA -0.77R, LTC -0.65R, ALGO -0.64R | best: NEAR 0.45R, NIGHT 0.57R, BEAM 1.53R
 
 ## System
-- CoinGecko 8700/10000 used, month-end projection 10004 (100%), throttle level 2 | by script {'scan': 2830, 'check_liquidity': 407, 'breakout_check': 5373, 'counterfactual_check': 90}
+- CoinGecko 8702/10000 used, month-end projection 10007 (100%), throttle level 2 | by script {'scan': 2832, 'check_liquidity': 407, 'breakout_check': 5373, 'counterfactual_check': 90}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=52), H2 SUPPORTED (n=197)
-- radar-flags.json scan age: 5m
-- excluded from radar (pegged/tokenized equity): 43
+- radar-flags.json scan age: 7m
+- excluded from radar (pegged/tokenized equity): 42
