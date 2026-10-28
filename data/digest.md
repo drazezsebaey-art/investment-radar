@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-28 20:38 UTC
+# Radar digest - 2026-10-28 21:07 UTC
 
 ## Market
-- BTC scenario **B** | price 81131 | wk close 80637 vs 82800 | 50W 76146 (6.55%) | 2h old
+- BTC scenario **B** | price 81361 | wk close 80637 vs 82800 | 50W 76146 (6.85%) | 1m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.25% | ETH/BTC 0.02908 | breadth7d 34% | stables 30d -1.65%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.17pt | 7d -0.33pt | n=121
 - Gold: PAXG 1m -3.48% | real10y 2.66 (-17bp 1m) | USD 1m 0.64% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
@@ -9,20 +9,15 @@
 - 10y 1m: -17bp = real -17 + breakeven 1 -> **REAL_YIELD_DRIVEN**
 
 ## Coins in correction (entry_ready first)
-- WLD: **RESET_DONE** ENTRY_READY | +74% impulse, retr 0.69 | OI dd 24% | fund 0.0100 | hold True | inval 0.42490 | OB 0.39960-0.41350
-- ADA: **BROKEN** | +48% impulse, retr 0.84 | OI dd 33% | fund -0.0093 | hold True | inval 0.20120 | OB 0.19010-0.19720
-- NEAR: **RESUMING** | +162% impulse, retr 0.35 | OI dd 30% | fund 0.0070 | hold False | inval 4.38800 | OB 4.38800-4.53900
+- WLD: **RESET_DONE** ENTRY_READY | +74% impulse, retr 0.67 | OI dd 24% | fund 0.0100 | hold True | inval 0.42490 | OB 0.39960-0.41350
+- ADA: **BROKEN** | +48% impulse, retr 0.82 | OI dd 33% | fund -0.0015 | hold True | inval 0.20120 | OB 0.19010-0.19720
+- NEAR: **RESUMING** | +162% impulse, retr 0.34 | OI dd 30% | fund 0.0100 | hold False | inval 4.38800 | OB 4.38800-4.53900
 
 ## Pre-pump candidates
 - none
 
 ## ETF pipeline (new this run)
-- edgex NEW: other - Ethereum ETF Buyers Edge Back In as Fidelity’s FETH Draws Fresh Cash - TipRanks
-- zcash: other - Zcash marks 10 years with upgrades, a $1B ETF, and governance debates on block rewards. - 
-- zcash: other - Could Zcash rally on renewed ETF inflows? - FXStreet
-- zcash: other - Zcash marks 10 years with upgrades, a $1B ETF, and governance debates on block rewards. - 
-- zcash: other - Zcash ETF drew 20.52 million USD on October 23: What it means for the Zcash price - ad-hoc
-- zcash: other - Zcash turns 10 as privacy coin rides upgrades and ETF interest - Crypto Briefing
+- pepe NEW: other - PEPE Jumps 17% as Justin Sun's $51 Million Stash Draws Whales and ETF Buzz - BigGo Finance
 
 ## Derivatives flags (OKX)
 - BTC: SHORT_SQUEEZE_24H | OI/mc 0.21% | topPos 0.94 | taker 1.04
@@ -43,12 +38,12 @@
 - (10 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 16 | mean -1.0% (-0.02R) | in profit 7 | older than 7d 15
-- worst: MANA -0.72R, ALGO -0.61R, LTC -0.46R | best: NEAR 0.43R, TIA 0.50R, BEAM 1.70R
+- open 16 | mean -0.4% (0.02R) | in profit 7 | older than 7d 15
+- worst: MANA -0.70R, ALGO -0.59R, LTC -0.47R | best: NEAR 0.53R, TIA 0.60R, BEAM 1.72R
 
 ## System
-- CoinGecko 8975/10000 used, month-end projection 9996 (100%), throttle level 1 | by script {'scan': 2924, 'check_liquidity': 426, 'breakout_check': 5529, 'counterfactual_check': 96}
+- CoinGecko 8986/10000 used, month-end projection 9993 (100%), throttle level 1 | by script {'scan': 2934, 'check_liquidity': 427, 'breakout_check': 5529, 'counterfactual_check': 96}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=52), H2 SUPPORTED (n=197)
-- radar-flags.json scan age: 7m
+- radar-flags.json scan age: 6m
 - excluded from radar (pegged/tokenized equity): 41
