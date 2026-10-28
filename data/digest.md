@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-28 01:37 UTC
+# Radar digest - 2026-10-28 02:05 UTC
 
 ## Market
-- BTC scenario **B** | price 80680 | wk close 80637 vs 82800 | 50W 76146 (5.95%) | 32m old
+- BTC scenario **B** | price 80680 | wk close 80637 vs 82800 | 50W 76146 (5.95%) | 60m old
 - Alts: **BTC_LED** [-] | BTC.D 57.42% | ETH/BTC 0.02905 | breadth7d 34% | stables 30d -1.20%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.07pt | 7d 0.05pt | n=121
 - Gold: PAXG 1m -1.24% | real10y 2.66 (-17bp 1m) | USD 1m 0.64% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 26
@@ -17,8 +17,7 @@
 - WLD: **RESET_DONE** | +74% impulse, retr 0.69 | OI dd 26% | fund -0.0109 | hold False | inval 0.39960 | OB 0.39960-0.41350
 
 ## Pre-pump candidates
-- HYPE: [A+C] 7d 1.8%
-- ZEC: [A+C] 7d 3.4%
+- none
 
 ## ETF pipeline (new this run)
 - cap-4 NEW: other - XRP's Weight in Cryptex Digital Market Cap ETF Rises to 4.41% After Secondary Screening - 
@@ -44,12 +43,12 @@
 - (7 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 16 | mean -1.5% (-0.05R) | in profit 7 | older than 7d 15
-- worst: MANA -0.77R, LTC -0.64R, ALGO -0.62R | best: NEAR 0.39R, NIGHT 0.63R, BEAM 1.45R
+- open 16 | mean -1.0% (-0.02R) | in profit 8 | older than 7d 15
+- worst: MANA -0.71R, LTC -0.62R, ALGO -0.59R | best: NEAR 0.53R, NIGHT 0.59R, BEAM 1.52R
 
 ## System
-- CoinGecko 8771/10000 used, month-end projection 10055 (101%), throttle level 2 | by script {'scan': 2848, 'check_liquidity': 410, 'breakout_check': 5423, 'counterfactual_check': 90}
+- CoinGecko 8773/10000 used, month-end projection 10042 (100%), throttle level 2 | by script {'scan': 2850, 'check_liquidity': 410, 'breakout_check': 5423, 'counterfactual_check': 90}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=52), H2 SUPPORTED (n=197)
-- radar-flags.json scan age: 7m
-- excluded from radar (pegged/tokenized equity): 42
+- radar-flags.json scan age: 5m
+- excluded from radar (pegged/tokenized equity): 43
