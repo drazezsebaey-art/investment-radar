@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-28 13:07 UTC
+# Radar digest - 2026-10-28 13:37 UTC
 
 ## Market
-- BTC scenario **B** | price 80763 | wk close 80637 vs 82800 | 50W 76146 (6.06%) | 1m old
+- BTC scenario **B** | price 80763 | wk close 80637 vs 82800 | 50W 76146 (6.06%) | 32m old
 - Alts: **BTC_LED** [-] | BTC.D 57.45% | ETH/BTC 0.02905 | breadth7d 36% | stables 30d -1.66%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.05pt | 7d 0.05pt | n=121
 - Gold: PAXG 1m -1.41% | real10y 2.66 (-17bp 1m) | USD 1m 0.64% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 26
@@ -28,14 +28,14 @@
 - ondo-finance: other - iShares Silver Trust Tokenized ETF (Ondo) Price (SLVon/USD) Today | Live Price, Market Cap
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc 0.21% | topPos 0.94 | taker 1.06
-- ETH: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 1.09
-- SOL: SHORT_SQUEEZE_24H | OI/mc 0.63% | topPos 0.87 | taker 1.00
-- NEAR: SHORT_SQUEEZE_24H | OI/mc -% | topPos 1.01 | taker 1.03
-- AVAX: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.94 | taker 0.96
-- SEI: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.74% | topPos 0.89 | taker 0.65
-- TAO: LONG_FLUSH_24H | OI/mc 0.72% | topPos 0.87 | taker 1.00
-- WLD: LONG_FLUSH_24H | OI/mc 2.30% | topPos 0.82 | taker 1.04
+- BTC: LONG_FLUSH_24H | OI/mc 0.21% | topPos 0.94 | taker 0.99
+- ETH: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 1.03
+- NEAR: SHORT_SQUEEZE_24H | OI/mc -% | topPos 1.01 | taker 1.01
+- AVAX: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.94 | taker 0.91
+- SEI: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.73% | topPos 0.89 | taker 0.63
+- TAO: LONG_FLUSH_24H | OI/mc 0.72% | topPos 0.86 | taker 0.96
+- ZEC: LONG_FLUSH_24H | OI/mc -% | topPos 1.15 | taker 0.99
+- WLD: LONG_FLUSH_24H | OI/mc 2.26% | topPos 0.82 | taker 0.99
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -48,11 +48,11 @@
 
 ## Paper book (open trades, marked to last scan)
 - open 16 | mean -2.6% (-0.12R) | in profit 6 | older than 7d 15
-- worst: MANA -0.84R, ALGO -0.72R, LTC -0.64R | best: TIA 0.28R, NEAR 0.28R, BEAM 1.62R
+- worst: MANA -0.84R, ALGO -0.72R, LTC -0.64R | best: NEAR 0.28R, TIA 0.31R, BEAM 1.62R
 
 ## System
-- CoinGecko 8884/10000 used, month-end projection 10000 (100%), throttle level 1 | by script {'scan': 2894, 'check_liquidity': 420, 'breakout_check': 5475, 'counterfactual_check': 95}
+- CoinGecko 8886/10000 used, month-end projection 10002 (100%), throttle level 2 | by script {'scan': 2896, 'check_liquidity': 420, 'breakout_check': 5475, 'counterfactual_check': 95}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=52), H2 SUPPORTED (n=197)
-- radar-flags.json scan age: 6m
-- excluded from radar (pegged/tokenized equity): 42
+- radar-flags.json scan age: 7m
+- excluded from radar (pegged/tokenized equity): 43
