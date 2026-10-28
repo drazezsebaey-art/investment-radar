@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-28 05:37 UTC
+# Radar digest - 2026-10-28 06:05 UTC
 
 ## Market
-- BTC scenario **B** | price 80928 | wk close 80637 vs 82800 | 50W 76146 (6.28%) | 32m old
+- BTC scenario **B** | price 80928 | wk close 80637 vs 82800 | 50W 76146 (6.28%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.39% | ETH/BTC 0.02912 | breadth7d 27% | stables 30d -1.67%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.08pt | 7d 0.03pt | n=121
 - Gold: PAXG 1m -1.70% | real10y 2.66 (-17bp 1m) | USD 1m 0.64% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 26
@@ -18,13 +18,14 @@
 - NEAR: **RESUMING** | +164% impulse, retr 0.36 | OI dd 26% | fund 0.0100 | hold False | inval 4.38800 | OB 4.38800-4.53900
 
 ## Pre-pump candidates
-- SEI: [A+E] 7d -12.8%
+- ZEC: [A+B+C+E] 7d 4.3%
+- PEPE: [A+C+E] 7d 7.1%
+- SEI: [A+E] 7d -13.2%
 - PUMP: [D+E] 7d -8.0%
 - TAO: [A+E] 7d -4.9%
-- SOL: [A+E] 7d -3.7%
+- SOL: [A+E] 7d -3.8%
 - SHIB: [A+E] 7d -3.2%
 - DOGE: [A+E] 7d -2.2%
-- BCH: [B+E] 7d 4.7%
 
 ## ETF pipeline (new this run)
 - bittensor: other - Bittensor Rises 3.42% on ETF Path, Calacanis Endorsement - CoinMarketCap
@@ -50,12 +51,12 @@
 - (7 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 16 | mean -1.5% (-0.05R) | in profit 8 | older than 7d 15
-- worst: MANA -0.74R, ALGO -0.61R, LTC -0.60R | best: NEAR 0.45R, NIGHT 0.55R, BEAM 1.54R
+- open 16 | mean -1.8% (-0.07R) | in profit 7 | older than 7d 15
+- worst: MANA -0.76R, ALGO -0.64R, LTC -0.62R | best: NEAR 0.45R, NIGHT 0.51R, BEAM 1.53R
 
 ## System
-- CoinGecko 8788/10000 used, month-end projection 10013 (100%), throttle level 2 | by script {'scan': 2864, 'check_liquidity': 411, 'breakout_check': 5423, 'counterfactual_check': 90}
+- CoinGecko 8791/10000 used, month-end projection 10001 (100%), throttle level 2 | by script {'scan': 2866, 'check_liquidity': 412, 'breakout_check': 5423, 'counterfactual_check': 90}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=52), H2 SUPPORTED (n=197)
-- radar-flags.json scan age: 7m
+- radar-flags.json scan age: 5m
 - excluded from radar (pegged/tokenized equity): 42
