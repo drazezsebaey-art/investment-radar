@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-27 23:37 UTC
+# Radar digest - 2026-10-28 00:19 UTC
 
 ## Market
-- BTC scenario **B** | price 80929 | wk close 80637 vs 82800 | 50W 76146 (6.28%) | 32m old
+- BTC scenario **B** | price 80929 | wk close 80637 vs 82800 | 50W 76146 (6.28%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 57.42% | ETH/BTC 0.02905 | breadth7d 34% | stables 30d -1.20%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.07pt | 7d 0.05pt | n=121
 - Gold: PAXG 1m -1.24% | real10y 2.66 (-17bp 1m) | USD 1m 0.64% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 26
@@ -17,7 +17,7 @@
 - NEAR: **RESUMING** | +164% impulse, retr 0.35 | OI dd 26% | fund 0.0100 | hold False | inval 4.38800 | OB 4.38800-4.53900
 
 ## Pre-pump candidates
-- PEPE: [A+C] 7d 1.0%
+- none
 
 ## ETF pipeline (new this run)
 - bitcoin-cash: other - Form 144 GRAYSCALE BITCOIN CASH TRUST (BCH) For: 27 October By Investing.com - Investing.c
@@ -42,12 +42,12 @@
 - (7 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 16 | mean -1.7% (-0.06R) | in profit 7 | older than 7d 15
-- worst: MANA -0.77R, LTC -0.65R, ALGO -0.64R | best: NEAR 0.45R, NIGHT 0.57R, BEAM 1.53R
+- open 16 | mean -1.6% (-0.05R) | in profit 7 | older than 7d 15
+- worst: MANA -0.75R, LTC -0.64R, ALGO -0.63R | best: NEAR 0.45R, NIGHT 0.52R, BEAM 1.51R
 
 ## System
-- CoinGecko 8702/10000 used, month-end projection 10007 (100%), throttle level 2 | by script {'scan': 2832, 'check_liquidity': 407, 'breakout_check': 5373, 'counterfactual_check': 90}
+- CoinGecko 8755/10000 used, month-end projection 10052 (100%), throttle level 2 | by script {'scan': 2834, 'check_liquidity': 408, 'breakout_check': 5423, 'counterfactual_check': 90}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=52), H2 SUPPORTED (n=197)
-- radar-flags.json scan age: 7m
-- excluded from radar (pegged/tokenized equity): 42
+- radar-flags.json scan age: 18m
+- excluded from radar (pegged/tokenized equity): 43
