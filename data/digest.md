@@ -1,10 +1,10 @@
-# Radar digest - 2026-10-28 03:37 UTC
+# Radar digest - 2026-10-28 04:05 UTC
 
 ## Market
-- BTC scenario **B** | price 80929 | wk close 80637 vs 82800 | 50W 76146 (6.28%) | 32m old
+- BTC scenario **B** | price 80929 | wk close 80637 vs 82800 | 50W 76146 (6.28%) | 60m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.39% | ETH/BTC 0.02912 | breadth7d 27% | stables 30d -1.67%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.08pt | 7d 0.03pt | n=121
-- Gold: PAXG 1m -1.24% | real10y 2.66 (-17bp 1m) | USD 1m 0.64% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 26
+- Gold: PAXG 1m -1.70% | real10y 2.66 (-17bp 1m) | USD 1m 0.64% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 26
 - 10y 1w: -15bp = real -14 + breakeven 0 -> **REAL_YIELD_DRIVEN**
 - 10y 1m: -17bp = real -17 + breakeven 1 -> **REAL_YIELD_DRIVEN**
 
@@ -17,7 +17,7 @@
 - NEAR: **RESUMING** | +164% impulse, retr 0.35 | OI dd 26% | fund 0.0100 | hold False | inval 4.38800 | OB 4.38800-4.53900
 
 ## Pre-pump candidates
-- none
+- CARDS: [C+D] 7d -13.4%
 
 ## ETF pipeline (new this run)
 - solana NEW: other - Morgan Stanley’s Solana ETF Draws Fresh Cash Even as Short-Term Signals Flash Sell - TipRa
@@ -44,12 +44,12 @@
 - (7 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 16 | mean -1.1% (-0.02R) | in profit 8 | older than 7d 15
-- worst: MANA -0.72R, LTC -0.60R, ALGO -0.58R | best: NEAR 0.53R, NIGHT 0.66R, BEAM 1.52R
+- open 16 | mean -1.3% (-0.03R) | in profit 8 | older than 7d 15
+- worst: MANA -0.71R, LTC -0.61R, ALGO -0.58R | best: NEAR 0.49R, NIGHT 0.65R, BEAM 1.44R
 
 ## System
-- CoinGecko 8779/10000 used, month-end projection 10033 (100%), throttle level 2 | by script {'scan': 2856, 'check_liquidity': 410, 'breakout_check': 5423, 'counterfactual_check': 90}
+- CoinGecko 8782/10000 used, month-end projection 10021 (100%), throttle level 2 | by script {'scan': 2858, 'check_liquidity': 411, 'breakout_check': 5423, 'counterfactual_check': 90}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=52), H2 SUPPORTED (n=197)
-- radar-flags.json scan age: 7m
-- excluded from radar (pegged/tokenized equity): 43
+- radar-flags.json scan age: 5m
+- excluded from radar (pegged/tokenized equity): 42
