@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-28 03:06 UTC
+# Radar digest - 2026-10-28 03:37 UTC
 
 ## Market
-- BTC scenario **B** | price 80929 | wk close 80637 vs 82800 | 50W 76146 (6.28%) | 1m old
+- BTC scenario **B** | price 80929 | wk close 80637 vs 82800 | 50W 76146 (6.28%) | 32m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.39% | ETH/BTC 0.02912 | breadth7d 27% | stables 30d -1.67%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.08pt | 7d 0.03pt | n=121
 - Gold: PAXG 1m -1.24% | real10y 2.66 (-17bp 1m) | USD 1m 0.64% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 26
@@ -26,13 +26,13 @@
 
 ## Derivatives flags (OKX)
 - BTC: SHORT_SQUEEZE_24H | OI/mc 0.21% | topPos 0.93 | taker 1.03
-- ETH: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.89 | taker 1.00
-- SOL: SHORT_SQUEEZE_24H | OI/mc 0.63% | topPos 0.87 | taker 0.93
-- NEAR: SHORT_SQUEEZE_24H | OI/mc -% | topPos 1.00 | taker 1.09
-- AVAX: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.93 | taker 0.90
-- XRP: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.86 | taker 1.05
+- ETH: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.89 | taker 1.02
+- SOL: SHORT_SQUEEZE_24H | OI/mc 0.63% | topPos 0.87 | taker 0.94
+- NEAR: SHORT_SQUEEZE_24H | OI/mc -% | topPos 1.00 | taker 1.08
+- AVAX: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.93 | taker 0.93
+- XRP: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.86 | taker 1.08
+- SEI: AGGRESSIVE_SELLING | OI/mc 0.72% | topPos 0.89 | taker 0.83
 - ZEC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 1.16 | taker 1.06
-- WLD: LONG_FLUSH_24H | OI/mc 2.24% | topPos 0.84 | taker 0.94
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -45,11 +45,11 @@
 
 ## Paper book (open trades, marked to last scan)
 - open 16 | mean -1.1% (-0.02R) | in profit 8 | older than 7d 15
-- worst: MANA -0.72R, LTC -0.61R, ALGO -0.59R | best: NEAR 0.51R, NIGHT 0.67R, BEAM 1.50R
+- worst: MANA -0.72R, LTC -0.60R, ALGO -0.58R | best: NEAR 0.53R, NIGHT 0.66R, BEAM 1.52R
 
 ## System
-- CoinGecko 8777/10000 used, month-end projection 10031 (100%), throttle level 2 | by script {'scan': 2854, 'check_liquidity': 410, 'breakout_check': 5423, 'counterfactual_check': 90}
+- CoinGecko 8779/10000 used, month-end projection 10033 (100%), throttle level 2 | by script {'scan': 2856, 'check_liquidity': 410, 'breakout_check': 5423, 'counterfactual_check': 90}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=52), H2 SUPPORTED (n=197)
-- radar-flags.json scan age: 6m
+- radar-flags.json scan age: 7m
 - excluded from radar (pegged/tokenized equity): 43
