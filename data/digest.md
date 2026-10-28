@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-28 11:37 UTC
+# Radar digest - 2026-10-28 12:19 UTC
 
 ## Market
-- BTC scenario **B** | price 81428 | wk close 80637 vs 82800 | 50W 76146 (6.94%) | 32m old
+- BTC scenario **B** | price 81428 | wk close 80637 vs 82800 | 50W 76146 (6.94%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 57.45% | ETH/BTC 0.02905 | breadth7d 36% | stables 30d -1.66%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.05pt | 7d 0.05pt | n=121
 - Gold: PAXG 1m -1.41% | real10y 2.66 (-17bp 1m) | USD 1m 0.64% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 26
@@ -18,7 +18,7 @@
 - NEAR: **RESUMING** | +164% impulse, retr 0.36 | OI dd 26% | fund 0.0100 | hold False | inval 4.38800 | OB 4.38800-4.53900
 
 ## Pre-pump candidates
-- WLD: [A+B] 7d -24.6%
+- WLD: [A+B] 7d -25.0%
 
 ## ETF pipeline (new this run)
 - solana NEW: other - Crypto ETF News Today: BTC See Inflows, ETH SOL Hit Outflow - Coin Gabbar
@@ -44,12 +44,12 @@
 - (10 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 16 | mean -1.4% (-0.04R) | in profit 8 | older than 7d 15
-- worst: MANA -0.74R, ALGO -0.63R, LTC -0.59R | best: NIGHT 0.36R, NEAR 0.41R, BEAM 1.73R
+- open 16 | mean -1.3% (-0.04R) | in profit 8 | older than 7d 15
+- worst: MANA -0.73R, ALGO -0.62R, LTC -0.58R | best: TIA 0.35R, NEAR 0.41R, BEAM 1.73R
 
 ## System
-- CoinGecko 8824/10000 used, month-end projection 9962 (100%), throttle level 1 | by script {'scan': 2888, 'check_liquidity': 418, 'breakout_check': 5423, 'counterfactual_check': 95}
+- CoinGecko 8880/10000 used, month-end projection 10010 (100%), throttle level 2 | by script {'scan': 2890, 'check_liquidity': 420, 'breakout_check': 5475, 'counterfactual_check': 95}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=52), H2 SUPPORTED (n=197)
-- radar-flags.json scan age: 7m
+- radar-flags.json scan age: 18m
 - excluded from radar (pegged/tokenized equity): 41
