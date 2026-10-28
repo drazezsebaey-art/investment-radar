@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-28 17:10 UTC
+# Radar digest - 2026-10-28 17:37 UTC
 
 ## Market
-- BTC scenario **B** | price 80515 | wk close 80637 vs 82800 | 50W 76146 (5.74%) | 1m old
+- BTC scenario **B** | price 80515 | wk close 80637 vs 82800 | 50W 76146 (5.74%) | 28m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.27% | ETH/BTC 0.02895 | breadth7d 35% | stables 30d -1.67%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.21pt | 7d -0.17pt | n=121
 - Gold: PAXG 1m -3.48% | real10y 2.66 (-17bp 1m) | USD 1m 0.64% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
@@ -21,14 +21,14 @@
 - none
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc 0.21% | topPos 0.93 | taker 1.02
+- BTC: LONG_FLUSH_24H | OI/mc 0.21% | topPos 0.93 | taker 1.04
 - ETH: LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 1.02
 - SOL: LONG_FLUSH_24H | OI/mc 0.62% | topPos 0.87 | taker 1.02
-- AVAX: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.93 | taker 0.93
+- AVAX: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.93 | taker 0.95
+- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 1.00
 - SEI: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.72% | topPos 0.88 | taker 0.67
-- TAO: LONG_FLUSH_24H | OI/mc 0.72% | topPos 0.87 | taker 0.97
-- ZEC: LONG_FLUSH_24H | OI/mc -% | topPos 1.13 | taker 0.95
-- WLD: LONG_FLUSH_24H | OI/mc 2.23% | topPos 0.83 | taker 1.00
+- TAO: LONG_FLUSH_24H | OI/mc 0.72% | topPos 0.86 | taker 0.99
+- ZEC: LONG_FLUSH_24H | OI/mc -% | topPos 1.13 | taker 0.94
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -40,12 +40,12 @@
 - (10 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 16 | mean -2.3% (-0.11R) | in profit 6 | older than 7d 15
-- worst: MANA -0.79R, ALGO -0.70R, A -0.53R | best: NIGHT 0.27R, TIA 0.28R, BEAM 1.66R
+- open 16 | mean -2.7% (-0.13R) | in profit 6 | older than 7d 15
+- worst: MANA -0.83R, ALGO -0.71R, A -0.55R | best: NIGHT 0.22R, TIA 0.23R, BEAM 1.70R
 
 ## System
-- CoinGecko 8905/10000 used, month-end projection 9963 (100%), throttle level 1 | by script {'scan': 2910, 'check_liquidity': 424, 'breakout_check': 5475, 'counterfactual_check': 96}
+- CoinGecko 8907/10000 used, month-end projection 9965 (100%), throttle level 1 | by script {'scan': 2912, 'check_liquidity': 424, 'breakout_check': 5475, 'counterfactual_check': 96}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=52), H2 SUPPORTED (n=197)
-- radar-flags.json scan age: 9m
-- excluded from radar (pegged/tokenized equity): 42
+- radar-flags.json scan age: 7m
+- excluded from radar (pegged/tokenized equity): 43
