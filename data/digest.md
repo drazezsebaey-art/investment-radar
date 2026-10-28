@@ -1,31 +1,31 @@
-# Radar digest - 2026-10-28 14:37 UTC
+# Radar digest - 2026-10-28 15:07 UTC
 
 ## Market
-- BTC scenario **B** | price 80763 | wk close 80637 vs 82800 | 50W 76146 (6.06%) | 2h old
-- Alts: **BTC_LED** [-] | BTC.D 57.45% | ETH/BTC 0.02905 | breadth7d 36% | stables 30d -1.66%
-- Alt risk (BTC.D): **NORMAL**  | 3d -0.05pt | 7d 0.05pt | n=121
+- BTC scenario **B** | price 80652 | wk close 80637 vs 82800 | 50W 76146 (5.92%) | 1m old
+- Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.27% | ETH/BTC 0.02895 | breadth7d 35% | stables 30d -1.67%
+- Alt risk (BTC.D): **NORMAL**  | 3d -0.21pt | 7d -0.17pt | n=121
 - Gold: PAXG 1m -1.41% | real10y 2.66 (-17bp 1m) | USD 1m 0.64% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 26
 - 10y 1w: -15bp = real -14 + breakeven 0 -> **REAL_YIELD_DRIVEN**
 - 10y 1m: -17bp = real -17 + breakeven 1 -> **REAL_YIELD_DRIVEN**
 
 ## Coins in correction (entry_ready first)
-- ADA: **BROKEN** | +48% impulse, retr 0.86 | OI dd 35% | fund -0.0042 | hold False | inval 0.20120 | OB 0.19010-0.19720
-- LINK: **BROKEN** | +48% impulse, retr 0.81 | OI dd 27% | fund 0.0100 | hold False | inval 11.22800 | OB 11.22800-11.40800
-- GRASS: **RESET_DONE** | +196% impulse, retr 0.31 | OI dd 26% | fund 0.0050 | hold False | inval 0.66860 | OB 0.66860-0.68480
-- WLD: **RESET_DONE** | +74% impulse, retr 0.72 | OI dd 26% | fund -0.0041 | hold False | inval 0.42490 | OB 0.39960-0.41350
-- AVAX: **RESET_DONE** | +67% impulse, retr 0.64 | OI dd 42% | fund 0.0100 | hold False | inval 8.66500 | OB 7.17400-7.36200
-- NEAR: **RESUMING** | +164% impulse, retr 0.37 | OI dd 26% | fund 0.0100 | hold False | inval 4.38800 | OB 4.38800-4.53900
+- ADA: **BROKEN** | +48% impulse, retr 0.86 | OI dd 35% | fund -0.0119 | hold False | inval 0.20120 | OB 0.19010-0.19720
+- LINK: **BROKEN** | +48% impulse, retr 0.82 | OI dd 27% | fund 0.0100 | hold False | inval 11.22800 | OB 11.22800-11.40800
+- GRASS: **RESET_DONE** | +196% impulse, retr 0.32 | OI dd 26% | fund 0.0050 | hold False | inval 0.66860 | OB 0.66860-0.68480
+- WLD: **RESET_DONE** | +74% impulse, retr 0.71 | OI dd 26% | fund -0.0027 | hold False | inval 0.42490 | OB 0.39960-0.41350
+- AVAX: **RESET_DONE** | +67% impulse, retr 0.65 | OI dd 42% | fund 0.0100 | hold False | inval 8.66500 | OB 7.17400-7.36200
+- NEAR: **RESUMING** | +164% impulse, retr 0.38 | OI dd 26% | fund 0.0085 | hold False | inval 4.38800 | OB 4.38800-4.53900
 
 ## Pre-pump candidates
 - none
 
 ## ETF pipeline (new this run)
-- near: other - NEAR spot ETF added USD 992,689 on October 23: What it means for the NEAR Protocol price -
-- zcash: other - CoinShares bets on privacy with a new physical Zcash ETP - RankiaPro
-- zcash: other - Zcash Price Forecast: Steady ETF inflows and retail confidence strengthen bullish momentum
-- zcash: other - Zcash reclaims $1,300 as ETF inflows and rising OI fuel recovery - Invezz
-- ondo-finance: other - iShares Silver Trust Tokenized ETF (Ondo) Price (SLVon/USD) Today | Live Price, Market Cap
-- ondo-finance: other - iShares Silver Trust Tokenized ETF (Ondo) Price (SLVon/USD) Today | Live Price, Market Cap
+- zcash: launch - Euronext Suspends CoinShares Zcash ETP on Debut Day Over Settlement Requirements - The Cry
+- zcash: launch - Euronext Suspends CoinShares Zcash ETP on Debut Day Over Settlement Requirements - The Cry
+- zcash: other - Zcash reclaims $1,300 as ETF inflows and rising OI fuel recovery - TradingView
+- zcash: other - Euronext Suspends CoinShares Zcash ETP Over Settlement Gap - FinanceFeeds
+- ondo-finance: other - Tokenized Stock and ETF Roster: Ondo, DTCC and OKXICE - The Defiant
+- ondo-finance: other - Tokenized Stock and ETF Roster: Ondo, DTCC and OKXICE - The Defiant
 
 ## Derivatives flags (OKX)
 - BTC: LONG_FLUSH_24H | OI/mc 0.21% | topPos 0.93 | taker 1.01
@@ -47,12 +47,12 @@
 - (10 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 16 | mean -3.1% (-0.16R) | in profit 6 | older than 7d 15
-- worst: MANA -0.86R, ALGO -0.76R, LTC -0.64R | best: NIGHT 0.26R, TIA 0.29R, BEAM 1.52R
+- open 16 | mean -2.5% (-0.12R) | in profit 6 | older than 7d 15
+- worst: MANA -0.83R, ALGO -0.73R, CVX -0.56R | best: NIGHT 0.27R, TIA 0.37R, BEAM 1.55R
 
 ## System
-- CoinGecko 8891/10000 used, month-end projection 9992 (100%), throttle level 1 | by script {'scan': 2900, 'check_liquidity': 421, 'breakout_check': 5475, 'counterfactual_check': 95}
+- CoinGecko 8893/10000 used, month-end projection 9979 (100%), throttle level 1 | by script {'scan': 2902, 'check_liquidity': 421, 'breakout_check': 5475, 'counterfactual_check': 95}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=52), H2 SUPPORTED (n=197)
-- radar-flags.json scan age: 7m
+- radar-flags.json scan age: 6m
 - excluded from radar (pegged/tokenized equity): 43
