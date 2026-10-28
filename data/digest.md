@@ -1,23 +1,23 @@
-# Radar digest - 2026-10-28 22:37 UTC
+# Radar digest - 2026-10-28 23:07 UTC
 
 ## Market
-- BTC scenario **B** | price 81361 | wk close 80637 vs 82800 | 50W 76146 (6.85%) | 2h old
-- Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.25% | ETH/BTC 0.02908 | breadth7d 34% | stables 30d -1.65%
-- Alt risk (BTC.D): **NORMAL**  | 3d -0.17pt | 7d -0.33pt | n=121
+- BTC scenario **B** | price 81270 | wk close 80637 vs 82800 | 50W 76146 (6.73%) | 1m old
+- Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.23% | ETH/BTC 0.02902 | breadth7d 38% | stables 30d -1.62%
+- Alt risk (BTC.D): **NORMAL**  | 3d -0.20pt | 7d -0.23pt | n=121
 - Gold: PAXG 1m -2.83% | real10y 2.64 (-26bp 1m) | USD 1m 0.64% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
 - 10y 1w: -13bp = real -13 + breakeven 1 -> **REAL_YIELD_DRIVEN**
 - 10y 1m: -25bp = real -26 + breakeven 3 -> **REAL_YIELD_DRIVEN**
 
 ## Coins in correction (entry_ready first)
-- WLD: **RESET_DONE** ENTRY_READY | +74% impulse, retr 0.67 | OI dd 24% | fund 0.0100 | hold True | inval 0.42490 | OB 0.39960-0.41350
-- ADA: **BROKEN** | +48% impulse, retr 0.82 | OI dd 33% | fund -0.0015 | hold True | inval 0.20120 | OB 0.19010-0.19720
+- WLD: **RESET_DONE** ENTRY_READY | +74% impulse, retr 0.69 | OI dd 24% | fund 0.0100 | hold True | inval 0.42490 | OB 0.39960-0.41350
+- ADA: **BROKEN** | +48% impulse, retr 0.83 | OI dd 33% | fund -0.0031 | hold True | inval 0.20120 | OB 0.19010-0.19720
 - NEAR: **RESUMING** | +162% impulse, retr 0.34 | OI dd 30% | fund 0.0100 | hold False | inval 4.38800 | OB 4.38800-4.53900
 
 ## Pre-pump candidates
 - none
 
 ## ETF pipeline (new this run)
-- pepe NEW: other - PEPE Jumps 17% as Justin Sun's $51 Million Stash Draws Whales and ETF Buzz - BigGo Finance
+- solana NEW: launch - Bitwise's Solana ETF hit $1 billion a year after its wild debut - Startup Fortune
 
 ## Derivatives flags (OKX)
 - BTC: SHORT_SQUEEZE_24H | OI/mc 0.21% | topPos 0.94 | taker 1.00
@@ -39,12 +39,12 @@
 - (10 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 16 | mean -0.5% (0.02R) | in profit 7 | older than 7d 15
-- worst: MANA -0.71R, ALGO -0.62R, A -0.45R | best: NEAR 0.55R, TIA 0.59R, BEAM 1.71R
+- open 16 | mean -0.4% (0.02R) | in profit 7 | older than 7d 15
+- worst: MANA -0.73R, ALGO -0.61R, A -0.44R | best: TIA 0.54R, NEAR 0.57R, BEAM 1.71R
 
 ## System
-- CoinGecko 8992/10000 used, month-end projection 9985 (100%), throttle level 1 | by script {'scan': 2940, 'check_liquidity': 427, 'breakout_check': 5529, 'counterfactual_check': 96}
+- CoinGecko 8995/10000 used, month-end projection 9974 (100%), throttle level 1 | by script {'scan': 2942, 'check_liquidity': 428, 'breakout_check': 5529, 'counterfactual_check': 96}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=52), H2 SUPPORTED (n=197)
-- radar-flags.json scan age: 7m
+- radar-flags.json scan age: 6m
 - excluded from radar (pegged/tokenized equity): 41
