@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-28 16:37 UTC
+# Radar digest - 2026-10-28 17:10 UTC
 
 ## Market
-- BTC scenario **B** | price 80652 | wk close 80637 vs 82800 | 50W 76146 (5.92%) | 2h old
+- BTC scenario **B** | price 80515 | wk close 80637 vs 82800 | 50W 76146 (5.74%) | 1m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.27% | ETH/BTC 0.02895 | breadth7d 35% | stables 30d -1.67%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.21pt | 7d -0.17pt | n=121
 - Gold: PAXG 1m -3.48% | real10y 2.66 (-17bp 1m) | USD 1m 0.64% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
@@ -9,23 +9,16 @@
 - 10y 1m: -17bp = real -17 + breakeven 1 -> **REAL_YIELD_DRIVEN**
 
 ## Coins in correction (entry_ready first)
-- ADA: **BROKEN** | +48% impulse, retr 0.86 | OI dd 35% | fund -0.0119 | hold False | inval 0.20120 | OB 0.19010-0.19720
-- LINK: **BROKEN** | +48% impulse, retr 0.82 | OI dd 27% | fund 0.0100 | hold False | inval 11.22800 | OB 11.22800-11.40800
-- GRASS: **RESET_DONE** | +196% impulse, retr 0.32 | OI dd 26% | fund 0.0050 | hold False | inval 0.66860 | OB 0.66860-0.68480
-- WLD: **RESET_DONE** | +74% impulse, retr 0.71 | OI dd 26% | fund -0.0027 | hold False | inval 0.42490 | OB 0.39960-0.41350
-- AVAX: **RESET_DONE** | +67% impulse, retr 0.65 | OI dd 42% | fund 0.0100 | hold False | inval 8.66500 | OB 7.17400-7.36200
-- NEAR: **RESUMING** | +164% impulse, retr 0.38 | OI dd 26% | fund 0.0085 | hold False | inval 4.38800 | OB 4.38800-4.53900
+- ADA: **BROKEN** | +48% impulse, retr 0.87 | OI dd 33% | fund -0.0104 | hold True | inval 0.20120 | OB 0.19010-0.19720
+- GRASS: **RESET_DONE** | +196% impulse, retr 0.33 | OI dd 23% | fund 0.0050 | hold False | inval 0.66860 | OB 0.66860-0.68480
+- WLD: **RESET_DONE** | +74% impulse, retr 0.74 | OI dd 24% | fund 0.0061 | hold False | inval 0.39960 | OB 0.39960-0.41350
+- NEAR: **RESUMING** | +162% impulse, retr 0.39 | OI dd 30% | fund 0.0076 | hold False | inval 4.38800 | OB 4.38800-4.53900
 
 ## Pre-pump candidates
 - none
 
 ## ETF pipeline (new this run)
-- zcash: launch - Euronext Suspends CoinShares Zcash ETP on Debut Day Over Settlement Requirements - The Cry
-- zcash: launch - Euronext Suspends CoinShares Zcash ETP on Debut Day Over Settlement Requirements - The Cry
-- zcash: other - Zcash reclaims $1,300 as ETF inflows and rising OI fuel recovery - TradingView
-- zcash: other - Euronext Suspends CoinShares Zcash ETP Over Settlement Gap - FinanceFeeds
-- ondo-finance: other - Tokenized Stock and ETF Roster: Ondo, DTCC and OKXICE - The Defiant
-- ondo-finance: other - Tokenized Stock and ETF Roster: Ondo, DTCC and OKXICE - The Defiant
+- none
 
 ## Derivatives flags (OKX)
 - BTC: LONG_FLUSH_24H | OI/mc 0.21% | topPos 0.93 | taker 1.02
@@ -47,12 +40,12 @@
 - (10 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 16 | mean -2.1% (-0.10R) | in profit 6 | older than 7d 15
-- worst: MANA -0.78R, ALGO -0.69R, A -0.52R | best: NIGHT 0.30R, TIA 0.34R, BEAM 1.65R
+- open 16 | mean -2.3% (-0.11R) | in profit 6 | older than 7d 15
+- worst: MANA -0.79R, ALGO -0.70R, A -0.53R | best: NIGHT 0.27R, TIA 0.28R, BEAM 1.66R
 
 ## System
-- CoinGecko 8903/10000 used, month-end projection 9976 (100%), throttle level 1 | by script {'scan': 2908, 'check_liquidity': 424, 'breakout_check': 5475, 'counterfactual_check': 96}
+- CoinGecko 8905/10000 used, month-end projection 9963 (100%), throttle level 1 | by script {'scan': 2910, 'check_liquidity': 424, 'breakout_check': 5475, 'counterfactual_check': 96}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=52), H2 SUPPORTED (n=197)
-- radar-flags.json scan age: 7m
+- radar-flags.json scan age: 9m
 - excluded from radar (pegged/tokenized equity): 42
