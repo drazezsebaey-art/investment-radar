@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-29 13:37 UTC
+# Radar digest - 2026-10-29 14:05 UTC
 
 ## Market
-- BTC scenario **B** | price 80151 | wk close 80637 vs 82800 | 50W 76146 (5.26%) | 32m old
+- BTC scenario **B** | price 80151 | wk close 80637 vs 82800 | 50W 76146 (5.26%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.22% | ETH/BTC 0.02900 | breadth7d 33% | stables 30d -1.99%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.29pt | 7d -0.20pt | n=121
 - Gold: PAXG 1m -3.68% | real10y 2.64 (-26bp 1m) | USD 1m 0.64% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
@@ -14,7 +14,7 @@
 - NEAR: **RESET_DONE** | +162% impulse, retr 0.41 | OI dd 30% | fund 0.0032 | hold True | inval 4.25000 | OB 4.02900-4.48300
 
 ## Pre-pump candidates
-- LIT: [B+C] 7d -14.3%
+- none
 
 ## ETF pipeline (new this run)
 - hyperliquid NEW: other - SPDR Gold Shares Tokenized ETF (Hyperliquid) price today, GLD to USD live price, marketcap
@@ -42,12 +42,12 @@
 - (9 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 15 | mean -2.4% (-0.09R) | in profit 5 | older than 7d 15
-- worst: CVX -0.89R, ALGO -0.76R, LTC -0.55R | best: TIA 0.41R, PYTH 0.49R, BEAM 1.68R
+- open 15 | mean -2.7% (-0.12R) | in profit 4 | older than 7d 15
+- worst: CVX -0.89R, ALGO -0.78R, LTC -0.56R | best: PYTH 0.25R, TIA 0.41R, BEAM 1.64R
 
 ## System
-- CoinGecko 9242/10000 used, month-end projection 10038 (100%), throttle level 2 | by script {'scan': 3000, 'check_liquidity': 435, 'breakout_check': 5709, 'counterfactual_check': 98}
+- CoinGecko 9244/10000 used, month-end projection 10026 (100%), throttle level 2 | by script {'scan': 3002, 'check_liquidity': 435, 'breakout_check': 5709, 'counterfactual_check': 98}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=52), H2 SUPPORTED (n=198)
-- radar-flags.json scan age: 7m
+- radar-flags.json scan age: 5m
 - excluded from radar (pegged/tokenized equity): 43
