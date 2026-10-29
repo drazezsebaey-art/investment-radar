@@ -1,12 +1,12 @@
-# Radar digest - 2026-10-29 21:36 UTC
+# Radar digest - 2026-10-29 22:04 UTC
 
 ## Market
-- BTC scenario **B** | price 78866 | wk close 80637 vs 82800 | 50W 76146 (3.57%) | 31m old
+- BTC scenario **B** | price 78866 | wk close 80637 vs 82800 | 50W 76146 (3.57%) | 59m old
 - Alts: **BTC_LED** [-] | BTC.D 57.32% | ETH/BTC 0.02882 | breadth7d 44% | stables 30d -1.98%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.12pt | 7d -0.06pt | n=121
-- Gold: PAXG 1m -3.83% | real10y 2.64 (-26bp 1m) | USD 1m 0.64% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
-- 10y 1w: -13bp = real -13 + breakeven 1 -> **REAL_YIELD_DRIVEN**
-- 10y 1m: -25bp = real -26 + breakeven 3 -> **REAL_YIELD_DRIVEN**
+- Gold: PAXG 1m -3.85% | real10y 2.67 (-24bp 1m) | USD 1m 0.64% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
+- 10y 1w: -8bp = real -9 + breakeven 3 -> **SMALL_MOVE**
+- 10y 1m: -21bp = real -24 + breakeven -1 -> **REAL_YIELD_DRIVEN**
 
 ## Coins in correction (entry_ready first)
 - NEAR: **RESET_DONE** ENTRY_READY | +162% impulse, retr 0.51 | OI dd 26% | fund 0.0100 | hold True | inval 4.02900 | OB 3.40300-3.68100
@@ -14,7 +14,7 @@
 - ADA: **BROKEN** | +48% impulse, retr 1.00 | OI dd 29% | fund 0.0046 | hold True | inval 0.19010 | OB ---
 
 ## Pre-pump candidates
-- none
+- PEPE: [A+C] 7d 12.0%
 
 ## ETF pipeline (new this run)
 - ripple NEW: approval - GraniteShares Sets Nov. 30 Effective Date for XRP ETF Registration Amendment - TOKENPOST
@@ -44,12 +44,12 @@
 - (9 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 12 | mean -5.1% (-0.30R) | in profit 1 | older than 7d 12
-- worst: A -0.84R, LTC -0.80R, ETHFI -0.71R | best: RUNE -0.21R, TIA -0.05R, BEAM 1.53R
+- open 12 | mean -5.2% (-0.31R) | in profit 2 | older than 7d 12
+- worst: A -0.86R, LTC -0.82R, ETHFI -0.75R | best: TIA -0.12R, RUNE 0.04R, BEAM 1.56R
 
 ## System
-- CoinGecko 9336/10000 used, month-end projection 10023 (100%), throttle level 2 | by script {'scan': 3040, 'check_liquidity': 438, 'breakout_check': 5760, 'counterfactual_check': 98}
+- CoinGecko 9339/10000 used, month-end projection 10012 (100%), throttle level 2 | by script {'scan': 3042, 'check_liquidity': 439, 'breakout_check': 5760, 'counterfactual_check': 98}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=54), H2 SUPPORTED (n=202)
-- radar-flags.json scan age: 6m
-- excluded from radar (pegged/tokenized equity): 44
+- radar-flags.json scan age: 4m
+- excluded from radar (pegged/tokenized equity): 45
