@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-29 18:18 UTC
+# Radar digest - 2026-10-29 18:37 UTC
 
 ## Market
-- BTC scenario **B** | price 81090 | wk close 80637 vs 82800 | 50W 76146 (6.49%) | 1h old
+- BTC scenario **B** | price 81090 | wk close 80637 vs 82800 | 50W 76146 (6.49%) | 2h old
 - Alts: **BTC_LED** [-] | BTC.D 57.29% | ETH/BTC 0.02887 | breadth7d 44% | stables 30d -1.98%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.22pt | 7d -0.12pt | n=121
 - Gold: PAXG 1m -3.83% | real10y 2.64 (-26bp 1m) | USD 1m 0.64% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
@@ -23,14 +23,14 @@
 - hyperliquid NEW: other - Bitwise Hyperliquid ETF (BHYP) trades $40M in 3 hours, staking 70% of HYPE tokens with 0% 
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc 0.21% | topPos 0.96 | taker 1.01
-- SOL: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.88 | taker 0.95
-- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.85 | taker 0.95
-- SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.78 | taker 0.99
-- SEI: LONG_FLUSH_24H | OI/mc 0.79% | topPos 0.97 | taker 0.97
-- ADA: LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 1.00
-- XLM: LONG_FLUSH_24H | OI/mc -% | topPos 0.94 | taker 1.10
-- BCH: LONG_FLUSH_24H | OI/mc 0.44% | topPos 0.81 | taker 0.88
+- BTC: LONG_FLUSH_24H | OI/mc 0.21% | topPos 0.95 | taker 0.99
+- ETH: LONG_FLUSH_24H | OI/mc -% | topPos 0.89 | taker 0.99
+- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.85 | taker 0.93
+- SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.79 | taker 0.95
+- SEI: LONG_FLUSH_24H | OI/mc 0.79% | topPos 0.97 | taker 0.94
+- ZEC: LONG_FLUSH_24H | OI/mc -% | topPos 1.17 | taker 1.04
+- ADA: LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 0.99
+- XLM: LONG_FLUSH_24H | OI/mc -% | topPos 0.95 | taker 1.08
 
 ## Revenue / buyback flags
 - ore: REVENUE_ACCELERATING
@@ -40,12 +40,12 @@
 - (9 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 16 | mean -2.3% (-0.10R) | in profit 5 | older than 7d 15
-- worst: CVX -0.83R, ALGO -0.78R, LTC -0.59R | best: NIGHT 0.12R, TIA 0.41R, BEAM 1.73R
+- open 16 | mean -2.8% (-0.14R) | in profit 3 | older than 7d 15
+- worst: CVX -0.85R, ALGO -0.80R, LTC -0.60R | best: NIGHT 0.09R, TIA 0.36R, BEAM 1.76R
 
 ## System
-- CoinGecko 9321/10000 used, month-end projection 10050 (100%), throttle level 2 | by script {'scan': 3026, 'check_liquidity': 437, 'breakout_check': 5760, 'counterfactual_check': 98}
+- CoinGecko 9323/10000 used, month-end projection 10053 (100%), throttle level 2 | by script {'scan': 3028, 'check_liquidity': 437, 'breakout_check': 5760, 'counterfactual_check': 98}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=52), H2 SUPPORTED (n=198)
-- radar-flags.json scan age: 18m
+- radar-flags.json scan age: 7m
 - excluded from radar (pegged/tokenized equity): 43
