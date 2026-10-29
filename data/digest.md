@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-29 12:17 UTC
+# Radar digest - 2026-10-29 12:37 UTC
 
 ## Market
-- BTC scenario **B** | price 80214 | wk close 80637 vs 82800 | 50W 76146 (5.34%) | 1h old
+- BTC scenario **B** | price 80214 | wk close 80637 vs 82800 | 50W 76146 (5.34%) | 2h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.22% | ETH/BTC 0.02900 | breadth7d 33% | stables 30d -1.99%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.29pt | 7d -0.20pt | n=121
 - Gold: PAXG 1m -3.68% | real10y 2.64 (-26bp 1m) | USD 1m 0.64% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
@@ -23,14 +23,14 @@
 - bitcoin-cash: other - Form 144 GRAYSCALE BITCOIN CASH TRUST (BCH) For: 28 October By Investing.com - Investing.c
 
 ## Derivatives flags (OKX)
-- SOL: LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 0.96
-- NEAR: LONG_FLUSH_24H | OI/mc -% | topPos 0.99 | taker 0.91
+- SOL: LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 0.95
+- NEAR: LONG_FLUSH_24H | OI/mc -% | topPos 0.99 | taker 0.92
 - XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 0.96
 - SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.78 | taker 0.98
-- SEI: LONG_FLUSH_24H | OI/mc 0.77% | topPos 0.92 | taker 1.00
-- ZEC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 1.11 | taker 0.96
-- WLD: LONG_FLUSH_24H | OI/mc 2.13% | topPos 0.84 | taker 0.87
-- ADA: LONG_FLUSH_24H | OI/mc 0.44% | topPos 0.85 | taker 0.99
+- SEI: LONG_FLUSH_24H | OI/mc 0.76% | topPos 0.92 | taker 0.99
+- ZEC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 1.11 | taker 0.97
+- WLD: LONG_FLUSH_24H | OI/mc 2.12% | topPos 0.84 | taker 0.87
+- ADA: LONG_FLUSH_24H | OI/mc -% | topPos 0.85 | taker 0.99
 
 ## Revenue / buyback flags
 - ore: REVENUE_ACCELERATING
@@ -40,12 +40,12 @@
 - (9 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 15 | mean -3.4% (-0.17R) | in profit 2 | older than 7d 15
-- worst: CVX -0.85R, ALGO -0.80R, A -0.57R | best: NIGHT -0.00R, TIA 0.30R, BEAM 1.62R
+- open 15 | mean -3.6% (-0.18R) | in profit 3 | older than 7d 15
+- worst: CVX -0.89R, ALGO -0.80R, A -0.57R | best: NIGHT 0.04R, TIA 0.33R, BEAM 1.61R
 
 ## System
-- CoinGecko 9236/10000 used, month-end projection 10046 (100%), throttle level 2 | by script {'scan': 2994, 'check_liquidity': 435, 'breakout_check': 5709, 'counterfactual_check': 98}
+- CoinGecko 9238/10000 used, month-end projection 10048 (100%), throttle level 2 | by script {'scan': 2996, 'check_liquidity': 435, 'breakout_check': 5709, 'counterfactual_check': 98}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=52), H2 SUPPORTED (n=198)
-- radar-flags.json scan age: 17m
-- excluded from radar (pegged/tokenized equity): 43
+- radar-flags.json scan age: 7m
+- excluded from radar (pegged/tokenized equity): 44
