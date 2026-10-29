@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-10-29T09:04:51.572726+00:00",
+  "updated_at": "2026-10-29T11:05:32.893590+00:00",
   "engine_version": "correction-v65.3",
   "btc_q4_scenario": {
     "scenario": "B",
     "reason": "last closed weekly candle below the May high",
-    "price": 80060.3,
+    "price": 80214.3,
     "last_weekly_close": 80637.1,
     "key_level": 82800.0,
     "sma_50w": 76146.0,
-    "dist_to_50w_pct": 5.14,
-    "drawdown_from_30d_high_pct": 8.23,
+    "dist_to_50w_pct": 5.34,
+    "drawdown_from_30d_high_pct": 8.05,
     "action": "half size, A+ setups only, prefer flush-zone entries"
   },
   "coins_in_correction": [
@@ -20,12 +20,12 @@
         "watchlist",
         "etf_watch"
       ],
-      "price": 4.357,
+      "price": 4.415,
       "impulse_low": 2.298,
       "impulse_peak": 6.028,
       "impulse_gain_pct": 162.3,
       "peak_date": "2026-10-11",
-      "retracement_now": 0.448,
+      "retracement_now": 0.432,
       "retracement_max": 0.477,
       "fib_levels": {
         "0.382": 4.60314,
@@ -85,8 +85,8 @@
           {
             "side": "low",
             "level": 4.388,
-            "result": "PENDING",
-            "ts": 1793246400000
+            "result": "SWEEP",
+            "ts": 1793260800000
           },
           {
             "side": "high",
@@ -95,10 +95,13 @@
             "ts": 1793217600000
           }
         ],
-        "bullish_hold_signal": false,
-        "last_low_sweep": null,
+        "bullish_hold_signal": true,
+        "last_low_sweep": {
+          "level": 4.388,
+          "ts": 1793260800000
+        },
         "premium_discount_impulse": {
-          "position": 0.551,
+          "position": 0.567,
           "zone": "PREMIUM",
           "equilibrium": 4.163,
           "range_low": 2.298,
@@ -115,10 +118,10 @@
         "layer_len": 5
       },
       "oi_drawdown_pct": 30.2,
-      "funding_now_pct": 0.0025,
+      "funding_now_pct": 0.0067,
       "reset_checks": {
         "oi_reset": true,
-        "funding_neutral": true,
+        "funding_neutral": false,
         "volume_dried_up": true,
         "healthy_depth": true
       },
@@ -132,12 +135,12 @@
       "reasons": [
         "etf_watch"
       ],
-      "price": 0.4176,
+      "price": 0.4234,
       "impulse_low": 0.356,
       "impulse_peak": 0.6193,
       "impulse_gain_pct": 74.0,
       "peak_date": "2026-10-02",
-      "retracement_now": 0.766,
+      "retracement_now": 0.744,
       "retracement_max": 0.798,
       "fib_levels": {
         "0.382": 0.518719,
@@ -195,7 +198,7 @@
           "ts": 1793203200000
         },
         "premium_discount_impulse": {
-          "position": 0.234,
+          "position": 0.256,
           "zone": "DEEP_DISCOUNT",
           "equilibrium": 0.48765,
           "range_low": 0.356,
@@ -212,7 +215,7 @@
         "layer_len": 5
       },
       "oi_drawdown_pct": 23.7,
-      "funding_now_pct": 0.01,
+      "funding_now_pct": 0.0099,
       "status": "BROKEN",
       "entry_ready": false,
       "entry_ready_rule": "status RESET_DONE/RESUMING + a hold signal (fresh low sweep or bullish internal CHoCH) + price at/below the impulse equilibrium - still needs gate + Agent Room + visual check"
@@ -223,12 +226,12 @@
       "reasons": [
         "etf_watch"
       ],
-      "price": 0.1991,
+      "price": 0.201,
       "impulse_low": 0.1901,
       "impulse_peak": 0.2823,
       "impulse_gain_pct": 48.5,
       "peak_date": "2026-10-05",
-      "retracement_now": 0.902,
+      "retracement_now": 0.882,
       "retracement_max": 0.939,
       "fib_levels": {
         "0.382": 0.24708,
@@ -304,7 +307,7 @@
           "ts": 1793203200000
         },
         "premium_discount_impulse": {
-          "position": 0.098,
+          "position": 0.118,
           "zone": "DEEP_DISCOUNT",
           "equilibrium": 0.2362,
           "range_low": 0.1901,
@@ -321,7 +324,7 @@
         "layer_len": 5
       },
       "oi_drawdown_pct": 33.3,
-      "funding_now_pct": -0.0153,
+      "funding_now_pct": -0.019,
       "status": "BROKEN",
       "entry_ready": false,
       "entry_ready_rule": "status RESET_DONE/RESUMING + a hold signal (fresh low sweep or bullish internal CHoCH) + price at/below the impulse equilibrium - still needs gate + Agent Room + visual check"
@@ -336,13 +339,12 @@
   },
   "notes": "RESUMING still needs a visual check of the 4H chart before any entry; RESET_DONE = first-tranche zone at most. Gate + Agent Room always apply.",
   "errors": [
-    "memecore: RuntimeError: OKX /market/candles code=51001 msg=Instrument ID, Instrument ID code, or Spread ID doesn't exist.",
     "ape-and-pepe: RuntimeError: OKX /market/candles code=51001 msg=Instrument ID, Instrument ID code, or Spread ID doesn't exist.",
+    "bitway: RuntimeError: OKX /market/candles code=51001 msg=Instrument ID, Instrument ID code, or Spread ID doesn't exist.",
     "hash-2: RuntimeError: OKX /market/candles code=51001 msg=Instrument ID, Instrument ID code, or Spread ID doesn't exist.",
-    "bianrensheng: RuntimeError: OKX /market/candles code=51001 msg=Instrument ID, Instrument ID code, or Spread ID doesn't exist.",
     "celium: RuntimeError: OKX /market/candles code=51001 msg=Instrument ID, Instrument ID code, or Spread ID doesn't exist.",
     "rollbit-coin: RuntimeError: OKX /market/candles code=51001 msg=Instrument ID, Instrument ID code, or Spread ID doesn't exist.",
-    "bitway: RuntimeError: OKX /market/candles code=51001 msg=Instrument ID, Instrument ID code, or Spread ID doesn't exist.",
-    "kucoin-shares: RuntimeError: OKX /market/candles code=51001 msg=Instrument ID, Instrument ID code, or Spread ID doesn't exist."
+    "kucoin-shares: RuntimeError: OKX /market/candles code=51001 msg=Instrument ID, Instrument ID code, or Spread ID doesn't exist.",
+    "jpycoin: RuntimeError: OKX /market/candles code=51001 msg=Instrument ID, Instrument ID code, or Spread ID doesn't exist."
   ]
 }
