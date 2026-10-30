@@ -8905,7 +8905,7 @@
       "hours_since_flagged_at_entry": 4.0,
       "funnel_stage_at_entry": "agent_room_priority",
       "date_opened": "2026-10-11",
-      "status": "open",
+      "status": "stopped_after_partial_targets",
       "entry": 0.04814842,
       "stop": 0.04063121,
       "used_trend_following_stop": false,
@@ -8942,7 +8942,9 @@
       "rejected_reason": "confidence_score 33 < AUTO_TRADE_MIN_SCORE 40",
       "last_check_source": "okx_candles",
       "sector_tags": [],
-      "coverage_gap": true
+      "coverage_gap": true,
+      "exit_price": 0.04063121,
+      "date_closed": "2026-10-30T00:15:59.066461+00:00"
     },
     {
       "id": "pepe-shadow-20261011T121422",
@@ -10571,9 +10573,7 @@
       },
       "rejected_reason": "confidence_score 10 < AUTO_TRADE_MIN_SCORE 40",
       "last_check_source": "price_history_snapshots",
-      "sector_tags": [
-        "meme-token"
-      ]
+      "sector_tags": []
     },
     {
       "id": "sol-shadow-20261019T061404",
@@ -14329,6 +14329,48 @@
       ],
       "exit_price": 2.95e-06,
       "date_closed": "2026-10-29T21:04:36.225191+00:00"
+    },
+    {
+      "id": "sun-shadow-20261030T001320",
+      "asset_id": "sun-token",
+      "symbol": "SUN",
+      "type": "paper",
+      "auto": true,
+      "triggered_by": "priority_review:relative_strength_consolidation",
+      "entry_archetype": "hidden_relative_strength",
+      "engine_version": "auto_paper_trade-v62",
+      "decay_state_at_entry": "fresh",
+      "hours_since_flagged_at_entry": 1.0,
+      "funnel_stage_at_entry": "shortlist_10",
+      "date_opened": "2026-10-30",
+      "status": "open",
+      "entry": 0.01714954,
+      "stop": 0.01670701,
+      "used_trend_following_stop": false,
+      "targets": [
+        0.01781333,
+        0.01825587,
+        0.01891966
+      ],
+      "created_at": "2026-10-30T00:13:20.388393+00:00",
+      "filled_at": "2026-10-30T00:00:46.989774+00:00",
+      "price_observed_at": "2026-10-30T00:00:46.989774+00:00",
+      "actual_entry": 0.01714954,
+      "targets_hit": [],
+      "confidence_score_at_entry": 10,
+      "signal_quality_at_entry": "beta_driven_or_cluster",
+      "market_regime_at_entry": {
+        "risk_state": "risk_off",
+        "volatility_state": "expanded",
+        "btc_trend_recent_pct": -3.9,
+        "btc_trend_full_window_pct": -6.47,
+        "btc_volatility_now": 1.43,
+        "btc_volatility_baseline_avg": 0.536,
+        "breadth_pct_green": 13.7
+      },
+      "rejected_reason": "confidence_score 10 < AUTO_TRADE_MIN_SCORE 40",
+      "last_check_source": "current_spot_fallback",
+      "sector_tags": []
     }
   ]
 }
