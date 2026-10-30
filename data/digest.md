@@ -1,27 +1,27 @@
-# Radar digest - 2026-10-30 22:35 UTC
+# Radar digest - 2026-10-30 23:03 UTC
 
 ## Market
-- BTC scenario **C** | price 76967 | wk close 80637 vs 82800 | 50W 76146 (1.08%) | 2h old
-- Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.92% | ETH/BTC 0.02914 | breadth7d -% | stables 30d -2.14%
-- Alt risk (BTC.D): **NORMAL**  | 3d -0.50pt | 7d -0.43pt | n=121
+- BTC scenario **C** | price 76947 | wk close 80637 vs 82800 | 50W 76146 (1.05%) | 1m old
+- Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.91% | ETH/BTC 0.02906 | breadth7d 50% | stables 30d -2.17%
+- Alt risk (BTC.D): **NORMAL**  | 3d -0.48pt | 7d -0.41pt | n=121
 - Gold: PAXG 1m -6.99% | real10y 2.63 (-30bp 1m) | USD 1m 0.64% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
 - 10y 1w: 2bp = real -1 + breakeven 0 -> **SMALL_MOVE**
 - 10y 1m: -31bp = real -30 + breakeven -2 -> **REAL_YIELD_DRIVEN**
 
 ## Coins in correction (entry_ready first)
-- WLD: **BROKEN** | +74% impulse, retr 0.81 | OI dd 29% | fund -0.0679 | hold False | inval 0.35990 | OB 0.35600-0.37680
-- ADA: **BROKEN** | +48% impulse, retr 0.96 | OI dd 36% | fund 0.0001 | hold True | inval 0.18220 | OB ---
-- NEAR: **RESET_DONE** | +147% impulse, retr 0.47 | OI dd 35% | fund 0.0100 | hold True | inval 3.90600 | OB 3.40300-3.68100
+- WLD: **BROKEN** | +74% impulse, retr 0.81 | OI dd 29% | fund -0.0220 | hold False | inval 0.35990 | OB 0.35600-0.37680
+- ADA: **BROKEN** | +48% impulse, retr 0.95 | OI dd 36% | fund 0.0095 | hold True | inval 0.18220 | OB ---
+- PEPE: **ONGOING** | +73% impulse, retr 0.29 | OI dd 21% | fund 0.0100 | hold False | inval 0.00000 | OB 0.00000-0.00000
+- NEAR: **RESET_DONE** | +147% impulse, retr 0.48 | OI dd 35% | fund 0.0099 | hold True | inval 3.90600 | OB 3.40300-3.68100
 
 ## Pre-pump candidates
-- XRP: [A+B] 7d -4.4%
+- XRP: [A+B] 7d -4.1%
 - OP: [B+C] 7d -1.2%
 - POL: [B+C] 7d 4.2%
 
 ## ETF pipeline (new this run)
-- injective-protocol NEW: other - Canary Staked INJ ETF aims to bring regulated Injective staking to Nasdaq - Crypto Briefin
-- ondo-finance: other - Innovator ZNOV Tokenized ETF (Ondo) price today, ZNOVon to USD live price, marketcap and c
-- ondo-finance: other - iShares Systematic Alternatives Active ETF (Ondo Tokenized) Price, IALTON Price, Live Char
+- injective-protocol NEW: approval - Canary Capital shifts Staked INJ ETF listing to Nasdaq, awaiting approval to trade Injecti
+- bittensor: other - Form 144 Grayscale Bittensor Trust (TAO) For: 28 October By Investing.com - Investing.com 
 
 ## Derivatives flags (OKX)
 - NEAR: SHORT_SQUEEZE_24H | OI/mc 0.96% | topPos 1.01 | taker 1.05
@@ -43,12 +43,12 @@
 - (11 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 8 | mean -4.5% (-0.35R) | in profit 2 | older than 7d 6
-- worst: TRX -1.11R, COMP -0.76R, AERO -0.52R | best: PEPE -0.08R, RUNE 0.13R, NIGHT 0.26R
+- open 8 | mean -4.0% (-0.33R) | in profit 2 | older than 7d 6
+- worst: TRX -1.17R, COMP -0.72R, AERO -0.53R | best: PEPE -0.01R, RUNE 0.14R, NIGHT 0.30R
 
 ## System
-- CoinGecko 9627/10000 used, month-end projection 9976 (100%), throttle level 1 | by script {'scan': 3148, 'check_liquidity': 454, 'breakout_check': 5923, 'counterfactual_check': 102}
+- CoinGecko 9630/10000 used, month-end projection 9965 (100%), throttle level 1 | by script {'scan': 3150, 'check_liquidity': 455, 'breakout_check': 5923, 'counterfactual_check': 102}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=54), H2 SUPPORTED (n=205)
-- radar-flags.json scan age: 5m
+- radar-flags.json scan age: 3m
 - excluded from radar (pegged/tokenized equity): 44
