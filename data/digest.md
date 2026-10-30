@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-30 08:34 UTC
+# Radar digest - 2026-10-30 09:03 UTC
 
 ## Market
-- BTC scenario **B** | price 78634 | wk close 80637 vs 82800 | 50W 76146 (3.27%) | 2h old
+- BTC scenario **C** | price 77983 | wk close 80637 vs 82800 | 50W 76146 (2.41%) | 1m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.18% | ETH/BTC 0.02867 | breadth7d 31% | stables 30d -2.22%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.21pt | 7d -0.19pt | n=121
 - Gold: PAXG 1m -4.47% | real10y 2.67 (-24bp 1m) | USD 1m 0.64% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
@@ -9,16 +9,20 @@
 - 10y 1m: -21bp = real -24 + breakeven -1 -> **REAL_YIELD_DRIVEN**
 
 ## Coins in correction (entry_ready first)
-- WLD: **BROKEN** | +74% impulse, retr 0.85 | OI dd 27% | fund -0.0561 | hold False | inval 0.35620 | OB 0.35600-0.37680
-- ADA: **BROKEN** | +48% impulse, retr 0.95 | OI dd 29% | fund 0.0100 | hold True | inval 0.19010 | OB ---
-- PEPE: **ONGOING** | +74% impulse, retr 0.30 | OI dd 0% | fund -0.0539 | hold False | inval 0.00000 | OB 0.00000-0.00000
-- NEAR: **RESET_DONE** | +162% impulse, retr 0.46 | OI dd 26% | fund -0.0267 | hold True | inval 4.02900 | OB 3.40300-3.68100
+- WLD: **BROKEN** | +74% impulse, retr 0.85 | OI dd 27% | fund -0.0465 | hold False | inval 0.35620 | OB 0.35600-0.37680
+- ADA: **BROKEN** | +48% impulse, retr 0.97 | OI dd 29% | fund 0.0100 | hold True | inval 0.19010 | OB ---
+- NEAR: **RESET_DONE** | +162% impulse, retr 0.45 | OI dd 26% | fund -0.0281 | hold True | inval 4.02900 | OB 3.40300-3.68100
 
 ## Pre-pump candidates
-- SOL: [A+B] 7d -7.1%
+- SOL: [A+B] 7d -6.7%
 
 ## ETF pipeline (new this run)
-- none
+- solana NEW: other - Fidelity’s FSOL ETF Draws Fresh Cash as Solana’s Hot Streak Lures Crypto Investors - TipRa
+- ripple NEW: other - Leveraged XRP ETF Sees Cash Head for the Exit as Token Rally Rolls On - TipRanks
+- ripple NEW: other - XRP Rally Draws Fresh Cash: Canary XRP ETF Sees 1% AUM Jump in a Single Day - TipRanks
+- ondo-finance: other - iShares US Industry Rotation Active ETF (Ondo Tokenized) Price, INROON Price, Live Charts,
+- ondo-finance: other - iShares Bitcoin Premium Income Tokenized ETF (Ondo) price today, BITAon to USD live price,
+- ondo-finance: other - iShares Bitcoin Premium Income Tokenized ETF (Ondo) price today, BITAon to USD live price,
 
 ## Derivatives flags (OKX)
 - BTC: LONG_FLUSH_24H | OI/mc 0.23% | topPos 0.93 | taker 0.95
@@ -38,12 +42,12 @@
 - (9 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 8 | mean -4.7% (-0.37R) | in profit 1 | older than 7d 6
-- worst: TRX -1.03R, COMP -0.77R, AERO -0.51R | best: NIGHT -0.09R, PEPE -0.01R, RUNE 0.33R
+- open 8 | mean -4.8% (-0.37R) | in profit 1 | older than 7d 6
+- worst: TRX -1.00R, COMP -0.78R, AERO -0.51R | best: NIGHT -0.07R, PEPE -0.03R, RUNE 0.32R
 
 ## System
-- CoinGecko 9496/10000 used, month-end projection 10036 (100%), throttle level 2 | by script {'scan': 3084, 'check_liquidity': 445, 'breakout_check': 5865, 'counterfactual_check': 102}
+- CoinGecko 9498/10000 used, month-end projection 10023 (100%), throttle level 2 | by script {'scan': 3086, 'check_liquidity': 445, 'breakout_check': 5865, 'counterfactual_check': 102}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=54), H2 SUPPORTED (n=205)
-- radar-flags.json scan age: 4m
+- radar-flags.json scan age: 3m
 - excluded from radar (pegged/tokenized equity): 43
