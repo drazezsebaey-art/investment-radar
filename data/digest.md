@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-30 00:36 UTC
+# Radar digest - 2026-10-30 01:04 UTC
 
 ## Market
-- BTC scenario **B** | price 78821 | wk close 80637 vs 82800 | 50W 76146 (3.51%) | 2h old
+- BTC scenario **C** | price 77061 | wk close 80637 vs 82800 | 50W 76146 (1.20%) | 1m old
 - Alts: **BTC_LED** [-] | BTC.D 57.33% | ETH/BTC 0.02873 | breadth7d 46% | stables 30d -1.96%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.11pt | 7d -0.09pt | n=121
 - Gold: PAXG 1m -3.85% | real10y 2.67 (-24bp 1m) | USD 1m 0.64% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
@@ -9,23 +9,22 @@
 - 10y 1m: -21bp = real -24 + breakeven -1 -> **REAL_YIELD_DRIVEN**
 
 ## Coins in correction (entry_ready first)
-- NEAR: **RESET_DONE** ENTRY_READY | +162% impulse, retr 0.53 | OI dd 26% | fund 0.0079 | hold True | inval 4.02900 | OB 3.40300-3.68100
-- WLD: **BROKEN** | +74% impulse, retr 0.89 | OI dd 27% | fund 0.0100 | hold False | inval 0.35620 | OB 0.35600-0.37680
-- ADA: **BROKEN** | +48% impulse, retr 1.00 | OI dd 29% | fund -0.0052 | hold True | inval 0.19010 | OB ---
-- PEPE: **ONGOING** | +74% impulse, retr 0.52 | OI dd 0% | fund 0.0100 | hold False | inval 0.00000 | OB 0.00000-0.00000
+- NEAR: **RESET_DONE** ENTRY_READY | +162% impulse, retr 0.55 | OI dd 26% | fund 0.0007 | hold True | inval 3.40300 | OB 3.40300-3.68100
+- WLD: **BROKEN** | +74% impulse, retr 0.93 | OI dd 27% | fund 0.0100 | hold False | inval 0.35620 | OB ---
+- ADA: **BROKEN** | +48% impulse, retr 1.03 | OI dd 29% | fund -0.0019 | hold True | inval - | OB ---
+- PEPE: **ONGOING** | +74% impulse, retr 0.46 | OI dd 0% | fund 0.0100 | hold False | inval 0.00000 | OB 0.00000-0.00000
 
 ## Pre-pump candidates
-- TRX: [B+C] 7d 7.2%
+- none
 
 ## ETF pipeline (new this run)
-- hyperliquid NEW: launch - Bitwise Hyperliquid ETF’s $40M Debut Was Share Turnover, Not New Investment - Cryptonews.n
-- kucoin-shares NEW: delay_or_rejection - Winklevoss Files Zcash ETF, VanEck Withdraws Lido Staked Ether Proposal - KuCoin
-- ripple NEW: other - Crypto investors refuse to sell XRP ETF tokens despite a 25% price crash - Cryptonews.net
-- solana NEW: other - Solana Holds $98 Support as Whale Selling and ETF Outflows Add Risk - Coin Gabbar
-- bittensor: launch - Grayscale files to convert Bittensor Trust into an ETF on NYSE Arca, but launch date and f
-- bittensor: launch - Grayscale files to convert Bittensor Trust into an ETF on NYSE Arca, but launch date and f
-- zcash: delay_or_rejection - Winklevoss Files Zcash ETF, VanEck Withdraws Lido Staked Ether Proposal - KuCoin
-- zcash: delay_or_rejection - Winklevoss Files Zcash ETF, VanEck Withdraws Lido Staked Ether Proposal - KuCoin
+- ripple NEW: other - Investors Tap the Brakes on Bitwise’s XRP ETF as Short-Term Signals Turn Sour - TipRanks
+- ripple NEW: other - Bitwise XRP ETF Sees Meaningful Outflow as Short‑Term Signals Turn Sour on XRP - TipRanks
+- ripple NEW: other - Franklin’s XRP ETF Draws Fresh Cash Even as XRP Flashes a Short-Term ‘Sell’ Signal - TipRa
+- cap-4 NEW: other - Samsung KODEX 200 ETF(Derivatives) Price (KODEX200/USD) Today | Live Price, Market Cap & C
+- zcash: amendment - Winklevoss Zcash ETF Filing Among Three Crypto ETF Proposal Amendments - Menafn
+- ondo-finance: other - About Global X MSCI Argentina ETF (Ondo Tokenized) - Coinbase
+- ondo-finance: other - How to Buy Direxion Daily Semi Bull 3X ETF Tokenized ETF (Ondo) (SOXLon) in Gibraltar with
 
 ## Derivatives flags (OKX)
 - BTC: LONG_FLUSH_24H | OI/mc 0.23% | topPos 0.91 | taker 0.94
@@ -45,12 +44,12 @@
 - (9 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 8 | mean -4.7% (-0.21R) | in profit 2 | older than 7d 7
-- worst: SUI -0.79R, COMP -0.71R, AERO -0.58R | best: RUNE -0.20R, TRX 0.24R, BEAM 1.28R
+- open 8 | mean -3.2% (-0.12R) | in profit 2 | older than 7d 7
+- worst: SUI -0.68R, COMP -0.64R, AERO -0.52R | best: RUNE -0.06R, TRX 0.33R, BEAM 1.34R
 
 ## System
-- CoinGecko 9411/10000 used, month-end projection 10060 (101%), throttle level 2 | by script {'scan': 3052, 'check_liquidity': 442, 'breakout_check': 5815, 'counterfactual_check': 102}
+- CoinGecko 9413/10000 used, month-end projection 10048 (100%), throttle level 2 | by script {'scan': 3054, 'check_liquidity': 442, 'breakout_check': 5815, 'counterfactual_check': 102}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=54), H2 SUPPORTED (n=203)
-- radar-flags.json scan age: 6m
-- excluded from radar (pegged/tokenized equity): 47
+- radar-flags.json scan age: 4m
+- excluded from radar (pegged/tokenized equity): 46
