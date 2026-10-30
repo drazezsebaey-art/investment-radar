@@ -14473,6 +14473,92 @@
       ],
       "exit_price": 2.274e-05,
       "date_closed": "2026-10-30T08:32:05.948942+00:00"
+    },
+    {
+      "id": "sky-shadow-20261030T121422",
+      "asset_id": "sky",
+      "symbol": "SKY",
+      "type": "paper",
+      "auto": true,
+      "triggered_by": "priority_review:rsi_divergence+relative_strength_consolidation+double_bottom",
+      "entry_archetype": "proactive_confluence",
+      "engine_version": "auto_paper_trade-v62",
+      "decay_state_at_entry": "fresh",
+      "hours_since_flagged_at_entry": 12.5,
+      "funnel_stage_at_entry": "agent_room_priority",
+      "date_opened": "2026-10-30",
+      "status": "open",
+      "entry": 0.068307,
+      "stop": 0.06413724,
+      "used_trend_following_stop": false,
+      "targets": [
+        0.07456164,
+        0.0787314,
+        0.08498604
+      ],
+      "created_at": "2026-10-30T12:14:22.879803+00:00",
+      "filled_at": "2026-10-30T12:00:58.839353+00:00",
+      "price_observed_at": "2026-10-30T12:00:58.839353+00:00",
+      "actual_entry": 0.068307,
+      "targets_hit": [],
+      "confidence_score_at_entry": 25,
+      "signal_quality_at_entry": "beta_driven_or_cluster",
+      "market_regime_at_entry": {
+        "risk_state": "risk_off",
+        "volatility_state": "expanded",
+        "btc_trend_recent_pct": -5.24,
+        "btc_trend_full_window_pct": -7.53,
+        "btc_volatility_now": 1.346,
+        "btc_volatility_baseline_avg": 0.565,
+        "breadth_pct_green": 23.8
+      },
+      "rejected_reason": "confidence_score 25 < AUTO_TRADE_MIN_SCORE 40",
+      "last_check_source": "okx_candles",
+      "sector_tags": []
+    },
+    {
+      "id": "qnt-shadow-20261030T121422",
+      "asset_id": "quant-network",
+      "symbol": "QNT",
+      "type": "paper",
+      "auto": true,
+      "triggered_by": "priority_review:cluster_rotation_lag",
+      "entry_archetype": "rotation_lag",
+      "engine_version": "auto_paper_trade-v62",
+      "decay_state_at_entry": "fresh",
+      "hours_since_flagged_at_entry": 4.0,
+      "funnel_stage_at_entry": "shortlist_10",
+      "date_opened": "2026-10-30",
+      "status": "open",
+      "entry": 192.31,
+      "stop": 188.37514343,
+      "used_trend_following_stop": false,
+      "targets": [
+        198.21228486,
+        202.14714142,
+        208.04942628
+      ],
+      "created_at": "2026-10-30T12:14:22.879803+00:00",
+      "filled_at": "2026-10-30T12:00:58.839353+00:00",
+      "price_observed_at": "2026-10-30T12:00:58.839353+00:00",
+      "actual_entry": 192.31,
+      "targets_hit": [],
+      "confidence_score_at_entry": 10,
+      "signal_quality_at_entry": "beta_driven_or_cluster",
+      "market_regime_at_entry": {
+        "risk_state": "risk_off",
+        "volatility_state": "expanded",
+        "btc_trend_recent_pct": -5.24,
+        "btc_trend_full_window_pct": -7.53,
+        "btc_volatility_now": 1.346,
+        "btc_volatility_baseline_avg": 0.565,
+        "breadth_pct_green": 23.8
+      },
+      "rejected_reason": "confidence_score 10 < AUTO_TRADE_MIN_SCORE 40",
+      "last_check_source": "current_spot_fallback",
+      "sector_tags": [
+        "real-world-assets-rwa"
+      ]
     }
   ]
 }
