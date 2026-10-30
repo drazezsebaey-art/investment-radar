@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-30 07:03 UTC
+# Radar digest - 2026-10-30 07:34 UTC
 
 ## Market
-- BTC scenario **B** | price 78634 | wk close 80637 vs 82800 | 50W 76146 (3.27%) | 1m old
+- BTC scenario **B** | price 78634 | wk close 80637 vs 82800 | 50W 76146 (3.27%) | 32m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.18% | ETH/BTC 0.02867 | breadth7d 31% | stables 30d -2.22%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.21pt | 7d -0.19pt | n=121
 - Gold: PAXG 1m -4.47% | real10y 2.67 (-24bp 1m) | USD 1m 0.64% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
@@ -16,20 +16,19 @@
 
 ## Pre-pump candidates
 - SOL: [A+B] 7d -5.9%
-- PEPE: [A+C] 7d 10.3%
 
 ## ETF pipeline (new this run)
 - none
 
 ## Derivatives flags (OKX)
 - BTC: SHORT_SQUEEZE_24H | OI/mc 0.23% | topPos 0.92 | taker 0.96
-- ETH: SHORT_SQUEEZE_24H | OI/mc 0.67% | topPos 0.86 | taker 0.91
-- SOL: SHORT_SQUEEZE_FUEL, SHORT_SQUEEZE_24H | OI/mc 0.70% | topPos 0.89 | taker 0.91
-- AVAX: LONG_FLUSH_24H | OI/mc 0.34% | topPos 0.92 | taker 0.91
-- SEI: LONG_FLUSH_24H | OI/mc 0.69% | topPos 0.89 | taker 0.94
-- TAO: LONG_FLUSH_24H | OI/mc 0.71% | topPos 0.82 | taker 0.92
-- ADA: LONG_FLUSH_24H | OI/mc 0.42% | topPos 0.88 | taker 0.96
-- LINK: LONG_FLUSH_24H | OI/mc 0.35% | topPos 0.92 | taker 0.93
+- ETH: SHORT_SQUEEZE_24H | OI/mc 0.67% | topPos 0.86 | taker 0.92
+- SOL: SHORT_SQUEEZE_FUEL, SHORT_SQUEEZE_24H | OI/mc 0.71% | topPos 0.89 | taker 0.92
+- AVAX: LONG_FLUSH_24H | OI/mc 0.35% | topPos 0.92 | taker 0.92
+- SEI: LONG_FLUSH_24H | OI/mc 0.70% | topPos 0.89 | taker 0.96
+- TAO: LONG_FLUSH_24H | OI/mc 0.71% | topPos 0.83 | taker 0.92
+- ADA: LONG_FLUSH_24H | OI/mc 0.42% | topPos 0.88 | taker 0.97
+- LINK: LONG_FLUSH_24H | OI/mc 0.35% | topPos 0.93 | taker 0.93
 
 ## Revenue / buyback flags
 - ore: REVENUE_ACCELERATING
@@ -39,12 +38,12 @@
 - (9 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 9 | mean 1.8% (0.17R) | in profit 3 | older than 7d 7
-- worst: COMP -0.76R, TRX -0.69R, TIA -0.50R | best: PEPE 0.01R, RUNE 0.44R, BEAM 3.89R
+- open 9 | mean 1.0% (0.12R) | in profit 2 | older than 7d 7
+- worst: TRX -0.91R, COMP -0.79R, AERO -0.51R | best: NIGHT -0.03R, RUNE 0.36R, BEAM 3.84R
 
 ## System
-- CoinGecko 9489/10000 used, month-end projection 10042 (100%), throttle level 2 | by script {'scan': 3078, 'check_liquidity': 444, 'breakout_check': 5865, 'counterfactual_check': 102}
+- CoinGecko 9491/10000 used, month-end projection 10045 (100%), throttle level 2 | by script {'scan': 3080, 'check_liquidity': 444, 'breakout_check': 5865, 'counterfactual_check': 102}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=54), H2 SUPPORTED (n=204)
-- radar-flags.json scan age: 3m
+- radar-flags.json scan age: 4m
 - excluded from radar (pegged/tokenized equity): 43
