@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-30 23:03 UTC
+# Radar digest - 2026-10-30 23:34 UTC
 
 ## Market
-- BTC scenario **C** | price 76947 | wk close 80637 vs 82800 | 50W 76146 (1.05%) | 1m old
+- BTC scenario **C** | price 76947 | wk close 80637 vs 82800 | 50W 76146 (1.05%) | 32m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.91% | ETH/BTC 0.02906 | breadth7d 50% | stables 30d -2.17%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.48pt | 7d -0.41pt | n=121
 - Gold: PAXG 1m -6.99% | real10y 2.63 (-30bp 1m) | USD 1m 0.64% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
@@ -15,22 +15,22 @@
 - NEAR: **RESET_DONE** | +147% impulse, retr 0.48 | OI dd 35% | fund 0.0099 | hold True | inval 3.90600 | OB 3.40300-3.68100
 
 ## Pre-pump candidates
+- LINK: [A+B] 7d -4.6%
 - XRP: [A+B] 7d -4.1%
-- OP: [B+C] 7d -1.2%
-- POL: [B+C] 7d 4.2%
+- OP: [B+C] 7d -0.2%
 
 ## ETF pipeline (new this run)
 - injective-protocol NEW: approval - Canary Capital shifts Staked INJ ETF listing to Nasdaq, awaiting approval to trade Injecti
 - bittensor: other - Form 144 Grayscale Bittensor Trust (TAO) For: 28 October By Investing.com - Investing.com 
 
 ## Derivatives flags (OKX)
-- NEAR: SHORT_SQUEEZE_24H | OI/mc 0.96% | topPos 1.01 | taker 1.05
-- AVAX: LONG_FLUSH_24H | OI/mc 0.39% | topPos 0.89 | taker 0.92
-- XRP: SHORT_SQUEEZE_FUEL, LONG_FLUSH_24H | OI/mc 0.15% | topPos 0.88 | taker 0.88
-- SEI: LONG_FLUSH_24H | OI/mc 0.70% | topPos 0.84 | taker 0.98
-- TAO: LONG_FLUSH_24H | OI/mc 0.67% | topPos 0.86 | taker 0.94
-- ZEC: LONG_FLUSH_24H | OI/mc 0.67% | topPos 1.02 | taker 0.99
-- WLD: SHORT_SQUEEZE_FUEL | OI/mc 2.12% | topPos 0.87 | taker 0.90
+- BTC: SHORT_SQUEEZE_24H | OI/mc 0.24% | topPos 0.89 | taker 0.94
+- NEAR: SHORT_SQUEEZE_24H | OI/mc -% | topPos 1.02 | taker 1.07
+- AVAX: LONG_FLUSH_24H | OI/mc 0.39% | topPos 0.89 | taker 0.93
+- XRP: SHORT_SQUEEZE_FUEL, LONG_FLUSH_24H | OI/mc 0.15% | topPos 0.88 | taker 0.87
+- SEI: LONG_FLUSH_24H | OI/mc 0.70% | topPos 0.83 | taker 0.97
+- TAO: LONG_FLUSH_24H | OI/mc 0.66% | topPos 0.86 | taker 0.93
+- WLD: SHORT_SQUEEZE_FUEL | OI/mc 2.11% | topPos 0.87 | taker 0.90
 - ADA: LONG_FLUSH_24H | OI/mc 0.42% | topPos 0.88 | taker 1.00
 
 ## Revenue / buyback flags
@@ -43,12 +43,12 @@
 - (11 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 8 | mean -4.0% (-0.33R) | in profit 2 | older than 7d 6
-- worst: TRX -1.17R, COMP -0.72R, AERO -0.53R | best: PEPE -0.01R, RUNE 0.14R, NIGHT 0.30R
+- open 8 | mean -4.0% (-0.32R) | in profit 2 | older than 7d 6
+- worst: TRX -1.07R, COMP -0.72R, AERO -0.52R | best: PEPE -0.03R, RUNE 0.15R, NIGHT 0.25R
 
 ## System
-- CoinGecko 9630/10000 used, month-end projection 9965 (100%), throttle level 1 | by script {'scan': 3150, 'check_liquidity': 455, 'breakout_check': 5923, 'counterfactual_check': 102}
+- CoinGecko 9633/10000 used, month-end projection 9968 (100%), throttle level 1 | by script {'scan': 3152, 'check_liquidity': 456, 'breakout_check': 5923, 'counterfactual_check': 102}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=54), H2 SUPPORTED (n=205)
-- radar-flags.json scan age: 3m
+- radar-flags.json scan age: 4m
 - excluded from radar (pegged/tokenized equity): 44
