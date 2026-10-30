@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-30 00:16 UTC
+# Radar digest - 2026-10-30 00:36 UTC
 
 ## Market
-- BTC scenario **B** | price 78821 | wk close 80637 vs 82800 | 50W 76146 (3.51%) | 1h old
+- BTC scenario **B** | price 78821 | wk close 80637 vs 82800 | 50W 76146 (3.51%) | 2h old
 - Alts: **BTC_LED** [-] | BTC.D 57.33% | ETH/BTC 0.02873 | breadth7d 46% | stables 30d -1.96%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.11pt | 7d -0.09pt | n=121
 - Gold: PAXG 1m -3.85% | real10y 2.67 (-24bp 1m) | USD 1m 0.64% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
@@ -15,7 +15,7 @@
 - PEPE: **ONGOING** | +74% impulse, retr 0.52 | OI dd 0% | fund 0.0100 | hold False | inval 0.00000 | OB 0.00000-0.00000
 
 ## Pre-pump candidates
-- TRX: [B+C] 7d 6.3%
+- TRX: [B+C] 7d 7.2%
 
 ## ETF pipeline (new this run)
 - hyperliquid NEW: launch - Bitwise Hyperliquid ETF’s $40M Debut Was Share Turnover, Not New Investment - Cryptonews.n
@@ -28,14 +28,14 @@
 - zcash: delay_or_rejection - Winklevoss Files Zcash ETF, VanEck Withdraws Lido Staked Ether Proposal - KuCoin
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc 0.22% | topPos 0.93 | taker 0.95
-- SOL: LONG_FLUSH_24H | OI/mc 0.65% | topPos 0.88 | taker 0.89
-- NEAR: LONG_FLUSH_24H | OI/mc -% | topPos 0.96 | taker 0.93
-- AVAX: LONG_FLUSH_24H | OI/mc 0.36% | topPos 0.89 | taker 0.95
-- XRP: LONG_FLUSH_24H | OI/mc 0.14% | topPos 0.86 | taker 0.85
-- SUI: LONG_FLUSH_24H | OI/mc 0.99% | topPos 0.80 | taker 0.94
-- SEI: LONG_FLUSH_24H | OI/mc 0.74% | topPos 0.95 | taker 0.97
-- TAO: LONG_FLUSH_24H | OI/mc 0.74% | topPos 0.87 | taker 0.91
+- BTC: LONG_FLUSH_24H | OI/mc 0.23% | topPos 0.91 | taker 0.94
+- ETH: LONG_FLUSH_24H | OI/mc 0.68% | topPos 0.85 | taker 0.92
+- SOL: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.88
+- NEAR: LONG_FLUSH_24H | OI/mc -% | topPos 0.95 | taker 0.93
+- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 0.94
+- XRP: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.85
+- SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.78 | taker 0.94
+- SEI: LONG_FLUSH_24H | OI/mc 0.78% | topPos 0.94 | taker 1.00
 
 ## Revenue / buyback flags
 - ore: REVENUE_ACCELERATING
@@ -45,12 +45,12 @@
 - (9 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 13 | mean -6.4% (-0.39R) | in profit 1 | older than 7d 12
-- worst: A -0.94R, ETHFI -0.89R, LTC -0.86R | best: RUNE -0.08R, TRX 0.00R, BEAM 1.49R
+- open 8 | mean -4.7% (-0.21R) | in profit 2 | older than 7d 7
+- worst: SUI -0.79R, COMP -0.71R, AERO -0.58R | best: RUNE -0.20R, TRX 0.24R, BEAM 1.28R
 
 ## System
-- CoinGecko 9408/10000 used, month-end projection 10057 (101%), throttle level 2 | by script {'scan': 3050, 'check_liquidity': 441, 'breakout_check': 5815, 'counterfactual_check': 102}
+- CoinGecko 9411/10000 used, month-end projection 10060 (101%), throttle level 2 | by script {'scan': 3052, 'check_liquidity': 442, 'breakout_check': 5815, 'counterfactual_check': 102}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=54), H2 SUPPORTED (n=203)
-- radar-flags.json scan age: 16m
-- excluded from radar (pegged/tokenized equity): 44
+- radar-flags.json scan age: 6m
+- excluded from radar (pegged/tokenized equity): 47
