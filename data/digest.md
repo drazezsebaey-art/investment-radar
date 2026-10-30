@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-30 01:35 UTC
+# Radar digest - 2026-10-30 02:03 UTC
 
 ## Market
-- BTC scenario **C** | price 77061 | wk close 80637 vs 82800 | 50W 76146 (1.20%) | 32m old
+- BTC scenario **C** | price 77061 | wk close 80637 vs 82800 | 50W 76146 (1.20%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 57.33% | ETH/BTC 0.02873 | breadth7d 46% | stables 30d -1.96%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.11pt | 7d -0.09pt | n=121
 - Gold: PAXG 1m -3.85% | real10y 2.67 (-24bp 1m) | USD 1m 0.64% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
@@ -15,7 +15,7 @@
 - PEPE: **ONGOING** | +74% impulse, retr 0.46 | OI dd 0% | fund 0.0100 | hold False | inval 0.00000 | OB 0.00000-0.00000
 
 ## Pre-pump candidates
-- none
+- TRX: [B+C] 7d 9.0%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - Investors Tap the Brakes on Bitwise’s XRP ETF as Short-Term Signals Turn Sour - TipRanks
@@ -44,12 +44,12 @@
 - (9 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 8 | mean -3.2% (-0.12R) | in profit 3 | older than 7d 7
-- worst: SUI -0.68R, COMP -0.65R, AERO -0.58R | best: RUNE 0.02R, TRX 0.38R, BEAM 1.33R
+- open 8 | mean -4.2% (-0.19R) | in profit 3 | older than 7d 7
+- worst: COMP -0.92R, SUI -0.69R, AERO -0.61R | best: RUNE 0.06R, TRX 0.23R, BEAM 1.20R
 
 ## System
-- CoinGecko 9415/10000 used, month-end projection 10050 (100%), throttle level 2 | by script {'scan': 3056, 'check_liquidity': 442, 'breakout_check': 5815, 'counterfactual_check': 102}
+- CoinGecko 9417/10000 used, month-end projection 10038 (100%), throttle level 2 | by script {'scan': 3058, 'check_liquidity': 442, 'breakout_check': 5815, 'counterfactual_check': 102}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=54), H2 SUPPORTED (n=203)
-- radar-flags.json scan age: 5m
-- excluded from radar (pegged/tokenized equity): 46
+- radar-flags.json scan age: 3m
+- excluded from radar (pegged/tokenized equity): 45
