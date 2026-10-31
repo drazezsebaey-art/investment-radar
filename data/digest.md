@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-31 18:03 UTC
+# Radar digest - 2026-10-31 18:34 UTC
 
 ## Market
-- BTC scenario **C** | price 77571 | wk close 80637 vs 82800 | 50W 76146 (1.87%) | 1h old
+- BTC scenario **C** | price 77571 | wk close 80637 vs 82800 | 50W 76146 (1.87%) | 2h old
 - Alts: **BTC_LED** [-] | BTC.D 57.05% | ETH/BTC 0.02902 | breadth7d 41% | stables 30d -2.27%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.40pt | 7d -0.39pt | n=121
 - Gold: PAXG 1m -6.50% | real10y 2.63 (-30bp 1m) | USD 1m 0.64% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
@@ -16,7 +16,7 @@
 - NEAR: **RESUMING** | +110% impulse, retr 0.48 | OI dd 29% | fund 0.0067 | hold False | inval 4.23300 | OB 4.21800-4.43000
 
 ## Pre-pump candidates
-- none
+- NEAR: [A+B] 7d 2.3%
 
 ## ETF pipeline (new this run)
 - solana NEW: other - Bitwise Solana Staking ETF (BSOL) Seasonal Returns Chart - Yahoo Finance - Yahoo! Finance 
@@ -25,14 +25,14 @@
 - solana NEW: other - Morgan Stanley’s Solana ETF Draws Fresh Inflows as Token Nears $100 Mark - TipRanks
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc 0.24% | topPos 0.90 | taker 0.95
-- ETH: SHORT_SQUEEZE_24H | OI/mc 0.65% | topPos 0.89 | taker 0.94
-- NEAR: SHORT_SQUEEZE_24H | OI/mc 0.99% | topPos 1.01 | taker 1.08
-- AVAX: SHORT_SQUEEZE_24H | OI/mc 0.39% | topPos 0.90 | taker 0.87
-- XRP: LONG_FLUSH_24H | OI/mc 0.16% | topPos 0.88 | taker 0.94
-- SUI: LONG_FLUSH_24H | OI/mc 0.96% | topPos 0.80 | taker 0.95
-- SEI: AGGRESSIVE_SELLING | OI/mc 0.71% | topPos 0.85 | taker 0.85
-- TAO: LONG_FLUSH_24H | OI/mc 0.67% | topPos 0.87 | taker 0.91
+- BTC: SHORT_SQUEEZE_24H | OI/mc 0.24% | topPos 0.90 | taker 0.96
+- ETH: SHORT_SQUEEZE_24H | OI/mc 0.66% | topPos 0.89 | taker 0.98
+- NEAR: SHORT_SQUEEZE_FUEL, SHORT_SQUEEZE_24H | OI/mc 0.97% | topPos 1.01 | taker 1.03
+- AVAX: SHORT_SQUEEZE_24H | OI/mc 0.39% | topPos 0.89 | taker 0.85
+- XRP: LONG_FLUSH_24H | OI/mc 0.16% | topPos 0.88 | taker 0.92
+- SUI: LONG_FLUSH_24H | OI/mc 0.96% | topPos 0.79 | taker 0.96
+- TAO: LONG_FLUSH_24H | OI/mc 0.66% | topPos 0.87 | taker 0.92
+- ZEC: SHORT_SQUEEZE_24H | OI/mc 0.73% | topPos 1.15 | taker 0.99
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -44,12 +44,12 @@
 - (13 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 11 | mean -1.4% (-0.12R) | in profit 4 | older than 7d 6
-- worst: OP -0.78R, COMP -0.63R, AERO -0.41R | best: RUNE 0.49R, NIGHT 0.52R, ZRO 0.58R
+- open 11 | mean -1.2% (-0.10R) | in profit 4 | older than 7d 6
+- worst: OP -0.70R, COMP -0.64R, BCH -0.36R | best: NIGHT 0.46R, RUNE 0.48R, ZRO 0.72R
 
 ## System
-- CoinGecko 9828/10000 used, month-end projection 9908 (99%), throttle level 2 | by script {'scan': 3234, 'check_liquidity': 462, 'breakout_check': 6029, 'counterfactual_check': 103}
+- CoinGecko 9831/10000 used, month-end projection 9911 (99%), throttle level 2 | by script {'scan': 3236, 'check_liquidity': 463, 'breakout_check': 6029, 'counterfactual_check': 103}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=55), H2 SUPPORTED (n=207)
-- radar-flags.json scan age: 2m
+- radar-flags.json scan age: 4m
 - excluded from radar (pegged/tokenized equity): 45
