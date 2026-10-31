@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-31 13:34 UTC
+# Radar digest - 2026-10-31 14:03 UTC
 
 ## Market
-- BTC scenario **C** | price 77489 | wk close 80637 vs 82800 | 50W 76146 (1.76%) | 32m old
+- BTC scenario **C** | price 77489 | wk close 80637 vs 82800 | 50W 76146 (1.76%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 57.06% | ETH/BTC 0.02900 | breadth7d 41% | stables 30d -2.27%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.34pt | 7d -0.32pt | n=121
 - Gold: PAXG 1m -7.00% | real10y 2.63 (-30bp 1m) | USD 1m 0.64% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
@@ -15,7 +15,7 @@
 - NEAR: **RESET_DONE** | +147% impulse, retr 0.45 | OI dd 35% | fund 0.0008 | hold False | inval 4.23300 | OB 3.40300-3.68100
 
 ## Pre-pump candidates
-- PEPE: [A+C] 7d 14.7%
+- STX: [B+C] 7d 9.9%
 
 ## ETF pipeline (new this run)
 - dogecoin NEW: other - Dogecoin Price Prediction: Bitwise Shut Its DOGE ETF but Can $0.25 Return Before AlphaPepe
@@ -44,12 +44,12 @@
 - (13 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 11 | mean -2.2% (-0.22R) | in profit 2 | older than 7d 6
-- worst: OP -0.76R, COMP -0.72R, AERO -0.45R | best: PEPE 0.00R, NIGHT 0.21R, RUNE 0.65R
+- open 11 | mean -2.3% (-0.24R) | in profit 2 | older than 7d 6
+- worst: OP -0.73R, COMP -0.69R, AERO -0.45R | best: PEPE -0.03R, NIGHT 0.22R, RUNE 0.58R
 
 ## System
-- CoinGecko 9809/10000 used, month-end projection 9956 (100%), throttle level 2 | by script {'scan': 3216, 'check_liquidity': 461, 'breakout_check': 6029, 'counterfactual_check': 103}
+- CoinGecko 9811/10000 used, month-end projection 9945 (100%), throttle level 2 | by script {'scan': 3218, 'check_liquidity': 461, 'breakout_check': 6029, 'counterfactual_check': 103}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=55), H2 SUPPORTED (n=206)
-- radar-flags.json scan age: 4m
-- excluded from radar (pegged/tokenized equity): 45
+- radar-flags.json scan age: 2m
+- excluded from radar (pegged/tokenized equity): 44
