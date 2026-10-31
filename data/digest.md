@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-31 19:34 UTC
+# Radar digest - 2026-10-31 20:02 UTC
 
 ## Market
-- BTC scenario **C** | price 77600 | wk close 80637 vs 82800 | 50W 76146 (1.91%) | 32m old
+- BTC scenario **C** | price 77600 | wk close 80637 vs 82800 | 50W 76146 (1.91%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 57.04% | ETH/BTC 0.02907 | breadth7d 51% | stables 30d -2.26%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.23pt | 7d -0.44pt | n=121
 - Gold: PAXG 1m -6.50% | real10y 2.63 (-30bp 1m) | USD 1m 0.64% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
@@ -16,8 +16,8 @@
 - NEAR: **RESUMING** | +110% impulse, retr 0.49 | OI dd 29% | fund -0.0015 | hold False | inval 4.23300 | OB 4.21800-4.43000
 
 ## Pre-pump candidates
-- LINK: [A+B+C] 7d 2.9%
-- NEAR: [A+B] 7d 1.6%
+- NEAR: [A+B] 7d -0.9%
+- LINK: [A+B] 7d 2.9%
 
 ## ETF pipeline (new this run)
 - kucoin-shares NEW: filing - BlackRock Files for Bitcoin ETF With Downside Protection Linked to IBIT - KuCoin
@@ -47,12 +47,12 @@
 - (13 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 11 | mean -1.5% (-0.12R) | in profit 4 | older than 7d 6
-- worst: OP -0.72R, COMP -0.67R, BCH -0.39R | best: RUNE 0.42R, NIGHT 0.55R, ZRO 0.72R
+- open 11 | mean -1.7% (-0.08R) | in profit 4 | older than 7d 6
+- worst: OP -0.75R, COMP -0.69R, BCH -0.45R | best: RUNE 0.37R, NIGHT 0.48R, ZRO 1.01R
 
 ## System
-- CoinGecko 9835/10000 used, month-end projection 9902 (99%), throttle level 2 | by script {'scan': 3240, 'check_liquidity': 463, 'breakout_check': 6029, 'counterfactual_check': 103}
+- CoinGecko 9838/10000 used, month-end projection 9891 (99%), throttle level 2 | by script {'scan': 3242, 'check_liquidity': 464, 'breakout_check': 6029, 'counterfactual_check': 103}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=55), H2 SUPPORTED (n=207)
-- radar-flags.json scan age: 4m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 44
