@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-31 12:35 UTC
+# Radar digest - 2026-10-31 13:04 UTC
 
 ## Market
-- BTC scenario **C** | price 77387 | wk close 80637 vs 82800 | 50W 76146 (1.63%) | 2h old
+- BTC scenario **C** | price 77489 | wk close 80637 vs 82800 | 50W 76146 (1.76%) | 1m old
 - Alts: **BTC_LED** [-] | BTC.D 57.06% | ETH/BTC 0.02900 | breadth7d 41% | stables 30d -2.27%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.34pt | 7d -0.32pt | n=121
 - Gold: PAXG 1m -7.00% | real10y 2.63 (-30bp 1m) | USD 1m 0.64% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
@@ -9,20 +9,21 @@
 - 10y 1m: -31bp = real -30 + breakeven -2 -> **REAL_YIELD_DRIVEN**
 
 ## Coins in correction (entry_ready first)
-- WLD: **BROKEN** | +74% impulse, retr 0.85 | OI dd 29% | fund 0.0077 | hold False | inval 0.35990 | OB 0.35600-0.37680
-- ADA: **BROKEN** | +48% impulse, retr 0.98 | OI dd 36% | fund 0.0071 | hold False | inval 0.18220 | OB ---
-- NEAR: **RESET_DONE** | +147% impulse, retr 0.48 | OI dd 35% | fund 0.0038 | hold False | inval 3.90600 | OB 3.40300-3.68100
-- PEPE: **RESET_DONE** | +73% impulse, retr 0.29 | OI dd 21% | fund -0.0494 | hold False | inval 0.00000 | OB 0.00000-0.00000
+- WLD: **BROKEN** | +74% impulse, retr 0.85 | OI dd 29% | fund 0.0078 | hold False | inval 0.35990 | OB 0.35600-0.37680
+- ADA: **BROKEN** | +48% impulse, retr 0.97 | OI dd 36% | fund 0.0054 | hold False | inval 0.18220 | OB ---
+- NIGHT: **RESET_DONE** | +172% impulse, retr 0.40 | OI dd 65% | fund 0.0050 | hold False | inval 0.03528 | OB 0.02520-0.02577
+- NEAR: **RESET_DONE** | +147% impulse, retr 0.45 | OI dd 35% | fund 0.0008 | hold False | inval 4.23300 | OB 3.40300-3.68100
 
 ## Pre-pump candidates
-- AVAX: [A+B] 7d -5.3%
-- ZRO: [B+C] 7d 2.5%
+- AVAX: [A+B] 7d -4.6%
 - CAP: [A+C] 7d 17.1%
 
 ## ETF pipeline (new this run)
-- hyperliquid NEW: other - Bitwise's Hyperliquid ETF hits $40M trading vol... - Pluang
-- cap-4 NEW: other - iShares Semiconductor Tokenized ETF (Robinhood) Price (SOXX/USD) Today | Live Price, Marke
-- bitcoin-cash: other - Form 144 GRAYSCALE BITCOIN CASH TRUST (BCH) For: 30 October By Investing.com - Investing.c
+- dogecoin NEW: other - Dogecoin Price Prediction: Bitwise Shut Its DOGE ETF but Can $0.25 Return Before AlphaPepe
+- shiba-inu NEW: other - Crypto News Today: Bitcoin ETF Gains, Binance Hack Fallout, SHIB Liquidations, and Strateg
+- solana NEW: other - Crypto ETF News: Bitcoin, Ethereum, XRP, and Solana Funds in Focus Now - Coin Gabbar
+- ripple NEW: other - Crypto ETF News: Bitcoin, Ethereum, XRP, and Solana Funds in Focus Now - Coin Gabbar
+- solana NEW: other - Solana Drops 5% Amid Altcoin Selloff, ETF Outflows - CoinMarketCap
 
 ## Derivatives flags (OKX)
 - BTC: SHORT_SQUEEZE_24H | OI/mc 0.24% | topPos 0.90 | taker 0.94
@@ -44,12 +45,12 @@
 - (13 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 11 | mean -2.3% (-0.19R) | in profit 4 | older than 7d 6
-- worst: OP -0.80R, COMP -0.75R, AERO -0.48R | best: ZRO 0.14R, NIGHT 0.21R, RUNE 0.46R
+- open 11 | mean -2.0% (-0.18R) | in profit 3 | older than 7d 6
+- worst: OP -0.75R, COMP -0.73R, AERO -0.43R | best: PEPE 0.03R, NIGHT 0.24R, RUNE 0.51R
 
 ## System
-- CoinGecko 9805/10000 used, month-end projection 9966 (100%), throttle level 2 | by script {'scan': 3212, 'check_liquidity': 461, 'breakout_check': 6029, 'counterfactual_check': 103}
+- CoinGecko 9807/10000 used, month-end projection 9954 (100%), throttle level 2 | by script {'scan': 3214, 'check_liquidity': 461, 'breakout_check': 6029, 'counterfactual_check': 103}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=55), H2 SUPPORTED (n=206)
-- radar-flags.json scan age: 4m
+- radar-flags.json scan age: 3m
 - excluded from radar (pegged/tokenized equity): 44
