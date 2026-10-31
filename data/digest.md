@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-31 17:04 UTC
+# Radar digest - 2026-10-31 17:35 UTC
 
 ## Market
-- BTC scenario **C** | price 77571 | wk close 80637 vs 82800 | 50W 76146 (1.87%) | 1m old
+- BTC scenario **C** | price 77571 | wk close 80637 vs 82800 | 50W 76146 (1.87%) | 32m old
 - Alts: **BTC_LED** [-] | BTC.D 57.05% | ETH/BTC 0.02902 | breadth7d 41% | stables 30d -2.27%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.40pt | 7d -0.39pt | n=121
 - Gold: PAXG 1m -6.50% | real10y 2.63 (-30bp 1m) | USD 1m 0.64% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
@@ -25,14 +25,14 @@
 - solana NEW: other - Morgan Stanley’s Solana ETF Draws Fresh Inflows as Token Nears $100 Mark - TipRanks
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc 0.24% | topPos 0.90 | taker 0.94
-- ETH: SHORT_SQUEEZE_24H | OI/mc 0.65% | topPos 0.88 | taker 0.93
+- BTC: SHORT_SQUEEZE_24H | OI/mc 0.24% | topPos 0.90 | taker 0.95
+- ETH: SHORT_SQUEEZE_24H | OI/mc 0.65% | topPos 0.89 | taker 0.94
+- NEAR: SHORT_SQUEEZE_24H | OI/mc 0.99% | topPos 1.01 | taker 1.08
 - AVAX: SHORT_SQUEEZE_24H | OI/mc 0.39% | topPos 0.90 | taker 0.87
-- XRP: LONG_FLUSH_24H | OI/mc 0.16% | topPos 0.88 | taker 0.93
-- SUI: LONG_FLUSH_24H | OI/mc 0.96% | topPos 0.80 | taker 0.98
-- SEI: AGGRESSIVE_SELLING | OI/mc 0.70% | topPos 0.84 | taker 0.85
-- TAO: LONG_FLUSH_24H | OI/mc 0.67% | topPos 0.87 | taker 0.90
-- ZEC: SHORT_SQUEEZE_24H | OI/mc 0.73% | topPos 1.15 | taker 0.99
+- XRP: LONG_FLUSH_24H | OI/mc 0.16% | topPos 0.88 | taker 0.94
+- SUI: LONG_FLUSH_24H | OI/mc 0.96% | topPos 0.80 | taker 0.95
+- SEI: AGGRESSIVE_SELLING | OI/mc 0.71% | topPos 0.85 | taker 0.85
+- TAO: LONG_FLUSH_24H | OI/mc 0.67% | topPos 0.87 | taker 0.91
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -44,12 +44,12 @@
 - (13 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 11 | mean -1.6% (-0.12R) | in profit 3 | older than 7d 6
-- worst: OP -0.74R, COMP -0.62R, BCH -0.44R | best: NIGHT 0.37R, RUNE 0.48R, ZRO 0.72R
+- open 11 | mean -1.5% (-0.12R) | in profit 3 | older than 7d 6
+- worst: OP -0.82R, COMP -0.61R, BCH -0.43R | best: NIGHT 0.45R, RUNE 0.50R, ZRO 0.72R
 
 ## System
-- CoinGecko 9824/10000 used, month-end projection 9917 (99%), throttle level 2 | by script {'scan': 3230, 'check_liquidity': 462, 'breakout_check': 6029, 'counterfactual_check': 103}
+- CoinGecko 9826/10000 used, month-end projection 9919 (99%), throttle level 2 | by script {'scan': 3232, 'check_liquidity': 462, 'breakout_check': 6029, 'counterfactual_check': 103}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=55), H2 SUPPORTED (n=207)
-- radar-flags.json scan age: 3m
+- radar-flags.json scan age: 4m
 - excluded from radar (pegged/tokenized equity): 45
