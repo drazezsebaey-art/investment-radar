@@ -1,23 +1,23 @@
-# Radar digest - 2026-10-31 06:35 UTC
+# Radar digest - 2026-10-31 07:03 UTC
 
 ## Market
-- BTC scenario **C** | price 77195 | wk close 80637 vs 82800 | 50W 76146 (1.38%) | 2h old
-- Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.99% | ETH/BTC 0.02902 | breadth7d -% | stables 30d -2.28%
-- Alt risk (BTC.D): **NORMAL**  | 3d -0.43pt | 7d -0.46pt | n=121
+- BTC scenario **C** | price 77318 | wk close 80637 vs 82800 | 50W 76146 (1.54%) | 1m old
+- Alts: **BTC_LED** [-] | BTC.D 57.01% | ETH/BTC 0.02903 | breadth7d 41% | stables 30d -2.26%
+- Alt risk (BTC.D): **NORMAL**  | 3d -0.38pt | 7d -0.37pt | n=121
 - Gold: PAXG 1m -7.07% | real10y 2.63 (-30bp 1m) | USD 1m 0.64% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
 - 10y 1w: 2bp = real -1 + breakeven 0 -> **SMALL_MOVE**
 - 10y 1m: -31bp = real -30 + breakeven -2 -> **REAL_YIELD_DRIVEN**
 
 ## Coins in correction (entry_ready first)
-- WLD: **BROKEN** | +74% impulse, retr 0.85 | OI dd 29% | fund -0.0023 | hold False | inval 0.35990 | OB 0.35600-0.37680
-- ADA: **BROKEN** | +48% impulse, retr 0.97 | OI dd 36% | fund 0.0100 | hold False | inval 0.18220 | OB ---
-- NEAR: **RESET_DONE** | +147% impulse, retr 0.48 | OI dd 35% | fund 0.0031 | hold False | inval 3.90600 | OB 3.40300-3.68100
+- WLD: **BROKEN** | +74% impulse, retr 0.84 | OI dd 29% | fund 0.0043 | hold False | inval 0.35990 | OB 0.35600-0.37680
+- ADA: **BROKEN** | +48% impulse, retr 0.97 | OI dd 36% | fund 0.0098 | hold False | inval 0.18220 | OB ---
+- NEAR: **RESET_DONE** | +147% impulse, retr 0.47 | OI dd 35% | fund -0.0023 | hold False | inval 3.90600 | OB 3.40300-3.68100
 
 ## Pre-pump candidates
 - none
 
 ## ETF pipeline (new this run)
-- zcash: launch - Euronext Blocks CoinShares Zcash ETP Debut in Paris Over Settlement Gap - finance.biggo.co
+- zcash: other - Zcash Price Forecast: Bullish momentum mounts on steady ETF inflows, retail confidence - M
 
 ## Derivatives flags (OKX)
 - BTC: SHORT_SQUEEZE_24H | OI/mc 0.24% | topPos 0.89 | taker 0.93
@@ -39,12 +39,12 @@
 - (11 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 10 | mean -2.8% (-0.22R) | in profit 2 | older than 7d 6
-- worst: COMP -0.76R, OP -0.52R, AERO -0.48R | best: PEPE -0.03R, RUNE 0.28R, NIGHT 0.30R
+- open 10 | mean -2.8% (-0.23R) | in profit 3 | older than 7d 6
+- worst: COMP -0.75R, OP -0.50R, AERO -0.45R | best: PEPE 0.02R, RUNE 0.24R, NIGHT 0.29R
 
 ## System
-- CoinGecko 9722/10000 used, month-end projection 9963 (100%), throttle level 2 | by script {'scan': 3180, 'check_liquidity': 458, 'breakout_check': 5981, 'counterfactual_check': 103}
+- CoinGecko 9724/10000 used, month-end projection 9951 (100%), throttle level 2 | by script {'scan': 3182, 'check_liquidity': 458, 'breakout_check': 5981, 'counterfactual_check': 103}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=54), H2 SUPPORTED (n=205)
-- radar-flags.json scan age: 5m
+- radar-flags.json scan age: 3m
 - excluded from radar (pegged/tokenized equity): 44
