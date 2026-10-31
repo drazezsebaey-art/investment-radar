@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-10-31T05:30:35.705363+00:00",
-  "count": 95,
-  "market_breadth_pct_green": 51.2,
+  "updated_at": "2026-10-31T06:00:42.222199+00:00",
+  "count": 93,
+  "market_breadth_pct_green": 56.9,
   "category_clusters": {
     "decentralized-exchange": [
       "HYPE",
       "JUP",
       "LIT",
+      "CRV",
       "RAY",
       "FF",
-      "RUNE",
       "EDGE"
     ],
     "layer-1": [
@@ -30,8 +30,7 @@
       "STABLE",
       "HASH",
       "XPL",
-      "MON",
-      "RUNE"
+      "MON"
     ],
     "meme-token": [
       "APEPE",
@@ -80,6 +79,7 @@
     "yield-farming": [
       "AAVE",
       "BTW",
+      "CRV",
       "RAY",
       "CVX",
       "SYRUP"
@@ -91,32 +91,109 @@
     "gap_hours": 2.39,
     "last_gap_hours": 0.5
   },
-  "excluded_count": 44,
+  "excluded_count": 43,
   "coins": [
+    {
+      "id": "blockstack",
+      "symbol": "STX",
+      "name": "Stacks",
+      "price_usd": 0.302838,
+      "high_24h_usd": 0.303311,
+      "low_24h_usd": 0.277117,
+      "change_24h_pct": 7.51059,
+      "change_7d_pct": -3.4998,
+      "volume_24h_usd": 12498585,
+      "market_cap_usd": 568451635,
+      "market_cap_rank": 95,
+      "flags": [
+        "CHoCH صاعد مبكر — تغيّر هيكلي محتمل قبل أي اختراق مؤكد",
+        "تباعد RSI صاعد — زخم الهبوط بيضعف قبل انعكاس السعر",
+        "قوة نسبية خفية أثناء التماسك — بتتفوق على BTC وهي ساكنة ظاهريًا",
+        "قاع مزدوج مؤكد بعد كسر خط الرقبة — خط الرقبة 0.302104، الهدف 0.333277"
+      ],
+      "excess_return_24h_vs_btc_pct": 9.13,
+      "indicators": {
+        "rsi14": 90.31,
+        "ema9": 0.29904475,
+        "ema21": 0.29394875,
+        "volume_baseline_avg": 20033373.976,
+        "n_points": 500,
+        "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
+      },
+      "data_quality": {
+        "price": {
+          "tier": 1,
+          "source": "coingecko_simple_price",
+          "confidence": "real"
+        },
+        "rsi14": {
+          "tier": 0,
+          "source": "scan_synthetic_15m_samples",
+          "confidence": "approximate"
+        },
+        "structure_layer2": {
+          "tier": 0,
+          "source": "scan_synthetic_15m_samples",
+          "confidence": "approximate"
+        }
+      },
+      "early_signals": {
+        "structure": {
+          "structure": "downtrend",
+          "signal": "CHoCH_bullish",
+          "last_swing_high": 0.302104,
+          "last_swing_low": 0.270931
+        },
+        "volatility_squeeze": false,
+        "bullish_rsi_divergence": true,
+        "cluster_rotation_lag": null,
+        "relative_strength_consolidation": true,
+        "flag_pattern": null,
+        "double_bottom": {
+          "lower_low": 0.270931,
+          "neckline": 0.302104,
+          "target_price": 0.333277,
+          "confirmed": true
+        },
+        "triangle": null
+      },
+      "priority_review": true,
+      "opportunity_lifecycle": {
+        "first_flagged_at": "2026-10-30T08:00:46.532115+00:00",
+        "price_at_first_flag": 0.277689,
+        "move_since_flag_pct": 9.06,
+        "hours_since_flag": 22.0,
+        "decay_state": "decayed"
+      },
+      "binance_listed": true,
+      "binance_spread_pct": 0.107,
+      "binance_quote_volume_24h": 1346824,
+      "binance_liquidity_ok": false
+    },
     {
       "id": "optimism",
       "symbol": "OP",
       "name": "Optimism",
-      "price_usd": 0.114367,
+      "price_usd": 0.114474,
       "high_24h_usd": 0.121996,
       "low_24h_usd": 0.101836,
-      "change_24h_pct": 11.72199,
+      "change_24h_pct": 12.18276,
       "change_7d_pct": -0.1706,
-      "volume_24h_usd": 116700233,
-      "market_cap_usd": 261979921,
-      "market_cap_rank": 144,
+      "volume_24h_usd": 118357292,
+      "market_cap_usd": 262143735,
+      "market_cap_rank": 145,
       "flags": [
-        "حركة سعرية حادة خلال 24 ساعة (11.7%)",
-        "تفوق واضح على BTC خلال 24 ساعة (11.7% مقابل BTC -1.7%) — حركة مش مجرد بيتا عام للسوق",
+        "حركة سعرية حادة خلال 24 ساعة (12.2%)",
+        "تفوق واضح على BTC خلال 24 ساعة (12.2% مقابل BTC -1.6%) — حركة مش مجرد بيتا عام للسوق",
         "CHoCH صاعد مبكر — تغيّر هيكلي محتمل قبل أي اختراق مؤكد",
         "قوة نسبية خفية أثناء التماسك — بتتفوق على BTC وهي ساكنة ظاهريًا"
       ],
-      "excess_return_24h_vs_btc_pct": 13.45,
+      "excess_return_24h_vs_btc_pct": 13.8,
       "indicators": {
-        "rsi14": 40.68,
-        "ema9": 0.11687434,
-        "ema21": 0.11617239,
-        "volume_baseline_avg": 58342270.286,
+        "rsi14": 41.25,
+        "ema9": 0.11639427,
+        "ema21": 0.11601799,
+        "volume_baseline_avg": 58380201.066,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -156,8 +233,8 @@
       "opportunity_lifecycle": {
         "first_flagged_at": "2026-10-30T19:30:38.778769+00:00",
         "price_at_first_flag": 0.113607,
-        "move_since_flag_pct": 0.67,
-        "hours_since_flag": 10.0,
+        "move_since_flag_pct": 0.76,
+        "hours_since_flag": 10.5,
         "decay_state": "fresh"
       },
       "last_deep_eval": {
@@ -182,26 +259,26 @@
       "id": "beam-2",
       "symbol": "BEAM",
       "name": "Beam",
-      "price_usd": 0.00482705,
+      "price_usd": 0.00478503,
       "high_24h_usd": 0.00532778,
       "low_24h_usd": 0.00379544,
-      "change_24h_pct": 28.38755,
+      "change_24h_pct": 21.4881,
       "change_7d_pct": 55.5592,
-      "volume_24h_usd": 238970220,
-      "market_cap_usd": 242692201,
-      "market_cap_rank": 149,
+      "volume_24h_usd": 233440858,
+      "market_cap_usd": 240989396,
+      "market_cap_rank": 150,
       "flags": [
-        "حركة سعرية حادة خلال 24 ساعة (28.4%)",
+        "حركة سعرية حادة خلال 24 ساعة (21.5%)",
         "حركة سعرية حادة خلال 7 أيام (55.6%)",
-        "نشاط تداول غير عادي مقارنة بمتوسط العملة نفسها (x8.7)",
-        "تفوق واضح على BTC خلال 24 ساعة (28.4% مقابل BTC -1.7%) — حركة مش مجرد بيتا عام للسوق"
+        "نشاط تداول غير عادي مقارنة بمتوسط العملة نفسها (x8.4)",
+        "تفوق واضح على BTC خلال 24 ساعة (21.5% مقابل BTC -1.6%) — حركة مش مجرد بيتا عام للسوق"
       ],
-      "excess_return_24h_vs_btc_pct": 30.11,
+      "excess_return_24h_vs_btc_pct": 23.11,
       "indicators": {
-        "rsi14": 56.1,
-        "ema9": 0.00492538,
-        "ema21": 0.00481847,
-        "volume_baseline_avg": 27425071.378,
+        "rsi14": 55.58,
+        "ema9": 0.00489731,
+        "ema21": 0.00481543,
+        "volume_baseline_avg": 27851264.668,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -241,8 +318,8 @@
       "opportunity_lifecycle": {
         "first_flagged_at": "2026-10-29T16:00:49.715629+00:00",
         "price_at_first_flag": 0.00342957,
-        "move_since_flag_pct": 40.75,
-        "hours_since_flag": 37.5,
+        "move_since_flag_pct": 39.52,
+        "hours_since_flag": 38.0,
         "decay_state": "decayed"
       },
       "binance_listed": true,
@@ -254,25 +331,25 @@
       "id": "sky",
       "symbol": "SKY",
       "name": "Sky",
-      "price_usd": 0.067149,
+      "price_usd": 0.067501,
       "high_24h_usd": 0.069672,
       "low_24h_usd": 0.06422,
-      "change_24h_pct": 3.68919,
+      "change_24h_pct": 4.99699,
       "change_7d_pct": -5.7675,
-      "volume_24h_usd": 17860957,
-      "market_cap_usd": 1572758738,
+      "volume_24h_usd": 17657390,
+      "market_cap_usd": 1581277897,
       "market_cap_rank": 59,
       "flags": [
         "تباعد RSI صاعد — زخم الهبوط بيضعف قبل انعكاس السعر",
         "قوة نسبية خفية أثناء التماسك — بتتفوق على BTC وهي ساكنة ظاهريًا",
-        "قاع مزدوج قيد التكوّن (لسه محدش كسر خط الرقبة) — خط الرقبة 0.067236، الهدف 0.071412"
+        "قاع مزدوج مؤكد بعد كسر خط الرقبة — خط الرقبة 0.067236، الهدف 0.071412"
       ],
-      "excess_return_24h_vs_btc_pct": 5.42,
+      "excess_return_24h_vs_btc_pct": 6.62,
       "indicators": {
-        "rsi14": 49.16,
-        "ema9": 0.06695111,
-        "ema21": 0.06708841,
-        "volume_baseline_avg": 13311571.426,
+        "rsi14": 55.68,
+        "ema9": 0.06706108,
+        "ema21": 0.06712592,
+        "volume_baseline_avg": 13322964.306,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -309,7 +386,7 @@
           "lower_low": 0.06306,
           "neckline": 0.067236,
           "target_price": 0.071412,
-          "confirmed": false
+          "confirmed": true
         },
         "triangle": null
       },
@@ -317,8 +394,8 @@
       "opportunity_lifecycle": {
         "first_flagged_at": "2026-10-29T23:30:39.300242+00:00",
         "price_at_first_flag": 0.067236,
-        "move_since_flag_pct": -0.13,
-        "hours_since_flag": 30.0,
+        "move_since_flag_pct": 0.39,
+        "hours_since_flag": 30.5,
         "decay_state": "developing"
       },
       "last_deep_eval": {
@@ -343,25 +420,25 @@
       "id": "injective-protocol",
       "symbol": "INJ",
       "name": "Injective",
-      "price_usd": 7.09,
+      "price_usd": 7.08,
       "high_24h_usd": 7.41,
       "low_24h_usd": 6.88,
-      "change_24h_pct": -4.19978,
+      "change_24h_pct": -3.45082,
       "change_7d_pct": -8.8606,
-      "volume_24h_usd": 101249128,
-      "market_cap_usd": 708789102,
+      "volume_24h_usd": 101081510,
+      "market_cap_usd": 708112796,
       "market_cap_rank": 85,
       "flags": [
         "انضغاط تقلب (Squeeze) — مدى الحركة بيضيق قبل احتمال انفجار",
         "تباعد RSI صاعد — زخم الهبوط بيضعف قبل انعكاس السعر",
         "تأخر دوران قطاعي — عملات تانية في real-world-assets-rwa تحركت وهي لسه ساكنة"
       ],
-      "excess_return_24h_vs_btc_pct": -2.47,
+      "excess_return_24h_vs_btc_pct": -1.83,
       "indicators": {
-        "rsi14": 44.0,
-        "ema9": 7.13033243,
-        "ema21": 7.14189632,
-        "volume_baseline_avg": 120337705.972,
+        "rsi14": 45.83,
+        "ema9": 7.12026595,
+        "ema21": 7.13626938,
+        "volume_baseline_avg": 120269392.694,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -401,8 +478,8 @@
       "opportunity_lifecycle": {
         "first_flagged_at": "2026-10-29T21:00:45.686585+00:00",
         "price_at_first_flag": 7.48,
-        "move_since_flag_pct": -5.21,
-        "hours_since_flag": 32.5,
+        "move_since_flag_pct": -5.35,
+        "hours_since_flag": 33.0,
         "decay_state": "developing"
       },
       "binance_listed": true,
@@ -411,104 +488,28 @@
       "binance_liquidity_ok": true
     },
     {
-      "id": "blockstack",
-      "symbol": "STX",
-      "name": "Stacks",
-      "price_usd": 0.300689,
-      "high_24h_usd": 0.303311,
-      "low_24h_usd": 0.277117,
-      "change_24h_pct": 6.72273,
-      "change_7d_pct": -3.4998,
-      "volume_24h_usd": 10164897,
-      "market_cap_usd": 565935472,
-      "market_cap_rank": 96,
-      "flags": [
-        "تباعد RSI صاعد — زخم الهبوط بيضعف قبل انعكاس السعر",
-        "قوة نسبية خفية أثناء التماسك — بتتفوق على BTC وهي ساكنة ظاهريًا",
-        "قاع مزدوج قيد التكوّن (لسه محدش كسر خط الرقبة) — خط الرقبة 0.302104، الهدف 0.333277"
-      ],
-      "excess_return_24h_vs_btc_pct": 8.45,
-      "indicators": {
-        "rsi14": 89.69,
-        "ema9": 0.29809643,
-        "ema21": 0.29305982,
-        "volume_baseline_avg": 20059876.74,
-        "n_points": 500,
-        "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
-      },
-      "data_quality": {
-        "price": {
-          "tier": 1,
-          "source": "coingecko_simple_price",
-          "confidence": "real"
-        },
-        "rsi14": {
-          "tier": 0,
-          "source": "scan_synthetic_15m_samples",
-          "confidence": "approximate"
-        },
-        "structure_layer2": {
-          "tier": 0,
-          "source": "scan_synthetic_15m_samples",
-          "confidence": "approximate"
-        }
-      },
-      "early_signals": {
-        "structure": {
-          "structure": "downtrend",
-          "signal": null,
-          "last_swing_high": 0.302104,
-          "last_swing_low": 0.270931
-        },
-        "volatility_squeeze": false,
-        "bullish_rsi_divergence": true,
-        "cluster_rotation_lag": null,
-        "relative_strength_consolidation": true,
-        "flag_pattern": null,
-        "double_bottom": {
-          "lower_low": 0.270931,
-          "neckline": 0.302104,
-          "target_price": 0.333277,
-          "confirmed": false
-        },
-        "triangle": null
-      },
-      "priority_review": true,
-      "opportunity_lifecycle": {
-        "first_flagged_at": "2026-10-30T08:00:46.532115+00:00",
-        "price_at_first_flag": 0.277689,
-        "move_since_flag_pct": 8.28,
-        "hours_since_flag": 21.5,
-        "decay_state": "decayed"
-      },
-      "binance_listed": true,
-      "binance_spread_pct": 0.107,
-      "binance_quote_volume_24h": 1346824,
-      "binance_liquidity_ok": false
-    },
-    {
       "id": "a7a5",
       "symbol": "A7A5",
       "name": "A7A5",
-      "price_usd": 0.01198308,
+      "price_usd": 0.01198317,
       "high_24h_usd": 0.01211351,
       "low_24h_usd": 0.0119646,
-      "change_24h_pct": -0.18975,
+      "change_24h_pct": -0.20807,
       "change_7d_pct": -1.0722,
-      "volume_24h_usd": 527.25,
-      "market_cap_usd": 470256260,
+      "volume_24h_usd": 527.26,
+      "market_cap_usd": 470259710,
       "market_cap_rank": 111,
       "flags": [
         "انضغاط تقلب (Squeeze) — مدى الحركة بيضيق قبل احتمال انفجار",
         "تباعد RSI صاعد — زخم الهبوط بيضعف قبل انعكاس السعر",
-        "نمط علم صاعد (Bull Flag) — هدف Kirkpatrick بعد الاختراق: 0.01634378"
+        "نمط علم صاعد (Bull Flag) — هدف Kirkpatrick بعد الاختراق: 0.01634387"
       ],
-      "excess_return_24h_vs_btc_pct": 1.54,
+      "excess_return_24h_vs_btc_pct": 1.41,
       "indicators": {
-        "rsi14": 12.37,
-        "ema9": 0.01198565,
-        "ema21": 0.01199539,
-        "volume_baseline_avg": 3350.2314600000013,
+        "rsi14": 4.31,
+        "ema9": 0.01198516,
+        "ema21": 0.01199427,
+        "volume_baseline_avg": 3350.659240000002,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -544,7 +545,7 @@
           "direction": "bullish",
           "flagpole_move_pct": 56.26,
           "consolidation_range_pct": 1.23,
-          "target_price": 0.01634378
+          "target_price": 0.01634387
         },
         "double_bottom": null,
         "triangle": null
@@ -554,7 +555,7 @@
         "first_flagged_at": "2026-10-30T07:30:35.032639+00:00",
         "price_at_first_flag": 0.01211107,
         "move_since_flag_pct": -1.06,
-        "hours_since_flag": 22.0,
+        "hours_since_flag": 22.5,
         "decay_state": "fresh"
       },
       "binance_listed": false
@@ -563,25 +564,25 @@
       "id": "hash-2",
       "symbol": "HASH",
       "name": "Provenance Blockchain",
-      "price_usd": 0.00745644,
+      "price_usd": 0.00745603,
       "high_24h_usd": 0.00747535,
       "low_24h_usd": 0.00631984,
-      "change_24h_pct": 17.64206,
+      "change_24h_pct": 17.6313,
       "change_7d_pct": 15.7252,
-      "volume_24h_usd": 36887,
-      "market_cap_usd": 444745105,
+      "volume_24h_usd": 36884,
+      "market_cap_usd": 444754534,
       "market_cap_rank": 115,
       "flags": [
         "حركة سعرية حادة خلال 24 ساعة (17.6%)",
-        "تفوق واضح على BTC خلال 24 ساعة (17.6% مقابل BTC -1.7%) — حركة مش مجرد بيتا عام للسوق",
+        "تفوق واضح على BTC خلال 24 ساعة (17.6% مقابل BTC -1.6%) — حركة مش مجرد بيتا عام للسوق",
         "انضغاط تقلب (Squeeze) — مدى الحركة بيضيق قبل احتمال انفجار"
       ],
-      "excess_return_24h_vs_btc_pct": 19.37,
+      "excess_return_24h_vs_btc_pct": 19.25,
       "indicators": {
-        "rsi14": 58.95,
-        "ema9": 0.00745424,
-        "ema21": 0.0074284,
-        "volume_baseline_avg": 26888.125620000013,
+        "rsi14": 77.62,
+        "ema9": 0.0074546,
+        "ema21": 0.00743091,
+        "volume_baseline_avg": 26880.939620000012,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -621,8 +622,8 @@
       "opportunity_lifecycle": {
         "first_flagged_at": "2026-10-27T19:30:37.834672+00:00",
         "price_at_first_flag": 0.00748427,
-        "move_since_flag_pct": -0.37,
-        "hours_since_flag": 82.0,
+        "move_since_flag_pct": -0.38,
+        "hours_since_flag": 82.5,
         "decay_state": "decayed"
       },
       "binance_listed": false
@@ -631,25 +632,25 @@
       "id": "collector-crypt",
       "symbol": "CARDS",
       "name": "Collector Crypt",
-      "price_usd": 0.248852,
+      "price_usd": 0.247512,
       "high_24h_usd": 0.287904,
       "low_24h_usd": 0.241397,
-      "change_24h_pct": -14.24603,
+      "change_24h_pct": -13.85184,
       "change_7d_pct": -31.8802,
-      "volume_24h_usd": 7060785,
-      "market_cap_usd": 220310138,
-      "market_cap_rank": 162,
+      "volume_24h_usd": 7065595,
+      "market_cap_usd": 219131599,
+      "market_cap_rank": 161,
       "flags": [
-        "حركة سعرية حادة خلال 24 ساعة (-14.2%)",
+        "حركة سعرية حادة خلال 24 ساعة (-13.9%)",
         "حركة سعرية حادة خلال 7 أيام (-31.9%)",
         "قاع مزدوج قيد التكوّن (لسه محدش كسر خط الرقبة) — خط الرقبة 0.290282، الهدف 0.33817"
       ],
-      "excess_return_24h_vs_btc_pct": -12.52,
+      "excess_return_24h_vs_btc_pct": -12.23,
       "indicators": {
-        "rsi14": 44.42,
-        "ema9": 0.25097973,
-        "ema21": 0.25226744,
-        "volume_baseline_avg": 10026002.074,
+        "rsi14": 30.07,
+        "ema9": 0.25028618,
+        "ema21": 0.25183513,
+        "volume_baseline_avg": 9970951.176,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -694,8 +695,8 @@
       "opportunity_lifecycle": {
         "first_flagged_at": "2026-10-30T08:00:46.532115+00:00",
         "price_at_first_flag": 0.283103,
-        "move_since_flag_pct": -12.1,
-        "hours_since_flag": 21.5,
+        "move_since_flag_pct": -12.57,
+        "hours_since_flag": 22.0,
         "decay_state": "decayed"
       },
       "binance_listed": false
@@ -707,22 +708,22 @@
       "price_usd": 1.97,
       "high_24h_usd": 2.06,
       "low_24h_usd": 1.81,
-      "change_24h_pct": 8.99656,
+      "change_24h_pct": 8.98416,
       "change_7d_pct": -17.5616,
-      "volume_24h_usd": 16259592,
-      "market_cap_usd": 183859241,
+      "volume_24h_usd": 13138957,
+      "market_cap_usd": 183653401,
       "market_cap_rank": 182,
       "flags": [
         "انعكاس صاعد محتمل (9.0% خلال 24 ساعة بعد أسبوع -17.6%)",
-        "تفوق واضح على BTC خلال 24 ساعة (9.0% مقابل BTC -1.7%) — حركة مش مجرد بيتا عام للسوق",
+        "تفوق واضح على BTC خلال 24 ساعة (9.0% مقابل BTC -1.6%) — حركة مش مجرد بيتا عام للسوق",
         "انضغاط تقلب (Squeeze) — مدى الحركة بيضيق قبل احتمال انفجار"
       ],
-      "excess_return_24h_vs_btc_pct": 10.72,
+      "excess_return_24h_vs_btc_pct": 10.61,
       "indicators": {
         "rsi14": 41.18,
-        "ema9": 1.99831056,
-        "ema21": 1.99664705,
-        "volume_baseline_avg": 13524864.292,
+        "ema9": 1.99264845,
+        "ema21": 1.99422459,
+        "volume_baseline_avg": 13526945.0,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -763,7 +764,7 @@
         "first_flagged_at": "2026-10-31T02:30:34.383767+00:00",
         "price_at_first_flag": 2.03,
         "move_since_flag_pct": -2.96,
-        "hours_since_flag": 3.0,
+        "hours_since_flag": 3.5,
         "decay_state": "fresh"
       },
       "binance_listed": true,
@@ -778,22 +779,22 @@
       "price_usd": 1.58,
       "high_24h_usd": 1.6,
       "low_24h_usd": 1.56,
-      "change_24h_pct": 1.03398,
+      "change_24h_pct": 0.83272,
       "change_7d_pct": 1.9225,
-      "volume_24h_usd": 11526797,
-      "market_cap_usd": 145299557,
+      "volume_24h_usd": 11384057,
+      "market_cap_usd": 145112736,
       "market_cap_rank": 213,
       "flags": [
         "انضغاط تقلب (Squeeze) — مدى الحركة بيضيق قبل احتمال انفجار",
         "تباعد RSI صاعد — زخم الهبوط بيضعف قبل انعكاس السعر",
         "قاع مزدوج قيد التكوّن (لسه محدش كسر خط الرقبة) — خط الرقبة 1.6، الهدف 1.65"
       ],
-      "excess_return_24h_vs_btc_pct": 2.76,
+      "excess_return_24h_vs_btc_pct": 2.45,
       "indicators": {
         "rsi14": 100.0,
-        "ema9": 1.58005793,
-        "ema21": 1.58026783,
-        "volume_baseline_avg": 6953453.59,
+        "ema9": 1.58004635,
+        "ema21": 1.58024349,
+        "volume_baseline_avg": 6960680.332,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -839,7 +840,7 @@
         "first_flagged_at": "2026-10-30T08:00:46.532115+00:00",
         "price_at_first_flag": 1.58,
         "move_since_flag_pct": 0.0,
-        "hours_since_flag": 21.5,
+        "hours_since_flag": 22.0,
         "decay_state": "fresh"
       },
       "binance_listed": false
@@ -851,21 +852,21 @@
       "price_usd": 1.028,
       "high_24h_usd": 1.038,
       "low_24h_usd": 1.023,
-      "change_24h_pct": -0.25274,
+      "change_24h_pct": -0.23443,
       "change_7d_pct": 0.6662,
-      "volume_24h_usd": 81120059,
-      "market_cap_usd": 26610003707,
+      "volume_24h_usd": 81119417,
+      "market_cap_usd": 26609808494,
       "market_cap_rank": 9,
       "flags": [
         "تباعد RSI صاعد — زخم الهبوط بيضعف قبل انعكاس السعر",
         "تأخر دوران قطاعي — عملات تانية في real-world-assets-rwa تحركت وهي لسه ساكنة"
       ],
-      "excess_return_24h_vs_btc_pct": 1.47,
+      "excess_return_24h_vs_btc_pct": 1.39,
       "indicators": {
-        "rsi14": 52.94,
-        "ema9": 1.02808195,
-        "ema21": 1.02815645,
-        "volume_baseline_avg": 101594530.716,
+        "rsi14": 20.0,
+        "ema9": 1.02806556,
+        "ema21": 1.02814223,
+        "volume_baseline_avg": 101643087.342,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -906,7 +907,7 @@
         "first_flagged_at": "2026-10-29T20:00:45.001690+00:00",
         "price_at_first_flag": 1.05,
         "move_since_flag_pct": -2.1,
-        "hours_since_flag": 33.5,
+        "hours_since_flag": 34.0,
         "decay_state": "developing"
       },
       "binance_listed": false
@@ -915,24 +916,24 @@
       "id": "aave",
       "symbol": "AAVE",
       "name": "Aave",
-      "price_usd": 129.87,
+      "price_usd": 130.49,
       "high_24h_usd": 131.96,
       "low_24h_usd": 123.16,
-      "change_24h_pct": 2.84699,
+      "change_24h_pct": 3.72276,
       "change_7d_pct": -10.2517,
-      "volume_24h_usd": 266134049,
-      "market_cap_usd": 2005220743,
+      "volume_24h_usd": 265136000,
+      "market_cap_usd": 2014783197,
       "market_cap_rank": 48,
       "flags": [
         "انضغاط تقلب (Squeeze) — مدى الحركة بيضيق قبل احتمال انفجار",
         "تباعد RSI صاعد — زخم الهبوط بيضعف قبل انعكاس السعر"
       ],
-      "excess_return_24h_vs_btc_pct": 4.57,
+      "excess_return_24h_vs_btc_pct": 5.34,
       "indicators": {
-        "rsi14": 60.36,
-        "ema9": 130.00170724,
-        "ema21": 129.22156946,
-        "volume_baseline_avg": 245207534.4,
+        "rsi14": 63.59,
+        "ema9": 130.09936579,
+        "ema21": 129.33688133,
+        "volume_baseline_avg": 245249306.892,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -972,8 +973,8 @@
       "opportunity_lifecycle": {
         "first_flagged_at": "2026-10-29T21:00:45.686585+00:00",
         "price_at_first_flag": 125.66,
-        "move_since_flag_pct": 3.35,
-        "hours_since_flag": 32.5,
+        "move_since_flag_pct": 3.84,
+        "hours_since_flag": 33.0,
         "decay_state": "developing"
       },
       "binance_listed": true,
@@ -985,24 +986,24 @@
       "id": "bitway",
       "symbol": "BTW",
       "name": "Bitway",
-      "price_usd": 1.13,
+      "price_usd": 1.15,
       "high_24h_usd": 1.55,
       "low_24h_usd": 1.11,
-      "change_24h_pct": -23.26453,
+      "change_24h_pct": -21.33339,
       "change_7d_pct": -35.2124,
-      "volume_24h_usd": 11167989,
-      "market_cap_usd": 1704837234,
-      "market_cap_rank": 55,
+      "volume_24h_usd": 11289329,
+      "market_cap_usd": 1735042077,
+      "market_cap_rank": 54,
       "flags": [
-        "حركة سعرية حادة خلال 24 ساعة (-23.3%)",
+        "حركة سعرية حادة خلال 24 ساعة (-21.3%)",
         "حركة سعرية حادة خلال 7 أيام (-35.2%)"
       ],
-      "excess_return_24h_vs_btc_pct": -21.54,
+      "excess_return_24h_vs_btc_pct": -19.71,
       "indicators": {
-        "rsi14": 46.34,
-        "ema9": 1.15618879,
-        "ema21": 1.17827979,
-        "volume_baseline_avg": 16171736.95,
+        "rsi14": 51.22,
+        "ema9": 1.15495103,
+        "ema21": 1.1757089,
+        "volume_baseline_avg": 16144671.006,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -1042,8 +1043,8 @@
       "opportunity_lifecycle": {
         "first_flagged_at": "2026-10-29T16:30:40.140741+00:00",
         "price_at_first_flag": 1.58,
-        "move_since_flag_pct": -28.48,
-        "hours_since_flag": 37.0,
+        "move_since_flag_pct": -27.22,
+        "hours_since_flag": 37.5,
         "decay_state": "decayed"
       },
       "binance_listed": false
@@ -1052,24 +1053,24 @@
       "id": "pi-network",
       "symbol": "PI",
       "name": "Pi Network",
-      "price_usd": 0.078306,
+      "price_usd": 0.078237,
       "high_24h_usd": 0.079055,
       "low_24h_usd": 0.077344,
-      "change_24h_pct": -0.04916,
+      "change_24h_pct": 0.10601,
       "change_7d_pct": -0.2535,
-      "volume_24h_usd": 4045908,
-      "market_cap_usd": 886357419,
+      "volume_24h_usd": 3947581,
+      "market_cap_usd": 885632280,
       "market_cap_rank": 78,
       "flags": [
         "انضغاط تقلب (Squeeze) — مدى الحركة بيضيق قبل احتمال انفجار",
         "قوة نسبية خفية أثناء التماسك — بتتفوق على BTC وهي ساكنة ظاهريًا"
       ],
-      "excess_return_24h_vs_btc_pct": 1.68,
+      "excess_return_24h_vs_btc_pct": 1.73,
       "indicators": {
-        "rsi14": 48.07,
-        "ema9": 0.07849722,
-        "ema21": 0.07841275,
-        "volume_baseline_avg": 3967884.912,
+        "rsi14": 42.83,
+        "ema9": 0.07844518,
+        "ema21": 0.07839677,
+        "volume_baseline_avg": 3968895.564,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -1109,8 +1110,8 @@
       "opportunity_lifecycle": {
         "first_flagged_at": "2026-10-29T02:00:42.301627+00:00",
         "price_at_first_flag": 0.075837,
-        "move_since_flag_pct": 3.26,
-        "hours_since_flag": 51.5,
+        "move_since_flag_pct": 3.16,
+        "hours_since_flag": 52.0,
         "decay_state": "decayed"
       },
       "binance_listed": false
@@ -1119,24 +1120,24 @@
       "id": "pearl-2",
       "symbol": "PEARL",
       "name": "Pearl",
-      "price_usd": 1.54,
+      "price_usd": 1.53,
       "high_24h_usd": 1.72,
       "low_24h_usd": 1.49,
-      "change_24h_pct": -4.95121,
+      "change_24h_pct": -5.58277,
       "change_7d_pct": -22.9368,
-      "volume_24h_usd": 8809185,
-      "market_cap_usd": 559943086,
-      "market_cap_rank": 98,
+      "volume_24h_usd": 8703513,
+      "market_cap_usd": 557960331,
+      "market_cap_rank": 99,
       "flags": [
         "حركة سعرية حادة خلال 7 أيام (-22.9%)",
         "تباعد RSI صاعد — زخم الهبوط بيضعف قبل انعكاس السعر"
       ],
-      "excess_return_24h_vs_btc_pct": -3.23,
+      "excess_return_24h_vs_btc_pct": -3.96,
       "indicators": {
-        "rsi14": 60.0,
-        "ema9": 1.52732582,
-        "ema21": 1.53283835,
-        "volume_baseline_avg": 10137390.254,
+        "rsi14": 54.55,
+        "ema9": 1.52786066,
+        "ema21": 1.53258032,
+        "volume_baseline_avg": 10150870.24,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -1176,34 +1177,109 @@
       "opportunity_lifecycle": {
         "first_flagged_at": "2026-10-29T21:00:45.686585+00:00",
         "price_at_first_flag": 1.69,
-        "move_since_flag_pct": -8.88,
-        "hours_since_flag": 32.5,
+        "move_since_flag_pct": -9.47,
+        "hours_since_flag": 33.0,
         "decay_state": "decayed"
       },
       "binance_listed": false
     },
     {
+      "id": "curve-dao-token",
+      "symbol": "CRV",
+      "name": "Curve DAO",
+      "price_usd": 0.283785,
+      "high_24h_usd": 0.291588,
+      "low_24h_usd": 0.268755,
+      "change_24h_pct": 5.08599,
+      "change_7d_pct": -20.8128,
+      "volume_24h_usd": 66506496,
+      "market_cap_usd": 449322784,
+      "market_cap_rank": 114,
+      "flags": [
+        "انعكاس صاعد محتمل (5.1% خلال 24 ساعة بعد أسبوع -20.8%)",
+        "حركة سعرية حادة خلال 7 أيام (-20.8%)"
+      ],
+      "excess_return_24h_vs_btc_pct": 6.71,
+      "indicators": {
+        "rsi14": 33.13,
+        "ema9": 0.28569767,
+        "ema21": 0.28617283,
+        "volume_baseline_avg": 63786301.278,
+        "n_points": 500,
+        "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
+      },
+      "data_quality": {
+        "price": {
+          "tier": 1,
+          "source": "coingecko_simple_price",
+          "confidence": "real"
+        },
+        "rsi14": {
+          "tier": 0,
+          "source": "scan_synthetic_15m_samples",
+          "confidence": "approximate"
+        },
+        "structure_layer2": {
+          "tier": 0,
+          "source": "scan_synthetic_15m_samples",
+          "confidence": "approximate"
+        }
+      },
+      "early_signals": {
+        "structure": {
+          "structure": "downtrend",
+          "signal": null,
+          "last_swing_high": 0.335996,
+          "last_swing_low": 0.269363
+        },
+        "volatility_squeeze": false,
+        "bullish_rsi_divergence": false,
+        "cluster_rotation_lag": null,
+        "relative_strength_consolidation": false,
+        "flag_pattern": {
+          "direction": "bearish",
+          "flagpole_move_pct": -15.4,
+          "consolidation_range_pct": 3.17,
+          "target_price": 0.233401
+        },
+        "double_bottom": null,
+        "triangle": null
+      },
+      "priority_review": false,
+      "opportunity_lifecycle": {
+        "first_flagged_at": "2026-10-31T04:00:40.348814+00:00",
+        "price_at_first_flag": 0.287825,
+        "move_since_flag_pct": -1.4,
+        "hours_since_flag": 2.0,
+        "decay_state": "fresh"
+      },
+      "binance_listed": true,
+      "binance_spread_pct": 0.0739,
+      "binance_quote_volume_24h": 6518600,
+      "binance_liquidity_ok": true
+    },
+    {
       "id": "akedo",
       "symbol": "AKE",
       "name": "Akedo",
-      "price_usd": 0.01111979,
+      "price_usd": 0.01200189,
       "high_24h_usd": 0.01937961,
       "low_24h_usd": 0.01110833,
-      "change_24h_pct": -41.02802,
+      "change_24h_pct": -37.17321,
       "change_7d_pct": -70.9931,
-      "volume_24h_usd": 30809223,
-      "market_cap_usd": 253554447,
-      "market_cap_rank": 147,
+      "volume_24h_usd": 14461617,
+      "market_cap_usd": 269303737,
+      "market_cap_rank": 144,
       "flags": [
-        "حركة سعرية حادة خلال 24 ساعة (-41.0%)",
+        "حركة سعرية حادة خلال 24 ساعة (-37.2%)",
         "حركة سعرية حادة خلال 7 أيام (-71.0%)"
       ],
-      "excess_return_24h_vs_btc_pct": -39.3,
+      "excess_return_24h_vs_btc_pct": -35.55,
       "indicators": {
-        "rsi14": 24.3,
-        "ema9": 0.01181306,
-        "ema21": 0.0131128,
-        "volume_baseline_avg": 22917850.254,
+        "rsi14": 37.82,
+        "ema9": 0.01185083,
+        "ema21": 0.01301181,
+        "volume_baseline_avg": 22919543.536,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -1243,104 +1319,34 @@
       "opportunity_lifecycle": {
         "first_flagged_at": "2026-10-29T10:00:44.116730+00:00",
         "price_at_first_flag": 0.02063257,
-        "move_since_flag_pct": -46.11,
-        "hours_since_flag": 43.5,
+        "move_since_flag_pct": -41.83,
+        "hours_since_flag": 44.0,
         "decay_state": "decayed"
       },
       "binance_listed": false
     },
     {
-      "id": "thorchain",
-      "symbol": "RUNE",
-      "name": "THORChain",
-      "price_usd": 0.66948,
-      "high_24h_usd": 0.694642,
-      "low_24h_usd": 0.629261,
-      "change_24h_pct": -5.07491,
-      "change_7d_pct": 6.8006,
-      "volume_24h_usd": 224978236,
-      "market_cap_usd": 220766190,
-      "market_cap_rank": 161,
-      "flags": [
-        "انعكاس هابط محتمل (-5.1% خلال 24 ساعة بعد أسبوع 6.8%)",
-        "نشاط تداول غير عادي مقارنة بمتوسط العملة نفسها (x4.0)"
-      ],
-      "excess_return_24h_vs_btc_pct": -3.35,
-      "indicators": {
-        "rsi14": 80.56,
-        "ema9": 0.6639425,
-        "ema21": 0.65765378,
-        "volume_baseline_avg": 56638141.818,
-        "n_points": 500,
-        "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
-      },
-      "data_quality": {
-        "price": {
-          "tier": 1,
-          "source": "coingecko_simple_price",
-          "confidence": "real"
-        },
-        "rsi14": {
-          "tier": 0,
-          "source": "scan_synthetic_15m_samples",
-          "confidence": "approximate"
-        },
-        "structure_layer2": {
-          "tier": 0,
-          "source": "scan_synthetic_15m_samples",
-          "confidence": "approximate"
-        }
-      },
-      "early_signals": {
-        "structure": {
-          "structure": "uptrend",
-          "signal": null,
-          "last_swing_high": 0.705005,
-          "last_swing_low": 0.635814
-        },
-        "volatility_squeeze": false,
-        "bullish_rsi_divergence": false,
-        "cluster_rotation_lag": null,
-        "relative_strength_consolidation": false,
-        "flag_pattern": null,
-        "double_bottom": null,
-        "triangle": null
-      },
-      "priority_review": false,
-      "opportunity_lifecycle": {
-        "first_flagged_at": "2026-10-29T21:00:45.686585+00:00",
-        "price_at_first_flag": 0.590386,
-        "move_since_flag_pct": 13.4,
-        "hours_since_flag": 32.5,
-        "decay_state": "decayed"
-      },
-      "binance_listed": true,
-      "binance_spread_pct": 0.1618,
-      "binance_quote_volume_24h": 6189181,
-      "binance_liquidity_ok": true
-    },
-    {
       "id": "basic-attention-token",
       "symbol": "BAT",
       "name": "Basic Attention",
-      "price_usd": 0.128305,
+      "price_usd": 0.128167,
       "high_24h_usd": 0.132835,
       "low_24h_usd": 0.127935,
-      "change_24h_pct": -1.73419,
+      "change_24h_pct": -2.06872,
       "change_7d_pct": -22.5026,
-      "volume_24h_usd": 13093683,
-      "market_cap_usd": 191867955,
+      "volume_24h_usd": 12536164,
+      "market_cap_usd": 191728375,
       "market_cap_rank": 173,
       "flags": [
         "حركة سعرية حادة خلال 7 أيام (-22.5%)",
         "انضغاط تقلب (Squeeze) — مدى الحركة بيضيق قبل احتمال انفجار"
       ],
-      "excess_return_24h_vs_btc_pct": -0.01,
+      "excess_return_24h_vs_btc_pct": -0.45,
       "indicators": {
-        "rsi14": 35.32,
-        "ema9": 0.12917888,
-        "ema21": 0.12951803,
-        "volume_baseline_avg": 24536944.47,
+        "rsi14": 35.38,
+        "ema9": 0.12897651,
+        "ema21": 0.1293952,
+        "volume_baseline_avg": 24433979.72,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -1380,8 +1386,8 @@
       "opportunity_lifecycle": {
         "first_flagged_at": "2026-10-26T11:30:36.633448+00:00",
         "price_at_first_flag": 0.143541,
-        "move_since_flag_pct": -10.61,
-        "hours_since_flag": 114.0,
+        "move_since_flag_pct": -10.71,
+        "hours_since_flag": 114.5,
         "decay_state": "decayed"
       },
       "binance_listed": true,
@@ -1393,24 +1399,24 @@
       "id": "anvil",
       "symbol": "ANVL",
       "name": "Anvil",
-      "price_usd": 0.00189085,
+      "price_usd": 0.00188827,
       "high_24h_usd": 0.00192516,
       "low_24h_usd": 0.00176124,
-      "change_24h_pct": 4.70208,
+      "change_24h_pct": 4.63689,
       "change_7d_pct": 12.1401,
-      "volume_24h_usd": 150266,
-      "market_cap_usd": 166542667,
+      "volume_24h_usd": 149314,
+      "market_cap_usd": 166325002,
       "market_cap_rank": 190,
       "flags": [
         "قوة نسبية خفية أثناء التماسك — بتتفوق على BTC وهي ساكنة ظاهريًا",
         "قاع مزدوج مؤكد بعد كسر خط الرقبة — خط الرقبة 0.00185116، الهدف 0.00193758"
       ],
-      "excess_return_24h_vs_btc_pct": 6.43,
+      "excess_return_24h_vs_btc_pct": 6.26,
       "indicators": {
-        "rsi14": 48.48,
-        "ema9": 0.00188924,
-        "ema21": 0.00187965,
-        "volume_baseline_avg": 108084.266,
+        "rsi14": 42.67,
+        "ema9": 0.00188904,
+        "ema21": 0.00188044,
+        "volume_baseline_avg": 108171.038,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -1455,8 +1461,8 @@
       "opportunity_lifecycle": {
         "first_flagged_at": "2026-10-30T16:00:46.378064+00:00",
         "price_at_first_flag": 0.00177777,
-        "move_since_flag_pct": 6.36,
-        "hours_since_flag": 13.5,
+        "move_since_flag_pct": 6.22,
+        "hours_since_flag": 14.0,
         "decay_state": "decayed"
       },
       "binance_listed": false
@@ -1465,24 +1471,24 @@
       "id": "gmt-token",
       "symbol": "GOMINING",
       "name": "GoMining Token",
-      "price_usd": 0.376281,
+      "price_usd": 0.376108,
       "high_24h_usd": 0.377332,
       "low_24h_usd": 0.372681,
-      "change_24h_pct": 0.79193,
+      "change_24h_pct": 0.73862,
       "change_7d_pct": 0.0193,
-      "volume_24h_usd": 7404493,
-      "market_cap_usd": 151412042,
+      "volume_24h_usd": 7471092,
+      "market_cap_usd": 151436994,
       "market_cap_rank": 203,
       "flags": [
         "انضغاط تقلب (Squeeze) — مدى الحركة بيضيق قبل احتمال انفجار",
         "مثلث متماثل — مقاومة 0.41024، الهدف بعد الاختراق 0.45517"
       ],
-      "excess_return_24h_vs_btc_pct": 2.52,
+      "excess_return_24h_vs_btc_pct": 2.36,
       "indicators": {
-        "rsi14": 37.92,
-        "ema9": 0.37623765,
-        "ema21": 0.37596217,
-        "volume_baseline_avg": 15053957.382,
+        "rsi14": 47.63,
+        "ema9": 0.37621172,
+        "ema21": 0.37597543,
+        "volume_baseline_avg": 15040708.546,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -1526,8 +1532,8 @@
       "opportunity_lifecycle": {
         "first_flagged_at": "2026-10-29T23:00:46.977298+00:00",
         "price_at_first_flag": 0.375286,
-        "move_since_flag_pct": 0.27,
-        "hours_since_flag": 30.5,
+        "move_since_flag_pct": 0.22,
+        "hours_since_flag": 31.0,
         "decay_state": "developing"
       },
       "binance_listed": false
@@ -1536,24 +1542,24 @@
       "id": "bedrock-token",
       "symbol": "BR",
       "name": "Bedrock",
-      "price_usd": 0.498307,
+      "price_usd": 0.495802,
       "high_24h_usd": 0.491918,
       "low_24h_usd": 0.45967,
-      "change_24h_pct": 2.3141,
+      "change_24h_pct": 4.35704,
       "change_7d_pct": 2.0179,
-      "volume_24h_usd": 2640333,
-      "market_cap_usd": 147835198,
+      "volume_24h_usd": 2608649,
+      "market_cap_usd": 147054703,
       "market_cap_rank": 210,
       "flags": [
         "قوة نسبية خفية أثناء التماسك — بتتفوق على BTC وهي ساكنة ظاهريًا",
         "قاع مزدوج مؤكد بعد كسر خط الرقبة — خط الرقبة 0.491515، الهدف 0.521856"
       ],
-      "excess_return_24h_vs_btc_pct": 4.04,
+      "excess_return_24h_vs_btc_pct": 5.98,
       "indicators": {
-        "rsi14": 80.99,
-        "ema9": 0.48510245,
-        "ema21": 0.48014185,
-        "volume_baseline_avg": 7990961.876,
+        "rsi14": 74.09,
+        "ema9": 0.48724236,
+        "ema21": 0.4815655,
+        "volume_baseline_avg": 7955963.2,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -1598,9 +1604,76 @@
       "opportunity_lifecycle": {
         "first_flagged_at": "2026-10-30T08:00:46.532115+00:00",
         "price_at_first_flag": 0.477166,
-        "move_since_flag_pct": 4.43,
-        "hours_since_flag": 21.5,
+        "move_since_flag_pct": 3.91,
+        "hours_since_flag": 22.0,
         "decay_state": "developing"
+      },
+      "binance_listed": false
+    },
+    {
+      "id": "quack-ai",
+      "symbol": "Q",
+      "name": "Quack AI",
+      "price_usd": 0.03036989,
+      "high_24h_usd": 0.061595,
+      "low_24h_usd": 0.02815449,
+      "change_24h_pct": -45.20854,
+      "change_7d_pct": -67.5379,
+      "volume_24h_usd": 34445117,
+      "market_cap_usd": 142221872,
+      "market_cap_rank": 216,
+      "flags": [
+        "حركة سعرية حادة خلال 24 ساعة (-45.2%)",
+        "حركة سعرية حادة خلال 7 أيام (-67.5%)"
+      ],
+      "excess_return_24h_vs_btc_pct": -43.59,
+      "indicators": {
+        "rsi14": 10.63,
+        "ema9": 0.03290177,
+        "ema21": 0.03778599,
+        "volume_baseline_avg": 64834054.062,
+        "n_points": 500,
+        "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
+      },
+      "data_quality": {
+        "price": {
+          "tier": 1,
+          "source": "coingecko_simple_price",
+          "confidence": "real"
+        },
+        "rsi14": {
+          "tier": 0,
+          "source": "scan_synthetic_15m_samples",
+          "confidence": "approximate"
+        },
+        "structure_layer2": {
+          "tier": 0,
+          "source": "scan_synthetic_15m_samples",
+          "confidence": "approximate"
+        }
+      },
+      "early_signals": {
+        "structure": {
+          "structure": "downtrend",
+          "signal": "BOS_bearish",
+          "last_swing_high": 0.061278,
+          "last_swing_low": 0.03555013
+        },
+        "volatility_squeeze": false,
+        "bullish_rsi_divergence": false,
+        "cluster_rotation_lag": null,
+        "relative_strength_consolidation": false,
+        "flag_pattern": null,
+        "double_bottom": null,
+        "triangle": null
+      },
+      "priority_review": false,
+      "opportunity_lifecycle": {
+        "first_flagged_at": "2026-09-26T07:31:08.165429+00:00",
+        "price_at_first_flag": 0.03190342,
+        "move_since_flag_pct": -4.81,
+        "hours_since_flag": 838.5,
+        "decay_state": "decayed"
       },
       "binance_listed": false
     },
@@ -1608,24 +1681,24 @@
       "id": "stp-network",
       "symbol": "AWE",
       "name": "AWE Network",
-      "price_usd": 0.071249,
+      "price_usd": 0.070806,
       "high_24h_usd": 0.071248,
       "low_24h_usd": 0.068132,
-      "change_24h_pct": 2.24226,
+      "change_24h_pct": 1.82857,
       "change_7d_pct": 11.0673,
-      "volume_24h_usd": 2464238,
-      "market_cap_usd": 138403181,
-      "market_cap_rank": 218,
+      "volume_24h_usd": 2433803,
+      "market_cap_usd": 137503942,
+      "market_cap_rank": 219,
       "flags": [
         "قوة نسبية خفية أثناء التماسك — بتتفوق على BTC وهي ساكنة ظاهريًا",
         "مثلث صاعد — مقاومة 0.070407، الهدف بعد الاختراق 0.07369"
       ],
-      "excess_return_24h_vs_btc_pct": 3.97,
+      "excess_return_24h_vs_btc_pct": 3.45,
       "indicators": {
-        "rsi14": 96.18,
-        "ema9": 0.070633,
-        "ema21": 0.07001857,
-        "volume_baseline_avg": 2352992.422,
+        "rsi14": 83.02,
+        "ema9": 0.0706676,
+        "ema21": 0.07009016,
+        "volume_baseline_avg": 2353837.228,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -1669,8 +1742,8 @@
       "opportunity_lifecycle": {
         "first_flagged_at": "2026-10-29T17:00:48.685123+00:00",
         "price_at_first_flag": 0.0695,
-        "move_since_flag_pct": 2.52,
-        "hours_since_flag": 36.5,
+        "move_since_flag_pct": 1.88,
+        "hours_since_flag": 37.0,
         "decay_state": "developing"
       },
       "last_deep_eval": {
@@ -1692,94 +1765,27 @@
       "binance_liquidity_ok": false
     },
     {
-      "id": "quack-ai",
-      "symbol": "Q",
-      "name": "Quack AI",
-      "price_usd": 0.02903656,
-      "high_24h_usd": 0.061595,
-      "low_24h_usd": 0.02815449,
-      "change_24h_pct": -46.83113,
-      "change_7d_pct": -67.5379,
-      "volume_24h_usd": 90771160,
-      "market_cap_usd": 136204002,
-      "market_cap_rank": 219,
-      "flags": [
-        "حركة سعرية حادة خلال 24 ساعة (-46.8%)",
-        "حركة سعرية حادة خلال 7 أيام (-67.5%)"
-      ],
-      "excess_return_24h_vs_btc_pct": -45.11,
-      "indicators": {
-        "rsi14": 7.53,
-        "ema9": 0.03353474,
-        "ema21": 0.0385276,
-        "volume_baseline_avg": 64834864.516,
-        "n_points": 500,
-        "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
-      },
-      "data_quality": {
-        "price": {
-          "tier": 1,
-          "source": "coingecko_simple_price",
-          "confidence": "real"
-        },
-        "rsi14": {
-          "tier": 0,
-          "source": "scan_synthetic_15m_samples",
-          "confidence": "approximate"
-        },
-        "structure_layer2": {
-          "tier": 0,
-          "source": "scan_synthetic_15m_samples",
-          "confidence": "approximate"
-        }
-      },
-      "early_signals": {
-        "structure": {
-          "structure": "downtrend",
-          "signal": "BOS_bearish",
-          "last_swing_high": 0.061278,
-          "last_swing_low": 0.03555013
-        },
-        "volatility_squeeze": false,
-        "bullish_rsi_divergence": false,
-        "cluster_rotation_lag": null,
-        "relative_strength_consolidation": false,
-        "flag_pattern": null,
-        "double_bottom": null,
-        "triangle": null
-      },
-      "priority_review": false,
-      "opportunity_lifecycle": {
-        "first_flagged_at": "2026-09-26T07:31:08.165429+00:00",
-        "price_at_first_flag": 0.03190342,
-        "move_since_flag_pct": -8.99,
-        "hours_since_flag": 838.0,
-        "decay_state": "decayed"
-      },
-      "binance_listed": false
-    },
-    {
       "id": "cap-4",
       "symbol": "CAP",
       "name": "Cap",
-      "price_usd": 0.08627,
+      "price_usd": 0.087615,
       "high_24h_usd": 0.088901,
       "low_24h_usd": 0.076933,
-      "change_24h_pct": 5.13496,
+      "change_24h_pct": 5.53372,
       "change_7d_pct": 22.5219,
-      "volume_24h_usd": 21464806,
-      "market_cap_usd": 135424582,
-      "market_cap_rank": 224,
+      "volume_24h_usd": 18140571,
+      "market_cap_usd": 136704210,
+      "market_cap_rank": 220,
       "flags": [
         "حركة سعرية حادة خلال 7 أيام (22.5%)",
         "CHoCH صاعد مبكر — تغيّر هيكلي محتمل قبل أي اختراق مؤكد"
       ],
-      "excess_return_24h_vs_btc_pct": 6.86,
+      "excess_return_24h_vs_btc_pct": 7.15,
       "indicators": {
-        "rsi14": 68.56,
-        "ema9": 0.08547983,
-        "ema21": 0.08433707,
-        "volume_baseline_avg": 42290345.078,
+        "rsi14": 73.4,
+        "ema9": 0.08590687,
+        "ema21": 0.08463507,
+        "volume_baseline_avg": 42238795.602,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -1819,8 +1825,8 @@
       "opportunity_lifecycle": {
         "first_flagged_at": "2026-10-31T00:00:53.724099+00:00",
         "price_at_first_flag": 0.083231,
-        "move_since_flag_pct": 3.65,
-        "hours_since_flag": 5.5,
+        "move_since_flag_pct": 5.27,
+        "hours_since_flag": 6.0,
         "decay_state": "developing"
       },
       "binance_listed": false
@@ -1829,24 +1835,24 @@
       "id": "build-on",
       "symbol": "B",
       "name": "BUILDon",
-      "price_usd": 0.132129,
+      "price_usd": 0.133814,
       "high_24h_usd": 0.127981,
       "low_24h_usd": 0.114223,
-      "change_24h_pct": 9.47865,
+      "change_24h_pct": 11.97864,
       "change_7d_pct": -4.607,
-      "volume_24h_usd": 4173894,
-      "market_cap_usd": 132110765,
+      "volume_24h_usd": 4890235,
+      "market_cap_usd": 133819449,
       "market_cap_rank": 227,
       "flags": [
-        "حركة سعرية حادة خلال 24 ساعة (9.5%)",
-        "تفوق واضح على BTC خلال 24 ساعة (9.5% مقابل BTC -1.7%) — حركة مش مجرد بيتا عام للسوق"
+        "حركة سعرية حادة خلال 24 ساعة (12.0%)",
+        "تفوق واضح على BTC خلال 24 ساعة (12.0% مقابل BTC -1.6%) — حركة مش مجرد بيتا عام للسوق"
       ],
-      "excess_return_24h_vs_btc_pct": 11.2,
+      "excess_return_24h_vs_btc_pct": 13.6,
       "indicators": {
-        "rsi14": 92.8,
-        "ema9": 0.12621932,
-        "ema21": 0.12284789,
-        "volume_baseline_avg": 3678742.23,
+        "rsi14": 93.17,
+        "ema9": 0.12773826,
+        "ema21": 0.12384481,
+        "volume_baseline_avg": 3680996.606,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -1886,8 +1892,8 @@
       "opportunity_lifecycle": {
         "first_flagged_at": "2026-10-31T04:30:33.439237+00:00",
         "price_at_first_flag": 0.127099,
-        "move_since_flag_pct": 3.96,
-        "hours_since_flag": 1.0,
+        "move_since_flag_pct": 5.28,
+        "hours_since_flag": 1.5,
         "decay_state": "developing"
       },
       "binance_listed": false
@@ -1896,24 +1902,24 @@
       "id": "useless-3",
       "symbol": "USELESS",
       "name": "Useless Coin",
-      "price_usd": 0.129863,
+      "price_usd": 0.129512,
       "high_24h_usd": 0.141766,
       "low_24h_usd": 0.129645,
-      "change_24h_pct": -3.64019,
+      "change_24h_pct": -2.59272,
       "change_7d_pct": -20.2271,
-      "volume_24h_usd": 11744412,
-      "market_cap_usd": 129874445,
+      "volume_24h_usd": 11082398,
+      "market_cap_usd": 129477867,
       "market_cap_rank": 231,
       "flags": [
         "حركة سعرية حادة خلال 7 أيام (-20.2%)",
         "انضغاط تقلب (Squeeze) — مدى الحركة بيضيق قبل احتمال انفجار"
       ],
-      "excess_return_24h_vs_btc_pct": -1.91,
+      "excess_return_24h_vs_btc_pct": -0.97,
       "indicators": {
-        "rsi14": 29.9,
-        "ema9": 0.13156957,
-        "ema21": 0.13255347,
-        "volume_baseline_avg": 15403864.694,
+        "rsi14": 24.81,
+        "ema9": 0.13115806,
+        "ema21": 0.13227697,
+        "volume_baseline_avg": 15397827.134,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -1953,8 +1959,8 @@
       "opportunity_lifecycle": {
         "first_flagged_at": "2026-10-31T03:00:43.985282+00:00",
         "price_at_first_flag": 0.132748,
-        "move_since_flag_pct": -2.17,
-        "hours_since_flag": 2.5,
+        "move_since_flag_pct": -2.44,
+        "hours_since_flag": 3.0,
         "decay_state": "fresh"
       },
       "binance_listed": false
@@ -1963,23 +1969,23 @@
       "id": "bitcoin",
       "symbol": "BTC",
       "name": "Bitcoin",
-      "price_usd": 77181,
+      "price_usd": 77174,
       "high_24h_usd": 78615,
       "low_24h_usd": 76338,
-      "change_24h_pct": -1.72592,
-      "change_7d_pct": -4.7296,
-      "volume_24h_usd": 201600798774,
-      "market_cap_usd": 1551733004186,
+      "change_24h_pct": -1.62103,
+      "change_7d_pct": -4.5002,
+      "volume_24h_usd": 201756904662,
+      "market_cap_usd": 1551612301138,
       "market_cap_rank": 1,
       "flags": [
         "نشاط تداول غير عادي مقارنة بمتوسط العملة نفسها (x5.2)"
       ],
       "excess_return_24h_vs_btc_pct": 0.0,
       "indicators": {
-        "rsi14": 64.17,
-        "ema9": 77187.66367319,
-        "ema21": 77174.39169765,
-        "volume_baseline_avg": 38747363755.96,
+        "rsi14": 59.57,
+        "ema9": 77184.93093856,
+        "ema21": 77174.35608877,
+        "volume_baseline_avg": 39096640384.032,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -2019,8 +2025,8 @@
       "opportunity_lifecycle": {
         "first_flagged_at": "2026-10-27T16:00:48.266825+00:00",
         "price_at_first_flag": 80466,
-        "move_since_flag_pct": -4.08,
-        "hours_since_flag": 85.5,
+        "move_since_flag_pct": -4.09,
+        "hours_since_flag": 86.0,
         "decay_state": "decayed"
       },
       "binance_listed": true,
@@ -2032,23 +2038,23 @@
       "id": "ethereum",
       "symbol": "ETH",
       "name": "Ethereum",
-      "price_usd": 2239.49,
+      "price_usd": 2240.1,
       "high_24h_usd": 2257.45,
       "low_24h_usd": 2208.56,
-      "change_24h_pct": -0.24711,
-      "change_7d_pct": -6.0076,
-      "volume_24h_usd": 13399334493,
-      "market_cap_usd": 273606515767,
+      "change_24h_pct": 0.13569,
+      "change_7d_pct": -5.9014,
+      "volume_24h_usd": 13241191823,
+      "market_cap_usd": 273691205482,
       "market_cap_rank": 2,
       "flags": [
         "انضغاط تقلب (Squeeze) — مدى الحركة بيضيق قبل احتمال انفجار"
       ],
-      "excess_return_24h_vs_btc_pct": 1.48,
+      "excess_return_24h_vs_btc_pct": 1.76,
       "indicators": {
-        "rsi14": 58.07,
-        "ema9": 2239.97631392,
-        "ema21": 2239.33524589,
-        "volume_baseline_avg": 11853556681.804,
+        "rsi14": 58.4,
+        "ema9": 2240.00105114,
+        "ema21": 2239.40476899,
+        "volume_baseline_avg": 11858460944.206,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -2088,8 +2094,8 @@
       "opportunity_lifecycle": {
         "first_flagged_at": "2026-10-29T21:00:45.686585+00:00",
         "price_at_first_flag": 2256.52,
-        "move_since_flag_pct": -0.75,
-        "hours_since_flag": 32.5,
+        "move_since_flag_pct": -0.73,
+        "hours_since_flag": 33.0,
         "decay_state": "developing"
       },
       "binance_listed": true,
@@ -2101,23 +2107,23 @@
       "id": "binancecoin",
       "symbol": "BNB",
       "name": "BNB",
-      "price_usd": 702.52,
+      "price_usd": 703.11,
       "high_24h_usd": 716.59,
       "low_24h_usd": 693.16,
-      "change_24h_pct": -2.20841,
+      "change_24h_pct": -1.70522,
       "change_7d_pct": -5.1135,
-      "volume_24h_usd": 1252546329,
-      "market_cap_usd": 92371980182,
+      "volume_24h_usd": 1229459759,
+      "market_cap_usd": 92464018553,
       "market_cap_rank": 4,
       "flags": [
         "انضغاط تقلب (Squeeze) — مدى الحركة بيضيق قبل احتمال انفجار"
       ],
-      "excess_return_24h_vs_btc_pct": -0.48,
+      "excess_return_24h_vs_btc_pct": -0.08,
       "indicators": {
-        "rsi14": 59.89,
-        "ema9": 703.27170965,
-        "ema21": 702.89422726,
-        "volume_baseline_avg": 1114761498.664,
+        "rsi14": 58.64,
+        "ema9": 703.23936772,
+        "ema21": 702.91384296,
+        "volume_baseline_avg": 1115851834.458,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -2157,8 +2163,8 @@
       "opportunity_lifecycle": {
         "first_flagged_at": "2026-10-27T12:00:47.343989+00:00",
         "price_at_first_flag": 739.27,
-        "move_since_flag_pct": -4.97,
-        "hours_since_flag": 89.5,
+        "move_since_flag_pct": -4.89,
+        "hours_since_flag": 90.0,
         "decay_state": "decayed"
       },
       "binance_listed": true,
@@ -2170,23 +2176,23 @@
       "id": "hyperliquid",
       "symbol": "HYPE",
       "name": "Hyperliquid",
-      "price_usd": 88.72,
+      "price_usd": 88.41,
       "high_24h_usd": 93.84,
       "low_24h_usd": 88.3,
-      "change_24h_pct": -4.8152,
+      "change_24h_pct": -4.31577,
       "change_7d_pct": 14.6509,
-      "volume_24h_usd": 1528118371,
-      "market_cap_usd": 21239575896,
+      "volume_24h_usd": 1558355355,
+      "market_cap_usd": 21165130925,
       "market_cap_rank": 11,
       "flags": [
-        "نمط علم صاعد (Bull Flag) — هدف Kirkpatrick بعد الاختراق: 103.07"
+        "نمط علم صاعد (Bull Flag) — هدف Kirkpatrick بعد الاختراق: 102.76"
       ],
-      "excess_return_24h_vs_btc_pct": -3.09,
+      "excess_return_24h_vs_btc_pct": -2.69,
       "indicators": {
-        "rsi14": 42.32,
-        "ema9": 89.1386622,
-        "ema21": 89.61499561,
-        "volume_baseline_avg": 1066353052.326,
+        "rsi14": 42.51,
+        "ema9": 88.99292976,
+        "ema21": 89.50545056,
+        "volume_baseline_avg": 1068103830.442,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -2221,8 +2227,8 @@
         "flag_pattern": {
           "direction": "bullish",
           "flagpole_move_pct": 18.23,
-          "consolidation_range_pct": 5.33,
-          "target_price": 103.07
+          "consolidation_range_pct": 5.34,
+          "target_price": 102.76
         },
         "double_bottom": null,
         "triangle": null
@@ -2231,8 +2237,8 @@
       "opportunity_lifecycle": {
         "first_flagged_at": "2026-10-29T11:00:46.957910+00:00",
         "price_at_first_flag": 84.81,
-        "move_since_flag_pct": 4.61,
-        "hours_since_flag": 42.5,
+        "move_since_flag_pct": 4.24,
+        "hours_since_flag": 43.0,
         "decay_state": "developing"
       },
       "binance_listed": true,
@@ -2244,23 +2250,23 @@
       "id": "whitebit",
       "symbol": "WBT",
       "name": "WhiteBIT Coin",
-      "price_usd": 74.12,
+      "price_usd": 74.13,
       "high_24h_usd": 75.2,
       "low_24h_usd": 73.28,
-      "change_24h_pct": -1.29768,
+      "change_24h_pct": -1.13076,
       "change_7d_pct": -5.7335,
-      "volume_24h_usd": 147335047,
-      "market_cap_usd": 8795012328,
+      "volume_24h_usd": 145404067,
+      "market_cap_usd": 8798225428,
       "market_cap_rank": 15,
       "flags": [
         "انضغاط تقلب (Squeeze) — مدى الحركة بيضيق قبل احتمال انفجار"
       ],
-      "excess_return_24h_vs_btc_pct": 0.43,
+      "excess_return_24h_vs_btc_pct": 0.49,
       "indicators": {
-        "rsi14": 63.43,
-        "ema9": 74.11854819,
-        "ema21": 74.10303577,
-        "volume_baseline_avg": 114225258.34,
+        "rsi14": 62.02,
+        "ema9": 74.12083855,
+        "ema21": 74.10548706,
+        "volume_baseline_avg": 114283383.708,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -2300,8 +2306,8 @@
       "opportunity_lifecycle": {
         "first_flagged_at": "2026-10-31T04:00:40.348814+00:00",
         "price_at_first_flag": 74.0,
-        "move_since_flag_pct": 0.16,
-        "hours_since_flag": 1.5,
+        "move_since_flag_pct": 0.18,
+        "hours_since_flag": 2.0,
         "decay_state": "fresh"
       },
       "binance_listed": false
@@ -2310,23 +2316,23 @@
       "id": "chainlink",
       "symbol": "LINK",
       "name": "Chainlink",
-      "price_usd": 11.43,
+      "price_usd": 11.4,
       "high_24h_usd": 11.72,
       "low_24h_usd": 10.91,
-      "change_24h_pct": 2.7688,
+      "change_24h_pct": 3.09907,
       "change_7d_pct": -4.1527,
-      "volume_24h_usd": 467408406,
-      "market_cap_usd": 8762379225,
+      "volume_24h_usd": 464338382,
+      "market_cap_usd": 8740516120,
       "market_cap_rank": 16,
       "flags": [
         "تأخر دوران قطاعي — عملات تانية في real-world-assets-rwa تحركت وهي لسه ساكنة"
       ],
-      "excess_return_24h_vs_btc_pct": 4.49,
+      "excess_return_24h_vs_btc_pct": 4.72,
       "indicators": {
-        "rsi14": 57.89,
-        "ema9": 11.45640724,
-        "ema21": 11.40290342,
-        "volume_baseline_avg": 311955922.336,
+        "rsi14": 53.33,
+        "ema9": 11.44512579,
+        "ema21": 11.40263947,
+        "volume_baseline_avg": 312393584.82,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -2366,8 +2372,8 @@
       "opportunity_lifecycle": {
         "first_flagged_at": "2026-10-29T02:30:37.025632+00:00",
         "price_at_first_flag": 11.39,
-        "move_since_flag_pct": 0.35,
-        "hours_since_flag": 51.0,
+        "move_since_flag_pct": 0.09,
+        "hours_since_flag": 51.5,
         "decay_state": "decayed"
       },
       "binance_listed": true,
@@ -2382,20 +2388,20 @@
       "price_usd": 9.46,
       "high_24h_usd": 9.48,
       "low_24h_usd": 9.39,
-      "change_24h_pct": 0.30373,
+      "change_24h_pct": 0.25264,
       "change_7d_pct": 5.1964,
-      "volume_24h_usd": 141814,
-      "market_cap_usd": 8703718345,
+      "volume_24h_usd": 140693,
+      "market_cap_usd": 8699648619,
       "market_cap_rank": 17,
       "flags": [
         "انضغاط تقلب (Squeeze) — مدى الحركة بيضيق قبل احتمال انفجار"
       ],
-      "excess_return_24h_vs_btc_pct": 2.03,
+      "excess_return_24h_vs_btc_pct": 1.87,
       "indicators": {
         "rsi14": 66.67,
-        "ema9": 9.4563921,
-        "ema21": 9.43991851,
-        "volume_baseline_avg": 145280.3428,
+        "ema9": 9.45711368,
+        "ema21": 9.4417441,
+        "volume_baseline_avg": 145181.2328,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -2436,7 +2442,7 @@
         "first_flagged_at": "2026-10-31T04:00:40.348814+00:00",
         "price_at_first_flag": 9.47,
         "move_since_flag_pct": -0.11,
-        "hours_since_flag": 1.5,
+        "hours_since_flag": 2.0,
         "decay_state": "fresh"
       },
       "binance_listed": false
@@ -2445,23 +2451,23 @@
       "id": "cardano",
       "symbol": "ADA",
       "name": "Cardano",
-      "price_usd": 0.192812,
+      "price_usd": 0.192744,
       "high_24h_usd": 0.196663,
       "low_24h_usd": 0.189823,
-      "change_24h_pct": -0.72474,
+      "change_24h_pct": -0.22729,
       "change_7d_pct": -8.7666,
-      "volume_24h_usd": 221631798,
-      "market_cap_usd": 7244713891,
+      "volume_24h_usd": 219083899,
+      "market_cap_usd": 7240873199,
       "market_cap_rank": 18,
       "flags": [
         "انضغاط تقلب (Squeeze) — مدى الحركة بيضيق قبل احتمال انفجار"
       ],
-      "excess_return_24h_vs_btc_pct": 1.0,
+      "excess_return_24h_vs_btc_pct": 1.39,
       "indicators": {
-        "rsi14": 43.79,
-        "ema9": 0.19375401,
-        "ema21": 0.19379397,
-        "volume_baseline_avg": 271590860.176,
+        "rsi14": 36.45,
+        "ema9": 0.19355201,
+        "ema21": 0.19369852,
+        "volume_baseline_avg": 271519667.38,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -2501,8 +2507,8 @@
       "opportunity_lifecycle": {
         "first_flagged_at": "2026-10-29T21:00:45.686585+00:00",
         "price_at_first_flag": 0.190702,
-        "move_since_flag_pct": 1.11,
-        "hours_since_flag": 32.5,
+        "move_since_flag_pct": 1.07,
+        "hours_since_flag": 33.0,
         "decay_state": "developing"
       },
       "binance_listed": true,
@@ -2514,23 +2520,23 @@
       "id": "stellar",
       "symbol": "XLM",
       "name": "Stellar",
-      "price_usd": 0.168935,
+      "price_usd": 0.168852,
       "high_24h_usd": 0.172249,
       "low_24h_usd": 0.164107,
-      "change_24h_pct": 1.14113,
+      "change_24h_pct": 1.39513,
       "change_7d_pct": -2.5047,
-      "volume_24h_usd": 145207380,
-      "market_cap_usd": 5954856246,
+      "volume_24h_usd": 142622547,
+      "market_cap_usd": 5952101534,
       "market_cap_rank": 19,
       "flags": [
         "تأخر دوران قطاعي — عملات تانية في real-world-assets-rwa تحركت وهي لسه ساكنة"
       ],
-      "excess_return_24h_vs_btc_pct": 2.87,
+      "excess_return_24h_vs_btc_pct": 3.02,
       "indicators": {
-        "rsi14": 50.99,
-        "ema9": 0.16912571,
-        "ema21": 0.16893616,
-        "volume_baseline_avg": 117118436.04,
+        "rsi14": 49.79,
+        "ema9": 0.16907097,
+        "ema21": 0.16892851,
+        "volume_baseline_avg": 117156091.078,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -2570,8 +2576,8 @@
       "opportunity_lifecycle": {
         "first_flagged_at": "2026-10-29T21:00:45.686585+00:00",
         "price_at_first_flag": 0.162444,
-        "move_since_flag_pct": 4.0,
-        "hours_since_flag": 32.5,
+        "move_since_flag_pct": 3.94,
+        "hours_since_flag": 33.0,
         "decay_state": "developing"
       },
       "binance_listed": true,
@@ -2583,23 +2589,23 @@
       "id": "bitcoin-cash",
       "symbol": "BCH",
       "name": "Bitcoin Cash",
-      "price_usd": 289.66,
+      "price_usd": 289.25,
       "high_24h_usd": 297.26,
       "low_24h_usd": 278.69,
-      "change_24h_pct": 1.80468,
+      "change_24h_pct": 1.91002,
       "change_7d_pct": 4.1239,
-      "volume_24h_usd": 214808739,
-      "market_cap_usd": 5826451962,
+      "volume_24h_usd": 214557106,
+      "market_cap_usd": 5819525265,
       "market_cap_rank": 20,
       "flags": [
         "قوة نسبية خفية أثناء التماسك — بتتفوق على BTC وهي ساكنة ظاهريًا"
       ],
       "excess_return_24h_vs_btc_pct": 3.53,
       "indicators": {
-        "rsi14": 51.4,
-        "ema9": 290.53954107,
-        "ema21": 290.34253621,
-        "volume_baseline_avg": 177393840.766,
+        "rsi14": 39.05,
+        "ema9": 290.28163285,
+        "ema21": 290.24321474,
+        "volume_baseline_avg": 177549271.778,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -2639,8 +2645,8 @@
       "opportunity_lifecycle": {
         "first_flagged_at": "2026-10-29T12:00:44.714948+00:00",
         "price_at_first_flag": 279.5,
-        "move_since_flag_pct": 3.64,
-        "hours_since_flag": 41.5,
+        "move_since_flag_pct": 3.49,
+        "hours_since_flag": 42.0,
         "decay_state": "developing"
       },
       "last_deep_eval": {
@@ -2665,23 +2671,23 @@
       "id": "near",
       "symbol": "NEAR",
       "name": "NEAR Protocol",
-      "price_usd": 4.3,
+      "price_usd": 4.32,
       "high_24h_usd": 4.42,
       "low_24h_usd": 4.17,
-      "change_24h_pct": 1.08661,
-      "change_7d_pct": -7.3509,
-      "volume_24h_usd": 820775836,
-      "market_cap_usd": 5639950135,
+      "change_24h_pct": 2.97987,
+      "change_7d_pct": -7.2853,
+      "volume_24h_usd": 816938753,
+      "market_cap_usd": 5656524580,
       "market_cap_rank": 21,
       "flags": [
         "انضغاط تقلب (Squeeze) — مدى الحركة بيضيق قبل احتمال انفجار"
       ],
-      "excess_return_24h_vs_btc_pct": 2.81,
+      "excess_return_24h_vs_btc_pct": 4.6,
       "indicators": {
-        "rsi14": 47.37,
-        "ema9": 4.31336756,
-        "ema21": 4.31410942,
-        "volume_baseline_avg": 756116358.446,
+        "rsi14": 52.38,
+        "ema9": 4.31469405,
+        "ema21": 4.31464493,
+        "volume_baseline_avg": 755743590.77,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -2721,8 +2727,8 @@
       "opportunity_lifecycle": {
         "first_flagged_at": "2026-10-29T21:00:45.686585+00:00",
         "price_at_first_flag": 4.17,
-        "move_since_flag_pct": 3.12,
-        "hours_since_flag": 32.5,
+        "move_since_flag_pct": 3.6,
+        "hours_since_flag": 33.0,
         "decay_state": "developing"
       },
       "binance_listed": true,
@@ -2734,23 +2740,23 @@
       "id": "rain",
       "symbol": "RAIN",
       "name": "Rain",
-      "price_usd": 0.00627827,
+      "price_usd": 0.00628074,
       "high_24h_usd": 0.00672556,
       "low_24h_usd": 0.00626082,
-      "change_24h_pct": -4.94167,
+      "change_24h_pct": -4.48174,
       "change_7d_pct": -23.5833,
-      "volume_24h_usd": 12288214,
-      "market_cap_usd": 4458165615,
+      "volume_24h_usd": 12334549,
+      "market_cap_usd": 4463994310,
       "market_cap_rank": 24,
       "flags": [
         "حركة سعرية حادة خلال 7 أيام (-23.6%)"
       ],
-      "excess_return_24h_vs_btc_pct": -3.22,
+      "excess_return_24h_vs_btc_pct": -2.86,
       "indicators": {
-        "rsi14": 34.98,
-        "ema9": 0.00627985,
-        "ema21": 0.00631418,
-        "volume_baseline_avg": 16271767.802,
+        "rsi14": 33.61,
+        "ema9": 0.00628003,
+        "ema21": 0.00631114,
+        "volume_baseline_avg": 16265077.524,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -2790,8 +2796,8 @@
       "opportunity_lifecycle": {
         "first_flagged_at": "2026-10-27T21:00:46.166630+00:00",
         "price_at_first_flag": 0.00718586,
-        "move_since_flag_pct": -12.63,
-        "hours_since_flag": 80.5,
+        "move_since_flag_pct": -12.6,
+        "hours_since_flag": 81.0,
         "decay_state": "decayed"
       },
       "binance_listed": false
@@ -2800,23 +2806,23 @@
       "id": "quant-network",
       "symbol": "QNT",
       "name": "Quant",
-      "price_usd": 193.12,
+      "price_usd": 194.76,
       "high_24h_usd": 198.59,
       "low_24h_usd": 186.58,
-      "change_24h_pct": 1.1407,
+      "change_24h_pct": 0.42151,
       "change_7d_pct": 6.1958,
-      "volume_24h_usd": 76056158,
-      "market_cap_usd": 2812667741,
+      "volume_24h_usd": 74348965,
+      "market_cap_usd": 2834555990,
       "market_cap_rank": 36,
       "flags": [
         "تأخر دوران قطاعي — عملات تانية في real-world-assets-rwa تحركت وهي لسه ساكنة"
       ],
-      "excess_return_24h_vs_btc_pct": 2.87,
+      "excess_return_24h_vs_btc_pct": 2.04,
       "indicators": {
-        "rsi14": 64.29,
-        "ema9": 193.47364814,
-        "ema21": 192.98198652,
-        "volume_baseline_avg": 85358363.03,
+        "rsi14": 64.21,
+        "ema9": 193.73091851,
+        "ema21": 193.14362411,
+        "volume_baseline_avg": 85387311.848,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -2856,8 +2862,8 @@
       "opportunity_lifecycle": {
         "first_flagged_at": "2026-10-30T08:00:46.532115+00:00",
         "price_at_first_flag": 192.71,
-        "move_since_flag_pct": 0.21,
-        "hours_since_flag": 21.5,
+        "move_since_flag_pct": 1.06,
+        "hours_since_flag": 22.0,
         "decay_state": "fresh"
       },
       "binance_listed": true,
@@ -2872,20 +2878,20 @@
       "price_usd": 1.15,
       "high_24h_usd": 1.15,
       "low_24h_usd": 1.15,
-      "change_24h_pct": -0.08685,
+      "change_24h_pct": -0.00899,
       "change_7d_pct": 0.0411,
-      "volume_24h_usd": 6937109,
-      "market_cap_usd": 2398786320,
+      "volume_24h_usd": 5395115,
+      "market_cap_usd": 2398049025,
       "market_cap_rank": 42,
       "flags": [
         "تأخر دوران قطاعي — عملات تانية في real-world-assets-rwa تحركت وهي لسه ساكنة"
       ],
-      "excess_return_24h_vs_btc_pct": 1.64,
+      "excess_return_24h_vs_btc_pct": 1.61,
       "indicators": {
         "rsi14": 100.0,
         "ema9": 1.15,
         "ema21": 1.15,
-        "volume_baseline_avg": 4014287.438,
+        "volume_baseline_avg": 4017282.518,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -2926,7 +2932,7 @@
         "first_flagged_at": "2026-10-30T08:00:46.532115+00:00",
         "price_at_first_flag": 1.15,
         "move_since_flag_pct": 0.0,
-        "hours_since_flag": 21.5,
+        "hours_since_flag": 22.0,
         "decay_state": "fresh"
       },
       "binance_listed": false
@@ -2946,7 +2952,7 @@
       "flags": [
         "تأخر دوران قطاعي — عملات تانية في real-world-assets-rwa تحركت وهي لسه ساكنة"
       ],
-      "excess_return_24h_vs_btc_pct": 1.76,
+      "excess_return_24h_vs_btc_pct": 1.65,
       "indicators": {
         "rsi14": 100.0,
         "ema9": 1.14,
@@ -2992,7 +2998,7 @@
         "first_flagged_at": "2026-10-30T08:00:46.532115+00:00",
         "price_at_first_flag": 1.14,
         "move_since_flag_pct": 0.0,
-        "hours_since_flag": 21.5,
+        "hours_since_flag": 22.0,
         "decay_state": "fresh"
       },
       "binance_listed": false
@@ -3001,23 +3007,23 @@
       "id": "ondo-finance",
       "symbol": "ONDO",
       "name": "Ondo",
-      "price_usd": 0.409913,
+      "price_usd": 0.410238,
       "high_24h_usd": 0.422879,
       "low_24h_usd": 0.385892,
-      "change_24h_pct": 3.98163,
+      "change_24h_pct": 5.08613,
       "change_7d_pct": -1.9276,
-      "volume_24h_usd": 203664272,
-      "market_cap_usd": 1995343911,
+      "volume_24h_usd": 179816736,
+      "market_cap_usd": 1999917277,
       "market_cap_rank": 49,
       "flags": [
         "تأخر دوران قطاعي — عملات تانية في real-world-assets-rwa تحركت وهي لسه ساكنة"
       ],
-      "excess_return_24h_vs_btc_pct": 5.71,
+      "excess_return_24h_vs_btc_pct": 6.71,
       "indicators": {
-        "rsi14": 40.46,
-        "ema9": 0.41136916,
-        "ema21": 0.4100947,
-        "volume_baseline_avg": 116927348.266,
+        "rsi14": 42.91,
+        "ema9": 0.41114293,
+        "ema21": 0.41010773,
+        "volume_baseline_avg": 117003194.442,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -3057,8 +3063,8 @@
       "opportunity_lifecycle": {
         "first_flagged_at": "2026-10-30T07:00:41.361963+00:00",
         "price_at_first_flag": 0.394766,
-        "move_since_flag_pct": 3.84,
-        "hours_since_flag": 22.5,
+        "move_since_flag_pct": 3.92,
+        "hours_since_flag": 23.0,
         "decay_state": "developing"
       },
       "binance_listed": true,
@@ -3073,7 +3079,7 @@
       "price_usd": 1.14,
       "high_24h_usd": 1.14,
       "low_24h_usd": 1.13,
-      "change_24h_pct": 0.16285,
+      "change_24h_pct": 0.17584,
       "change_7d_pct": 0.0335,
       "volume_24h_usd": 0.0,
       "market_cap_usd": 1817704082,
@@ -3081,11 +3087,11 @@
       "flags": [
         "تأخر دوران قطاعي — عملات تانية في real-world-assets-rwa تحركت وهي لسه ساكنة"
       ],
-      "excess_return_24h_vs_btc_pct": 1.89,
+      "excess_return_24h_vs_btc_pct": 1.8,
       "indicators": {
         "rsi14": 100.0,
-        "ema9": 1.13972486,
-        "ema21": 1.13823742,
+        "ema9": 1.13977989,
+        "ema21": 1.13839766,
         "volume_baseline_avg": 0.0,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
@@ -3127,7 +3133,7 @@
         "first_flagged_at": "2026-10-30T08:00:46.532115+00:00",
         "price_at_first_flag": 1.14,
         "move_since_flag_pct": 0.0,
-        "hours_since_flag": 21.5,
+        "hours_since_flag": 22.0,
         "decay_state": "fresh"
       },
       "binance_listed": false
@@ -3136,23 +3142,23 @@
       "id": "polkadot",
       "symbol": "DOT",
       "name": "Polkadot",
-      "price_usd": 0.954437,
+      "price_usd": 0.956038,
       "high_24h_usd": 0.980597,
       "low_24h_usd": 0.930248,
-      "change_24h_pct": 0.45423,
+      "change_24h_pct": 0.56502,
       "change_7d_pct": -12.1924,
-      "volume_24h_usd": 79900524,
-      "market_cap_usd": 1632562811,
+      "volume_24h_usd": 82101213,
+      "market_cap_usd": 1634745109,
       "market_cap_rank": 56,
       "flags": [
         "انضغاط تقلب (Squeeze) — مدى الحركة بيضيق قبل احتمال انفجار"
       ],
-      "excess_return_24h_vs_btc_pct": 2.18,
+      "excess_return_24h_vs_btc_pct": 2.19,
       "indicators": {
-        "rsi14": 30.75,
-        "ema9": 0.96098611,
-        "ema21": 0.96262177,
-        "volume_baseline_avg": 127594474.758,
+        "rsi14": 32.75,
+        "ema9": 0.95999648,
+        "ema21": 0.96202324,
+        "volume_baseline_avg": 127446588.348,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -3192,8 +3198,8 @@
       "opportunity_lifecycle": {
         "first_flagged_at": "2026-10-31T04:00:40.348814+00:00",
         "price_at_first_flag": 0.962659,
-        "move_since_flag_pct": -0.85,
-        "hours_since_flag": 1.5,
+        "move_since_flag_pct": -0.69,
+        "hours_since_flag": 2.0,
         "decay_state": "fresh"
       },
       "binance_listed": true,
@@ -3205,23 +3211,23 @@
       "id": "world-liberty-financial",
       "symbol": "WLFI",
       "name": "World Liberty Financial",
-      "price_usd": 0.04987136,
+      "price_usd": 0.04987719,
       "high_24h_usd": 0.052005,
       "low_24h_usd": 0.04970186,
-      "change_24h_pct": -4.28088,
+      "change_24h_pct": -3.61677,
       "change_7d_pct": -7.3244,
-      "volume_24h_usd": 28574919,
-      "market_cap_usd": 1584754111,
+      "volume_24h_usd": 28139249,
+      "market_cap_usd": 1584750111,
       "market_cap_rank": 58,
       "flags": [
         "تباعد RSI صاعد — زخم الهبوط بيضعف قبل انعكاس السعر"
       ],
-      "excess_return_24h_vs_btc_pct": -2.55,
+      "excess_return_24h_vs_btc_pct": -2.0,
       "indicators": {
-        "rsi14": 44.26,
-        "ema9": 0.04992631,
-        "ema21": 0.05006298,
-        "volume_baseline_avg": 25782016.18,
+        "rsi14": 39.8,
+        "ema9": 0.04991649,
+        "ema21": 0.05004609,
+        "volume_baseline_avg": 25754386.038,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -3261,8 +3267,8 @@
       "opportunity_lifecycle": {
         "first_flagged_at": "2026-10-30T08:00:46.532115+00:00",
         "price_at_first_flag": 0.051202,
-        "move_since_flag_pct": -2.6,
-        "hours_since_flag": 21.5,
+        "move_since_flag_pct": -2.59,
+        "hours_since_flag": 22.0,
         "decay_state": "fresh"
       },
       "last_deep_eval": {
@@ -3287,23 +3293,23 @@
       "id": "mantle",
       "symbol": "MNT",
       "name": "Mantle",
-      "price_usd": 0.472554,
+      "price_usd": 0.473832,
       "high_24h_usd": 0.481182,
       "low_24h_usd": 0.465693,
-      "change_24h_pct": -1.87414,
+      "change_24h_pct": -1.29654,
       "change_7d_pct": -9.2552,
-      "volume_24h_usd": 21097508,
-      "market_cap_usd": 1560484295,
+      "volume_24h_usd": 21322353,
+      "market_cap_usd": 1564590942,
       "market_cap_rank": 60,
       "flags": [
         "انضغاط تقلب (Squeeze) — مدى الحركة بيضيق قبل احتمال انفجار"
       ],
-      "excess_return_24h_vs_btc_pct": -0.15,
+      "excess_return_24h_vs_btc_pct": 0.32,
       "indicators": {
-        "rsi14": 51.43,
-        "ema9": 0.4725797,
-        "ema21": 0.47276088,
-        "volume_baseline_avg": 23672170.696,
+        "rsi14": 55.75,
+        "ema9": 0.47283016,
+        "ema21": 0.47285826,
+        "volume_baseline_avg": 23669243.59,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -3343,8 +3349,8 @@
       "opportunity_lifecycle": {
         "first_flagged_at": "2026-10-31T00:00:53.724099+00:00",
         "price_at_first_flag": 0.475215,
-        "move_since_flag_pct": -0.56,
-        "hours_since_flag": 5.5,
+        "move_since_flag_pct": -0.29,
+        "hours_since_flag": 6.0,
         "decay_state": "fresh"
       },
       "binance_listed": false
@@ -3353,23 +3359,23 @@
       "id": "worldcoin-wld",
       "symbol": "WLD",
       "name": "Worldcoin",
-      "price_usd": 0.395627,
+      "price_usd": 0.395821,
       "high_24h_usd": 0.418999,
       "low_24h_usd": 0.390434,
-      "change_24h_pct": -0.88781,
+      "change_24h_pct": -0.11516,
       "change_7d_pct": -17.6924,
-      "volume_24h_usd": 239460336,
-      "market_cap_usd": 1475936711,
-      "market_cap_rank": 63,
+      "volume_24h_usd": 235551179,
+      "market_cap_usd": 1476218504,
+      "market_cap_rank": 62,
       "flags": [
         "تباعد RSI صاعد — زخم الهبوط بيضعف قبل انعكاس السعر"
       ],
-      "excess_return_24h_vs_btc_pct": 0.84,
+      "excess_return_24h_vs_btc_pct": 1.51,
       "indicators": {
-        "rsi14": 32.39,
-        "ema9": 0.39948769,
-        "ema21": 0.40198565,
-        "volume_baseline_avg": 322964581.188,
+        "rsi14": 27.11,
+        "ema9": 0.39875435,
+        "ema21": 0.40142522,
+        "volume_baseline_avg": 322136211.812,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -3409,8 +3415,8 @@
       "opportunity_lifecycle": {
         "first_flagged_at": "2026-10-29T19:30:41.500921+00:00",
         "price_at_first_flag": 0.417797,
-        "move_since_flag_pct": -5.31,
-        "hours_since_flag": 34.0,
+        "move_since_flag_pct": -5.26,
+        "hours_since_flag": 34.5,
         "decay_state": "developing"
       },
       "last_deep_eval": {
@@ -3435,23 +3441,23 @@
       "id": "arbitrum",
       "symbol": "ARB",
       "name": "Arbitrum",
-      "price_usd": 0.161481,
+      "price_usd": 0.161475,
       "high_24h_usd": 0.166051,
       "low_24h_usd": 0.159919,
-      "change_24h_pct": -2.46159,
+      "change_24h_pct": -1.47345,
       "change_7d_pct": -6.5237,
-      "volume_24h_usd": 140821490,
-      "market_cap_usd": 1112961001,
+      "volume_24h_usd": 136428249,
+      "market_cap_usd": 1113121033,
       "market_cap_rank": 70,
       "flags": [
         "انضغاط تقلب (Squeeze) — مدى الحركة بيضيق قبل احتمال انفجار"
       ],
-      "excess_return_24h_vs_btc_pct": -0.74,
+      "excess_return_24h_vs_btc_pct": 0.15,
       "indicators": {
-        "rsi14": 48.36,
-        "ema9": 0.1618096,
-        "ema21": 0.16220953,
-        "volume_baseline_avg": 167287336.558,
+        "rsi14": 49.02,
+        "ema9": 0.16174268,
+        "ema21": 0.16214276,
+        "volume_baseline_avg": 167016587.776,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -3492,7 +3498,7 @@
         "first_flagged_at": "2026-10-31T04:00:40.348814+00:00",
         "price_at_first_flag": 0.161385,
         "move_since_flag_pct": 0.06,
-        "hours_since_flag": 1.5,
+        "hours_since_flag": 2.0,
         "decay_state": "fresh"
       },
       "binance_listed": true,
@@ -3504,23 +3510,23 @@
       "id": "venice-token",
       "symbol": "VVV",
       "name": "Venice Token",
-      "price_usd": 22.27,
+      "price_usd": 22.08,
       "high_24h_usd": 23.41,
       "low_24h_usd": 21.81,
-      "change_24h_pct": -2.84218,
+      "change_24h_pct": -4.00275,
       "change_7d_pct": -9.891,
-      "volume_24h_usd": 27892447,
-      "market_cap_usd": 1085495816,
+      "volume_24h_usd": 27070389,
+      "market_cap_usd": 1077026540,
       "market_cap_rank": 72,
       "flags": [
         "انضغاط تقلب (Squeeze) — مدى الحركة بيضيق قبل احتمال انفجار"
       ],
-      "excess_return_24h_vs_btc_pct": -1.12,
+      "excess_return_24h_vs_btc_pct": -2.38,
       "indicators": {
-        "rsi14": 52.8,
-        "ema9": 22.39874213,
-        "ema21": 22.39902171,
-        "volume_baseline_avg": 35363428.35,
+        "rsi14": 44.44,
+        "ema9": 22.3349937,
+        "ema21": 22.37001974,
+        "volume_baseline_avg": 35331495.312,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -3560,8 +3566,8 @@
       "opportunity_lifecycle": {
         "first_flagged_at": "2026-10-31T00:00:53.724099+00:00",
         "price_at_first_flag": 22.69,
-        "move_since_flag_pct": -1.85,
-        "hours_since_flag": 5.5,
+        "move_since_flag_pct": -2.69,
+        "hours_since_flag": 6.0,
         "decay_state": "fresh"
       },
       "binance_listed": false
@@ -3570,23 +3576,23 @@
       "id": "algorand",
       "symbol": "ALGO",
       "name": "Algorand",
-      "price_usd": 0.094842,
+      "price_usd": 0.094807,
       "high_24h_usd": 0.096217,
       "low_24h_usd": 0.093398,
-      "change_24h_pct": -0.41004,
+      "change_24h_pct": -0.08021,
       "change_7d_pct": -10.0008,
-      "volume_24h_usd": 36795554,
-      "market_cap_usd": 860852196,
+      "volume_24h_usd": 36841991,
+      "market_cap_usd": 860336082,
       "market_cap_rank": 79,
       "flags": [
         "تأخر دوران قطاعي — عملات تانية في real-world-assets-rwa تحركت وهي لسه ساكنة"
       ],
-      "excess_return_24h_vs_btc_pct": 1.32,
+      "excess_return_24h_vs_btc_pct": 1.54,
       "indicators": {
-        "rsi14": 51.19,
-        "ema9": 0.0952873,
-        "ema21": 0.09520901,
-        "volume_baseline_avg": 42891857.502,
+        "rsi14": 45.08,
+        "ema9": 0.09519124,
+        "ema21": 0.09517246,
+        "volume_baseline_avg": 42865725.834,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -3626,8 +3632,8 @@
       "opportunity_lifecycle": {
         "first_flagged_at": "2026-10-29T21:00:45.686585+00:00",
         "price_at_first_flag": 0.093409,
-        "move_since_flag_pct": 1.53,
-        "hours_since_flag": 32.5,
+        "move_since_flag_pct": 1.5,
+        "hours_since_flag": 33.0,
         "decay_state": "developing"
       },
       "binance_listed": true,
@@ -3639,23 +3645,23 @@
       "id": "jupiter-exchange-solana",
       "symbol": "JUP",
       "name": "Jupiter",
-      "price_usd": 0.256092,
+      "price_usd": 0.255318,
       "high_24h_usd": 0.261481,
       "low_24h_usd": 0.24928,
-      "change_24h_pct": 0.06451,
+      "change_24h_pct": 0.33424,
       "change_7d_pct": -14.9002,
-      "volume_24h_usd": 46719671,
-      "market_cap_usd": 850243969,
+      "volume_24h_usd": 47001281,
+      "market_cap_usd": 847491231,
       "market_cap_rank": 80,
       "flags": [
         "انضغاط تقلب (Squeeze) — مدى الحركة بيضيق قبل احتمال انفجار"
       ],
-      "excess_return_24h_vs_btc_pct": 1.79,
+      "excess_return_24h_vs_btc_pct": 1.96,
       "indicators": {
-        "rsi14": 42.96,
-        "ema9": 0.25787987,
-        "ema21": 0.25744389,
-        "volume_baseline_avg": 59990336.656,
+        "rsi14": 36.87,
+        "ema9": 0.2573675,
+        "ema21": 0.25725062,
+        "volume_baseline_avg": 59931902.126,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -3695,8 +3701,8 @@
       "opportunity_lifecycle": {
         "first_flagged_at": "2026-10-31T00:00:53.724099+00:00",
         "price_at_first_flag": 0.260183,
-        "move_since_flag_pct": -1.57,
-        "hours_since_flag": 5.5,
+        "move_since_flag_pct": -1.87,
+        "hours_since_flag": 6.0,
         "decay_state": "fresh"
       },
       "binance_listed": true,
@@ -3708,23 +3714,23 @@
       "id": "lighter",
       "symbol": "LIT",
       "name": "Lighter",
-      "price_usd": 2.74,
+      "price_usd": 2.73,
       "high_24h_usd": 2.98,
       "low_24h_usd": 2.69,
-      "change_24h_pct": -7.46293,
+      "change_24h_pct": -6.24954,
       "change_7d_pct": -12.7731,
-      "volume_24h_usd": 83349520,
-      "market_cap_usd": 685510396,
+      "volume_24h_usd": 82914564,
+      "market_cap_usd": 681796125,
       "market_cap_rank": 87,
       "flags": [
         "انضغاط تقلب (Squeeze) — مدى الحركة بيضيق قبل احتمال انفجار"
       ],
-      "excess_return_24h_vs_btc_pct": -5.74,
+      "excess_return_24h_vs_btc_pct": -4.63,
       "indicators": {
-        "rsi14": 55.56,
-        "ema9": 2.74870318,
-        "ema21": 2.75751834,
-        "volume_baseline_avg": 99286334.012,
+        "rsi14": 47.06,
+        "ema9": 2.74496255,
+        "ema21": 2.75501668,
+        "volume_baseline_avg": 99296857.012,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -3764,8 +3770,8 @@
       "opportunity_lifecycle": {
         "first_flagged_at": "2026-10-31T04:00:40.348814+00:00",
         "price_at_first_flag": 2.75,
-        "move_since_flag_pct": -0.36,
-        "hours_since_flag": 1.5,
+        "move_since_flag_pct": -0.73,
+        "hours_since_flag": 2.0,
         "decay_state": "fresh"
       },
       "binance_listed": false
@@ -3774,23 +3780,23 @@
       "id": "layerzero",
       "symbol": "ZRO",
       "name": "LayerZero",
-      "price_usd": 1.7,
+      "price_usd": 1.69,
       "high_24h_usd": 1.77,
       "low_24h_usd": 1.66,
-      "change_24h_pct": 2.26665,
+      "change_24h_pct": 1.12529,
       "change_7d_pct": 1.0793,
-      "volume_24h_usd": 134483630,
-      "market_cap_usd": 678476622,
+      "volume_24h_usd": 134936810,
+      "market_cap_usd": 677132474,
       "market_cap_rank": 88,
       "flags": [
         "قوة نسبية خفية أثناء التماسك — بتتفوق على BTC وهي ساكنة ظاهريًا"
       ],
-      "excess_return_24h_vs_btc_pct": 3.99,
+      "excess_return_24h_vs_btc_pct": 2.75,
       "indicators": {
-        "rsi14": 55.56,
-        "ema9": 1.70073015,
-        "ema21": 1.70123671,
-        "volume_baseline_avg": 84861018.924,
+        "rsi14": 44.44,
+        "ema9": 1.69858412,
+        "ema21": 1.70021519,
+        "volume_baseline_avg": 84900751.658,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -3830,8 +3836,8 @@
       "opportunity_lifecycle": {
         "first_flagged_at": "2026-10-30T22:30:33.181413+00:00",
         "price_at_first_flag": 1.69,
-        "move_since_flag_pct": 0.59,
-        "hours_since_flag": 7.0,
+        "move_since_flag_pct": 0.0,
+        "hours_since_flag": 7.5,
         "decay_state": "fresh"
       },
       "binance_listed": true,
@@ -3854,7 +3860,7 @@
       "flags": [
         "تأخر دوران قطاعي — عملات تانية في real-world-assets-rwa تحركت وهي لسه ساكنة"
       ],
-      "excess_return_24h_vs_btc_pct": 1.74,
+      "excess_return_24h_vs_btc_pct": 1.63,
       "indicators": {
         "rsi14": 100.0,
         "ema9": 11.26,
@@ -3900,7 +3906,7 @@
         "first_flagged_at": "2026-10-30T08:00:46.532115+00:00",
         "price_at_first_flag": 11.26,
         "move_since_flag_pct": 0.0,
-        "hours_since_flag": 21.5,
+        "hours_since_flag": 22.0,
         "decay_state": "fresh"
       },
       "binance_listed": false
@@ -3909,23 +3915,23 @@
       "id": "xdce-crowd-sale",
       "symbol": "XDC",
       "name": "XDC Network",
-      "price_usd": 0.03127469,
+      "price_usd": 0.03131332,
       "high_24h_usd": 0.03209208,
       "low_24h_usd": 0.03114382,
-      "change_24h_pct": -0.11396,
+      "change_24h_pct": -0.69144,
       "change_7d_pct": -6.3737,
-      "volume_24h_usd": 9214018,
-      "market_cap_usd": 623816259,
+      "volume_24h_usd": 10179089,
+      "market_cap_usd": 624661024,
       "market_cap_rank": 92,
       "flags": [
         "تأخر دوران قطاعي — عملات تانية في real-world-assets-rwa تحركت وهي لسه ساكنة"
       ],
-      "excess_return_24h_vs_btc_pct": 1.61,
+      "excess_return_24h_vs_btc_pct": 0.93,
       "indicators": {
-        "rsi14": 49.87,
-        "ema9": 0.03152599,
-        "ema21": 0.03152285,
-        "volume_baseline_avg": 17146018.69,
+        "rsi14": 50.73,
+        "ema9": 0.03148345,
+        "ema21": 0.0315038,
+        "volume_baseline_avg": 17149390.298,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -3965,8 +3971,8 @@
       "opportunity_lifecycle": {
         "first_flagged_at": "2026-10-29T21:00:45.686585+00:00",
         "price_at_first_flag": 0.03246593,
-        "move_since_flag_pct": -3.67,
-        "hours_since_flag": 32.5,
+        "move_since_flag_pct": -3.55,
+        "hours_since_flag": 33.0,
         "decay_state": "developing"
       },
       "binance_listed": false
@@ -3982,11 +3988,11 @@
       "change_7d_pct": 0.1021,
       "volume_24h_usd": 0.0,
       "market_cap_usd": 568023680,
-      "market_cap_rank": 95,
+      "market_cap_rank": 96,
       "flags": [
         "تأخر دوران قطاعي — عملات تانية في real-world-assets-rwa تحركت وهي لسه ساكنة"
       ],
-      "excess_return_24h_vs_btc_pct": 1.75,
+      "excess_return_24h_vs_btc_pct": 1.65,
       "indicators": {
         "rsi14": 100.0,
         "ema9": 1.054,
@@ -4032,7 +4038,7 @@
         "first_flagged_at": "2026-10-30T08:00:46.532115+00:00",
         "price_at_first_flag": 1.054,
         "move_since_flag_pct": 0.0,
-        "hours_since_flag": 21.5,
+        "hours_since_flag": 22.0,
         "decay_state": "fresh"
       },
       "binance_listed": false
@@ -4041,23 +4047,23 @@
       "id": "beldex",
       "symbol": "BDX",
       "name": "Beldex",
-      "price_usd": 0.071767,
+      "price_usd": 0.071873,
       "high_24h_usd": 0.074427,
       "low_24h_usd": 0.070386,
-      "change_24h_pct": -1.93794,
+      "change_24h_pct": -1.77607,
       "change_7d_pct": -4.1914,
-      "volume_24h_usd": 11133498,
-      "market_cap_usd": 564566320,
+      "volume_24h_usd": 11229626,
+      "market_cap_usd": 566419692,
       "market_cap_rank": 97,
       "flags": [
         "قاع مزدوج قيد التكوّن (لسه محدش كسر خط الرقبة) — خط الرقبة 0.074468، الهدف 0.078394"
       ],
-      "excess_return_24h_vs_btc_pct": -0.21,
+      "excess_return_24h_vs_btc_pct": -0.16,
       "indicators": {
-        "rsi14": 53.37,
-        "ema9": 0.07205076,
-        "ema21": 0.07204701,
-        "volume_baseline_avg": 11009067.284,
+        "rsi14": 46.15,
+        "ema9": 0.07201521,
+        "ema21": 0.07203119,
+        "volume_baseline_avg": 11026085.986,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -4102,8 +4108,8 @@
       "opportunity_lifecycle": {
         "first_flagged_at": "2026-10-29T21:00:45.686585+00:00",
         "price_at_first_flag": 0.071032,
-        "move_since_flag_pct": 1.03,
-        "hours_since_flag": 32.5,
+        "move_since_flag_pct": 1.18,
+        "hours_since_flag": 33.0,
         "decay_state": "developing"
       },
       "binance_listed": false
@@ -4115,7 +4121,7 @@
       "price_usd": 1.19,
       "high_24h_usd": 1.19,
       "low_24h_usd": 1.18,
-      "change_24h_pct": 0.15988,
+      "change_24h_pct": 0.16212,
       "change_7d_pct": 0.0266,
       "volume_24h_usd": 0.0,
       "market_cap_usd": 497839092,
@@ -4123,11 +4129,11 @@
       "flags": [
         "تأخر دوران قطاعي — عملات تانية في real-world-assets-rwa تحركت وهي لسه ساكنة"
       ],
-      "excess_return_24h_vs_btc_pct": 1.89,
+      "excess_return_24h_vs_btc_pct": 1.78,
       "indicators": {
         "rsi14": 100.0,
-        "ema9": 1.18995494,
-        "ema21": 1.18942665,
+        "ema9": 1.18996395,
+        "ema21": 1.18947877,
         "volume_baseline_avg": 0.0,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
@@ -4169,7 +4175,7 @@
         "first_flagged_at": "2026-10-30T08:00:46.532115+00:00",
         "price_at_first_flag": 1.19,
         "move_since_flag_pct": 0.0,
-        "hours_since_flag": 21.5,
+        "hours_since_flag": 22.0,
         "decay_state": "fresh"
       },
       "binance_listed": false
@@ -4178,23 +4184,23 @@
       "id": "stable-2",
       "symbol": "STABLE",
       "name": "​​Stable",
-      "price_usd": 0.02654453,
+      "price_usd": 0.02655676,
       "high_24h_usd": 0.02674767,
       "low_24h_usd": 0.02571814,
-      "change_24h_pct": 3.58218,
+      "change_24h_pct": 2.84473,
       "change_7d_pct": 3.3675,
-      "volume_24h_usd": 8572137,
-      "market_cap_usd": 477767848,
+      "volume_24h_usd": 8505375,
+      "market_cap_usd": 478009090,
       "market_cap_rank": 110,
       "flags": [
         "CHoCH صاعد مبكر — تغيّر هيكلي محتمل قبل أي اختراق مؤكد"
       ],
-      "excess_return_24h_vs_btc_pct": 5.31,
+      "excess_return_24h_vs_btc_pct": 4.47,
       "indicators": {
-        "rsi14": 64.49,
-        "ema9": 0.02653614,
-        "ema21": 0.02643849,
-        "volume_baseline_avg": 9581681.04,
+        "rsi14": 69.18,
+        "ema9": 0.02654027,
+        "ema21": 0.02644924,
+        "volume_baseline_avg": 9575591.938,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -4234,8 +4240,8 @@
       "opportunity_lifecycle": {
         "first_flagged_at": "2026-10-29T21:00:45.686585+00:00",
         "price_at_first_flag": 0.02649901,
-        "move_since_flag_pct": 0.17,
-        "hours_since_flag": 32.5,
+        "move_since_flag_pct": 0.22,
+        "hours_since_flag": 33.0,
         "decay_state": "developing"
       },
       "binance_listed": false
@@ -4247,20 +4253,20 @@
       "price_usd": 1.64,
       "high_24h_usd": 1.66,
       "low_24h_usd": 1.58,
-      "change_24h_pct": -0.92421,
+      "change_24h_pct": -0.47612,
       "change_7d_pct": -11.0063,
-      "volume_24h_usd": 22957929,
-      "market_cap_usd": 442459785,
+      "volume_24h_usd": 22044564,
+      "market_cap_usd": 442010184,
       "market_cap_rank": 117,
       "flags": [
         "انضغاط تقلب (Squeeze) — مدى الحركة بيضيق قبل احتمال انفجار"
       ],
-      "excess_return_24h_vs_btc_pct": 0.8,
+      "excess_return_24h_vs_btc_pct": 1.14,
       "indicators": {
-        "rsi14": 62.5,
-        "ema9": 1.64235662,
-        "ema21": 1.63314968,
-        "volume_baseline_avg": 32951584.81,
+        "rsi14": 57.14,
+        "ema9": 1.6418853,
+        "ema21": 1.63377244,
+        "volume_baseline_avg": 32906465.272,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -4301,7 +4307,7 @@
         "first_flagged_at": "2026-10-31T00:00:53.724099+00:00",
         "price_at_first_flag": 1.63,
         "move_since_flag_pct": 0.61,
-        "hours_since_flag": 5.5,
+        "hours_since_flag": 6.0,
         "decay_state": "fresh"
       },
       "binance_listed": true,
@@ -4313,23 +4319,23 @@
       "id": "plasma",
       "symbol": "XPL",
       "name": "Plasma",
-      "price_usd": 0.080917,
+      "price_usd": 0.080573,
       "high_24h_usd": 0.082196,
       "low_24h_usd": 0.074957,
-      "change_24h_pct": 5.19,
+      "change_24h_pct": 5.29902,
       "change_7d_pct": 7.2022,
-      "volume_24h_usd": 62032825,
-      "market_cap_usd": 385242342,
+      "volume_24h_usd": 64836492,
+      "market_cap_usd": 383590368,
       "market_cap_rank": 120,
       "flags": [
         "قوة نسبية خفية أثناء التماسك — بتتفوق على BTC وهي ساكنة ظاهريًا"
       ],
       "excess_return_24h_vs_btc_pct": 6.92,
       "indicators": {
-        "rsi14": 51.76,
-        "ema9": 0.08124106,
-        "ema21": 0.0806305,
-        "volume_baseline_avg": 33739696.246,
+        "rsi14": 49.06,
+        "ema9": 0.08110745,
+        "ema21": 0.08062528,
+        "volume_baseline_avg": 33806761.45,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -4369,8 +4375,8 @@
       "opportunity_lifecycle": {
         "first_flagged_at": "2026-10-29T21:00:45.686585+00:00",
         "price_at_first_flag": 0.069471,
-        "move_since_flag_pct": 16.48,
-        "hours_since_flag": 32.5,
+        "move_since_flag_pct": 15.98,
+        "hours_since_flag": 33.0,
         "decay_state": "decayed"
       },
       "last_deep_eval": {
@@ -4395,23 +4401,23 @@
       "id": "fetch-ai",
       "symbol": "FET",
       "name": "Artificial Superintelligence Alliance",
-      "price_usd": 0.162632,
+      "price_usd": 0.162475,
       "high_24h_usd": 0.168219,
       "low_24h_usd": 0.161117,
-      "change_24h_pct": -0.30162,
+      "change_24h_pct": 0.4458,
       "change_7d_pct": -9.292,
-      "volume_24h_usd": 83896365,
-      "market_cap_usd": 375877374,
+      "volume_24h_usd": 83032655,
+      "market_cap_usd": 375563397,
       "market_cap_rank": 121,
       "flags": [
         "انضغاط تقلب (Squeeze) — مدى الحركة بيضيق قبل احتمال انفجار"
       ],
-      "excess_return_24h_vs_btc_pct": 1.42,
+      "excess_return_24h_vs_btc_pct": 2.07,
       "indicators": {
-        "rsi14": 22.28,
-        "ema9": 0.16426585,
-        "ema21": 0.16501218,
-        "volume_baseline_avg": 90665422.104,
+        "rsi14": 17.12,
+        "ema9": 0.16390768,
+        "ema21": 0.16478153,
+        "volume_baseline_avg": 90658461.306,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -4451,8 +4457,8 @@
       "opportunity_lifecycle": {
         "first_flagged_at": "2026-10-31T00:00:53.724099+00:00",
         "price_at_first_flag": 0.166741,
-        "move_since_flag_pct": -2.46,
-        "hours_since_flag": 5.5,
+        "move_since_flag_pct": -2.56,
+        "hours_since_flag": 6.0,
         "decay_state": "fresh"
       },
       "binance_listed": true,
@@ -4467,20 +4473,20 @@
       "price_usd": 1.11,
       "high_24h_usd": 1.11,
       "low_24h_usd": 1.11,
-      "change_24h_pct": 0.15952,
+      "change_24h_pct": 0.16185,
       "change_7d_pct": 0.0315,
-      "volume_24h_usd": 5436209,
-      "market_cap_usd": 369660608,
+      "volume_24h_usd": 4832556,
+      "market_cap_usd": 369703841,
       "market_cap_rank": 122,
       "flags": [
         "انضغاط تقلب (Squeeze) — مدى الحركة بيضيق قبل احتمال انفجار"
       ],
-      "excess_return_24h_vs_btc_pct": 1.89,
+      "excess_return_24h_vs_btc_pct": 1.78,
       "indicators": {
         "rsi14": 100.0,
         "ema9": 1.11,
-        "ema21": 1.10999703,
-        "volume_baseline_avg": 7401995.816,
+        "ema21": 1.1099973,
+        "volume_baseline_avg": 7406412.824,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -4521,7 +4527,7 @@
         "first_flagged_at": "2026-10-29T22:00:42.993637+00:00",
         "price_at_first_flag": 1.11,
         "move_since_flag_pct": 0.0,
-        "hours_since_flag": 31.5,
+        "hours_since_flag": 32.0,
         "decay_state": "developing"
       },
       "binance_listed": false
@@ -4530,23 +4536,23 @@
       "id": "derive",
       "symbol": "DRV",
       "name": "Derive",
-      "price_usd": 0.327467,
+      "price_usd": 0.32739,
       "high_24h_usd": 0.338123,
       "low_24h_usd": 0.326351,
-      "change_24h_pct": -0.02631,
+      "change_24h_pct": -0.20991,
       "change_7d_pct": -14.7863,
-      "volume_24h_usd": 4606011,
-      "market_cap_usd": 347860922,
+      "volume_24h_usd": 4545001,
+      "market_cap_usd": 347763021,
       "market_cap_rank": 123,
       "flags": [
         "انضغاط تقلب (Squeeze) — مدى الحركة بيضيق قبل احتمال انفجار"
       ],
-      "excess_return_24h_vs_btc_pct": 1.7,
+      "excess_return_24h_vs_btc_pct": 1.41,
       "indicators": {
-        "rsi14": 35.13,
-        "ema9": 0.32987398,
-        "ema21": 0.33074753,
-        "volume_baseline_avg": 7776391.796,
+        "rsi14": 30.91,
+        "ema9": 0.32937718,
+        "ema21": 0.3304423,
+        "volume_baseline_avg": 7766962.814,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -4586,8 +4592,8 @@
       "opportunity_lifecycle": {
         "first_flagged_at": "2026-10-31T00:30:39.958803+00:00",
         "price_at_first_flag": 0.33375,
-        "move_since_flag_pct": -1.88,
-        "hours_since_flag": 5.0,
+        "move_since_flag_pct": -1.91,
+        "hours_since_flag": 5.5,
         "decay_state": "fresh"
       },
       "binance_listed": false
@@ -4596,23 +4602,23 @@
       "id": "starknet",
       "symbol": "STRK",
       "name": "Starknet",
-      "price_usd": 0.04316725,
+      "price_usd": 0.0430097,
       "high_24h_usd": 0.04536731,
       "low_24h_usd": 0.04302817,
-      "change_24h_pct": -1.08465,
+      "change_24h_pct": -1.77808,
       "change_7d_pct": -12.1806,
-      "volume_24h_usd": 45619981,
-      "market_cap_usd": 327651008,
+      "volume_24h_usd": 44000854,
+      "market_cap_usd": 326462443,
       "market_cap_rank": 129,
       "flags": [
         "انضغاط تقلب (Squeeze) — مدى الحركة بيضيق قبل احتمال انفجار"
       ],
-      "excess_return_24h_vs_btc_pct": 0.64,
+      "excess_return_24h_vs_btc_pct": -0.16,
       "indicators": {
-        "rsi14": 32.49,
-        "ema9": 0.0435313,
-        "ema21": 0.04377692,
-        "volume_baseline_avg": 66602408.154,
+        "rsi14": 19.76,
+        "ema9": 0.04342698,
+        "ema21": 0.04370717,
+        "volume_baseline_avg": 66565540.328,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -4652,8 +4658,8 @@
       "opportunity_lifecycle": {
         "first_flagged_at": "2026-10-31T04:00:40.348814+00:00",
         "price_at_first_flag": 0.04356085,
-        "move_since_flag_pct": -0.9,
-        "hours_since_flag": 1.5,
+        "move_since_flag_pct": -1.27,
+        "hours_since_flag": 2.0,
         "decay_state": "fresh"
       },
       "binance_listed": true,
@@ -4676,11 +4682,11 @@
       "flags": [
         "تأخر دوران قطاعي — عملات تانية في real-world-assets-rwa تحركت وهي لسه ساكنة"
       ],
-      "excess_return_24h_vs_btc_pct": 1.75,
+      "excess_return_24h_vs_btc_pct": 1.64,
       "indicators": {
         "rsi14": 100.0,
-        "ema9": 117.10868058,
-        "ema21": 117.10208303,
+        "ema9": 117.10894447,
+        "ema21": 117.10280276,
         "volume_baseline_avg": 0.0,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
@@ -4722,7 +4728,7 @@
         "first_flagged_at": "2026-10-30T08:00:46.532115+00:00",
         "price_at_first_flag": 117.08,
         "move_since_flag_pct": 0.03,
-        "hours_since_flag": 21.5,
+        "hours_since_flag": 22.0,
         "decay_state": "fresh"
       },
       "binance_listed": false
@@ -4731,23 +4737,23 @@
       "id": "falcon-finance-ff",
       "symbol": "FF",
       "name": "Falcon Finance",
-      "price_usd": 0.089817,
+      "price_usd": 0.089879,
       "high_24h_usd": 0.093348,
       "low_24h_usd": 0.089491,
-      "change_24h_pct": -4.42089,
+      "change_24h_pct": -2.68397,
       "change_7d_pct": -10.0123,
-      "volume_24h_usd": 3113909,
-      "market_cap_usd": 300008748,
-      "market_cap_rank": 135,
+      "volume_24h_usd": 3147577,
+      "market_cap_usd": 300573152,
+      "market_cap_rank": 134,
       "flags": [
         "انضغاط تقلب (Squeeze) — مدى الحركة بيضيق قبل احتمال انفجار"
       ],
-      "excess_return_24h_vs_btc_pct": -2.69,
+      "excess_return_24h_vs_btc_pct": -1.06,
       "indicators": {
-        "rsi14": 35.42,
-        "ema9": 0.08988782,
-        "ema21": 0.0900346,
-        "volume_baseline_avg": 6435559.508,
+        "rsi14": 41.69,
+        "ema9": 0.08988606,
+        "ema21": 0.09002046,
+        "volume_baseline_avg": 6432669.34,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -4787,8 +4793,8 @@
       "opportunity_lifecycle": {
         "first_flagged_at": "2026-10-31T04:00:40.348814+00:00",
         "price_at_first_flag": 0.089821,
-        "move_since_flag_pct": -0.0,
-        "hours_since_flag": 1.5,
+        "move_since_flag_pct": 0.06,
+        "hours_since_flag": 2.0,
         "decay_state": "fresh"
       },
       "binance_listed": true,
@@ -4803,20 +4809,20 @@
       "price_usd": 19.08,
       "high_24h_usd": 19.15,
       "low_24h_usd": 18.92,
-      "change_24h_pct": -0.12079,
+      "change_24h_pct": 0.08113,
       "change_7d_pct": -1.9421,
-      "volume_24h_usd": 101203,
-      "market_cap_usd": 285065013,
-      "market_cap_rank": 137,
+      "volume_24h_usd": 100324,
+      "market_cap_usd": 285060865,
+      "market_cap_rank": 138,
       "flags": [
         "انضغاط تقلب (Squeeze) — مدى الحركة بيضيق قبل احتمال انفجار"
       ],
-      "excess_return_24h_vs_btc_pct": 1.61,
+      "excess_return_24h_vs_btc_pct": 1.7,
       "indicators": {
-        "rsi14": 70.0,
-        "ema9": 19.05927866,
-        "ema21": 19.04575163,
-        "volume_baseline_avg": 212934.778,
+        "rsi14": 67.86,
+        "ema9": 19.06342293,
+        "ema21": 19.04886512,
+        "volume_baseline_avg": 212916.75,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -4857,7 +4863,7 @@
         "first_flagged_at": "2026-10-31T00:00:53.724099+00:00",
         "price_at_first_flag": 19.06,
         "move_since_flag_pct": 0.1,
-        "hours_since_flag": 5.5,
+        "hours_since_flag": 6.0,
         "decay_state": "fresh"
       },
       "binance_listed": false
@@ -4866,23 +4872,23 @@
       "id": "pieverse",
       "symbol": "PIEVERSE",
       "name": "Pieverse",
-      "price_usd": 0.996302,
+      "price_usd": 0.998328,
       "high_24h_usd": 1.014,
       "low_24h_usd": 0.976996,
-      "change_24h_pct": 1.02317,
+      "change_24h_pct": 1.67089,
       "change_7d_pct": -4.9492,
-      "volume_24h_usd": 3287575,
-      "market_cap_usd": 273702335,
+      "volume_24h_usd": 3190609,
+      "market_cap_usd": 274294083,
       "market_cap_rank": 142,
       "flags": [
         "تباعد RSI صاعد — زخم الهبوط بيضعف قبل انعكاس السعر"
       ],
-      "excess_return_24h_vs_btc_pct": 2.75,
+      "excess_return_24h_vs_btc_pct": 3.29,
       "indicators": {
-        "rsi14": 55.93,
-        "ema9": 0.9992489,
-        "ema21": 0.99815975,
-        "volume_baseline_avg": 3194529.704,
+        "rsi14": 55.0,
+        "ema9": 0.99906472,
+        "ema21": 0.99817504,
+        "volume_baseline_avg": 3195690.718,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -4922,8 +4928,8 @@
       "opportunity_lifecycle": {
         "first_flagged_at": "2026-10-29T21:00:45.686585+00:00",
         "price_at_first_flag": 0.968453,
-        "move_since_flag_pct": 2.88,
-        "hours_since_flag": 32.5,
+        "move_since_flag_pct": 3.08,
+        "hours_since_flag": 33.0,
         "decay_state": "developing"
       },
       "binance_listed": false
@@ -4932,23 +4938,23 @@
       "id": "ape-and-pepe",
       "symbol": "APEPE",
       "name": "Ape and Pepe",
-      "price_usd": 1.19e-06,
+      "price_usd": 1.2e-06,
       "high_24h_usd": 1.25e-06,
       "low_24h_usd": 1.19e-06,
-      "change_24h_pct": -4.6696,
+      "change_24h_pct": -4.65821,
       "change_7d_pct": 1.0152,
-      "volume_24h_usd": 16960901,
-      "market_cap_usd": 250844939,
+      "volume_24h_usd": 17195905,
+      "market_cap_usd": 251051167,
       "market_cap_rank": 148,
       "flags": [
         "انضغاط تقلب (Squeeze) — مدى الحركة بيضيق قبل احتمال انفجار"
       ],
-      "excess_return_24h_vs_btc_pct": -2.94,
+      "excess_return_24h_vs_btc_pct": -3.04,
       "indicators": {
-        "rsi14": 33.33,
-        "ema9": 1.19e-06,
+        "rsi14": 50.0,
+        "ema9": 1.2e-06,
         "ema21": 1.2e-06,
-        "volume_baseline_avg": 14394551.24,
+        "volume_baseline_avg": 14417884.234,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -4988,8 +4994,8 @@
       "opportunity_lifecycle": {
         "first_flagged_at": "2026-10-29T00:00:44.749748+00:00",
         "price_at_first_flag": 1.28e-06,
-        "move_since_flag_pct": -7.03,
-        "hours_since_flag": 53.5,
+        "move_since_flag_pct": -6.25,
+        "hours_since_flag": 54.0,
         "decay_state": "decayed"
       },
       "binance_listed": false
@@ -4998,23 +5004,23 @@
       "id": "conflux-token",
       "symbol": "CFX",
       "name": "Conflux",
-      "price_usd": 0.04595617,
+      "price_usd": 0.04598567,
       "high_24h_usd": 0.04669306,
       "low_24h_usd": 0.04528725,
-      "change_24h_pct": 0.54884,
+      "change_24h_pct": 1.28155,
       "change_7d_pct": -9.4183,
-      "volume_24h_usd": 2425783,
-      "market_cap_usd": 241334091,
-      "market_cap_rank": 150,
+      "volume_24h_usd": 2368166,
+      "market_cap_usd": 241500047,
+      "market_cap_rank": 149,
       "flags": [
         "انضغاط تقلب (Squeeze) — مدى الحركة بيضيق قبل احتمال انفجار"
       ],
-      "excess_return_24h_vs_btc_pct": 2.27,
+      "excess_return_24h_vs_btc_pct": 2.9,
       "indicators": {
-        "rsi14": 40.15,
-        "ema9": 0.04612525,
-        "ema21": 0.04611483,
-        "volume_baseline_avg": 5067348.09,
+        "rsi14": 41.3,
+        "ema9": 0.04609733,
+        "ema21": 0.04610309,
+        "volume_baseline_avg": 5061607.658,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -5054,8 +5060,8 @@
       "opportunity_lifecycle": {
         "first_flagged_at": "2026-10-31T03:30:35.868860+00:00",
         "price_at_first_flag": 0.04629564,
-        "move_since_flag_pct": -0.73,
-        "hours_since_flag": 2.0,
+        "move_since_flag_pct": -0.67,
+        "hours_since_flag": 2.5,
         "decay_state": "fresh"
       },
       "binance_listed": true,
@@ -5067,23 +5073,23 @@
       "id": "backpack",
       "symbol": "BP",
       "name": "Backpack",
-      "price_usd": 0.935937,
+      "price_usd": 0.936401,
       "high_24h_usd": 0.953079,
       "low_24h_usd": 0.916005,
-      "change_24h_pct": -1.67567,
+      "change_24h_pct": -1.64309,
       "change_7d_pct": -6.1079,
-      "volume_24h_usd": 3565311,
-      "market_cap_usd": 233931883,
+      "volume_24h_usd": 3536712,
+      "market_cap_usd": 234136962,
       "market_cap_rank": 153,
       "flags": [
         "انضغاط تقلب (Squeeze) — مدى الحركة بيضيق قبل احتمال انفجار"
       ],
-      "excess_return_24h_vs_btc_pct": 0.05,
+      "excess_return_24h_vs_btc_pct": -0.02,
       "indicators": {
-        "rsi14": 74.01,
-        "ema9": 0.93493108,
-        "ema21": 0.93308039,
-        "volume_baseline_avg": 3503255.132,
+        "rsi14": 70.38,
+        "ema9": 0.93522507,
+        "ema21": 0.93338226,
+        "volume_baseline_avg": 3501850.07,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -5123,75 +5129,9 @@
       "opportunity_lifecycle": {
         "first_flagged_at": "2026-10-31T04:00:40.348814+00:00",
         "price_at_first_flag": 0.934343,
-        "move_since_flag_pct": 0.17,
-        "hours_since_flag": 1.5,
+        "move_since_flag_pct": 0.22,
+        "hours_since_flag": 2.0,
         "decay_state": "fresh"
-      },
-      "binance_listed": false
-    },
-    {
-      "id": "apenft",
-      "symbol": "NFT",
-      "name": "AINFT",
-      "price_usd": 2.33632e-07,
-      "high_24h_usd": 2.36412e-07,
-      "low_24h_usd": 2.32546e-07,
-      "change_24h_pct": -0.76129,
-      "change_7d_pct": -1.3443,
-      "volume_24h_usd": 14015404,
-      "market_cap_usd": 231320410,
-      "market_cap_rank": 155,
-      "flags": [
-        "انضغاط تقلب (Squeeze) — مدى الحركة بيضيق قبل احتمال انفجار"
-      ],
-      "excess_return_24h_vs_btc_pct": 0.96,
-      "indicators": {
-        "rsi14": 47.95,
-        "ema9": 2.3e-07,
-        "ema21": 2.3e-07,
-        "volume_baseline_avg": 5698069.14,
-        "n_points": 500,
-        "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
-      },
-      "data_quality": {
-        "price": {
-          "tier": 1,
-          "source": "coingecko_simple_price",
-          "confidence": "real"
-        },
-        "rsi14": {
-          "tier": 0,
-          "source": "scan_synthetic_15m_samples",
-          "confidence": "approximate"
-        },
-        "structure_layer2": {
-          "tier": 0,
-          "source": "scan_synthetic_15m_samples",
-          "confidence": "approximate"
-        }
-      },
-      "early_signals": {
-        "structure": {
-          "structure": "downtrend",
-          "signal": null,
-          "last_swing_high": 2.35574e-07,
-          "last_swing_low": 2.33266e-07
-        },
-        "volatility_squeeze": true,
-        "bullish_rsi_divergence": false,
-        "cluster_rotation_lag": null,
-        "relative_strength_consolidation": false,
-        "flag_pattern": null,
-        "double_bottom": null,
-        "triangle": null
-      },
-      "priority_review": true,
-      "opportunity_lifecycle": {
-        "first_flagged_at": "2026-10-28T04:00:45.165980+00:00",
-        "price_at_first_flag": 2.34975e-07,
-        "move_since_flag_pct": -0.57,
-        "hours_since_flag": 73.5,
-        "decay_state": "decayed"
       },
       "binance_listed": false
     },
@@ -5199,23 +5139,23 @@
       "id": "monad",
       "symbol": "MON",
       "name": "Monad",
-      "price_usd": 0.01936108,
+      "price_usd": 0.01938324,
       "high_24h_usd": 0.02005342,
       "low_24h_usd": 0.01903784,
-      "change_24h_pct": -4.16873,
+      "change_24h_pct": -2.24368,
       "change_7d_pct": -10.6033,
-      "volume_24h_usd": 13300387,
-      "market_cap_usd": 228950459,
-      "market_cap_rank": 157,
+      "volume_24h_usd": 13231553,
+      "market_cap_usd": 229200312,
+      "market_cap_rank": 156,
       "flags": [
         "انضغاط تقلب (Squeeze) — مدى الحركة بيضيق قبل احتمال انفجار"
       ],
-      "excess_return_24h_vs_btc_pct": -2.44,
+      "excess_return_24h_vs_btc_pct": -0.62,
       "indicators": {
-        "rsi14": 39.83,
-        "ema9": 0.01950415,
-        "ema21": 0.01953655,
-        "volume_baseline_avg": 16111151.102,
+        "rsi14": 38.0,
+        "ema9": 0.01947997,
+        "ema21": 0.01952262,
+        "volume_baseline_avg": 16101515.912,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -5255,8 +5195,8 @@
       "opportunity_lifecycle": {
         "first_flagged_at": "2026-10-29T21:00:45.686585+00:00",
         "price_at_first_flag": 0.01926094,
-        "move_since_flag_pct": 0.52,
-        "hours_since_flag": 32.5,
+        "move_since_flag_pct": 0.63,
+        "hours_since_flag": 33.0,
         "decay_state": "developing"
       },
       "binance_listed": false
@@ -5265,23 +5205,23 @@
       "id": "zebec-network",
       "symbol": "ZBCN",
       "name": "Zebec Network",
-      "price_usd": 0.00199909,
+      "price_usd": 0.00199987,
       "high_24h_usd": 0.00208593,
       "low_24h_usd": 0.00197074,
-      "change_24h_pct": -4.28785,
+      "change_24h_pct": -2.79708,
       "change_7d_pct": -7.8683,
-      "volume_24h_usd": 7713441,
-      "market_cap_usd": 199780256,
+      "volume_24h_usd": 7793704,
+      "market_cap_usd": 200000684,
       "market_cap_rank": 171,
       "flags": [
         "تأخر دوران قطاعي — عملات تانية في real-world-assets-rwa تحركت وهي لسه ساكنة"
       ],
-      "excess_return_24h_vs_btc_pct": -2.56,
+      "excess_return_24h_vs_btc_pct": -1.18,
       "indicators": {
-        "rsi14": 49.12,
-        "ema9": 0.00200221,
-        "ema21": 0.00200629,
-        "volume_baseline_avg": 7876611.378,
+        "rsi14": 46.16,
+        "ema9": 0.00200174,
+        "ema21": 0.00200571,
+        "volume_baseline_avg": 7876853.202,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -5321,8 +5261,8 @@
       "opportunity_lifecycle": {
         "first_flagged_at": "2026-10-30T08:00:46.532115+00:00",
         "price_at_first_flag": 0.00207379,
-        "move_since_flag_pct": -3.6,
-        "hours_since_flag": 21.5,
+        "move_since_flag_pct": -3.56,
+        "hours_since_flag": 22.0,
         "decay_state": "developing"
       },
       "binance_listed": false
@@ -5334,20 +5274,20 @@
       "price_usd": 1.12,
       "high_24h_usd": 1.12,
       "low_24h_usd": 1.11,
-      "change_24h_pct": -0.19757,
+      "change_24h_pct": -0.19798,
       "change_7d_pct": -0.3108,
-      "volume_24h_usd": 43160707,
-      "market_cap_usd": 193760760,
+      "volume_24h_usd": 42829109,
+      "market_cap_usd": 193760617,
       "market_cap_rank": 172,
       "flags": [
         "انضغاط تقلب (Squeeze) — مدى الحركة بيضيق قبل احتمال انفجار"
       ],
-      "excess_return_24h_vs_btc_pct": 1.53,
+      "excess_return_24h_vs_btc_pct": 1.42,
       "indicators": {
         "rsi14": 100.0,
-        "ema9": 1.11999752,
-        "ema21": 1.1199428,
-        "volume_baseline_avg": 25132510.666,
+        "ema9": 1.11999802,
+        "ema21": 1.119948,
+        "volume_baseline_avg": 25168950.168,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -5388,7 +5328,7 @@
         "first_flagged_at": "2026-10-30T00:00:46.989774+00:00",
         "price_at_first_flag": 1.12,
         "move_since_flag_pct": 0.0,
-        "hours_since_flag": 29.5,
+        "hours_since_flag": 30.0,
         "decay_state": "developing"
       },
       "binance_listed": false
@@ -5397,23 +5337,23 @@
       "id": "jasmycoin",
       "symbol": "JASMY",
       "name": "JasmyCoin",
-      "price_usd": 0.00383336,
+      "price_usd": 0.00384949,
       "high_24h_usd": 0.00386806,
       "low_24h_usd": 0.00362617,
-      "change_24h_pct": 1.43999,
+      "change_24h_pct": 3.68878,
       "change_7d_pct": -16.3725,
-      "volume_24h_usd": 15968784,
-      "market_cap_usd": 189563182,
+      "volume_24h_usd": 16617104,
+      "market_cap_usd": 190345966,
       "market_cap_rank": 174,
       "flags": [
         "انضغاط تقلب (Squeeze) — مدى الحركة بيضيق قبل احتمال انفجار"
       ],
-      "excess_return_24h_vs_btc_pct": 3.17,
+      "excess_return_24h_vs_btc_pct": 5.31,
       "indicators": {
-        "rsi14": 60.42,
-        "ema9": 0.00383107,
-        "ema21": 0.00381915,
-        "volume_baseline_avg": 12186606.626,
+        "rsi14": 60.9,
+        "ema9": 0.00383476,
+        "ema21": 0.00382191,
+        "volume_baseline_avg": 12197934.658,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -5453,8 +5393,8 @@
       "opportunity_lifecycle": {
         "first_flagged_at": "2026-10-31T03:00:43.985282+00:00",
         "price_at_first_flag": 0.00385205,
-        "move_since_flag_pct": -0.49,
-        "hours_since_flag": 2.5,
+        "move_since_flag_pct": -0.07,
+        "hours_since_flag": 3.0,
         "decay_state": "fresh"
       },
       "binance_listed": true,
@@ -5466,23 +5406,23 @@
       "id": "kinesis-silver",
       "symbol": "KAG",
       "name": "Kinesis Silver",
-      "price_usd": 51.04,
+      "price_usd": 50.58,
       "high_24h_usd": 51.63,
       "low_24h_usd": 49.38,
-      "change_24h_pct": -0.78175,
+      "change_24h_pct": -2.03121,
       "change_7d_pct": -7.3862,
-      "volume_24h_usd": 539592,
-      "market_cap_usd": 187415428,
-      "market_cap_rank": 178,
+      "volume_24h_usd": 440391,
+      "market_cap_usd": 185744000,
+      "market_cap_rank": 179,
       "flags": [
         "تأخر دوران قطاعي — عملات تانية في real-world-assets-rwa تحركت وهي لسه ساكنة"
       ],
-      "excess_return_24h_vs_btc_pct": 0.94,
+      "excess_return_24h_vs_btc_pct": -0.41,
       "indicators": {
-        "rsi14": 97.92,
-        "ema9": 50.95562089,
-        "ema21": 50.70471963,
-        "volume_baseline_avg": 297866.95693999995,
+        "rsi14": 50.54,
+        "ema9": 50.88049671,
+        "ema21": 50.69338148,
+        "volume_baseline_avg": 298193.4589399999,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -5522,8 +5462,8 @@
       "opportunity_lifecycle": {
         "first_flagged_at": "2026-10-28T12:00:46.850199+00:00",
         "price_at_first_flag": 53.93,
-        "move_since_flag_pct": -5.36,
-        "hours_since_flag": 65.5,
+        "move_since_flag_pct": -6.21,
+        "hours_since_flag": 66.0,
         "decay_state": "decayed"
       },
       "binance_listed": false
@@ -5535,20 +5475,20 @@
       "price_usd": 1.13,
       "high_24h_usd": 1.14,
       "low_24h_usd": 1.12,
-      "change_24h_pct": -0.06733,
+      "change_24h_pct": 0.01983,
       "change_7d_pct": 3.409,
-      "volume_24h_usd": 371505,
-      "market_cap_usd": 183930084,
+      "volume_24h_usd": 374927,
+      "market_cap_usd": 183866663,
       "market_cap_rank": 181,
       "flags": [
         "قوة نسبية خفية أثناء التماسك — بتتفوق على BTC وهي ساكنة ظاهريًا"
       ],
-      "excess_return_24h_vs_btc_pct": 1.66,
+      "excess_return_24h_vs_btc_pct": 1.64,
       "indicators": {
         "rsi14": 33.33,
-        "ema9": 1.13002059,
-        "ema21": 1.13080436,
-        "volume_baseline_avg": 415462.532,
+        "ema9": 1.13001647,
+        "ema21": 1.13073124,
+        "volume_baseline_avg": 415561.486,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -5589,7 +5529,7 @@
         "first_flagged_at": "2026-10-31T04:30:33.439237+00:00",
         "price_at_first_flag": 1.13,
         "move_since_flag_pct": 0.0,
-        "hours_since_flag": 1.0,
+        "hours_since_flag": 1.5,
         "decay_state": "fresh"
       },
       "binance_listed": false
@@ -5598,23 +5538,23 @@
       "id": "geodnet",
       "symbol": "GEOD",
       "name": "Geodnet",
-      "price_usd": 0.243661,
+      "price_usd": 0.244183,
       "high_24h_usd": 0.248594,
       "low_24h_usd": 0.239336,
-      "change_24h_pct": -2.0197,
+      "change_24h_pct": -1.76268,
       "change_7d_pct": -4.415,
-      "volume_24h_usd": 991042,
-      "market_cap_usd": 181576459,
+      "volume_24h_usd": 998029,
+      "market_cap_usd": 181962132,
       "market_cap_rank": 183,
       "flags": [
         "تباعد RSI صاعد — زخم الهبوط بيضعف قبل انعكاس السعر"
       ],
-      "excess_return_24h_vs_btc_pct": -0.29,
+      "excess_return_24h_vs_btc_pct": -0.14,
       "indicators": {
-        "rsi14": 47.77,
-        "ema9": 0.2442263,
-        "ema21": 0.24435378,
-        "volume_baseline_avg": 1744607.102,
+        "rsi14": 48.58,
+        "ema9": 0.24421764,
+        "ema21": 0.24433825,
+        "volume_baseline_avg": 1744378.61,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -5654,8 +5594,8 @@
       "opportunity_lifecycle": {
         "first_flagged_at": "2026-10-30T09:00:46.350729+00:00",
         "price_at_first_flag": 0.239841,
-        "move_since_flag_pct": 1.59,
-        "hours_since_flag": 20.5,
+        "move_since_flag_pct": 1.81,
+        "hours_since_flag": 21.0,
         "decay_state": "fresh"
       },
       "binance_listed": false
@@ -5664,23 +5604,23 @@
       "id": "syrup",
       "symbol": "SYRUP",
       "name": "Maple Finance",
-      "price_usd": 0.153462,
+      "price_usd": 0.153119,
       "high_24h_usd": 0.156945,
       "low_24h_usd": 0.147699,
-      "change_24h_pct": 1.46545,
+      "change_24h_pct": 3.00102,
       "change_7d_pct": -15.2069,
-      "volume_24h_usd": 7897866,
-      "market_cap_usd": 179049297,
+      "volume_24h_usd": 7694813,
+      "market_cap_usd": 178743491,
       "market_cap_rank": 185,
       "flags": [
         "تأخر دوران قطاعي — عملات تانية في real-world-assets-rwa تحركت وهي لسه ساكنة"
       ],
-      "excess_return_24h_vs_btc_pct": 3.19,
+      "excess_return_24h_vs_btc_pct": 4.62,
       "indicators": {
-        "rsi14": 41.66,
-        "ema9": 0.15431862,
-        "ema21": 0.15429856,
-        "volume_baseline_avg": 9326503.51,
+        "rsi14": 37.83,
+        "ema9": 0.1540787,
+        "ema21": 0.15419133,
+        "volume_baseline_avg": 9324421.77,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -5720,8 +5660,8 @@
       "opportunity_lifecycle": {
         "first_flagged_at": "2026-10-29T21:00:45.686585+00:00",
         "price_at_first_flag": 0.152644,
-        "move_since_flag_pct": 0.54,
-        "hours_since_flag": 32.5,
+        "move_since_flag_pct": 0.31,
+        "hours_since_flag": 33.0,
         "decay_state": "developing"
       },
       "binance_listed": true,
@@ -5733,23 +5673,23 @@
       "id": "trust-wallet-token",
       "symbol": "TWT",
       "name": "Trust Wallet",
-      "price_usd": 0.41824,
+      "price_usd": 0.4182,
       "high_24h_usd": 0.425769,
       "low_24h_usd": 0.411108,
-      "change_24h_pct": -0.31824,
+      "change_24h_pct": 0.01874,
       "change_7d_pct": -5.4132,
-      "volume_24h_usd": 7989578,
-      "market_cap_usd": 174251748,
+      "volume_24h_usd": 6793308,
+      "market_cap_usd": 174236754,
       "market_cap_rank": 187,
       "flags": [
         "انضغاط تقلب (Squeeze) — مدى الحركة بيضيق قبل احتمال انفجار"
       ],
-      "excess_return_24h_vs_btc_pct": 1.41,
+      "excess_return_24h_vs_btc_pct": 1.64,
       "indicators": {
-        "rsi14": 54.18,
-        "ema9": 0.4190395,
-        "ema21": 0.41887942,
-        "volume_baseline_avg": 7510824.654,
+        "rsi14": 48.68,
+        "ema9": 0.4188716,
+        "ema21": 0.41881766,
+        "volume_baseline_avg": 7513358.498,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -5789,8 +5729,8 @@
       "opportunity_lifecycle": {
         "first_flagged_at": "2026-10-31T00:00:53.724099+00:00",
         "price_at_first_flag": 0.422172,
-        "move_since_flag_pct": -0.93,
-        "hours_since_flag": 5.5,
+        "move_since_flag_pct": -0.94,
+        "hours_since_flag": 6.0,
         "decay_state": "fresh"
       },
       "last_deep_eval": {
@@ -5826,7 +5766,7 @@
       "flags": [
         "تأخر دوران قطاعي — عملات تانية في real-world-assets-rwa تحركت وهي لسه ساكنة"
       ],
-      "excess_return_24h_vs_btc_pct": 1.74,
+      "excess_return_24h_vs_btc_pct": 1.63,
       "indicators": {
         "rsi14": 100.0,
         "ema9": 1.1,
@@ -5872,7 +5812,7 @@
         "first_flagged_at": "2026-10-30T08:00:46.532115+00:00",
         "price_at_first_flag": 1.1,
         "move_since_flag_pct": 0.0,
-        "hours_since_flag": 21.5,
+        "hours_since_flag": 22.0,
         "decay_state": "fresh"
       },
       "binance_listed": false
@@ -5881,23 +5821,23 @@
       "id": "instadapp",
       "symbol": "FLUID",
       "name": "Fluid",
-      "price_usd": 1.86,
+      "price_usd": 1.84,
       "high_24h_usd": 1.9,
       "low_24h_usd": 1.83,
-      "change_24h_pct": -1.52787,
+      "change_24h_pct": -1.52996,
       "change_7d_pct": -17.903,
-      "volume_24h_usd": 1724426,
-      "market_cap_usd": 155447852,
-      "market_cap_rank": 197,
+      "volume_24h_usd": 2418037,
+      "market_cap_usd": 154469055,
+      "market_cap_rank": 199,
       "flags": [
         "انضغاط تقلب (Squeeze) — مدى الحركة بيضيق قبل احتمال انفجار"
       ],
-      "excess_return_24h_vs_btc_pct": 0.2,
+      "excess_return_24h_vs_btc_pct": 0.09,
       "indicators": {
-        "rsi14": 50.0,
-        "ema9": 1.86978369,
-        "ema21": 1.86696824,
-        "volume_baseline_avg": 3044608.43,
+        "rsi14": 37.5,
+        "ema9": 1.86382696,
+        "ema21": 1.86451658,
+        "volume_baseline_avg": 3043132.386,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -5937,8 +5877,8 @@
       "opportunity_lifecycle": {
         "first_flagged_at": "2026-10-30T23:30:34.702871+00:00",
         "price_at_first_flag": 1.86,
-        "move_since_flag_pct": 0.0,
-        "hours_since_flag": 6.0,
+        "move_since_flag_pct": -1.08,
+        "hours_since_flag": 6.5,
         "decay_state": "fresh"
       },
       "binance_listed": false
@@ -5947,23 +5887,23 @@
       "id": "celium",
       "symbol": "SN51",
       "name": "lium",
-      "price_usd": 30.51,
+      "price_usd": 30.59,
       "high_24h_usd": 30.75,
       "low_24h_usd": 29.77,
-      "change_24h_pct": 0.9878,
+      "change_24h_pct": 1.9428,
       "change_7d_pct": 3.5136,
-      "volume_24h_usd": 2433872,
-      "market_cap_usd": 153568373,
+      "volume_24h_usd": 2421675,
+      "market_cap_usd": 153969184,
       "market_cap_rank": 200,
       "flags": [
         "انضغاط تقلب (Squeeze) — مدى الحركة بيضيق قبل احتمال انفجار"
       ],
-      "excess_return_24h_vs_btc_pct": 2.71,
+      "excess_return_24h_vs_btc_pct": 3.56,
       "indicators": {
-        "rsi14": 63.46,
-        "ema9": 30.58531487,
-        "ema21": 30.47157007,
-        "volume_baseline_avg": 2425222.65,
+        "rsi14": 57.78,
+        "ema9": 30.58625189,
+        "ema21": 30.48233643,
+        "volume_baseline_avg": 2426273.078,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -6003,8 +5943,8 @@
       "opportunity_lifecycle": {
         "first_flagged_at": "2026-10-31T00:00:53.724099+00:00",
         "price_at_first_flag": 30.57,
-        "move_since_flag_pct": -0.2,
-        "hours_since_flag": 5.5,
+        "move_since_flag_pct": 0.07,
+        "hours_since_flag": 6.0,
         "decay_state": "fresh"
       },
       "binance_listed": false
@@ -6013,23 +5953,23 @@
       "id": "origintrail",
       "symbol": "TRAC",
       "name": "OriginTrail",
-      "price_usd": 0.339748,
+      "price_usd": 0.340587,
       "high_24h_usd": 0.349389,
       "low_24h_usd": 0.338318,
-      "change_24h_pct": -0.52789,
+      "change_24h_pct": -0.27584,
       "change_7d_pct": -16.9322,
-      "volume_24h_usd": 3360899,
-      "market_cap_usd": 151958891,
+      "volume_24h_usd": 1595160,
+      "market_cap_usd": 152980501,
       "market_cap_rank": 201,
       "flags": [
         "تأخر دوران قطاعي — عملات تانية في real-world-assets-rwa تحركت وهي لسه ساكنة"
       ],
-      "excess_return_24h_vs_btc_pct": 1.2,
+      "excess_return_24h_vs_btc_pct": 1.35,
       "indicators": {
-        "rsi14": 47.1,
-        "ema9": 0.34306198,
-        "ema21": 0.34341534,
-        "volume_baseline_avg": 4808655.242,
+        "rsi14": 49.61,
+        "ema9": 0.34256699,
+        "ema21": 0.34315822,
+        "volume_baseline_avg": 4806036.654,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -6053,7 +5993,7 @@
       "early_signals": {
         "structure": {
           "structure": "uptrend",
-          "signal": "CHoCH_bearish",
+          "signal": null,
           "last_swing_high": 0.372876,
           "last_swing_low": 0.34016
         },
@@ -6069,8 +6009,8 @@
       "opportunity_lifecycle": {
         "first_flagged_at": "2026-10-29T21:00:45.686585+00:00",
         "price_at_first_flag": 0.368684,
-        "move_since_flag_pct": -7.85,
-        "hours_since_flag": 32.5,
+        "move_since_flag_pct": -7.62,
+        "hours_since_flag": 33.0,
         "decay_state": "decayed"
       },
       "binance_listed": false
@@ -6079,23 +6019,23 @@
       "id": "circle-internet-group-bstock",
       "symbol": "CRCLB",
       "name": "Circle Internet Group (bStocks Tokenized Stock)",
-      "price_usd": 73.02,
+      "price_usd": 73.0,
       "high_24h_usd": 77.08,
       "low_24h_usd": 71.11,
-      "change_24h_pct": -5.13562,
+      "change_24h_pct": -4.52328,
       "change_7d_pct": -14.9592,
-      "volume_24h_usd": 35221875,
-      "market_cap_usd": 147028878,
+      "volume_24h_usd": 34949565,
+      "market_cap_usd": 146985213,
       "market_cap_rank": 211,
       "flags": [
         "تأخر دوران قطاعي — عملات تانية في real-world-assets-rwa تحركت وهي لسه ساكنة"
       ],
-      "excess_return_24h_vs_btc_pct": -3.41,
+      "excess_return_24h_vs_btc_pct": -2.9,
       "indicators": {
-        "rsi14": 66.37,
-        "ema9": 72.99668963,
-        "ema21": 73.00521648,
-        "volume_baseline_avg": 25741140.782,
+        "rsi14": 62.44,
+        "ema9": 72.99735171,
+        "ema21": 73.00474225,
+        "volume_baseline_avg": 25748674.62,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -6135,8 +6075,8 @@
       "opportunity_lifecycle": {
         "first_flagged_at": "2026-10-29T08:00:46.854299+00:00",
         "price_at_first_flag": 79.14,
-        "move_since_flag_pct": -7.73,
-        "hours_since_flag": 45.5,
+        "move_since_flag_pct": -7.76,
+        "hours_since_flag": 46.0,
         "decay_state": "decayed"
       },
       "binance_listed": true,
@@ -6148,23 +6088,23 @@
       "id": "railgun",
       "symbol": "RAIL",
       "name": "Railgun",
-      "price_usd": 2.3,
+      "price_usd": 2.29,
       "high_24h_usd": 2.32,
       "low_24h_usd": 2.23,
-      "change_24h_pct": 0.88303,
+      "change_24h_pct": 0.14723,
       "change_7d_pct": -8.6894,
-      "volume_24h_usd": 95310,
-      "market_cap_usd": 139109672,
-      "market_cap_rank": 220,
+      "volume_24h_usd": 152657,
+      "market_cap_usd": 136701863,
+      "market_cap_rank": 221,
       "flags": [
         "انضغاط تقلب (Squeeze) — مدى الحركة بيضيق قبل احتمال انفجار"
       ],
-      "excess_return_24h_vs_btc_pct": 2.61,
+      "excess_return_24h_vs_btc_pct": 1.77,
       "indicators": {
-        "rsi14": 50.0,
-        "ema9": 2.30685319,
-        "ema21": 2.30234182,
-        "volume_baseline_avg": 352094.414,
+        "rsi14": 37.5,
+        "ema9": 2.30348256,
+        "ema21": 2.30121983,
+        "volume_baseline_avg": 351880.77,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -6204,8 +6144,8 @@
       "opportunity_lifecycle": {
         "first_flagged_at": "2026-10-30T20:00:43.606997+00:00",
         "price_at_first_flag": 2.3,
-        "move_since_flag_pct": 0.0,
-        "hours_since_flag": 9.5,
+        "move_since_flag_pct": -0.43,
+        "hours_since_flag": 10.0,
         "decay_state": "fresh"
       },
       "binance_listed": false
@@ -6214,23 +6154,23 @@
       "id": "jpycoin",
       "symbol": "JPYC",
       "name": "JPY Coin",
-      "price_usd": 0.00634416,
+      "price_usd": 0.00633358,
       "high_24h_usd": 0.00638613,
       "low_24h_usd": 0.00628747,
-      "change_24h_pct": -0.0044,
+      "change_24h_pct": -0.31689,
       "change_7d_pct": 0.1367,
-      "volume_24h_usd": 551955,
-      "market_cap_usd": 135038491,
-      "market_cap_rank": 223,
+      "volume_24h_usd": 434931,
+      "market_cap_usd": 134813311,
+      "market_cap_rank": 224,
       "flags": [
         "مثلث صاعد — مقاومة 0.00635808، الهدف بعد الاختراق 0.00640027"
       ],
-      "excess_return_24h_vs_btc_pct": 1.72,
+      "excess_return_24h_vs_btc_pct": 1.3,
       "indicators": {
-        "rsi14": 61.16,
-        "ema9": 0.00633602,
-        "ema21": 0.00633586,
-        "volume_baseline_avg": 686786.468,
+        "rsi14": 53.17,
+        "ema9": 0.00633553,
+        "ema21": 0.00633565,
+        "volume_baseline_avg": 685851.686,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -6274,8 +6214,8 @@
       "opportunity_lifecycle": {
         "first_flagged_at": "2026-10-31T04:00:40.348814+00:00",
         "price_at_first_flag": 0.00634536,
-        "move_since_flag_pct": -0.02,
-        "hours_since_flag": 1.5,
+        "move_since_flag_pct": -0.19,
+        "hours_since_flag": 2.0,
         "decay_state": "fresh"
       },
       "binance_listed": false
@@ -6287,19 +6227,19 @@
       "price_usd": 0.00634658,
       "high_24h_usd": 0.00637022,
       "low_24h_usd": 0.00634201,
-      "change_24h_pct": -0.02528,
+      "change_24h_pct": 0.04395,
       "change_7d_pct": -0.4443,
       "volume_24h_usd": 0.0,
       "market_cap_usd": 130495311,
-      "market_cap_rank": 229,
+      "market_cap_rank": 228,
       "flags": [
         "مثلث صاعد — مقاومة 0.00636779، الهدف بعد الاختراق 0.00641758"
       ],
-      "excess_return_24h_vs_btc_pct": 1.7,
+      "excess_return_24h_vs_btc_pct": 1.66,
       "indicators": {
         "rsi14": 100.0,
-        "ema9": 0.00634636,
-        "ema21": 0.0063474,
+        "ema9": 0.0063464,
+        "ema21": 0.00634732,
         "volume_baseline_avg": 0.0,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
@@ -6345,7 +6285,7 @@
         "first_flagged_at": "2026-10-31T04:00:40.348814+00:00",
         "price_at_first_flag": 0.00634598,
         "move_since_flag_pct": 0.01,
-        "hours_since_flag": 1.5,
+        "hours_since_flag": 2.0,
         "decay_state": "fresh"
       },
       "binance_listed": false
@@ -6354,23 +6294,23 @@
       "id": "ecash",
       "symbol": "XEC",
       "name": "eCash",
-      "price_usd": 6.39e-06,
+      "price_usd": 6.4e-06,
       "high_24h_usd": 6.42e-06,
       "low_24h_usd": 6.2e-06,
-      "change_24h_pct": 3.15196,
+      "change_24h_pct": 3.03043,
       "change_7d_pct": -3.0415,
-      "volume_24h_usd": 3607929,
-      "market_cap_usd": 128325164,
+      "volume_24h_usd": 3168421,
+      "market_cap_usd": 128667949,
       "market_cap_rank": 232,
       "flags": [
         "CHoCH صاعد مبكر — تغيّر هيكلي محتمل قبل أي اختراق مؤكد"
       ],
-      "excess_return_24h_vs_btc_pct": 4.88,
+      "excess_return_24h_vs_btc_pct": 4.65,
       "indicators": {
-        "rsi14": 57.14,
+        "rsi14": 59.09,
         "ema9": 6.38e-06,
         "ema21": 6.36e-06,
-        "volume_baseline_avg": 8545090.562,
+        "volume_baseline_avg": 8545754.132,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -6410,8 +6350,8 @@
       "opportunity_lifecycle": {
         "first_flagged_at": "2026-10-31T05:30:35.705363+00:00",
         "price_at_first_flag": 6.39e-06,
-        "move_since_flag_pct": 0.0,
-        "hours_since_flag": 0.0,
+        "move_since_flag_pct": 0.16,
+        "hours_since_flag": 0.5,
         "decay_state": "fresh"
       },
       "binance_listed": true,
@@ -6434,7 +6374,7 @@
       "flags": [
         "تأخر دوران قطاعي — عملات تانية في real-world-assets-rwa تحركت وهي لسه ساكنة"
       ],
-      "excess_return_24h_vs_btc_pct": 1.75,
+      "excess_return_24h_vs_btc_pct": 1.65,
       "indicators": {
         "rsi14": 100.0,
         "ema9": 1.11,
@@ -6480,7 +6420,7 @@
         "first_flagged_at": "2026-10-30T08:00:46.532115+00:00",
         "price_at_first_flag": 1.11,
         "move_since_flag_pct": 0.0,
-        "hours_since_flag": 21.5,
+        "hours_since_flag": 22.0,
         "decay_state": "fresh"
       },
       "binance_listed": false
@@ -6489,23 +6429,23 @@
       "id": "edgex",
       "symbol": "EDGE",
       "name": "edgeX",
-      "price_usd": 0.33486,
+      "price_usd": 0.332874,
       "high_24h_usd": 0.372617,
       "low_24h_usd": 0.328773,
-      "change_24h_pct": 1.23073,
+      "change_24h_pct": 0.68158,
       "change_7d_pct": 1.2864,
-      "volume_24h_usd": 4330891,
-      "market_cap_usd": 117183060,
+      "volume_24h_usd": 4292252,
+      "market_cap_usd": 116506021,
       "market_cap_rank": 243,
       "flags": [
         "تباعد RSI صاعد — زخم الهبوط بيضعف قبل انعكاس السعر"
       ],
-      "excess_return_24h_vs_btc_pct": 2.96,
+      "excess_return_24h_vs_btc_pct": 2.3,
       "indicators": {
-        "rsi14": 36.38,
-        "ema9": 0.33505135,
-        "ema21": 0.33728331,
-        "volume_baseline_avg": 3030599.686,
+        "rsi14": 36.27,
+        "ema9": 0.33461588,
+        "ema21": 0.33688246,
+        "volume_baseline_avg": 3031192.674,
         "n_points": 500,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
@@ -6545,75 +6485,9 @@
       "opportunity_lifecycle": {
         "first_flagged_at": "2026-10-30T02:30:34.152514+00:00",
         "price_at_first_flag": 0.323811,
-        "move_since_flag_pct": 3.41,
-        "hours_since_flag": 27.0,
+        "move_since_flag_pct": 2.8,
+        "hours_since_flag": 27.5,
         "decay_state": "developing"
-      },
-      "binance_listed": false
-    },
-    {
-      "id": "rollbit-coin",
-      "symbol": "RLB",
-      "name": "Rollbit Coin",
-      "price_usd": 0.074647,
-      "high_24h_usd": 0.07463,
-      "low_24h_usd": 0.073078,
-      "change_24h_pct": 0.54199,
-      "change_7d_pct": 0.2002,
-      "volume_24h_usd": 191477,
-      "market_cap_usd": 115379076,
-      "market_cap_rank": 245,
-      "flags": [
-        "CHoCH صاعد مبكر — تغيّر هيكلي محتمل قبل أي اختراق مؤكد"
-      ],
-      "excess_return_24h_vs_btc_pct": 2.27,
-      "indicators": {
-        "rsi14": 60.91,
-        "ema9": 0.0744242,
-        "ema21": 0.07429492,
-        "volume_baseline_avg": 406301.9387755102,
-        "n_points": 245,
-        "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
-      },
-      "data_quality": {
-        "price": {
-          "tier": 1,
-          "source": "coingecko_simple_price",
-          "confidence": "real"
-        },
-        "rsi14": {
-          "tier": 0,
-          "source": "scan_synthetic_15m_samples",
-          "confidence": "approximate"
-        },
-        "structure_layer2": {
-          "tier": 0,
-          "source": "scan_synthetic_15m_samples",
-          "confidence": "approximate"
-        }
-      },
-      "early_signals": {
-        "structure": {
-          "structure": "downtrend",
-          "signal": "CHoCH_bullish",
-          "last_swing_high": 0.074455,
-          "last_swing_low": 0.07329
-        },
-        "volatility_squeeze": false,
-        "bullish_rsi_divergence": false,
-        "cluster_rotation_lag": null,
-        "relative_strength_consolidation": false,
-        "flag_pattern": null,
-        "double_bottom": null,
-        "triangle": null
-      },
-      "priority_review": true,
-      "opportunity_lifecycle": {
-        "first_flagged_at": "2026-10-31T05:30:35.705363+00:00",
-        "price_at_first_flag": 0.074647,
-        "move_since_flag_pct": 0.0,
-        "hours_since_flag": 0.0,
-        "decay_state": "fresh"
       },
       "binance_listed": false
     },
@@ -6632,13 +6506,13 @@
       "flags": [
         "تأخر دوران قطاعي — عملات تانية في real-world-assets-rwa تحركت وهي لسه ساكنة"
       ],
-      "excess_return_24h_vs_btc_pct": 1.73,
+      "excess_return_24h_vs_btc_pct": 1.62,
       "indicators": {
         "rsi14": 100.0,
         "ema9": 3.2,
         "ema21": 3.2,
         "volume_baseline_avg": 0.0,
-        "n_points": 53,
+        "n_points": 54,
         "note": "approximated from 15-min snapshots (~3.5h window for RSI14), not true candles"
       },
       "data_quality": {
@@ -6678,7 +6552,7 @@
         "first_flagged_at": "2026-10-30T08:00:46.532115+00:00",
         "price_at_first_flag": 3.2,
         "move_since_flag_pct": 0.0,
-        "hours_since_flag": 21.5,
+        "hours_since_flag": 22.0,
         "decay_state": "fresh"
       },
       "binance_listed": false
