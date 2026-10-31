@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-31 16:03 UTC
+# Radar digest - 2026-10-31 16:35 UTC
 
 ## Market
-- BTC scenario **C** | price 77372 | wk close 80637 vs 82800 | 50W 76146 (1.61%) | 1h old
+- BTC scenario **C** | price 77372 | wk close 80637 vs 82800 | 50W 76146 (1.61%) | 2h old
 - Alts: **BTC_LED** [-] | BTC.D 57.05% | ETH/BTC 0.02902 | breadth7d 41% | stables 30d -2.27%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.40pt | 7d -0.39pt | n=121
 - Gold: PAXG 1m -6.50% | real10y 2.63 (-30bp 1m) | USD 1m 0.64% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
@@ -15,21 +15,21 @@
 - NEAR: **RESET_DONE** | +147% impulse, retr 0.45 | OI dd 35% | fund 0.0040 | hold False | inval 4.23300 | OB 3.40300-3.68100
 
 ## Pre-pump candidates
-- STX: [B+C] 7d 4.4%
+- STX: [B+C] 7d 6.8%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - XRP ETF Investors Face Nearly $500 Million in Paper Losses Despite $1.8 Billion in Inflows
 - zcash: other - Zcash reclaims $1,300 as ETF inflows and rising OI fuel recovery - Invezz
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc 0.24% | topPos 0.90 | taker 0.93
-- ETH: SHORT_SQUEEZE_24H | OI/mc 0.65% | topPos 0.88 | taker 0.95
-- AVAX: SHORT_SQUEEZE_24H | OI/mc 0.38% | topPos 0.90 | taker 0.87
-- XRP: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.16% | topPos 0.88 | taker 0.84
-- SUI: AGGRESSIVE_SELLING | OI/mc 0.96% | topPos 0.80 | taker 0.85
-- SEI: AGGRESSIVE_SELLING | OI/mc 0.70% | topPos 0.86 | taker 0.84
-- TAO: LONG_FLUSH_24H | OI/mc 0.66% | topPos 0.86 | taker 0.92
-- ZEC: SHORT_SQUEEZE_24H | OI/mc 0.72% | topPos 1.14 | taker 0.99
+- BTC: SHORT_SQUEEZE_24H | OI/mc 0.24% | topPos 0.90 | taker 0.94
+- ETH: SHORT_SQUEEZE_24H | OI/mc 0.65% | topPos 0.88 | taker 0.93
+- AVAX: SHORT_SQUEEZE_24H | OI/mc 0.39% | topPos 0.90 | taker 0.87
+- XRP: LONG_FLUSH_24H | OI/mc 0.16% | topPos 0.88 | taker 0.93
+- SUI: LONG_FLUSH_24H | OI/mc 0.96% | topPos 0.80 | taker 0.98
+- SEI: AGGRESSIVE_SELLING | OI/mc 0.70% | topPos 0.84 | taker 0.85
+- TAO: LONG_FLUSH_24H | OI/mc 0.67% | topPos 0.87 | taker 0.90
+- ZEC: SHORT_SQUEEZE_24H | OI/mc 0.73% | topPos 1.15 | taker 0.99
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -41,12 +41,12 @@
 - (13 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 11 | mean -0.9% (-0.05R) | in profit 3 | older than 7d 6
-- worst: OP -0.76R, COMP -0.63R, AERO -0.42R | best: NIGHT 0.29R, RUNE 0.77R, ZRO 1.01R
+- open 11 | mean -1.4% (-0.10R) | in profit 3 | older than 7d 6
+- worst: OP -0.75R, COMP -0.62R, BCH -0.39R | best: NIGHT 0.33R, RUNE 0.51R, ZRO 0.86R
 
 ## System
-- CoinGecko 9820/10000 used, month-end projection 9927 (99%), throttle level 2 | by script {'scan': 3226, 'check_liquidity': 462, 'breakout_check': 6029, 'counterfactual_check': 103}
+- CoinGecko 9822/10000 used, month-end projection 9929 (99%), throttle level 2 | by script {'scan': 3228, 'check_liquidity': 462, 'breakout_check': 6029, 'counterfactual_check': 103}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=55), H2 SUPPORTED (n=206)
-- radar-flags.json scan age: 2m
-- excluded from radar (pegged/tokenized equity): 45
+- radar-flags.json scan age: 5m
+- excluded from radar (pegged/tokenized equity): 46
