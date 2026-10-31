@@ -1,10 +1,10 @@
-# Radar digest - 2026-10-31 21:35 UTC
+# Radar digest - 2026-10-31 22:03 UTC
 
 ## Market
-- BTC scenario **C** | price 77448 | wk close 80637 vs 82800 | 50W 76146 (1.71%) | 32m old
+- BTC scenario **C** | price 77448 | wk close 80637 vs 82800 | 50W 76146 (1.71%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 57.04% | ETH/BTC 0.02907 | breadth7d 51% | stables 30d -2.26%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.23pt | 7d -0.44pt | n=121
-- Gold: PAXG 1m -6.50% | real10y 2.63 (-30bp 1m) | USD 1m 0.64% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
+- Gold: PAXG 1m -6.53% | real10y 2.63 (-30bp 1m) | USD 1m 0.64% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
 - 10y 1w: 2bp = real -1 + breakeven 0 -> **SMALL_MOVE**
 - 10y 1m: -31bp = real -30 + breakeven -2 -> **REAL_YIELD_DRIVEN**
 
@@ -18,7 +18,8 @@
 
 ## Pre-pump candidates
 - LINK: [A+B+C] 7d 2.2%
-- NEAR: [A+C] 7d -1.0%
+- NEAR: [A+C] 7d -0.5%
+- PEPE: [A+C] 7d 12.5%
 
 ## ETF pipeline (new this run)
 - injective-protocol NEW: filing - Injective (INJ) Surges 5.45% on Nasdaq Staked ETF Filing - CoinMarketCap
@@ -46,12 +47,12 @@
 - (13 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 11 | mean -1.4% (-0.02R) | in profit 5 | older than 7d 6
-- worst: OP -0.85R, COMP -0.68R, BCH -0.58R | best: RUNE 0.40R, NIGHT 0.44R, ZRO 1.87R
+- open 11 | mean -1.8% (-0.08R) | in profit 5 | older than 7d 6
+- worst: OP -0.83R, COMP -0.68R, BCH -0.57R | best: RUNE 0.22R, NIGHT 0.44R, ZRO 1.44R
 
 ## System
-- CoinGecko 9844/10000 used, month-end projection 9884 (99%), throttle level 2 | by script {'scan': 3248, 'check_liquidity': 464, 'breakout_check': 6029, 'counterfactual_check': 103}
+- CoinGecko 9846/10000 used, month-end projection 9873 (99%), throttle level 2 | by script {'scan': 3250, 'check_liquidity': 464, 'breakout_check': 6029, 'counterfactual_check': 103}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=55), H2 SUPPORTED (n=207)
-- radar-flags.json scan age: 4m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 44
