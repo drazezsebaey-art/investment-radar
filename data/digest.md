@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-31 07:35 UTC
+# Radar digest - 2026-10-31 08:03 UTC
 
 ## Market
-- BTC scenario **C** | price 77318 | wk close 80637 vs 82800 | 50W 76146 (1.54%) | 32m old
+- BTC scenario **C** | price 77318 | wk close 80637 vs 82800 | 50W 76146 (1.54%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 57.01% | ETH/BTC 0.02903 | breadth7d 41% | stables 30d -2.26%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.38pt | 7d -0.37pt | n=121
 - Gold: PAXG 1m -7.07% | real10y 2.63 (-30bp 1m) | USD 1m 0.64% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
@@ -14,7 +14,8 @@
 - NEAR: **RESET_DONE** | +147% impulse, retr 0.47 | OI dd 35% | fund -0.0023 | hold False | inval 3.90600 | OB 3.40300-3.68100
 
 ## Pre-pump candidates
-- ZEC: [A+C] 7d 8.5%
+- AVAX: [A+B] 7d -6.6%
+- XRP: [A+B] 7d -3.4%
 
 ## ETF pipeline (new this run)
 - zcash: other - Zcash Price Forecast: Bullish momentum mounts on steady ETF inflows, retail confidence - M
@@ -39,12 +40,12 @@
 - (11 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 10 | mean -2.8% (-0.22R) | in profit 3 | older than 7d 6
-- worst: COMP -0.77R, OP -0.72R, AERO -0.50R | best: PEPE 0.08R, NIGHT 0.23R, RUNE 0.26R
+- open 10 | mean -3.2% (-0.27R) | in profit 3 | older than 7d 6
+- worst: COMP -0.78R, OP -0.68R, AERO -0.47R | best: PEPE 0.03R, NIGHT 0.18R, RUNE 0.25R
 
 ## System
-- CoinGecko 9727/10000 used, month-end projection 9954 (100%), throttle level 2 | by script {'scan': 3184, 'check_liquidity': 459, 'breakout_check': 5981, 'counterfactual_check': 103}
+- CoinGecko 9730/10000 used, month-end projection 9944 (99%), throttle level 2 | by script {'scan': 3186, 'check_liquidity': 460, 'breakout_check': 5981, 'counterfactual_check': 103}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=54), H2 SUPPORTED (n=205)
-- radar-flags.json scan age: 4m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 44
