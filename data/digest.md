@@ -1,23 +1,28 @@
-# Radar digest - 2026-10-31 10:35 UTC
+# Radar digest - 2026-10-31 11:03 UTC
 
 ## Market
-- BTC scenario **C** | price 77357 | wk close 80637 vs 82800 | 50W 76146 (1.59%) | 2h old
-- Alts: **BTC_LED** [-] | BTC.D 57.01% | ETH/BTC 0.02903 | breadth7d 41% | stables 30d -2.26%
-- Alt risk (BTC.D): **NORMAL**  | 3d -0.38pt | 7d -0.37pt | n=121
+- BTC scenario **C** | price 77387 | wk close 80637 vs 82800 | 50W 76146 (1.63%) | 1m old
+- Alts: **BTC_LED** [-] | BTC.D 57.06% | ETH/BTC 0.02900 | breadth7d 41% | stables 30d -2.27%
+- Alt risk (BTC.D): **NORMAL**  | 3d -0.34pt | 7d -0.32pt | n=121
 - Gold: PAXG 1m -7.00% | real10y 2.63 (-30bp 1m) | USD 1m 0.64% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
 - 10y 1w: 2bp = real -1 + breakeven 0 -> **SMALL_MOVE**
 - 10y 1m: -31bp = real -30 + breakeven -2 -> **REAL_YIELD_DRIVEN**
 
 ## Coins in correction (entry_ready first)
-- WLD: **BROKEN** | +74% impulse, retr 0.84 | OI dd 29% | fund 0.0059 | hold False | inval 0.35990 | OB 0.35600-0.37680
-- ADA: **BROKEN** | +48% impulse, retr 0.97 | OI dd 36% | fund 0.0056 | hold False | inval 0.18220 | OB ---
-- NEAR: **RESET_DONE** | +147% impulse, retr 0.47 | OI dd 35% | fund -0.0009 | hold False | inval 3.90600 | OB 3.40300-3.68100
+- WLD: **BROKEN** | +74% impulse, retr 0.85 | OI dd 29% | fund 0.0077 | hold False | inval 0.35990 | OB 0.35600-0.37680
+- ADA: **BROKEN** | +48% impulse, retr 0.98 | OI dd 36% | fund 0.0071 | hold False | inval 0.18220 | OB ---
+- NEAR: **RESET_DONE** | +147% impulse, retr 0.48 | OI dd 35% | fund 0.0038 | hold False | inval 3.90600 | OB 3.40300-3.68100
+- PEPE: **RESET_DONE** | +73% impulse, retr 0.29 | OI dd 21% | fund -0.0494 | hold False | inval 0.00000 | OB 0.00000-0.00000
 
 ## Pre-pump candidates
-- none
+- STX: [B+C] 7d 0.5%
+- PEPE: [A+C] 7d 14.0%
+- HYPE: [A+C] 7d 15.6%
 
 ## ETF pipeline (new this run)
-- ripple NEW: other - Franklin Templeton Leads $8 Million XRP ETF Inflows, Its Biggest One-Day Buy - finance.big
+- hyperliquid NEW: other - Bitwise's Hyperliquid ETF hits $40M trading vol... - Pluang
+- cap-4 NEW: other - iShares Semiconductor Tokenized ETF (Robinhood) Price (SOXX/USD) Today | Live Price, Marke
+- bitcoin-cash: other - Form 144 GRAYSCALE BITCOIN CASH TRUST (BCH) For: 30 October By Investing.com - Investing.c
 
 ## Derivatives flags (OKX)
 - BTC: SHORT_SQUEEZE_24H | OI/mc 0.24% | topPos 0.90 | taker 0.93
@@ -40,11 +45,11 @@
 
 ## Paper book (open trades, marked to last scan)
 - open 10 | mean -3.4% (-0.30R) | in profit 3 | older than 7d 6
-- worst: OP -0.87R, COMP -0.76R, AERO -0.52R | best: PEPE 0.02R, NIGHT 0.17R, RUNE 0.29R
+- worst: OP -0.86R, COMP -0.75R, AERO -0.53R | best: PEPE 0.02R, NIGHT 0.17R, RUNE 0.35R
 
 ## System
-- CoinGecko 9748/10000 used, month-end projection 9935 (99%), throttle level 2 | by script {'scan': 3204, 'check_liquidity': 460, 'breakout_check': 5981, 'counterfactual_check': 103}
+- CoinGecko 9750/10000 used, month-end projection 9923 (99%), throttle level 2 | by script {'scan': 3206, 'check_liquidity': 460, 'breakout_check': 5981, 'counterfactual_check': 103}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=55), H2 SUPPORTED (n=206)
-- radar-flags.json scan age: 4m
+- radar-flags.json scan age: 3m
 - excluded from radar (pegged/tokenized equity): 43
