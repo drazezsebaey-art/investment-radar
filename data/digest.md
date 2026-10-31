@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-31 08:35 UTC
+# Radar digest - 2026-10-31 09:03 UTC
 
 ## Market
-- BTC scenario **C** | price 77318 | wk close 80637 vs 82800 | 50W 76146 (1.54%) | 2h old
+- BTC scenario **C** | price 77357 | wk close 80637 vs 82800 | 50W 76146 (1.59%) | 1m old
 - Alts: **BTC_LED** [-] | BTC.D 57.01% | ETH/BTC 0.02903 | breadth7d 41% | stables 30d -2.26%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.38pt | 7d -0.37pt | n=121
 - Gold: PAXG 1m -7.07% | real10y 2.63 (-30bp 1m) | USD 1m 0.64% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
@@ -9,15 +9,15 @@
 - 10y 1m: -31bp = real -30 + breakeven -2 -> **REAL_YIELD_DRIVEN**
 
 ## Coins in correction (entry_ready first)
-- WLD: **BROKEN** | +74% impulse, retr 0.84 | OI dd 29% | fund 0.0043 | hold False | inval 0.35990 | OB 0.35600-0.37680
-- ADA: **BROKEN** | +48% impulse, retr 0.97 | OI dd 36% | fund 0.0098 | hold False | inval 0.18220 | OB ---
-- NEAR: **RESET_DONE** | +147% impulse, retr 0.47 | OI dd 35% | fund -0.0023 | hold False | inval 3.90600 | OB 3.40300-3.68100
+- WLD: **BROKEN** | +74% impulse, retr 0.84 | OI dd 29% | fund 0.0059 | hold False | inval 0.35990 | OB 0.35600-0.37680
+- ADA: **BROKEN** | +48% impulse, retr 0.97 | OI dd 36% | fund 0.0056 | hold False | inval 0.18220 | OB ---
+- NEAR: **RESET_DONE** | +147% impulse, retr 0.47 | OI dd 35% | fund -0.0009 | hold False | inval 3.90600 | OB 3.40300-3.68100
 
 ## Pre-pump candidates
-- XRP: [A+B] 7d -3.4%
+- XRP: [A+B] 7d -3.1%
 
 ## ETF pipeline (new this run)
-- zcash: other - Zcash Price Forecast: Bullish momentum mounts on steady ETF inflows, retail confidence - M
+- ripple NEW: other - Franklin Templeton Leads $8 Million XRP ETF Inflows, Its Biggest One-Day Buy - finance.big
 
 ## Derivatives flags (OKX)
 - BTC: SHORT_SQUEEZE_24H | OI/mc 0.24% | topPos 0.90 | taker 0.93
@@ -39,12 +39,12 @@
 - (11 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 10 | mean -3.4% (-0.30R) | in profit 3 | older than 7d 6
-- worst: COMP -0.78R, OP -0.74R, AERO -0.50R | best: PEPE 0.05R, NIGHT 0.16R, RUNE 0.27R
+- open 10 | mean -3.3% (-0.29R) | in profit 3 | older than 7d 6
+- worst: COMP -0.77R, OP -0.75R, AERO -0.52R | best: PEPE 0.07R, NIGHT 0.17R, RUNE 0.28R
 
 ## System
-- CoinGecko 9732/10000 used, month-end projection 9946 (100%), throttle level 2 | by script {'scan': 3188, 'check_liquidity': 460, 'breakout_check': 5981, 'counterfactual_check': 103}
+- CoinGecko 9734/10000 used, month-end projection 9934 (99%), throttle level 2 | by script {'scan': 3190, 'check_liquidity': 460, 'breakout_check': 5981, 'counterfactual_check': 103}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=55), H2 SUPPORTED (n=206)
-- radar-flags.json scan age: 4m
+- radar-flags.json scan age: 3m
 - excluded from radar (pegged/tokenized equity): 44
