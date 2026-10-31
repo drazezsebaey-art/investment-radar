@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-31 07:03 UTC
+# Radar digest - 2026-10-31 07:35 UTC
 
 ## Market
-- BTC scenario **C** | price 77318 | wk close 80637 vs 82800 | 50W 76146 (1.54%) | 1m old
+- BTC scenario **C** | price 77318 | wk close 80637 vs 82800 | 50W 76146 (1.54%) | 32m old
 - Alts: **BTC_LED** [-] | BTC.D 57.01% | ETH/BTC 0.02903 | breadth7d 41% | stables 30d -2.26%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.38pt | 7d -0.37pt | n=121
 - Gold: PAXG 1m -7.07% | real10y 2.63 (-30bp 1m) | USD 1m 0.64% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
@@ -14,20 +14,20 @@
 - NEAR: **RESET_DONE** | +147% impulse, retr 0.47 | OI dd 35% | fund -0.0023 | hold False | inval 3.90600 | OB 3.40300-3.68100
 
 ## Pre-pump candidates
-- none
+- ZEC: [A+C] 7d 8.5%
 
 ## ETF pipeline (new this run)
 - zcash: other - Zcash Price Forecast: Bullish momentum mounts on steady ETF inflows, retail confidence - M
 
 ## Derivatives flags (OKX)
 - BTC: SHORT_SQUEEZE_24H | OI/mc 0.24% | topPos 0.89 | taker 0.93
-- ETH: SHORT_SQUEEZE_24H | OI/mc 0.64% | topPos 0.87 | taker 0.98
-- SOL: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 0.92
+- ETH: SHORT_SQUEEZE_24H | OI/mc 0.64% | topPos 0.87 | taker 0.96
+- SOL: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 0.91
 - AVAX: SHORT_SQUEEZE_FUEL, LONG_FLUSH_24H | OI/mc -% | topPos 0.89 | taker 0.94
-- XRP: SHORT_SQUEEZE_FUEL, AGGRESSIVE_SELLING | OI/mc -% | topPos 0.88 | taker 0.85
-- TAO: LONG_FLUSH_24H | OI/mc 0.66% | topPos 0.87 | taker 0.97
-- LINK: SHORT_SQUEEZE_24H | OI/mc 0.35% | topPos 0.95 | taker 0.96
-- XLM: LONG_FLUSH_24H | OI/mc 0.15% | topPos 0.95 | taker 0.95
+- XRP: SHORT_SQUEEZE_FUEL, AGGRESSIVE_SELLING | OI/mc -% | topPos 0.88 | taker 0.82
+- TAO: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.97
+- LINK: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.95 | taker 0.96
+- XLM: LONG_FLUSH_24H | OI/mc -% | topPos 0.94 | taker 0.94
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -39,12 +39,12 @@
 - (11 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 10 | mean -2.8% (-0.23R) | in profit 3 | older than 7d 6
-- worst: COMP -0.75R, OP -0.50R, AERO -0.45R | best: PEPE 0.02R, RUNE 0.24R, NIGHT 0.29R
+- open 10 | mean -2.8% (-0.22R) | in profit 3 | older than 7d 6
+- worst: COMP -0.77R, OP -0.72R, AERO -0.50R | best: PEPE 0.08R, NIGHT 0.23R, RUNE 0.26R
 
 ## System
-- CoinGecko 9724/10000 used, month-end projection 9951 (100%), throttle level 2 | by script {'scan': 3182, 'check_liquidity': 458, 'breakout_check': 5981, 'counterfactual_check': 103}
+- CoinGecko 9727/10000 used, month-end projection 9954 (100%), throttle level 2 | by script {'scan': 3184, 'check_liquidity': 459, 'breakout_check': 5981, 'counterfactual_check': 103}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=54), H2 SUPPORTED (n=205)
-- radar-flags.json scan age: 3m
+- radar-flags.json scan age: 4m
 - excluded from radar (pegged/tokenized equity): 44
