@@ -1,7 +1,7 @@
-# Radar digest - 2026-10-31 23:04 UTC
+# Radar digest - 2026-10-31 23:35 UTC
 
 ## Market
-- BTC scenario **C** | price 77513 | wk close 80637 vs 82800 | 50W 76146 (1.80%) | 1m old
+- BTC scenario **C** | price 77513 | wk close 80637 vs 82800 | 50W 76146 (1.80%) | 32m old
 - Alts: **BTC_LED** [-] | BTC.D 57.06% | ETH/BTC 0.02909 | breadth7d 45% | stables 30d -2.24%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.19pt | 7d -0.43pt | n=121
 - Gold: PAXG 1m -6.53% | real10y 2.63 (-30bp 1m) | USD 1m 0.64% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
@@ -17,21 +17,21 @@
 
 ## Pre-pump candidates
 - NEAR: [A+C] 7d -0.1%
-- LINK: [A+B] 7d 2.1%
+- PEPE: [A+C] 7d 10.6%
 
 ## ETF pipeline (new this run)
 - solana NEW: other - Solana ETF Sees a Pause in the Party as Investors Pull Cash From SOLZ - TipRanks
 - solana NEW: other - Leveraged Solana ETF Draws Fresh Cash as Token Reclaims the $100 Mark - TipRanks
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc 0.24% | topPos 0.91 | taker 0.97
-- ETH: SHORT_SQUEEZE_24H | OI/mc 0.65% | topPos 0.88 | taker 1.02
-- SUI: SHORT_SQUEEZE_24H | OI/mc 0.95% | topPos 0.79 | taker 0.91
-- SEI: LONG_FLUSH_24H | OI/mc 0.73% | topPos 0.86 | taker 0.96
+- ETH: SHORT_SQUEEZE_24H | OI/mc 0.65% | topPos 0.88 | taker 1.06
+- SUI: SHORT_SQUEEZE_24H | OI/mc 0.95% | topPos 0.79 | taker 0.90
+- SEI: LONG_FLUSH_24H | OI/mc 0.74% | topPos 0.87 | taker 1.00
 - TAO: LONG_FLUSH_24H | OI/mc 0.67% | topPos 0.87 | taker 0.99
-- ZEC: SHORT_SQUEEZE_24H | OI/mc 0.72% | topPos 1.13 | taker 0.99
-- WLD: LONG_FLUSH_24H | OI/mc 2.06% | topPos 0.84 | taker 0.92
-- LINK: SHORT_SQUEEZE_FUEL, SHORT_SQUEEZE_24H | OI/mc 0.36% | topPos 0.95 | taker 0.94
+- ZEC: LONG_FLUSH_24H | OI/mc 0.70% | topPos 1.10 | taker 0.99
+- WLD: LONG_FLUSH_24H | OI/mc 2.06% | topPos 0.84 | taker 0.91
+- LINK: SHORT_SQUEEZE_FUEL, SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.96 | taker 0.93
+- ONDO: LONG_FLUSH_24H | OI/mc 0.68% | topPos 0.70 | taker 0.89
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -43,12 +43,12 @@
 - (13 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 11 | mean -2.1% (-0.10R) | in profit 3 | older than 7d 6
-- worst: OP -0.83R, COMP -0.70R, BCH -0.54R | best: RUNE 0.19R, NIGHT 0.41R, ZRO 1.44R
+- open 11 | mean -2.1% (-0.07R) | in profit 3 | older than 7d 6
+- worst: OP -0.82R, COMP -0.73R, BCH -0.55R | best: RUNE 0.12R, NIGHT 0.39R, ZRO 1.87R
 
 ## System
-- CoinGecko 9850/10000 used, month-end projection 9863 (99%), throttle level 2 | by script {'scan': 3254, 'check_liquidity': 464, 'breakout_check': 6029, 'counterfactual_check': 103}
+- CoinGecko 9852/10000 used, month-end projection 9865 (99%), throttle level 2 | by script {'scan': 3256, 'check_liquidity': 464, 'breakout_check': 6029, 'counterfactual_check': 103}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=55), H2 SUPPORTED (n=207)
-- radar-flags.json scan age: 3m
+- radar-flags.json scan age: 5m
 - excluded from radar (pegged/tokenized equity): 44
