@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-01 00:35 UTC
+# Radar digest - 2026-11-01 01:04 UTC
 
 ## Market
-- BTC scenario **C** | price 77513 | wk close 80637 vs 82800 | 50W 76146 (1.80%) | 2h old
+- BTC scenario **C** | price 77667 | wk close 80637 vs 82800 | 50W 76146 (2.00%) | 1m old
 - Alts: **BTC_LED** [-] | BTC.D 57.06% | ETH/BTC 0.02909 | breadth7d 45% | stables 30d -2.24%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.19pt | 7d -0.43pt | n=121
 - Gold: PAXG 1m -6.53% | real10y 2.63 (-30bp 1m) | USD 1m 0.64% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
@@ -9,18 +9,19 @@
 - 10y 1m: -31bp = real -30 + breakeven -2 -> **REAL_YIELD_DRIVEN**
 
 ## Coins in correction (entry_ready first)
-- NEAR: **RESUMING** ENTRY_READY | +110% impulse, retr 0.51 | OI dd 29% | fund 0.0051 | hold False | inval 4.23300 | OB 3.40300-3.68100
-- STX: **BROKEN** | +86% impulse, retr 0.65 | OI dd 31% | fund -0.0432 | hold False | inval 0.26780 | OB 0.26780-0.28360
-- WLD: **BROKEN** | +65% impulse, retr 0.91 | OI dd 33% | fund -0.0080 | hold False | inval 0.35990 | OB 0.35600-0.37680
-- ADA: **BROKEN** | +41% impulse, retr 1.08 | OI dd 37% | fund -0.0043 | hold False | inval 0.18220 | OB ---
-- PEPE: **RESET_DONE** | +58% impulse, retr 0.34 | OI dd 29% | fund -0.0501 | hold False | inval 0.00000 | OB 0.00000-0.00000
+- NEAR: **RESUMING** ENTRY_READY | +110% impulse, retr 0.51 | OI dd 29% | fund 0.0068 | hold False | inval 4.23300 | OB 4.21800-4.43000
+- STX: **BROKEN** | +86% impulse, retr 0.65 | OI dd 31% | fund -0.0272 | hold False | inval 0.26780 | OB 0.26780-0.28360
+- WLD: **BROKEN** | +65% impulse, retr 0.90 | OI dd 33% | fund -0.0076 | hold False | inval 0.39220 | OB 0.35600-0.37680
+- ADA: **BROKEN** | +41% impulse, retr 1.08 | OI dd 37% | fund 0.0012 | hold False | inval 0.18220 | OB ---
+- NIGHT: **RESET_DONE** | +149% impulse, retr 0.39 | OI dd 64% | fund 0.0050 | hold False | inval 0.03528 | OB 0.02520-0.02577
+- PEPE: **RESET_DONE** | +58% impulse, retr 0.32 | OI dd 29% | fund -0.0478 | hold False | inval 0.00000 | OB 0.00000-0.00000
 
 ## Pre-pump candidates
 - none
 
 ## ETF pipeline (new this run)
-- solana NEW: other - Solana ETF Sees a Pause in the Party as Investors Pull Cash From SOLZ - TipRanks
-- solana NEW: other - Leveraged Solana ETF Draws Fresh Cash as Token Reclaims the $100 Mark - TipRanks
+- zcash: other - DCG Already Bought $100 Million of Zcash Ahead of Grayscale ETF Decision - Startup Fortune
+- zcash: other - DCG Already Bought $100 Million of Zcash Ahead of Grayscale ETF Decision - Startup Fortune
 
 ## Derivatives flags (OKX)
 - ETH: SHORT_SQUEEZE_24H | OI/mc 0.65% | topPos 0.88 | taker 1.04
@@ -42,12 +43,12 @@
 - (13 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 11 | mean -2.4% (-0.10R) | in profit 4 | older than 7d 6
-- worst: OP -0.82R, COMP -0.69R, BCH -0.49R | best: XPL 0.02R, NIGHT 0.37R, ZRO 1.58R
+- open 11 | mean -2.5% (-0.10R) | in profit 4 | older than 7d 6
+- worst: OP -0.81R, COMP -0.68R, BCH -0.50R | best: PEPE 0.04R, NIGHT 0.38R, ZRO 1.58R
 
 ## System
-- CoinGecko 71/10000 used, month-end projection 710 (7%), throttle level 0 | by script {'scan': 4, 'check_liquidity': 8, 'breakout_check': 57, 'counterfactual_check': 2}
+- CoinGecko 73/10000 used, month-end projection 730 (7%), throttle level 0 | by script {'scan': 6, 'check_liquidity': 8, 'breakout_check': 57, 'counterfactual_check': 2}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=55), H2 SUPPORTED (n=207)
-- radar-flags.json scan age: 5m
+- radar-flags.json scan age: 4m
 - excluded from radar (pegged/tokenized equity): 44
