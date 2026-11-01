@@ -1,4 +1,4 @@
-# Radar digest - 2026-11-01 06:35 UTC
+# Radar digest - 2026-11-01 07:03 UTC
 
 ## Market
 - BTC scenario **C** | price 77839 | wk close 80637 vs 82800 | 50W 76146 (2.22%) | 1h old
@@ -19,6 +19,7 @@
 ## Pre-pump candidates
 - LIT: [B+C] 7d -2.1%
 - LINK: [A+C] 7d 0.9%
+- ZAMA: [B+C] 7d 5.2%
 
 ## ETF pipeline (new this run)
 - bittensor: other - Form 144 Grayscale Bittensor Trust (TAO) For: 30 October By Investing.com - Investing.com 
@@ -44,12 +45,12 @@
 - (13 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 10 | mean -1.5% (-0.02R) | in profit 3 | older than 7d 6
-- worst: COMP -0.62R, OP -0.56R, BCH -0.53R | best: RUNE 0.12R, NIGHT 0.49R, ZRO 1.73R
+- open 10 | mean -1.9% (-0.07R) | in profit 3 | older than 7d 6
+- worst: OP -0.64R, COMP -0.62R, BCH -0.55R | best: RUNE 0.08R, NIGHT 0.51R, ZRO 1.44R
 
 ## System
-- CoinGecko 196/10000 used, month-end projection 1960 (20%), throttle level 0 | by script {'scan': 36, 'check_liquidity': 13, 'breakout_check': 144, 'counterfactual_check': 3}
+- CoinGecko 199/10000 used, month-end projection 1990 (20%), throttle level 0 | by script {'scan': 38, 'check_liquidity': 14, 'breakout_check': 144, 'counterfactual_check': 3}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=55), H2 SUPPORTED (n=207)
-- radar-flags.json scan age: 5m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 44
