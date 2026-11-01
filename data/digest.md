@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-01 04:34 UTC
+# Radar digest - 2026-11-01 05:03 UTC
 
 ## Market
-- BTC scenario **C** | price 77728 | wk close 80637 vs 82800 | 50W 76146 (2.08%) | 1h old
+- BTC scenario **C** | price 77728 | wk close 80637 vs 82800 | 50W 76146 (2.08%) | 2h old
 - Alts: **BTC_LED** [-] | BTC.D 57.07% | ETH/BTC 0.02916 | breadth7d 39% | stables 30d -2.66%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.18pt | 7d -0.37pt | n=121
 - Gold: PAXG 1m -6.52% | real10y 2.63 (-30bp 1m) | USD 1m 0.64% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
@@ -17,7 +17,7 @@
 - PEPE: **RESET_DONE** | +58% impulse, retr 0.32 | OI dd 29% | fund -0.0309 | hold False | inval 0.00000 | OB 0.00000-0.00000
 
 ## Pre-pump candidates
-- LINK: [A+C] 7d 0.0%
+- none
 
 ## ETF pipeline (new this run)
 - solana NEW: other - Leveraged Solana ETF Sees Investors Cash Out as Rally Pauses - TipRanks
@@ -42,12 +42,12 @@
 - (13 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 11 | mean -1.1% (0.10R) | in profit 5 | older than 7d 6
-- worst: COMP -0.66R, OP -0.61R, BCH -0.43R | best: NIGHT 0.48R, XPL 1.18R, ZRO 2.02R
+- open 10 | mean -1.8% (-0.03R) | in profit 4 | older than 7d 6
+- worst: OP -0.72R, COMP -0.64R, BCH -0.41R | best: RUNE 0.04R, NIGHT 0.48R, ZRO 1.87R
 
 ## System
-- CoinGecko 134/10000 used, month-end projection 1340 (13%), throttle level 0 | by script {'scan': 20, 'check_liquidity': 10, 'breakout_check': 101, 'counterfactual_check': 3}
+- CoinGecko 137/10000 used, month-end projection 1370 (14%), throttle level 0 | by script {'scan': 22, 'check_liquidity': 11, 'breakout_check': 101, 'counterfactual_check': 3}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=55), H2 SUPPORTED (n=207)
-- radar-flags.json scan age: 4m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 44
