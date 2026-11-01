@@ -1,10 +1,10 @@
-# Radar digest - 2026-11-01 09:36 UTC
+# Radar digest - 2026-11-01 10:03 UTC
 
 ## Market
-- BTC scenario **C** | price 77954 | wk close 80637 vs 82800 | 50W 76146 (2.37%) | 1m old
+- BTC scenario **C** | price 77954 | wk close 80637 vs 82800 | 50W 76146 (2.37%) | 28m old
 - Alts: **BTC_LED** [-] | BTC.D 57.12% | ETH/BTC 0.02912 | breadth7d 42% | stables 30d -2.65%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.17pt | 7d -0.36pt | n=121
-- Gold: PAXG 1m -6.52% | real10y 2.63 (-30bp 1m) | USD 1m 0.64% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
+- Gold: PAXG 1m -6.53% | real10y 2.63 (-30bp 1m) | USD 1m 0.64% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
 - 10y 1w: 2bp = real -1 + breakeven 0 -> **SMALL_MOVE**
 - 10y 1m: -31bp = real -30 + breakeven -2 -> **REAL_YIELD_DRIVEN**
 
@@ -17,7 +17,7 @@
 - NIGHT: **RESET_DONE** | +149% impulse, retr 0.36 | OI dd 64% | fund 0.0050 | hold False | inval 0.03528 | OB 0.02520-0.02577
 
 ## Pre-pump candidates
-- LINK: [A+C] 7d 3.7%
+- none
 
 ## ETF pipeline (new this run)
 - solana NEW: other - Solana Bets Pile In: Investors Funnel Fresh Cash Into REX-Osprey’s Staking ETF - TipRanks
@@ -44,12 +44,12 @@
 - (18 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 10 | mean -2.2% (-0.07R) | in profit 3 | older than 7d 6
-- worst: OP -0.72R, COMP -0.65R, BCH -0.62R | best: RUNE 0.00R, NIGHT 0.47R, ZRO 1.73R
+- open 10 | mean -2.0% (-0.06R) | in profit 3 | older than 7d 6
+- worst: OP -0.70R, COMP -0.65R, BCH -0.64R | best: RUNE 0.01R, NIGHT 0.53R, ZRO 1.73R
 
 ## System
-- CoinGecko 263/10000 used, month-end projection 2630 (26%), throttle level 0 | by script {'scan': 48, 'check_liquidity': 17, 'breakout_check': 193, 'counterfactual_check': 5}
+- CoinGecko 265/10000 used, month-end projection 2650 (26%), throttle level 0 | by script {'scan': 50, 'check_liquidity': 17, 'breakout_check': 193, 'counterfactual_check': 5}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=55), H2 SUPPORTED (n=208)
-- radar-flags.json scan age: 6m
-- excluded from radar (pegged/tokenized equity): 44
+- radar-flags.json scan age: 3m
+- excluded from radar (pegged/tokenized equity): 43
