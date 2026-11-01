@@ -1,10 +1,10 @@
-# Radar digest - 2026-11-01 15:39 UTC
+# Radar digest - 2026-11-01 16:03 UTC
 
 ## Market
-- BTC scenario **C** | price 78115 | wk close 80637 vs 82800 | 50W 76146 (2.59%) | 1m old
+- BTC scenario **C** | price 78115 | wk close 80637 vs 82800 | 50W 76146 (2.59%) | 25m old
 - Alts: **BTC_LED** [-] | BTC.D 57.14% | ETH/BTC 0.02907 | breadth7d 46% | stables 30d -2.67%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.15pt | 7d -0.34pt | n=121
-- Gold: PAXG 1m -6.53% | real10y 2.63 (-30bp 1m) | USD 1m 0.64% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
+- Gold: PAXG 1m -6.34% | real10y 2.63 (-30bp 1m) | USD 1m 0.64% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
 - 10y 1w: 2bp = real -1 + breakeven 0 -> **SMALL_MOVE**
 - 10y 1m: -31bp = real -30 + breakeven -2 -> **REAL_YIELD_DRIVEN**
 
@@ -42,12 +42,12 @@
 - (18 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 10 | mean -2.0% (0.00R) | in profit 2 | older than 7d 6
-- worst: BCH -0.65R, COMP -0.64R, OP -0.62R | best: PEPE -0.12R, NIGHT 0.66R, ZRO 2.45R
+- open 10 | mean -2.5% (-0.04R) | in profit 2 | older than 7d 6
+- worst: BCH -0.68R, OP -0.67R, COMP -0.66R | best: PEPE -0.15R, NIGHT 0.60R, ZRO 2.30R
 
 ## System
-- CoinGecko 387/10000 used, month-end projection 3870 (39%), throttle level 0 | by script {'scan': 72, 'check_liquidity': 19, 'breakout_check': 288, 'counterfactual_check': 8}
+- CoinGecko 395/10000 used, month-end projection 3950 (40%), throttle level 0 | by script {'scan': 74, 'check_liquidity': 20, 'breakout_check': 288, 'counterfactual_check': 13}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=55), H2 SUPPORTED (n=208)
-- radar-flags.json scan age: 9m
-- excluded from radar (pegged/tokenized equity): 43
+- radar-flags.json scan age: 3m
+- excluded from radar (pegged/tokenized equity): 44
