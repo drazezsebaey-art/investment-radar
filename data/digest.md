@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-01 11:36 UTC
+# Radar digest - 2026-11-01 12:16 UTC
 
 ## Market
-- BTC scenario **C** | price 77918 | wk close 80637 vs 82800 | 50W 76146 (2.33%) | 1m old
+- BTC scenario **C** | price 77918 | wk close 80637 vs 82800 | 50W 76146 (2.33%) | 42m old
 - Alts: **BTC_LED** [-] | BTC.D 57.13% | ETH/BTC 0.02910 | breadth7d 44% | stables 30d -2.66%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.09pt | 7d -0.37pt | n=121
 - Gold: PAXG 1m -6.53% | real10y 2.63 (-30bp 1m) | USD 1m 0.64% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
@@ -17,7 +17,7 @@
 - NIGHT: **RESET_DONE** | +149% impulse, retr 0.35 | OI dd 64% | fund 0.0050 | hold False | inval 0.03528 | OB 0.02520-0.02577
 
 ## Pre-pump candidates
-- ETH: [B+D] 7d -2.5%
+- ETH: [B+D] 7d -2.4%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - BREAKING: Nearly 1.2 BILLION $XRP now sits in ETF vaults. - Binance
@@ -42,12 +42,12 @@
 - (18 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 10 | mean -2.0% (-0.04R) | in profit 2 | older than 7d 6
-- worst: BCH -0.66R, COMP -0.65R, OP -0.63R | best: RUNE -0.05R, NIGHT 0.57R, ZRO 2.02R
+- open 10 | mean -2.2% (-0.06R) | in profit 2 | older than 7d 6
+- worst: OP -0.67R, COMP -0.67R, BCH -0.66R | best: PEPE -0.07R, NIGHT 0.57R, ZRO 1.87R
 
 ## System
-- CoinGecko 271/10000 used, month-end projection 2710 (27%), throttle level 0 | by script {'scan': 56, 'check_liquidity': 17, 'breakout_check': 193, 'counterfactual_check': 5}
+- CoinGecko 323/10000 used, month-end projection 3230 (32%), throttle level 0 | by script {'scan': 58, 'check_liquidity': 18, 'breakout_check': 239, 'counterfactual_check': 8}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=55), H2 SUPPORTED (n=208)
-- radar-flags.json scan age: 6m
+- radar-flags.json scan age: 16m
 - excluded from radar (pegged/tokenized equity): 44
