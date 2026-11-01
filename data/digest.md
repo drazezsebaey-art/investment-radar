@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-01 22:03 UTC
+# Radar digest - 2026-11-01 22:35 UTC
 
 ## Market
-- BTC scenario **C** | price 77938 | wk close 77982 vs 82800 | 50W 75814 (2.80%) | 28m old
+- BTC scenario **C** | price 77938 | wk close 77982 vs 82800 | 50W 75814 (2.80%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 57.18% | ETH/BTC 0.02904 | breadth7d 37% | stables 30d -2.70%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.14pt | 7d -0.24pt | n=121
 - Gold: PAXG 1m -6.33% | real10y 2.63 (-30bp 1m) | USD 1m 0.64% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
@@ -20,14 +20,14 @@
 - ondo-finance: other - iShares 0-3 Month Treasury Bond Tokenized ETF (Ondo) Price (SGOVon/USD) Today | Live Price
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc 0.24% | topPos 0.92 | taker 0.99
-- SOL: LONG_FLUSH_24H | OI/mc 0.68% | topPos 0.86 | taker 0.93
-- NEAR: LONG_FLUSH_24H | OI/mc -% | topPos 1.00 | taker 0.94
-- XRP: LONG_FLUSH_24H | OI/mc 0.16% | topPos 0.88 | taker 0.91
-- SUI: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.95% | topPos 0.81 | taker 0.83
-- SEI: LONG_FLUSH_24H | OI/mc 0.72% | topPos 0.85 | taker 0.90
-- TAO: LONG_FLUSH_24H | OI/mc 0.67% | topPos 0.87 | taker 0.86
-- ZEC: LONG_FLUSH_24H | OI/mc -% | topPos 1.00 | taker 0.98
+- BTC: LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 1.04
+- ETH: LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 0.98
+- SOL: LONG_FLUSH_24H | OI/mc 0.68% | topPos 0.86 | taker 0.94
+- NEAR: LONG_FLUSH_24H | OI/mc -% | topPos 1.00 | taker 0.95
+- XRP: LONG_FLUSH_24H | OI/mc 0.16% | topPos 0.88 | taker 0.94
+- SUI: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.81 | taker 0.84
+- SEI: LONG_FLUSH_24H | OI/mc 0.73% | topPos 0.85 | taker 0.88
+- TAO: LONG_FLUSH_24H | OI/mc 0.67% | topPos 0.88 | taker 0.89
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -39,12 +39,12 @@
 - (18 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 10 | mean -4.0% (-0.20R) | in profit 2 | older than 7d 6
-- worst: OP -0.75R, COMP -0.75R, BCH -0.65R | best: PEPE -0.08R, NIGHT 0.57R, ZRO 1.30R
+- open 10 | mean -4.5% (-0.25R) | in profit 2 | older than 7d 6
+- worst: OP -0.83R, COMP -0.75R, BCH -0.71R | best: PEPE -0.14R, NIGHT 0.52R, ZRO 1.15R
 
 ## System
-- CoinGecko 514/10000 used, month-end projection 5140 (51%), throttle level 0 | by script {'scan': 98, 'check_liquidity': 22, 'breakout_check': 378, 'counterfactual_check': 16}
+- CoinGecko 516/10000 used, month-end projection 5160 (52%), throttle level 0 | by script {'scan': 100, 'check_liquidity': 22, 'breakout_check': 378, 'counterfactual_check': 16}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=55), H2 SUPPORTED (n=208)
-- radar-flags.json scan age: 3m
-- excluded from radar (pegged/tokenized equity): 46
+- radar-flags.json scan age: 5m
+- excluded from radar (pegged/tokenized equity): 45
