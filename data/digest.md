@@ -1,38 +1,36 @@
-# Radar digest - 2026-11-01 11:03 UTC
+# Radar digest - 2026-11-01 11:36 UTC
 
 ## Market
-- BTC scenario **C** | price 77954 | wk close 80637 vs 82800 | 50W 76146 (2.37%) | 1h old
-- Alts: **BTC_LED** [-] | BTC.D 57.12% | ETH/BTC 0.02912 | breadth7d 42% | stables 30d -2.65%
-- Alt risk (BTC.D): **NORMAL**  | 3d -0.17pt | 7d -0.36pt | n=121
+- BTC scenario **C** | price 77918 | wk close 80637 vs 82800 | 50W 76146 (2.33%) | 1m old
+- Alts: **BTC_LED** [-] | BTC.D 57.13% | ETH/BTC 0.02910 | breadth7d 44% | stables 30d -2.66%
+- Alt risk (BTC.D): **NORMAL**  | 3d -0.09pt | 7d -0.37pt | n=121
 - Gold: PAXG 1m -6.53% | real10y 2.63 (-30bp 1m) | USD 1m 0.64% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
 - 10y 1w: 2bp = real -1 + breakeven 0 -> **SMALL_MOVE**
 - 10y 1m: -31bp = real -30 + breakeven -2 -> **REAL_YIELD_DRIVEN**
 
 ## Coins in correction (entry_ready first)
-- NEAR: **RESUMING** ENTRY_READY | +110% impulse, retr 0.53 | OI dd 29% | fund 0.0024 | hold False | inval 4.23300 | OB 3.40300-3.68100
-- STX: **BROKEN** | +86% impulse, retr 0.66 | OI dd 31% | fund -0.0313 | hold False | inval 0.26780 | OB 0.26780-0.28360
-- WLD: **BROKEN** | +65% impulse, retr 0.90 | OI dd 33% | fund -0.0125 | hold False | inval 0.39220 | OB 0.35600-0.37680
-- ADA: **BROKEN** | +41% impulse, retr 1.08 | OI dd 37% | fund -0.0016 | hold False | inval 0.18220 | OB ---
-- PEPE: **ONGOING** | +58% impulse, retr 0.34 | OI dd 29% | fund 0.0100 | hold False | inval 0.00000 | OB 0.00000-0.00000
-- NIGHT: **RESET_DONE** | +149% impulse, retr 0.36 | OI dd 64% | fund 0.0050 | hold False | inval 0.03528 | OB 0.02520-0.02577
+- NEAR: **RESUMING** ENTRY_READY | +110% impulse, retr 0.52 | OI dd 29% | fund 0.0042 | hold False | inval 4.23300 | OB 3.40300-3.68100
+- STX: **BROKEN** | +86% impulse, retr 0.65 | OI dd 31% | fund -0.0251 | hold False | inval 0.26780 | OB 0.26780-0.28360
+- WLD: **BROKEN** | +65% impulse, retr 0.90 | OI dd 33% | fund -0.0046 | hold False | inval 0.39220 | OB 0.35600-0.37680
+- ADA: **BROKEN** | +41% impulse, retr 1.07 | OI dd 37% | fund 0.0053 | hold False | inval 0.18220 | OB ---
+- PEPE: **ONGOING** | +58% impulse, retr 0.36 | OI dd 29% | fund 0.0100 | hold False | inval 0.00000 | OB 0.00000-0.00000
+- NIGHT: **RESET_DONE** | +149% impulse, retr 0.35 | OI dd 64% | fund 0.0050 | hold False | inval 0.03528 | OB 0.02520-0.02577
 
 ## Pre-pump candidates
 - ETH: [B+D] 7d -2.5%
 
 ## ETF pipeline (new this run)
-- solana NEW: other - Solana Bets Pile In: Investors Funnel Fresh Cash Into REX-Osprey’s Staking ETF - TipRanks
-- ripple NEW: other - Franklin’s XRP ETF Pulls in Fresh Cash Even as XRP Flashes a Sell Signal - TipRanks
-- uniswap: other - 21Shares Uniswap ETP (AUNI-EUR.PA) - Yahoo! Finance Canada
+- ripple NEW: other - BREAKING: Nearly 1.2 BILLION $XRP now sits in ETF vaults. - Binance
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc 0.24% | topPos 0.92 | taker 1.07
-- ETH: SHORT_SQUEEZE_FUEL, SHORT_SQUEEZE_24H | OI/mc 0.67% | topPos 0.90 | taker 1.07
-- XRP: LONG_FLUSH_24H | OI/mc 0.16% | topPos 0.88 | taker 0.91
-- SUI: SHORT_SQUEEZE_24H | OI/mc 0.95% | topPos 0.80 | taker 0.89
-- SEI: SHORT_SQUEEZE_FUEL, LONG_FLUSH_24H | OI/mc 0.75% | topPos 0.85 | taker 0.99
-- ZEC: LONG_FLUSH_24H | OI/mc 0.71% | topPos 1.02 | taker 1.03
-- WLD: LONG_FLUSH_24H | OI/mc 2.11% | topPos 0.83 | taker 1.02
-- ADA: SHORT_SQUEEZE_24H | OI/mc 0.42% | topPos 0.87 | taker 0.86
+- BTC: SHORT_SQUEEZE_24H | OI/mc 0.24% | topPos 0.92 | taker 1.06
+- ETH: SHORT_SQUEEZE_FUEL, SHORT_SQUEEZE_24H | OI/mc 0.67% | topPos 0.90 | taker 1.08
+- XRP: LONG_FLUSH_24H | OI/mc 0.16% | topPos 0.88 | taker 0.93
+- SUI: SHORT_SQUEEZE_24H | OI/mc 0.96% | topPos 0.80 | taker 0.93
+- SEI: SHORT_SQUEEZE_FUEL, LONG_FLUSH_24H | OI/mc 0.75% | topPos 0.85 | taker 1.02
+- ZEC: LONG_FLUSH_24H | OI/mc 0.71% | topPos 1.01 | taker 1.03
+- WLD: LONG_FLUSH_24H | OI/mc 2.14% | topPos 0.83 | taker 1.03
+- ADA: SHORT_SQUEEZE_24H | OI/mc 0.42% | topPos 0.87 | taker 0.89
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -44,12 +42,12 @@
 - (18 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 10 | mean -2.2% (-0.06R) | in profit 2 | older than 7d 6
-- worst: BCH -0.67R, OP -0.66R, COMP -0.65R | best: RUNE -0.03R, NIGHT 0.54R, ZRO 1.87R
+- open 10 | mean -2.0% (-0.04R) | in profit 2 | older than 7d 6
+- worst: BCH -0.66R, COMP -0.65R, OP -0.63R | best: RUNE -0.05R, NIGHT 0.57R, ZRO 2.02R
 
 ## System
-- CoinGecko 269/10000 used, month-end projection 2690 (27%), throttle level 0 | by script {'scan': 54, 'check_liquidity': 17, 'breakout_check': 193, 'counterfactual_check': 5}
+- CoinGecko 271/10000 used, month-end projection 2710 (27%), throttle level 0 | by script {'scan': 56, 'check_liquidity': 17, 'breakout_check': 193, 'counterfactual_check': 5}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=55), H2 SUPPORTED (n=208)
-- radar-flags.json scan age: 2m
-- excluded from radar (pegged/tokenized equity): 43
+- radar-flags.json scan age: 6m
+- excluded from radar (pegged/tokenized equity): 44
