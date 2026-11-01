@@ -1,4 +1,4 @@
-# Radar digest - 2026-11-01 10:35 UTC
+# Radar digest - 2026-11-01 11:03 UTC
 
 ## Market
 - BTC scenario **C** | price 77954 | wk close 80637 vs 82800 | 50W 76146 (2.37%) | 1h old
@@ -17,7 +17,7 @@
 - NIGHT: **RESET_DONE** | +149% impulse, retr 0.36 | OI dd 64% | fund 0.0050 | hold False | inval 0.03528 | OB 0.02520-0.02577
 
 ## Pre-pump candidates
-- ETH: [B+D] 7d -2.7%
+- ETH: [B+D] 7d -2.5%
 
 ## ETF pipeline (new this run)
 - solana NEW: other - Solana Bets Pile In: Investors Funnel Fresh Cash Into REX-Osprey’s Staking ETF - TipRanks
@@ -44,12 +44,12 @@
 - (18 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 10 | mean -1.9% (-0.05R) | in profit 3 | older than 7d 6
-- worst: OP -0.69R, COMP -0.64R, BCH -0.63R | best: RUNE 0.00R, NIGHT 0.55R, ZRO 1.87R
+- open 10 | mean -2.2% (-0.06R) | in profit 2 | older than 7d 6
+- worst: BCH -0.67R, OP -0.66R, COMP -0.65R | best: RUNE -0.03R, NIGHT 0.54R, ZRO 1.87R
 
 ## System
-- CoinGecko 267/10000 used, month-end projection 2670 (27%), throttle level 0 | by script {'scan': 52, 'check_liquidity': 17, 'breakout_check': 193, 'counterfactual_check': 5}
+- CoinGecko 269/10000 used, month-end projection 2690 (27%), throttle level 0 | by script {'scan': 54, 'check_liquidity': 17, 'breakout_check': 193, 'counterfactual_check': 5}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=55), H2 SUPPORTED (n=208)
-- radar-flags.json scan age: 5m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 43
