@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-01 06:17 UTC
+# Radar digest - 2026-11-01 06:35 UTC
 
 ## Market
-- BTC scenario **C** | price 77839 | wk close 80637 vs 82800 | 50W 76146 (2.22%) | 42m old
+- BTC scenario **C** | price 77839 | wk close 80637 vs 82800 | 50W 76146 (2.22%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 57.07% | ETH/BTC 0.02916 | breadth7d 39% | stables 30d -2.66%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.18pt | 7d -0.37pt | n=121
 - Gold: PAXG 1m -6.52% | real10y 2.63 (-30bp 1m) | USD 1m 0.64% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
@@ -17,21 +17,22 @@
 - PEPE: **RESET_DONE** | +58% impulse, retr 0.33 | OI dd 29% | fund -0.0024 | hold False | inval 0.00000 | OB 0.00000-0.00000
 
 ## Pre-pump candidates
-- LINK: [A+C] 7d 0.3%
+- LIT: [B+C] 7d -2.1%
+- LINK: [A+C] 7d 0.9%
 
 ## ETF pipeline (new this run)
 - bittensor: other - Form 144 Grayscale Bittensor Trust (TAO) For: 30 October By Investing.com - Investing.com 
 - chainlink: other - Grayscale Chainlink Trust ETF (GLNK) Seasonal returns chart - Yahoo Finance Australia
 
 ## Derivatives flags (OKX)
-- ETH: SHORT_SQUEEZE_24H | OI/mc 0.66% | topPos 0.90 | taker 1.09
-- AVAX: SHORT_SQUEEZE_24H | OI/mc 0.40% | topPos 0.89 | taker 1.03
+- BTC: SHORT_SQUEEZE_24H | OI/mc 0.24% | topPos 0.91 | taker 1.01
+- ETH: SHORT_SQUEEZE_24H | OI/mc 0.66% | topPos 0.90 | taker 1.08
+- AVAX: SHORT_SQUEEZE_24H | OI/mc 0.40% | topPos 0.89 | taker 1.05
 - XRP: LONG_FLUSH_24H | OI/mc 0.16% | topPos 0.89 | taker 0.91
-- SUI: SHORT_SQUEEZE_24H | OI/mc 0.95% | topPos 0.79 | taker 0.90
-- SEI: SHORT_SQUEEZE_FUEL, AGGRESSIVE_BUYING, LONG_FLUSH_24H | OI/mc 0.77% | topPos 0.87 | taker 1.25
+- SUI: SHORT_SQUEEZE_24H | OI/mc 0.96% | topPos 0.79 | taker 0.92
+- SEI: SHORT_SQUEEZE_FUEL, AGGRESSIVE_BUYING, LONG_FLUSH_24H | OI/mc 0.77% | topPos 0.88 | taker 1.26
 - ZEC: LONG_FLUSH_24H | OI/mc 0.71% | topPos 1.03 | taker 1.01
-- WLD: LONG_FLUSH_24H | OI/mc 2.09% | topPos 0.84 | taker 1.02
-- LINK: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.95 | taker 0.97
+- WLD: LONG_FLUSH_24H | OI/mc 2.09% | topPos 0.84 | taker 1.03
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -43,12 +44,12 @@
 - (13 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 10 | mean -1.2% (0.01R) | in profit 4 | older than 7d 6
-- worst: COMP -0.62R, BCH -0.57R, OP -0.54R | best: RUNE 0.15R, NIGHT 0.50R, ZRO 2.02R
+- open 10 | mean -1.5% (-0.02R) | in profit 3 | older than 7d 6
+- worst: COMP -0.62R, OP -0.56R, BCH -0.53R | best: RUNE 0.12R, NIGHT 0.49R, ZRO 1.73R
 
 ## System
-- CoinGecko 194/10000 used, month-end projection 1940 (19%), throttle level 0 | by script {'scan': 34, 'check_liquidity': 13, 'breakout_check': 144, 'counterfactual_check': 3}
+- CoinGecko 196/10000 used, month-end projection 1960 (20%), throttle level 0 | by script {'scan': 36, 'check_liquidity': 13, 'breakout_check': 144, 'counterfactual_check': 3}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=55), H2 SUPPORTED (n=207)
-- radar-flags.json scan age: 17m
+- radar-flags.json scan age: 5m
 - excluded from radar (pegged/tokenized equity): 44
