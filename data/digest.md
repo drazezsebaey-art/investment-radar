@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-02 16:04 UTC
+# Radar digest - 2026-11-02 16:35 UTC
 
 ## Market
-- BTC scenario **C** | price 77823 | wk close 77982 vs 82800 | 50W 75814 (2.65%) | 29m old
+- BTC scenario **C** | price 77823 | wk close 77982 vs 82800 | 50W 75814 (2.65%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.14% | ETH/BTC 0.02941 | breadth7d -% | stables 30d -3.04%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.15pt | 7d -0.28pt | n=121
 - Gold: PAXG 1m -3.19% | real10y 2.63 (-30bp 1m) | USD 1m 0.64% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
@@ -20,14 +20,14 @@
 - ondo-finance: other - Franklin Income Equity Focus ETF (Ondo Tokenized) (INCEON) Price Prediction for 2026 to 20
 
 ## Derivatives flags (OKX)
-- ETH: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.91 | taker 1.01
-- NEAR: LONG_FLUSH_24H | OI/mc 1.02% | topPos 0.98 | taker 0.91
-- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 1.00
-- SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.81 | taker 0.92
-- TAO: LONG_FLUSH_24H | OI/mc 0.67% | topPos 0.87 | taker 0.94
-- WLD: LONG_FLUSH_24H | OI/mc -% | topPos 0.84 | taker 0.89
-- LINK: LONG_FLUSH_24H | OI/mc 0.37% | topPos 0.97 | taker 1.00
-- XLM: LONG_FLUSH_24H | OI/mc 0.16% | topPos 0.97 | taker 1.01
+- BTC: LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 1.05
+- ETH: LONG_FLUSH_24H | OI/mc -% | topPos 0.90 | taker 1.00
+- SOL: LONG_FLUSH_24H | OI/mc 0.71% | topPos 0.85 | taker 0.94
+- NEAR: LONG_FLUSH_24H | OI/mc 1.02% | topPos 0.98 | taker 0.90
+- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.93 | taker 0.87
+- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 0.99
+- SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.80 | taker 0.91
+- TAO: LONG_FLUSH_24H | OI/mc 0.67% | topPos 0.88 | taker 0.89
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -37,12 +37,12 @@
 - (15 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 9 | mean -6.1% (-0.34R) | in profit 2 | older than 7d 6
-- worst: OP -0.86R, COMP -0.76R, AERO -0.55R | best: PEPE -0.25R, NIGHT 0.29R, ZRO 0.58R
+- open 8 | mean -6.7% (-0.33R) | in profit 2 | older than 7d 6
+- worst: COMP -0.77R, AERO -0.58R, RUNE -0.58R | best: PEPE -0.28R, NIGHT 0.24R, ZRO 0.29R
 
 ## System
-- CoinGecko 926/10000 used, month-end projection 9260 (93%), throttle level 1 | by script {'scan': 178, 'check_liquidity': 42, 'breakout_check': 680, 'counterfactual_check': 26}
+- CoinGecko 928/10000 used, month-end projection 9280 (93%), throttle level 1 | by script {'scan': 180, 'check_liquidity': 42, 'breakout_check': 680, 'counterfactual_check': 26}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=55), H2 SUPPORTED (n=214)
-- radar-flags.json scan age: 3m
+- radar-flags.json scan age: 5m
 - excluded from radar (pegged/tokenized equity): 46
