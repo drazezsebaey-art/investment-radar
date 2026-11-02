@@ -1,35 +1,32 @@
-# Radar digest - 2026-11-02 11:03 UTC
+# Radar digest - 2026-11-02 11:36 UTC
 
 ## Market
-- BTC scenario **B** | price 78115 | wk close 77982 vs 82800 | 50W 75814 (3.04%) | 1h old
-- Alts: **BTC_LED** [-] | BTC.D 57.23% | ETH/BTC 0.02921 | breadth7d -% | stables 30d -3.01%
-- Alt risk (BTC.D): **NORMAL**  | 3d 0.05pt | 7d -0.25pt | n=121
+- BTC scenario **C** | price 77851 | wk close 77982 vs 82800 | 50W 75814 (2.69%) | 1m old
+- Alts: **BTC_LED** [-] | BTC.D 57.18% | ETH/BTC 0.02935 | breadth7d -% | stables 30d -3.01%
+- Alt risk (BTC.D): **NORMAL**  | 3d 0.21pt | 7d -0.33pt | n=121
 - Gold: PAXG 1m -6.03% | real10y 2.63 (-30bp 1m) | USD 1m 0.64% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
 - 10y 1w: 2bp = real -1 + breakeven 0 -> **SMALL_MOVE**
 - 10y 1m: -31bp = real -30 + breakeven -2 -> **REAL_YIELD_DRIVEN**
 
 ## Coins in correction (entry_ready first)
 - NEAR: **BROKEN** | +77% impulse, retr 0.72 | OI dd 30% | fund 0.0100 | hold True | inval 3.90600 | OB 3.40300-3.68100
-- OP: **BROKEN** | +47% impulse, retr 0.97 | OI dd 39% | fund 0.0097 | hold False | inval 0.09362 | OB 0.09362-0.10142
+- OP: **BROKEN** | +47% impulse, retr 0.95 | OI dd 39% | fund 0.0087 | hold False | inval 0.09362 | OB 0.09362-0.10142
 
 ## Pre-pump candidates
 - none
 
 ## ETF pipeline (new this run)
-- solana NEW: other - Solana price under pressure as ETF outflows reach $24.82 million - ad-hoc-news.de
-- solana NEW: other - Solana price pressured as ETF outflows meet network upgrades - ad-hoc-news.de
-- ondo-finance: other - About Innovator ZJUN ETF (Ondo Tokenized) - Coinbase
-- ondo-finance: other - How to Buy Franklin Income Equity Focus Tokenized ETF (Ondo) (INCEon) in Gibraltar with Cr
+- zcash: other - Zcash eyes $1,385 as ETF inflows return ahead of NU7 upgrade - Invezz
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 1.05
-- ETH: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.92 | taker 0.98
-- SOL: LONG_FLUSH_24H | OI/mc 0.70% | topPos 0.85 | taker 0.94
-- AVAX: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.93 | taker 0.84
-- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 1.04
-- SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.81 | taker 0.89
-- TAO: LONG_FLUSH_24H | OI/mc 0.67% | topPos 0.87 | taker 0.96
-- WLD: LONG_FLUSH_24H | OI/mc -% | topPos 0.84 | taker 0.93
+- BTC: LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 1.06
+- SOL: LONG_FLUSH_24H | OI/mc 0.70% | topPos 0.85 | taker 0.93
+- AVAX: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.93 | taker 0.85
+- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 1.00
+- SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.81 | taker 0.85
+- TAO: LONG_FLUSH_24H | OI/mc 0.68% | topPos 0.88 | taker 0.95
+- WLD: LONG_FLUSH_24H | OI/mc -% | topPos 0.84 | taker 0.91
+- LINK: LONG_FLUSH_24H | OI/mc 0.37% | topPos 0.96 | taker 0.97
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -39,12 +36,12 @@
 - (15 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 9 | mean -6.2% (-0.35R) | in profit 2 | older than 7d 6
-- worst: RUNE -0.87R, OP -0.79R, COMP -0.77R | best: PEPE -0.12R, NIGHT 0.41R, ZRO 0.43R
+- open 9 | mean -6.4% (-0.36R) | in profit 2 | older than 7d 6
+- worst: RUNE -0.94R, COMP -0.77R, OP -0.76R | best: PEPE -0.13R, NIGHT 0.38R, ZRO 0.43R
 
 ## System
-- CoinGecko 797/10000 used, month-end projection 7970 (80%), throttle level 0 | by script {'scan': 158, 'check_liquidity': 39, 'breakout_check': 577, 'counterfactual_check': 23}
+- CoinGecko 799/10000 used, month-end projection 7990 (80%), throttle level 0 | by script {'scan': 160, 'check_liquidity': 39, 'breakout_check': 577, 'counterfactual_check': 23}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=55), H2 SUPPORTED (n=213)
-- radar-flags.json scan age: 3m
+- radar-flags.json scan age: 6m
 - excluded from radar (pegged/tokenized equity): 48
