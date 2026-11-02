@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-02 12:17 UTC
+# Radar digest - 2026-11-02 12:35 UTC
 
 ## Market
-- BTC scenario **C** | price 77851 | wk close 77982 vs 82800 | 50W 75814 (2.69%) | 42m old
+- BTC scenario **C** | price 77851 | wk close 77982 vs 82800 | 50W 75814 (2.69%) | 60m old
 - Alts: **BTC_LED** [-] | BTC.D 57.18% | ETH/BTC 0.02935 | breadth7d -% | stables 30d -3.01%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.21pt | 7d -0.33pt | n=121
 - Gold: PAXG 1m -6.03% | real10y 2.63 (-30bp 1m) | USD 1m 0.64% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
@@ -19,14 +19,14 @@
 - zcash: other - Zcash eyes $1,385 as ETF inflows return ahead of NU7 upgrade - Invezz
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 1.06
+- BTC: LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 1.07
 - SOL: LONG_FLUSH_24H | OI/mc 0.70% | topPos 0.85 | taker 0.93
-- AVAX: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.93 | taker 0.85
-- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 1.00
-- SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.81 | taker 0.85
-- TAO: LONG_FLUSH_24H | OI/mc 0.68% | topPos 0.88 | taker 0.95
-- WLD: LONG_FLUSH_24H | OI/mc -% | topPos 0.84 | taker 0.91
-- LINK: LONG_FLUSH_24H | OI/mc 0.37% | topPos 0.96 | taker 0.97
+- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 1.03
+- SUI: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.81 | taker 0.85
+- TAO: LONG_FLUSH_24H | OI/mc 0.67% | topPos 0.88 | taker 0.94
+- WLD: LONG_FLUSH_24H | OI/mc -% | topPos 0.85 | taker 0.91
+- LINK: LONG_FLUSH_24H | OI/mc 0.37% | topPos 0.97 | taker 0.98
+- XLM: LONG_FLUSH_24H | OI/mc 0.15% | topPos 0.98 | taker 0.99
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -36,12 +36,12 @@
 - (15 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 9 | mean -6.4% (-0.37R) | in profit 2 | older than 7d 6
-- worst: RUNE -0.87R, COMP -0.78R, OP -0.76R | best: PEPE -0.13R, ZRO 0.29R, NIGHT 0.39R
+- open 9 | mean -5.7% (-0.31R) | in profit 2 | older than 7d 6
+- worst: COMP -0.76R, RUNE -0.75R, OP -0.65R | best: PEPE -0.10R, NIGHT 0.42R, ZRO 0.43R
 
 ## System
-- CoinGecko 859/10000 used, month-end projection 8590 (86%), throttle level 0 | by script {'scan': 162, 'check_liquidity': 40, 'breakout_check': 633, 'counterfactual_check': 24}
+- CoinGecko 862/10000 used, month-end projection 8620 (86%), throttle level 0 | by script {'scan': 164, 'check_liquidity': 41, 'breakout_check': 633, 'counterfactual_check': 24}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=55), H2 SUPPORTED (n=213)
-- radar-flags.json scan age: 16m
+- radar-flags.json scan age: 5m
 - excluded from radar (pegged/tokenized equity): 48
