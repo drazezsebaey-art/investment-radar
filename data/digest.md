@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-02 04:03 UTC
+# Radar digest - 2026-11-02 04:35 UTC
 
 ## Market
-- BTC scenario **B** | price 78639 | wk close 77982 vs 82800 | 50W 75814 (3.73%) | 29m old
+- BTC scenario **B** | price 78639 | wk close 77982 vs 82800 | 50W 75814 (3.73%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 57.21% | ETH/BTC 0.02936 | breadth7d 27% | stables 30d -3.00%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.08pt | 7d -0.21pt | n=121
 - Gold: PAXG 1m -5.90% | real10y 2.63 (-30bp 1m) | USD 1m 0.64% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
@@ -19,14 +19,14 @@
 - chainlink: other - Grayscale Chainlink Trust ETF (GLNK) Seasonal Returns Chart - Yahoo! Finance Canada
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc 0.23% | topPos 0.93 | taker 1.04
-- ETH: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.92 | taker 0.99
-- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 1.00
+- BTC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.93 | taker 1.06
+- ETH: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.92 | taker 1.03
+- SOL: SHORT_SQUEEZE_24H | OI/mc 0.69% | topPos 0.86 | taker 0.92
+- AVAX: LONG_FLUSH_24H | OI/mc 0.40% | topPos 0.91 | taker 0.92
+- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 1.03
 - SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.81 | taker 0.89
-- SEI: AGGRESSIVE_SELLING, SHORT_SQUEEZE_24H | OI/mc 0.73% | topPos 0.84 | taker 0.83
-- TAO: LONG_FLUSH_24H | OI/mc 0.67% | topPos 0.88 | taker 0.91
-- ZEC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 1.04 | taker 0.99
-- WLD: LONG_FLUSH_24H | OI/mc -% | topPos 0.85 | taker 0.92
+- SEI: AGGRESSIVE_SELLING, SHORT_SQUEEZE_24H | OI/mc 0.73% | topPos 0.85 | taker 0.82
+- TAO: LONG_FLUSH_24H | OI/mc 0.68% | topPos 0.88 | taker 0.94
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -38,12 +38,12 @@
 - (18 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 10 | mean -4.5% (-0.24R) | in profit 2 | older than 7d 6
-- worst: RUNE -0.97R, OP -0.71R, COMP -0.70R | best: PEPE -0.06R, NIGHT 0.59R, ZRO 1.01R
+- open 10 | mean -4.8% (-0.25R) | in profit 2 | older than 7d 6
+- worst: RUNE -0.97R, OP -0.72R, COMP -0.71R | best: PEPE -0.06R, NIGHT 0.51R, ZRO 1.01R
 
 ## System
-- CoinGecko 657/10000 used, month-end projection 6570 (66%), throttle level 0 | by script {'scan': 130, 'check_liquidity': 31, 'breakout_check': 474, 'counterfactual_check': 22}
+- CoinGecko 659/10000 used, month-end projection 6590 (66%), throttle level 0 | by script {'scan': 132, 'check_liquidity': 31, 'breakout_check': 474, 'counterfactual_check': 22}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=55), H2 SUPPORTED (n=209)
-- radar-flags.json scan age: 3m
-- excluded from radar (pegged/tokenized equity): 46
+- radar-flags.json scan age: 5m
+- excluded from radar (pegged/tokenized equity): 47
