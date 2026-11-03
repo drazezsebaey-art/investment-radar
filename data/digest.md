@@ -1,35 +1,35 @@
-# Radar digest - 2026-11-03 15:03 UTC
+# Radar digest - 2026-11-03 15:36 UTC
 
 ## Market
-- BTC scenario **C** | price 77760 | wk close 77982 vs 82800 | 50W 75814 (2.57%) | 1h old
-- Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.12% | ETH/BTC 0.02939 | breadth7d -% | stables 30d -3.65%
-- Alt risk (BTC.D): **NORMAL**  | 3d 0.06pt | 7d -0.32pt | n=121
+- BTC scenario **C** | price 77362 | wk close 77982 vs 82800 | 50W 75814 (2.04%) | 1m old
+- Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.06% | ETH/BTC 0.02958 | breadth7d -% | stables 30d -3.65%
+- Alt risk (BTC.D): **NORMAL**  | 3d 0.01pt | 7d -0.36pt | n=121
 - Gold: PAXG 1m -4.25% | real10y 2.60 (-28bp 1m) | USD 1m -0.10% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
 - 10y 1w: -6bp = real -6 + breakeven -5 -> **SMALL_MOVE**
 - 10y 1m: -30bp = real -28 + breakeven -7 -> **REAL_YIELD_DRIVEN**
 
 ## Coins in correction (entry_ready first)
-- NEAR: **BROKEN** | +77% impulse, retr 0.80 | OI dd 34% | fund 0.0100 | hold False | inval 3.40300 | OB 3.40300-3.68100
-- OP: **BROKEN** | +46% impulse, retr 0.95 | OI dd 42% | fund 0.0100 | hold False | inval 0.09362 | OB 0.09362-0.10142
-- PEPE: **ONGOING** | +56% impulse, retr 0.35 | OI dd 28% | fund 0.0100 | hold False | inval 0.00000 | OB 0.00000-0.00000
+- NEAR: **BROKEN** | +77% impulse, retr 0.83 | OI dd 34% | fund 0.0100 | hold False | inval 3.40300 | OB 3.40300-3.68100
+- OP: **BROKEN** | +46% impulse, retr 1.01 | OI dd 42% | fund 0.0079 | hold False | inval 0.09362 | OB 0.09362-0.10142
+- PEPE: **ONGOING** | +56% impulse, retr 0.40 | OI dd 28% | fund 0.0100 | hold False | inval 0.00000 | OB 0.00000-0.00000
 
 ## Pre-pump candidates
 - none
 
 ## ETF pipeline (new this run)
-- bitcoin-cash: other - Form 144 GRAYSCALE BITCOIN CASH TRUST (BCH) For: 3 November By Investing.com - Investing.c
-- ondo-finance: other - KraneShares CSI China Internet Tokenized ETF (Ondo) Price (KWEBon/USD) Today | Live Price,
-- ondo-finance: other - Innovator ZJUL Tokenized ETF (Ondo) (ZJULON) Kurs Euro aktuell: ZJULON/EUR Chart - CoinMar
+- cap-4 NEW: other - VanEck Gold Miners ETF (Derivatives) Price (GDX/USD) Today | Live Price, Market Cap & Char
+- cap-4 NEW: other - South Korea Bull 3X ETF Tokenized bStocks Price (KORUB/USD) Today | Live Price, Market Cap
+- zcash: other - Crypto News Today: Bitcoin ETF Outflows Surge, Zcash Prepares Major Upgrade, Cardano Falls
 
 ## Derivatives flags (OKX)
-- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.90 | taker 0.89
-- SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.82 | taker 1.00
-- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 0.89
-- TAO: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.67% | topPos 0.86 | taker 0.81
-- ADA: LONG_FLUSH_24H | OI/mc 0.43% | topPos 0.86 | taker 1.04
-- LINK: LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 0.99
-- XLM: LONG_FLUSH_24H | OI/mc -% | topPos 0.97 | taker 0.88
-- BCH: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 0.92
+- NEAR: LONG_FLUSH_24H | OI/mc 1.08% | topPos 0.97 | taker 0.95
+- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.90 | taker 0.88
+- SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.83 | taker 1.04
+- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.89 | taker 0.88
+- TAO: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.68% | topPos 0.86 | taker 0.81
+- ADA: LONG_FLUSH_24H | OI/mc 0.43% | topPos 0.87 | taker 1.02
+- LINK: LONG_FLUSH_24H | OI/mc -% | topPos 0.95 | taker 0.97
+- XLM: LONG_FLUSH_24H | OI/mc -% | topPos 0.98 | taker 0.89
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -38,12 +38,12 @@
 - (18 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 9 | mean -4.5% (-0.04R) | in profit 2 | older than 7d 6
-- worst: COMP -0.85R, TIA -0.73R, AERO -0.60R | best: PEPE -0.11R, NIGHT 0.72R, ZRO 2.16R
+- open 8 | mean -3.3% (0.02R) | in profit 2 | older than 7d 5
+- worst: TIA -0.79R, AERO -0.60R, BEAM -0.46R | best: PEPE -0.11R, NIGHT 0.72R, ZRO 1.87R
 
 ## System
-- CoinGecko 1193/10000 used, month-end projection 11930 (119%), throttle level 2 | by script {'scan': 278, 'check_liquidity': 44, 'breakout_check': 843, 'counterfactual_check': 28}
+- CoinGecko 1195/10000 used, month-end projection 11950 (120%), throttle level 2 | by script {'scan': 280, 'check_liquidity': 44, 'breakout_check': 843, 'counterfactual_check': 28}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=56), H2 SUPPORTED (n=218)
-- radar-flags.json scan age: 3m
-- excluded from radar (pegged/tokenized equity): 48
+- radar-flags.json scan age: 6m
+- excluded from radar (pegged/tokenized equity): 47
