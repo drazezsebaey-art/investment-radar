@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-03 04:03 UTC
+# Radar digest - 2026-11-03 04:35 UTC
 
 ## Market
-- BTC scenario **C** | price 76751 | wk close 77982 vs 82800 | 50W 75814 (1.24%) | 28m old
+- BTC scenario **C** | price 76751 | wk close 77982 vs 82800 | 50W 75814 (1.24%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.17% | ETH/BTC 0.02929 | breadth7d 26% | stables 30d -3.65%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.18pt | 7d -0.22pt | n=121
 - Gold: PAXG 1m -3.94% | real10y 2.60 (-28bp 1m) | USD 1m -0.10% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
@@ -12,7 +12,7 @@
 - NEAR: **BROKEN** | +77% impulse, retr 0.85 | OI dd 34% | fund 0.0100 | hold False | inval 3.40300 | OB 3.40300-3.68100
 
 ## Pre-pump candidates
-- INJ: [A+B] 7d -13.1%
+- none
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - XRP ETF draws inflows despite sharp drop, led by Franklin and Bitwise - 디지털투데이
@@ -23,14 +23,14 @@
 - ripple NEW: other - XRP ETF — XRPI ($6.63) and XRPR ($10.16) Track XRP’s $1.2566 Coil as Spot Funds Log 7th St
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc 0.24% | topPos 0.89 | taker 0.99
-- NEAR: LONG_FLUSH_24H | OI/mc 1.07% | topPos 0.98 | taker 0.91
-- AVAX: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.39% | topPos 0.90 | taker 0.83
-- XRP: LONG_FLUSH_24H | OI/mc 0.16% | topPos 0.89 | taker 0.94
+- BTC: LONG_FLUSH_24H | OI/mc 0.24% | topPos 0.89 | taker 0.97
+- NEAR: LONG_FLUSH_24H | OI/mc 1.05% | topPos 0.98 | taker 0.91
+- AVAX: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.39% | topPos 0.91 | taker 0.82
+- XRP: LONG_FLUSH_24H | OI/mc 0.16% | topPos 0.88 | taker 0.92
 - SUI: LONG_FLUSH_24H | OI/mc 0.96% | topPos 0.81 | taker 0.89
-- SEI: AGGRESSIVE_SELLING | OI/mc 0.75% | topPos 0.84 | taker 0.85
-- TAO: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.68% | topPos 0.87 | taker 0.81
-- WLD: LONG_FLUSH_24H | OI/mc -% | topPos 0.84 | taker 0.93
+- SEI: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.74% | topPos 0.85 | taker 0.81
+- TAO: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.67% | topPos 0.87 | taker 0.81
+- WLD: LONG_FLUSH_24H | OI/mc -% | topPos 0.85 | taker 0.93
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -40,12 +40,12 @@
 - (15 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 9 | mean -7.8% (-0.45R) | in profit 1 | older than 7d 6
-- worst: COMP -0.86R, TIA -0.75R, AERO -0.68R | best: ZRO -0.29R, PEPE -0.25R, NIGHT 0.34R
+- open 9 | mean -7.5% (-0.43R) | in profit 1 | older than 7d 6
+- worst: COMP -0.84R, TIA -0.72R, AERO -0.67R | best: ZRO -0.29R, PEPE -0.22R, NIGHT 0.32R
 
 ## System
-- CoinGecko 1088/10000 used, month-end projection 10880 (109%), throttle level 2 | by script {'scan': 234, 'check_liquidity': 43, 'breakout_check': 783, 'counterfactual_check': 28}
+- CoinGecko 1090/10000 used, month-end projection 10900 (109%), throttle level 2 | by script {'scan': 236, 'check_liquidity': 43, 'breakout_check': 783, 'counterfactual_check': 28}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=56), H2 SUPPORTED (n=218)
-- radar-flags.json scan age: 2m
+- radar-flags.json scan age: 5m
 - excluded from radar (pegged/tokenized equity): 48
