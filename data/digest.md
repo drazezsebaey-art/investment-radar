@@ -1,12 +1,12 @@
-# Radar digest - 2026-11-03 03:36 UTC
+# Radar digest - 2026-11-03 04:03 UTC
 
 ## Market
-- BTC scenario **C** | price 76751 | wk close 77982 vs 82800 | 50W 75814 (1.24%) | 1m old
+- BTC scenario **C** | price 76751 | wk close 77982 vs 82800 | 50W 75814 (1.24%) | 28m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.17% | ETH/BTC 0.02929 | breadth7d 26% | stables 30d -3.65%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.18pt | 7d -0.22pt | n=121
-- Gold: PAXG 1m -3.50% | real10y 2.60 (-28bp 1m) | USD 1m -0.10% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
-- 10y 1w: -6bp = real -6 + breakeven 0 -> **SMALL_MOVE**
-- 10y 1m: -30bp = real -28 + breakeven -2 -> **REAL_YIELD_DRIVEN**
+- Gold: PAXG 1m -3.94% | real10y 2.60 (-28bp 1m) | USD 1m -0.10% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
+- 10y 1w: -6bp = real -6 + breakeven -5 -> **SMALL_MOVE**
+- 10y 1m: -30bp = real -28 + breakeven -7 -> **REAL_YIELD_DRIVEN**
 
 ## Coins in correction (entry_ready first)
 - NEAR: **BROKEN** | +77% impulse, retr 0.85 | OI dd 34% | fund 0.0100 | hold False | inval 3.40300 | OB 3.40300-3.68100
@@ -40,12 +40,12 @@
 - (15 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 9 | mean -8.2% (-0.49R) | in profit 1 | older than 7d 6
-- worst: COMP -0.87R, TIA -0.76R, AERO -0.69R | best: BEAM -0.42R, PEPE -0.26R, NIGHT 0.35R
+- open 9 | mean -7.8% (-0.45R) | in profit 1 | older than 7d 6
+- worst: COMP -0.86R, TIA -0.75R, AERO -0.68R | best: ZRO -0.29R, PEPE -0.25R, NIGHT 0.34R
 
 ## System
-- CoinGecko 1086/10000 used, month-end projection 10860 (109%), throttle level 2 | by script {'scan': 232, 'check_liquidity': 43, 'breakout_check': 783, 'counterfactual_check': 28}
+- CoinGecko 1088/10000 used, month-end projection 10880 (109%), throttle level 2 | by script {'scan': 234, 'check_liquidity': 43, 'breakout_check': 783, 'counterfactual_check': 28}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=56), H2 SUPPORTED (n=218)
-- radar-flags.json scan age: 6m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 48
