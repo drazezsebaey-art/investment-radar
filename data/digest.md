@@ -1,9 +1,9 @@
-# Radar digest - 2026-11-03 07:03 UTC
+# Radar digest - 2026-11-03 07:36 UTC
 
 ## Market
-- BTC scenario **C** | price 76611 | wk close 77982 vs 82800 | 50W 75814 (1.05%) | 1h old
-- Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.17% | ETH/BTC 0.02929 | breadth7d 26% | stables 30d -3.65%
-- Alt risk (BTC.D): **NORMAL**  | 3d 0.18pt | 7d -0.22pt | n=121
+- BTC scenario **C** | price 76858 | wk close 77982 vs 82800 | 50W 75814 (1.38%) | 1m old
+- Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.14% | ETH/BTC 0.02936 | breadth7d 33% | stables 30d -3.64%
+- Alt risk (BTC.D): **NORMAL**  | 3d 0.13pt | 7d -0.28pt | n=121
 - Gold: PAXG 1m -3.94% | real10y 2.60 (-28bp 1m) | USD 1m -0.10% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
 - 10y 1w: -6bp = real -6 + breakeven -5 -> **SMALL_MOVE**
 - 10y 1m: -30bp = real -28 + breakeven -7 -> **REAL_YIELD_DRIVEN**
@@ -16,17 +16,18 @@
 - none
 
 ## ETF pipeline (new this run)
-- hyperliquid NEW: other - Bitwise Hyperliquid ETF (BHYP) Stock Price, News & Analysis - 24/7 Wall St.
+- solana NEW: other - Crypto ETF News Today: BTC, ETH, XRP Outflows, Solana Stays Quiet - Coin Gabbar
+- ripple NEW: other - Crypto ETF News Today: BTC, ETH, XRP Outflows, Solana Stays Quiet - Coin Gabbar
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc 0.24% | topPos 0.88 | taker 0.98
-- ETH: LONG_FLUSH_24H | OI/mc 0.66% | topPos 0.87 | taker 0.97
-- NEAR: LONG_FLUSH_24H | OI/mc 1.07% | topPos 0.99 | taker 0.91
-- AVAX: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.39% | topPos 0.90 | taker 0.83
-- XRP: LONG_FLUSH_24H | OI/mc 0.16% | topPos 0.89 | taker 0.94
-- SUI: LONG_FLUSH_24H | OI/mc 0.97% | topPos 0.81 | taker 0.90
-- SEI: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.74% | topPos 0.87 | taker 0.81
-- TAO: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.68% | topPos 0.87 | taker 0.81
+- BTC: LONG_FLUSH_24H | OI/mc 0.24% | topPos 0.88 | taker 0.99
+- ETH: LONG_FLUSH_24H | OI/mc 0.65% | topPos 0.87 | taker 0.98
+- NEAR: LONG_FLUSH_24H | OI/mc 1.08% | topPos 0.99 | taker 0.93
+- AVAX: LONG_FLUSH_24H | OI/mc 0.39% | topPos 0.90 | taker 0.89
+- XRP: LONG_FLUSH_24H | OI/mc 0.16% | topPos 0.88 | taker 0.91
+- SUI: LONG_FLUSH_24H | OI/mc 0.96% | topPos 0.81 | taker 0.90
+- SEI: LONG_FLUSH_24H | OI/mc 0.75% | topPos 0.88 | taker 0.87
+- TAO: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.67% | topPos 0.87 | taker 0.80
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -36,12 +37,12 @@
 - (15 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 9 | mean -8.2% (-0.49R) | in profit 1 | older than 7d 6
-- worst: COMP -0.92R, TIA -0.76R, AERO -0.73R | best: RUNE -0.36R, PEPE -0.25R, NIGHT 0.29R
+- open 9 | mean -7.9% (-0.46R) | in profit 1 | older than 7d 6
+- worst: COMP -0.88R, TIA -0.73R, AERO -0.71R | best: RUNE -0.43R, PEPE -0.25R, NIGHT 0.31R
 
 ## System
-- CoinGecko 1101/10000 used, month-end projection 11010 (110%), throttle level 2 | by script {'scan': 246, 'check_liquidity': 44, 'breakout_check': 783, 'counterfactual_check': 28}
+- CoinGecko 1103/10000 used, month-end projection 11030 (110%), throttle level 2 | by script {'scan': 248, 'check_liquidity': 44, 'breakout_check': 783, 'counterfactual_check': 28}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=56), H2 SUPPORTED (n=218)
-- radar-flags.json scan age: 2m
+- radar-flags.json scan age: 6m
 - excluded from radar (pegged/tokenized equity): 48
