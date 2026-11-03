@@ -1,31 +1,36 @@
-# Radar digest - 2026-11-03 03:03 UTC
+# Radar digest - 2026-11-03 03:36 UTC
 
 ## Market
-- BTC scenario **C** | price 77230 | wk close 77982 vs 82800 | 50W 75814 (1.87%) | 1h old
-- Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.10% | ETH/BTC 0.02932 | breadth7d -% | stables 30d -3.04%
-- Alt risk (BTC.D): **NORMAL**  | 3d 0.19pt | 7d -0.35pt | n=121
+- BTC scenario **C** | price 76751 | wk close 77982 vs 82800 | 50W 75814 (1.24%) | 1m old
+- Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.17% | ETH/BTC 0.02929 | breadth7d 26% | stables 30d -3.65%
+- Alt risk (BTC.D): **NORMAL**  | 3d 0.18pt | 7d -0.22pt | n=121
 - Gold: PAXG 1m -3.50% | real10y 2.60 (-28bp 1m) | USD 1m -0.10% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
 - 10y 1w: -6bp = real -6 + breakeven 0 -> **SMALL_MOVE**
 - 10y 1m: -30bp = real -28 + breakeven -2 -> **REAL_YIELD_DRIVEN**
 
 ## Coins in correction (entry_ready first)
-- NEAR: **BROKEN** | +77% impulse, retr 0.82 | OI dd 34% | fund 0.0100 | hold False | inval 3.40300 | OB 3.40300-3.68100
+- NEAR: **BROKEN** | +77% impulse, retr 0.85 | OI dd 34% | fund 0.0100 | hold False | inval 3.40300 | OB 3.40300-3.68100
 
 ## Pre-pump candidates
 - INJ: [A+B] 7d -13.1%
 
 ## ETF pipeline (new this run)
-- zcash: other - Grayscale: $3.6M ZCSH Outflow on Zcash ETF - Blockchain News
+- ripple NEW: other - XRP ETF draws inflows despite sharp drop, led by Franklin and Bitwise - 디지털투데이
+- ripple NEW: other - XRP News Today: $1.25 Price, $922K ETF Inflow and Ripple’s 1B Unlock - Coin Gabbar
+- ripple NEW: other - Investors Swim Against the Tide: Franklin’s XRP ETF Attracts New Cash Despite ‘Strong Sell
+- ripple NEW: other - Leveraged Ripple Bet Draws Fresh Cash as XRPT ETF Rides XRP Rally - TipRanks
+- ripple NEW: other - XRP ETF Draws $5.6 Million as Quarterly Gains Meet a Short-Term Sell Signal - TipRanks
+- ripple NEW: other - XRP ETF — XRPI ($6.63) and XRPR ($10.16) Track XRP’s $1.2566 Coil as Spot Funds Log 7th St
 
 ## Derivatives flags (OKX)
-- NEAR: LONG_FLUSH_24H | OI/mc 1.06% | topPos 0.98 | taker 0.92
+- BTC: LONG_FLUSH_24H | OI/mc 0.24% | topPos 0.89 | taker 0.99
+- NEAR: LONG_FLUSH_24H | OI/mc 1.07% | topPos 0.98 | taker 0.91
 - AVAX: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.39% | topPos 0.90 | taker 0.83
-- XRP: LONG_FLUSH_24H | OI/mc 0.16% | topPos 0.88 | taker 0.94
-- SUI: LONG_FLUSH_24H | OI/mc 0.97% | topPos 0.81 | taker 0.89
-- SEI: AGGRESSIVE_SELLING | OI/mc 0.75% | topPos 0.84 | taker 0.84
-- TAO: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.68% | topPos 0.86 | taker 0.82
-- WLD: LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 0.94
-- ADA: LONG_FLUSH_24H | OI/mc 0.43% | topPos 0.88 | taker 1.03
+- XRP: LONG_FLUSH_24H | OI/mc 0.16% | topPos 0.89 | taker 0.94
+- SUI: LONG_FLUSH_24H | OI/mc 0.96% | topPos 0.81 | taker 0.89
+- SEI: AGGRESSIVE_SELLING | OI/mc 0.75% | topPos 0.84 | taker 0.85
+- TAO: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.68% | topPos 0.87 | taker 0.81
+- WLD: LONG_FLUSH_24H | OI/mc -% | topPos 0.84 | taker 0.93
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -35,12 +40,12 @@
 - (15 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 9 | mean -8.0% (-0.48R) | in profit 1 | older than 7d 6
-- worst: COMP -0.87R, TIA -0.75R, AERO -0.68R | best: BEAM -0.40R, PEPE -0.23R, NIGHT 0.39R
+- open 9 | mean -8.2% (-0.49R) | in profit 1 | older than 7d 6
+- worst: COMP -0.87R, TIA -0.76R, AERO -0.69R | best: BEAM -0.42R, PEPE -0.26R, NIGHT 0.35R
 
 ## System
-- CoinGecko 1084/10000 used, month-end projection 10840 (108%), throttle level 2 | by script {'scan': 230, 'check_liquidity': 43, 'breakout_check': 783, 'counterfactual_check': 28}
+- CoinGecko 1086/10000 used, month-end projection 10860 (109%), throttle level 2 | by script {'scan': 232, 'check_liquidity': 43, 'breakout_check': 783, 'counterfactual_check': 28}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=56), H2 SUPPORTED (n=218)
-- radar-flags.json scan age: 2m
+- radar-flags.json scan age: 6m
 - excluded from radar (pegged/tokenized equity): 48
