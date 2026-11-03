@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-03 19:36 UTC
+# Radar digest - 2026-11-03 20:03 UTC
 
 ## Market
-- BTC scenario **C** | price 77531 | wk close 77982 vs 82800 | 50W 75814 (2.27%) | 1m old
+- BTC scenario **C** | price 77531 | wk close 77982 vs 82800 | 50W 75814 (2.27%) | 28m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.03% | ETH/BTC 0.02951 | breadth7d -% | stables 30d -3.61%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.01pt | 7d -0.36pt | n=121
 - Gold: PAXG 1m -5.05% | real10y 2.60 (-28bp 1m) | USD 1m -0.10% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
@@ -13,7 +13,7 @@
 - ZRO: **RESUMING** | +131% impulse, retr 0.43 | OI dd 3% | fund 0.0050 | hold False | inval 1.65360 | OB 1.65360-1.77380
 
 ## Pre-pump candidates
-- KMNO: [B+C] 7d -12.6%
+- none
 
 ## ETF pipeline (new this run)
 - ondo-finance: other - About Innovator ZJUL ETF (Ondo Tokenized ETF) - Coinbase
@@ -37,12 +37,12 @@
 - (18 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 8 | mean -3.7% (0.02R) | in profit 2 | older than 7d 5
-- worst: TIA -0.80R, AERO -0.61R, BEAM -0.56R | best: PEPE -0.09R, NIGHT 0.62R, ZRO 2.02R
+- open 8 | mean -3.7% (-0.00R) | in profit 2 | older than 7d 5
+- worst: TIA -0.83R, AERO -0.59R, BEAM -0.55R | best: RUNE -0.04R, NIGHT 0.60R, ZRO 1.87R
 
 ## System
-- CoinGecko 1219/10000 used, month-end projection 12190 (122%), throttle level 2 | by script {'scan': 304, 'check_liquidity': 44, 'breakout_check': 843, 'counterfactual_check': 28}
+- CoinGecko 1221/10000 used, month-end projection 12210 (122%), throttle level 2 | by script {'scan': 306, 'check_liquidity': 44, 'breakout_check': 843, 'counterfactual_check': 28}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=56), H2 SUPPORTED (n=218)
-- radar-flags.json scan age: 6m
-- excluded from radar (pegged/tokenized equity): 47
+- radar-flags.json scan age: 2m
+- excluded from radar (pegged/tokenized equity): 46
