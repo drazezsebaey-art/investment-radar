@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-03 23:36 UTC
+# Radar digest - 2026-11-04 00:16 UTC
 
 ## Market
-- BTC scenario **C** | price 77902 | wk close 77982 vs 82800 | 50W 75814 (2.75%) | 1m old
+- BTC scenario **C** | price 77902 | wk close 77982 vs 82800 | 50W 75814 (2.75%) | 41m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.07% | ETH/BTC 0.02939 | breadth7d -% | stables 30d -3.60%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.01pt | 7d -0.35pt | n=121
 - Gold: PAXG 1m -5.22% | real10y 2.62 (-30bp 1m) | USD 1m -0.10% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
@@ -12,7 +12,7 @@
 - NEAR: **BROKEN** | +56% impulse, retr 0.99 | OI dd 34% | fund 0.0100 | hold False | inval 3.40300 | OB 3.40300-3.68100
 
 ## Pre-pump candidates
-- PUMP: [C+D] 7d 1.7%
+- none
 
 ## ETF pipeline (new this run)
 - yellow NEW: other - Intesa Sanpaolo Puts $966M Into SpaceX After 94% Bitcoin ETF Cut - Yellow.com
@@ -34,12 +34,12 @@
 - (18 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 8 | mean -2.0% (0.13R) | in profit 3 | older than 7d 5
-- worst: TIA -0.76R, BEAM -0.50R, AERO -0.43R | best: RUNE 0.07R, NIGHT 0.73R, ZRO 2.30R
+- open 8 | mean -2.6% (0.09R) | in profit 3 | older than 7d 5
+- worst: TIA -0.78R, BEAM -0.49R, AERO -0.48R | best: RUNE 0.04R, NIGHT 0.68R, ZRO 2.16R
 
 ## System
-- CoinGecko 1236/10000 used, month-end projection 12360 (124%), throttle level 2 | by script {'scan': 320, 'check_liquidity': 45, 'breakout_check': 843, 'counterfactual_check': 28}
+- CoinGecko 1292/10000 used, month-end projection 12920 (129%), throttle level 2 | by script {'scan': 322, 'check_liquidity': 45, 'breakout_check': 897, 'counterfactual_check': 28}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=56), H2 SUPPORTED (n=218)
-- radar-flags.json scan age: 5m
-- excluded from radar (pegged/tokenized equity): 47
+- radar-flags.json scan age: 15m
+- excluded from radar (pegged/tokenized equity): 46
