@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-04 13:36 UTC
+# Radar digest - 2026-11-04 14:03 UTC
 
 ## Market
-- BTC scenario **B** | price 78334 | wk close 77982 vs 82800 | 50W 75814 (3.33%) | 1m old
+- BTC scenario **B** | price 78334 | wk close 77982 vs 82800 | 50W 75814 (3.33%) | 28m old
 - Alts: **BTC_LED** [-] | BTC.D 57.18% | ETH/BTC 0.02967 | breadth7d 34% | stables 30d -3.99%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.06pt | 7d -0.27pt | n=121
 - Gold: PAXG 1m -2.61% | real10y 2.62 (-30bp 1m) | USD 1m -0.10% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
@@ -14,7 +14,7 @@
 - PEPE: **ONGOING** | +56% impulse, retr 0.34 | OI dd 30% | fund 0.0100 | hold False | inval 0.00000 | OB 0.00000-0.00000
 
 ## Pre-pump candidates
-- INJ: [A+C] 7d -3.6%
+- none
 
 ## ETF pipeline (new this run)
 - binancecoin NEW: launch - VanEck Launches 1st US Spot BNB ETF on Nasdaq - CoinMarketCap
@@ -40,12 +40,12 @@
 - (19 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 8 | mean -0.9% (0.13R) | in profit 4 | older than 7d 5
-- worst: TIA -0.68R, AERO -0.46R, SUI -0.27R | best: RUNE 0.02R, NIGHT 0.85R, ZRO 1.73R
+- open 8 | mean -1.3% (0.11R) | in profit 2 | older than 7d 5
+- worst: TIA -0.70R, AERO -0.49R, SUI -0.27R | best: RUNE -0.01R, NIGHT 0.81R, ZRO 1.73R
 
 ## System
-- CoinGecko 1406/10000 used, month-end projection 11910 (119%), throttle level 2 | by script {'scan': 374, 'check_liquidity': 49, 'breakout_check': 955, 'counterfactual_check': 28}
+- CoinGecko 1409/10000 used, month-end projection 11796 (118%), throttle level 2 | by script {'scan': 376, 'check_liquidity': 50, 'breakout_check': 955, 'counterfactual_check': 28}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=56), H2 SUPPORTED (n=222)
-- radar-flags.json scan age: 6m
-- excluded from radar (pegged/tokenized equity): 48
+- radar-flags.json scan age: 3m
+- excluded from radar (pegged/tokenized equity): 47
