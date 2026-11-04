@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-04 09:03 UTC
+# Radar digest - 2026-11-04 09:36 UTC
 
 ## Market
-- BTC scenario **B** | price 78198 | wk close 77982 vs 82800 | 50W 75814 (3.15%) | 1h old
+- BTC scenario **B** | price 78449 | wk close 77982 vs 82800 | 50W 75814 (3.48%) | 1m old
 - Alts: **BTC_LED** [-] | BTC.D 57.15% | ETH/BTC 0.02944 | breadth7d 29% | stables 30d -3.99%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.08pt | 7d -0.25pt | n=121
 - Gold: PAXG 1m -5.06% | real10y 2.62 (-30bp 1m) | USD 1m -0.10% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
@@ -9,44 +9,46 @@
 - 10y 1m: -37bp = real -30 + breakeven -6 -> **REAL_YIELD_DRIVEN**
 
 ## Coins in correction (entry_ready first)
-- NEAR: **BROKEN** | +56% impulse, retr 0.94 | OI dd 34% | fund 0.0100 | hold False | inval 3.40300 | OB 3.40300-3.68100
-- PEPE: **ONGOING** | +56% impulse, retr 0.34 | OI dd 30% | fund 0.0162 | hold False | inval 0.00000 | OB 0.00000-0.00000
-- ZRO: **RESUMING** | +131% impulse, retr 0.40 | OI dd 3% | fund 0.0050 | hold False | inval 1.67950 | OB 1.65360-1.77380
+- NEAR: **BROKEN** | +56% impulse, retr 0.91 | OI dd 34% | fund 0.0100 | hold False | inval 3.40300 | OB 3.40300-3.68100
+- PEPE: **ONGOING** | +56% impulse, retr 0.29 | OI dd 30% | fund 0.0122 | hold False | inval 0.00000 | OB 0.00000-0.00000
+- ZRO: **RESUMING** | +131% impulse, retr 0.42 | OI dd 3% | fund -0.0043 | hold False | inval 1.67950 | OB 1.65360-1.77380
 
 ## Pre-pump candidates
-- PUMP: [C+D] 7d 1.9%
+- PUMP: [C+D] 7d 2.3%
 
 ## ETF pipeline (new this run)
-- hyperliquid NEW: other - U.S. HYPE Spot ETF Sees $605,100 Net Inflow; ZEC and NEAR ETFs Record $7.18M Net Outflow -
-- dogecoin NEW: other - Bitwise Dogecoin ETF (BWOW) Stock Price, News & Analysis - 24/7 Wall St.
-- ripple NEW: other - XRP price steadies near $1.25 despite weak ETF demand and bearish market sentiment. - Plua
-- ripple NEW: other - XRP News Today: Security Fix, ETF Holdings and a $62M Whale Move - Coin Gabbar
-- official-trump NEW: other - Bitcoin ETFs Lose $1B As Midterms Test Trump's Crypto Agenda - iShares Bitcoin Trust (NASD
-- zcash: other - U.S. HYPE Spot ETF Sees $605,100 Net Inflow; ZEC and NEAR ETFs Record $7.18M Net Outflow -
+- kucoin-shares NEW: other - U.S. HYPE Spot ETF Sees $605,100 Net Inflow; ZEC and NEAR ETFs Record $7.18M Net Outflow -
+- solana NEW: other - Solana Price Drops Below USD 95 Amid ETF Outflows & Whale Transfers - Analytics Insight
+- kucoin-shares NEW: other - Bitcoin Eyes Macro Shift as Gold ETF Outflows Accelerate Amid AI Spending Concerns - KuCoi
+- solana NEW: other - Leveraged Solana ETF Draws Fresh Cash as Rally Tempts Risk-On Traders - TipRanks
+- ondo-finance: other - iShares Short Duration Bond Active Tokenized ETF (Ondo) USD Price (NEARON-USD) - Yahoo Fin
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc 0.24% | topPos 0.94 | taker 0.98
-- ETH: SHORT_SQUEEZE_24H | OI/mc 0.65% | topPos 0.93 | taker 1.00
+- BTC: SHORT_SQUEEZE_24H | OI/mc 0.24% | topPos 0.95 | taker 0.97
+- ETH: SHORT_SQUEEZE_24H | OI/mc 0.66% | topPos 0.95 | taker 1.02
 - SOL: SHORT_SQUEEZE_24H | OI/mc 0.71% | topPos 0.86 | taker 0.98
-- SUI: LONG_FLUSH_24H | OI/mc 0.94% | topPos 0.80 | taker 0.97
-- SEI: LONG_FLUSH_24H | OI/mc 0.72% | topPos 0.91 | taker 0.98
-- TAO: LONG_FLUSH_24H | OI/mc 0.64% | topPos 0.86 | taker 1.01
-- ZEC: SHORT_SQUEEZE_24H | OI/mc 0.83% | topPos 1.18 | taker 1.03
-- WLD: SHORT_SQUEEZE_FUEL | OI/mc -% | topPos 0.87 | taker 0.99
+- SUI: LONG_FLUSH_24H | OI/mc 0.95% | topPos 0.80 | taker 0.99
+- SEI: LONG_FLUSH_24H | OI/mc 0.73% | topPos 0.89 | taker 0.97
+- TAO: LONG_FLUSH_24H | OI/mc 0.65% | topPos 0.86 | taker 1.01
+- ZEC: SHORT_SQUEEZE_24H | OI/mc 0.85% | topPos 1.20 | taker 1.03
+- ADA: LONG_FLUSH_24H | OI/mc 0.43% | topPos 0.87 | taker 0.96
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
+- ethereum: REVENUE_ACCELERATING
 - ore: REVENUE_ACCELERATING
 - lido-dao: CHEAP_VS_REVENUE
-- (18 flagged protocol(s) without a tradeable token hidden)
+- usual: REVENUE_ACCELERATING
+- dolomite: REVENUE_ACCELERATING
+- (19 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 8 | mean -1.7% (0.19R) | in profit 4 | older than 7d 5
-- worst: BEAM -0.73R, TIA -0.61R, AERO -0.47R | best: PEPE 0.07R, NIGHT 0.82R, ZRO 2.59R
+- open 8 | mean -1.7% (0.15R) | in profit 4 | older than 7d 5
+- worst: BEAM -0.70R, TIA -0.65R, AERO -0.47R | best: PEPE 0.07R, NIGHT 0.85R, ZRO 2.30R
 
 ## System
-- CoinGecko 1331/10000 used, month-end projection 11831 (118%), throttle level 2 | by script {'scan': 358, 'check_liquidity': 48, 'breakout_check': 897, 'counterfactual_check': 28}
+- CoinGecko 1333/10000 used, month-end projection 11849 (118%), throttle level 2 | by script {'scan': 360, 'check_liquidity': 48, 'breakout_check': 897, 'counterfactual_check': 28}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=56), H2 SUPPORTED (n=221)
-- radar-flags.json scan age: 2m
-- excluded from radar (pegged/tokenized equity): 46
+- radar-flags.json scan age: 5m
+- excluded from radar (pegged/tokenized equity): 47
