@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-11-03T23:35:25.271806+00:00",
+  "updated_at": "2026-11-04T01:34:43.072443+00:00",
   "engine_version": "correction-v65.3",
   "btc_q4_scenario": {
     "scenario": "C",
     "reason": "testing the 50W SMA or deep drawdown from the 30d high",
-    "price": 77901.5,
+    "price": 76949.2,
     "last_weekly_close": 77982.5,
     "key_level": 82800.0,
     "sma_50w": 75814.0,
-    "dist_to_50w_pct": 2.75,
-    "drawdown_from_30d_high_pct": 10.14,
+    "dist_to_50w_pct": 1.5,
+    "drawdown_from_30d_high_pct": 11.24,
     "action": "no entries into the fall - wait for a daily bullish CHoCH"
   },
   "coins_in_correction": [
@@ -20,12 +20,12 @@
         "watchlist",
         "etf_watch"
       ],
-      "price": 3.875,
+      "price": 3.769,
       "impulse_low": 3.854,
       "impulse_peak": 6.028,
       "impulse_gain_pct": 56.4,
       "peak_date": "2026-10-11",
-      "retracement_now": 0.99,
+      "retracement_now": 1.039,
       "retracement_max": 1.051,
       "fib_levels": {
         "0.382": 5.197532,
@@ -72,12 +72,6 @@
           },
           {
             "side": "low",
-            "level": 4.25,
-            "result": "CONFIRMED",
-            "ts": 1793304000000
-          },
-          {
-            "side": "low",
             "level": 3.906,
             "result": "CONFIRMED",
             "ts": 1793664000000
@@ -98,7 +92,7 @@
         "bullish_hold_signal": false,
         "last_low_sweep": null,
         "premium_discount_impulse": {
-          "position": 0.007,
+          "position": -0.04,
           "zone": "DEEP_DISCOUNT",
           "equilibrium": 4.941,
           "range_low": 3.854,
@@ -121,7 +115,7 @@
       "entry_ready_rule": "status RESET_DONE/RESUMING + a hold signal (fresh low sweep or bullish internal CHoCH) + price at/below the impulse equilibrium - still needs gate + Agent Room + visual check"
     }
   ],
-  "n_screened": 28,
+  "n_screened": 29,
   "status_counts": {
     "RESUMING": 0,
     "RESET_DONE": 0,
@@ -130,13 +124,15 @@
   },
   "notes": "RESUMING still needs a visual check of the 4H chart before any entry; RESET_DONE = first-tranche zone at most. Gate + Agent Room always apply.",
   "errors": [
-    "beam-2: RuntimeError: OKX /market/candles code=51001 msg=Instrument ID, Instrument ID code, or Spread ID doesn't exist.",
     "kinetiq: RuntimeError: OKX /market/candles code=51001 msg=Instrument ID, Instrument ID code, or Spread ID doesn't exist.",
-    "pieverse: RuntimeError: OKX /market/candles code=51001 msg=Instrument ID, Instrument ID code, or Spread ID doesn't exist.",
-    "anvil: RuntimeError: OKX /market/candles code=51001 msg=Instrument ID, Instrument ID code, or Spread ID doesn't exist.",
+    "beam-2: RuntimeError: OKX /market/candles code=51001 msg=Instrument ID, Instrument ID code, or Spread ID doesn't exist.",
     "yellow: RuntimeError: OKX /market/candles code=51001 msg=Instrument ID, Instrument ID code, or Spread ID doesn't exist.",
+    "anvil: RuntimeError: OKX /market/candles code=51001 msg=Instrument ID, Instrument ID code, or Spread ID doesn't exist.",
     "gmt-token: RuntimeError: OKX /market/candles code=51001 msg=Instrument ID, Instrument ID code, or Spread ID doesn't exist.",
-    "monero: RuntimeError: OKX /market/candles code=51001 msg=Instrument ID, Instrument ID code, or Spread ID doesn't exist.",
-    "figure-heloc: RuntimeError: OKX /market/candles code=51001 msg=Instrument ID, Instrument ID code, or Spread ID doesn't exist."
+    "stable-2: RuntimeError: OKX /market/candles code=51001 msg=Instrument ID, Instrument ID code, or Spread ID doesn't exist.",
+    "spiko-amundi-overnight-swap-fund-eur: RuntimeError: OKX /market/candles code=51001 msg=Instrument ID, Instrument ID code, or Spread ID doesn't exist.",
+    "bittorrent: RuntimeError: OKX /market/candles code=51001 msg=Instrument ID, Instrument ID code, or Spread ID doesn't exist.",
+    "eutbl: RuntimeError: OKX /market/candles code=51001 msg=Instrument ID, Instrument ID code, or Spread ID doesn't exist.",
+    "societe-generale-forge-eurcv: RuntimeError: OKX /market/candles code=51001 msg=Instrument ID, Instrument ID code, or Spread ID doesn't exist."
   ]
 }
