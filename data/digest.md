@@ -1,4 +1,4 @@
-# Radar digest - 2026-11-04 14:35 UTC
+# Radar digest - 2026-11-04 15:03 UTC
 
 ## Market
 - BTC scenario **B** | price 78334 | wk close 77982 vs 82800 | 50W 75814 (3.33%) | 1h old
@@ -14,7 +14,7 @@
 - PEPE: **ONGOING** | +56% impulse, retr 0.34 | OI dd 30% | fund 0.0100 | hold False | inval 0.00000 | OB 0.00000-0.00000
 
 ## Pre-pump candidates
-- INJ: [A+C] 7d -1.9%
+- none
 
 ## ETF pipeline (new this run)
 - binancecoin NEW: launch - VanEck Launches 1st US Spot BNB ETF on Nasdaq - CoinMarketCap
@@ -40,12 +40,12 @@
 - (19 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 8 | mean -2.2% (0.04R) | in profit 2 | older than 7d 5
-- worst: TIA -0.67R, AERO -0.51R, BEAM -0.36R | best: RUNE -0.01R, NIGHT 0.77R, ZRO 1.44R
+- open 8 | mean -0.5% (0.21R) | in profit 4 | older than 7d 5
+- worst: TIA -0.53R, BEAM -0.42R, AERO -0.41R | best: PEPE 0.04R, NIGHT 0.85R, ZRO 2.16R
 
 ## System
-- CoinGecko 1411/10000 used, month-end projection 11813 (118%), throttle level 2 | by script {'scan': 378, 'check_liquidity': 50, 'breakout_check': 955, 'counterfactual_check': 28}
+- CoinGecko 1421/10000 used, month-end projection 11760 (118%), throttle level 2 | by script {'scan': 388, 'check_liquidity': 50, 'breakout_check': 955, 'counterfactual_check': 28}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=56), H2 SUPPORTED (n=222)
-- radar-flags.json scan age: 5m
-- excluded from radar (pegged/tokenized equity): 48
+- radar-flags.json scan age: 3m
+- excluded from radar (pegged/tokenized equity): 47
