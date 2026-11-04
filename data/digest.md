@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-04 12:35 UTC
+# Radar digest - 2026-11-04 13:05 UTC
 
 ## Market
-- BTC scenario **B** | price 78675 | wk close 77982 vs 82800 | 50W 75814 (3.77%) | 1h old
+- BTC scenario **B** | price 78675 | wk close 77982 vs 82800 | 50W 75814 (3.77%) | 2h old
 - Alts: **BTC_LED** [-] | BTC.D 57.18% | ETH/BTC 0.02967 | breadth7d 34% | stables 30d -3.99%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.06pt | 7d -0.27pt | n=121
 - Gold: PAXG 1m -2.61% | real10y 2.62 (-30bp 1m) | USD 1m -0.10% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
@@ -14,7 +14,7 @@
 - ZRO: **RESUMING** | +131% impulse, retr 0.41 | OI dd 3% | fund -0.0073 | hold False | inval 1.67950 | OB 1.65360-1.77380
 
 ## Pre-pump candidates
-- none
+- INJ: [A+C] 7d -3.6%
 
 ## ETF pipeline (new this run)
 - solana NEW: other - Solana price drops below $100 amid record ETF o... - Pluang
@@ -39,12 +39,12 @@
 - (19 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 8 | mean -1.5% (0.13R) | in profit 3 | older than 7d 5
-- worst: TIA -0.64R, AERO -0.46R, BEAM -0.43R | best: RUNE 0.03R, NIGHT 0.82R, ZRO 2.02R
+- open 8 | mean -1.3% (0.13R) | in profit 3 | older than 7d 5
+- worst: TIA -0.66R, AERO -0.49R, BEAM -0.27R | best: RUNE 0.04R, NIGHT 0.78R, ZRO 1.87R
 
 ## System
-- CoinGecko 1402/10000 used, month-end projection 12017 (120%), throttle level 2 | by script {'scan': 370, 'check_liquidity': 49, 'breakout_check': 955, 'counterfactual_check': 28}
+- CoinGecko 1404/10000 used, month-end projection 11893 (119%), throttle level 2 | by script {'scan': 372, 'check_liquidity': 49, 'breakout_check': 955, 'counterfactual_check': 28}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=56), H2 SUPPORTED (n=222)
-- radar-flags.json scan age: 5m
-- excluded from radar (pegged/tokenized equity): 47
+- radar-flags.json scan age: 3m
+- excluded from radar (pegged/tokenized equity): 48
