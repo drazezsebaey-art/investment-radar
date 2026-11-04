@@ -1,4 +1,4 @@
-# Radar digest - 2026-11-04 08:34 UTC
+# Radar digest - 2026-11-04 09:03 UTC
 
 ## Market
 - BTC scenario **B** | price 78198 | wk close 77982 vs 82800 | 50W 75814 (3.15%) | 1h old
@@ -14,7 +14,7 @@
 - ZRO: **RESUMING** | +131% impulse, retr 0.40 | OI dd 3% | fund 0.0050 | hold False | inval 1.67950 | OB 1.65360-1.77380
 
 ## Pre-pump candidates
-- VVV: [A+C] 7d -1.5%
+- PUMP: [C+D] 7d 1.9%
 
 ## ETF pipeline (new this run)
 - hyperliquid NEW: other - U.S. HYPE Spot ETF Sees $605,100 Net Inflow; ZEC and NEAR ETFs Record $7.18M Net Outflow -
@@ -41,12 +41,12 @@
 - (18 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 8 | mean -1.6% (0.20R) | in profit 4 | older than 7d 5
-- worst: BEAM -0.76R, TIA -0.61R, AERO -0.45R | best: PEPE 0.09R, NIGHT 0.77R, ZRO 2.74R
+- open 8 | mean -1.7% (0.19R) | in profit 4 | older than 7d 5
+- worst: BEAM -0.73R, TIA -0.61R, AERO -0.47R | best: PEPE 0.07R, NIGHT 0.82R, ZRO 2.59R
 
 ## System
-- CoinGecko 1329/10000 used, month-end projection 11961 (120%), throttle level 2 | by script {'scan': 356, 'check_liquidity': 48, 'breakout_check': 897, 'counterfactual_check': 28}
+- CoinGecko 1331/10000 used, month-end projection 11831 (118%), throttle level 2 | by script {'scan': 358, 'check_liquidity': 48, 'breakout_check': 897, 'counterfactual_check': 28}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=56), H2 SUPPORTED (n=221)
-- radar-flags.json scan age: 4m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 46
