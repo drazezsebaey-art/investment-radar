@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-05 16:35 UTC
+# Radar digest - 2026-11-05 17:02 UTC
 
 ## Market
-- BTC scenario **C** | price 76628 | wk close 77982 vs 82800 | 50W 75814 (1.07%) | 60m old
+- BTC scenario **C** | price 76628 | wk close 77982 vs 82800 | 50W 75814 (1.07%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.14% | ETH/BTC 0.02977 | breadth7d 39% | stables 30d -4.26%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.00pt | 7d -0.15pt | n=121
 - Gold: PAXG 1m -1.41% | real10y 2.65 (-30bp 1m) | USD 1m -0.10% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 26
@@ -14,7 +14,7 @@
 - FLUID: **ONGOING** | +111% impulse, retr 0.18 | OI dd -% | fund - | hold False | inval 1.69690 | OB 1.69690-1.78300
 
 ## Pre-pump candidates
-- ZEC: [A+C] 7d -4.8%
+- none
 
 ## ETF pipeline (new this run)
 - injective-protocol NEW: launch - Canary’s Staked INJ ETF Begins Trading on Nasdaq - The Defiant
@@ -43,12 +43,12 @@
 - (19 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 6 | mean -4.8% (-0.26R) | in profit 1 | older than 7d 4
-- worst: AERO -0.65R, SUI -0.55R, BEAM -0.32R | best: PEPE -0.17R, RUNE -0.08R, NIGHT 0.23R
+- open 6 | mean -5.8% (-0.32R) | in profit 1 | older than 7d 4
+- worst: SUI -0.68R, AERO -0.67R, BEAM -0.35R | best: PEPE -0.24R, RUNE -0.09R, NIGHT 0.12R
 
 ## System
-- CoinGecko 1637/10000 used, month-end projection 10524 (105%), throttle level 2 | by script {'scan': 496, 'check_liquidity': 61, 'breakout_check': 1052, 'counterfactual_check': 28}
+- CoinGecko 1639/10000 used, month-end projection 10443 (104%), throttle level 2 | by script {'scan': 498, 'check_liquidity': 61, 'breakout_check': 1052, 'counterfactual_check': 28}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=56), H2 SUPPORTED (n=228)
-- radar-flags.json scan age: 4m
-- excluded from radar (pegged/tokenized equity): 47
+- radar-flags.json scan age: 2m
+- excluded from radar (pegged/tokenized equity): 46
