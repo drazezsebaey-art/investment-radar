@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-05 13:03 UTC
+# Radar digest - 2026-11-05 13:36 UTC
 
 ## Market
-- BTC scenario **B** | price 80354 | wk close 77982 vs 82800 | 50W 75814 (5.99%) | 1h old
+- BTC scenario **B** | price 79686 | wk close 77982 vs 82800 | 50W 75814 (5.11%) | 1m old
 - Alts: **BTC_LED** [-] | BTC.D 57.31% | ETH/BTC 0.03014 | breadth7d -% | stables 30d -4.26%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.08pt | 7d 0.09pt | n=121
 - Gold: PAXG 1m -1.18% | real10y 2.65 (-30bp 1m) | USD 1m -0.10% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 26
@@ -9,27 +9,28 @@
 - 10y 1m: -36bp = real -30 + breakeven -10 -> **REAL_YIELD_DRIVEN**
 
 ## Coins in correction (entry_ready first)
-- NEAR: **BROKEN** | +54% impulse, retr 0.95 | OI dd 30% | fund 0.0100 | hold False | inval 3.69400 | OB 3.40300-3.68100
-- STX: **BROKEN** | +54% impulse, retr 0.72 | OI dd 39% | fund 0.0100 | hold False | inval 0.31510 | OB 0.31510-0.32970
-- FLUID: **ONGOING** | +111% impulse, retr 0.05 | OI dd -% | fund - | hold False | inval 1.69690 | OB 1.69690-1.78300
+- NEAR: **BROKEN** | +54% impulse, retr 0.99 | OI dd 30% | fund 0.0100 | hold False | inval 3.69400 | OB 3.40300-3.68100
+- STX: **BROKEN** | +54% impulse, retr 0.70 | OI dd 39% | fund 0.0100 | hold False | inval 0.31510 | OB 0.31510-0.32970
+- CARDS: **ONGOING** | +154% impulse, retr 0.43 | OI dd -% | fund - | hold False | inval 0.21090 | OB 0.18390-0.20790
+- FLUID: **ONGOING** | +111% impulse, retr 0.06 | OI dd -% | fund - | hold False | inval 1.69690 | OB 1.69690-1.78300
 
 ## Pre-pump candidates
 - none
 
 ## ETF pipeline (new this run)
-- solana NEW: other - Bitwise’s Solana ETF Loses $9.3 Million as Short-Term Signals Turn Bearish - TipRanks
-- zcash: other - Zcash Price Prediction: Can ZEC Defy ETF Outflows and Break $1,320? - Coin Gabbar
-- cardano: other - 21Shares Cardano ETP (AADA-USD.AS) Seasonal returns chart - Yahoo Finance UK
+- near: other - Injective (INJ) ETF or Near Protocol (NEAR) ETF: Which Could Offer Better Value? - Captain
+- zcash: other - Zcash eyes $1,385 as ETF inflows return ahead of NU7 upgrade - Cryptonews.net
+- near: other - Injective (INJ) ETF or Near Protocol (NEAR) ETF: Which Could Offer Better Value? - Captain
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc 0.23% | topPos 0.97 | taker 1.10
-- ETH: LONG_FLUSH_24H | OI/mc 0.65% | topPos 0.95 | taker 1.12
-- AVAX: SHORT_SQUEEZE_24H | OI/mc 0.36% | topPos 0.88 | taker 0.92
-- XRP: LONG_FLUSH_24H | OI/mc 0.16% | topPos 0.88 | taker 1.09
-- SUI: SHORT_SQUEEZE_24H | OI/mc 0.95% | topPos 0.83 | taker 1.06
-- SEI: LONG_FLUSH_24H | OI/mc 0.72% | topPos 0.89 | taker 1.05
-- TAO: SHORT_SQUEEZE_24H | OI/mc 0.62% | topPos 0.86 | taker 0.97
-- ZEC: LONG_FLUSH_24H | OI/mc 0.83% | topPos 1.18 | taker 1.00
+- BTC: LONG_FLUSH_24H | OI/mc -% | topPos 0.96 | taker 1.08
+- ETH: LONG_FLUSH_24H | OI/mc 0.65% | topPos 0.95 | taker 1.09
+- SOL: LONG_FLUSH_24H | OI/mc 0.68% | topPos 0.87 | taker 1.01
+- NEAR: LONG_FLUSH_24H | OI/mc 1.04% | topPos 0.98 | taker 0.91
+- AVAX: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.89 | taker 0.91
+- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 1.08
+- SUI: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.83 | taker 1.02
+- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.89 | taker 1.05
 
 ## Revenue / buyback flags
 - collector-crypt: CHEAP_VS_REVENUE
@@ -38,12 +39,12 @@
 - (19 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 8 | mean -2.6% (-0.13R) | in profit 2 | older than 7d 5
-- worst: TIA -0.61R, AERO -0.35R, BEAM -0.30R | best: ZRO 0.00R, RUNE 0.07R, NIGHT 0.44R
+- open 8 | mean -2.2% (-0.11R) | in profit 2 | older than 7d 5
+- worst: TIA -0.58R, AERO -0.36R, BEAM -0.22R | best: ZRO 0.00R, RUNE 0.08R, NIGHT 0.41R
 
 ## System
-- CoinGecko 1623/10000 used, month-end projection 10721 (107%), throttle level 2 | by script {'scan': 484, 'check_liquidity': 59, 'breakout_check': 1052, 'counterfactual_check': 28}
+- CoinGecko 1626/10000 used, month-end projection 10741 (107%), throttle level 2 | by script {'scan': 486, 'check_liquidity': 60, 'breakout_check': 1052, 'counterfactual_check': 28}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=56), H2 SUPPORTED (n=223)
-- radar-flags.json scan age: 2m
-- excluded from radar (pegged/tokenized equity): 47
+- radar-flags.json scan age: 6m
+- excluded from radar (pegged/tokenized equity): 46
