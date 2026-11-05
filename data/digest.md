@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-05 09:03 UTC
+# Radar digest - 2026-11-05 09:36 UTC
 
 ## Market
-- BTC scenario **B** | price 80393 | wk close 77982 vs 82800 | 50W 75814 (6.04%) | 1h old
+- BTC scenario **B** | price 80339 | wk close 77982 vs 82800 | 50W 75814 (5.97%) | 1m old
 - Alts: **BTC_LED** [-] | BTC.D 57.40% | ETH/BTC 0.03004 | breadth7d -% | stables 30d -4.27%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.17pt | 7d 0.11pt | n=121
 - Gold: PAXG 1m -0.87% | real10y 2.65 (-30bp 1m) | USD 1m -0.10% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 26
@@ -9,42 +9,39 @@
 - 10y 1m: -36bp = real -30 + breakeven -10 -> **REAL_YIELD_DRIVEN**
 
 ## Coins in correction (entry_ready first)
-- NEAR: **BROKEN** | +54% impulse, retr 0.96 | OI dd 30% | fund 0.0100 | hold False | inval 3.69400 | OB 3.40300-3.68100
-- STX: **BROKEN** | +54% impulse, retr 0.70 | OI dd 39% | fund -0.0027 | hold False | inval 0.31510 | OB 0.31510-0.32970
+- NEAR: **BROKEN** | +54% impulse, retr 0.95 | OI dd 30% | fund 0.0100 | hold False | inval 3.69400 | OB 3.40300-3.68100
+- STX: **BROKEN** | +54% impulse, retr 0.68 | OI dd 39% | fund 0.0100 | hold False | inval 0.31510 | OB 0.31510-0.32970
 - FLUID: **ONGOING** | +111% impulse, retr 0.12 | OI dd -% | fund - | hold False | inval 1.69690 | OB 1.69690-1.78300
 
 ## Pre-pump candidates
 - none
 
 ## ETF pipeline (new this run)
-- none
+- uniswap: other - 21Shares Uniswap ETP (AUNI-EUR.PA) Seasonal Returns Chart - Yahoo Finance - Yahoo! Finance
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc 0.23% | topPos 0.97 | taker 1.08
-- SOL: SHORT_SQUEEZE_24H | OI/mc 0.68% | topPos 0.86 | taker 1.02
-- AVAX: SHORT_SQUEEZE_24H | OI/mc 0.36% | topPos 0.87 | taker 0.96
-- XRP: SHORT_SQUEEZE_24H | OI/mc 0.15% | topPos 0.88 | taker 1.12
-- SUI: SHORT_SQUEEZE_24H | OI/mc 0.94% | topPos 0.83 | taker 1.07
-- SEI: LONG_FLUSH_24H | OI/mc 0.71% | topPos 0.89 | taker 1.01
-- TAO: SHORT_SQUEEZE_24H | OI/mc 0.61% | topPos 0.86 | taker 0.94
-- ZEC: SHORT_SQUEEZE_24H | OI/mc 0.84% | topPos 1.17 | taker 1.01
+- BTC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.97 | taker 1.09
+- ETH: LONG_FLUSH_24H | OI/mc 0.65% | topPos 0.95 | taker 1.11
+- SOL: SHORT_SQUEEZE_24H | OI/mc 0.69% | topPos 0.87 | taker 1.02
+- AVAX: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.87 | taker 0.92
+- XRP: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.88 | taker 1.12
+- SUI: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.83 | taker 1.05
+- SEI: LONG_FLUSH_24H | OI/mc 0.72% | topPos 0.90 | taker 1.05
+- TAO: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.86 | taker 0.95
 
 ## Revenue / buyback flags
-- pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
-- ethereum: REVENUE_ACCELERATING
+- collector-crypt: CHEAP_VS_REVENUE
 - ore: REVENUE_ACCELERATING
-- lido-dao: CHEAP_VS_REVENUE
-- usual: REVENUE_ACCELERATING
 - dolomite: REVENUE_ACCELERATING
 - (19 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 8 | mean 0.3% (0.14R) | in profit 4 | older than 7d 5
-- worst: TIA -0.47R, AERO -0.19R, BEAM -0.09R | best: RUNE 0.08R, NIGHT 0.65R, ZRO 1.15R
+- open 8 | mean -0.3% (0.08R) | in profit 3 | older than 7d 5
+- worst: TIA -0.47R, AERO -0.21R, BEAM -0.19R | best: RUNE 0.08R, NIGHT 0.62R, ZRO 0.86R
 
 ## System
-- CoinGecko 1551/10000 used, month-end projection 10635 (106%), throttle level 2 | by script {'scan': 460, 'check_liquidity': 57, 'breakout_check': 1006, 'counterfactual_check': 28}
+- CoinGecko 1553/10000 used, month-end projection 10649 (106%), throttle level 2 | by script {'scan': 462, 'check_liquidity': 57, 'breakout_check': 1006, 'counterfactual_check': 28}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=56), H2 SUPPORTED (n=222)
-- radar-flags.json scan age: 2m
-- excluded from radar (pegged/tokenized equity): 46
+- radar-flags.json scan age: 6m
+- excluded from radar (pegged/tokenized equity): 47
