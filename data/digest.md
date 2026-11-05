@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-05 10:03 UTC
+# Radar digest - 2026-11-05 10:35 UTC
 
 ## Market
-- BTC scenario **B** | price 80339 | wk close 77982 vs 82800 | 50W 75814 (5.97%) | 28m old
+- BTC scenario **B** | price 80339 | wk close 77982 vs 82800 | 50W 75814 (5.97%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 57.40% | ETH/BTC 0.03004 | breadth7d -% | stables 30d -4.27%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.17pt | 7d 0.11pt | n=121
 - Gold: PAXG 1m -1.18% | real10y 2.65 (-30bp 1m) | USD 1m -0.10% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 26
@@ -20,13 +20,13 @@
 - uniswap: other - 21Shares Uniswap ETP (AUNI-EUR.PA) Seasonal Returns Chart - Yahoo Finance - Yahoo! Finance
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.97 | taker 1.09
-- ETH: LONG_FLUSH_24H | OI/mc 0.65% | topPos 0.95 | taker 1.11
-- SOL: SHORT_SQUEEZE_24H | OI/mc 0.69% | topPos 0.87 | taker 1.02
+- BTC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.97 | taker 1.10
+- ETH: LONG_FLUSH_24H | OI/mc 0.65% | topPos 0.95 | taker 1.12
+- SOL: SHORT_SQUEEZE_24H | OI/mc 0.69% | topPos 0.87 | taker 1.03
 - AVAX: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.87 | taker 0.92
-- XRP: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.88 | taker 1.12
-- SUI: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.83 | taker 1.05
-- SEI: LONG_FLUSH_24H | OI/mc 0.72% | topPos 0.90 | taker 1.05
+- XRP: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.88 | taker 1.11
+- SUI: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.83 | taker 1.06
+- SEI: LONG_FLUSH_24H | OI/mc 0.71% | topPos 0.90 | taker 1.06
 - TAO: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.86 | taker 0.95
 
 ## Revenue / buyback flags
@@ -36,12 +36,12 @@
 - (19 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 8 | mean -0.4% (0.06R) | in profit 3 | older than 7d 5
-- worst: TIA -0.46R, AERO -0.22R, BEAM -0.21R | best: RUNE 0.11R, NIGHT 0.60R, ZRO 0.72R
+- open 8 | mean -0.8% (0.02R) | in profit 3 | older than 7d 5
+- worst: TIA -0.50R, BEAM -0.25R, AERO -0.22R | best: RUNE 0.09R, NIGHT 0.57R, ZRO 0.58R
 
 ## System
-- CoinGecko 1555/10000 used, month-end projection 10562 (106%), throttle level 2 | by script {'scan': 464, 'check_liquidity': 57, 'breakout_check': 1006, 'counterfactual_check': 28}
+- CoinGecko 1557/10000 used, month-end projection 10576 (106%), throttle level 2 | by script {'scan': 466, 'check_liquidity': 57, 'breakout_check': 1006, 'counterfactual_check': 28}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=56), H2 SUPPORTED (n=222)
-- radar-flags.json scan age: 3m
-- excluded from radar (pegged/tokenized equity): 45
+- radar-flags.json scan age: 5m
+- excluded from radar (pegged/tokenized equity): 46
