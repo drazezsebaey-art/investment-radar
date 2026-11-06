@@ -1,4 +1,4 @@
-# Radar digest - 2026-11-06 00:34 UTC
+# Radar digest - 2026-11-06 01:02 UTC
 
 ## Market
 - BTC scenario **C** | price 75976 | wk close 77982 vs 82800 | 50W 75814 (0.21%) | 1h old
@@ -14,7 +14,7 @@
 - PEPE: **RESUMING** | +56% impulse, retr 0.43 | OI dd 36% | fund 0.0082 | hold False | inval 0.00000 | OB 0.00000-0.00000
 
 ## Pre-pump candidates
-- ZEC: [A+C] 7d 2.7%
+- none
 
 ## ETF pipeline (new this run)
 - solana NEW: other - Bitwise’s Solana ETF Gives Back $9.3 Million as SOL Rally Meets Caution - TipRanks
@@ -37,12 +37,12 @@
 - (19 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 7 | mean -5.3% (-0.24R) | in profit 2 | older than 7d 4
-- worst: SUI -0.69R, AERO -0.66R, BEAM -0.54R | best: PEPE -0.14R, NIGHT 0.15R, ZEC 0.44R
+- open 7 | mean -4.7% (-0.16R) | in profit 2 | older than 7d 4
+- worst: SUI -0.63R, AERO -0.63R, BEAM -0.57R | best: PEPE -0.10R, NIGHT 0.16R, ZEC 0.86R
 
 ## System
-- CoinGecko 1734/10000 used, month-end projection 10404 (104%), throttle level 2 | by script {'scan': 528, 'check_liquidity': 64, 'breakout_check': 1111, 'counterfactual_check': 31}
+- CoinGecko 1739/10000 used, month-end projection 10348 (104%), throttle level 2 | by script {'scan': 530, 'check_liquidity': 67, 'breakout_check': 1111, 'counterfactual_check': 31}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=56), H2 SUPPORTED (n=228)
-- radar-flags.json scan age: 4m
-- excluded from radar (pegged/tokenized equity): 49
+- radar-flags.json scan age: 2m
+- excluded from radar (pegged/tokenized equity): 48
