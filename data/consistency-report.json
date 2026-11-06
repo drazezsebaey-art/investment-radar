@@ -1,12 +1,30 @@
 {
-  "checked_at": "2026-11-05T23:31:46.813241+00:00",
+  "checked_at": "2026-11-06T00:15:47.398571+00:00",
   "n_errors": 0,
-  "n_warnings": 1,
+  "n_warnings": 4,
   "findings": [
     {
       "severity": "warning",
+      "category": "priority_review_pipeline",
+      "message": "GNO: has a confidence_score but OI/funding data was never fetched for it",
+      "symbol": "GNO"
+    },
+    {
+      "severity": "warning",
+      "category": "priority_review_pipeline",
+      "message": "AWE: has a confidence_score but OI/funding data was never fetched for it",
+      "symbol": "AWE"
+    },
+    {
+      "severity": "warning",
+      "category": "monitoring_gap",
+      "message": "[shadow] GNO (gno-shadow-20261106T001426): monitored via current-spot-only fallback - no candle/snapshot data reaching it",
+      "trade_id": "gno-shadow-20261106T001426"
+    },
+    {
+      "severity": "warning",
       "category": "unlock_coverage",
-      "message": "16/16 (100%) coins with an open trade have no researched unlock schedule at all"
+      "message": "18/18 (100%) coins with an open trade have no researched unlock schedule at all"
     }
   ]
 }

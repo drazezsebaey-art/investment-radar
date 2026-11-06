@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-05 23:35 UTC
+# Radar digest - 2026-11-06 00:16 UTC
 
 ## Market
-- BTC scenario **C** | price 75976 | wk close 77982 vs 82800 | 50W 75814 (0.21%) | 1m old
+- BTC scenario **C** | price 75976 | wk close 77982 vs 82800 | 50W 75814 (0.21%) | 42m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.18% | ETH/BTC 0.02943 | breadth7d 56% | stables 30d -4.29%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.01pt | 7d -0.15pt | n=121
 - Gold: PAXG 1m -1.76% | real10y 2.64 (-27bp 1m) | USD 1m -0.10% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 26
@@ -14,7 +14,7 @@
 - PEPE: **RESUMING** | +56% impulse, retr 0.43 | OI dd 36% | fund 0.0082 | hold False | inval 0.00000 | OB 0.00000-0.00000
 
 ## Pre-pump candidates
-- none
+- ZEC: [A+C] 7d -0.0%
 
 ## ETF pipeline (new this run)
 - solana NEW: other - Bitwise’s Solana ETF Gives Back $9.3 Million as SOL Rally Meets Caution - TipRanks
@@ -37,12 +37,12 @@
 - (19 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 6 | mean -7.1% (-0.39R) | in profit 1 | older than 7d 4
-- worst: SUI -0.79R, AERO -0.70R, BEAM -0.51R | best: RUNE -0.23R, PEPE -0.19R, NIGHT 0.10R
+- open 7 | mean -6.0% (-0.33R) | in profit 1 | older than 7d 4
+- worst: SUI -0.79R, AERO -0.68R, BEAM -0.50R | best: PEPE -0.18R, ZEC 0.00R, NIGHT 0.06R
 
 ## System
-- CoinGecko 1667/10000 used, month-end projection 10086 (101%), throttle level 2 | by script {'scan': 524, 'check_liquidity': 63, 'breakout_check': 1052, 'counterfactual_check': 28}
+- CoinGecko 1732/10000 used, month-end projection 10392 (104%), throttle level 2 | by script {'scan': 526, 'check_liquidity': 64, 'breakout_check': 1111, 'counterfactual_check': 31}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=56), H2 SUPPORTED (n=228)
-- radar-flags.json scan age: 5m
+- radar-flags.json scan age: 16m
 - excluded from radar (pegged/tokenized equity): 49
