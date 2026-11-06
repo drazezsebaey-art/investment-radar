@@ -1,4 +1,4 @@
-# Radar digest - 2026-11-06 06:35 UTC
+# Radar digest - 2026-11-06 07:02 UTC
 
 ## Market
 - BTC scenario **C** | price 75569 | wk close 77982 vs 82800 | 50W 75814 (-0.32%) | 1h old
@@ -15,7 +15,9 @@
 - FLUID: **ONGOING** | +111% impulse, retr 0.24 | OI dd -% | fund - | hold False | inval 1.69690 | OB 1.69690-1.78300
 
 ## Pre-pump candidates
-- none
+- SN51: [C+E] 7d -8.4%
+- TAO: [A+E] 7d -7.4%
+- AKT: [C+E] 7d 1.8%
 
 ## ETF pipeline (new this run)
 - ondo-finance: conversion - VanEck Oil Services Tokenized ETF (Ondo) Price | OIHon Price Today, Live Chart, USD conver
@@ -40,12 +42,12 @@
 - (19 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 7 | mean -5.4% (-0.30R) | in profit 1 | older than 7d 4
-- worst: AERO -0.77R, SUI -0.60R, BEAM -0.59R | best: RUNE -0.10R, PEPE -0.04R, NIGHT 0.12R
+- open 7 | mean -5.3% (-0.32R) | in profit 1 | older than 7d 4
+- worst: AERO -0.77R, SUI -0.64R, BEAM -0.61R | best: RUNE -0.07R, PEPE -0.05R, NIGHT 0.23R
 
 ## System
-- CoinGecko 1769/10000 used, month-end projection 10109 (101%), throttle level 2 | by script {'scan': 552, 'check_liquidity': 75, 'breakout_check': 1111, 'counterfactual_check': 31}
+- CoinGecko 1771/10000 used, month-end projection 10040 (100%), throttle level 2 | by script {'scan': 554, 'check_liquidity': 75, 'breakout_check': 1111, 'counterfactual_check': 31}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=56), H2 SUPPORTED (n=228)
-- radar-flags.json scan age: 5m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 47
