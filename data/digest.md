@@ -1,39 +1,42 @@
-# Radar digest - 2026-11-06 07:02 UTC
+# Radar digest - 2026-11-06 07:36 UTC
 
 ## Market
-- BTC scenario **C** | price 75569 | wk close 77982 vs 82800 | 50W 75814 (-0.32%) | 1h old
-- Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.09% | ETH/BTC 0.02940 | breadth7d 59% | stables 30d -4.62%
-- Alt risk (BTC.D): **NORMAL**  | 3d -0.01pt | 7d -0.04pt | n=121
+- BTC scenario **C** | price 75388 | wk close 77982 vs 82800 | 50W 75814 (-0.56%) | 1m old
+- Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.07% | ETH/BTC 0.02943 | breadth7d 63% | stables 30d -4.62%
+- Alt risk (BTC.D): **NORMAL**  | 3d -0.10pt | 7d -0.11pt | n=121
 - Gold: PAXG 1m -2.88% | real10y 2.64 (-27bp 1m) | USD 1m -0.10% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
 - 10y 1w: -15bp = real -3 + breakeven -11 -> **INFLATION_EXPECTATIONS_DRIVEN**
 - 10y 1m: -37bp = real -27 + breakeven -12 -> **MIXED**
 
 ## Coins in correction (entry_ready first)
-- STX: **BROKEN** | +54% impulse, retr 0.79 | OI dd 35% | fund -0.0008 | hold False | inval 0.31510 | OB 0.31510-0.32970
-- NEAR: **BROKEN** | +50% impulse, retr 1.17 | OI dd 37% | fund 0.0100 | hold True | inval 3.40300 | OB 3.40300-3.68100
-- INJ: **BROKEN** | +47% impulse, retr 0.38 | OI dd 36% | fund 0.0029 | hold False | inval 6.82800 | OB 6.82800-7.04700
-- FLUID: **ONGOING** | +111% impulse, retr 0.24 | OI dd -% | fund - | hold False | inval 1.69690 | OB 1.69690-1.78300
+- PYTH: **BROKEN** | +68% impulse, retr 0.91 | OI dd 52% | fund 0.0050 | hold True | inval 0.05856 | OB 0.05744-0.05866
+- NEAR: **BROKEN** | +50% impulse, retr 1.19 | OI dd 37% | fund 0.0100 | hold True | inval 3.40300 | OB ---
+- INJ: **BROKEN** | +47% impulse, retr 0.42 | OI dd 36% | fund 0.0100 | hold False | inval 6.82800 | OB 6.82800-7.04700
+- FLUID: **ONGOING** | +111% impulse, retr 0.27 | OI dd -% | fund - | hold False | inval 1.69690 | OB 1.69690-1.78300
 
 ## Pre-pump candidates
 - SN51: [C+E] 7d -8.4%
 - TAO: [A+E] 7d -7.4%
+- UB: [C+E] 7d -3.2%
 - AKT: [C+E] 7d 1.8%
+- INJ: [A+C] 7d 11.2%
 
 ## ETF pipeline (new this run)
-- ondo-finance: conversion - VanEck Oil Services Tokenized ETF (Ondo) Price | OIHon Price Today, Live Chart, USD conver
-- bitcoin-cash: other - Form 144 GRAYSCALE BITCOIN CASH TRUST (BCH) For: 5 November By Investing.com - Investing.c
-- ondo-finance: other - VanEck Oil Services Tokenized ETF (Ondo) Exchanges OIHon Markets | Buy & Sell & Trade - Cr
-- ondo-finance: other - Historical Data for VanEck Oil Services Tokenized ETF (Ondo) in USD - CryptoRank
+- solana NEW: other - Solana price weighs ETF outflows against fresh network upgrades - ad-hoc-news.de
+- solana NEW: other - Solana Price Prediction: Record 3.4 Billion October Transactions Meet Flat ETF Flows as Tr
+- injective-protocol NEW: other - Brothers, the word is law! After 474 days, Injective’s ETF h - KuCoin
+- kucoin-shares NEW: other - Brothers, the word is law! After 474 days, Injective’s ETF h - KuCoin
+- zcash: other - Zcash Price Forecast: ZEC rebounds as retail speculations offset ETF outflows - www.tmgm.c
 
 ## Derivatives flags (OKX)
 - BTC: LONG_FLUSH_24H | OI/mc 0.25% | topPos 0.89 | taker 0.86
 - ETH: LONG_FLUSH_24H | OI/mc 0.69% | topPos 0.85 | taker 0.87
 - AVAX: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.37% | topPos 0.93 | taker 0.84
-- XRP: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.81
-- SUI: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.91% | topPos 0.82 | taker 0.85
+- XRP: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 0.82
+- SUI: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.92% | topPos 0.82 | taker 0.84
 - SEI: LONG_FLUSH_24H | OI/mc 0.72% | topPos 0.91 | taker 0.90
-- TAO: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.66% | topPos 0.87 | taker 0.82
-- ZEC: LONG_FLUSH_24H | OI/mc 0.80% | topPos 1.12 | taker 0.99
+- TAO: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.66% | topPos 0.87 | taker 0.83
+- ZEC: LONG_FLUSH_24H | OI/mc 0.80% | topPos 1.11 | taker 0.99
 
 ## Revenue / buyback flags
 - collector-crypt: CHEAP_VS_REVENUE
@@ -42,12 +45,12 @@
 - (19 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 7 | mean -5.3% (-0.32R) | in profit 1 | older than 7d 4
-- worst: AERO -0.77R, SUI -0.64R, BEAM -0.61R | best: RUNE -0.07R, PEPE -0.05R, NIGHT 0.23R
+- open 7 | mean -6.2% (-0.38R) | in profit 1 | older than 7d 4
+- worst: AERO -0.79R, SUI -0.68R, BEAM -0.68R | best: RUNE -0.15R, PEPE -0.08R, NIGHT 0.17R
 
 ## System
-- CoinGecko 1771/10000 used, month-end projection 10040 (100%), throttle level 2 | by script {'scan': 554, 'check_liquidity': 75, 'breakout_check': 1111, 'counterfactual_check': 31}
+- CoinGecko 1773/10000 used, month-end projection 10052 (100%), throttle level 2 | by script {'scan': 556, 'check_liquidity': 75, 'breakout_check': 1111, 'counterfactual_check': 31}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=56), H2 SUPPORTED (n=228)
-- radar-flags.json scan age: 2m
+- radar-flags.json scan age: 6m
 - excluded from radar (pegged/tokenized equity): 47
