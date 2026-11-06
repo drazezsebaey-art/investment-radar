@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-06 16:34 UTC
+# Radar digest - 2026-11-06 17:02 UTC
 
 ## Market
-- BTC scenario **C** | price 75414 | wk close 77982 vs 82800 | 50W 75814 (-0.53%) | 60m old
+- BTC scenario **C** | price 75414 | wk close 77982 vs 82800 | 50W 75814 (-0.53%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57% | ETH/BTC 0.02942 | breadth7d 54% | stables 30d -4.60%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.12pt | 7d 0.01pt | n=121
 - Gold: PAXG 1m -2.29% | real10y 2.64 (-27bp 1m) | USD 1m -0.10% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
@@ -15,7 +15,8 @@
 - FLUID: **ONGOING** | +111% impulse, retr 0.35 | OI dd -% | fund - | hold False | inval 1.69690 | OB 1.69690-1.78300
 
 ## Pre-pump candidates
-- ZEC: [A+C] 7d 8.8%
+- ZEC: [A+C] 7d 11.7%
+- INJ: [A+C] 7d 16.8%
 
 ## ETF pipeline (new this run)
 - injective-protocol NEW: launch - Canary Capital Launches the First U.S. Spot Staked INJ ETF (Ticker: INJC) - The Manila Tim
@@ -42,12 +43,12 @@
 - (13 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 7 | mean -3.8% (-0.06R) | in profit 3 | older than 7d 4
-- worst: AERO -0.66R, SUI -0.54R, BEAM -0.53R | best: PEPE 0.08R, NIGHT 0.11R, ZEC 1.35R
+- open 7 | mean -3.3% (-0.00R) | in profit 3 | older than 7d 4
+- worst: AERO -0.64R, BEAM -0.55R, SUI -0.51R | best: PEPE 0.11R, NIGHT 0.17R, ZEC 1.64R
 
 ## System
-- CoinGecko 1889/10000 used, month-end projection 10001 (100%), throttle level 2 | by script {'scan': 600, 'check_liquidity': 84, 'breakout_check': 1172, 'counterfactual_check': 33}
+- CoinGecko 1892/10000 used, month-end projection 9943 (99%), throttle level 1 | by script {'scan': 602, 'check_liquidity': 85, 'breakout_check': 1172, 'counterfactual_check': 33}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=56), H2 SUPPORTED (n=228)
-- radar-flags.json scan age: 4m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 47
