@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-06 19:35 UTC
+# Radar digest - 2026-11-06 20:02 UTC
 
 ## Market
-- BTC scenario **C** | price 75726 | wk close 77982 vs 82800 | 50W 75814 (-0.12%) | 1m old
+- BTC scenario **C** | price 75726 | wk close 77982 vs 82800 | 50W 75814 (-0.12%) | 28m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.08% | ETH/BTC 0.02943 | breadth7d 42% | stables 30d -4.60%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.02pt | 7d 0.16pt | n=121
 - Gold: PAXG 1m -2.29% | real10y 2.64 (-27bp 1m) | USD 1m -0.10% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
@@ -19,6 +19,7 @@
 - PEPE: [A+C] 7d -0.6%
 - ZEC: [A+C] 7d 9.2%
 - INJ: [A+C] 7d 18.0%
+- CAP: [A+C] 7d 25.8%
 
 ## ETF pipeline (new this run)
 - solana NEW: delay_or_rejection - Altcoin ETF Selloff: Zcash Loses $11M as SOL, AVAX and HYPE Funds Face Withdrawals - Coinp
@@ -46,12 +47,12 @@
 - (13 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 7 | mean -4.7% (-0.13R) | in profit 3 | older than 7d 4
-- worst: AERO -0.67R, BEAM -0.62R, SUI -0.53R | best: PEPE 0.04R, NIGHT 0.09R, ZEC 1.11R
+- open 7 | mean -4.7% (-0.12R) | in profit 3 | older than 7d 4
+- worst: AERO -0.66R, BEAM -0.64R, SUI -0.52R | best: PEPE 0.06R, NIGHT 0.06R, ZEC 1.19R
 
 ## System
-- CoinGecko 1954/10000 used, month-end projection 10121 (101%), throttle level 2 | by script {'scan': 612, 'check_liquidity': 86, 'breakout_check': 1223, 'counterfactual_check': 33}
+- CoinGecko 1957/10000 used, month-end projection 10065 (101%), throttle level 2 | by script {'scan': 614, 'check_liquidity': 87, 'breakout_check': 1223, 'counterfactual_check': 33}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=56), H2 SUPPORTED (n=228)
-- radar-flags.json scan age: 5m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 47
