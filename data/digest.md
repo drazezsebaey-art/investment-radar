@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-06 05:36 UTC
+# Radar digest - 2026-11-06 06:02 UTC
 
 ## Market
-- BTC scenario **C** | price 75569 | wk close 77982 vs 82800 | 50W 75814 (-0.32%) | 1m old
+- BTC scenario **C** | price 75569 | wk close 77982 vs 82800 | 50W 75814 (-0.32%) | 28m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.09% | ETH/BTC 0.02940 | breadth7d 59% | stables 30d -4.62%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.01pt | 7d -0.04pt | n=121
 - Gold: PAXG 1m -2.88% | real10y 2.64 (-27bp 1m) | USD 1m -0.10% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
@@ -17,7 +17,6 @@
 ## Pre-pump candidates
 - SN51: [C+E] 7d -8.0%
 - TAO: [A+E] 7d -6.9%
-- AKT: [C+E] 7d 0.1%
 
 ## ETF pipeline (new this run)
 - ondo-finance: conversion - VanEck Oil Services Tokenized ETF (Ondo) Price | OIHon Price Today, Live Chart, USD conver
@@ -42,12 +41,12 @@
 - (19 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 7 | mean -5.7% (-0.32R) | in profit 1 | older than 7d 4
-- worst: AERO -0.77R, SUI -0.64R, BEAM -0.61R | best: RUNE -0.10R, PEPE -0.08R, NIGHT 0.10R
+- open 7 | mean -5.5% (-0.32R) | in profit 1 | older than 7d 4
+- worst: AERO -0.77R, SUI -0.62R, BEAM -0.53R | best: RUNE -0.11R, PEPE -0.08R, NIGHT 0.10R
 
 ## System
-- CoinGecko 1763/10000 used, month-end projection 10155 (102%), throttle level 2 | by script {'scan': 548, 'check_liquidity': 73, 'breakout_check': 1111, 'counterfactual_check': 31}
+- CoinGecko 1766/10000 used, month-end projection 10091 (101%), throttle level 2 | by script {'scan': 550, 'check_liquidity': 74, 'breakout_check': 1111, 'counterfactual_check': 31}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=56), H2 SUPPORTED (n=228)
-- radar-flags.json scan age: 5m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 48
