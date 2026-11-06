@@ -1,10 +1,10 @@
-# Radar digest - 2026-11-06 04:02 UTC
+# Radar digest - 2026-11-06 04:35 UTC
 
 ## Market
-- BTC scenario **C** | price 75790 | wk close 77982 vs 82800 | 50W 75814 (-0.03%) | 28m old
+- BTC scenario **C** | price 75790 | wk close 77982 vs 82800 | 50W 75814 (-0.03%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.09% | ETH/BTC 0.02940 | breadth7d 59% | stables 30d -4.62%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.01pt | 7d -0.04pt | n=121
-- Gold: PAXG 1m -1.76% | real10y 2.64 (-27bp 1m) | USD 1m -0.10% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 26
+- Gold: PAXG 1m -2.88% | real10y 2.64 (-27bp 1m) | USD 1m -0.10% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
 - 10y 1w: -15bp = real -3 + breakeven -11 -> **INFLATION_EXPECTATIONS_DRIVEN**
 - 10y 1m: -37bp = real -27 + breakeven -12 -> **MIXED**
 
@@ -15,7 +15,7 @@
 - FLUID: **ONGOING** | +111% impulse, retr 0.24 | OI dd -% | fund - | hold False | inval 1.69690 | OB 1.69690-1.78300
 
 ## Pre-pump candidates
-- ZEC: [A+C] 7d 6.4%
+- ZEC: [A+C] 7d 1.8%
 
 ## ETF pipeline (new this run)
 - injective-protocol NEW: launch - Injective (INJ) Surges 10% on Nasdaq ETF Launch - CoinMarketCap
@@ -23,14 +23,14 @@
 - venice-token NEW: other - Venice Token (VVV) Moves 3.18% Amid Market Drawdown, ETP Listing - CoinMarketCap
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc 0.25% | topPos 0.90 | taker 0.87
-- NEAR: LONG_FLUSH_24H | OI/mc 1.08% | topPos 0.98 | taker 0.87
-- AVAX: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.37% | topPos 0.93 | taker 0.85
-- XRP: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.15% | topPos 0.87 | taker 0.82
-- SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.81 | taker 0.85
-- SEI: LONG_FLUSH_24H | OI/mc 0.73% | topPos 0.89 | taker 0.87
-- TAO: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.66% | topPos 0.87 | taker 0.84
-- ZEC: SHORT_SQUEEZE_24H | OI/mc 0.81% | topPos 1.15 | taker 1.00
+- BTC: LONG_FLUSH_24H | OI/mc 0.25% | topPos 0.90 | taker 0.87
+- ETH: LONG_FLUSH_24H | OI/mc 0.69% | topPos 0.86 | taker 0.87
+- SOL: SHORT_SQUEEZE_24H | OI/mc 0.69% | topPos 0.85 | taker 0.93
+- AVAX: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.37% | topPos 0.93 | taker 0.84
+- XRP: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.81
+- SUI: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.82 | taker 0.84
+- SEI: LONG_FLUSH_24H | OI/mc 0.73% | topPos 0.90 | taker 0.87
+- TAO: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.66% | topPos 0.87 | taker 0.82
 
 ## Revenue / buyback flags
 - collector-crypt: CHEAP_VS_REVENUE
@@ -39,12 +39,12 @@
 - (19 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 7 | mean -5.9% (-0.32R) | in profit 2 | older than 7d 4
-- worst: AERO -0.76R, SUI -0.64R, BEAM -0.61R | best: PEPE -0.09R, NIGHT 0.01R, ZEC 0.02R
+- open 7 | mean -6.0% (-0.33R) | in profit 1 | older than 7d 4
+- worst: AERO -0.77R, SUI -0.69R, BEAM -0.64R | best: PEPE -0.08R, ZEC -0.06R, NIGHT 0.06R
 
 ## System
-- CoinGecko 1756/10000 used, month-end projection 10196 (102%), throttle level 2 | by script {'scan': 542, 'check_liquidity': 72, 'breakout_check': 1111, 'counterfactual_check': 31}
+- CoinGecko 1759/10000 used, month-end projection 10214 (102%), throttle level 2 | by script {'scan': 544, 'check_liquidity': 73, 'breakout_check': 1111, 'counterfactual_check': 31}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=56), H2 SUPPORTED (n=228)
-- radar-flags.json scan age: 2m
+- radar-flags.json scan age: 4m
 - excluded from radar (pegged/tokenized equity): 49
