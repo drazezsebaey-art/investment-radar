@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-06 12:16 UTC
+# Radar digest - 2026-11-06 12:34 UTC
 
 ## Market
-- BTC scenario **C** | price 76131 | wk close 77982 vs 82800 | 50W 75814 (0.42%) | 41m old
+- BTC scenario **C** | price 76131 | wk close 77982 vs 82800 | 50W 75814 (0.42%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.13% | ETH/BTC 0.02945 | breadth7d 54% | stables 30d -4.61%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.01pt | 7d 0.16pt | n=121
 - Gold: PAXG 1m -2.41% | real10y 2.64 (-27bp 1m) | USD 1m -0.10% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
@@ -15,11 +15,12 @@
 - FLUID: **ONGOING** | +111% impulse, retr 0.32 | OI dd -% | fund - | hold False | inval 1.69690 | OB 1.69690-1.78300
 
 ## Pre-pump candidates
-- SN51: [C+E] 7d -5.6%
-- TAO: [A+E] 7d -3.7%
-- UB: [C+E] 7d -2.8%
-- AKT: [C+E] 7d 3.4%
-- INJ: [A+C] 7d 14.7%
+- AKE: [C+E] 7d -72.9%
+- UB: [C+E] 7d -6.5%
+- SN51: [C+E] 7d -5.3%
+- TAO: [A+E] 7d -4.8%
+- AKT: [C+E] 7d 4.1%
+- INJ: [A+C] 7d 12.7%
 
 ## ETF pipeline (new this run)
 - kucoin-shares NEW: approval - Injective Coin ETF Approved by Nasdaq, Could Price Reach $60? - KuCoin
@@ -29,14 +30,14 @@
 - zcash: other - Bitcoin, Ether, Zcash Rally as ETF Inflows Return After US Midterms - CoinMarketCap
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc 0.25% | topPos 0.89 | taker 0.88
+- BTC: SHORT_SQUEEZE_24H | OI/mc 0.25% | topPos 0.89 | taker 0.87
 - ETH: SHORT_SQUEEZE_24H | OI/mc 0.70% | topPos 0.85 | taker 0.88
-- AVAX: LONG_FLUSH_24H | OI/mc 0.37% | topPos 0.92 | taker 0.86
+- SOL: LONG_FLUSH_24H | OI/mc 0.70% | topPos 0.85 | taker 0.92
+- AVAX: LONG_FLUSH_24H | OI/mc 0.38% | topPos 0.90 | taker 0.86
 - XRP: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.83
-- SUI: LONG_FLUSH_24H | OI/mc 0.93% | topPos 0.82 | taker 0.86
-- SEI: LONG_FLUSH_24H | OI/mc 0.72% | topPos 0.90 | taker 0.91
-- TAO: LONG_FLUSH_24H | OI/mc 0.66% | topPos 0.87 | taker 0.88
-- ZEC: SHORT_SQUEEZE_24H | OI/mc 0.82% | topPos 1.11 | taker 1.01
+- SUI: LONG_FLUSH_24H | OI/mc 0.92% | topPos 0.82 | taker 0.86
+- SEI: LONG_FLUSH_24H | OI/mc 0.72% | topPos 0.94 | taker 0.90
+- TAO: LONG_FLUSH_24H | OI/mc 0.67% | topPos 0.86 | taker 0.87
 
 ## Revenue / buyback flags
 - collector-crypt: CHEAP_VS_REVENUE
@@ -47,12 +48,12 @@
 - (13 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 7 | mean -4.1% (-0.20R) | in profit 3 | older than 7d 4
-- worst: AERO -0.62R, SUI -0.57R, BEAM -0.38R | best: PEPE 0.05R, NIGHT 0.14R, ZEC 0.23R
+- open 7 | mean -3.3% (-0.08R) | in profit 3 | older than 7d 4
+- worst: AERO -0.58R, SUI -0.53R, BEAM -0.44R | best: PEPE 0.12R, NIGHT 0.15R, ZEC 0.93R
 
 ## System
-- CoinGecko 1866/10000 used, month-end projection 10178 (102%), throttle level 2 | by script {'scan': 582, 'check_liquidity': 81, 'breakout_check': 1172, 'counterfactual_check': 31}
+- CoinGecko 1868/10000 used, month-end projection 10189 (102%), throttle level 2 | by script {'scan': 584, 'check_liquidity': 81, 'breakout_check': 1172, 'counterfactual_check': 31}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=56), H2 SUPPORTED (n=228)
-- radar-flags.json scan age: 15m
-- excluded from radar (pegged/tokenized equity): 48
+- radar-flags.json scan age: 4m
+- excluded from radar (pegged/tokenized equity): 47
