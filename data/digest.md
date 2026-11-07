@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-07 05:35 UTC
+# Radar digest - 2026-11-07 06:16 UTC
 
 ## Market
-- BTC scenario **C** | price 76026 | wk close 77982 vs 82800 | 50W 75814 (0.28%) | 1m old
+- BTC scenario **C** | price 76026 | wk close 77982 vs 82800 | 50W 75814 (0.28%) | 41m old
 - Alts: **BTC_LED** [-] | BTC.D 57.16% | ETH/BTC 0.02957 | breadth7d 26% | stables 30d -4.90%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.09pt | 7d 0.17pt | n=121
 - Gold: PAXG 1m -1.91% | real10y 2.60 (-32bp 1m) | USD 1m -0.10% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 24
@@ -15,8 +15,11 @@
 - FLUID: **ONGOING** | +111% impulse, retr 0.32 | OI dd -% | fund - | hold False | inval 1.69690 | OB 1.69690-1.78300
 
 ## Pre-pump candidates
-- INJ: [A+C] 7d 15.8%
-- CAP: [A+C] 7d 16.5%
+- TAO: [A+E] 7d -4.2%
+- Q: [C+E] 7d -3.6%
+- AKT: [C+E] 7d 6.9%
+- INJ: [A+C] 7d 16.8%
+- CAP: [A+C] 7d 18.0%
 
 ## ETF pipeline (new this run)
 - chainlink: other - Grayscale Chainlink Trust ETF 3Q 2026: Net income $76.43M — 10-Q Summary - TradingView
@@ -40,12 +43,12 @@
 - (13 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 7 | mean -5.4% (-0.21R) | in profit 2 | older than 7d 5
-- worst: BEAM -0.71R, AERO -0.63R, SUI -0.57R | best: PEPE -0.03R, NIGHT 0.12R, ZEC 0.67R
+- open 8 | mean -4.7% (-0.18R) | in profit 2 | older than 7d 5
+- worst: BEAM -0.69R, AERO -0.61R, SUI -0.55R | best: INJ 0.00R, NIGHT 0.10R, ZEC 0.64R
 
 ## System
-- CoinGecko 2060/10000 used, month-end projection 9954 (100%), throttle level 1 | by script {'scan': 660, 'check_liquidity': 95, 'breakout_check': 1269, 'counterfactual_check': 36}
+- CoinGecko 2119/10000 used, month-end projection 10171 (102%), throttle level 2 | by script {'scan': 662, 'check_liquidity': 95, 'breakout_check': 1326, 'counterfactual_check': 36}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=56), H2 SUPPORTED (n=228)
-- radar-flags.json scan age: 5m
+- radar-flags.json scan age: 15m
 - excluded from radar (pegged/tokenized equity): 47
