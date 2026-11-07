@@ -1,10 +1,10 @@
-# Radar digest - 2026-11-07 04:02 UTC
+# Radar digest - 2026-11-07 04:34 UTC
 
 ## Market
-- BTC scenario **C** | price 75932 | wk close 77982 vs 82800 | 50W 75814 (0.16%) | 28m old
+- BTC scenario **C** | price 75932 | wk close 77982 vs 82800 | 50W 75814 (0.16%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 57.16% | ETH/BTC 0.02957 | breadth7d 26% | stables 30d -4.90%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.09pt | 7d 0.17pt | n=121
-- Gold: PAXG 1m -2.10% | real10y 2.60 (-32bp 1m) | USD 1m -0.10% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 26
+- Gold: PAXG 1m -1.91% | real10y 2.60 (-32bp 1m) | USD 1m -0.10% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 24
 - 10y 1w: -14bp = real -3 + breakeven -11 -> **INFLATION_EXPECTATIONS_DRIVEN**
 - 10y 1m: -44bp = real -32 + breakeven -12 -> **REAL_YIELD_DRIVEN**
 
@@ -15,7 +15,6 @@
 - FLUID: **ONGOING** | +111% impulse, retr 0.31 | OI dd -% | fund - | hold False | inval 1.69690 | OB 1.69690-1.78300
 
 ## Pre-pump candidates
-- AKE: [C+E] 7d -57.2%
 - TAO: [A+E] 7d -5.3%
 - ZEC: [A+C] 7d 4.1%
 - AKT: [C+E] 7d 5.9%
@@ -28,14 +27,14 @@
 - ondo-finance: other - iShares MSCI Chile Tokenized ETF (Ondo) Analytics - CryptoRank
 
 ## Derivatives flags (OKX)
-- AVAX: LONG_FLUSH_24H | OI/mc 0.38% | topPos 0.93 | taker 0.97
-- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.85 | taker 0.90
-- SUI: SHORT_SQUEEZE_24H | OI/mc 0.93% | topPos 0.82 | taker 1.02
-- SEI: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.93 | taker 1.01
-- TAO: SHORT_SQUEEZE_24H | OI/mc 0.65% | topPos 0.85 | taker 1.01
-- ADA: LONG_FLUSH_24H | OI/mc 0.43% | topPos 0.85 | taker 0.93
-- LINK: LONG_FLUSH_24H | OI/mc 0.36% | topPos 0.95 | taker 1.00
-- XLM: LONG_FLUSH_24H | OI/mc -% | topPos 0.96 | taker 0.92
+- AVAX: LONG_FLUSH_24H | OI/mc 0.38% | topPos 0.93 | taker 0.98
+- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.85 | taker 0.93
+- SUI: SHORT_SQUEEZE_24H | OI/mc 0.93% | topPos 0.82 | taker 1.01
+- SEI: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.93 | taker 1.02
+- ADA: LONG_FLUSH_24H | OI/mc 0.42% | topPos 0.85 | taker 0.95
+- XLM: LONG_FLUSH_24H | OI/mc -% | topPos 0.97 | taker 0.93
+- BCH: SHORT_SQUEEZE_FUEL | OI/mc 0.52% | topPos 0.90 | taker 0.96
+- UNI: LONG_FLUSH_24H | OI/mc 1.12% | topPos 0.88 | taker 0.94
 
 ## Revenue / buyback flags
 - collector-crypt: CHEAP_VS_REVENUE
@@ -46,12 +45,12 @@
 - (13 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 7 | mean -5.2% (-0.18R) | in profit 2 | older than 7d 5
-- worst: BEAM -0.69R, AERO -0.65R, SUI -0.59R | best: PEPE -0.02R, NIGHT 0.11R, ZEC 0.91R
+- open 7 | mean -5.2% (-0.19R) | in profit 2 | older than 7d 5
+- worst: BEAM -0.70R, AERO -0.64R, SUI -0.59R | best: PEPE -0.02R, NIGHT 0.15R, ZEC 0.81R
 
 ## System
-- CoinGecko 2044/10000 used, month-end projection 9944 (99%), throttle level 1 | by script {'scan': 646, 'check_liquidity': 93, 'breakout_check': 1269, 'counterfactual_check': 36}
+- CoinGecko 2055/10000 used, month-end projection 9997 (100%), throttle level 1 | by script {'scan': 656, 'check_liquidity': 94, 'breakout_check': 1269, 'counterfactual_check': 36}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=56), H2 SUPPORTED (n=228)
-- radar-flags.json scan age: 2m
-- excluded from radar (pegged/tokenized equity): 48
+- radar-flags.json scan age: 4m
+- excluded from radar (pegged/tokenized equity): 47
