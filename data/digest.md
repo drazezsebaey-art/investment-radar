@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-07 13:35 UTC
+# Radar digest - 2026-11-07 14:02 UTC
 
 ## Market
-- BTC scenario **C** | price 75919 | wk close 77982 vs 82800 | 50W 75814 (0.14%) | 1m old
+- BTC scenario **C** | price 75919 | wk close 77982 vs 82800 | 50W 75814 (0.14%) | 28m old
 - Alts: **BTC_LED** [-] | BTC.D 57.18% | ETH/BTC 0.02955 | breadth7d 34% | stables 30d -4.90%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.00pt | 7d 0.12pt | n=121
 - Gold: PAXG 1m -2.01% | real10y 2.60 (-32bp 1m) | USD 1m -0.10% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 24
@@ -15,7 +15,7 @@
 - FLUID: **ONGOING** | +111% impulse, retr 0.32 | OI dd -% | fund - | hold False | inval 2.25170 | OB 1.69690-1.78300
 
 ## Pre-pump candidates
-- none
+- CAP: [A+C] 7d 17.4%
 
 ## ETF pipeline (new this run)
 - aave NEW: other - 3 Best Crypto to Buy Now After Nasdaq Clears a Staked INJ ETF: Why Pepeto Leads Chainlink 
@@ -41,12 +41,12 @@
 - (11 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 8 | mean -4.9% (-0.29R) | in profit 1 | older than 7d 5
-- worst: AERO -0.70R, BEAM -0.62R, SUI -0.61R | best: PEPE -0.04R, ZEC -0.03R, NIGHT 0.17R
+- open 8 | mean -4.9% (-0.28R) | in profit 1 | older than 7d 5
+- worst: AERO -0.70R, BEAM -0.63R, SUI -0.61R | best: PEPE -0.06R, ZEC -0.05R, NIGHT 0.20R
 
 ## System
-- CoinGecko 2210/10000 used, month-end projection 10135 (101%), throttle level 2 | by script {'scan': 692, 'check_liquidity': 98, 'breakout_check': 1384, 'counterfactual_check': 36}
+- CoinGecko 2212/10000 used, month-end projection 10080 (101%), throttle level 2 | by script {'scan': 694, 'check_liquidity': 98, 'breakout_check': 1384, 'counterfactual_check': 36}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=56), H2 SUPPORTED (n=231)
-- radar-flags.json scan age: 5m
-- excluded from radar (pegged/tokenized equity): 46
+- radar-flags.json scan age: 2m
+- excluded from radar (pegged/tokenized equity): 47
