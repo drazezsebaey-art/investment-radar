@@ -1,4 +1,4 @@
-# Radar digest - 2026-11-07 00:35 UTC
+# Radar digest - 2026-11-07 01:02 UTC
 
 ## Market
 - BTC scenario **C** | price 75979 | wk close 77982 vs 82800 | 50W 75814 (0.22%) | 1h old
@@ -15,10 +15,13 @@
 - FLUID: **ONGOING** | +111% impulse, retr 0.30 | OI dd -% | fund - | hold False | inval 1.69690 | OB 1.69690-1.78300
 
 ## Pre-pump candidates
-- ZEC: [A+C] 7d 6.4%
-- XTZ: [B+C] 7d 6.8%
-- INJ: [A+C] 7d 16.5%
-- CAP: [A+C] 7d 20.4%
+- TAO: [A+E] 7d -6.2%
+- PEPE: [A+C] 7d 1.7%
+- AKT: [C+E] 7d 5.1%
+- ZEC: [A+C] 7d 5.2%
+- XTZ: [B+C] 7d 5.9%
+- INJ: [A+C] 7d 16.6%
+- CAP: [A+C] 7d 21.1%
 
 ## ETF pipeline (new this run)
 - injective-protocol NEW: approval - Can Injective Coin Hit $60 After ETF Approval? - Cryptonews.net
@@ -46,12 +49,12 @@
 - (13 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 7 | mean -5.1% (-0.17R) | in profit 2 | older than 7d 5
-- worst: BEAM -0.66R, AERO -0.59R, SUI -0.55R | best: PEPE -0.02R, NIGHT 0.05R, ZEC 0.88R
+- open 7 | mean -4.7% (-0.14R) | in profit 3 | older than 7d 5
+- worst: BEAM -0.63R, AERO -0.61R, SUI -0.55R | best: PEPE 0.01R, NIGHT 0.08R, ZEC 1.05R
 
 ## System
-- CoinGecko 2027/10000 used, month-end projection 10135 (101%), throttle level 2 | by script {'scan': 632, 'check_liquidity': 90, 'breakout_check': 1269, 'counterfactual_check': 36}
+- CoinGecko 2029/10000 used, month-end projection 10075 (101%), throttle level 2 | by script {'scan': 634, 'check_liquidity': 90, 'breakout_check': 1269, 'counterfactual_check': 36}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=56), H2 SUPPORTED (n=228)
-- radar-flags.json scan age: 4m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 47
