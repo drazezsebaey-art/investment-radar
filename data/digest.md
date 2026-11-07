@@ -1,4 +1,4 @@
-# Radar digest - 2026-11-07 06:35 UTC
+# Radar digest - 2026-11-07 07:02 UTC
 
 ## Market
 - BTC scenario **C** | price 76026 | wk close 77982 vs 82800 | 50W 75814 (0.28%) | 1h old
@@ -15,12 +15,8 @@
 - FLUID: **ONGOING** | +111% impulse, retr 0.32 | OI dd -% | fund - | hold False | inval 1.69690 | OB 1.69690-1.78300
 
 ## Pre-pump candidates
-- SN51: [C+E] 7d -8.9%
-- TAO: [A+E] 7d -4.2%
-- Q: [C+E] 7d -3.6%
-- UB: [C+E] 7d -2.5%
-- AKT: [C+E] 7d 6.9%
 - INJ: [A+C] 7d 16.8%
+- CAP: [A+C] 7d 18.0%
 
 ## ETF pipeline (new this run)
 - chainlink: other - Grayscale Chainlink Trust ETF 3Q 2026: Net income $76.43M — 10-Q Summary - TradingView
@@ -44,12 +40,12 @@
 - (13 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 8 | mean -4.8% (-0.20R) | in profit 2 | older than 7d 5
-- worst: BEAM -0.66R, AERO -0.63R, SUI -0.56R | best: PEPE -0.07R, NIGHT 0.11R, ZEC 0.59R
+- open 8 | mean -4.5% (-0.16R) | in profit 3 | older than 7d 5
+- worst: BEAM -0.69R, AERO -0.62R, SUI -0.55R | best: INJ 0.12R, NIGHT 0.17R, ZEC 0.64R
 
 ## System
-- CoinGecko 2121/10000 used, month-end projection 10181 (102%), throttle level 2 | by script {'scan': 664, 'check_liquidity': 95, 'breakout_check': 1326, 'counterfactual_check': 36}
+- CoinGecko 2123/10000 used, month-end projection 10123 (101%), throttle level 2 | by script {'scan': 666, 'check_liquidity': 95, 'breakout_check': 1326, 'counterfactual_check': 36}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=56), H2 SUPPORTED (n=228)
-- radar-flags.json scan age: 4m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 47
