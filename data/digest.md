@@ -1,4 +1,4 @@
-# Radar digest - 2026-11-08 12:34 UTC
+# Radar digest - 2026-11-08 13:02 UTC
 
 ## Market
 - BTC scenario **C** | price 75995 | wk close 77982 vs 82800 | 50W 75814 (0.24%) | 1h old
@@ -14,7 +14,9 @@
 - NEAR: **BROKEN** | +40% impulse, retr 1.33 | OI dd 36% | fund -0.0111 | hold True | inval 3.62800 | OB ---
 
 ## Pre-pump candidates
-- ZEC: [A+B] 7d 2.8%
+- NEAR: [A+E] 7d -15.3%
+- TAO: [A+E] 7d -4.8%
+- ZEC: [A+B] 7d 2.4%
 
 ## ETF pipeline (new this run)
 - injective-protocol NEW: other - Bitcoin holds above $80,000 after Wednesday’s jump as injective rallies on staked ETF list
@@ -39,12 +41,12 @@
 - (11 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 8 | mean -4.5% (-0.29R) | in profit 2 | older than 7d 5
-- worst: SUI -0.69R, AERO -0.69R, BEAM -0.48R | best: ZEC -0.09R, PEPE 0.02R, NIGHT 0.34R
+- open 8 | mean -4.7% (-0.32R) | in profit 2 | older than 7d 5
+- worst: AERO -0.73R, SUI -0.69R, INJ -0.62R | best: ZEC -0.08R, PEPE 0.01R, NIGHT 0.34R
 
 ## System
-- CoinGecko 2537/10000 used, month-end projection 10148 (102%), throttle level 2 | by script {'scan': 792, 'check_liquidity': 113, 'breakout_check': 1591, 'counterfactual_check': 41}
+- CoinGecko 2539/10000 used, month-end projection 10100 (101%), throttle level 2 | by script {'scan': 794, 'check_liquidity': 113, 'breakout_check': 1591, 'counterfactual_check': 41}
 - Trials guard: OK (0 untracked)
-- Hypotheses: H1 NOT_SUPPORTED (n=56), H2 SUPPORTED (n=233)
-- radar-flags.json scan age: 4m
+- Hypotheses: H1 NOT_SUPPORTED (n=56), H2 SUPPORTED (n=234)
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 47
