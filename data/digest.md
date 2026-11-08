@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-08 13:35 UTC
+# Radar digest - 2026-11-08 14:02 UTC
 
 ## Market
-- BTC scenario **C** | price 76042 | wk close 77982 vs 82800 | 50W 75814 (0.30%) | 1m old
+- BTC scenario **C** | price 76042 | wk close 77982 vs 82800 | 50W 75814 (0.30%) | 28m old
 - Alts: **BTC_LED** [-] | BTC.D 57.26% | ETH/BTC 0.02950 | breadth7d 27% | stables 30d -4.65%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.14pt | 7d 0.14pt | n=121
 - Gold: PAXG 1m -1.95% | real10y 2.60 (-32bp 1m) | USD 1m -0.10% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 24
@@ -14,10 +14,7 @@
 - FLUID: **ONGOING** | +102% impulse, retr 0.42 | OI dd -% | fund - | hold False | inval 1.69690 | OB 1.69690-1.78300
 
 ## Pre-pump candidates
-- AKE: [C+E] 7d -41.1%
-- NEAR: [A+E] 7d -15.3%
-- TAO: [A+E] 7d -4.8%
-- ZEC: [A+B] 7d 2.4%
+- ZEC: [A+B] 7d 2.7%
 
 ## ETF pipeline (new this run)
 - none
@@ -41,12 +38,12 @@
 - (11 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 8 | mean -4.6% (-0.30R) | in profit 3 | older than 7d 5
-- worst: AERO -0.73R, SUI -0.67R, INJ -0.54R | best: ZEC 0.02R, PEPE 0.04R, NIGHT 0.31R
+- open 8 | mean -5.1% (-0.35R) | in profit 2 | older than 7d 5
+- worst: AERO -0.74R, SUI -0.71R, INJ -0.62R | best: ZEC -0.14R, PEPE 0.03R, NIGHT 0.26R
 
 ## System
-- CoinGecko 2541/10000 used, month-end projection 10108 (101%), throttle level 2 | by script {'scan': 796, 'check_liquidity': 113, 'breakout_check': 1591, 'counterfactual_check': 41}
+- CoinGecko 2543/10000 used, month-end projection 10060 (101%), throttle level 2 | by script {'scan': 798, 'check_liquidity': 113, 'breakout_check': 1591, 'counterfactual_check': 41}
 - Trials guard: OK (0 untracked)
-- Hypotheses: H1 NOT_SUPPORTED (n=56), H2 SUPPORTED (n=234)
-- radar-flags.json scan age: 5m
-- excluded from radar (pegged/tokenized equity): 47
+- Hypotheses: H1 NOT_SUPPORTED (n=56), H2 SUPPORTED (n=235)
+- radar-flags.json scan age: 2m
+- excluded from radar (pegged/tokenized equity): 46
