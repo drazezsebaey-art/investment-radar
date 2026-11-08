@@ -1,4 +1,4 @@
-# Radar digest - 2026-11-08 02:34 UTC
+# Radar digest - 2026-11-08 03:03 UTC
 
 ## Market
 - BTC scenario **C** | price 75799 | wk close 77982 vs 82800 | 50W 75814 (-0.02%) | 1h old
@@ -43,12 +43,12 @@
 - (11 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 8 | mean -5.8% (-0.38R) | in profit 1 | older than 7d 5
-- worst: BEAM -0.71R, SUI -0.70R, AERO -0.59R | best: INJ -0.25R, PEPE -0.14R, NIGHT 0.26R
+- open 8 | mean -6.0% (-0.40R) | in profit 1 | older than 7d 5
+- worst: BEAM -0.74R, SUI -0.71R, AERO -0.60R | best: RUNE -0.36R, PEPE -0.17R, NIGHT 0.28R
 
 ## System
-- CoinGecko 2387/10000 used, month-end projection 10110 (101%), throttle level 2 | by script {'scan': 752, 'check_liquidity': 102, 'breakout_check': 1492, 'counterfactual_check': 41}
+- CoinGecko 2389/10000 used, month-end projection 10059 (101%), throttle level 2 | by script {'scan': 754, 'check_liquidity': 102, 'breakout_check': 1492, 'counterfactual_check': 41}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=56), H2 SUPPORTED (n=233)
-- radar-flags.json scan age: 4m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 47
