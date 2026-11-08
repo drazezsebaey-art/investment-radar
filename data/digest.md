@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-08 02:03 UTC
+# Radar digest - 2026-11-08 02:34 UTC
 
 ## Market
-- BTC scenario **C** | price 75799 | wk close 77982 vs 82800 | 50W 75814 (-0.02%) | 29m old
+- BTC scenario **C** | price 75799 | wk close 77982 vs 82800 | 50W 75814 (-0.02%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 57.22% | ETH/BTC 0.02949 | breadth7d 30% | stables 30d -4.89%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.09pt | 7d 0.16pt | n=121
 - Gold: PAXG 1m -1.87% | real10y 2.60 (-32bp 1m) | USD 1m -0.10% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 24
@@ -24,14 +24,14 @@
 - injective-protocol NEW: other - Injective Price Prediction: Can INJ Break $9.115 on ETF News? - Coin Gabbar
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc 0.25% | topPos 0.89 | taker 0.98
-- SOL: LONG_FLUSH_24H | OI/mc 0.70% | topPos 0.84 | taker 0.91
-- NEAR: LONG_FLUSH_24H | OI/mc -% | topPos 0.97 | taker 0.89
-- AVAX: LONG_FLUSH_24H | OI/mc 0.36% | topPos 0.93 | taker 0.99
-- XRP: LONG_FLUSH_24H | OI/mc 0.16% | topPos 0.84 | taker 0.91
-- SUI: LONG_FLUSH_24H | OI/mc 0.94% | topPos 0.81 | taker 0.88
-- SEI: LONG_FLUSH_24H | OI/mc 0.72% | topPos 0.94 | taker 0.86
-- TAO: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.66% | topPos 0.86 | taker 0.83
+- BTC: LONG_FLUSH_24H | OI/mc 0.25% | topPos 0.89 | taker 0.99
+- SOL: LONG_FLUSH_24H | OI/mc 0.70% | topPos 0.84 | taker 0.89
+- NEAR: LONG_FLUSH_24H | OI/mc -% | topPos 0.96 | taker 0.90
+- AVAX: LONG_FLUSH_24H | OI/mc 0.36% | topPos 0.93 | taker 0.96
+- XRP: LONG_FLUSH_24H | OI/mc 0.16% | topPos 0.85 | taker 0.90
+- SUI: LONG_FLUSH_24H | OI/mc 0.94% | topPos 0.81 | taker 0.85
+- SEI: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.71% | topPos 0.94 | taker 0.84
+- TAO: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.65% | topPos 0.86 | taker 0.83
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -43,12 +43,12 @@
 - (11 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 8 | mean -5.7% (-0.40R) | in profit 1 | older than 7d 5
-- worst: BEAM -0.72R, SUI -0.71R, AERO -0.58R | best: RUNE -0.35R, PEPE -0.14R, NIGHT 0.26R
+- open 8 | mean -5.8% (-0.38R) | in profit 1 | older than 7d 5
+- worst: BEAM -0.71R, SUI -0.70R, AERO -0.59R | best: INJ -0.25R, PEPE -0.14R, NIGHT 0.26R
 
 ## System
-- CoinGecko 2385/10000 used, month-end projection 10101 (101%), throttle level 2 | by script {'scan': 750, 'check_liquidity': 102, 'breakout_check': 1492, 'counterfactual_check': 41}
+- CoinGecko 2387/10000 used, month-end projection 10110 (101%), throttle level 2 | by script {'scan': 752, 'check_liquidity': 102, 'breakout_check': 1492, 'counterfactual_check': 41}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=56), H2 SUPPORTED (n=233)
-- radar-flags.json scan age: 2m
+- radar-flags.json scan age: 4m
 - excluded from radar (pegged/tokenized equity): 47
