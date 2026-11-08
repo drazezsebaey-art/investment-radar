@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-08 20:02 UTC
+# Radar digest - 2026-11-08 20:34 UTC
 
 ## Market
-- BTC scenario **C** | price 75915 | wk close 76075 vs 82800 | 50W 75593 (0.43%) | 28m old
+- BTC scenario **C** | price 75915 | wk close 76075 vs 82800 | 50W 75593 (0.43%) | 60m old
 - Alts: **BTC_LED** [-] | BTC.D 57.31% | ETH/BTC 0.02942 | breadth7d 35% | stables 30d -4.65%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.21pt | 7d 0.17pt | n=121
 - Gold: PAXG 1m -1.99% | real10y 2.60 (-32bp 1m) | USD 1m -0.10% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 24
@@ -15,21 +15,22 @@
 - FLUID: **ONGOING** | +102% impulse, retr 0.44 | OI dd -% | fund - | hold False | inval 1.69690 | OB 1.69690-1.78300
 
 ## Pre-pump candidates
-- none
+- NEAR: [A+E] 7d -14.5%
+- TAO: [A+E] 7d -3.5%
 
 ## ETF pipeline (new this run)
 - injective-protocol NEW: amendment - Form S-1/A CANARY STAKED INJ ETF For: 8 November By Investing.com - Investing.com India
 - solana NEW: other - Solana Price Loses Key Support as ETF Outflows Surge Following the Alpenglow Upgrade - Ben
 
 ## Derivatives flags (OKX)
-- ETH: LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 0.99
+- ETH: LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 0.97
 - NEAR: LONG_FLUSH_24H | OI/mc 1.08% | topPos 0.98 | taker 0.90
-- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.94 | taker 0.85
-- XRP: LONG_FLUSH_24H | OI/mc 0.16% | topPos 0.85 | taker 0.93
-- SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.81 | taker 0.86
-- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.94 | taker 0.88
+- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.94 | taker 0.94
+- XRP: LONG_FLUSH_24H | OI/mc 0.16% | topPos 0.85 | taker 0.94
+- SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.81 | taker 0.88
+- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.94 | taker 0.85
 - TAO: AGGRESSIVE_BUYING, LONG_FLUSH_24H | OI/mc 0.67% | topPos 0.85 | taker 1.16
-- WLD: LONG_FLUSH_24H | OI/mc 2.49% | topPos 0.82 | taker 0.91
+- WLD: LONG_FLUSH_24H | OI/mc 2.47% | topPos 0.82 | taker 0.91
 
 ## Revenue / buyback flags
 - collector-crypt: CHEAP_VS_REVENUE
@@ -40,12 +41,12 @@
 - (11 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 7 | mean -5.5% (-0.33R) | in profit 2 | older than 7d 5
-- worst: AERO -0.76R, SUI -0.73R, BEAM -0.51R | best: ZEC -0.26R, PEPE 0.07R, NIGHT 0.26R
+- open 7 | mean -5.9% (-0.36R) | in profit 2 | older than 7d 5
+- worst: AERO -0.78R, SUI -0.74R, BEAM -0.57R | best: ZEC -0.33R, PEPE 0.06R, NIGHT 0.26R
 
 ## System
-- CoinGecko 2618/10000 used, month-end projection 10026 (100%), throttle level 2 | by script {'scan': 822, 'check_liquidity': 115, 'breakout_check': 1638, 'counterfactual_check': 43}
+- CoinGecko 2620/10000 used, month-end projection 10034 (100%), throttle level 2 | by script {'scan': 824, 'check_liquidity': 115, 'breakout_check': 1638, 'counterfactual_check': 43}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=56), H2 SUPPORTED (n=235)
-- radar-flags.json scan age: 2m
+- radar-flags.json scan age: 4m
 - excluded from radar (pegged/tokenized equity): 47
