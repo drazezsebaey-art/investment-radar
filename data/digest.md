@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-08 13:02 UTC
+# Radar digest - 2026-11-08 13:35 UTC
 
 ## Market
-- BTC scenario **C** | price 75995 | wk close 77982 vs 82800 | 50W 75814 (0.24%) | 1h old
+- BTC scenario **C** | price 76042 | wk close 77982 vs 82800 | 50W 75814 (0.30%) | 1m old
 - Alts: **BTC_LED** [-] | BTC.D 57.26% | ETH/BTC 0.02950 | breadth7d 27% | stables 30d -4.65%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.14pt | 7d 0.14pt | n=121
 - Gold: PAXG 1m -1.95% | real10y 2.60 (-32bp 1m) | USD 1m -0.10% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 24
@@ -9,28 +9,28 @@
 - 10y 1m: -44bp = real -32 + breakeven -12 -> **REAL_YIELD_DRIVEN**
 
 ## Coins in correction (entry_ready first)
-- STX: **BROKEN** | +52% impulse, retr 0.78 | OI dd 33% | fund 0.0091 | hold True | inval 0.32030 | OB 0.31510-0.32970
-- INJ: **BROKEN** | +47% impulse, retr 0.41 | OI dd 36% | fund -0.0020 | hold False | inval 7.78800 | OB 6.82800-7.04700
-- NEAR: **BROKEN** | +40% impulse, retr 1.33 | OI dd 36% | fund -0.0111 | hold True | inval 3.62800 | OB ---
+- STX: **BROKEN** | +52% impulse, retr 0.79 | OI dd 33% | fund 0.0075 | hold True | inval 0.32030 | OB 0.31510-0.32970
+- NEAR: **BROKEN** | +40% impulse, retr 1.34 | OI dd 36% | fund -0.0067 | hold True | inval 3.62800 | OB ---
+- FLUID: **ONGOING** | +102% impulse, retr 0.42 | OI dd -% | fund - | hold False | inval 1.69690 | OB 1.69690-1.78300
 
 ## Pre-pump candidates
+- AKE: [C+E] 7d -41.1%
 - NEAR: [A+E] 7d -15.3%
 - TAO: [A+E] 7d -4.8%
 - ZEC: [A+B] 7d 2.4%
 
 ## ETF pipeline (new this run)
-- injective-protocol NEW: other - Bitcoin holds above $80,000 after Wednesday’s jump as injective rallies on staked ETF list
-- ondo-finance: other - What Is QQQON? Ondo Tokenized Invesco QQQ ETF Explained - MEXC
+- none
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc 0.25% | topPos 0.89 | taker 1.04
-- NEAR: LONG_FLUSH_24H | OI/mc 1.09% | topPos 0.96 | taker 0.95
-- AVAX: LONG_FLUSH_24H | OI/mc 0.36% | topPos 0.94 | taker 0.91
-- XRP: LONG_FLUSH_24H | OI/mc 0.16% | topPos 0.84 | taker 0.87
-- SUI: LONG_FLUSH_24H | OI/mc 0.95% | topPos 0.81 | taker 0.87
-- SEI: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.95 | taker 0.85
-- TAO: LONG_FLUSH_24H | OI/mc 0.67% | topPos 0.87 | taker 0.96
-- ZEC: SHORT_SQUEEZE_FUEL, SHORT_SQUEEZE_24H | OI/mc 0.93% | topPos 1.01 | taker 1.06
+- NEAR: LONG_FLUSH_24H | OI/mc 1.08% | topPos 0.96 | taker 0.96
+- AVAX: LONG_FLUSH_24H | OI/mc 0.36% | topPos 0.93 | taker 0.94
+- XRP: LONG_FLUSH_24H | OI/mc 0.16% | topPos 0.85 | taker 0.91
+- SUI: LONG_FLUSH_24H | OI/mc 0.94% | topPos 0.82 | taker 0.90
+- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.95 | taker 0.85
+- TAO: LONG_FLUSH_24H | OI/mc 0.66% | topPos 0.86 | taker 0.96
+- ZEC: SHORT_SQUEEZE_FUEL, SHORT_SQUEEZE_24H | OI/mc 0.91% | topPos 1.01 | taker 1.05
+- WLD: LONG_FLUSH_24H | OI/mc 2.53% | topPos 0.82 | taker 0.91
 
 ## Revenue / buyback flags
 - collector-crypt: CHEAP_VS_REVENUE
@@ -41,12 +41,12 @@
 - (11 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 8 | mean -4.7% (-0.32R) | in profit 2 | older than 7d 5
-- worst: AERO -0.73R, SUI -0.69R, INJ -0.62R | best: ZEC -0.08R, PEPE 0.01R, NIGHT 0.34R
+- open 8 | mean -4.6% (-0.30R) | in profit 3 | older than 7d 5
+- worst: AERO -0.73R, SUI -0.67R, INJ -0.54R | best: ZEC 0.02R, PEPE 0.04R, NIGHT 0.31R
 
 ## System
-- CoinGecko 2539/10000 used, month-end projection 10100 (101%), throttle level 2 | by script {'scan': 794, 'check_liquidity': 113, 'breakout_check': 1591, 'counterfactual_check': 41}
+- CoinGecko 2541/10000 used, month-end projection 10108 (101%), throttle level 2 | by script {'scan': 796, 'check_liquidity': 113, 'breakout_check': 1591, 'counterfactual_check': 41}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=56), H2 SUPPORTED (n=234)
-- radar-flags.json scan age: 2m
+- radar-flags.json scan age: 5m
 - excluded from radar (pegged/tokenized equity): 47
