@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-08 05:02 UTC
+# Radar digest - 2026-11-08 05:35 UTC
 
 ## Market
-- BTC scenario **C** | price 75870 | wk close 77982 vs 82800 | 50W 75814 (0.07%) | 1h old
+- BTC scenario **C** | price 75874 | wk close 77982 vs 82800 | 50W 75814 (0.08%) | 1m old
 - Alts: **BTC_LED** [-] | BTC.D 57.26% | ETH/BTC 0.02948 | breadth7d 34% | stables 30d -4.66%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.09pt | 7d 0.19pt | n=121
 - Gold: PAXG 1m -1.94% | real10y 2.60 (-32bp 1m) | USD 1m -0.10% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 24
@@ -9,26 +9,24 @@
 - 10y 1m: -44bp = real -32 + breakeven -12 -> **REAL_YIELD_DRIVEN**
 
 ## Coins in correction (entry_ready first)
-- STX: **BROKEN** | +52% impulse, retr 0.78 | OI dd 33% | fund 0.0003 | hold True | inval 0.32740 | OB 0.31510-0.32970
-- INJ: **BROKEN** | +47% impulse, retr 0.42 | OI dd 36% | fund -0.0082 | hold False | inval 7.78800 | OB 6.82800-7.04700
-- NEAR: **BROKEN** | +40% impulse, retr 1.35 | OI dd 36% | fund 0.0013 | hold True | inval 3.62800 | OB ---
+- INJ: **BROKEN** | +47% impulse, retr 0.43 | OI dd 36% | fund -0.0141 | hold False | inval 7.78800 | OB 6.82800-7.04700
+- NEAR: **BROKEN** | +40% impulse, retr 1.35 | OI dd 36% | fund -0.0058 | hold True | inval 3.62800 | OB ---
 
 ## Pre-pump candidates
 - none
 
 ## ETF pipeline (new this run)
-- zcash: other - Zcash drops 7.4%: liquidations and Grayscale ETF outflow - CryptoTicker.io
-- zcash: other - Zcash drops 7.4%: liquidations and Grayscale ETF outflow - CryptoTicker.io
+- ripple NEW: other - XRP drops 7% in a week while Ethereum holds, with no ETF buyers to step in - Startup Fortu
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc 0.25% | topPos 0.89 | taker 1.04
+- BTC: LONG_FLUSH_24H | OI/mc 0.25% | topPos 0.89 | taker 1.05
 - SOL: LONG_FLUSH_24H | OI/mc 0.70% | topPos 0.84 | taker 0.91
-- NEAR: LONG_FLUSH_24H | OI/mc 1.09% | topPos 0.96 | taker 0.93
-- AVAX: LONG_FLUSH_24H | OI/mc 0.36% | topPos 0.94 | taker 0.99
-- XRP: LONG_FLUSH_24H | OI/mc 0.16% | topPos 0.84 | taker 0.89
-- SUI: LONG_FLUSH_24H | OI/mc 0.94% | topPos 0.81 | taker 0.89
-- SEI: LONG_FLUSH_24H | OI/mc 0.71% | topPos 0.94 | taker 0.85
-- TAO: LONG_FLUSH_24H | OI/mc 0.66% | topPos 0.86 | taker 0.85
+- NEAR: LONG_FLUSH_24H | OI/mc 1.09% | topPos 0.96 | taker 0.91
+- AVAX: LONG_FLUSH_24H | OI/mc 0.36% | topPos 0.93 | taker 0.97
+- XRP: LONG_FLUSH_24H | OI/mc 0.16% | topPos 0.84 | taker 0.86
+- SUI: LONG_FLUSH_24H | OI/mc 0.94% | topPos 0.81 | taker 0.90
+- SEI: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.71% | topPos 0.94 | taker 0.83
+- TAO: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.66% | topPos 0.86 | taker 0.83
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -40,12 +38,12 @@
 - (11 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 8 | mean -5.9% (-0.41R) | in profit 1 | older than 7d 5
-- worst: SUI -0.71R, BEAM -0.71R, AERO -0.65R | best: RUNE -0.36R, PEPE -0.10R, NIGHT 0.24R
+- open 8 | mean -5.4% (-0.37R) | in profit 1 | older than 7d 5
+- worst: SUI -0.68R, BEAM -0.65R, AERO -0.64R | best: ZEC -0.23R, PEPE -0.08R, NIGHT 0.27R
 
 ## System
-- CoinGecko 2401/10000 used, month-end projection 9993 (100%), throttle level 1 | by script {'scan': 762, 'check_liquidity': 106, 'breakout_check': 1492, 'counterfactual_check': 41}
+- CoinGecko 2403/10000 used, month-end projection 10001 (100%), throttle level 2 | by script {'scan': 764, 'check_liquidity': 106, 'breakout_check': 1492, 'counterfactual_check': 41}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=56), H2 SUPPORTED (n=233)
-- radar-flags.json scan age: 2m
+- radar-flags.json scan age: 5m
 - excluded from radar (pegged/tokenized equity): 46
