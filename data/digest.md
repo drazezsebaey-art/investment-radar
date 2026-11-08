@@ -1,4 +1,4 @@
-# Radar digest - 2026-11-08 16:35 UTC
+# Radar digest - 2026-11-08 17:03 UTC
 
 ## Market
 - BTC scenario **C** | price 76055 | wk close 77982 vs 82800 | 50W 75814 (0.32%) | 1h old
@@ -15,7 +15,7 @@
 - FLUID: **ONGOING** | +102% impulse, retr 0.43 | OI dd -% | fund - | hold False | inval 1.69690 | OB 1.69690-1.78300
 
 ## Pre-pump candidates
-- ZEC: [A+B] 7d 2.3%
+- ZEC: [A+B] 7d 1.1%
 
 ## ETF pipeline (new this run)
 - injective-protocol NEW: launch - Canary Capital Launches the First U.S. Spot Staked INJ ETF (Ticker: INJC) - IT Business Ne
@@ -40,12 +40,12 @@
 - (11 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 8 | mean -4.8% (-0.33R) | in profit 2 | older than 7d 5
-- worst: SUI -0.72R, AERO -0.69R, BEAM -0.50R | best: ZEC -0.20R, PEPE 0.05R, NIGHT 0.30R
+- open 8 | mean -5.6% (-0.44R) | in profit 2 | older than 7d 5
+- worst: INJ -0.87R, SUI -0.77R, AERO -0.75R | best: RUNE -0.42R, PEPE 0.02R, NIGHT 0.22R
 
 ## System
-- CoinGecko 2556/10000 used, month-end projection 10002 (100%), throttle level 2 | by script {'scan': 808, 'check_liquidity': 114, 'breakout_check': 1591, 'counterfactual_check': 43}
+- CoinGecko 2559/10000 used, month-end projection 9959 (100%), throttle level 1 | by script {'scan': 810, 'check_liquidity': 115, 'breakout_check': 1591, 'counterfactual_check': 43}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=56), H2 SUPPORTED (n=235)
-- radar-flags.json scan age: 4m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 45
