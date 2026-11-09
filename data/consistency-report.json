@@ -1,12 +1,36 @@
 {
-  "checked_at": "2026-11-09T11:31:42.834353+00:00",
+  "checked_at": "2026-11-09T12:15:16.927788+00:00",
   "n_errors": 0,
-  "n_warnings": 1,
+  "n_warnings": 5,
   "findings": [
     {
       "severity": "warning",
+      "category": "priority_review_pipeline",
+      "message": "TWT: has a confidence_score but OI/funding data was never fetched for it",
+      "symbol": "TWT"
+    },
+    {
+      "severity": "warning",
+      "category": "priority_review_pipeline",
+      "message": "NEXO: has a confidence_score but OI/funding data was never fetched for it",
+      "symbol": "NEXO"
+    },
+    {
+      "severity": "warning",
+      "category": "priority_review_pipeline",
+      "message": "BEAM: has a confidence_score but OI/funding data was never fetched for it",
+      "symbol": "BEAM"
+    },
+    {
+      "severity": "warning",
+      "category": "monitoring_gap",
+      "message": "[shadow] QNT (qnt-shadow-20261109T121411): monitored via current-spot-only fallback - no candle/snapshot data reaching it",
+      "trade_id": "qnt-shadow-20261109T121411"
+    },
+    {
+      "severity": "warning",
       "category": "unlock_coverage",
-      "message": "16/16 (100%) coins with an open trade have no researched unlock schedule at all"
+      "message": "19/19 (100%) coins with an open trade have no researched unlock schedule at all"
     }
   ]
 }
