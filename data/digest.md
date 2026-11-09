@@ -1,4 +1,4 @@
-# Radar digest - 2026-11-09 02:34 UTC
+# Radar digest - 2026-11-09 03:02 UTC
 
 ## Market
 - BTC scenario **C** | price 74872 | wk close 76075 vs 82800 | 50W 75593 (-0.95%) | 1h old
@@ -13,7 +13,8 @@
 - NEAR: **BROKEN** | +40% impulse, retr 1.40 | OI dd 36% | fund -0.0090 | hold False | inval 3.42500 | OB ---
 
 ## Pre-pump candidates
-- none
+- NEAR: [A+E] 7d -15.7%
+- TAO: [A+E] 7d -5.9%
 
 ## ETF pipeline (new this run)
 - injective-protocol NEW: amendment - Form S-1/A CANARY STAKED INJ ETF For: 8 November By Investing.com - Investing.com South Af
@@ -39,12 +40,12 @@
 - (11 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 5 | mean -6.5% (-0.31R) | in profit 2 | older than 7d 4
-- worst: AERO -0.80R, BEAM -0.67R, RUNE -0.38R | best: RUNE -0.38R, PEPE 0.12R, NIGHT 0.18R
+- open 5 | mean -6.6% (-0.31R) | in profit 2 | older than 7d 4
+- worst: AERO -0.81R, BEAM -0.66R, RUNE -0.37R | best: RUNE -0.37R, PEPE 0.10R, NIGHT 0.19R
 
 ## System
-- CoinGecko 2707/10000 used, month-end projection 10047 (100%), throttle level 2 | by script {'scan': 856, 'check_liquidity': 118, 'breakout_check': 1689, 'counterfactual_check': 44}
+- CoinGecko 2709/10000 used, month-end projection 10002 (100%), throttle level 2 | by script {'scan': 858, 'check_liquidity': 118, 'breakout_check': 1689, 'counterfactual_check': 44}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=56), H2 SUPPORTED (n=240)
-- radar-flags.json scan age: 4m
-- excluded from radar (pegged/tokenized equity): 46
+- radar-flags.json scan age: 2m
+- excluded from radar (pegged/tokenized equity): 47
