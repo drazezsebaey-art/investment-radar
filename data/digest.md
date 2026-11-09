@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-09 08:02 UTC
+# Radar digest - 2026-11-09 08:34 UTC
 
 ## Market
-- BTC scenario **C** | price 74019 | wk close 76075 vs 82800 | 50W 75593 (-2.08%) | 28m old
+- BTC scenario **C** | price 74019 | wk close 76075 vs 82800 | 50W 75593 (-2.08%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 57.55% | ETH/BTC 0.02825 | breadth7d -% | stables 30d -4.26%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.46pt | 7d 0.34pt | n=121
 - Gold: PAXG 1m -0.38% | real10y 2.60 (-32bp 1m) | USD 1m -0.10% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 24
@@ -13,7 +13,7 @@
 - PEPE: **RESUMING** | +56% impulse, retr 0.35 | OI dd 27% | fund 0.0100 | hold False | inval 0.00000 | OB 0.00000-0.00000
 
 ## Pre-pump candidates
-- TAO: [A+E] 7d -7.3%
+- TAO: [A+E] 7d -7.7%
 
 ## ETF pipeline (new this run)
 - dogecoin NEW: other - 21Shares Dogecoin ETF Ends Support Services Agreement With House of Doge - TradingView
@@ -21,14 +21,14 @@
 - ondo-finance: other - Roundhill Memory ETF (Ondo Tokenized) Price: DRAMON/USD Live Price Chart, Market Cap & New
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc -% | topPos 0.89 | taker 1.02
-- ETH: LONG_FLUSH_24H | OI/mc -% | topPos 0.84 | taker 0.97
-- SOL: LONG_FLUSH_24H | OI/mc 0.70% | topPos 0.85 | taker 0.90
-- NEAR: LONG_FLUSH_24H | OI/mc -% | topPos 0.96 | taker 0.90
-- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.95 | taker 0.87
-- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.87
+- BTC: LONG_FLUSH_24H | OI/mc -% | topPos 0.89 | taker 0.99
+- ETH: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.83 | taker 0.94
+- SOL: LONG_FLUSH_24H | OI/mc 0.69% | topPos 0.85 | taker 0.89
+- NEAR: LONG_FLUSH_24H | OI/mc -% | topPos 0.96 | taker 0.89
+- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.95 | taker 0.88
+- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 0.87
 - SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.80 | taker 0.95
-- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.97 | taker 1.06
+- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.98 | taker 1.05
 
 ## Revenue / buyback flags
 - collector-crypt: CHEAP_VS_REVENUE
@@ -39,12 +39,12 @@
 - (11 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 5 | mean -9.4% (-0.46R) | in profit 0 | older than 7d 4
-- worst: AERO -1.00R, BEAM -0.70R, RUNE -0.51R | best: RUNE -0.51R, NIGHT -0.10R, PEPE 0.00R
+- open 5 | mean -7.7% (-0.37R) | in profit 2 | older than 7d 4
+- worst: AERO -0.95R, BEAM -0.61R, RUNE -0.45R | best: RUNE -0.45R, NIGHT 0.04R, PEPE 0.09R
 
 ## System
-- CoinGecko 2794/10000 used, month-end projection 10058 (101%), throttle level 2 | by script {'scan': 878, 'check_liquidity': 122, 'breakout_check': 1750, 'counterfactual_check': 44}
+- CoinGecko 2797/10000 used, month-end projection 10069 (101%), throttle level 2 | by script {'scan': 880, 'check_liquidity': 123, 'breakout_check': 1750, 'counterfactual_check': 44}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=56), H2 SUPPORTED (n=240)
-- radar-flags.json scan age: 2m
-- excluded from radar (pegged/tokenized equity): 48
+- radar-flags.json scan age: 4m
+- excluded from radar (pegged/tokenized equity): 47
