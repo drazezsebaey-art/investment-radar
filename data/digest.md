@@ -1,35 +1,33 @@
-# Radar digest - 2026-11-09 03:02 UTC
+# Radar digest - 2026-11-09 03:35 UTC
 
 ## Market
-- BTC scenario **C** | price 74872 | wk close 76075 vs 82800 | 50W 75593 (-0.95%) | 1h old
-- Alts: **BTC_LED** [-] | BTC.D 57.56% | ETH/BTC 0.02854 | breadth7d -% | stables 30d -4.37%
-- Alt risk (BTC.D): **NORMAL**  | 3d 0.46pt | 7d 0.38pt | n=121
+- BTC scenario **C** | price 75074 | wk close 76075 vs 82800 | 50W 75593 (-0.69%) | 1m old
+- Alts: **BTC_LED** [-] | BTC.D 57.53% | ETH/BTC 0.02858 | breadth7d -% | stables 30d -4.25%
+- Alt risk (BTC.D): **NORMAL**  | 3d 0.35pt | 7d 0.30pt | n=121
 - Gold: PAXG 1m -2.35% | real10y 2.60 (-32bp 1m) | USD 1m -0.10% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 24
 - 10y 1w: -14bp = real -3 + breakeven -11 -> **INFLATION_EXPECTATIONS_DRIVEN**
 - 10y 1m: -44bp = real -32 + breakeven -12 -> **REAL_YIELD_DRIVEN**
 
 ## Coins in correction (entry_ready first)
-- INJ: **BROKEN** | +47% impulse, retr 0.43 | OI dd 39% | fund 0.0003 | hold True | inval 7.78800 | OB 6.82800-7.04700
-- NEAR: **BROKEN** | +40% impulse, retr 1.40 | OI dd 36% | fund -0.0090 | hold False | inval 3.42500 | OB ---
+- INJ: **BROKEN** | +47% impulse, retr 0.40 | OI dd 39% | fund 0.0019 | hold True | inval 7.78800 | OB 6.82800-7.04700
+- NEAR: **BROKEN** | +40% impulse, retr 1.39 | OI dd 36% | fund -0.0096 | hold False | inval 3.42500 | OB ---
 
 ## Pre-pump candidates
 - NEAR: [A+E] 7d -15.7%
-- TAO: [A+E] 7d -5.9%
+- TAO: [A+E] 7d -6.2%
 
 ## ETF pipeline (new this run)
-- injective-protocol NEW: amendment - Form S-1/A CANARY STAKED INJ ETF For: 8 November By Investing.com - Investing.com South Af
-- chainlink: other - 21Shares Chainlink ETP (ALINK.PA) Seasonal returns chart - Yahoo Finance - Yahoo Finance S
-- ondo-finance: other - Global X Silver Miners Tokenized ETF (Ondo) USD (SILON-USD) latest stock news and headline
+- edgex NEW: other - Fidelity’s Bitcoin ETF Pulls In Fresh Cash as Crypto Bulls Edge Back In - TipRanks
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.91 | taker 1.06
-- ETH: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.86 | taker 1.00
-- NEAR: LONG_FLUSH_24H | OI/mc 1.00% | topPos 0.97 | taker 0.92
-- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.94 | taker 0.86
-- SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.81 | taker 0.98
-- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.96 | taker 1.08
-- TAO: LONG_FLUSH_24H | OI/mc 0.66% | topPos 0.85 | taker 1.14
-- ZEC: SHORT_SQUEEZE_24H | OI/mc 0.79% | topPos 1.01 | taker 1.01
+- ETH: LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 0.99
+- SOL: LONG_FLUSH_24H | OI/mc 0.68% | topPos 0.85 | taker 0.91
+- NEAR: LONG_FLUSH_24H | OI/mc 1.01% | topPos 0.96 | taker 0.91
+- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.95 | taker 0.87
+- SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.80 | taker 1.00
+- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.97 | taker 1.09
+- TAO: LONG_FLUSH_24H | OI/mc 0.67% | topPos 0.85 | taker 1.14
+- ZEC: SHORT_SQUEEZE_24H | OI/mc 0.80% | topPos 1.01 | taker 1.01
 
 ## Revenue / buyback flags
 - collector-crypt: CHEAP_VS_REVENUE
@@ -40,12 +38,12 @@
 - (11 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 5 | mean -6.6% (-0.31R) | in profit 2 | older than 7d 4
-- worst: AERO -0.81R, BEAM -0.66R, RUNE -0.37R | best: RUNE -0.37R, PEPE 0.10R, NIGHT 0.19R
+- open 5 | mean -6.9% (-0.33R) | in profit 2 | older than 7d 4
+- worst: AERO -0.83R, BEAM -0.68R, RUNE -0.41R | best: RUNE -0.41R, PEPE 0.07R, NIGHT 0.20R
 
 ## System
-- CoinGecko 2709/10000 used, month-end projection 10002 (100%), throttle level 2 | by script {'scan': 858, 'check_liquidity': 118, 'breakout_check': 1689, 'counterfactual_check': 44}
+- CoinGecko 2711/10000 used, month-end projection 10010 (100%), throttle level 2 | by script {'scan': 860, 'check_liquidity': 118, 'breakout_check': 1689, 'counterfactual_check': 44}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=56), H2 SUPPORTED (n=240)
-- radar-flags.json scan age: 2m
+- radar-flags.json scan age: 5m
 - excluded from radar (pegged/tokenized equity): 47
