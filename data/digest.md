@@ -1,4 +1,4 @@
-# Radar digest - 2026-11-09 20:34 UTC
+# Radar digest - 2026-11-09 21:02 UTC
 
 ## Market
 - BTC scenario **C** | price 74616 | wk close 76075 vs 82800 | 50W 75593 (-1.29%) | 1h old
@@ -13,11 +13,9 @@
 - PEPE: **ONGOING** | +56% impulse, retr 0.28 | OI dd 19% | fund 0.0100 | hold False | inval 0.00000 | OB 0.00000-0.00000
 
 ## Pre-pump candidates
-- NEAR: [A+E] 7d -7.1%
-- KITE: [C+E] 7d -0.3%
-- TAO: [A+E] 7d 0.0%
-- VVV: [C+E] 7d 1.4%
-- PEPE: [A+C] 7d 10.2%
+- KITE: [C+E] 7d -1.3%
+- VVV: [C+E] 7d 1.8%
+- PEPE: [A+C] 7d 8.8%
 
 ## ETF pipeline (new this run)
 - binancecoin NEW: other - BNB Chain Reports Significant Growth in Tokenized ETF Market - Coinfomania
@@ -39,12 +37,12 @@
 - (14 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 5 | mean -4.5% (-0.21R) | in profit 2 | older than 7d 4
-- worst: AERO -0.88R, BEAM -0.36R, RUNE -0.24R | best: RUNE -0.24R, PEPE 0.14R, NIGHT 0.27R
+- open 5 | mean -4.9% (-0.23R) | in profit 2 | older than 7d 4
+- worst: AERO -0.88R, BEAM -0.43R, RUNE -0.24R | best: RUNE -0.24R, PEPE 0.13R, NIGHT 0.27R
 
 ## System
-- CoinGecko 2965/10000 used, month-end projection 10070 (101%), throttle level 2 | by script {'scan': 936, 'check_liquidity': 130, 'breakout_check': 1855, 'counterfactual_check': 44}
+- CoinGecko 2967/10000 used, month-end projection 10029 (100%), throttle level 2 | by script {'scan': 938, 'check_liquidity': 130, 'breakout_check': 1855, 'counterfactual_check': 44}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=56), H2 SUPPORTED (n=241)
-- radar-flags.json scan age: 4m
-- excluded from radar (pegged/tokenized equity): 47
+- radar-flags.json scan age: 2m
+- excluded from radar (pegged/tokenized equity): 46
