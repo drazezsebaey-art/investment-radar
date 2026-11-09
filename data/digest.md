@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-09 03:35 UTC
+# Radar digest - 2026-11-09 04:02 UTC
 
 ## Market
-- BTC scenario **C** | price 75074 | wk close 76075 vs 82800 | 50W 75593 (-0.69%) | 1m old
+- BTC scenario **C** | price 75074 | wk close 76075 vs 82800 | 50W 75593 (-0.69%) | 28m old
 - Alts: **BTC_LED** [-] | BTC.D 57.53% | ETH/BTC 0.02858 | breadth7d -% | stables 30d -4.25%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.35pt | 7d 0.30pt | n=121
 - Gold: PAXG 1m -2.35% | real10y 2.60 (-32bp 1m) | USD 1m -0.10% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 24
@@ -13,8 +13,7 @@
 - NEAR: **BROKEN** | +40% impulse, retr 1.39 | OI dd 36% | fund -0.0096 | hold False | inval 3.42500 | OB ---
 
 ## Pre-pump candidates
-- NEAR: [A+E] 7d -15.7%
-- TAO: [A+E] 7d -6.2%
+- none
 
 ## ETF pipeline (new this run)
 - edgex NEW: other - Fidelity’s Bitcoin ETF Pulls In Fresh Cash as Crypto Bulls Edge Back In - TipRanks
@@ -38,12 +37,12 @@
 - (11 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 5 | mean -6.9% (-0.33R) | in profit 2 | older than 7d 4
-- worst: AERO -0.83R, BEAM -0.68R, RUNE -0.41R | best: RUNE -0.41R, PEPE 0.07R, NIGHT 0.20R
+- open 5 | mean -6.8% (-0.32R) | in profit 2 | older than 7d 4
+- worst: AERO -0.81R, BEAM -0.69R, RUNE -0.39R | best: RUNE -0.39R, PEPE 0.08R, NIGHT 0.21R
 
 ## System
-- CoinGecko 2711/10000 used, month-end projection 10010 (100%), throttle level 2 | by script {'scan': 860, 'check_liquidity': 118, 'breakout_check': 1689, 'counterfactual_check': 44}
+- CoinGecko 2714/10000 used, month-end projection 9970 (100%), throttle level 1 | by script {'scan': 862, 'check_liquidity': 119, 'breakout_check': 1689, 'counterfactual_check': 44}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=56), H2 SUPPORTED (n=240)
-- radar-flags.json scan age: 5m
-- excluded from radar (pegged/tokenized equity): 47
+- radar-flags.json scan age: 2m
+- excluded from radar (pegged/tokenized equity): 48
