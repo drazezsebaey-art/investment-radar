@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-10 10:34 UTC
+# Radar digest - 2026-11-10 11:02 UTC
 
 ## Market
-- BTC scenario **C** | price 74420 | wk close 76075 vs 82800 | 50W 75593 (-1.55%) | 60m old
+- BTC scenario **C** | price 74420 | wk close 76075 vs 82800 | 50W 75593 (-1.55%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 57.56% | ETH/BTC 0.02837 | breadth7d 58% | stables 30d -4.62%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.38pt | 7d 0.39pt | n=121
 - Gold: PAXG 1m -1.72% | real10y 2.63 (-24bp 1m) | USD 1m 0.36% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 24
@@ -13,13 +13,12 @@
 - NEAR: **BROKEN** | +40% impulse, retr 1.40 | OI dd 39% | fund 0.0100 | hold False | inval 3.46000 | OB ---
 
 ## Pre-pump candidates
-- NEAR: [A+E] 7d -4.3%
-- TAO: [A+E] 7d 0.2%
-- UB: [C+E] 7d 0.5%
-- KITE: [C+E] 7d 2.7%
-- VVV: [C+E] 7d 4.2%
-- AR: [C+E] 7d 8.3%
-- PEPE: [A+C] 7d 12.7%
+- NEAR: [A+E] 7d -7.0%
+- TAO: [A+E] 7d -1.9%
+- KITE: [C+E] 7d 1.9%
+- VVV: [C+E] 7d 2.6%
+- AR: [C+E] 7d 6.2%
+- PEPE: [A+C] 7d 12.0%
 
 ## ETF pipeline (new this run)
 - injective-protocol NEW: launch - NEAR, SUI and Remittix Earn: Injective's ETF Debut Meets a Yield Platform Now Open to the 
@@ -43,12 +42,12 @@
 - (16 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 0.5% (0.06R) | in profit 2 | older than 7d 4
-- worst: BEAM -0.42R, RUNE -0.26R, PEPE 0.24R | best: RUNE -0.26R, PEPE 0.24R, NIGHT 0.69R
+- open 4 | mean 0.6% (0.06R) | in profit 2 | older than 7d 4
+- worst: BEAM -0.39R, RUNE -0.23R, PEPE 0.24R | best: RUNE -0.23R, PEPE 0.24R, NIGHT 0.63R
 
 ## System
-- CoinGecko 3133/10000 used, month-end projection 9981 (100%), throttle level 1 | by script {'scan': 992, 'check_liquidity': 140, 'breakout_check': 1955, 'counterfactual_check': 46}
+- CoinGecko 3136/10000 used, month-end projection 9947 (100%), throttle level 1 | by script {'scan': 994, 'check_liquidity': 141, 'breakout_check': 1955, 'counterfactual_check': 46}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=56), H2 SUPPORTED (n=241)
-- radar-flags.json scan age: 4m
-- excluded from radar (pegged/tokenized equity): 48
+- radar-flags.json scan age: 2m
+- excluded from radar (pegged/tokenized equity): 49
