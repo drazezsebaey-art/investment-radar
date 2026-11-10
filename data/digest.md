@@ -1,39 +1,38 @@
-# Radar digest - 2026-11-10 19:02 UTC
+# Radar digest - 2026-11-10 19:35 UTC
 
 ## Market
-- BTC scenario **C** | price 73122 | wk close 76075 vs 82800 | 50W 75593 (-3.27%) | 1h old
-- Alts: **BTC_LED** [-] | BTC.D 57.72% | ETH/BTC 0.02785 | breadth7d -% | stables 30d -4.61%
-- Alt risk (BTC.D): **ELEVATED** ['BTC_DOM_RISING_3D'] | 3d 0.54pt | 7d 0.60pt | n=121
+- BTC scenario **C** | price 73459 | wk close 76075 vs 82800 | 50W 75593 (-2.82%) | 1m old
+- Alts: **BTC_LED** [-] | BTC.D 57.71% | ETH/BTC 0.02782 | breadth7d -% | stables 30d -4.60%
+- Alt risk (BTC.D): **ELEVATED** ['BTC_DOM_RISING_3D'] | 3d 0.50pt | 7d 0.65pt | n=121
 - Gold: PAXG 1m -1.21% | real10y 2.63 (-24bp 1m) | USD 1m 0.36% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 24
 - 10y 1w: -8bp = real 3 + breakeven -7 -> **SMALL_MOVE**
 - 10y 1m: -36bp = real -24 + breakeven -11 -> **MIXED**
 
 ## Coins in correction (entry_ready first)
-- PEPE: **ONGOING** | +56% impulse, retr 0.19 | OI dd 22% | fund 0.0100 | hold False | inval 0.00000 | OB 0.00000-0.00000
+- PEPE: **ONGOING** | +56% impulse, retr 0.21 | OI dd 22% | fund 0.0100 | hold False | inval 0.00000 | OB 0.00000-0.00000
 
 ## Pre-pump candidates
-- GRAM: [B+C] 7d -4.6%
-- UB: [C+E] 7d -0.2%
-- AR: [C+E] 7d 1.9%
-- PEPE: [A+C] 7d 8.5%
+- GRAM: [B+C] 7d -5.1%
+- UB: [C+E] 7d 1.0%
+- PEPE: [A+C] 7d 10.3%
 
 ## ETF pipeline (new this run)
-- hyperliquid NEW: filing - Barclays Bitcoin ETF Filing: Real Buy or Hype? See BTC Price Now - Coin Gabbar
-- ripple NEW: other - HighTower Advisors Discloses $680K in XRP ETF Holdings Across Bitwise and Canary Funds - C
-- zcash: other - Zcash Price Forecast: Is ZEC’s recovery losing momentum under ETF selling pressure? - www.
-- zcash: other - Grayscale Expands Zcash ETF Campaign with $1M Funding - The Cryptonomist
-- ondo-finance: other - Global X Data Center & Digital Infrastructure Tokenized ETF (Ondo) Exchanges DTCRon Market
-- ondo-finance: other - Franklin US Large Cap Multifactor Index Tokenized ETF (Ondo) Market Stats in USD - Binance
+- zcash: other - Grayscale pledges $1 million alongside Zcash ad blitz as token and ETF fall 12% - The Bloc
+- zcash: other - Grayscale Zcash ETF campaign grows as firm pledges $1 million to ecosystem - Cryptonews.ne
+- zcash: other - Grayscale takes Zcash ETF pitch to Wall Street Journal print - Cryptopolitan
+- avalanche-2: other - Hot CPI Hits Crypto - ETF Outflows, NYSE Picks Avalanche and X Links Cashtags to FOMO - De
+- zcash: other - Grayscale takes Zcash ETF pitch to Wall Street Journal print - Cryptopolitan
+- zcash: other - Grayscale Zcash ETF campaign grows as firm pledges $1 million to ecosystem - Cryptonews.ne
 
 ## Derivatives flags (OKX)
-- NEAR: LONG_FLUSH_24H | OI/mc -% | topPos 0.96 | taker 1.00
-- AVAX: LONG_FLUSH_24H | OI/mc 0.40% | topPos 0.86 | taker 0.90
-- SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.80 | taker 0.96
-- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.94 | taker 0.86
-- TAO: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.84 | taker 0.83
-- WLD: LONG_FLUSH_24H | OI/mc 2.53% | topPos 0.84 | taker 0.92
-- ADA: LONG_FLUSH_24H | OI/mc 0.43% | topPos 0.85 | taker 0.91
-- LINK: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.94 | taker 0.84
+- BTC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.89 | taker 0.97
+- ETH: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.84 | taker 0.94
+- NEAR: LONG_FLUSH_24H | OI/mc -% | topPos 0.96 | taker 0.96
+- AVAX: LONG_FLUSH_24H | OI/mc 0.40% | topPos 0.86 | taker 0.92
+- SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.80 | taker 0.98
+- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.94 | taker 0.90
+- TAO: LONG_FLUSH_24H | OI/mc -% | topPos 0.85 | taker 0.88
+- ZEC: SHORT_SQUEEZE_24H | OI/mc 0.76% | topPos 0.94 | taker 0.94
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -43,12 +42,12 @@
 - (16 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 1.3% (0.09R) | in profit 2 | older than 7d 4
-- worst: BEAM -0.29R, RUNE -0.25R, PEPE 0.29R | best: RUNE -0.25R, PEPE 0.29R, NIGHT 0.59R
+- open 4 | mean 0.3% (0.04R) | in profit 2 | older than 7d 4
+- worst: BEAM -0.32R, RUNE -0.26R, PEPE 0.22R | best: RUNE -0.26R, PEPE 0.22R, NIGHT 0.52R
 
 ## System
-- CoinGecko 3292/10000 used, month-end projection 10086 (101%), throttle level 2 | by script {'scan': 1034, 'check_liquidity': 146, 'breakout_check': 2066, 'counterfactual_check': 46}
+- CoinGecko 3294/10000 used, month-end projection 10092 (101%), throttle level 2 | by script {'scan': 1036, 'check_liquidity': 146, 'breakout_check': 2066, 'counterfactual_check': 46}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=56), H2 SUPPORTED (n=243)
-- radar-flags.json scan age: 2m
+- radar-flags.json scan age: 5m
 - excluded from radar (pegged/tokenized equity): 48
