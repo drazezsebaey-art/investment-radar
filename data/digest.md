@@ -1,4 +1,4 @@
-# Radar digest - 2026-11-10 16:34 UTC
+# Radar digest - 2026-11-10 17:02 UTC
 
 ## Market
 - BTC scenario **C** | price 73838 | wk close 76075 vs 82800 | 50W 75593 (-2.32%) | 1h old
@@ -13,11 +13,12 @@
 - PEPE: **ONGOING** | +56% impulse, retr 0.15 | OI dd 19% | fund 0.0100 | hold False | inval 0.00000 | OB 0.00000-0.00000
 
 ## Pre-pump candidates
-- NEAR: [A+E] 7d -7.8%
+- NEAR: [A+E] 7d -9.7%
 - GRAM: [B+C] 7d -6.4%
-- TAO: [A+E] 7d -5.1%
-- UB: [C+E] 7d 0.9%
-- KITE: [C+E] 7d 1.5%
+- TAO: [A+E] 7d -6.1%
+- UB: [C+E] 7d -1.3%
+- KITE: [C+E] 7d -1.2%
+- PEPE: [A+C] 7d 5.9%
 
 ## ETF pipeline (new this run)
 - zcash: institutional_backing - Grayscale pledges 100% of Zcash ETF sponsor fees to Zcash initiatives for first year - Cry
@@ -45,12 +46,12 @@
 - (16 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean -0.7% (-0.00R) | in profit 2 | older than 7d 4
-- worst: BEAM -0.38R, RUNE -0.25R, PEPE 0.12R | best: RUNE -0.25R, PEPE 0.12R, NIGHT 0.50R
+- open 4 | mean -0.9% (-0.02R) | in profit 2 | older than 7d 4
+- worst: BEAM -0.38R, RUNE -0.28R, PEPE 0.15R | best: RUNE -0.28R, PEPE 0.15R, NIGHT 0.44R
 
 ## System
-- CoinGecko 3223/10000 used, month-end projection 10002 (100%), throttle level 2 | by script {'scan': 1024, 'check_liquidity': 144, 'breakout_check': 2009, 'counterfactual_check': 46}
+- CoinGecko 3226/10000 used, month-end projection 9969 (100%), throttle level 1 | by script {'scan': 1026, 'check_liquidity': 145, 'breakout_check': 2009, 'counterfactual_check': 46}
 - Trials guard: OK (0 untracked)
-- Hypotheses: H1 NOT_SUPPORTED (n=56), H2 SUPPORTED (n=242)
-- radar-flags.json scan age: 4m
-- excluded from radar (pegged/tokenized equity): 48
+- Hypotheses: H1 NOT_SUPPORTED (n=56), H2 SUPPORTED (n=243)
+- radar-flags.json scan age: 2m
+- excluded from radar (pegged/tokenized equity): 49
