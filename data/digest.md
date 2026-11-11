@@ -1,4 +1,4 @@
-# Radar digest - 2026-11-11 14:35 UTC
+# Radar digest - 2026-11-11 15:02 UTC
 
 ## Market
 - BTC scenario **C** | price 73818 | wk close 76075 vs 82800 | 50W 75593 (-2.35%) | 1h old
@@ -14,7 +14,9 @@
 - COMP: **BROKEN** | +41% impulse, retr 1.05 | OI dd 42% | fund -0.0009 | hold False | inval 19.70000 | OB 19.19000-19.90000
 
 ## Pre-pump candidates
-- NEAR: [A+C] 7d -5.5%
+- NEAR: [A+E] 7d -6.9%
+- TAO: [A+E] 7d -2.2%
+- ICP: [C+E] 7d 0.9%
 
 ## ETF pipeline (new this run)
 - zcash: other - ZEC Price Drops 11.3% Following Grayscale’s Announcement of $1 Million Zcash ETF Sponsorsh
@@ -40,12 +42,12 @@
 - (19 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 2.0% (0.16R) | in profit 1 | older than 7d 4
-- worst: BEAM -0.21R, RUNE -0.21R, PEPE -0.03R | best: RUNE -0.21R, PEPE -0.03R, NIGHT 1.10R
+- open 4 | mean 1.9% (0.16R) | in profit 1 | older than 7d 4
+- worst: BEAM -0.22R, RUNE -0.21R, PEPE -0.04R | best: RUNE -0.21R, PEPE -0.04R, NIGHT 1.10R
 
 ## System
-- CoinGecko 3535/10000 used, month-end projection 10020 (100%), throttle level 2 | by script {'scan': 1120, 'check_liquidity': 157, 'breakout_check': 2210, 'counterfactual_check': 48}
+- CoinGecko 3537/10000 used, month-end projection 9987 (100%), throttle level 1 | by script {'scan': 1122, 'check_liquidity': 157, 'breakout_check': 2210, 'counterfactual_check': 48}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=56), H2 SUPPORTED (n=247)
-- radar-flags.json scan age: 4m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 49
