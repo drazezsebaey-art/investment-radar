@@ -1,4 +1,4 @@
-# Radar digest - 2026-11-11 12:34 UTC
+# Radar digest - 2026-11-11 13:02 UTC
 
 ## Market
 - BTC scenario **C** | price 74044 | wk close 76075 vs 82800 | 50W 75593 (-2.05%) | 1h old
@@ -12,10 +12,9 @@
 - INJ: **BROKEN** | +47% impulse, retr 0.49 | OI dd 43% | fund -0.0165 | hold True | inval 6.82800 | OB 6.82800-7.04700
 
 ## Pre-pump candidates
-- NEAR: [A+C+E] 7d -8.6%
-- TAO: [A+E] 7d -5.2%
-- ATOM: [B+C] 7d -0.7%
-- ICP: [C+E] 7d -0.2%
+- NEAR: [A+C+E] 7d -8.3%
+- TAO: [A+E] 7d -4.5%
+- ICP: [C+E] 7d 0.1%
 
 ## ETF pipeline (new this run)
 - zcash: other - Grayscale Pledges US$1 Million to Zcash as ZEC and Its ETF Plunge - Crypto News Australia
@@ -39,12 +38,12 @@
 - (19 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 1.1% (0.11R) | in profit 1 | older than 7d 4
-- worst: BEAM -0.26R, RUNE -0.21R, PEPE -0.03R | best: RUNE -0.21R, PEPE -0.03R, NIGHT 0.93R
+- open 4 | mean 1.5% (0.13R) | in profit 1 | older than 7d 4
+- worst: BEAM -0.21R, RUNE -0.19R, PEPE -0.01R | best: RUNE -0.19R, PEPE -0.01R, NIGHT 0.91R
 
 ## System
-- CoinGecko 3527/10000 used, month-end projection 10077 (101%), throttle level 2 | by script {'scan': 1112, 'check_liquidity': 157, 'breakout_check': 2210, 'counterfactual_check': 48}
+- CoinGecko 3529/10000 used, month-end projection 10043 (100%), throttle level 2 | by script {'scan': 1114, 'check_liquidity': 157, 'breakout_check': 2210, 'counterfactual_check': 48}
 - Trials guard: OK (0 untracked)
-- Hypotheses: H1 NOT_SUPPORTED (n=56), H2 SUPPORTED (n=246)
-- radar-flags.json scan age: 4m
+- Hypotheses: H1 NOT_SUPPORTED (n=56), H2 SUPPORTED (n=247)
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 49
