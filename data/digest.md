@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-11 21:04 UTC
+# Radar digest - 2026-11-11 21:33 UTC
 
 ## Market
-- BTC scenario **C** | price 74344 | wk close 76075 vs 82800 | 50W 75593 (-1.65%) | 2h old
+- BTC scenario **C** | price 74730 | wk close 76075 vs 82800 | 50W 75593 (-1.14%) | 1m old
 - Alts: **BTC_LED** [-] | BTC.D 57.81% | ETH/BTC 0.02797 | breadth7d 52% | stables 30d -4.77%
 - Alt risk (BTC.D): **ELEVATED** ['BTC_DOM_RISING_3D'] | 3d 0.51pt | 7d 0.55pt | n=121
 - Gold: PAXG 1m -0.56% | real10y 2.66 (-25bp 1m) | USD 1m 0.36% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 24
@@ -12,14 +12,11 @@
 - none
 
 ## Pre-pump candidates
-- ZEC: [A+B] 7d -22.0%
+- ZEC: [A+B] 7d -21.5%
 
 ## ETF pipeline (new this run)
-- injective-protocol NEW: other - Canary's Staked INJ ETF Lists on Nasdaq With a 1.10% Expense Ratio - Cryptonews.net
-- ripple NEW: other - Rothschild Investment Reveals XRP ETF Stake - Cryptonews.net
-- avalanche-2: other - A 66.48% Q3 return left Grayscale Avalanche Staking ETF (GAVA) negative over nine months. 
-- ondo-finance: other - Franklin Income Equity Focus Tokenized ETF (Ondo) - CryptoRank
-- avalanche-2: other - A 66.48% Q3 return left Grayscale Avalanche Staking ETF (GAVA) negative over nine months. 
+- ondo-finance: conversion - Innovator ZOCT ETF (Ondo Tokenized) Price | ZOCTon Price Today, Live Chart, USD converter,
+- ondo-finance: other - PIMCO High Yield Corporate Bond Index Tokenized ETF (Ondo) USD (HYSON-USD) Cryptocurrency 
 
 ## Derivatives flags (OKX)
 - BTC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.91 | taker 1.02
@@ -40,12 +37,12 @@
 - (19 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 2.7% (0.22R) | in profit 1 | older than 7d 4
-- worst: BEAM -0.22R, RUNE -0.19R, PEPE -0.18R | best: RUNE -0.19R, PEPE -0.18R, NIGHT 1.46R
+- open 4 | mean 2.0% (0.19R) | in profit 1 | older than 7d 4
+- worst: BEAM -0.25R, PEPE -0.25R, RUNE -0.21R | best: PEPE -0.25R, RUNE -0.21R, NIGHT 1.46R
 
 ## System
-- CoinGecko 3624/10000 used, month-end projection 9997 (100%), throttle level 1 | by script {'scan': 1144, 'check_liquidity': 162, 'breakout_check': 2269, 'counterfactual_check': 49}
+- CoinGecko 3626/10000 used, month-end projection 10003 (100%), throttle level 2 | by script {'scan': 1146, 'check_liquidity': 162, 'breakout_check': 2269, 'counterfactual_check': 49}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=56), H2 SUPPORTED (n=247)
-- radar-flags.json scan age: 4m
+- radar-flags.json scan age: 3m
 - excluded from radar (pegged/tokenized equity): 49
