@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-11 15:36 UTC
+# Radar digest - 2026-11-11 16:03 UTC
 
 ## Market
-- BTC scenario **C** | price 74030 | wk close 76075 vs 82800 | 50W 75593 (-2.07%) | 1m old
+- BTC scenario **C** | price 74030 | wk close 76075 vs 82800 | 50W 75593 (-2.07%) | 28m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.67% | ETH/BTC 0.02806 | breadth7d 47% | stables 30d -4.92%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.37pt | 7d 0.49pt | n=121
 - Gold: PAXG 1m -0.54% | real10y 2.66 (-25bp 1m) | USD 1m 0.36% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 24
@@ -13,9 +13,10 @@
 - PYTH: **BROKEN** | +43% impulse, retr 1.09 | OI dd 49% | fund -0.0056 | hold False | inval 0.05851 | OB 0.05851-0.06235
 
 ## Pre-pump candidates
-- NEAR: [A+E] 7d -6.9%
+- NEAR: [A+E] 7d -9.9%
 - TAO: [A+E] 7d -2.8%
 - ICP: [C+E] 7d -0.1%
+- CAP: [A+C] 7d 12.3%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - XRP price drops over 3% amid $10.4M ETF outflows and bearish technical signals. - Pluang
@@ -41,12 +42,12 @@
 - (19 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 2.0% (0.16R) | in profit 1 | older than 7d 4
-- worst: RUNE -0.22R, BEAM -0.21R, PEPE -0.05R | best: BEAM -0.21R, PEPE -0.05R, NIGHT 1.14R
+- open 4 | mean 2.9% (0.22R) | in profit 1 | older than 7d 4
+- worst: BEAM -0.26R, RUNE -0.19R, PEPE -0.03R | best: RUNE -0.19R, PEPE -0.03R, NIGHT 1.36R
 
 ## System
-- CoinGecko 3540/10000 used, month-end projection 9995 (100%), throttle level 1 | by script {'scan': 1124, 'check_liquidity': 158, 'breakout_check': 2210, 'counterfactual_check': 48}
+- CoinGecko 3544/10000 used, month-end projection 9968 (100%), throttle level 1 | by script {'scan': 1126, 'check_liquidity': 159, 'breakout_check': 2210, 'counterfactual_check': 49}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=56), H2 SUPPORTED (n=247)
-- radar-flags.json scan age: 6m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 49
