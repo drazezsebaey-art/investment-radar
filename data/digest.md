@@ -1,34 +1,35 @@
-# Radar digest - 2026-11-11 19:03 UTC
+# Radar digest - 2026-11-11 19:35 UTC
 
 ## Market
-- BTC scenario **C** | price 74431 | wk close 76075 vs 82800 | 50W 75593 (-1.54%) | 1h old
-- Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.67% | ETH/BTC 0.02806 | breadth7d 47% | stables 30d -4.92%
-- Alt risk (BTC.D): **NORMAL**  | 3d 0.37pt | 7d 0.49pt | n=121
+- BTC scenario **C** | price 74344 | wk close 76075 vs 82800 | 50W 75593 (-1.65%) | 1m old
+- Alts: **BTC_LED** [-] | BTC.D 57.81% | ETH/BTC 0.02797 | breadth7d 52% | stables 30d -4.77%
+- Alt risk (BTC.D): **ELEVATED** ['BTC_DOM_RISING_3D'] | 3d 0.51pt | 7d 0.55pt | n=121
 - Gold: PAXG 1m -0.56% | real10y 2.66 (-25bp 1m) | USD 1m 0.36% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 24
 - 10y 1w: -3bp = real 4 + breakeven -10 -> **SMALL_MOVE**
 - 10y 1m: -36bp = real -25 + breakeven -13 -> **MIXED**
 
 ## Coins in correction (entry_ready first)
-- INJ: **BROKEN** | +47% impulse, retr 0.48 | OI dd 32% | fund -0.0162 | hold True | inval 7.66400 | OB 6.82800-7.04700
-- PYTH: **BROKEN** | +43% impulse, retr 1.08 | OI dd 42% | fund 0.0031 | hold False | inval 0.05851 | OB 0.05851-0.06235
+- none
 
 ## Pre-pump candidates
 - none
 
 ## ETF pipeline (new this run)
-- pyth-network NEW: other - Pyth Network adds NYSE stock and ETF data to its marketplace - The Block
-- pyth-network NEW: other - Pyth Network Now Distributes Real-Time NYSE Stock and ETF Data - CoinLaw
-- zcash: other - Zcash drops below $1,000 despite Grayscale's $1M support pledge amid ETF outflows and liqu
+- injective-protocol NEW: other - Canary's Staked INJ ETF Lists on Nasdaq With a 1.10% Expense Ratio - Cryptonews.net
+- ripple NEW: other - Rothschild Investment Reveals XRP ETF Stake - Cryptonews.net
+- avalanche-2: other - A 66.48% Q3 return left Grayscale Avalanche Staking ETF (GAVA) negative over nine months. 
+- ondo-finance: other - Franklin Income Equity Focus Tokenized ETF (Ondo) - CryptoRank
+- avalanche-2: other - A 66.48% Q3 return left Grayscale Avalanche Staking ETF (GAVA) negative over nine months. 
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc 0.26% | topPos 0.90 | taker 1.03
-- ETH: SHORT_SQUEEZE_24H | OI/mc 0.69% | topPos 0.85 | taker 1.08
-- SOL: SHORT_SQUEEZE_24H | OI/mc 0.72% | topPos 0.86 | taker 1.04
+- BTC: SHORT_SQUEEZE_24H | OI/mc 0.26% | topPos 0.91 | taker 1.02
+- ETH: LONG_FLUSH_24H | OI/mc 0.68% | topPos 0.86 | taker 1.07
+- SOL: SHORT_SQUEEZE_24H | OI/mc 0.72% | topPos 0.86 | taker 1.03
 - AVAX: SHORT_SQUEEZE_24H | OI/mc 0.40% | topPos 0.86 | taker 0.99
-- XRP: SHORT_SQUEEZE_24H | OI/mc 0.16% | topPos 0.85 | taker 1.02
-- SEI: AGGRESSIVE_BUYING | OI/mc 0.72% | topPos 0.94 | taker 1.20
-- WLD: SHORT_SQUEEZE_FUEL | OI/mc 2.60% | topPos 0.82 | taker 1.03
-- ADA: SHORT_SQUEEZE_24H | OI/mc 0.44% | topPos 0.86 | taker 1.11
+- SEI: AGGRESSIVE_BUYING | OI/mc 0.72% | topPos 0.94 | taker 1.19
+- ZEC: LONG_FLUSH_24H | OI/mc 0.87% | topPos 0.94 | taker 0.95
+- WLD: SHORT_SQUEEZE_FUEL | OI/mc 2.59% | topPos 0.81 | taker 1.05
+- ADA: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.86 | taker 1.06
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -39,12 +40,12 @@
 - (19 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 3.2% (0.24R) | in profit 1 | older than 7d 4
-- worst: BEAM -0.26R, RUNE -0.17R, PEPE -0.07R | best: RUNE -0.17R, PEPE -0.07R, NIGHT 1.48R
+- open 4 | mean 2.7% (0.22R) | in profit 1 | older than 7d 4
+- worst: BEAM -0.27R, RUNE -0.19R, PEPE -0.10R | best: RUNE -0.19R, PEPE -0.10R, NIGHT 1.42R
 
 ## System
-- CoinGecko 3617/10000 used, month-end projection 10055 (101%), throttle level 2 | by script {'scan': 1138, 'check_liquidity': 161, 'breakout_check': 2269, 'counterfactual_check': 49}
+- CoinGecko 3619/10000 used, month-end projection 10061 (101%), throttle level 2 | by script {'scan': 1140, 'check_liquidity': 161, 'breakout_check': 2269, 'counterfactual_check': 49}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=56), H2 SUPPORTED (n=247)
-- radar-flags.json scan age: 2m
+- radar-flags.json scan age: 5m
 - excluded from radar (pegged/tokenized equity): 49
