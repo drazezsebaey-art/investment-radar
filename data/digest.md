@@ -1,4 +1,4 @@
-# Radar digest - 2026-11-11 04:35 UTC
+# Radar digest - 2026-11-11 05:02 UTC
 
 ## Market
 - BTC scenario **C** | price 73764 | wk close 76075 vs 82800 | 50W 75593 (-2.42%) | 1h old
@@ -13,7 +13,7 @@
 - PEPE: **ONGOING** | +56% impulse, retr 0.15 | OI dd 22% | fund 0.0100 | hold False | inval 0.00000 | OB 0.00000-0.00000
 
 ## Pre-pump candidates
-- NEAR: [A+E] 7d -0.9%
+- NEAR: [A+E] 7d -2.2%
 - TAO: [A+E] 7d 0.1%
 - UB: [C+E] 7d 1.4%
 - PEPE: [A+C] 7d 12.4%
@@ -40,12 +40,12 @@
 - (16 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 2.8% (0.17R) | in profit 2 | older than 7d 4
-- worst: RUNE -0.21R, BEAM -0.20R, PEPE 0.32R | best: BEAM -0.20R, PEPE 0.32R, NIGHT 0.76R
+- open 4 | mean 2.3% (0.15R) | in profit 2 | older than 7d 4
+- worst: BEAM -0.24R, RUNE -0.21R, PEPE 0.28R | best: RUNE -0.21R, PEPE 0.28R, NIGHT 0.76R
 
 ## System
-- CoinGecko 3388/10000 used, month-end projection 9997 (100%), throttle level 1 | by script {'scan': 1072, 'check_liquidity': 151, 'breakout_check': 2117, 'counterfactual_check': 48}
+- CoinGecko 3390/10000 used, month-end projection 9962 (100%), throttle level 1 | by script {'scan': 1074, 'check_liquidity': 151, 'breakout_check': 2117, 'counterfactual_check': 48}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=56), H2 SUPPORTED (n=243)
-- radar-flags.json scan age: 5m
-- excluded from radar (pegged/tokenized equity): 50
+- radar-flags.json scan age: 2m
+- excluded from radar (pegged/tokenized equity): 49
