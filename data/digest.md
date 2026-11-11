@@ -1,10 +1,10 @@
-# Radar digest - 2026-11-11 04:02 UTC
+# Radar digest - 2026-11-11 04:35 UTC
 
 ## Market
-- BTC scenario **C** | price 73764 | wk close 76075 vs 82800 | 50W 75593 (-2.42%) | 28m old
+- BTC scenario **C** | price 73764 | wk close 76075 vs 82800 | 50W 75593 (-2.42%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 57.67% | ETH/BTC 0.02797 | breadth7d 52% | stables 30d -4.93%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.45pt | 7d 0.68pt | n=121
-- Gold: PAXG 1m -0.92% | real10y 2.66 (-25bp 1m) | USD 1m 0.36% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 24
+- Gold: PAXG 1m -0.66% | real10y 2.66 (-25bp 1m) | USD 1m 0.36% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 24
 - 10y 1w: -3bp = real 4 + breakeven -10 -> **SMALL_MOVE**
 - 10y 1m: -36bp = real -25 + breakeven -13 -> **MIXED**
 
@@ -15,6 +15,7 @@
 ## Pre-pump candidates
 - NEAR: [A+E] 7d -0.9%
 - TAO: [A+E] 7d 0.1%
+- UB: [C+E] 7d 1.4%
 - PEPE: [A+C] 7d 12.4%
 - BTW: [B+C] 7d 21.4%
 
@@ -22,14 +23,14 @@
 - ripple NEW: other - Why Did XRP ETF Net Assets Fall During 13 Weeks of Inflows? - Altcoin Buzz
 
 ## Derivatives flags (OKX)
-- ETH: SHORT_SQUEEZE_24H | OI/mc 0.69% | topPos 0.85 | taker 0.95
-- NEAR: LONG_FLUSH_24H | OI/mc 1.05% | topPos 0.99 | taker 0.98
-- AVAX: LONG_FLUSH_24H | OI/mc 0.38% | topPos 0.83 | taker 0.93
-- SUI: LONG_FLUSH_24H | OI/mc 0.92% | topPos 0.80 | taker 0.98
-- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.94 | taker 1.06
-- TAO: LONG_FLUSH_24H | OI/mc 0.66% | topPos 0.85 | taker 0.91
-- ZEC: LONG_FLUSH_24H | OI/mc 0.78% | topPos 0.92 | taker 0.94
-- WLD: LONG_FLUSH_24H | OI/mc 2.51% | topPos 0.82 | taker 0.92
+- ETH: SHORT_SQUEEZE_24H | OI/mc 0.70% | topPos 0.85 | taker 0.95
+- NEAR: LONG_FLUSH_24H | OI/mc 1.08% | topPos 0.99 | taker 0.97
+- AVAX: LONG_FLUSH_24H | OI/mc 0.38% | topPos 0.83 | taker 0.92
+- SUI: LONG_FLUSH_24H | OI/mc 0.93% | topPos 0.81 | taker 0.99
+- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.93 | taker 1.09
+- TAO: LONG_FLUSH_24H | OI/mc 0.67% | topPos 0.85 | taker 0.92
+- ZEC: LONG_FLUSH_24H | OI/mc -% | topPos 0.90 | taker 0.94
+- WLD: LONG_FLUSH_24H | OI/mc 2.53% | topPos 0.83 | taker 0.92
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -39,12 +40,12 @@
 - (16 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 3.1% (0.18R) | in profit 2 | older than 7d 4
-- worst: RUNE -0.19R, BEAM -0.16R, PEPE 0.33R | best: BEAM -0.16R, PEPE 0.33R, NIGHT 0.74R
+- open 4 | mean 2.8% (0.17R) | in profit 2 | older than 7d 4
+- worst: RUNE -0.21R, BEAM -0.20R, PEPE 0.32R | best: BEAM -0.20R, PEPE 0.32R, NIGHT 0.76R
 
 ## System
-- CoinGecko 3385/10000 used, month-end projection 9989 (100%), throttle level 1 | by script {'scan': 1070, 'check_liquidity': 150, 'breakout_check': 2117, 'counterfactual_check': 48}
+- CoinGecko 3388/10000 used, month-end projection 9997 (100%), throttle level 1 | by script {'scan': 1072, 'check_liquidity': 151, 'breakout_check': 2117, 'counterfactual_check': 48}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=56), H2 SUPPORTED (n=243)
-- radar-flags.json scan age: 2m
+- radar-flags.json scan age: 5m
 - excluded from radar (pegged/tokenized equity): 50
