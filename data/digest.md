@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-11 14:02 UTC
+# Radar digest - 2026-11-11 14:35 UTC
 
 ## Market
-- BTC scenario **C** | price 73818 | wk close 76075 vs 82800 | 50W 75593 (-2.35%) | 29m old
+- BTC scenario **C** | price 73818 | wk close 76075 vs 82800 | 50W 75593 (-2.35%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 57.81% | ETH/BTC 0.02780 | breadth7d 45% | stables 30d -4.92%
 - Alt risk (BTC.D): **ELEVATED** ['BTC_DOM_RISING_3D'] | 3d 0.56pt | 7d 0.66pt | n=121
 - Gold: PAXG 1m -0.54% | real10y 2.66 (-25bp 1m) | USD 1m 0.36% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 24
@@ -22,14 +22,14 @@
 - ondo-finance: other - Global X MSCI Argentina Tokenized ETF (Ondo) - CryptoRank
 
 ## Derivatives flags (OKX)
-- ETH: LONG_FLUSH_24H | OI/mc 0.70% | topPos 0.85 | taker 0.97
-- SOL: SHORT_SQUEEZE_24H | OI/mc 0.72% | topPos 0.86 | taker 0.97
-- AVAX: LONG_FLUSH_24H | OI/mc 0.40% | topPos 0.85 | taker 0.91
-- XRP: LONG_FLUSH_24H | OI/mc 0.16% | topPos 0.86 | taker 0.99
-- SUI: LONG_FLUSH_24H | OI/mc 0.93% | topPos 0.80 | taker 1.00
-- SEI: LONG_FLUSH_24H | OI/mc 0.72% | topPos 0.94 | taker 1.08
-- TAO: LONG_FLUSH_24H | OI/mc 0.68% | topPos 0.86 | taker 0.94
-- ZEC: SHORT_SQUEEZE_24H | OI/mc 0.92% | topPos 0.93 | taker 0.93
+- BTC: LONG_FLUSH_24H | OI/mc 0.26% | topPos 0.90 | taker 0.96
+- SOL: SHORT_SQUEEZE_24H | OI/mc 0.73% | topPos 0.86 | taker 0.99
+- AVAX: LONG_FLUSH_24H | OI/mc 0.40% | topPos 0.86 | taker 0.96
+- XRP: LONG_FLUSH_24H | OI/mc 0.16% | topPos 0.86 | taker 1.03
+- SUI: LONG_FLUSH_24H | OI/mc 0.94% | topPos 0.81 | taker 1.02
+- SEI: LONG_FLUSH_24H | OI/mc 0.73% | topPos 0.93 | taker 1.14
+- TAO: LONG_FLUSH_24H | OI/mc 0.69% | topPos 0.85 | taker 0.91
+- WLD: LONG_FLUSH_24H | OI/mc 2.55% | topPos 0.83 | taker 1.01
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -41,11 +41,11 @@
 
 ## Paper book (open trades, marked to last scan)
 - open 4 | mean 2.0% (0.16R) | in profit 1 | older than 7d 4
-- worst: BEAM -0.21R, RUNE -0.20R, PEPE -0.01R | best: RUNE -0.20R, PEPE -0.01R, NIGHT 1.05R
+- worst: BEAM -0.21R, RUNE -0.21R, PEPE -0.03R | best: RUNE -0.21R, PEPE -0.03R, NIGHT 1.10R
 
 ## System
-- CoinGecko 3533/10000 used, month-end projection 10015 (100%), throttle level 2 | by script {'scan': 1118, 'check_liquidity': 157, 'breakout_check': 2210, 'counterfactual_check': 48}
+- CoinGecko 3535/10000 used, month-end projection 10020 (100%), throttle level 2 | by script {'scan': 1120, 'check_liquidity': 157, 'breakout_check': 2210, 'counterfactual_check': 48}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=56), H2 SUPPORTED (n=247)
-- radar-flags.json scan age: 2m
+- radar-flags.json scan age: 4m
 - excluded from radar (pegged/tokenized equity): 49
