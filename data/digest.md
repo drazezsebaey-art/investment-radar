@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-11 00:16 UTC
+# Radar digest - 2026-11-11 00:34 UTC
 
 ## Market
-- BTC scenario **C** | price 73677 | wk close 76075 vs 82800 | 50W 75593 (-2.53%) | 42m old
+- BTC scenario **C** | price 73677 | wk close 76075 vs 82800 | 50W 75593 (-2.53%) | 60m old
 - Alts: **BTC_LED** [-] | BTC.D 57.74% | ETH/BTC 0.02782 | breadth7d -% | stables 30d -4.60%
 - Alt risk (BTC.D): **ELEVATED** ['BTC_DOM_RISING_3D'] | 3d 0.52pt | 7d 0.71pt | n=121
 - Gold: PAXG 1m -0.92% | real10y 2.66 (-25bp 1m) | USD 1m 0.36% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 24
@@ -12,11 +12,14 @@
 - PEPE: **ONGOING** | +56% impulse, retr 0.18 | OI dd 22% | fund 0.0090 | hold False | inval 0.00000 | OB 0.00000-0.00000
 
 ## Pre-pump candidates
-- FET: [C+E] 7d -8.2%
+- FET: [C+E] 7d -7.5%
 - NEAR: [A+E] 7d -6.9%
-- TAO: [A+E] 7d -4.7%
-- AR: [C+E] 7d 3.3%
-- RENDER: [C+E] 7d 6.1%
+- ONDO: [A+C] 7d -6.1%
+- TAO: [A+E] 7d -4.2%
+- ATOM: [B+C] 7d -1.1%
+- ICP: [C+E] 7d 1.1%
+- AR: [C+E] 7d 2.7%
+- RENDER: [C+E] 7d 7.2%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - Rothschild Investment Reveals XRP ETF Stake - Cryptonews.net
@@ -25,14 +28,14 @@
 - avalanche-2: other - Grayscale Avalanche Staking ETF 3Q 2026: Net income $3.08M — 10-Q Summary - TradingView
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.89 | taker 0.94
-- ETH: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.84 | taker 0.94
-- NEAR: LONG_FLUSH_24H | OI/mc -% | topPos 0.96 | taker 0.95
-- AVAX: LONG_FLUSH_24H | OI/mc 0.39% | topPos 0.85 | taker 0.90
-- SUI: LONG_FLUSH_24H | OI/mc -% | topPos 0.81 | taker 1.01
-- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.94 | taker 1.00
-- TAO: LONG_FLUSH_24H | OI/mc -% | topPos 0.85 | taker 0.90
-- WLD: LONG_FLUSH_24H | OI/mc 2.45% | topPos 0.83 | taker 0.92
+- BTC: SHORT_SQUEEZE_24H | OI/mc 0.26% | topPos 0.89 | taker 0.94
+- ETH: SHORT_SQUEEZE_24H | OI/mc 0.69% | topPos 0.84 | taker 0.94
+- NEAR: LONG_FLUSH_24H | OI/mc 1.02% | topPos 0.97 | taker 0.97
+- AVAX: LONG_FLUSH_24H | OI/mc 0.38% | topPos 0.85 | taker 0.90
+- SUI: LONG_FLUSH_24H | OI/mc 0.93% | topPos 0.81 | taker 0.99
+- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.94 | taker 1.04
+- TAO: LONG_FLUSH_24H | OI/mc 0.67% | topPos 0.85 | taker 0.90
+- ZEC: QUIET_DELEVERAGING | OI/mc -% | topPos 0.94 | taker 0.94
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -42,12 +45,12 @@
 - (16 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 1.8% (0.11R) | in profit 2 | older than 7d 4
-- worst: RUNE -0.23R, BEAM -0.21R, PEPE 0.32R | best: BEAM -0.21R, PEPE 0.32R, NIGHT 0.55R
+- open 4 | mean 2.1% (0.13R) | in profit 2 | older than 7d 4
+- worst: BEAM -0.23R, RUNE -0.21R, PEPE 0.34R | best: RUNE -0.21R, PEPE 0.34R, NIGHT 0.61R
 
 ## System
-- CoinGecko 3368/10000 used, month-end projection 10104 (101%), throttle level 2 | by script {'scan': 1054, 'check_liquidity': 149, 'breakout_check': 2117, 'counterfactual_check': 48}
+- CoinGecko 3370/10000 used, month-end projection 10110 (101%), throttle level 2 | by script {'scan': 1056, 'check_liquidity': 149, 'breakout_check': 2117, 'counterfactual_check': 48}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=56), H2 SUPPORTED (n=243)
-- radar-flags.json scan age: 16m
+- radar-flags.json scan age: 4m
 - excluded from radar (pegged/tokenized equity): 49
