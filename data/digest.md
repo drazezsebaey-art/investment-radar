@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-11 08:02 UTC
+# Radar digest - 2026-11-11 08:34 UTC
 
 ## Market
-- BTC scenario **C** | price 73895 | wk close 76075 vs 82800 | 50W 75593 (-2.25%) | 28m old
+- BTC scenario **C** | price 73895 | wk close 76075 vs 82800 | 50W 75593 (-2.25%) | 60m old
 - Alts: **BTC_LED** [-] | BTC.D 57.78% | ETH/BTC 0.02791 | breadth7d 45% | stables 30d -4.79%
 - Alt risk (BTC.D): **ELEVATED** ['BTC_DOM_RISING_3D'] | 3d 0.52pt | 7d 0.79pt | n=121
 - Gold: PAXG 1m -0.66% | real10y 2.66 (-25bp 1m) | USD 1m 0.36% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 24
@@ -14,9 +14,8 @@
 
 ## Pre-pump candidates
 - NEAR: [A+E] 7d -8.0%
-- FET: [C+E] 7d -7.1%
-- TAO: [A+E] 7d -4.0%
-- UB: [C+E] 7d 1.3%
+- TAO: [A+E] 7d -3.8%
+- ATOM: [B+C] 7d -0.8%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - XRP price plunges 16% as ETF outflows hit eight-month high: can $1 survive? - Invezz
@@ -26,14 +25,14 @@
 - sui: other - Grayscale Sui Staking ETF Reports $46.1M in Net Assets for Q3 2026 - Kalkine Media
 
 ## Derivatives flags (OKX)
-- ETH: LONG_FLUSH_24H | OI/mc 0.69% | topPos 0.86 | taker 0.95
 - NEAR: LONG_FLUSH_24H | OI/mc 1.07% | topPos 0.98 | taker 0.97
-- AVAX: LONG_FLUSH_24H | OI/mc 0.37% | topPos 0.83 | taker 0.94
+- AVAX: LONG_FLUSH_24H | OI/mc 0.38% | topPos 0.84 | taker 0.92
 - SUI: LONG_FLUSH_24H | OI/mc 0.93% | topPos 0.81 | taker 0.97
-- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.93 | taker 1.09
-- TAO: LONG_FLUSH_24H | OI/mc 0.66% | topPos 0.85 | taker 0.91
-- ZEC: LONG_FLUSH_24H | OI/mc 0.83% | topPos 0.90 | taker 0.92
-- WLD: LONG_FLUSH_24H | OI/mc 2.49% | topPos 0.82 | taker 0.92
+- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.93 | taker 1.10
+- TAO: LONG_FLUSH_24H | OI/mc 0.67% | topPos 0.85 | taker 0.91
+- WLD: LONG_FLUSH_24H | OI/mc 2.50% | topPos 0.82 | taker 0.93
+- ADA: LONG_FLUSH_24H | OI/mc 0.44% | topPos 0.85 | taker 0.91
+- LINK: LONG_FLUSH_24H | OI/mc 0.35% | topPos 0.94 | taker 0.94
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -43,12 +42,12 @@
 - (16 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 1.6% (0.12R) | in profit 2 | older than 7d 4
-- worst: BEAM -0.33R, RUNE -0.21R, PEPE 0.22R | best: RUNE -0.21R, PEPE 0.22R, NIGHT 0.80R
+- open 4 | mean 1.3% (0.11R) | in profit 2 | older than 7d 4
+- worst: BEAM -0.38R, RUNE -0.21R, PEPE 0.15R | best: RUNE -0.21R, PEPE 0.15R, NIGHT 0.88R
 
 ## System
-- CoinGecko 3455/10000 used, month-end projection 10031 (100%), throttle level 2 | by script {'scan': 1086, 'check_liquidity': 154, 'breakout_check': 2167, 'counterfactual_check': 48}
+- CoinGecko 3457/10000 used, month-end projection 10036 (100%), throttle level 2 | by script {'scan': 1088, 'check_liquidity': 154, 'breakout_check': 2167, 'counterfactual_check': 48}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=56), H2 SUPPORTED (n=243)
-- radar-flags.json scan age: 2m
+- radar-flags.json scan age: 4m
 - excluded from radar (pegged/tokenized equity): 50
