@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-11 09:36 UTC
+# Radar digest - 2026-11-11 10:02 UTC
 
 ## Market
-- BTC scenario **C** | price 73618 | wk close 76075 vs 82800 | 50W 75593 (-2.61%) | 1m old
+- BTC scenario **C** | price 73618 | wk close 76075 vs 82800 | 50W 75593 (-2.61%) | 28m old
 - Alts: **BTC_LED** [-] | BTC.D 57.78% | ETH/BTC 0.02791 | breadth7d 45% | stables 30d -4.79%
 - Alt risk (BTC.D): **ELEVATED** ['BTC_DOM_RISING_3D'] | 3d 0.52pt | 7d 0.79pt | n=121
 - Gold: PAXG 1m -0.66% | real10y 2.66 (-25bp 1m) | USD 1m 0.36% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 24
@@ -12,10 +12,11 @@
 - INJ: **BROKEN** | +47% impulse, retr 0.51 | OI dd 43% | fund -0.0080 | hold True | inval 6.82800 | OB 6.82800-7.04700
 
 ## Pre-pump candidates
-- NEAR: [A+E] 7d -10.9%
+- NEAR: [A+E] 7d -11.0%
 - TAO: [A+E] 7d -4.3%
 - ATOM: [B+C] 7d -0.4%
 - ICP: [C+E] 7d 0.5%
+- RENDER: [D+E] 7d 3.4%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - Bitwise XRP ETF (XRP) Stock Price | Quotes & News - Moomoo
@@ -42,12 +43,12 @@
 - (19 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 0.8% (0.09R) | in profit 2 | older than 7d 4
-- worst: BEAM -0.35R, RUNE -0.23R, PEPE 0.04R | best: RUNE -0.23R, PEPE 0.04R, NIGHT 0.90R
+- open 4 | mean 0.9% (0.10R) | in profit 2 | older than 7d 4
+- worst: BEAM -0.34R, RUNE -0.22R, PEPE 0.04R | best: RUNE -0.22R, PEPE 0.04R, NIGHT 0.91R
 
 ## System
-- CoinGecko 3469/10000 used, month-end projection 10031 (100%), throttle level 2 | by script {'scan': 1100, 'check_liquidity': 154, 'breakout_check': 2167, 'counterfactual_check': 48}
+- CoinGecko 3472/10000 used, month-end projection 9999 (100%), throttle level 1 | by script {'scan': 1102, 'check_liquidity': 155, 'breakout_check': 2167, 'counterfactual_check': 48}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=56), H2 SUPPORTED (n=245)
-- radar-flags.json scan age: 5m
-- excluded from radar (pegged/tokenized equity): 50
+- radar-flags.json scan age: 2m
+- excluded from radar (pegged/tokenized equity): 49
