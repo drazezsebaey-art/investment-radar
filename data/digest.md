@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-11 13:35 UTC
+# Radar digest - 2026-11-11 14:02 UTC
 
 ## Market
-- BTC scenario **C** | price 73818 | wk close 76075 vs 82800 | 50W 75593 (-2.35%) | 1m old
+- BTC scenario **C** | price 73818 | wk close 76075 vs 82800 | 50W 75593 (-2.35%) | 29m old
 - Alts: **BTC_LED** [-] | BTC.D 57.81% | ETH/BTC 0.02780 | breadth7d 45% | stables 30d -4.92%
 - Alt risk (BTC.D): **ELEVATED** ['BTC_DOM_RISING_3D'] | 3d 0.56pt | 7d 0.66pt | n=121
 - Gold: PAXG 1m -0.54% | real10y 2.66 (-25bp 1m) | USD 1m 0.36% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 24
@@ -14,7 +14,7 @@
 - COMP: **BROKEN** | +41% impulse, retr 1.05 | OI dd 42% | fund -0.0009 | hold False | inval 19.70000 | OB 19.19000-19.90000
 
 ## Pre-pump candidates
-- NEAR: [A+C] 7d -8.3%
+- NEAR: [A+C] 7d -5.5%
 
 ## ETF pipeline (new this run)
 - zcash: other - ZEC Price Drops 11.3% Following Grayscale’s Announcement of $1 Million Zcash ETF Sponsorsh
@@ -40,12 +40,12 @@
 - (19 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 1.8% (0.14R) | in profit 2 | older than 7d 4
-- worst: BEAM -0.23R, RUNE -0.20R, PEPE 0.02R | best: RUNE -0.20R, PEPE 0.02R, NIGHT 0.98R
+- open 4 | mean 2.0% (0.16R) | in profit 1 | older than 7d 4
+- worst: BEAM -0.21R, RUNE -0.20R, PEPE -0.01R | best: RUNE -0.20R, PEPE -0.01R, NIGHT 1.05R
 
 ## System
-- CoinGecko 3531/10000 used, month-end projection 10049 (100%), throttle level 2 | by script {'scan': 1116, 'check_liquidity': 157, 'breakout_check': 2210, 'counterfactual_check': 48}
+- CoinGecko 3533/10000 used, month-end projection 10015 (100%), throttle level 2 | by script {'scan': 1118, 'check_liquidity': 157, 'breakout_check': 2210, 'counterfactual_check': 48}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=56), H2 SUPPORTED (n=247)
-- radar-flags.json scan age: 5m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 49
