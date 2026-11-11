@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-11 01:35 UTC
+# Radar digest - 2026-11-11 02:02 UTC
 
 ## Market
-- BTC scenario **C** | price 73745 | wk close 76075 vs 82800 | 50W 75593 (-2.45%) | 1m old
+- BTC scenario **C** | price 73745 | wk close 76075 vs 82800 | 50W 75593 (-2.45%) | 28m old
 - Alts: **BTC_LED** [-] | BTC.D 57.74% | ETH/BTC 0.02782 | breadth7d -% | stables 30d -4.60%
 - Alt risk (BTC.D): **ELEVATED** ['BTC_DOM_RISING_3D'] | 3d 0.52pt | 7d 0.71pt | n=121
 - Gold: PAXG 1m -0.92% | real10y 2.66 (-25bp 1m) | USD 1m 0.36% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 24
@@ -13,11 +13,12 @@
 
 ## Pre-pump candidates
 - ONDO: [A+C] 7d -5.8%
-- NEAR: [A+E] 7d -5.4%
+- NEAR: [A+E] 7d -4.4%
 - TAO: [A+E] 7d -3.0%
 - ATOM: [B+C] 7d -0.5%
 - UB: [C+E] 7d 1.0%
-- RENDER: [C+E] 7d 9.3%
+- AR: [C+E] 7d 3.7%
+- PEPE: [A+C] 7d 10.9%
 
 ## ETF pipeline (new this run)
 - injective-protocol NEW: amendment - Form S-1/A CANARY STAKED INJ ETF For: 8 November - Investing.com Canada
@@ -47,12 +48,12 @@
 - (16 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 2.4% (0.14R) | in profit 2 | older than 7d 4
-- worst: BEAM -0.26R, RUNE -0.21R, PEPE 0.39R | best: RUNE -0.21R, PEPE 0.39R, NIGHT 0.65R
+- open 4 | mean 2.7% (0.15R) | in profit 2 | older than 7d 4
+- worst: BEAM -0.21R, RUNE -0.18R, PEPE 0.38R | best: RUNE -0.18R, PEPE 0.38R, NIGHT 0.63R
 
 ## System
-- CoinGecko 3374/10000 used, month-end projection 10080 (101%), throttle level 2 | by script {'scan': 1060, 'check_liquidity': 149, 'breakout_check': 2117, 'counterfactual_check': 48}
+- CoinGecko 3376/10000 used, month-end projection 10044 (100%), throttle level 2 | by script {'scan': 1062, 'check_liquidity': 149, 'breakout_check': 2117, 'counterfactual_check': 48}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=56), H2 SUPPORTED (n=243)
-- radar-flags.json scan age: 5m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 49
