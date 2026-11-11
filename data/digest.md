@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-11 07:35 UTC
+# Radar digest - 2026-11-11 08:02 UTC
 
 ## Market
-- BTC scenario **C** | price 73895 | wk close 76075 vs 82800 | 50W 75593 (-2.25%) | 1m old
+- BTC scenario **C** | price 73895 | wk close 76075 vs 82800 | 50W 75593 (-2.25%) | 28m old
 - Alts: **BTC_LED** [-] | BTC.D 57.78% | ETH/BTC 0.02791 | breadth7d 45% | stables 30d -4.79%
 - Alt risk (BTC.D): **ELEVATED** ['BTC_DOM_RISING_3D'] | 3d 0.52pt | 7d 0.79pt | n=121
 - Gold: PAXG 1m -0.66% | real10y 2.66 (-25bp 1m) | USD 1m 0.36% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 24
@@ -13,12 +13,10 @@
 - PEPE: **ONGOING** | +56% impulse, retr 0.19 | OI dd 22% | fund 0.0078 | hold False | inval 0.00000 | OB 0.00000-0.00000
 
 ## Pre-pump candidates
-- NEAR: [A+E] 7d -7.3%
-- ONDO: [A+C] 7d -7.3%
+- NEAR: [A+E] 7d -8.0%
 - FET: [C+E] 7d -7.1%
 - TAO: [A+E] 7d -4.0%
 - UB: [C+E] 7d 1.3%
-- PEPE: [A+C] 7d 5.6%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - XRP price plunges 16% as ETF outflows hit eight-month high: can $1 survive? - Invezz
@@ -45,12 +43,12 @@
 - (16 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 1.5% (0.11R) | in profit 2 | older than 7d 4
-- worst: BEAM -0.31R, RUNE -0.22R, PEPE 0.25R | best: RUNE -0.22R, PEPE 0.25R, NIGHT 0.73R
+- open 4 | mean 1.6% (0.12R) | in profit 2 | older than 7d 4
+- worst: BEAM -0.33R, RUNE -0.21R, PEPE 0.22R | best: RUNE -0.21R, PEPE 0.22R, NIGHT 0.80R
 
 ## System
-- CoinGecko 3452/10000 used, month-end projection 10063 (101%), throttle level 2 | by script {'scan': 1084, 'check_liquidity': 153, 'breakout_check': 2167, 'counterfactual_check': 48}
+- CoinGecko 3455/10000 used, month-end projection 10031 (100%), throttle level 2 | by script {'scan': 1086, 'check_liquidity': 154, 'breakout_check': 2167, 'counterfactual_check': 48}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=56), H2 SUPPORTED (n=243)
-- radar-flags.json scan age: 5m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 50
