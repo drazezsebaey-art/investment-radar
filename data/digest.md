@@ -1,4 +1,4 @@
-# Radar digest - 2026-11-12 04:34 UTC
+# Radar digest - 2026-11-12 05:03 UTC
 
 ## Market
 - BTC scenario **C** | price 73798 | wk close 76075 vs 82800 | 50W 75593 (-2.38%) | 1h old
@@ -12,7 +12,7 @@
 - none
 
 ## Pre-pump candidates
-- BTW: [C+E] 7d 0.9%
+- none
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - XRP ETF Feels a Light Outflow as Quarterly Gains Meet a Near-Term Sell Signal - TipRanks
@@ -38,12 +38,12 @@
 - (19 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 0.0% (0.09R) | in profit 1 | older than 7d 4
-- worst: PEPE -0.36R, RUNE -0.30R, BEAM -0.27R | best: RUNE -0.30R, BEAM -0.27R, NIGHT 1.29R
+- open 4 | mean -0.2% (0.07R) | in profit 1 | older than 7d 4
+- worst: PEPE -0.36R, RUNE -0.30R, BEAM -0.27R | best: RUNE -0.30R, BEAM -0.27R, NIGHT 1.21R
 
 ## System
-- CoinGecko 3712/10000 used, month-end projection 9973 (100%), throttle level 1 | by script {'scan': 1174, 'check_liquidity': 168, 'breakout_check': 2320, 'counterfactual_check': 50}
+- CoinGecko 3715/10000 used, month-end projection 9943 (99%), throttle level 1 | by script {'scan': 1176, 'check_liquidity': 169, 'breakout_check': 2320, 'counterfactual_check': 50}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=247)
-- radar-flags.json scan age: 4m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 47
