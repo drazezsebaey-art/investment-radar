@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-12 06:34 UTC
+# Radar digest - 2026-11-12 07:03 UTC
 
 ## Market
-- BTC scenario **C** | price 73545 | wk close 76075 vs 82800 | 50W 75593 (-2.71%) | 60m old
+- BTC scenario **C** | price 73545 | wk close 76075 vs 82800 | 50W 75593 (-2.71%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 57.86% | ETH/BTC 0.02784 | breadth7d 50% | stables 30d -4.90%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.33pt | 7d 0.51pt | n=121
 - Gold: PAXG 1m -1.22% | real10y 2.66 (-25bp 1m) | USD 1m 0.36% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 24
@@ -12,14 +12,14 @@
 - none
 
 ## Pre-pump candidates
-- XRP: [A+E] 7d -20.5%
+- XRP: [A+E] 7d -20.3%
 - HYPE: [A+E] 7d -14.8%
-- NEAR: [A+E] 7d -12.9%
+- NEAR: [A+E] 7d -12.5%
 - LTC: [A+E] 7d -11.4%
 - TAO: [A+E] 7d -9.0%
 - INJ: [A+E] 7d -8.1%
 - BNB: [A+E] 7d -5.7%
-- M: [C+E] 7d -4.4%
+- ICP: [C+E] 7d -3.3%
 
 ## ETF pipeline (new this run)
 - pyth-network NEW: other - Pyth Network Adds Real-Time NYSE Stock and ETF Data to Its Marketplace - The Crypto Times
@@ -43,12 +43,12 @@
 - (19 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 0.2% (0.10R) | in profit 1 | older than 7d 4
-- worst: PEPE -0.37R, RUNE -0.28R, BEAM -0.25R | best: RUNE -0.28R, BEAM -0.25R, NIGHT 1.30R
+- open 4 | mean -0.5% (0.06R) | in profit 1 | older than 7d 4
+- worst: PEPE -0.47R, RUNE -0.27R, BEAM -0.26R | best: RUNE -0.27R, BEAM -0.26R, NIGHT 1.25R
 
 ## System
-- CoinGecko 3776/10000 used, month-end projection 10069 (101%), throttle level 2 | by script {'scan': 1190, 'check_liquidity': 170, 'breakout_check': 2366, 'counterfactual_check': 50}
+- CoinGecko 3778/10000 used, month-end projection 10037 (100%), throttle level 2 | by script {'scan': 1192, 'check_liquidity': 170, 'breakout_check': 2366, 'counterfactual_check': 50}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=247)
-- radar-flags.json scan age: 4m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 47
