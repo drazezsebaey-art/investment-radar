@@ -1,4 +1,4 @@
-# Radar digest - 2026-11-12 14:34 UTC
+# Radar digest - 2026-11-12 15:03 UTC
 
 ## Market
 - BTC scenario **C** | price 72651 | wk close 76075 vs 82800 | 50W 75593 (-3.89%) | 1h old
@@ -12,13 +12,14 @@
 - none
 
 ## Pre-pump candidates
-- XRP: [A+E] 7d -20.8%
+- XRP: [A+E] 7d -21.5%
 - HYPE: [A+E] 7d -14.1%
 - LTC: [A+E] 7d -11.5%
 - TAO: [A+E] 7d -10.8%
 - INJ: [A+E] 7d -9.9%
 - BNB: [A+E] 7d -7.8%
 - ICP: [C+E] 7d -3.4%
+- GNO: [C+E] 7d -2.7%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - Rothschild Investment Reveals XRP ETF Stake as Analyst Maps Wild $27 Rebound - CCN.com
@@ -45,12 +46,12 @@
 - (15 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean -1.6% (0.01R) | in profit 1 | older than 7d 4
-- worst: PEPE -0.52R, RUNE -0.37R, BEAM -0.27R | best: RUNE -0.37R, BEAM -0.27R, NIGHT 1.19R
+- open 4 | mean -0.8% (0.06R) | in profit 1 | older than 7d 4
+- worst: PEPE -0.48R, RUNE -0.36R, BEAM -0.30R | best: RUNE -0.36R, BEAM -0.30R, NIGHT 1.37R
 
 ## System
-- CoinGecko 3871/10000 used, month-end projection 10026 (100%), throttle level 2 | by script {'scan': 1222, 'check_liquidity': 178, 'breakout_check': 2421, 'counterfactual_check': 50}
+- CoinGecko 3873/10000 used, month-end projection 9995 (100%), throttle level 1 | by script {'scan': 1224, 'check_liquidity': 178, 'breakout_check': 2421, 'counterfactual_check': 50}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=249)
-- radar-flags.json scan age: 4m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 49
