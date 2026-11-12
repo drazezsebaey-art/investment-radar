@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-11 23:33 UTC
+# Radar digest - 2026-11-12 00:18 UTC
 
 ## Market
-- BTC scenario **C** | price 73891 | wk close 76075 vs 82800 | 50W 75593 (-2.25%) | 1m old
+- BTC scenario **C** | price 73891 | wk close 76075 vs 82800 | 50W 75593 (-2.25%) | 46m old
 - Alts: **BTC_LED** [-] | BTC.D 57.89% | ETH/BTC 0.02782 | breadth7d -% | stables 30d -4.77%
 - Alt risk (BTC.D): **ELEVATED** ['BTC_DOM_RISING_3D'] | 3d 0.58pt | 7d 0.58pt | n=121
 - Gold: PAXG 1m -0.82% | real10y 2.66 (-25bp 1m) | USD 1m 0.36% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 24
@@ -20,14 +20,14 @@
 - ondo-finance: other - Innovator ZAPR ETF (Ondo Tokenized) Analytics - CryptoRank
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 1.02
-- ETH: LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 1.05
-- SOL: LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 1.01
-- AVAX: LONG_FLUSH_24H | OI/mc 0.41% | topPos 0.87 | taker 0.98
-- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.94 | taker 1.12
-- TAO: LONG_FLUSH_24H | OI/mc 0.71% | topPos 0.87 | taker 0.91
-- ZEC: LONG_FLUSH_24H | OI/mc 0.90% | topPos 0.94 | taker 0.94
-- WLD: SHORT_SQUEEZE_FUEL, LONG_FLUSH_24H | OI/mc 2.65% | topPos 0.82 | taker 1.00
+- BTC: LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 1.01
+- ETH: LONG_FLUSH_24H | OI/mc 0.67% | topPos 0.86 | taker 1.02
+- SOL: LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 0.99
+- AVAX: SHORT_SQUEEZE_FUEL, LONG_FLUSH_24H | OI/mc 0.41% | topPos 0.88 | taker 0.94
+- XRP: LONG_FLUSH_24H | OI/mc 0.15% | topPos 0.86 | taker 1.02
+- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.94 | taker 1.07
+- TAO: LONG_FLUSH_24H | OI/mc 0.69% | topPos 0.86 | taker 0.88
+- ZEC: LONG_FLUSH_24H | OI/mc 0.86% | topPos 0.93 | taker 0.93
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -38,12 +38,12 @@
 - (19 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 0.1% (0.10R) | in profit 1 | older than 7d 4
-- worst: PEPE -0.36R, BEAM -0.33R, RUNE -0.31R | best: BEAM -0.33R, RUNE -0.31R, NIGHT 1.39R
+- open 4 | mean 0.5% (0.12R) | in profit 1 | older than 7d 4
+- worst: PEPE -0.39R, BEAM -0.31R, RUNE -0.28R | best: BEAM -0.31R, RUNE -0.28R, NIGHT 1.46R
 
 ## System
-- CoinGecko 3637/10000 used, month-end projection 9957 (100%), throttle level 1 | by script {'scan': 1154, 'check_liquidity': 165, 'breakout_check': 2269, 'counterfactual_check': 49}
+- CoinGecko 3692/10000 used, month-end projection 10069 (101%), throttle level 2 | by script {'scan': 1156, 'check_liquidity': 166, 'breakout_check': 2320, 'counterfactual_check': 50}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=56), H2 SUPPORTED (n=247)
-- radar-flags.json scan age: 3m
+- radar-flags.json scan age: 18m
 - excluded from radar (pegged/tokenized equity): 48
