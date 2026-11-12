@@ -1,4 +1,4 @@
-# Radar digest - 2026-11-12 22:35 UTC
+# Radar digest - 2026-11-12 23:03 UTC
 
 ## Market
 - BTC scenario **C** | price 71576 | wk close 76075 vs 82800 | 50W 75593 (-5.32%) | 1h old
@@ -13,13 +13,12 @@
 
 ## Pre-pump candidates
 - MON: [B+C+E] 7d 3.5%
-- INJ: [A+E] 7d -9.2%
-- NEAR: [A+E] 7d -8.1%
+- ZEC: [A+E] 7d -24.5%
 - HYPE: [A+E] 7d -8.0%
-- BNB: [A+E] 7d -5.3%
-- LTC: [A+E] 7d -4.2%
-- TAO: [A+E] 7d -3.4%
+- XLM: [C+E] 7d -4.3%
 - M: [C+E] 7d -0.7%
+- AVAX: [A+E] 7d 0.7%
+- TIA: [C+E] 7d 4.4%
 
 ## ETF pipeline (new this run)
 - avalanche-2: other - Form 4 Grayscale Avalanche Staking ETF For: 12 November By Investing.com - Investing.com C
@@ -42,12 +41,12 @@
 - (15 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean -1.4% (0.01R) | in profit 1 | older than 7d 4
-- worst: RUNE -0.38R, PEPE -0.38R, BEAM -0.32R | best: PEPE -0.38R, BEAM -0.32R, NIGHT 1.13R
+- open 4 | mean -1.2% (0.02R) | in profit 1 | older than 7d 4
+- worst: PEPE -0.39R, RUNE -0.38R, BEAM -0.31R | best: RUNE -0.38R, BEAM -0.31R, NIGHT 1.17R
 
 ## System
-- CoinGecko 3959/10000 used, month-end projection 9967 (100%), throttle level 1 | by script {'scan': 1254, 'check_liquidity': 185, 'breakout_check': 2468, 'counterfactual_check': 52}
+- CoinGecko 3961/10000 used, month-end projection 9937 (99%), throttle level 1 | by script {'scan': 1256, 'check_liquidity': 185, 'breakout_check': 2468, 'counterfactual_check': 52}
 - Trials guard: OK (0 untracked)
-- Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=249)
-- radar-flags.json scan age: 5m
+- Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=250)
+- radar-flags.json scan age: 3m
 - excluded from radar (pegged/tokenized equity): 48
