@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-12 15:36 UTC
+# Radar digest - 2026-11-12 16:03 UTC
 
 ## Market
-- BTC scenario **C** | price 71359 | wk close 76075 vs 82800 | 50W 75593 (-5.60%) | 1m old
+- BTC scenario **C** | price 71359 | wk close 76075 vs 82800 | 50W 75593 (-5.60%) | 28m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.57% | ETH/BTC 0.02798 | breadth7d 51% | stables 30d -4.89%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.03pt | 7d 0.26pt | n=121
 - Gold: PAXG 1m -1.96% | real10y 2.66 (-25bp 1m) | USD 1m 0.36% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 24
@@ -12,14 +12,14 @@
 - none
 
 ## Pre-pump candidates
-- XRP: [A+E] 7d -21.5%
+- XRP: [A+E] 7d -19.7%
 - HYPE: [A+E] 7d -13.4%
 - LTC: [A+E] 7d -11.4%
 - INJ: [A+E] 7d -10.5%
 - TAO: [A+E] 7d -10.5%
 - BNB: [A+E] 7d -8.2%
-- AVAX: [A+E] 7d -4.5%
 - ICP: [C+E] 7d -3.4%
+- GNO: [C+E] 7d -2.9%
 
 ## ETF pipeline (new this run)
 - solana NEW: other - Solana price weighs Alpenglow progress against ETF outflows - ad-hoc-news.de
@@ -48,12 +48,12 @@
 - (15 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean -1.5% (0.02R) | in profit 1 | older than 7d 4
-- worst: PEPE -0.56R, RUNE -0.38R, BEAM -0.29R | best: RUNE -0.38R, BEAM -0.29R, NIGHT 1.33R
+- open 4 | mean -0.9% (0.05R) | in profit 1 | older than 7d 4
+- worst: PEPE -0.53R, RUNE -0.37R, BEAM -0.26R | best: RUNE -0.37R, BEAM -0.26R, NIGHT 1.37R
 
 ## System
-- CoinGecko 3876/10000 used, month-end projection 10003 (100%), throttle level 2 | by script {'scan': 1226, 'check_liquidity': 179, 'breakout_check': 2421, 'counterfactual_check': 50}
+- CoinGecko 3881/10000 used, month-end projection 9980 (100%), throttle level 1 | by script {'scan': 1228, 'check_liquidity': 180, 'breakout_check': 2421, 'counterfactual_check': 52}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=249)
-- radar-flags.json scan age: 5m
-- excluded from radar (pegged/tokenized equity): 49
+- radar-flags.json scan age: 3m
+- excluded from radar (pegged/tokenized equity): 48
