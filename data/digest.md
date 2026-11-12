@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-12 18:34 UTC
+# Radar digest - 2026-11-12 19:03 UTC
 
 ## Market
-- BTC scenario **C** | price 71883 | wk close 76075 vs 82800 | 50W 75593 (-4.91%) | 60m old
+- BTC scenario **C** | price 71883 | wk close 76075 vs 82800 | 50W 75593 (-4.91%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.57% | ETH/BTC 0.02798 | breadth7d 51% | stables 30d -4.89%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.03pt | 7d 0.26pt | n=121
 - Gold: PAXG 1m -3.11% | real10y 2.66 (-25bp 1m) | USD 1m 0.36% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 24
@@ -13,13 +13,13 @@
 
 ## Pre-pump candidates
 - MON: [B+C+E] 7d 3.7%
-- XRP: [A+E] 7d -17.3%
+- XRP: [A+E] 7d -16.6%
 - HYPE: [A+E] 7d -10.1%
 - INJ: [A+E] 7d -8.2%
 - BNB: [A+E] 7d -5.3%
 - LTC: [A+E] 7d -4.4%
 - TAO: [A+E] 7d -4.2%
-- AVAX: [A+E] 7d 0.4%
+- M: [C+E] 7d -0.0%
 
 ## ETF pipeline (new this run)
 - solana NEW: other - SOL, HYPE among four altcoin spot ETF markets with net outflows; nine record no net flows 
@@ -48,12 +48,12 @@
 - (15 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean -1.5% (0.02R) | in profit 1 | older than 7d 4
-- worst: PEPE -0.55R, RUNE -0.35R, BEAM -0.28R | best: RUNE -0.35R, BEAM -0.28R, NIGHT 1.26R
+- open 4 | mean -1.6% (0.01R) | in profit 1 | older than 7d 4
+- worst: PEPE -0.51R, RUNE -0.35R, BEAM -0.29R | best: RUNE -0.35R, BEAM -0.29R, NIGHT 1.18R
 
 ## System
-- CoinGecko 3939/10000 used, month-end projection 10057 (101%), throttle level 2 | by script {'scan': 1238, 'check_liquidity': 181, 'breakout_check': 2468, 'counterfactual_check': 52}
+- CoinGecko 3941/10000 used, month-end projection 10027 (100%), throttle level 2 | by script {'scan': 1240, 'check_liquidity': 181, 'breakout_check': 2468, 'counterfactual_check': 52}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=249)
-- radar-flags.json scan age: 4m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 47
