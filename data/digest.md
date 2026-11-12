@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-12 12:16 UTC
+# Radar digest - 2026-11-12 12:35 UTC
 
 ## Market
-- BTC scenario **C** | price 73153 | wk close 76075 vs 82800 | 50W 75593 (-3.23%) | 42m old
+- BTC scenario **C** | price 73153 | wk close 76075 vs 82800 | 50W 75593 (-3.23%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 57.83% | ETH/BTC 0.02777 | breadth7d 44% | stables 30d -4.90%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.28pt | 7d 0.43pt | n=121
 - Gold: PAXG 1m -1.96% | real10y 2.66 (-25bp 1m) | USD 1m 0.36% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 24
@@ -13,12 +13,12 @@
 
 ## Pre-pump candidates
 - XRP: [A+E] 7d -21.2%
-- HYPE: [A+E] 7d -14.2%
-- LTC: [A+E] 7d -12.0%
-- INJ: [A+E] 7d -10.5%
-- TAO: [A+E] 7d -9.4%
-- BNB: [A+E] 7d -6.2%
-- ICP: [C+E] 7d -1.9%
+- HYPE: [A+E] 7d -14.1%
+- LTC: [A+E] 7d -11.9%
+- INJ: [A+E] 7d -10.3%
+- TAO: [A+E] 7d -9.7%
+- BNB: [A+E] 7d -7.2%
+- ICP: [C+E] 7d -2.2%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - XRP ETF Reports 18.7% Loss Despite 42.6% Quarterly Rally, 21Shares Reveals 107M XRP Holdin
@@ -31,14 +31,14 @@
 - ondo-finance: other - Innovator ZMAR ETF (Ondo Tokenized) - CryptoRank
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc 0.26% | topPos 0.89 | taker 0.98
-- ETH: LONG_FLUSH_24H | OI/mc 0.70% | topPos 0.85 | taker 1.01
-- SOL: LONG_FLUSH_24H | OI/mc 0.73% | topPos 0.85 | taker 1.00
-- NEAR: LONG_FLUSH_24H | OI/mc 1.06% | topPos 0.97 | taker 1.02
-- AVAX: LONG_FLUSH_24H | OI/mc 0.41% | topPos 0.87 | taker 0.98
-- XRP: LONG_FLUSH_24H | OI/mc 0.17% | topPos 0.86 | taker 0.97
-- SUI: LONG_FLUSH_24H | OI/mc 0.95% | topPos 0.80 | taker 0.95
-- SEI: LONG_FLUSH_24H | OI/mc 0.74% | topPos 0.93 | taker 0.92
+- BTC: LONG_FLUSH_24H | OI/mc 0.26% | topPos 0.89 | taker 0.96
+- ETH: LONG_FLUSH_24H | OI/mc 0.69% | topPos 0.84 | taker 0.98
+- SOL: LONG_FLUSH_24H | OI/mc 0.73% | topPos 0.85 | taker 0.98
+- NEAR: LONG_FLUSH_24H | OI/mc -% | topPos 0.98 | taker 0.96
+- AVAX: LONG_FLUSH_24H | OI/mc 0.42% | topPos 0.87 | taker 1.01
+- XRP: LONG_FLUSH_24H | OI/mc 0.17% | topPos 0.86 | taker 0.94
+- SUI: LONG_FLUSH_24H | OI/mc 0.95% | topPos 0.80 | taker 0.89
+- SEI: LONG_FLUSH_24H | OI/mc 0.74% | topPos 0.93 | taker 0.91
 
 ## Revenue / buyback flags
 - lido-dao: CHEAP_VS_REVENUE
@@ -47,12 +47,12 @@
 - (15 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 0.4% (0.11R) | in profit 1 | older than 7d 4
-- worst: PEPE -0.46R, RUNE -0.28R, BEAM -0.24R | best: RUNE -0.28R, BEAM -0.24R, NIGHT 1.44R
+- open 4 | mean 0.2% (0.11R) | in profit 1 | older than 7d 4
+- worst: PEPE -0.49R, RUNE -0.29R, BEAM -0.23R | best: RUNE -0.29R, BEAM -0.23R, NIGHT 1.44R
 
 ## System
-- CoinGecko 3861/10000 used, month-end projection 10072 (101%), throttle level 2 | by script {'scan': 1212, 'check_liquidity': 178, 'breakout_check': 2421, 'counterfactual_check': 50}
+- CoinGecko 3863/10000 used, month-end projection 10077 (101%), throttle level 2 | by script {'scan': 1214, 'check_liquidity': 178, 'breakout_check': 2421, 'counterfactual_check': 50}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=248)
-- radar-flags.json scan age: 15m
-- excluded from radar (pegged/tokenized equity): 49
+- radar-flags.json scan age: 4m
+- excluded from radar (pegged/tokenized equity): 47
