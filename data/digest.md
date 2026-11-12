@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-12 03:36 UTC
+# Radar digest - 2026-11-12 04:03 UTC
 
 ## Market
-- BTC scenario **C** | price 73798 | wk close 76075 vs 82800 | 50W 75593 (-2.38%) | 1m old
+- BTC scenario **C** | price 73798 | wk close 76075 vs 82800 | 50W 75593 (-2.38%) | 28m old
 - Alts: **BTC_LED** [-] | BTC.D 57.86% | ETH/BTC 0.02784 | breadth7d 50% | stables 30d -4.90%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.33pt | 7d 0.51pt | n=121
 - Gold: PAXG 1m -0.82% | real10y 2.66 (-25bp 1m) | USD 1m 0.36% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 24
@@ -12,7 +12,7 @@
 - none
 
 ## Pre-pump candidates
-- none
+- BTW: [C+E] 7d -1.0%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - XRP ETF Feels a Light Outflow as Quarterly Gains Meet a Near-Term Sell Signal - TipRanks
@@ -38,12 +38,12 @@
 - (19 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 0.9% (0.13R) | in profit 1 | older than 7d 4
-- worst: PEPE -0.33R, RUNE -0.31R, BEAM -0.14R | best: RUNE -0.31R, BEAM -0.14R, NIGHT 1.29R
+- open 4 | mean 0.1% (0.09R) | in profit 1 | older than 7d 4
+- worst: PEPE -0.35R, RUNE -0.31R, BEAM -0.21R | best: RUNE -0.31R, BEAM -0.21R, NIGHT 1.21R
 
 ## System
-- CoinGecko 3707/10000 used, month-end projection 9996 (100%), throttle level 1 | by script {'scan': 1170, 'check_liquidity': 167, 'breakout_check': 2320, 'counterfactual_check': 50}
+- CoinGecko 3710/10000 used, month-end projection 9967 (100%), throttle level 1 | by script {'scan': 1172, 'check_liquidity': 168, 'breakout_check': 2320, 'counterfactual_check': 50}
 - Trials guard: OK (0 untracked)
-- Hypotheses: H1 NOT_SUPPORTED (n=56), H2 SUPPORTED (n=247)
-- radar-flags.json scan age: 5m
-- excluded from radar (pegged/tokenized equity): 47
+- Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=247)
+- radar-flags.json scan age: 2m
+- excluded from radar (pegged/tokenized equity): 46
