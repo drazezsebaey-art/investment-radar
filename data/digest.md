@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-12 16:34 UTC
+# Radar digest - 2026-11-12 17:02 UTC
 
 ## Market
-- BTC scenario **C** | price 71359 | wk close 76075 vs 82800 | 50W 75593 (-5.60%) | 60m old
+- BTC scenario **C** | price 71359 | wk close 76075 vs 82800 | 50W 75593 (-5.60%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.57% | ETH/BTC 0.02798 | breadth7d 51% | stables 30d -4.89%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.03pt | 7d 0.26pt | n=121
 - Gold: PAXG 1m -3.11% | real10y 2.66 (-25bp 1m) | USD 1m 0.36% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 24
@@ -12,14 +12,13 @@
 - none
 
 ## Pre-pump candidates
-- XRP: [A+E] 7d -19.7%
-- HYPE: [A+E] 7d -11.4%
-- LTC: [A+E] 7d -9.4%
-- INJ: [A+E] 7d -9.3%
-- TAO: [A+E] 7d -8.0%
-- BNB: [A+E] 7d -6.9%
-- GNO: [C+E] 7d -2.9%
-- AVAX: [A+E] 7d -1.8%
+- XRP: [A+E] 7d -17.7%
+- HYPE: [A+E] 7d -9.5%
+- INJ: [A+E] 7d -6.5%
+- BNB: [A+E] 7d -4.6%
+- LTC: [A+E] 7d -4.6%
+- TAO: [A+E] 7d -4.0%
+- AVAX: [A+E] 7d 1.9%
 
 ## ETF pipeline (new this run)
 - solana NEW: other - Solana price weighs Alpenglow progress against ETF outflows - ad-hoc-news.de
@@ -48,12 +47,12 @@
 - (15 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean -0.9% (0.05R) | in profit 1 | older than 7d 4
-- worst: PEPE -0.53R, RUNE -0.35R, BEAM -0.21R | best: RUNE -0.35R, BEAM -0.21R, NIGHT 1.29R
+- open 4 | mean -1.4% (0.02R) | in profit 1 | older than 7d 4
+- worst: PEPE -0.57R, RUNE -0.36R, BEAM -0.27R | best: RUNE -0.36R, BEAM -0.27R, NIGHT 1.28R
 
 ## System
-- CoinGecko 3884/10000 used, month-end projection 9987 (100%), throttle level 1 | by script {'scan': 1230, 'check_liquidity': 181, 'breakout_check': 2421, 'counterfactual_check': 52}
+- CoinGecko 3886/10000 used, month-end projection 9957 (100%), throttle level 1 | by script {'scan': 1232, 'check_liquidity': 181, 'breakout_check': 2421, 'counterfactual_check': 52}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=249)
-- radar-flags.json scan age: 4m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 48
