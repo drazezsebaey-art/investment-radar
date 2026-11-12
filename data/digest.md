@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-12 21:36 UTC
+# Radar digest - 2026-11-12 22:03 UTC
 
 ## Market
-- BTC scenario **C** | price 71576 | wk close 76075 vs 82800 | 50W 75593 (-5.32%) | 1m old
+- BTC scenario **C** | price 71576 | wk close 76075 vs 82800 | 50W 75593 (-5.32%) | 28m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.53% | ETH/BTC 0.02810 | breadth7d 64% | stables 30d -4.90%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.02pt | 7d 0.43pt | n=121
 - Gold: PAXG 1m -3.11% | real10y 2.66 (-25bp 1m) | USD 1m 0.36% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 24
@@ -13,13 +13,13 @@
 
 ## Pre-pump candidates
 - MON: [B+C+E] 7d 1.4%
-- ZEC: [A+E] 7d -23.5%
+- INJ: [A+E] 7d -9.6%
 - HYPE: [A+E] 7d -8.1%
-- XLM: [C+E] 7d -4.1%
+- NEAR: [A+E] 7d -8.1%
+- BNB: [A+E] 7d -5.5%
+- LTC: [A+E] 7d -4.9%
+- TAO: [A+E] 7d -4.4%
 - CAP: [A+C] 7d -3.4%
-- AVAX: [A+E] 7d -0.7%
-- M: [C+E] 7d -0.6%
-- TIA: [C+E] 7d 0.9%
 
 ## ETF pipeline (new this run)
 - avalanche-2: other - Form 4 Grayscale Avalanche Staking ETF For: 12 November By Investing.com - Investing.com C
@@ -42,12 +42,12 @@
 - (15 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean -0.6% (0.05R) | in profit 1 | older than 7d 4
-- worst: PEPE -0.37R, RUNE -0.34R, BEAM -0.24R | best: RUNE -0.34R, BEAM -0.24R, NIGHT 1.15R
+- open 4 | mean -1.2% (0.02R) | in profit 1 | older than 7d 4
+- worst: PEPE -0.41R, RUNE -0.36R, BEAM -0.29R | best: RUNE -0.36R, BEAM -0.29R, NIGHT 1.13R
 
 ## System
-- CoinGecko 3953/10000 used, month-end projection 9987 (100%), throttle level 1 | by script {'scan': 1250, 'check_liquidity': 183, 'breakout_check': 2468, 'counterfactual_check': 52}
+- CoinGecko 3956/10000 used, month-end projection 9959 (100%), throttle level 1 | by script {'scan': 1252, 'check_liquidity': 184, 'breakout_check': 2468, 'counterfactual_check': 52}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=249)
-- radar-flags.json scan age: 6m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 48
