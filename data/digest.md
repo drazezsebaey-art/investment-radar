@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-12 17:02 UTC
+# Radar digest - 2026-11-12 17:36 UTC
 
 ## Market
-- BTC scenario **C** | price 71359 | wk close 76075 vs 82800 | 50W 75593 (-5.60%) | 1h old
+- BTC scenario **C** | price 71883 | wk close 76075 vs 82800 | 50W 75593 (-4.91%) | 1m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.57% | ETH/BTC 0.02798 | breadth7d 51% | stables 30d -4.89%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.03pt | 7d 0.26pt | n=121
 - Gold: PAXG 1m -3.11% | real10y 2.66 (-25bp 1m) | USD 1m 0.36% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 24
@@ -19,26 +19,27 @@
 - LTC: [A+E] 7d -4.6%
 - TAO: [A+E] 7d -4.0%
 - AVAX: [A+E] 7d 1.9%
+- ICP: [C+E] 7d 4.0%
 
 ## ETF pipeline (new this run)
-- solana NEW: other - Solana price weighs Alpenglow progress against ETF outflows - ad-hoc-news.de
-- ondo-finance: conversion - Innovator ZJUL ETF (Ondo Tokenized) to Euro Price Today | Live ZJULon to EUR Converter & E
-- avalanche-2: amendment - Bitwise Avalanche ETF amends trust agreement to include distribution provisions - Investin
-- avalanche-2: other - Form 8K Bitwise Avalanche ETF For: 12 November By Investing.com - Investing.com India
-- zcash: other - Zcash Price Drops Below $1,000 as ETF Loses $14.6M Despite Faster Blockchain Upgrade - Coi
-- zcash: other - Zcash falls below $1,000 amid $14.6M ETF withdr... - Pluang
-- cardano: other - Cardano ETF AUM Is Just 0.8% of ADA Market Cap, Leaving More Than 99% Outside Funds - Cryp
-- ondo-finance: other - Innovator ZSEP ETF (Ondo Tokenized) Analytics - CryptoRank
+- solana NEW: other - SOL, HYPE among four altcoin spot ETF markets with net outflows; nine record no net flows 
+- hyperliquid NEW: other - SOL, HYPE among four altcoin spot ETF markets with net outflows; nine record no net flows 
+- ripple NEW: other - XRP price steadies as Ledger fix meets stalled ETF demand - ad-hoc-news.de
+- solana NEW: other - SOL, HYPE among four altcoin spot ETF markets with net outflows; nine record no net flows 
+- hyperliquid NEW: other - SOL, HYPE among four altcoin spot ETF markets with net outflows; nine record no net flows 
+- solana NEW: other - Solana News: SOL Price Drops Below $90 After Five Weeks of ETF - openPR.com
+- cardano: other - 21Shares Cardano ETP (AADA.PA) Seasonal Returns Chart - Yahoo Finance - Yahoo! Finance Can
+- ondo-finance: other - Innovator ZDEK ETF (Ondo Tokenized) - CryptoRank
 
 ## Derivatives flags (OKX)
-- ETH: SHORT_SQUEEZE_24H | OI/mc 0.70% | topPos 0.83 | taker 0.94
-- NEAR: LONG_FLUSH_24H | OI/mc -% | topPos 0.97 | taker 0.94
-- AVAX: LONG_FLUSH_24H | OI/mc 0.42% | topPos 0.86 | taker 0.95
-- XRP: LONG_FLUSH_24H | OI/mc 0.17% | topPos 0.86 | taker 0.89
-- SUI: LONG_FLUSH_24H | OI/mc 0.97% | topPos 0.79 | taker 0.89
-- SEI: LONG_FLUSH_24H | OI/mc 0.74% | topPos 0.94 | taker 0.99
+- BTC: LONG_FLUSH_24H | OI/mc 0.26% | topPos 0.88 | taker 0.91
+- ETH: LONG_FLUSH_24H | OI/mc 0.70% | topPos 0.83 | taker 0.94
+- NEAR: LONG_FLUSH_24H | OI/mc -% | topPos 0.97 | taker 0.96
+- AVAX: LONG_FLUSH_24H | OI/mc 0.42% | topPos 0.88 | taker 0.92
+- XRP: LONG_FLUSH_24H | OI/mc 0.17% | topPos 0.86 | taker 0.88
+- SUI: LONG_FLUSH_24H | OI/mc 0.97% | topPos 0.79 | taker 0.90
+- SEI: LONG_FLUSH_24H | OI/mc 0.74% | topPos 0.94 | taker 0.94
 - TAO: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.72% | topPos 0.87 | taker 0.81
-- ZEC: LONG_FLUSH_24H | OI/mc -% | topPos 0.93 | taker 0.92
 
 ## Revenue / buyback flags
 - lido-dao: CHEAP_VS_REVENUE
@@ -47,12 +48,12 @@
 - (15 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean -1.4% (0.02R) | in profit 1 | older than 7d 4
-- worst: PEPE -0.57R, RUNE -0.36R, BEAM -0.27R | best: RUNE -0.36R, BEAM -0.27R, NIGHT 1.28R
+- open 4 | mean -1.7% (0.01R) | in profit 1 | older than 7d 4
+- worst: PEPE -0.56R, RUNE -0.35R, BEAM -0.28R | best: RUNE -0.35R, BEAM -0.28R, NIGHT 1.23R
 
 ## System
-- CoinGecko 3886/10000 used, month-end projection 9957 (100%), throttle level 1 | by script {'scan': 1232, 'check_liquidity': 181, 'breakout_check': 2421, 'counterfactual_check': 52}
+- CoinGecko 3888/10000 used, month-end projection 9962 (100%), throttle level 1 | by script {'scan': 1234, 'check_liquidity': 181, 'breakout_check': 2421, 'counterfactual_check': 52}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=249)
-- radar-flags.json scan age: 2m
-- excluded from radar (pegged/tokenized equity): 48
+- radar-flags.json scan age: 6m
+- excluded from radar (pegged/tokenized equity): 47
