@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-12 05:36 UTC
+# Radar digest - 2026-11-12 06:16 UTC
 
 ## Market
-- BTC scenario **C** | price 73545 | wk close 76075 vs 82800 | 50W 75593 (-2.71%) | 1m old
+- BTC scenario **C** | price 73545 | wk close 76075 vs 82800 | 50W 75593 (-2.71%) | 41m old
 - Alts: **BTC_LED** [-] | BTC.D 57.86% | ETH/BTC 0.02784 | breadth7d 50% | stables 30d -4.90%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.33pt | 7d 0.51pt | n=121
 - Gold: PAXG 1m -1.22% | real10y 2.66 (-25bp 1m) | USD 1m 0.36% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 24
@@ -12,9 +12,9 @@
 - none
 
 ## Pre-pump candidates
-- XRP: [A+E] 7d -20.2%
+- XRP: [A+E] 7d -20.5%
 - HYPE: [A+E] 7d -13.9%
-- NEAR: [A+E] 7d -12.1%
+- NEAR: [A+E] 7d -12.9%
 - LTC: [A+E] 7d -11.2%
 - TAO: [A+E] 7d -8.9%
 - INJ: [A+E] 7d -6.4%
@@ -43,12 +43,12 @@
 - (19 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean -0.3% (0.07R) | in profit 1 | older than 7d 4
-- worst: PEPE -0.36R, RUNE -0.31R, BEAM -0.27R | best: RUNE -0.31R, BEAM -0.27R, NIGHT 1.23R
+- open 4 | mean -0.2% (0.08R) | in profit 1 | older than 7d 4
+- worst: PEPE -0.37R, RUNE -0.30R, BEAM -0.27R | best: RUNE -0.30R, BEAM -0.27R, NIGHT 1.24R
 
 ## System
-- CoinGecko 3725/10000 used, month-end projection 9970 (100%), throttle level 1 | by script {'scan': 1186, 'check_liquidity': 169, 'breakout_check': 2320, 'counterfactual_check': 50}
+- CoinGecko 3774/10000 used, month-end projection 10064 (101%), throttle level 2 | by script {'scan': 1188, 'check_liquidity': 170, 'breakout_check': 2366, 'counterfactual_check': 50}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=247)
-- radar-flags.json scan age: 6m
+- radar-flags.json scan age: 16m
 - excluded from radar (pegged/tokenized equity): 47
