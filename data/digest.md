@@ -1,4 +1,4 @@
-# Radar digest - 2026-11-13 16:35 UTC
+# Radar digest - 2026-11-13 17:03 UTC
 
 ## Market
 - BTC scenario **C** | price 68421 | wk close 76075 vs 82800 | 50W 75593 (-9.49%) | 1h old
@@ -12,14 +12,14 @@
 - none
 
 ## Pre-pump candidates
-- INJ: [A+B+C] 7d -2.7%
-- PEARL: [C+E] 7d -15.0%
-- GRT: [C+E] 7d -12.4%
-- SN51: [C+E] 7d -10.3%
-- SENT: [C+E] 7d -10.0%
-- HYPE: [A+C] 7d -7.0%
-- NEAR: [A+E] 7d -6.9%
-- THETA: [C+E] 7d -5.3%
+- INJ: [A+B+C+E] 7d -2.2%
+- ZEC: [A+E] 7d -29.7%
+- PEARL: [C+E] 7d -12.0%
+- XTZ: [C+E] 7d -10.3%
+- SENT: [C+E] 7d -9.4%
+- BNB: [A+E] 7d -9.3%
+- SN51: [C+E] 7d -9.1%
+- TRAC: [C+E] 7d -8.4%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - Rakuten joins institutional holders of Bitwise's XRP ETF with $6.42M crypto ETF portfolio.
@@ -45,12 +45,12 @@
 - (13 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 6 | mean -1.2% (0.05R) | in profit 3 | older than 7d 4
-- worst: RUNE -0.62R, PEPE -0.44R, BEAM -0.22R | best: JUP 0.01R, KITE 0.37R, NIGHT 1.19R
+- open 6 | mean -1.8% (-0.01R) | in profit 2 | older than 7d 4
+- worst: RUNE -0.64R, PEPE -0.47R, BEAM -0.23R | best: JUP -0.05R, KITE 0.21R, NIGHT 1.13R
 
 ## System
-- CoinGecko 4218/10000 used, month-end projection 9990 (100%), throttle level 1 | by script {'scan': 1334, 'check_liquidity': 201, 'breakout_check': 2627, 'counterfactual_check': 56}
+- CoinGecko 4221/10000 used, month-end projection 9964 (100%), throttle level 1 | by script {'scan': 1336, 'check_liquidity': 202, 'breakout_check': 2627, 'counterfactual_check': 56}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=254)
-- radar-flags.json scan age: 5m
-- excluded from radar (pegged/tokenized equity): 46
+- radar-flags.json scan age: 2m
+- excluded from radar (pegged/tokenized equity): 47
