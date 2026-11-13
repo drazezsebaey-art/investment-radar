@@ -1,4 +1,4 @@
-# Radar digest - 2026-11-13 20:35 UTC
+# Radar digest - 2026-11-13 21:03 UTC
 
 ## Market
 - BTC scenario **C** | price 69043 | wk close 76075 vs 82800 | 50W 75593 (-8.66%) | 1h old
@@ -16,10 +16,10 @@
 - INJ: [A+C+E] 7d -0.5%
 - ZEC: [A+E] 7d -28.1%
 - XTZ: [C+E] 7d -13.7%
-- PEARL: [C+E] 7d -12.7%
 - SENT: [C+E] 7d -10.2%
 - PI: [C+E] 7d -6.8%
 - XDC: [C+E] 7d -6.3%
+- SN51: [C+E] 7d -5.8%
 
 ## ETF pipeline (new this run)
 - solana NEW: other - Bitwise Solana Staking ETF 3Q 2026 — 10-Q Summary - TradingView
@@ -48,12 +48,12 @@
 - (13 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 6 | mean -0.9% (0.06R) | in profit 3 | older than 7d 4
-- worst: RUNE -0.60R, PEPE -0.47R, BEAM -0.27R | best: JUP 0.13R, KITE 0.26R, NIGHT 1.31R
+- open 6 | mean -1.2% (0.06R) | in profit 3 | older than 7d 4
+- worst: RUNE -0.62R, PEPE -0.47R, BEAM -0.30R | best: JUP 0.05R, KITE 0.42R, NIGHT 1.30R
 
 ## System
-- CoinGecko 4281/10000 used, month-end projection 10008 (100%), throttle level 2 | by script {'scan': 1350, 'check_liquidity': 204, 'breakout_check': 2671, 'counterfactual_check': 56}
+- CoinGecko 4284/10000 used, month-end projection 9982 (100%), throttle level 1 | by script {'scan': 1352, 'check_liquidity': 205, 'breakout_check': 2671, 'counterfactual_check': 56}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=254)
-- radar-flags.json scan age: 4m
-- excluded from radar (pegged/tokenized equity): 46
+- radar-flags.json scan age: 2m
+- excluded from radar (pegged/tokenized equity): 47
