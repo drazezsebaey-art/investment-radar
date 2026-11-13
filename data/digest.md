@@ -1,4 +1,4 @@
-# Radar digest - 2026-11-13 08:35 UTC
+# Radar digest - 2026-11-13 09:02 UTC
 
 ## Market
 - BTC scenario **C** | price 68844 | wk close 76075 vs 82800 | 50W 75593 (-8.93%) | 1h old
@@ -12,14 +12,14 @@
 - none
 
 ## Pre-pump candidates
-- HYPE: [A+C+E] 7d -8.1%
-- INJ: [A+E] 7d -8.9%
-- BNB: [A+E] 7d -8.7%
-- VET: [C+E] 7d -6.5%
-- LTC: [A+E] 7d -6.3%
-- CRO: [C+E] 7d -6.0%
-- XLM: [C+E] 7d -5.6%
-- NEAR: [A+E] 7d -4.6%
+- HYPE: [A+C+E] 7d -7.1%
+- VET: [C+E] 7d -6.0%
+- CRO: [C+E] 7d -5.1%
+- XLM: [C+E] 7d -4.6%
+- XTZ: [C+E] 7d -4.6%
+- MON: [C+E] 7d -3.3%
+- M: [C+E] 7d -2.9%
+- CAP: [A+C] 7d -2.1%
 
 ## ETF pipeline (new this run)
 - ondo-finance: conversion - Innovator ZJUL ETF (Ondo Tokenized) Price | ZJULon Price Today, Live Chart, USD converter,
@@ -42,12 +42,12 @@
 - (15 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean -4.1% (-0.15R) | in profit 1 | older than 7d 4
-- worst: RUNE -0.64R, PEPE -0.38R, BEAM -0.31R | best: PEPE -0.38R, BEAM -0.31R, NIGHT 0.75R
+- open 4 | mean -3.7% (-0.12R) | in profit 1 | older than 7d 4
+- worst: RUNE -0.63R, PEPE -0.39R, BEAM -0.25R | best: PEPE -0.39R, BEAM -0.25R, NIGHT 0.77R
 
 ## System
-- CoinGecko 4125/10000 used, month-end projection 10034 (100%), throttle level 2 | by script {'scan': 1302, 'check_liquidity': 195, 'breakout_check': 2574, 'counterfactual_check': 54}
+- CoinGecko 4127/10000 used, month-end projection 10005 (100%), throttle level 2 | by script {'scan': 1304, 'check_liquidity': 195, 'breakout_check': 2574, 'counterfactual_check': 54}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=253)
-- radar-flags.json scan age: 4m
-- excluded from radar (pegged/tokenized equity): 48
+- radar-flags.json scan age: 2m
+- excluded from radar (pegged/tokenized equity): 47
