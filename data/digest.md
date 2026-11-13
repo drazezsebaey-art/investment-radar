@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-13 02:35 UTC
+# Radar digest - 2026-11-13 03:03 UTC
 
 ## Market
-- BTC scenario **C** | price 71060 | wk close 76075 vs 82800 | 50W 75593 (-6.00%) | 60m old
+- BTC scenario **C** | price 71060 | wk close 76075 vs 82800 | 50W 75593 (-6.00%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.39% | ETH/BTC 0.02826 | breadth7d 60% | stables 30d -4.90%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.27pt | 7d 0.21pt | n=121
 - Gold: PAXG 1m -2.85% | real10y 2.78 (-10bp 1m) | USD 1m 0.36% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 24
@@ -12,13 +12,13 @@
 - none
 
 ## Pre-pump candidates
-- ZEC: [A+E] 7d -27.8%
-- HYPE: [A+E] 7d -6.0%
-- MON: [C+E] 7d -0.1%
-- M: [C+E] 7d 0.4%
-- AVAX: [A+E] 7d 0.9%
-- GRAM: [C+E] 7d 4.0%
-- TIA: [C+E] 7d 4.5%
+- ZEC: [A+E] 7d -27.2%
+- HYPE: [A+E] 7d -6.7%
+- MON: [C+E] 7d -1.2%
+- M: [C+E] 7d -0.9%
+- AVAX: [A+E] 7d -0.2%
+- BDX: [C+E] 7d 2.0%
+- TIA: [C+E] 7d 3.0%
 
 ## ETF pipeline (new this run)
 - zcash: other - Zcash (ZEC) Plummets 13% Amid Macro Shock and ETF Outflows - CoinMarketCap
@@ -40,12 +40,12 @@
 - (15 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 5 | mean -1.9% (-0.13R) | in profit 1 | older than 7d 4
-- worst: JUP -0.51R, RUNE -0.47R, BEAM -0.35R | best: BEAM -0.35R, PEPE -0.31R, NIGHT 1.01R
+- open 4 | mean -2.6% (-0.06R) | in profit 1 | older than 7d 4
+- worst: RUNE -0.48R, BEAM -0.36R, PEPE -0.34R | best: BEAM -0.36R, PEPE -0.34R, NIGHT 0.95R
 
 ## System
-- CoinGecko 4035/10000 used, month-end projection 10018 (100%), throttle level 2 | by script {'scan': 1278, 'check_liquidity': 187, 'breakout_check': 2516, 'counterfactual_check': 54}
+- CoinGecko 4038/10000 used, month-end projection 9991 (100%), throttle level 1 | by script {'scan': 1280, 'check_liquidity': 188, 'breakout_check': 2516, 'counterfactual_check': 54}
 - Trials guard: OK (0 untracked)
-- Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=250)
-- radar-flags.json scan age: 5m
-- excluded from radar (pegged/tokenized equity): 49
+- Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=252)
+- radar-flags.json scan age: 3m
+- excluded from radar (pegged/tokenized equity): 47
