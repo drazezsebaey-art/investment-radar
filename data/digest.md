@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-13 05:35 UTC
+# Radar digest - 2026-11-13 06:15 UTC
 
 ## Market
-- BTC scenario **C** | price 68543 | wk close 76075 vs 82800 | 50W 75593 (-9.33%) | 1m old
+- BTC scenario **C** | price 68543 | wk close 76075 vs 82800 | 50W 75593 (-9.33%) | 42m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.10% | ETH/BTC 0.02825 | breadth7d 63% | stables 30d -5.35%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.48pt | 7d -0.08pt | n=121
 - Gold: PAXG 1m -2.23% | real10y 2.78 (-10bp 1m) | USD 1m 0.36% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 24
@@ -12,14 +12,14 @@
 - none
 
 ## Pre-pump candidates
+- HYPE: [A+C+E] 7d -9.3%
 - INJ: [A+E] 7d -14.1%
-- NEAR: [A+E] 7d -11.1%
-- HYPE: [A+E] 7d -9.3%
+- NEAR: [A+E] 7d -8.9%
 - BNB: [A+E] 7d -8.8%
 - LTC: [A+E] 7d -8.7%
 - M: [C+E] 7d -5.8%
+- CRO: [C+E] 7d -5.4%
 - CAP: [A+C] 7d -5.2%
-- AVAX: [A+E] 7d -2.7%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - XRP price prediction: whale wallets vs ETF outflows - CryptoTicker.io
@@ -43,12 +43,12 @@
 - (15 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean -4.3% (-0.14R) | in profit 1 | older than 7d 4
-- worst: RUNE -0.62R, PEPE -0.47R, BEAM -0.38R | best: PEPE -0.47R, BEAM -0.38R, NIGHT 0.91R
+- open 4 | mean -4.4% (-0.15R) | in profit 1 | older than 7d 4
+- worst: RUNE -0.61R, PEPE -0.42R, BEAM -0.40R | best: PEPE -0.42R, BEAM -0.40R, NIGHT 0.82R
 
 ## System
-- CoinGecko 4053/10000 used, month-end projection 9960 (100%), throttle level 1 | by script {'scan': 1290, 'check_liquidity': 193, 'breakout_check': 2516, 'counterfactual_check': 54}
+- CoinGecko 4113/10000 used, month-end projection 10073 (101%), throttle level 2 | by script {'scan': 1292, 'check_liquidity': 193, 'breakout_check': 2574, 'counterfactual_check': 54}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=253)
-- radar-flags.json scan age: 5m
+- radar-flags.json scan age: 15m
 - excluded from radar (pegged/tokenized equity): 48
