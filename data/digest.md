@@ -1,4 +1,4 @@
-# Radar digest - 2026-11-13 12:34 UTC
+# Radar digest - 2026-11-13 13:02 UTC
 
 ## Market
 - BTC scenario **C** | price 69192 | wk close 76075 vs 82800 | 50W 75593 (-8.47%) | 1h old
@@ -12,14 +12,14 @@
 - none
 
 ## Pre-pump candidates
-- INJ: [A+C+E] 7d -6.4%
 - HYPE: [A+C+E] 7d -5.6%
-- ZEC: [A+E] 7d -25.5%
-- PEARL: [C+E] 7d -13.5%
+- INJ: [A+C+E] 7d -3.2%
+- ZEC: [A+E] 7d -25.2%
+- PEARL: [C+E] 7d -13.3%
 - BNB: [A+E] 7d -8.0%
-- LTC: [A+E] 7d -7.1%
-- NEAR: [A+E] 7d -5.2%
-- MON: [C+E] 7d -5.2%
+- LTC: [A+E] 7d -6.9%
+- NEAR: [A+E] 7d -5.4%
+- MON: [C+E] 7d -5.1%
 
 ## ETF pipeline (new this run)
 - hyperliquid NEW: other - Bitwise Hyperliquid ETF (BHYP) Options Chain - Yahoo Finance - Yahoo! Finance Canada
@@ -42,12 +42,12 @@
 - (13 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 6 | mean -1.6% (0.00R) | in profit 3 | older than 7d 4
-- worst: RUNE -0.58R, PEPE -0.37R, BEAM -0.27R | best: JUP 0.08R, KITE 0.24R, NIGHT 0.92R
+- open 6 | mean -1.5% (0.04R) | in profit 3 | older than 7d 4
+- worst: RUNE -0.61R, PEPE -0.39R, BEAM -0.23R | best: JUP 0.06R, KITE 0.49R, NIGHT 0.93R
 
 ## System
-- CoinGecko 4197/10000 used, month-end projection 10073 (101%), throttle level 2 | by script {'scan': 1318, 'check_liquidity': 198, 'breakout_check': 2627, 'counterfactual_check': 54}
+- CoinGecko 4199/10000 used, month-end projection 10044 (100%), throttle level 2 | by script {'scan': 1320, 'check_liquidity': 198, 'breakout_check': 2627, 'counterfactual_check': 54}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=253)
-- radar-flags.json scan age: 4m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 47
