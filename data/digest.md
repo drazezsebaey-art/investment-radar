@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-13 15:35 UTC
+# Radar digest - 2026-11-13 16:03 UTC
 
 ## Market
-- BTC scenario **C** | price 68421 | wk close 76075 vs 82800 | 50W 75593 (-9.49%) | 1m old
+- BTC scenario **C** | price 68421 | wk close 76075 vs 82800 | 50W 75593 (-9.49%) | 28m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.93% | ETH/BTC 0.02812 | breadth7d 72% | stables 30d -5.34%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.79pt | 7d -0.20pt | n=121
 - Gold: PAXG 1m -2.65% | real10y 2.78 (-10bp 1m) | USD 1m 0.36% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 24
@@ -12,14 +12,14 @@
 - none
 
 ## Pre-pump candidates
-- INJ: [A+B+C+E] 7d -0.8%
-- HYPE: [A+C+E] 7d -6.1%
-- ZEC: [A+E] 7d -27.2%
-- PEARL: [C+E] 7d -11.8%
+- INJ: [A+B+C] 7d -0.8%
 - SENT: [C+E] 7d -10.8%
-- BNB: [A+E] 7d -8.3%
 - SN51: [C+E] 7d -7.2%
-- XDC: [C+E] 7d -7.1%
+- NEAR: [A+E] 7d -6.9%
+- HYPE: [A+C] 7d -6.1%
+- THETA: [C+E] 7d -3.9%
+- CAP: [A+C] 7d 0.6%
+- ICP: [C+E] 7d 7.2%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - Rakuten joins institutional holders of Bitwise's XRP ETF with $6.42M crypto ETF portfolio.
@@ -45,12 +45,12 @@
 - (13 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 6 | mean -2.1% (-0.02R) | in profit 2 | older than 7d 4
-- worst: RUNE -0.62R, PEPE -0.43R, BEAM -0.26R | best: JUP -0.20R, KITE 0.43R, NIGHT 0.98R
+- open 6 | mean -1.5% (0.04R) | in profit 2 | older than 7d 4
+- worst: RUNE -0.59R, PEPE -0.42R, BEAM -0.23R | best: JUP -0.07R, KITE 0.51R, NIGHT 1.02R
 
 ## System
-- CoinGecko 4210/10000 used, month-end projection 10004 (100%), throttle level 2 | by script {'scan': 1330, 'check_liquidity': 199, 'breakout_check': 2627, 'counterfactual_check': 54}
+- CoinGecko 4215/10000 used, month-end projection 9983 (100%), throttle level 1 | by script {'scan': 1332, 'check_liquidity': 200, 'breakout_check': 2627, 'counterfactual_check': 56}
 - Trials guard: OK (0 untracked)
-- Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=253)
-- radar-flags.json scan age: 5m
+- Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=254)
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 47
