@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-13 04:34 UTC
+# Radar digest - 2026-11-13 05:02 UTC
 
 ## Market
-- BTC scenario **C** | price 69285 | wk close 76075 vs 82800 | 50W 75593 (-8.34%) | 60m old
+- BTC scenario **C** | price 69285 | wk close 76075 vs 82800 | 50W 75593 (-8.34%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.10% | ETH/BTC 0.02825 | breadth7d 63% | stables 30d -5.35%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.48pt | 7d -0.08pt | n=121
 - Gold: PAXG 1m -2.23% | real10y 2.78 (-10bp 1m) | USD 1m 0.36% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 24
@@ -12,14 +12,14 @@
 - COMP: **BROKEN** | +41% impulse, retr 1.12 | OI dd 44% | fund 0.0090 | hold False | inval 19.17000 | OB ---
 
 ## Pre-pump candidates
+- ZEC: [A+E] 7d -29.1%
 - INJ: [A+E] 7d -12.9%
-- NEAR: [A+E] 7d -10.4%
+- NEAR: [A+E] 7d -11.1%
 - HYPE: [A+E] 7d -9.3%
 - BNB: [A+E] 7d -9.0%
 - LTC: [A+E] 7d -8.5%
 - CAP: [A+C] 7d -5.6%
-- M: [C+E] 7d -4.5%
-- AVAX: [A+E] 7d -3.1%
+- MON: [C+E] 7d -4.7%
 
 ## ETF pipeline (new this run)
 - avalanche-2: other - Form 4 Grayscale Avalanche Staking ETF For: 12 November By Investing.com - Investing.com I
@@ -42,12 +42,12 @@
 - (15 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean -4.5% (-0.15R) | in profit 1 | older than 7d 4
-- worst: RUNE -0.57R, PEPE -0.44R, BEAM -0.42R | best: PEPE -0.44R, BEAM -0.42R, NIGHT 0.82R
+- open 4 | mean -4.4% (-0.15R) | in profit 1 | older than 7d 4
+- worst: RUNE -0.65R, PEPE -0.45R, BEAM -0.37R | best: PEPE -0.45R, BEAM -0.37R, NIGHT 0.87R
 
 ## System
-- CoinGecko 4047/10000 used, month-end projection 9979 (100%), throttle level 1 | by script {'scan': 1286, 'check_liquidity': 191, 'breakout_check': 2516, 'counterfactual_check': 54}
+- CoinGecko 4050/10000 used, month-end projection 9952 (100%), throttle level 1 | by script {'scan': 1288, 'check_liquidity': 192, 'breakout_check': 2516, 'counterfactual_check': 54}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=253)
-- radar-flags.json scan age: 4m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 47
