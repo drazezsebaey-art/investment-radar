@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-13 07:35 UTC
+# Radar digest - 2026-11-13 08:02 UTC
 
 ## Market
-- BTC scenario **C** | price 68844 | wk close 76075 vs 82800 | 50W 75593 (-8.93%) | 1m old
+- BTC scenario **C** | price 68844 | wk close 76075 vs 82800 | 50W 75593 (-8.93%) | 28m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.01% | ETH/BTC 0.02818 | breadth7d -% | stables 30d -5.34%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.55pt | 7d -0.08pt | n=121
 - Gold: PAXG 1m -2.23% | real10y 2.78 (-10bp 1m) | USD 1m 0.36% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 24
@@ -12,14 +12,14 @@
 - none
 
 ## Pre-pump candidates
-- HYPE: [A+C+E] 7d -7.1%
-- VET: [C+E] 7d -6.4%
-- XLM: [C+E] 7d -5.9%
-- CRO: [C+E] 7d -5.2%
-- CAP: [A+C] 7d -3.6%
-- M: [C+E] 7d -2.0%
-- KAIA: [C+E] 7d -1.4%
-- MON: [C+E] 7d -1.2%
+- HYPE: [A+C+E] 7d -8.1%
+- DCR: [C+E] 7d -10.1%
+- VET: [C+E] 7d -6.5%
+- CRO: [C+E] 7d -6.0%
+- XLM: [C+E] 7d -5.6%
+- XTZ: [C+E] 7d -3.3%
+- KAIA: [C+E] 7d -2.9%
+- MON: [C+E] 7d -2.8%
 
 ## ETF pipeline (new this run)
 - ondo-finance: conversion - Innovator ZJUL ETF (Ondo Tokenized) Price | ZJULon Price Today, Live Chart, USD converter,
@@ -42,12 +42,12 @@
 - (15 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean -2.6% (-0.06R) | in profit 1 | older than 7d 4
-- worst: RUNE -0.56R, PEPE -0.32R, BEAM -0.28R | best: PEPE -0.32R, BEAM -0.28R, NIGHT 0.90R
+- open 4 | mean -3.4% (-0.11R) | in profit 1 | older than 7d 4
+- worst: RUNE -0.60R, PEPE -0.36R, BEAM -0.29R | best: PEPE -0.36R, BEAM -0.29R, NIGHT 0.83R
 
 ## System
-- CoinGecko 4121/10000 used, month-end projection 10058 (101%), throttle level 2 | by script {'scan': 1298, 'check_liquidity': 195, 'breakout_check': 2574, 'counterfactual_check': 54}
+- CoinGecko 4123/10000 used, month-end projection 10029 (100%), throttle level 2 | by script {'scan': 1300, 'check_liquidity': 195, 'breakout_check': 2574, 'counterfactual_check': 54}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=253)
-- radar-flags.json scan age: 5m
-- excluded from radar (pegged/tokenized equity): 47
+- radar-flags.json scan age: 2m
+- excluded from radar (pegged/tokenized equity): 48
