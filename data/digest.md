@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-13 21:36 UTC
+# Radar digest - 2026-11-13 22:03 UTC
 
 ## Market
-- BTC scenario **C** | price 68344 | wk close 76075 vs 82800 | 50W 75593 (-9.59%) | 1m old
+- BTC scenario **C** | price 68344 | wk close 76075 vs 82800 | 50W 75593 (-9.59%) | 28m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.95% | ETH/BTC 0.02826 | breadth7d -% | stables 30d -5.33%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.76pt | 7d -0.13pt | n=121
 - Gold: PAXG 1m -3.23% | real10y 2.78 (-10bp 1m) | USD 1m 0.36% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 24
@@ -18,8 +18,8 @@
 - XTZ: [C+E] 7d -16.6%
 - SENT: [C+E] 7d -10.7%
 - GRT: [C+E] 7d -10.3%
+- DCR: [C+E] 7d -10.0%
 - SN51: [C+E] 7d -7.3%
-- PI: [C+E] 7d -7.2%
 
 ## ETF pipeline (new this run)
 - avalanche-2: filing - VAVX: SEC Form 10-Q filed by VanEck Avalanche ETF - Quantisnow
@@ -43,11 +43,11 @@
 
 ## Paper book (open trades, marked to last scan)
 - open 6 | mean -1.2% (0.06R) | in profit 3 | older than 7d 4
-- worst: RUNE -0.65R, PEPE -0.48R, BEAM -0.29R | best: JUP 0.04R, KITE 0.38R, NIGHT 1.34R
+- worst: RUNE -0.67R, PEPE -0.50R, BEAM -0.31R | best: JUP 0.05R, KITE 0.37R, NIGHT 1.43R
 
 ## System
-- CoinGecko 4294/10000 used, month-end projection 10005 (100%), throttle level 2 | by script {'scan': 1362, 'check_liquidity': 205, 'breakout_check': 2671, 'counterfactual_check': 56}
+- CoinGecko 4297/10000 used, month-end projection 9980 (100%), throttle level 1 | by script {'scan': 1364, 'check_liquidity': 206, 'breakout_check': 2671, 'counterfactual_check': 56}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=254)
-- radar-flags.json scan age: 5m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 47
