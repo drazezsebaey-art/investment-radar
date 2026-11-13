@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-13 17:35 UTC
+# Radar digest - 2026-11-13 18:16 UTC
 
 ## Market
-- BTC scenario **C** | price 68795 | wk close 76075 vs 82800 | 50W 75593 (-8.99%) | 1m old
+- BTC scenario **C** | price 68795 | wk close 76075 vs 82800 | 50W 75593 (-8.99%) | 41m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.93% | ETH/BTC 0.02812 | breadth7d 72% | stables 30d -5.34%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.79pt | 7d -0.20pt | n=121
 - Gold: PAXG 1m -3.23% | real10y 2.78 (-10bp 1m) | USD 1m 0.36% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 24
@@ -13,13 +13,13 @@
 
 ## Pre-pump candidates
 - INJ: [A+B+C+E] 7d -2.2%
-- HYPE: [A+C+E] 7d -7.3%
-- ZEC: [A+E] 7d -29.7%
-- PEARL: [C+E] 7d -12.0%
-- XTZ: [C+E] 7d -10.3%
-- GRT: [C+E] 7d -10.0%
-- SENT: [C+E] 7d -9.4%
-- BNB: [A+E] 7d -9.3%
+- ZEC: [A+E] 7d -30.8%
+- PEARL: [C+E] 7d -12.9%
+- SENT: [C+E] 7d -10.6%
+- GRT: [C+E] 7d -9.3%
+- BNB: [A+E] 7d -9.1%
+- HYPE: [A+E] 7d -8.0%
+- NEAR: [A+E] 7d -7.2%
 
 ## ETF pipeline (new this run)
 - hyperliquid NEW: other - Bitwise Hyperliquid ETF (BHYP) Options Chain - Yahoo Finance - Yahoo! Finance Canada
@@ -42,12 +42,12 @@
 - (13 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 6 | mean -1.2% (0.09R) | in profit 2 | older than 7d 4
-- worst: RUNE -0.65R, PEPE -0.45R, BEAM -0.22R | best: JUP -0.02R, KITE 0.70R, NIGHT 1.14R
+- open 6 | mean -0.8% (0.10R) | in profit 3 | older than 7d 4
+- worst: RUNE -0.59R, PEPE -0.42R, BEAM -0.27R | best: JUP 0.01R, KITE 0.64R, NIGHT 1.26R
 
 ## System
-- CoinGecko 4224/10000 used, month-end projection 9971 (100%), throttle level 1 | by script {'scan': 1338, 'check_liquidity': 203, 'breakout_check': 2627, 'counterfactual_check': 56}
+- CoinGecko 4271/10000 used, month-end projection 10049 (100%), throttle level 2 | by script {'scan': 1340, 'check_liquidity': 204, 'breakout_check': 2671, 'counterfactual_check': 56}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=254)
-- radar-flags.json scan age: 5m
-- excluded from radar (pegged/tokenized equity): 47
+- radar-flags.json scan age: 15m
+- excluded from radar (pegged/tokenized equity): 46
