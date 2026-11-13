@@ -1,9 +1,9 @@
-# Radar digest - 2026-11-13 23:02 UTC
+# Radar digest - 2026-11-13 23:35 UTC
 
 ## Market
-- BTC scenario **C** | price 68344 | wk close 76075 vs 82800 | 50W 75593 (-9.59%) | 1h old
-- Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.95% | ETH/BTC 0.02826 | breadth7d -% | stables 30d -5.33%
-- Alt risk (BTC.D): **NORMAL**  | 3d -0.76pt | 7d -0.13pt | n=121
+- BTC scenario **C** | price 68184 | wk close 76075 vs 82800 | 50W 75593 (-9.80%) | 1m old
+- Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.91% | ETH/BTC 0.02824 | breadth7d 67% | stables 30d -5.33%
+- Alt risk (BTC.D): **NORMAL**  | 3d -0.80pt | 7d -0.22pt | n=121
 - Gold: PAXG 1m -3.20% | real10y 2.86 (2bp 1m) | USD 1m 0.36% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 24
 - 10y 1w: 20bp = real 22 + breakeven 0 -> **REAL_YIELD_DRIVEN**
 - 10y 1m: -9bp = real 2 + breakeven -8 -> **SMALL_MOVE**
@@ -12,28 +12,34 @@
 - none
 
 ## Pre-pump candidates
-- HYPE: [A+C+E] 7d -7.4%
-- INJ: [A+C+E] 7d -4.5%
-- ZEC: [A+E] 7d -29.6%
-- XTZ: [C+E] 7d -15.3%
-- GRT: [C+E] 7d -9.7%
+- RENDER: [C+D+E] 7d -4.4%
+- GRT: [C+E] 7d -10.5%
 - SENT: [C+E] 7d -9.7%
-- BNB: [A+E] 7d -8.9%
+- SN51: [C+E] 7d -8.7%
+- HYPE: [A+C] 7d -8.6%
 - NEAR: [A+E] 7d -8.3%
+- THETA: [C+E] 7d -5.9%
+- TAO: [C+E] 7d -5.9%
 
 ## ETF pipeline (new this run)
-- avalanche-2: filing - VAVX: SEC Form 10-Q filed by VanEck Avalanche ETF - Quantisnow
-- avalanche-2: other - Bitwise Avalanche ETF 3Q 2026 — 10-Q Summary - TradingView
+- ripple NEW: filing - XRPC: SEC Form 10-Q filed by Canary XRP ETF Shares of Beneficial Interest - Quantisnow
+- solana NEW: filing - SOLC: SEC Form 10-Q filed by Canary Marinade Solana ETF Shares of Beneficial Interest - Qu
+- sosovalue NEW: other - US Crypto Spot ETF Overview - SoSoValue
+- ripple NEW: other - Rakuten Joins Growing List of Institutional XRP ETF Holders - Crypto Economy
+- binancecoin NEW: other - VanEck BNB ETF 3Q 2026: Net income $807.08K — 10-Q Summary - TradingView
+- solana NEW: other - VanEck Solana ETF 3Q 2026 — 10-Q Summary - TradingView
+- binancecoin NEW: other - Investors redeemed 10,000 shares as VanEck BNB ETF (VBNB) posted a quarterly gain. - Stock
+- hyperliquid NEW: other - 21Shares Hyperliquid Staking ETF 3Q 2026: Net income $22.09M — 10-Q Summary - TradingView
 
 ## Derivatives flags (OKX)
 - BTC: LONG_FLUSH_24H | OI/mc 0.25% | topPos 0.89 | taker 0.88
 - ETH: LONG_FLUSH_24H | OI/mc 0.71% | topPos 0.85 | taker 0.93
-- SOL: LONG_FLUSH_24H | OI/mc 0.73% | topPos 0.86 | taker 0.91
-- XRP: LONG_FLUSH_24H | OI/mc 0.17% | topPos 0.87 | taker 0.93
-- SEI: LONG_FLUSH_24H | OI/mc 0.74% | topPos 0.89 | taker 0.96
-- TAO: LONG_FLUSH_24H | OI/mc 0.70% | topPos 0.89 | taker 0.96
-- ZEC: LONG_FLUSH_24H | OI/mc 0.82% | topPos 0.97 | taker 0.98
-- WLD: LONG_FLUSH_24H | OI/mc 2.37% | topPos 0.84 | taker 0.93
+- SOL: LONG_FLUSH_24H | OI/mc 0.72% | topPos 0.86 | taker 0.91
+- XRP: LONG_FLUSH_24H | OI/mc 0.16% | topPos 0.87 | taker 0.93
+- SEI: LONG_FLUSH_24H | OI/mc 0.73% | topPos 0.88 | taker 0.96
+- TAO: LONG_FLUSH_24H | OI/mc 0.69% | topPos 0.89 | taker 0.95
+- ZEC: LONG_FLUSH_24H | OI/mc 0.80% | topPos 0.97 | taker 0.97
+- WLD: LONG_FLUSH_24H | OI/mc 2.35% | topPos 0.84 | taker 0.93
 
 ## Revenue / buyback flags
 - render-token: REVENUE_ACCELERATING
@@ -42,12 +48,12 @@
 - (13 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 6 | mean -1.2% (0.06R) | in profit 3 | older than 7d 4
-- worst: RUNE -0.66R, PEPE -0.49R, BEAM -0.28R | best: JUP 0.06R, KITE 0.37R, NIGHT 1.34R
+- open 6 | mean -1.7% (0.00R) | in profit 3 | older than 7d 4
+- worst: RUNE -0.66R, PEPE -0.52R, BEAM -0.31R | best: JUP 0.02R, KITE 0.15R, NIGHT 1.32R
 
 ## System
-- CoinGecko 4303/10000 used, month-end projection 9962 (100%), throttle level 1 | by script {'scan': 1368, 'check_liquidity': 208, 'breakout_check': 2671, 'counterfactual_check': 56}
+- CoinGecko 4306/10000 used, month-end projection 9969 (100%), throttle level 1 | by script {'scan': 1370, 'check_liquidity': 209, 'breakout_check': 2671, 'counterfactual_check': 56}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=254)
-- radar-flags.json scan age: 2m
-- excluded from radar (pegged/tokenized equity): 47
+- radar-flags.json scan age: 5m
+- excluded from radar (pegged/tokenized equity): 46
