@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-13 14:34 UTC
+# Radar digest - 2026-11-13 15:03 UTC
 
 ## Market
-- BTC scenario **C** | price 69900 | wk close 76075 vs 82800 | 50W 75593 (-7.53%) | 60m old
+- BTC scenario **C** | price 69900 | wk close 76075 vs 82800 | 50W 75593 (-7.53%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 57.03% | ETH/BTC 0.02826 | breadth7d -% | stables 30d -5.33%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.58pt | 7d -0.10pt | n=121
 - Gold: PAXG 1m -2.65% | real10y 2.78 (-10bp 1m) | USD 1m 0.36% | pillar6 **DEVIATING** ['GOLD_DOWN_DESPITE_REAL_YIELD_DOWN'] | COT pctl 24
@@ -12,14 +12,14 @@
 - none
 
 ## Pre-pump candidates
-- INJ: [A+B+C+E] 7d -0.7%
-- HYPE: [A+C+E] 7d -5.5%
-- NEAR: [A+B+E] 7d -3.5%
-- ZEC: [A+E] 7d -26.0%
-- PEARL: [C+E] 7d -14.2%
-- BNB: [A+E] 7d -7.4%
-- VET: [C+E] 7d -6.0%
-- LTC: [A+E] 7d -5.6%
+- NEAR: [A+B+E] 7d -4.4%
+- INJ: [A+B+C] 7d -0.8%
+- PEARL: [C+E] 7d -11.8%
+- SENT: [C+E] 7d -10.8%
+- SN51: [C+E] 7d -7.2%
+- HYPE: [A+C] 7d -6.1%
+- THETA: [C+E] 7d -3.9%
+- RENDER: [D+E] 7d -2.1%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - Rothschild Investment Reveals XRP ETF Stake - U.Today
@@ -48,12 +48,12 @@
 - (13 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 6 | mean -0.7% (0.10R) | in profit 3 | older than 7d 4
-- worst: RUNE -0.57R, PEPE -0.38R, BEAM -0.26R | best: JUP 0.22R, KITE 0.51R, NIGHT 1.09R
+- open 6 | mean -1.3% (0.03R) | in profit 2 | older than 7d 4
+- worst: RUNE -0.55R, PEPE -0.42R, BEAM -0.25R | best: JUP -0.02R, KITE 0.34R, NIGHT 1.06R
 
 ## System
-- CoinGecko 4205/10000 used, month-end projection 10025 (100%), throttle level 2 | by script {'scan': 1326, 'check_liquidity': 198, 'breakout_check': 2627, 'counterfactual_check': 54}
+- CoinGecko 4208/10000 used, month-end projection 9999 (100%), throttle level 1 | by script {'scan': 1328, 'check_liquidity': 199, 'breakout_check': 2627, 'counterfactual_check': 54}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=253)
-- radar-flags.json scan age: 4m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 47
