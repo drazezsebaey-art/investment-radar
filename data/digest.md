@@ -1,4 +1,4 @@
-# Radar digest - 2026-11-13 00:35 UTC
+# Radar digest - 2026-11-13 01:03 UTC
 
 ## Market
 - BTC scenario **C** | price 71345 | wk close 76075 vs 82800 | 50W 75593 (-5.62%) | 1h old
@@ -13,12 +13,14 @@
 - PYTH: **BROKEN** | +43% impulse, retr 1.10 | OI dd 46% | fund 0.0050 | hold False | inval 0.05851 | OB 0.05851-0.06235
 
 ## Pre-pump candidates
-- MON: [B+C+E] 7d 2.8%
-- ZEC: [A+E] 7d -24.4%
-- HYPE: [A+E] 7d -5.4%
-- M: [C+E] 7d 0.3%
-- AVAX: [A+E] 7d 1.4%
-- ICP: [C+E] 7d 6.8%
+- MON: [B+C+E] 7d 2.2%
+- ZEC: [A+E] 7d -24.8%
+- INJ: [A+E] 7d -8.4%
+- HYPE: [A+E] 7d -4.6%
+- XLM: [C+E] 7d -2.5%
+- M: [C+E] 7d 0.5%
+- AVAX: [A+E] 7d 2.0%
+- TIA: [C+E] 7d 7.8%
 
 ## ETF pipeline (new this run)
 - ondo-finance: conversion - Innovator ZSEP ETF (Ondo Tokenized) Price | ZSEPon Price Today, Live Chart, USD converter,
@@ -41,12 +43,12 @@
 - (15 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 5 | mean -1.2% (0.01R) | in profit 2 | older than 7d 4
-- worst: RUNE -0.41R, PEPE -0.40R, BEAM -0.32R | best: BEAM -0.32R, JUP 0.03R, NIGHT 1.15R
+- open 5 | mean -1.0% (0.02R) | in profit 2 | older than 7d 4
+- worst: RUNE -0.42R, PEPE -0.36R, BEAM -0.30R | best: BEAM -0.30R, JUP 0.05R, NIGHT 1.15R
 
 ## System
-- CoinGecko 4019/10000 used, month-end projection 10048 (100%), throttle level 2 | by script {'scan': 1262, 'check_liquidity': 187, 'breakout_check': 2516, 'counterfactual_check': 54}
+- CoinGecko 4021/10000 used, month-end projection 10018 (100%), throttle level 2 | by script {'scan': 1264, 'check_liquidity': 187, 'breakout_check': 2516, 'counterfactual_check': 54}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=250)
-- radar-flags.json scan age: 4m
-- excluded from radar (pegged/tokenized equity): 49
+- radar-flags.json scan age: 2m
+- excluded from radar (pegged/tokenized equity): 48
