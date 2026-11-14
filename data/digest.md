@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-14 13:35 UTC
+# Radar digest - 2026-11-14 14:02 UTC
 
 ## Market
-- BTC scenario **C** | price 66725 | wk close 76075 vs 82800 | 50W 75593 (-11.73%) | 1m old
+- BTC scenario **C** | price 66725 | wk close 76075 vs 82800 | 50W 75593 (-11.73%) | 28m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.84% | ETH/BTC 0.02840 | breadth7d 70% | stables 30d -5.40%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.97pt | 7d -0.34pt | n=121
 - Gold: PAXG 1m -3.42% | real10y 2.86 (2bp 1m) | USD 1m 0.36% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 24
@@ -12,14 +12,14 @@
 - none
 
 ## Pre-pump candidates
-- NEAR: [A+C+E] 7d -10.0%
+- NEAR: [A+C+E] 7d -10.3%
 - SN51: [C+E] 7d -11.5%
 - GRT: [C+E] 7d -10.7%
 - TAO: [C+E] 7d -8.8%
 - SENT: [C+E] 7d -7.2%
 - THETA: [C+E] 7d -6.5%
 - UB: [C+E] 7d -5.6%
-- AWE: [C+E] 7d -5.2%
+- RENDER: [C+E] 7d -5.1%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - Crypto ETF Outflows Today: BTC, XRP, SOL Bleed as ETH Turns Green - Coin Gabbar
@@ -44,12 +44,12 @@
 - (17 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 6 | mean -1.7% (0.01R) | in profit 2 | older than 7d 4
-- worst: RUNE -0.71R, PEPE -0.59R, BEAM -0.42R | best: JUP -0.04R, KITE 0.13R, NIGHT 1.69R
+- open 6 | mean -1.3% (0.04R) | in profit 3 | older than 7d 4
+- worst: RUNE -0.72R, PEPE -0.62R, BEAM -0.41R | best: JUP 0.03R, KITE 0.10R, NIGHT 1.83R
 
 ## System
-- CoinGecko 4545/10000 used, month-end projection 10069 (101%), throttle level 2 | by script {'scan': 1426, 'check_liquidity': 221, 'breakout_check': 2839, 'counterfactual_check': 59}
+- CoinGecko 4547/10000 used, month-end projection 10042 (100%), throttle level 2 | by script {'scan': 1428, 'check_liquidity': 221, 'breakout_check': 2839, 'counterfactual_check': 59}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=257)
-- radar-flags.json scan age: 5m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 46
