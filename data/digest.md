@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-14 15:35 UTC
+# Radar digest - 2026-11-14 16:02 UTC
 
 ## Market
-- BTC scenario **C** | price 65280 | wk close 76075 vs 82800 | 50W 75593 (-13.64%) | 1m old
+- BTC scenario **C** | price 65280 | wk close 76075 vs 82800 | 50W 75593 (-13.64%) | 28m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.67% | ETH/BTC 0.02810 | breadth7d 64% | stables 30d -5.40%
 - Alt risk (BTC.D): **NORMAL**  | 3d -1.14pt | 7d -0.54pt | n=121
 - Gold: PAXG 1m -3.42% | real10y 2.86 (2bp 1m) | USD 1m 0.36% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 24
@@ -13,13 +13,13 @@
 
 ## Pre-pump candidates
 - SN51: [C+E] 7d -14.0%
-- NEAR: [A+E] 7d -13.2%
+- NEAR: [A+E] 7d -13.3%
 - GRT: [C+E] 7d -12.1%
-- Q: [C+E] 7d -8.5%
 - THETA: [C+E] 7d -8.4%
 - SENT: [C+E] 7d -8.2%
 - INJ: [A+C] 7d -7.7%
 - RENDER: [C+E] 7d -5.3%
+- UB: [C+E] 7d -5.1%
 
 ## ETF pipeline (new this run)
 - edgex NEW: other - iShares Edge MSCI Wld Min Vol ETF $ Acc (MVOL.L) stock price, news, quote and history - Ya
@@ -46,12 +46,12 @@
 - (17 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 6 | mean -2.4% (-0.02R) | in profit 2 | older than 7d 4
-- worst: RUNE -0.81R, PEPE -0.75R, BEAM -0.45R | best: JUP -0.19R, KITE 0.16R, NIGHT 1.89R
+- open 6 | mean -2.6% (-0.03R) | in profit 2 | older than 7d 4
+- worst: RUNE -0.81R, PEPE -0.80R, BEAM -0.41R | best: JUP -0.19R, KITE 0.20R, NIGHT 1.85R
 
 ## System
-- CoinGecko 4553/10000 used, month-end projection 10025 (100%), throttle level 2 | by script {'scan': 1434, 'check_liquidity': 221, 'breakout_check': 2839, 'counterfactual_check': 59}
+- CoinGecko 4556/10000 used, month-end projection 10001 (100%), throttle level 2 | by script {'scan': 1436, 'check_liquidity': 222, 'breakout_check': 2839, 'counterfactual_check': 59}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=257)
-- radar-flags.json scan age: 5m
-- excluded from radar (pegged/tokenized equity): 49
+- radar-flags.json scan age: 2m
+- excluded from radar (pegged/tokenized equity): 48
