@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-14 19:35 UTC
+# Radar digest - 2026-11-14 20:02 UTC
 
 ## Market
-- BTC scenario **C** | price 65585 | wk close 76075 vs 82800 | 50W 75593 (-13.24%) | 1m old
+- BTC scenario **C** | price 65585 | wk close 76075 vs 82800 | 50W 75593 (-13.24%) | 28m old
 - Alts: **BTC_LED** [-] | BTC.D 56.96% | ETH/BTC 0.02789 | breadth7d 58% | stables 30d -5.39%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.71pt | 7d -0.25pt | n=121
 - Gold: PAXG 1m -4.96% | real10y 2.86 (2bp 1m) | USD 1m 0.36% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 24
@@ -12,9 +12,7 @@
 - none
 
 ## Pre-pump candidates
-- NEAR: [A+E] 7d -15.1%
-- SENT: [C+E] 7d -12.8%
-- INJ: [A+C] 7d -9.7%
+- none
 
 ## ETF pipeline (new this run)
 - ondo-finance: conversion - Innovator ZNOV ETF (Ondo Tokenized) to Euro Price Today | Live ZNOVon to EUR Converter & E
@@ -44,12 +42,12 @@
 - (17 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 6 | mean -4.3% (-0.13R) | in profit 2 | older than 7d 4
-- worst: PEPE -0.90R, RUNE -0.89R, BEAM -0.47R | best: JUP -0.17R, KITE 0.10R, NIGHT 1.55R
+- open 6 | mean -4.5% (-0.14R) | in profit 2 | older than 7d 4
+- worst: PEPE -0.91R, RUNE -0.89R, BEAM -0.48R | best: JUP -0.16R, KITE 0.13R, NIGHT 1.49R
 
 ## System
-- CoinGecko 4636/10000 used, month-end projection 10084 (101%), throttle level 2 | by script {'scan': 1458, 'check_liquidity': 223, 'breakout_check': 2896, 'counterfactual_check': 59}
+- CoinGecko 4638/10000 used, month-end projection 10058 (101%), throttle level 2 | by script {'scan': 1460, 'check_liquidity': 223, 'breakout_check': 2896, 'counterfactual_check': 59}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=257)
-- radar-flags.json scan age: 5m
-- excluded from radar (pegged/tokenized equity): 48
+- radar-flags.json scan age: 2m
+- excluded from radar (pegged/tokenized equity): 49
