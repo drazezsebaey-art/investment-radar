@@ -1,4 +1,4 @@
-# Radar digest - 2026-11-14 10:35 UTC
+# Radar digest - 2026-11-14 11:02 UTC
 
 ## Market
 - BTC scenario **C** | price 67227 | wk close 76075 vs 82800 | 50W 75593 (-11.07%) | 1h old
@@ -12,14 +12,14 @@
 - none
 
 ## Pre-pump candidates
-- INJ: [A+C+E] 7d -2.9%
-- ZEC: [A+E] 7d -31.1%
-- SOL: [A+E] 7d -15.9%
-- XRP: [A+E] 7d -15.7%
 - PEARL: [C+E] 7d -13.5%
-- HYPE: [A+E] 7d -11.8%
 - SN51: [C+E] 7d -11.1%
-- BNB: [A+E] 7d -11.0%
+- NEAR: [A+E] 7d -10.2%
+- GRT: [C+E] 7d -8.1%
+- SENT: [C+E] 7d -7.2%
+- THETA: [C+E] 7d -6.7%
+- RENDER: [C+E] 7d -5.8%
+- INJ: [A+C] 7d -2.9%
 
 ## ETF pipeline (new this run)
 - binancecoin NEW: filing - VanEck BNB ETF Filing Shows 39.53% Third-Quarter Price Gain - www.tokenpost.com
@@ -42,12 +42,12 @@
 - (17 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 6 | mean -2.1% (-0.01R) | in profit 2 | older than 7d 4
-- worst: RUNE -0.65R, PEPE -0.61R, BEAM -0.38R | best: JUP -0.13R, KITE 0.28R, NIGHT 1.45R
+- open 6 | mean -2.5% (-0.05R) | in profit 2 | older than 7d 4
+- worst: RUNE -0.67R, PEPE -0.60R, BEAM -0.39R | best: JUP -0.14R, KITE 0.12R, NIGHT 1.37R
 
 ## System
-- CoinGecko 4472/10000 used, month-end projection 10000 (100%), throttle level 1 | by script {'scan': 1414, 'check_liquidity': 217, 'breakout_check': 2782, 'counterfactual_check': 59}
+- CoinGecko 4476/10000 used, month-end projection 9977 (100%), throttle level 1 | by script {'scan': 1416, 'check_liquidity': 219, 'breakout_check': 2782, 'counterfactual_check': 59}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=257)
-- radar-flags.json scan age: 4m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 47
