@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-14 04:34 UTC
+# Radar digest - 2026-11-14 05:02 UTC
 
 ## Market
-- BTC scenario **C** | price 66712 | wk close 76075 vs 82800 | 50W 75593 (-11.75%) | 60m old
+- BTC scenario **C** | price 66712 | wk close 76075 vs 82800 | 50W 75593 (-11.75%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.82% | ETH/BTC 0.02826 | breadth7d -% | stables 30d -5.41%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.85pt | 7d -0.34pt | n=121
 - Gold: PAXG 1m -3.57% | real10y 2.86 (2bp 1m) | USD 1m 0.36% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 24
@@ -16,10 +16,10 @@
 - INJ: [A+C+E] 7d -5.8%
 - RENDER: [C+D+E] 7d -3.9%
 - ZEC: [A+E] 7d -32.9%
-- SOL: [A+E] 7d -16.9%
-- XRP: [A+E] 7d -15.1%
+- SOL: [A+E] 7d -16.0%
+- XRP: [A+E] 7d -14.2%
 - PEARL: [C+E] 7d -13.9%
-- SUI: [A+E] 7d -10.8%
+- NEAR: [A+E] 7d -10.9%
 
 ## ETF pipeline (new this run)
 - ripple NEW: filing - Grayscale CEO Files to Sell XRP ETF Shares He Bought Before Listing - BeInCrypto
@@ -46,12 +46,12 @@
 - (13 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 6 | mean -2.7% (-0.06R) | in profit 2 | older than 7d 4
-- worst: RUNE -0.69R, PEPE -0.61R, BEAM -0.39R | best: JUP -0.10R, KITE 0.11R, NIGHT 1.32R
+- open 6 | mean -2.5% (-0.02R) | in profit 2 | older than 7d 4
+- worst: RUNE -0.70R, PEPE -0.64R, BEAM -0.38R | best: JUP -0.05R, KITE 0.29R, NIGHT 1.36R
 
 ## System
-- CoinGecko 4388/10000 used, month-end projection 9998 (100%), throttle level 1 | by script {'scan': 1390, 'check_liquidity': 212, 'breakout_check': 2727, 'counterfactual_check': 59}
+- CoinGecko 4391/10000 used, month-end projection 9973 (100%), throttle level 1 | by script {'scan': 1392, 'check_liquidity': 213, 'breakout_check': 2727, 'counterfactual_check': 59}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=256)
-- radar-flags.json scan age: 4m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 46
