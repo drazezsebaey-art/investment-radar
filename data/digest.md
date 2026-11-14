@@ -1,9 +1,9 @@
-# Radar digest - 2026-11-14 15:02 UTC
+# Radar digest - 2026-11-14 15:35 UTC
 
 ## Market
-- BTC scenario **C** | price 66725 | wk close 76075 vs 82800 | 50W 75593 (-11.73%) | 1h old
-- Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.84% | ETH/BTC 0.02840 | breadth7d 70% | stables 30d -5.40%
-- Alt risk (BTC.D): **NORMAL**  | 3d -0.97pt | 7d -0.34pt | n=121
+- BTC scenario **C** | price 65280 | wk close 76075 vs 82800 | 50W 75593 (-13.64%) | 1m old
+- Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.67% | ETH/BTC 0.02810 | breadth7d 64% | stables 30d -5.40%
+- Alt risk (BTC.D): **NORMAL**  | 3d -1.14pt | 7d -0.54pt | n=121
 - Gold: PAXG 1m -3.42% | real10y 2.86 (2bp 1m) | USD 1m 0.36% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 24
 - 10y 1w: 20bp = real 22 + breakeven 0 -> **REAL_YIELD_DRIVEN**
 - 10y 1m: -9bp = real 2 + breakeven -8 -> **SMALL_MOVE**
@@ -12,29 +12,31 @@
 - none
 
 ## Pre-pump candidates
+- SN51: [C+E] 7d -14.0%
 - NEAR: [A+E] 7d -13.2%
-- SN51: [C+E] 7d -11.7%
-- GRT: [C+E] 7d -10.8%
-- SENT: [C+E] 7d -7.4%
-- INJ: [A+C] 7d -5.7%
+- GRT: [C+E] 7d -12.1%
+- Q: [C+E] 7d -8.5%
+- THETA: [C+E] 7d -8.4%
+- SENT: [C+E] 7d -8.2%
+- INJ: [A+C] 7d -7.7%
 - RENDER: [C+E] 7d -5.3%
-- UB: [C+E] 7d -4.6%
-- Q: [C+E] 7d -4.2%
 
 ## ETF pipeline (new this run)
-- ripple NEW: other - Crypto ETF Outflows Today: BTC, XRP, SOL Bleed as ETH Turns Green - Coin Gabbar
-- solana NEW: other - Crypto ETF Outflows Today: BTC, XRP, SOL Bleed as ETH Turns Green - Coin Gabbar
-- ripple NEW: other - Despite a quarterly gain, Canary XRP ETF (XRPC) is down 19.35% at net asset value over nin
+- edgex NEW: other - iShares Edge MSCI Wld Min Vol ETF $ Acc (MVOL.L) stock price, news, quote and history - Ya
+- edgex NEW: other - iShares Edge MSCI Wld Mom Fctr ETF $ Acc (IS3R.DE) stock price, news, quote and history - 
+- edgex NEW: other - iShares Edge MSCI Wld Mom Fctr ETF $ Acc (IWMO.L) stock price, news, quote and history - Y
+- zcash: other - Zcash price drops below $900 amid ETF outflows and upcoming community vote - Pluang
+- zcash: other - Zcash below $900: third straight day of ETF outflows - CryptoTicker.io
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc 0.25% | topPos 0.89 | taker 0.92
-- ETH: LONG_FLUSH_24H | OI/mc 0.71% | topPos 0.86 | taker 0.96
-- SOL: LONG_FLUSH_24H | OI/mc 0.75% | topPos 0.85 | taker 0.93
-- NEAR: LONG_FLUSH_24H | OI/mc 1.12% | topPos 0.98 | taker 1.00
-- AVAX: LONG_FLUSH_24H | OI/mc 0.38% | topPos 0.88 | taker 0.89
-- XRP: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.17% | topPos 0.88 | taker 0.84
-- SUI: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.97% | topPos 0.79 | taker 0.81
-- SEI: LONG_FLUSH_24H | OI/mc 0.77% | topPos 0.88 | taker 0.93
+- BTC: LONG_FLUSH_24H | OI/mc 0.25% | topPos 0.89 | taker 0.91
+- ETH: LONG_FLUSH_24H | OI/mc 0.72% | topPos 0.85 | taker 0.94
+- SOL: LONG_FLUSH_24H | OI/mc 0.74% | topPos 0.86 | taker 0.91
+- NEAR: LONG_FLUSH_24H | OI/mc 1.11% | topPos 0.98 | taker 0.95
+- AVAX: LONG_FLUSH_24H | OI/mc 0.37% | topPos 0.88 | taker 0.87
+- XRP: LONG_FLUSH_24H | OI/mc 0.17% | topPos 0.87 | taker 0.86
+- SUI: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.96% | topPos 0.80 | taker 0.78
+- SEI: LONG_FLUSH_24H | OI/mc 0.76% | topPos 0.88 | taker 0.90
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -44,12 +46,12 @@
 - (17 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 6 | mean -2.2% (-0.04R) | in profit 1 | older than 7d 4
-- worst: RUNE -0.78R, PEPE -0.72R, BEAM -0.43R | best: JUP -0.17R, KITE -0.04R, NIGHT 1.92R
+- open 6 | mean -2.4% (-0.02R) | in profit 2 | older than 7d 4
+- worst: RUNE -0.81R, PEPE -0.75R, BEAM -0.45R | best: JUP -0.19R, KITE 0.16R, NIGHT 1.89R
 
 ## System
-- CoinGecko 4551/10000 used, month-end projection 10021 (100%), throttle level 2 | by script {'scan': 1432, 'check_liquidity': 221, 'breakout_check': 2839, 'counterfactual_check': 59}
+- CoinGecko 4553/10000 used, month-end projection 10025 (100%), throttle level 2 | by script {'scan': 1434, 'check_liquidity': 221, 'breakout_check': 2839, 'counterfactual_check': 59}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=257)
-- radar-flags.json scan age: 2m
+- radar-flags.json scan age: 5m
 - excluded from radar (pegged/tokenized equity): 49
