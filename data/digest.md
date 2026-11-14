@@ -1,4 +1,4 @@
-# Radar digest - 2026-11-14 02:34 UTC
+# Radar digest - 2026-11-14 03:02 UTC
 
 ## Market
 - BTC scenario **C** | price 68306 | wk close 76075 vs 82800 | 50W 75593 (-9.64%) | 1h old
@@ -12,14 +12,14 @@
 - none
 
 ## Pre-pump candidates
-- HYPE: [A+C+E] 7d -9.7%
-- LTC: [A+C+E] 7d -5.9%
-- INJ: [A+C+E] 7d -3.3%
-- RENDER: [C+D+E] 7d -2.9%
-- ZEC: [A+E] 7d -30.1%
-- XRP: [A+E] 7d -14.8%
-- SOL: [A+E] 7d -14.6%
-- PEARL: [C+E] 7d -14.4%
+- LTC: [A+C+E] 7d -6.7%
+- INJ: [A+C+E] 7d -5.2%
+- RENDER: [C+D+E] 7d -3.6%
+- ZEC: [A+E] 7d -30.8%
+- SOL: [A+E] 7d -16.0%
+- XRP: [A+E] 7d -14.9%
+- PEARL: [C+E] 7d -12.9%
+- SENT: [C+E] 7d -11.4%
 
 ## ETF pipeline (new this run)
 - ripple NEW: filing - XRPC: SEC Form 10-Q filed by Canary XRP ETF Shares of Beneficial Interest - Quantisnow
@@ -43,12 +43,12 @@
 - (13 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 6 | mean -2.4% (-0.06R) | in profit 1 | older than 7d 4
-- worst: RUNE -0.72R, PEPE -0.56R, BEAM -0.33R | best: JUP -0.06R, KITE -0.02R, NIGHT 1.34R
+- open 6 | mean -2.4% (-0.07R) | in profit 1 | older than 7d 4
+- worst: RUNE -0.68R, PEPE -0.58R, BEAM -0.34R | best: JUP -0.08R, KITE -0.03R, NIGHT 1.31R
 
 ## System
-- CoinGecko 4378/10000 used, month-end projection 10039 (100%), throttle level 2 | by script {'scan': 1382, 'check_liquidity': 210, 'breakout_check': 2727, 'counterfactual_check': 59}
+- CoinGecko 4380/10000 used, month-end projection 10011 (100%), throttle level 2 | by script {'scan': 1384, 'check_liquidity': 210, 'breakout_check': 2727, 'counterfactual_check': 59}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=256)
-- radar-flags.json scan age: 4m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 47
