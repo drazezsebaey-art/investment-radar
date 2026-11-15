@@ -1,4 +1,4 @@
-# Radar digest - 2026-11-15 18:34 UTC
+# Radar digest - 2026-11-15 19:02 UTC
 
 ## Market
 - BTC scenario **C** | price 64745 | wk close 64748 vs 82800 | 50W 75060 (-13.74%) | 1h old
@@ -12,14 +12,14 @@
 - none
 
 ## Pre-pump candidates
-- SOL: [A+E] 7d -19.8%
-- XRP: [A+E] 7d -17.7%
+- XRP: [A+E] 7d -17.5%
 - BNB: [A+E] 7d -15.1%
-- SUI: [A+E] 7d -14.7%
+- SUI: [A+E] 7d -14.8%
 - INJ: [A+E] 7d -14.0%
 - PEARL: [C+E] 7d -13.8%
 - HYPE: [A+E] 7d -13.6%
 - LTC: [A+E] 7d -13.1%
+- NEAR: [A+E] 7d -13.1%
 
 ## ETF pipeline (new this run)
 - cap-4 NEW: other - iShares China Large-Cap Tokenized ETF (Ondo) Price (FXIon/USD) Today | Live Price, Market 
@@ -43,12 +43,12 @@
 - (19 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 3 | mean 9.3% (1.21R) | in profit 2 | older than 7d 2
-- worst: BEAM -0.53R, NIGHT 1.92R, KITE 2.26R | best: BEAM -0.53R, NIGHT 1.92R, KITE 2.26R
+- open 3 | mean 9.1% (1.23R) | in profit 2 | older than 7d 2
+- worst: BEAM -0.53R, NIGHT 1.85R, KITE 2.35R | best: BEAM -0.53R, NIGHT 1.85R, KITE 2.35R
 
 ## System
-- CoinGecko 4960/10000 used, month-end projection 10088 (101%), throttle level 2 | by script {'scan': 1558, 'check_liquidity': 234, 'breakout_check': 3108, 'counterfactual_check': 60}
+- CoinGecko 4962/10000 used, month-end projection 10064 (101%), throttle level 2 | by script {'scan': 1560, 'check_liquidity': 234, 'breakout_check': 3108, 'counterfactual_check': 60}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=261)
-- radar-flags.json scan age: 4m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 48
