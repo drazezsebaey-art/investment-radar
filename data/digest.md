@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-14 23:35 UTC
+# Radar digest - 2026-11-15 00:15 UTC
 
 ## Market
-- BTC scenario **C** | price 63646 | wk close 76075 vs 82800 | 50W 75593 (-15.80%) | 1m old
+- BTC scenario **C** | price 63646 | wk close 76075 vs 82800 | 50W 75593 (-15.80%) | 42m old
 - Alts: **BTC_LED** [-] | BTC.D 56.96% | ETH/BTC 0.02742 | breadth7d 52% | stables 30d -5.39%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.93pt | 7d -0.23pt | n=121
 - Gold: PAXG 1m -5.98% | real10y 2.86 (2bp 1m) | USD 1m 0.36% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 24
@@ -13,13 +13,13 @@
 
 ## Pre-pump candidates
 - ZEC: [A+E] 7d -32.9%
-- XRP: [A+E] 7d -22.7%
-- SOL: [A+E] 7d -22.6%
-- SUI: [A+E] 7d -19.9%
-- NEAR: [A+E] 7d -19.5%
+- SOL: [A+E] 7d -21.3%
+- XRP: [A+E] 7d -21.2%
+- SUI: [A+E] 7d -17.8%
+- NEAR: [A+E] 7d -17.5%
+- BNB: [A+E] 7d -17.4%
 - INJ: [A+E] 7d -16.7%
 - PEARL: [C+E] 7d -16.6%
-- LTC: [A+E] 7d -15.5%
 
 ## ETF pipeline (new this run)
 - ondo-finance: conversion - Innovator ZJUL ETF (Ondo Tokenized) to Russian Ruble Price Today | Live ZJULon to RUB Conv
@@ -46,12 +46,12 @@
 - (17 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 3 | mean 2.9% (0.29R) | in profit 2 | older than 7d 2
-- worst: BEAM -0.60R, KITE 0.13R, NIGHT 1.34R | best: BEAM -0.60R, KITE 0.13R, NIGHT 1.34R
+- open 3 | mean 4.8% (0.52R) | in profit 2 | older than 7d 2
+- worst: BEAM -0.54R, KITE 0.60R, NIGHT 1.49R | best: BEAM -0.54R, KITE 0.60R, NIGHT 1.49R
 
 ## System
-- CoinGecko 4653/10000 used, month-end projection 10000 (100%), throttle level 1 | by script {'scan': 1474, 'check_liquidity': 224, 'breakout_check': 2896, 'counterfactual_check': 59}
+- CoinGecko 4707/10000 used, month-end projection 10086 (101%), throttle level 2 | by script {'scan': 1476, 'check_liquidity': 225, 'breakout_check': 2946, 'counterfactual_check': 60}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=259)
-- radar-flags.json scan age: 4m
+- radar-flags.json scan age: 15m
 - excluded from radar (pegged/tokenized equity): 49
