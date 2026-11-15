@@ -1,4 +1,4 @@
-# Radar digest - 2026-11-15 14:34 UTC
+# Radar digest - 2026-11-15 15:02 UTC
 
 ## Market
 - BTC scenario **C** | price 65485 | wk close 76075 vs 82800 | 50W 75593 (-13.37%) | 1h old
@@ -12,14 +12,14 @@
 - none
 
 ## Pre-pump candidates
-- SOL: [A+E] 7d -18.8%
-- XRP: [A+E] 7d -16.6%
-- PEARL: [C+E] 7d -16.5%
-- NEAR: [A+E] 7d -14.7%
-- BNB: [A+E] 7d -14.5%
-- SUI: [A+E] 7d -14.1%
-- INJ: [A+E] 7d -12.7%
-- LTC: [A+E] 7d -12.4%
+- SOL: [A+E] 7d -19.8%
+- XRP: [A+E] 7d -17.4%
+- PEARL: [C+E] 7d -16.9%
+- BNB: [A+E] 7d -15.1%
+- SUI: [A+E] 7d -15.1%
+- NEAR: [A+E] 7d -15.0%
+- INJ: [A+E] 7d -13.8%
+- LTC: [A+E] 7d -13.0%
 
 ## ETF pipeline (new this run)
 - zcash: other - Zcash Drops 3.57% Amid ETF Outflows, Governance Uncertainty - CoinMarketCap
@@ -42,12 +42,12 @@
 - (19 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 3 | mean 7.6% (1.03R) | in profit 2 | older than 7d 2
-- worst: BEAM -0.59R, NIGHT 1.76R, KITE 1.92R | best: BEAM -0.59R, NIGHT 1.76R, KITE 1.92R
+- open 3 | mean 7.2% (0.96R) | in profit 2 | older than 7d 2
+- worst: BEAM -0.59R, NIGHT 1.73R, KITE 1.75R | best: BEAM -0.59R, NIGHT 1.73R, KITE 1.75R
 
 ## System
-- CoinGecko 4885/10000 used, month-end projection 10049 (100%), throttle level 2 | by script {'scan': 1542, 'check_liquidity': 230, 'breakout_check': 3053, 'counterfactual_check': 60}
+- CoinGecko 4887/10000 used, month-end projection 10025 (100%), throttle level 2 | by script {'scan': 1544, 'check_liquidity': 230, 'breakout_check': 3053, 'counterfactual_check': 60}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=260)
-- radar-flags.json scan age: 4m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 48
