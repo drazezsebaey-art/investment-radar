@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-15 05:35 UTC
+# Radar digest - 2026-11-15 06:15 UTC
 
 ## Market
-- BTC scenario **C** | price 64814 | wk close 76075 vs 82800 | 50W 75593 (-14.26%) | 1m old
+- BTC scenario **C** | price 64814 | wk close 76075 vs 82800 | 50W 75593 (-14.26%) | 41m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.79% | ETH/BTC 0.02799 | breadth7d 60% | stables 30d -5.28%
 - Alt risk (BTC.D): **NORMAL**  | 3d -1.10pt | 7d -0.43pt | n=121
 - Gold: PAXG 1m -4.96% | real10y 2.86 (2bp 1m) | USD 1m 0.36% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 24
@@ -13,13 +13,13 @@
 
 ## Pre-pump candidates
 - SOL: [A+E] 7d -20.4%
-- XRP: [A+E] 7d -16.2%
-- NEAR: [A+E] 7d -15.8%
+- XRP: [A+E] 7d -17.3%
 - SUI: [A+E] 7d -15.2%
-- HYPE: [A+E] 7d -14.9%
-- BNB: [A+E] 7d -14.4%
-- LTC: [A+E] 7d -14.1%
-- CC: [A+E] 7d -14.1%
+- HYPE: [A+E] 7d -14.8%
+- NEAR: [A+E] 7d -14.7%
+- BNB: [A+E] 7d -14.6%
+- LTC: [A+E] 7d -14.2%
+- CC: [A+E] 7d -13.9%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - XRP Price Tests Key Support as ETF and Futures Pressure Builds on Ripple Token - Benzinga
@@ -43,12 +43,12 @@
 - (17 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 3 | mean 6.8% (0.72R) | in profit 2 | older than 7d 2
-- worst: BEAM -0.48R, KITE 0.94R, NIGHT 1.69R | best: BEAM -0.48R, KITE 0.94R, NIGHT 1.69R
+- open 3 | mean 7.6% (0.78R) | in profit 2 | older than 7d 2
+- worst: BEAM -0.47R, KITE 1.00R, NIGHT 1.82R | best: BEAM -0.47R, KITE 1.00R, NIGHT 1.82R
 
 ## System
-- CoinGecko 4731/10000 used, month-end projection 9989 (100%), throttle level 1 | by script {'scan': 1498, 'check_liquidity': 227, 'breakout_check': 2946, 'counterfactual_check': 60}
+- CoinGecko 4794/10000 used, month-end projection 10093 (101%), throttle level 2 | by script {'scan': 1500, 'check_liquidity': 227, 'breakout_check': 3007, 'counterfactual_check': 60}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=259)
-- radar-flags.json scan age: 4m
+- radar-flags.json scan age: 15m
 - excluded from radar (pegged/tokenized equity): 48
