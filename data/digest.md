@@ -1,4 +1,4 @@
-# Radar digest - 2026-11-15 16:34 UTC
+# Radar digest - 2026-11-15 17:02 UTC
 
 ## Market
 - BTC scenario **C** | price 64739 | wk close 76075 vs 82800 | 50W 75593 (-14.36%) | 1h old
@@ -12,14 +12,14 @@
 - none
 
 ## Pre-pump candidates
-- XRP: [A+E] 7d -17.4%
-- PEARL: [C+E] 7d -16.6%
-- NEAR: [A+E] 7d -15.8%
-- SUI: [A+E] 7d -15.6%
-- BNB: [A+E] 7d -15.3%
-- INJ: [A+E] 7d -14.3%
-- LTC: [A+E] 7d -13.3%
-- HYPE: [A+E] 7d -13.2%
+- SOL: [A+E] 7d -20.3%
+- XRP: [A+E] 7d -17.6%
+- SUI: [A+E] 7d -15.5%
+- BNB: [A+E] 7d -15.2%
+- NEAR: [A+E] 7d -14.9%
+- PEARL: [C+E] 7d -14.2%
+- INJ: [A+E] 7d -13.6%
+- HYPE: [A+E] 7d -13.5%
 
 ## ETF pipeline (new this run)
 - sui: filing - SUIS: SEC Form 10-Q filed by Canary Staked SUIS ETF Shares of Beneficial Interest - Quanti
@@ -42,12 +42,12 @@
 - (19 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 3 | mean 7.7% (0.95R) | in profit 2 | older than 7d 2
-- worst: BEAM -0.58R, KITE 1.58R, NIGHT 1.85R | best: BEAM -0.58R, KITE 1.58R, NIGHT 1.85R
+- open 3 | mean 8.6% (1.05R) | in profit 2 | older than 7d 2
+- worst: BEAM -0.55R, KITE 1.80R, NIGHT 1.91R | best: BEAM -0.55R, KITE 1.80R, NIGHT 1.91R
 
 ## System
-- CoinGecko 4894/10000 used, month-end projection 10010 (100%), throttle level 2 | by script {'scan': 1550, 'check_liquidity': 231, 'breakout_check': 3053, 'counterfactual_check': 60}
+- CoinGecko 4897/10000 used, month-end projection 9988 (100%), throttle level 1 | by script {'scan': 1552, 'check_liquidity': 232, 'breakout_check': 3053, 'counterfactual_check': 60}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=261)
-- radar-flags.json scan age: 4m
-- excluded from radar (pegged/tokenized equity): 47
+- radar-flags.json scan age: 2m
+- excluded from radar (pegged/tokenized equity): 48
