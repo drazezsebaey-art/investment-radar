@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-15 19:38 UTC
+# Radar digest - 2026-11-15 20:02 UTC
 
 ## Market
-- BTC scenario **C** | price 64916 | wk close 64748 vs 82800 | 50W 75060 (-13.51%) | 1m old
+- BTC scenario **C** | price 64916 | wk close 64748 vs 82800 | 50W 75060 (-13.51%) | 26m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.74% | ETH/BTC 0.02809 | breadth7d 73% | stables 30d -5.27%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.79pt | 7d -0.57pt | n=121
 - Gold: PAXG 1m -5.90% | real10y 2.86 (2bp 1m) | USD 1m 0.36% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 24
@@ -12,14 +12,14 @@
 - none
 
 ## Pre-pump candidates
-- ZEC: [A+E] 7d -28.5%
-- XRP: [A+E] 7d -17.5%
+- ZEC: [A+E] 7d -28.7%
 - BNB: [A+E] 7d -15.1%
-- SUI: [A+E] 7d -14.8%
-- INJ: [A+E] 7d -14.5%
-- PEARL: [C+E] 7d -13.9%
-- HYPE: [A+E] 7d -13.3%
-- NEAR: [A+E] 7d -13.1%
+- INJ: [A+E] 7d -14.9%
+- NEAR: [A+E] 7d -13.4%
+- HYPE: [A+E] 7d -12.8%
+- CC: [A+E] 7d -10.5%
+- VVV: [C+E] 7d -2.5%
+- SENT: [C+E] 7d -1.9%
 
 ## ETF pipeline (new this run)
 - ondo-finance: other - Historical Data for Innovator ZJUN ETF (Ondo Tokenized) in USD - CryptoRank
@@ -43,12 +43,12 @@
 - (19 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 3 | mean 9.5% (1.34R) | in profit 2 | older than 7d 2
-- worst: BEAM -0.51R, NIGHT 1.81R, KITE 2.72R | best: BEAM -0.51R, NIGHT 1.81R, KITE 2.72R
+- open 3 | mean 9.5% (1.36R) | in profit 2 | older than 7d 2
+- worst: BEAM -0.53R, NIGHT 1.81R, KITE 2.79R | best: BEAM -0.53R, NIGHT 1.81R, KITE 2.79R
 
 ## System
-- CoinGecko 4964/10000 used, month-end projection 10068 (101%), throttle level 2 | by script {'scan': 1562, 'check_liquidity': 234, 'breakout_check': 3108, 'counterfactual_check': 60}
+- CoinGecko 4967/10000 used, month-end projection 10046 (100%), throttle level 2 | by script {'scan': 1564, 'check_liquidity': 235, 'breakout_check': 3108, 'counterfactual_check': 60}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=261)
-- radar-flags.json scan age: 7m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 48
