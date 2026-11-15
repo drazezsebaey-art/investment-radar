@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-15 09:35 UTC
+# Radar digest - 2026-11-15 10:02 UTC
 
 ## Market
-- BTC scenario **C** | price 65538 | wk close 76075 vs 82800 | 50W 75593 (-13.30%) | 1m old
+- BTC scenario **C** | price 65538 | wk close 76075 vs 82800 | 50W 75593 (-13.30%) | 28m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.73% | ETH/BTC 0.02782 | breadth7d 62% | stables 30d -5.27%
 - Alt risk (BTC.D): **NORMAL**  | 3d -1.13pt | 7d -0.53pt | n=121
 - Gold: PAXG 1m -4.96% | real10y 2.86 (2bp 1m) | USD 1m 0.36% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 24
@@ -12,14 +12,14 @@
 - none
 
 ## Pre-pump candidates
-- XRP: [A+E] 7d -18.0%
-- SUI: [A+E] 7d -16.3%
+- SOL: [A+E] 7d -19.6%
+- XRP: [A+E] 7d -17.2%
 - BNB: [A+E] 7d -15.7%
-- NEAR: [A+E] 7d -15.6%
 - INJ: [A+E] 7d -15.4%
+- SUI: [A+E] 7d -14.9%
 - HYPE: [A+E] 7d -14.8%
+- NEAR: [A+E] 7d -14.5%
 - CC: [A+E] 7d -14.4%
-- LTC: [A+E] 7d -14.0%
 
 ## ETF pipeline (new this run)
 - injective-protocol NEW: launch - Staked INJ ETF: Nasdaq Debut Opens a New Route for Injective Investors - Coin Gabbar
@@ -44,12 +44,12 @@
 - (19 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 3 | mean 8.8% (0.94R) | in profit 2 | older than 7d 2
-- worst: BEAM -0.46R, KITE 1.32R, NIGHT 1.94R | best: BEAM -0.46R, KITE 1.32R, NIGHT 1.94R
+- open 3 | mean 8.5% (0.95R) | in profit 2 | older than 7d 2
+- worst: BEAM -0.48R, KITE 1.45R, NIGHT 1.89R | best: BEAM -0.48R, KITE 1.45R, NIGHT 1.89R
 
 ## System
-- CoinGecko 4808/10000 used, month-end projection 10034 (100%), throttle level 2 | by script {'scan': 1514, 'check_liquidity': 227, 'breakout_check': 3007, 'counterfactual_check': 60}
+- CoinGecko 4810/10000 used, month-end projection 10009 (100%), throttle level 2 | by script {'scan': 1516, 'check_liquidity': 227, 'breakout_check': 3007, 'counterfactual_check': 60}
 - Trials guard: OK (0 untracked)
-- Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=259)
-- radar-flags.json scan age: 5m
-- excluded from radar (pegged/tokenized equity): 48
+- Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=260)
+- radar-flags.json scan age: 2m
+- excluded from radar (pegged/tokenized equity): 47
