@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-15 14:02 UTC
+# Radar digest - 2026-11-15 14:34 UTC
 
 ## Market
-- BTC scenario **C** | price 65485 | wk close 76075 vs 82800 | 50W 75593 (-13.37%) | 28m old
+- BTC scenario **C** | price 65485 | wk close 76075 vs 82800 | 50W 75593 (-13.37%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 56.80% | ETH/BTC 0.02803 | breadth7d 66% | stables 30d -5.27%
 - Alt risk (BTC.D): **NORMAL**  | 3d -1.06pt | 7d -0.45pt | n=121
 - Gold: PAXG 1m -4.96% | real10y 2.86 (2bp 1m) | USD 1m 0.36% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 24
@@ -25,13 +25,13 @@
 - zcash: other - Zcash Drops 3.57% Amid ETF Outflows, Governance Uncertainty - CoinMarketCap
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc 0.23% | topPos 0.92 | taker 0.98
-- ETH: SHORT_SQUEEZE_24H | OI/mc 0.70% | topPos 0.90 | taker 0.97
-- SOL: SHORT_SQUEEZE_24H | OI/mc 0.73% | topPos 0.87 | taker 0.93
-- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 0.93
-- XRP: SHORT_SQUEEZE_24H | OI/mc 0.16% | topPos 0.91 | taker 0.95
-- SEI: LONG_FLUSH_24H | OI/mc 0.77% | topPos 0.87 | taker 1.00
-- TAO: LONG_FLUSH_24H | OI/mc 0.69% | topPos 0.90 | taker 0.88
+- BTC: LONG_FLUSH_24H | OI/mc 0.24% | topPos 0.93 | taker 0.98
+- ETH: LONG_FLUSH_24H | OI/mc 0.70% | topPos 0.90 | taker 0.96
+- AVAX: LONG_FLUSH_24H | OI/mc 0.39% | topPos 0.88 | taker 0.94
+- XRP: SHORT_SQUEEZE_24H | OI/mc 0.16% | topPos 0.91 | taker 0.96
+- SEI: LONG_FLUSH_24H | OI/mc 0.76% | topPos 0.87 | taker 1.01
+- TAO: LONG_FLUSH_24H | OI/mc 0.68% | topPos 0.90 | taker 0.88
+- ZEC: LONG_FLUSH_24H | OI/mc -% | topPos 1.05 | taker 1.02
 - ADA: LONG_FLUSH_24H | OI/mc 0.41% | topPos 0.88 | taker 0.87
 
 ## Revenue / buyback flags
@@ -42,12 +42,12 @@
 - (19 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 3 | mean 8.1% (1.04R) | in profit 2 | older than 7d 2
-- worst: BEAM -0.56R, NIGHT 1.84R, KITE 1.84R | best: BEAM -0.56R, NIGHT 1.84R, KITE 1.84R
+- open 3 | mean 7.6% (1.03R) | in profit 2 | older than 7d 2
+- worst: BEAM -0.59R, NIGHT 1.76R, KITE 1.92R | best: BEAM -0.59R, NIGHT 1.76R, KITE 1.92R
 
 ## System
-- CoinGecko 4875/10000 used, month-end projection 10029 (100%), throttle level 2 | by script {'scan': 1532, 'check_liquidity': 230, 'breakout_check': 3053, 'counterfactual_check': 60}
+- CoinGecko 4885/10000 used, month-end projection 10049 (100%), throttle level 2 | by script {'scan': 1542, 'check_liquidity': 230, 'breakout_check': 3053, 'counterfactual_check': 60}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=260)
-- radar-flags.json scan age: 2m
-- excluded from radar (pegged/tokenized equity): 47
+- radar-flags.json scan age: 4m
+- excluded from radar (pegged/tokenized equity): 48
