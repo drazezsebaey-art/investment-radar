@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-15 01:34 UTC
+# Radar digest - 2026-11-15 02:02 UTC
 
 ## Market
-- BTC scenario **C** | price 62501 | wk close 76075 vs 82800 | 50W 75593 (-17.32%) | 1m old
+- BTC scenario **C** | price 62501 | wk close 76075 vs 82800 | 50W 75593 (-17.32%) | 29m old
 - Alts: **BTC_LED** [-] | BTC.D 56.96% | ETH/BTC 0.02742 | breadth7d 52% | stables 30d -5.39%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.93pt | 7d -0.23pt | n=121
 - Gold: PAXG 1m -5.98% | real10y 2.86 (2bp 1m) | USD 1m 0.36% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 24
@@ -13,13 +13,13 @@
 
 ## Pre-pump candidates
 - ZEC: [A+E] 7d -31.8%
-- SOL: [A+E] 7d -22.5%
-- XRP: [A+E] 7d -20.7%
-- NEAR: [A+E] 7d -19.0%
-- SUI: [A+E] 7d -18.9%
+- SOL: [A+E] 7d -23.9%
+- XRP: [A+E] 7d -21.8%
+- NEAR: [A+E] 7d -20.4%
+- SUI: [A+E] 7d -19.8%
 - INJ: [A+E] 7d -18.1%
+- AVAX: [A+E] 7d -16.7%
 - LTC: [A+E] 7d -16.2%
-- AVAX: [A+E] 7d -15.0%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - Franklin XRP ETF 3Q 2026 — 10-Q Summary - TradingView
@@ -43,12 +43,12 @@
 - (17 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 3 | mean 2.0% (0.20R) | in profit 1 | older than 7d 2
-- worst: BEAM -0.63R, KITE -0.01R, NIGHT 1.25R | best: BEAM -0.63R, KITE -0.01R, NIGHT 1.25R
+- open 3 | mean 1.1% (0.13R) | in profit 1 | older than 7d 2
+- worst: BEAM -0.68R, KITE -0.08R, NIGHT 1.17R | best: BEAM -0.68R, KITE -0.08R, NIGHT 1.17R
 
 ## System
-- CoinGecko 4713/10000 used, month-end projection 10069 (101%), throttle level 2 | by script {'scan': 1482, 'check_liquidity': 225, 'breakout_check': 2946, 'counterfactual_check': 60}
+- CoinGecko 4715/10000 used, month-end projection 10044 (100%), throttle level 2 | by script {'scan': 1484, 'check_liquidity': 225, 'breakout_check': 2946, 'counterfactual_check': 60}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=259)
-- radar-flags.json scan age: 4m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 49
