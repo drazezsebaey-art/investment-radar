@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-15 17:02 UTC
+# Radar digest - 2026-11-15 17:35 UTC
 
 ## Market
-- BTC scenario **C** | price 64739 | wk close 76075 vs 82800 | 50W 75593 (-14.36%) | 1h old
+- BTC scenario **C** | price 64745 | wk close 64748 vs 82800 | 50W 75060 (-13.74%) | 1m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.73% | ETH/BTC 0.02799 | breadth7d 69% | stables 30d -5.28%
 - Alt risk (BTC.D): **NORMAL**  | 3d -1.10pt | 7d -0.53pt | n=121
 - Gold: PAXG 1m -5.90% | real10y 2.86 (2bp 1m) | USD 1m 0.36% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 24
@@ -12,6 +12,7 @@
 - none
 
 ## Pre-pump candidates
+- ZEC: [A+E] 7d -29.0%
 - SOL: [A+E] 7d -20.3%
 - XRP: [A+E] 7d -17.6%
 - SUI: [A+E] 7d -15.5%
@@ -19,20 +20,20 @@
 - NEAR: [A+E] 7d -14.9%
 - PEARL: [C+E] 7d -14.2%
 - INJ: [A+E] 7d -13.6%
-- HYPE: [A+E] 7d -13.5%
 
 ## ETF pipeline (new this run)
-- sui: filing - SUIS: SEC Form 10-Q filed by Canary Staked SUIS ETF Shares of Beneficial Interest - Quanti
+- cap-4 NEW: other - iShares China Large-Cap Tokenized ETF (Ondo) Price (FXIon/USD) Today | Live Price, Market 
+- ripple NEW: other - Crypto Market Rout Deepens as XRP Price Hits 2-Year Low and ETF Money Flees - Bitcoin News
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc 0.23% | topPos 0.92 | taker 0.99
-- ETH: SHORT_SQUEEZE_24H | OI/mc 0.70% | topPos 0.89 | taker 0.98
-- SOL: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.94
-- AVAX: LONG_FLUSH_24H | OI/mc 0.39% | topPos 0.88 | taker 0.94
-- SEI: LONG_FLUSH_24H | OI/mc 0.75% | topPos 0.87 | taker 1.05
-- TAO: LONG_FLUSH_24H | OI/mc 0.67% | topPos 0.90 | taker 0.90
-- ADA: LONG_FLUSH_24H | OI/mc 0.41% | topPos 0.87 | taker 0.89
-- LINK: LONG_FLUSH_24H | OI/mc -% | topPos 0.95 | taker 0.87
+- BTC: SHORT_SQUEEZE_24H | OI/mc 0.23% | topPos 0.92 | taker 1.00
+- ETH: SHORT_SQUEEZE_24H | OI/mc 0.69% | topPos 0.89 | taker 0.99
+- SOL: LONG_FLUSH_24H | OI/mc 0.72% | topPos 0.87 | taker 0.97
+- AVAX: LONG_FLUSH_24H | OI/mc 0.39% | topPos 0.88 | taker 0.97
+- SEI: LONG_FLUSH_24H | OI/mc 0.75% | topPos 0.87 | taker 1.02
+- TAO: LONG_FLUSH_24H | OI/mc 0.67% | topPos 0.90 | taker 0.94
+- ADA: LONG_FLUSH_24H | OI/mc 0.41% | topPos 0.87 | taker 0.91
+- LINK: LONG_FLUSH_24H | OI/mc 0.34% | topPos 0.94 | taker 0.91
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -42,12 +43,12 @@
 - (19 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 3 | mean 8.6% (1.05R) | in profit 2 | older than 7d 2
-- worst: BEAM -0.55R, KITE 1.80R, NIGHT 1.91R | best: BEAM -0.55R, KITE 1.80R, NIGHT 1.91R
+- open 3 | mean 9.5% (1.20R) | in profit 2 | older than 7d 2
+- worst: BEAM -0.54R, NIGHT 1.99R, KITE 2.15R | best: BEAM -0.54R, NIGHT 1.99R, KITE 2.15R
 
 ## System
-- CoinGecko 4897/10000 used, month-end projection 9988 (100%), throttle level 1 | by script {'scan': 1552, 'check_liquidity': 232, 'breakout_check': 3053, 'counterfactual_check': 60}
+- CoinGecko 4900/10000 used, month-end projection 9994 (100%), throttle level 1 | by script {'scan': 1554, 'check_liquidity': 233, 'breakout_check': 3053, 'counterfactual_check': 60}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=261)
-- radar-flags.json scan age: 2m
+- radar-flags.json scan age: 4m
 - excluded from radar (pegged/tokenized equity): 48
