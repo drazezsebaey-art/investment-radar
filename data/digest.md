@@ -1,4 +1,4 @@
-# Radar digest - 2026-11-15 00:34 UTC
+# Radar digest - 2026-11-15 01:02 UTC
 
 ## Market
 - BTC scenario **C** | price 63646 | wk close 76075 vs 82800 | 50W 75593 (-15.80%) | 1h old
@@ -12,14 +12,14 @@
 - none
 
 ## Pre-pump candidates
-- ZEC: [A+E] 7d -31.4%
-- SOL: [A+E] 7d -21.3%
-- XRP: [A+E] 7d -21.2%
-- SUI: [A+E] 7d -17.8%
-- NEAR: [A+E] 7d -17.5%
-- INJ: [A+E] 7d -16.9%
-- LTC: [A+E] 7d -14.5%
-- AVAX: [A+E] 7d -13.4%
+- ZEC: [A+E] 7d -31.8%
+- SOL: [A+E] 7d -22.5%
+- XRP: [A+E] 7d -20.7%
+- NEAR: [A+E] 7d -19.0%
+- SUI: [A+E] 7d -18.9%
+- INJ: [A+E] 7d -18.1%
+- LTC: [A+E] 7d -16.2%
+- AVAX: [A+E] 7d -15.0%
 
 ## ETF pipeline (new this run)
 - ondo-finance: conversion - Innovator ZJUL ETF (Ondo Tokenized) to Russian Ruble Price Today | Live ZJULon to RUB Conv
@@ -46,12 +46,12 @@
 - (17 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 3 | mean 4.0% (0.40R) | in profit 2 | older than 7d 2
-- worst: BEAM -0.56R, KITE 0.34R, NIGHT 1.42R | best: BEAM -0.56R, KITE 0.34R, NIGHT 1.42R
+- open 3 | mean 2.9% (0.30R) | in profit 2 | older than 7d 2
+- worst: BEAM -0.59R, KITE 0.19R, NIGHT 1.30R | best: BEAM -0.59R, KITE 0.19R, NIGHT 1.30R
 
 ## System
-- CoinGecko 4709/10000 used, month-end projection 10091 (101%), throttle level 2 | by script {'scan': 1478, 'check_liquidity': 225, 'breakout_check': 2946, 'counterfactual_check': 60}
+- CoinGecko 4711/10000 used, month-end projection 10065 (101%), throttle level 2 | by script {'scan': 1480, 'check_liquidity': 225, 'breakout_check': 2946, 'counterfactual_check': 60}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=259)
-- radar-flags.json scan age: 4m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 49
