@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-15 21:02 UTC
+# Radar digest - 2026-11-15 21:35 UTC
 
 ## Market
-- BTC scenario **C** | price 64916 | wk close 64748 vs 82800 | 50W 75060 (-13.51%) | 1h old
+- BTC scenario **C** | price 64968 | wk close 64748 vs 82800 | 50W 75060 (-13.44%) | 1m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.74% | ETH/BTC 0.02809 | breadth7d 73% | stables 30d -5.27%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.79pt | 7d -0.57pt | n=121
 - Gold: PAXG 1m -5.90% | real10y 2.86 (2bp 1m) | USD 1m 0.36% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 24
@@ -12,28 +12,28 @@
 - none
 
 ## Pre-pump candidates
+- AVAX: [A+B+E] 7d -11.4%
 - ZEC: [A+E] 7d -27.7%
 - SOL: [A+E] 7d -19.7%
-- XRP: [A+E] 7d -16.5%
 - BNB: [A+E] 7d -14.7%
 - SUI: [A+E] 7d -14.0%
 - INJ: [A+E] 7d -13.8%
 - LTC: [A+E] 7d -11.9%
-- AVAX: [A+E] 7d -11.4%
+- PEARL: [C+E] 7d -11.0%
 
 ## ETF pipeline (new this run)
-- ondo-finance: other - Historical Data for Innovator ZJUN ETF (Ondo Tokenized) in USD - CryptoRank
-- ondo-finance: other - Innovator ZJUN ETF (Ondo Tokenized) Exchanges ZJUNon Markets | Buy & Sell & Trade - Crypto
+- injective-protocol NEW: launch - Injective (INJ) Surges 6.12% on Veyra Upgrade, ETF Launch - CoinMarketCap
+- ondo-finance: other - Innovator ZJUN ETF (Ondo Tokenized) Analytics - CryptoRank
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc 0.23% | topPos 0.91 | taker 0.97
-- ETH: SHORT_SQUEEZE_24H | OI/mc 0.69% | topPos 0.89 | taker 0.96
-- AVAX: LONG_FLUSH_24H | OI/mc 0.38% | topPos 0.88 | taker 0.96
-- SEI: LONG_FLUSH_24H | OI/mc 0.75% | topPos 0.88 | taker 1.07
-- TAO: LONG_FLUSH_24H | OI/mc 0.67% | topPos 0.90 | taker 0.96
-- ZEC: SHORT_SQUEEZE_24H | OI/mc 0.83% | topPos 1.02 | taker 1.02
-- ADA: LONG_FLUSH_24H | OI/mc 0.41% | topPos 0.86 | taker 0.91
-- LINK: LONG_FLUSH_24H | OI/mc 0.33% | topPos 0.94 | taker 0.93
+- BTC: SHORT_SQUEEZE_24H | OI/mc 0.23% | topPos 0.91 | taker 1.00
+- AVAX: SHORT_SQUEEZE_FUEL, LONG_FLUSH_24H | OI/mc 0.39% | topPos 0.88 | taker 1.00
+- SEI: AGGRESSIVE_BUYING, LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 1.16
+- ZEC: SHORT_SQUEEZE_24H | OI/mc 0.84% | topPos 1.02 | taker 1.04
+- WLD: SHORT_SQUEEZE_FUEL | OI/mc -% | topPos 0.86 | taker 1.02
+- ADA: LONG_FLUSH_24H | OI/mc 0.41% | topPos 0.86 | taker 0.94
+- XLM: LONG_FLUSH_24H | OI/mc 0.18% | topPos 0.94 | taker 1.12
+- UNI: SHORT_SQUEEZE_FUEL | OI/mc 1.10% | topPos 0.93 | taker 1.06
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -43,12 +43,12 @@
 - (19 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 3 | mean 10.1% (1.46R) | in profit 2 | older than 7d 2
-- worst: BEAM -0.54R, NIGHT 1.88R, KITE 3.05R | best: BEAM -0.54R, NIGHT 1.88R, KITE 3.05R
+- open 3 | mean 9.4% (1.34R) | in profit 2 | older than 7d 2
+- worst: BEAM -0.57R, NIGHT 1.86R, KITE 2.73R | best: BEAM -0.57R, NIGHT 1.86R, KITE 2.73R
 
 ## System
-- CoinGecko 4971/10000 used, month-end projection 10026 (100%), throttle level 2 | by script {'scan': 1568, 'check_liquidity': 235, 'breakout_check': 3108, 'counterfactual_check': 60}
+- CoinGecko 4973/10000 used, month-end projection 10030 (100%), throttle level 2 | by script {'scan': 1570, 'check_liquidity': 235, 'breakout_check': 3108, 'counterfactual_check': 60}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=261)
-- radar-flags.json scan age: 2m
+- radar-flags.json scan age: 5m
 - excluded from radar (pegged/tokenized equity): 48
