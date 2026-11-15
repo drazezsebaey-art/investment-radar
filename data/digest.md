@@ -1,4 +1,4 @@
-# Radar digest - 2026-11-15 02:34 UTC
+# Radar digest - 2026-11-15 03:02 UTC
 
 ## Market
 - BTC scenario **C** | price 62501 | wk close 76075 vs 82800 | 50W 75593 (-17.32%) | 1h old
@@ -12,14 +12,8 @@
 - none
 
 ## Pre-pump candidates
-- ZEC: [A+E] 7d -32.3%
-- SOL: [A+E] 7d -23.9%
-- XRP: [A+E] 7d -21.8%
-- NEAR: [A+E] 7d -20.4%
-- SUI: [A+E] 7d -19.8%
-- INJ: [A+E] 7d -19.5%
-- HYPE: [A+E] 7d -18.9%
-- BNB: [A+E] 7d -17.8%
+- NEAR: [A+E] 7d -14.7%
+- SENT: [C+E] 7d -8.9%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - Franklin XRP ETF 3Q 2026 — 10-Q Summary - TradingView
@@ -43,12 +37,12 @@
 - (17 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 3 | mean 4.0% (0.47R) | in profit 2 | older than 7d 2
-- worst: BEAM -0.60R, KITE 0.57R, NIGHT 1.43R | best: BEAM -0.60R, KITE 0.57R, NIGHT 1.43R
+- open 3 | mean 4.7% (0.56R) | in profit 2 | older than 7d 2
+- worst: BEAM -0.54R, KITE 0.77R, NIGHT 1.44R | best: BEAM -0.54R, KITE 0.77R, NIGHT 1.44R
 
 ## System
-- CoinGecko 4717/10000 used, month-end projection 10048 (100%), throttle level 2 | by script {'scan': 1486, 'check_liquidity': 225, 'breakout_check': 2946, 'counterfactual_check': 60}
+- CoinGecko 4719/10000 used, month-end projection 10023 (100%), throttle level 2 | by script {'scan': 1488, 'check_liquidity': 225, 'breakout_check': 2946, 'counterfactual_check': 60}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=259)
-- radar-flags.json scan age: 3m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 48
