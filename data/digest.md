@@ -1,4 +1,4 @@
-# Radar digest - 2026-11-15 12:34 UTC
+# Radar digest - 2026-11-15 13:02 UTC
 
 ## Market
 - BTC scenario **C** | price 65450 | wk close 76075 vs 82800 | 50W 75593 (-13.42%) | 1h old
@@ -12,14 +12,14 @@
 - none
 
 ## Pre-pump candidates
-- SOL: [A+E] 7d -18.7%
+- PUMP: [D+E] 7d -20.0%
+- SOL: [A+E] 7d -18.8%
 - XRP: [A+E] 7d -16.9%
-- PEARL: [C+E] 7d -15.5%
-- INJ: [A+E] 7d -14.5%
-- BNB: [A+E] 7d -14.3%
-- NEAR: [A+E] 7d -14.3%
+- PEARL: [C+E] 7d -16.8%
+- BNB: [A+E] 7d -14.4%
+- NEAR: [A+E] 7d -14.1%
 - SUI: [A+E] 7d -13.9%
-- CC: [A+E] 7d -12.3%
+- INJ: [A+E] 7d -12.7%
 
 ## ETF pipeline (new this run)
 - kucoin-shares NEW: other - Jane Street Nearly Doubles Bitcoin ETF Holdings in Q3 - KuCoin
@@ -42,12 +42,12 @@
 - (19 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 3 | mean 8.6% (1.03R) | in profit 2 | older than 7d 2
-- worst: BEAM -0.51R, KITE 1.74R, NIGHT 1.87R | best: BEAM -0.51R, KITE 1.74R, NIGHT 1.87R
+- open 3 | mean 9.2% (1.10R) | in profit 2 | older than 7d 2
+- worst: BEAM -0.49R, KITE 1.83R, NIGHT 1.94R | best: BEAM -0.49R, KITE 1.83R, NIGHT 1.94R
 
 ## System
-- CoinGecko 4869/10000 used, month-end projection 10074 (101%), throttle level 2 | by script {'scan': 1526, 'check_liquidity': 230, 'breakout_check': 3053, 'counterfactual_check': 60}
+- CoinGecko 4871/10000 used, month-end projection 10049 (100%), throttle level 2 | by script {'scan': 1528, 'check_liquidity': 230, 'breakout_check': 3053, 'counterfactual_check': 60}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=260)
-- radar-flags.json scan age: 4m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 46
