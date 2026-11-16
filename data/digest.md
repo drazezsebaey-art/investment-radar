@@ -1,4 +1,4 @@
-# Radar digest - 2026-11-16 18:39 UTC
+# Radar digest - 2026-11-16 19:02 UTC
 
 ## Market
 - BTC scenario **C** | price 64893 | wk close 64748 vs 82800 | 50W 75060 (-13.54%) | 1h old
@@ -13,13 +13,13 @@
 
 ## Pre-pump candidates
 - AAVE: [B+C] 7d -19.5%
-- SOL: [A+E] 7d -18.2%
-- AVAX: [A+E] 7d -18.1%
+- SOL: [A+E] 7d -17.5%
+- AVAX: [A+E] 7d -17.2%
 - INJ: [A+E] 7d -17.2%
-- SUI: [A+E] 7d -15.9%
+- SUI: [A+E] 7d -14.6%
 - BNB: [A+E] 7d -14.4%
 - LTC: [A+E] 7d -13.8%
-- XRP: [A+E] 7d -13.1%
+- XRP: [A+E] 7d -12.2%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - Canada's National Bank reveals XRP ETF stake vi... - Pluang
@@ -43,12 +43,12 @@
 - (20 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 0.1% (0.14R) | in profit 3 | older than 7d 2
-- worst: BEAM -0.65R, FF 0.06R, KITE 0.34R | best: FF 0.06R, KITE 0.34R, NIGHT 0.80R
+- open 4 | mean 0.3% (0.16R) | in profit 3 | older than 7d 2
+- worst: BEAM -0.63R, FF 0.04R, KITE 0.42R | best: FF 0.04R, KITE 0.42R, NIGHT 0.81R
 
 ## System
-- CoinGecko 5291/10000 used, month-end projection 10078 (101%), throttle level 2 | by script {'scan': 1660, 'check_liquidity': 247, 'breakout_check': 3324, 'counterfactual_check': 60}
+- CoinGecko 5293/10000 used, month-end projection 10055 (101%), throttle level 2 | by script {'scan': 1662, 'check_liquidity': 247, 'breakout_check': 3324, 'counterfactual_check': 60}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=263)
-- radar-flags.json scan age: 4m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 48
