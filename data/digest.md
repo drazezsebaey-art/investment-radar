@@ -1,4 +1,4 @@
-# Radar digest - 2026-11-16 06:34 UTC
+# Radar digest - 2026-11-16 07:02 UTC
 
 ## Market
 - BTC scenario **C** | price 64789 | wk close 64748 vs 82800 | 50W 75060 (-13.68%) | 1h old
@@ -13,13 +13,13 @@
 
 ## Pre-pump candidates
 - ZEC: [A+E] 7d -28.6%
-- SOL: [A+E] 7d -18.5%
 - INJ: [A+E] 7d -17.8%
+- SOL: [A+E] 7d -17.7%
 - AIOZ: [C+E] 7d -14.4%
 - BNB: [A+E] 7d -14.3%
-- XRP: [A+E] 7d -13.8%
-- SUI: [A+E] 7d -13.3%
-- NEAR: [A+E] 7d -12.4%
+- XRP: [A+E] 7d -12.6%
+- LTC: [A+E] 7d -12.4%
+- SUI: [A+E] 7d -12.3%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - XRP Price Forecast — XRP ($1.03) $1.26 Upside Target on ETF Holders and Whale Accumulation
@@ -42,12 +42,12 @@
 - (19 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 3 | mean 3.5% (0.63R) | in profit 2 | older than 7d 2
-- worst: BEAM -0.62R, NIGHT 1.19R, KITE 1.31R | best: BEAM -0.62R, NIGHT 1.19R, KITE 1.31R
+- open 3 | mean 3.7% (0.61R) | in profit 2 | older than 7d 2
+- worst: BEAM -0.57R, NIGHT 1.18R, KITE 1.22R | best: BEAM -0.57R, NIGHT 1.18R, KITE 1.22R
 
 ## System
-- CoinGecko 5126/10000 used, month-end projection 10084 (101%), throttle level 2 | by script {'scan': 1606, 'check_liquidity': 241, 'breakout_check': 3219, 'counterfactual_check': 60}
+- CoinGecko 5128/10000 used, month-end projection 10060 (101%), throttle level 2 | by script {'scan': 1608, 'check_liquidity': 241, 'breakout_check': 3219, 'counterfactual_check': 60}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=263)
-- radar-flags.json scan age: 4m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 49
