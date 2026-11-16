@@ -1,4 +1,4 @@
-# Radar digest - 2026-11-16 10:34 UTC
+# Radar digest - 2026-11-16 11:02 UTC
 
 ## Market
 - BTC scenario **C** | price 64391 | wk close 64748 vs 82800 | 50W 75060 (-14.21%) | 1h old
@@ -12,14 +12,14 @@
 - none
 
 ## Pre-pump candidates
-- SOL: [A+E] 7d -18.5%
 - AAVE: [B+C] 7d -17.1%
+- SOL: [A+E] 7d -17.1%
 - INJ: [A+E] 7d -17.0%
-- XRP: [A+E] 7d -14.0%
 - BNB: [A+E] 7d -13.7%
-- SUI: [A+E] 7d -13.3%
 - LTC: [A+E] 7d -13.2%
-- AVAX: [A+E] 7d -11.1%
+- XRP: [A+E] 7d -12.4%
+- SUI: [A+E] 7d -12.0%
+- AVAX: [A+E] 7d -10.8%
 
 ## ETF pipeline (new this run)
 - zcash: other - Zcash Tops Bitcoin by 73% in 2026, but $44M ETF Exit and a $1.4M Liquidation Cluster Test 
@@ -44,12 +44,12 @@
 - (20 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 3 | mean 3.2% (0.58R) | in profit 2 | older than 7d 2
-- worst: BEAM -0.47R, NIGHT 0.92R, KITE 1.28R | best: BEAM -0.47R, NIGHT 0.92R, KITE 1.28R
+- open 3 | mean 2.8% (0.52R) | in profit 2 | older than 7d 2
+- worst: BEAM -0.45R, NIGHT 0.85R, KITE 1.14R | best: BEAM -0.45R, NIGHT 0.85R, KITE 1.14R
 
 ## System
-- CoinGecko 5151/10000 used, month-end projection 10024 (100%), throttle level 2 | by script {'scan': 1630, 'check_liquidity': 242, 'breakout_check': 3219, 'counterfactual_check': 60}
+- CoinGecko 5155/10000 used, month-end projection 10004 (100%), throttle level 2 | by script {'scan': 1632, 'check_liquidity': 244, 'breakout_check': 3219, 'counterfactual_check': 60}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=263)
-- radar-flags.json scan age: 4m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 50
