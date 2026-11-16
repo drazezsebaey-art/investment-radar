@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-16 02:02 UTC
+# Radar digest - 2026-11-16 02:34 UTC
 
 ## Market
-- BTC scenario **C** | price 64794 | wk close 64748 vs 82800 | 50W 75060 (-13.68%) | 28m old
+- BTC scenario **C** | price 64794 | wk close 64748 vs 82800 | 50W 75060 (-13.68%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.73% | ETH/BTC 0.02811 | breadth7d 71% | stables 30d -5.27%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.80pt | 7d -0.58pt | n=121
 - Gold: PAXG 1m -5.48% | real10y 2.86 (2bp 1m) | USD 1m 0.36% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 24
@@ -12,27 +12,27 @@
 - none
 
 ## Pre-pump candidates
-- INJ: [A+E] 7d -14.6%
+- AVAX: [A+B+E] 7d -10.5%
+- SOL: [A+E] 7d -18.5%
+- INJ: [A+E] 7d -16.8%
+- BNB: [A+E] 7d -14.2%
+- XRP: [A+E] 7d -14.1%
+- AIOZ: [C+E] 7d -13.9%
+- SUI: [A+E] 7d -13.8%
 - NEAR: [A+E] 7d -13.5%
-- AIOZ: [C+E] 7d -13.5%
-- BNB: [A+E] 7d -13.1%
-- LTC: [A+E] 7d -9.8%
-- CC: [A+E] 7d -6.1%
-- PEARL: [C+E] 7d -1.5%
-- VVV: [C+E] 7d 0.1%
 
 ## ETF pipeline (new this run)
 - none
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc 0.24% | topPos 0.91 | taker 1.03
-- ETH: LONG_FLUSH_24H | OI/mc 0.69% | topPos 0.89 | taker 1.03
-- SOL: LONG_FLUSH_24H | OI/mc 0.71% | topPos 0.87 | taker 1.02
-- NEAR: SHORT_SQUEEZE_24H | OI/mc 1.08% | topPos 1.02 | taker 1.08
-- AVAX: SHORT_SQUEEZE_FUEL, LONG_FLUSH_24H | OI/mc 0.39% | topPos 0.88 | taker 0.96
-- XRP: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.90 | taker 1.02
-- SUI: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.82 | taker 1.02
-- SEI: LONG_FLUSH_24H | OI/mc 0.74% | topPos 0.87 | taker 1.04
+- BTC: SHORT_SQUEEZE_24H | OI/mc 0.23% | topPos 0.91 | taker 1.07
+- ETH: SHORT_SQUEEZE_24H | OI/mc 0.69% | topPos 0.89 | taker 1.05
+- NEAR: SHORT_SQUEEZE_24H | OI/mc 1.06% | topPos 1.03 | taker 1.11
+- AVAX: SHORT_SQUEEZE_FUEL | OI/mc 0.39% | topPos 0.88 | taker 0.96
+- XRP: SHORT_SQUEEZE_24H | OI/mc 0.16% | topPos 0.90 | taker 1.02
+- SUI: SHORT_SQUEEZE_24H | OI/mc 0.87% | topPos 0.82 | taker 1.07
+- SEI: LONG_FLUSH_24H | OI/mc 0.72% | topPos 0.89 | taker 1.07
+- TAO: SHORT_SQUEEZE_24H | OI/mc 0.66% | topPos 0.91 | taker 1.05
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -42,12 +42,12 @@
 - (19 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 3 | mean 5.8% (1.02R) | in profit 2 | older than 7d 2
-- worst: BEAM -0.70R, NIGHT 1.49R, KITE 2.25R | best: BEAM -0.70R, NIGHT 1.49R, KITE 2.25R
+- open 3 | mean 6.5% (1.09R) | in profit 2 | older than 7d 2
+- worst: BEAM -0.66R, NIGHT 1.53R, KITE 2.40R | best: BEAM -0.66R, NIGHT 1.53R, KITE 2.40R
 
 ## System
-- CoinGecko 5050/10000 used, month-end projection 10044 (100%), throttle level 2 | by script {'scan': 1588, 'check_liquidity': 238, 'breakout_check': 3164, 'counterfactual_check': 60}
+- CoinGecko 5052/10000 used, month-end projection 10048 (100%), throttle level 2 | by script {'scan': 1590, 'check_liquidity': 238, 'breakout_check': 3164, 'counterfactual_check': 60}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=262)
-- radar-flags.json scan age: 2m
+- radar-flags.json scan age: 4m
 - excluded from radar (pegged/tokenized equity): 48
