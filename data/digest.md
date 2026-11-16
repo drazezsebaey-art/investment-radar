@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-16 11:35 UTC
+# Radar digest - 2026-11-16 12:16 UTC
 
 ## Market
-- BTC scenario **C** | price 64615 | wk close 64748 vs 82800 | 50W 75060 (-13.92%) | 1m old
+- BTC scenario **C** | price 64615 | wk close 64748 vs 82800 | 50W 75060 (-13.92%) | 42m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.68% | ETH/BTC 0.02798 | breadth7d 65% | stables 30d -5.17%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.33pt | 7d -0.87pt | n=121
 - Gold: PAXG 1m -5.37% | real10y 2.86 (2bp 1m) | USD 1m 0.36% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 24
@@ -12,14 +12,14 @@
 - none
 
 ## Pre-pump candidates
-- SOL: [A+E] 7d -17.1%
+- ZEC: [A+E] 7d -26.6%
+- SOL: [A+E] 7d -16.8%
 - INJ: [A+E] 7d -14.7%
 - BNB: [A+E] 7d -13.2%
 - LTC: [A+E] 7d -12.5%
-- XRP: [A+E] 7d -12.4%
-- SUI: [A+E] 7d -12.0%
-- AVAX: [A+E] 7d -10.8%
-- NEAR: [A+E] 7d -9.2%
+- SUI: [A+E] 7d -12.1%
+- XRP: [A+E] 7d -11.8%
+- AVAX: [A+E] 7d -10.6%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - California Advisor EP Wealth Lifts XRP Futures ETF Stake 37% to $148,000 - BigGo Finance
@@ -48,12 +48,12 @@
 - (20 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 3 | mean 2.3% (0.46R) | in profit 2 | older than 7d 2
-- worst: BEAM -0.46R, NIGHT 0.82R, KITE 1.03R | best: BEAM -0.46R, NIGHT 0.82R, KITE 1.03R
+- open 3 | mean 2.1% (0.39R) | in profit 2 | older than 7d 2
+- worst: BEAM -0.49R, KITE 0.78R, NIGHT 0.88R | best: BEAM -0.49R, KITE 0.78R, NIGHT 0.88R
 
 ## System
-- CoinGecko 5157/10000 used, month-end projection 10008 (100%), throttle level 2 | by script {'scan': 1634, 'check_liquidity': 244, 'breakout_check': 3219, 'counterfactual_check': 60}
+- CoinGecko 5204/10000 used, month-end projection 10072 (101%), throttle level 2 | by script {'scan': 1636, 'check_liquidity': 245, 'breakout_check': 3263, 'counterfactual_check': 60}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=263)
-- radar-flags.json scan age: 5m
+- radar-flags.json scan age: 15m
 - excluded from radar (pegged/tokenized equity): 50
