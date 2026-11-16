@@ -1,4 +1,4 @@
-# Radar digest - 2026-11-16 12:34 UTC
+# Radar digest - 2026-11-16 13:02 UTC
 
 ## Market
 - BTC scenario **C** | price 64615 | wk close 64748 vs 82800 | 50W 75060 (-13.92%) | 1h old
@@ -12,14 +12,14 @@
 - none
 
 ## Pre-pump candidates
-- SOL: [A+E] 7d -16.8%
-- INJ: [A+E] 7d -16.1%
-- BNB: [A+E] 7d -13.3%
-- LTC: [A+E] 7d -12.2%
-- SUI: [A+E] 7d -12.1%
-- XRP: [A+E] 7d -11.8%
-- AVAX: [A+E] 7d -10.6%
-- HYPE: [A+E] 7d -9.1%
+- SOL: [A+E] 7d -17.9%
+- INJ: [A+E] 7d -17.4%
+- BNB: [A+E] 7d -14.1%
+- SUI: [A+E] 7d -13.7%
+- LTC: [A+E] 7d -12.9%
+- XRP: [A+E] 7d -12.2%
+- AVAX: [A+E] 7d -11.9%
+- NEAR: [A+E] 7d -10.8%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - California Advisor EP Wealth Lifts XRP Futures ETF Stake 37% to $148,000 - BigGo Finance
@@ -48,12 +48,12 @@
 - (20 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 3 | mean 1.5% (0.38R) | in profit 2 | older than 7d 2
-- worst: BEAM -0.53R, NIGHT 0.81R, KITE 0.85R | best: BEAM -0.53R, NIGHT 0.81R, KITE 0.85R
+- open 3 | mean 0.4% (0.17R) | in profit 2 | older than 7d 2
+- worst: BEAM -0.57R, KITE 0.28R, NIGHT 0.79R | best: BEAM -0.57R, KITE 0.28R, NIGHT 0.79R
 
 ## System
-- CoinGecko 5206/10000 used, month-end projection 10076 (101%), throttle level 2 | by script {'scan': 1638, 'check_liquidity': 245, 'breakout_check': 3263, 'counterfactual_check': 60}
+- CoinGecko 5208/10000 used, month-end projection 10053 (100%), throttle level 2 | by script {'scan': 1640, 'check_liquidity': 245, 'breakout_check': 3263, 'counterfactual_check': 60}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=263)
-- radar-flags.json scan age: 3m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 50
