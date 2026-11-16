@@ -1,4 +1,4 @@
-# Radar digest - 2026-11-16 20:34 UTC
+# Radar digest - 2026-11-16 21:02 UTC
 
 ## Market
 - BTC scenario **C** | price 64884 | wk close 64748 vs 82800 | 50W 75060 (-13.56%) | 1h old
@@ -12,14 +12,14 @@
 - none
 
 ## Pre-pump candidates
-- ZEC: [A+C+E] 7d -22.9%
-- HYPE: [A+C+E] 7d -8.6%
-- SOL: [A+E] 7d -17.4%
+- ZEC: [A+C+E] 7d -23.8%
+- NEAR: [A+C+E] 7d -12.5%
+- CC: [A+C+E] 7d -9.4%
+- HYPE: [A+C+E] 7d -9.2%
+- SOL: [A+E] 7d -17.5%
+- AVAX: [A+E] 7d -16.5%
 - INJ: [A+E] 7d -16.1%
-- AVAX: [A+E] 7d -16.0%
-- SUI: [A+E] 7d -14.7%
-- BNB: [A+E] 7d -13.8%
-- LTC: [A+E] 7d -12.6%
+- SUI: [A+E] 7d -15.3%
 
 ## ETF pipeline (new this run)
 - ripple NEW: institutional_backing - Rothschild Investment Discloses $104K Stake In Bitwise XRP ETF - TronWeekly
@@ -47,12 +47,12 @@
 - (20 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean -0.3% (0.02R) | in profit 2 | older than 7d 2
-- worst: BEAM -0.68R, KITE -0.17R, FF 0.07R | best: KITE -0.17R, FF 0.07R, NIGHT 0.85R
+- open 4 | mean -0.6% (-0.03R) | in profit 2 | older than 7d 2
+- worst: BEAM -0.69R, KITE -0.33R, FF 0.03R | best: KITE -0.33R, FF 0.03R, NIGHT 0.86R
 
 ## System
-- CoinGecko 5299/10000 used, month-end projection 10040 (100%), throttle level 2 | by script {'scan': 1668, 'check_liquidity': 247, 'breakout_check': 3324, 'counterfactual_check': 60}
+- CoinGecko 5301/10000 used, month-end projection 10018 (100%), throttle level 2 | by script {'scan': 1670, 'check_liquidity': 247, 'breakout_check': 3324, 'counterfactual_check': 60}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=263)
-- radar-flags.json scan age: 4m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 49
