@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-16 15:35 UTC
+# Radar digest - 2026-11-16 16:02 UTC
 
 ## Market
-- BTC scenario **C** | price 64199 | wk close 64748 vs 82800 | 50W 75060 (-14.47%) | 1m old
+- BTC scenario **C** | price 64199 | wk close 64748 vs 82800 | 50W 75060 (-14.47%) | 29m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.65% | ETH/BTC 0.02816 | breadth7d 64% | stables 30d -5.18%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.38pt | 7d -0.85pt | n=121
 - Gold: PAXG 1m -5.37% | real10y 2.86 (2bp 1m) | USD 1m 0.36% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 24
@@ -12,14 +12,14 @@
 - none
 
 ## Pre-pump candidates
-- SENT: [B+C+E] 7d 5.1%
-- ZEC: [A+E] 7d -27.9%
-- AVAX: [A+E] 7d -17.7%
-- SOL: [A+E] 7d -17.0%
+- AVAX: [A+E] 7d -19.7%
+- SOL: [A+E] 7d -18.8%
+- SUI: [A+E] 7d -16.4%
 - INJ: [A+E] 7d -14.5%
-- SUI: [A+E] 7d -14.2%
 - BNB: [A+E] 7d -13.4%
+- XRP: [A+E] 7d -13.4%
 - LTC: [A+E] 7d -12.9%
+- NEAR: [A+E] 7d -12.6%
 
 ## ETF pipeline (new this run)
 - none
@@ -43,12 +43,12 @@
 - (20 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 3 | mean 0.3% (0.09R) | in profit 1 | older than 7d 2
-- worst: BEAM -0.73R, KITE -0.10R, NIGHT 1.10R | best: BEAM -0.73R, KITE -0.10R, NIGHT 1.10R
+- open 3 | mean 0.8% (0.16R) | in profit 2 | older than 7d 2
+- worst: BEAM -0.71R, KITE 0.08R, NIGHT 1.11R | best: BEAM -0.71R, KITE 0.08R, NIGHT 1.11R
 
 ## System
-- CoinGecko 5218/10000 used, month-end projection 10019 (100%), throttle level 2 | by script {'scan': 1650, 'check_liquidity': 245, 'breakout_check': 3263, 'counterfactual_check': 60}
+- CoinGecko 5221/10000 used, month-end projection 9998 (100%), throttle level 1 | by script {'scan': 1652, 'check_liquidity': 246, 'breakout_check': 3263, 'counterfactual_check': 60}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=263)
-- radar-flags.json scan age: 4m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 50
