@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-16 12:16 UTC
+# Radar digest - 2026-11-16 12:34 UTC
 
 ## Market
-- BTC scenario **C** | price 64615 | wk close 64748 vs 82800 | 50W 75060 (-13.92%) | 42m old
+- BTC scenario **C** | price 64615 | wk close 64748 vs 82800 | 50W 75060 (-13.92%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.68% | ETH/BTC 0.02798 | breadth7d 65% | stables 30d -5.17%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.33pt | 7d -0.87pt | n=121
 - Gold: PAXG 1m -5.37% | real10y 2.86 (2bp 1m) | USD 1m 0.36% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 24
@@ -12,14 +12,14 @@
 - none
 
 ## Pre-pump candidates
-- ZEC: [A+E] 7d -26.6%
 - SOL: [A+E] 7d -16.8%
-- INJ: [A+E] 7d -14.7%
-- BNB: [A+E] 7d -13.2%
-- LTC: [A+E] 7d -12.5%
+- INJ: [A+E] 7d -16.1%
+- BNB: [A+E] 7d -13.3%
+- LTC: [A+E] 7d -12.2%
 - SUI: [A+E] 7d -12.1%
 - XRP: [A+E] 7d -11.8%
 - AVAX: [A+E] 7d -10.6%
+- HYPE: [A+E] 7d -9.1%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - California Advisor EP Wealth Lifts XRP Futures ETF Stake 37% to $148,000 - BigGo Finance
@@ -30,14 +30,14 @@
 - chainlink: other - 21Shares Chainlink ETP (21XL.F) Seasonal returns chart - Yahoo Finance UK
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc 0.24% | topPos 0.91 | taker 0.95
-- ETH: SHORT_SQUEEZE_24H | OI/mc 0.70% | topPos 0.88 | taker 1.00
-- NEAR: SHORT_SQUEEZE_24H | OI/mc 1.08% | topPos 1.03 | taker 1.02
-- AVAX: LONG_FLUSH_24H | OI/mc 0.41% | topPos 0.86 | taker 0.98
-- SEI: LONG_FLUSH_24H | OI/mc 0.74% | topPos 0.90 | taker 1.06
-- TAO: LONG_FLUSH_24H | OI/mc 0.69% | topPos 0.89 | taker 1.02
-- WLD: SHORT_SQUEEZE_FUEL, LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.97
-- ADA: LONG_FLUSH_24H | OI/mc 0.41% | topPos 0.86 | taker 0.96
+- BTC: LONG_FLUSH_24H | OI/mc 0.24% | topPos 0.91 | taker 0.95
+- ETH: LONG_FLUSH_24H | OI/mc 0.71% | topPos 0.88 | taker 1.00
+- SOL: LONG_FLUSH_24H | OI/mc 0.71% | topPos 0.86 | taker 1.05
+- AVAX: LONG_FLUSH_24H | OI/mc 0.40% | topPos 0.87 | taker 0.99
+- SUI: LONG_FLUSH_24H | OI/mc 0.90% | topPos 0.82 | taker 0.98
+- SEI: LONG_FLUSH_24H | OI/mc 0.75% | topPos 0.90 | taker 1.05
+- TAO: LONG_FLUSH_24H | OI/mc 0.69% | topPos 0.90 | taker 1.00
+- ZEC: LONG_FLUSH_24H | OI/mc -% | topPos 0.99 | taker 0.99
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -48,12 +48,12 @@
 - (20 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 3 | mean 2.1% (0.39R) | in profit 2 | older than 7d 2
-- worst: BEAM -0.49R, KITE 0.78R, NIGHT 0.88R | best: BEAM -0.49R, KITE 0.78R, NIGHT 0.88R
+- open 3 | mean 1.5% (0.38R) | in profit 2 | older than 7d 2
+- worst: BEAM -0.53R, NIGHT 0.81R, KITE 0.85R | best: BEAM -0.53R, NIGHT 0.81R, KITE 0.85R
 
 ## System
-- CoinGecko 5204/10000 used, month-end projection 10072 (101%), throttle level 2 | by script {'scan': 1636, 'check_liquidity': 245, 'breakout_check': 3263, 'counterfactual_check': 60}
+- CoinGecko 5206/10000 used, month-end projection 10076 (101%), throttle level 2 | by script {'scan': 1638, 'check_liquidity': 245, 'breakout_check': 3263, 'counterfactual_check': 60}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=263)
-- radar-flags.json scan age: 15m
+- radar-flags.json scan age: 3m
 - excluded from radar (pegged/tokenized equity): 50
