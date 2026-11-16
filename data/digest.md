@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-16 18:15 UTC
+# Radar digest - 2026-11-16 18:39 UTC
 
 ## Market
-- BTC scenario **C** | price 64893 | wk close 64748 vs 82800 | 50W 75060 (-13.54%) | 42m old
+- BTC scenario **C** | price 64893 | wk close 64748 vs 82800 | 50W 75060 (-13.54%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.65% | ETH/BTC 0.02816 | breadth7d 64% | stables 30d -5.18%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.38pt | 7d -0.85pt | n=121
 - Gold: PAXG 1m -4.89% | real10y 2.86 (2bp 1m) | USD 1m 0.36% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 24
@@ -12,6 +12,7 @@
 - none
 
 ## Pre-pump candidates
+- AAVE: [B+C] 7d -19.5%
 - SOL: [A+E] 7d -18.2%
 - AVAX: [A+E] 7d -18.1%
 - INJ: [A+E] 7d -17.2%
@@ -19,20 +20,19 @@
 - BNB: [A+E] 7d -14.4%
 - LTC: [A+E] 7d -13.8%
 - XRP: [A+E] 7d -13.1%
-- NEAR: [A+E] 7d -13.0%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - Canada's National Bank reveals XRP ETF stake vi... - Pluang
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc 0.23% | topPos 0.91 | taker 1.00
-- ETH: SHORT_SQUEEZE_24H | OI/mc 0.68% | topPos 0.88 | taker 1.04
-- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 1.00
-- SEI: LONG_FLUSH_24H | OI/mc 0.76% | topPos 0.88 | taker 1.08
+- BTC: SHORT_SQUEEZE_24H | OI/mc 0.23% | topPos 0.91 | taker 0.99
+- ETH: LONG_FLUSH_24H | OI/mc 0.68% | topPos 0.88 | taker 1.03
+- AVAX: LONG_FLUSH_24H | OI/mc 0.40% | topPos 0.87 | taker 0.99
+- SEI: LONG_FLUSH_24H | OI/mc 0.75% | topPos 0.88 | taker 1.05
 - ZEC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 1.04 | taker 0.99
-- WLD: SHORT_SQUEEZE_FUEL, LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 0.95
-- ADA: LONG_FLUSH_24H | OI/mc 0.40% | topPos 0.87 | taker 1.03
-- XLM: AGGRESSIVE_BUYING, LONG_FLUSH_24H | OI/mc 0.18% | topPos 0.89 | taker 1.16
+- WLD: LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 0.95
+- ADA: LONG_FLUSH_24H | OI/mc 0.40% | topPos 0.86 | taker 1.02
+- XLM: LONG_FLUSH_24H | OI/mc 0.18% | topPos 0.89 | taker 1.15
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -43,12 +43,12 @@
 - (20 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 0.2% (0.11R) | in profit 2 | older than 7d 2
-- worst: BEAM -0.64R, FF 0.00R, KITE 0.17R | best: FF 0.00R, KITE 0.17R, NIGHT 0.90R
+- open 4 | mean 0.1% (0.14R) | in profit 3 | older than 7d 2
+- worst: BEAM -0.65R, FF 0.06R, KITE 0.34R | best: FF 0.06R, KITE 0.34R, NIGHT 0.80R
 
 ## System
-- CoinGecko 5289/10000 used, month-end projection 10074 (101%), throttle level 2 | by script {'scan': 1658, 'check_liquidity': 247, 'breakout_check': 3324, 'counterfactual_check': 60}
+- CoinGecko 5291/10000 used, month-end projection 10078 (101%), throttle level 2 | by script {'scan': 1660, 'check_liquidity': 247, 'breakout_check': 3324, 'counterfactual_check': 60}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=263)
-- radar-flags.json scan age: 15m
-- excluded from radar (pegged/tokenized equity): 49
+- radar-flags.json scan age: 4m
+- excluded from radar (pegged/tokenized equity): 48
