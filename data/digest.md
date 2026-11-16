@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-16 09:35 UTC
+# Radar digest - 2026-11-16 10:02 UTC
 
 ## Market
-- BTC scenario **C** | price 64391 | wk close 64748 vs 82800 | 50W 75060 (-14.21%) | 1m old
+- BTC scenario **C** | price 64391 | wk close 64748 vs 82800 | 50W 75060 (-14.21%) | 28m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.71% | ETH/BTC 0.02806 | breadth7d 72% | stables 30d -5.16%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.39pt | 7d -0.82pt | n=121
 - Gold: PAXG 1m -5.08% | real10y 2.86 (2bp 1m) | USD 1m 0.36% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 24
@@ -12,14 +12,13 @@
 - none
 
 ## Pre-pump candidates
-- AVAX: [A+B+E] 7d -8.7%
+- AVAX: [A+B+E] 7d -11.1%
 - ZEC: [A+E] 7d -25.5%
 - INJ: [A+E] 7d -16.1%
 - BNB: [A+E] 7d -12.7%
 - HYPE: [A+E] 7d -8.6%
 - CC: [A+E] 7d -6.4%
 - XDC: [C+E] 7d 0.5%
-- SENT: [C+E] 7d 4.7%
 
 ## ETF pipeline (new this run)
 - zcash: other - Zcash Tops Bitcoin by 73% in 2026, but $44M ETF Exit and a $1.4M Liquidation Cluster Test 
@@ -44,12 +43,12 @@
 - (20 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 3 | mean 3.2% (0.49R) | in profit 2 | older than 7d 2
-- worst: BEAM -0.36R, NIGHT 0.86R, KITE 0.98R | best: BEAM -0.36R, NIGHT 0.86R, KITE 0.98R
+- open 3 | mean 2.5% (0.46R) | in profit 2 | older than 7d 2
+- worst: BEAM -0.43R, NIGHT 0.81R, KITE 1.01R | best: BEAM -0.43R, NIGHT 0.81R, KITE 1.01R
 
 ## System
-- CoinGecko 5139/10000 used, month-end projection 10027 (100%), throttle level 2 | by script {'scan': 1618, 'check_liquidity': 242, 'breakout_check': 3219, 'counterfactual_check': 60}
+- CoinGecko 5141/10000 used, month-end projection 10004 (100%), throttle level 2 | by script {'scan': 1620, 'check_liquidity': 242, 'breakout_check': 3219, 'counterfactual_check': 60}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=263)
-- radar-flags.json scan age: 5m
-- excluded from radar (pegged/tokenized equity): 49
+- radar-flags.json scan age: 2m
+- excluded from radar (pegged/tokenized equity): 50
