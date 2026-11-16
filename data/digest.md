@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-16 01:35 UTC
+# Radar digest - 2026-11-16 02:02 UTC
 
 ## Market
-- BTC scenario **C** | price 64794 | wk close 64748 vs 82800 | 50W 75060 (-13.68%) | 1m old
+- BTC scenario **C** | price 64794 | wk close 64748 vs 82800 | 50W 75060 (-13.68%) | 28m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.73% | ETH/BTC 0.02811 | breadth7d 71% | stables 30d -5.27%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.80pt | 7d -0.58pt | n=121
 - Gold: PAXG 1m -5.48% | real10y 2.86 (2bp 1m) | USD 1m 0.36% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 24
@@ -12,14 +12,14 @@
 - none
 
 ## Pre-pump candidates
-- AVAX: [A+B+E] 7d -9.1%
-- SOL: [A+E] 7d -16.8%
 - INJ: [A+E] 7d -14.6%
+- NEAR: [A+E] 7d -13.5%
 - AIOZ: [C+E] 7d -13.5%
 - BNB: [A+E] 7d -13.1%
-- NEAR: [A+E] 7d -11.5%
 - LTC: [A+E] 7d -9.8%
 - CC: [A+E] 7d -6.1%
+- PEARL: [C+E] 7d -1.5%
+- VVV: [C+E] 7d 0.1%
 
 ## ETF pipeline (new this run)
 - none
@@ -42,12 +42,12 @@
 - (19 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 3 | mean 5.3% (1.00R) | in profit 2 | older than 7d 2
-- worst: BEAM -0.69R, NIGHT 1.37R, KITE 2.33R | best: BEAM -0.69R, NIGHT 1.37R, KITE 2.33R
+- open 3 | mean 5.8% (1.02R) | in profit 2 | older than 7d 2
+- worst: BEAM -0.70R, NIGHT 1.49R, KITE 2.25R | best: BEAM -0.70R, NIGHT 1.49R, KITE 2.25R
 
 ## System
-- CoinGecko 5048/10000 used, month-end projection 10068 (101%), throttle level 2 | by script {'scan': 1586, 'check_liquidity': 238, 'breakout_check': 3164, 'counterfactual_check': 60}
+- CoinGecko 5050/10000 used, month-end projection 10044 (100%), throttle level 2 | by script {'scan': 1588, 'check_liquidity': 238, 'breakout_check': 3164, 'counterfactual_check': 60}
 - Trials guard: OK (0 untracked)
-- Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=261)
-- radar-flags.json scan age: 4m
+- Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=262)
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 48
