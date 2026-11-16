@@ -1,4 +1,4 @@
-# Radar digest - 2026-11-16 00:34 UTC
+# Radar digest - 2026-11-16 01:02 UTC
 
 ## Market
 - BTC scenario **C** | price 65024 | wk close 64748 vs 82800 | 50W 75060 (-13.37%) | 1h old
@@ -12,14 +12,14 @@
 - none
 
 ## Pre-pump candidates
-- AVAX: [A+B+E] 7d -7.7%
-- CC: [A+B+E] 7d -5.1%
-- ZEC: [A+E] 7d -23.8%
-- SOL: [A+E] 7d -15.7%
-- BNB: [A+E] 7d -12.7%
-- XRP: [A+E] 7d -12.1%
-- INJ: [A+E] 7d -11.9%
-- SUI: [A+E] 7d -10.0%
+- AVAX: [A+B+E] 7d -9.1%
+- CC: [A+B+E] 7d -6.1%
+- SOL: [A+E] 7d -16.8%
+- INJ: [A+E] 7d -14.6%
+- AIOZ: [C+E] 7d -13.5%
+- XRP: [A+E] 7d -13.4%
+- BNB: [A+E] 7d -13.1%
+- NEAR: [A+E] 7d -11.5%
 
 ## ETF pipeline (new this run)
 - solana NEW: other - 21Shares Solana Staking ETF 3Q 2026: Net income $2.23M — 10-Q Summary - TradingView
@@ -42,12 +42,12 @@
 - (19 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 3 | mean 8.9% (1.30R) | in profit 2 | older than 7d 2
-- worst: BEAM -0.58R, NIGHT 1.81R, KITE 2.67R | best: BEAM -0.58R, NIGHT 1.81R, KITE 2.67R
+- open 3 | mean 7.8% (1.25R) | in profit 2 | older than 7d 2
+- worst: BEAM -0.64R, NIGHT 1.68R, KITE 2.72R | best: BEAM -0.64R, NIGHT 1.68R, KITE 2.72R
 
 ## System
-- CoinGecko 5044/10000 used, month-end projection 10088 (101%), throttle level 2 | by script {'scan': 1582, 'check_liquidity': 238, 'breakout_check': 3164, 'counterfactual_check': 60}
+- CoinGecko 5046/10000 used, month-end projection 10064 (101%), throttle level 2 | by script {'scan': 1584, 'check_liquidity': 238, 'breakout_check': 3164, 'counterfactual_check': 60}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=261)
-- radar-flags.json scan age: 4m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 48
