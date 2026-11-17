@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-17 01:35 UTC
+# Radar digest - 2026-11-17 02:02 UTC
 
 ## Market
-- BTC scenario **C** | price 64620 | wk close 64748 vs 82800 | 50W 75060 (-13.91%) | 1m old
+- BTC scenario **C** | price 64620 | wk close 64748 vs 82800 | 50W 75060 (-13.91%) | 28m old
 - Alts: **BTC_LED** [-] | BTC.D 56.83% | ETH/BTC 0.02798 | breadth7d 59% | stables 30d -5.16%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.12pt | 7d -0.68pt | n=121
 - Gold: PAXG 1m -4.85% | real10y 2.91 (13bp 1m) | USD 1m 0.89% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 24
@@ -14,12 +14,12 @@
 ## Pre-pump candidates
 - ZEC: [A+E] 7d -22.5%
 - AVAX: [A+E] 7d -18.2%
-- SOL: [A+E] 7d -17.5%
-- SUI: [A+E] 7d -15.4%
+- SOL: [A+E] 7d -17.0%
 - INJ: [A+E] 7d -15.1%
+- SUI: [A+E] 7d -14.9%
 - BNB: [A+E] 7d -14.5%
-- NEAR: [A+E] 7d -13.8%
 - LTC: [A+E] 7d -13.6%
+- XRP: [A+E] 7d -12.9%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - National Bank of Canada reveals Bitwise XRP ETF exposure, eyes on $0.78 support - Bitget
@@ -49,12 +49,12 @@
 - (20 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 1.9% (0.23R) | in profit 3 | older than 7d 2
-- worst: BEAM -0.79R, FF 0.05R, KITE 0.22R | best: FF 0.05R, KITE 0.22R, NIGHT 1.46R
+- open 4 | mean 1.9% (0.24R) | in profit 3 | older than 7d 2
+- worst: BEAM -0.78R, FF 0.06R, KITE 0.24R | best: FF 0.06R, KITE 0.24R, NIGHT 1.43R
 
 ## System
-- CoinGecko 5376/10000 used, month-end projection 10054 (100%), throttle level 2 | by script {'scan': 1688, 'check_liquidity': 250, 'breakout_check': 3376, 'counterfactual_check': 62}
+- CoinGecko 5378/10000 used, month-end projection 10032 (100%), throttle level 2 | by script {'scan': 1690, 'check_liquidity': 250, 'breakout_check': 3376, 'counterfactual_check': 62}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=263)
-- radar-flags.json scan age: 5m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 49
