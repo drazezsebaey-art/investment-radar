@@ -1,4 +1,4 @@
-# Radar digest - 2026-11-17 16:34 UTC
+# Radar digest - 2026-11-17 17:02 UTC
 
 ## Market
 - BTC scenario **C** | price 64854 | wk close 64748 vs 82800 | 50W 75060 (-13.60%) | 1h old
@@ -13,13 +13,13 @@
 
 ## Pre-pump candidates
 - ZEC: [A+E] 7d -21.3%
-- AVAX: [A+E] 7d -15.8%
-- NEAR: [A+E] 7d -15.1%
 - BNB: [A+E] 7d -15.0%
-- SUI: [A+E] 7d -14.5%
-- SOL: [A+E] 7d -14.4%
+- AVAX: [A+E] 7d -14.4%
 - LTC: [A+E] 7d -14.1%
 - CC: [A+E] 7d -13.0%
+- SOL: [A+E] 7d -12.6%
+- SUI: [A+E] 7d -12.1%
+- NEAR: [A+E] 7d -11.6%
 
 ## ETF pipeline (new this run)
 - ripple NEW: filing - Intesa Sanpaolo Lifted XRP ETF Holdings to $27.21 Million in Q3 Filing - Cryptonews.net
@@ -43,12 +43,12 @@
 - (23 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 5 | mean 0.2% (0.18R) | in profit 3 | older than 7d 2
-- worst: BEAM -0.85R, PEPE -0.49R, FF 0.32R | best: FF 0.32R, KITE 0.84R, NIGHT 1.06R
+- open 5 | mean -0.5% (0.08R) | in profit 3 | older than 7d 2
+- worst: BEAM -0.81R, PEPE -0.59R, FF 0.34R | best: FF 0.34R, KITE 0.53R, NIGHT 0.92R
 
 ## System
-- CoinGecko 5553/10000 used, month-end projection 9995 (100%), throttle level 1 | by script {'scan': 1756, 'check_liquidity': 258, 'breakout_check': 3477, 'counterfactual_check': 62}
+- CoinGecko 5556/10000 used, month-end projection 9976 (100%), throttle level 1 | by script {'scan': 1758, 'check_liquidity': 259, 'breakout_check': 3477, 'counterfactual_check': 62}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=266)
-- radar-flags.json scan age: 4m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 50
