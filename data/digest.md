@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-17 03:35 UTC
+# Radar digest - 2026-11-17 04:02 UTC
 
 ## Market
-- BTC scenario **C** | price 65024 | wk close 64748 vs 82800 | 50W 75060 (-13.37%) | 1m old
+- BTC scenario **C** | price 65024 | wk close 64748 vs 82800 | 50W 75060 (-13.37%) | 28m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.68% | ETH/BTC 0.02818 | breadth7d 66% | stables 30d -5.33%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.23pt | 7d -0.98pt | n=121
 - Gold: PAXG 1m -4.85% | real10y 2.91 (13bp 1m) | USD 1m 0.89% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 24
@@ -13,13 +13,13 @@
 
 ## Pre-pump candidates
 - ZEC: [A+B+E] 7d -22.3%
-- AVAX: [A+E] 7d -18.2%
-- SOL: [A+E] 7d -16.9%
-- SUI: [A+E] 7d -14.6%
+- AVAX: [A+E] 7d -16.5%
+- SOL: [A+E] 7d -15.5%
 - BNB: [A+E] 7d -14.5%
+- SUI: [A+E] 7d -13.2%
 - LTC: [A+E] 7d -13.2%
-- XRP: [A+E] 7d -13.1%
-- NEAR: [A+E] 7d -12.1%
+- INJ: [A+E] 7d -11.7%
+- XRP: [A+E] 7d -11.6%
 
 ## ETF pipeline (new this run)
 - ripple NEW: filing - Canada's National Bank invests in XRP via Bitwise XRP ETF filing - 디지털투데이
@@ -44,12 +44,12 @@
 - (20 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 3.8% (0.48R) | in profit 3 | older than 7d 2
-- worst: BEAM -0.80R, FF 0.07R, KITE 0.91R | best: FF 0.07R, KITE 0.91R, NIGHT 1.76R
+- open 4 | mean 4.1% (0.59R) | in profit 3 | older than 7d 2
+- worst: BEAM -0.81R, FF 0.02R, KITE 1.37R | best: FF 0.02R, KITE 1.37R, NIGHT 1.79R
 
 ## System
-- CoinGecko 5384/10000 used, month-end projection 10017 (100%), throttle level 2 | by script {'scan': 1696, 'check_liquidity': 250, 'breakout_check': 3376, 'counterfactual_check': 62}
+- CoinGecko 5387/10000 used, month-end projection 9996 (100%), throttle level 1 | by script {'scan': 1698, 'check_liquidity': 251, 'breakout_check': 3376, 'counterfactual_check': 62}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=263)
-- radar-flags.json scan age: 5m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 49
