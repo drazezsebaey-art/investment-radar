@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-17 09:35 UTC
+# Radar digest - 2026-11-17 10:02 UTC
 
 ## Market
-- BTC scenario **C** | price 64427 | wk close 64748 vs 82800 | 50W 75060 (-14.17%) | 1m old
+- BTC scenario **C** | price 64427 | wk close 64748 vs 82800 | 50W 75060 (-14.17%) | 28m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.54% | ETH/BTC 0.02829 | breadth7d 68% | stables 30d -5.31%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.28pt | 7d -1.04pt | n=121
 - Gold: PAXG 1m -4.74% | real10y 2.91 (13bp 1m) | USD 1m 0.89% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 24
@@ -13,13 +13,13 @@
 
 ## Pre-pump candidates
 - ZEC: [A+E] 7d -20.5%
-- SOL: [A+E] 7d -15.9%
-- AVAX: [A+E] 7d -15.4%
-- SUI: [A+E] 7d -15.0%
+- SOL: [A+E] 7d -15.3%
+- AVAX: [A+E] 7d -15.2%
 - BNB: [A+E] 7d -14.4%
+- SUI: [A+E] 7d -14.2%
+- RUNE: [C+E] 7d -13.4%
 - LTC: [A+E] 7d -13.3%
-- XRP: [A+E] 7d -12.6%
-- ZAMA: [B+C] 7d -12.1%
+- GNO: [C+E] 7d -12.4%
 
 ## ETF pipeline (new this run)
 - solana NEW: other - Italy's Largest Bank Crypto ETF Portfolio Cuts Bitcoin and Ether, Adds Solana, XRP and HYP
@@ -44,12 +44,12 @@
 - (23 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 5 | mean 2.0% (0.31R) | in profit 3 | older than 7d 2
-- worst: BEAM -0.78R, PEPE -0.32R, FF 0.13R | best: FF 0.13R, KITE 0.93R, NIGHT 1.57R
+- open 5 | mean 2.4% (0.38R) | in profit 3 | older than 7d 2
+- worst: BEAM -0.79R, PEPE -0.27R, FF 0.09R | best: FF 0.09R, KITE 1.27R, NIGHT 1.61R
 
 ## System
-- CoinGecko 5472/10000 used, month-end projection 10025 (100%), throttle level 2 | by script {'scan': 1728, 'check_liquidity': 255, 'breakout_check': 3427, 'counterfactual_check': 62}
+- CoinGecko 5474/10000 used, month-end projection 10003 (100%), throttle level 2 | by script {'scan': 1730, 'check_liquidity': 255, 'breakout_check': 3427, 'counterfactual_check': 62}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=264)
-- radar-flags.json scan age: 5m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 51
