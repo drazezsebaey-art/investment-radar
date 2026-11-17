@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-17 21:35 UTC
+# Radar digest - 2026-11-17 22:02 UTC
 
 ## Market
-- BTC scenario **C** | price 64578 | wk close 64748 vs 82800 | 50W 75060 (-13.96%) | 1m old
+- BTC scenario **C** | price 64578 | wk close 64748 vs 82800 | 50W 75060 (-13.96%) | 28m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.42% | ETH/BTC 0.02808 | breadth7d 71% | stables 30d -5.32%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.25pt | 7d -1.30pt | n=121
 - Gold: PAXG 1m -4.22% | real10y 2.91 (13bp 1m) | USD 1m 0.89% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 35
@@ -12,14 +12,14 @@
 - none
 
 ## Pre-pump candidates
-- AVAX: [A+E] 7d -13.8%
+- AVAX: [A+E] 7d -13.6%
 - BNB: [A+E] 7d -12.8%
-- SOL: [A+E] 7d -12.0%
-- SUI: [A+E] 7d -11.6%
+- SOL: [A+E] 7d -11.9%
 - INJ: [A+E] 7d -11.4%
 - LTC: [A+E] 7d -11.2%
+- SUI: [A+E] 7d -11.0%
 - ZEC: [A+E] 7d -10.7%
-- NEAR: [A+E] 7d -9.4%
+- CC: [A+E] 7d -9.2%
 
 ## ETF pipeline (new this run)
 - ripple NEW: filing - Bank of America Joins XRP ETF Holders in New Q3 SEC Filing - Cryptonews.net
@@ -42,12 +42,12 @@
 - (23 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 5 | mean 0.9% (0.11R) | in profit 3 | older than 7d 2
-- worst: BEAM -0.68R, PEPE -0.41R, KITE 0.12R | best: KITE 0.12R, FF 0.43R, NIGHT 1.07R
+- open 5 | mean -0.0% (0.02R) | in profit 2 | older than 7d 2
+- worst: BEAM -0.69R, PEPE -0.44R, KITE -0.05R | best: KITE -0.05R, FF 0.28R, NIGHT 1.00R
 
 ## System
-- CoinGecko 5629/10000 used, month-end projection 10007 (100%), throttle level 2 | by script {'scan': 1776, 'check_liquidity': 261, 'breakout_check': 3530, 'counterfactual_check': 62}
+- CoinGecko 5632/10000 used, month-end projection 9988 (100%), throttle level 1 | by script {'scan': 1778, 'check_liquidity': 262, 'breakout_check': 3530, 'counterfactual_check': 62}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=266)
-- radar-flags.json scan age: 5m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 49
