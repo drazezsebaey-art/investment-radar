@@ -1,9 +1,9 @@
-# Radar digest - 2026-11-17 19:02 UTC
+# Radar digest - 2026-11-17 19:35 UTC
 
 ## Market
-- BTC scenario **C** | price 63683 | wk close 64748 vs 82800 | 50W 75060 (-15.16%) | 1h old
-- Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.65% | ETH/BTC 0.02776 | breadth7d 59% | stables 30d -5.31%
-- Alt risk (BTC.D): **NORMAL**  | 3d -0.19pt | 7d -0.96pt | n=121
+- BTC scenario **C** | price 63768 | wk close 64748 vs 82800 | 50W 75060 (-15.04%) | 1m old
+- Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.42% | ETH/BTC 0.02808 | breadth7d 71% | stables 30d -5.32%
+- Alt risk (BTC.D): **NORMAL**  | 3d -0.25pt | 7d -1.30pt | n=121
 - Gold: PAXG 1m -4.22% | real10y 2.91 (13bp 1m) | USD 1m 0.89% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 35
 - 10y 1w: 31bp = real 31 + breakeven -3 -> **REAL_YIELD_DRIVEN**
 - 10y 1m: 5bp = real 13 + breakeven -15 -> **SMALL_MOVE**
@@ -13,32 +13,32 @@
 
 ## Pre-pump candidates
 - AVAX: [A+E] 7d -14.3%
-- BNB: [A+E] 7d -12.6%
+- BNB: [A+E] 7d -12.8%
 - SOL: [A+E] 7d -11.9%
 - SUI: [A+E] 7d -11.8%
-- LTC: [A+E] 7d -11.2%
+- ZEC: [A+E] 7d -11.5%
+- LTC: [A+E] 7d -11.4%
 - NEAR: [A+E] 7d -10.3%
-- CC: [A+E] 7d -9.8%
-- XRP: [A+E] 7d -8.9%
+- CC: [A+E] 7d -10.0%
 
 ## ETF pipeline (new this run)
-- solana NEW: delay_or_rejection - Solana Slips to Four-Month Low Near $70 as Spot ETF Withdrawals Reach Sixth Straight Week 
-- ripple NEW: filing - Bank of America Joins XRP ETF Holders in New Q3 SEC Filing - U.Today
-- ripple NEW: other - Intesa Sanpaolo Cuts Bitcoin and Ethereum ETF Holdings, Boosts Solana and XRP Exposure - K
-- kucoin-shares NEW: other - Intesa Sanpaolo Cuts Bitcoin and Ethereum ETF Holdings, Boosts Solana and XRP Exposure - K
-- solana NEW: other - Intesa Sanpaolo Cuts Bitcoin and Ethereum ETF Holdings, Boosts Solana and XRP Exposure - K
-- ondo-finance: other - Franklin US Equity Index Tokenized ETF (Ondo) price today, USPXon to USD live price, marke
-- ondo-finance: other - Franklin US Equity Index Tokenized ETF (Ondo) price today, USPXon to USD live price, marke
+- ripple NEW: filing - Bank of America Discloses New XRP ETF Investment in Q3 Filing - Crypto Economy
+- kucoin-shares NEW: other - Avalanche ETF Records Positive Inflows Amid Altcoin ETF Outflows - KuCoin
+- ripple NEW: other - Bank of America Discloses $106,600 XRP ETF Position as Goldman Sachs Lifts Stake to $144 M
+- ripple NEW: other - Intesa Sanpaolo Shifts Crypto ETF Book: Trims Bitcoin, Ethereum, Builds $27M XRP Stake - B
+- solana NEW: other - Intesa Sanpaolo Lifts XRP and Solana ETF Holdings to $108.6M - CryptoRank
+- ripple NEW: other - Intesa Sanpaolo Lifts XRP and Solana ETF Holdings to $108.6M - CryptoRank
+- avalanche-2: other - Avalanche ETF Records Positive Inflows Amid Altcoin ETF Outflows - KuCoin
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc 0.23% | topPos 0.90 | taker 1.00
-- ETH: SHORT_SQUEEZE_24H | OI/mc 0.68% | topPos 0.86 | taker 0.97
-- NEAR: LONG_FLUSH_24H | OI/mc 1.09% | topPos 1.01 | taker 0.98
-- XRP: LONG_FLUSH_24H | OI/mc 0.15% | topPos 0.90 | taker 1.08
-- SEI: SHORT_SQUEEZE_24H | OI/mc 0.74% | topPos 0.83 | taker 0.98
-- TAO: LONG_FLUSH_24H | OI/mc 0.67% | topPos 0.90 | taker 1.05
-- WLD: LONG_FLUSH_24H | OI/mc -% | topPos 0.85 | taker 0.94
-- ADA: LONG_FLUSH_24H | OI/mc 0.42% | topPos 0.85 | taker 0.96
+- BTC: SHORT_SQUEEZE_24H | OI/mc 0.23% | topPos 0.89 | taker 1.02
+- ETH: SHORT_SQUEEZE_24H | OI/mc 0.69% | topPos 0.86 | taker 0.97
+- NEAR: LONG_FLUSH_24H | OI/mc 1.08% | topPos 1.02 | taker 0.97
+- XRP: LONG_FLUSH_24H | OI/mc 0.16% | topPos 0.90 | taker 1.07
+- SEI: SHORT_SQUEEZE_24H | OI/mc 0.75% | topPos 0.83 | taker 1.01
+- TAO: LONG_FLUSH_24H | OI/mc 0.68% | topPos 0.90 | taker 1.04
+- WLD: LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 0.93
+- ADA: LONG_FLUSH_24H | OI/mc 0.42% | topPos 0.85 | taker 0.97
 
 ## Revenue / buyback flags
 - collector-crypt: CHEAP_VS_REVENUE
@@ -48,12 +48,12 @@
 - (23 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 5 | mean 0.5% (0.09R) | in profit 3 | older than 7d 2
-- worst: BEAM -0.69R, PEPE -0.51R, KITE 0.22R | best: KITE 0.22R, FF 0.46R, NIGHT 0.96R
+- open 5 | mean 0.1% (0.06R) | in profit 3 | older than 7d 2
+- worst: BEAM -0.76R, PEPE -0.51R, KITE 0.13R | best: KITE 0.13R, FF 0.38R, NIGHT 1.04R
 
 ## System
-- CoinGecko 5619/10000 used, month-end projection 10039 (100%), throttle level 2 | by script {'scan': 1766, 'check_liquidity': 261, 'breakout_check': 3530, 'counterfactual_check': 62}
+- CoinGecko 5621/10000 used, month-end projection 10042 (100%), throttle level 2 | by script {'scan': 1768, 'check_liquidity': 261, 'breakout_check': 3530, 'counterfactual_check': 62}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=266)
-- radar-flags.json scan age: 2m
-- excluded from radar (pegged/tokenized equity): 50
+- radar-flags.json scan age: 4m
+- excluded from radar (pegged/tokenized equity): 49
