@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-17 14:02 UTC
+# Radar digest - 2026-11-17 14:34 UTC
 
 ## Market
-- BTC scenario **C** | price 64950 | wk close 64748 vs 82800 | 50W 75060 (-13.47%) | 28m old
+- BTC scenario **C** | price 64950 | wk close 64748 vs 82800 | 50W 75060 (-13.47%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.53% | ETH/BTC 0.02807 | breadth7d 60% | stables 30d -5.31%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.36pt | 7d -1.03pt | n=121
 - Gold: PAXG 1m -4.90% | real10y 2.91 (13bp 1m) | USD 1m 0.89% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 24
@@ -12,12 +12,12 @@
 - none
 
 ## Pre-pump candidates
-- INJ: [A+C+E] 7d -5.2%
-- ZEC: [A+E] 7d -17.5%
-- BNB: [A+E] 7d -13.7%
+- ZEC: [A+B+C+E] 7d -17.5%
+- INJ: [A+C+E] 7d -6.9%
+- BNB: [A+E] 7d -13.8%
 - AVAX: [A+E] 7d -13.2%
 - SOL: [A+E] 7d -13.2%
-- LTC: [A+E] 7d -11.8%
+- LTC: [A+E] 7d -12.1%
 - SUI: [A+E] 7d -11.4%
 - NEAR: [A+E] 7d -10.5%
 
@@ -28,14 +28,14 @@
 - dogecoin NEW: other - Dogecoin price: November 5 ETF services termination clarified - ad-hoc-news.de
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc 0.23% | topPos 0.91 | taker 1.02
-- ETH: SHORT_SQUEEZE_24H | OI/mc 0.69% | topPos 0.86 | taker 1.03
-- SOL: SHORT_SQUEEZE_24H | OI/mc 0.66% | topPos 0.87 | taker 0.96
-- SEI: SHORT_SQUEEZE_24H | OI/mc 0.75% | topPos 0.89 | taker 1.02
-- ZEC: SHORT_SQUEEZE_24H | OI/mc 0.92% | topPos 1.14 | taker 1.05
-- XLM: SHORT_SQUEEZE_24H | OI/mc 0.18% | topPos 0.87 | taker 1.03
-- ONDO: SHORT_SQUEEZE_24H | OI/mc 0.62% | topPos 0.69 | taker 0.95
-- AERO: SHORT_SQUEEZE_24H | OI/mc 3.31% | topPos 1.25 | taker 1.01
+- BTC: SHORT_SQUEEZE_24H | OI/mc 0.23% | topPos 0.92 | taker 1.02
+- SOL: SHORT_SQUEEZE_24H | OI/mc 0.66% | topPos 0.88 | taker 0.96
+- SEI: SHORT_SQUEEZE_24H | OI/mc 0.76% | topPos 0.89 | taker 1.07
+- TAO: LONG_FLUSH_24H | OI/mc 0.69% | topPos 0.91 | taker 1.00
+- ZEC: SHORT_SQUEEZE_FUEL, SHORT_SQUEEZE_24H | OI/mc 0.94% | topPos 1.14 | taker 1.06
+- ADA: LONG_FLUSH_24H | OI/mc 0.41% | topPos 0.85 | taker 0.99
+- XLM: SHORT_SQUEEZE_24H | OI/mc 0.18% | topPos 0.87 | taker 0.99
+- ONDO: SHORT_SQUEEZE_24H | OI/mc 0.62% | topPos 0.69 | taker 0.97
 
 ## Revenue / buyback flags
 - collector-crypt: CHEAP_VS_REVENUE
@@ -45,12 +45,12 @@
 - (23 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 6 | mean 0.4% (0.18R) | in profit 3 | older than 7d 2
-- worst: BEAM -0.97R, PEPE -0.22R, INJ -0.12R | best: FF 0.15R, KITE 0.89R, NIGHT 1.34R
+- open 6 | mean 0.3% (0.17R) | in profit 3 | older than 7d 2
+- worst: BEAM -0.96R, PEPE -0.27R, INJ -0.24R | best: FF 0.19R, KITE 1.00R, NIGHT 1.29R
 
 ## System
-- CoinGecko 5543/10000 used, month-end projection 10028 (100%), throttle level 2 | by script {'scan': 1746, 'check_liquidity': 258, 'breakout_check': 3477, 'counterfactual_check': 62}
+- CoinGecko 5545/10000 used, month-end projection 10031 (100%), throttle level 2 | by script {'scan': 1748, 'check_liquidity': 258, 'breakout_check': 3477, 'counterfactual_check': 62}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=264)
-- radar-flags.json scan age: 2m
+- radar-flags.json scan age: 4m
 - excluded from radar (pegged/tokenized equity): 50
