@@ -1,4 +1,4 @@
-# Radar digest - 2026-11-17 12:34 UTC
+# Radar digest - 2026-11-17 13:02 UTC
 
 ## Market
 - BTC scenario **C** | price 64580 | wk close 64748 vs 82800 | 50W 75060 (-13.96%) | 1h old
@@ -12,14 +12,14 @@
 - none
 
 ## Pre-pump candidates
+- INJ: [A+C+E] 7d -5.7%
 - ZEC: [A+E] 7d -17.1%
 - BNB: [A+E] 7d -13.7%
-- SOL: [A+E] 7d -13.1%
-- AVAX: [A+E] 7d -12.7%
+- SOL: [A+E] 7d -13.0%
+- AVAX: [A+E] 7d -12.9%
 - LTC: [A+E] 7d -11.8%
-- SUI: [A+E] 7d -11.7%
+- SUI: [A+E] 7d -11.3%
 - CC: [A+E] 7d -10.9%
-- GNO: [C+E] 7d -10.5%
 
 ## ETF pipeline (new this run)
 - edgex NEW: launch - Park Edge Advisors to Launch the Park Edge Adaptive Risk™ ETF, Opens Section 351 Exchange 
@@ -46,12 +46,12 @@
 - (23 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 6 | mean 1.7% (0.27R) | in profit 4 | older than 7d 2
-- worst: BEAM -0.86R, PEPE -0.24R, FF 0.20R | best: INJ 0.34R, KITE 0.68R, NIGHT 1.50R
+- open 6 | mean 1.4% (0.26R) | in profit 4 | older than 7d 2
+- worst: BEAM -0.90R, PEPE -0.24R, INJ 0.17R | best: FF 0.22R, KITE 0.86R, NIGHT 1.44R
 
 ## System
-- CoinGecko 5536/10000 used, month-end projection 10065 (101%), throttle level 2 | by script {'scan': 1740, 'check_liquidity': 257, 'breakout_check': 3477, 'counterfactual_check': 62}
+- CoinGecko 5538/10000 used, month-end projection 10044 (100%), throttle level 2 | by script {'scan': 1742, 'check_liquidity': 257, 'breakout_check': 3477, 'counterfactual_check': 62}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=264)
-- radar-flags.json scan age: 4m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 50
