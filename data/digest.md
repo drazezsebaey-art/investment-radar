@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-16 23:35 UTC
+# Radar digest - 2026-11-17 00:15 UTC
 
 ## Market
-- BTC scenario **C** | price 65078 | wk close 64748 vs 82800 | 50W 75060 (-13.30%) | 1m old
+- BTC scenario **C** | price 65078 | wk close 64748 vs 82800 | 50W 75060 (-13.30%) | 42m old
 - Alts: **BTC_LED** [-] | BTC.D 56.83% | ETH/BTC 0.02798 | breadth7d 59% | stables 30d -5.16%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.12pt | 7d -0.68pt | n=121
 - Gold: PAXG 1m -4.85% | real10y 2.91 (13bp 1m) | USD 1m 0.89% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 24
@@ -13,13 +13,13 @@
 
 ## Pre-pump candidates
 - ZEC: [A+E] 7d -22.3%
-- AVAX: [A+E] 7d -17.4%
-- SOL: [A+E] 7d -17.0%
+- AVAX: [A+E] 7d -17.6%
+- SOL: [A+E] 7d -17.6%
 - INJ: [A+E] 7d -15.8%
-- SUI: [A+E] 7d -14.7%
+- SUI: [A+E] 7d -14.9%
 - BNB: [A+E] 7d -14.0%
-- LTC: [A+E] 7d -13.2%
-- NEAR: [A+E] 7d -13.1%
+- XRP: [A+E] 7d -13.6%
+- NEAR: [A+E] 7d -13.3%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - National Bank Of Canada Reveals XRP ETF Holdings As XRP Price Setup Improves - TronWeekly
@@ -45,12 +45,12 @@
 - (20 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 1.6% (0.07R) | in profit 2 | older than 7d 2
-- worst: BEAM -0.74R, KITE -0.53R, FF 0.06R | best: KITE -0.53R, FF 0.06R, NIGHT 1.51R
+- open 4 | mean 1.5% (0.08R) | in profit 2 | older than 7d 2
+- worst: BEAM -0.77R, KITE -0.44R, FF 0.08R | best: KITE -0.44R, FF 0.08R, NIGHT 1.47R
 
 ## System
-- CoinGecko 5313/10000 used, month-end projection 9988 (100%), throttle level 1 | by script {'scan': 1680, 'check_liquidity': 249, 'breakout_check': 3324, 'counterfactual_check': 60}
+- CoinGecko 5370/10000 used, month-end projection 10069 (101%), throttle level 2 | by script {'scan': 1682, 'check_liquidity': 250, 'breakout_check': 3376, 'counterfactual_check': 62}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=263)
-- radar-flags.json scan age: 4m
+- radar-flags.json scan age: 15m
 - excluded from radar (pegged/tokenized equity): 49
