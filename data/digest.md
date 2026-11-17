@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-17 17:02 UTC
+# Radar digest - 2026-11-17 17:35 UTC
 
 ## Market
-- BTC scenario **C** | price 64854 | wk close 64748 vs 82800 | 50W 75060 (-13.60%) | 1h old
+- BTC scenario **C** | price 63683 | wk close 64748 vs 82800 | 50W 75060 (-15.16%) | 1m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.65% | ETH/BTC 0.02776 | breadth7d 59% | stables 30d -5.31%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.19pt | 7d -0.96pt | n=121
 - Gold: PAXG 1m -4.22% | real10y 2.91 (13bp 1m) | USD 1m 0.89% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 35
@@ -12,28 +12,33 @@
 - none
 
 ## Pre-pump candidates
-- ZEC: [A+E] 7d -21.3%
-- BNB: [A+E] 7d -15.0%
+- ZEC: [A+E] 7d -15.4%
 - AVAX: [A+E] 7d -14.4%
-- LTC: [A+E] 7d -14.1%
-- CC: [A+E] 7d -13.0%
+- BNB: [A+E] 7d -13.8%
 - SOL: [A+E] 7d -12.6%
 - SUI: [A+E] 7d -12.1%
+- LTC: [A+E] 7d -12.0%
 - NEAR: [A+E] 7d -11.6%
+- CC: [A+E] 7d -11.2%
 
 ## ETF pipeline (new this run)
-- ripple NEW: filing - Intesa Sanpaolo Lifted XRP ETF Holdings to $27.21 Million in Q3 Filing - Cryptonews.net
-- ondo-finance: other - Innovator ZDEK ETF (Ondo Tokenized) Exchanges ZDEKon Markets | Buy & Sell & Trade - Crypto
+- solana NEW: delay_or_rejection - Solana Slips to Four-Month Low Near $70 as Spot ETF Withdrawals Reach Sixth Straight Week 
+- ripple NEW: filing - Bank of America Joins XRP ETF Holders in New Q3 SEC Filing - U.Today
+- ripple NEW: other - Intesa Sanpaolo Cuts Bitcoin and Ethereum ETF Holdings, Boosts Solana and XRP Exposure - K
+- kucoin-shares NEW: other - Intesa Sanpaolo Cuts Bitcoin and Ethereum ETF Holdings, Boosts Solana and XRP Exposure - K
+- solana NEW: other - Intesa Sanpaolo Cuts Bitcoin and Ethereum ETF Holdings, Boosts Solana and XRP Exposure - K
+- ondo-finance: other - Franklin US Equity Index Tokenized ETF (Ondo) price today, USPXon to USD live price, marke
+- ondo-finance: other - Franklin US Equity Index Tokenized ETF (Ondo) price today, USPXon to USD live price, marke
 
 ## Derivatives flags (OKX)
-- SOL: LONG_FLUSH_24H | OI/mc 0.66% | topPos 0.87 | taker 0.95
-- NEAR: LONG_FLUSH_24H | OI/mc 1.09% | topPos 1.02 | taker 0.96
-- XRP: LONG_FLUSH_24H | OI/mc 0.16% | topPos 0.90 | taker 1.07
-- SEI: SHORT_SQUEEZE_24H | OI/mc 0.74% | topPos 0.86 | taker 0.93
-- TAO: LONG_FLUSH_24H | OI/mc 0.67% | topPos 0.90 | taker 0.97
-- ZEC: SHORT_SQUEEZE_24H | OI/mc 0.92% | topPos 1.11 | taker 1.08
+- ETH: SHORT_SQUEEZE_24H | OI/mc 0.69% | topPos 0.86 | taker 0.96
+- NEAR: LONG_FLUSH_24H | OI/mc 1.08% | topPos 1.02 | taker 0.95
+- XRP: LONG_FLUSH_24H | OI/mc 0.16% | topPos 0.91 | taker 1.06
+- SEI: SHORT_SQUEEZE_24H | OI/mc 0.74% | topPos 0.85 | taker 0.94
+- TAO: LONG_FLUSH_24H | OI/mc 0.67% | topPos 0.90 | taker 1.03
+- ZEC: SHORT_SQUEEZE_24H | OI/mc 0.91% | topPos 1.10 | taker 1.07
 - WLD: LONG_FLUSH_24H | OI/mc -% | topPos 0.85 | taker 0.94
-- ADA: LONG_FLUSH_24H | OI/mc 0.41% | topPos 0.84 | taker 1.00
+- ADA: LONG_FLUSH_24H | OI/mc 0.41% | topPos 0.84 | taker 0.96
 
 ## Revenue / buyback flags
 - collector-crypt: CHEAP_VS_REVENUE
@@ -43,12 +48,12 @@
 - (23 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 5 | mean -0.5% (0.08R) | in profit 3 | older than 7d 2
-- worst: BEAM -0.81R, PEPE -0.59R, FF 0.34R | best: FF 0.34R, KITE 0.53R, NIGHT 0.92R
+- open 5 | mean -0.5% (0.06R) | in profit 3 | older than 7d 2
+- worst: BEAM -0.73R, PEPE -0.63R, FF 0.27R | best: FF 0.27R, KITE 0.47R, NIGHT 0.91R
 
 ## System
-- CoinGecko 5556/10000 used, month-end projection 9976 (100%), throttle level 1 | by script {'scan': 1758, 'check_liquidity': 259, 'breakout_check': 3477, 'counterfactual_check': 62}
+- CoinGecko 5559/10000 used, month-end projection 9981 (100%), throttle level 1 | by script {'scan': 1760, 'check_liquidity': 260, 'breakout_check': 3477, 'counterfactual_check': 62}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=266)
-- radar-flags.json scan age: 2m
-- excluded from radar (pegged/tokenized equity): 50
+- radar-flags.json scan age: 5m
+- excluded from radar (pegged/tokenized equity): 49
