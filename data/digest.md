@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-17 11:35 UTC
+# Radar digest - 2026-11-17 12:16 UTC
 
 ## Market
-- BTC scenario **C** | price 64580 | wk close 64748 vs 82800 | 50W 75060 (-13.96%) | 1m old
+- BTC scenario **C** | price 64580 | wk close 64748 vs 82800 | 50W 75060 (-13.96%) | 42m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.53% | ETH/BTC 0.02807 | breadth7d 60% | stables 30d -5.31%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.36pt | 7d -1.03pt | n=121
 - Gold: PAXG 1m -4.90% | real10y 2.91 (13bp 1m) | USD 1m 0.89% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 24
@@ -12,14 +12,14 @@
 - none
 
 ## Pre-pump candidates
+- INJ: [A+C+E] 7d -9.0%
 - ZEC: [A+E] 7d -19.9%
-- SOL: [A+E] 7d -15.7%
-- AVAX: [A+E] 7d -15.2%
 - BNB: [A+E] 7d -15.0%
-- SUI: [A+E] 7d -14.4%
 - LTC: [A+E] 7d -13.8%
-- ZAMA: [B+C] 7d -13.6%
-- XRP: [A+E] 7d -12.2%
+- SOL: [A+E] 7d -13.1%
+- AVAX: [A+E] 7d -12.7%
+- CC: [A+E] 7d -12.2%
+- SUI: [A+E] 7d -11.7%
 
 ## ETF pipeline (new this run)
 - edgex NEW: launch - Park Edge Advisors to Launch the Park Edge Adaptive Risk™ ETF, Opens Section 351 Exchange 
@@ -46,12 +46,12 @@
 - (23 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 5 | mean 1.6% (0.26R) | in profit 3 | older than 7d 2
-- worst: BEAM -0.79R, PEPE -0.27R, FF 0.14R | best: FF 0.14R, KITE 0.76R, NIGHT 1.45R
+- open 6 | mean 1.4% (0.22R) | in profit 3 | older than 7d 2
+- worst: BEAM -0.81R, PEPE -0.20R, INJ 0.00R | best: FF 0.15R, KITE 0.73R, NIGHT 1.46R
 
 ## System
-- CoinGecko 5481/10000 used, month-end projection 9991 (100%), throttle level 1 | by script {'scan': 1736, 'check_liquidity': 256, 'breakout_check': 3427, 'counterfactual_check': 62}
+- CoinGecko 5534/10000 used, month-end projection 10062 (101%), throttle level 2 | by script {'scan': 1738, 'check_liquidity': 257, 'breakout_check': 3477, 'counterfactual_check': 62}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=264)
-- radar-flags.json scan age: 5m
+- radar-flags.json scan age: 15m
 - excluded from radar (pegged/tokenized equity): 50
