@@ -1,4 +1,4 @@
-# Radar digest - 2026-11-17 14:34 UTC
+# Radar digest - 2026-11-17 15:02 UTC
 
 ## Market
 - BTC scenario **C** | price 64950 | wk close 64748 vs 82800 | 50W 75060 (-13.47%) | 1h old
@@ -12,14 +12,14 @@
 - none
 
 ## Pre-pump candidates
-- ZEC: [A+B+C+E] 7d -17.5%
-- INJ: [A+C+E] 7d -6.9%
-- BNB: [A+E] 7d -13.8%
-- AVAX: [A+E] 7d -13.2%
-- SOL: [A+E] 7d -13.2%
-- LTC: [A+E] 7d -12.1%
+- ZEC: [A+B+E] 7d -18.9%
+- BNB: [A+E] 7d -13.5%
+- AVAX: [A+E] 7d -13.0%
+- SOL: [A+E] 7d -12.4%
+- LTC: [A+E] 7d -11.9%
 - SUI: [A+E] 7d -11.4%
-- NEAR: [A+E] 7d -10.5%
+- NEAR: [A+E] 7d -11.1%
+- CC: [A+E] 7d -9.8%
 
 ## ETF pipeline (new this run)
 - kucoin-shares NEW: other - Wells Fargo Doubles Bitcoin ETF Stake to 30,553 BTC Equivalent - KuCoin
@@ -45,12 +45,12 @@
 - (23 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 6 | mean 0.3% (0.17R) | in profit 3 | older than 7d 2
-- worst: BEAM -0.96R, PEPE -0.27R, INJ -0.24R | best: FF 0.19R, KITE 1.00R, NIGHT 1.29R
+- open 6 | mean 0.2% (0.17R) | in profit 3 | older than 7d 2
+- worst: BEAM -0.97R, INJ -0.31R, PEPE -0.29R | best: FF 0.28R, KITE 1.11R, NIGHT 1.20R
 
 ## System
-- CoinGecko 5545/10000 used, month-end projection 10031 (100%), throttle level 2 | by script {'scan': 1748, 'check_liquidity': 258, 'breakout_check': 3477, 'counterfactual_check': 62}
+- CoinGecko 5547/10000 used, month-end projection 10010 (100%), throttle level 2 | by script {'scan': 1750, 'check_liquidity': 258, 'breakout_check': 3477, 'counterfactual_check': 62}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=264)
-- radar-flags.json scan age: 4m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 50
