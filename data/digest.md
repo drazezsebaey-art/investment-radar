@@ -1,4 +1,4 @@
-# Radar digest - 2026-11-17 00:34 UTC
+# Radar digest - 2026-11-17 01:02 UTC
 
 ## Market
 - BTC scenario **C** | price 65078 | wk close 64748 vs 82800 | 50W 75060 (-13.30%) | 1h old
@@ -12,14 +12,14 @@
 - none
 
 ## Pre-pump candidates
-- HYPE: [A+C+E] 7d -7.4%
 - ZEC: [A+E] 7d -22.8%
-- AVAX: [A+E] 7d -17.6%
-- SOL: [A+E] 7d -17.6%
+- AVAX: [A+E] 7d -18.2%
+- SOL: [A+E] 7d -17.5%
 - INJ: [A+E] 7d -15.6%
-- SUI: [A+E] 7d -14.9%
+- SUI: [A+E] 7d -15.4%
 - BNB: [A+E] 7d -14.4%
-- XRP: [A+E] 7d -13.6%
+- NEAR: [A+E] 7d -13.8%
+- LTC: [A+E] 7d -13.6%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - National Bank Of Canada Reveals XRP ETF Holdings As XRP Price Setup Improves - TronWeekly
@@ -45,12 +45,12 @@
 - (20 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 1.7% (0.20R) | in profit 3 | older than 7d 2
-- worst: BEAM -0.79R, FF 0.07R, KITE 0.08R | best: FF 0.07R, KITE 0.08R, NIGHT 1.42R
+- open 4 | mean 1.3% (0.14R) | in profit 2 | older than 7d 2
+- worst: BEAM -0.80R, KITE -0.11R, FF 0.06R | best: KITE -0.11R, FF 0.06R, NIGHT 1.40R
 
 ## System
-- CoinGecko 5372/10000 used, month-end projection 10072 (101%), throttle level 2 | by script {'scan': 1684, 'check_liquidity': 250, 'breakout_check': 3376, 'counterfactual_check': 62}
+- CoinGecko 5374/10000 used, month-end projection 10050 (100%), throttle level 2 | by script {'scan': 1686, 'check_liquidity': 250, 'breakout_check': 3376, 'counterfactual_check': 62}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=263)
-- radar-flags.json scan age: 4m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 49
