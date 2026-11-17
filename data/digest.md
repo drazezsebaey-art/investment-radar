@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-17 12:16 UTC
+# Radar digest - 2026-11-17 12:34 UTC
 
 ## Market
-- BTC scenario **C** | price 64580 | wk close 64748 vs 82800 | 50W 75060 (-13.96%) | 42m old
+- BTC scenario **C** | price 64580 | wk close 64748 vs 82800 | 50W 75060 (-13.96%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.53% | ETH/BTC 0.02807 | breadth7d 60% | stables 30d -5.31%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.36pt | 7d -1.03pt | n=121
 - Gold: PAXG 1m -4.90% | real10y 2.91 (13bp 1m) | USD 1m 0.89% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 24
@@ -12,14 +12,14 @@
 - none
 
 ## Pre-pump candidates
-- INJ: [A+C+E] 7d -9.0%
-- ZEC: [A+E] 7d -19.9%
-- BNB: [A+E] 7d -15.0%
-- LTC: [A+E] 7d -13.8%
+- ZEC: [A+E] 7d -17.1%
+- BNB: [A+E] 7d -13.7%
 - SOL: [A+E] 7d -13.1%
 - AVAX: [A+E] 7d -12.7%
-- CC: [A+E] 7d -12.2%
+- LTC: [A+E] 7d -11.8%
 - SUI: [A+E] 7d -11.7%
+- CC: [A+E] 7d -10.9%
+- GNO: [C+E] 7d -10.5%
 
 ## ETF pipeline (new this run)
 - edgex NEW: launch - Park Edge Advisors to Launch the Park Edge Adaptive Risk™ ETF, Opens Section 351 Exchange 
@@ -29,14 +29,14 @@
 - ripple NEW: other - Seven Major Banks Disclose $29.4M in XRP ETF Holdings in SEC Filings - TradingView
 
 ## Derivatives flags (OKX)
-- ETH: SHORT_SQUEEZE_24H | OI/mc 0.70% | topPos 0.85 | taker 1.01
-- SOL: SHORT_SQUEEZE_24H | OI/mc 0.68% | topPos 0.87 | taker 0.95
-- WLD: LONG_FLUSH_24H | OI/mc -% | topPos 0.85 | taker 0.95
-- ADA: LONG_FLUSH_24H | OI/mc 0.40% | topPos 0.85 | taker 0.96
+- BTC: SHORT_SQUEEZE_24H | OI/mc 0.23% | topPos 0.91 | taker 1.03
+- ETH: SHORT_SQUEEZE_24H | OI/mc 0.69% | topPos 0.86 | taker 1.03
+- SOL: SHORT_SQUEEZE_24H | OI/mc 0.67% | topPos 0.87 | taker 0.96
+- ZEC: SHORT_SQUEEZE_24H | OI/mc 0.92% | topPos 1.13 | taker 1.04
+- XLM: SHORT_SQUEEZE_24H | OI/mc 0.18% | topPos 0.87 | taker 1.07
 - BCH: LONG_FLUSH_24H | OI/mc 0.54% | topPos 0.77 | taker 1.00
-- ONDO: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.69 | taker 0.94
-- ZAMA: SHORT_SQUEEZE_FUEL, SHORT_SQUEEZE_24H | OI/mc 1.66% | topPos 0.75 | taker 1.01
-- TRX: AGGRESSIVE_BUYING | OI/mc 0.09% | topPos 0.89 | taker 1.19
+- ONDO: SHORT_SQUEEZE_24H | OI/mc 0.62% | topPos 0.69 | taker 0.94
+- APT: LONG_FLUSH_24H | OI/mc 0.82% | topPos 0.74 | taker 0.87
 
 ## Revenue / buyback flags
 - collector-crypt: CHEAP_VS_REVENUE
@@ -46,12 +46,12 @@
 - (23 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 6 | mean 1.4% (0.22R) | in profit 3 | older than 7d 2
-- worst: BEAM -0.81R, PEPE -0.20R, INJ 0.00R | best: FF 0.15R, KITE 0.73R, NIGHT 1.46R
+- open 6 | mean 1.7% (0.27R) | in profit 4 | older than 7d 2
+- worst: BEAM -0.86R, PEPE -0.24R, FF 0.20R | best: INJ 0.34R, KITE 0.68R, NIGHT 1.50R
 
 ## System
-- CoinGecko 5534/10000 used, month-end projection 10062 (101%), throttle level 2 | by script {'scan': 1738, 'check_liquidity': 257, 'breakout_check': 3477, 'counterfactual_check': 62}
+- CoinGecko 5536/10000 used, month-end projection 10065 (101%), throttle level 2 | by script {'scan': 1740, 'check_liquidity': 257, 'breakout_check': 3477, 'counterfactual_check': 62}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=264)
-- radar-flags.json scan age: 15m
+- radar-flags.json scan age: 4m
 - excluded from radar (pegged/tokenized equity): 50
