@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-17 05:35 UTC
+# Radar digest - 2026-11-17 06:15 UTC
 
 ## Market
-- BTC scenario **C** | price 65020 | wk close 64748 vs 82800 | 50W 75060 (-13.38%) | 1m old
+- BTC scenario **C** | price 65020 | wk close 64748 vs 82800 | 50W 75060 (-13.38%) | 42m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.68% | ETH/BTC 0.02818 | breadth7d 66% | stables 30d -5.33%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.23pt | 7d -0.98pt | n=121
 - Gold: PAXG 1m -4.74% | real10y 2.91 (13bp 1m) | USD 1m 0.89% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 24
@@ -14,12 +14,12 @@
 ## Pre-pump candidates
 - ZEC: [A+B+E] 7d -19.4%
 - HYPE: [A+C+E] 7d -4.6%
-- AVAX: [A+E] 7d -15.9%
-- SOL: [A+E] 7d -14.8%
+- AVAX: [A+E] 7d -16.1%
+- SOL: [A+E] 7d -15.5%
+- SUI: [A+E] 7d -14.3%
 - BNB: [A+E] 7d -13.6%
-- SUI: [A+E] 7d -13.2%
 - LTC: [A+E] 7d -12.1%
-- XRP: [A+E] 7d -11.6%
+- XRP: [A+E] 7d -11.8%
 
 ## ETF pipeline (new this run)
 - solana NEW: other - Spot Solana ETF Flows Data: Daily Flows by Fund - The Block
@@ -47,12 +47,12 @@
 - (20 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 3.7% (0.43R) | in profit 3 | older than 7d 2
-- worst: BEAM -0.71R, FF 0.05R, KITE 0.70R | best: FF 0.05R, KITE 0.70R, NIGHT 1.68R
+- open 5 | mean 3.0% (0.36R) | in profit 3 | older than 7d 2
+- worst: BEAM -0.74R, PEPE 0.00R, FF 0.06R | best: FF 0.06R, KITE 0.82R, NIGHT 1.68R
 
 ## System
-- CoinGecko 5394/10000 used, month-end projection 9984 (100%), throttle level 1 | by script {'scan': 1704, 'check_liquidity': 252, 'breakout_check': 3376, 'counterfactual_check': 62}
+- CoinGecko 5448/10000 used, month-end projection 10058 (101%), throttle level 2 | by script {'scan': 1706, 'check_liquidity': 253, 'breakout_check': 3427, 'counterfactual_check': 62}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=263)
-- radar-flags.json scan age: 5m
+- radar-flags.json scan age: 15m
 - excluded from radar (pegged/tokenized equity): 50
