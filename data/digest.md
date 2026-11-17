@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-17 15:35 UTC
+# Radar digest - 2026-11-17 16:02 UTC
 
 ## Market
-- BTC scenario **C** | price 64854 | wk close 64748 vs 82800 | 50W 75060 (-13.60%) | 1m old
+- BTC scenario **C** | price 64854 | wk close 64748 vs 82800 | 50W 75060 (-13.60%) | 29m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.65% | ETH/BTC 0.02776 | breadth7d 59% | stables 30d -5.31%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.19pt | 7d -0.96pt | n=121
 - Gold: PAXG 1m -4.90% | real10y 2.91 (13bp 1m) | USD 1m 0.89% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 24
@@ -12,14 +12,14 @@
 - none
 
 ## Pre-pump candidates
-- ZEC: [A+C+E] 7d -18.9%
-- BNB: [A+E] 7d -13.5%
-- AVAX: [A+E] 7d -13.0%
-- SOL: [A+E] 7d -12.4%
-- LTC: [A+E] 7d -11.9%
-- SUI: [A+E] 7d -11.4%
-- NEAR: [A+E] 7d -11.1%
-- TAO: [B+E] 7d -11.0%
+- INJ: [A+C+E] 7d -11.2%
+- ZEC: [A+E] 7d -21.3%
+- AVAX: [A+E] 7d -15.8%
+- NEAR: [A+E] 7d -15.1%
+- BNB: [A+E] 7d -15.0%
+- SUI: [A+E] 7d -14.5%
+- SOL: [A+E] 7d -14.4%
+- LTC: [A+E] 7d -14.1%
 
 ## ETF pipeline (new this run)
 - ripple NEW: filing - Intesa Sanpaolo Lifted XRP ETF Holdings to $27.21 Million in Q3 Filing - Cryptonews.net
@@ -43,12 +43,12 @@
 - (23 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 6 | mean 0.6% (0.20R) | in profit 3 | older than 7d 2
-- worst: BEAM -0.86R, PEPE -0.29R, INJ -0.24R | best: FF 0.28R, KITE 1.14R, NIGHT 1.18R
+- open 5 | mean -0.3% (0.14R) | in profit 3 | older than 7d 2
+- worst: BEAM -0.88R, PEPE -0.56R, FF 0.26R | best: FF 0.26R, KITE 0.81R, NIGHT 1.07R
 
 ## System
-- CoinGecko 5549/10000 used, month-end projection 10013 (100%), throttle level 2 | by script {'scan': 1752, 'check_liquidity': 258, 'breakout_check': 3477, 'counterfactual_check': 62}
+- CoinGecko 5551/10000 used, month-end projection 9992 (100%), throttle level 1 | by script {'scan': 1754, 'check_liquidity': 258, 'breakout_check': 3477, 'counterfactual_check': 62}
 - Trials guard: OK (0 untracked)
-- Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=264)
-- radar-flags.json scan age: 5m
-- excluded from radar (pegged/tokenized equity): 50
+- Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=266)
+- radar-flags.json scan age: 2m
+- excluded from radar (pegged/tokenized equity): 49
