@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-17 17:35 UTC
+# Radar digest - 2026-11-17 18:16 UTC
 
 ## Market
-- BTC scenario **C** | price 63683 | wk close 64748 vs 82800 | 50W 75060 (-15.16%) | 1m old
+- BTC scenario **C** | price 63683 | wk close 64748 vs 82800 | 50W 75060 (-15.16%) | 42m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.65% | ETH/BTC 0.02776 | breadth7d 59% | stables 30d -5.31%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.19pt | 7d -0.96pt | n=121
 - Gold: PAXG 1m -4.22% | real10y 2.91 (13bp 1m) | USD 1m 0.89% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 35
@@ -12,14 +12,14 @@
 - none
 
 ## Pre-pump candidates
+- XPL: [C+E] 7d -15.6%
 - ZEC: [A+E] 7d -15.4%
-- AVAX: [A+E] 7d -14.4%
 - BNB: [A+E] 7d -13.8%
-- SOL: [A+E] 7d -12.6%
-- SUI: [A+E] 7d -12.1%
+- AVAX: [A+E] 7d -13.3%
 - LTC: [A+E] 7d -12.0%
-- NEAR: [A+E] 7d -11.6%
+- SOL: [A+E] 7d -11.7%
 - CC: [A+E] 7d -11.2%
+- SUI: [A+E] 7d -10.9%
 
 ## ETF pipeline (new this run)
 - solana NEW: delay_or_rejection - Solana Slips to Four-Month Low Near $70 as Spot ETF Withdrawals Reach Sixth Straight Week 
@@ -48,12 +48,12 @@
 - (23 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 5 | mean -0.5% (0.06R) | in profit 3 | older than 7d 2
-- worst: BEAM -0.73R, PEPE -0.63R, FF 0.27R | best: FF 0.27R, KITE 0.47R, NIGHT 0.91R
+- open 5 | mean -0.0% (0.09R) | in profit 3 | older than 7d 2
+- worst: BEAM -0.68R, PEPE -0.59R, FF 0.33R | best: FF 0.33R, KITE 0.51R, NIGHT 0.89R
 
 ## System
-- CoinGecko 5559/10000 used, month-end projection 9981 (100%), throttle level 1 | by script {'scan': 1760, 'check_liquidity': 260, 'breakout_check': 3477, 'counterfactual_check': 62}
+- CoinGecko 5615/10000 used, month-end projection 10057 (101%), throttle level 2 | by script {'scan': 1762, 'check_liquidity': 261, 'breakout_check': 3530, 'counterfactual_check': 62}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=266)
-- radar-flags.json scan age: 5m
+- radar-flags.json scan age: 16m
 - excluded from radar (pegged/tokenized equity): 49
