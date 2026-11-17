@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-17 18:34 UTC
+# Radar digest - 2026-11-17 19:02 UTC
 
 ## Market
-- BTC scenario **C** | price 63683 | wk close 64748 vs 82800 | 50W 75060 (-15.16%) | 60m old
+- BTC scenario **C** | price 63683 | wk close 64748 vs 82800 | 50W 75060 (-15.16%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.65% | ETH/BTC 0.02776 | breadth7d 59% | stables 30d -5.31%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.19pt | 7d -0.96pt | n=121
 - Gold: PAXG 1m -4.22% | real10y 2.91 (13bp 1m) | USD 1m 0.89% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 35
@@ -12,14 +12,14 @@
 - none
 
 ## Pre-pump candidates
-- AVAX: [A+E] 7d -13.3%
-- XPL: [C+E] 7d -12.7%
+- AVAX: [A+E] 7d -14.3%
 - BNB: [A+E] 7d -12.6%
-- SOL: [A+E] 7d -11.7%
+- SOL: [A+E] 7d -11.9%
+- SUI: [A+E] 7d -11.8%
 - LTC: [A+E] 7d -11.2%
-- SUI: [A+E] 7d -10.9%
+- NEAR: [A+E] 7d -10.3%
 - CC: [A+E] 7d -9.8%
-- NEAR: [A+E] 7d -9.1%
+- XRP: [A+E] 7d -8.9%
 
 ## ETF pipeline (new this run)
 - solana NEW: delay_or_rejection - Solana Slips to Four-Month Low Near $70 as Spot ETF Withdrawals Reach Sixth Straight Week 
@@ -48,12 +48,12 @@
 - (23 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 5 | mean 1.0% (0.14R) | in profit 3 | older than 7d 2
-- worst: BEAM -0.61R, PEPE -0.46R, KITE 0.40R | best: KITE 0.40R, FF 0.42R, NIGHT 0.97R
+- open 5 | mean 0.5% (0.09R) | in profit 3 | older than 7d 2
+- worst: BEAM -0.69R, PEPE -0.51R, KITE 0.22R | best: KITE 0.22R, FF 0.46R, NIGHT 0.96R
 
 ## System
-- CoinGecko 5617/10000 used, month-end projection 10060 (101%), throttle level 2 | by script {'scan': 1764, 'check_liquidity': 261, 'breakout_check': 3530, 'counterfactual_check': 62}
+- CoinGecko 5619/10000 used, month-end projection 10039 (100%), throttle level 2 | by script {'scan': 1766, 'check_liquidity': 261, 'breakout_check': 3530, 'counterfactual_check': 62}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=266)
-- radar-flags.json scan age: 3m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 50
