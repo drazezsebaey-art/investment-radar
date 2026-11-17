@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-17 04:34 UTC
+# Radar digest - 2026-11-17 05:02 UTC
 
 ## Market
-- BTC scenario **C** | price 65024 | wk close 64748 vs 82800 | 50W 75060 (-13.37%) | 60m old
+- BTC scenario **C** | price 65024 | wk close 64748 vs 82800 | 50W 75060 (-13.37%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.68% | ETH/BTC 0.02818 | breadth7d 66% | stables 30d -5.33%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.23pt | 7d -0.98pt | n=121
 - Gold: PAXG 1m -4.74% | real10y 2.91 (13bp 1m) | USD 1m 0.89% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 24
@@ -12,14 +12,14 @@
 - none
 
 ## Pre-pump candidates
-- ZEC: [A+B+E] 7d -20.4%
-- AVAX: [A+E] 7d -16.5%
-- SOL: [A+E] 7d -15.5%
-- BNB: [A+E] 7d -13.7%
+- ZEC: [A+B+E] 7d -19.4%
+- HYPE: [A+C+E] 7d -4.6%
+- AVAX: [A+E] 7d -15.9%
+- SOL: [A+E] 7d -14.8%
+- BNB: [A+E] 7d -13.6%
 - SUI: [A+E] 7d -13.2%
-- LTC: [A+E] 7d -12.2%
+- LTC: [A+E] 7d -12.1%
 - XRP: [A+E] 7d -11.6%
-- INJ: [A+E] 7d -10.7%
 
 ## ETF pipeline (new this run)
 - ripple NEW: filing - Canada's National Bank invests in XRP via Bitwise XRP ETF filing - 디지털투데이
@@ -44,12 +44,12 @@
 - (20 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 4.5% (0.52R) | in profit 3 | older than 7d 2
-- worst: BEAM -0.72R, FF 0.05R, KITE 0.89R | best: FF 0.05R, KITE 0.89R, NIGHT 1.85R
+- open 4 | mean 4.3% (0.47R) | in profit 3 | older than 7d 2
+- worst: BEAM -0.67R, FF 0.03R, KITE 0.76R | best: FF 0.03R, KITE 0.76R, NIGHT 1.78R
 
 ## System
-- CoinGecko 5389/10000 used, month-end projection 10000 (100%), throttle level 1 | by script {'scan': 1700, 'check_liquidity': 251, 'breakout_check': 3376, 'counterfactual_check': 62}
+- CoinGecko 5392/10000 used, month-end projection 9980 (100%), throttle level 1 | by script {'scan': 1702, 'check_liquidity': 252, 'breakout_check': 3376, 'counterfactual_check': 62}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=263)
-- radar-flags.json scan age: 4m
-- excluded from radar (pegged/tokenized equity): 49
+- radar-flags.json scan age: 2m
+- excluded from radar (pegged/tokenized equity): 50
