@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-17 13:35 UTC
+# Radar digest - 2026-11-17 14:02 UTC
 
 ## Market
-- BTC scenario **C** | price 64950 | wk close 64748 vs 82800 | 50W 75060 (-13.47%) | 1m old
+- BTC scenario **C** | price 64950 | wk close 64748 vs 82800 | 50W 75060 (-13.47%) | 28m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.53% | ETH/BTC 0.02807 | breadth7d 60% | stables 30d -5.31%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.36pt | 7d -1.03pt | n=121
 - Gold: PAXG 1m -4.90% | real10y 2.91 (13bp 1m) | USD 1m 0.89% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 24
@@ -12,14 +12,14 @@
 - none
 
 ## Pre-pump candidates
+- INJ: [A+C+E] 7d -5.2%
 - ZEC: [A+E] 7d -17.5%
 - BNB: [A+E] 7d -13.7%
-- SOL: [A+E] 7d -13.0%
-- AVAX: [A+E] 7d -12.9%
+- AVAX: [A+E] 7d -13.2%
+- SOL: [A+E] 7d -13.2%
 - LTC: [A+E] 7d -11.8%
-- SUI: [A+E] 7d -11.3%
-- CC: [A+E] 7d -10.0%
-- XRP: [A+E] 7d -9.9%
+- SUI: [A+E] 7d -11.4%
+- NEAR: [A+E] 7d -10.5%
 
 ## ETF pipeline (new this run)
 - kucoin-shares NEW: other - Wells Fargo Doubles Bitcoin ETF Stake to 30,553 BTC Equivalent - KuCoin
@@ -45,12 +45,12 @@
 - (23 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 6 | mean 0.8% (0.21R) | in profit 3 | older than 7d 2
-- worst: BEAM -0.93R, PEPE -0.20R, INJ -0.05R | best: FF 0.18R, KITE 0.88R, NIGHT 1.37R
+- open 6 | mean 0.4% (0.18R) | in profit 3 | older than 7d 2
+- worst: BEAM -0.97R, PEPE -0.22R, INJ -0.12R | best: FF 0.15R, KITE 0.89R, NIGHT 1.34R
 
 ## System
-- CoinGecko 5540/10000 used, month-end projection 10047 (100%), throttle level 2 | by script {'scan': 1744, 'check_liquidity': 257, 'breakout_check': 3477, 'counterfactual_check': 62}
+- CoinGecko 5543/10000 used, month-end projection 10028 (100%), throttle level 2 | by script {'scan': 1746, 'check_liquidity': 258, 'breakout_check': 3477, 'counterfactual_check': 62}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=264)
-- radar-flags.json scan age: 5m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 50
