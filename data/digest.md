@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-18 17:02 UTC
+# Radar digest - 2026-11-18 17:35 UTC
 
 ## Market
-- BTC scenario **C** | price 63623 | wk close 64748 vs 82800 | 50W 75060 (-15.24%) | 1h old
+- BTC scenario **C** | price 63488 | wk close 64748 vs 82800 | 50W 75060 (-15.42%) | 1m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.35% | ETH/BTC 0.02787 | breadth7d 68% | stables 30d -5.35%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.38pt | 7d -1.46pt | n=121
 - Gold: PAXG 1m -4.64% | real10y 2.92 (18bp 1m) | USD 1m 0.89% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 35
@@ -9,37 +9,35 @@
 - 10y 1m: 3bp = real 18 + breakeven -14 -> **SMALL_MOVE**
 
 ## Coins in correction (entry_ready first)
-- none
+- KITE: **RESUMING** | +43% impulse, retr 0.21 | OI dd 44% | fund 0.0050 | hold False | inval 0.12456 | OB 0.12669-0.12950
 
 ## Pre-pump candidates
-- INJ: [A+C+E] 7d -11.3%
-- GNO: [A+C+E] 7d -7.6%
-- ZEC: [A+C+E] 7d -4.5%
+- INJ: [A+C+E] 7d -12.4%
+- GNO: [A+C+E] 7d -7.8%
+- ZEC: [A+C+E] 7d -6.1%
 - AVAX: [A+E] 7d -19.5%
-- AKT: [C+E] 7d -16.7%
+- AKT: [C+E] 7d -19.0%
 - SUI: [A+E] 7d -16.1%
-- NEAR: [A+E] 7d -14.4%
-- BNB: [A+E] 7d -14.3%
+- LTC: [A+E] 7d -15.5%
+- BNB: [A+E] 7d -15.4%
 
 ## ETF pipeline (new this run)
-- injective-protocol NEW: launch - Injective Publishes Finance-Native PoS Layer-1 Whitepaper After U.S. INJ ETF Launch - KuCo
-- kucoin-shares NEW: launch - Injective Publishes Finance-Native PoS Layer-1 Whitepaper After U.S. INJ ETF Launch - KuCo
-- ripple NEW: filing - Bank of America XRP ETF Holds Steady in Q3 Filing - The Cryptonomist
-- zcash: filing - Bitwise Files for Zcash ETF With Proposed Texas Stock Exchange Listing - Crypto Economy
-- zcash: filing - Bitwise files for a Zcash ETF to trade on Texas Stock Exchange under ticker ZEC - Pluang
-- zcash: filing - Bitwise Files for Zcash ETF With Proposed Texas Stock Exchange Listing - Crypto Economy
-- zcash: filing - Bitwise files for a Zcash ETF to trade on Texas Stock Exchange under ticker ZEC - Pluang
-- zcash: filing - Key facts: Bitwise ZEC ETF Filing; ZECUSD +10.44%; Cypherpunk Profit - TradingView
+- kucoin-shares NEW: filing - UPDATE: 🇺🇸 Bitwise files for a spot Zcash $ZEC ETF, targ - KuCoin
+- zcash: filing - Bitwise Files to List Spot Zcash ETF on Texas Stock Exchange Under ZEC Ticker - FinanceFee
+- zcash: filing - Bitwise Files for Spot Zcash ETF Listing on Texas Stock Exchange Under ZEC Ticker - Hokane
+- zcash: filing - UPDATE: 🇺🇸 Bitwise files for a spot Zcash $ZEC ETF, targ - KuCoin
+- ondo-finance: other - Innovator ZAUG ETF (Ondo Tokenized) Analytics - CryptoRank
+- zcash: other - ‘More Secret’ Version of Bitcoin: Zcash (ZEC) Eyes Another Wall Street ETF - U.Today
 
 ## Derivatives flags (OKX)
-- ETH: LONG_FLUSH_24H | OI/mc 0.72% | topPos 0.84 | taker 1.01
-- SOL: LONG_FLUSH_24H | OI/mc 0.64% | topPos 0.87 | taker 1.03
-- AVAX: LONG_FLUSH_24H | OI/mc 0.38% | topPos 0.87 | taker 1.03
-- XRP: LONG_FLUSH_24H | OI/mc 0.16% | topPos 0.90 | taker 1.06
-- SEI: LONG_FLUSH_24H | OI/mc 0.77% | topPos 0.84 | taker 1.07
-- TAO: SHORT_SQUEEZE_24H | OI/mc 0.72% | topPos 0.91 | taker 1.09
-- ZEC: LONG_FLUSH_24H | OI/mc 0.87% | topPos 1.05 | taker 1.00
-- WLD: LONG_FLUSH_24H | OI/mc 2.46% | topPos 0.86 | taker 1.04
+- BTC: SHORT_SQUEEZE_24H | OI/mc 0.25% | topPos 0.88 | taker 1.01
+- ETH: SHORT_SQUEEZE_24H | OI/mc 0.71% | topPos 0.84 | taker 0.99
+- SOL: SHORT_SQUEEZE_24H | OI/mc 0.62% | topPos 0.86 | taker 1.03
+- AVAX: LONG_FLUSH_24H | OI/mc 0.37% | topPos 0.87 | taker 1.02
+- XRP: LONG_FLUSH_24H | OI/mc 0.15% | topPos 0.90 | taker 1.03
+- SEI: LONG_FLUSH_24H | OI/mc 0.75% | topPos 0.84 | taker 1.03
+- TAO: SHORT_SQUEEZE_24H | OI/mc 0.71% | topPos 0.91 | taker 1.05
+- ZEC: SHORT_SQUEEZE_24H | OI/mc 0.86% | topPos 1.06 | taker 1.00
 
 ## Revenue / buyback flags
 - collector-crypt: CHEAP_VS_REVENUE
@@ -52,12 +50,12 @@
 - vote: gnosis (GnosisDAO) until 2026-11-24 - GIP-157: Should GnosisDAO withdraw assets from the legacy DAO Safe to 
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 3.9% (0.43R) | in profit 3 | older than 7d 1
-- worst: PEPE -0.63R, FF 0.15R, NIGHT 0.92R | best: FF 0.15R, NIGHT 0.92R, KITE 1.27R
+- open 4 | mean 4.6% (0.53R) | in profit 3 | older than 7d 1
+- worst: PEPE -0.44R, FF 0.09R, NIGHT 0.99R | best: FF 0.09R, NIGHT 0.99R, KITE 1.47R
 
 ## System
-- CoinGecko 5887/10000 used, month-end projection 9973 (100%), throttle level 1 | by script {'scan': 1862, 'check_liquidity': 273, 'breakout_check': 3687, 'counterfactual_check': 65}
+- CoinGecko 5890/10000 used, month-end projection 9978 (100%), throttle level 1 | by script {'scan': 1864, 'check_liquidity': 274, 'breakout_check': 3687, 'counterfactual_check': 65}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=58), H2 SUPPORTED (n=267)
-- radar-flags.json scan age: 2m
+- radar-flags.json scan age: 5m
 - excluded from radar (pegged/tokenized equity): 49
