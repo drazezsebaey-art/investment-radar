@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-18 06:34 UTC
+# Radar digest - 2026-11-18 07:02 UTC
 
 ## Market
-- BTC scenario **C** | price 64769 | wk close 64748 vs 82800 | 50W 75060 (-13.71%) | 60m old
+- BTC scenario **C** | price 64769 | wk close 64748 vs 82800 | 50W 75060 (-13.71%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.48% | ETH/BTC 0.02800 | breadth7d 68% | stables 30d -5.33%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.31pt | 7d -1.26pt | n=121
 - Gold: PAXG 1m -6.11% | real10y 2.92 (18bp 1m) | USD 1m 0.89% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 35
@@ -12,14 +12,14 @@
 - none
 
 ## Pre-pump candidates
-- AVAX: [A+E] 7d -14.9%
+- NEAR: [A+C+E] 7d -7.6%
+- ZEC: [A+C+E] 7d -5.5%
+- AVAX: [A+E] 7d -15.7%
 - BNB: [A+E] 7d -13.1%
 - XPL: [C+E] 7d -12.8%
 - LTC: [A+E] 7d -12.6%
-- SUI: [A+E] 7d -11.6%
-- INJ: [A+E] 7d -11.1%
-- SOL: [A+E] 7d -9.3%
-- XRP: [A+E] 7d -6.5%
+- SUI: [A+E] 7d -11.9%
+- GNO: [C+E] 7d -11.2%
 
 ## ETF pipeline (new this run)
 - solana NEW: other - Solana Rallies 5% on Record ETF Inflows, Coinbase, CoinGecko Deals - TradingView
@@ -44,12 +44,12 @@
 - (23 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 5 | mean -0.1% (0.16R) | in profit 3 | older than 7d 2
-- worst: BEAM -0.70R, PEPE -0.44R, FF 0.17R | best: FF 0.17R, NIGHT 0.85R, KITE 0.90R
+- open 5 | mean 0.0% (0.13R) | in profit 3 | older than 7d 2
+- worst: BEAM -0.72R, PEPE -0.49R, FF 0.23R | best: FF 0.23R, KITE 0.70R, NIGHT 0.94R
 
 ## System
-- CoinGecko 5785/10000 used, month-end projection 10061 (101%), throttle level 2 | by script {'scan': 1820, 'check_liquidity': 268, 'breakout_check': 3634, 'counterfactual_check': 63}
+- CoinGecko 5787/10000 used, month-end projection 10040 (100%), throttle level 2 | by script {'scan': 1822, 'check_liquidity': 268, 'breakout_check': 3634, 'counterfactual_check': 63}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=266)
-- radar-flags.json scan age: 4m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 49
