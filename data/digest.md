@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-18 05:35 UTC
+# Radar digest - 2026-11-18 06:16 UTC
 
 ## Market
-- BTC scenario **C** | price 64769 | wk close 64748 vs 82800 | 50W 75060 (-13.71%) | 1m old
+- BTC scenario **C** | price 64769 | wk close 64748 vs 82800 | 50W 75060 (-13.71%) | 42m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.48% | ETH/BTC 0.02800 | breadth7d 68% | stables 30d -5.33%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.31pt | 7d -1.26pt | n=121
 - Gold: PAXG 1m -6.11% | real10y 2.92 (18bp 1m) | USD 1m 0.89% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 35
@@ -12,14 +12,14 @@
 - none
 
 ## Pre-pump candidates
-- NEAR: [A+C+E] 7d -8.6%
-- AVAX: [A+E] 7d -15.4%
-- INJ: [A+E] 7d -13.8%
-- XPL: [C+E] 7d -13.3%
-- BNB: [A+E] 7d -13.3%
-- LTC: [A+E] 7d -13.1%
-- SUI: [A+E] 7d -12.5%
-- SOL: [A+E] 7d -10.0%
+- NEAR: [A+C+E] 7d -7.2%
+- AVAX: [A+E] 7d -14.9%
+- BNB: [A+E] 7d -13.1%
+- XPL: [C+E] 7d -12.8%
+- LTC: [A+E] 7d -12.6%
+- SUI: [A+E] 7d -11.6%
+- INJ: [A+E] 7d -11.1%
+- SOL: [A+E] 7d -9.3%
 
 ## ETF pipeline (new this run)
 - solana NEW: other - Solana Rallies 5% on Record ETF Inflows, Coinbase, CoinGecko Deals - TradingView
@@ -44,12 +44,12 @@
 - (23 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 5 | mean 0.2% (0.11R) | in profit 3 | older than 7d 2
-- worst: BEAM -0.68R, PEPE -0.41R, FF 0.14R | best: FF 0.14R, KITE 0.49R, NIGHT 1.03R
+- open 5 | mean -0.1% (0.11R) | in profit 3 | older than 7d 2
+- worst: BEAM -0.68R, PEPE -0.41R, FF 0.08R | best: FF 0.08R, KITE 0.62R, NIGHT 0.95R
 
 ## System
-- CoinGecko 5730/10000 used, month-end projection 9989 (100%), throttle level 1 | by script {'scan': 1816, 'check_liquidity': 267, 'breakout_check': 3584, 'counterfactual_check': 63}
+- CoinGecko 5783/10000 used, month-end projection 10057 (101%), throttle level 2 | by script {'scan': 1818, 'check_liquidity': 268, 'breakout_check': 3634, 'counterfactual_check': 63}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=266)
-- radar-flags.json scan age: 5m
+- radar-flags.json scan age: 16m
 - excluded from radar (pegged/tokenized equity): 50
