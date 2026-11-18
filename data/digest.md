@@ -1,4 +1,4 @@
-# Radar digest - 2026-11-18 10:34 UTC
+# Radar digest - 2026-11-18 11:02 UTC
 
 ## Market
 - BTC scenario **C** | price 64700 | wk close 64748 vs 82800 | 50W 75060 (-13.80%) | 1h old
@@ -13,13 +13,13 @@
 
 ## Pre-pump candidates
 - GNO: [A+C+E] 7d -9.5%
-- AVAX: [A+E] 7d -16.8%
+- AVAX: [A+E] 7d -17.6%
 - BNB: [A+E] 7d -13.0%
+- SUI: [A+E] 7d -12.3%
 - LTC: [A+E] 7d -11.8%
-- SUI: [A+E] 7d -11.3%
 - XPL: [C+E] 7d -11.3%
+- SOL: [A+E] 7d -10.7%
 - TAO: [B+E] 7d -10.3%
-- INJ: [A+E] 7d -9.7%
 
 ## ETF pipeline (new this run)
 - collector-crypt NEW: filing - 'They're Going to Try to Package Collectibles Like Pokemon Cards': ETF Analyst as BlackRoc
@@ -45,12 +45,12 @@
 - vote: gnosis (GnosisDAO) until 2026-11-24 - GIP-157: Should GnosisDAO withdraw assets from the legacy DAO Safe to 
 
 ## Paper book (open trades, marked to last scan)
-- open 5 | mean -0.3% (0.18R) | in profit 3 | older than 7d 2
-- worst: BEAM -0.80R, PEPE -0.56R, FF 0.06R | best: FF 0.06R, NIGHT 1.05R, KITE 1.14R
+- open 5 | mean -0.4% (0.17R) | in profit 3 | older than 7d 2
+- worst: BEAM -0.81R, PEPE -0.54R, FF 0.02R | best: FF 0.02R, NIGHT 1.03R, KITE 1.13R
 
 ## System
-- CoinGecko 5802/10000 used, month-end projection 9994 (100%), throttle level 1 | by script {'scan': 1836, 'check_liquidity': 269, 'breakout_check': 3634, 'counterfactual_check': 63}
+- CoinGecko 5804/10000 used, month-end projection 9973 (100%), throttle level 1 | by script {'scan': 1838, 'check_liquidity': 269, 'breakout_check': 3634, 'counterfactual_check': 63}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=266)
-- radar-flags.json scan age: 4m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 49
