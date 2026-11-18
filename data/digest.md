@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-18 17:35 UTC
+# Radar digest - 2026-11-18 18:16 UTC
 
 ## Market
-- BTC scenario **C** | price 63488 | wk close 64748 vs 82800 | 50W 75060 (-15.42%) | 1m old
+- BTC scenario **C** | price 63488 | wk close 64748 vs 82800 | 50W 75060 (-15.42%) | 41m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.35% | ETH/BTC 0.02787 | breadth7d 68% | stables 30d -5.35%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.38pt | 7d -1.46pt | n=121
 - Gold: PAXG 1m -4.64% | real10y 2.92 (18bp 1m) | USD 1m 0.89% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 35
@@ -12,13 +12,13 @@
 - KITE: **RESUMING** | +43% impulse, retr 0.21 | OI dd 44% | fund 0.0050 | hold False | inval 0.12456 | OB 0.12669-0.12950
 
 ## Pre-pump candidates
-- INJ: [A+C+E] 7d -12.4%
+- NEAR: [A+C+E] 7d -14.1%
 - GNO: [A+C+E] 7d -7.8%
 - ZEC: [A+C+E] 7d -6.1%
-- AVAX: [A+E] 7d -19.5%
+- AVAX: [A+E] 7d -19.1%
 - AKT: [C+E] 7d -19.0%
-- SUI: [A+E] 7d -16.1%
 - LTC: [A+E] 7d -15.5%
+- SUI: [A+E] 7d -15.4%
 - BNB: [A+E] 7d -15.4%
 
 ## ETF pipeline (new this run)
@@ -50,12 +50,12 @@
 - vote: gnosis (GnosisDAO) until 2026-11-24 - GIP-157: Should GnosisDAO withdraw assets from the legacy DAO Safe to 
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 4.6% (0.53R) | in profit 3 | older than 7d 1
-- worst: PEPE -0.44R, FF 0.09R, NIGHT 0.99R | best: FF 0.09R, NIGHT 0.99R, KITE 1.47R
+- open 4 | mean 4.9% (0.54R) | in profit 3 | older than 7d 1
+- worst: PEPE -0.54R, FF 0.08R, NIGHT 1.13R | best: FF 0.08R, NIGHT 1.13R, KITE 1.49R
 
 ## System
-- CoinGecko 5890/10000 used, month-end projection 9978 (100%), throttle level 1 | by script {'scan': 1864, 'check_liquidity': 274, 'breakout_check': 3687, 'counterfactual_check': 65}
+- CoinGecko 5944/10000 used, month-end projection 10046 (100%), throttle level 2 | by script {'scan': 1866, 'check_liquidity': 275, 'breakout_check': 3738, 'counterfactual_check': 65}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=58), H2 SUPPORTED (n=267)
-- radar-flags.json scan age: 5m
+- radar-flags.json scan age: 15m
 - excluded from radar (pegged/tokenized equity): 49
