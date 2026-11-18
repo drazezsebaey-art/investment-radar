@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-18 12:16 UTC
+# Radar digest - 2026-11-18 12:34 UTC
 
 ## Market
-- BTC scenario **C** | price 64206 | wk close 64748 vs 82800 | 50W 75060 (-14.46%) | 41m old
+- BTC scenario **C** | price 64206 | wk close 64748 vs 82800 | 50W 75060 (-14.46%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.44% | ETH/BTC 0.02802 | breadth7d 66% | stables 30d -5.34%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.36pt | 7d -1.37pt | n=121
 - Gold: PAXG 1m -6.53% | real10y 2.92 (18bp 1m) | USD 1m 0.89% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 35
@@ -12,14 +12,14 @@
 - none
 
 ## Pre-pump candidates
+- GNO: [A+C+E] 7d -7.6%
+- ZEC: [A+C+E] 7d -4.9%
 - CARDS: [A+C] 7d -23.2%
 - BNB: [A+E] 7d -13.5%
 - LTC: [A+E] 7d -13.2%
-- XPL: [C+E] 7d -12.5%
 - SUI: [A+E] 7d -12.4%
 - RENDER: [D+E] 7d -10.6%
 - CC: [A+E] 7d -8.8%
-- NEAR: [A+E] 7d -7.8%
 
 ## ETF pipeline (new this run)
 - collector-crypt NEW: filing - 'They're Going to Try to Package Collectibles Like Pokemon Cards': ETF Analyst as BlackRoc
@@ -32,14 +32,14 @@
 - chainlink: other - Chainlink Price Forecast: ETF outflows and bearish bias persist, but LINK defends key supp
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc 0.23% | topPos 0.90 | taker 0.99
-- ETH: LONG_FLUSH_24H | OI/mc 0.70% | topPos 0.86 | taker 1.02
-- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.93
+- BTC: LONG_FLUSH_24H | OI/mc 0.23% | topPos 0.90 | taker 1.01
+- ETH: LONG_FLUSH_24H | OI/mc 0.70% | topPos 0.86 | taker 1.01
+- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 0.96
 - SEI: LONG_FLUSH_24H | OI/mc 0.75% | topPos 0.85 | taker 1.03
-- ZEC: LONG_FLUSH_24H | OI/mc 0.89% | topPos 1.07 | taker 1.05
-- ADA: LONG_FLUSH_24H | OI/mc -% | topPos 0.84 | taker 1.01
+- ZEC: LONG_FLUSH_24H | OI/mc 0.89% | topPos 1.06 | taker 1.04
+- WLD: LONG_FLUSH_24H | OI/mc 2.42% | topPos 0.85 | taker 1.00
+- ADA: LONG_FLUSH_24H | OI/mc -% | topPos 0.85 | taker 1.00
 - LINK: LONG_FLUSH_24H | OI/mc -% | topPos 0.93 | taker 0.95
-- XLM: LONG_FLUSH_24H | OI/mc 0.19% | topPos 0.88 | taker 1.07
 
 ## Revenue / buyback flags
 - collector-crypt: CHEAP_VS_REVENUE
@@ -52,12 +52,12 @@
 - vote: gnosis (GnosisDAO) until 2026-11-24 - GIP-157: Should GnosisDAO withdraw assets from the legacy DAO Safe to 
 
 ## Paper book (open trades, marked to last scan)
-- open 5 | mean 1.0% (0.30R) | in profit 3 | older than 7d 2
-- worst: BEAM -0.81R, PEPE -0.49R, FF 0.07R | best: FF 0.07R, KITE 1.35R, NIGHT 1.36R
+- open 5 | mean 0.8% (0.27R) | in profit 3 | older than 7d 2
+- worst: BEAM -0.81R, PEPE -0.49R, FF 0.09R | best: FF 0.09R, KITE 1.26R, NIGHT 1.30R
 
 ## System
-- CoinGecko 5863/10000 used, month-end projection 10051 (100%), throttle level 2 | by script {'scan': 1842, 'check_liquidity': 271, 'breakout_check': 3687, 'counterfactual_check': 63}
+- CoinGecko 5865/10000 used, month-end projection 10054 (100%), throttle level 2 | by script {'scan': 1844, 'check_liquidity': 271, 'breakout_check': 3687, 'counterfactual_check': 63}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=266)
-- radar-flags.json scan age: 15m
+- radar-flags.json scan age: 4m
 - excluded from radar (pegged/tokenized equity): 49
