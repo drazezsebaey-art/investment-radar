@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-18 08:02 UTC
+# Radar digest - 2026-11-18 08:34 UTC
 
 ## Market
-- BTC scenario **C** | price 64659 | wk close 64748 vs 82800 | 50W 75060 (-13.86%) | 28m old
+- BTC scenario **C** | price 64659 | wk close 64748 vs 82800 | 50W 75060 (-13.86%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.51% | ETH/BTC 0.02802 | breadth7d 68% | stables 30d -5.34%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.22pt | 7d -1.16pt | n=121
 - Gold: PAXG 1m -6.11% | real10y 2.92 (18bp 1m) | USD 1m 0.89% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 35
@@ -15,10 +15,10 @@
 - ZEC: [A+C+E] 7d -2.8%
 - AVAX: [A+E] 7d -14.8%
 - BNB: [A+E] 7d -12.4%
-- XPL: [C+E] 7d -12.3%
 - LTC: [A+E] 7d -11.2%
 - SUI: [A+E] 7d -10.3%
 - INJ: [A+E] 7d -10.0%
+- TAO: [B+E] 7d -9.4%
 - SOL: [A+E] 7d -9.0%
 
 ## ETF pipeline (new this run)
@@ -28,14 +28,14 @@
 - dogecoin NEW: other - Dogecoin Price Prediction: Big Wallets Add 290M DOGE as ETF Assets Dip - Coin Gabbar
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc 0.23% | topPos 0.91 | taker 1.01
-- ETH: SHORT_SQUEEZE_24H | OI/mc 0.69% | topPos 0.87 | taker 0.99
-- XRP: SHORT_SQUEEZE_24H | OI/mc 0.16% | topPos 0.91 | taker 1.10
-- SEI: LONG_FLUSH_24H | OI/mc 0.75% | topPos 0.84 | taker 1.02
-- ADA: LONG_FLUSH_24H | OI/mc 0.41% | topPos 0.85 | taker 1.03
-- XLM: LONG_FLUSH_24H | OI/mc 0.18% | topPos 0.89 | taker 1.11
-- UNI: LONG_FLUSH_24H | OI/mc -% | topPos 0.90 | taker 0.95
-- CC: AGGRESSIVE_BUYING, SHORT_SQUEEZE_24H | OI/mc 0.08% | topPos 1.01 | taker 1.18
+- BTC: SHORT_SQUEEZE_24H | OI/mc 0.23% | topPos 0.91 | taker 1.00
+- ETH: SHORT_SQUEEZE_24H | OI/mc 0.70% | topPos 0.87 | taker 0.99
+- SOL: SHORT_SQUEEZE_24H | OI/mc 0.65% | topPos 0.88 | taker 1.01
+- XRP: SHORT_SQUEEZE_24H | OI/mc 0.16% | topPos 0.91 | taker 1.13
+- SEI: LONG_FLUSH_24H | OI/mc 0.76% | topPos 0.84 | taker 1.02
+- TAO: SHORT_SQUEEZE_FUEL | OI/mc 0.70% | topPos 0.92 | taker 1.06
+- ADA: LONG_FLUSH_24H | OI/mc 0.41% | topPos 0.86 | taker 1.03
+- XLM: AGGRESSIVE_BUYING, LONG_FLUSH_24H | OI/mc 0.18% | topPos 0.88 | taker 1.16
 
 ## Revenue / buyback flags
 - collector-crypt: CHEAP_VS_REVENUE
@@ -45,12 +45,12 @@
 - (23 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 5 | mean -0.5% (0.14R) | in profit 3 | older than 7d 2
-- worst: BEAM -0.75R, PEPE -0.41R, FF 0.14R | best: FF 0.14R, NIGHT 0.79R, KITE 0.94R
+- open 5 | mean -0.6% (0.16R) | in profit 3 | older than 7d 2
+- worst: BEAM -0.77R, PEPE -0.46R, FF 0.15R | best: FF 0.15R, NIGHT 0.80R, KITE 1.06R
 
 ## System
-- CoinGecko 5791/10000 used, month-end projection 10023 (100%), throttle level 2 | by script {'scan': 1826, 'check_liquidity': 268, 'breakout_check': 3634, 'counterfactual_check': 63}
+- CoinGecko 5793/10000 used, month-end projection 10026 (100%), throttle level 2 | by script {'scan': 1828, 'check_liquidity': 268, 'breakout_check': 3634, 'counterfactual_check': 63}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=266)
-- radar-flags.json scan age: 2m
+- radar-flags.json scan age: 4m
 - excluded from radar (pegged/tokenized equity): 50
