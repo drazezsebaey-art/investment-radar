@@ -1,9 +1,9 @@
-# Radar digest - 2026-11-18 07:02 UTC
+# Radar digest - 2026-11-18 07:35 UTC
 
 ## Market
-- BTC scenario **C** | price 64769 | wk close 64748 vs 82800 | 50W 75060 (-13.71%) | 1h old
-- Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.48% | ETH/BTC 0.02800 | breadth7d 68% | stables 30d -5.33%
-- Alt risk (BTC.D): **NORMAL**  | 3d -0.31pt | 7d -1.26pt | n=121
+- BTC scenario **C** | price 64659 | wk close 64748 vs 82800 | 50W 75060 (-13.86%) | 1m old
+- Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.51% | ETH/BTC 0.02802 | breadth7d 68% | stables 30d -5.34%
+- Alt risk (BTC.D): **NORMAL**  | 3d -0.22pt | 7d -1.16pt | n=121
 - Gold: PAXG 1m -6.11% | real10y 2.92 (18bp 1m) | USD 1m 0.89% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 35
 - 10y 1w: 26bp = real 29 + breakeven -1 -> **REAL_YIELD_DRIVEN**
 - 10y 1m: 3bp = real 18 + breakeven -14 -> **SMALL_MOVE**
@@ -13,28 +13,29 @@
 
 ## Pre-pump candidates
 - NEAR: [A+C+E] 7d -7.6%
-- ZEC: [A+C+E] 7d -5.5%
+- ZEC: [A+C+E] 7d -6.6%
 - AVAX: [A+E] 7d -15.7%
-- BNB: [A+E] 7d -13.1%
-- XPL: [C+E] 7d -12.8%
-- LTC: [A+E] 7d -12.6%
+- BNB: [A+E] 7d -13.2%
+- LTC: [A+E] 7d -12.9%
+- XPL: [C+E] 7d -12.3%
 - SUI: [A+E] 7d -11.9%
-- GNO: [C+E] 7d -11.2%
+- INJ: [A+E] 7d -11.2%
 
 ## ETF pipeline (new this run)
-- solana NEW: other - Solana Rallies 5% on Record ETF Inflows, Coinbase, CoinGecko Deals - TradingView
-- ripple NEW: other - Bank of America follows Goldman Sachs in expanding XRP ETF holdings - 디지털투데이
-- zcash: filing - Form S-1 Bitwise Zcash ETF For: 17 November By Investing.com - Investing.com UK
+- ripple NEW: other - Wells Fargo’s Bitwise XRP ETF Value Rises 21% as Shares Fall 15% - www.tokenpost.com
+- edgex NEW: other - On the Chain: Bitcoin slips below US$65,000 as ETF exodus deepens and crypto markets remai
+- ripple NEW: other - Wells Fargo's Bitwise XRP ETF holdings rise 21% in value despite fewer shares held by Sept
+- dogecoin NEW: other - Dogecoin Price Prediction: Big Wallets Add 290M DOGE as ETF Assets Dip - Coin Gabbar
 
 ## Derivatives flags (OKX)
 - BTC: SHORT_SQUEEZE_24H | OI/mc 0.23% | topPos 0.91 | taker 1.01
 - ETH: SHORT_SQUEEZE_24H | OI/mc 0.69% | topPos 0.87 | taker 0.99
-- SOL: SHORT_SQUEEZE_24H | OI/mc 0.65% | topPos 0.88 | taker 1.02
+- XRP: SHORT_SQUEEZE_24H | OI/mc 0.16% | topPos 0.91 | taker 1.10
 - SEI: LONG_FLUSH_24H | OI/mc 0.75% | topPos 0.84 | taker 1.02
 - ADA: LONG_FLUSH_24H | OI/mc 0.41% | topPos 0.85 | taker 1.03
-- XLM: LONG_FLUSH_24H | OI/mc 0.18% | topPos 0.89 | taker 1.12
-- UNI: LONG_FLUSH_24H | OI/mc -% | topPos 0.90 | taker 0.96
-- CC: AGGRESSIVE_BUYING, SHORT_SQUEEZE_24H | OI/mc 0.08% | topPos 1.01 | taker 1.17
+- XLM: LONG_FLUSH_24H | OI/mc 0.18% | topPos 0.89 | taker 1.11
+- UNI: LONG_FLUSH_24H | OI/mc -% | topPos 0.90 | taker 0.95
+- CC: AGGRESSIVE_BUYING, SHORT_SQUEEZE_24H | OI/mc 0.08% | topPos 1.01 | taker 1.18
 
 ## Revenue / buyback flags
 - collector-crypt: CHEAP_VS_REVENUE
@@ -44,12 +45,12 @@
 - (23 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 5 | mean 0.0% (0.13R) | in profit 3 | older than 7d 2
-- worst: BEAM -0.72R, PEPE -0.49R, FF 0.23R | best: FF 0.23R, KITE 0.70R, NIGHT 0.94R
+- open 5 | mean -0.1% (0.13R) | in profit 3 | older than 7d 2
+- worst: BEAM -0.74R, PEPE -0.46R, FF 0.16R | best: FF 0.16R, KITE 0.71R, NIGHT 0.96R
 
 ## System
-- CoinGecko 5787/10000 used, month-end projection 10040 (100%), throttle level 2 | by script {'scan': 1822, 'check_liquidity': 268, 'breakout_check': 3634, 'counterfactual_check': 63}
+- CoinGecko 5789/10000 used, month-end projection 10044 (100%), throttle level 2 | by script {'scan': 1824, 'check_liquidity': 268, 'breakout_check': 3634, 'counterfactual_check': 63}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=266)
-- radar-flags.json scan age: 2m
-- excluded from radar (pegged/tokenized equity): 49
+- radar-flags.json scan age: 5m
+- excluded from radar (pegged/tokenized equity): 50
