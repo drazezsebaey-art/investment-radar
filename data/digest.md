@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-18 13:35 UTC
+# Radar digest - 2026-11-18 14:02 UTC
 
 ## Market
-- BTC scenario **C** | price 64158 | wk close 64748 vs 82800 | 50W 75060 (-14.52%) | 1m old
+- BTC scenario **C** | price 64158 | wk close 64748 vs 82800 | 50W 75060 (-14.52%) | 28m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.44% | ETH/BTC 0.02802 | breadth7d 66% | stables 30d -5.34%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.36pt | 7d -1.37pt | n=121
 - Gold: PAXG 1m -6.53% | real10y 2.92 (18bp 1m) | USD 1m 0.89% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 35
@@ -12,14 +12,14 @@
 - none
 
 ## Pre-pump candidates
-- NEAR: [A+C+E] 7d -12.0%
-- RENDER: [C+D+E] 7d -10.5%
-- GNO: [A+C+E] 7d -9.0%
-- AVAX: [A+E] 7d -17.3%
+- NEAR: [A+C+E] 7d -10.8%
 - AKT: [C+E] 7d -14.2%
 - LTC: [A+E] 7d -13.7%
 - BNB: [A+E] 7d -13.5%
-- SUI: [A+E] 7d -13.3%
+- SUI: [A+E] 7d -12.9%
+- RENDER: [D+E] 7d -10.5%
+- CC: [A+E] 7d -10.4%
+- XRP: [A+E] 7d -6.7%
 
 ## ETF pipeline (new this run)
 - ripple NEW: filing - Bank of America Joins XRP ETF Holders in New Q3 SEC Filing - TradingView
@@ -52,12 +52,12 @@
 - vote: gnosis (GnosisDAO) until 2026-11-24 - GIP-157: Should GnosisDAO withdraw assets from the legacy DAO Safe to 
 
 ## Paper book (open trades, marked to last scan)
-- open 5 | mean 1.5% (0.36R) | in profit 3 | older than 7d 2
-- worst: BEAM -0.84R, PEPE -0.41R, FF 0.27R | best: FF 0.27R, NIGHT 1.28R, KITE 1.49R
+- open 5 | mean 1.5% (0.38R) | in profit 3 | older than 7d 2
+- worst: BEAM -0.85R, PEPE -0.49R, FF 0.23R | best: FF 0.23R, NIGHT 1.34R, KITE 1.66R
 
 ## System
-- CoinGecko 5869/10000 used, month-end projection 10037 (100%), throttle level 2 | by script {'scan': 1848, 'check_liquidity': 271, 'breakout_check': 3687, 'counterfactual_check': 63}
+- CoinGecko 5871/10000 used, month-end projection 10017 (100%), throttle level 2 | by script {'scan': 1850, 'check_liquidity': 271, 'breakout_check': 3687, 'counterfactual_check': 63}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=266)
-- radar-flags.json scan age: 5m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 49
