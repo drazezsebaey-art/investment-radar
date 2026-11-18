@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-18 16:34 UTC
+# Radar digest - 2026-11-18 17:02 UTC
 
 ## Market
-- BTC scenario **C** | price 63623 | wk close 64748 vs 82800 | 50W 75060 (-15.24%) | 60m old
+- BTC scenario **C** | price 63623 | wk close 64748 vs 82800 | 50W 75060 (-15.24%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.35% | ETH/BTC 0.02787 | breadth7d 68% | stables 30d -5.35%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.38pt | 7d -1.46pt | n=121
 - Gold: PAXG 1m -4.64% | real10y 2.92 (18bp 1m) | USD 1m 0.89% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 35
@@ -15,11 +15,11 @@
 - INJ: [A+C+E] 7d -11.3%
 - GNO: [A+C+E] 7d -7.6%
 - ZEC: [A+C+E] 7d -4.5%
-- AVAX: [A+E] 7d -18.2%
+- AVAX: [A+E] 7d -19.5%
 - AKT: [C+E] 7d -16.7%
+- SUI: [A+E] 7d -16.1%
+- NEAR: [A+E] 7d -14.4%
 - BNB: [A+E] 7d -14.3%
-- LTC: [A+E] 7d -14.1%
-- SUI: [A+E] 7d -14.1%
 
 ## ETF pipeline (new this run)
 - injective-protocol NEW: launch - Injective Publishes Finance-Native PoS Layer-1 Whitepaper After U.S. INJ ETF Launch - KuCo
@@ -52,12 +52,12 @@
 - vote: gnosis (GnosisDAO) until 2026-11-24 - GIP-157: Should GnosisDAO withdraw assets from the legacy DAO Safe to 
 
 ## Paper book (open trades, marked to last scan)
-- open 5 | mean -0.9% (0.18R) | in profit 3 | older than 7d 2
-- worst: BEAM -0.97R, PEPE -0.61R, FF 0.10R | best: FF 0.10R, NIGHT 1.03R, KITE 1.34R
+- open 4 | mean 3.9% (0.43R) | in profit 3 | older than 7d 1
+- worst: PEPE -0.63R, FF 0.15R, NIGHT 0.92R | best: FF 0.15R, NIGHT 0.92R, KITE 1.27R
 
 ## System
-- CoinGecko 5885/10000 used, month-end projection 9993 (100%), throttle level 1 | by script {'scan': 1860, 'check_liquidity': 273, 'breakout_check': 3687, 'counterfactual_check': 65}
+- CoinGecko 5887/10000 used, month-end projection 9973 (100%), throttle level 1 | by script {'scan': 1862, 'check_liquidity': 273, 'breakout_check': 3687, 'counterfactual_check': 65}
 - Trials guard: OK (0 untracked)
-- Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=266)
-- radar-flags.json scan age: 4m
+- Hypotheses: H1 NOT_SUPPORTED (n=58), H2 SUPPORTED (n=267)
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 49
