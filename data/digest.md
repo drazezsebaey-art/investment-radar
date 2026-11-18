@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-18 07:35 UTC
+# Radar digest - 2026-11-18 08:02 UTC
 
 ## Market
-- BTC scenario **C** | price 64659 | wk close 64748 vs 82800 | 50W 75060 (-13.86%) | 1m old
+- BTC scenario **C** | price 64659 | wk close 64748 vs 82800 | 50W 75060 (-13.86%) | 28m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.51% | ETH/BTC 0.02802 | breadth7d 68% | stables 30d -5.34%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.22pt | 7d -1.16pt | n=121
 - Gold: PAXG 1m -6.11% | real10y 2.92 (18bp 1m) | USD 1m 0.89% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 35
@@ -12,14 +12,14 @@
 - none
 
 ## Pre-pump candidates
-- NEAR: [A+C+E] 7d -7.6%
-- ZEC: [A+C+E] 7d -6.6%
-- AVAX: [A+E] 7d -15.7%
-- BNB: [A+E] 7d -13.2%
-- LTC: [A+E] 7d -12.9%
+- ZEC: [A+C+E] 7d -2.8%
+- AVAX: [A+E] 7d -14.8%
+- BNB: [A+E] 7d -12.4%
 - XPL: [C+E] 7d -12.3%
-- SUI: [A+E] 7d -11.9%
-- INJ: [A+E] 7d -11.2%
+- LTC: [A+E] 7d -11.2%
+- SUI: [A+E] 7d -10.3%
+- INJ: [A+E] 7d -10.0%
+- SOL: [A+E] 7d -9.0%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - Wells Fargo’s Bitwise XRP ETF Value Rises 21% as Shares Fall 15% - www.tokenpost.com
@@ -45,12 +45,12 @@
 - (23 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 5 | mean -0.1% (0.13R) | in profit 3 | older than 7d 2
-- worst: BEAM -0.74R, PEPE -0.46R, FF 0.16R | best: FF 0.16R, KITE 0.71R, NIGHT 0.96R
+- open 5 | mean -0.5% (0.14R) | in profit 3 | older than 7d 2
+- worst: BEAM -0.75R, PEPE -0.41R, FF 0.14R | best: FF 0.14R, NIGHT 0.79R, KITE 0.94R
 
 ## System
-- CoinGecko 5789/10000 used, month-end projection 10044 (100%), throttle level 2 | by script {'scan': 1824, 'check_liquidity': 268, 'breakout_check': 3634, 'counterfactual_check': 63}
+- CoinGecko 5791/10000 used, month-end projection 10023 (100%), throttle level 2 | by script {'scan': 1826, 'check_liquidity': 268, 'breakout_check': 3634, 'counterfactual_check': 63}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=266)
-- radar-flags.json scan age: 5m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 50
