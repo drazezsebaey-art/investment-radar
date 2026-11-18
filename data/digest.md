@@ -1,9 +1,9 @@
-# Radar digest - 2026-11-18 19:02 UTC
+# Radar digest - 2026-11-18 19:35 UTC
 
 ## Market
-- BTC scenario **C** | price 63488 | wk close 64748 vs 82800 | 50W 75060 (-15.42%) | 1h old
-- Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.35% | ETH/BTC 0.02787 | breadth7d 68% | stables 30d -5.35%
-- Alt risk (BTC.D): **NORMAL**  | 3d -0.38pt | 7d -1.46pt | n=121
+- BTC scenario **C** | price 62793 | wk close 64748 vs 82800 | 50W 75060 (-16.34%) | 1m old
+- Alts: **ROTATION_BUILDING** [BTC_DOM_FALLING_BELOW_60, BREADTH_75] | BTC.D 56.18% | ETH/BTC 0.02797 | breadth7d 76% | stables 30d -5.35%
+- Alt risk (BTC.D): **NORMAL**  | 3d -0.55pt | 7d -1.63pt | n=121
 - Gold: PAXG 1m -4.64% | real10y 2.92 (18bp 1m) | USD 1m 0.89% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 35
 - 10y 1w: 26bp = real 29 + breakeven -1 -> **REAL_YIELD_DRIVEN**
 - 10y 1m: 3bp = real 18 + breakeven -14 -> **SMALL_MOVE**
@@ -12,32 +12,34 @@
 - KITE: **RESUMING** | +43% impulse, retr 0.21 | OI dd 44% | fund 0.0050 | hold False | inval 0.12456 | OB 0.12669-0.12950
 
 ## Pre-pump candidates
+- SUI: [A+B+E] 7d -14.7%
 - SOL: [A+C+E] 7d -13.5%
+- NEAR: [A+C+E] 7d -13.0%
 - GNO: [A+C+E] 7d -8.7%
+- ZEC: [A+C+E] 7d -8.6%
 - AVAX: [A+E] 7d -19.0%
 - AKT: [C+E] 7d -17.2%
 - BNB: [A+E] 7d -15.0%
-- SUI: [A+E] 7d -14.7%
-- LTC: [A+E] 7d -14.2%
-- NEAR: [A+E] 7d -13.0%
 
 ## ETF pipeline (new this run)
-- kucoin-shares NEW: filing - UPDATE: 🇺🇸 Bitwise files for a spot Zcash $ZEC ETF, targ - KuCoin
+- kucoin-shares NEW: filing - BITWISE FILES AN S-1 WITH THE SEC FOR A SPOT ZCASH $ZEC ETF - KuCoin
+- zcash: filing - Bitwise Files for a Zcash ETF on the Texas Stock Exchange - Yahoo Finance
+- zcash: filing - Bitwise Files for a Zcash ETF on the Texas Stock Exchange - Yahoo Finance
+- zcash: filing - UPDATE: 🇺🇸 Bitwise files for a spot Zcash $ZEC ETF, targ - KuCoin
 - zcash: filing - Bitwise Files to List Spot Zcash ETF on Texas Stock Exchange Under ZEC Ticker - FinanceFee
 - zcash: filing - Bitwise Files for Spot Zcash ETF Listing on Texas Stock Exchange Under ZEC Ticker - Hokane
-- zcash: filing - UPDATE: 🇺🇸 Bitwise files for a spot Zcash $ZEC ETF, targ - KuCoin
-- ondo-finance: other - Innovator ZAUG ETF (Ondo Tokenized) Analytics - CryptoRank
+- zcash: filing - BITWISE FILES AN S-1 WITH THE SEC FOR A SPOT ZCASH $ZEC ETF - KuCoin
 - zcash: other - ‘More Secret’ Version of Bitcoin: Zcash (ZEC) Eyes Another Wall Street ETF - U.Today
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc 0.24% | topPos 0.89 | taker 1.04
-- ETH: SHORT_SQUEEZE_24H | OI/mc 0.71% | topPos 0.85 | taker 0.99
-- SOL: SHORT_SQUEEZE_24H | OI/mc 0.62% | topPos 0.86 | taker 1.03
-- AVAX: LONG_FLUSH_24H | OI/mc 0.37% | topPos 0.87 | taker 1.05
+- BTC: LONG_FLUSH_24H | OI/mc 0.24% | topPos 0.89 | taker 1.04
+- ETH: LONG_FLUSH_24H | OI/mc 0.71% | topPos 0.85 | taker 0.99
+- AVAX: LONG_FLUSH_24H | OI/mc 0.38% | topPos 0.87 | taker 1.07
 - XRP: LONG_FLUSH_24H | OI/mc 0.15% | topPos 0.90 | taker 1.03
-- SUI: LONG_FLUSH_24H | OI/mc 0.81% | topPos 0.81 | taker 1.03
-- SEI: LONG_FLUSH_24H | OI/mc 0.76% | topPos 0.84 | taker 0.97
-- TAO: SHORT_SQUEEZE_24H | OI/mc 0.71% | topPos 0.92 | taker 1.07
+- SUI: SHORT_SQUEEZE_FUEL, LONG_FLUSH_24H | OI/mc 0.84% | topPos 0.83 | taker 1.04
+- SEI: LONG_FLUSH_24H | OI/mc 0.76% | topPos 0.84 | taker 0.98
+- TAO: SHORT_SQUEEZE_24H | OI/mc 0.71% | topPos 0.91 | taker 1.07
+- ZEC: LONG_FLUSH_24H | OI/mc 0.86% | topPos 1.04 | taker 1.01
 
 ## Revenue / buyback flags
 - collector-crypt: CHEAP_VS_REVENUE
@@ -50,12 +52,12 @@
 - vote: gnosis (GnosisDAO) until 2026-11-24 - GIP-157: Should GnosisDAO withdraw assets from the legacy DAO Safe to 
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 5.0% (0.57R) | in profit 3 | older than 7d 1
-- worst: PEPE -0.49R, FF 0.13R, NIGHT 1.05R | best: FF 0.13R, NIGHT 1.05R, KITE 1.58R
+- open 4 | mean 4.8% (0.56R) | in profit 3 | older than 7d 1
+- worst: PEPE -0.46R, FF 0.08R, NIGHT 1.03R | best: FF 0.08R, NIGHT 1.03R, KITE 1.57R
 
 ## System
-- CoinGecko 5948/10000 used, month-end projection 10029 (100%), throttle level 2 | by script {'scan': 1870, 'check_liquidity': 275, 'breakout_check': 3738, 'counterfactual_check': 65}
+- CoinGecko 5950/10000 used, month-end projection 10033 (100%), throttle level 2 | by script {'scan': 1872, 'check_liquidity': 275, 'breakout_check': 3738, 'counterfactual_check': 65}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=58), H2 SUPPORTED (n=267)
-- radar-flags.json scan age: 2m
+- radar-flags.json scan age: 5m
 - excluded from radar (pegged/tokenized equity): 48
