@@ -1,25 +1,25 @@
-# Radar digest - 2026-11-18 22:02 UTC
+# Radar digest - 2026-11-18 22:34 UTC
 
 ## Market
-- BTC scenario **C** | price 62481 | wk close 64748 vs 82800 | 50W 75060 (-16.76%) | 28m old
+- BTC scenario **C** | price 62481 | wk close 64748 vs 82800 | 50W 75060 (-16.76%) | 60m old
 - Alts: **ROTATION_BUILDING** [BTC_DOM_FALLING_BELOW_60, BREADTH_75] | BTC.D 56.18% | ETH/BTC 0.02797 | breadth7d 76% | stables 30d -5.35%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.55pt | 7d -1.63pt | n=121
-- Gold: PAXG 1m -4.64% | real10y 2.92 (18bp 1m) | USD 1m 0.89% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 35
-- 10y 1w: 26bp = real 29 + breakeven -1 -> **REAL_YIELD_DRIVEN**
-- 10y 1m: 3bp = real 18 + breakeven -14 -> **SMALL_MOVE**
+- Gold: PAXG 1m -4.85% | real10y 2.89 (9bp 1m) | USD 1m 0.89% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 35
+- 10y 1w: 22bp = real 23 + breakeven -1 -> **REAL_YIELD_DRIVEN**
+- 10y 1m: -5bp = real 9 + breakeven -16 -> **SMALL_MOVE**
 
 ## Coins in correction (entry_ready first)
 - KITE: **RESUMING** | +43% impulse, retr 0.23 | OI dd 44% | fund 0.0050 | hold False | inval 0.12669 | OB 0.12669-0.12950
 
 ## Pre-pump candidates
 - NEAR: [A+C+E] 7d -12.3%
-- GNO: [A+C+E] 7d -10.4%
+- GNO: [A+C+E] 7d -10.7%
 - AVAX: [A+E] 7d -19.1%
 - AKT: [C+E] 7d -17.1%
-- BNB: [A+E] 7d -15.7%
-- Q: [C+E] 7d -15.5%
+- Q: [C+E] 7d -16.4%
+- BNB: [A+E] 7d -16.0%
 - SUI: [A+E] 7d -14.7%
-- LTC: [A+E] 7d -14.2%
+- LTC: [A+E] 7d -14.3%
 
 ## ETF pipeline (new this run)
 - ripple NEW: filing - Bank of America reveals $106K stake in XRP ETF in Q3 SEC filing amid growing institutional
@@ -32,14 +32,14 @@
 - zcash: other - Bitwise Seeks Texas Stock Exchange Listing for Zcash ETF - Finanzen.net
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc 0.24% | topPos 0.88 | taker 1.02
-- ETH: LONG_FLUSH_24H | OI/mc 0.71% | topPos 0.85 | taker 0.98
+- BTC: LONG_FLUSH_24H | OI/mc 0.24% | topPos 0.88 | taker 0.97
+- ETH: LONG_FLUSH_24H | OI/mc 0.71% | topPos 0.85 | taker 0.97
 - AVAX: LONG_FLUSH_24H | OI/mc 0.38% | topPos 0.87 | taker 1.07
-- XRP: LONG_FLUSH_24H | OI/mc 0.15% | topPos 0.90 | taker 1.02
-- SUI: LONG_FLUSH_24H | OI/mc 0.84% | topPos 0.83 | taker 1.03
-- SEI: LONG_FLUSH_24H | OI/mc 0.76% | topPos 0.84 | taker 0.96
-- TAO: SHORT_SQUEEZE_24H | OI/mc 0.71% | topPos 0.92 | taker 1.05
-- ZEC: LONG_FLUSH_24H | OI/mc 0.85% | topPos 1.03 | taker 1.01
+- XRP: LONG_FLUSH_24H | OI/mc 0.15% | topPos 0.90 | taker 1.01
+- SUI: LONG_FLUSH_24H | OI/mc 0.84% | topPos 0.82 | taker 1.03
+- SEI: LONG_FLUSH_24H | OI/mc 0.76% | topPos 0.84 | taker 0.99
+- TAO: LONG_FLUSH_24H | OI/mc 0.72% | topPos 0.92 | taker 1.05
+- ZEC: LONG_FLUSH_24H | OI/mc 0.87% | topPos 1.03 | taker 1.01
 
 ## Revenue / buyback flags
 - collector-crypt: CHEAP_VS_REVENUE
@@ -52,12 +52,12 @@
 - vote: gnosis (GnosisDAO) until 2026-11-24 - GIP-157: Should GnosisDAO withdraw assets from the legacy DAO Safe to 
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 4.1% (0.46R) | in profit 3 | older than 7d 1
-- worst: PEPE -0.56R, FF 0.06R, NIGHT 1.00R | best: FF 0.06R, NIGHT 1.00R, KITE 1.35R
+- open 4 | mean 4.6% (0.52R) | in profit 3 | older than 7d 1
+- worst: PEPE -0.54R, FF 0.07R, NIGHT 1.04R | best: FF 0.07R, NIGHT 1.04R, KITE 1.51R
 
 ## System
-- CoinGecko 5962/10000 used, month-end projection 9983 (100%), throttle level 1 | by script {'scan': 1882, 'check_liquidity': 277, 'breakout_check': 3738, 'counterfactual_check': 65}
+- CoinGecko 5964/10000 used, month-end projection 9986 (100%), throttle level 1 | by script {'scan': 1884, 'check_liquidity': 277, 'breakout_check': 3738, 'counterfactual_check': 65}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=58), H2 SUPPORTED (n=267)
-- radar-flags.json scan age: 2m
+- radar-flags.json scan age: 4m
 - excluded from radar (pegged/tokenized equity): 48
