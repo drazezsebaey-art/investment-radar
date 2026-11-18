@@ -1,4 +1,4 @@
-# Radar digest - 2026-11-18 14:35 UTC
+# Radar digest - 2026-11-18 15:02 UTC
 
 ## Market
 - BTC scenario **C** | price 64158 | wk close 64748 vs 82800 | 50W 75060 (-14.52%) | 1h old
@@ -16,10 +16,10 @@
 - GNO: [A+C+E] 7d -6.9%
 - ZEC: [A+C+E] 7d -5.0%
 - AKT: [C+E] 7d -14.2%
+- SUI: [A+E] 7d -13.6%
 - BNB: [A+E] 7d -13.6%
 - LTC: [A+E] 7d -13.4%
 - XPL: [C+E] 7d -13.0%
-- SUI: [A+E] 7d -12.9%
 
 ## ETF pipeline (new this run)
 - ripple NEW: filing - Bank of America Joins XRP ETF Holders in New Q3 SEC Filing - TradingView
@@ -52,12 +52,12 @@
 - vote: gnosis (GnosisDAO) until 2026-11-24 - GIP-157: Should GnosisDAO withdraw assets from the legacy DAO Safe to 
 
 ## Paper book (open trades, marked to last scan)
-- open 5 | mean 1.2% (0.36R) | in profit 3 | older than 7d 2
-- worst: BEAM -0.88R, PEPE -0.46R, FF 0.17R | best: FF 0.17R, NIGHT 1.35R, KITE 1.62R
+- open 5 | mean 0.8% (0.35R) | in profit 3 | older than 7d 2
+- worst: BEAM -0.87R, PEPE -0.49R, FF 0.21R | best: FF 0.21R, NIGHT 1.16R, KITE 1.73R
 
 ## System
-- CoinGecko 5873/10000 used, month-end projection 10020 (100%), throttle level 2 | by script {'scan': 1852, 'check_liquidity': 271, 'breakout_check': 3687, 'counterfactual_check': 63}
+- CoinGecko 5876/10000 used, month-end projection 10002 (100%), throttle level 2 | by script {'scan': 1854, 'check_liquidity': 272, 'breakout_check': 3687, 'counterfactual_check': 63}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=266)
-- radar-flags.json scan age: 4m
-- excluded from radar (pegged/tokenized equity): 49
+- radar-flags.json scan age: 2m
+- excluded from radar (pegged/tokenized equity): 48
