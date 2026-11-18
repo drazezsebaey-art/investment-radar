@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-18 15:35 UTC
+# Radar digest - 2026-11-18 16:02 UTC
 
 ## Market
-- BTC scenario **C** | price 63623 | wk close 64748 vs 82800 | 50W 75060 (-15.24%) | 1m old
+- BTC scenario **C** | price 63623 | wk close 64748 vs 82800 | 50W 75060 (-15.24%) | 28m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.35% | ETH/BTC 0.02787 | breadth7d 68% | stables 30d -5.35%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.38pt | 7d -1.46pt | n=121
 - Gold: PAXG 1m -6.53% | real10y 2.92 (18bp 1m) | USD 1m 0.89% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 35
@@ -12,14 +12,14 @@
 - none
 
 ## Pre-pump candidates
-- NEAR: [A+C+E] 7d -12.6%
-- SOL: [A+C+E] 7d -12.3%
-- INJ: [A+C+E] 7d -8.9%
+- ZEC: [A+C+E] 7d -6.2%
 - GNO: [A+C+E] 7d -6.1%
-- AVAX: [A+E] 7d -17.6%
+- AVAX: [A+E] 7d -18.2%
 - AKT: [C+E] 7d -15.3%
+- SUI: [A+E] 7d -14.1%
 - LTC: [A+E] 7d -14.0%
 - BNB: [A+E] 7d -13.9%
+- NEAR: [A+E] 7d -13.5%
 
 ## ETF pipeline (new this run)
 - injective-protocol NEW: launch - Injective Publishes Finance-Native PoS Layer-1 Whitepaper After U.S. INJ ETF Launch - KuCo
@@ -52,12 +52,12 @@
 - vote: gnosis (GnosisDAO) until 2026-11-24 - GIP-157: Should GnosisDAO withdraw assets from the legacy DAO Safe to 
 
 ## Paper book (open trades, marked to last scan)
-- open 5 | mean -0.1% (0.27R) | in profit 3 | older than 7d 2
-- worst: BEAM -0.90R, PEPE -0.51R, FF 0.08R | best: FF 0.08R, NIGHT 1.10R, KITE 1.57R
+- open 5 | mean -0.4% (0.25R) | in profit 3 | older than 7d 2
+- worst: BEAM -0.94R, PEPE -0.56R, FF 0.07R | best: FF 0.07R, NIGHT 1.08R, KITE 1.59R
 
 ## System
-- CoinGecko 5878/10000 used, month-end projection 10005 (100%), throttle level 2 | by script {'scan': 1856, 'check_liquidity': 272, 'breakout_check': 3687, 'counterfactual_check': 63}
+- CoinGecko 5883/10000 used, month-end projection 9990 (100%), throttle level 1 | by script {'scan': 1858, 'check_liquidity': 273, 'breakout_check': 3687, 'counterfactual_check': 65}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=266)
-- radar-flags.json scan age: 5m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 49
