@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-17 23:35 UTC
+# Radar digest - 2026-11-18 00:16 UTC
 
 ## Market
-- BTC scenario **C** | price 64911 | wk close 64748 vs 82800 | 50W 75060 (-13.52%) | 1m old
+- BTC scenario **C** | price 64911 | wk close 64748 vs 82800 | 50W 75060 (-13.52%) | 42m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.52% | ETH/BTC 0.02806 | breadth7d 70% | stables 30d -5.31%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.44pt | 7d -1.19pt | n=121
 - Gold: PAXG 1m -4.55% | real10y 2.92 (18bp 1m) | USD 1m 0.89% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 35
@@ -13,13 +13,13 @@
 
 ## Pre-pump candidates
 - ZEC: [A+C+E] 7d -10.6%
-- AVAX: [A+E] 7d -13.3%
+- INJ: [A+C+E] 7d -10.3%
+- NEAR: [A+C+E] 7d -4.3%
+- AVAX: [A+E] 7d -12.6%
 - BNB: [A+E] 7d -12.4%
-- SOL: [A+E] 7d -11.1%
 - LTC: [A+E] 7d -11.0%
-- SUI: [A+E] 7d -10.8%
-- INJ: [A+E] 7d -10.3%
-- CC: [A+E] 7d -8.3%
+- SUI: [A+E] 7d -9.9%
+- SOL: [A+E] 7d -9.3%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - XRP ETF at $10.65, XRPI $5.12, XRPR $7.90; XRP above $1.00 opens $12.33 | That’s TradingNE
@@ -46,11 +46,11 @@
 
 ## Paper book (open trades, marked to last scan)
 - open 5 | mean 0.9% (0.14R) | in profit 3 | older than 7d 2
-- worst: BEAM -0.69R, PEPE -0.27R, KITE 0.28R | best: KITE 0.28R, FF 0.33R, NIGHT 1.05R
+- worst: BEAM -0.68R, PEPE -0.32R, FF 0.31R | best: FF 0.31R, KITE 0.33R, NIGHT 1.04R
 
 ## System
-- CoinGecko 5640/10000 used, month-end projection 9977 (100%), throttle level 1 | by script {'scan': 1784, 'check_liquidity': 264, 'breakout_check': 3530, 'counterfactual_check': 62}
+- CoinGecko 5698/10000 used, month-end projection 10055 (101%), throttle level 2 | by script {'scan': 1786, 'check_liquidity': 265, 'breakout_check': 3584, 'counterfactual_check': 63}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=266)
-- radar-flags.json scan age: 5m
-- excluded from radar (pegged/tokenized equity): 50
+- radar-flags.json scan age: 16m
+- excluded from radar (pegged/tokenized equity): 51
