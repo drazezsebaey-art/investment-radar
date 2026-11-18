@@ -1,4 +1,4 @@
-# Radar digest - 2026-11-18 02:34 UTC
+# Radar digest - 2026-11-18 03:02 UTC
 
 ## Market
 - BTC scenario **C** | price 64575 | wk close 64748 vs 82800 | 50W 75060 (-13.97%) | 1h old
@@ -13,13 +13,13 @@
 
 ## Pre-pump candidates
 - INJ: [A+C+E] 7d -9.3%
+- NEAR: [A+C+E] 7d -8.1%
 - ZEC: [A+C+E] 7d -8.1%
-- NEAR: [A+C+E] 7d -7.5%
-- AVAX: [A+E] 7d -14.8%
+- AVAX: [A+E] 7d -15.4%
+- AKT: [C+E] 7d -14.6%
 - BNB: [A+E] 7d -12.9%
-- LTC: [A+E] 7d -12.2%
-- SUI: [A+E] 7d -12.1%
-- SOL: [A+E] 7d -10.7%
+- SUI: [A+E] 7d -12.4%
+- XPL: [C+E] 7d -12.3%
 
 ## ETF pipeline (new this run)
 - ripple NEW: filing - Bank of America Joins XRP ETF Holders in New Q3 SEC Filing - TradingView
@@ -44,12 +44,12 @@
 - (23 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 5 | mean 0.4% (0.08R) | in profit 3 | older than 7d 2
-- worst: BEAM -0.67R, PEPE -0.34R, KITE 0.19R | best: KITE 0.19R, FF 0.30R, NIGHT 0.94R
+- open 5 | mean -0.1% (0.01R) | in profit 2 | older than 7d 2
+- worst: BEAM -0.69R, PEPE -0.41R, KITE -0.12R | best: KITE -0.12R, FF 0.30R, NIGHT 0.95R
 
 ## System
-- CoinGecko 5708/10000 used, month-end projection 10024 (100%), throttle level 2 | by script {'scan': 1796, 'check_liquidity': 265, 'breakout_check': 3584, 'counterfactual_check': 63}
+- CoinGecko 5710/10000 used, month-end projection 10003 (100%), throttle level 2 | by script {'scan': 1798, 'check_liquidity': 265, 'breakout_check': 3584, 'counterfactual_check': 63}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=266)
-- radar-flags.json scan age: 4m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 49
