@@ -1,4 +1,4 @@
-# Radar digest - 2026-11-18 20:34 UTC
+# Radar digest - 2026-11-18 21:02 UTC
 
 ## Market
 - BTC scenario **C** | price 62793 | wk close 64748 vs 82800 | 50W 75060 (-16.34%) | 1h old
@@ -12,14 +12,14 @@
 - KITE: **RESUMING** | +43% impulse, retr 0.21 | OI dd 44% | fund 0.0050 | hold False | inval 0.12456 | OB 0.12669-0.12950
 
 ## Pre-pump candidates
-- NEAR: [A+C+E] 7d -12.9%
+- SOL: [A+C+E] 7d -13.9%
+- NEAR: [A+C+E] 7d -12.1%
 - INJ: [A+C+E] 7d -11.5%
 - GNO: [A+C+E] 7d -10.0%
 - ZEC: [A+C+E] 7d -8.2%
-- AVAX: [A+E] 7d -19.0%
+- AVAX: [A+E] 7d -19.1%
 - AKT: [C+E] 7d -17.7%
 - BNB: [A+E] 7d -15.7%
-- Q: [C+E] 7d -15.3%
 
 ## ETF pipeline (new this run)
 - kucoin-shares NEW: filing - BITWISE FILES AN S-1 WITH THE SEC FOR A SPOT ZCASH $ZEC ETF - KuCoin
@@ -52,12 +52,12 @@
 - vote: gnosis (GnosisDAO) until 2026-11-24 - GIP-157: Should GnosisDAO withdraw assets from the legacy DAO Safe to 
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 4.3% (0.52R) | in profit 3 | older than 7d 1
-- worst: PEPE -0.59R, FF 0.05R, NIGHT 0.99R | best: FF 0.05R, NIGHT 0.99R, KITE 1.64R
+- open 4 | mean 4.6% (0.57R) | in profit 3 | older than 7d 1
+- worst: PEPE -0.51R, FF 0.05R, NIGHT 1.01R | best: FF 0.05R, NIGHT 1.01R, KITE 1.73R
 
 ## System
-- CoinGecko 5954/10000 used, month-end projection 10016 (100%), throttle level 2 | by script {'scan': 1876, 'check_liquidity': 275, 'breakout_check': 3738, 'counterfactual_check': 65}
+- CoinGecko 5957/10000 used, month-end projection 9998 (100%), throttle level 1 | by script {'scan': 1878, 'check_liquidity': 276, 'breakout_check': 3738, 'counterfactual_check': 65}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=58), H2 SUPPORTED (n=267)
-- radar-flags.json scan age: 4m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 48
