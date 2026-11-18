@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-18 03:35 UTC
+# Radar digest - 2026-11-18 04:02 UTC
 
 ## Market
-- BTC scenario **C** | price 64528 | wk close 64748 vs 82800 | 50W 75060 (-14.03%) | 1m old
+- BTC scenario **C** | price 64528 | wk close 64748 vs 82800 | 50W 75060 (-14.03%) | 28m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.48% | ETH/BTC 0.02800 | breadth7d 68% | stables 30d -5.33%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.31pt | 7d -1.26pt | n=121
 - Gold: PAXG 1m -4.55% | real10y 2.92 (18bp 1m) | USD 1m 0.89% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 35
@@ -13,13 +13,13 @@
 
 ## Pre-pump candidates
 - INJ: [A+C+E] 7d -11.5%
-- NEAR: [A+C+E] 7d -8.1%
+- NEAR: [A+C+E] 7d -7.9%
 - ZEC: [A+C+E] 7d -6.7%
-- AVAX: [A+E] 7d -15.4%
+- AVAX: [A+E] 7d -15.6%
 - BNB: [A+E] 7d -13.1%
 - XPL: [C+E] 7d -12.9%
 - LTC: [A+E] 7d -12.5%
-- SUI: [A+E] 7d -12.4%
+- SUI: [A+E] 7d -11.9%
 
 ## ETF pipeline (new this run)
 - ripple NEW: filing - Bank of America Joins XRP ETF Holders in New Q3 SEC Filing - TradingView
@@ -43,12 +43,12 @@
 - (23 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 5 | mean 0.0% (0.01R) | in profit 2 | older than 7d 2
-- worst: BEAM -0.69R, PEPE -0.44R, KITE -0.10R | best: KITE -0.10R, FF 0.25R, NIGHT 1.04R
+- open 5 | mean 0.2% (0.04R) | in profit 3 | older than 7d 2
+- worst: BEAM -0.68R, PEPE -0.39R, KITE 0.01R | best: KITE 0.01R, FF 0.20R, NIGHT 1.07R
 
 ## System
-- CoinGecko 5720/10000 used, month-end projection 10020 (100%), throttle level 2 | by script {'scan': 1808, 'check_liquidity': 265, 'breakout_check': 3584, 'counterfactual_check': 63}
+- CoinGecko 5723/10000 used, month-end projection 10001 (100%), throttle level 2 | by script {'scan': 1810, 'check_liquidity': 266, 'breakout_check': 3584, 'counterfactual_check': 63}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=266)
-- radar-flags.json scan age: 5m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 49
