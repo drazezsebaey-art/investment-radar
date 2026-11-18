@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-18 01:35 UTC
+# Radar digest - 2026-11-18 02:02 UTC
 
 ## Market
-- BTC scenario **C** | price 64575 | wk close 64748 vs 82800 | 50W 75060 (-13.97%) | 1m old
+- BTC scenario **C** | price 64575 | wk close 64748 vs 82800 | 50W 75060 (-13.97%) | 29m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.52% | ETH/BTC 0.02806 | breadth7d 70% | stables 30d -5.31%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.44pt | 7d -1.19pt | n=121
 - Gold: PAXG 1m -4.55% | real10y 2.92 (18bp 1m) | USD 1m 0.89% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 35
@@ -12,14 +12,14 @@
 - none
 
 ## Pre-pump candidates
-- ZEC: [A+C+E] 7d -7.6%
-- NEAR: [A+C+E] 7d -5.3%
-- AVAX: [A+E] 7d -13.4%
-- BNB: [A+E] 7d -12.4%
-- LTC: [A+E] 7d -11.8%
-- XPL: [C+E] 7d -11.6%
-- SUI: [A+E] 7d -10.8%
-- SOL: [A+E] 7d -9.9%
+- INJ: [A+C+E] 7d -9.3%
+- ZEC: [A+C+E] 7d -8.1%
+- NEAR: [A+C+E] 7d -7.5%
+- AVAX: [A+E] 7d -14.8%
+- BNB: [A+E] 7d -12.9%
+- XPL: [C+E] 7d -12.3%
+- LTC: [A+E] 7d -12.2%
+- SUI: [A+E] 7d -12.1%
 
 ## ETF pipeline (new this run)
 - ripple NEW: filing - Bank of America Joins XRP ETF Holders in New Q3 SEC Filing - TradingView
@@ -43,12 +43,12 @@
 - (23 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 5 | mean 0.2% (0.07R) | in profit 3 | older than 7d 2
-- worst: BEAM -0.69R, PEPE -0.37R, KITE 0.16R | best: KITE 0.16R, FF 0.26R, NIGHT 0.97R
+- open 5 | mean 0.3% (0.09R) | in profit 3 | older than 7d 2
+- worst: BEAM -0.68R, PEPE -0.34R, KITE 0.26R | best: KITE 0.26R, FF 0.28R, NIGHT 0.94R
 
 ## System
-- CoinGecko 5704/10000 used, month-end projection 10041 (100%), throttle level 2 | by script {'scan': 1792, 'check_liquidity': 265, 'breakout_check': 3584, 'counterfactual_check': 63}
+- CoinGecko 5706/10000 used, month-end projection 10020 (100%), throttle level 2 | by script {'scan': 1794, 'check_liquidity': 265, 'breakout_check': 3584, 'counterfactual_check': 63}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=57), H2 SUPPORTED (n=266)
-- radar-flags.json scan age: 5m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 49
