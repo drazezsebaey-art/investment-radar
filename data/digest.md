@@ -1,18 +1,17 @@
-# Radar digest - 2026-11-19 22:02 UTC
+# Radar digest - 2026-11-19 22:35 UTC
 
 ## Market
-- BTC scenario **C** | price 61531 | wk close 64748 vs 82800 | 50W 75060 (-18.02%) | 28m old
+- BTC scenario **C** | price 61531 | wk close 64748 vs 82800 | 50W 75060 (-18.02%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 56.17% | ETH/BTC 0.02840 | breadth7d 67% | stables 30d -5.42%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.60pt | 7d -1.40pt | n=121
-- Gold: PAXG 1m -5.68% | real10y 2.89 (9bp 1m) | USD 1m 0.89% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 35
-- 10y 1w: 22bp = real 23 + breakeven -1 -> **REAL_YIELD_DRIVEN**
-- 10y 1m: -5bp = real 9 + breakeven -16 -> **SMALL_MOVE**
+- Gold: PAXG 1m -7.01% | real10y 2.88 (11bp 1m) | USD 1m 0.89% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 35
+- 10y 1w: 9bp = real 10 + breakeven -8 -> **SMALL_MOVE**
+- 10y 1m: -5bp = real 11 + breakeven -21 -> **SMALL_MOVE**
 
 ## Coins in correction (entry_ready first)
 - KITE: **RESUMING** | +43% impulse, retr 0.22 | OI dd 45% | fund 0.0050 | hold False | inval 0.12669 | OB 0.12669-0.12950
 
 ## Pre-pump candidates
-- ETHFI: [B+C] 7d -21.7%
 - AVAX: [A+E] 7d -17.3%
 - LTC: [A+E] 7d -16.4%
 - STABLE: [C+E] 7d -15.4%
@@ -20,6 +19,7 @@
 - BNB: [A+E] 7d -11.9%
 - SOL: [A+E] 7d -11.2%
 - CC: [A+E] 7d -10.9%
+- AKT: [C+E] 7d -9.8%
 
 ## ETF pipeline (new this run)
 - injective-protocol NEW: launch - Injective Publishes New Whitepaper After First U.S. INJ ETF Launch - CryptoRank
@@ -32,14 +32,14 @@
 - ondo-finance: other - About Franklin US Core Bond ETF (Ondo Tokenized) - Coinbase
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc 0.24% | topPos 0.89 | taker 0.92
-- ETH: LONG_FLUSH_24H | OI/mc 0.70% | topPos 0.85 | taker 1.02
 - SOL: LONG_FLUSH_24H | OI/mc 0.61% | topPos 0.86 | taker 1.02
-- NEAR: LONG_FLUSH_24H | OI/mc 1.03% | topPos 1.01 | taker 0.95
-- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.98
-- XRP: LONG_FLUSH_24H | OI/mc 0.14% | topPos 0.88 | taker 0.94
-- SUI: LONG_FLUSH_24H | OI/mc 0.85% | topPos 0.83 | taker 0.99
-- SEI: LONG_FLUSH_24H | OI/mc 0.77% | topPos 0.87 | taker 1.04
+- NEAR: LONG_FLUSH_24H | OI/mc 1.04% | topPos 1.00 | taker 0.92
+- AVAX: LONG_FLUSH_24H | OI/mc 0.38% | topPos 0.87 | taker 0.99
+- XRP: LONG_FLUSH_24H | OI/mc 0.14% | topPos 0.88 | taker 0.95
+- SUI: LONG_FLUSH_24H | OI/mc 0.84% | topPos 0.83 | taker 0.99
+- SEI: LONG_FLUSH_24H | OI/mc 0.76% | topPos 0.86 | taker 1.02
+- TAO: SHORT_SQUEEZE_24H | OI/mc 0.73% | topPos 0.93 | taker 1.08
+- ZEC: LONG_FLUSH_24H | OI/mc 0.80% | topPos 0.99 | taker 1.02
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -49,12 +49,12 @@
 - (25 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 5 | mean 3.1% (0.36R) | in profit 3 | older than 7d 1
-- worst: PEPE -0.68R, LUNC -0.12R, FF 0.14R | best: FF 0.14R, NIGHT 0.95R, KITE 1.49R
+- open 5 | mean 4.1% (0.51R) | in profit 4 | older than 7d 1
+- worst: PEPE -0.59R, FF 0.16R, LUNC 0.40R | best: LUNC 0.40R, NIGHT 1.00R, KITE 1.59R
 
 ## System
-- CoinGecko 6306/10000 used, month-end projection 10001 (100%), throttle level 2 | by script {'scan': 1994, 'check_liquidity': 291, 'breakout_check': 3951, 'counterfactual_check': 70}
+- CoinGecko 6308/10000 used, month-end projection 10004 (100%), throttle level 2 | by script {'scan': 1996, 'check_liquidity': 291, 'breakout_check': 3951, 'counterfactual_check': 70}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=268)
-- radar-flags.json scan age: 2m
+- radar-flags.json scan age: 4m
 - excluded from radar (pegged/tokenized equity): 47
