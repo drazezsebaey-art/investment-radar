@@ -1,4 +1,4 @@
-# Radar digest - 2026-11-19 14:35 UTC
+# Radar digest - 2026-11-19 15:03 UTC
 
 ## Market
 - BTC scenario **C** | price 63698 | wk close 64748 vs 82800 | 50W 75060 (-15.14%) | 1h old
@@ -12,14 +12,14 @@
 - KITE: **RESUMING** | +43% impulse, retr 0.22 | OI dd 44% | fund 0.0050 | hold False | inval 0.12669 | OB 0.12669-0.12950
 
 ## Pre-pump candidates
+- NEAR: [A+C+E] 7d -0.9%
 - BNB: [A+E] 7d -10.1%
 - LTC: [A+E] 7d -9.4%
-- SUI: [A+E] 7d -8.6%
-- SOL: [A+E] 7d -8.5%
+- SUI: [A+E] 7d -8.7%
+- SOL: [A+E] 7d -8.1%
+- DCR: [C+E] 7d -5.5%
+- XRP: [A+E] 7d -4.6%
 - AWE: [C+E] 7d -4.4%
-- XRP: [A+E] 7d -4.2%
-- XPL: [C+E] 7d -2.5%
-- HYPE: [A+E] 7d -2.4%
 
 ## ETF pipeline (new this run)
 - zcash: filing - Key facts: Bitwise Files Spot Zcash ETF; ZECUSD Trading Limits Cited - TradingView
@@ -47,12 +47,12 @@
 - (25 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 6.2% (0.67R) | in profit 3 | older than 7d 1
-- worst: PEPE -0.05R, FF 0.18R, NIGHT 1.03R | best: FF 0.18R, NIGHT 1.03R, KITE 1.51R
+- open 4 | mean 5.6% (0.63R) | in profit 3 | older than 7d 1
+- worst: PEPE -0.15R, FF 0.15R, NIGHT 0.96R | best: FF 0.15R, NIGHT 0.96R, KITE 1.58R
 
 ## System
-- CoinGecko 6208/10000 used, month-end projection 10022 (100%), throttle level 2 | by script {'scan': 1956, 'check_liquidity': 287, 'breakout_check': 3897, 'counterfactual_check': 68}
+- CoinGecko 6211/10000 used, month-end projection 10004 (100%), throttle level 2 | by script {'scan': 1958, 'check_liquidity': 288, 'breakout_check': 3897, 'counterfactual_check': 68}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=267)
-- radar-flags.json scan age: 4m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 47
