@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-19 17:36 UTC
+# Radar digest - 2026-11-19 18:15 UTC
 
 ## Market
-- BTC scenario **C** | price 63374 | wk close 64748 vs 82800 | 50W 75060 (-15.57%) | 1m old
+- BTC scenario **C** | price 63374 | wk close 64748 vs 82800 | 50W 75060 (-15.57%) | 41m old
 - Alts: **BTC_LED** [BREADTH_75] | BTC.D 56.20% | ETH/BTC 0.02818 | breadth7d 77% | stables 30d -5.43%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.45pt | 7d -1.37pt | n=121
 - Gold: PAXG 1m -5.68% | real10y 2.89 (9bp 1m) | USD 1m 0.89% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 35
@@ -12,9 +12,9 @@
 - KITE: **RESUMING** | +43% impulse, retr 0.21 | OI dd 45% | fund 0.0050 | hold False | inval 0.12669 | OB 0.12669-0.12950
 
 ## Pre-pump candidates
-- AWE: [C+E] 7d -5.2%
-- NEAR: [A+E] 7d -3.8%
-- SN51: [C+E] 7d 0.9%
+- AWE: [C+E] 7d -5.7%
+- NEAR: [A+E] 7d -4.0%
+- SN51: [C+E] 7d -0.3%
 
 ## ETF pipeline (new this run)
 - solana NEW: delay_or_rejection - Roundhill withdraws XRP and Solana covered-call ETF filings after 13 months of waiting. - 
@@ -44,12 +44,12 @@
 - (25 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 5.2% (0.61R) | in profit 3 | older than 7d 1
-- worst: PEPE -0.32R, FF 0.14R, NIGHT 0.97R | best: FF 0.14R, NIGHT 0.97R, KITE 1.64R
+- open 5 | mean 4.1% (0.47R) | in profit 3 | older than 7d 1
+- worst: PEPE -0.39R, LUNC 0.00R, FF 0.18R | best: FF 0.18R, NIGHT 0.97R, KITE 1.57R
 
 ## System
-- CoinGecko 6226/10000 used, month-end projection 9984 (100%), throttle level 1 | by script {'scan': 1968, 'check_liquidity': 291, 'breakout_check': 3897, 'counterfactual_check': 70}
+- CoinGecko 6282/10000 used, month-end projection 10051 (100%), throttle level 2 | by script {'scan': 1970, 'check_liquidity': 291, 'breakout_check': 3951, 'counterfactual_check': 70}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=267)
-- radar-flags.json scan age: 5m
+- radar-flags.json scan age: 15m
 - excluded from radar (pegged/tokenized equity): 48
