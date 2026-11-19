@@ -1,4 +1,4 @@
-# Radar digest - 2026-11-19 10:35 UTC
+# Radar digest - 2026-11-19 11:03 UTC
 
 ## Market
 - BTC scenario **C** | price 63851 | wk close 64748 vs 82800 | 50W 75060 (-14.93%) | 1h old
@@ -12,14 +12,14 @@
 - none
 
 ## Pre-pump candidates
-- NEAR: [A+C+E] 7d -1.6%
-- BNB: [A+E] 7d -12.3%
-- SOL: [A+E] 7d -10.1%
-- SUI: [A+E] 7d -10.0%
-- LTC: [A+E] 7d -10.0%
-- Q: [C+E] 7d -6.4%
-- XPL: [C+E] 7d -6.0%
-- XRP: [A+E] 7d -5.6%
+- NEAR: [A+C+E] 7d -2.9%
+- BNB: [A+E] 7d -11.8%
+- SUI: [A+E] 7d -10.8%
+- SOL: [A+E] 7d -10.4%
+- LTC: [A+E] 7d -10.2%
+- XRP: [A+E] 7d -6.6%
+- XPL: [C+E] 7d -5.6%
+- HYPE: [A+E] 7d -4.4%
 
 ## ETF pipeline (new this run)
 - injective-protocol NEW: launch - Injective Publishes First Whitepaper Since 2018 to Court Wall Street After Nasdaq ETF Debu
@@ -47,12 +47,12 @@
 - (25 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 3.7% (0.33R) | in profit 3 | older than 7d 1
-- worst: PEPE -0.39R, FF 0.03R, KITE 0.72R | best: FF 0.03R, KITE 0.72R, NIGHT 0.96R
+- open 4 | mean 4.5% (0.46R) | in profit 3 | older than 7d 1
+- worst: PEPE -0.32R, FF 0.06R, NIGHT 1.01R | best: FF 0.06R, NIGHT 1.01R, KITE 1.09R
 
 ## System
-- CoinGecko 6141/10000 used, month-end projection 10003 (100%), throttle level 2 | by script {'scan': 1940, 'check_liquidity': 285, 'breakout_check': 3848, 'counterfactual_check': 68}
+- CoinGecko 6143/10000 used, month-end projection 9984 (100%), throttle level 1 | by script {'scan': 1942, 'check_liquidity': 285, 'breakout_check': 3848, 'counterfactual_check': 68}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=58), H2 SUPPORTED (n=267)
-- radar-flags.json scan age: 4m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 47
