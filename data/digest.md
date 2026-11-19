@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-19 15:36 UTC
+# Radar digest - 2026-11-19 16:03 UTC
 
 ## Market
-- BTC scenario **C** | price 63165 | wk close 64748 vs 82800 | 50W 75060 (-15.85%) | 1m old
+- BTC scenario **C** | price 63165 | wk close 64748 vs 82800 | 50W 75060 (-15.85%) | 28m old
 - Alts: **BTC_LED** [BREADTH_75] | BTC.D 56.20% | ETH/BTC 0.02818 | breadth7d 77% | stables 30d -5.43%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.45pt | 7d -1.37pt | n=121
 - Gold: PAXG 1m -4.91% | real10y 2.89 (9bp 1m) | USD 1m 0.89% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 35
@@ -15,11 +15,11 @@
 - ETHFI: [B+C] 7d -16.7%
 - BNB: [A+E] 7d -10.0%
 - LTC: [A+E] 7d -9.7%
-- SUI: [A+E] 7d -8.7%
-- SOL: [A+E] 7d -8.1%
-- XRP: [A+E] 7d -4.6%
-- AWE: [C+E] 7d -4.2%
-- INJ: [A+E] 7d -3.1%
+- SUI: [A+E] 7d -9.6%
+- SOL: [A+E] 7d -9.2%
+- GNO: [C+E] 7d -8.2%
+- CC: [A+E] 7d -6.7%
+- XRP: [A+E] 7d -5.4%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - RBC Held No Shares in Teucrium’s Leveraged XRP ETF at June 30 - www.tokenpost.com
@@ -42,12 +42,12 @@
 - (25 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 5.0% (0.56R) | in profit 3 | older than 7d 1
-- worst: PEPE -0.27R, FF 0.18R, NIGHT 0.91R | best: FF 0.18R, NIGHT 0.91R, KITE 1.42R
+- open 4 | mean 4.5% (0.51R) | in profit 3 | older than 7d 1
+- worst: PEPE -0.39R, FF 0.20R, NIGHT 0.84R | best: FF 0.20R, NIGHT 0.84R, KITE 1.41R
 
 ## System
-- CoinGecko 6213/10000 used, month-end projection 10008 (100%), throttle level 2 | by script {'scan': 1960, 'check_liquidity': 288, 'breakout_check': 3897, 'counterfactual_check': 68}
+- CoinGecko 6218/10000 used, month-end projection 9993 (100%), throttle level 1 | by script {'scan': 1962, 'check_liquidity': 289, 'breakout_check': 3897, 'counterfactual_check': 70}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=267)
-- radar-flags.json scan age: 6m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 48
