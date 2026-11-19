@@ -1,4 +1,4 @@
-# Radar digest - 2026-11-19 20:35 UTC
+# Radar digest - 2026-11-19 21:03 UTC
 
 ## Market
 - BTC scenario **C** | price 62627 | wk close 64748 vs 82800 | 50W 75060 (-16.56%) | 1h old
@@ -14,12 +14,12 @@
 ## Pre-pump candidates
 - STABLE: [C+E] 7d -15.2%
 - LTC: [A+E] 7d -13.9%
+- SUI: [A+E] 7d -11.9%
 - BNB: [A+E] 7d -11.0%
-- SUI: [A+E] 7d -10.7%
-- SOL: [A+E] 7d -9.9%
+- SOL: [A+E] 7d -10.6%
 - GNO: [C+E] 7d -8.8%
 - BCH: [B+E] 7d -8.0%
-- XRP: [A+E] 7d -6.1%
+- XRP: [A+E] 7d -6.9%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - RBC Reports Zero Holdings in Leveraged XRP ETF as Goldman Sachs Expands Exposure to $144 M
@@ -49,11 +49,11 @@
 
 ## Paper book (open trades, marked to last scan)
 - open 5 | mean 3.9% (0.49R) | in profit 4 | older than 7d 1
-- worst: PEPE -0.51R, FF 0.09R, LUNC 0.29R | best: LUNC 0.29R, NIGHT 1.00R, KITE 1.59R
+- worst: PEPE -0.54R, FF 0.09R, LUNC 0.30R | best: LUNC 0.30R, NIGHT 0.99R, KITE 1.58R
 
 ## System
-- CoinGecko 6300/10000 used, month-end projection 10035 (100%), throttle level 2 | by script {'scan': 1988, 'check_liquidity': 291, 'breakout_check': 3951, 'counterfactual_check': 70}
+- CoinGecko 6302/10000 used, month-end projection 10016 (100%), throttle level 2 | by script {'scan': 1990, 'check_liquidity': 291, 'breakout_check': 3951, 'counterfactual_check': 70}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=267)
-- radar-flags.json scan age: 5m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 48
