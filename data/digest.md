@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-19 03:36 UTC
+# Radar digest - 2026-11-19 04:02 UTC
 
 ## Market
-- BTC scenario **C** | price 63071 | wk close 64748 vs 82800 | 50W 75060 (-15.97%) | 1m old
+- BTC scenario **C** | price 63071 | wk close 64748 vs 82800 | 50W 75060 (-15.97%) | 28m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.19% | ETH/BTC 0.02828 | breadth7d 74% | stables 30d -5.41%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.59pt | 7d -1.67pt | n=121
 - Gold: PAXG 1m -4.85% | real10y 2.89 (9bp 1m) | USD 1m 0.89% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 35
@@ -13,12 +13,12 @@
 
 ## Pre-pump candidates
 - GNO: [A+C+E] 7d -9.7%
-- NEAR: [A+C+E] 7d -7.3%
-- AVAX: [A+E] 7d -18.1%
+- NEAR: [A+C+E] 7d -5.0%
 - BNB: [A+E] 7d -14.6%
-- SUI: [A+E] 7d -12.5%
 - AKT: [C+E] 7d -12.4%
 - LTC: [A+E] 7d -12.0%
+- SUI: [A+E] 7d -11.7%
+- SOL: [A+E] 7d -11.0%
 - GRASS: [C+E] 7d -10.7%
 
 ## ETF pipeline (new this run)
@@ -45,12 +45,12 @@
 - vote: gnosis (GnosisDAO) until 2026-11-24 - GIP-157: Should GnosisDAO withdraw assets from the legacy DAO Safe to 
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 3.9% (0.40R) | in profit 3 | older than 7d 1
-- worst: PEPE -0.59R, FF 0.00R, NIGHT 1.07R | best: FF 0.00R, NIGHT 1.07R, KITE 1.11R
+- open 4 | mean 3.9% (0.39R) | in profit 2 | older than 7d 1
+- worst: PEPE -0.49R, FF -0.07R, KITE 1.04R | best: FF -0.07R, KITE 1.04R, NIGHT 1.08R
 
 ## System
-- CoinGecko 6052/10000 used, month-end projection 10017 (100%), throttle level 2 | by script {'scan': 1912, 'check_liquidity': 280, 'breakout_check': 3792, 'counterfactual_check': 68}
+- CoinGecko 6055/10000 used, month-end projection 9999 (100%), throttle level 1 | by script {'scan': 1914, 'check_liquidity': 281, 'breakout_check': 3792, 'counterfactual_check': 68}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=58), H2 SUPPORTED (n=267)
-- radar-flags.json scan age: 5m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 48
