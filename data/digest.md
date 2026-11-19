@@ -1,4 +1,4 @@
-# Radar digest - 2026-11-19 00:35 UTC
+# Radar digest - 2026-11-19 01:02 UTC
 
 ## Market
 - BTC scenario **C** | price 62933 | wk close 64748 vs 82800 | 50W 75060 (-16.16%) | 1h old
@@ -12,14 +12,14 @@
 - KITE: **RESUMING** | +43% impulse, retr 0.21 | OI dd 44% | fund 0.0050 | hold False | inval 0.12669 | OB 0.12669-0.12950
 
 ## Pre-pump candidates
-- GNO: [A+C+E] 7d -9.3%
-- NEAR: [A+C+E] 7d -8.0%
-- AVAX: [A+E] 7d -17.1%
-- BNB: [A+E] 7d -14.4%
+- GNO: [A+C+E] 7d -8.9%
+- NEAR: [A+C+E] 7d -7.3%
+- AVAX: [A+E] 7d -17.4%
+- BNB: [A+E] 7d -14.1%
 - SUI: [A+E] 7d -12.2%
-- LTC: [A+E] 7d -12.0%
-- Q: [C+E] 7d -11.5%
-- GRASS: [C+E] 7d -9.7%
+- LTC: [A+E] 7d -11.9%
+- RUNE: [C+E] 7d -10.3%
+- GRASS: [C+E] 7d -10.0%
 
 ## ETF pipeline (new this run)
 - ripple NEW: conversion - Grayscale Again Promotes XRP-to-ETF Conversion, but Here’s What Investors Should Know - Cr
@@ -49,12 +49,12 @@
 - vote: gnosis (GnosisDAO) until 2026-11-24 - GIP-157: Should GnosisDAO withdraw assets from the legacy DAO Safe to 
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 5.0% (0.53R) | in profit 3 | older than 7d 1
-- worst: PEPE -0.51R, FF 0.06R, NIGHT 1.18R | best: FF 0.06R, NIGHT 1.18R, KITE 1.38R
+- open 4 | mean 4.8% (0.52R) | in profit 3 | older than 7d 1
+- worst: PEPE -0.49R, FF 0.06R, NIGHT 1.12R | best: FF 0.06R, NIGHT 1.12R, KITE 1.40R
 
 ## System
-- CoinGecko 6039/10000 used, month-end projection 10065 (101%), throttle level 2 | by script {'scan': 1900, 'check_liquidity': 279, 'breakout_check': 3792, 'counterfactual_check': 68}
+- CoinGecko 6042/10000 used, month-end projection 10047 (100%), throttle level 2 | by script {'scan': 1902, 'check_liquidity': 280, 'breakout_check': 3792, 'counterfactual_check': 68}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=58), H2 SUPPORTED (n=267)
-- radar-flags.json scan age: 4m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 48
