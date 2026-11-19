@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-19 08:02 UTC
+# Radar digest - 2026-11-19 08:34 UTC
 
 ## Market
-- BTC scenario **C** | price 63597 | wk close 64748 vs 82800 | 50W 75060 (-15.27%) | 27m old
+- BTC scenario **C** | price 63597 | wk close 64748 vs 82800 | 50W 75060 (-15.27%) | 59m old
 - Alts: **ROTATION_BUILDING** [BTC_DOM_FALLING_BELOW_60, BREADTH_75] | BTC.D 56.21% | ETH/BTC 0.02836 | breadth7d 76% | stables 30d -5.41%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.50pt | 7d -1.65pt | n=121
 - Gold: PAXG 1m -4.90% | real10y 2.89 (9bp 1m) | USD 1m 0.89% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 35
@@ -12,14 +12,14 @@
 - none
 
 ## Pre-pump candidates
-- RENDER: [C+D+E] 7d -6.6%
 - NEAR: [A+C+E] 7d -1.9%
-- BNB: [A+E] 7d -12.6%
+- ETHFI: [B+C] 7d -15.8%
+- BNB: [A+E] 7d -12.3%
 - SUI: [A+E] 7d -10.1%
 - LTC: [A+E] 7d -9.9%
 - SOL: [A+E] 7d -9.3%
-- XPL: [C+E] 7d -7.4%
-- XRP: [A+E] 7d -5.6%
+- XPL: [C+E] 7d -6.7%
+- RENDER: [D+E] 7d -5.9%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - XRP’s Leveraged ETF Draws Fresh Cash Despite a ‘Sell’ Signal - TipRanks
@@ -32,14 +32,14 @@
 - ripple NEW: other - Investors Tiptoe Back Into XRP: XRPI ETF Draws New Cash Despite Steep Token Slide - TipRan
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc 0.24% | topPos 0.89 | taker 0.97
+- BTC: SHORT_SQUEEZE_24H | OI/mc 0.24% | topPos 0.89 | taker 0.96
 - ETH: SHORT_SQUEEZE_24H | OI/mc 0.72% | topPos 0.89 | taker 0.98
-- SOL: SHORT_SQUEEZE_24H | OI/mc 0.63% | topPos 0.87 | taker 1.01
-- NEAR: LONG_FLUSH_24H | OI/mc 1.08% | topPos 1.03 | taker 0.99
-- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 1.08
-- SUI: LONG_FLUSH_24H | OI/mc 0.84% | topPos 0.83 | taker 0.99
-- SEI: LONG_FLUSH_24H | OI/mc 0.76% | topPos 0.82 | taker 0.92
-- TAO: SHORT_SQUEEZE_24H | OI/mc 0.71% | topPos 0.92 | taker 0.98
+- SOL: SHORT_SQUEEZE_24H | OI/mc 0.63% | topPos 0.88 | taker 1.00
+- NEAR: LONG_FLUSH_24H | OI/mc 1.08% | topPos 1.03 | taker 1.00
+- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 1.09
+- SUI: LONG_FLUSH_24H | OI/mc 0.84% | topPos 0.84 | taker 1.00
+- SEI: LONG_FLUSH_24H | OI/mc 0.76% | topPos 0.83 | taker 0.91
+- TAO: SHORT_SQUEEZE_24H | OI/mc 0.72% | topPos 0.92 | taker 0.99
 
 ## Revenue / buyback flags
 - collector-crypt: CHEAP_VS_REVENUE
@@ -52,12 +52,12 @@
 - vote: gnosis (GnosisDAO) until 2026-11-24 - GIP-157: Should GnosisDAO withdraw assets from the legacy DAO Safe to 
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 4.5% (0.44R) | in profit 2 | older than 7d 1
-- worst: PEPE -0.32R, FF -0.03R, KITE 0.98R | best: FF -0.03R, KITE 0.98R, NIGHT 1.12R
+- open 4 | mean 4.0% (0.41R) | in profit 2 | older than 7d 1
+- worst: PEPE -0.37R, FF -0.02R, NIGHT 1.00R | best: FF -0.02R, NIGHT 1.00R, KITE 1.02R
 
 ## System
-- CoinGecko 6130/10000 used, month-end projection 10031 (100%), throttle level 2 | by script {'scan': 1930, 'check_liquidity': 284, 'breakout_check': 3848, 'counterfactual_check': 68}
+- CoinGecko 6132/10000 used, month-end projection 10034 (100%), throttle level 2 | by script {'scan': 1932, 'check_liquidity': 284, 'breakout_check': 3848, 'counterfactual_check': 68}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=58), H2 SUPPORTED (n=267)
-- radar-flags.json scan age: 2m
+- radar-flags.json scan age: 4m
 - excluded from radar (pegged/tokenized equity): 48
