@@ -1,10 +1,10 @@
-# Radar digest - 2026-11-20 10:02 UTC
+# Radar digest - 2026-11-20 10:35 UTC
 
 ## Market
-- BTC scenario **C** | price 61647 | wk close 64748 vs 82800 | 50W 75060 (-17.87%) | 28m old
+- BTC scenario **C** | price 61647 | wk close 64748 vs 82800 | 50W 75060 (-17.87%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.12% | ETH/BTC 0.02828 | breadth7d 57% | stables 30d -5.89%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.42pt | 7d -0.98pt | n=121
-- Gold: PAXG 1m -9.63% | real10y 2.88 (11bp 1m) | USD 1m 0.89% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 35
+- Gold: PAXG 1m -8.16% | real10y 2.88 (11bp 1m) | USD 1m 0.89% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 35
 - 10y 1w: 9bp = real 10 + breakeven -8 -> **SMALL_MOVE**
 - 10y 1m: -5bp = real 11 + breakeven -21 -> **SMALL_MOVE**
 
@@ -12,26 +12,26 @@
 - KITE: **RESUMING** | +43% impulse, retr 0.26 | OI dd 45% | fund 0.0050 | hold False | inval 0.13107 | OB 0.12669-0.12950
 
 ## Pre-pump candidates
-- GNO: [A+C+E] 7d -2.9%
 - AVAX: [A+E] 7d -17.0%
-- LTC: [A+E] 7d -14.6%
+- LTC: [A+E] 7d -14.9%
 - SUI: [A+E] 7d -13.1%
-- STABLE: [C+E] 7d -10.9%
-- INJ: [A+E] 7d -10.6%
+- INJ: [A+E] 7d -11.4%
+- STABLE: [C+E] 7d -11.2%
+- HYPE: [A+E] 7d -9.8%
 - SOL: [A+E] 7d -9.7%
-- BNB: [A+E] 7d -9.3%
+- BNB: [A+E] 7d -9.6%
 
 ## ETF pipeline (new this run)
 - ondo-finance: other - iShares J.P. Morgan EM Local Currency Bond Tokenized ETF (Ondo) USD Price (LEMBON-USD) - Y
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc 0.25% | topPos 0.89 | taker 0.95
-- SOL: LONG_FLUSH_24H | OI/mc 0.62% | topPos 0.86 | taker 1.04
-- NEAR: LONG_FLUSH_24H | OI/mc -% | topPos 0.99 | taker 0.90
-- AVAX: LONG_FLUSH_24H | OI/mc 0.38% | topPos 0.88 | taker 0.99
-- SUI: LONG_FLUSH_24H | OI/mc 0.86% | topPos 0.81 | taker 1.00
-- SEI: LONG_FLUSH_24H | OI/mc 0.78% | topPos 0.86 | taker 1.00
-- ZEC: LONG_FLUSH_24H | OI/mc -% | topPos 0.93 | taker 0.98
+- BTC: LONG_FLUSH_24H | OI/mc 0.24% | topPos 0.89 | taker 0.96
+- SOL: LONG_FLUSH_24H | OI/mc 0.62% | topPos 0.86 | taker 1.05
+- NEAR: LONG_FLUSH_24H | OI/mc -% | topPos 0.99 | taker 0.89
+- AVAX: LONG_FLUSH_24H | OI/mc 0.38% | topPos 0.88 | taker 0.96
+- SUI: LONG_FLUSH_24H | OI/mc 0.86% | topPos 0.80 | taker 1.02
+- SEI: LONG_FLUSH_24H | OI/mc 0.78% | topPos 0.86 | taker 0.99
+- ZEC: LONG_FLUSH_24H | OI/mc -% | topPos 0.93 | taker 0.97
 - WLD: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.95
 
 ## Revenue / buyback flags
@@ -43,12 +43,12 @@
 - vote: gnosis (GnosisDAO) until 2026-11-24 - GIP-157: Should GnosisDAO withdraw assets from the legacy DAO Safe to 
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 6.1% (0.59R) | in profit 4 | older than 7d 1
-- worst: FF 0.17R, SENT 0.24R, NIGHT 0.82R | best: SENT 0.24R, NIGHT 0.82R, KITE 1.11R
+- open 4 | mean 7.3% (0.68R) | in profit 4 | older than 7d 1
+- worst: FF 0.22R, SENT 0.37R, NIGHT 0.88R | best: SENT 0.37R, NIGHT 0.88R, KITE 1.23R
 
 ## System
-- CoinGecko 6470/10000 used, month-end projection 9997 (100%), throttle level 1 | by script {'scan': 2042, 'check_liquidity': 300, 'breakout_check': 4057, 'counterfactual_check': 71}
+- CoinGecko 6473/10000 used, month-end projection 10001 (100%), throttle level 2 | by script {'scan': 2044, 'check_liquidity': 301, 'breakout_check': 4057, 'counterfactual_check': 71}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=269)
-- radar-flags.json scan age: 2m
+- radar-flags.json scan age: 4m
 - excluded from radar (pegged/tokenized equity): 48
