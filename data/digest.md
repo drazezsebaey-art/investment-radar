@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-20 08:02 UTC
+# Radar digest - 2026-11-20 08:34 UTC
 
 ## Market
-- BTC scenario **C** | price 61521 | wk close 64748 vs 82800 | 50W 75060 (-18.04%) | 28m old
+- BTC scenario **C** | price 61521 | wk close 64748 vs 82800 | 50W 75060 (-18.04%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.12% | ETH/BTC 0.02828 | breadth7d 57% | stables 30d -5.89%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.42pt | 7d -0.98pt | n=121
 - Gold: PAXG 1m -9.63% | real10y 2.88 (11bp 1m) | USD 1m 0.89% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 35
@@ -13,13 +13,13 @@
 
 ## Pre-pump candidates
 - AVAX: [A+E] 7d -16.5%
-- LTC: [A+E] 7d -13.8%
+- LTC: [A+E] 7d -14.5%
 - SUI: [A+E] 7d -12.0%
+- INJ: [A+E] 7d -10.7%
+- BNB: [A+E] 7d -9.8%
+- CC: [A+E] 7d -9.4%
 - SOL: [A+E] 7d -9.4%
-- BNB: [A+E] 7d -8.6%
-- INJ: [A+E] 7d -8.0%
-- HYPE: [A+E] 7d -7.6%
-- CC: [A+E] 7d -7.4%
+- HYPE: [A+E] 7d -8.1%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - Leveraged XRP ETF Draws Fresh Cash Despite Token’s Slide - TipRanks
@@ -30,14 +30,14 @@
 - ondo-finance: other - Franklin US Core Bond ETF (Ondo Tokenized) Price, FLCBON Price, Live Charts, and Marketcap
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc 0.25% | topPos 0.89 | taker 0.94
-- ETH: SHORT_SQUEEZE_24H | OI/mc 0.71% | topPos 0.85 | taker 0.97
-- NEAR: LONG_FLUSH_24H | OI/mc -% | topPos 1.00 | taker 0.90
-- AVAX: LONG_FLUSH_24H | OI/mc 0.38% | topPos 0.89 | taker 1.01
-- SUI: LONG_FLUSH_24H | OI/mc 0.87% | topPos 0.81 | taker 1.02
-- SEI: LONG_FLUSH_24H | OI/mc 0.77% | topPos 0.86 | taker 0.95
-- ZEC: LONG_FLUSH_24H | OI/mc -% | topPos 0.95 | taker 0.99
-- WLD: LONG_FLUSH_24H | OI/mc 2.58% | topPos 0.86 | taker 0.96
+- BTC: LONG_FLUSH_24H | OI/mc 0.24% | topPos 0.89 | taker 0.95
+- ETH: SHORT_SQUEEZE_24H | OI/mc 0.70% | topPos 0.85 | taker 0.97
+- NEAR: LONG_FLUSH_24H | OI/mc -% | topPos 1.00 | taker 0.89
+- AVAX: LONG_FLUSH_24H | OI/mc 0.38% | topPos 0.88 | taker 0.99
+- SUI: LONG_FLUSH_24H | OI/mc 0.86% | topPos 0.81 | taker 1.00
+- SEI: LONG_FLUSH_24H | OI/mc 0.78% | topPos 0.86 | taker 0.98
+- ZEC: LONG_FLUSH_24H | OI/mc -% | topPos 0.94 | taker 0.99
+- WLD: LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 0.96
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -47,12 +47,12 @@
 - (25 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 5.4% (0.53R) | in profit 4 | older than 7d 1
-- worst: FF 0.11R, SENT 0.15R, NIGHT 0.81R | best: SENT 0.15R, NIGHT 0.81R, KITE 1.06R
+- open 4 | mean 5.2% (0.54R) | in profit 4 | older than 7d 1
+- worst: FF 0.08R, SENT 0.12R, NIGHT 0.80R | best: SENT 0.12R, NIGHT 0.80R, KITE 1.14R
 
 ## System
-- CoinGecko 6461/10000 used, month-end projection 10026 (100%), throttle level 2 | by script {'scan': 2034, 'check_liquidity': 299, 'breakout_check': 4057, 'counterfactual_check': 71}
+- CoinGecko 6463/10000 used, month-end projection 10029 (100%), throttle level 2 | by script {'scan': 2036, 'check_liquidity': 299, 'breakout_check': 4057, 'counterfactual_check': 71}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=269)
-- radar-flags.json scan age: 2m
+- radar-flags.json scan age: 4m
 - excluded from radar (pegged/tokenized equity): 48
