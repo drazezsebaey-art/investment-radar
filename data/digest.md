@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-20 01:36 UTC
+# Radar digest - 2026-11-20 02:03 UTC
 
 ## Market
-- BTC scenario **C** | price 62335 | wk close 64748 vs 82800 | 50W 75060 (-16.95%) | 1m old
+- BTC scenario **C** | price 62335 | wk close 64748 vs 82800 | 50W 75060 (-16.95%) | 28m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.04% | ETH/BTC 0.02829 | breadth7d 68% | stables 30d -5.43%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.79pt | 7d -1.35pt | n=121
 - Gold: PAXG 1m -7.01% | real10y 2.88 (11bp 1m) | USD 1m 0.89% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 35
@@ -12,13 +12,13 @@
 - KITE: **RESUMING** | +43% impulse, retr 0.21 | OI dd 45% | fund 0.0050 | hold False | inval 0.12669 | OB 0.12669-0.12950
 
 ## Pre-pump candidates
-- AVAX: [A+E] 7d -16.6%
+- AVAX: [A+E] 7d -17.3%
 - LTC: [A+E] 7d -15.5%
+- SUI: [A+E] 7d -13.2%
 - BNB: [A+E] 7d -12.0%
-- SUI: [A+E] 7d -11.8%
-- SOL: [A+E] 7d -10.7%
+- SOL: [A+E] 7d -11.7%
+- NEAR: [A+E] 7d -10.2%
 - CC: [A+E] 7d -9.9%
-- AKT: [C+E] 7d -9.7%
 - HYPE: [A+E] 7d -8.9%
 
 ## ETF pipeline (new this run)
@@ -42,12 +42,12 @@
 - (25 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 5 | mean 4.1% (0.44R) | in profit 3 | older than 7d 1
-- worst: PEPE -0.59R, LUNC -0.18R, FF 0.21R | best: FF 0.21R, NIGHT 1.11R, KITE 1.65R
+- open 5 | mean 3.0% (0.30R) | in profit 3 | older than 7d 1
+- worst: PEPE -0.85R, LUNC -0.49R, FF 0.19R | best: FF 0.19R, NIGHT 1.05R, KITE 1.60R
 
 ## System
-- CoinGecko 6382/10000 used, month-end projection 10055 (101%), throttle level 2 | by script {'scan': 2008, 'check_liquidity': 294, 'breakout_check': 4009, 'counterfactual_check': 71}
+- CoinGecko 6384/10000 used, month-end projection 10036 (100%), throttle level 2 | by script {'scan': 2010, 'check_liquidity': 294, 'breakout_check': 4009, 'counterfactual_check': 71}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=268)
-- radar-flags.json scan age: 5m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 47
