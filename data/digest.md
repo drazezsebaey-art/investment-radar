@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-19 23:36 UTC
+# Radar digest - 2026-11-20 00:15 UTC
 
 ## Market
-- BTC scenario **C** | price 61887 | wk close 64748 vs 82800 | 50W 75060 (-17.55%) | 1m old
+- BTC scenario **C** | price 61887 | wk close 64748 vs 82800 | 50W 75060 (-17.55%) | 41m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.04% | ETH/BTC 0.02829 | breadth7d 68% | stables 30d -5.43%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.79pt | 7d -1.35pt | n=121
 - Gold: PAXG 1m -7.01% | real10y 2.88 (11bp 1m) | USD 1m 0.89% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 35
@@ -12,14 +12,14 @@
 - KITE: **RESUMING** | +43% impulse, retr 0.21 | OI dd 45% | fund 0.0050 | hold False | inval 0.12669 | OB 0.12669-0.12950
 
 ## Pre-pump candidates
-- AVAX: [A+E] 7d -16.1%
+- AVAX: [A+E] 7d -16.2%
 - LTC: [A+E] 7d -15.6%
 - STABLE: [C+E] 7d -15.3%
-- SUI: [A+E] 7d -11.9%
+- SUI: [A+E] 7d -11.5%
 - BNB: [A+E] 7d -11.2%
+- SOL: [A+E] 7d -10.2%
 - CC: [A+E] 7d -10.1%
 - AKT: [C+E] 7d -10.1%
-- SOL: [A+E] 7d -10.0%
 
 ## ETF pipeline (new this run)
 - solana NEW: approval - VanEck Ends Gemini Custody and Clearing Deals for Solana ETF, Effective Feb. 16, 2027 - ww
@@ -49,12 +49,12 @@
 - (25 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 5 | mean 4.0% (0.46R) | in profit 4 | older than 7d 1
-- worst: PEPE -0.59R, LUNC 0.14R, FF 0.22R | best: FF 0.22R, NIGHT 1.00R, KITE 1.53R
+- open 5 | mean 4.1% (0.47R) | in profit 4 | older than 7d 1
+- worst: PEPE -0.59R, LUNC 0.18R, FF 0.21R | best: FF 0.21R, NIGHT 1.05R, KITE 1.50R
 
 ## System
-- CoinGecko 6314/10000 used, month-end projection 9991 (100%), throttle level 1 | by script {'scan': 2000, 'check_liquidity': 293, 'breakout_check': 3951, 'counterfactual_check': 70}
+- CoinGecko 6376/10000 used, month-end projection 10067 (101%), throttle level 2 | by script {'scan': 2002, 'check_liquidity': 294, 'breakout_check': 4009, 'counterfactual_check': 71}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=268)
-- radar-flags.json scan age: 5m
+- radar-flags.json scan age: 15m
 - excluded from radar (pegged/tokenized equity): 47
