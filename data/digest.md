@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-20 01:03 UTC
+# Radar digest - 2026-11-20 01:36 UTC
 
 ## Market
-- BTC scenario **C** | price 61887 | wk close 64748 vs 82800 | 50W 75060 (-17.55%) | 1h old
+- BTC scenario **C** | price 62335 | wk close 64748 vs 82800 | 50W 75060 (-16.95%) | 1m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.04% | ETH/BTC 0.02829 | breadth7d 68% | stables 30d -5.43%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.79pt | 7d -1.35pt | n=121
 - Gold: PAXG 1m -7.01% | real10y 2.88 (11bp 1m) | USD 1m 0.89% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 35
@@ -13,33 +13,26 @@
 
 ## Pre-pump candidates
 - AVAX: [A+E] 7d -16.6%
-- LTC: [A+E] 7d -15.6%
+- LTC: [A+E] 7d -15.5%
+- BNB: [A+E] 7d -12.0%
 - SUI: [A+E] 7d -11.8%
-- BNB: [A+E] 7d -11.3%
 - SOL: [A+E] 7d -10.7%
-- AKT: [C+E] 7d -10.1%
-- CC: [A+E] 7d -9.7%
-- BCH: [B+E] 7d -8.1%
+- CC: [A+E] 7d -9.9%
+- AKT: [C+E] 7d -9.7%
+- HYPE: [A+E] 7d -8.9%
 
 ## ETF pipeline (new this run)
-- solana NEW: approval - VanEck Ends Gemini Custody and Clearing Deals for Solana ETF, Effective Feb. 16, 2027 - ww
-- solana NEW: filing - VSOL: VanEck Solana ETF Shares of Beneficial Interest filed SEC... - Quantisnow
-- solana NEW: institutional_backing - VanEck to end Gemini custody and clearing agreements for Solana ETF - Crypto Briefing
-- solana NEW: institutional_backing - VanEck Solana ETF to End Gemini Custody and Clearing Agreements in February 2027 - Trading
-- ripple NEW: other - Wells Fargo, Bitwise XRP ETF Shares Count Falls 15% - CryptoRank
-- ripple NEW: other - XRP ETF Price Forecast — XRP ($10.71) $11.60 Upside Target on $1.79B Cumulative Inflows an
-- ripple NEW: other - Bitwise XRP ETF Sold 23.7M Tokens for Q3 Redemptions - CryptoRank
-- ripple NEW: other - Traders Double Down on XRP: Leveraged XRPT ETF Pulls In Fresh Cash - TipRanks
+- solana NEW: institutional_backing - VanEck Ends Gemini Custody Deal for Solana ETF - Wisevoter
 
 ## Derivatives flags (OKX)
-- SOL: LONG_FLUSH_24H | OI/mc 0.61% | topPos 0.86 | taker 1.04
-- NEAR: LONG_FLUSH_24H | OI/mc 1.05% | topPos 1.01 | taker 0.93
-- AVAX: LONG_FLUSH_24H | OI/mc 0.38% | topPos 0.88 | taker 0.97
-- XRP: LONG_FLUSH_24H | OI/mc 0.14% | topPos 0.88 | taker 0.97
-- SUI: LONG_FLUSH_24H | OI/mc 0.84% | topPos 0.83 | taker 1.02
-- SEI: LONG_FLUSH_24H | OI/mc 0.77% | topPos 0.87 | taker 1.04
-- TAO: SHORT_SQUEEZE_24H | OI/mc 0.76% | topPos 0.94 | taker 1.08
-- ZEC: LONG_FLUSH_24H | OI/mc 0.81% | topPos 0.98 | taker 1.04
+- BTC: SHORT_SQUEEZE_24H | OI/mc 0.24% | topPos 0.88 | taker 0.96
+- SOL: LONG_FLUSH_24H | OI/mc 0.61% | topPos 0.86 | taker 1.03
+- NEAR: LONG_FLUSH_24H | OI/mc 1.04% | topPos 1.01 | taker 0.93
+- AVAX: LONG_FLUSH_24H | OI/mc 0.37% | topPos 0.88 | taker 0.96
+- XRP: LONG_FLUSH_24H | OI/mc 0.14% | topPos 0.87 | taker 0.98
+- SUI: LONG_FLUSH_24H | OI/mc 0.84% | topPos 0.82 | taker 1.03
+- SEI: LONG_FLUSH_24H | OI/mc 0.77% | topPos 0.87 | taker 1.02
+- TAO: SHORT_SQUEEZE_24H | OI/mc 0.75% | topPos 0.93 | taker 1.08
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -49,12 +42,12 @@
 - (25 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 5 | mean 3.7% (0.43R) | in profit 3 | older than 7d 1
-- worst: PEPE -0.59R, LUNC -0.16R, FF 0.21R | best: FF 0.21R, NIGHT 0.97R, KITE 1.69R
+- open 5 | mean 4.1% (0.44R) | in profit 3 | older than 7d 1
+- worst: PEPE -0.59R, LUNC -0.18R, FF 0.21R | best: FF 0.21R, NIGHT 1.11R, KITE 1.65R
 
 ## System
-- CoinGecko 6380/10000 used, month-end projection 10052 (100%), throttle level 2 | by script {'scan': 2006, 'check_liquidity': 294, 'breakout_check': 4009, 'counterfactual_check': 71}
+- CoinGecko 6382/10000 used, month-end projection 10055 (101%), throttle level 2 | by script {'scan': 2008, 'check_liquidity': 294, 'breakout_check': 4009, 'counterfactual_check': 71}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=268)
-- radar-flags.json scan age: 2m
+- radar-flags.json scan age: 5m
 - excluded from radar (pegged/tokenized equity): 47
