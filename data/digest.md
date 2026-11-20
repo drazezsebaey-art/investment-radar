@@ -1,4 +1,4 @@
-# Radar digest - 2026-11-20 08:34 UTC
+# Radar digest - 2026-11-20 09:02 UTC
 
 ## Market
 - BTC scenario **C** | price 61521 | wk close 64748 vs 82800 | 50W 75060 (-18.04%) | 1h old
@@ -12,14 +12,14 @@
 - KITE: **RESUMING** | +43% impulse, retr 0.26 | OI dd 45% | fund 0.0050 | hold False | inval 0.13107 | OB 0.12669-0.12950
 
 ## Pre-pump candidates
-- AVAX: [A+E] 7d -16.5%
-- LTC: [A+E] 7d -14.5%
-- SUI: [A+E] 7d -12.0%
-- INJ: [A+E] 7d -10.7%
-- BNB: [A+E] 7d -9.8%
-- CC: [A+E] 7d -9.4%
-- SOL: [A+E] 7d -9.4%
-- HYPE: [A+E] 7d -8.1%
+- AVAX: [A+E] 7d -16.6%
+- LTC: [A+E] 7d -14.6%
+- SUI: [A+E] 7d -12.6%
+- INJ: [A+E] 7d -10.6%
+- BNB: [A+E] 7d -9.3%
+- CC: [A+E] 7d -9.2%
+- SOL: [A+E] 7d -9.1%
+- HYPE: [A+E] 7d -8.6%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - Leveraged XRP ETF Draws Fresh Cash Despite Token’s Slide - TipRanks
@@ -47,12 +47,12 @@
 - (25 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 5.2% (0.54R) | in profit 4 | older than 7d 1
-- worst: FF 0.08R, SENT 0.12R, NIGHT 0.80R | best: SENT 0.12R, NIGHT 0.80R, KITE 1.14R
+- open 4 | mean 5.6% (0.54R) | in profit 4 | older than 7d 1
+- worst: SENT 0.09R, FF 0.12R, NIGHT 0.90R | best: FF 0.12R, NIGHT 0.90R, KITE 1.06R
 
 ## System
-- CoinGecko 6463/10000 used, month-end projection 10029 (100%), throttle level 2 | by script {'scan': 2036, 'check_liquidity': 299, 'breakout_check': 4057, 'counterfactual_check': 71}
+- CoinGecko 6465/10000 used, month-end projection 10010 (100%), throttle level 2 | by script {'scan': 2038, 'check_liquidity': 299, 'breakout_check': 4057, 'counterfactual_check': 71}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=269)
-- radar-flags.json scan age: 4m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 48
