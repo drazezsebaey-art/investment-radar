@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-20 11:35 UTC
+# Radar digest - 2026-11-20 12:15 UTC
 
 ## Market
-- BTC scenario **C** | price 61780 | wk close 64748 vs 82800 | 50W 75060 (-17.69%) | 1m old
+- BTC scenario **C** | price 61780 | wk close 64748 vs 82800 | 50W 75060 (-17.69%) | 41m old
 - Alts: **BTC_LED** [-] | BTC.D 56.20% | ETH/BTC 0.02834 | breadth7d 54% | stables 30d -5.88%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.33pt | 7d -0.81pt | n=121
 - Gold: PAXG 1m -8.16% | real10y 2.88 (11bp 1m) | USD 1m 0.89% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 35
@@ -13,13 +13,13 @@
 
 ## Pre-pump candidates
 - GNO: [A+C+E] 7d -4.6%
-- AVAX: [A+E] 7d -17.0%
+- AVAX: [A+E] 7d -18.5%
 - LTC: [A+E] 7d -14.9%
-- SUI: [A+E] 7d -13.9%
+- SUI: [A+E] 7d -14.5%
 - INJ: [A+E] 7d -12.0%
+- SOL: [A+E] 7d -10.9%
 - BNB: [A+E] 7d -10.0%
 - HYPE: [A+E] 7d -9.9%
-- SOL: [A+E] 7d -9.5%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - Leveraged XRP ETF Attracts Fresh Cash Even as Underlying Token Flashes ‘Sell’ - TipRanks
@@ -44,12 +44,12 @@
 - vote: gnosis (GnosisDAO) until 2026-11-24 - GIP-157: Should GnosisDAO withdraw assets from the legacy DAO Safe to 
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 8.0% (0.74R) | in profit 4 | older than 7d 1
-- worst: FF 0.21R, SENT 0.47R, NIGHT 0.91R | best: SENT 0.47R, NIGHT 0.91R, KITE 1.36R
+- open 4 | mean 7.3% (0.70R) | in profit 4 | older than 7d 1
+- worst: FF 0.20R, SENT 0.40R, NIGHT 0.85R | best: SENT 0.40R, NIGHT 0.85R, KITE 1.33R
 
 ## System
-- CoinGecko 6477/10000 used, month-end projection 9986 (100%), throttle level 1 | by script {'scan': 2048, 'check_liquidity': 301, 'breakout_check': 4057, 'counterfactual_check': 71}
+- CoinGecko 6535/10000 used, month-end projection 10054 (100%), throttle level 2 | by script {'scan': 2050, 'check_liquidity': 302, 'breakout_check': 4112, 'counterfactual_check': 71}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=269)
-- radar-flags.json scan age: 5m
+- radar-flags.json scan age: 15m
 - excluded from radar (pegged/tokenized equity): 48
