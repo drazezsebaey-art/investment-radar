@@ -1,4 +1,4 @@
-# Radar digest - 2026-11-20 14:35 UTC
+# Radar digest - 2026-11-20 15:02 UTC
 
 ## Market
 - BTC scenario **C** | price 61362 | wk close 64748 vs 82800 | 50W 75060 (-18.25%) | 1h old
@@ -40,12 +40,12 @@
 - vote: gnosis (GnosisDAO) until 2026-11-24 - GIP-157: Should GnosisDAO withdraw assets from the legacy DAO Safe to 
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 7.0% (0.64R) | in profit 4 | older than 7d 1
-- worst: FF 0.09R, SENT 0.51R, NIGHT 0.77R | best: SENT 0.51R, NIGHT 0.77R, KITE 1.17R
+- open 4 | mean 6.1% (0.59R) | in profit 4 | older than 7d 1
+- worst: FF 0.10R, SENT 0.38R, NIGHT 0.71R | best: SENT 0.38R, NIGHT 0.71R, KITE 1.16R
 
 ## System
-- CoinGecko 6545/10000 used, month-end projection 10026 (100%), throttle level 2 | by script {'scan': 2060, 'check_liquidity': 302, 'breakout_check': 4112, 'counterfactual_check': 71}
+- CoinGecko 6547/10000 used, month-end projection 10008 (100%), throttle level 2 | by script {'scan': 2062, 'check_liquidity': 302, 'breakout_check': 4112, 'counterfactual_check': 71}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=269)
-- radar-flags.json scan age: 4m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 48
