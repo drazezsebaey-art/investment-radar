@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-20 13:36 UTC
+# Radar digest - 2026-11-20 14:02 UTC
 
 ## Market
-- BTC scenario **C** | price 61362 | wk close 64748 vs 82800 | 50W 75060 (-18.25%) | 1m old
+- BTC scenario **C** | price 61362 | wk close 64748 vs 82800 | 50W 75060 (-18.25%) | 28m old
 - Alts: **BTC_LED** [-] | BTC.D 56.20% | ETH/BTC 0.02834 | breadth7d 54% | stables 30d -5.88%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.33pt | 7d -0.81pt | n=121
 - Gold: PAXG 1m -8.16% | real10y 2.88 (11bp 1m) | USD 1m 0.89% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 35
@@ -12,7 +12,7 @@
 - KITE: **RESUMING** | +43% impulse, retr 0.26 | OI dd 45% | fund 0.0050 | hold False | inval 0.13107 | OB 0.12669-0.12950
 
 ## Pre-pump candidates
-- GNO: [A+C] 7d -4.8%
+- none
 
 ## ETF pipeline (new this run)
 - solana NEW: institutional_backing - VanEck Drops Gemini as Custodian for $1.4 Billion Crypto ETF Lineup, Ends Solana Staking R
@@ -40,12 +40,12 @@
 - vote: gnosis (GnosisDAO) until 2026-11-24 - GIP-157: Should GnosisDAO withdraw assets from the legacy DAO Safe to 
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 6.1% (0.58R) | in profit 4 | older than 7d 1
-- worst: FF 0.09R, SENT 0.36R, NIGHT 0.74R | best: SENT 0.36R, NIGHT 0.74R, KITE 1.12R
+- open 4 | mean 6.3% (0.60R) | in profit 4 | older than 7d 1
+- worst: FF 0.08R, SENT 0.41R, NIGHT 0.72R | best: SENT 0.41R, NIGHT 0.72R, KITE 1.20R
 
 ## System
-- CoinGecko 6541/10000 used, month-end projection 10042 (100%), throttle level 2 | by script {'scan': 2056, 'check_liquidity': 302, 'breakout_check': 4112, 'counterfactual_check': 71}
+- CoinGecko 6543/10000 used, month-end projection 10023 (100%), throttle level 2 | by script {'scan': 2058, 'check_liquidity': 302, 'breakout_check': 4112, 'counterfactual_check': 71}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=269)
-- radar-flags.json scan age: 5m
-- excluded from radar (pegged/tokenized equity): 47
+- radar-flags.json scan age: 2m
+- excluded from radar (pegged/tokenized equity): 48
