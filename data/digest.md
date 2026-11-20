@@ -1,4 +1,4 @@
-# Radar digest - 2026-11-20 10:35 UTC
+# Radar digest - 2026-11-20 11:02 UTC
 
 ## Market
 - BTC scenario **C** | price 61647 | wk close 64748 vs 82800 | 50W 75060 (-17.87%) | 1h old
@@ -14,12 +14,12 @@
 ## Pre-pump candidates
 - AVAX: [A+E] 7d -17.0%
 - LTC: [A+E] 7d -14.9%
-- SUI: [A+E] 7d -13.1%
+- SUI: [A+E] 7d -13.9%
 - INJ: [A+E] 7d -11.4%
-- STABLE: [C+E] 7d -11.2%
 - HYPE: [A+E] 7d -9.8%
-- SOL: [A+E] 7d -9.7%
 - BNB: [A+E] 7d -9.6%
+- SOL: [A+E] 7d -9.5%
+- CC: [A+E] 7d -9.4%
 
 ## ETF pipeline (new this run)
 - ondo-finance: other - iShares J.P. Morgan EM Local Currency Bond Tokenized ETF (Ondo) USD Price (LEMBON-USD) - Y
@@ -43,12 +43,12 @@
 - vote: gnosis (GnosisDAO) until 2026-11-24 - GIP-157: Should GnosisDAO withdraw assets from the legacy DAO Safe to 
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 7.3% (0.68R) | in profit 4 | older than 7d 1
-- worst: FF 0.22R, SENT 0.37R, NIGHT 0.88R | best: SENT 0.37R, NIGHT 0.88R, KITE 1.23R
+- open 4 | mean 7.7% (0.70R) | in profit 4 | older than 7d 1
+- worst: FF 0.22R, SENT 0.43R, NIGHT 0.94R | best: SENT 0.43R, NIGHT 0.94R, KITE 1.22R
 
 ## System
-- CoinGecko 6473/10000 used, month-end projection 10001 (100%), throttle level 2 | by script {'scan': 2044, 'check_liquidity': 301, 'breakout_check': 4057, 'counterfactual_check': 71}
+- CoinGecko 6475/10000 used, month-end projection 9983 (100%), throttle level 1 | by script {'scan': 2046, 'check_liquidity': 301, 'breakout_check': 4057, 'counterfactual_check': 71}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=269)
-- radar-flags.json scan age: 4m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 48
