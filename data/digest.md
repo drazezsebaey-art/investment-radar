@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-20 20:34 UTC
+# Radar digest - 2026-11-20 21:02 UTC
 
 ## Market
-- BTC scenario **C** | price 58378 | wk close 64748 vs 82800 | 50W 75060 (-22.22%) | 57m old
+- BTC scenario **C** | price 58378 | wk close 64748 vs 82800 | 50W 75060 (-22.22%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 55.89% | ETH/BTC 0.02749 | breadth7d 60% | stables 30d -5.89%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.53pt | 7d -1.06pt | n=121
 - Gold: PAXG 1m -9.21% | real10y 2.88 (11bp 1m) | USD 1m 0.89% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 35
@@ -13,12 +13,12 @@
 
 ## Pre-pump candidates
 - INJ: [A+E] 7d -23.7%
-- SUI: [A+E] 7d -20.7%
+- SUI: [A+E] 7d -21.9%
 - LTC: [A+E] 7d -19.7%
 - HYPE: [A+E] 7d -16.7%
+- SOL: [A+E] 7d -16.0%
 - BNB: [A+E] 7d -15.8%
-- SOL: [A+E] 7d -14.8%
-- XRP: [A+E] 7d -12.6%
+- XRP: [A+E] 7d -13.5%
 - GNO: [A+E] 7d -10.7%
 
 ## ETF pipeline (new this run)
@@ -43,12 +43,12 @@
 - vote: gnosis (GnosisDAO) until 2026-11-24 - GIP-157: Should GnosisDAO withdraw assets from the legacy DAO Safe to 
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 4.3% (0.63R) | in profit 3 | older than 7d 1
-- worst: SENT -0.05R, FF 0.18R, NIGHT 0.50R | best: FF 0.18R, NIGHT 0.50R, KITE 1.91R
+- open 4 | mean 3.9% (0.56R) | in profit 3 | older than 7d 1
+- worst: SENT -0.06R, FF 0.21R, NIGHT 0.45R | best: FF 0.21R, NIGHT 0.45R, KITE 1.63R
 
 ## System
-- CoinGecko 6635/10000 used, month-end projection 10036 (100%), throttle level 2 | by script {'scan': 2092, 'check_liquidity': 307, 'breakout_check': 4165, 'counterfactual_check': 71}
+- CoinGecko 6637/10000 used, month-end projection 10018 (100%), throttle level 2 | by script {'scan': 2094, 'check_liquidity': 307, 'breakout_check': 4165, 'counterfactual_check': 71}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=271)
-- radar-flags.json scan age: 4m
-- excluded from radar (pegged/tokenized equity): 50
+- radar-flags.json scan age: 2m
+- excluded from radar (pegged/tokenized equity): 49
