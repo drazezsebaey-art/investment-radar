@@ -1,4 +1,4 @@
-# Radar digest - 2026-11-20 02:35 UTC
+# Radar digest - 2026-11-20 03:02 UTC
 
 ## Market
 - BTC scenario **C** | price 62335 | wk close 64748 vs 82800 | 50W 75060 (-16.95%) | 1h old
@@ -12,14 +12,14 @@
 - KITE: **RESUMING** | +43% impulse, retr 0.21 | OI dd 45% | fund 0.0050 | hold False | inval 0.12669 | OB 0.12669-0.12950
 
 ## Pre-pump candidates
-- AVAX: [A+E] 7d -17.3%
-- LTC: [A+E] 7d -17.3%
-- SUI: [A+E] 7d -13.2%
-- BNB: [A+E] 7d -12.8%
-- SOL: [A+E] 7d -11.7%
-- HYPE: [A+E] 7d -10.6%
-- CC: [A+E] 7d -10.6%
-- ZEC: [A+E] 7d -10.1%
+- AVAX: [A+E] 7d -17.6%
+- LTC: [A+E] 7d -16.2%
+- SUI: [A+E] 7d -12.5%
+- BNB: [A+E] 7d -12.2%
+- NEAR: [A+E] 7d -11.3%
+- SOL: [A+E] 7d -10.6%
+- CC: [A+E] 7d -10.2%
+- INJ: [A+E] 7d -10.2%
 
 ## ETF pipeline (new this run)
 - solana NEW: institutional_backing - VanEck Ends Gemini Custody Deal for Solana ETF - Wisevoter
@@ -42,12 +42,12 @@
 - (25 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 5.8% (0.57R) | in profit 3 | older than 7d 1
-- worst: LUNC -0.43R, FF 0.19R, NIGHT 1.03R | best: FF 0.19R, NIGHT 1.03R, KITE 1.49R
+- open 4 | mean 6.4% (0.67R) | in profit 3 | older than 7d 1
+- worst: LUNC -0.14R, FF 0.19R, NIGHT 1.08R | best: FF 0.19R, NIGHT 1.08R, KITE 1.53R
 
 ## System
-- CoinGecko 6387/10000 used, month-end projection 10041 (100%), throttle level 2 | by script {'scan': 2012, 'check_liquidity': 295, 'breakout_check': 4009, 'counterfactual_check': 71}
+- CoinGecko 6389/10000 used, month-end projection 10022 (100%), throttle level 2 | by script {'scan': 2014, 'check_liquidity': 295, 'breakout_check': 4009, 'counterfactual_check': 71}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=269)
-- radar-flags.json scan age: 5m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 47
