@@ -1,31 +1,33 @@
-# Radar digest - 2026-11-21 07:02 UTC
+# Radar digest - 2026-11-21 07:35 UTC
 
 ## Market
-- BTC scenario **C** | price 56003 | wk close 64748 vs 82800 | 50W 75060 (-25.39%) | 1h old
-- Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 55.97% | ETH/BTC 0.02737 | breadth7d 62% | stables 30d -6.31%
-- Alt risk (BTC.D): **NORMAL**  | 3d -0.55pt | 7d -0.94pt | n=121
+- BTC scenario **C** | price 58171 | wk close 64748 vs 82800 | 50W 75060 (-22.50%) | 1m old
+- Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 55.86% | ETH/BTC 0.02810 | breadth7d 62% | stables 30d -6.30%
+- Alt risk (BTC.D): **NORMAL**  | 3d -0.62pt | 7d -0.96pt | n=121
 - Gold: PAXG 1m -10.01% | real10y 2.88 (12bp 1m) | USD 1m 0.89% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 22
 - 10y 1w: -6bp = real 2 + breakeven -9 -> **SMALL_MOVE**
 - 10y 1m: -9bp = real 12 + breakeven -17 -> **SMALL_MOVE**
 
 ## Coins in correction (entry_ready first)
-- KITE: **RESET_DONE** | +43% impulse, retr 0.29 | OI dd 46% | fund 0.0050 | hold False | inval 0.13107 | OB 0.12669-0.12950
+- KITE: **RESET_DONE** | +43% impulse, retr 0.25 | OI dd 46% | fund 0.0050 | hold True | inval 0.13107 | OB 0.12669-0.12950
 
 ## Pre-pump candidates
 - none
 
 ## ETF pipeline (new this run)
-- ripple NEW: other - Crypto ETF News Today: BTC, ETH, XRP Outflows Before FOMC Minutes - Coin Gabbar
+- ripple NEW: other - XRP price: What next for Ripple-linked token as ETF assets slip under $1 billion - CoinDes
+- ripple NEW: other - Crypto ETF News Today: BTC, ETH, XRP Outflows As Market Crash Hard - Coin Gabbar
+- zcash: other - Zcash sees heavy ETF outflows and long liquidations: Can ZEC avoid deeper losses? - Trader
 
 ## Derivatives flags (OKX)
-- ETH: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.87 | taker 0.90
-- SOL: LONG_FLUSH_24H | OI/mc 0.65% | topPos 0.87 | taker 0.94
-- NEAR: LONG_FLUSH_24H | OI/mc -% | topPos 1.01 | taker 0.90
-- AVAX: QUIET_DELEVERAGING, AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 0.82
+- SOL: SHORT_SQUEEZE_24H | OI/mc 0.63% | topPos 0.87 | taker 0.94
+- NEAR: LONG_FLUSH_24H | OI/mc -% | topPos 1.00 | taker 0.93
+- AVAX: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.37% | topPos 0.87 | taker 0.85
 - XRP: LONG_FLUSH_24H | OI/mc 0.14% | topPos 0.88 | taker 0.97
-- SUI: AGGRESSIVE_SELLING, LONG_FLUSH_24H | OI/mc 0.93% | topPos 0.80 | taker 0.84
-- SEI: LONG_FLUSH_24H | OI/mc 0.74% | topPos 0.72 | taker 0.86
-- TAO: LONG_FLUSH_24H | OI/mc 0.76% | topPos 0.93 | taker 0.89
+- SUI: LONG_FLUSH_24H | OI/mc 0.92% | topPos 0.81 | taker 0.85
+- SEI: LONG_FLUSH_24H | OI/mc 0.73% | topPos 0.76 | taker 0.87
+- TAO: LONG_FLUSH_24H | OI/mc 0.77% | topPos 0.93 | taker 0.94
+- WLD: LONG_FLUSH_24H | OI/mc -% | topPos 0.84 | taker 0.91
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -36,12 +38,12 @@
 - vote: gnosis (GnosisDAO) until 2026-11-24 - GIP-157: Should GnosisDAO withdraw assets from the legacy DAO Safe to 
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 3.1% (0.45R) | in profit 4 | older than 7d 2
-- worst: SENT 0.04R, FF 0.12R, NIGHT 0.27R | best: FF 0.12R, NIGHT 0.27R, KITE 1.36R
+- open 4 | mean 3.0% (0.39R) | in profit 4 | older than 7d 2
+- worst: FF 0.07R, SENT 0.13R, NIGHT 0.27R | best: SENT 0.13R, NIGHT 0.27R, KITE 1.08R
 
 ## System
-- CoinGecko 6797/10000 used, month-end projection 10049 (100%), throttle level 2 | by script {'scan': 2134, 'check_liquidity': 313, 'breakout_check': 4277, 'counterfactual_check': 73}
+- CoinGecko 6799/10000 used, month-end projection 10052 (100%), throttle level 2 | by script {'scan': 2136, 'check_liquidity': 313, 'breakout_check': 4277, 'counterfactual_check': 73}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=272)
-- radar-flags.json scan age: 2m
+- radar-flags.json scan age: 5m
 - excluded from radar (pegged/tokenized equity): 49
