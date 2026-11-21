@@ -1,38 +1,38 @@
-# Radar digest - 2026-11-21 19:02 UTC
+# Radar digest - 2026-11-21 19:35 UTC
 
 ## Market
-- BTC scenario **C** | price 60105 | wk close 64748 vs 82800 | 50W 75060 (-19.92%) | 1h old
-- Alts: **BTC_LED** [-] | BTC.D 56.09% | ETH/BTC 0.02807 | breadth7d 62% | stables 30d -6.29%
-- Alt risk (BTC.D): **NORMAL**  | 3d -0.35pt | 7d -0.75pt | n=121
+- BTC scenario **C** | price 60343 | wk close 64748 vs 82800 | 50W 75060 (-19.61%) | 1m old
+- Alts: **BTC_LED** [-] | BTC.D 56.17% | ETH/BTC 0.02794 | breadth7d 71% | stables 30d -6.31%
+- Alt risk (BTC.D): **NORMAL**  | 3d -0.18pt | 7d -0.50pt | n=121
 - Gold: PAXG 1m -10.42% | real10y 2.88 (12bp 1m) | USD 1m 0.89% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 22
 - 10y 1w: -6bp = real 2 + breakeven -9 -> **SMALL_MOVE**
 - 10y 1m: -9bp = real 12 + breakeven -17 -> **SMALL_MOVE**
 
 ## Coins in correction (entry_ready first)
-- KITE: **RESET_DONE** | +43% impulse, retr 0.22 | OI dd 46% | fund 0.0050 | hold True | inval 0.13107 | OB 0.12669-0.12950
+- KITE: **RESET_DONE** | +43% impulse, retr 0.23 | OI dd 46% | fund 0.0050 | hold True | inval 0.13107 | OB 0.12669-0.12950
 
 ## Pre-pump candidates
-- TAO: [B+E] 7d -4.3%
+- INJ: [A+E] 7d -16.1%
+- LTC: [A+E] 7d -12.1%
+- AVAX: [A+E] 7d -11.5%
+- SUI: [A+E] 7d -11.4%
+- ZEC: [A+E] 7d -8.5%
+- HYPE: [A+E] 7d -7.6%
+- BNB: [A+E] 7d -7.2%
+- CC: [A+E] 7d -5.9%
 
 ## ETF pipeline (new this run)
-- solana NEW: delay_or_rejection - Solana Price Prediction: SOL Crashes 75% From Peak as ETF Investors Withdraw $5.9M - Coinp
-- ripple NEW: other - XRP Slides to 87 Cents, Lowest Since 2024, as ETF Assets Fall Below $1 Billion - BigGo Fin
-- solana NEW: other - Italian Banking Giant Rotates Crypto ETF Portfolio From Bitcoin to Solana and XRP - Crypto
-- ripple NEW: other - Italian Banking Giant Rotates Crypto ETF Portfolio From Bitcoin to Solana and XRP - Crypto
-- ripple NEW: other - XRP Price Reclaims $1 Despite ETF Outflows: What’s Driving the Price? - Cryptonews.net
-- solana NEW: other - Bitwise Sees SOL at $1,100 by 2031, but Its ETF Drew Nearly All of a $4.4M Week - CryptoDa
-- hyperliquid NEW: other - U.S. HYPE ETF Outflows Put Hyperliquid Price in Focus - ad-hoc-news.de
-- bittensor: other - Form 8K Grayscale Bittensor Trust (TAO) For: 18 November By Investing.com - Investing.com 
+- ripple NEW: other - XRP ETF Price Forecast — XRPR ($7.23) $8.84 Upside Target on XRP $1.10 Rebound - TradingNE
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc 0.23% | topPos 0.93 | taker 0.98
-- NEAR: SHORT_SQUEEZE_24H | OI/mc 1.15% | topPos 1.02 | taker 1.00
-- AVAX: LONG_FLUSH_24H | OI/mc 0.37% | topPos 0.88 | taker 0.91
-- XRP: SHORT_SQUEEZE_24H | OI/mc 0.14% | topPos 0.88 | taker 0.96
-- SEI: LONG_FLUSH_24H | OI/mc 0.74% | topPos 0.75 | taker 0.88
-- TAO: SHORT_SQUEEZE_FUEL, LONG_FLUSH_24H | OI/mc 0.78% | topPos 0.93 | taker 0.99
-- ADA: LONG_FLUSH_24H | OI/mc 0.43% | topPos 0.87 | taker 0.86
-- LINK: LONG_FLUSH_24H | OI/mc -% | topPos 0.90 | taker 0.91
+- BTC: SHORT_SQUEEZE_24H | OI/mc 0.23% | topPos 0.93 | taker 1.00
+- NEAR: SHORT_SQUEEZE_24H | OI/mc 1.16% | topPos 1.02 | taker 1.00
+- AVAX: LONG_FLUSH_24H | OI/mc 0.37% | topPos 0.88 | taker 0.89
+- XRP: SHORT_SQUEEZE_24H | OI/mc 0.14% | topPos 0.88 | taker 0.97
+- SEI: LONG_FLUSH_24H | OI/mc 0.74% | topPos 0.75 | taker 0.89
+- TAO: SHORT_SQUEEZE_FUEL, LONG_FLUSH_24H | OI/mc 0.79% | topPos 0.92 | taker 0.99
+- ADA: LONG_FLUSH_24H | OI/mc 0.44% | topPos 0.87 | taker 0.87
+- LINK: LONG_FLUSH_24H | OI/mc -% | topPos 0.90 | taker 0.92
 
 ## Revenue / buyback flags
 - collector-crypt: CHEAP_VS_REVENUE
@@ -43,11 +43,11 @@
 
 ## Paper book (open trades, marked to last scan)
 - open 4 | mean 6.7% (0.69R) | in profit 4 | older than 7d 2
-- worst: FF 0.06R, SENT 0.08R, NIGHT 1.14R | best: SENT 0.08R, NIGHT 1.14R, KITE 1.49R
+- worst: FF 0.07R, SENT 0.07R, NIGHT 1.18R | best: SENT 0.07R, NIGHT 1.18R, KITE 1.43R
 
 ## System
-- CoinGecko 6972/10000 used, month-end projection 10060 (101%), throttle level 2 | by script {'scan': 2190, 'check_liquidity': 318, 'breakout_check': 4391, 'counterfactual_check': 73}
+- CoinGecko 6974/10000 used, month-end projection 10063 (101%), throttle level 2 | by script {'scan': 2192, 'check_liquidity': 318, 'breakout_check': 4391, 'counterfactual_check': 73}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=272)
-- radar-flags.json scan age: 2m
+- radar-flags.json scan age: 5m
 - excluded from radar (pegged/tokenized equity): 48
