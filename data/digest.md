@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-21 13:35 UTC
+# Radar digest - 2026-11-21 14:02 UTC
 
 ## Market
-- BTC scenario **C** | price 59859 | wk close 64748 vs 82800 | 50W 75060 (-20.25%) | 1m old
+- BTC scenario **C** | price 59859 | wk close 64748 vs 82800 | 50W 75060 (-20.25%) | 28m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 55.71% | ETH/BTC 0.02845 | breadth7d 66% | stables 30d -6.31%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.80pt | 7d -1.18pt | n=121
 - Gold: PAXG 1m -9.43% | real10y 2.88 (12bp 1m) | USD 1m 0.89% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 22
@@ -12,8 +12,8 @@
 - KITE: **RESET_DONE** | +43% impulse, retr 0.21 | OI dd 46% | fund 0.0050 | hold True | inval 0.13107 | OB 0.12669-0.12950
 
 ## Pre-pump candidates
-- NEAR: [A+E] 7d -16.0%
-- KITE: [C+E] 7d 4.2%
+- NEAR: [A+E] 7d -12.5%
+- KITE: [C+E] 7d 4.5%
 
 ## ETF pipeline (new this run)
 - solana NEW: other - Solana Slumps 75% Below Record High as Spot ETF Outflows Accelerate - BigGo Finance
@@ -37,12 +37,12 @@
 - vote: gnosis (GnosisDAO) until 2026-11-24 - GIP-157: Should GnosisDAO withdraw assets from the legacy DAO Safe to 
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 5.3% (0.62R) | in profit 4 | older than 7d 2
-- worst: FF 0.18R, SENT 0.26R, NIGHT 0.49R | best: SENT 0.26R, NIGHT 0.49R, KITE 1.55R
+- open 4 | mean 6.0% (0.69R) | in profit 4 | older than 7d 2
+- worst: FF 0.18R, SENT 0.23R, NIGHT 0.65R | best: SENT 0.23R, NIGHT 0.65R, KITE 1.69R
 
 ## System
-- CoinGecko 6893/10000 used, month-end projection 10067 (101%), throttle level 2 | by script {'scan': 2168, 'check_liquidity': 316, 'breakout_check': 4336, 'counterfactual_check': 73}
+- CoinGecko 6895/10000 used, month-end projection 10049 (100%), throttle level 2 | by script {'scan': 2170, 'check_liquidity': 316, 'breakout_check': 4336, 'counterfactual_check': 73}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=272)
-- radar-flags.json scan age: 5m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 48
