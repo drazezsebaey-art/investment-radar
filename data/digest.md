@@ -1,4 +1,4 @@
-# Radar digest - 2026-11-21 14:34 UTC
+# Radar digest - 2026-11-21 15:02 UTC
 
 ## Market
 - BTC scenario **C** | price 59859 | wk close 64748 vs 82800 | 50W 75060 (-20.25%) | 1h old
@@ -12,7 +12,7 @@
 - KITE: **RESET_DONE** | +43% impulse, retr 0.21 | OI dd 46% | fund 0.0050 | hold True | inval 0.13107 | OB 0.12669-0.12950
 
 ## Pre-pump candidates
-- NEAR: [A+B+E] 7d -12.5%
+- NEAR: [A+B+E] 7d -12.4%
 
 ## ETF pipeline (new this run)
 - solana NEW: other - Solana Slumps 75% Below Record High as Spot ETF Outflows Accelerate - BigGo Finance
@@ -36,12 +36,12 @@
 - vote: gnosis (GnosisDAO) until 2026-11-24 - GIP-157: Should GnosisDAO withdraw assets from the legacy DAO Safe to 
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 5.3% (0.62R) | in profit 4 | older than 7d 2
-- worst: FF 0.15R, SENT 0.17R, NIGHT 0.62R | best: SENT 0.17R, NIGHT 0.62R, KITE 1.53R
+- open 4 | mean 5.8% (0.61R) | in profit 4 | older than 7d 2
+- worst: FF 0.13R, SENT 0.26R, NIGHT 0.69R | best: SENT 0.26R, NIGHT 0.69R, KITE 1.33R
 
 ## System
-- CoinGecko 6897/10000 used, month-end projection 10052 (100%), throttle level 2 | by script {'scan': 2172, 'check_liquidity': 316, 'breakout_check': 4336, 'counterfactual_check': 73}
+- CoinGecko 6899/10000 used, month-end projection 10035 (100%), throttle level 2 | by script {'scan': 2174, 'check_liquidity': 316, 'breakout_check': 4336, 'counterfactual_check': 73}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=272)
-- radar-flags.json scan age: 4m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 48
