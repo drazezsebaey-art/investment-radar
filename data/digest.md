@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-21 09:35 UTC
+# Radar digest - 2026-11-21 10:02 UTC
 
 ## Market
-- BTC scenario **C** | price 57980 | wk close 64748 vs 82800 | 50W 75060 (-22.76%) | 1m old
+- BTC scenario **C** | price 57980 | wk close 64748 vs 82800 | 50W 75060 (-22.76%) | 28m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 55.86% | ETH/BTC 0.02810 | breadth7d 62% | stables 30d -6.30%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.62pt | 7d -0.96pt | n=121
 - Gold: PAXG 1m -10.01% | real10y 2.88 (12bp 1m) | USD 1m 0.89% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 22
@@ -38,12 +38,12 @@
 - vote: gnosis (GnosisDAO) until 2026-11-24 - GIP-157: Should GnosisDAO withdraw assets from the legacy DAO Safe to 
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 3.7% (0.52R) | in profit 4 | older than 7d 2
-- worst: SENT 0.07R, FF 0.20R, NIGHT 0.27R | best: FF 0.20R, NIGHT 0.27R, KITE 1.52R
+- open 4 | mean 3.6% (0.51R) | in profit 4 | older than 7d 2
+- worst: SENT 0.10R, FF 0.13R, NIGHT 0.29R | best: FF 0.13R, NIGHT 0.29R, KITE 1.51R
 
 ## System
-- CoinGecko 6807/10000 used, month-end projection 10023 (100%), throttle level 2 | by script {'scan': 2144, 'check_liquidity': 313, 'breakout_check': 4277, 'counterfactual_check': 73}
+- CoinGecko 6809/10000 used, month-end projection 10005 (100%), throttle level 2 | by script {'scan': 2146, 'check_liquidity': 313, 'breakout_check': 4277, 'counterfactual_check': 73}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=272)
-- radar-flags.json scan age: 4m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 48
