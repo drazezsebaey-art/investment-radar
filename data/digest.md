@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-21 01:02 UTC
+# Radar digest - 2026-11-21 01:35 UTC
 
 ## Market
-- BTC scenario **C** | price 58986 | wk close 64748 vs 82800 | 50W 75060 (-21.41%) | 1h old
+- BTC scenario **C** | price 58972 | wk close 64748 vs 82800 | 50W 75060 (-21.43%) | 1m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.02% | ETH/BTC 0.02749 | breadth7d 55% | stables 30d -5.94%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.50pt | 7d -0.93pt | n=121
 - Gold: PAXG 1m -9.38% | real10y 2.88 (12bp 1m) | USD 1m 0.89% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 22
@@ -9,24 +9,24 @@
 - 10y 1m: -9bp = real 12 + breakeven -17 -> **SMALL_MOVE**
 
 ## Coins in correction (entry_ready first)
-- KITE: **RESET_DONE** | +43% impulse, retr 0.12 | OI dd 46% | fund 0.0050 | hold False | inval 0.13107 | OB 0.13242-0.13458
+- KITE: **RESET_DONE** | +43% impulse, retr 0.18 | OI dd 46% | fund 0.0050 | hold False | inval 0.13107 | OB 0.13242-0.13458
 
 ## Pre-pump candidates
 - none
 
 ## ETF pipeline (new this run)
-- ripple NEW: other - RBC held no shares in leveraged XRP ETF by Q2-e... - Pluang
-- ondo-finance: other - About Franklin US Treasury Bond ETF (Ondo Tokenized) - Coinbase
+- kucoin-shares NEW: launch - JPMorgan Launches Global Research Enhanced Equity ETF with $25M Seed Capital - KuCoin
+- ether-fi NEW: other - ETHFI Swings 4.02% Amid Ethereum ETF Outflows and Selloff - CoinMarketCap
 
 ## Derivatives flags (OKX)
-- SOL: LONG_FLUSH_24H | OI/mc 0.65% | topPos 0.87 | taker 0.99
-- NEAR: LONG_FLUSH_24H | OI/mc -% | topPos 0.99 | taker 0.93
-- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.87
-- XRP: LONG_FLUSH_24H | OI/mc 0.14% | topPos 0.89 | taker 0.96
+- NEAR: LONG_FLUSH_24H | OI/mc -% | topPos 1.00 | taker 0.92
+- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 0.88
+- XRP: LONG_FLUSH_24H | OI/mc 0.14% | topPos 0.88 | taker 0.96
 - SUI: LONG_FLUSH_24H | OI/mc 0.92% | topPos 0.82 | taker 0.88
-- SEI: LONG_FLUSH_24H | OI/mc 0.77% | topPos 0.81 | taker 0.93
-- TAO: LONG_FLUSH_24H | OI/mc 0.76% | topPos 0.92 | taker 0.90
-- WLD: LONG_FLUSH_24H | OI/mc -% | topPos 0.85 | taker 0.91
+- SEI: LONG_FLUSH_24H | OI/mc 0.76% | topPos 0.80 | taker 0.93
+- TAO: LONG_FLUSH_24H | OI/mc 0.75% | topPos 0.92 | taker 0.91
+- WLD: LONG_FLUSH_24H | OI/mc -% | topPos 0.85 | taker 0.92
+- ADA: LONG_FLUSH_24H | OI/mc 0.45% | topPos 0.87 | taker 0.89
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -37,12 +37,12 @@
 - vote: gnosis (GnosisDAO) until 2026-11-24 - GIP-157: Should GnosisDAO withdraw assets from the legacy DAO Safe to 
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 5.6% (0.74R) | in profit 4 | older than 7d 2
-- worst: SENT 0.04R, FF 0.21R, NIGHT 0.64R | best: FF 0.21R, NIGHT 0.64R, KITE 2.05R
+- open 4 | mean 4.9% (0.65R) | in profit 3 | older than 7d 2
+- worst: SENT -0.00R, FF 0.18R, NIGHT 0.60R | best: FF 0.18R, NIGHT 0.60R, KITE 1.84R
 
 ## System
-- CoinGecko 6715/10000 used, month-end projection 10052 (100%), throttle level 2 | by script {'scan': 2110, 'check_liquidity': 309, 'breakout_check': 4223, 'counterfactual_check': 73}
+- CoinGecko 6717/10000 used, month-end projection 10055 (101%), throttle level 2 | by script {'scan': 2112, 'check_liquidity': 309, 'breakout_check': 4223, 'counterfactual_check': 73}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=271)
-- radar-flags.json scan age: 2m
-- excluded from radar (pegged/tokenized equity): 48
+- radar-flags.json scan age: 5m
+- excluded from radar (pegged/tokenized equity): 49
