@@ -1,4 +1,4 @@
-# Radar digest - 2026-11-21 04:34 UTC
+# Radar digest - 2026-11-21 05:02 UTC
 
 ## Market
 - BTC scenario **C** | price 56902 | wk close 64748 vs 82800 | 50W 75060 (-24.19%) | 1h old
@@ -12,7 +12,7 @@
 - KITE: **RESET_DONE** | +43% impulse, retr 0.23 | OI dd 46% | fund 0.0050 | hold False | inval 0.13107 | OB 0.13242-0.13458
 
 ## Pre-pump candidates
-- none
+- KITE: [C+E] 7d 5.2%
 
 ## ETF pipeline (new this run)
 - solana NEW: other - Bitwise Solana Staking ETF (BSOL) Stock Price, News, Quote & History - Yahoo! Finance Cana
@@ -44,11 +44,11 @@
 
 ## Paper book (open trades, marked to last scan)
 - open 4 | mean 1.7% (0.34R) | in profit 3 | older than 7d 2
-- worst: SENT -0.23R, FF 0.05R, NIGHT 0.35R | best: FF 0.05R, NIGHT 0.35R, KITE 1.19R
+- worst: SENT -0.17R, FF 0.04R, NIGHT 0.29R | best: FF 0.04R, NIGHT 0.29R, KITE 1.21R
 
 ## System
-- CoinGecko 6730/10000 used, month-end projection 10012 (100%), throttle level 2 | by script {'scan': 2124, 'check_liquidity': 310, 'breakout_check': 4223, 'counterfactual_check': 73}
+- CoinGecko 6733/10000 used, month-end projection 9995 (100%), throttle level 1 | by script {'scan': 2126, 'check_liquidity': 311, 'breakout_check': 4223, 'counterfactual_check': 73}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=272)
-- radar-flags.json scan age: 4m
-- excluded from radar (pegged/tokenized equity): 50
+- radar-flags.json scan age: 2m
+- excluded from radar (pegged/tokenized equity): 49
