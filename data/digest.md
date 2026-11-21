@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-21 17:35 UTC
+# Radar digest - 2026-11-21 18:15 UTC
 
 ## Market
-- BTC scenario **C** | price 60105 | wk close 64748 vs 82800 | 50W 75060 (-19.92%) | 1m old
+- BTC scenario **C** | price 60105 | wk close 64748 vs 82800 | 50W 75060 (-19.92%) | 41m old
 - Alts: **BTC_LED** [-] | BTC.D 56.09% | ETH/BTC 0.02807 | breadth7d 62% | stables 30d -6.29%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.35pt | 7d -0.75pt | n=121
 - Gold: PAXG 1m -10.42% | real10y 2.88 (12bp 1m) | USD 1m 0.89% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 22
@@ -12,7 +12,7 @@
 - KITE: **RESET_DONE** | +43% impulse, retr 0.22 | OI dd 46% | fund 0.0050 | hold True | inval 0.13107 | OB 0.12669-0.12950
 
 ## Pre-pump candidates
-- none
+- TAO: [B+E] 7d -3.2%
 
 ## ETF pipeline (new this run)
 - solana NEW: delay_or_rejection - Solana Price Prediction: SOL Crashes 75% From Peak as ETF Investors Withdraw $5.9M - Coinp
@@ -42,12 +42,12 @@
 - vote: gnosis (GnosisDAO) until 2026-11-24 - GIP-157: Should GnosisDAO withdraw assets from the legacy DAO Safe to 
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 7.0% (0.72R) | in profit 4 | older than 7d 2
-- worst: FF 0.11R, SENT 0.12R, NIGHT 1.11R | best: SENT 0.12R, NIGHT 1.11R, KITE 1.52R
+- open 4 | mean 7.6% (0.77R) | in profit 4 | older than 7d 2
+- worst: FF 0.09R, SENT 0.17R, NIGHT 1.20R | best: SENT 0.17R, NIGHT 1.20R, KITE 1.62R
 
 ## System
-- CoinGecko 6910/10000 used, month-end projection 10010 (100%), throttle level 2 | by script {'scan': 2184, 'check_liquidity': 317, 'breakout_check': 4336, 'counterfactual_check': 73}
+- CoinGecko 6968/10000 used, month-end projection 10074 (101%), throttle level 2 | by script {'scan': 2186, 'check_liquidity': 318, 'breakout_check': 4391, 'counterfactual_check': 73}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=272)
-- radar-flags.json scan age: 5m
+- radar-flags.json scan age: 15m
 - excluded from radar (pegged/tokenized equity): 48
