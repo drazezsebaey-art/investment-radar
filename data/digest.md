@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-22 12:34 UTC
+# Radar digest - 2026-11-22 13:02 UTC
 
 ## Market
-- BTC scenario **C** | price 61058 | wk close 64748 vs 82800 | 50W 75060 (-18.65%) | 60m old
+- BTC scenario **C** | price 61058 | wk close 64748 vs 82800 | 50W 75060 (-18.65%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 56.29% | ETH/BTC 0.02802 | breadth7d 62% | stables 30d -6.18%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.08pt | 7d -0.51pt | n=121
 - Gold: PAXG 1m -10.32% | real10y 2.88 (12bp 1m) | USD 1m 0.89% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 22
@@ -12,9 +12,8 @@
 - SENT: **RESET_DONE** | +68% impulse, retr 0.56 | OI dd 46% | fund -0.0154 | hold False | inval 0.01911 | OB 0.01537-0.01658
 
 ## Pre-pump candidates
-- NEAR: [B+E] 7d -6.3%
+- NEAR: [B+E] 7d -5.8%
 - UB: [C+E] 7d -2.2%
-- KITE: [C+E] 7d 3.5%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - Leverage Turns the Tide: ProShares Ultra XRP ETF Draws Fresh Cash as Traders Bet on a Cryp
@@ -42,12 +41,12 @@
 - vote: gnosis (GnosisDAO) until 2026-11-24 - GIP-157: Should GnosisDAO withdraw assets from the legacy DAO Safe to 
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 8.1% (1.00R) | in profit 3 | older than 7d 2
-- worst: SENT -0.08R, FF 0.15R, NIGHT 1.35R | best: FF 0.15R, NIGHT 1.35R, KITE 2.58R
+- open 4 | mean 8.2% (0.99R) | in profit 3 | older than 7d 2
+- worst: SENT -0.05R, FF 0.14R, NIGHT 1.36R | best: FF 0.14R, NIGHT 1.36R, KITE 2.52R
 
 ## System
-- CoinGecko 7222/10000 used, month-end projection 10077 (101%), throttle level 2 | by script {'scan': 2268, 'check_liquidity': 329, 'breakout_check': 4551, 'counterfactual_check': 74}
+- CoinGecko 7224/10000 used, month-end projection 10061 (101%), throttle level 2 | by script {'scan': 2270, 'check_liquidity': 329, 'breakout_check': 4551, 'counterfactual_check': 74}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=272)
-- radar-flags.json scan age: 4m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 50
