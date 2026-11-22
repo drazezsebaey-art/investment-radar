@@ -1,4 +1,4 @@
-# Radar digest - 2026-11-22 06:34 UTC
+# Radar digest - 2026-11-22 07:02 UTC
 
 ## Market
 - BTC scenario **C** | price 58965 | wk close 64748 vs 82800 | 50W 75060 (-21.44%) | 1h old
@@ -12,7 +12,7 @@
 - SENT: **RESET_DONE** | +68% impulse, retr 0.57 | OI dd 46% | fund -0.0100 | hold False | inval 0.01911 | OB 0.01537-0.01658
 
 ## Pre-pump candidates
-- none
+- AVAX: [A+B] 7d -10.1%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - XRP Price Prediction: Breakdown Gets Another Go as ETF Assets Slip Under $1 Billion - Cryp
@@ -38,12 +38,12 @@
 - vote: gnosis (GnosisDAO) until 2026-11-24 - GIP-157: Should GnosisDAO withdraw assets from the legacy DAO Safe to 
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 5.3% (0.60R) | in profit 3 | older than 7d 2
-- worst: SENT -0.08R, FF 0.09R, NIGHT 0.99R | best: FF 0.09R, NIGHT 0.99R, KITE 1.40R
+- open 4 | mean 5.7% (0.68R) | in profit 3 | older than 7d 2
+- worst: SENT -0.04R, FF 0.08R, NIGHT 0.98R | best: FF 0.08R, NIGHT 0.98R, KITE 1.71R
 
 ## System
-- CoinGecko 7134/10000 used, month-end projection 10072 (101%), throttle level 2 | by script {'scan': 2236, 'check_liquidity': 325, 'breakout_check': 4499, 'counterfactual_check': 74}
+- CoinGecko 7137/10000 used, month-end projection 10056 (101%), throttle level 2 | by script {'scan': 2238, 'check_liquidity': 326, 'breakout_check': 4499, 'counterfactual_check': 74}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=272)
-- radar-flags.json scan age: 4m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 49
