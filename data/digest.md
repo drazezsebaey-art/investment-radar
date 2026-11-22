@@ -1,32 +1,32 @@
-# Radar digest - 2026-11-22 15:02 UTC
+# Radar digest - 2026-11-22 15:35 UTC
 
 ## Market
-- BTC scenario **C** | price 60924 | wk close 64748 vs 82800 | 50W 75060 (-18.83%) | 1h old
-- Alts: **BTC_LED** [-] | BTC.D 56.29% | ETH/BTC 0.02802 | breadth7d 62% | stables 30d -6.18%
-- Alt risk (BTC.D): **NORMAL**  | 3d 0.08pt | 7d -0.51pt | n=121
+- BTC scenario **C** | price 60827 | wk close 64748 vs 82800 | 50W 75060 (-18.96%) | 1m old
+- Alts: **BTC_LED** [-] | BTC.D 56.25% | ETH/BTC 0.02821 | breadth7d -% | stables 30d -6.16%
+- Alt risk (BTC.D): **NORMAL**  | 3d 0.00pt | 7d -0.48pt | n=121
 - Gold: PAXG 1m -10.32% | real10y 2.88 (12bp 1m) | USD 1m 0.89% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 22
 - 10y 1w: -6bp = real 2 + breakeven -9 -> **SMALL_MOVE**
 - 10y 1m: -9bp = real 12 + breakeven -17 -> **SMALL_MOVE**
 
 ## Coins in correction (entry_ready first)
-- SENT: **RESET_DONE** | +68% impulse, retr 0.55 | OI dd 46% | fund -0.0082 | hold False | inval 0.01911 | OB 0.01537-0.01658
+- SENT: **RESET_DONE** | +68% impulse, retr 0.58 | OI dd 46% | fund -0.0090 | hold False | inval 0.01911 | OB 0.01537-0.01658
 
 ## Pre-pump candidates
-- Q: [C+E] 7d 0.7%
-- KITE: [C+E] 7d 2.6%
+- XTZ: [B+C] 7d -2.3%
 
 ## ETF pipeline (new this run)
-- none
+- solana NEW: other - Solana price reassessed after 1.1 million USD ETF outflow - ad-hoc-news.de
+- ondo-finance: other - About Franklin US Equity Index ETF (Ondo Tokenized) - Coinbase
 
 ## Derivatives flags (OKX)
-- ETH: LONG_FLUSH_24H | OI/mc 0.69% | topPos 0.90 | taker 1.03
-- NEAR: SHORT_SQUEEZE_24H | OI/mc -% | topPos 1.02 | taker 1.05
-- AVAX: SHORT_SQUEEZE_24H | OI/mc 0.36% | topPos 0.87 | taker 0.93
-- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 0.97
-- SUI: SHORT_SQUEEZE_24H | OI/mc 0.85% | topPos 0.80 | taker 0.98
-- TAO: AGGRESSIVE_BUYING, SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.94 | taker 1.17
-- ZEC: LONG_FLUSH_24H | OI/mc 0.92% | topPos 1.04 | taker 0.99
-- LINK: SHORT_SQUEEZE_24H | OI/mc 0.33% | topPos 0.91 | taker 1.07
+- ETH: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.89 | taker 1.05
+- NEAR: SHORT_SQUEEZE_24H | OI/mc -% | topPos 1.02 | taker 1.06
+- AVAX: SHORT_SQUEEZE_24H | OI/mc 0.36% | topPos 0.86 | taker 0.96
+- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 0.98
+- SUI: SHORT_SQUEEZE_24H | OI/mc 0.86% | topPos 0.80 | taker 1.01
+- TAO: AGGRESSIVE_BUYING, SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.94 | taker 1.18
+- ZEC: LONG_FLUSH_24H | OI/mc 0.90% | topPos 1.04 | taker 0.99
+- WLD: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.86 | taker 1.01
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -37,12 +37,12 @@
 - vote: gnosis (GnosisDAO) until 2026-11-24 - GIP-157: Should GnosisDAO withdraw assets from the legacy DAO Safe to 
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 9.7% (1.09R) | in profit 3 | older than 7d 2
-- worst: SENT -0.13R, FF 0.27R, NIGHT 1.69R | best: FF 0.27R, NIGHT 1.69R, KITE 2.53R
+- open 4 | mean 9.1% (1.01R) | in profit 3 | older than 7d 2
+- worst: SENT -0.13R, FF 0.22R, NIGHT 1.64R | best: FF 0.22R, NIGHT 1.64R, KITE 2.32R
 
 ## System
-- CoinGecko 7232/10000 used, month-end projection 10033 (100%), throttle level 2 | by script {'scan': 2278, 'check_liquidity': 329, 'breakout_check': 4551, 'counterfactual_check': 74}
+- CoinGecko 7234/10000 used, month-end projection 10036 (100%), throttle level 2 | by script {'scan': 2280, 'check_liquidity': 329, 'breakout_check': 4551, 'counterfactual_check': 74}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=273)
-- radar-flags.json scan age: 2m
+- radar-flags.json scan age: 5m
 - excluded from radar (pegged/tokenized equity): 49
