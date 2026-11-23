@@ -1,4 +1,4 @@
-# Radar digest - 2026-11-23 16:35 UTC
+# Radar digest - 2026-11-23 17:02 UTC
 
 ## Market
 - BTC scenario **C** | price 63185 | wk close 60890 vs 82800 | 50W 74486 (-15.17%) | 1h old
@@ -12,8 +12,8 @@
 - SENT: **RESET_DONE** ENTRY_READY | +68% impulse, retr 0.55 | OI dd 49% | fund 0.0050 | hold True | inval 0.01537 | OB 0.01537-0.01658
 
 ## Pre-pump candidates
-- AVAX: [A+B] 7d -2.8%
-- SUI: [A+B] 7d -1.9%
+- SUI: [A+B] 7d -2.2%
+- AVAX: [A+B] 7d -2.2%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - Ripple Price Prediction: Can XRP Reclaim $2 Without ETF Buyers? - openPR.com
@@ -41,12 +41,12 @@
 - vote: gnosis (GnosisDAO) until 2026-11-24 - GIP-157: Should GnosisDAO withdraw assets from the legacy DAO Safe to 
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 10.1% (1.16R) | in profit 3 | older than 7d 2
-- worst: SENT -0.09R, FF 0.13R, NIGHT 1.82R | best: FF 0.13R, NIGHT 1.82R, KITE 2.79R
+- open 4 | mean 10.3% (1.19R) | in profit 3 | older than 7d 2
+- worst: SENT -0.06R, FF 0.20R, NIGHT 1.75R | best: FF 0.20R, NIGHT 1.75R, KITE 2.85R
 
 ## System
-- CoinGecko 7539/10000 used, month-end projection 9978 (100%), throttle level 1 | by script {'scan': 2388, 'check_liquidity': 348, 'breakout_check': 4723, 'counterfactual_check': 80}
+- CoinGecko 7541/10000 used, month-end projection 9962 (100%), throttle level 1 | by script {'scan': 2390, 'check_liquidity': 348, 'breakout_check': 4723, 'counterfactual_check': 80}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=275)
-- radar-flags.json scan age: 5m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 50
