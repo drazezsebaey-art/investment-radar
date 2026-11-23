@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-23 18:15 UTC
+# Radar digest - 2026-11-23 18:34 UTC
 
 ## Market
-- BTC scenario **C** | price 61729 | wk close 60890 vs 82800 | 50W 74486 (-17.13%) | 41m old
+- BTC scenario **C** | price 61729 | wk close 60890 vs 82800 | 50W 74486 (-17.13%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 56.35% | ETH/BTC 0.02819 | breadth7d 62% | stables 30d -5.96%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.09pt | 7d -0.30pt | n=121
 - Gold: PAXG 1m -9.35% | real10y 2.88 (12bp 1m) | USD 1m 0.89% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 22
@@ -12,14 +12,7 @@
 - KITE: **RESET_DONE** | +43% impulse, retr 0.08 | OI dd 42% | fund 0.0050 | hold False | inval 0.13037 | OB 0.12669-0.12950
 
 ## Pre-pump candidates
-- SUI: [A+B+E] 7d -4.9%
-- AVAX: [A+B+E] 7d -4.2%
-- LTC: [A+E] 7d -4.4%
-- ZEC: [A+E] 7d -3.8%
-- BNB: [A+E] 7d -3.8%
-- CC: [A+E] 7d -1.8%
-- GNO: [A+E] 7d -1.4%
-- HYPE: [A+E] 7d -1.1%
+- AVAX: [A+B] 7d -4.2%
 
 ## ETF pipeline (new this run)
 - cap-4 NEW: other - iShares MSCI Japan ETF Tokenized bStocks Price Today | EWJB to ZAR Live Price, Market Cap 
@@ -32,14 +25,14 @@
 - zcash: launch - Grayscale Launches 2x Leveraged Zcash ETF Under Ticker ZECX - TradingView
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc 0.22% | topPos 0.91 | taker 1.01
-- ETH: LONG_FLUSH_24H | OI/mc 0.70% | topPos 0.87 | taker 1.05
-- SOL: LONG_FLUSH_24H | OI/mc 0.59% | topPos 0.86 | taker 1.01
-- AVAX: SHORT_SQUEEZE_FUEL | OI/mc 0.38% | topPos 0.85 | taker 0.86
-- XRP: LONG_FLUSH_24H | OI/mc 0.13% | topPos 0.88 | taker 1.02
-- SUI: SHORT_SQUEEZE_FUEL, SHORT_SQUEEZE_24H | OI/mc 0.86% | topPos 0.82 | taker 1.05
-- SEI: LONG_FLUSH_24H | OI/mc 0.73% | topPos 0.77 | taker 1.03
-- ZEC: LONG_FLUSH_24H | OI/mc 0.88% | topPos 1.01 | taker 1.04
+- BTC: LONG_FLUSH_24H | OI/mc 0.22% | topPos 0.91 | taker 1.06
+- ETH: LONG_FLUSH_24H | OI/mc 0.69% | topPos 0.87 | taker 1.04
+- SOL: LONG_FLUSH_24H | OI/mc 0.59% | topPos 0.85 | taker 1.06
+- AVAX: SHORT_SQUEEZE_FUEL | OI/mc 0.38% | topPos 0.85 | taker 0.87
+- XRP: LONG_FLUSH_24H | OI/mc 0.13% | topPos 0.88 | taker 1.04
+- SUI: SHORT_SQUEEZE_24H | OI/mc 0.86% | topPos 0.80 | taker 1.02
+- SEI: LONG_FLUSH_24H | OI/mc 0.73% | topPos 0.76 | taker 1.05
+- ZEC: LONG_FLUSH_24H | OI/mc 0.87% | topPos 1.00 | taker 1.04
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -50,12 +43,12 @@
 - vote: gnosis (GnosisDAO) until 2026-11-24 - GIP-157: Should GnosisDAO withdraw assets from the legacy DAO Safe to 
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 9.7% (1.12R) | in profit 3 | older than 7d 2
-- worst: SENT -0.09R, FF 0.24R, NIGHT 1.64R | best: FF 0.24R, NIGHT 1.64R, KITE 2.69R
+- open 4 | mean 9.6% (1.10R) | in profit 3 | older than 7d 2
+- worst: SENT -0.07R, FF 0.20R, NIGHT 1.66R | best: FF 0.20R, NIGHT 1.66R, KITE 2.59R
 
 ## System
-- CoinGecko 7591/10000 used, month-end projection 10010 (100%), throttle level 2 | by script {'scan': 2394, 'check_liquidity': 348, 'breakout_check': 4769, 'counterfactual_check': 80}
+- CoinGecko 7593/10000 used, month-end projection 10013 (100%), throttle level 2 | by script {'scan': 2396, 'check_liquidity': 348, 'breakout_check': 4769, 'counterfactual_check': 80}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=275)
-- radar-flags.json scan age: 15m
+- radar-flags.json scan age: 4m
 - excluded from radar (pegged/tokenized equity): 50
