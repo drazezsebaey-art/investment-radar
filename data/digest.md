@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-23 00:15 UTC
+# Radar digest - 2026-11-23 00:34 UTC
 
 ## Market
-- BTC scenario **C** | price 61195 | wk close 60890 vs 82800 | 50W 74486 (-17.84%) | 41m old
+- BTC scenario **C** | price 61195 | wk close 60890 vs 82800 | 50W 74486 (-17.84%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 56.27% | ETH/BTC 0.02816 | breadth7d -% | stables 30d -6.19%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.10pt | 7d -0.46pt | n=121
 - Gold: PAXG 1m -10.19% | real10y 2.88 (12bp 1m) | USD 1m 0.89% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 22
@@ -19,14 +19,14 @@
 - zcash: filing - Bitwise Files Zcash ETF: Best Crypto to Invest in Shifts as Holders Lock 52.66T Pepeto Bef
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.93 | taker 1.07
-- ETH: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.90 | taker 1.05
-- SOL: LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 1.04
+- BTC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.94 | taker 1.06
+- ETH: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.90 | taker 1.06
+- SOL: LONG_FLUSH_24H | OI/mc 0.61% | topPos 0.86 | taker 1.05
 - NEAR: SHORT_SQUEEZE_24H | OI/mc -% | topPos 1.03 | taker 1.08
-- AVAX: SHORT_SQUEEZE_24H | OI/mc 0.36% | topPos 0.86 | taker 1.03
-- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 1.00
-- SUI: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.81 | taker 0.97
-- TAO: AGGRESSIVE_BUYING, SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.97 | taker 1.35
+- AVAX: SHORT_SQUEEZE_24H | OI/mc 0.36% | topPos 0.87 | taker 1.03
+- XRP: LONG_FLUSH_24H | OI/mc 0.13% | topPos 0.87 | taker 0.97
+- SUI: SHORT_SQUEEZE_24H | OI/mc 0.86% | topPos 0.81 | taker 0.98
+- TAO: AGGRESSIVE_BUYING, SHORT_SQUEEZE_24H | OI/mc 0.76% | topPos 0.96 | taker 1.34
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -37,12 +37,12 @@
 - vote: gnosis (GnosisDAO) until 2026-11-24 - GIP-157: Should GnosisDAO withdraw assets from the legacy DAO Safe to 
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 10.7% (1.23R) | in profit 3 | older than 7d 2
-- worst: SENT -0.16R, FF 0.34R, NIGHT 1.81R | best: FF 0.34R, NIGHT 1.81R, KITE 2.91R
+- open 4 | mean 10.4% (1.21R) | in profit 3 | older than 7d 2
+- worst: SENT -0.18R, FF 0.35R, NIGHT 1.76R | best: FF 0.35R, NIGHT 1.76R, KITE 2.90R
 
 ## System
-- CoinGecko 7390/10000 used, month-end projection 10077 (101%), throttle level 2 | by script {'scan': 2314, 'check_liquidity': 333, 'breakout_check': 4666, 'counterfactual_check': 77}
+- CoinGecko 7392/10000 used, month-end projection 10080 (101%), throttle level 2 | by script {'scan': 2316, 'check_liquidity': 333, 'breakout_check': 4666, 'counterfactual_check': 77}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=274)
-- radar-flags.json scan age: 15m
+- radar-flags.json scan age: 4m
 - excluded from radar (pegged/tokenized equity): 49
