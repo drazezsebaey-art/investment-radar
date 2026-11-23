@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-23 19:35 UTC
+# Radar digest - 2026-11-23 20:03 UTC
 
 ## Market
-- BTC scenario **C** | price 61397 | wk close 60890 vs 82800 | 50W 74486 (-17.57%) | 1m old
+- BTC scenario **C** | price 61397 | wk close 60890 vs 82800 | 50W 74486 (-17.57%) | 28m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.15% | ETH/BTC 0.02826 | breadth7d 71% | stables 30d -5.96%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.11pt | 7d -0.62pt | n=121
 - Gold: PAXG 1m -9.35% | real10y 2.88 (12bp 1m) | USD 1m 0.89% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 22
@@ -12,14 +12,12 @@
 - KITE: **RESET_DONE** | +43% impulse, retr 0.12 | OI dd 42% | fund 0.0050 | hold False | inval 0.13037 | OB 0.12669-0.12950
 
 ## Pre-pump candidates
-- AVAX: [A+B+E] 7d -4.1%
-- ZEC: [A+E] 7d -7.7%
-- LTC: [A+E] 7d -6.3%
+- ICP: [C+E] 7d -17.8%
+- SUI: [A+E] 7d -6.1%
 - BNB: [A+E] 7d -5.0%
 - CC: [A+E] 7d -4.9%
-- SUI: [A+E] 7d -4.8%
-- GNO: [A+E] 7d -2.6%
 - INJ: [A+E] 7d -2.3%
+- XRP: [A+E] 7d -1.7%
 
 ## ETF pipeline (new this run)
 - cap-4 NEW: other - Pacer US Large Cap Cash Cows Growth Leaders ETF (COWG) Seasonal returns chart - Yahoo Fina
@@ -48,12 +46,12 @@
 - vote: gnosis (GnosisDAO) until 2026-11-24 - GIP-157: Should GnosisDAO withdraw assets from the legacy DAO Safe to 
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 9.3% (1.03R) | in profit 3 | older than 7d 2
-- worst: SENT -0.09R, FF 0.25R, NIGHT 1.61R | best: FF 0.25R, NIGHT 1.61R, KITE 2.36R
+- open 4 | mean 9.7% (1.06R) | in profit 3 | older than 7d 2
+- worst: SENT -0.09R, FF 0.24R, NIGHT 1.71R | best: FF 0.24R, NIGHT 1.71R, KITE 2.39R
 
 ## System
-- CoinGecko 7598/10000 used, month-end projection 10001 (100%), throttle level 2 | by script {'scan': 2400, 'check_liquidity': 349, 'breakout_check': 4769, 'counterfactual_check': 80}
+- CoinGecko 7601/10000 used, month-end projection 9987 (100%), throttle level 1 | by script {'scan': 2402, 'check_liquidity': 350, 'breakout_check': 4769, 'counterfactual_check': 80}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=275)
-- radar-flags.json scan age: 5m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 50
