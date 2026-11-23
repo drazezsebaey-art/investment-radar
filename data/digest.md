@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-23 15:35 UTC
+# Radar digest - 2026-11-23 16:03 UTC
 
 ## Market
-- BTC scenario **C** | price 63185 | wk close 60890 vs 82800 | 50W 74486 (-15.17%) | 1m old
+- BTC scenario **C** | price 63185 | wk close 60890 vs 82800 | 50W 74486 (-15.17%) | 28m old
 - Alts: **BTC_LED** [-] | BTC.D 56.35% | ETH/BTC 0.02819 | breadth7d 62% | stables 30d -5.96%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.09pt | 7d -0.30pt | n=121
 - Gold: PAXG 1m -8.40% | real10y 2.88 (12bp 1m) | USD 1m 0.89% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 22
@@ -12,13 +12,8 @@
 - SENT: **RESET_DONE** ENTRY_READY | +68% impulse, retr 0.55 | OI dd 49% | fund 0.0050 | hold True | inval 0.01537 | OB 0.01537-0.01658
 
 ## Pre-pump candidates
-- AVAX: [A+B+E] 7d -1.3%
-- SUI: [A+B+E] 7d 0.1%
-- CC: [A+E] 7d -5.1%
-- LTC: [A+E] 7d -3.0%
-- BNB: [A+E] 7d -2.7%
-- GNO: [A+E] 7d 0.3%
-- XRP: [A+E] 7d 4.2%
+- AVAX: [A+B] 7d -2.8%
+- SUI: [A+B] 7d -1.9%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - Ripple Price Prediction: Can XRP Reclaim $2 Without ETF Buyers? - openPR.com
@@ -46,12 +41,12 @@
 - vote: gnosis (GnosisDAO) until 2026-11-24 - GIP-157: Should GnosisDAO withdraw assets from the legacy DAO Safe to 
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 10.2% (1.11R) | in profit 3 | older than 7d 2
-- worst: SENT -0.05R, FF 0.16R, NIGHT 1.83R | best: FF 0.16R, NIGHT 1.83R, KITE 2.49R
+- open 4 | mean 9.9% (1.08R) | in profit 3 | older than 7d 2
+- worst: SENT -0.09R, FF 0.11R, NIGHT 1.87R | best: FF 0.11R, NIGHT 1.87R, KITE 2.41R
 
 ## System
-- CoinGecko 7532/10000 used, month-end projection 9987 (100%), throttle level 1 | by script {'scan': 2384, 'check_liquidity': 347, 'breakout_check': 4723, 'counterfactual_check': 78}
+- CoinGecko 7537/10000 used, month-end projection 9975 (100%), throttle level 1 | by script {'scan': 2386, 'check_liquidity': 348, 'breakout_check': 4723, 'counterfactual_check': 80}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=275)
-- radar-flags.json scan age: 5m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 50
