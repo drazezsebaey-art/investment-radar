@@ -1,9 +1,9 @@
-# Radar digest - 2026-11-23 11:02 UTC
+# Radar digest - 2026-11-23 11:35 UTC
 
 ## Market
-- BTC scenario **C** | price 61647 | wk close 60890 vs 82800 | 50W 74486 (-17.24%) | 1h old
-- Alts: **BTC_LED** [-] | BTC.D 56.33% | ETH/BTC 0.02803 | breadth7d 55% | stables 30d -5.99%
-- Alt risk (BTC.D): **NORMAL**  | 3d 0.21pt | 7d -0.38pt | n=121
+- BTC scenario **C** | price 61477 | wk close 60890 vs 82800 | 50W 74486 (-17.46%) | 1m old
+- Alts: **BTC_LED** [-] | BTC.D 56.27% | ETH/BTC 0.02811 | breadth7d 54% | stables 30d -5.97%
+- Alt risk (BTC.D): **NORMAL**  | 3d 0.15pt | 7d -0.41pt | n=121
 - Gold: PAXG 1m -8.40% | real10y 2.88 (12bp 1m) | USD 1m 0.89% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 22
 - 10y 1w: -6bp = real 2 + breakeven -9 -> **SMALL_MOVE**
 - 10y 1m: -9bp = real 12 + breakeven -17 -> **SMALL_MOVE**
@@ -22,23 +22,18 @@
 - INJ: [A+E] 7d -3.3%
 
 ## ETF pipeline (new this run)
-- solana NEW: other - Solana ETF Draws $10.8 Million Despite Steep Three-Month Slide - TipRanks
-- kucoin-shares NEW: other - Institutional Bitcoin ETF Holdings Surge 15% in Q3 2026 - KuCoin
-- official-trump NEW: other - Trump Bought At Least $5 Million Of This Dividend ETF Before AI Sell-Off - 24/7 Wall St.
-- ripple NEW: other - XRP Sentiment Sours: Volatility Shares’ XRPI ETF Sees 1.7% of Assets Walk Out the Door - T
-- ripple NEW: other - XRP price: a brief move above $1, then a drop to $0.96 as ETF outflows continue - CryptoTi
-- ripple NEW: other - 5 Best Crypto Presales to Watch as XRP Hits 87 Cents and US XRP ETF Assets Fall Below $1B 
-- chainlink: other - Chainlink Price Forecast: Strong ETF outflows cast bull trap risk over LINK’s recovery - w
+- ripple NEW: other - XRP Faces Worst November On Record As ETF Outflows Top $30M, Breaking 7-Month Inflow Strea
+- ripple NEW: other - XRP Faces Worst November On Record As ETF Outflows Top $30M, Breaking 7-Month Inflow Strea
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc 0.23% | topPos 0.94 | taker 1.03
-- SOL: SHORT_SQUEEZE_24H | OI/mc 0.61% | topPos 0.88 | taker 1.04
-- AVAX: LONG_FLUSH_24H | OI/mc 0.36% | topPos 0.87 | taker 0.97
-- SUI: LONG_FLUSH_24H | OI/mc 0.85% | topPos 0.81 | taker 1.03
-- SEI: LONG_FLUSH_24H | OI/mc 0.74% | topPos 0.74 | taker 0.93
-- TAO: LONG_FLUSH_24H | OI/mc 0.77% | topPos 0.98 | taker 1.11
-- ADA: SHORT_SQUEEZE_24H | OI/mc 0.43% | topPos 0.88 | taker 1.07
-- LINK: SHORT_SQUEEZE_24H | OI/mc 0.34% | topPos 0.90 | taker 0.96
+- BTC: SHORT_SQUEEZE_24H | OI/mc 0.23% | topPos 0.94 | taker 1.04
+- SOL: SHORT_SQUEEZE_24H | OI/mc 0.61% | topPos 0.88 | taker 1.03
+- AVAX: LONG_FLUSH_24H | OI/mc 0.36% | topPos 0.86 | taker 0.97
+- SUI: LONG_FLUSH_24H | OI/mc 0.85% | topPos 0.81 | taker 1.05
+- SEI: LONG_FLUSH_24H | OI/mc 0.74% | topPos 0.75 | taker 0.96
+- TAO: LONG_FLUSH_24H | OI/mc 0.77% | topPos 0.97 | taker 1.14
+- ADA: SHORT_SQUEEZE_24H | OI/mc 0.43% | topPos 0.88 | taker 1.04
+- LINK: SHORT_SQUEEZE_24H | OI/mc 0.34% | topPos 0.90 | taker 0.92
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -49,12 +44,12 @@
 - vote: gnosis (GnosisDAO) until 2026-11-24 - GIP-157: Should GnosisDAO withdraw assets from the legacy DAO Safe to 
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 8.5% (0.90R) | in profit 3 | older than 7d 2
-- worst: SENT -0.24R, FF 0.19R, NIGHT 1.74R | best: FF 0.19R, NIGHT 1.74R, KITE 1.92R
+- open 4 | mean 8.3% (0.92R) | in profit 3 | older than 7d 2
+- worst: SENT -0.22R, FF 0.18R, NIGHT 1.63R | best: FF 0.18R, NIGHT 1.63R, KITE 2.09R
 
 ## System
-- CoinGecko 7451/10000 used, month-end projection 9953 (100%), throttle level 1 | by script {'scan': 2366, 'check_liquidity': 341, 'breakout_check': 4666, 'counterfactual_check': 78}
+- CoinGecko 7454/10000 used, month-end projection 9957 (100%), throttle level 1 | by script {'scan': 2368, 'check_liquidity': 342, 'breakout_check': 4666, 'counterfactual_check': 78}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=275)
-- radar-flags.json scan age: 2m
+- radar-flags.json scan age: 5m
 - excluded from radar (pegged/tokenized equity): 50
