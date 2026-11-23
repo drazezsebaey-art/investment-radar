@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-23 21:03 UTC
+# Radar digest - 2026-11-23 21:36 UTC
 
 ## Market
-- BTC scenario **C** | price 61397 | wk close 60890 vs 82800 | 50W 74486 (-17.57%) | 1h old
+- BTC scenario **C** | price 61424 | wk close 60890 vs 82800 | 50W 74486 (-17.54%) | 1m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.15% | ETH/BTC 0.02826 | breadth7d 71% | stables 30d -5.96%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.11pt | 7d -0.62pt | n=121
 - Gold: PAXG 1m -9.35% | real10y 2.88 (12bp 1m) | USD 1m 0.89% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 22
@@ -9,32 +9,34 @@
 - 10y 1m: -9bp = real 12 + breakeven -17 -> **SMALL_MOVE**
 
 ## Coins in correction (entry_ready first)
-- KITE: **RESET_DONE** | +43% impulse, retr 0.12 | OI dd 42% | fund 0.0050 | hold False | inval 0.13037 | OB 0.12669-0.12950
+- none
 
 ## Pre-pump candidates
+- ICP: [C+E] 7d -19.1%
 - SUI: [A+E] 7d -7.1%
-- CC: [A+E] 7d -5.8%
-- BNB: [A+E] 7d -5.4%
-- INJ: [A+E] 7d -5.4%
+- INJ: [A+E] 7d -6.7%
+- CC: [A+E] 7d -6.1%
+- BNB: [A+E] 7d -5.9%
 - XRP: [A+E] 7d -2.5%
 
 ## ETF pipeline (new this run)
-- cap-4 NEW: other - Pacer US Large Cap Cash Cows Growth Leaders ETF (COWG) Seasonal returns chart - Yahoo Fina
-- ripple NEW: other - XRP ETF Faces Chill Winds as Investors Pull Cash From Volatility Shares’ XRPI - TipRanks
-- ripple NEW: other - XRP Price Forecast — XRP-USD ($0.9873) $1.08 Upside Target on Short Squeeze and $30.76M ET
-- zcash: other - Grayscale Introduces New 2x Leveraged Zcash ETF - Crypto Economy
-- zcash: other - Grayscale Introduces New 2x Leveraged Zcash ETF - Crypto Economy
-- uniswap: other - Uniswap V4 (Robinhood) Statistics: Markets, Trading Volume & Trust Score - CoinGecko
+- ripple NEW: other - XRP ETF Shares Surface in Schwab’s Repo Collateral - DailyCoin
+- zcash: launch - Grayscale Launches ZECX, A 2X Daily ETF Linked To Its Zcash Product - Menafn
+- zcash: other - Grayscale Debuts ZECX, a 2x Leveraged Zcash ETF, on NYSE Arca - BigGo Finance
+- zcash: other - Zcash climbs while Grayscale ZCSH ETF faces significant outflows and reduced demand risk -
+- avalanche-2: other - At Bitwise Avalanche ETF (BAVA), 12% of the Avalanche earned from staking goes to staking 
+- zcash: other - Zcash climbs while Grayscale ZCSH ETF faces significant outflows and reduced demand risk -
+- avalanche-2: other - At Bitwise Avalanche ETF (BAVA), 12% of the Avalanche earned from staking goes to staking 
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc 0.22% | topPos 0.91 | taker 1.05
-- ETH: LONG_FLUSH_24H | OI/mc 0.68% | topPos 0.87 | taker 1.02
-- SOL: LONG_FLUSH_24H | OI/mc 0.58% | topPos 0.85 | taker 1.05
-- AVAX: SHORT_SQUEEZE_FUEL | OI/mc 0.38% | topPos 0.85 | taker 0.86
+- BTC: LONG_FLUSH_24H | OI/mc -% | topPos 0.91 | taker 1.05
+- ETH: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 1.01
+- SOL: LONG_FLUSH_24H | OI/mc -% | topPos 0.85 | taker 1.05
+- NEAR: LONG_FLUSH_24H | OI/mc -% | topPos 1.02 | taker 0.97
+- AVAX: SHORT_SQUEEZE_FUEL | OI/mc -% | topPos 0.84 | taker 0.86
 - XRP: LONG_FLUSH_24H | OI/mc 0.13% | topPos 0.87 | taker 1.03
-- SEI: LONG_FLUSH_24H | OI/mc 0.74% | topPos 0.76 | taker 1.03
-- ZEC: LONG_FLUSH_24H | OI/mc 0.87% | topPos 1.00 | taker 1.03
-- LINK: SHORT_SQUEEZE_24H | OI/mc 0.33% | topPos 0.91 | taker 0.99
+- SEI: LONG_FLUSH_24H | OI/mc 0.74% | topPos 0.78 | taker 1.01
+- ZEC: LONG_FLUSH_24H | OI/mc -% | topPos 1.00 | taker 1.02
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -45,12 +47,12 @@
 - vote: gnosis (GnosisDAO) until 2026-11-24 - GIP-157: Should GnosisDAO withdraw assets from the legacy DAO Safe to 
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 9.4% (1.04R) | in profit 3 | older than 7d 2
-- worst: SENT -0.07R, FF 0.21R, NIGHT 1.65R | best: FF 0.21R, NIGHT 1.65R, KITE 2.37R
+- open 4 | mean 9.6% (1.05R) | in profit 3 | older than 7d 2
+- worst: SENT -0.04R, FF 0.22R, NIGHT 1.65R | best: FF 0.22R, NIGHT 1.65R, KITE 2.37R
 
 ## System
-- CoinGecko 7606/10000 used, month-end projection 9975 (100%), throttle level 1 | by script {'scan': 2406, 'check_liquidity': 351, 'breakout_check': 4769, 'counterfactual_check': 80}
+- CoinGecko 7608/10000 used, month-end projection 9978 (100%), throttle level 1 | by script {'scan': 2408, 'check_liquidity': 351, 'breakout_check': 4769, 'counterfactual_check': 80}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=275)
-- radar-flags.json scan age: 2m
+- radar-flags.json scan age: 5m
 - excluded from radar (pegged/tokenized equity): 50
