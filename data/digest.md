@@ -1,4 +1,4 @@
-# Radar digest - 2026-11-23 10:34 UTC
+# Radar digest - 2026-11-23 11:02 UTC
 
 ## Market
 - BTC scenario **C** | price 61647 | wk close 60890 vs 82800 | 50W 74486 (-17.24%) | 1h old
@@ -12,7 +12,14 @@
 - none
 
 ## Pre-pump candidates
-- none
+- ZEC: [A+E] 7d -10.8%
+- CC: [A+E] 7d -8.4%
+- LTC: [A+E] 7d -8.0%
+- SUI: [A+E] 7d -6.6%
+- AVAX: [A+E] 7d -5.7%
+- BNB: [A+E] 7d -5.6%
+- GNO: [A+E] 7d -4.0%
+- INJ: [A+E] 7d -3.3%
 
 ## ETF pipeline (new this run)
 - solana NEW: other - Solana ETF Draws $10.8 Million Despite Steep Three-Month Slide - TipRanks
@@ -42,12 +49,12 @@
 - vote: gnosis (GnosisDAO) until 2026-11-24 - GIP-157: Should GnosisDAO withdraw assets from the legacy DAO Safe to 
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 8.9% (1.01R) | in profit 3 | older than 7d 2
-- worst: SENT -0.25R, FF 0.19R, NIGHT 1.73R | best: FF 0.19R, NIGHT 1.73R, KITE 2.36R
+- open 4 | mean 8.5% (0.90R) | in profit 3 | older than 7d 2
+- worst: SENT -0.24R, FF 0.19R, NIGHT 1.74R | best: FF 0.19R, NIGHT 1.74R, KITE 1.92R
 
 ## System
-- CoinGecko 7448/10000 used, month-end projection 9968 (100%), throttle level 1 | by script {'scan': 2364, 'check_liquidity': 340, 'breakout_check': 4666, 'counterfactual_check': 78}
+- CoinGecko 7451/10000 used, month-end projection 9953 (100%), throttle level 1 | by script {'scan': 2366, 'check_liquidity': 341, 'breakout_check': 4666, 'counterfactual_check': 78}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=275)
-- radar-flags.json scan age: 4m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 50
