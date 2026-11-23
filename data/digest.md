@@ -1,4 +1,4 @@
-# Radar digest - 2026-11-23 18:34 UTC
+# Radar digest - 2026-11-23 19:03 UTC
 
 ## Market
 - BTC scenario **C** | price 61729 | wk close 60890 vs 82800 | 50W 74486 (-17.13%) | 1h old
@@ -12,7 +12,7 @@
 - KITE: **RESET_DONE** | +43% impulse, retr 0.08 | OI dd 42% | fund 0.0050 | hold False | inval 0.13037 | OB 0.12669-0.12950
 
 ## Pre-pump candidates
-- AVAX: [A+B] 7d -4.2%
+- AVAX: [A+B] 7d -4.1%
 
 ## ETF pipeline (new this run)
 - cap-4 NEW: other - iShares MSCI Japan ETF Tokenized bStocks Price Today | EWJB to ZAR Live Price, Market Cap 
@@ -43,12 +43,12 @@
 - vote: gnosis (GnosisDAO) until 2026-11-24 - GIP-157: Should GnosisDAO withdraw assets from the legacy DAO Safe to 
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 9.6% (1.10R) | in profit 3 | older than 7d 2
-- worst: SENT -0.07R, FF 0.20R, NIGHT 1.66R | best: FF 0.20R, NIGHT 1.66R, KITE 2.59R
+- open 4 | mean 9.1% (1.02R) | in profit 3 | older than 7d 2
+- worst: SENT -0.11R, FF 0.22R, NIGHT 1.60R | best: FF 0.22R, NIGHT 1.60R, KITE 2.35R
 
 ## System
-- CoinGecko 7593/10000 used, month-end projection 10013 (100%), throttle level 2 | by script {'scan': 2396, 'check_liquidity': 348, 'breakout_check': 4769, 'counterfactual_check': 80}
+- CoinGecko 7596/10000 used, month-end projection 9998 (100%), throttle level 1 | by script {'scan': 2398, 'check_liquidity': 349, 'breakout_check': 4769, 'counterfactual_check': 80}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=275)
-- radar-flags.json scan age: 4m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 50
