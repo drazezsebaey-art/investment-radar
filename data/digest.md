@@ -1,10 +1,10 @@
-# Radar digest - 2026-11-23 10:03 UTC
+# Radar digest - 2026-11-23 10:34 UTC
 
 ## Market
-- BTC scenario **C** | price 61647 | wk close 60890 vs 82800 | 50W 74486 (-17.24%) | 28m old
+- BTC scenario **C** | price 61647 | wk close 60890 vs 82800 | 50W 74486 (-17.24%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 56.33% | ETH/BTC 0.02803 | breadth7d 55% | stables 30d -5.99%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.21pt | 7d -0.38pt | n=121
-- Gold: PAXG 1m -8.69% | real10y 2.88 (12bp 1m) | USD 1m 0.89% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 22
+- Gold: PAXG 1m -8.40% | real10y 2.88 (12bp 1m) | USD 1m 0.89% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 22
 - 10y 1w: -6bp = real 2 + breakeven -9 -> **SMALL_MOVE**
 - 10y 1m: -9bp = real 12 + breakeven -17 -> **SMALL_MOVE**
 
@@ -24,14 +24,14 @@
 - chainlink: other - Chainlink Price Forecast: Strong ETF outflows cast bull trap risk over LINK’s recovery - w
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc 0.23% | topPos 0.94 | taker 1.05
-- ETH: SHORT_SQUEEZE_FUEL, SHORT_SQUEEZE_24H | OI/mc 0.72% | topPos 0.89 | taker 1.06
-- SOL: SHORT_SQUEEZE_24H | OI/mc 0.61% | topPos 0.87 | taker 1.07
-- AVAX: LONG_FLUSH_24H | OI/mc 0.36% | topPos 0.87 | taker 0.99
-- SUI: SHORT_SQUEEZE_24H | OI/mc 0.84% | topPos 0.81 | taker 1.03
-- SEI: LONG_FLUSH_24H | OI/mc 0.74% | topPos 0.75 | taker 0.95
-- TAO: AGGRESSIVE_BUYING, LONG_FLUSH_24H | OI/mc 0.77% | topPos 0.98 | taker 1.22
-- ZEC: SHORT_SQUEEZE_24H | OI/mc 0.91% | topPos 1.01 | taker 0.97
+- BTC: SHORT_SQUEEZE_24H | OI/mc 0.23% | topPos 0.94 | taker 1.03
+- SOL: SHORT_SQUEEZE_24H | OI/mc 0.61% | topPos 0.88 | taker 1.04
+- AVAX: LONG_FLUSH_24H | OI/mc 0.36% | topPos 0.87 | taker 0.97
+- SUI: LONG_FLUSH_24H | OI/mc 0.85% | topPos 0.81 | taker 1.03
+- SEI: LONG_FLUSH_24H | OI/mc 0.74% | topPos 0.74 | taker 0.93
+- TAO: LONG_FLUSH_24H | OI/mc 0.77% | topPos 0.98 | taker 1.11
+- ADA: SHORT_SQUEEZE_24H | OI/mc 0.43% | topPos 0.88 | taker 1.07
+- LINK: SHORT_SQUEEZE_24H | OI/mc 0.34% | topPos 0.90 | taker 0.96
 
 ## Revenue / buyback flags
 - pump-fun: HIGH_HOLDER_YIELD, CHEAP_VS_REVENUE
@@ -42,12 +42,12 @@
 - vote: gnosis (GnosisDAO) until 2026-11-24 - GIP-157: Should GnosisDAO withdraw assets from the legacy DAO Safe to 
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 9.0% (1.04R) | in profit 3 | older than 7d 2
-- worst: SENT -0.21R, FF 0.21R, NIGHT 1.67R | best: FF 0.21R, NIGHT 1.67R, KITE 2.50R
+- open 4 | mean 8.9% (1.01R) | in profit 3 | older than 7d 2
+- worst: SENT -0.25R, FF 0.19R, NIGHT 1.73R | best: FF 0.19R, NIGHT 1.73R, KITE 2.36R
 
 ## System
-- CoinGecko 7446/10000 used, month-end projection 9965 (100%), throttle level 1 | by script {'scan': 2362, 'check_liquidity': 340, 'breakout_check': 4666, 'counterfactual_check': 78}
+- CoinGecko 7448/10000 used, month-end projection 9968 (100%), throttle level 1 | by script {'scan': 2364, 'check_liquidity': 340, 'breakout_check': 4666, 'counterfactual_check': 78}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=275)
-- radar-flags.json scan age: 2m
-- excluded from radar (pegged/tokenized equity): 49
+- radar-flags.json scan age: 4m
+- excluded from radar (pegged/tokenized equity): 50
