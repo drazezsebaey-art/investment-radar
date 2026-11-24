@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-24 13:36 UTC
+# Radar digest - 2026-11-24 14:03 UTC
 
 ## Market
-- BTC scenario **C** | price 60092 | wk close 60890 vs 82800 | 50W 74486 (-19.33%) | 1m old
+- BTC scenario **C** | price 60092 | wk close 60890 vs 82800 | 50W 74486 (-19.33%) | 28m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.05% | ETH/BTC 0.02819 | breadth7d -% | stables 30d -5.73%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.34pt | 7d -0.48pt | n=121
 - Gold: PAXG 1m -10.58% | real10y 2.77 (13bp 1m) | USD 1m 1.85% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 22
@@ -12,7 +12,7 @@
 - KITE: **ONGOING** | +44% impulse, retr 0.07 | OI dd 42% | fund 0.0050 | hold False | inval 0.13708 | OB 0.13708-0.14162
 
 ## Pre-pump candidates
-- none
+- Q: [C+E] 7d 9.4%
 
 ## ETF pipeline (new this run)
 - zcash: launch - 2x ZCSH ETF (Ticker: ZECX), Built by Grayscale, Begins Trading on NYSE Arca - GlobeNewswir
@@ -37,12 +37,12 @@
 - (17 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 9.7% (1.17R) | in profit 3 | older than 7d 3
-- worst: SENT -0.11R, FF 0.21R, NIGHT 1.64R | best: FF 0.21R, NIGHT 1.64R, KITE 2.93R
+- open 4 | mean 9.7% (1.16R) | in profit 3 | older than 7d 3
+- worst: SENT -0.09R, FF 0.21R, NIGHT 1.60R | best: FF 0.21R, NIGHT 1.60R, KITE 2.92R
 
 ## System
-- CoinGecko 7845/10000 used, month-end projection 9997 (100%), throttle level 1 | by script {'scan': 2480, 'check_liquidity': 364, 'breakout_check': 4920, 'counterfactual_check': 81}
+- CoinGecko 7848/10000 used, month-end projection 9983 (100%), throttle level 1 | by script {'scan': 2482, 'check_liquidity': 365, 'breakout_check': 4920, 'counterfactual_check': 81}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=276)
-- radar-flags.json scan age: 5m
+- radar-flags.json scan age: 3m
 - excluded from radar (pegged/tokenized equity): 50
