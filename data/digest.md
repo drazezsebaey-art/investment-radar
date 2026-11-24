@@ -1,4 +1,4 @@
-# Radar digest - 2026-11-24 10:35 UTC
+# Radar digest - 2026-11-24 11:03 UTC
 
 ## Market
 - BTC scenario **C** | price 60017 | wk close 60890 vs 82800 | 50W 74486 (-19.43%) | 1h old
@@ -13,8 +13,7 @@
 
 ## Pre-pump candidates
 - ICP: [C+E] 7d -14.8%
-- CC: [A+C] 7d -5.2%
-- CARDS: [A+C] 7d 0.5%
+- CARDS: [A+C] 7d -1.1%
 
 ## ETF pipeline (new this run)
 - cap-4 NEW: other - iShares MSCI Japan ETF Tokenized bStocks Price Today | EWJB to AED Live Price, Market Cap 
@@ -44,12 +43,12 @@
 - (17 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 10.5% (1.24R) | in profit 3 | older than 7d 3
-- worst: SENT -0.07R, FF 0.41R, NIGHT 1.56R | best: FF 0.41R, NIGHT 1.56R, KITE 3.07R
+- open 4 | mean 9.4% (1.01R) | in profit 3 | older than 7d 3
+- worst: SENT -0.10R, FF 0.34R, NIGHT 1.59R | best: FF 0.34R, NIGHT 1.59R, KITE 2.21R
 
 ## System
-- CoinGecko 7780/10000 used, month-end projection 9967 (100%), throttle level 1 | by script {'scan': 2468, 'check_liquidity': 361, 'breakout_check': 4870, 'counterfactual_check': 81}
+- CoinGecko 7782/10000 used, month-end projection 9952 (100%), throttle level 1 | by script {'scan': 2470, 'check_liquidity': 361, 'breakout_check': 4870, 'counterfactual_check': 81}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=276)
-- radar-flags.json scan age: 4m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 50
