@@ -1,30 +1,118 @@
 {
-  "updated_at": "2026-11-24T13:35:17.086763+00:00",
+  "updated_at": "2026-11-24T15:34:42.860411+00:00",
   "engine_version": "correction-v65.3",
   "btc_q4_scenario": {
     "scenario": "C",
     "reason": "testing the 50W SMA or deep drawdown from the 30d high",
-    "price": 60091.6,
+    "price": 60101.7,
     "last_weekly_close": 60890.5,
     "key_level": 82800.0,
     "sma_50w": 74486.0,
-    "dist_to_50w_pct": -19.33,
-    "drawdown_from_30d_high_pct": 26.69,
+    "dist_to_50w_pct": -19.31,
+    "drawdown_from_30d_high_pct": 26.68,
     "action": "no entries into the fall - wait for a daily bullish CHoCH"
   },
   "coins_in_correction": [
+    {
+      "coin": "sentient",
+      "symbol": "SENT",
+      "reasons": [
+        "top_7d_mover"
+      ],
+      "price": 0.01998,
+      "impulse_low": 0.01537,
+      "impulse_peak": 0.02582,
+      "impulse_gain_pct": 68.0,
+      "peak_date": "2026-11-18",
+      "retracement_now": 0.559,
+      "retracement_max": 0.666,
+      "fib_levels": {
+        "0.382": 0.021828,
+        "0.5": 0.020595,
+        "0.618": 0.019362,
+        "0.786": 0.017606
+      },
+      "volume_ratio": 0.54,
+      "choch_up": false,
+      "last_internal_event": {
+        "type": "CHoCH",
+        "dir": "bear",
+        "level": 0.01911,
+        "ts": 1795406400000
+      },
+      "internal_trend": -1,
+      "swing_trend": 1,
+      "nearest_bull_ob_below": {
+        "top": 0.01658,
+        "bottom": 0.01537,
+        "layer": "swing"
+      },
+      "nearest_bear_ob_above": {
+        "top": 0.02152,
+        "bottom": 0.02067,
+        "layer": "internal"
+      },
+      "trailing_extremes": {
+        "top": 0.02582,
+        "top_label": "Weak High",
+        "bottom": 0.01537,
+        "bottom_label": "Strong Low",
+        "equilibrium": 0.020595
+      },
+      "premium_discount_luxalgo": "DISCOUNT",
+      "structure_engine": "smc_structure-v65.4 (aligned to LuxAlgo SMC Pine source, CC BY-NC-SA 4.0)",
+      "levels": {
+        "recent_break_validations": [
+          {
+            "side": "low",
+            "level": 0.01911,
+            "result": "SWEEP",
+            "ts": 1795420800000
+          }
+        ],
+        "bullish_hold_signal": false,
+        "last_low_sweep": null,
+        "premium_discount_impulse": {
+          "position": 0.441,
+          "zone": "DISCOUNT",
+          "equilibrium": 0.020595,
+          "range_low": 0.01537,
+          "range_high": 0.02582
+        },
+        "volume_profile_30d": {
+          "poc": 0.0196153125,
+          "value_area_high": 0.0232075,
+          "value_area_low": 0.0182002083,
+          "bars_used": 180
+        },
+        "long_invalidation_level": 0.01886,
+        "swing_low_ts": 1795420800000,
+        "layer_len": 5
+      },
+      "oi_drawdown_pct": 51.2,
+      "funding_now_pct": 0.005,
+      "reset_checks": {
+        "oi_reset": true,
+        "funding_neutral": true,
+        "volume_dried_up": true,
+        "healthy_depth": true
+      },
+      "status": "RESET_DONE",
+      "entry_ready": false,
+      "entry_ready_rule": "status RESET_DONE/RESUMING + a hold signal (fresh low sweep or bullish internal CHoCH) + price at/below the impulse equilibrium - still needs gate + Agent Room + visual check"
+    },
     {
       "coin": "kite-2",
       "symbol": "KITE",
       "reasons": [
         "top_7d_mover"
       ],
-      "price": 0.14282,
+      "price": 0.14169,
       "impulse_low": 0.10143,
       "impulse_peak": 0.1458,
       "impulse_gain_pct": 43.7,
       "peak_date": "2026-11-23",
-      "retracement_now": 0.067,
+      "retracement_now": 0.093,
       "retracement_max": 0.167,
       "fib_levels": {
         "0.382": 0.128851,
@@ -93,7 +181,7 @@
         "bullish_hold_signal": false,
         "last_low_sweep": null,
         "premium_discount_impulse": {
-          "position": 0.933,
+          "position": 0.907,
           "zone": "PREMIUM",
           "equilibrium": 0.123615,
           "range_low": 0.10143,
@@ -125,21 +213,18 @@
   "n_screened": 29,
   "status_counts": {
     "RESUMING": 0,
-    "RESET_DONE": 0,
+    "RESET_DONE": 1,
     "ONGOING": 1,
     "BROKEN": 0
   },
   "notes": "RESUMING still needs a visual check of the 4H chart before any entry; RESET_DONE = first-tranche zone at most. Gate + Agent Room always apply.",
   "errors": [
-    "bitway: RuntimeError: OKX /market/candles code=51001 msg=Instrument ID, Instrument ID code, or Spread ID doesn't exist.",
-    "dgrid-ai: RuntimeError: OKX /market/candles code=51001 msg=Instrument ID, Instrument ID code, or Spread ID doesn't exist.",
     "pieverse: RuntimeError: OKX /market/candles code=51001 msg=Instrument ID, Instrument ID code, or Spread ID doesn't exist.",
     "pearl-2: RuntimeError: OKX /market/candles code=51001 msg=Instrument ID, Instrument ID code, or Spread ID doesn't exist.",
-    "derive: RuntimeError: OKX /market/candles code=51001 msg=Instrument ID, Instrument ID code, or Spread ID doesn't exist.",
     "debridge: RuntimeError: OKX /market/candles code=51001 msg=Instrument ID, Instrument ID code, or Spread ID doesn't exist.",
-    "celium: RuntimeError: OKX /market/candles code=51001 msg=Instrument ID, Instrument ID code, or Spread ID doesn't exist.",
-    "just: RuntimeError: OKX /market/candles code=51001 msg=Instrument ID, Instrument ID code, or Spread ID doesn't exist.",
-    "figure-heloc: RuntimeError: OKX /market/candles code=51001 msg=Instrument ID, Instrument ID code, or Spread ID doesn't exist.",
-    "onyc: RuntimeError: OKX /market/candles code=51001 msg=Instrument ID, Instrument ID code, or Spread ID doesn't exist."
+    "o1-exchange: RuntimeError: OKX /market/candles code=51001 msg=Instrument ID, Instrument ID code, or Spread ID doesn't exist.",
+    "ozone-chain: RuntimeError: OKX /market/candles code=51001 msg=Instrument ID, Instrument ID code, or Spread ID doesn't exist.",
+    "quack-ai: RuntimeError: OKX /market/candles code=51001 msg=Instrument ID, Instrument ID code, or Spread ID doesn't exist.",
+    "just: RuntimeError: OKX /market/candles code=51001 msg=Instrument ID, Instrument ID code, or Spread ID doesn't exist."
   ]
 }
