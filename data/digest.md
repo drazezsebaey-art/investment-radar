@@ -1,4 +1,4 @@
-# Radar digest - 2026-11-24 00:35 UTC
+# Radar digest - 2026-11-24 01:03 UTC
 
 ## Market
 - BTC scenario **C** | price 61382 | wk close 60890 vs 82800 | 50W 74486 (-17.59%) | 1h old
@@ -12,14 +12,14 @@
 - KITE: **RESET_DONE** | +43% impulse, retr 0.11 | OI dd 42% | fund 0.0050 | hold False | inval 0.13037 | OB 0.12669-0.12950
 
 ## Pre-pump candidates
-- AVAX: [A+B+E] 7d -5.0%
+- AVAX: [A+B+E] 7d -4.4%
 - ZEC: [A+E] 7d -14.9%
+- PUMP: [C+D] 7d -11.5%
 - HYPE: [A+E] 7d -9.1%
 - INJ: [A+E] 7d -8.3%
 - LTC: [A+E] 7d -7.2%
 - SUI: [A+E] 7d -6.4%
 - BNB: [A+E] 7d -6.3%
-- CC: [A+E] 7d -4.7%
 
 ## ETF pipeline (new this run)
 - solana NEW: other - Bitwise CIO Matt Hougan on why Solana ETF could hit $10B - CoinDesk
@@ -50,12 +50,12 @@
 - vote: gnosis (GnosisDAO) until 2026-11-24 - GIP-157: Should GnosisDAO withdraw assets from the legacy DAO Safe to 
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 9.9% (1.13R) | in profit 3 | older than 7d 3
-- worst: SENT -0.09R, FF 0.34R, NIGHT 1.59R | best: FF 0.34R, NIGHT 1.59R, KITE 2.68R
+- open 4 | mean 9.8% (1.10R) | in profit 3 | older than 7d 3
+- worst: SENT -0.09R, FF 0.36R, NIGHT 1.60R | best: FF 0.36R, NIGHT 1.60R, KITE 2.55R
 
 ## System
-- CoinGecko 7672/10000 used, month-end projection 10007 (100%), throttle level 2 | by script {'scan': 2420, 'check_liquidity': 353, 'breakout_check': 4819, 'counterfactual_check': 80}
+- CoinGecko 7674/10000 used, month-end projection 9991 (100%), throttle level 1 | by script {'scan': 2422, 'check_liquidity': 353, 'breakout_check': 4819, 'counterfactual_check': 80}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=276)
-- radar-flags.json scan age: 4m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 50
