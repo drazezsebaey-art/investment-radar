@@ -1,4 +1,4 @@
-# Radar digest - 2026-11-24 08:34 UTC
+# Radar digest - 2026-11-24 09:03 UTC
 
 ## Market
 - BTC scenario **C** | price 60476 | wk close 60890 vs 82800 | 50W 74486 (-18.81%) | 1h old
@@ -12,9 +12,8 @@
 - KITE: **RESET_DONE** | +43% impulse, retr 0.01 | OI dd 42% | fund 0.0050 | hold False | inval 0.13708 | OB 0.12669-0.12950
 
 ## Pre-pump candidates
-- GRT: [C+E] 7d -1.1%
-- UB: [C+E] 7d -0.9%
-- RUNE: [C+D] 7d 0.9%
+- UB: [C+E] 7d -2.2%
+- RUNE: [C+D] 7d 0.5%
 
 ## ETF pipeline (new this run)
 - zcash: launch - Grayscale's leveraged ETF begins trading; Zcash price slips - ad-hoc-news.de
@@ -45,12 +44,12 @@
 - vote: gnosis (GnosisDAO) until 2026-11-24 - GIP-157: Should GnosisDAO withdraw assets from the legacy DAO Safe to 
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 11.5% (1.35R) | in profit 4 | older than 7d 3
-- worst: SENT 0.00R, FF 0.45R, NIGHT 1.62R | best: FF 0.45R, NIGHT 1.62R, KITE 3.32R
+- open 4 | mean 11.3% (1.34R) | in profit 3 | older than 7d 3
+- worst: SENT -0.01R, FF 0.46R, NIGHT 1.60R | best: FF 0.46R, NIGHT 1.60R, KITE 3.29R
 
 ## System
-- CoinGecko 7770/10000 used, month-end projection 9990 (100%), throttle level 1 | by script {'scan': 2460, 'check_liquidity': 359, 'breakout_check': 4870, 'counterfactual_check': 81}
+- CoinGecko 7773/10000 used, month-end projection 9976 (100%), throttle level 1 | by script {'scan': 2462, 'check_liquidity': 360, 'breakout_check': 4870, 'counterfactual_check': 81}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=276)
-- radar-flags.json scan age: 4m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 50
