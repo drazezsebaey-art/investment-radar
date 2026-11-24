@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-24 12:16 UTC
+# Radar digest - 2026-11-24 12:35 UTC
 
 ## Market
-- BTC scenario **C** | price 59877 | wk close 60890 vs 82800 | 50W 74486 (-19.61%) | 42m old
+- BTC scenario **C** | price 59877 | wk close 60890 vs 82800 | 50W 74486 (-19.61%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.05% | ETH/BTC 0.02819 | breadth7d -% | stables 30d -5.73%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.34pt | 7d -0.48pt | n=121
 - Gold: PAXG 1m -10.58% | real10y 2.77 (13bp 1m) | USD 1m 1.85% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 22
@@ -12,8 +12,8 @@
 - KITE: **ONGOING** | +44% impulse, retr 0.11 | OI dd 42% | fund 0.0050 | hold False | inval 0.13708 | OB 0.12669-0.12950
 
 ## Pre-pump candidates
-- ICP: [C+E] 7d -14.8%
-- Q: [C+E] 7d 7.7%
+- ICP: [C+E] 7d -13.2%
+- Q: [C+E] 7d 9.3%
 
 ## ETF pipeline (new this run)
 - zcash: launch - Grayscale launches first 2x leveraged Zcash ETF, attracting $4.6M inflows amid growing cry
@@ -26,14 +26,14 @@
 - ondo-finance: other - Franklin US Equity Bitcoin DRIP Index ETF (Ondo Tokenized ETF) - CryptoRank
 
 ## Derivatives flags (OKX)
-- ETH: LONG_FLUSH_24H | OI/mc -% | topPos 0.86 | taker 0.95
-- SOL: LONG_FLUSH_24H | OI/mc -% | topPos 0.84 | taker 1.04
-- NEAR: LONG_FLUSH_24H | OI/mc -% | topPos 1.02 | taker 0.94
-- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.85 | taker 0.97
-- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 1.02
-- SUI: LONG_FLUSH_24H | OI/mc 0.86% | topPos 0.79 | taker 0.97
-- SEI: SHORT_SQUEEZE_FUEL, LONG_FLUSH_24H | OI/mc 0.81% | topPos 0.76 | taker 0.92
-- ZEC: LONG_FLUSH_24H | OI/mc 1.00% | topPos 0.95 | taker 0.98
+- BTC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.91 | taker 1.02
+- ETH: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.86 | taker 0.96
+- SOL: LONG_FLUSH_24H | OI/mc -% | topPos 0.84 | taker 1.05
+- NEAR: LONG_FLUSH_24H | OI/mc -% | topPos 1.02 | taker 0.95
+- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.85 | taker 0.98
+- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 1.03
+- SUI: LONG_FLUSH_24H | OI/mc 0.87% | topPos 0.79 | taker 0.95
+- SEI: SHORT_SQUEEZE_FUEL, LONG_FLUSH_24H | OI/mc 0.82% | topPos 0.78 | taker 0.87
 
 ## Revenue / buyback flags
 - collector-crypt: CHEAP_VS_REVENUE
@@ -43,12 +43,12 @@
 - (17 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 10.4% (1.26R) | in profit 3 | older than 7d 3
-- worst: SENT -0.12R, FF 0.32R, NIGHT 1.65R | best: FF 0.32R, NIGHT 1.65R, KITE 3.18R
+- open 4 | mean 10.2% (1.27R) | in profit 3 | older than 7d 3
+- worst: SENT -0.12R, FF 0.30R, NIGHT 1.61R | best: FF 0.30R, NIGHT 1.61R, KITE 3.29R
 
 ## System
-- CoinGecko 7838/10000 used, month-end projection 10006 (100%), throttle level 2 | by script {'scan': 2474, 'check_liquidity': 363, 'breakout_check': 4920, 'counterfactual_check': 81}
+- CoinGecko 7840/10000 used, month-end projection 10009 (100%), throttle level 2 | by script {'scan': 2476, 'check_liquidity': 363, 'breakout_check': 4920, 'counterfactual_check': 81}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=276)
-- radar-flags.json scan age: 16m
+- radar-flags.json scan age: 4m
 - excluded from radar (pegged/tokenized equity): 50
