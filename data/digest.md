@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-24 09:36 UTC
+# Radar digest - 2026-11-24 10:03 UTC
 
 ## Market
-- BTC scenario **C** | price 60017 | wk close 60890 vs 82800 | 50W 74486 (-19.43%) | 1m old
+- BTC scenario **C** | price 60017 | wk close 60890 vs 82800 | 50W 74486 (-19.43%) | 28m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.01% | ETH/BTC 0.02808 | breadth7d -% | stables 30d -5.73%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.15pt | 7d -0.53pt | n=121
 - Gold: PAXG 1m -10.62% | real10y 2.77 (13bp 1m) | USD 1m 1.85% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 22
@@ -12,9 +12,8 @@
 - KITE: **ONGOING** | +44% impulse, retr 0.04 | OI dd 42% | fund 0.0050 | hold False | inval 0.13708 | OB 0.13708-0.14162
 
 ## Pre-pump candidates
-- ICP: [C+E] 7d -14.7%
-- UB: [C+E] 7d -2.2%
-- CARDS: [A+C] 7d 2.2%
+- ICP: [C+E] 7d -14.8%
+- CARDS: [A+C] 7d 0.5%
 
 ## ETF pipeline (new this run)
 - cap-4 NEW: other - iShares MSCI Japan ETF Tokenized bStocks Price Today | EWJB to AED Live Price, Market Cap 
@@ -44,12 +43,12 @@
 - (17 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 10.7% (1.29R) | in profit 3 | older than 7d 3
-- worst: SENT -0.04R, FF 0.47R, NIGHT 1.48R | best: FF 0.47R, NIGHT 1.48R, KITE 3.22R
+- open 4 | mean 10.7% (1.28R) | in profit 3 | older than 7d 3
+- worst: SENT -0.05R, FF 0.41R, NIGHT 1.57R | best: FF 0.41R, NIGHT 1.57R, KITE 3.17R
 
 ## System
-- CoinGecko 7775/10000 used, month-end projection 9979 (100%), throttle level 1 | by script {'scan': 2464, 'check_liquidity': 360, 'breakout_check': 4870, 'counterfactual_check': 81}
+- CoinGecko 7778/10000 used, month-end projection 9965 (100%), throttle level 1 | by script {'scan': 2466, 'check_liquidity': 361, 'breakout_check': 4870, 'counterfactual_check': 81}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=276)
-- radar-flags.json scan age: 5m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 50
