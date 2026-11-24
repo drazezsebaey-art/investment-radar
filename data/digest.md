@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-23 23:36 UTC
+# Radar digest - 2026-11-24 00:16 UTC
 
 ## Market
-- BTC scenario **C** | price 61382 | wk close 60890 vs 82800 | 50W 74486 (-17.59%) | 1m old
+- BTC scenario **C** | price 61382 | wk close 60890 vs 82800 | 50W 74486 (-17.59%) | 42m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.34% | ETH/BTC 0.02790 | breadth7d 58% | stables 30d -5.96%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.32pt | 7d -0.49pt | n=121
 - Gold: PAXG 1m -10.28% | real10y 2.77 (13bp 1m) | USD 1m 1.85% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 22
@@ -12,14 +12,14 @@
 - KITE: **RESET_DONE** | +43% impulse, retr 0.11 | OI dd 42% | fund 0.0050 | hold False | inval 0.13037 | OB 0.12669-0.12950
 
 ## Pre-pump candidates
-- AVAX: [A+B+E] 7d -6.0%
+- AVAX: [A+B+E] 7d -5.0%
+- ICP: [C+E] 7d -17.5%
 - ZEC: [A+E] 7d -14.9%
-- INJ: [A+E] 7d -10.1%
-- HYPE: [A+E] 7d -9.3%
-- LTC: [A+E] 7d -8.4%
-- SUI: [A+E] 7d -7.8%
-- CC: [A+E] 7d -7.2%
-- BNB: [A+E] 7d -6.4%
+- HYPE: [A+E] 7d -9.1%
+- INJ: [A+E] 7d -8.3%
+- LTC: [A+E] 7d -7.2%
+- SUI: [A+E] 7d -6.4%
+- BNB: [A+E] 7d -6.3%
 
 ## ETF pipeline (new this run)
 - solana NEW: other - Bitwise CIO Matt Hougan on why Solana ETF could hit $10B - CoinDesk
@@ -50,12 +50,12 @@
 - vote: gnosis (GnosisDAO) until 2026-11-24 - GIP-157: Should GnosisDAO withdraw assets from the legacy DAO Safe to 
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 9.7% (1.09R) | in profit 3 | older than 7d 2
-- worst: SENT -0.10R, FF 0.34R, NIGHT 1.61R | best: FF 0.34R, NIGHT 1.61R, KITE 2.50R
+- open 4 | mean 9.5% (1.07R) | in profit 3 | older than 7d 3
+- worst: SENT -0.08R, FF 0.32R, NIGHT 1.54R | best: FF 0.32R, NIGHT 1.54R, KITE 2.52R
 
 ## System
-- CoinGecko 7617/10000 used, month-end projection 9953 (100%), throttle level 1 | by script {'scan': 2416, 'check_liquidity': 352, 'breakout_check': 4769, 'counterfactual_check': 80}
+- CoinGecko 7670/10000 used, month-end projection 10004 (100%), throttle level 2 | by script {'scan': 2418, 'check_liquidity': 353, 'breakout_check': 4819, 'counterfactual_check': 80}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=276)
-- radar-flags.json scan age: 5m
+- radar-flags.json scan age: 16m
 - excluded from radar (pegged/tokenized equity): 50
