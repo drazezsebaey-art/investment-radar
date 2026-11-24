@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-24 22:35 UTC
+# Radar digest - 2026-11-24 23:03 UTC
 
 ## Market
-- BTC scenario **C** | price 59933 | wk close 60890 vs 82800 | 50W 74486 (-19.54%) | 60m old
+- BTC scenario **C** | price 59933 | wk close 60890 vs 82800 | 50W 74486 (-19.54%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.18% | ETH/BTC 0.02807 | breadth7d -% | stables 30d -5.73%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.01pt | 7d -0.24pt | n=121
 - Gold: PAXG 1m -12.73% | real10y 2.79 (13bp 1m) | USD 1m 1.85% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 22
@@ -12,8 +12,8 @@
 - KITE: **ONGOING** | +44% impulse, retr 0.06 | OI dd 41% | fund 0.0050 | hold False | inval 0.13708 | OB 0.13708-0.14162
 
 ## Pre-pump candidates
-- CC: [A+C] 7d -7.0%
-- CARDS: [A+C] 7d -0.7%
+- CC: [A+C] 7d -6.5%
+- CARDS: [A+C] 7d 0.2%
 
 ## ETF pipeline (new this run)
 - zcash: other - Grayscale's First 2x Zcash ETF Sinks 17% as Crypto Selloff Deepens - BigGo Finance
@@ -37,12 +37,12 @@
 - (17 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 10.3% (1.30R) | in profit 3 | older than 7d 3
-- worst: SENT -0.09R, FF 0.17R, NIGHT 1.65R | best: FF 0.17R, NIGHT 1.65R, KITE 3.47R
+- open 4 | mean 10.6% (1.36R) | in profit 3 | older than 7d 3
+- worst: SENT -0.10R, FF 0.19R, NIGHT 1.68R | best: FF 0.19R, NIGHT 1.68R, KITE 3.65R
 
 ## System
-- CoinGecko 7946/10000 used, month-end projection 9967 (100%), throttle level 1 | by script {'scan': 2524, 'check_liquidity': 371, 'breakout_check': 4970, 'counterfactual_check': 81}
+- CoinGecko 7948/10000 used, month-end projection 9952 (100%), throttle level 1 | by script {'scan': 2526, 'check_liquidity': 371, 'breakout_check': 4970, 'counterfactual_check': 81}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=277)
-- radar-flags.json scan age: 5m
+- radar-flags.json scan age: 3m
 - excluded from radar (pegged/tokenized equity): 50
