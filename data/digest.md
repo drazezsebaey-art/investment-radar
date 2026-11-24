@@ -1,4 +1,4 @@
-# Radar digest - 2026-11-24 12:35 UTC
+# Radar digest - 2026-11-24 13:03 UTC
 
 ## Market
 - BTC scenario **C** | price 59877 | wk close 60890 vs 82800 | 50W 74486 (-19.61%) | 1h old
@@ -12,8 +12,7 @@
 - KITE: **ONGOING** | +44% impulse, retr 0.11 | OI dd 42% | fund 0.0050 | hold False | inval 0.13708 | OB 0.12669-0.12950
 
 ## Pre-pump candidates
-- ICP: [C+E] 7d -13.2%
-- Q: [C+E] 7d 9.3%
+- none
 
 ## ETF pipeline (new this run)
 - zcash: launch - Grayscale launches first 2x leveraged Zcash ETF, attracting $4.6M inflows amid growing cry
@@ -43,12 +42,12 @@
 - (17 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 10.2% (1.27R) | in profit 3 | older than 7d 3
-- worst: SENT -0.12R, FF 0.30R, NIGHT 1.61R | best: FF 0.30R, NIGHT 1.61R, KITE 3.29R
+- open 4 | mean 10.6% (1.31R) | in profit 3 | older than 7d 3
+- worst: SENT -0.11R, FF 0.25R, NIGHT 1.71R | best: FF 0.25R, NIGHT 1.71R, KITE 3.39R
 
 ## System
-- CoinGecko 7840/10000 used, month-end projection 10009 (100%), throttle level 2 | by script {'scan': 2476, 'check_liquidity': 363, 'breakout_check': 4920, 'counterfactual_check': 81}
+- CoinGecko 7842/10000 used, month-end projection 9993 (100%), throttle level 1 | by script {'scan': 2478, 'check_liquidity': 363, 'breakout_check': 4920, 'counterfactual_check': 81}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=276)
-- radar-flags.json scan age: 4m
+- radar-flags.json scan age: 3m
 - excluded from radar (pegged/tokenized equity): 50
