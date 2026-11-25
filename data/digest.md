@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-25 14:34 UTC
+# Radar digest - 2026-11-25 15:02 UTC
 
 ## Market
-- BTC scenario **C** | price 58488 | wk close 60890 vs 82800 | 50W 74486 (-21.48%) | 60m old
+- BTC scenario **C** | price 58488 | wk close 60890 vs 82800 | 50W 74486 (-21.48%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56% | ETH/BTC 0.02800 | breadth7d -% | stables 30d -5.90%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.29pt | 7d -0.44pt | n=121
 - Gold: PAXG 1m -13.48% | real10y 2.79 (13bp 1m) | USD 1m 1.85% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 22
@@ -12,7 +12,7 @@
 - SENT: **RESET_DONE** | +68% impulse, retr 0.54 | OI dd 49% | fund 0.0050 | hold False | inval 0.01886 | OB 0.01537-0.01658
 
 ## Pre-pump candidates
-- TRX: [A+C] 7d -1.1%
+- none
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - Bitwise XRP ETF Marks First Year With $3.5 Billion in Trading and $667 Million of Inflows 
@@ -40,12 +40,12 @@
 - (23 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 3 | mean 7.2% (0.44R) | in profit 3 | older than 7d 2
-- worst: SENT 0.05R, FF 0.05R, NIGHT 1.23R | best: SENT 0.05R, FF 0.05R, NIGHT 1.23R
+- open 3 | mean 8.9% (0.55R) | in profit 3 | older than 7d 2
+- worst: FF 0.16R, SENT 0.18R, NIGHT 1.29R | best: FF 0.16R, SENT 0.18R, NIGHT 1.29R
 
 ## System
-- CoinGecko 8176/10000 used, month-end projection 9977 (100%), throttle level 1 | by script {'scan': 2588, 'check_liquidity': 389, 'breakout_check': 5112, 'counterfactual_check': 87}
+- CoinGecko 8178/10000 used, month-end projection 9963 (100%), throttle level 1 | by script {'scan': 2590, 'check_liquidity': 389, 'breakout_check': 5112, 'counterfactual_check': 87}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=280)
-- radar-flags.json scan age: 4m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 50
