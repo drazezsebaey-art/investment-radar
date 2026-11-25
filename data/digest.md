@@ -1,4 +1,4 @@
-# Radar digest - 2026-11-25 04:35 UTC
+# Radar digest - 2026-11-25 05:02 UTC
 
 ## Market
 - BTC scenario **C** | price 59504 | wk close 60890 vs 82800 | 50W 74486 (-20.11%) | 1h old
@@ -12,7 +12,7 @@
 - KITE: **ONGOING** | +46% impulse, retr 0.08 | OI dd 41% | fund 0.0050 | hold False | inval 0.13708 | OB 0.13708-0.14162
 
 ## Pre-pump candidates
-- CARDS: [A+C] 7d -1.3%
+- none
 
 ## ETF pipeline (new this run)
 - litecoin NEW: approval - Canary Litecoin ETF Submits Post-Effective Amendment to S-1 Registration - Kalkine Media
@@ -37,12 +37,12 @@
 - (17 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 3 | mean 7.1% (0.46R) | in profit 2 | older than 7d 2
-- worst: SENT -0.27R, FF 0.15R, NIGHT 1.49R | best: SENT -0.27R, FF 0.15R, NIGHT 1.49R
+- open 3 | mean 6.7% (0.43R) | in profit 2 | older than 7d 2
+- worst: SENT -0.30R, FF 0.16R, NIGHT 1.44R | best: SENT -0.30R, FF 0.16R, NIGHT 1.44R
 
 ## System
-- CoinGecko 8027/10000 used, month-end projection 9965 (100%), throttle level 1 | by script {'scan': 2548, 'check_liquidity': 376, 'breakout_check': 5019, 'counterfactual_check': 84}
+- CoinGecko 8029/10000 used, month-end projection 9950 (100%), throttle level 1 | by script {'scan': 2550, 'check_liquidity': 376, 'breakout_check': 5019, 'counterfactual_check': 84}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=278)
-- radar-flags.json scan age: 5m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 51
