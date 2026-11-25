@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-25 07:35 UTC
+# Radar digest - 2026-11-25 08:03 UTC
 
 ## Market
-- BTC scenario **C** | price 59012 | wk close 60890 vs 82800 | 50W 74486 (-20.77%) | 1m old
+- BTC scenario **C** | price 59012 | wk close 60890 vs 82800 | 50W 74486 (-20.77%) | 28m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 55.98% | ETH/BTC 0.02804 | breadth7d -% | stables 30d -5.90%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.06pt | 7d -0.53pt | n=121
 - Gold: PAXG 1m -12.98% | real10y 2.79 (13bp 1m) | USD 1m 1.85% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 22
@@ -13,7 +13,7 @@
 - KITE: **ONGOING** | +46% impulse, retr 0.15 | OI dd 41% | fund 0.0050 | hold False | inval 0.13708 | OB 0.12669-0.12950
 
 ## Pre-pump candidates
-- none
+- CARDS: [A+C] 7d -5.6%
 
 ## ETF pipeline (new this run)
 - tron NEW: other - TRON price: Canary Staked TRX ETF trades on Cboe - ad-hoc-news.de
@@ -36,12 +36,12 @@
 - (17 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 5.8% (0.36R) | in profit 2 | older than 7d 2
-- worst: SENT -0.21R, KITE -0.06R, FF 0.26R | best: KITE -0.06R, FF 0.26R, NIGHT 1.46R
+- open 4 | mean 5.9% (0.35R) | in profit 2 | older than 7d 2
+- worst: SENT -0.17R, KITE -0.17R, FF 0.28R | best: KITE -0.17R, FF 0.28R, NIGHT 1.47R
 
 ## System
-- CoinGecko 8090/10000 used, month-end projection 9991 (100%), throttle level 1 | by script {'scan': 2560, 'check_liquidity': 378, 'breakout_check': 5068, 'counterfactual_check': 84}
+- CoinGecko 8096/10000 used, month-end projection 9981 (100%), throttle level 1 | by script {'scan': 2562, 'check_liquidity': 379, 'breakout_check': 5068, 'counterfactual_check': 87}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=278)
-- radar-flags.json scan age: 5m
-- excluded from radar (pegged/tokenized equity): 50
+- radar-flags.json scan age: 2m
+- excluded from radar (pegged/tokenized equity): 51
