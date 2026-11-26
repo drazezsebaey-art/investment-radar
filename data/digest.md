@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-26 21:03 UTC
+# Radar digest - 2026-11-26 21:35 UTC
 
 ## Market
-- BTC scenario **C** | price 60661 | wk close 60890 vs 82800 | 50W 74486 (-18.56%) | 1h old
+- BTC scenario **C** | price 60969 | wk close 60890 vs 82800 | 50W 74486 (-18.15%) | 1m old
 - Alts: **BTC_LED** [-] | BTC.D 56.20% | ETH/BTC 0.02811 | breadth7d -% | stables 30d -5.75%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.15pt | 7d 0.00pt | n=121
 - Gold: PAXG 1m -12.30% | real10y 2.79 (13bp 1m) | USD 1m 1.85% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 22
@@ -9,30 +9,29 @@
 - 10y 1m: -9bp = real 13 + breakeven -23 -> **SMALL_MOVE**
 
 ## Coins in correction (entry_ready first)
-- SENT: **RESUMING** | +68% impulse, retr 0.38 | OI dd 49% | fund 0.0010 | hold False | inval 0.01901 | OB 0.01901-0.01978
+- VVV: **RESET_DONE** | +83% impulse, retr 0.27 | OI dd 1% | fund 0.0050 | hold False | inval 23.91000 | OB 16.76000-17.93000
 
 ## Pre-pump candidates
 - none
 
 ## ETF pipeline (new this run)
-- solana NEW: other - Solana Nears Unwanted Milestone: 10 Down Months in One Year as ETF Outflows Reach $164 Mil
-- zcash: launch - Grayscale Launches ZECX, a Leveraged Zcash-Focused ETF - Cryptonews.net
-- zcash: launch - Grayscale Launches ZECX, a Leveraged Zcash-Focused ETF - Cryptonews.net
-- chainlink: filing - Fidelity Pushes Beyond Bitcoin With Chainlink ETF Filing - Bitcoin News
-- chainlink: filing - Fidelity files for Chainlink ETF, expanding cry... - Pluang
-- chainlink: filing - Fidelity Pushes Beyond Bitcoin With Chainlink ETF Filing - Bitcoin News
-- chainlink: filing - Fidelity files for Spot Chainlink ETF as LINK climbs 5.5% – Details - AMBCrypto
-- chainlink: filing - Fidelity files for Chainlink ETF, expanding cry... - Pluang
+- chainlink: filing - Fidelity Files for Spot Chainlink ETF on Nasdaq - CoinMarketCap
+- chainlink: filing - Chainlink Rises 10% as Fidelity Expands Access With ETF Filing - www.tokenpost.com
+- chainlink: filing - Fidelity Files for Spot Chainlink ETF - Wisevoter
+- chainlink: filing - Chainlink Rises 10% as Fidelity Expands Access With ETF Filing - www.tokenpost.com
+- chainlink: filing - Fidelity Files for Spot Chainlink ETF on Nasdaq - CoinMarketCap
+- chainlink: filing - Fidelity Files for Spot Chainlink ETF - Wisevoter
+- ondo-finance: other - FLCBON to INR: Franklin US Core Bond ETF (Ondo Tokenized ETF) Price in Indian Rupee - Coin
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc 0.23% | topPos 0.92 | taker 1.04
+- BTC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.92 | taker 1.03
 - ETH: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.87 | taker 1.04
-- AVAX: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.88 | taker 1.07
-- SEI: SHORT_SQUEEZE_FUEL, SHORT_SQUEEZE_24H | OI/mc 1.01% | topPos 0.77 | taker 1.03
-- TAO: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.93 | taker 1.05
-- ZEC: SHORT_SQUEEZE_24H | OI/mc 1.08% | topPos 0.96 | taker 1.00
-- LINK: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.93 | taker 0.97
-- XLM: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 0.90
+- AVAX: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.88 | taker 1.04
+- SEI: SHORT_SQUEEZE_FUEL, SHORT_SQUEEZE_24H | OI/mc 1.02% | topPos 0.78 | taker 1.02
+- TAO: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.92 | taker 1.10
+- ZEC: SHORT_SQUEEZE_24H | OI/mc 1.07% | topPos 0.95 | taker 1.00
+- LINK: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.92 | taker 0.98
+- XLM: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 0.89
 
 ## Revenue / buyback flags
 - ethereum: REVENUE_ACCELERATING
@@ -41,12 +40,12 @@
 - (23 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 9.8% (0.63R) | in profit 4 | older than 7d 2
-- worst: LUNC 0.14R, FF 0.35R, SENT 0.38R | best: FF 0.35R, SENT 0.38R, NIGHT 1.65R
+- open 4 | mean 9.5% (0.56R) | in profit 3 | older than 7d 2
+- worst: LUNC -0.11R, FF 0.35R, SENT 0.36R | best: FF 0.35R, SENT 0.36R, NIGHT 1.66R
 
 ## System
-- CoinGecko 8619/10000 used, month-end projection 9993 (100%), throttle level 1 | by script {'scan': 2724, 'check_liquidity': 415, 'breakout_check': 5385, 'counterfactual_check': 95}
+- CoinGecko 8622/10000 used, month-end projection 9997 (100%), throttle level 1 | by script {'scan': 2726, 'check_liquidity': 416, 'breakout_check': 5385, 'counterfactual_check': 95}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=281)
-- radar-flags.json scan age: 2m
+- radar-flags.json scan age: 5m
 - excluded from radar (pegged/tokenized equity): 50
