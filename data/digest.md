@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-26 18:15 UTC
+# Radar digest - 2026-11-26 18:35 UTC
 
 ## Market
-- BTC scenario **C** | price 60539 | wk close 60890 vs 82800 | 50W 74486 (-18.72%) | 41m old
+- BTC scenario **C** | price 60539 | wk close 60890 vs 82800 | 50W 74486 (-18.72%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 56.28% | ETH/BTC 0.02792 | breadth7d 66% | stables 30d -5.75%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.07pt | 7d 0.03pt | n=121
 - Gold: PAXG 1m -12.30% | real10y 2.79 (13bp 1m) | USD 1m 1.85% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 22
@@ -25,14 +25,14 @@
 - ondo-finance: other - FBEQON to PHP: Franklin US Equity Bitcoin DRIP Index ETF (Ondo Tokenized ETF) Price in Phi
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.92 | taker 1.05
-- SOL: LONG_FLUSH_24H | OI/mc 0.56% | topPos 0.85 | taker 1.05
-- AVAX: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.88 | taker 1.04
-- SEI: SHORT_SQUEEZE_FUEL, SHORT_SQUEEZE_24H | OI/mc 0.92% | topPos 0.77 | taker 1.07
-- TAO: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.93 | taker 1.11
-- WLD: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.77 | taker 1.07
-- ADA: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.88 | taker 1.00
-- LINK: SHORT_SQUEEZE_24H | OI/mc 0.34% | topPos 0.93 | taker 1.03
+- BTC: SHORT_SQUEEZE_24H | OI/mc 0.23% | topPos 0.92 | taker 1.04
+- SOL: LONG_FLUSH_24H | OI/mc 0.56% | topPos 0.85 | taker 1.02
+- AVAX: SHORT_SQUEEZE_24H | OI/mc 0.38% | topPos 0.88 | taker 1.02
+- XRP: LONG_FLUSH_24H | OI/mc 0.13% | topPos 0.89 | taker 0.95
+- SEI: SHORT_SQUEEZE_FUEL, SHORT_SQUEEZE_24H | OI/mc 0.95% | topPos 0.75 | taker 1.04
+- TAO: SHORT_SQUEEZE_24H | OI/mc 0.74% | topPos 0.93 | taker 1.09
+- WLD: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.77 | taker 1.05
+- ADA: SHORT_SQUEEZE_24H | OI/mc 0.43% | topPos 0.88 | taker 1.02
 
 ## Revenue / buyback flags
 - ethereum: REVENUE_ACCELERATING
@@ -41,12 +41,12 @@
 - (23 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 8.1% (0.44R) | in profit 3 | older than 7d 2
-- worst: LUNC -0.31R, FF 0.24R, SENT 0.33R | best: FF 0.24R, SENT 0.33R, NIGHT 1.50R
+- open 4 | mean 8.8% (0.52R) | in profit 3 | older than 7d 2
+- worst: LUNC -0.08R, FF 0.27R, SENT 0.39R | best: FF 0.27R, SENT 0.39R, NIGHT 1.51R
 
 ## System
-- CoinGecko 8606/10000 used, month-end projection 10026 (100%), throttle level 2 | by script {'scan': 2712, 'check_liquidity': 414, 'breakout_check': 5385, 'counterfactual_check': 95}
+- CoinGecko 8608/10000 used, month-end projection 10029 (100%), throttle level 2 | by script {'scan': 2714, 'check_liquidity': 414, 'breakout_check': 5385, 'counterfactual_check': 95}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=281)
-- radar-flags.json scan age: 15m
+- radar-flags.json scan age: 5m
 - excluded from radar (pegged/tokenized equity): 50
