@@ -1,4 +1,4 @@
-# Radar digest - 2026-11-26 02:35 UTC
+# Radar digest - 2026-11-26 03:02 UTC
 
 ## Market
 - BTC scenario **C** | price 60706 | wk close 60890 vs 82800 | 50W 74486 (-18.50%) | 1h old
@@ -14,7 +14,7 @@
 - NIGHT: **RESET_DONE** | +48% impulse, retr 0.21 | OI dd 43% | fund -0.0111 | hold False | inval 0.03912 | OB 0.03912-0.04112
 
 ## Pre-pump candidates
-- AVAX: [A+B] 7d -5.1%
+- AVAX: [A+B] 7d -4.9%
 - RUNE: [C+D] 7d 3.4%
 
 ## ETF pipeline (new this run)
@@ -44,11 +44,11 @@
 
 ## Paper book (open trades, marked to last scan)
 - open 4 | mean 7.9% (0.50R) | in profit 4 | older than 7d 2
-- worst: LUNC 0.03R, SENT 0.11R, FF 0.32R | best: SENT 0.11R, FF 0.32R, NIGHT 1.52R
+- worst: LUNC 0.05R, SENT 0.14R, FF 0.29R | best: SENT 0.14R, FF 0.29R, NIGHT 1.52R
 
 ## System
-- CoinGecko 8352/10000 used, month-end projection 9989 (100%), throttle level 1 | by script {'scan': 2642, 'check_liquidity': 397, 'breakout_check': 5224, 'counterfactual_check': 89}
+- CoinGecko 8354/10000 used, month-end projection 9975 (100%), throttle level 1 | by script {'scan': 2644, 'check_liquidity': 397, 'breakout_check': 5224, 'counterfactual_check': 89}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=280)
-- radar-flags.json scan age: 4m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 49
