@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-26 01:35 UTC
+# Radar digest - 2026-11-26 02:02 UTC
 
 ## Market
-- BTC scenario **C** | price 60706 | wk close 60890 vs 82800 | 50W 74486 (-18.50%) | 1m old
+- BTC scenario **C** | price 60706 | wk close 60890 vs 82800 | 50W 74486 (-18.50%) | 28m old
 - Alts: **BTC_LED** [-] | BTC.D 56.15% | ETH/BTC 0.02807 | breadth7d -% | stables 30d -5.89%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.03pt | 7d -0.03pt | n=121
 - Gold: PAXG 1m -11.38% | real10y 2.79 (13bp 1m) | USD 1m 1.85% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 22
@@ -14,7 +14,7 @@
 - NIGHT: **RESET_DONE** | +48% impulse, retr 0.21 | OI dd 43% | fund -0.0111 | hold False | inval 0.03912 | OB 0.03912-0.04112
 
 ## Pre-pump candidates
-- AVAX: [A+B] 7d -5.5%
+- AVAX: [A+B] 7d -5.1%
 - RUNE: [C+D] 7d 3.4%
 
 ## ETF pipeline (new this run)
@@ -43,12 +43,12 @@
 - (23 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 8.6% (0.53R) | in profit 3 | older than 7d 2
-- worst: LUNC -0.06R, SENT 0.11R, FF 0.39R | best: SENT 0.11R, FF 0.39R, NIGHT 1.67R
+- open 4 | mean 7.8% (0.48R) | in profit 3 | older than 7d 2
+- worst: LUNC -0.05R, SENT 0.10R, FF 0.32R | best: SENT 0.10R, FF 0.32R, NIGHT 1.56R
 
 ## System
-- CoinGecko 8348/10000 used, month-end projection 10001 (100%), throttle level 2 | by script {'scan': 2638, 'check_liquidity': 397, 'breakout_check': 5224, 'counterfactual_check': 89}
+- CoinGecko 8350/10000 used, month-end projection 9987 (100%), throttle level 1 | by script {'scan': 2640, 'check_liquidity': 397, 'breakout_check': 5224, 'counterfactual_check': 89}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=280)
-- radar-flags.json scan age: 5m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 49
