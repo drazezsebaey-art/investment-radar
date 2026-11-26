@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-26 17:35 UTC
+# Radar digest - 2026-11-26 18:15 UTC
 
 ## Market
-- BTC scenario **C** | price 60539 | wk close 60890 vs 82800 | 50W 74486 (-18.72%) | 1m old
+- BTC scenario **C** | price 60539 | wk close 60890 vs 82800 | 50W 74486 (-18.72%) | 41m old
 - Alts: **BTC_LED** [-] | BTC.D 56.28% | ETH/BTC 0.02792 | breadth7d 66% | stables 30d -5.75%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.07pt | 7d 0.03pt | n=121
 - Gold: PAXG 1m -12.30% | real10y 2.79 (13bp 1m) | USD 1m 1.85% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 22
@@ -12,7 +12,7 @@
 - none
 
 ## Pre-pump candidates
-- SAND: [B+C] 7d -5.1%
+- none
 
 ## ETF pipeline (new this run)
 - solana NEW: other - Solana’s Slide Sends $4.7 Million Out of Bitwise’s Staking ETF - TipRanks
@@ -41,12 +41,12 @@
 - (23 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 7.7% (0.42R) | in profit 3 | older than 7d 2
-- worst: LUNC -0.33R, FF 0.25R, SENT 0.27R | best: FF 0.25R, SENT 0.27R, NIGHT 1.47R
+- open 4 | mean 8.1% (0.44R) | in profit 3 | older than 7d 2
+- worst: LUNC -0.31R, FF 0.24R, SENT 0.33R | best: FF 0.24R, SENT 0.33R, NIGHT 1.50R
 
 ## System
-- CoinGecko 8553/10000 used, month-end projection 9981 (100%), throttle level 1 | by script {'scan': 2710, 'check_liquidity': 414, 'breakout_check': 5334, 'counterfactual_check': 95}
+- CoinGecko 8606/10000 used, month-end projection 10026 (100%), throttle level 2 | by script {'scan': 2712, 'check_liquidity': 414, 'breakout_check': 5385, 'counterfactual_check': 95}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=281)
-- radar-flags.json scan age: 5m
+- radar-flags.json scan age: 15m
 - excluded from radar (pegged/tokenized equity): 50
