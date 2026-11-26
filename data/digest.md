@@ -1,10 +1,10 @@
-# Radar digest - 2026-11-26 22:03 UTC
+# Radar digest - 2026-11-26 22:34 UTC
 
 ## Market
-- BTC scenario **C** | price 60969 | wk close 60890 vs 82800 | 50W 74486 (-18.15%) | 28m old
+- BTC scenario **C** | price 60969 | wk close 60890 vs 82800 | 50W 74486 (-18.15%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 56.20% | ETH/BTC 0.02811 | breadth7d -% | stables 30d -5.75%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.15pt | 7d 0.00pt | n=121
-- Gold: PAXG 1m -12.30% | real10y 2.79 (13bp 1m) | USD 1m 1.85% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 22
+- Gold: PAXG 1m -12.25% | real10y 2.79 (13bp 1m) | USD 1m 1.85% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 22
 - 10y 1w: -19bp = real -10 + breakeven -7 -> **MIXED**
 - 10y 1m: -9bp = real 13 + breakeven -23 -> **SMALL_MOVE**
 
@@ -12,7 +12,7 @@
 - VVV: **RESET_DONE** | +83% impulse, retr 0.27 | OI dd 1% | fund 0.0050 | hold False | inval 23.91000 | OB 16.76000-17.93000
 
 ## Pre-pump candidates
-- INJ: [A+C] 7d -10.8%
+- CVX: [C+E] 7d -12.9%
 
 ## ETF pipeline (new this run)
 - chainlink: filing - Fidelity Files for Spot Chainlink ETF on Nasdaq - CoinMarketCap
@@ -26,12 +26,12 @@
 ## Derivatives flags (OKX)
 - BTC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.92 | taker 1.03
 - ETH: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.87 | taker 1.04
-- AVAX: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.88 | taker 1.04
-- SEI: SHORT_SQUEEZE_FUEL, SHORT_SQUEEZE_24H | OI/mc 1.02% | topPos 0.78 | taker 1.02
-- TAO: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.92 | taker 1.10
-- ZEC: SHORT_SQUEEZE_24H | OI/mc 1.07% | topPos 0.95 | taker 1.00
-- LINK: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.92 | taker 0.98
-- XLM: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 0.89
+- AVAX: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.89 | taker 1.07
+- SEI: SHORT_SQUEEZE_FUEL | OI/mc 1.01% | topPos 0.77 | taker 1.02
+- TAO: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.92 | taker 1.12
+- ZEC: LONG_FLUSH_24H | OI/mc 1.06% | topPos 0.97 | taker 0.99
+- LINK: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.92 | taker 1.02
+- XLM: LONG_FLUSH_24H | OI/mc -% | topPos 0.89 | taker 0.89
 
 ## Revenue / buyback flags
 - ethereum: REVENUE_ACCELERATING
@@ -40,12 +40,12 @@
 - (23 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 9.3% (0.57R) | in profit 3 | older than 7d 2
-- worst: LUNC -0.01R, FF 0.33R, SENT 0.34R | best: FF 0.33R, SENT 0.34R, NIGHT 1.63R
+- open 4 | mean 9.6% (0.59R) | in profit 3 | older than 7d 2
+- worst: LUNC -0.01R, FF 0.35R, SENT 0.38R | best: FF 0.35R, SENT 0.38R, NIGHT 1.64R
 
 ## System
-- CoinGecko 8624/10000 used, month-end projection 9983 (100%), throttle level 1 | by script {'scan': 2728, 'check_liquidity': 416, 'breakout_check': 5385, 'counterfactual_check': 95}
+- CoinGecko 8627/10000 used, month-end projection 9986 (100%), throttle level 1 | by script {'scan': 2730, 'check_liquidity': 417, 'breakout_check': 5385, 'counterfactual_check': 95}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=281)
-- radar-flags.json scan age: 2m
+- radar-flags.json scan age: 4m
 - excluded from radar (pegged/tokenized equity): 50
