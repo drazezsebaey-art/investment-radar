@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-26 12:34 UTC
+# Radar digest - 2026-11-26 13:03 UTC
 
 ## Market
-- BTC scenario **C** | price 60666 | wk close 60890 vs 82800 | 50W 74486 (-18.55%) | 60m old
+- BTC scenario **C** | price 60666 | wk close 60890 vs 82800 | 50W 74486 (-18.55%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 56.23% | ETH/BTC 0.02803 | breadth7d 58% | stables 30d -5.75%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.04pt | 7d 0.02pt | n=121
 - Gold: PAXG 1m -12.03% | real10y 2.79 (13bp 1m) | USD 1m 1.85% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 22
@@ -15,7 +15,7 @@
 
 ## Pre-pump candidates
 - FET: [C+E] 7d -10.2%
-- RUNE: [C+D] 7d 4.0%
+- LTC: [A+C] 7d -2.1%
 
 ## ETF pipeline (new this run)
 - kucoin-shares NEW: other - Bitwise XRP ETF Reaches One-Year Anniversary Amid 59% Price Decline and Outflows - KuCoin
@@ -44,12 +44,12 @@
 - (23 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 6.6% (0.29R) | in profit 3 | older than 7d 2
-- worst: LUNC -0.69R, SENT 0.10R, FF 0.35R | best: SENT 0.10R, FF 0.35R, NIGHT 1.42R
+- open 4 | mean 6.4% (0.28R) | in profit 3 | older than 7d 2
+- worst: LUNC -0.71R, SENT 0.13R, FF 0.32R | best: SENT 0.13R, FF 0.32R, NIGHT 1.38R
 
 ## System
-- CoinGecko 8515/10000 used, month-end projection 10018 (100%), throttle level 2 | by script {'scan': 2682, 'check_liquidity': 408, 'breakout_check': 5334, 'counterfactual_check': 91}
+- CoinGecko 8517/10000 used, month-end projection 10004 (100%), throttle level 2 | by script {'scan': 2684, 'check_liquidity': 408, 'breakout_check': 5334, 'counterfactual_check': 91}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=281)
-- radar-flags.json scan age: 4m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 49
