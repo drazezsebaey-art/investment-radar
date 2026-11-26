@@ -1,10 +1,10 @@
-# Radar digest - 2026-11-26 04:02 UTC
+# Radar digest - 2026-11-26 04:34 UTC
 
 ## Market
-- BTC scenario **C** | price 60666 | wk close 60890 vs 82800 | 50W 74486 (-18.55%) | 28m old
+- BTC scenario **C** | price 60666 | wk close 60890 vs 82800 | 50W 74486 (-18.55%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 56.19% | ETH/BTC 0.02794 | breadth7d 47% | stables 30d -5.75%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.18pt | 7d 0.05pt | n=121
-- Gold: PAXG 1m -11.38% | real10y 2.79 (13bp 1m) | USD 1m 1.85% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 22
+- Gold: PAXG 1m -11.20% | real10y 2.79 (13bp 1m) | USD 1m 1.85% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 22
 - 10y 1w: -19bp = real -10 + breakeven -7 -> **MIXED**
 - 10y 1m: -9bp = real 13 + breakeven -23 -> **SMALL_MOVE**
 
@@ -26,14 +26,14 @@
 - zcash: other - Grayscale Funds Trust - The 2X Zcash ETF (ZECX) latest stock news and headlines - Yahoo Fi
 
 ## Derivatives flags (OKX)
-- ETH: LONG_FLUSH_24H | OI/mc 0.69% | topPos 0.86 | taker 1.03
-- SOL: SHORT_SQUEEZE_24H | OI/mc 0.58% | topPos 0.84 | taker 0.99
-- AVAX: SHORT_SQUEEZE_FUEL, LONG_FLUSH_24H | OI/mc 0.36% | topPos 0.85 | taker 0.91
+- SOL: SHORT_SQUEEZE_24H | OI/mc 0.58% | topPos 0.84 | taker 0.98
+- AVAX: SHORT_SQUEEZE_FUEL, LONG_FLUSH_24H | OI/mc 0.36% | topPos 0.86 | taker 0.91
 - SUI: LONG_FLUSH_24H | OI/mc 0.85% | topPos 0.77 | taker 1.03
-- SEI: LONG_FLUSH_24H | OI/mc -% | topPos 0.78 | taker 1.06
-- TAO: LONG_FLUSH_24H | OI/mc 0.75% | topPos 0.95 | taker 1.04
-- XLM: SHORT_SQUEEZE_FUEL, LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 0.93
-- BCH: SHORT_SQUEEZE_FUEL, SHORT_SQUEEZE_24H | OI/mc 0.58% | topPos 0.78 | taker 0.92
+- SEI: SHORT_SQUEEZE_FUEL, LONG_FLUSH_24H | OI/mc -% | topPos 0.80 | taker 1.06
+- TAO: LONG_FLUSH_24H | OI/mc 0.75% | topPos 0.95 | taker 1.01
+- XLM: SHORT_SQUEEZE_FUEL, LONG_FLUSH_24H | OI/mc 0.19% | topPos 0.87 | taker 0.90
+- BCH: SHORT_SQUEEZE_FUEL, SHORT_SQUEEZE_24H | OI/mc 0.58% | topPos 0.78 | taker 0.90
+- BTW: SHORT_SQUEEZE_24H | OI/mc 0.19% | topPos 1.23 | taker 1.00
 
 ## Revenue / buyback flags
 - thorchain: REVENUE_ACCELERATING
@@ -41,12 +41,12 @@
 - (23 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 7.6% (0.46R) | in profit 3 | older than 7d 2
-- worst: LUNC -0.10R, SENT 0.09R, FF 0.27R | best: SENT 0.09R, FF 0.27R, NIGHT 1.57R
+- open 4 | mean 7.9% (0.49R) | in profit 3 | older than 7d 2
+- worst: LUNC -0.03R, SENT 0.11R, FF 0.26R | best: SENT 0.11R, FF 0.26R, NIGHT 1.61R
 
 ## System
-- CoinGecko 8359/10000 used, month-end projection 9964 (100%), throttle level 1 | by script {'scan': 2648, 'check_liquidity': 398, 'breakout_check': 5224, 'counterfactual_check': 89}
+- CoinGecko 8361/10000 used, month-end projection 9967 (100%), throttle level 1 | by script {'scan': 2650, 'check_liquidity': 398, 'breakout_check': 5224, 'counterfactual_check': 89}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=280)
-- radar-flags.json scan age: 2m
+- radar-flags.json scan age: 4m
 - excluded from radar (pegged/tokenized equity): 49
