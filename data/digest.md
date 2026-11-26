@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-26 08:03 UTC
+# Radar digest - 2026-11-26 08:34 UTC
 
 ## Market
-- BTC scenario **C** | price 60566 | wk close 60890 vs 82800 | 50W 74486 (-18.69%) | 28m old
+- BTC scenario **C** | price 60566 | wk close 60890 vs 82800 | 50W 74486 (-18.69%) | 60m old
 - Alts: **BTC_LED** [-] | BTC.D 56.22% | ETH/BTC 0.02791 | breadth7d 50% | stables 30d -5.75%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.11pt | 7d 0.03pt | n=121
 - Gold: PAXG 1m -11.20% | real10y 2.79 (13bp 1m) | USD 1m 1.85% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 22
@@ -27,14 +27,14 @@
 - chainlink: filing - Fidelity Seeks Nasdaq Listing for Spot Chainlink ETF 'FLNK,' Files S-1 with SEC - BigGo Fi
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc 0.23% | topPos 0.92 | taker 1.02
-- ETH: LONG_FLUSH_24H | OI/mc 0.69% | topPos 0.87 | taker 1.02
-- NEAR: SHORT_SQUEEZE_FUEL | OI/mc 1.16% | topPos 1.02 | taker 1.03
+- BTC: LONG_FLUSH_24H | OI/mc 0.23% | topPos 0.92 | taker 1.04
+- ETH: LONG_FLUSH_24H | OI/mc 0.70% | topPos 0.86 | taker 1.06
+- NEAR: SHORT_SQUEEZE_FUEL | OI/mc -% | topPos 1.02 | taker 1.04
 - AVAX: LONG_FLUSH_24H | OI/mc 0.37% | topPos 0.87 | taker 0.94
-- SUI: LONG_FLUSH_24H | OI/mc 0.84% | topPos 0.76 | taker 1.00
-- SEI: SHORT_SQUEEZE_FUEL, LONG_FLUSH_24H | OI/mc -% | topPos 0.77 | taker 1.00
-- TAO: LONG_FLUSH_24H | OI/mc 0.74% | topPos 0.95 | taker 1.00
-- ZEC: LONG_FLUSH_24H | OI/mc 0.97% | topPos 1.06 | taker 1.01
+- SUI: LONG_FLUSH_24H | OI/mc 0.84% | topPos 0.76 | taker 1.01
+- SEI: SHORT_SQUEEZE_FUEL, LONG_FLUSH_24H | OI/mc -% | topPos 0.75 | taker 1.08
+- TAO: LONG_FLUSH_24H | OI/mc 0.74% | topPos 0.95 | taker 1.03
+- ZEC: LONG_FLUSH_24H | OI/mc 1.00% | topPos 1.05 | taker 1.02
 
 ## Revenue / buyback flags
 - thorchain: REVENUE_ACCELERATING
@@ -42,12 +42,12 @@
 - (23 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 8.6% (0.50R) | in profit 3 | older than 7d 2
-- worst: LUNC -0.25R, SENT 0.10R, FF 0.49R | best: SENT 0.10R, FF 0.49R, NIGHT 1.64R
+- open 4 | mean 7.6% (0.41R) | in profit 3 | older than 7d 2
+- worst: LUNC -0.39R, SENT 0.09R, FF 0.33R | best: SENT 0.09R, FF 0.33R, NIGHT 1.61R
 
 ## System
-- CoinGecko 8430/10000 used, month-end projection 9983 (100%), throttle level 1 | by script {'scan': 2664, 'check_liquidity': 402, 'breakout_check': 5273, 'counterfactual_check': 91}
+- CoinGecko 8433/10000 used, month-end projection 9986 (100%), throttle level 1 | by script {'scan': 2666, 'check_liquidity': 403, 'breakout_check': 5273, 'counterfactual_check': 91}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=280)
-- radar-flags.json scan age: 2m
+- radar-flags.json scan age: 4m
 - excluded from radar (pegged/tokenized equity): 49
