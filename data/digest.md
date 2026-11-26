@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-26 03:35 UTC
+# Radar digest - 2026-11-26 04:02 UTC
 
 ## Market
-- BTC scenario **C** | price 60666 | wk close 60890 vs 82800 | 50W 74486 (-18.55%) | 1m old
+- BTC scenario **C** | price 60666 | wk close 60890 vs 82800 | 50W 74486 (-18.55%) | 28m old
 - Alts: **BTC_LED** [-] | BTC.D 56.19% | ETH/BTC 0.02794 | breadth7d 47% | stables 30d -5.75%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.18pt | 7d 0.05pt | n=121
 - Gold: PAXG 1m -11.38% | real10y 2.79 (13bp 1m) | USD 1m 1.85% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 22
@@ -13,7 +13,8 @@
 - NIGHT: **RESET_DONE** | +48% impulse, retr 0.26 | OI dd 43% | fund -0.0053 | hold False | inval 0.03912 | OB 0.03912-0.04112
 
 ## Pre-pump candidates
-- AVAX: [A+B] 7d -4.9%
+- AVAX: [A+B] 7d -4.4%
+- RUNE: [C+D] 7d 5.2%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - Could Bitwise’s $667M XRP ETF inflows come to the rescue as bear trap takes shape? - AMBCr
@@ -40,12 +41,12 @@
 - (23 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 7.7% (0.45R) | in profit 3 | older than 7d 2
-- worst: LUNC -0.15R, SENT 0.13R, FF 0.28R | best: SENT 0.13R, FF 0.28R, NIGHT 1.55R
+- open 4 | mean 7.6% (0.46R) | in profit 3 | older than 7d 2
+- worst: LUNC -0.10R, SENT 0.09R, FF 0.27R | best: SENT 0.09R, FF 0.27R, NIGHT 1.57R
 
 ## System
-- CoinGecko 8356/10000 used, month-end projection 9977 (100%), throttle level 1 | by script {'scan': 2646, 'check_liquidity': 397, 'breakout_check': 5224, 'counterfactual_check': 89}
+- CoinGecko 8359/10000 used, month-end projection 9964 (100%), throttle level 1 | by script {'scan': 2648, 'check_liquidity': 398, 'breakout_check': 5224, 'counterfactual_check': 89}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=280)
-- radar-flags.json scan age: 5m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 49
