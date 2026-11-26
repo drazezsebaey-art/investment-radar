@@ -1,4 +1,4 @@
-# Radar digest - 2026-11-26 18:35 UTC
+# Radar digest - 2026-11-26 19:03 UTC
 
 ## Market
 - BTC scenario **C** | price 60539 | wk close 60890 vs 82800 | 50W 74486 (-18.72%) | 1h old
@@ -12,7 +12,7 @@
 - none
 
 ## Pre-pump candidates
-- none
+- BCH: [B+C] 7d 1.3%
 
 ## ETF pipeline (new this run)
 - solana NEW: other - Solana’s Slide Sends $4.7 Million Out of Bitwise’s Staking ETF - TipRanks
@@ -41,12 +41,12 @@
 - (23 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 8.8% (0.52R) | in profit 3 | older than 7d 2
-- worst: LUNC -0.08R, FF 0.27R, SENT 0.39R | best: FF 0.27R, SENT 0.39R, NIGHT 1.51R
+- open 4 | mean 9.0% (0.51R) | in profit 3 | older than 7d 2
+- worst: LUNC -0.19R, FF 0.28R, SENT 0.48R | best: FF 0.28R, SENT 0.48R, NIGHT 1.49R
 
 ## System
-- CoinGecko 8608/10000 used, month-end projection 10029 (100%), throttle level 2 | by script {'scan': 2714, 'check_liquidity': 414, 'breakout_check': 5385, 'counterfactual_check': 95}
+- CoinGecko 8610/10000 used, month-end projection 10015 (100%), throttle level 2 | by script {'scan': 2716, 'check_liquidity': 414, 'breakout_check': 5385, 'counterfactual_check': 95}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=281)
-- radar-flags.json scan age: 5m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 50
