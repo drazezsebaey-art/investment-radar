@@ -1,4 +1,4 @@
-# Radar digest - 2026-11-26 00:35 UTC
+# Radar digest - 2026-11-26 01:02 UTC
 
 ## Market
 - BTC scenario **C** | price 60244 | wk close 60890 vs 82800 | 50W 74486 (-19.12%) | 1h old
@@ -12,7 +12,7 @@
 - VVV: **ONGOING** | +75% impulse, retr 0.03 | OI dd 3% | fund 0.0050 | hold False | inval 23.91000 | OB 16.76000-17.93000
 
 ## Pre-pump candidates
-- RUNE: [C+D] 7d 5.9%
+- RUNE: [C+D] 7d 3.4%
 
 ## ETF pipeline (new this run)
 - chainlink: launch - Fidelity files to launch a spot Chainlink ETF o... - Pluang
@@ -36,12 +36,12 @@
 - (23 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 8.4% (0.52R) | in profit 3 | older than 7d 2
-- worst: LUNC -0.05R, SENT 0.06R, FF 0.34R | best: SENT 0.06R, FF 0.34R, NIGHT 1.73R
+- open 4 | mean 8.7% (0.56R) | in profit 4 | older than 7d 2
+- worst: SENT 0.11R, LUNC 0.12R, FF 0.36R | best: LUNC 0.12R, FF 0.36R, NIGHT 1.67R
 
 ## System
-- CoinGecko 8342/10000 used, month-end projection 10010 (100%), throttle level 2 | by script {'scan': 2634, 'check_liquidity': 395, 'breakout_check': 5224, 'counterfactual_check': 89}
+- CoinGecko 8345/10000 used, month-end projection 9997 (100%), throttle level 1 | by script {'scan': 2636, 'check_liquidity': 396, 'breakout_check': 5224, 'counterfactual_check': 89}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=280)
-- radar-flags.json scan age: 4m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 49
