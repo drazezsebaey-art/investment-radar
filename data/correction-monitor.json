@@ -1,21 +1,112 @@
 {
-  "updated_at": "2026-11-26T17:34:42.032369+00:00",
+  "updated_at": "2026-11-26T19:34:34.317316+00:00",
   "engine_version": "correction-v65.3",
   "btc_q4_scenario": {
     "scenario": "C",
     "reason": "testing the 50W SMA or deep drawdown from the 30d high",
-    "price": 60539.2,
+    "price": 60661.1,
     "last_weekly_close": 60890.5,
     "key_level": 82800.0,
     "sma_50w": 74486.0,
-    "dist_to_50w_pct": -18.72,
-    "drawdown_from_30d_high_pct": 26.15,
+    "dist_to_50w_pct": -18.56,
+    "drawdown_from_30d_high_pct": 26.0,
     "action": "no entries into the fall - wait for a daily bullish CHoCH"
   },
-  "coins_in_correction": [],
+  "coins_in_correction": [
+    {
+      "coin": "sentient",
+      "symbol": "SENT",
+      "reasons": [
+        "top_7d_mover"
+      ],
+      "price": 0.02188,
+      "impulse_low": 0.01537,
+      "impulse_peak": 0.02582,
+      "impulse_gain_pct": 68.0,
+      "peak_date": "2026-11-18",
+      "retracement_now": 0.377,
+      "retracement_max": 0.666,
+      "fib_levels": {
+        "0.382": 0.021828,
+        "0.5": 0.020595,
+        "0.618": 0.019362,
+        "0.786": 0.017606
+      },
+      "volume_ratio": 0.44,
+      "choch_up": true,
+      "last_internal_event": {
+        "type": "CHoCH",
+        "dir": "bull",
+        "level": 0.02043,
+        "ts": 1795608000000
+      },
+      "internal_trend": 1,
+      "swing_trend": 1,
+      "nearest_bull_ob_below": {
+        "top": 0.01978,
+        "bottom": 0.01901,
+        "layer": "internal"
+      },
+      "nearest_bear_ob_above": null,
+      "trailing_extremes": {
+        "top": 0.02582,
+        "top_label": "Weak High",
+        "bottom": 0.01537,
+        "bottom_label": "Strong Low",
+        "equilibrium": 0.020595
+      },
+      "premium_discount_luxalgo": "PREMIUM",
+      "structure_engine": "smc_structure-v65.4 (aligned to LuxAlgo SMC Pine source, CC BY-NC-SA 4.0)",
+      "levels": {
+        "recent_break_validations": [
+          {
+            "side": "low",
+            "level": 0.01911,
+            "result": "SWEEP",
+            "ts": 1795420800000
+          },
+          {
+            "side": "high",
+            "level": 0.02152,
+            "result": "PENDING",
+            "ts": 1795708800000
+          },
+          {
+            "side": "high",
+            "level": 0.02043,
+            "result": "WEAK",
+            "ts": 1795608000000
+          }
+        ],
+        "bullish_hold_signal": false,
+        "last_low_sweep": null,
+        "premium_discount_impulse": {
+          "position": 0.623,
+          "zone": "PREMIUM",
+          "equilibrium": 0.020595,
+          "range_low": 0.01537,
+          "range_high": 0.02582
+        },
+        "volume_profile_30d": {
+          "poc": 0.0196153125,
+          "value_area_high": 0.0229897917,
+          "value_area_low": 0.0179825,
+          "bars_used": 180
+        },
+        "long_invalidation_level": 0.01901,
+        "swing_low_ts": 1795593600000,
+        "layer_len": 5
+      },
+      "oi_drawdown_pct": 49.3,
+      "funding_now_pct": 0.001,
+      "status": "RESUMING",
+      "entry_ready": false,
+      "entry_ready_rule": "status RESET_DONE/RESUMING + a hold signal (fresh low sweep or bullish internal CHoCH) + price at/below the impulse equilibrium - still needs gate + Agent Room + visual check"
+    }
+  ],
   "n_screened": 28,
   "status_counts": {
-    "RESUMING": 0,
+    "RESUMING": 1,
     "RESET_DONE": 0,
     "ONGOING": 0,
     "BROKEN": 0
@@ -25,10 +116,10 @@
     "bitway: RuntimeError: OKX /market/candles code=51001 msg=Instrument ID, Instrument ID code, or Spread ID doesn't exist.",
     "derive: RuntimeError: OKX /market/candles code=51001 msg=Instrument ID, Instrument ID code, or Spread ID doesn't exist.",
     "pieverse: RuntimeError: OKX /market/candles code=51001 msg=Instrument ID, Instrument ID code, or Spread ID doesn't exist.",
-    "o1-exchange: RuntimeError: OKX /market/candles code=51001 msg=Instrument ID, Instrument ID code, or Spread ID doesn't exist.",
     "sosovalue: RuntimeError: OKX /market/candles code=51001 msg=Instrument ID, Instrument ID code, or Spread ID doesn't exist.",
-    "ultima: RuntimeError: OKX /market/candles code=51001 msg=Instrument ID, Instrument ID code, or Spread ID doesn't exist.",
     "stable-2: RuntimeError: OKX /market/candles code=51001 msg=Instrument ID, Instrument ID code, or Spread ID doesn't exist.",
-    "thorchain: RuntimeError: OKX /market/candles code=51001 msg=Instrument ID, Instrument ID code, or Spread ID doesn't exist."
+    "thorchain: RuntimeError: OKX /market/candles code=51001 msg=Instrument ID, Instrument ID code, or Spread ID doesn't exist.",
+    "ultima: RuntimeError: OKX /market/candles code=51001 msg=Instrument ID, Instrument ID code, or Spread ID doesn't exist.",
+    "build-on: RuntimeError: OKX /market/candles code=51001 msg=Instrument ID, Instrument ID code, or Spread ID doesn't exist."
   ]
 }
