@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-26 09:36 UTC
+# Radar digest - 2026-11-26 10:02 UTC
 
 ## Market
-- BTC scenario **C** | price 60809 | wk close 60890 vs 82800 | 50W 74486 (-18.36%) | 1m old
+- BTC scenario **C** | price 60809 | wk close 60890 vs 82800 | 50W 74486 (-18.36%) | 28m old
 - Alts: **BTC_LED** [-] | BTC.D 56.22% | ETH/BTC 0.02791 | breadth7d 50% | stables 30d -5.75%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.11pt | 7d 0.03pt | n=121
 - Gold: PAXG 1m -11.20% | real10y 2.79 (13bp 1m) | USD 1m 1.85% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 22
@@ -14,7 +14,7 @@
 - NIGHT: **RESET_DONE** | +48% impulse, retr 0.16 | OI dd 43% | fund -0.0088 | hold False | inval 0.04554 | OB 0.03912-0.04112
 
 ## Pre-pump candidates
-- none
+- RUNE: [C+D] 7d 4.1%
 
 ## ETF pipeline (new this run)
 - hyperliquid NEW: other - Hyperliquid Price Prediction: HYPE Edges Closer to a 9% Drop Before the Dec. 1 ETF Add - C
@@ -43,12 +43,12 @@
 - (23 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 8.4% (0.46R) | in profit 3 | older than 7d 2
-- worst: LUNC -0.41R, SENT 0.12R, FF 0.37R | best: SENT 0.12R, FF 0.37R, NIGHT 1.75R
+- open 4 | mean 9.0% (0.52R) | in profit 3 | older than 7d 2
+- worst: LUNC -0.29R, SENT 0.16R, FF 0.39R | best: SENT 0.16R, FF 0.39R, NIGHT 1.80R
 
 ## System
-- CoinGecko 8439/10000 used, month-end projection 9977 (100%), throttle level 1 | by script {'scan': 2670, 'check_liquidity': 405, 'breakout_check': 5273, 'counterfactual_check': 91}
+- CoinGecko 8441/10000 used, month-end projection 9963 (100%), throttle level 1 | by script {'scan': 2672, 'check_liquidity': 405, 'breakout_check': 5273, 'counterfactual_check': 91}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=280)
-- radar-flags.json scan age: 6m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 49
