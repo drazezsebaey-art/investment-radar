@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-26 13:36 UTC
+# Radar digest - 2026-11-26 14:03 UTC
 
 ## Market
-- BTC scenario **C** | price 60857 | wk close 60890 vs 82800 | 50W 74486 (-18.30%) | 1m old
+- BTC scenario **C** | price 60857 | wk close 60890 vs 82800 | 50W 74486 (-18.30%) | 28m old
 - Alts: **BTC_LED** [-] | BTC.D 56.23% | ETH/BTC 0.02803 | breadth7d 58% | stables 30d -5.75%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.04pt | 7d 0.02pt | n=121
 - Gold: PAXG 1m -12.03% | real10y 2.79 (13bp 1m) | USD 1m 1.85% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 22
@@ -14,7 +14,7 @@
 - NIGHT: **RESET_DONE** | +48% impulse, retr 0.28 | OI dd 43% | fund -0.0057 | hold False | inval 0.04554 | OB 0.03912-0.04112
 
 ## Pre-pump candidates
-- LTC: [A+C] 7d -2.2%
+- none
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - Bitwise XRP ETF (XRP) Stock Price | Quotes & News - Moomoo
@@ -43,12 +43,12 @@
 - (23 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 6.9% (0.33R) | in profit 3 | older than 7d 2
-- worst: LUNC -0.58R, SENT 0.12R, FF 0.34R | best: SENT 0.12R, FF 0.34R, NIGHT 1.46R
+- open 4 | mean 7.4% (0.37R) | in profit 3 | older than 7d 2
+- worst: LUNC -0.53R, SENT 0.14R, FF 0.36R | best: SENT 0.14R, FF 0.36R, NIGHT 1.52R
 
 ## System
-- CoinGecko 8520/10000 used, month-end projection 10007 (100%), throttle level 2 | by script {'scan': 2686, 'check_liquidity': 409, 'breakout_check': 5334, 'counterfactual_check': 91}
+- CoinGecko 8530/10000 used, month-end projection 10003 (100%), throttle level 2 | by script {'scan': 2696, 'check_liquidity': 409, 'breakout_check': 5334, 'counterfactual_check': 91}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=281)
-- radar-flags.json scan age: 6m
-- excluded from radar (pegged/tokenized equity): 49
+- radar-flags.json scan age: 3m
+- excluded from radar (pegged/tokenized equity): 50
