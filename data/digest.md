@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-26 15:35 UTC
+# Radar digest - 2026-11-26 16:03 UTC
 
 ## Market
-- BTC scenario **C** | price 60394 | wk close 60890 vs 82800 | 50W 74486 (-18.92%) | 1m old
+- BTC scenario **C** | price 60394 | wk close 60890 vs 82800 | 50W 74486 (-18.92%) | 28m old
 - Alts: **BTC_LED** [-] | BTC.D 56.28% | ETH/BTC 0.02792 | breadth7d 66% | stables 30d -5.75%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.07pt | 7d 0.03pt | n=121
 - Gold: PAXG 1m -12.03% | real10y 2.79 (13bp 1m) | USD 1m 1.85% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 22
@@ -14,7 +14,7 @@
 - NIGHT: **RESET_DONE** | +48% impulse, retr 0.31 | OI dd 43% | fund -0.0112 | hold False | inval 0.04554 | OB 0.03912-0.04112
 
 ## Pre-pump candidates
-- LTC: [A+C] 7d -2.0%
+- none
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - XRP ETF Inflows Topped $1.5 Billion. Why Is XRPC Down 59%? - Altcoin Buzz
@@ -43,12 +43,12 @@
 - (23 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 7.4% (0.39R) | in profit 3 | older than 7d 2
-- worst: LUNC -0.37R, FF 0.27R, SENT 0.28R | best: FF 0.27R, SENT 0.28R, NIGHT 1.39R
+- open 4 | mean 7.8% (0.42R) | in profit 3 | older than 7d 2
+- worst: LUNC -0.30R, FF 0.24R, SENT 0.32R | best: FF 0.24R, SENT 0.32R, NIGHT 1.43R
 
 ## System
-- CoinGecko 8537/10000 used, month-end projection 9995 (100%), throttle level 1 | by script {'scan': 2702, 'check_liquidity': 410, 'breakout_check': 5334, 'counterfactual_check': 91}
+- CoinGecko 8544/10000 used, month-end projection 9986 (100%), throttle level 1 | by script {'scan': 2704, 'check_liquidity': 411, 'breakout_check': 5334, 'counterfactual_check': 95}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=281)
-- radar-flags.json scan age: 5m
+- radar-flags.json scan age: 3m
 - excluded from radar (pegged/tokenized equity): 50
