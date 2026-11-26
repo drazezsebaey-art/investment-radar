@@ -1,4 +1,4 @@
-# Radar digest - 2026-11-26 04:34 UTC
+# Radar digest - 2026-11-26 05:02 UTC
 
 ## Market
 - BTC scenario **C** | price 60666 | wk close 60890 vs 82800 | 50W 74486 (-18.55%) | 1h old
@@ -13,8 +13,7 @@
 - NIGHT: **RESET_DONE** | +48% impulse, retr 0.26 | OI dd 43% | fund -0.0053 | hold False | inval 0.03912 | OB 0.03912-0.04112
 
 ## Pre-pump candidates
-- AVAX: [A+B] 7d -4.4%
-- RUNE: [C+D] 7d 5.2%
+- AVAX: [A+B] 7d -5.3%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - Could Bitwise’s $667M XRP ETF inflows come to the rescue as bear trap takes shape? - AMBCr
@@ -41,12 +40,12 @@
 - (23 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 7.9% (0.49R) | in profit 3 | older than 7d 2
-- worst: LUNC -0.03R, SENT 0.11R, FF 0.26R | best: SENT 0.11R, FF 0.26R, NIGHT 1.61R
+- open 4 | mean 7.7% (0.46R) | in profit 3 | older than 7d 2
+- worst: LUNC -0.11R, SENT 0.06R, FF 0.24R | best: SENT 0.06R, FF 0.24R, NIGHT 1.65R
 
 ## System
-- CoinGecko 8361/10000 used, month-end projection 9967 (100%), throttle level 1 | by script {'scan': 2650, 'check_liquidity': 398, 'breakout_check': 5224, 'counterfactual_check': 89}
+- CoinGecko 8363/10000 used, month-end projection 9953 (100%), throttle level 1 | by script {'scan': 2652, 'check_liquidity': 398, 'breakout_check': 5224, 'counterfactual_check': 89}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=280)
-- radar-flags.json scan age: 4m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 49
