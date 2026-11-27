@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-27 20:03 UTC
+# Radar digest - 2026-11-27 20:35 UTC
 
 ## Market
-- BTC scenario **C** | price 59979 | wk close 60890 vs 82800 | 50W 74486 (-19.48%) | 28m old
+- BTC scenario **C** | price 59979 | wk close 60890 vs 82800 | 50W 74486 (-19.48%) | 1h old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.04% | ETH/BTC 0.02790 | breadth7d -% | stables 30d -5.85%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.19pt | 7d -0.22pt | n=121
 - Gold: PAXG 1m -10.84% | real10y 2.79 (13bp 1m) | USD 1m 1.85% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 22
@@ -12,10 +12,9 @@
 - VVV: **RESET_DONE** | +83% impulse, retr 0.29 | OI dd 5% | fund 0.0050 | hold False | inval 23.91000 | OB 16.76000-17.93000
 
 ## Pre-pump candidates
-- AKT: [C+E] 7d -0.9%
-- INJ: [A+C] 7d 4.0%
-- CARDS: [A+C] 7d 14.9%
-- RUNE: [C+D] 7d 18.1%
+- AKT: [C+E] 7d -4.8%
+- CARDS: [A+C] 7d 12.9%
+- RUNE: [C+D] 7d 19.0%
 
 ## ETF pipeline (new this run)
 - tron NEW: launch - Canary Staked TRX ETF Goes Live On Cboe With TRX Price Breakout In Sight - TronWeekly
@@ -25,14 +24,14 @@
 - avalanche-2: other - Bitwise Avalanche ETF (BAVA) Stock Price, News & Analysis - Stock Titan
 
 ## Derivatives flags (OKX)
-- BTC: LONG_FLUSH_24H | OI/mc -% | topPos 0.90 | taker 0.97
-- SOL: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.86 | taker 1.08
-- AVAX: LONG_FLUSH_24H | OI/mc -% | topPos 0.89 | taker 1.00
-- XRP: LONG_FLUSH_24H | OI/mc -% | topPos 0.85 | taker 0.95
-- ZEC: SHORT_SQUEEZE_24H | OI/mc 1.05% | topPos 1.02 | taker 1.04
-- WLD: LONG_FLUSH_24H | OI/mc -% | topPos 0.76 | taker 1.01
-- ADA: LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 0.91
-- XLM: AGGRESSIVE_BUYING, LONG_FLUSH_24H | OI/mc -% | topPos 0.89 | taker 1.18
+- BTC: LONG_FLUSH_24H | OI/mc 0.24% | topPos 0.90 | taker 0.97
+- SOL: SHORT_SQUEEZE_24H | OI/mc 0.59% | topPos 0.86 | taker 1.08
+- AVAX: LONG_FLUSH_24H | OI/mc 0.38% | topPos 0.89 | taker 0.98
+- XRP: LONG_FLUSH_24H | OI/mc 0.12% | topPos 0.86 | taker 0.95
+- WLD: LONG_FLUSH_24H | OI/mc -% | topPos 0.76 | taker 1.02
+- ADA: LONG_FLUSH_24H | OI/mc 0.45% | topPos 0.87 | taker 0.89
+- XLM: AGGRESSIVE_BUYING, LONG_FLUSH_24H | OI/mc 0.19% | topPos 0.89 | taker 1.17
+- ONDO: AGGRESSIVE_SELLING | OI/mc 0.56% | topPos 0.79 | taker 0.82
 
 ## Revenue / buyback flags
 - collector-crypt: CHEAP_VS_REVENUE
@@ -43,11 +42,11 @@
 
 ## Paper book (open trades, marked to last scan)
 - open 5 | mean 7.4% (0.37R) | in profit 2 | older than 7d 2
-- worst: KITE -0.45R, FF -0.17R, LUNC -0.05R | best: LUNC -0.05R, SENT 0.64R, NIGHT 1.90R
+- worst: KITE -0.33R, FF -0.30R, LUNC -0.14R | best: LUNC -0.14R, SENT 0.69R, NIGHT 1.93R
 
 ## System
-- CoinGecko 8941/10000 used, month-end projection 9996 (100%), throttle level 1 | by script {'scan': 2824, 'check_liquidity': 435, 'breakout_check': 5584, 'counterfactual_check': 98}
+- CoinGecko 8944/10000 used, month-end projection 10000 (100%), throttle level 1 | by script {'scan': 2826, 'check_liquidity': 436, 'breakout_check': 5584, 'counterfactual_check': 98}
 - Trials guard: OK (0 untracked)
-- Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=283)
-- radar-flags.json scan age: 3m
+- Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=284)
+- radar-flags.json scan age: 5m
 - excluded from radar (pegged/tokenized equity): 49
