@@ -1,54 +1,59 @@
 {
-  "updated_at": "2026-11-27T11:34:53.817474+00:00",
+  "updated_at": "2026-11-27T13:35:32.314592+00:00",
   "engine_version": "correction-v65.3",
   "btc_q4_scenario": {
     "scenario": "C",
     "reason": "testing the 50W SMA or deep drawdown from the 30d high",
-    "price": 61792.6,
+    "price": 61409.6,
     "last_weekly_close": 60890.5,
     "key_level": 82800.0,
     "sma_50w": 74486.0,
-    "dist_to_50w_pct": -17.04,
-    "drawdown_from_30d_high_pct": 24.62,
+    "dist_to_50w_pct": -17.56,
+    "drawdown_from_30d_high_pct": 25.08,
     "action": "no entries into the fall - wait for a daily bullish CHoCH"
   },
   "coins_in_correction": [
     {
-      "coin": "midnight-3",
-      "symbol": "NIGHT",
+      "coin": "venice-token",
+      "symbol": "VVV",
       "reasons": [
         "top_7d_mover"
       ],
-      "price": 0.049259,
-      "impulse_low": 0.035277,
-      "impulse_peak": 0.052299,
-      "impulse_gain_pct": 48.3,
-      "peak_date": "2026-11-22",
-      "retracement_now": 0.179,
-      "retracement_max": 0.397,
+      "price": 27.2,
+      "impulse_low": 16.76,
+      "impulse_peak": 30.69,
+      "impulse_gain_pct": 83.1,
+      "peak_date": "2026-11-25",
+      "retracement_now": 0.251,
+      "retracement_max": 0.428,
       "fib_levels": {
-        "0.382": 0.045797,
-        "0.5": 0.043788,
-        "0.618": 0.041779,
-        "0.786": 0.03892
+        "0.382": 25.36874,
+        "0.5": 23.725,
+        "0.618": 22.08126,
+        "0.786": 19.74102
       },
-      "volume_ratio": 0.68,
+      "volume_ratio": 0.55,
       "choch_up": false,
-      "last_internal_event": null,
+      "last_internal_event": {
+        "type": "BOS",
+        "dir": "bull",
+        "level": 27.06,
+        "ts": 1795622400000
+      },
       "internal_trend": 1,
-      "swing_trend": 0,
+      "swing_trend": 1,
       "nearest_bull_ob_below": {
-        "top": 0.041121,
-        "bottom": 0.039124,
-        "layer": "internal"
+        "top": 17.93,
+        "bottom": 16.76,
+        "layer": "swing"
       },
       "nearest_bear_ob_above": null,
       "trailing_extremes": {
-        "top": 0.052299,
+        "top": 30.69,
         "top_label": "Weak High",
-        "bottom": 0.035277,
-        "bottom_label": "Weak Low",
-        "equilibrium": 0.043788
+        "bottom": 16.76,
+        "bottom_label": "Strong Low",
+        "equilibrium": 23.725
       },
       "premium_discount_luxalgo": "PREMIUM",
       "structure_engine": "smc_structure-v65.4 (aligned to LuxAlgo SMC Pine source, CC BY-NC-SA 4.0)",
@@ -56,52 +61,52 @@
         "recent_break_validations": [
           {
             "side": "high",
-            "level": 0.051285,
-            "result": "SWEEP",
-            "ts": 1795435200000
+            "level": 28.34,
+            "result": "CONFIRMED",
+            "ts": 1795636800000
           },
           {
             "side": "high",
-            "level": 0.05098,
+            "level": 26.49,
             "result": "SWEEP",
-            "ts": 1795435200000
+            "ts": 1795406400000
           },
           {
             "side": "high",
-            "level": 0.05,
-            "result": "SWEEP",
-            "ts": 1795363200000
+            "level": 26.33,
+            "result": "CONFIRMED",
+            "ts": 1795392000000
           },
           {
             "side": "high",
-            "level": 0.047239,
-            "result": "SWEEP",
-            "ts": 1795334400000
+            "level": 27.06,
+            "result": "CONFIRMED",
+            "ts": 1795622400000
           }
         ],
         "bullish_hold_signal": false,
         "last_low_sweep": null,
         "premium_discount_impulse": {
-          "position": 0.821,
+          "position": 0.749,
           "zone": "PREMIUM",
-          "equilibrium": 0.043788,
-          "range_low": 0.035277,
-          "range_high": 0.052299
+          "equilibrium": 23.725,
+          "range_low": 16.76,
+          "range_high": 30.69
         },
         "volume_profile_30d": {
-          "poc": 0.0443199375,
-          "value_area_high": 0.05017125,
-          "value_area_low": 0.042014875,
+          "poc": 20.9680208333,
+          "value_area_high": 25.1760416667,
+          "value_area_low": 18.50125,
           "bars_used": 180
         },
-        "long_invalidation_level": 0.04554,
-        "swing_low_ts": 1795608000000,
+        "long_invalidation_level": 23.91,
+        "swing_low_ts": 1795550400000,
         "layer_len": 5
       },
-      "oi_drawdown_pct": 40.0,
+      "oi_drawdown_pct": 0.8,
       "funding_now_pct": 0.005,
       "reset_checks": {
-        "oi_reset": true,
+        "oi_reset": false,
         "funding_neutral": true,
         "volume_dried_up": true,
         "healthy_depth": true
@@ -122,11 +127,9 @@
   "errors": [
     "a7a5: RuntimeError: OKX /market/candles code=51001 msg=Instrument ID, Instrument ID code, or Spread ID doesn't exist.",
     "bitway: RuntimeError: OKX /market/candles code=51001 msg=Instrument ID, Instrument ID code, or Spread ID doesn't exist.",
+    "derive: RuntimeError: OKX /market/candles code=51001 msg=Instrument ID, Instrument ID code, or Spread ID doesn't exist.",
     "pieverse: RuntimeError: OKX /market/candles code=51001 msg=Instrument ID, Instrument ID code, or Spread ID doesn't exist.",
     "thorchain: RuntimeError: OKX /market/candles code=51001 msg=Instrument ID, Instrument ID code, or Spread ID doesn't exist.",
-    "stable-2: RuntimeError: OKX /market/candles code=51001 msg=Instrument ID, Instrument ID code, or Spread ID doesn't exist.",
-    "unibase: RuntimeError: OKX /market/candles code=51001 msg=Instrument ID, Instrument ID code, or Spread ID doesn't exist.",
-    "nvidia-bstocks: RuntimeError: OKX /market/candles code=51001 msg=Instrument ID, Instrument ID code, or Spread ID doesn't exist.",
-    "quack-ai: RuntimeError: OKX /market/candles code=51001 msg=Instrument ID, Instrument ID code, or Spread ID doesn't exist."
+    "unibase: RuntimeError: OKX /market/candles code=51001 msg=Instrument ID, Instrument ID code, or Spread ID doesn't exist."
   ]
 }

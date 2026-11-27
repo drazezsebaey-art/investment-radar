@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-27 13:03 UTC
+# Radar digest - 2026-11-27 13:36 UTC
 
 ## Market
-- BTC scenario **C** | price 61793 | wk close 60890 vs 82800 | 50W 74486 (-17.04%) | 1h old
+- BTC scenario **C** | price 61410 | wk close 60890 vs 82800 | 50W 74486 (-17.56%) | 1m old
 - Alts: **BTC_LED** [-] | BTC.D 56.32% | ETH/BTC 0.02800 | breadth7d 51% | stables 30d -5.87%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.27pt | 7d 0.12pt | n=121
 - Gold: PAXG 1m -9.85% | real10y 2.79 (13bp 1m) | USD 1m 1.85% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 22
@@ -9,30 +9,25 @@
 - 10y 1m: -9bp = real 13 + breakeven -23 -> **SMALL_MOVE**
 
 ## Coins in correction (entry_ready first)
-- NIGHT: **RESET_DONE** | +48% impulse, retr 0.18 | OI dd 40% | fund 0.0050 | hold False | inval 0.04554 | OB 0.03912-0.04112
+- VVV: **RESET_DONE** | +83% impulse, retr 0.25 | OI dd 1% | fund 0.0050 | hold False | inval 23.91000 | OB 16.76000-17.93000
 
 ## Pre-pump candidates
 - none
 
 ## ETF pipeline (new this run)
-- ripple NEW: other - XRP ETF Price Forecast — XRP ($10.67), XRPI ($5.08), XRPR ($7.81) $11.50 Upside Target on 
-- ripple NEW: other - Are XRP ETF Inflows Back After a Month of Redemptions? - Altcoin Buzz
-- hyperliquid NEW: other - Franklin Templeton adds Hyperliquid’s HYPE token to its crypto index ETF - Crypto Briefing
-- hyperliquid NEW: other - Franklin Templeton to Add Hyperliquid to Its Crypto Index ETF - Crypto News Australia
-- hyperliquid NEW: other - Franklin Templeton will add Hyperliquid's HYPE to its crypto ETF - Bit2Me News
-- cap-4 NEW: other - Infrastructure Capital announces dividends for its: Bond Income ETF (BNDS), Equity Income 
-- chainlink: launch - Fidelity asks the SEC to launch a Chainlink spot ETF - Bit2Me News
-- chainlink: launch - Fidelity asks the SEC to launch a Chainlink spot ETF - Bit2Me News
+- hyperliquid NEW: other - Franklin Templeton Adds Hyperliquid (HYPE) to Crypto Index ETF EZPZ on Dec. 1 - KuCoin
+- chainlink: filing - Fidelity Files For Spot Chainlink ETF (FLNK) With Planned Nasdaq Listing - Crowdfund Insid
+- ondo-finance: other - "Franklin US Equity Index Tokenized ETF (Ondo)" price data - CryptoDaily
 
 ## Derivatives flags (OKX)
-- ETH: LONG_FLUSH_24H | OI/mc 0.70% | topPos 0.87 | taker 1.05
-- AVAX: SHORT_SQUEEZE_FUEL | OI/mc 0.38% | topPos 0.87 | taker 1.07
-- SEI: SHORT_SQUEEZE_FUEL | OI/mc 1.01% | topPos 0.85 | taker 1.00
-- TAO: SHORT_SQUEEZE_24H | OI/mc 0.73% | topPos 0.94 | taker 1.12
-- WLD: SHORT_SQUEEZE_FUEL | OI/mc -% | topPos 0.76 | taker 1.09
-- ADA: LONG_FLUSH_24H | OI/mc 0.44% | topPos 0.86 | taker 1.14
-- LINK: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.91 | taker 1.05
-- XLM: AGGRESSIVE_BUYING, LONG_FLUSH_24H | OI/mc 0.19% | topPos 0.88 | taker 1.15
+- BTC: LONG_FLUSH_24H | OI/mc -% | topPos 0.92 | taker 1.05
+- ETH: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 1.04
+- NEAR: LONG_FLUSH_24H | OI/mc 1.13% | topPos 1.00 | taker 1.13
+- SEI: SHORT_SQUEEZE_FUEL | OI/mc 1.00% | topPos 0.85 | taker 1.00
+- TAO: SHORT_SQUEEZE_24H | OI/mc 0.73% | topPos 0.94 | taker 1.10
+- ZEC: SHORT_SQUEEZE_24H | OI/mc 1.13% | topPos 1.08 | taker 1.02
+- WLD: SHORT_SQUEEZE_FUEL | OI/mc -% | topPos 0.75 | taker 1.07
+- ADA: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 1.10
 
 ## Revenue / buyback flags
 - collector-crypt: CHEAP_VS_REVENUE
@@ -42,12 +37,12 @@
 - (19 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 5 | mean 8.7% (0.58R) | in profit 4 | older than 7d 2
-- worst: KITE -0.04R, FF 0.14R, LUNC 0.47R | best: LUNC 0.47R, SENT 0.71R, NIGHT 1.62R
+- open 5 | mean 9.1% (0.61R) | in profit 4 | older than 7d 2
+- worst: KITE -0.06R, FF 0.15R, LUNC 0.54R | best: LUNC 0.54R, SENT 0.70R, NIGHT 1.72R
 
 ## System
-- CoinGecko 8865/10000 used, month-end projection 10020 (100%), throttle level 2 | by script {'scan': 2796, 'check_liquidity': 430, 'breakout_check': 5541, 'counterfactual_check': 98}
+- CoinGecko 8867/10000 used, month-end projection 10022 (100%), throttle level 2 | by script {'scan': 2798, 'check_liquidity': 430, 'breakout_check': 5541, 'counterfactual_check': 98}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=281)
-- radar-flags.json scan age: 3m
+- radar-flags.json scan age: 6m
 - excluded from radar (pegged/tokenized equity): 50
