@@ -1,4 +1,4 @@
-# Radar digest - 2026-11-27 18:35 UTC
+# Radar digest - 2026-11-27 19:03 UTC
 
 ## Market
 - BTC scenario **C** | price 59758 | wk close 60890 vs 82800 | 50W 74486 (-19.77%) | 1h old
@@ -13,8 +13,10 @@
 - NIGHT: **RESET_DONE** | +48% impulse, retr 0.15 | OI dd 33% | fund 0.0050 | hold False | inval 0.04554 | OB 0.03912-0.04112
 
 ## Pre-pump candidates
-- THETA: [C+E] 7d 7.7%
-- CARDS: [A+C] 7d 10.8%
+- AKT: [C+E] 7d -0.9%
+- INJ: [A+C] 7d 4.0%
+- THETA: [C+E] 7d 8.3%
+- CARDS: [A+C] 7d 14.9%
 
 ## ETF pipeline (new this run)
 - chainlink: filing - Chainlink Volatility Surges on Fidelity ETF Filing, Adoption News - CoinMarketCap
@@ -44,12 +46,12 @@
 - (19 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 5 | mean 8.4% (0.48R) | in profit 3 | older than 7d 2
-- worst: KITE -0.38R, FF -0.08R, LUNC 0.26R | best: LUNC 0.26R, SENT 0.74R, NIGHT 1.88R
+- open 5 | mean 8.3% (0.46R) | in profit 3 | older than 7d 2
+- worst: KITE -0.38R, FF -0.04R, LUNC 0.17R | best: LUNC 0.17R, SENT 0.74R, NIGHT 1.83R
 
 ## System
-- CoinGecko 8934/10000 used, month-end projection 10019 (100%), throttle level 2 | by script {'scan': 2818, 'check_liquidity': 434, 'breakout_check': 5584, 'counterfactual_check': 98}
+- CoinGecko 8936/10000 used, month-end projection 10006 (100%), throttle level 2 | by script {'scan': 2820, 'check_liquidity': 434, 'breakout_check': 5584, 'counterfactual_check': 98}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=283)
-- radar-flags.json scan age: 5m
+- radar-flags.json scan age: 3m
 - excluded from radar (pegged/tokenized equity): 49
