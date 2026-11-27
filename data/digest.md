@@ -1,4 +1,4 @@
-# Radar digest - 2026-11-27 14:35 UTC
+# Radar digest - 2026-11-27 15:03 UTC
 
 ## Market
 - BTC scenario **C** | price 61410 | wk close 60890 vs 82800 | 50W 74486 (-17.56%) | 1h old
@@ -12,7 +12,7 @@
 - VVV: **RESET_DONE** | +83% impulse, retr 0.25 | OI dd 1% | fund 0.0050 | hold False | inval 23.91000 | OB 16.76000-17.93000
 
 ## Pre-pump candidates
-- AVAX: [A+B] 7d -0.3%
+- none
 
 ## ETF pipeline (new this run)
 - hyperliquid NEW: other - Franklin Templeton Adds Hyperliquid (HYPE) to Crypto Index ETF EZPZ on Dec. 1 - KuCoin
@@ -37,12 +37,12 @@
 - (19 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 5 | mean 9.5% (0.67R) | in profit 4 | older than 7d 2
-- worst: KITE -0.22R, FF 0.13R, SENT 0.71R | best: SENT 0.71R, LUNC 0.94R, NIGHT 1.78R
+- open 5 | mean 7.3% (0.42R) | in profit 4 | older than 7d 2
+- worst: KITE -0.39R, FF 0.07R, LUNC 0.26R | best: LUNC 0.26R, SENT 0.56R, NIGHT 1.60R
 
 ## System
-- CoinGecko 8871/10000 used, month-end projection 10011 (100%), throttle level 2 | by script {'scan': 2802, 'check_liquidity': 430, 'breakout_check': 5541, 'counterfactual_check': 98}
+- CoinGecko 8874/10000 used, month-end projection 9999 (100%), throttle level 1 | by script {'scan': 2804, 'check_liquidity': 431, 'breakout_check': 5541, 'counterfactual_check': 98}
 - Trials guard: OK (0 untracked)
-- Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=281)
-- radar-flags.json scan age: 5m
+- Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=283)
+- radar-flags.json scan age: 3m
 - excluded from radar (pegged/tokenized equity): 50
