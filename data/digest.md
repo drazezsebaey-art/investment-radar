@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-27 17:36 UTC
+# Radar digest - 2026-11-27 18:16 UTC
 
 ## Market
-- BTC scenario **C** | price 59758 | wk close 60890 vs 82800 | 50W 74486 (-19.77%) | 1m old
+- BTC scenario **C** | price 59758 | wk close 60890 vs 82800 | 50W 74486 (-19.77%) | 41m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.07% | ETH/BTC 0.02781 | breadth7d -% | stables 30d -5.86%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.16pt | 7d -0.19pt | n=121
 - Gold: PAXG 1m -10.84% | real10y 2.79 (13bp 1m) | USD 1m 1.85% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 22
@@ -13,11 +13,9 @@
 - NIGHT: **RESET_DONE** | +48% impulse, retr 0.15 | OI dd 33% | fund 0.0050 | hold False | inval 0.04554 | OB 0.03912-0.04112
 
 ## Pre-pump candidates
-- VIRTUAL: [C+E] 7d -0.8%
 - INJ: [A+C] 7d 3.0%
-- NEAR: [C+E] 7d 6.4%
+- HYPE: [A+C] 7d 4.9%
 - THETA: [C+E] 7d 8.3%
-- RUNE: [C+D] 7d 17.3%
 
 ## ETF pipeline (new this run)
 - chainlink: filing - Chainlink Volatility Surges on Fidelity ETF Filing, Adoption News - CoinMarketCap
@@ -47,12 +45,12 @@
 - (19 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 5 | mean 7.9% (0.46R) | in profit 3 | older than 7d 2
-- worst: KITE -0.17R, FF -0.07R, LUNC 0.08R | best: LUNC 0.08R, SENT 0.64R, NIGHT 1.79R
+- open 5 | mean 8.3% (0.48R) | in profit 3 | older than 7d 2
+- worst: KITE -0.24R, FF -0.00R, LUNC 0.12R | best: LUNC 0.12R, SENT 0.71R, NIGHT 1.82R
 
 ## System
-- CoinGecko 8886/10000 used, month-end projection 9981 (100%), throttle level 1 | by script {'scan': 2814, 'check_liquidity': 433, 'breakout_check': 5541, 'counterfactual_check': 98}
+- CoinGecko 8932/10000 used, month-end projection 10017 (100%), throttle level 2 | by script {'scan': 2816, 'check_liquidity': 434, 'breakout_check': 5584, 'counterfactual_check': 98}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=283)
-- radar-flags.json scan age: 6m
-- excluded from radar (pegged/tokenized equity): 50
+- radar-flags.json scan age: 16m
+- excluded from radar (pegged/tokenized equity): 49
