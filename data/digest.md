@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-27 12:16 UTC
+# Radar digest - 2026-11-27 12:35 UTC
 
 ## Market
-- BTC scenario **C** | price 61793 | wk close 60890 vs 82800 | 50W 74486 (-17.04%) | 41m old
+- BTC scenario **C** | price 61793 | wk close 60890 vs 82800 | 50W 74486 (-17.04%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 56.32% | ETH/BTC 0.02800 | breadth7d 51% | stables 30d -5.87%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.27pt | 7d 0.12pt | n=121
 - Gold: PAXG 1m -9.85% | real10y 2.79 (13bp 1m) | USD 1m 1.85% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 22
@@ -25,14 +25,14 @@
 - chainlink: launch - Fidelity asks the SEC to launch a Chainlink spot ETF - Bit2Me News
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc 0.23% | topPos 0.92 | taker 1.08
-- ETH: LONG_FLUSH_24H | OI/mc 0.70% | topPos 0.87 | taker 1.07
-- NEAR: AGGRESSIVE_BUYING | OI/mc 1.13% | topPos 1.01 | taker 1.16
-- AVAX: SHORT_SQUEEZE_FUEL | OI/mc 0.38% | topPos 0.88 | taker 1.10
-- SEI: SHORT_SQUEEZE_FUEL | OI/mc -% | topPos 0.85 | taker 0.99
-- TAO: SHORT_SQUEEZE_24H | OI/mc 0.73% | topPos 0.93 | taker 1.13
-- WLD: SHORT_SQUEEZE_FUEL | OI/mc -% | topPos 0.75 | taker 1.13
-- ADA: AGGRESSIVE_BUYING, LONG_FLUSH_24H | OI/mc 0.44% | topPos 0.87 | taker 1.15
+- ETH: LONG_FLUSH_24H | OI/mc 0.70% | topPos 0.87 | taker 1.05
+- AVAX: SHORT_SQUEEZE_FUEL | OI/mc 0.38% | topPos 0.87 | taker 1.07
+- SEI: SHORT_SQUEEZE_FUEL | OI/mc 1.01% | topPos 0.85 | taker 1.00
+- TAO: SHORT_SQUEEZE_24H | OI/mc 0.73% | topPos 0.94 | taker 1.12
+- WLD: SHORT_SQUEEZE_FUEL | OI/mc -% | topPos 0.76 | taker 1.09
+- ADA: LONG_FLUSH_24H | OI/mc 0.44% | topPos 0.86 | taker 1.14
+- LINK: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.91 | taker 1.05
+- XLM: AGGRESSIVE_BUYING, LONG_FLUSH_24H | OI/mc 0.19% | topPos 0.88 | taker 1.15
 
 ## Revenue / buyback flags
 - collector-crypt: CHEAP_VS_REVENUE
@@ -42,12 +42,12 @@
 - (19 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 5 | mean 9.1% (0.61R) | in profit 4 | older than 7d 2
-- worst: KITE 0.00R, FF 0.21R, LUNC 0.47R | best: LUNC 0.47R, SENT 0.67R, NIGHT 1.70R
+- open 5 | mean 8.5% (0.57R) | in profit 4 | older than 7d 2
+- worst: KITE -0.06R, FF 0.15R, LUNC 0.52R | best: LUNC 0.52R, SENT 0.70R, NIGHT 1.53R
 
 ## System
-- CoinGecko 8861/10000 used, month-end projection 10031 (100%), throttle level 2 | by script {'scan': 2792, 'check_liquidity': 430, 'breakout_check': 5541, 'counterfactual_check': 98}
+- CoinGecko 8863/10000 used, month-end projection 10034 (100%), throttle level 2 | by script {'scan': 2794, 'check_liquidity': 430, 'breakout_check': 5541, 'counterfactual_check': 98}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=281)
-- radar-flags.json scan age: 15m
+- radar-flags.json scan age: 5m
 - excluded from radar (pegged/tokenized equity): 50
