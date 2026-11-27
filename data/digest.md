@@ -1,10 +1,10 @@
-# Radar digest - 2026-11-27 10:03 UTC
+# Radar digest - 2026-11-27 10:35 UTC
 
 ## Market
-- BTC scenario **C** | price 61839 | wk close 60890 vs 82800 | 50W 74486 (-16.98%) | 28m old
+- BTC scenario **C** | price 61839 | wk close 60890 vs 82800 | 50W 74486 (-16.98%) | 1h old
 - Alts: **BTC_LED** [-] | BTC.D 56.36% | ETH/BTC 0.02804 | breadth7d -% | stables 30d -5.88%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.35pt | 7d 0.24pt | n=121
-- Gold: PAXG 1m -10.78% | real10y 2.79 (13bp 1m) | USD 1m 1.85% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 22
+- Gold: PAXG 1m -9.85% | real10y 2.79 (13bp 1m) | USD 1m 1.85% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 22
 - 10y 1w: -19bp = real -10 + breakeven -7 -> **MIXED**
 - 10y 1m: -9bp = real 13 + breakeven -23 -> **SMALL_MOVE**
 
@@ -24,13 +24,13 @@
 
 ## Derivatives flags (OKX)
 - BTC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.92 | taker 1.07
-- SOL: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.85 | taker 1.09
-- NEAR: AGGRESSIVE_BUYING | OI/mc 1.14% | topPos 1.01 | taker 1.16
-- XRP: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.88 | taker 1.03
-- SEI: SHORT_SQUEEZE_FUEL | OI/mc 1.03% | topPos 0.86 | taker 1.00
-- TAO: AGGRESSIVE_BUYING | OI/mc 0.73% | topPos 0.94 | taker 1.17
-- ZEC: SHORT_SQUEEZE_24H | OI/mc 1.09% | topPos 1.05 | taker 1.00
+- NEAR: AGGRESSIVE_BUYING | OI/mc 1.13% | topPos 1.01 | taker 1.16
+- XRP: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.88 | taker 1.04
+- SEI: SHORT_SQUEEZE_FUEL | OI/mc 1.01% | topPos 0.85 | taker 1.00
 - WLD: SHORT_SQUEEZE_FUEL | OI/mc -% | topPos 0.75 | taker 1.14
+- ADA: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 1.15
+- LINK: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.91 | taker 1.05
+- XLM: AGGRESSIVE_BUYING, LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 1.16
 
 ## Revenue / buyback flags
 - collector-crypt: CHEAP_VS_REVENUE
@@ -40,12 +40,12 @@
 - (19 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 11.5% (0.72R) | in profit 4 | older than 7d 2
-- worst: FF 0.15R, LUNC 0.19R, SENT 0.70R | best: LUNC 0.19R, SENT 0.70R, NIGHT 1.85R
+- open 4 | mean 11.5% (0.71R) | in profit 4 | older than 7d 2
+- worst: FF 0.09R, LUNC 0.13R, SENT 0.74R | best: LUNC 0.13R, SENT 0.74R, NIGHT 1.87R
 
 ## System
-- CoinGecko 8788/10000 used, month-end projection 9980 (100%), throttle level 1 | by script {'scan': 2776, 'check_liquidity': 426, 'breakout_check': 5488, 'counterfactual_check': 98}
+- CoinGecko 8799/10000 used, month-end projection 9993 (100%), throttle level 1 | by script {'scan': 2786, 'check_liquidity': 427, 'breakout_check': 5488, 'counterfactual_check': 98}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=281)
-- radar-flags.json scan age: 3m
+- radar-flags.json scan age: 5m
 - excluded from radar (pegged/tokenized equity): 50
