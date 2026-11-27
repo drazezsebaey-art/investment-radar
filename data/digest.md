@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-27 11:36 UTC
+# Radar digest - 2026-11-27 12:16 UTC
 
 ## Market
-- BTC scenario **C** | price 61793 | wk close 60890 vs 82800 | 50W 74486 (-17.04%) | 1m old
+- BTC scenario **C** | price 61793 | wk close 60890 vs 82800 | 50W 74486 (-17.04%) | 41m old
 - Alts: **BTC_LED** [-] | BTC.D 56.32% | ETH/BTC 0.02800 | breadth7d 51% | stables 30d -5.87%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.27pt | 7d 0.12pt | n=121
 - Gold: PAXG 1m -9.85% | real10y 2.79 (13bp 1m) | USD 1m 1.85% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 22
@@ -12,7 +12,7 @@
 - NIGHT: **RESET_DONE** | +48% impulse, retr 0.18 | OI dd 40% | fund 0.0050 | hold False | inval 0.04554 | OB 0.03912-0.04112
 
 ## Pre-pump candidates
-- AVAX: [A+B] 7d -1.1%
+- AVAX: [A+B] 7d -1.7%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - XRP ETF Price Forecast — XRP ($10.67), XRPI ($5.08), XRPR ($7.81) $11.50 Upside Target on 
@@ -42,12 +42,12 @@
 - (19 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 11.5% (0.81R) | in profit 4 | older than 7d 2
-- worst: FF 0.17R, SENT 0.66R, LUNC 0.69R | best: SENT 0.66R, LUNC 0.69R, NIGHT 1.71R
+- open 5 | mean 9.1% (0.61R) | in profit 4 | older than 7d 2
+- worst: KITE 0.00R, FF 0.21R, LUNC 0.47R | best: LUNC 0.47R, SENT 0.67R, NIGHT 1.70R
 
 ## System
-- CoinGecko 8805/10000 used, month-end projection 9984 (100%), throttle level 1 | by script {'scan': 2790, 'check_liquidity': 429, 'breakout_check': 5488, 'counterfactual_check': 98}
+- CoinGecko 8861/10000 used, month-end projection 10031 (100%), throttle level 2 | by script {'scan': 2792, 'check_liquidity': 430, 'breakout_check': 5541, 'counterfactual_check': 98}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=281)
-- radar-flags.json scan age: 5m
+- radar-flags.json scan age: 15m
 - excluded from radar (pegged/tokenized equity): 50
