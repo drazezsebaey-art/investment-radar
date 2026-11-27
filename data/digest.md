@@ -1,4 +1,4 @@
-# Radar digest - 2026-11-27 00:34 UTC
+# Radar digest - 2026-11-27 01:03 UTC
 
 ## Market
 - BTC scenario **C** | price 60448 | wk close 60890 vs 82800 | 50W 74486 (-18.85%) | 1h old
@@ -12,7 +12,7 @@
 - VVV: **RESET_DONE** | +83% impulse, retr 0.32 | OI dd 1% | fund 0.0050 | hold False | inval 23.91000 | OB 16.76000-17.93000
 
 ## Pre-pump candidates
-- LTC: [A+C] 7d 3.8%
+- none
 
 ## ETF pipeline (new this run)
 - litecoin NEW: other - Litecoin Surges 7.4% on ETF News, Derivatives Squeeze - CoinMarketCap
@@ -36,12 +36,12 @@
 - (23 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 8.9% (0.51R) | in profit 3 | older than 7d 2
-- worst: LUNC -0.19R, FF 0.25R, SENT 0.38R | best: FF 0.25R, SENT 0.38R, NIGHT 1.60R
+- open 4 | mean 9.1% (0.52R) | in profit 3 | older than 7d 2
+- worst: LUNC -0.23R, FF 0.26R, SENT 0.36R | best: FF 0.26R, SENT 0.36R, NIGHT 1.69R
 
 ## System
-- CoinGecko 8690/10000 used, month-end projection 10027 (100%), throttle level 2 | by script {'scan': 2738, 'check_liquidity': 418, 'breakout_check': 5438, 'counterfactual_check': 96}
+- CoinGecko 8692/10000 used, month-end projection 10013 (100%), throttle level 2 | by script {'scan': 2740, 'check_liquidity': 418, 'breakout_check': 5438, 'counterfactual_check': 96}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=281)
-- radar-flags.json scan age: 4m
+- radar-flags.json scan age: 2m
 - excluded from radar (pegged/tokenized equity): 50
