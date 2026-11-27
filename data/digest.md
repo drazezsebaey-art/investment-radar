@@ -1,36 +1,38 @@
-# Radar digest - 2026-11-27 11:03 UTC
+# Radar digest - 2026-11-27 11:36 UTC
 
 ## Market
-- BTC scenario **C** | price 61839 | wk close 60890 vs 82800 | 50W 74486 (-16.98%) | 1h old
-- Alts: **BTC_LED** [-] | BTC.D 56.36% | ETH/BTC 0.02804 | breadth7d -% | stables 30d -5.88%
-- Alt risk (BTC.D): **NORMAL**  | 3d 0.35pt | 7d 0.24pt | n=121
+- BTC scenario **C** | price 61793 | wk close 60890 vs 82800 | 50W 74486 (-17.04%) | 1m old
+- Alts: **BTC_LED** [-] | BTC.D 56.32% | ETH/BTC 0.02800 | breadth7d 51% | stables 30d -5.87%
+- Alt risk (BTC.D): **NORMAL**  | 3d 0.27pt | 7d 0.12pt | n=121
 - Gold: PAXG 1m -9.85% | real10y 2.79 (13bp 1m) | USD 1m 1.85% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 22
 - 10y 1w: -19bp = real -10 + breakeven -7 -> **MIXED**
 - 10y 1m: -9bp = real 13 + breakeven -23 -> **SMALL_MOVE**
 
 ## Coins in correction (entry_ready first)
-- VVV: **RESET_DONE** | +83% impulse, retr 0.26 | OI dd 1% | fund 0.0050 | hold False | inval 23.91000 | OB 16.76000-17.93000
+- NIGHT: **RESET_DONE** | +48% impulse, retr 0.18 | OI dd 40% | fund 0.0050 | hold False | inval 0.04554 | OB 0.03912-0.04112
 
 ## Pre-pump candidates
-- none
+- AVAX: [A+B] 7d -1.1%
 
 ## ETF pipeline (new this run)
-- chainlink: filing - Fidelity Files for Spot Chainlink ETF, Plans Nasdaq Listing - Brave New Coin
-- chainlink: filing - Fidelity Files for Spot Chainlink ETF as LINK Gains 7% - www.tokenpost.com
-- chainlink: filing - Why Is Chainlink Up 10% as Fidelity Files for a LINK ETF? - Altcoin Buzz
-- chainlink: filing - Why Is Chainlink Up 10% as Fidelity Files for a LINK ETF? - Altcoin Buzz
-- chainlink: other - LINK Gets Fidelity's ETF Bid as Chainlink Gains 7% While Bitcoin Stays Flat - CryptoDaily
-- chainlink: other - LINK Gets Fidelity's ETF Bid as Chainlink Gains 7% While Bitcoin Stays Flat - CryptoDaily
+- ripple NEW: other - XRP ETF Price Forecast — XRP ($10.67), XRPI ($5.08), XRPR ($7.81) $11.50 Upside Target on 
+- ripple NEW: other - Are XRP ETF Inflows Back After a Month of Redemptions? - Altcoin Buzz
+- hyperliquid NEW: other - Franklin Templeton adds Hyperliquid’s HYPE token to its crypto index ETF - Crypto Briefing
+- hyperliquid NEW: other - Franklin Templeton to Add Hyperliquid to Its Crypto Index ETF - Crypto News Australia
+- hyperliquid NEW: other - Franklin Templeton will add Hyperliquid's HYPE to its crypto ETF - Bit2Me News
+- cap-4 NEW: other - Infrastructure Capital announces dividends for its: Bond Income ETF (BNDS), Equity Income 
+- chainlink: launch - Fidelity asks the SEC to launch a Chainlink spot ETF - Bit2Me News
+- chainlink: launch - Fidelity asks the SEC to launch a Chainlink spot ETF - Bit2Me News
 
 ## Derivatives flags (OKX)
-- BTC: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.92 | taker 1.07
+- BTC: SHORT_SQUEEZE_24H | OI/mc 0.23% | topPos 0.92 | taker 1.08
+- ETH: LONG_FLUSH_24H | OI/mc 0.70% | topPos 0.87 | taker 1.07
 - NEAR: AGGRESSIVE_BUYING | OI/mc 1.13% | topPos 1.01 | taker 1.16
-- XRP: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.88 | taker 1.04
-- SEI: SHORT_SQUEEZE_FUEL | OI/mc 1.01% | topPos 0.85 | taker 1.00
-- WLD: SHORT_SQUEEZE_FUEL | OI/mc -% | topPos 0.75 | taker 1.14
-- ADA: LONG_FLUSH_24H | OI/mc -% | topPos 0.87 | taker 1.15
-- LINK: SHORT_SQUEEZE_24H | OI/mc -% | topPos 0.91 | taker 1.05
-- XLM: AGGRESSIVE_BUYING, LONG_FLUSH_24H | OI/mc -% | topPos 0.88 | taker 1.16
+- AVAX: SHORT_SQUEEZE_FUEL | OI/mc 0.38% | topPos 0.88 | taker 1.10
+- SEI: SHORT_SQUEEZE_FUEL | OI/mc -% | topPos 0.85 | taker 0.99
+- TAO: SHORT_SQUEEZE_24H | OI/mc 0.73% | topPos 0.93 | taker 1.13
+- WLD: SHORT_SQUEEZE_FUEL | OI/mc -% | topPos 0.75 | taker 1.13
+- ADA: AGGRESSIVE_BUYING, LONG_FLUSH_24H | OI/mc 0.44% | topPos 0.87 | taker 1.15
 
 ## Revenue / buyback flags
 - collector-crypt: CHEAP_VS_REVENUE
@@ -40,12 +42,12 @@
 - (19 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 4 | mean 11.9% (0.75R) | in profit 4 | older than 7d 2
-- worst: FF 0.07R, LUNC 0.21R, SENT 0.70R | best: LUNC 0.21R, SENT 0.70R, NIGHT 2.00R
+- open 4 | mean 11.5% (0.81R) | in profit 4 | older than 7d 2
+- worst: FF 0.17R, SENT 0.66R, LUNC 0.69R | best: SENT 0.66R, LUNC 0.69R, NIGHT 1.71R
 
 ## System
-- CoinGecko 8801/10000 used, month-end projection 9979 (100%), throttle level 1 | by script {'scan': 2788, 'check_liquidity': 427, 'breakout_check': 5488, 'counterfactual_check': 98}
+- CoinGecko 8805/10000 used, month-end projection 9984 (100%), throttle level 1 | by script {'scan': 2790, 'check_liquidity': 429, 'breakout_check': 5488, 'counterfactual_check': 98}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=281)
-- radar-flags.json scan age: 3m
+- radar-flags.json scan age: 5m
 - excluded from radar (pegged/tokenized equity): 50
