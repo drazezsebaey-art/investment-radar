@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-27 21:36 UTC
+# Radar digest - 2026-11-27 22:03 UTC
 
 ## Market
-- BTC scenario **C** | price 59802 | wk close 60890 vs 82800 | 50W 74486 (-19.71%) | 1m old
+- BTC scenario **C** | price 59802 | wk close 60890 vs 82800 | 50W 74486 (-19.71%) | 28m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.04% | ETH/BTC 0.02790 | breadth7d -% | stables 30d -5.85%
 - Alt risk (BTC.D): **NORMAL**  | 3d -0.19pt | 7d -0.22pt | n=121
 - Gold: PAXG 1m -10.84% | real10y 2.79 (13bp 1m) | USD 1m 1.85% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 22
@@ -14,7 +14,6 @@
 ## Pre-pump candidates
 - INJ: [A+C] 7d 3.1%
 - CARDS: [A+C] 7d 18.5%
-- RUNE: [C+D] 7d 18.6%
 
 ## ETF pipeline (new this run)
 - ripple NEW: approval - GraniteShares Pushes Back 3x XRP ETF Effective Date to Dec. 31, Delaying Eight Crypto Fund
@@ -44,12 +43,12 @@
 - (19 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 5 | mean 7.8% (0.37R) | in profit 2 | older than 7d 2
-- worst: KITE -0.37R, LUNC -0.28R, FF -0.16R | best: FF -0.16R, SENT 0.75R, NIGHT 1.93R
+- open 5 | mean 8.2% (0.40R) | in profit 2 | older than 7d 2
+- worst: KITE -0.32R, LUNC -0.30R, FF -0.08R | best: FF -0.08R, SENT 0.82R, NIGHT 1.89R
 
 ## System
-- CoinGecko 8949/10000 used, month-end projection 9990 (100%), throttle level 1 | by script {'scan': 2830, 'check_liquidity': 437, 'breakout_check': 5584, 'counterfactual_check': 98}
+- CoinGecko 8951/10000 used, month-end projection 9976 (100%), throttle level 1 | by script {'scan': 2832, 'check_liquidity': 437, 'breakout_check': 5584, 'counterfactual_check': 98}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=284)
-- radar-flags.json scan age: 6m
+- radar-flags.json scan age: 3m
 - excluded from radar (pegged/tokenized equity): 49
