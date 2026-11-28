@@ -1,4 +1,4 @@
-# Radar digest - 2026-11-28 00:35 UTC
+# Radar digest - 2026-11-28 01:03 UTC
 
 ## Market
 - BTC scenario **C** | price 59873 | wk close 60890 vs 82800 | 50W 74486 (-19.62%) | 1h old
@@ -13,8 +13,8 @@
 - SENT: **RESUMING** | +68% impulse, retr 0.20 | OI dd 50% | fund -0.0013 | hold False | inval 0.01901 | OB 0.01901-0.01978
 
 ## Pre-pump candidates
-- LTC: [A+B+C] 7d 11.1%
 - INJ: [A+C] 7d -0.9%
+- LTC: [A+B] 7d 11.1%
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - XRP ETF Price Forecast — XRP ($10.59) $12.27 Upside Target on First November Inflows and $
@@ -41,12 +41,12 @@
 - (19 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 5 | mean 8.6% (0.44R) | in profit 2 | older than 7d 3
-- worst: LUNC -0.35R, FF -0.14R, KITE -0.13R | best: KITE -0.13R, SENT 0.90R, NIGHT 1.92R
+- open 5 | mean 8.6% (0.43R) | in profit 2 | older than 7d 3
+- worst: LUNC -0.45R, FF -0.13R, KITE -0.12R | best: KITE -0.12R, SENT 0.94R, NIGHT 1.89R
 
 ## System
-- CoinGecko 9016/10000 used, month-end projection 10018 (100%), throttle level 2 | by script {'scan': 2842, 'check_liquidity': 439, 'breakout_check': 5636, 'counterfactual_check': 99}
+- CoinGecko 9018/10000 used, month-end projection 10005 (100%), throttle level 2 | by script {'scan': 2844, 'check_liquidity': 439, 'breakout_check': 5636, 'counterfactual_check': 99}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=284)
-- radar-flags.json scan age: 4m
+- radar-flags.json scan age: 3m
 - excluded from radar (pegged/tokenized equity): 49
