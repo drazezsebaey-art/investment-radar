@@ -1,4 +1,4 @@
-# Radar digest - 2026-11-28 18:35 UTC
+# Radar digest - 2026-11-28 19:03 UTC
 
 ## Market
 - BTC scenario **C** | price 59500 | wk close 60890 vs 82800 | 50W 74486 (-20.12%) | 1h old
@@ -13,7 +13,6 @@
 
 ## Pre-pump candidates
 - WLFI: [B+D] 7d -62.8%
-- LIT: [C+E] 7d 8.0%
 
 ## ETF pipeline (new this run)
 - chainlink: filing - Fidelity Files For Spot Chainlink ETF (FLNK) With Planned Nasdaq Listing - Crowdfund Insid
@@ -36,12 +35,12 @@
 - (9 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 6 | mean 8.5% (0.51R) | in profit 3 | older than 7d 3
-- worst: JUP -0.14R, FF -0.07R, KITE -0.06R | best: LUNC 0.04R, SENT 1.02R, NIGHT 2.26R
+- open 6 | mean 8.7% (0.53R) | in profit 3 | older than 7d 3
+- worst: KITE -0.14R, JUP -0.14R, FF -0.09R | best: LUNC 0.23R, SENT 1.08R, NIGHT 2.23R
 
 ## System
-- CoinGecko 9272/10000 used, month-end projection 10024 (100%), throttle level 2 | by script {'scan': 2922, 'check_liquidity': 456, 'breakout_check': 5794, 'counterfactual_check': 100}
+- CoinGecko 9274/10000 used, month-end projection 10011 (100%), throttle level 2 | by script {'scan': 2924, 'check_liquidity': 456, 'breakout_check': 5794, 'counterfactual_check': 100}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=287)
-- radar-flags.json scan age: 5m
+- radar-flags.json scan age: 3m
 - excluded from radar (pegged/tokenized equity): 50
