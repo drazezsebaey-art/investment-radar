@@ -1,7 +1,7 @@
-# Radar digest - 2026-11-28 07:36 UTC
+# Radar digest - 2026-11-28 08:03 UTC
 
 ## Market
-- BTC scenario **C** | price 59767 | wk close 60890 vs 82800 | 50W 74486 (-19.76%) | 1m old
+- BTC scenario **C** | price 59767 | wk close 60890 vs 82800 | 50W 74486 (-19.76%) | 28m old
 - Alts: **BTC_LED** [BTC_DOM_FALLING_BELOW_60] | BTC.D 56.10% | ETH/BTC 0.02774 | breadth7d 50% | stables 30d -5.45%
 - Alt risk (BTC.D): **NORMAL**  | 3d 0.12pt | 7d 0.24pt | n=121
 - Gold: PAXG 1m -9.90% | real10y 2.73 (9bp 1m) | USD 1m 1.85% | pillar6 **CONSISTENT_OR_NEUTRAL**  | COT pctl 22
@@ -12,7 +12,7 @@
 - none
 
 ## Pre-pump candidates
-- CARDS: [A+C] 7d 17.5%
+- none
 
 ## ETF pipeline (new this run)
 - ripple NEW: other - XRP News Today ETF Inflows Return as XRPL Lending Countdown Begins Now - Coin Gabbar
@@ -39,12 +39,12 @@
 - (19 flagged protocol(s) without a tradeable token hidden)
 
 ## Paper book (open trades, marked to last scan)
-- open 5 | mean 8.7% (0.52R) | in profit 3 | older than 7d 3
-- worst: KITE -0.22R, FF -0.22R, LUNC 0.31R | best: LUNC 0.31R, SENT 0.83R, NIGHT 1.93R
+- open 5 | mean 8.5% (0.51R) | in profit 3 | older than 7d 3
+- worst: KITE -0.40R, FF -0.30R, LUNC 0.47R | best: LUNC 0.47R, SENT 0.82R, NIGHT 1.96R
 
 ## System
-- CoinGecko 9116/10000 used, month-end projection 10021 (100%), throttle level 2 | by script {'scan': 2878, 'check_liquidity': 445, 'breakout_check': 5694, 'counterfactual_check': 99}
+- CoinGecko 9118/10000 used, month-end projection 10008 (100%), throttle level 2 | by script {'scan': 2880, 'check_liquidity': 445, 'breakout_check': 5694, 'counterfactual_check': 99}
 - Trials guard: OK (0 untracked)
 - Hypotheses: H1 NOT_SUPPORTED (n=59), H2 SUPPORTED (n=285)
-- radar-flags.json scan age: 6m
+- radar-flags.json scan age: 3m
 - excluded from radar (pegged/tokenized equity): 49
